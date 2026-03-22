@@ -1,72 +1,285 @@
+import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
+import { estacionesTijuana } from '@/data/tijuana/estaciones';
+import Link from 'next/link';
+
 export const metadata = {
-  title: 'Transporte Tijuana — Próximamente | MetroGuia',
-  description: 'MetroGuia está mapeando los corredores BRT de Tijuana. Guía de transporte en la ciudad frontera más transitada del mundo. Consulta nuestras guías de CDMX, Guadalajara y Monterrey.',
-}
+  title: 'Tijuana — Guía Turística Completa FIFA 2026 | MetroGuia',
+  description: 'Guía completa de Tijuana. Frontera, gastronomía, playas y conexión a San Diego, sede FIFA 2026. 80 millones de cruces fronterizos al año.',
+  openGraph: {
+    title: 'Tijuana — Tu Base para el Mundial 2026 en San Diego',
+    description: 'Alójate en Tijuana (35% más barato) y cruza a San Diego para los partidos. A 5 minutos a pie del cruce fronterizo.',
+    url: 'https://metroguia.mx/tijuana',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function TijuanaPage() {
+  const estacionesDestacadas = estacionesTijuana.filter(e =>
+    ['san-ysidro-frontera', 'plaza-rio', 'zona-centro', 'mercado-hidalgo', 'playas-tj', 'plaza-santa-cecilia'].includes(e.slug)
+  );
+
+  const heroStyles = {
+    background: 'linear-gradient(135deg, #6B7280 0%, #374151 100%)',
+    color: '#ffffff',
+    padding: '60px 20px',
+    textAlign: 'center',
+  };
+
+  const containerStyles = {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '40px 20px',
+  };
+
+  const sectionTitleStyles = {
+    fontSize: '32px',
+    fontWeight: 'bold',
+    marginBottom: '30px',
+    color: '#1f2937',
+    textAlign: 'center',
+  };
+
+  const lineaCardStyles = {
+    backgroundColor: '#f9fafb',
+    border: '2px solid #e5e7eb',
+    borderRadius: '8px',
+    padding: '20px',
+    marginBottom: '20px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+  };
+
+  const colorDotStyles = {
+    display: 'inline-block',
+    width: '20px',
+    height: '20px',
+    borderRadius: '50%',
+    marginRight: '10px',
+    verticalAlign: 'middle',
+  };
+
+  const estacionCardStyles = {
+    backgroundColor: '#ffffff',
+    border: '1px solid #e5e7eb',
+    borderRadius: '8px',
+    padding: '15px',
+    marginBottom: '15px',
+  };
+
+  const gridStyles = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gap: '20px',
+    marginBottom: '40px',
+  };
+
+  const fifaBoxStyles = {
+    backgroundColor: '#FEE2E2',
+    borderLeft: '4px solid #DC2626',
+    padding: '20px',
+    marginBottom: '20px',
+    borderRadius: '4px',
+  };
+
+  const ctaButtonStyles = {
+    display: 'inline-block',
+    backgroundColor: '#6B7280',
+    color: '#ffffff',
+    padding: '14px 28px',
+    borderRadius: '6px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    marginRight: '10px',
+    marginBottom: '10px',
+    transition: 'background-color 0.3s ease',
+    border: 'none',
+    cursor: 'pointer',
+  };
+
   return (
-    <div>
-      <section style={{ background: 'linear-gradient(135deg, #1f2937 0%, #111 100%)', color: 'white', padding: '5rem 2rem 4rem', textAlign: 'center' }}>
-        <div className="container">
-          <p style={{ fontSize: '0.875rem', opacity: 0.7, marginBottom: '0.5rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-            <a href="/" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}>MetroGuia</a> → Tijuana
+    <main style={{ backgroundColor: '#ffffff' }}>
+      {/* HERO SECTION */}
+      <section style={heroStyles}>
+        <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold' }}>
+          🌉 Tijuana
+        </h1>
+        <p style={{ fontSize: '20px', marginBottom: '20px' }}>
+          La Ciudad Más Visitada del Mundo
+        </p>
+        <p style={{ fontSize: '16px', opacity: '0.95' }}>
+          80 millones de cruces fronterizos • Gastronomía legendaria • Playas del Pacífico
+        </p>
+      </section>
+
+      {/* SECCIÓN ESPECIAL: FIFA 2026 / SAN DIEGO */}
+      <section style={containerStyles}>
+        <h2 style={sectionTitleStyles}>🏆 FIFA 2026 — Alójate en Tijuana, Juega en San Diego</h2>
+        <div style={fifaBoxStyles}>
+          <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#7F1D1D', marginBottom: '15px' }}>
+            <strong>San Diego es sede del FIFA World Cup 2026</strong> con 6 partidos importantes (incluyendo cuartos de final). Pero hotel en San Diego cuesta 35% más que en Tijuana.
           </p>
-          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: '20px', padding: '0.3rem 1rem', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
-            🔜 Próximamente
-          </div>
-          <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontFamily: 'Syne, sans-serif', marginBottom: '1rem' }}>
-            🌉 BRT Corredores Tijuana
-          </h1>
-          <p style={{ fontSize: '1.1rem', opacity: 0.85, maxWidth: '580px', margin: '0 auto 1rem' }}>
-            Mapea los corredores de transporte rápido que conectan las colonias más importantes de la ciudad frontera más transitada del mundo.
-          </p>
-          <p style={{ opacity: 0.7, fontSize: '0.95rem' }}>Ciudad frontera · La puerta de entrada desde EUA</p>
+          <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#7F1D1D', paddingLeft: '20px' }}>
+            <li><strong>San Diego sede:</strong> SoFi Stadium (Inglewood) y otros estadios de la región</li>
+            <li><strong>Cruce a pie:</strong> San Ysidro a San Diego en solo 5 minutos, sin auto necesario</li>
+            <li><strong>Ahorro:</strong> Hotel en Tijuana 35-50% más barato que San Diego</li>
+            <li><strong>Conexión Trolley:</strong> Desde San Ysidro al SoFi Stadium: 45 minutos en transporte público</li>
+            <li><strong>Comidas:</strong> Gastronomía 50% más barata que California</li>
+            <li><strong>Partidos en San Diego:</strong> 6 encuentros, incluyendo cuartos de final</li>
+            <li><strong>Cruce sin auto:</strong> Entra a EEUU a pie, regresa a Tijuana igual</li>
+          </ul>
         </div>
       </section>
 
-      <section style={{ padding: '4rem 2rem' }}>
-        <div className="container" style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: 'Syne, sans-serif', marginBottom: '2rem' }}>Qué estamos mapeando</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-            {[
-              { num: '6', label: 'Líneas / Corredores' },
-              { num: '~90', label: 'Estaciones / Paradas' },
-              { num: '~65 km', label: 'Kilómetros de red' },
-            ].map((s) => (
-              <div key={s.label} style={{ background: '#f8f9fa', borderRadius: '12px', padding: '1.5rem', textAlign: 'center' }}>
-                <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#6B7280', fontFamily: 'Syne, sans-serif' }}>{s.num}</div>
-                <div style={{ fontSize: '0.8rem', color: '#666', marginTop: '0.25rem' }}>{s.label}</div>
+      {/* SOBRE TIJUANA */}
+      <section style={containerStyles}>
+        <h2 style={sectionTitleStyles}>Sobre Tijuana</h2>
+        <div style={{ backgroundColor: '#F3F4F6', borderLeft: '4px solid #6B7280', padding: '20px', marginBottom: '20px', borderRadius: '4px' }}>
+          <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#374151', marginBottom: '15px' }}>
+            <strong>Tijuana</strong> es la ciudad más visitada del mundo. Más de 80 millones de personas cruzan la frontera anualmente. Hogar de la gastronomía mexicana de clase mundial, playas del Pacífico y punto de conexión cultural entre México y EEUU.
+          </p>
+          <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#374151', paddingLeft: '20px' }}>
+            <li><strong>Cruce Fronterizo San Ysidro:</strong> El más transitado del mundo</li>
+            <li><strong>Tacos de Adobada:</strong> Cuna del taco adobada, platillo legendario</li>
+            <li><strong>La Margarita:</strong> Inventada en Tijuana (Hotel Cesar's)</li>
+            <li><strong>Valle de Guadalupe:</strong> Región vitivinícola ('Napa Valley de México') a 45 min</li>
+            <li><strong>Zona Río:</strong> Centro gastronómico de clase mundial</li>
+            <li><strong>Playas del Pacífico:</strong> Restaurantes de mariscos frescos</li>
+            <li><strong>Mariachis:</strong> Música mexicana en vivo tradicional</li>
+            <li><strong>Gastronomía:</strong> Mejor comida callejera de México</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* LÍNEAS/RUTAS */}
+      <section style={containerStyles}>
+        <h2 style={sectionTitleStyles}>Rutas de Transporte Disponibles</h2>
+        <div style={gridStyles}>
+          {lineasTijuana.map((linea) => (
+            <Link
+              key={linea.id}
+              href={`/tijuana/linea/${linea.id}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <div style={lineaCardStyles}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px', color: '#1f2937' }}>
+                  <span style={{ ...colorDotStyles, backgroundColor: linea.color }}></span>
+                  Línea {linea.id}
+                </h3>
+                <p style={{ fontSize: '14px', color: '#6b7280', marginBottom: '10px' }}>
+                  {linea.inicio} — {linea.fin}
+                </p>
+                <p style={{ fontSize: '15px', color: '#374151', marginBottom: '10px' }}>
+                  {linea.descripcion}
+                </p>
+                <p style={{ fontSize: '13px', color: '#6B7280', fontWeight: 'bold' }}>
+                  {linea.total} paradas • {linea.municipios.join(', ')}
+                </p>
               </div>
-            ))}
-          </div>
-          <div style={{ background: '#6B728015', border: '1px solid #6B728030', borderRadius: '12px', padding: '1.5rem', marginBottom: '2.5rem' }}>
-            <p style={{ margin: 0, color: '#444', lineHeight: 1.7 }}>
-              Tijuana cuenta con corredores de transporte rápido que conectan las colonias más importantes de la ciudad frontera más transitada del mundo. Esencial para turistas llegando desde San Diego y Baja California.
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ESTACIONES DESTACADAS */}
+      <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>
+        <h2 style={sectionTitleStyles}>Estaciones Imprescindibles</h2>
+        <div style={gridStyles}>
+          {estacionesDestacadas.map((estacion) => (
+            <Link
+              key={estacion.slug}
+              href={`/tijuana/estacion/${estacion.slug}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <div style={estacionCardStyles}>
+                <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '8px' }}>
+                  {estacion.nombre}
+                </h3>
+                <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '10px' }}>
+                  Línea {estacion.linea} • {estacion.municipio}
+                </p>
+                <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.5' }}>
+                  {estacion.intro}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* GASTRONOMÍA Y EXPERIENCIAS */}
+      <section style={containerStyles}>
+        <h2 style={sectionTitleStyles}>Qué Hacer en Tijuana</h2>
+        <div style={gridStyles}>
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Tacos de Adobada
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              Tijuana es la cuna del taco adobada. Carne marinada y asada al carbón. Mercado Hidalgo es el lugar legendario para probar los mejores.
             </p>
           </div>
-          <p style={{ color: '#888', fontSize: '0.9rem' }}>Estamos trabajando en esta guía. Mientras tanto, explora nuestras guías disponibles:</p>
-        </div>
-      </section>
-
-      <section style={{ padding: '2rem 2rem 4rem' }}>
-        <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
-            {[
-              { nombre: 'Metro CDMX', href: '/cdmx/', color: '#E91E8C', desc: '195 estaciones · 12 líneas' },
-              { nombre: 'SITEUR Guadalajara', href: 'https://gdl.metroguia.mx', color: '#06B6D4', desc: '48 estaciones · 3 líneas' },
-              { nombre: 'Metrorrey', href: 'https://mty.metroguia.mx', color: '#EC4899', desc: '32 estaciones · 2 líneas' },
-            ].map((c) => (
-              <a key={c.nombre} href={c.href} style={{ textDecoration: 'none' }}>
-                <div style={{ background: 'white', border: `2px solid ${c.color}33`, borderRadius: '12px', padding: '1.25rem', textAlign: 'center' }}>
-                  <div style={{ color: c.color, fontWeight: 700, fontFamily: 'Syne, sans-serif', marginBottom: '0.25rem' }}>{c.nombre}</div>
-                  <div style={{ fontSize: '0.8rem', color: '#666' }}>{c.desc}</div>
-                  <div style={{ color: c.color, fontSize: '0.85rem', fontWeight: 600, marginTop: '0.5rem' }}>Ver guía →</div>
-                </div>
-              </a>
-            ))}
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Zona Río (Gastronomía Gourmet)
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              Centro gastronómico de clase mundial. Restaurantes que compiten con San Diego. Chef Javier Plascencia es legendario aquí.
+            </p>
+          </div>
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Playas de Tijuana
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              Restaurantes de mariscos frescos frente al Océano Pacífico. Ceviche, camarones al ajillo, tostadas. Atardecer espectacular.
+            </p>
+          </div>
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Valle de Guadalupe
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              El Napa Valley de México. Viñedos, bodegas y restaurantes gastronómicos. A 45 minutos de Tijuana. Experiencia de lujo.
+            </p>
+          </div>
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Avenida Revolución (Centro)
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              Centro histórico de Tijuana. Tiendas de artesanías, bares y cantinas. Ambiente festivo tradicional mexicano.
+            </p>
+          </div>
+          <div style={estacionCardStyles}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#6B7280', marginBottom: '10px' }}>
+              Mariachis (Plaza Santa Cecilia)
+            </h3>
+            <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
+              Música mexicana en vivo. Mariachis disponibles para contratar. Restaurantes con mariachis actuando en vivo.
+            </p>
           </div>
         </div>
       </section>
-    </div>
-  )
+
+      {/* CTA FINAL */}
+      <section style={{ ...containerStyles, paddingTop: '40px', paddingBottom: '40px', textAlign: 'center' }}>
+        <h2 style={sectionTitleStyles}>Explora Tijuana</h2>
+        <p style={{ fontSize: '16px', color: '#374151', marginBottom: '30px', maxWidth: '700px', margin: '0 auto 30px' }}>
+          Selecciona una ruta para conocer todas las estaciones, tips y experiencias gastronómicas de Tijuana. Tu puerta a San Diego y el Mundial 2026.
+        </p>
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link href="/tijuana/linea/1" style={ctaButtonStyles}>
+            Ver Línea 1 (Frontera)
+          </Link>
+          <Link href="/tijuana/linea/2" style={ctaButtonStyles}>
+            Ver Línea 2 (Cultura)
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
 }
