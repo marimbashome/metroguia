@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 
@@ -101,6 +102,9 @@ export default function EstacionMTY({ params }) {
           </p>
         </div>
       </section>
+
+      {/* Ad 1 — Banner despues del hero */}
+      <AdBanner slot="SLOT_ID_1" format="auto" />
 
       {/* INFORMACIÓN GENERAL */}
       <section style={{
@@ -363,6 +367,9 @@ export default function EstacionMTY({ params }) {
           </div>
         </section>
       )}
+
+      {/* Ad 2 — Banner antes de navegacion */}
+      <AdBanner slot="SLOT_ID_3" format="auto" />
 
       {/* NAVEGACIÓN */}
       <section style={{
