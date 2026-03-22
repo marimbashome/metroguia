@@ -104,14 +104,6 @@ export default function GDLPage() {
                   textDecoration: 'none',
                   color: 'inherit',
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
               >
                 <div
                   style={{
@@ -295,12 +287,6 @@ export default function GDLPage() {
                 marginRight: 'auto',
                 transition: 'background-color 0.2s',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#f3f4f6';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-              }}
             >
               Ver Guía Completa FIFA 2026 →
             </button>
@@ -344,14 +330,6 @@ export default function GDLPage() {
                   height: '100%',
                   display: 'flex',
                   flexDirection: 'column',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'none';
                 }}
               >
                 <div

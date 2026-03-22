@@ -285,16 +285,6 @@ export default function LineaGDLPage({ params }) {
                     textDecoration: 'none',
                     color: 'inherit',
                   }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-4px)';
-                    e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-                    e.currentTarget.style.borderColor = linea.color;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = 'none';
-                    e.currentTarget.style.borderColor = '#e5e7eb';
-                  }}
                 >
                   <div
                     style={{
