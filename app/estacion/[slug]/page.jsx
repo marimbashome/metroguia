@@ -1,4 +1,5 @@
 import { estaciones } from '@/data/estaciones'
+import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
 export function generateStaticParams() {
   return estaciones.map((e) => ({ slug: e.slug }))
@@ -65,6 +66,9 @@ export default function EstacionPage({ params }) {
         </div>
       </section>
 
+      {/* Ad 1 — Banner debajo del hero, máxima visibilidad */}
+      <AdBanner slot="SLOT_ID_1" format="auto" />
+
       <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <p style={{ fontSize: '1.125rem', marginBottom: '2rem', lineHeight: 1.8 }}>{estacion.intro}</p>
@@ -105,6 +109,9 @@ export default function EstacionPage({ params }) {
           <h2 style={{ marginBottom: '1rem' }}>Historia del ícono</h2>
           <p style={{ marginBottom: '2rem' }}>{estacion.historia_icono}</p>
 
+          {/* Ad 2 — In-article entre POIs y Tips, mejor CTR */}
+          <AdBannerInArticle slot="SLOT_ID_2" />
+
           <h2 style={{ marginBottom: '1.5rem' }}>Tips para turistas</h2>
           <div style={{ backgroundColor: 'var(--metro-gray)', padding: '2rem', borderRadius: 'var(--radius)', marginBottom: '2rem' }}>
             <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -125,6 +132,9 @@ export default function EstacionPage({ params }) {
           <p style={{ marginBottom: '2rem' }}>{estacion.mundial_relevancia}</p>
         </div>
       </section>
+
+      {/* Ad 3 — Antes del CTA de hospedaje, alta intención */}
+      <AdBanner slot="SLOT_ID_3" format="auto" />
 
       <section className="section-tips">
         <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>

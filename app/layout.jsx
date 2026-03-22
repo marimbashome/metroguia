@@ -4,10 +4,20 @@ export const metadata = {
   title: 'MetroGuia.mx — Guía de transporte CDMX',
   description: 'Guía completa del Metro CDMX para turistas. Líneas, estaciones, cómo llegar a eventos del Mundial FIFA 2026 en el Estadio Azteca. Planifica tu viaje en metro.',
   keywords: 'metro CDMX, transporte, guía turística, mundial 2026, estaciones',
+  metadataBase: new URL('https://metroguia.mx'),
+  alternates: {
+    canonical: '/',
+  },
+  verification: {
+    google: 'XXXXXXXXXX', // reemplaza con tu código de verificación de Google Search Console
+  },
   openGraph: {
     title: 'MetroGuia.mx',
     description: 'Tu guía de transporte en el Metro de la Ciudad de México',
     type: 'website',
+    url: 'https://metroguia.mx',
+    siteName: 'MetroGuia.mx',
+    locale: 'es_MX',
   }
 }
 
@@ -18,6 +28,13 @@ export default function RootLayout({ children }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Google AdSense — reemplaza ca-pub-XXXXXXXXXX con tu Publisher ID real */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+          crossOrigin="anonymous"
+        />
+        <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
       </head>
       <body>
         <header style={{
@@ -48,7 +65,7 @@ export default function RootLayout({ children }) {
             <p style={{ fontSize: '0.875rem', opacity: 0.8, marginBottom: '1rem' }}>Información actualizada para turistas del Mundial FIFA 2026</p>
             <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.875rem', flexWrap: 'wrap' }}>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Contacto</a>
-              <a href="#" style={{ color: 'var(--metro-orange)' }}>Privacidad</a>
+              <a href="/privacy-policy/" style={{ color: 'var(--metro-orange)' }}>Privacidad</a>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Términos</a>
             </div>
           </div>
