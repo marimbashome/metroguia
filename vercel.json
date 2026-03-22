@@ -1,6 +1,18 @@
 {
   "redirects": [
     {
+      "has": [{ "type": "host", "value": "cdmx.metroguia.mx" }],
+      "source": "/",
+      "destination": "https://metroguia.mx/cdmx",
+      "permanent": false
+    },
+    {
+      "has": [{ "type": "host", "value": "cdmx.metroguia.mx" }],
+      "source": "/(.*)",
+      "destination": "https://metroguia.mx/$1",
+      "permanent": false
+    },
+    {
       "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
       "source": "/",
       "destination": "https://metroguia.mx/gdl",

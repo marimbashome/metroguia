@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
               <a href="/rutas/">Rutas</a>
               <a href="/mundial-2026/">Mundial 2026</a>
               <span style={{ borderLeft: '1px solid rgba(255,255,255,0.2)', paddingLeft: '0.75rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                <a href="https://metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(245,166,35,0.15)', border: '1px solid var(--metro-orange)' }}>CDMX</a>
+                <a href="/cdmx/" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(245,166,35,0.15)', border: '1px solid var(--metro-orange)' }}>CDMX</a>
                 <a href="https://gdl.metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(6,182,212,0.15)', border: '1px solid #06B6D4', color: '#06B6D4' }}>GDL</a>
                 <a href="https://mty.metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(236,72,153,0.15)', border: '1px solid #EC4899', color: '#EC4899' }}>MTY</a>
               </span>

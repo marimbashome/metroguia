@@ -59,6 +59,7 @@ button { font-family: inherit; cursor: pointer; border: none; border-radius: var
 .grid { display: grid; gap: 2rem; margin-bottom: 2rem; }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
@@ -119,6 +120,7 @@ pre { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
   .grid { gap: 1.25rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .nav-links { gap: 1rem; }
   .nav-links a { font-size: 0.85rem; }
 }
