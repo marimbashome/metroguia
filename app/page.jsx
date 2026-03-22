@@ -50,6 +50,7 @@ const ciudadesProximamente = [
     color: '#8B5CF6',
     emoji: '⛪',
     tag: 'Ciudad UNESCO',
+    href: '/puebla/',
   },
   {
     nombre: 'Mérida',
@@ -58,6 +59,7 @@ const ciudadesProximamente = [
     color: '#F59E0B',
     emoji: '🏛️',
     tag: 'Destino Yucatán',
+    href: '/merida/',
   },
   {
     nombre: 'León / Bajío',
@@ -66,6 +68,7 @@ const ciudadesProximamente = [
     color: '#10B981',
     emoji: '🥾',
     tag: 'Ruta Colonial',
+    href: '/leon/',
   },
   {
     nombre: 'Tren Maya',
@@ -74,6 +77,7 @@ const ciudadesProximamente = [
     color: '#0EA5E9',
     emoji: '🌊',
     tag: 'Riviera Maya',
+    href: '/tren-maya/',
   },
   {
     nombre: 'Querétaro',
@@ -82,6 +86,7 @@ const ciudadesProximamente = [
     color: '#EF4444',
     emoji: '🏰',
     tag: 'Ciudad colonial',
+    href: '/queretaro/',
   },
   {
     nombre: 'Chihuahua / Chepe',
@@ -90,6 +95,7 @@ const ciudadesProximamente = [
     color: '#D97706',
     emoji: '🏔️',
     tag: 'Barrancas del Cobre',
+    href: '/chihuahua/',
   },
   {
     nombre: 'Tijuana',
@@ -98,6 +104,7 @@ const ciudadesProximamente = [
     color: '#6B7280',
     emoji: '🌉',
     tag: 'Ciudad frontera',
+    href: '/tijuana/',
   },
   {
     nombre: 'Toluca',
@@ -106,6 +113,7 @@ const ciudadesProximamente = [
     color: '#7C3AED',
     emoji: '🚄',
     tag: 'Zona metropolitana CDMX',
+    href: '/toluca/',
   },
 ]
 
@@ -198,29 +206,32 @@ export default function LandingPage() {
           <p style={{ textAlign: 'center', color: '#888', marginBottom: '3rem' }}>
             Estas ciudades están en nuestra hoja de ruta — sus sistemas de transporte esperan ser mapeados
           </p>
-          <div className="grid grid-4" style={{ '--grid-cols': 4 }}>
+          <div className="grid grid-4">
             {ciudadesProximamente.map((ciudad) => (
-              <div key={ciudad.nombre} style={{
-                background: 'white',
-                border: '1px solid #e5e7eb',
-                borderRadius: '12px',
-                padding: '1.5rem',
-                opacity: 0.85,
-                position: 'relative',
-                overflow: 'hidden',
-              }}>
+              <a key={ciudad.nombre} href={ciudad.href} style={{ textDecoration: 'none' }}>
                 <div style={{
-                  position: 'absolute', top: '0.75rem', right: '0.75rem',
-                  background: '#f3f4f6', color: '#6b7280',
-                  fontSize: '0.65rem', fontWeight: 700, padding: '2px 8px',
-                  borderRadius: '20px', letterSpacing: '0.05em', textTransform: 'uppercase'
-                }}>Próximamente</div>
-                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{ciudad.emoji}</div>
-                <h3 style={{ fontSize: '1rem', fontFamily: 'Syne, sans-serif', marginBottom: '0.25rem', color: 'var(--text)' }}>{ciudad.nombre}</h3>
-                <p style={{ fontSize: '0.75rem', color: ciudad.color, fontWeight: 600, marginBottom: '0.5rem' }}>{ciudad.sistema}</p>
-                <p style={{ fontSize: '0.8rem', color: '#777', lineHeight: 1.5, marginBottom: '0.75rem' }}>{ciudad.descripcion}</p>
-                <span style={{ display: 'inline-block', background: `${ciudad.color}15`, color: ciudad.color, fontSize: '0.7rem', padding: '2px 8px', borderRadius: '20px', fontWeight: 600 }}>{ciudad.tag}</span>
-              </div>
+                  background: 'white',
+                  border: `1px solid ${ciudad.color}22`,
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  height: '100%',
+                  cursor: 'pointer',
+                }}>
+                  <div style={{
+                    position: 'absolute', top: '0.75rem', right: '0.75rem',
+                    background: '#f3f4f6', color: '#6b7280',
+                    fontSize: '0.65rem', fontWeight: 700, padding: '2px 8px',
+                    borderRadius: '20px', letterSpacing: '0.05em', textTransform: 'uppercase'
+                  }}>Próximamente</div>
+                  <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{ciudad.emoji}</div>
+                  <h3 style={{ fontSize: '1rem', fontFamily: 'Syne, sans-serif', marginBottom: '0.25rem', color: 'var(--text)' }}>{ciudad.nombre}</h3>
+                  <p style={{ fontSize: '0.75rem', color: ciudad.color, fontWeight: 600, marginBottom: '0.5rem' }}>{ciudad.sistema}</p>
+                  <p style={{ fontSize: '0.8rem', color: '#777', lineHeight: 1.5, marginBottom: '0.75rem' }}>{ciudad.descripcion}</p>
+                  <span style={{ display: 'inline-block', background: `${ciudad.color}15`, color: ciudad.color, fontSize: '0.7rem', padding: '2px 8px', borderRadius: '20px', fontWeight: 600 }}>{ciudad.tag}</span>
+                </div>
+              </a>
             ))}
           </div>
         </div>
