@@ -1,4 +1,5 @@
 import { estaciones } from '@/data/estaciones'
+import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
 export function generateStaticParams() {
@@ -51,6 +52,25 @@ export default function EstacionPage({ params }) {
     },
   }
 
+  // Get line color from CSS variable
+  const lineaClasses = {
+    '1': '--linea-1',
+    '2': '--linea-2',
+    '3': '--linea-3',
+    '4': '--linea-4',
+    '5': '--linea-5',
+    '6': '--linea-6',
+    '7': '--linea-7',
+    '8': '--linea-8',
+    '9': '--linea-9',
+    'A': '--linea-A',
+    'B': '--linea-B',
+    '12': '--linea-12',
+  }
+
+  // Calculate hero gradient
+  const heroGradient = `linear-gradient(135deg, var(--bg) 0%, var(--surface) 100%)`
+
   return (
     <div>
       <script
@@ -58,102 +78,585 @@ export default function EstacionPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="hero" style={{ backgroundColor: 'var(--metro-dark)' }}>
-        <div className="container">
-          <h1>{estacion.nombre}</h1>
-          <p style={{ fontSize: '1.125rem', marginBottom: '1rem' }}>Línea {estacion.linea}</p>
-          <p style={{ fontSize: '0.875rem', opacity: 0.7 }}>{estacion.alcaldia}</p>
+      {/* ── BREADCRUMBS ── */}
+      <div style={{
+        padding: '1rem 1.25rem',
+        borderBottom: '1px solid var(--border)',
+        fontSize: '0.875rem',
+      }}>
+        <div className="container" style={{ maxWidth: '1000px' }}>
+          <div style={{
+            display: 'flex',
+            gap: '0.5rem',
+            alignItems: 'center',
+            color: 'var(--text-muted)',
+            flexWrap: 'wrap',
+          }}>
+            <a href="/cdmx/" style={{ color: 'var(--primary)' }}>CDMX</a>
+            <span>/</span>
+            <a href={`/linea/${estacion.linea}/`} style={{ color: 'var(--primary)' }}>Línea {estacion.linea}</a>
+            <span>/</span>
+            <span style={{ color: 'var(--text)' }}>{estacion.nombre}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── HERO SECTION ── */}
+      <section style={{
+        background: heroGradient,
+        borderBottom: `2px solid var(${lineaClasses[estacion.linea]})`,
+        padding: '3rem 1.25rem 2.5rem',
+      }}>
+        <div className="container" style={{ maxWidth: '1000px' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1.5rem',
+            marginBottom: '2rem',
+            flexWrap: 'wrap',
+          }}>
+            {/* Line badge circle */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '3.5rem',
+              height: '3.5rem',
+              borderRadius: '50%',
+              backgroundColor: `var(${lineaClasses[estacion.linea]})`,
+              color: estacion.linea === '5' ? '#000' : 'white',
+              fontWeight: 800,
+              fontSize: '1.25rem',
+              flexShrink: 0,
+              boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            }}>
+              {estacion.linea}
+            </div>
+
+            {/* Station info */}
+            <div style={{ flex: 1 }}>
+              <h1 style={{
+                fontSize: 'clamp(2rem, 5vw, 2.5rem)',
+                fontWeight: 800,
+                lineHeight: 1.1,
+                letterSpacing: '-0.02em',
+                marginBottom: '0.75rem',
+                color: 'var(--text)',
+              }}>
+                {estacion.nombre}
+              </h1>
+              <div style={{
+                display: 'flex',
+                gap: '0.75rem',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                marginBottom: '0.5rem',
+              }}>
+                <span className="badge badge-primary">Línea {estacion.linea}</span>
+                {estacion.tipo_zona && (
+                  <span className="badge" style={{
+                    backgroundColor: 'var(--surface-hover)',
+                    borderColor: 'var(--border-light)',
+                    textTransform: 'capitalize',
+                  }}>
+                    {estacion.tipo_zona.replace('-', ' ')}
+                  </span>
+                )}
+              </div>
+              <p style={{
+                fontSize: '0.95rem',
+                color: 'var(--text-muted)',
+                margin: 0,
+              }}>
+                📍 Alcaldía: {estacion.alcaldia}
+              </p>
+            </div>
+          </div>
+
+          {/* SearchBar for route planning FROM this station */}
+          <div style={{
+            backgroundColor: 'var(--surface)',
+            borderRadius: 'var(--radius-lg)',
+            padding: '1.25rem',
+            border: '1px solid var(--border)',
+          }}>
+            <p style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-muted)',
+              marginBottom: '0.75rem',
+              margin: 0,
+              marginBottom: '0.75rem',
+              textTransform: 'uppercase',
+              fontWeight: 600,
+              letterSpacing: '0.05em',
+            }}>
+              Planifica tu ruta desde aquí
+            </p>
+            <SearchBar ciudad="cdmx" origin={estacion.nombre} />
+          </div>
         </div>
       </section>
 
-      {/* Ad 1 — Banner debajo del hero, máxima visibilidad */}
-      <AdBanner slot="4434764790" format="auto" />
+      {/* ── QUICK STATS ROW ── */}
+      <section style={{
+        padding: '2rem 1.25rem',
+        borderBottom: '1px solid var(--border)',
+        backgroundColor: 'var(--surface)',
+      }}>
+        <div className="container" style={{ maxWidth: '1000px' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+            gap: '1rem',
+          }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              padding: '1rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{
+                fontSize: '1.5rem',
+                fontWeight: 800,
+                color: `var(${lineaClasses[estacion.linea]})`,
+              }}>
+                {estacion.linea}
+              </div>
+              <div style={{
+                fontSize: '0.75rem',
+                color: 'var(--text-dim)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                fontWeight: 600,
+              }}>
+                Línea
+              </div>
+            </div>
 
-      <section style={{ padding: '4rem 1.25rem' }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              padding: '1rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{
+                fontSize: '1.5rem',
+                fontWeight: 800,
+                color: 'var(--info)',
+              }}>
+                {estacion.transferencias?.length || 0}
+              </div>
+              <div style={{
+                fontSize: '0.75rem',
+                color: 'var(--text-dim)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                fontWeight: 600,
+              }}>
+                Transbordos
+              </div>
+            </div>
+
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              padding: '1rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{
+                fontSize: '1.5rem',
+                fontWeight: 800,
+                color: 'var(--success)',
+              }}>
+                {estacion.pois?.length || 0}
+              </div>
+              <div style={{
+                fontSize: '0.75rem',
+                color: 'var(--text-dim)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                fontWeight: 600,
+              }}>
+                POIs cercanos
+              </div>
+            </div>
+
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              padding: '1rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{
+                fontSize: '1rem',
+                fontWeight: 700,
+                color: 'var(--warning)',
+                textTransform: 'capitalize',
+              }}>
+                {estacion.tipo_zona?.slice(0, 3)}
+              </div>
+              <div style={{
+                fontSize: '0.75rem',
+                color: 'var(--text-dim)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                fontWeight: 600,
+              }}>
+                Zona
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── MAIN CONTENT ── */}
+      <section style={{ padding: '3rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <p style={{ fontSize: '1.125rem', marginBottom: '2rem', lineHeight: 1.8 }}>{estacion.intro}</p>
+          {/* Intro section */}
+          <div style={{
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--border)',
+            borderRadius: 'var(--radius-lg)',
+            padding: '2rem',
+            marginBottom: '3rem',
+          }}>
+            <p style={{
+              fontSize: '1.1rem',
+              lineHeight: 1.8,
+              color: 'var(--text)',
+              margin: 0,
+            }}>
+              {estacion.intro}
+            </p>
+          </div>
 
+          {/* Ad 1 — After intro */}
+          <AdBanner slot="4434764790" format="auto" />
+
+          {/* LUGARES CERCANOS (POIs) */}
           {estacion.pois && estacion.pois.length > 0 && (
-            <>
-              <h2 style={{ marginBottom: '1.5rem' }}>Lugares cercanos</h2>
-              <div style={{ marginBottom: '3rem' }}>
+            <div style={{ marginBottom: '3rem' }}>
+              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+                📍 Lugares cercanos
+              </h2>
+              <div className="grid-2" style={{
+                marginBottom: '1.5rem',
+              }}>
                 {estacion.pois.map((poi, idx) => (
-                  <div key={idx} className="lugar-card" style={{ marginBottom: '1rem' }}>
-                    <h4 style={{ marginBottom: '0.5rem' }}>{poi.nombre}</h4>
-                    <p style={{ fontSize: '0.875rem', color: '#666', marginBottom: '0.25rem' }}>{poi.tipo}</p>
-                    <p style={{ fontSize: '0.875rem', color: '#999' }}>⏱ {poi.distancia}</p>
+                  <div
+                    key={idx}
+                    className="card"
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.75rem',
+                      padding: '1.25rem',
+                    }}
+                  >
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '0.75rem',
+                    }}>
+                      <span style={{
+                        fontSize: '1.25rem',
+                        flexShrink: 0,
+                      }}>
+                        {poi.tipo === 'parque' && '🌳'}
+                        {poi.tipo === 'transporte' && '🚌'}
+                        {poi.tipo === 'comercio' && '🛒'}
+                        {poi.tipo === 'religioso' && '⛪'}
+                        {poi.tipo === 'cultural' && '🎭'}
+                        {poi.tipo === 'museo' && '🏛️'}
+                        {poi.tipo === 'restaurante' && '🍴'}
+                        {poi.tipo === 'hospedaje' && '🏨'}
+                        {!['parque', 'transporte', 'comercio', 'religioso', 'cultural', 'museo', 'restaurante', 'hospedaje'].includes(poi.tipo) && '📍'}
+                      </span>
+                      <div style={{ flex: 1 }}>
+                        <h4 style={{
+                          fontSize: '1rem',
+                          fontWeight: 700,
+                          marginBottom: '0.25rem',
+                          color: 'var(--text)',
+                        }}>
+                          {poi.nombre}
+                        </h4>
+                        <p style={{
+                          fontSize: '0.85rem',
+                          color: 'var(--text-muted)',
+                          margin: 0,
+                          marginBottom: '0.25rem',
+                          textTransform: 'capitalize',
+                        }}>
+                          {poi.tipo}
+                        </p>
+                        <p style={{
+                          fontSize: '0.8rem',
+                          color: 'var(--text-dim)',
+                          margin: 0,
+                        }}>
+                          ⏱ {poi.distancia}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
-            </>
+            </div>
           )}
 
+          {/* TRANSFERENCIAS */}
           {estacion.transferencias && estacion.transferencias.length > 0 && (
-            <>
-              <h2 style={{ marginBottom: '1.5rem' }}>Transferencias</h2>
-              <div style={{ marginBottom: '3rem', backgroundColor: 'var(--metro-gray)', padding: '1.5rem', borderRadius: 'var(--radius)' }}>
-                <p>Esta estación conecta con:</p>
-                <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
-                  {estacion.transferencias.map((trans, idx) => (
-                    <li key={idx} style={{ marginBottom: '0.5rem' }}>
-                      <a href={`/linea/${trans}/`} style={{ color: 'var(--metro-orange)', fontWeight: 600 }}>
-                        ✓ Línea {trans}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+            <div style={{ marginBottom: '3rem' }}>
+              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+                🔄 Transferencias disponibles
+              </h2>
+              <div className="card" style={{
+                padding: '1.5rem',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
+                gap: '1rem',
+              }}>
+                {estacion.transferencias.map((trans) => {
+                  const transClass = `linea-${trans}`
+                  return (
+                    <a
+                      key={trans}
+                      href={`/linea/${trans}/`}
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        padding: '1rem',
+                        borderRadius: 'var(--radius)',
+                        backgroundColor: 'var(--surface)',
+                        border: '1px solid var(--border)',
+                        textDecoration: 'none',
+                        transition: 'all 0.2s ease',
+                      }}
+                    >
+                      <div className={`linea-badge ${transClass}`}>
+                        {trans}
+                      </div>
+                      <div style={{
+                        fontSize: '0.85rem',
+                        fontWeight: 600,
+                        color: 'var(--text)',
+                        textAlign: 'center',
+                      }}>
+                        Línea {trans}
+                      </div>
+                    </a>
+                  )
+                })}
               </div>
-            </>
+            </div>
           )}
 
-          <h2 style={{ marginBottom: '1rem' }}>Historia del ícono</h2>
-          <p style={{ marginBottom: '2rem' }}>{estacion.historia_icono}</p>
-
-          {/* Ad 2 — In-article entre POIs y Tips, mejor CTR */}
+          {/* Ad 2 — In-article */}
           <AdBannerInArticle slot="1082410395" />
 
-          <h2 style={{ marginBottom: '1.5rem' }}>Tips para turistas</h2>
-          <div style={{ backgroundColor: 'var(--metro-gray)', padding: '2rem', borderRadius: 'var(--radius)', marginBottom: '2rem' }}>
-            <ul style={{ listStyle: 'none', padding: 0 }}>
-              {estacion.tips.map((tip, idx) => (
-                <li key={idx} style={{ marginBottom: '1rem', paddingLeft: '2rem', position: 'relative' }}>
-                  <span style={{ position: 'absolute', left: 0 }}>✓</span>{tip}
-                </li>
+          {/* HISTORIA DEL ÍCONO */}
+          <div style={{ marginBottom: '3rem' }}>
+            <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+              📚 Historia del ícono
+            </h2>
+            <div className="card" style={{
+              padding: '1.5rem',
+              backgroundColor: 'var(--surface)',
+              borderLeft: `4px solid var(${lineaClasses[estacion.linea]})`,
+            }}>
+              <p style={{
+                fontSize: '0.95rem',
+                lineHeight: 1.7,
+                color: 'var(--text)',
+                margin: 0,
+              }}>
+                {estacion.historia_icono}
+              </p>
+            </div>
+          </div>
+
+          {/* TIPS PARA TURISTAS */}
+          <div style={{ marginBottom: '3rem' }}>
+            <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+              💡 Tips para turistas
+            </h2>
+            <div className="card" style={{
+              padding: '1.5rem',
+            }}>
+              <ul style={{
+                listStyle: 'none',
+                padding: 0,
+                margin: 0,
+              }}>
+                {estacion.tips.map((tip, idx) => (
+                  <li
+                    key={idx}
+                    style={{
+                      marginBottom: idx < estacion.tips.length - 1 ? '1rem' : 0,
+                      paddingLeft: '2rem',
+                      position: 'relative',
+                      fontSize: '0.95rem',
+                      color: 'var(--text)',
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    <span style={{
+                      position: 'absolute',
+                      left: 0,
+                      color: 'var(--success)',
+                      fontWeight: 700,
+                    }}>
+                      ✓
+                    </span>
+                    {tip}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* MEJOR HORARIO */}
+          <div style={{ marginBottom: '3rem' }}>
+            <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+              🕐 Mejor horario para visitar
+            </h2>
+            <div className="card" style={{
+              padding: '1.5rem',
+              backgroundColor: 'var(--surface)',
+              borderLeft: `4px solid var(--info)`,
+            }}>
+              <p style={{
+                fontSize: '0.95rem',
+                color: 'var(--text)',
+                margin: 0,
+                lineHeight: 1.7,
+              }}>
+                {estacion.mejor_horario}
+              </p>
+            </div>
+          </div>
+
+          {/* MUNDIAL 2026 */}
+          {estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('Sin relevancia') && (
+            <div style={{ marginBottom: '3rem' }}>
+              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+                🌍 Relevancia para el Mundial 2026
+              </h2>
+              <div className="card" style={{
+                padding: '1.5rem',
+                backgroundColor: 'rgba(245, 166, 35, 0.08)',
+                borderLeft: `4px solid var(--primary)`,
+                border: `1px solid var(--primary-border)`,
+              }}>
+                <p style={{
+                  fontSize: '0.95rem',
+                  color: 'var(--text)',
+                  margin: 0,
+                  lineHeight: 1.7,
+                }}>
+                  {estacion.mundial_relevancia}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Ad 3 — Before CTAs */}
+          <AdBanner slot="4434764790" format="auto" />
+
+          {/* RUTAS POPULARES DESDE ESTA ESTACIÓN */}
+          <div style={{ marginBottom: '3rem' }}>
+            <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+              🚀 Rutas populares desde {estacion.nombre}
+            </h2>
+            <div className="grid-2" style={{
+              marginBottom: '1.5rem',
+            }}>
+              {[
+                { destino: 'Estadio Azteca', slug: 'estadio-azteca' },
+                { destino: 'Aeropuerto', slug: 'aeropuerto' },
+                { destino: 'Zócalo', slug: 'zocalo' },
+                { destino: 'Bellas Artes', slug: 'bellas-artes' },
+              ].map((ruta) => (
+                <a
+                  key={ruta.destino}
+                  href={`/ruta/${estacion.slug}_${ruta.slug}`}
+                  className="card"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: '1rem',
+                    padding: '1rem 1.25rem',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <div style={{
+                    fontSize: '0.95rem',
+                    fontWeight: 600,
+                    color: 'var(--text)',
+                  }}>
+                    {estacion.nombre} → {ruta.destino}
+                  </div>
+                  <span style={{
+                    color: 'var(--primary)',
+                    fontWeight: 700,
+                  }}>
+                    →
+                  </span>
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
-          <h2 style={{ marginBottom: '1rem' }}>Mejor horario para visitar</h2>
-          <div style={{ backgroundColor: '#f0f9ff', padding: '1.5rem', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--metro-orange)', marginBottom: '2rem' }}>
-            <p>{estacion.mejor_horario}</p>
-          </div>
-
-          <h2 style={{ marginBottom: '1rem' }}>Relevancia para el Mundial 2026</h2>
-          <p style={{ marginBottom: '2rem' }}>{estacion.mundial_relevancia}</p>
-        </div>
-      </section>
-
-      {/* Ad 3 — Antes del CTA de hospedaje, alta intención */}
-      <AdBanner slot="4434764790" format="auto" />
-
-      <section className="section-tips">
-        <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-          <h2 style={{ marginBottom: '1.5rem' }}>¿Buscas hospedaje?</h2>
-          <p style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>
-            {estacion.nombre} es una ubicación estratégica para visitantes del Mundial 2026
-          </p>
-          <a href="/hospedaje/" className="cta-btn">Ver opciones de hospedaje →</a>
-        </div>
-      </section>
-
-      <section style={{ padding: '3rem 1.25rem' }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <div className="btn-group">
-            <a href={`/linea/${estacion.linea}/`} className="cta-btn">
+          {/* NAVIGATION SECTION */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gap: '1rem',
+            marginBottom: '1rem',
+          }}>
+            <a
+              href={`/linea/${estacion.linea}/`}
+              className="btn-primary"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                padding: '1rem',
+                textDecoration: 'none',
+              }}
+            >
               Ver Línea {estacion.linea} completa →
             </a>
-            <a href="/lineas/" className="cta-btn" style={{ backgroundColor: 'var(--metro-gray)', color: 'var(--text)' }}>
-              Todas las líneas
+            <a
+              href="/lineas/"
+              className="btn-secondary"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                padding: '1rem',
+                textDecoration: 'none',
+              }}
+            >
+              Todas las líneas →
             </a>
           </div>
         </div>

@@ -1,14 +1,13 @@
-
 import { lineasGDL } from '@/data/gdl/lineas-detalle';
 import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Metro Guadalajara — Guía Turística FIFA 2026 | MetroGuia',
-  description: 'Guía completa del Tren Ligero de Guadalajara (SITEUR). Líneas 1, 2 y 3. Cómo llegar al Estadio Akron para el Mundial 2026. Estaciones, horarios y puntos turísticos.',
+  title: 'SITEUR Guadalajara — Guía Turística FIFA 2026 | MetroGuia',
+  description: 'Descubre el Tren Ligero de Guadalajara (SITEUR). 3 líneas, 48 estaciones. Cómo llegar al Estadio Akron para el Mundial 2026. Estaciones, conexiones y guía turística premium.',
   openGraph: {
-    title: 'Metro Guadalajara — Guía Turística FIFA 2026',
-    description: 'Explora Guadalajara con el Tren Ligero. Acceso a Centro Histórico, Basílica de Zapopan y Estadio Akron.',
+    title: 'SITEUR Guadalajara — Guía Turística FIFA 2026',
+    description: 'Sistema de transporte rápido de Guadalajara. Acceso a Centro Histórico, Basílica de Zapopan y Estadio Akron.',
     url: 'https://metroguia.mx/gdl',
     type: 'website',
   },
@@ -24,202 +23,159 @@ const estacionesDestacadas = estacionesGDL.filter(e =>
 
 export default function GDLPage() {
   return (
-    <main style={{ backgroundColor: '#ffffff' }}>
+    <main style={{ backgroundColor: '#0A0A0F', color: '#F0F0F5' }}>
       {/* HERO */}
       <section
+        className="hero"
         style={{
-          background: `linear-gradient(135deg, #06B6D4 0%, #0891b2 100%)`,
-          color: '#ffffff',
+          background: 'linear-gradient(135deg, #06B6D4 0%, #0891b2 100%)',
+          color: '#FFFFFF',
           padding: '80px 24px',
           textAlign: 'center',
+          position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        <h1
-          style={{
-            fontSize: '56px',
-            fontFamily: 'Syne, sans-serif',
-            fontWeight: '800',
-            margin: '0 0 16px 0',
-            lineHeight: '1.2',
-          }}
-        >
-          Metro Guadalajara
-        </h1>
-        <p
-          style={{
-            fontSize: '24px',
-            fontFamily: 'DM Sans, sans-serif',
-            fontWeight: '500',
-            margin: '0 0 24px 0',
-            maxWidth: '700px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          Explora Guadalajara con el Tren Ligero
-        </p>
-        <p
-          style={{
-            fontSize: '18px',
-            fontFamily: 'DM Sans, sans-serif',
-            margin: '0',
-            opacity: '0.95',
-          }}
-        >
-          3 líneas | 48 estaciones | Acceso al Estadio Akron — FIFA World Cup 2026
-        </p>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h1
+            style={{
+              fontSize: '3.5rem',
+              fontWeight: '800',
+              margin: '0 0 16px 0',
+              lineHeight: '1.2',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            SITEUR Guadalajara
+          </h1>
+          <p
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: '500',
+              margin: '0 0 24px 0',
+              maxWidth: '700px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              opacity: '0.95',
+              lineHeight: '1.4',
+            }}
+          >
+            Tren Ligero · 3 Líneas · 48 Estaciones
+          </p>
+          <p
+            style={{
+              fontSize: '1.125rem',
+              fontWeight: '400',
+              margin: '0',
+              opacity: '0.9',
+              maxWidth: '600px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Sistema rápido y eficiente de Guadalajara. Conexión directa al Estadio Akron para el Mundial 2026.
+          </p>
+        </div>
       </section>
 
-      {/* LÍNEAS */}
-      <section style={{ padding: '80px 24px', maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <h2
-          style={{
-            fontSize: '40px',
-            fontFamily: 'Syne, sans-serif',
-            fontWeight: '700',
-            marginBottom: '48px',
-            textAlign: 'center',
-            color: '#1f2937',
-          }}
-        >
-          Las 3 Líneas del SITEUR
-        </h2>
+      {/* ESTADÍSTICAS */}
+      <section
+        style={{
+          backgroundColor: '#14141F',
+          padding: '48px 24px',
+          borderBottom: '1px solid #2A2A3E',
+        }}
+      >
         <div
           style={{
+            maxWidth: '1000px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
             gap: '32px',
+            textAlign: 'center',
           }}
         >
-          {lineasGDL.map((linea) => (
-            <Link href={`/gdl/linea/${linea.id}`} key={linea.id}>
-              <div
-                style={{
-                  border: `4px solid ${linea.color}`,
-                  borderRadius: '8px',
-                  padding: '32px',
-                  backgroundColor: '#f9fafb',
-                  cursor: 'pointer',
-                  transition: 'transform 0.2s, box-shadow 0.2s',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
-              >
-                <div
-                  style={{
-                    width: '48px',
-                    height: '48px',
-                    backgroundColor: linea.color,
-                    borderRadius: '50%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: '#ffffff',
-                    fontSize: '28px',
-                    fontFamily: 'Syne, sans-serif',
-                    fontWeight: '700',
-                    marginBottom: '16px',
-                  }}
-                >
-                  {linea.id}
-                </div>
-                <h3
-                  style={{
-                    fontSize: '22px',
-                    fontFamily: 'Syne, sans-serif',
-                    fontWeight: '700',
-                    margin: '0 0 8px 0',
-                    color: linea.color,
-                  }}
-                >
-                  Línea {linea.id} — {linea.colorNombre}
-                </h3>
-                <p
-                  style={{
-                    fontSize: '14px',
-                    color: '#6b7280',
-                    margin: '0 0 16px 0',
-                    fontFamily: 'DM Sans, sans-serif',
-                  }}
-                >
-                  {linea.inicio} → {linea.fin}
-                </p>
-                <p
-                  style={{
-                    fontSize: '14px',
-                    color: '#374151',
-                    margin: '0 0 16px 0',
-                    fontFamily: 'DM Sans, sans-serif',
-                    lineHeight: '1.6',
-                  }}
-                >
-                  {linea.descripcion}
-                </p>
-                <p
-                  style={{
-                    fontSize: '13px',
-                    fontWeight: '600',
-                    color: linea.color,
-                    margin: '0',
-                    fontFamily: 'DM Sans, sans-serif',
-                  }}
-                >
-                  {linea.total} estaciones
-                </p>
-              </div>
-            </Link>
-          ))}
+          <div>
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
+              48
+            </p>
+            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+              Estaciones
+            </p>
+          </div>
+          <div>
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
+              3
+            </p>
+            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+              Líneas Operativas
+            </p>
+          </div>
+          <div>
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
+              30
+            </p>
+            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+              Kilómetros
+            </p>
+          </div>
         </div>
       </section>
 
       {/* MUNDIAL 2026 */}
       <section
         style={{
-          background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)',
-          color: '#ffffff',
+          backgroundColor: '#0A0A0F',
           padding: '80px 24px',
-          marginTop: '80px',
+          borderBottom: '1px solid #2A2A3E',
         }}
       >
-        <div style={{ maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
           <h2
             style={{
-              fontSize: '40px',
-              fontFamily: 'Syne, sans-serif',
-              fontWeight: '700',
+              fontSize: '2rem',
+              fontWeight: '800',
               marginBottom: '16px',
               textAlign: 'center',
+              color: '#F0F0F5',
+              letterSpacing: '-0.01em',
             }}
           >
             ⚽ FIFA World Cup 2026 en Guadalajara
           </h2>
           <p
             style={{
-              fontSize: '18px',
-              fontFamily: 'DM Sans, sans-serif',
+              fontSize: '1.125rem',
               textAlign: 'center',
               marginBottom: '48px',
-              opacity: '0.95',
+              color: '#8888A0',
+              fontWeight: '400',
+              maxWidth: '600px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
             }}
           >
-            4 partidos en el Estadio Akron — Acceso fácil por Tren Ligero
+            4 partidos en el Estadio Akron. Acceso directo vía SITEUR Línea 3.
           </p>
 
           <div
             style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              borderRadius: '8px',
+              backgroundColor: '#14141F',
+              border: '1px solid #2A2A3E',
+              borderRadius: '10px',
               padding: '32px',
               marginBottom: '32px',
             }}
           >
             <h3
               style={{
-                fontSize: '24px',
-                fontFamily: 'Syne, sans-serif',
+                fontSize: '1.5rem',
                 fontWeight: '700',
                 margin: '0 0 24px 0',
                 textAlign: 'center',
+                color: '#F0F0F5',
               }}
             >
               Partidos Confirmados
@@ -227,40 +183,44 @@ export default function GDLPage() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                 gap: '16px',
               }}
             >
               {[
-                { fecha: 'Junio 11', partido: 'Corea del Sur vs. Playoff UEFA Grupo A' },
-                { fecha: 'Junio 18', partido: 'México vs. Corea del Sur — Grupo A' },
-                { fecha: 'Junio 23', partido: 'Colombia vs. Playoff Intercontinental — Grupo K' },
-                { fecha: 'Junio 26', partido: 'Uruguay vs. España — Grupo H' },
+                { fecha: '11 junio', partido: 'Corea del Sur vs. Playoff UEFA' },
+                { fecha: '18 junio', partido: 'México vs. Corea del Sur' },
+                { fecha: '23 junio', partido: 'Colombia vs. Playoff Intercontinental' },
+                { fecha: '26 junio', partido: 'Uruguay vs. España' },
               ].map((match, idx) => (
                 <div
                   key={idx}
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                    backgroundColor: '#1C1C2E',
                     padding: '16px',
-                    borderRadius: '4px',
-                    borderLeft: '4px solid #ffffff',
+                    borderRadius: '8px',
+                    borderLeft: '3px solid #06B6D4',
                   }}
                 >
                   <p
                     style={{
-                      fontSize: '14px',
+                      fontSize: '0.875rem',
                       fontWeight: '600',
                       margin: '0 0 8px 0',
-                      opacity: '0.9',
+                      color: '#06B6D4',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
                     }}
                   >
                     {match.fecha}
                   </p>
                   <p
                     style={{
-                      fontSize: '16px',
-                      fontWeight: '700',
+                      fontSize: '1rem',
+                      fontWeight: '500',
                       margin: '0',
+                      color: '#F0F0F5',
+                      lineHeight: '1.4',
                     }}
                   >
                     {match.partido}
@@ -270,227 +230,253 @@ export default function GDLPage() {
             </div>
           </div>
 
-          <Link href="/gdl/mundial-2026" style={{ textDecoration: 'none' }}>
-            <button
-              style={{
-                backgroundColor: '#ffffff',
-                color: '#f59e0b',
-                border: 'none',
-                padding: '14px 32px',
-                fontSize: '16px',
-                fontFamily: 'Syne, sans-serif',
-                fontWeight: '700',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                display: 'block',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                transition: 'background-color 0.2s',
-              }}
-            >
-              Ver Guía Completa FIFA 2026 →
-            </button>
-          </Link>
+          <div
+            style={{
+              backgroundColor: '#1C1C2E',
+              border: '1px solid #2A2A3E',
+              borderRadius: '10px',
+              padding: '24px',
+              textAlign: 'center',
+            }}
+          >
+            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0 0 12px 0' }}>
+              🚇 Línea 3 → Estación Chivas → Caminata 20 minutos al Estadio Akron
+            </p>
+            <p style={{ fontSize: '0.875rem', color: '#555566', margin: '0', fontWeight: '400' }}>
+              Consulta horarios especiales los días de partido. Llegada recomendada: 2 horas antes del evento.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* ESTACIONES DESTACADAS */}
-      <section style={{ padding: '80px 24px', maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <h2
-          style={{
-            fontSize: '40px',
-            fontFamily: 'Syne, sans-serif',
-            fontWeight: '700',
-            marginBottom: '48px',
-            textAlign: 'center',
-            color: '#1f2937',
-          }}
-        >
-          Estaciones Destacadas
-        </h2>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '32px',
-          }}
-        >
-          {estacionesDestacadas.map((estacion) => (
-            <Link href={`/gdl/estacion/${estacion.slug}`} key={estacion.slug}>
-              <div
-                style={{
-                  border: '1px solid #e5e7eb',
-                  borderRadius: '8px',
-                  padding: '24px',
-                  backgroundColor: '#f9fafb',
-                  cursor: 'pointer',
-                  transition: 'transform 0.2s, box-shadow 0.2s',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}
-              >
+      {/* LÍNEAS */}
+      <section
+        style={{
+          backgroundColor: '#0A0A0F',
+          padding: '80px 24px',
+          borderBottom: '1px solid #2A2A3E',
+        }}
+      >
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '48px',
+              textAlign: 'center',
+              color: '#F0F0F5',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            Las 3 Líneas del SITEUR
+          </h2>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+            }}
+          >
+            {lineasGDL.map((linea) => (
+              <Link href={`/gdl/linea/${linea.id}`} key={linea.id}>
                 <div
                   style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    gap: '8px',
+                    backgroundColor: '#14141F',
+                    border: `2px solid ${linea.color}`,
+                    borderRadius: '10px',
+                    padding: '24px',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    display: 'block',
                   }}
                 >
-                  <span
+                  <div
                     style={{
-                      width: '32px',
-                      height: '32px',
-                      backgroundColor: estacion.linea === '1' ? '#E63946' : estacion.linea === '2' ? '#06B6D4' : '#F97316',
+                      width: '48px',
+                      height: '48px',
+                      backgroundColor: linea.color,
                       borderRadius: '50%',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: '#ffffff',
-                      fontSize: '18px',
-                      fontFamily: 'Syne, sans-serif',
-                      fontWeight: '700',
+                      color: '#FFFFFF',
+                      fontSize: '24px',
+                      fontWeight: '800',
+                      marginBottom: '16px',
                     }}
                   >
-                    {estacion.linea}
-                  </span>
-                  <span
+                    {linea.id}
+                  </div>
+                  <h3
                     style={{
-                      fontSize: '12px',
-                      color: '#6b7280',
-                      fontFamily: 'DM Sans, sans-serif',
+                      fontSize: '1.25rem',
+                      fontWeight: '700',
+                      margin: '0 0 8px 0',
+                      color: linea.color,
                     }}
                   >
-                    {estacion.municipio}
-                  </span>
+                    Línea {linea.id} — {linea.colorNombre}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: '0.875rem',
+                      color: '#8888A0',
+                      margin: '0 0 12px 0',
+                      fontWeight: '400',
+                    }}
+                  >
+                    {linea.inicio} → {linea.fin}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: '0.95rem',
+                      color: '#F0F0F5',
+                      margin: '0 0 16px 0',
+                      lineHeight: '1.5',
+                      fontWeight: '400',
+                    }}
+                  >
+                    {linea.descripcion}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: '0.875rem',
+                      fontWeight: '600',
+                      color: linea.color,
+                      margin: '0',
+                    }}
+                  >
+                    {linea.total} estaciones
+                  </p>
                 </div>
-                <h3
-                  style={{
-                    fontSize: '20px',
-                    fontFamily: 'Syne, sans-serif',
-                    fontWeight: '700',
-                    margin: '0 0 8px 0',
-                    color: '#1f2937',
-                  }}
-                >
-                  {estacion.nombre}
-                </h3>
-                <p
-                  style={{
-                    fontSize: '14px',
-                    color: '#6b7280',
-                    margin: '0 0 16px 0',
-                    fontFamily: 'DM Sans, sans-serif',
-                    lineHeight: '1.6',
-                    flex: 1,
-                  }}
-                >
-                  {estacion.intro}
-                </p>
-                <p
-                  style={{
-                    fontSize: '12px',
-                    color: '#9ca3af',
-                    margin: '0',
-                    fontFamily: 'DM Sans, sans-serif',
-                  }}
-                >
-                  {estacion.pois.length} punto(s) de interés
-                </p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ESTACIONES DESTACADAS */}
       <section
         style={{
-          backgroundColor: '#f3f4f6',
+          backgroundColor: '#0A0A0F',
           padding: '80px 24px',
-          marginTop: '80px',
-          textAlign: 'center',
         }}
       >
-        <h2
-          style={{
-            fontSize: '36px',
-            fontFamily: 'Syne, sans-serif',
-            fontWeight: '700',
-            margin: '0 0 16px 0',
-            color: '#1f2937',
-          }}
-        >
-          Planifica tu viaje a Guadalajara
-        </h2>
-        <p
-          style={{
-            fontSize: '18px',
-            color: '#6b7280',
-            margin: '0 0 32px 0',
-            fontFamily: 'DM Sans, sans-serif',
-            maxWidth: '600px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          Explora todas las líneas, estaciones y puntos turísticos. Descubre cómo llegar al Estadio Akron para los partidos del Mundial 2026.
-        </p>
-        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/gdl/linea/1">
-            <button
-              style={{
-                backgroundColor: '#06B6D4',
-                color: '#ffffff',
-                border: 'none',
-                padding: '12px 24px',
-                fontSize: '14px',
-                fontFamily: 'Syne, sans-serif',
-                fontWeight: '700',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
-            >
-              Explorar Línea 1
-            </button>
-          </Link>
-          <Link href="/gdl/linea/2">
-            <button
-              style={{
-                backgroundColor: '#F97316',
-                color: '#ffffff',
-                border: 'none',
-                padding: '12px 24px',
-                fontSize: '14px',
-                fontFamily: 'Syne, sans-serif',
-                fontWeight: '700',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
-            >
-              Explorar Línea 2
-            </button>
-          </Link>
-          <Link href="/gdl/linea/3">
-            <button
-              style={{
-                backgroundColor: '#EC4899',
-                color: '#ffffff',
-                border: 'none',
-                padding: '12px 24px',
-                fontSize: '14px',
-                fontFamily: 'Syne, sans-serif',
-                fontWeight: '700',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
-            >
-              Explorar Línea 3
-            </button>
-          </Link>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '48px',
+              textAlign: 'center',
+              color: '#F0F0F5',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            Estaciones Destacadas
+          </h2>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              gap: '24px',
+            }}
+          >
+            {estacionesDestacadas.map((estacion) => (
+              <Link href={`/gdl/estacion/${estacion.slug}`} key={estacion.slug}>
+                <div
+                  style={{
+                    backgroundColor: '#14141F',
+                    border: '1px solid #2A2A3E',
+                    borderRadius: '10px',
+                    padding: '24px',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    display: 'block',
+                  }}
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginBottom: '12px',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '32px',
+                        height: '32px',
+                        backgroundColor: '#06B6D4',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#FFFFFF',
+                        fontSize: '14px',
+                        fontWeight: '700',
+                        marginRight: '12px',
+                      }}
+                    >
+                      L{estacion.linea}
+                    </div>
+                    <h3
+                      style={{
+                        fontSize: '1.125rem',
+                        fontWeight: '700',
+                        margin: '0',
+                        color: '#F0F0F5',
+                      }}
+                    >
+                      {estacion.nombre}
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      fontSize: '0.875rem',
+                      color: '#8888A0',
+                      margin: '0 0 12px 0',
+                      fontWeight: '400',
+                    }}
+                  >
+                    {estacion.municipio} · {estacion.tipo_zona}
+                  </p>
+                  {estacion.pois && estacion.pois.length > 0 && (
+                    <div>
+                      <p
+                        style={{
+                          fontSize: '0.75rem',
+                          textTransform: 'uppercase',
+                          color: '#06B6D4',
+                          fontWeight: '600',
+                          letterSpacing: '0.05em',
+                          margin: '0 0 8px 0',
+                        }}
+                      >
+                        Puntos de Interés
+                      </p>
+                      {estacion.pois.slice(0, 2).map((poi, idx) => (
+                        <p
+                          key={idx}
+                          style={{
+                            fontSize: '0.875rem',
+                            color: '#F0F0F5',
+                            margin: '0 0 4px 0',
+                            lineHeight: '1.3',
+                          }}
+                        >
+                          • {poi.nombre}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>
