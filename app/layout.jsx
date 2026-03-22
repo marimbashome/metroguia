@@ -5,12 +5,8 @@ export const metadata = {
   description: 'Guía completa del Metro CDMX para turistas. Líneas, estaciones, cómo llegar a eventos del Mundial FIFA 2026 en el Estadio Azteca. Planifica tu viaje en metro.',
   keywords: 'metro CDMX, transporte, guía turística, mundial 2026, estaciones',
   metadataBase: new URL('https://metroguia.mx'),
-  alternates: {
-    canonical: '/',
-  },
-  verification: {
-    google: 'XXXXXXXXXX', // reemplaza con tu código de verificación de Google Search Console
-  },
+  alternates: { canonical: '/' },
+  verification: { google: 'XXXXXXXXXX' },
   openGraph: {
     title: 'MetroGuia.mx',
     description: 'Tu guía de transporte en el Metro de la Ciudad de México',
@@ -28,13 +24,11 @@ export default function RootLayout({ children }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Icon font — íconos oficiales del Metro CDMX (yorkfx/icons-metro-df, MIT) */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/yorkfx/icons-metro-df@master/files/css/ui-transport-mx.css"
           crossOrigin="anonymous"
         />
-        {/* Google AdSense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
@@ -57,31 +51,28 @@ export default function RootLayout({ children }) {
               <img
                 src="/logo.png"
                 alt="MetroGuia Logo"
-                style={{
-                  height: '40px',
-                  width: 'auto',
-                  background: 'white',
-                  borderRadius: '8px',
-                  padding: '4px 7px',
-                  display: 'block',
-                }}
+                style={{ height: '40px', width: 'auto', background: 'white', borderRadius: '8px', padding: '4px 7px', display: 'block' }}
               />
               <h2>MetroGuia</h2>
             </div>
             <nav className="nav-links">
               <a href="/">Inicio</a>
-              <a href="/zona/">Zonas</a>
               <a href="/lineas/">Líneas</a>
               <a href="/rutas/">Rutas</a>
               <a href="/mundial-2026/">Mundial 2026</a>
+              <span style={{ borderLeft: '1px solid rgba(255,255,255,0.2)', paddingLeft: '0.75rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <a href="https://metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(245,166,35,0.15)', border: '1px solid var(--metro-orange)' }}>CDMX</a>
+                <a href="https://gdl.metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(6,182,212,0.15)', border: '1px solid #06B6D4', color: '#06B6D4' }}>GDL</a>
+                <a href="https://mty.metroguia.mx" style={{ fontSize: '0.8rem', padding: '0.2rem 0.6rem', borderRadius: '999px', background: 'rgba(236,72,153,0.15)', border: '1px solid #EC4899', color: '#EC4899' }}>MTY</a>
+              </span>
             </nav>
           </div>
         </header>
         <main>{children}</main>
         <footer style={{ backgroundColor: 'var(--metro-dark)', color: 'white', padding: '3rem 2rem', textAlign: 'center', marginTop: '4rem' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <p style={{ marginBottom: '1rem' }}>MetroGuia.mx © 2026 — Tu guía de transporte en el Metro CDMX</p>
-            <p style={{ fontSize: '0.875rem', opacity: 0.8, marginBottom: '1rem' }}>Información actualizada para turistas del Mundial FIFA 2026</p>
+            <p style={{ marginBottom: '1rem' }}>MetroGuia.mx © 2026 — Tu guía de transporte en México</p>
+            <p style={{ fontSize: '0.875rem', opacity: 0.8, marginBottom: '1rem' }}>CDMX · Guadalajara · Monterrey — Información actualizada para turistas del Mundial FIFA 2026</p>
             <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.875rem', flexWrap: 'wrap' }}>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Contacto</a>
               <a href="/privacy-policy/" style={{ color: 'var(--metro-orange)' }}>Privacidad</a>

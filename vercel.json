@@ -1,0 +1,33 @@
+{
+  "rewrites": [
+    {
+      "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
+      "source": "/",
+      "destination": "/gdl"
+    },
+    {
+      "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
+      "source": "/(.*)",
+      "destination": "/gdl/$1"
+    },
+    {
+      "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
+      "source": "/",
+      "destination": "/mty"
+    },
+    {
+      "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
+      "source": "/(.*)",
+      "destination": "/mty/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ]
+}
