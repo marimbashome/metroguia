@@ -1,5 +1,6 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import { estaciones } from '@/data/estaciones'
+import BuscadorRutas from '@/app/components/BuscadorRutas'
 
 export const metadata = {
   title: 'MetroGuia.mx — Guía de transporte CDMX',
@@ -18,9 +19,10 @@ export default function HomePage() {
           <p style={{ fontSize: '1.25rem', opacity: 0.9, marginBottom: '2rem' }}>
             Guía completa de transporte para el Mundial FIFA 2026
           </p>
-          <a href="/mundial-2026/" className="cta-btn">
+          <a href="/mundial-2026/" className="cta-btn" style={{ marginBottom: '2rem', display: 'inline-block' }}>
             Cómo llegar al Estadio Azteca →
           </a>
+          <BuscadorRutas />
         </div>
       </section>
 
