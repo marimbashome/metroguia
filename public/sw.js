@@ -1,9 +1,14 @@
-const CACHE_NAME = 'metroguia-v3';
+const CACHE_NAME = 'metroguia-v4-20260322';
 const STATIC_ASSETS = [
   '/',
   '/cdmx/',
+  '/cdmx/estacion/',
   '/gdl/',
+  '/gdl/estacion/',
+  '/gdl/linea/',
   '/mty/',
+  '/mty/estacion/',
+  '/mty/linea/',
   '/puebla/',
   '/merida/',
   '/leon/',
@@ -14,7 +19,11 @@ const STATIC_ASSETS = [
   '/tren-maya/',
   '/hospedaje/',
   '/mundial-2026/',
+  '/lineas/',
+  '/rutas/',
+  '/offline/',
   '/logo.png',
+  '/og-image.png',
   '/manifest.json'
 ];
 
@@ -102,7 +111,17 @@ self.addEventListener('fetch', (event) => {
             if (response) {
               return response;
             }
-            // Return offline fallback if available
+            // Return offline fallback page if URL is not cached
+            const url = new URL(request.url);
+            // Serve offline page for city pages and estacion pages
+            if (url.pathname.includes('/estacion/') || 
+                url.pathname.includes('/ruta/') ||
+                url.pathname.includes('/linea/')) {
+              return caches.match('/offline/').then((offlineResponse) => {
+                return offlineResponse || caches.match('/');
+              });
+            }
+            // Return home page as final fallback
             return caches.match('/');
           });
         })
@@ -123,9 +142,24 @@ self.addEventListener('fetch', (event) => {
         return response;
       })
       .catch(() => {
-        return caches.match(request);
+        return caches.match(request).then((response) => {
+          // Return cached response if available, otherwise offline page
+          return response || caches.match('/offline/').then((offlineResponse) => {
+            return offlineResponse || caches.match('/');
+          });
+        });
       })
   );
+});
+
+// Handle messages from clients
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+  if (event.data && event.data.type === 'GET_VERSION') {
+    event.ports[0].postMessage({ version: CACHE_NAME });
+  }
 });
 
 /*

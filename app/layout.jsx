@@ -292,8 +292,27 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{ __html: `
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('MetroGuia SW registered'))
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then(reg => {
+          console.log('MetroGuia SW registered, scope:', reg.scope);
+          
+          // Check for updates periodically
+          setInterval(() => {
+            reg.update().catch(err => console.log('SW update check failed:', err));
+          }, 60000); // Check every 60 seconds
+          
+          // Handle SW updates
+          reg.addEventListener('updatefound', () => {
+            const newWorker = reg.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  console.log('MetroGuia SW update available');
+                }
+              });
+            }
+          });
+        })
         .catch(err => console.log('SW registration failed:', err));
     });
   }
