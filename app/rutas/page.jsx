@@ -1,5 +1,3 @@
-'use client';
-
 import { estaciones } from '@/data/estaciones';
 import { rutasPopulares, buildRutaSlug, getRutasAEstadio, getRutasTuristicas } from '@/data/rutas-populares';
 
@@ -42,16 +40,6 @@ function RouteCard({ origen, destino, titulo }) {
         color: 'inherit',
         transition: 'all 0.2s ease',
         cursor: 'pointer',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#f97316';
-        e.currentTarget.style.backgroundColor = '#fff7ed';
-        e.currentTarget.style.boxShadow = '0 4px 6px rgba(249, 115, 22, 0.1)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#e5e7eb';
-        e.currentTarget.style.backgroundColor = '#ffffff';
-        e.currentTarget.style.boxShadow = 'none';
       }}
     >
       <h3 style={{ fontWeight: '600', color: '#f97316', marginBottom: '8px', fontSize: '1.125rem' }}>
@@ -323,8 +311,6 @@ export default function RutasPage() {
             fontWeight: '600',
             transition: 'background-color 0.2s',
           }}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ea580c'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f97316'}
         >
           Ver todas las estaciones
         </a>

@@ -106,8 +106,6 @@ export default function PrivacyPolicyPage() {
               target="_blank"
               rel="noopener noreferrer"
               style={linkStyles}
-              onMouseEnter={(e) => Object.assign(e.target.style, { textDecoration: "underline" })}
-              onMouseLeave={(e) => Object.assign(e.target.style, { textDecoration: "none" })}
             >
               Configuración de anuncios de Google
             </a>
@@ -139,8 +137,6 @@ export default function PrivacyPolicyPage() {
             <a 
               href="mailto:contacto@metroguia.mx"
               style={linkStyles}
-              onMouseEnter={(e) => Object.assign(e.target.style, { textDecoration: "underline" })}
-              onMouseLeave={(e) => Object.assign(e.target.style, { textDecoration: "none" })}
             >
               contacto@metroguia.mx
             </a>
@@ -159,8 +155,6 @@ export default function PrivacyPolicyPage() {
         <a 
           href="/"
           style={backLinkStyles}
-          onMouseEnter={(e) => Object.assign(e.target.style, { opacity: "0.9" })}
-          onMouseLeave={(e) => Object.assign(e.target.style, { opacity: "1" })}
         >
           ← Volver al inicio
         </a>
