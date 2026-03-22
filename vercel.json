@@ -1,24 +1,28 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
       "source": "/",
-      "destination": "/gdl"
+      "destination": "https://metroguia.mx/gdl",
+      "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "/gdl/$1"
+      "destination": "https://metroguia.mx/gdl/$1",
+      "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
       "source": "/",
-      "destination": "/mty"
+      "destination": "https://metroguia.mx/mty",
+      "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "/mty/$1"
+      "destination": "https://metroguia.mx/mty/$1",
+      "permanent": false
     }
   ],
   "headers": [
