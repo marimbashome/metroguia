@@ -6,18 +6,18 @@
 
 export const rutasPopulares = [
   // ========== RUTAS FIFA 2026: A Tasqueña (Tren Ligero → Estadio Azteca) ==========
-  { origen: "bellas-artes", destino: "taxquena", titulo: "Bellas Artes al Estadio Azteca" },
-  { origen: "zocalo", destino: "taxquena", titulo: "Zócalo al Estadio Azteca" },
-  { origen: "chapultepec", destino: "taxquena", titulo: "Chapultepec al Estadio Azteca" },
-  { origen: "insurgentes", destino: "taxquena", titulo: "Insurgentes al Estadio Azteca" },
-  { origen: "polanco", destino: "taxquena", titulo: "Polanco al Estadio Azteca" },
-  { origen: "indios-verdes", destino: "taxquena", titulo: "Indios Verdes al Estadio Azteca" },
-  { origen: "cuatro-caminos", destino: "taxquena", titulo: "Cuatro Caminos al Estadio Azteca" },
-  { origen: "pantitlan", destino: "taxquena", titulo: "Pantitlán al Estadio Azteca" },
-  { origen: "el-rosario", destino: "taxquena", titulo: "El Rosario al Estadio Azteca" },
-  { origen: "observatorio", destino: "taxquena", titulo: "Observatorio al Estadio Azteca" },
-  { origen: "aeropuerto", destino: "taxquena", titulo: "Aeropuerto al Estadio Azteca" },
-  
+  { origen: "bellas-artes", destino: "tasquena", titulo: "Bellas Artes al Estadio Azteca" },
+  { origen: "zocalo", destino: "tasquena", titulo: "Zócalo al Estadio Azteca" },
+  { origen: "chapultepec", destino: "tasquena", titulo: "Chapultepec al Estadio Azteca" },
+  { origen: "insurgentes", destino: "tasquena", titulo: "Insurgentes al Estadio Azteca" },
+  { origen: "polanco", destino: "tasquena", titulo: "Polanco al Estadio Azteca" },
+  { origen: "indios-verdes", destino: "tasquena", titulo: "Indios Verdes al Estadio Azteca" },
+  { origen: "cuatro-caminos", destino: "tasquena", titulo: "Cuatro Caminos al Estadio Azteca" },
+  { origen: "pantitlan", destino: "tasquena", titulo: "Pantitlán al Estadio Azteca" },
+  { origen: "el-rosario", destino: "tasquena", titulo: "El Rosario al Estadio Azteca" },
+  { origen: "observatorio", destino: "tasquena", titulo: "Observatorio al Estadio Azteca" },
+  { origen: "aeropuerto", destino: "tasquena", titulo: "Aeropuerto al Estadio Azteca" },
+
   // ========== RUTAS TURÍSTICAS: Centro-Centro ==========
   { origen: "bellas-artes", destino: "zocalo", titulo: "Bellas Artes al Zócalo" },
   { origen: "bellas-artes", destino: "chapultepec", titulo: "Bellas Artes a Chapultepec" },
@@ -29,38 +29,38 @@ export const rutasPopulares = [
   { origen: "zocalo", destino: "tepito", titulo: "Zócalo a Tepito" },
   { origen: "zocalo", destino: "merced", titulo: "Zócalo a Merced" },
   { origen: "zocalo", destino: "pino-suarez", titulo: "Zócalo a Pino Suárez" },
-  
+
   // ========== RUTAS TURÍSTICAS: Chapultepec hub ==========
   { origen: "chapultepec", destino: "coyoacan", titulo: "Chapultepec a Coyoacán" },
   { origen: "chapultepec", destino: "xochimilco", titulo: "Chapultepec a Xochimilco" },
   { origen: "chapultepec", destino: "condesa", titulo: "Chapultepec a Condesa" },
   { origen: "chapultepec", destino: "roma", titulo: "Chapultepec a Roma" },
-  
+
   // ========== RUTAS TURÍSTICAS: Insurgentes hub ==========
   { origen: "insurgentes", destino: "bellas-artes", titulo: "Insurgentes a Bellas Artes" },
   { origen: "insurgentes", destino: "zocalo", titulo: "Insurgentes a Zócalo" },
   { origen: "insurgentes", destino: "chapultepec", titulo: "Insurgentes a Chapultepec" },
   { origen: "insurgentes", destino: "condesa", titulo: "Insurgentes a Condesa" },
-  
+
   // ========== RUTAS TURÍSTICAS: Polanco ==========
   { origen: "polanco", destino: "bellas-artes", titulo: "Polanco a Bellas Artes" },
   { origen: "polanco", destino: "zocalo", titulo: "Polanco a Zócalo" },
   { origen: "polanco", destino: "chapultepec", titulo: "Polanco a Chapultepec" },
-  
+
   // ========== RUTAS TURÍSTICAS: Garibaldi & Tepito ==========
   { origen: "garibaldi", destino: "bellas-artes", titulo: "Garibaldi a Bellas Artes" },
   { origen: "garibaldi", destino: "zocalo", titulo: "Garibaldi a Zócalo" },
   { origen: "garibaldi", destino: "tepito", titulo: "Garibaldi a Tepito" },
   { origen: "tepito", destino: "bellas-artes", titulo: "Tepito a Bellas Artes" },
   { origen: "tepito", destino: "zocalo", titulo: "Tepito a Zócalo" },
-  
-  // ========== RUTAS TOURÍSTICAS: Sur (Coyoacán, Xochimilco) ==========
+
+  // ========== RUTAS TURÍSTICAS: Sur (Coyoacán, Xochimilco) ==========
   { origen: "coyoacan", destino: "xochimilco", titulo: "Coyoacán a Xochimilco" },
   { origen: "coyoacan", destino: "bellas-artes", titulo: "Coyoacán a Bellas Artes" },
   { origen: "coyoacan", destino: "zocalo", titulo: "Coyoacán a Zócalo" },
   { origen: "xochimilco", destino: "bellas-artes", titulo: "Xochimilco a Bellas Artes" },
   { origen: "xochimilco", destino: "zocalo", titulo: "Xochimilco a Zócalo" },
-  
+
   // ========== RUTAS: Aeropuerto ==========
   { origen: "aeropuerto", destino: "bellas-artes", titulo: "Aeropuerto a Bellas Artes" },
   { origen: "aeropuerto", destino: "zocalo", titulo: "Aeropuerto a Zócalo" },
@@ -69,12 +69,12 @@ export const rutasPopulares = [
   { origen: "aeropuerto", destino: "polanco", titulo: "Aeropuerto a Polanco" },
   { origen: "aeropuerto", destino: "condesa", titulo: "Aeropuerto a Condesa" },
   { origen: "aeropuerto", destino: "coyoacan", titulo: "Aeropuerto a Coyoacán" },
-  
+
   // ========== RUTAS: Observatorio (Terminal foránea) ==========
   { origen: "observatorio", destino: "bellas-artes", titulo: "Observatorio a Bellas Artes" },
   { origen: "observatorio", destino: "zocalo", titulo: "Observatorio a Zócalo" },
   { origen: "observatorio", destino: "chapultepec", titulo: "Observatorio a Chapultepec" },
-  
+
   // ========== RUTAS: Norte (Indios Verdes, Cuatro Caminos) ==========
   { origen: "indios-verdes", destino: "bellas-artes", titulo: "Indios Verdes a Bellas Artes" },
   { origen: "indios-verdes", destino: "zocalo", titulo: "Indios Verdes a Zócalo" },
@@ -82,7 +82,7 @@ export const rutasPopulares = [
   { origen: "cuatro-caminos", destino: "zocalo", titulo: "Cuatro Caminos a Zócalo" },
   { origen: "el-rosario", destino: "bellas-artes", titulo: "El Rosario a Bellas Artes" },
   { origen: "el-rosario", destino: "zocalo", titulo: "El Rosario a Zócalo" },
-  
+
   // ========== RUTAS: Pantitlán (Oriente) ==========
   { origen: "pantitlan", destino: "bellas-artes", titulo: "Pantitlán a Bellas Artes" },
   { origen: "pantitlan", destino: "zocalo", titulo: "Pantitlán a Zócalo" },
@@ -126,15 +126,15 @@ export function getRelatedRoutes(origen, destino, limit = 3) {
 }
 
 /**
- * Retorna rutas al Estadio Azteca
+ * Retorna rutas al Estadio Azteca (vía Tasqueña → Tren Ligero)
  */
 export function getRutasAEstadio() {
-  return rutasPopulares.filter(r => r.destino === 'taxquena');
+  return rutasPopulares.filter(r => r.destino === 'tasquena');
 }
 
 /**
  * Retorna rutas turísticas (excluyendo Estadio Azteca)
  */
 export function getRutasTuristicas() {
-  return rutasPopulares.filter(r => r.destino !== 'taxquena');
+  return rutasPopulares.filter(r => r.destino !== 'tasquena');
 }

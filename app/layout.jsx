@@ -28,7 +28,13 @@ export default function RootLayout({ children }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Google AdSense — reemplaza ca-pub-XXXXXXXXXX con tu Publisher ID real */}
+        {/* Icon font — íconos oficiales del Metro CDMX (yorkfx/icons-metro-df, MIT) */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/yorkfx/icons-metro-df@master/files/css/ui-transport-mx.css"
+          crossOrigin="anonymous"
+        />
+        {/* Google AdSense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
@@ -48,13 +54,25 @@ export default function RootLayout({ children }) {
         }}>
           <div className="nav-header">
             <div className="nav-brand">
-              <img src="/logo.png" alt="MetroGuia Logo" style={{ height: '36px', width: 'auto' }} />
+              <img
+                src="/logo.png"
+                alt="MetroGuia Logo"
+                style={{
+                  height: '40px',
+                  width: 'auto',
+                  background: 'white',
+                  borderRadius: '8px',
+                  padding: '4px 7px',
+                  display: 'block',
+                }}
+              />
               <h2>MetroGuia</h2>
             </div>
             <nav className="nav-links">
               <a href="/">Inicio</a>
               <a href="/zona/">Zonas</a>
               <a href="/lineas/">Líneas</a>
+              <a href="/rutas/">Rutas</a>
               <a href="/mundial-2026/">Mundial 2026</a>
             </nav>
           </div>
