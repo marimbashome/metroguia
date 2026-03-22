@@ -1,5 +1,7 @@
 import { estaciones } from '@/data/estaciones';
 import { lineasDetalle } from '@/data/lineas-detalle';
+import { zonas } from '@/data/zonas';
+import { rutasPopulares, buildRutaSlug } from '@/data/rutas-populares';
 
 export default function sitemap() {
   const baseUrl = 'https://metroguia.mx';
@@ -55,5 +57,21 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...lineasPages, ...estacionesPages];
+  // Páginas de zonas
+  const zonasPages = zonas.map((zona) => ({
+    url: `${baseUrl}/zona/${zona.slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  // Páginas de rutas populares
+  const rutasPages = rutasPopulares.map((ruta) => ({
+    url: `${baseUrl}/rutas/${buildRutaSlug(ruta.origen, ruta.destino)}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...lineasPages, ...estacionesPages, ...zonasPages, ...rutasPages];
 }

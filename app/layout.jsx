@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
             </div>
             <nav className="nav-links">
               <a href="/">Inicio</a>
+              <a href="/zona/">Zonas</a>
               <a href="/lineas/">Líneas</a>
               <a href="/mundial-2026/">Mundial 2026</a>
             </nav>
