@@ -6394,4 +6394,4 @@ const estaciones = [
   }
 ];
 
-module.exports = estaciones;
+export { estaciones };
