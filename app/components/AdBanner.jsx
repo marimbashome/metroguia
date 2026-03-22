@@ -16,7 +16,7 @@ export default function AdBanner({ slot, format = 'auto', style = {} }) {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-XXXXXXXXXX"
+        data-ad-client="ca-pub-5779958677522085"
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive="true"
@@ -39,7 +39,7 @@ export function AdBannerInArticle({ slot, style = {} }) {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-XXXXXXXXXX"
+        data-ad-client="ca-pub-5779958677522085"
         data-ad-slot={slot}
         data-ad-format="fluid"
         data-ad-layout="in-article"

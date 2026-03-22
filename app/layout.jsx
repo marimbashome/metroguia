@@ -31,10 +31,10 @@ export default function RootLayout({ children }) {
         {/* Google AdSense — reemplaza ca-pub-XXXXXXXXXX con tu Publisher ID real */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
           crossOrigin="anonymous"
         />
-        <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
+        <meta name="google-adsense-account" content="ca-pub-5779958677522085" />
       </head>
       <body>
         <header style={{
