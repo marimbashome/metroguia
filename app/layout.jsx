@@ -1,4 +1,5 @@
 import './globals-v2.css'
+import { Analytics } from '@vercel/analytics/react'
 import PWAInstall from '@/app/components/PWAInstall'
 
 export const metadata = {
@@ -13,7 +14,7 @@ export const metadata = {
       'en': 'https://metroguia.mx/en',
     }
   },
-  verification: { google: 'XXXXXXXXXX' },
+  verification: { google: 'NxUm-fKQqE8x692QtQr2mfRXFtFnIvBoJggZuDPbAA4' },
   openGraph: {
     title: 'MetroGuia.mx — Tu trip planner de transporte urbano en México',
     description: 'Calcula rutas, explora estaciones y planifica tu viaje en metro, tren ligero y BRT en CDMX, Guadalajara y Monterrey.',
@@ -85,7 +86,14 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <meta name="google-adsense-account" content="ca-pub-5779958677522085" />
-        {/* GA4: Add your Measurement ID here — see https://analytics.google.com */}
+        {/* GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YQMP6V81D" />
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7YQMP6V81D');
+        `}} />
       </head>
       <body>
         {/* ── Navigation ── */}
@@ -291,6 +299,7 @@ export default function RootLayout({ children }) {
   }
 `}} />
         <PWAInstall />
+        <Analytics />
       </body>
     </html>
   )
