@@ -65,7 +65,7 @@ export default function EstacionPage({ params }) {
         </div>
       </section>
 
-      <section style={{ padding: '4rem 2rem' }}>
+      <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <p style={{ fontSize: '1.125rem', marginBottom: '2rem', lineHeight: 1.8 }}>{estacion.intro}</p>
 
@@ -136,14 +136,16 @@ export default function EstacionPage({ params }) {
         </div>
       </section>
 
-      <section style={{ padding: '3rem 2rem' }}>
-        <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-          <a href={`/linea/${estacion.linea}/`} className="cta-btn" style={{ marginRight: '1rem' }}>
-            Ver Línea {estacion.linea} completa →
-          </a>
-          <a href="/lineas/" className="cta-btn" style={{ backgroundColor: 'var(--metro-gray)', color: 'var(--text)' }}>
-            Todas las líneas
-          </a>
+      <section style={{ padding: '3rem 1.25rem' }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <div className="btn-group">
+            <a href={`/linea/${estacion.linea}/`} className="cta-btn">
+              Ver Línea {estacion.linea} completa →
+            </a>
+            <a href="/lineas/" className="cta-btn" style={{ backgroundColor: 'var(--metro-gray)', color: 'var(--text)' }}>
+              Todas las líneas
+            </a>
+          </div>
         </div>
       </section>
     </div>

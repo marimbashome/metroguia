@@ -14,10 +14,10 @@ export default function MundialPage() {
         </div>
       </section>
 
-      <section style={{ padding: '4rem 2rem' }}>
+      <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <h2 style={{ marginBottom: '2rem', textAlign: 'center' }}>Fechas de partidos en CDMX</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.25rem', marginBottom: '3rem' }}>
             {[
               { fecha: '11 junio 2026', desc: 'Partido inaugural' },
               { fecha: '17 junio 2026', desc: 'Fase de grupos' },
@@ -56,22 +56,24 @@ export default function MundialPage() {
           </div>
 
           <h2 style={{ marginBottom: '1.5rem' }}>Detalles del viaje</h2>
-          <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '2rem' }}>
-            <tbody>
-              {[
-                ['Tiempo total', '~45 min desde el Centro Histórico'],
-                ['Costo Metro (L2)', '$5 MXN'],
-                ['Costo Tren Ligero', '~$10 MXN'],
-                ['Costo total', '~$15 MXN'],
-                ['Horario metro', '5:00 AM - 12:00 AM'],
-              ].map(([k, v], i) => (
-                <tr key={i} style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '1rem', fontWeight: 600 }}>{k}</td>
-                  <td style={{ padding: '1rem' }}>{v}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="table-responsive" style={{ marginBottom: '2rem' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <tbody>
+                {[
+                  ['Tiempo total', '~45 min desde el Centro Histórico'],
+                  ['Costo Metro (L2)', '$5 MXN'],
+                  ['Costo Tren Ligero', '~$10 MXN'],
+                  ['Costo total', '~$15 MXN'],
+                  ['Horario metro', '5:00 AM - 12:00 AM'],
+                ].map(([k, v], i) => (
+                  <tr key={i} style={{ borderBottom: '1px solid #ddd' }}>
+                    <td style={{ padding: '0.875rem 1rem', fontWeight: 600, whiteSpace: 'nowrap' }}>{k}</td>
+                    <td style={{ padding: '0.875rem 1rem' }}>{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <a href="/mundial-2026/estadio-azteca/" className="cta-btn">Ver guía paso a paso del Estadio Azteca →</a>

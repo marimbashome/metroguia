@@ -23,21 +23,21 @@ export default function RootLayout({ children }) {
         <header style={{
           backgroundColor: 'var(--metro-dark)',
           color: 'white',
-          padding: '1rem 2rem',
+          padding: '0.875rem 1.5rem',
           borderBottom: '4px solid var(--metro-orange)',
           position: 'sticky',
           top: 0,
           zIndex: 100
         }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src="/logo.png" alt="MetroGuia Logo" style={{ height: '40px', width: 'auto' }} />
-              <h1 style={{ fontSize: '1.5rem', margin: 0 }}>MetroGuia</h1>
+          <div className="nav-header">
+            <div className="nav-brand">
+              <img src="/logo.png" alt="MetroGuia Logo" style={{ height: '36px', width: 'auto' }} />
+              <h2>MetroGuia</h2>
             </div>
-            <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-              <a href="/" style={{ color: 'white', fontWeight: 500 }}>Inicio</a>
-              <a href="/lineas/" style={{ color: 'white', fontWeight: 500 }}>Líneas</a>
-              <a href="/mundial-2026/" style={{ color: 'white', fontWeight: 500 }}>Mundial 2026</a>
+            <nav className="nav-links">
+              <a href="/">Inicio</a>
+              <a href="/lineas/">Líneas</a>
+              <a href="/mundial-2026/">Mundial 2026</a>
             </nav>
           </div>
         </header>
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <p style={{ marginBottom: '1rem' }}>MetroGuia.mx © 2026 — Tu guía de transporte en el Metro CDMX</p>
             <p style={{ fontSize: '0.875rem', opacity: 0.8, marginBottom: '1rem' }}>Información actualizada para turistas del Mundial FIFA 2026</p>
-            <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', fontSize: '0.875rem' }}>
+            <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.875rem', flexWrap: 'wrap' }}>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Contacto</a>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Privacidad</a>
               <a href="#" style={{ color: 'var(--metro-orange)' }}>Términos</a>

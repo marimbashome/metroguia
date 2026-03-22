@@ -13,7 +13,7 @@ export default function EstadioAztecaPage() {
         </div>
       </section>
 
-      <section style={{ padding: '4rem 2rem' }}>
+      <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <h2 style={{ marginBottom: '2rem' }}>Instrucciones paso a paso</h2>
 
@@ -50,25 +50,27 @@ export default function EstadioAztecaPage() {
           </div>
 
           <h2 style={{ marginBottom: '1.5rem' }}>Horarios</h2>
-          <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '3rem' }}>
-            <thead>
-              <tr style={{ backgroundColor: 'var(--metro-gray)' }}>
-                <th style={{ padding: '1rem', textAlign: 'left', borderBottom: '2px solid #ddd' }}>Servicio</th>
-                <th style={{ padding: '1rem', textAlign: 'left', borderBottom: '2px solid #ddd' }}>Horario</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[['Metro (Línea 2)', '5:00 AM - 12:00 AM'], ['Tren Ligero', '5:30 AM - 12:30 AM'], ['Antes de partidos', 'Salir 1.5-2 horas antes']].map(([s, h], i) => (
-                <tr key={i} style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '1rem' }}>{s}</td>
-                  <td style={{ padding: '1rem' }}>{h}</td>
+          <div className="table-responsive" style={{ marginBottom: '3rem' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ backgroundColor: 'var(--metro-gray)' }}>
+                  <th style={{ padding: '0.875rem 1rem', textAlign: 'left', borderBottom: '2px solid #ddd', whiteSpace: 'nowrap' }}>Servicio</th>
+                  <th style={{ padding: '0.875rem 1rem', textAlign: 'left', borderBottom: '2px solid #ddd' }}>Horario</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[['Metro (Línea 2)', '5:00 AM - 12:00 AM'], ['Tren Ligero', '5:30 AM - 12:30 AM'], ['Antes de partidos', 'Salir 1.5–2 horas antes']].map(([s, h], i) => (
+                  <tr key={i} style={{ borderBottom: '1px solid #ddd' }}>
+                    <td style={{ padding: '0.875rem 1rem', whiteSpace: 'nowrap' }}>{s}</td>
+                    <td style={{ padding: '0.875rem 1rem' }}>{h}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <a href="/mundial-2026/" className="cta-btn" style={{ marginRight: '1rem' }}>← Volver a Mundial 2026</a>
+          <div className="btn-group" style={{ marginTop: '2rem' }}>
+            <a href="/mundial-2026/" className="cta-btn">← Volver a Mundial 2026</a>
             <a href="/linea/2/" className="cta-btn" style={{ backgroundColor: '#0057A8' }}>Ver Línea 2 →</a>
           </div>
         </div>

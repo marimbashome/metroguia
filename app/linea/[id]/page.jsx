@@ -65,7 +65,7 @@ export default function LineaPage({ params }) {
         </div>
       </section>
 
-      <section style={{ padding: '4rem 2rem' }}>
+      <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           <h2 style={{ marginBottom: '1rem' }}>Sobre esta línea</h2>
           <p style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>{linea.descripcion}</p>
