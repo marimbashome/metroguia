@@ -10,6 +10,8 @@ export default function SearchBar({
 }) {
   const [origen, setOrigen] = useState('')
   const [destino, setDestino] = useState(defaultDestino)
+  const [origenSlug, setOrigenSlug] = useState('')
+  const [destinoSlug, setDestinoSlug] = useState('')
   const [origenSuggestions, setOrigenSuggestions] = useState([])
   const [destinoSuggestions, setDestinoSuggestions] = useState([])
   const [showOrigenDropdown, setShowOrigenDropdown] = useState(false)
@@ -29,7 +31,7 @@ export default function SearchBar({
     const value = e.target.value
     setOrigen(value)
     if (value.length > 0) {
-      const results = searchEstaciones(value, ciudad)
+      const results = searchEstaciones(value, { ciudad })
       setOrigenSuggestions(results)
       setShowOrigenDropdown(true)
     } else {
@@ -43,7 +45,7 @@ export default function SearchBar({
     const value = e.target.value
     setDestino(value)
     if (value.length > 0) {
-      const results = searchEstaciones(value, ciudad)
+      const results = searchEstaciones(value, { ciudad })
       setDestinoSuggestions(results)
       setShowDestinoDropdown(true)
     } else {
@@ -54,13 +56,15 @@ export default function SearchBar({
 
   // Select from dropdown
   const selectOrigen = (estacion) => {
-    setOrigen(estacion)
+    setOrigen(estacion.nombre || estacion)
+    setOrigenSlug(estacion.slug || '')
     setShowOrigenDropdown(false)
     setOrigenSuggestions([])
   }
 
   const selectDestino = (estacion) => {
-    setDestino(estacion)
+    setDestino(estacion.nombre || estacion)
+    setDestinoSlug(estacion.slug || '')
     setShowDestinoDropdown(false)
     setDestinoSuggestions([])
   }
@@ -73,9 +77,12 @@ export default function SearchBar({
 
   // Swap origen and destino
   const handleSwap = () => {
-    const temp = origen
+    const tempName = origen
+    const tempSlug = origenSlug
     setOrigen(destino)
-    setDestino(temp)
+    setOrigenSlug(destinoSlug)
+    setDestino(tempName)
+    setDestinoSlug(tempSlug)
   }
 
   // Submit form
@@ -85,11 +92,15 @@ export default function SearchBar({
       return
     }
 
-    const route = findRoute(origen, destino, ciudad)
+    // Use slugs for pathfinding, fall back to text input
+    const origenKey = origenSlug || origen.toLowerCase().replace(/\s+/g, '-')
+    const destinoKey = destinoSlug || destino.toLowerCase().replace(/\s+/g, '-')
+
+    const route = findRoute(origenKey, destinoKey)
     if (onResult) {
       onResult(route)
     } else {
-      const slug = generateRouteSlug(origen, destino)
+      const slug = generateRouteSlug(origenKey, destinoKey)
       window.location.href = `/ruta/${slug}`
     }
   }
@@ -290,7 +301,7 @@ export default function SearchBar({
                       : dropdownItemStyle
                   }
                 >
-                  {estacion}
+                  {estacion.nombre || estacion}{estacion.ciudad && estacion.ciudad !== 'cdmx' ? ` (${estacion.ciudad.toUpperCase()})` : ''}
                 </div>
               ))}
             </div>
@@ -329,7 +340,7 @@ export default function SearchBar({
                       : dropdownItemStyle
                   }
                 >
-                  {estacion}
+                  {estacion.nombre || estacion}{estacion.ciudad && estacion.ciudad !== 'cdmx' ? ` (${estacion.ciudad.toUpperCase()})` : ''}
                 </div>
               ))}
             </div>

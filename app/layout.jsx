@@ -23,11 +23,11 @@ export const metadata = {
     locale: 'es_MX',
     images: [
       {
-        url: 'https://metroguia.mx/og-image.svg',
+        url: 'https://metroguia.mx/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MetroGuia.mx — Trip planner de transporte urbano',
-        type: 'image/svg+xml',
+        type: 'image/png',
       }
     ],
   },
@@ -37,7 +37,7 @@ export const metadata = {
     creator: '@metroguiamx',
     title: 'MetroGuia.mx — Trip planner de transporte urbano en México',
     description: 'Calcula rutas en metro, tren ligero y BRT en CDMX, Guadalajara y Monterrey',
-    images: ['https://metroguia.mx/og-image.svg'],
+    images: ['https://metroguia.mx/og-image.png'],
   },
   icons: {
     icon: '/favicon.ico',
