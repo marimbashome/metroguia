@@ -7,7 +7,18 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const estacion = estaciones.find((e) => e.slug === params.slug)
   if (!estacion) return { title: 'Estación no encontrada' }
-  return { title: estacion.seo_title, description: estacion.meta_description }
+  return {
+    title: estacion.seo_title,
+    description: estacion.meta_description,
+    openGraph: {
+      title: estacion.seo_title,
+      description: estacion.meta_description,
+      url: `https://metroguia.mx/estacion/${estacion.slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
+    },
+  }
 }
 
 export default function EstacionPage({ params }) {
@@ -18,8 +29,34 @@ export default function EstacionPage({ params }) {
     </div>
   )
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristAttraction',
+    name: `Metro ${estacion.nombre} CDMX`,
+    description: estacion.meta_description,
+    url: `https://metroguia.mx/estacion/${estacion.slug}/`,
+    isAccessibleForFree: true,
+    publicAccess: true,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ciudad de México',
+      addressRegion: estacion.alcaldia,
+      addressCountry: 'MX',
+    },
+    containedInPlace: {
+      '@type': 'CivicStructure',
+      name: `Línea ${estacion.linea} del Metro CDMX`,
+      url: `https://metroguia.mx/linea/${estacion.linea}/`,
+    },
+  }
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <section className="hero" style={{ backgroundColor: 'var(--metro-dark)' }}>
         <div className="container">
           <h1>{estacion.nombre}</h1>
@@ -54,7 +91,11 @@ export default function EstacionPage({ params }) {
                 <p>Esta estación conecta con:</p>
                 <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
                   {estacion.transferencias.map((trans, idx) => (
-                    <li key={idx} style={{ marginBottom: '0.5rem' }}>✓ Línea {trans}</li>
+                    <li key={idx} style={{ marginBottom: '0.5rem' }}>
+                      <a href={`/linea/${trans}/`} style={{ color: 'var(--metro-orange)', fontWeight: 600 }}>
+                        ✓ Línea {trans}
+                      </a>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -88,8 +129,21 @@ export default function EstacionPage({ params }) {
       <section className="section-tips">
         <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
           <h2 style={{ marginBottom: '1.5rem' }}>¿Buscas hospedaje?</h2>
-          <p style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>{estacion.nombre} es una ubicación estratégica para visitantes del Mundial 2026</p>
+          <p style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>
+            {estacion.nombre} es una ubicación estratégica para visitantes del Mundial 2026
+          </p>
           <a href="/hospedaje/" className="cta-btn">Ver opciones de hospedaje →</a>
+        </div>
+      </section>
+
+      <section style={{ padding: '3rem 2rem' }}>
+        <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
+          <a href={`/linea/${estacion.linea}/`} className="cta-btn" style={{ marginRight: '1rem' }}>
+            Ver Línea {estacion.linea} completa →
+          </a>
+          <a href="/lineas/" className="cta-btn" style={{ backgroundColor: 'var(--metro-gray)', color: 'var(--text)' }}>
+            Todas las líneas
+          </a>
         </div>
       </section>
     </div>
