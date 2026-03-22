@@ -323,7 +323,15 @@ export const estacionesQueretaro = [
     tips: ["Barrio bohemio", "Galerías de arte", "Iglesias coloniales", "Cafés artísticos", "Excelente para fotografía"],
     mejor_horario: "Tarde para explorar",
     mundial_relevancia: "Patrimonio cultural queretano"
-  }
+  },
+  {
+    slug: "teatro-republica",
+    nombre: "Teatro de la República",
+    linea: "1",
+    municipio: "Querétaro",
+    tipo_zona: "cultural",
+    pois: [
+      { nombre: "Teatro de la República", tipo: "teatro", distancia: "1 min caminando" },
       { nombre: "Cafeterías teatrales", tipo: "alimento", distancia: "2 min" }
     ],
     transferencias: [],
