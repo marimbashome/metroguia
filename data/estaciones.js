@@ -25,18 +25,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Observatorio CDMX — Qué ver y cómo llegar | MetroGuia",
-    "meta_description": "Guía completa de Metro Observatorio CDMX: puntos de interés, tips para turistas y transporte. Ideal para el Mundial FIFA 2026.",
+    "seo_title": "Metro Observatorio CDMX — Terminal foránea | MetroGuia",
+    "meta_description": "Metro Observatorio: estación terminal de Línea 1 con conexión directa a Terminal Observatorio. Autobuses foráneos hacia estados del centro. Guía para turistas del Mundial.",
     "h1": "Metro Observatorio: guía turística completa",
-    "intro": "Observatorio es el punto terminal de la Línea 1 en la zona residencial de Álvaro Obregón. Esta estación conecta con la Terminal Observatorio, importante nudo de transporte foráneo. La zona es principalmente residencial con acceso a parques y comercios locales.",
-    "historia_icono": "El ícono de la estación representa el observatorio histórico que da nombre a la zona, símbolo de conocimiento y ciencia en la Ciudad de México.",
+    "intro": "Observatorio es la estación terminal de la Línea 1, ubicada en la zona residencial de Álvaro Obregón. Punto de conexión crucial con la Terminal Observatorio, principal nudo de transporte foráneo de la ciudad. Los turistas encontrarán aquí acceso directo a autobuses que conectan con estados del centro de México. La estación marca el inicio o fin del viaje por la Línea 1, siendo fundamental para quienes necesitan salir de la capital hacia Querétaro, Guanajuato, Aguascalientes y otros destinos norte.",
+    "historia_icono": "El ícono de esta estación representa el observatorio histórico que dio nombre a la zona, símbolo de ciencia y conocimiento en México.",
     "tips": [
-      "Conexión directa a autobuses foráneos en Terminal Observatorio",
-      "Zona segura y bien iluminada",
-      "Acceso a comercios y servicios bancarios"
+      "Compra tu boleto foráneo con anticipación en horas valle (10-14h)",
+      "La Terminal Observatorio funciona de 5:30 AM a 10 PM diariamente",
+      "Hay cajeros automáticos y puntos de comida dentro de la terminal",
+      "Zona vigilada las 24 horas; mantén vigilancia sobre tus pertenencias en horas nocturnas"
     ],
-    "mejor_horario": "Matutino para conexiones con transporte foráneo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Matutino (6-10 AM) para mejores opciones de autobuses foráneos y menor congestión. Evita 5-6 PM cuando hay flujo de retorno de trabajo.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "juanacatlan",
@@ -52,18 +53,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Juanacatlán CDMX — Estación en Álvaro Obregón | MetroGuia",
-    "meta_description": "Metro Juanacatlán: estación residencial en Álvaro Obregón. Acceso a parques y zona comercial local.",
+    "seo_title": "Metro Juanacatlán CDMX — Zona residencial | MetroGuia",
+    "meta_description": "Metro Juanacatlán: estación residencial tranquila en Álvaro Obregón con acceso a Parque Juanacatlán. Experiencia auténtica capitalina para turistas.",
     "h1": "Metro Juanacatlán: estación de la Línea 1",
-    "intro": "Juanacatlán es una estación residencial ubicada en Álvaro Obregón, ofereciendo acceso a zonas habitacionales tranquilas y parques locales. Ideal para residentes y visitantes que buscan zonas alejadas del centro turístico.",
-    "historia_icono": "El nombre Juanacatlán proviene del náhuatl, haciendo referencia a la vegetación característica de la zona prehispánica.",
+    "intro": "Juanacatlán es una estación residencial de la Línea 1 ubicada en Álvaro Obregón. Se caracteriza por ser una zona de transición entre la ciudad central y los barrios periféricos. La zona destaca por arquitectura residencial de clase media, comercios básicos y el cercano Parque Juanacatlán. Ideal para turistas que buscan alejarse del centro turístico y experimentar la vida cotidiana de los capitalinos en ambiente tranquilo y seguro.",
+    "historia_icono": "El nombre Juanacatlán proviene del náhuatl 'Juan-acatl-tlan'. El ícono evoca la vegetación prehispánica que caracterizaba esta zona antes de la urbanización.",
     "tips": [
-      "Zona residencial tranquila",
-      "Acceso a parques locales",
-      "Buena disponibilidad de comercios básicos"
+      "Parque Juanacatlán a 5 min caminando: ideal para paseos matutinos sin turistas",
+      "Mercaditos locales abiertos de 8 AM a 8 PM con comida auténtica a precios bajos",
+      "Zona segura pero menos vigilancia nocturna; evita después de 10 PM",
+      "Conexión cercana con Línea 7 en Tacubaya (2 estaciones norte)"
     ],
-    "mejor_horario": "Cualquier hora del día en zona segura.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Entre 10 AM y 5 PM para disfrutar el parque con luz natural. Menos concurrencia que en horas pico del centro.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "tacubaya",
@@ -92,19 +94,20 @@ const estaciones = [
       "7",
       "9"
     ],
-    "seo_title": "Metro Tacubaya CDMX — Transfer Líneas 1, 7, 9 | MetroGuia",
-    "meta_description": "Tacubaya es un nudo importante de transporte con acceso a Líneas 1, 7 y 9. Centro comercial, mercados y zona histórica. Guía completa para el Mundial.",
+    "seo_title": "Metro Tacubaya CDMX — Hub de Transferencia | MetroGuia",
+    "meta_description": "Estación Tacubaya del Metro CDMX: hub crucial de transferencia a Líneas 1 y 7. Zona comercial vibrante, acceso a Chapultepec, Paseo de la Reforma. Turismo.",
     "h1": "Metro Tacubaya: hub de transporte y comercio",
-    "intro": "Tacubaya es una de las estaciones más importantes de la Línea 1, funcionando como nudo de transporte con conexiones directas a las Líneas 7 y 9. La zona es altamente comercial con mercados tradicionales, centros comerciales modernos e iglesias históricas.",
-    "historia_icono": "Tacubaya significa 'lugar de agua ardiente' en náhuatl, nombre que refleja los manantiales termales de la zona prehispánica.",
+    "intro": "Tacubaya es uno de los hubs de transferencia más importantes del Metro de la Ciudad de México, estratégicamente ubicado en el Oeste de la ciudad. Esta estación conecta las Líneas 1, 7 y 9, convirtiéndola en un punto nodal para turistas que desean explorar distintas zonas de la capital. La zona es vibrante, con comercio diverso, restaurantes, y acceso directo a la icónica Avenida Paseo de la Reforma.",
+    "historia_icono": "El nombre Tacubaya proviene del náhuatl 'Tlecoabaca', que significa 'lugar de sapos'. Desde tiempos prehispánicos fue zona de paso comercial hacia zonas del Oeste. El icono del metro refleja esta herencia con referencias a la flora y fauna del territorio.",
     "tips": [
-      "Transfer disponible a Líneas 7 y 9",
-      "Centro comercial con múltiples opciones de compra",
-      "Mercado tradicional de comida local",
-      "Estación siempre concurrida"
+      "Transfiere a Líneas 1 (Observatorio-Pantitlán) y 7 (Barranca del Muerto-Garibaldi) para máxima cobertura urbana",
+      "Explora la Zona Comercial Tacubaya con tiendas, restaurantes y cafeterías de calidad",
+      "Accede al Castillo de Chapultepec en 15 minutos mediante metrobús desde la estación",
+      "Es el mejor punto de partida para tours al Bosque de Chapultepec y Museo Nacional de Antropología",
+      "Aprovecha los horarios nocturnos para disfrutar la vida nocturna de la zona"
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM y 5-7 PM).",
-    "mundial_relevancia": "Sin relevancia directa, pero excelente hub para movilidad en CDMX."
+    "mejor_horario": "Mañanas entre 8:00-11:00 para menos aglomeración, o tardes 15:00-18:00. Evita horas pico (7:00-9:00 y 18:00-20:00).",
+    "mundial_relevancia": "Hub estratégico para turistas FIFA 2026: conecta Centro histórico con zonas Oeste. Acceso a hoteles de clase alta en Polanco y Chapultepec."
   },
   {
     "slug": "chapultepec",
@@ -140,20 +143,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Chapultepec CDMX — Castillo y Museos | MetroGuia",
-    "meta_description": "Chapultepec: estación clave para turismo en CDMX. Acceso al Castillo, Museo de Antropología, Bosque y zoológico. Guía completa para visitantes.",
+    "seo_title": "Metro Chapultepec CDMX — Museos y bosque | MetroGuia",
+    "meta_description": "Metro Chapultepec: acceso a Bosque de Chapultepec, Museo de Antropología, Castillo. Atracciones culturales imprescindibles. Guía turística completa.",
     "h1": "Metro Chapultepec: puerta al corazón histórico de México",
-    "intro": "Chapultepec es la estación turística más importante de la Línea 1, ofreciendo acceso directo al icónico Castillo de Chapultepec, uno de los símbolos más reconocibles de México. El Bosque de Chapultepec, la mayor reserva forestal urbana de América Latina, rodea esta estación con museos de clase mundial, parques y espacios culturales.",
-    "historia_icono": "El ícono representa al Castillo de Chapultepec, residencia de emperadores aztecas y posteriormente palacio presidencial mexicano, ahora símbolo nacional.",
+    "intro": "Chapultepec es la puerta de acceso al Bosque de Chapultepec, uno de los mayores pulmones verdes de América Latina y sitio obligatorio para turistas internacionales. La estación conecta directamente con museos de clase mundial incluyendo el Museo de Antropología, Museo de Arte Moderno, castillo histórico y amplios parques de recreación. Para visitantes del Mundial, es la estación más importante de la Línea 1 por su concentración de atracciones culturales imprescindibles.",
+    "historia_icono": "El ícono de Chapultepec representa el águila sobre el nopal, símbolo prehispánico del Templo Mayor de Tenochtitlan.",
     "tips": [
-      "Llegar temprano al Castillo (abre a las 9 AM)",
-      "Museo de Antropología es imprescindible — 3-4 horas mínimo",
-      "Bosque perfecto para paseos y picnics",
-      "Múltiples restaurantes y cafés en la zona",
-      "Acceso también al Museo Tamayo y zoológico"
+      "Entrada al Bosque: GRATUITA. Museos internos: $4-6 USD entrada general",
+      "Horarios variados: algunos museos cierran lunes; verifica en app INBA antes de visitar",
+      "Entrada norte más cercana al Castillo (15 min caminando) con mejor acceso",
+      "Lleva bloqueador solar y agua: visita de 8-11 AM para evitar calor del mediodía"
     ],
-    "mejor_horario": "Mañana temprano (8-10 AM) para evitar multitudes en museos.",
-    "mundial_relevancia": "Sin relevancia directa para partidos, pero parada obligatoria para turistas FIFA 2026."
+    "mejor_horario": "8-11 AM para museos sin filas y bosque con luz natural perfecta. Evita 12-4 PM (calor intenso). Viernes-domingo máxima afluencia.",
+    "mundial_relevancia": "Atracción turística principal en CDMX para visitantes de eventos. Recomendación imprescindible para turistas del Mundial entre partidos."
   },
   {
     "slug": "sevilla",
@@ -174,19 +176,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Sevilla CDMX — Paseo de la Reforma | MetroGuia",
-    "meta_description": "Sevilla: estación en el Paseo de la Reforma, zona comercial premium de CDMX. Shopping, restaurantes y ambiente urbano moderno.",
+    "seo_title": "Metro Sevilla CDMX — Zona Rosa shopping | MetroGuia",
+    "meta_description": "Metro Sevilla: epicentro de Zona Rosa con tiendas internacionales y vida nocturna. Restaurantes de lujo, entretenimiento. Destino premium para turistas.",
     "h1": "Metro Sevilla: acceso a Paseo de la Reforma",
-    "intro": "Sevilla es una estación estratégica ubicada en el corazón del Paseo de la Reforma, la principal avenida comercial y de negocios de la Ciudad de México. La zona es moderna, bien iluminada y cuenta con tiendas departamentales, restaurantes premium y oficinas corporativas.",
-    "historia_icono": "El nombre recuerda la conexión histórica entre México y España, ubicada en una de las avenidas más cosmopolitas de América Latina.",
+    "intro": "Sevilla es estación de la Línea 1 ubicada en la exclusiva Zona Rosa de Miguel Hidalgo. Es epicentro de vida nocturna, gastronomía de lujo e tiendas de moda internacional de primer nivel. La zona se caracteriza por comercio premium, restaurantes Michelin, bares sofisticados y ambiente cosmopolita. Para turistas del Mundial con presupuesto alto, es zona de entretenimiento nocturno esencial y compras de lujo.",
+    "historia_icono": "El ícono de Sevilla evoca la arquitectura andaluza y el nombre de la ciudad española, reflejando la identidad cosmopolita de la Zona Rosa.",
     "tips": [
-      "Paseo de la Reforma es ideal para compras de lujo",
-      "Múltiples opciones gastronómicas",
-      "Zona segura con presencia policial",
-      "Acceso a museos y teatros cercanos"
+      "Zona Rosa es la meca de compras: Saks Fifth Avenue, Gucci, Louis Vuitton a 5 min caminando",
+      "Restaurantes de lujo: reserva con anticipación; presupuesto mínimo $50 USD por persona",
+      "Vida nocturna: bares y discotecas abiertos hasta 4 AM; entrada típica $10-20 USD",
+      "Zona muy vigilada por seguridad privada; muy segura pero tráfico de vehículos intenso"
     ],
-    "mejor_horario": "Tarde/noche para ambiente comercial completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "De 10 AM a 2 PM para compras sin aglomeración. De 9 PM en adelante para vida nocturna y entretenimiento.",
+    "mundial_relevancia": "Destino premium para turistas extranjeros de alto nivel adquisitivo. Zona con hoteles 5 estrellas y restaurantes de fama internacional."
   },
   {
     "slug": "insurgentes",
@@ -212,19 +214,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Insurgentes CDMX — Centro comercial | MetroGuia",
-    "meta_description": "Insurgentes: estación en zona comercial y hotelera. Acceso a restaurantes, tiendas y hospedaje de lujo en el corazón de CDMX.",
+    "seo_title": "Metro Insurgentes CDMX — Ángel reformista | MetroGuia",
+    "meta_description": "Metro Insurgentes: centro turístico principal con Ángel de la Independencia. Paseo de la Reforma, tiendas internacionales. Hub transporte CDMX.",
     "h1": "Metro Insurgentes: zona comercial y hotelera",
-    "intro": "Insurgentes es una estación comercial en el corazón de la Zona de Paseo de la Reforma, rodeada de hoteles de lujo, restaurantes internacionales y tiendas especializadas. La zona es segura, moderna y perfecta para turistas de negocios y ocio.",
-    "historia_icono": "Avenida Insurgentes es una de las avenidas más largas de México, símbolo de desarrollo urbano y modernidad.",
+    "intro": "Insurgentes es la estación más importante de la Línea 1, ubicada en el corazón de la Avenida Paseo de la Reforma, mayor arteria comercial y política de la Ciudad de México. Conecta directamente con el Ángel de la Independencia, monumento icónico nacional. La zona es centro de negocios, comercio de lujo, hoteles 5 estrellas y restaurantes gourmet. Para turistas del Mundial es punto de paso obligatorio hacia el centro histórico y conexión crucial con otras líneas de metro.",
+    "historia_icono": "El ícono de Insurgentes representa el Ángel de la Independencia, símbolo patrio de México desde 1910.",
     "tips": [
-      "Múltiples opciones de hospedaje de 5 estrellas",
-      "Restaurantes con cocina internacional",
-      "Zona de negocios con excelente infraestructura",
-      "Segura y bien iluminada"
+      "Ángel de la Independencia a 2 min caminando: entrada $3 USD, sube 180 escalones para vista 360° de CDMX",
+      "Paseo de la Reforma: 14 km de tiendas internacionales; descuentos reales 30-50% en épocas de rebajas",
+      "Estación de transbordo: Línea 1, 2, 9 disponibles en área; centro de movilidad crucial de la ciudad",
+      "Tráfico muy intenso de vehículos; usa pasos peatonales subterráneos para mayor seguridad"
     ],
-    "mejor_horario": "Cualquier hora, zona segura 24/7.",
-    "mundial_relevancia": "Zona hotelera ideal para aficionados FIFA 2026 visitando CDMX."
+    "mejor_horario": "8-11 AM o 4-7 PM para compras eficientes. Evita 12-2 PM (calor y congestión). Fines de semana tienen mayor afluencia turística.",
+    "mundial_relevancia": "Centro neurálgico para turistas del Mundial: conecta con Estadio Azteca, Zócalo y zonas hoteleras principales. Parada obligatoria."
   },
   {
     "slug": "cuauhtemoc",
@@ -245,19 +247,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Cuauhtémoc CDMX — Reforma comercial | MetroGuia",
-    "meta_description": "Cuauhtémoc: estación en Paseo de la Reforma. Zona comercial, hotelera y de negocios en el corazón de CDMX.",
+    "seo_title": "Metro Cuauhtémoc CDMX — Comercio auténtico | MetroGuia",
+    "meta_description": "Metro Cuauhtémoc: mercado tradicional, gastronomía variada, vida bohemia. Zona auténtica CDMX. Guía para experiencia cultural.",
     "h1": "Metro Cuauhtémoc: corazón comercial de Reforma",
-    "intro": "Cuauhtémoc es una estación emblemática en el Paseo de la Reforma, ofreciendo acceso a la zona comercial más importante de la ciudad. Rodeada de tiendas, oficinas corporativas, hoteles y galerías de arte.",
-    "historia_icono": "Cuauhtémoc era el último emperador azteca, y su nombre representa la resistencia y grandeza de la civilización prehispánica.",
+    "intro": "Cuauhtémoc es estación de Línea 1 y Línea 2 ubicada en la colonia del mismo nombre. Zona de comercio tradicional con gastronomía muy variada y servicios diversos. La zona es crisol viviente de culturas con restaurantes de múltiples nacionalidades, tiendas especializadas y ambiente bohemio auténtico. Para turistas representa acceso directo a autenticidad capitalina diferente al turismo masivo de las atracciones principales.",
+    "historia_icono": "El ícono de Cuauhtémoc representa al último emperador azteca, figura central de la conquista española.",
     "tips": [
-      "Centro de negocios más importante de CDMX",
-      "Amplia oferta gastronómica",
-      "Museos y galerías de arte",
-      "Zona corporativa segura"
+      "Mercado de Sonora a 8 min: mercado tradicional mexicano con artesanías, hierbas medicinales; 10 AM-6 PM",
+      "Gastronomía variada: tacos, tortas, comida italiana, china, árabe a precios accesibles ($5-15 USD)",
+      "Transfer directo a Línea 9 desde esta estación (metro indio verde); múltiples opciones transporte",
+      "Zona universitaria cercana; ambiente joven dinámico; tiendas de libros, discos y arte contemporáneo"
     ],
-    "mejor_horario": "Horario laboral para ambiente completo.",
-    "mundial_relevancia": "Sin relevancia directa para partidos."
+    "mejor_horario": "10 AM-8 PM para compras y gastronomía. Noche (8 PM-11 PM) para bares y vida social.",
+    "mundial_relevancia": "Acceso a experiencia auténtica de CDMX para turistas del Mundial que buscan algo más allá del circuito turístico."
   },
   {
     "slug": "balderas",
@@ -280,19 +282,20 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Balderas CDMX — Transfer Línea 3 | MetroGuia",
-    "meta_description": "Balderas: nudo de transporte con acceso a Línea 3. Centro comercial y zona de tiendas. Guía para turistas y residentes.",
+    "seo_title": "Metro Balderas CDMX — Plaza Garibaldi y Alameda | MetroGuia",
+    "meta_description": "Balderas. Transbordo Línea 1-3. Plaza Garibaldi. Alameda Central. Música en vivo tradicional.",
     "h1": "Metro Balderas: transfer a Línea 3",
-    "intro": "Balderas es una estación comercial estratégica con conexión directa a la Línea 3. La zona ofrece acceso a centros comerciales modernos, tiendas de moda, tecnología y servicios especializados.",
-    "historia_icono": "Balderas recuerda a la batalla histórica del mismo nombre durante la intervención francesa en México.",
+    "intro": "Balderas es una estación estratégica de transbordo entre las Líneas 1 y 3, ubicada en el corazón del Centro Histórico de la Ciudad de México. La estación ofrece acceso a la Alameda Central, Plaza Garibaldi y al barrio histórico de Centro. Para turistas del Mundial 2026, es un punto neurálgico para conectar con sitios culturales, musicales y arqueológicos de la capital mexicana.",
+    "historia_icono": "El ícono de Balderas representa a los Niños Héroes de Chapultepec, jóvenes soldados que dieron sus vidas defendiendo México. Símbolo del heroísmo y sacrificio nacional.",
     "tips": [
-      "Transfer disponible a Línea 3",
-      "Centro comercial bien surtido",
-      "Tiendas de tecnología de última generación",
-      "Servicios especializados y bancarios"
+      "Centro de transbordo perfecto: conecta Línea 1 y 3 para explorar múltiples zonas",
+      "Plaza Garibaldi a pasos: música en vivo, cantantes callejeros y romerías tradicionales",
+      "Alameda Central: parque histórico con museos, esculpturas y espacio para descansar",
+      "Gastronomía diversa: desde taquerías hasta restaurantes de chef en la zona",
+      "Actividad intensa: ideal para turistas que quieran vivir el bullicio de la capital"
     ],
-    "mejor_horario": "Tarde para ambiente comercial completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Noche (8pm-11pm) para experimentar Plaza Garibaldi con música en vivo. Día para museos.",
+    "mundial_relevancia": "Centro cultural fundamental. Conecta turistas con experiencias auténticas de la CDMX durante el Mundial."
   },
   {
     "slug": "salto-del-agua",
@@ -315,19 +318,19 @@ const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Salto del Agua CDMX — Transfer Línea 8 | MetroGuia",
-    "meta_description": "Salto del Agua: estación con transfer a Línea 8. Zona comercial en el centro de CDMX. Acceso al Eje Central.",
+    "seo_title": "Metro Salto del Agua CDMX — Centro histórico | MetroGuia",
+    "meta_description": "Metro Salto del Agua: acceso a mercados tradicionales y hoteles económicos. Zona de transición hacia Centro Histórico. Guía turística completa.",
     "h1": "Metro Salto del Agua: punto de conexión central",
-    "intro": "Salto del Agua es una estación ubicada en el Eje Central Lázaro Cárdenas, la principal vía vertical de la Ciudad de México. Ofrece conexión a la Línea 8 y acceso a zona comercial del centro histórico.",
-    "historia_icono": "El nombre evoca el antiguo salto de agua que existía en la zona durante la época colonial, parte de la red hídrica de Tenochtitlan.",
+    "intro": "Salto del Agua es estación de transición entre la Línea 1 y el centro histórico, ubicada en la colonia Cuauhtémoc. Combina comercio de nivel medio con acceso cercano a sitios históricos de la ciudad. Es punto de paso importante hacia la zona de mercados tradicionales y el centro peatonal turístico. La estación funciona como puente entre zonas comerciales modernas y patrimonio histórico colonial.",
+    "historia_icono": "El ícono de Salto del Agua evoca el río subterráneo que alguna vez bajaba desde Chapultepec, fuente de agua que alimentaba a la capital prehispánica.",
     "tips": [
-      "Transfer disponible a Línea 8",
-      "Acceso a Eje Central para movilidad",
-      "Zona comercial céntrica",
-      "Bien conectada con otras líneas"
+      "Acceso a Mercado de Abastos: mercado tradicional a 5 min caminando con productos frescos a precios mínimos",
+      "Zona de hoteles económicos ($20-40 USD/noche) en radio de 8 min caminando",
+      "Comercio mixto: electrónica, ropa, accesorios; negocios abiertos de 8 AM a 9 PM",
+      "Zona popular; mantén vigilancia sobre pertenencias en horas nocturnas (después de 9 PM)"
     ],
-    "mejor_horario": "Horario comercial para acceso completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "10 AM a 5 PM para compras y exploración tranquila. Evita después de 8 PM en zona aledaña.",
+    "mundial_relevancia": "Acceso a hospedaje económico y compras de bajo costo para turistas presupuestarios del Mundial."
   },
   {
     "slug": "isabel-la-catolica",
@@ -409,21 +412,19 @@ const estaciones = [
     "transferencias": [
       "2"
     ],
-    "seo_title": "Metro Pino Suárez CDMX — Zócalo y Palacio Nacional | MetroGuia",
-    "meta_description": "Pino Suárez: estación principal para el Zócalo y Palacio Nacional. Transfer a Línea 2. Centro histórico y cultural imprescindible.",
+    "seo_title": "Metro Pino Suárez CDMX — Centro histórico | MetroGuia",
+    "meta_description": "Metro Pino Suárez: acceso al Zócalo, Catedral, Templo Mayor. Patrimonio histórico UNESCO. Guía imprescindible para turistas del Mundial.",
     "h1": "Metro Pino Suárez: acceso directo al Zócalo",
-    "intro": "Pino Suárez es una de las estaciones más turísticas de la Línea 1, ubicada a pasos del icónico Zócalo capitalino y el Palacio Nacional. Ofrece transferencia directa a la Línea 2 y acceso a los principales sitios históricos de México.",
-    "historia_icono": "Pino Suárez fue un destacado político y abogado mexicano del siglo XIX, precursor de la reforma educativa en el país.",
+    "intro": "Pino Suárez es estación de la Línea 1 ubicada en el corazón del Centro Histórico, junto al Zócalo de la Ciudad de México. La zona es epicentro de patrimonio cultural con templos coloniales, museos importantes, comercio tradicional y plazas históricas. Para turistas del Mundial es punto de acceso imprescindible al patrimonio histórico de la capital, declarado Patrimonio de la Humanidad por UNESCO. Conecta directamente con Línea 2 hacia Estadio Azteca.",
+    "historia_icono": "El ícono de Pino Suárez representa al personaje histórico Benito Juárez Pino Suárez, presidente reformista de México.",
     "tips": [
-      "Acceso directo al Zócalo (2 min caminando)",
-      "Palacio Nacional: residencia del presidente, visitable",
-      "Museos de historia de clase mundial",
-      "Gastronomía tradicional mexicana",
-      "Transfer a Línea 2 disponible",
-      "Zona arqueológica integrada en la estación"
+      "Zócalo a 2 min caminando: plaza más grande de América Latina, Catedral Metropolitana (entrada $6 USD)",
+      "Museos gratuitos domingos para residentes; turistas extranjeros pagan tarifa normal de $4-8 USD",
+      "Templo Mayor prehispánico a 3 min: entrada $6 USD, una de las ruinas más significativas de México",
+      "Zona muy concurrida; evita 11 AM-3 PM. Mejor: 8-10 AM o después de 5 PM para exploración tranquila"
     ],
-    "mejor_horario": "Mañana (9-11 AM) antes del pico turístico.",
-    "mundial_relevancia": "Parada esencial para turistas FIFA 2026 explorando historia de México."
+    "mejor_horario": "8-11 AM para museos y monumentos sin filas enormes. Atardeceres (5-7 PM) ofrecen iluminación dorada del Zócalo.",
+    "mundial_relevancia": "Atracción histórica esencial para turistas del Mundial. Centro neurálgico que conecta con Línea 2 hacia Estadio Azteca."
   },
   {
     "slug": "merced",
@@ -485,19 +486,20 @@ const estaciones = [
     "transferencias": [
       "4"
     ],
-    "seo_title": "Metro Candelaria CDMX — Transfer Línea 4 | MetroGuia",
-    "meta_description": "Candelaria: estación con transfer a Línea 4. Zona comercial en Venustiano Carranza. Acceso fácil al centro histórico.",
+    "seo_title": "Metro Candelaria CDMX — Templo Religioso | MetroGuia",
+    "meta_description": "Candelaria CDMX. Templo religioso importante. Peregrinación. Fe mexicana. Festividad 2 febrero.",
     "h1": "Metro Candelaria: conexión a Línea 4",
-    "intro": "Candelaria es una estación ubicada en Venustiano Carranza que ofrece conexión a la Línea 4. La zona es comercial y residencial, ideal para visitantes que buscan acceso rápido al centro histórico.",
-    "historia_icono": "Candelaria evoca a la Virgen de la Candelaria, festividad importante en la tradición católica mexicana.",
+    "intro": "Candelaria es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona religiosa y culturalmente significativa en el oriente de la capital. La zona alberga el Templo de la Candelaria, un importante sitio de peregrinación y devoción religiosa en la ciudad. Para turistas del Mundial 2026, representa una parada fundamental para comprender la religiosidad profunda y la fe que caracterizan a México. Experimenta la devoción mariana y la tradición católica mexicana.",
+    "historia_icono": "El ícono de Candelaria representa la Virgen de la Candelaria, festividad religiosa importante en México. Evoca la devoción mariana y la fe popular mexicana.",
     "tips": [
-      "Transfer disponible a Línea 4",
-      "Zona comercial accesible",
-      "Buena conexión al centro histórico",
-      "Iglesia histórica disponible para visita"
+      "Templo de la Candelaria: iglesia histórica y sitio de peregrinación importante",
+      "Festividades religiosas: 2 de febrero celebración de la Candelaria con procesiones",
+      "Mercados especializados en productos religiosos y tradicionales",
+      "Restaurantes cercanos con comida mexicana auténtica para peregrinos y turistas",
+      "Zona tranquila para contemplación espiritual y cultural"
     ],
-    "mejor_horario": "Horario comercial para ambiente completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (8am-11am) para visitas religiosas. Especialmente: 2 de febrero para festividad.",
+    "mundial_relevancia": "Sitio religioso importante. Relevante para turistas interesados en la fe y devoción de México."
   },
   {
     "slug": "san-lazaro",
@@ -520,19 +522,20 @@ const estaciones = [
     "transferencias": [
       "B"
     ],
-    "seo_title": "Metro San Lázaro CDMX — Terminal ferroviaria | MetroGuia",
-    "meta_description": "San Lázaro: estación de transporte intermodal. Acceso a ferrocarriles, autobuses. Transfer a Línea B. Nudo de conectividad.",
+    "seo_title": "Metro San Lázaro — Terminal intermodal este",
+    "meta_description": "San Lázaro: Terminal Autobuses del Oriente, mercados locales vibr antes y vida de barrio. Puerta a zonas menos turísticas del oriente capitalino.",
     "h1": "Metro San Lázaro: hub de transporte intermodal",
-    "intro": "San Lázaro es una estación especializada en transporte intermodal, ofreciendo conexión directa a la Estación de Ferrocarriles San Lázaro y terminales de autobuses. Ideal para viajeros que necesitan cambiar de modo de transporte.",
-    "historia_icono": "San Lázaro es el patrón de los peregrinos y viajeros, apropiado para una estación de transporte histórica.",
+    "intro": "San Lázaro es estación de conexión importante conectando Centro Histórico con zonas este y sureste de la CDMX, ubicada cerca de Terminal de Autobuses del Oriente. Para turistas del Mundial FIFA 2026, San Lázaro ofrece acceso a zona de transporte intermodal, mercados locales, y puerta a exploraciones de barrios auténticos menos turísticos. Es punto de partida para viajeros que desean descubrir la CDMX desde perspectiva diferente.",
+    "historia_icono": "El ícono gris de la Línea B representa conectividad de San Lázaro como estación terminal y de transbordo, histórica importancia como punto de distribución hacia oriente. Este símbolo evoca movimiento y conexión continua.",
     "tips": [
-      "Acceso directo a ferrocarriles de largo recorrido",
-      "Terminales de autobuses disponibles",
-      "Transfer a Línea B",
-      "Servicios de equipaje e información turística"
+      "Terminal de Autobuses del Oriente (TAPO): acceso a autobuses hacia Veracruz, Puebla y destinos del oriente de México",
+      "Mercado de comida rápida en TAPO: tamales, quesadillas y café preparados por vendedores de barrio a precios de mercado local",
+      "Museo del Ferrocarril cercano: acceso a historia ferroviaria de México con locomotoras históricas y artefactos de época",
+      "Zona residencial tranquila: si necesitas alejarte del caos turístico, barrios cercanos ofrecen vida cotidiana genuina",
+      "Seguridad: mantente cerca de estación y mercado principal; lleva dirección en español para taxi si necesitas orientación"
     ],
-    "mejor_horario": "Horario de operación de transporte intermodal.",
-    "mundial_relevancia": "Útil para aficionados llegando en tren desde otros estados."
+    "mejor_horario": "Visita de 9 AM-6 PM para actividad de mercados y servicios en operación. Evita de noche cuando zona se vuelve más tranquila.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en transporte intermodal y vida de barrio auténtica encontrarán acceso a zonas menos turísticas del oriente."
   },
   {
     "slug": "moctezuma",
@@ -702,19 +705,19 @@ const estaciones = [
       "9",
       "A"
     ],
-    "seo_title": "Metro Pantitlán CDMX — Hub de transporte | MetroGuia",
-    "meta_description": "Pantitlán: terminal importante con transfers a Líneas 5, 9 y A. Hub de transporte multimodal. Estación final Línea 1.",
+    "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
+    "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
     "h1": "Metro Pantitlán: terminal y hub de transporte",
-    "intro": "Pantitlán es la estación terminal de la Línea 1, funcionando como un importante hub de transporte con conexiones directas a las Líneas 5, 9 y A. Ofrece acceso a terminal de autobuses y servicios de transporte intermodal.",
-    "historia_icono": "Pantitlán significa 'lugar de banderas' en náhuatl, recordando los códices prehispánicos y la historia azteca.",
+    "intro": "Pantitlán es una estación crucial de transferencia en el oriente de la CDMX, punto de conexión entre las Líneas 1, 5, 9 y A. Aunque es principalmente una estación de paso, la zona ofrece acceso a mercados tradicionales y transporte hacia municipios del Estado de México.",
+    "historia_icono": "El ícono de la Línea A representa una flecha morada hacia el oriente, simbolizando la expansión del Metro hacia las nuevas zonas periféricas y densamente pobladas.",
     "tips": [
-      "Múltiples transfers disponibles (Líneas 5, 9, A)",
-      "Terminal de autobuses integrada",
-      "Servicios de información turística",
-      "Conecta diferentes zonas de la ciudad"
+      "Pantitlán es punto de transferencia ideal para explorar diferentes líneas del Metro",
+      "La zona es transitada pero segura durante el día; considera horarios de menos afluencia",
+      "Acceso directo a zonas residenciales y de transporte comercial",
+      "Explora la tecnología moderna de la línea más nueva del Metro"
     ],
-    "mejor_horario": "Cualquier hora para transporte 24/7.",
-    "mundial_relevancia": "Hub importante para movilidad durante el Mundial."
+    "mejor_horario": "Entre 10:00 y 14:00 horas para menor congestión",
+    "mundial_relevancia": "Conexión importante para turistas que necesitan acceder a múltiples líneas del Metro durante el Mundial 2026"
   },
   {
     "slug": "cuatro-caminos",
@@ -1024,20 +1027,20 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Hidalgo CDMX — Transfer Línea 3 | MetroGuia",
-    "meta_description": "Hidalgo: estación con transfer a Línea 3. Acceso a monumento histórico y Paseo de la Reforma. Hub cultural.",
+    "seo_title": "Metro Hidalgo CDMX — Catedral y Zócalo | MetroGuia",
+    "meta_description": "Hidalgo CDMX. Catedral Metropolitana. Palacio Nacional. Zócalo. Centro Histórico y Patrimonio.",
     "h1": "Metro Hidalgo: monumento y hub cultural",
-    "intro": "Hidalgo es una estación estratégica ubicada en Cuauhtémoc con conexión directa a la Línea 3. Ofrece acceso al Monumento a Miguel Hidalgo y al Paseo de la Reforma, zona cultural y comercial de importancia.",
-    "historia_icono": "Miguel Hidalgo y Costilla fue el padre de la Independencia de México, iniciador de la lucha por libertad en 1810.",
+    "intro": "Hidalgo es una estación estratégica en el corazón del Centro Histórico de la Ciudad de México, ofreciendo acceso directo a la Catedral Metropolitana, el Palacio Nacional y la Zócalo, la plaza más grande de Latinoamérica. Esta estación es obligatoria para turistas internacionales del Mundial 2026 que deseen conectar con los símbolos más icónicos de México. Desde aquí confluyen historia prehispánica, colonial y moderna en un solo espacio.",
+    "historia_icono": "El ícono de Hidalgo representa a Miguel Hidalgo y Costilla, padre de la Independencia mexicana. Simboliza la lucha por la libertad en el corazón del México Colonial.",
     "tips": [
-      "Monumento a Hidalgo: sitio icónico",
-      "Transfer a Línea 3 disponible",
-      "Acceso a Paseo de la Reforma",
-      "Museos y galerías cercanas",
-      "Gastronomía variada"
+      "Acceso directo a la Catedral Metropolitana, construcción de 5 siglos emblemática",
+      "Palacio Nacional con murales de Diego Rivera: historia de México en imágenes",
+      "Zócalo a pasos: observa banderas, mercados y vida cultural en la plaza más grande de Latinoamérica",
+      "Museos adyacentes: Museo del Templo Mayor, Museo Nacional de Arte a corta distancia",
+      "Come en fondas tradicionales cercanas con precios asequibles y sabor auténtico"
     ],
-    "mejor_horario": "Cualquier hora, zona segura y bien transitada.",
-    "mundial_relevancia": "Parada importante para turistas explorando historia de México."
+    "mejor_horario": "Mañana (8am-10am) para evitar multitudes en sitios arqueológicos. Tarde (4pm-6pm) para fotos del atardecer en Zócalo.",
+    "mundial_relevancia": "Centro neurálgico de la capital. Fundamental para turistas del Mundial que busquen el símbolo más icónico de México: la Zócalo."
   },
   {
     "slug": "bellas-artes",
@@ -1075,22 +1078,19 @@ const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Bellas Artes CDMX — Palacio y teatro | MetroGuia",
-    "meta_description": "Bellas Artes: estación icónica con acceso al Palacio de Bellas Artes y Teatro Nacional. Museo de arte de clase mundial. Transfer a Línea 8.",
+    "seo_title": "Metro Bellas Artes CDMX — Cultura arte | MetroGuia",
+    "meta_description": "Metro Bellas Artes: Palacio de Bellas Artes, Balé Folclórico, galerías arte. Centro cultural mexicano imprescindible. Guía completa.",
     "h1": "Metro Bellas Artes: joya cultural de México",
-    "intro": "Bellas Artes es una de las estaciones más importantes de CDMX, ofreciendo acceso directo al icónico Palacio de Bellas Artes, el teatro más importante de México. El Museo del Palacio de Bellas Artes alberga obras maestras de arte mexicano e internacional.",
-    "historia_icono": "El Palacio de Bellas Artes fue inaugurado en 1934, símbolo arquitectónico de la cultura mexicana con su distintiva cúpula de vidrio.",
+    "intro": "Bellas Artes es estación de la Línea 2 ubicada junto al Palacio de Bellas Artes, joya arquitectónica de Art Nouveau ubicada en el corazón de la capital. El edificio es sede de la ópera nacional, orquesta sinfónica, galerías de arte de renombre mundial y la famosa presentación del Balé Folclórico Mexicano. La zona es centro cultural por excelencia con teatros, museos y patrimonio arquitectónico del Porfiriato de gran belleza.",
+    "historia_icono": "El ícono de Bellas Artes es la arquitectura Art Nouveau del Palacio, símbolo de riqueza cultural y artística de México.",
     "tips": [
-      "Palacio de Bellas Artes: imprescindible visitar",
-      "Teatro Nacional con presentaciones diarias",
-      "Museo de arte de clase mundial",
-      "Arquitectura iconográfica de CDMX",
-      "Transfer a Línea 8",
-      "Cafés históricos en la zona",
-      "Restaurantes de gourmet cercanos"
+      "Palacio de Bellas Artes: visitas guiadas $8 USD (martes-domingo 10:30 AM-5:30 PM); arquitectura imprescindible",
+      "Balé Folclórico Mexicano: martes-jueves 7 PM, viernes-domingo 5 PM y 8:30 PM; entradas $30-80 USD, reserva online",
+      "Museo de Artes Decorativas Palacio: entrada $4 USD, artes plásticas mexicanas siglo XX",
+      "Zona de restaurantes y cafés cercanos: presupuesto $15-40 USD comida; ambiente artístico bohemio"
     ],
-    "mejor_horario": "Tarde/noche para espectáculos teatrales.",
-    "mundial_relevancia": "Parada obligatoria para turistas FIFA 2026 interesados en cultura mexicana."
+    "mejor_horario": "Mañanas (10 AM-1 PM) para visita Palacio. Tardes (5-8 PM) para vida cultural cafés cercanos. Shows nocturnos desde 7 PM.",
+    "mundial_relevancia": "Entretenimiento cultural de clase mundial para turistas del Mundial que buscan experiencias artísticas e icónico."
   },
   {
     "slug": "allende",
@@ -1165,24 +1165,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Zócalo CDMX — Plaza Mayor del mundo | MetroGuia",
-    "meta_description": "Zócalo: estación en la plaza más grande de América Latina y segunda del mundo. Catedral, Palacio Nacional, Templo Mayor. Centro histórico y cultural.",
+    "seo_title": "Metro Zócalo CDMX — Corazón histórico | MetroGuia",
+    "meta_description": "Metro Zócalo: plaza mayor de América Latina. Catedral, Palacio Nacional, Templo Mayor. Patrimonio UNESCO imprescindible para el Mundial FIFA 2026.",
     "h1": "Metro Zócalo: corazón histórico de México",
-    "intro": "El Zócalo de la Ciudad de México es la segunda plaza más grande del mundo, epicentro histórico y cultural de México. La estación ofrece acceso directo a la Catedral Metropolitana, Palacio Nacional, sitios arqueológicos y símbolos nacionales más emblemáticos.",
-    "historia_icono": "El Zócalo fue construido en el sitio del Templo Mayor de Tenochtitlan, capital del Imperio Azteca, lugar sagrado de la historia mexicana.",
+    "intro": "Zócalo es la estación de la Línea 2 ubicada en el corazón del Centro Histórico de la Ciudad de México, frente a la plaza del Zócalo. Es la plaza más grande y significativa de América Latina con concentración única de patrimonio arquitectónico colonial, vestigios prehispánicos, museos de categoría mundial y centros de poder político. Para cualquier visitante a la capital es el sitio imprescindible que define la historia de México en sus edificios, monumentos y tradiciones.",
+    "historia_icono": "El ícono de Zócalo es el Águila Mexicana (símbolo prehispánico), reflejando que fue sitio del Templo Mayor de Tenochtitlan.",
     "tips": [
-      "Zócalo: plaza más grande de América Latina",
-      "Catedral Metropolitana: obra maestra arquitectónica",
-      "Palacio Nacional: visitable con murales de Rivera",
-      "Templo Mayor: ruinas aztecas en pleno centro",
-      "Museos de clase mundial",
-      "Espectáculos y eventos públicos",
-      "Banderas monumentales de México",
-      "Ambiente histórico y solemne",
-      "Restaurantes y cafés de calidad"
+      "Catedral Metropolitana: entrada $6 USD, abierta de 8 AM-5 PM, arquitectura renacentista del siglo XVI",
+      "Palacio Nacional: visitas guiadas GRATIS con registro previo (30 min antes), murales Diego Rivera imprescindibles",
+      "Templo Mayor Museum: entrada $6 USD, experiencia inmersiva civilización azteca; línea espera típica 45 min",
+      "Evita después de 8 PM: zona se queda tranquila con menos vigilancia; cambio moneda en casas de cambio"
     ],
-    "mejor_horario": "Mañana temprano (9-11 AM) para evitar multitudes.",
-    "mundial_relevancia": "Parada obligatoria para TODOS los turistas FIFA 2026 en CDMX. Símbolo nacional de México."
+    "mejor_horario": "8-10 AM para comenzar recorrido sin filas masivas. Atardeceres (5-7 PM) para fotografía dorada. Viernes-domingo máxima afluencia.",
+    "mundial_relevancia": "Atracción #1 para turistas del Mundial. Parada obligatoria para cualquier extranjero. Conecta con Línea 1 hacia Chapultepec."
   },
   {
     "slug": "pino-suarez",
@@ -1205,19 +1200,19 @@ const estaciones = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Metro Pino Suárez Línea 2 CDMX — Transfer Línea 1 | MetroGuia",
-    "meta_description": "Pino Suárez (Línea 2): estación con transfer a Línea 1. Acceso al centro histórico y Zócalo.",
+    "seo_title": "Metro Pino Suárez CDMX — Centro histórico | MetroGuia",
+    "meta_description": "Metro Pino Suárez: acceso al Zócalo, Catedral, Templo Mayor. Patrimonio histórico UNESCO. Guía imprescindible para turistas del Mundial.",
     "h1": "Metro Pino Suárez (Línea 2): acceso al Zócalo",
-    "intro": "Pino Suárez en la Línea 2 ofrece acceso directo a transfer con Línea 1, facilitando circulación en el centro histórico. La estación conecta directamente con el Zócalo y sitios históricos.",
-    "historia_icono": "Pino Suárez fue un importante político mexicano del siglo XIX.",
+    "intro": "Pino Suárez es estación de la Línea 1 ubicada en el corazón del Centro Histórico, junto al Zócalo de la Ciudad de México. La zona es epicentro de patrimonio cultural con templos coloniales, museos importantes, comercio tradicional y plazas históricas. Para turistas del Mundial es punto de acceso imprescindible al patrimonio histórico de la capital, declarado Patrimonio de la Humanidad por UNESCO. Conecta directamente con Línea 2 hacia Estadio Azteca.",
+    "historia_icono": "El ícono de Pino Suárez representa al personaje histórico Benito Juárez Pino Suárez, presidente reformista de México.",
     "tips": [
-      "Transfer directo a Línea 1",
-      "Acceso al Zócalo y centro histórico",
-      "Estación estratégica para circulación",
-      "Conexión eficiente entre líneas"
+      "Zócalo a 2 min caminando: plaza más grande de América Latina, Catedral Metropolitana (entrada $6 USD)",
+      "Museos gratuitos domingos para residentes; turistas extranjeros pagan tarifa normal de $4-8 USD",
+      "Templo Mayor prehispánico a 3 min: entrada $6 USD, una de las ruinas más significativas de México",
+      "Zona muy concurrida; evita 11 AM-3 PM. Mejor: 8-10 AM o después de 5 PM para exploración tranquila"
     ],
-    "mejor_horario": "Mañana para transporte eficiente.",
-    "mundial_relevancia": "Hub importante para movilidad de turistas FIFA 2026."
+    "mejor_horario": "8-11 AM para museos y monumentos sin filas enormes. Atardeceres (5-7 PM) ofrecen iluminación dorada del Zócalo.",
+    "mundial_relevancia": "Atracción histórica esencial para turistas del Mundial. Centro neurálgico que conecta con Línea 2 hacia Estadio Azteca."
   },
   {
     "slug": "san-antonio-abad",
@@ -1238,19 +1233,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Antonio Abad CDMX — Zona comercial | MetroGuia",
-    "meta_description": "San Antonio Abad: estación comercial en Cuauhtémoc. Tiendas, servicios y gastronomía.",
+    "seo_title": "Metro San Antonio Abad CDMX — Historia y Mercados",
+    "meta_description": "Estación San Antonio Abad: Templo histórico, Mercado de la Jamaica y auténtica vida barrial. Descubre el sur de CDMX.",
     "h1": "Metro San Antonio Abad: zona comercial céntrica",
-    "intro": "San Antonio Abad es una estación comercial ubicada en Cuauhtémoc, ofreciendo acceso a zona comercial activa con tiendas, servicios y restaurantes. La zona es vibrante y bien conectada con el centro histórico.",
-    "historia_icono": "San Antonio Abad es patrón de los animales y campesinos, iglesia importante en la tradición colonial.",
+    "intro": "San Antonio Abad es una estación en el sur de la CDMX que abre la puerta a la zona de Iztapalapa, uno de los corazones históricos de la ciudad. Nombrada por la iglesia del santo, esta zona tiene profundas raíces coloniales y es hogar de una población vibrante y auténtica. Los turistas interesados en la historia, la cultura popular mexicana y la vida real de capitalinos encontrarán mucho que explorar: mercados dinámicos, templos históricos y gastronomía auténtica.",
+    "historia_icono": "El ícono representa a San Antonio Abad, santo católico venerado ampliamente en México. Se muestra típicamente con elementos religiosos como una vara o cayado, conectando con la devoción popular y la iglesia histórica que nombra la estación.",
     "tips": [
-      "Zona comercial bien surtida",
-      "Servicios variados",
-      "Gastronomía local",
-      "Acceso cercano al centro histórico"
+      "Visita la Iglesia de San Antonio Abad, un templo de importancia histórica",
+      "Explora el Mercado de la Jamaica, uno de los más grandes de la CDMX",
+      "Come comida de barrio en comedores populares con precios muy accesibles",
+      "Observa el arte urbano y murales que narran historias locales",
+      "Toma fotos de la arquitectura popular y colorida de las casas"
     ],
-    "mejor_horario": "Horario comercial para ambiente completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Lunes a sábados entre 08:00 y 17:00 para visitar mercados activos y espacios culturales. Evita noches si no estás familiarizado con la zona.",
+    "mundial_relevancia": "San Antonio Abad será una estación importante para turistas del Mundial 2026 que busquen experimentar la CDMX auténtica y menos conocida."
   },
   {
     "slug": "chabacano",
@@ -1274,20 +1270,20 @@ const estaciones = [
       "8",
       "9"
     ],
-    "seo_title": "Metro Chabacano CDMX — Transfer Líneas 8, 9 | MetroGuia",
-    "meta_description": "Chabacano: estación comercial con transfers a Líneas 8 y 9. Centro comercial importante. Hub de transporte.",
+    "seo_title": "Metro Chabacano CDMX — Mercados y Vida Local",
+    "meta_description": "Estación Chabacano: Mercados frescos, fondas auténticas y vida barrial tradicional. Experiencia real de CDMX para viajeros auténticos.",
     "h1": "Metro Chabacano: hub comercial y de transporte",
-    "intro": "Chabacano es una estación comercial importante ubicada en Iztapalapa con conexiones directas a las Líneas 8 y 9. La zona es altamente comercial con tiendas, servicios y transporte intermodal.",
-    "historia_icono": "Chabacano proviene del árbol del chabacano, fruta característica de México.",
+    "intro": "Chabacano es una estación que conecta con un barrio residencial con carácter tradicional mexicano. Named después de un árbol frutal tropical, la zona mantiene una atmósfera auténtica y local. Es ideal para turistas que quieren ver cómo viven los mexicanos en la ciudad, lejos de las zonas turistificadas. Aquí encontrarás tiendas locales, fondas de comida casera, y la oportunidad de comprar frutas y productos locales en mercados callejeros.",
+    "historia_icono": "El ícono representa el árbol chabacano, un árbol frutal tropical que era común en la zona. El símbolo muestra la fruta o las características del árbol, conectando con la naturaleza y la historia agrícola del lugar.",
     "tips": [
-      "Múltiples transfers (Líneas 8 y 9)",
-      "Centro comercial importante",
-      "Tiendas de electrónica y ropa",
-      "Zona concurrida y dinámica",
-      "Servicios especializados"
+      "Compra frutas y verduras en los mercados de barrio, muy frescas y baratas",
+      "Come tamales, quesadillas y comida típica en fondas locales auténticas",
+      "Interactúa con vendedores locales para recomendaciones personalizadas",
+      "El área es segura durante el día para explorar a pie",
+      "Toma fotos de la arquitectura vernácula y colorida del barrio"
     ],
-    "mejor_horario": "Tarde para ambiente comercial.",
-    "mundial_relevancia": "Hub importante para movilidad en CDMX."
+    "mejor_horario": "Mañanas entre 07:00 y 11:00 para ver la actividad más auténtica del mercado. Los días de entre semana son más tranquilos.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "viaducto",
@@ -1308,19 +1304,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Viaducto CDMX — Eje vial importante | MetroGuia",
-    "meta_description": "Viaducto: estación en Eje Viaducto Miguel Alemán. Zona comercial y de transporte.",
+    "seo_title": "Metro Viaducto CDMX — Transporte central | MetroGuia",
+    "meta_description": "Metro Viaducto: hub de conexión estratégica. Comercio local, restaurantes variados. Guía de transbordo eficiente.",
     "h1": "Metro Viaducto: eje vial importante",
-    "intro": "Viaducto es una estación ubicada en el Eje Viaducto Miguel Alemán, importante arteria vial de la Ciudad de México. Ofrece acceso a zona comercial y funciona como nudo de transporte.",
-    "historia_icono": "El Viaducto Miguel Alemán es uno de los ejes viales más importantes de CDMX.",
+    "intro": "Viaducto es estación de la Línea 2 ubicada bajo el Viaducto Miguel Alemán, importante arteria de transporte de la capital. La zona es comercial y de servicios con ambiente urbano típico capitalino. Para turistas representa acceso a zonas residenciales y comerciales de CDMX más allá del circuito turístico central. Funciona como hub de conexión hacia múltiples direcciones de la ciudad.",
+    "historia_icono": "El ícono de Viaducto representa la infraestructura moderna del viaducto, símbolo de modernización ciudad siglo XX.",
     "tips": [
-      "Acceso a Eje Viaducto",
-      "Zona comercial accesible",
-      "Servicios de transporte variados",
-      "Buena conectividad"
+      "Conexión directa con Línea 1 para acceso Chapultepec (museos) e Insurgentes (compras)",
+      "Comercio local: tiendas electrónica, ropa, servicios básicos",
+      "Restaurantes y cafés presupuesto variado",
+      "Zona segura durante día; bien conectada con otras líneas metro"
     ],
-    "mejor_horario": "Cualquier hora para transporte.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "9 AM-7 PM para compras y servicios. Menos turística que estaciones céntrica.",
+    "mundial_relevancia": "Punto de transbordo estratégico para turistas que conectan líneas principales del Metro."
   },
   {
     "slug": "xola",
@@ -1392,19 +1388,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Nativitas CDMX — Zona residencial | MetroGuia",
-    "meta_description": "Nativitas: estación residencial en Benito Juárez. Zona tranquila con servicios comunitarios.",
+    "seo_title": "Metro Nativitas CDMX — Barrio Familiar Tranquilo",
+    "meta_description": "Estación Nativitas: Barrio residencial tranquilo con fondas familiares y mercados. Experiencia auténtica del sur capitalino.",
     "h1": "Metro Nativitas: zona residencial tranquila",
-    "intro": "Nativitas es una estación residencial ubicada en Benito Juárez, ofreciendo acceso a zona tranquila y segura. Ideal para residentes que buscan ambiente comunitario.",
-    "historia_icono": "Nativitas hace referencia a la Natividad de Cristo, festividad importante en tradición católica.",
+    "intro": "Nativitas es una estación en un barrio residencial del sur coyoacanense. El nombre honra la tradición religiosa cristiana mexicana. La zona es principalmente habitacional, tranquila y segura, con un ambiente auténticamente mexicano. Para turistas interesados en la vida real, lejos de las zonas turísticas, ofrece mercados locales, fondas familiares y la oportunidad de conectar con la comunidad.",
+    "historia_icono": "El ícono representa la Natividad de Jesús, un evento importante en la tradición cristiana. El símbolo muestra probablemente elementos religiosos conectando con esta celebración.",
     "tips": [
-      "Zona residencial tranquila",
-      "Servicios comunitarios",
-      "Ambiente seguro",
-      "Buen para descansar"
+      "Desayuna como un local en fondas con comida típica",
+      "Compra artesanías locales directamente de artesanos",
+      "Camina por el barrio para fotografiar arquitectura vernácula",
+      "Es seguro explorar durante el día a pie",
+      "Los vecinos son amables y abiertos a conversaciones"
     ],
-    "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañanas de 07:00 a 12:00 para ver actividad auténtica. Entre semana es más tranquilo que fines de semana.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "portales",
@@ -1453,19 +1450,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ermita CDMX — Coyoacán residencial | MetroGuia",
-    "meta_description": "Ermita: estación residencial en Coyoacán. Zona tranquila con iglesia histórica.",
+    "seo_title": "Metro Ermita — Patrimonio religioso guadalupano",
+    "meta_description": "Ermita: cercanía a Basílica de Guadalupe, zona de peregrinación y mercados religiosos. Patrimonio espiritual auténtico en el sur.           ",
     "h1": "Metro Ermita: zona residencial de Coyoacán",
-    "intro": "Ermita es una estación residencial ubicada en Coyoacán, ofreciendo acceso a zona tranquila con acceso a iglesia histórica. La zona es tranquila e ideal para descanso.",
-    "historia_icono": "La Ermita es una pequeña capilla con significado religioso y comunitario para Coyoacán.",
+    "intro": "Ermita es estación de la Línea 12 conectando zona residencial-comercial del sur con Basílica de Guadalupe cercana, sitio de importancia religiosa y turística. Para turistas del Mundial FIFA 2026, Ermita ofrece acceso a zona de peregrinación, mercados locales y vida religiosa-cultural vibrante del sur capitalino. Es parada para exploradores interesados en patrimonio religioso.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Ermita con patrimonio religioso, zona donde fe, tradición y vida moderna convergen. Este símbolo evoca importancia espiritual y cultural.",
     "tips": [
-      "Zona residencial tranquila",
-      "Iglesia histórica cercana",
-      "Ambiente seguro",
-      "Acceso a Coyoacán artístico"
+      "Basílica de Guadalupe cercana: visitavisita lugar de peregrinación importante, especialmente deciembre",
+      "Mercado local: frutas, velas, flores y productos religiosos para peregrinos",
+      "Iglesias locales: arquitectura colonial y religiosa en alrededores",
+      "Tiendas de recuerdos religiosos: artículos devocionales a precios de barrio",
+      "Respeta espacios: zona es principalmente religiosa; mantén silencio en áreas sagradas"
     ],
-    "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Visita según calendario religioso; diciembre altamente concurrido por Día de Guadalupe.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en patrimonio religioso y peregrinación encontrarán experiencia cultural importante."
   },
   {
     "slug": "general-anaya",
@@ -1481,19 +1479,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro General Anaya CDMX — Zona residencial Coyoacán | MetroGuia",
-    "meta_description": "General Anaya: estación residencial en Coyoacán. Zona tranquila del sur de CDMX.",
+    "seo_title": "Metro General Anaya CDMX — Barrio Residencial",
+    "meta_description": "Estación General Anaya: Zona residencial tranquila con fondas y tiendas locales. Vida auténtica de CDMX.",
     "h1": "Metro General Anaya: zona residencial Coyoacán",
-    "intro": "General Anaya es una estación residencial ubicada en Coyoacán, ofreciendo acceso a zona tranquila y segura. Ideal para residentes que buscan tranquilidad al sur de CDMX.",
-    "historia_icono": "General Anaya fue un militar mexicano importante en la historia nacional.",
+    "intro": "General Anaya es una estación nombrada en honor a un personaje histórico mexicano. La zona es principalmente residencial, tranquila y segura, con un carácter local auténtico. Aunque no es un destino turístico principal en sí mismo, la estación ofrece acceso a un barrio genuino donde viven capitalinos comunes, con tiendas locales, fondas y la oportunidad de experimentar la vida real de la CDMX lejos de las rutas turísticas.",
+    "historia_icono": "El ícono representa a un general, probablemente mostrando elementos militares o símbolos de honor, honrando este personaje histórico mexicano importante.",
     "tips": [
-      "Zona residencial tranquila",
-      "Ambiente seguro",
-      "Servicios locales",
-      "Acceso a Coyoacán"
+      "Desayuna en fondas locales con comida casera y precios muy bajos",
+      "Compra en tiendas de barrio para ver el comercio local",
+      "Camina por las calles residenciales para fotografiar la vida cotidiana",
+      "El barrio es seguro durante el día",
+      "Interactúa con vecinos para recomendaciones auténticas"
     ],
-    "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Cualquier hora del día es segura. Las mañanas entre 07:00 y 11:00 son más auténticas.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "tasquena",
@@ -1556,18 +1555,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Indios Verdes CDMX — Guía turística | MetroGuia",
-    "meta_description": "Terminal norte de la Línea 3. Conexión con autobuses foráneos al norte del país. Tips para turistas en MetroGuia.",
+    "seo_title": "Metro Indios Verdes CDMX — Terminal Norte | MetroGuia",
+    "meta_description": "Terminal norte Línea 3. Conexión Central Autobuses. Parque Indios Verdes. Entrada CDMX desde norte.",
     "h1": "Metro Indios Verdes: guía completa de la estación terminal",
-    "intro": "Indios Verdes es el terminus norte de la Línea 3 y un importante punto de conexión con autobuses del norte del país. La zona es principalmente residencial y comercial, con un parque urbano y mercados locales.",
-    "historia_icono": "El ícono representa a los guerreros indígenas que habitaron la región norte del Valle de México, conmemorados en las esculturas del parque homónimo.",
+    "intro": "Indios Verdes es el terminus norte de la Línea 3 del Metro CDMX, una puerta de entrada estratégica para turistas que llegan desde el norte del país. Esta estación conecta directamente con la Central de Autobuses del Norte, facilitando el acceso a visitantes internacionales del Mundial 2026. La zona rodea el icónico Parque Indios Verdes, que ofrece espacios verdes y mercados tradicionales mexicanos. Desde aquí puedes explorar barrios residenciales auténticos de la Ciudad de México.",
+    "historia_icono": "El ícono de esta estación representa a los guerreros indígenas que habitaron la región norte del Valle de México. Homenajea a los pueblos originarios de Tenochtitlan y conmemora la presencia indígena en esta zona de la capital.",
     "tips": [
-      "Es terminal de línea: siempre hay lugar para sentarse al abordar",
-      "Conecta con la Central de Autobuses del Norte por pesero",
-      "Evita horas pico (7-9am y 6-8pm) para mayor comodidad"
+      "Es terminal de línea: siempre hay espacio para sentarse, ideal tras viajes largos desde el norte",
+      "Conecta con la Central de Autobuses del Norte en 10 minutos a pie o pesero directo",
+      "El Parque Indios Verdes es perfecto para estirar las piernas y disfrutar del verde",
+      "Los mercados cercanos venden artesanías y productos típicos mexicanos a buenos precios",
+      "Evita las 7-9am y 6-8pm para mayor comodidad"
     ],
-    "mejor_horario": "Horario regular todo el día; afluencia alta en horas pico.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial. Útil como punto de llegada desde el norte del país."
+    "mejor_horario": "Visita de 10am a 4pm para evitar afluencias máximas. El parque es especialmente hermoso al atardecer para fotos panorámicas.",
+    "mundial_relevancia": "Puerta de entrada desde el norte del país. Relevante para turistas que arriben en autobús foráneo durante el Mundial 2026."
   },
   {
     "slug": "deportivo-18-de-marzo",
@@ -1585,18 +1586,20 @@ const estaciones = [
     "transferencias": [
       "6"
     ],
-    "seo_title": "Metro Deportivo 18 de Marzo CDMX — Guía | MetroGuia",
-    "meta_description": "Estación de transferencia L3/L6. Acceso al Deportivo 18 de Marzo en Gustavo A. Madero.",
+    "seo_title": "Metro Deportivo 18 Marzo CDMX — Centro Deportivo | MetroGuia",
+    "meta_description": "Deportivo 18 Marzo. Complejo deportivo profesional. Entrenamientos atléticos. Eventos deportivos CDMX.",
     "h1": "Metro Deportivo 18 de Marzo: transferencia L3 y L6",
-    "intro": "Estación de correspondencia entre las Líneas 3 y 6. Permite acceder al complejo deportivo homónimo y conectar con el corredor norte de la ciudad.",
-    "historia_icono": "El ícono alude al 18 de marzo de 1938, fecha de la expropiación petrolera en México, uno de los momentos más significativos de la historia moderna del país.",
+    "intro": "Esta estación es punto de acceso al Deportivo 18 de Marzo, un complejo deportivo emblemático de la Ciudad de México usado para eventos atléticos y entrenamientos. Para turistas del Mundial 2026, representa una oportunidad de conectar con la vida deportiva local y ver instalaciones de clase mundial. La zona es principalmente residencial y deportiva, con acceso fácil a campos de fútbol, canchas de tenis y espacios de entrenamiento profesional.",
+    "historia_icono": "El ícono simboliza la actividad deportiva y el compromiso con la excelencia atlética. Representa los valores olímpicos y el desarrollo del deporte en la ciudad durante décadas.",
     "tips": [
-      "Transferencia a L6 hacia La Villa-Basílica o El Rosario",
-      "Zona tranquila, ideal para visitas al deportivo",
-      "Menos concurrida que otras estaciones de L3"
+      "Acceso directo al Deportivo 18 de Marzo, complejo con estadio y múltiples canchas",
+      "Transferencia con Línea 6 para ampliar tu ruta turística sin cambiar estación",
+      "Zona ideal para ver entrenamientos de futbolistas y atletas durante el día",
+      "Restaurantes cercanos ofrecen comida deportiva mexicana e internacional",
+      "Horario de actividades: 6am-10pm (verifica eventos especiales en línea)"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (7am-11am) para ver entrenamientos en vivo. Tardes tranquilas de 2pm-5pm para explorar sin multitudes.",
+    "mundial_relevancia": "Centro de entrenamientos y eventos deportivos. Relevante para turistas interesados en la infraestructura deportiva mexicana que alberga entrenamientos del Mundial."
   },
   {
     "slug": "potrero",
@@ -1612,18 +1615,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Potrero CDMX — Guía para turistas | MetroGuia",
-    "meta_description": "Estación Potrero en Línea 3, Gustavo A. Madero. Acceso a mercados locales. Guía completa en MetroGuia.",
+    "seo_title": "Metro Potrero CDMX — Centro Transferencia | MetroGuia",
+    "meta_description": "Estación Potrero. Transferencia Línea 5. Zona comercial. Barrios residenciales históricos CDMX.",
     "h1": "Metro Potrero: guía turística de la estación",
-    "intro": "Estación en zona residencial del norte de la ciudad. Ofrece acceso a mercados tradicionales y la vida cotidiana del barrio popular de Potrero.",
-    "historia_icono": "El ícono representa campos de potrero (terrenos de pastoreo) que caracterizaron este territorio antes de su urbanización.",
+    "intro": "Potrero es una estación de transbordo fundamental en la Línea 3, que conecta con la Línea 5, ofreciendo acceso a diversas zonas turísticas de la ciudad. La estación sirve como puente entre el norte residencial y el centro histórico de México. Desde aquí, turistas pueden explorar barrios culturales y comerciales con facilidad, aprovechando la infraestructura de transporte para maximizar sus recorridos.",
+    "historia_icono": "El ícono de Potrero representa el concepto de tierra apta para pastura, evocando la historia prehispánica cuando esta zona era terreno agrícola del Valle de México.",
     "tips": [
-      "Zona tranquila y segura",
-      "Mercados locales para probar comida típica económica",
-      "Buena conexión con colonias del norte"
+      "Centro de transferencia: conecta fácilmente con Línea 5 para explorar más zonas",
+      "Zona comercial cercana con tiendas y restaurantes para descansar entre traslados",
+      "La estación es punto medio ideal para romper un viaje largo por la Línea 3",
+      "Acceso a barrios residenciales con arquitectura histórica mexicana",
+      "Horario de transbordo: rápido y eficiente durante todo el día"
     ],
-    "mejor_horario": "Mañanas para mercados locales.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (12pm-2pm) cuando la afluencia de trasbordo es moderada. Ideal para explorar comercios cercanos.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor principal como estación de conexión para optimizar desplazamientos."
   },
   {
     "slug": "la-raza",
@@ -1651,18 +1656,20 @@ const estaciones = [
     "transferencias": [
       "5"
     ],
-    "seo_title": "Metro La Raza CDMX — Museo y Túnel de la Ciencia | MetroGuia",
-    "meta_description": "La Raza es famosa por su Túnel de la Ciencia subterráneo. Transferencia L3/L5. Guía completa en MetroGuia.",
+    "seo_title": "Metro La Raza CDMX — Monumento Nacional | MetroGuia",
+    "meta_description": "La Raza CDMX. Monumento Nacional. Identidad cultural mexicana. Sitio icónico obligatorio para turistas.",
     "h1": "Metro La Raza: el Túnel de la Ciencia bajo tus pies",
-    "intro": "La Raza alberga uno de los tesoros ocultos del Metro: el Túnel de la Ciencia, un museo subterráneo gratuito entre andenes. También es nodo de transferencia con la Línea 5 y punto de acceso al Hospital General y zonas médicas.",
-    "historia_icono": "El ícono representa la fusión de culturas que dio origen a la identidad mestiza mexicana, concepto acuñado por José Vasconcelos como 'la raza cósmica'.",
+    "intro": "La Raza es una estación histórica y culturalmente significativa en la Línea 3, ubicada en la Alcaldía Gustavo A. Madero. La estación conecta con el Monumento a la Raza, un icono nacional que celebra la identidad mexicana y la confluencia de culturas. Para turistas internacionales del Mundial 2026, representa un sitio obligatorio para entender la identidad cultural e histórica de México, con impactante arquitectura pública y espacios para contemplación.",
+    "historia_icono": "El ícono muestra el rostro de La Raza Cósmica, obra maestra del muralismo mexicano. Representa la identidad nacional y la fusión de culturas que define a México, diseñado para inspirar orgullo y unidad.",
     "tips": [
-      "No te pierdas el Túnel de la Ciencia gratuito entre andenes",
-      "Transferencia eficiente a Línea 5 hacia Politécnico o Pantitlán",
-      "Zona con buena oferta de comida callejera"
+      "Visita el Monumento a la Raza: escultura monumental y símbolo nacional imprescindible",
+      "Acceso directo a la Glorieta de La Raza, espacio público para fotos panorámicas",
+      "Museos cercanos cuentan historias del México antiguo y moderno",
+      "Restaurantes de comida mexicana auténtica en la zona a precios accesibles",
+      "Tranquilidad relativa en horario matutino para contemplación sin aglomeraciones"
     ],
-    "mejor_horario": "Cualquier hora; el túnel está disponible en horario de servicio.",
-    "mundial_relevancia": "Punto de conexión útil para turistas que vienen del norte de la ciudad hacia el centro."
+    "mejor_horario": "Mañana (8am-11am) para fotografia clara del monumento. Evita tarde (6pm-8pm) cuando el monumento se oscurece.",
+    "mundial_relevancia": "Sitio cultural emblemático. Recomendado para turistas que quieran comprender la identidad mexicana durante su visita por el Mundial 2026."
   },
   {
     "slug": "tlatelolco",
@@ -1698,18 +1705,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tlatelolco CDMX — Plaza de las Tres Culturas | MetroGuia",
-    "meta_description": "Desde Metro Tlatelolco accedes a la Plaza de las Tres Culturas, el Memorial del 68 y zona arqueológica prehispánica. Imperdible para el Mundial 2026.",
+    "seo_title": "Metro Tlatelolco CDMX — Arqueología Azteca | MetroGuia",
+    "meta_description": "Tlatelolco. Plaza Tres Culturas. Ruinas prehispánicas. Acceso Templo Mayor. Patrimonio UNESCO CDMX.",
     "h1": "Metro Tlatelolco: historia prehispánica, colonial y moderna",
-    "intro": "Tlatelolco es uno de los sitios más cargados de historia en México. En un radio de 5 minutos coexisten ruinas aztecas, una iglesia del siglo XVI y edificios modernos: la llamada Plaza de las Tres Culturas. También alberga el conmovedor Memorial del 68.",
-    "historia_icono": "El ícono representa el Templo Mayor de Tlatelolco, centro comercial y religioso del Imperio Azteca, rival de Tenochtitlán.",
+    "intro": "Tlatelolco es una estación de profunda importancia histórica, dando acceso a la Plaza de las Tres Culturas, un sitio arqueológico y cultural que resume mil años de historia mexicana. Esta zona alberga restos de la antigua ciudad azteca de Tlatelolco, un templo colonial español y arquitectura moderna, representando las tres culturas que forjaron México. Para turistas del Mundial 2026, es un destino imprescindible para entender las raíces prehispánicas de la nación.",
+    "historia_icono": "El ícono de Tlatelolco representa la pirámide del Templo Mayor y la dualidad cultural. Evoca la grandeza de la ciudad gemela de Tenochtitlan, centro de comercio y poder en el Imperio Azteca.",
     "tips": [
-      "La Plaza de las Tres Culturas es gratuita y abre todos los días",
-      "El Memorial del 68 recuerda la masacre estudiantil del 2 de octubre",
-      "Combina con visita a Garibaldi (2 estaciones al sur en LB)"
+      "Entra a la Plaza de las Tres Culturas: arqueología azteca, arquitectura colonial y moderna en un solo lugar",
+      "Templo Mayor accesible desde aquí, uno de los museos arqueológicos más importantes de México",
+      "Camina entre ruinas prehispánicas y edificios coloniales para experiencia inmersiva en la historia",
+      "Guías turísticos especializados ofrecen explicaciones detalladas en español e inglés",
+      "Mejor sin aglomeraciones: visita entre semana (martes-jueves)"
     ],
-    "mejor_horario": "Mañanas para evitar el sol. Fines de semana hay menos afluencia.",
-    "mundial_relevancia": "Destino imperdible para turistas del Mundial 2026 que quieran conocer la historia profunda de México."
+    "mejor_horario": "Mañana (9am-12pm) con luz natural para fotos y exploración. Templo Mayor abre 9am-5pm.",
+    "mundial_relevancia": "Sitio arqueológico fundamental. Esencial para turistas internacionales que deseen comprender el legado prehispánico durante el Mundial 2026."
   },
   {
     "slug": "guerrero",
@@ -1732,18 +1741,20 @@ const estaciones = [
     "transferencias": [
       "B"
     ],
-    "seo_title": "Metro Guerrero CDMX — Barrio histórico y artesanías | MetroGuia",
-    "meta_description": "Metro Guerrero: transfer L3/LB, acceso a mercados y la Alameda de Santa María. Guía en MetroGuia.",
+    "seo_title": "Metro Guerrero — Centro artístico y cultural",
+    "meta_description": "Guerrero: galerías de arte contemporáneo, librerías independientes y restaurantes tradicionales. Centro artístico y bohemio vibrante en el Centro Histórico",
     "h1": "Metro Guerrero: mercados, arte y barrio popular",
-    "intro": "Guerrero es una de las colonias más históricas del centro de CDMX, con una vida comercial intensa y acceso a la hermosa Alameda de Santa María la Ribera. La transferencia con Línea B conecta al tren ligero hacia Ciudad Azteca.",
-    "historia_icono": "El ícono rinde homenaje a Vicente Guerrero, héroe de la Independencia de México y segundo presidente de la nación.",
+    "intro": "Guerrero es estación histórica de la Línea B en pleno Centro Histórico, conectando con barrio de tradición cultural donde galerías de arte, tiendas de antigüedades y calles peatonales confluyen. Para turistas del Mundial FIFA 2026, Guerrero ofrece acceso a zona artística vibrante con galeríascontempor neas, librerías independientes y restaurantes de cocina mexicana tradicional. La estación es puerta a arte y historia capitalina auténtica.",
+    "historia_icono": "El ícono gris de la Línea B representa la energía artística de Guerrero, zona donde muralistas, artistas plásticos y bohemios transformaron el barrio en epicentro cultural. Este símbolo evoca la creatividad sin límites que define a esta zona histórica.",
     "tips": [
-      "Conecta con Línea B en esta misma estación",
-      "La Alameda de Santa María la Ribera tiene el Kiosko Morisco original de la Exposición Universal de 1884",
-      "Zona con mucha oferta gastronómica popular y económica"
+      "Galerías de arte en calles laterales: muchas gratuitas con obras de artistas mexicanos contemporáneos",
+      "Librerías independientes como Madero Libros: busca ediciones mexicanas, poesía y literatura independiente",
+      "Calle peatonal Madero: compra en tiendas de ropa, accesorios y artesanías directo de diseñadores locales",
+      "Come en restaurantes tradicionales: mole negro, chiles rellenos y pozole preparados por cocineras de barrio",
+      "Domingo de mercado: Avenida Madero con vendedores de arte, libros usados y artesanías locales"
     ],
-    "mejor_horario": "Mañanas y tardes para mercados. Fines de semana en la Alameda.",
-    "mundial_relevancia": "Barrio auténtico para turistas que buscan la vida cotidiana de CDMX durante el Mundial 2026."
+    "mejor_horario": "Visita entre 11 AM-7 PM de martes a sábados cuando galerías y tiendas están activas. Domingos hay más vida callejera pero algunos lugares cierran.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en arte contemporáneo, literatura y vida bohemia encontrarán experiencia cultural auténtica cercana al Centro Histórico."
   },
   {
     "slug": "hidalgo",
@@ -1776,18 +1787,20 @@ const estaciones = [
     "transferencias": [
       "2"
     ],
-    "seo_title": "Metro Hidalgo CDMX — Bellas Artes y Alameda Central | MetroGuia",
-    "meta_description": "Metro Hidalgo da acceso a la Alameda Central, Bellas Artes y el corazón cultural de CDMX. Transferencia L2/L3. Guía en MetroGuia.",
+    "seo_title": "Metro Hidalgo CDMX — Catedral y Zócalo | MetroGuia",
+    "meta_description": "Hidalgo CDMX. Catedral Metropolitana. Palacio Nacional. Zócalo. Centro Histórico y Patrimonio.",
     "h1": "Metro Hidalgo: puerta a la Alameda y Bellas Artes",
-    "intro": "La estación Hidalgo es el corazón cultural del centro histórico. A pocos pasos están la Alameda Central (el parque más antiguo de América), el magnífico Palacio de Bellas Artes y el Museo Franz Mayer. Una parada obligatoria para cualquier visitante.",
-    "historia_icono": "El ícono representa al Padre de la Patria: Miguel Hidalgo y Costilla, cura que inició la guerra de Independencia de México el 16 de septiembre de 1810.",
+    "intro": "Hidalgo es una estación estratégica en el corazón del Centro Histórico de la Ciudad de México, ofreciendo acceso directo a la Catedral Metropolitana, el Palacio Nacional y la Zócalo, la plaza más grande de Latinoamérica. Esta estación es obligatoria para turistas internacionales del Mundial 2026 que deseen conectar con los símbolos más icónicos de México. Desde aquí confluyen historia prehispánica, colonial y moderna en un solo espacio.",
+    "historia_icono": "El ícono de Hidalgo representa a Miguel Hidalgo y Costilla, padre de la Independencia mexicana. Simboliza la lucha por la libertad en el corazón del México Colonial.",
     "tips": [
-      "Sube a la Torre Latinoamericana para una vista panorámica de la ciudad",
-      "Bellas Artes tiene exposiciones gratuitas los domingos",
-      "La Alameda es perfecta para un descanso entre museos"
+      "Acceso directo a la Catedral Metropolitana, construcción de 5 siglos emblemática",
+      "Palacio Nacional con murales de Diego Rivera: historia de México en imágenes",
+      "Zócalo a pasos: observa banderas, mercados y vida cultural en la plaza más grande de Latinoamérica",
+      "Museos adyacentes: Museo del Templo Mayor, Museo Nacional de Arte a corta distancia",
+      "Come en fondas tradicionales cercanas con precios asequibles y sabor auténtico"
     ],
-    "mejor_horario": "Mañanas y tarde-noche cuando Bellas Artes se ilumina.",
-    "mundial_relevancia": "Zona imprescindible para turistas del Mundial 2026. Bellas Artes y Alameda son íconos de CDMX."
+    "mejor_horario": "Mañana (8am-10am) para evitar multitudes en sitios arqueológicos. Tarde (4pm-6pm) para fotos del atardecer en Zócalo.",
+    "mundial_relevancia": "Centro neurálgico de la capital. Fundamental para turistas del Mundial que busquen el símbolo más icónico de México: la Zócalo."
   },
   {
     "slug": "juarez",
@@ -1818,18 +1831,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Juárez CDMX — Alameda, Zona Rosa y gastronomía | MetroGuia",
-    "meta_description": "Metro Juárez: acceso a la Alameda Central, Museo Memoria y Tolerancia y la cosmopolita Zona Rosa. Guía en MetroGuia.",
+    "seo_title": "Metro Juárez CDMX — Vida Nocturna y Tiendas | MetroGuia",
+    "meta_description": "Juárez CDMX. Avenida Benito Juárez. Paseo Reforma. Tiendas, restaurantes. Centro cosmopolita.",
     "h1": "Metro Juárez: entre la Alameda y la Zona Rosa",
-    "intro": "La estación Juárez conecta dos de las zonas más vibrantes del centro: la histórica Alameda Central y la cosmopolita Zona Rosa. El Museo Memoria y Tolerancia es una visita poderosa a solo minutos de la salida.",
-    "historia_icono": "El ícono representa a Benito Juárez, el Benemérito de las Américas y primer presidente indígena de México, símbolo de la reforma liberal del siglo XIX.",
+    "intro": "Juárez es una estación ubicada en la avenida más famosa del Centro Histórico, ofreciendo acceso a la Avenida Benito Juárez y a la plaza del mismo nombre. La zona conecta el Centro Histórico con barrios de Cuauhtémoc, siendo punto de convergencia de turismo, comercio y vida nocturna vibrante. Para turistas del Mundial 2026, representa una entrada a la vida cosmopolita de la Ciudad de México con opciones de tiendas, restaurantes y entretenimiento.",
+    "historia_icono": "El ícono de Juárez representa al expresidente Benito Juárez, figura legendaria que reformó México en el siglo XIX. Simboliza justicia, legalidad y reforma institucional.",
     "tips": [
-      "El Mercado San Juan ofrece productos gourmet y comida internacional a precios accesibles",
-      "La Zona Rosa tiene vida nocturna activa y es el barrio LGBT+ de CDMX",
-      "Combina con visita a Bellas Artes caminando por la Alameda"
+      "Avenida Juárez conecta con Paseo de la Reforma, eje más importante de la ciudad",
+      "Zona comercial con tiendas internacionales y locales a lo largo de la avenida",
+      "Restaurantes y bares para cenar y disfrutar de vida nocturna auténtica de CDMX",
+      "Acceso a Parque Morazán y jardines históricos para relajarse",
+      "Transferencias múltiples para explorar diferentes barrios sin cambiar estación"
     ],
-    "mejor_horario": "Todo el día; Zona Rosa es más animada en las noches.",
-    "mundial_relevancia": "Zona excelente para turistas del Mundial. La Zona Rosa tiene hoteles, restaurantes internacionales y vida nocturna."
+    "mejor_horario": "Tarde (3pm-7pm) para explorar tiendas. Noche (8pm-11pm) para vida nocturna y restaurantes.",
+    "mundial_relevancia": "Centro cosmopolita. Ideal para turistas que busquen compaginar historia con vida moderna durante el Mundial 2026."
   },
   {
     "slug": "balderas",
@@ -1852,18 +1867,20 @@ const estaciones = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Metro Balderas CDMX — Artesanías La Ciudadela | MetroGuia",
-    "meta_description": "Metro Balderas: transfer L1/L3, el mejor mercado de artesanías de CDMX en La Ciudadela. Guía en MetroGuia.",
+    "seo_title": "Metro Balderas CDMX — Plaza Garibaldi y Alameda | MetroGuia",
+    "meta_description": "Balderas. Transbordo Línea 1-3. Plaza Garibaldi. Alameda Central. Música en vivo tradicional.",
     "h1": "Metro Balderas: el mercado de artesanías de La Ciudadela",
-    "intro": "Balderas es punto de transferencia L1/L3 y puerta al Mercado de Artesanías La Ciudadela, considerado el mejor lugar para comprar artesanías mexicanas auténticas en todo el DF.",
-    "historia_icono": "El ícono representa a Miguel Negrete Novoa, general liberal del siglo XIX que defendió La Ciudadela durante la Batalla de Puebla.",
+    "intro": "Balderas es una estación estratégica de transbordo entre las Líneas 1 y 3, ubicada en el corazón del Centro Histórico de la Ciudad de México. La estación ofrece acceso a la Alameda Central, Plaza Garibaldi y al barrio histórico de Centro. Para turistas del Mundial 2026, es un punto neurálgico para conectar con sitios culturales, musicales y arqueológicos de la capital mexicana.",
+    "historia_icono": "El ícono de Balderas representa a los Niños Héroes de Chapultepec, jóvenes soldados que dieron sus vidas defendiendo México. Símbolo del heroísmo y sacrificio nacional.",
     "tips": [
-      "La Ciudadela: el mercado de artesanías más surtido de CDMX, ideal para souvenirs del Mundial",
-      "Precios negociables con los artesanos",
-      "El centro cultural La Ciudadela tiene exposiciones gratuitas"
+      "Centro de transbordo perfecto: conecta Línea 1 y 3 para explorar múltiples zonas",
+      "Plaza Garibaldi a pasos: música en vivo, cantantes callejeros y romerías tradicionales",
+      "Alameda Central: parque histórico con museos, esculpturas y espacio para descansar",
+      "Gastronomía diversa: desde taquerías hasta restaurantes de chef en la zona",
+      "Actividad intensa: ideal para turistas que quieran vivir el bullicio de la capital"
     ],
-    "mejor_horario": "10am-6pm de martes a domingo.",
-    "mundial_relevancia": "Destino ideal para turistas del Mundial 2026 que buscan artesanías y souvenirs auténticos de México."
+    "mejor_horario": "Noche (8pm-11pm) para experimentar Plaza Garibaldi con música en vivo. Día para museos.",
+    "mundial_relevancia": "Centro cultural fundamental. Conecta turistas con experiencias auténticas de la CDMX durante el Mundial."
   },
   {
     "slug": "ninos-heroes",
@@ -1879,18 +1896,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Niños Héroes CDMX — Guía | MetroGuia",
-    "meta_description": "Estación Niños Héroes en colonia Doctores, Benito Juárez. Conexión al sur del centro histórico.",
+    "seo_title": "Metro Niños Héroes CDMX — Chapultepec | MetroGuia",
+    "meta_description": "Niños Héroes. Acceso a Chapultepec. Castillo Emperador. Museos nacionales. Parque histórico CDMX.",
     "h1": "Metro Niños Héroes: guía de la estación",
-    "intro": "Estación en la colonia Doctores, zona residencial y médica al sur del centro histórico. Punto de acceso para hospitales del IMSS e ISSSTE.",
-    "historia_icono": "El ícono conmemora a los seis cadetes del Colegio Militar que murieron defendiendo el Castillo de Chapultepec ante la invasión estadounidense de 1847.",
+    "intro": "Niños Héroes es una estación que commemora a los jóvenes soldados que dieron sus vidas en la defensa de México. Ubicada en el corazón del Centro Histórico, ofrece acceso directo a Chapultepec, uno de los sitios más históricos y hermosos de la Ciudad de México. Para turistas del Mundial 2026, representa una parada imprescindible para conectar con la historia militar mexicana y los espacios verdes más importantes de la capital.",
+    "historia_icono": "El ícono representa a los Niños Héroes: cadetes militares que lucharon contra la invasión estadounidense en 1847. Símbolo de valentía patriótica y sacrificio juvenil.",
     "tips": [
-      "Zona segura y tranquila",
-      "Acceso a hospitales y clínicas del IMSS",
-      "Conecta en 2 estaciones con Centro Médico"
+      "Acceso a Chapultepec: parque de 3 secciones con bosque, castillo y museos imprescindibles",
+      "Castillo de Chapultepec: residencia presidencial histórica con vistas panorámicas de la ciudad",
+      "Museos dentro del parque: Nacional de Antropología, Arte Moderno, Historia Natural",
+      "Zona verde perfecta para descansar después de explorar ruinas prehispánicas",
+      "Restaurantes y cafés en Chapultepec para comer con vistas al parque"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (9am-12pm) para entrar a museos con menos afluencia. Tarde para pasear el parque sin calor intenso.",
+    "mundial_relevancia": "Conexión a Chapultepec, sitio patrimonial fundamental. Esencial para turistas que deseen comprender la historia militar mexicana."
   },
   {
     "slug": "hospital-general",
@@ -1906,18 +1925,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Hospital General CDMX — Guía | MetroGuia",
-    "meta_description": "Acceso directo al Hospital General de México. Línea 3 del Metro CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Hospital General CDMX — Servicios Médicos | MetroGuia",
+    "meta_description": "Hospital General CDMX. Centro médico 24/7. Servicios sanitarios. Emergencias. Zona administrativo-médica.",
     "h1": "Metro Hospital General: acceso al mayor hospital de México",
-    "intro": "La estación da acceso directo al Hospital General de México, el más grande del país. Zona principalmente funcional y médica.",
-    "historia_icono": "El ícono representa la cruz de la medicina y los servicios de salud que caracterizan esta zona del sur-centro de CDMX.",
+    "intro": "Hospital General es una estación ubicada en la Alcaldía Cuauhtémoc, ofreciendo acceso a la zona médica y administrativa de la Ciudad de México. La estación sirve principalmente como punto de acceso para pacientes y acompañantes, pero también como transbordo hacia otras zonas de la capital. Para turistas del Mundial 2026, representa un acceso útil a los servicios médicos de primer nivel disponibles en la ciudad.",
+    "historia_icono": "El ícono de Hospital General representa el caduceo médico, símbolo de la medicina y la salud. Evoca la importancia de los servicios sanitarios en la capital.",
     "tips": [
-      "Acceso directo al Hospital General de México",
-      "En emergencias, es la parada más rápida para llegar al hospital",
-      "Zona tranquila fuera de horas pico"
+      "Acceso a Hospital General: uno de los mayores complejos médicos de Latinoamérica",
+      "Disponibilidad de servicios médicos 24/7 en caso de emergencias durante tu visita",
+      "Zona con restaurantes cercanos para acompañantes durante consultas",
+      "Tranquilidad relativa: menor afluencia turística que otras estaciones del centro",
+      "Transferencias a Línea 1 para explorar diferentes barrios"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Horario variable según necesidades médicas. Si visitas por turismo: mediodía (12pm-3pm).",
+    "mundial_relevancia": "Centro médico. Relevante para turistas que requieran atención sanitaria durante el Mundial 2026."
   },
   {
     "slug": "centro-medico",
@@ -1940,18 +1961,20 @@ const estaciones = [
     "transferencias": [
       "9"
     ],
-    "seo_title": "Metro Centro Médico CDMX — Transfer L3/L9 | MetroGuia",
-    "meta_description": "Transferencia Línea 3 y 9. Acceso al Centro Médico Nacional IMSS. Guía completa en MetroGuia.",
+    "seo_title": "Metro Centro Médico CDMX — Salud | MetroGuia",
+    "meta_description": "Centro Médico CDMX: transferencia estratégica a Línea 3, servicios de salud. Centro Médico Nacional para emergencias turistas. Conectividad.",
     "h1": "Metro Centro Médico: nodo de salud y transferencia L3/L9",
-    "intro": "Centro Médico es estación de transferencia L3/L9 y da acceso al Centro Médico Nacional Siglo XXI del IMSS, el hospital más avanzado de México. Zona residencial tranquila al sur del centro.",
-    "historia_icono": "El ícono representa el escudo médico con serpiente (caduceo), símbolo de las ciencias de la salud que dominan esta zona de la ciudad.",
+    "intro": "Centro Médico es una estación clave de transferencia (Línea 9 a Línea 3) ubicada en la alcaldía Benito Juárez, cercana al importante Centro Médico Nacional. Esta estación es vital tanto para turistas que requieran servicios de salud de emergencia como para quienes simplemente deseen explorar un nodo de conectividad importante. La zona combina servicios especializados, comercio orientado a salud y bienestar, y múltiples opciones de movilidad.",
+    "historia_icono": "Centro Médico Nacional fue fundado en 1943 como institución de salud de referencia en México. El ícono del metro representa la cruz médica y simboliza la salud como derecho accesible. Es emblemático del desarrollo institucional mexicano del siglo XX.",
     "tips": [
-      "Transfer eficiente a Línea 9 hacia Tacubaya o Pantitlán",
-      "Zona segura y bien iluminada",
-      "Cerca del WTC México para eventos y convenciones"
+      "Si necesitas atención médica, Centro Médico Nacional es accesible en 2 minutos caminando desde la estación",
+      "Transfiere a Línea 3 para explorar zonas Sur (Copilco, Ciudad Universitaria) o Norte (Indios Verdes)",
+      "Zona con farmacias de calidad y laboratorios clínicos si necesitas servicios de salud menores",
+      "Restaurantes y cafeterías especializadas en comida saludable en los alrededores",
+      "Estación conectada 24 horas: importante recurso en emergencias médicas durante cualquier hora"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Disponible todo el día. Horarios normales durante día; más tranquilo después de 20:00 si buscas usar la estación sin prisa.",
+    "mundial_relevancia": "Servicios de salud críticos: acceso a Centro Médico Nacional para emergencias médicas de turistas FIFA 2026. Hub de transferencia estratégico."
   },
   {
     "slug": "etiopia",
@@ -1967,18 +1990,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Etiopía CDMX — Guía de la estación | MetroGuia",
-    "meta_description": "Metro Etiopía/Plaza de la Transparencia en Benito Juárez. Guía completa para turistas en MetroGuia.",
+    "seo_title": "Metro Etiopía CDMX — Vida Auténtica Metropolitana | MetroGuia",
+    "meta_description": "Etiopía. Plaza Transparencia. Mercados locales. Barrios residenciales auténticos. Vida metropolitana genuine.",
     "h1": "Metro Etiopía: estación en colonia Narvarte",
-    "intro": "Estación en el corazón de la colonia Narvarte Poniente, una de las más tranquilas y residenciales del centro. La Plaza de la Transparencia es un espacio cívico moderno.",
-    "historia_icono": "El ícono representa las relaciones diplomáticas entre México y Etiopía, iniciadas en los años 50, como símbolo de solidaridad entre países en desarrollo.",
+    "intro": "Etiopía, conocida también como Plaza de la Transparencia, es una estación ubicada en la Alcaldía Cuauhtémoc, ofreciendo acceso a una zona administrativa pero con importante historia cultural. La estación representa un punto de conexión hacia barrios diversificados de la ciudad. Para turistas del Mundial 2026, ofrece acceso a perspectivas menos turísticas pero auténticas de la vida cotidiana en la Ciudad de México.",
+    "historia_icono": "El ícono de Etiopía representa la diversidad mundial y la solidaridad internacional. Evoca conexiones culturales entre naciones y pueblos del mundo.",
     "tips": [
-      "Colonia Narvarte tiene excelente oferta gastronómica",
-      "Zona segura y moderna",
-      "Buena base para explorar el sur del centro"
+      "Zona de transición entre Centro Histórico y barrios residenciales para exploración auténtica",
+      "Plaza de la Transparencia: espacio público moderno con arquitectura contemporánea",
+      "Mercados locales cercanos con productos frescos y artesanías a precios reales",
+      "Restaurantes de cocina variada con precios accesibles para todos los presupuestos",
+      "Menor afluencia turística: experiencia más auténtica de la vida metropolitana"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (11am-2pm) para visitar mercados y comer. Evita noche después de 8pm.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en mostrar CDMX más allá de zonas turísticas tradicionales."
   },
   {
     "slug": "eugenia",
@@ -1994,18 +2019,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Eugenia CDMX — Guía de la estación | MetroGuia",
-    "meta_description": "Metro Eugenia en Benito Juárez. Acceso a colonias Roma y Narvarte. Guía en MetroGuia.",
+    "seo_title": "Metro Eugenia CDMX — Vida Urbana Auténtica | MetroGuia",
+    "meta_description": "Eugenia CDMX. Zona comercial. Barrios residenciales. Tiendas y restaurantes. Vida urbana auténtica.",
     "h1": "Metro Eugenia: acceso a Roma y Narvarte",
-    "intro": "Eugenia es una estación práctica para acceder a las colonias Roma Sur y Narvarte, dos de las más trendy de CDMX con gran oferta gastronómica y cultural.",
-    "historia_icono": "El ícono representa a Eugenia de Montijo, emperatriz de Francia y esposa de Napoleón III, cuyo nombre fue dado a esta calle principal durante el Segundo Imperio.",
+    "intro": "Eugenia es una estación ubicada en la Alcaldía Benito Juárez, marcando la transición del Centro Histórico hacia barrios residenciales y comerciales más diversos. La zona ofrece una mezcla de vida urbana y comercial, con acceso a tiendas, restaurantes y servicios. Para turistas del Mundial 2026, representa una parada para experimentar la vida cotidiana mexicana fuera de las principales atracciones turísticas.",
+    "historia_icono": "El ícono de Eugenia representa la vida moderna y el progreso urbano. Simboliza el desarrollo de la ciudad más allá del centro histórico.",
     "tips": [
-      "La colonia Roma Sur tiene cafeterías, restaurantes y bares de moda",
-      "Acceso al Mercado de Medellín con productos de toda Latinoamérica",
-      "Zona segura y popular entre extranjeros"
+      "Zona comercial diversa con tiendas locales e internacionales para compras",
+      "Restaurantes variados: desde comida rápida mexicana hasta cocina internacional",
+      "Acceso a barrios residenciales para experimentar la vida auténtica de la ciudad",
+      "Menor aglomeración que zonas turísticas: mayor comodidad para transbordo",
+      "Conecta fácilmente con otras líneas para explorar diferentes áreas"
     ],
-    "mejor_horario": "Todo el día; noches animadas jueves-sábado.",
-    "mundial_relevancia": "Zona de alta concentración de turistas. Buena base para alojamiento durante el Mundial 2026."
+    "mejor_horario": "Tarde (2pm-6pm) para compras y exploración. Horario flexible para pasos entre destinos.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial."
   },
   {
     "slug": "division-del-norte",
@@ -2021,18 +2048,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro División del Norte CDMX — Parque Hundido | MetroGuia",
-    "meta_description": "Metro División del Norte: acceso al Parque Hundido y colonias Del Valle. Guía en MetroGuia.",
+    "seo_title": "Metro División del Norte CDMX — Arte y Vida Local | MetroGuia",
+    "meta_description": "División del Norte. Galerías arte. Vida bohemia. Restaurantes locales. Noche y cultura CDMX.",
     "h1": "Metro División del Norte: entre Del Valle y el Parque Hundido",
-    "intro": "Estación en la moderna colonia Del Valle, con acceso al Parque Hundido, uno de los pulmones verdes del sur del centro. Zona residencial de clase media con buena oferta de servicios.",
-    "historia_icono": "El ícono conmemora al Ejército de la División del Norte, la poderosa fuerza revolucionaria comandada por Pancho Villa durante la Revolución Mexicana.",
+    "intro": "División del Norte es una estación ubicada en la Alcaldía Benito Juárez, ofreciendo acceso a una zona comercial importante y barrios históricos con carácter bohemio. La zona destaca por su mezcla de comercio tradicional y moderno, galerías de arte y cafeterías alternativas. Para turistas del Mundial 2026, representa una parada interesante para descubrir la vida cultural y artística fuera del centro histórico.",
+    "historia_icono": "El ícono de División del Norte representa el camino histórico que marca la división geográfica de la ciudad. Simboliza la expansión urbana de México hacia el sur.",
     "tips": [
-      "El Parque Hundido tiene zona arqueológica de reproducciones de escultura prehispánica",
-      "Buena zona para hospedarse: tranquila y con buena conectividad",
-      "Conecta en 2 paradas con Coyoacán"
+      "Zona artística y bohemia con galerías, cafeterías y tiendas alternativas",
+      "Avenida División del Norte es importante vía de conexión con barrios del sur",
+      "Antros y vida nocturna alternativa: bares y restaurantes con ambiente local",
+      "Acceso a barrios residenciales de clase media con vibrante vida comercial",
+      "Mercado de alimentos frescos y tiendas locales con precios competitivos"
     ],
-    "mejor_horario": "Mañanas en el parque; todo el día para servicios.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial. Buena zona para hospedarse."
+    "mejor_horario": "Tarde-noche (5pm-10pm) para disfrutar de vida cultural y gastronómica local.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés en cultura alternativa y vida nocturna."
   },
   {
     "slug": "zapata",
@@ -2050,18 +2079,20 @@ const estaciones = [
     "transferencias": [
       "12"
     ],
-    "seo_title": "Metro Zapata CDMX — Transfer L3/L12 | MetroGuia",
-    "meta_description": "Transferencia Línea 3 y 12 en Zapata. Acceso a Coyoacán y la Cineteca Nacional. Guía en MetroGuia.",
+    "seo_title": "Metro Zapata — Barrio residencial sur",
+    "meta_description": "Zapata: mercados locales auténticos, gastronomía casera y vida cotidiana de barrio. Barrio genuino del sur capitalino.                      ",
     "h1": "Metro Zapata: puerta a Coyoacán y transfer L12",
-    "intro": "Zapata es el nodo de transferencia entre la Línea 3 y la Línea 12 (la más nueva del sistema). Desde aquí se puede llegar caminando al corazón de Coyoacán o tomar la L12 hacia el sur-oriente.",
-    "historia_icono": "El ícono representa a Emiliano Zapata, líder agrarista de la Revolución Mexicana y símbolo de la lucha por la tierra y la justicia social.",
+    "intro": "Zapata es estación de la Línea 12 en zona residencial y comercial del sur capitalino, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios del sur, Zapata ofrece mercados locales, tiendas de comercio informal, gastronomía casera y atmósfera cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Zapata con comunidades residenciales del sur, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca movilidad equitativa del sur capitalino.",
     "tips": [
-      "Transfer a Línea 12: la más moderna del sistema Metro",
-      "La Cineteca Nacional es una de las mejores salas de cine de Latinoamérica",
-      "Caminata de 15 min hasta el centro de Coyoacán"
+      "Mercado local: frutas, verduras y productos frescos a precios de barrio local",
+      "Comedores informales: desayunos, comidas y cenas caseras a precios accesibles",
+      "Tiendas de ropa y accesorios: comercio informal con precios bajos",
+      "Servicios locales: farmacias, panaderías y tiendas de necesidades básicas",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Acceso a Coyoacán, uno de los barrios más visitados por turistas del Mundial 2026."
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia baja: zona residencial sin atractivos específicos; turistas específicos encontrarán vida de barrio auténtica."
   },
   {
     "slug": "coyoacan",
@@ -2097,19 +2128,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Coyoacán CDMX — Frida Kahlo y el barrio bohemio | MetroGuia",
-    "meta_description": "Metro Coyoacán: acceso al barrio bohemio de CDMX, la Casa Azul de Frida Kahlo y el Mercado de Artesanías. Imprescindible para el Mundial 2026.",
+    "seo_title": "Metro Coyoacán CDMX — Corazón Bohemio",
+    "meta_description": "Estación Coyoacán: Centro cultural bohemio con Casa Azul, cafés artísticos, galerías y arte. Experiencia imprescindible en CDMX.",
     "h1": "Metro Coyoacán: el barrio más bohemio de México",
-    "intro": "Coyoacán es sin duda uno de los barrios más encantadores y fotografiados de Ciudad de México. Sus calles empedradas, la Casa Azul de Frida Kahlo, el animado mercado de artesanías y la vida en el Jardín Centenario hacen de esta parada una visita obligada para cualquier turista.",
-    "historia_icono": "El ícono representa al coyote, animal totémico de Coyoacán cuyo nombre proviene del náhuatl 'coyohuacan' (lugar de los coyotes), fundado por los chichimecas.",
+    "intro": "Coyoacán es mucho más que una estación de metro: es el corazón cultural y bohemio de la CDMX. Con raíces prehispánicas profundas, fue uno de los principales centros administrativos del imperio azteca. Hoy es un destino imprescindible para turistas: plazas coloniales hermosas, cafés artísticos, galerías, museos de talla mundial (Casa Azul, Casa de Trotsky), y una atmósfera vibrante de artistas, intelectuales y viajeros. Es mágico, bohemio y absolutamente fascinante.",
+    "historia_icono": "El ícono de Coyoacán representa un coyote, basado en la etimología náhuatl 'Coyoacán' que significa 'lugar de coyotes'. El símbolo muestra la cabeza o silueta de un coyote, conectando con la identidad prehispánica del lugar.",
     "tips": [
-      "Reserva la Casa Azul de Frida Kahlo con anticipación: las entradas se agotan rápido",
-      "El Mercado de Coyoacán tiene los mejores tostadas de tinga de la ciudad",
-      "Los fines de semana hay artistas y músicos en el Jardín Centenario",
-      "Caminata nocturna por calles empedradas: muy segura y romántica"
+      "Visita la Casa Azul, hogar de Frida Kahlo, es una experiencia que no se olvida",
+      "Explora la Casa de Trotsky para ver la historia rusa mexicana",
+      "Siéntate en los cafés de la plaza para gozar del ambiente bohemio",
+      "Come en restaurantes que van desde food trucks hasta alta cocina",
+      "Los jueves a domingos hay más vida cultural con galerías abiertas"
     ],
-    "mejor_horario": "Fines de semana de 10am a 7pm para el ambiente completo.",
-    "mundial_relevancia": "Destino TOP para turistas del Mundial 2026. Uno de los barrios más fotografiados de México, ideal para contenido en redes sociales."
+    "mejor_horario": "Jueves a domingos de 10:00 a 21:00 es cuando Coyoacán está más vivo. Las tardes de viernes y sábados son mágicas.",
+    "mundial_relevancia": "Coyoacán es una atracción cultural de primer nivel que atraerá a miles de turistas del Mundial FIFA 2026 por su riqueza artística y bohemia."
   },
   {
     "slug": "viveros",
@@ -2130,18 +2162,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Viveros CDMX — Bosque urbano y jogging | MetroGuia",
-    "meta_description": "Metro Viveros: acceso al bosque urbano de Coyoacán. Zona ideal para correr y relajarse en CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Viveros de Coyoacán CDMX — Naturaleza",
+    "meta_description": "Estación Viveros de Coyoacán: Parque verde con senderos, naturaleza y espacios para descanso. Pulmón verde de CDMX.",
     "h1": "Metro Viveros: el pulmón verde de Coyoacán",
-    "intro": "Los Viveros de Coyoacán son uno de los bosques urbanos más amados de CDMX: 39 hectáreas de árboles, senderos para trotar y aire limpio. La estación también da acceso a las colonias residenciales más tranquilas del sur.",
-    "historia_icono": "El ícono representa los árboles del vivero forestal que da nombre a la estación, establecido en 1901 como parte del proyecto modernizador del Porfiriato.",
+    "intro": "Viveros de Coyoacán es una estación que te conecta con uno de los pulmones verdes más bellos de la CDMX. El parque histórico de viveros es un lugar de verdor y tranquilidad en medio de la metrópolis. Los turistas encontrarán senderos arbolados, plantas hermosas, la oportunidad de descansar en la naturaleza y escapar del caos urbano. Es perfecto para familias, amantes de la naturaleza y quienes buscan paz en la ciudad.",
+    "historia_icono": "El ícono representa árboles, plantas y naturaleza. El símbolo muestra posiblemente un árbol, flores o elementos naturales, representando los viveros y la función del parque como espacio verde.",
     "tips": [
-      "Los Viveros abren de 6am a 6pm, entrada gratuita",
-      "Popular entre corredores por la mañana",
-      "Zona segura y tranquila para caminatas"
+      "Camina los senderos del parque rodeado de árboles y plantas",
+      "Trae una manta para picnic en las áreas verdes",
+      "Es excelente para fotografía de naturaleza y paisajes urbanos",
+      "Las mañanas son ideales para correr o caminar",
+      "Los domingos hay menos gente y es muy pacífico"
     ],
-    "mejor_horario": "7am-10am para corredores y ambiente matutino tranquilo.",
-    "mundial_relevancia": "Zona de descanso ideal para turistas del Mundial que buscan aire libre y naturaleza en la ciudad."
+    "mejor_horario": "Mañanas de 07:00 a 12:00 para ver la naturaleza con luz hermosa. Los domingos todo el día es tranquilo.",
+    "mundial_relevancia": "Viveros de Coyoacán será un destino importante para turistas del Mundial 2026 buscando espacios verdes y descanso en la naturaleza."
   },
   {
     "slug": "miguel-angel-de-quevedo",
@@ -2162,18 +2196,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Miguel Ángel de Quevedo CDMX — Libreros y cafés | MetroGuia",
-    "meta_description": "Metro Miguel Ángel de Quevedo: la avenida de los libros y cafés de autor en Coyoacán. Guía en MetroGuia.",
+    "seo_title": "Metro Quevedo CDMX — Coyoacán Auténtico | MetroGuia",
+    "meta_description": "Quevedo CDMX. Coyoacán auténtico. Mercados locales. Vida residencial bohemia. Barrio tradicional.",
     "h1": "Metro Miguel Ángel de Quevedo: libros, cafés y diseño",
-    "intro": "La Avenida Miguel Ángel de Quevedo es conocida como 'la avenida de los libros' por sus numerosas librerías de viejo y nuevas. Junto a Copilco y Universidad, forma el corredor universitario más vibrante de CDMX.",
-    "historia_icono": "El ícono representa a Miguel Ángel de Quevedo, el 'Apóstol del Árbol', promotor del arbolado urbano en México a principios del siglo XX.",
+    "intro": "Miguel Ángel de Quevedo es una estación ubicada en la Alcaldía Coyoacán, ofreciendo acceso a la vía homónima, una de las avenidas más importantes de la zona. La estación sirve como punto de conexión para explorar barrios residenciales y comerciales de Coyoacán con menos aglomeración que las zonas peatonales centrales. Para turistas del Mundial 2026, representa una parada para experiencias más auténticas y menos masificadas.",
+    "historia_icono": "El ícono representa a Miguel Ángel de Quevedo, intelectual y ambientalista mexicano pionero en reforestación. Simboliza el cuidado del medio ambiente y la educación.",
     "tips": [
-      "La avenida tiene decenas de librerías de segunda mano con precios imbatibles",
-      "Los cafés de autor son perfectos para un descanso entre visitas",
-      "Buena zona para alojarse: tranquila y con acceso rápido a toda la ciudad"
+      "Avenida Miguel Ángel de Quevedo: comercio local, restaurantes y tiendas tradicionales",
+      "Acceso a barrios residenciales coyoacanenses con arquitectura colonial y bohemia",
+      "Mercado local con productos frescos mexicanos y artesanías a precios reales",
+      "Cafeterías y panaderías tradicionales para desayunos y meriendas auténticas",
+      "Menor afluencia turística: experiencia más genuina que zonas peatonales principales"
     ],
-    "mejor_horario": "10am-8pm de martes a domingo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial. Zona tranquila para alojarse durante el torneo."
+    "mejor_horario": "Mañana (8am-11am) para mercados frescos. Tarde (3pm-6pm) para exploración relajada.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en experiencia auténtica de vida coyoacanense."
   },
   {
     "slug": "copilco",
@@ -2194,18 +2230,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Copilco CDMX — Acceso UNAM | MetroGuia",
-    "meta_description": "Metro Copilco: acceso lateral al campus de la UNAM. Zona universitaria de Coyoacán. Guía en MetroGuia.",
+    "seo_title": "Metro Copilco CDMX — Acceso a UNAM",
+    "meta_description": "Estación Copilco: Puerta a UNAM, cafés estudiantiles, vida académica. Centro cultural bohemio de Coyoacán.",
     "h1": "Metro Copilco: la antesala de la UNAM",
-    "intro": "Copilco es la penúltima parada antes de llegar a la terminal Universidad, con acceso lateral al enorme campus de la UNAM. Zona universitaria activa con restaurantes, librerías y servicios orientados a estudiantes.",
-    "historia_icono": "El ícono representa el escudo prehispánico de la cultura Copilco, una de las primeras civilizaciones asentadas en el sur del Valle de México, hacia el año 1500 a.C.",
+    "intro": "Copilco es una estación en Coyoacán cercana a la Universidad Nacional Autónoma de México (UNAM). La zona tiene carácter estudiantil y académico, con librerías, cafés de intelectuales y ambiente bohemio. Para turistas, es un acceso importante a la UNAM y su campus hermoso. La zona es vibrante, segura y perfecta para quienes buscan vida cultural y académica.",
+    "historia_icono": "El ícono de Copilco está basado en su etimología náhuatl, posiblemente representando elementos relacionados con el lugar. El símbolo conecta con la tradición prehispánica.",
     "tips": [
-      "Alternativa menos concurrida a la estación Universidad para entrar al campus UNAM",
-      "Zona con mucha oferta gastronómica económica",
-      "Los museos de la UNAM son de los mejores de México"
+      "Visita el campus de la UNAM, uno de los más hermosos de América Latina",
+      "Come en cafés estudiantiles con precios accesibles",
+      "Explora librerías y espacios intelectuales",
+      "Es zona muy segura con mucha vida cultural",
+      "Ideal para amantes del arte, literatura y academia"
     ],
-    "mejor_horario": "Lunes a viernes en horario universitario.",
-    "mundial_relevancia": "Sin relevancia directa. Zona segura y económica para hospedarse."
+    "mejor_horario": "Lunes a viernes de 10:00 a 20:00 es cuando hay más vida académica. Fines de semana más tranquilo.",
+    "mundial_relevancia": "Copilco será punto de acceso para turistas que visiten UNAM, una institución icónica mexicana."
   },
   {
     "slug": "universidad",
@@ -2241,19 +2279,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Universidad CDMX — UNAM y campus histórico | MetroGuia",
-    "meta_description": "Metro Universidad: puerta a la UNAM, Patrimonio de la Humanidad. Estadio Olímpico, murales de O'Gorman y museos de clase mundial. Guía en MetroGuia.",
+    "seo_title": "Metro Universidad CDMX — UNAM Terminal | MetroGuia",
+    "meta_description": "Universidad. UNAM Terminal Línea 3. Patrimonio UNESCO. Biblioteca Central. Arquitectura icónica 1950.",
     "h1": "Metro Universidad: el campus más bello de México",
-    "intro": "El terminus sur de la Línea 3 es la puerta al campus de la UNAM, declarado Patrimonio de la Humanidad por la UNESCO en 2007. Un campus-ciudad con murales monumentales, museos, el estadio olímpico de 1968 y uno de los centros culturales más activos de América Latina.",
-    "historia_icono": "El ícono representa el escudo de la Universidad Nacional Autónoma de México, fundada en 1910, con el águila y el cóndor sosteniendo un mapa de América.",
+    "intro": "Universidad es la estación terminal sur de la Línea 3, ubicada en el corazón de Ciudad Universitaria (CU). La estación marca el acceso principal al campus de la UNAM, Patrimonio de la Humanidad por su arquitectura única del siglo XX. Para turistas del Mundial 2026, representa un destino imprescindible para entender la modernidad arquitectónica mexicana, la educación superior y la vida universitaria latinoamericana.",
+    "historia_icono": "El ícono de Universidad representa el símbolo de la UNAM y el compromiso con la educación. Evoca la modernidad, la ciencia y el progreso del México del siglo XX.",
     "tips": [
-      "La Biblioteca Central con murales de Juan O'Gorman es acceso libre",
-      "El Estadio Olímpico Universitario (1968) tiene escultura de Diego Rivera en su fachada",
-      "El MUAC tiene exposiciones de arte contemporáneo de primer nivel",
-      "Toma el Pumabús gratuito dentro del campus para recorrerlo todo"
+      "Ciudad Universitaria: campus completo con arquitectura monumental y diseño urbano único",
+      "Biblioteca Central: joya arquitectónica de 1956 con fachada de mosaicos deslumbrantes",
+      "Museo Universitario de Arte Contemporáneo (MUAC): colecciones de arte moderno latinoamericano",
+      "Estadio Olímpico: construcción de 1968 para Juegos Olímpicos, abierto para visitas",
+      "Restaurantes y cafeterías esparcidas ofrecen comida económica con vista a la arquitectura"
     ],
-    "mejor_horario": "Lunes a viernes de 9am a 5pm. Fines de semana más tranquilo pero igual abierto.",
-    "mundial_relevancia": "Visita cultural obligada para turistas del Mundial 2026. La UNAM es Patrimonio de la Humanidad y uno de los campus más bellos del mundo."
+    "mejor_horario": "Mañana (9am-12pm) con luz natural para fotografía. Evita fin de semana cuando afluencia es mayor.",
+    "mundial_relevancia": "Centro educativo y arquitectónico fundamental. Esencial para turistas que deseen comprender la modernidad mexicana y la identidad educativa del país."
   },
   {
     "slug": "martin-carrera",
@@ -2271,18 +2310,20 @@ const estaciones = [
     "transferencias": [
       "6"
     ],
-    "seo_title": "Metro Martín Carrera CDMX — Terminal L4/L6 | MetroGuia",
-    "meta_description": "Terminal norte de Línea 4 y transfer con L6. Zona residencial de Gustavo A. Madero. Guía en MetroGuia.",
+    "seo_title": "Metro Martín Carrera CDMX — Terminal Norte L4 | MetroGuia",
+    "meta_description": "Martín Carrera. Terminal norte Línea 4. Mercados locales. Vida residencial. Acceso norte CDMX.",
     "h1": "Metro Martín Carrera: terminal norte y transfer L4/L6",
-    "intro": "Terminus norte de la Línea 4 y punto de transferencia con la Línea 6. Zona periférica residencial de Gustavo A. Madero con alta afluencia de trabajadores.",
-    "historia_icono": "El ícono representa al General Martín Carrera, figura política del siglo XIX que fungió brevemente como presidente interino de México en 1855.",
+    "intro": "Martín Carrera es la estación terminal norte de la Línea 4, ubicada en la Alcaldía Gustavo A. Madero. La estación ofrece acceso a una zona residencial y comercial del norte de la ciudad, con importante conexión a transporte foráneo hacia el norte del país. Para turistas del Mundial 2026, representa un punto de entrada alternativo desde el norte, con vida urbana auténtica y mercados tradicionales.",
+    "historia_icono": "El ícono de Martín Carrera representa al general y político mexicano Martín Carrera. Evoca el liderazgo y la política durante el período de transformación de México.",
     "tips": [
-      "Transfer directo a Línea 6 hacia La Villa-Basílica o El Rosario",
-      "Terminal de autobuses locales para colonias del norte",
-      "Menos concurrida en horas no pico"
+      "Terminal de línea norte: acceso a autobuses hacia estados del norte",
+      "Zona comercial y residencial con vida local auténtica lejos del turismo masivo",
+      "Mercados tradicionales con productos frescos y artesanías a precios reales",
+      "Restaurantes de comida local y cantinas auténticas para experiencia genuina",
+      "Menor aglomeración que zonas céntricas: mayor comodidad durante transbordo"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (11am-2pm) para visitar mercados. Evita mañana (7-9am) por afluencia de trabajadores.",
+    "mundial_relevancia": "Terminal de acceso norte. Útil para turistas que arriben desde estados septentrionales durante el Mundial 2026."
   },
   {
     "slug": "talisman",
@@ -2298,18 +2339,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Talismán CDMX — Guía de la estación | MetroGuia",
-    "meta_description": "Metro Talismán en Gustavo A. Madero. Zona comercial del norte de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Talismán CDMX — Barrio Auténtico | MetroGuia",
+    "meta_description": "Talismán CDMX. Barrio residencial auténtico. Mercados locales. Restaurantes caseros. Vida barrial genuine.",
     "h1": "Metro Talismán: mercados y vida del norte de la ciudad",
-    "intro": "Estación en zona popular y comercial de Gustavo A. Madero, con acceso a mercados tradicionales del barrio y buenas conexiones con colonias del norte.",
-    "historia_icono": "El ícono evoca objetos de protección y buena fortuna de las culturas prehispánicas, que habitaron estos territorios antes de la conquista española.",
+    "intro": "Talismán es una estación ubicada en la Alcaldía Gustavo A. Madero, ofreciendo acceso a una zona residencial con carácter comercial vibrante. La estación sirve como punto de conexión entre el norte residencial y el centro histórico de la ciudad. Para turistas del Mundial 2026, representa una parada auténtica para experimentar la vida cotidiana de barrios mexicanos menos turísticos. Descubre mercados locales, restaurantes caseros y la hospitalidad genuina de la capital.",
+    "historia_icono": "El ícono de Talismán representa objetos de poder y protección en culturas mesoamericanas. Simboliza la conexión con el misticismo y la sabiduría ancestral.",
     "tips": [
-      "Zona de mercados locales con precios muy accesibles",
-      "Buen punto de partida para explorar el norte popular de CDMX",
-      "Conecta en pocas paradas con Martín Carrera (L6)"
+      "Zona residencial con comercio local y vida barrial auténtica",
+      "Mercados de comida y artesanía con precios accesibles para turistas",
+      "Restaurantes de comida mexicana casera sin pretensiones turísticas",
+      "Acceso a iglesias coloniales y edificios históricos de la zona",
+      "Punto de transbordo cómodo y eficiente hacia otras líneas"
     ],
-    "mejor_horario": "Mañanas para mercados.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (12pm-2pm) para mercados y comida. Evita horas pico.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial."
   },
   {
     "slug": "bondojito",
@@ -2319,18 +2362,20 @@ const estaciones = [
     "tipo_zona": "residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Bondojito CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Bondojito, Línea 4 CDMX. Zona residencial de Gustavo A. Madero. Guía en MetroGuia.",
+    "seo_title": "Metro Bondojito CDMX — Zona Industrial Local | MetroGuia",
+    "meta_description": "Bondojito. Zona industrial residencial. Mercados populares. Vida obrera. Oriente CDMX auténtico.",
     "h1": "Metro Bondojito: estación residencial norte",
-    "intro": "Estación en zona residencial de Gustavo A. Madero. Punto de tránsito para trabajadores del norte de la ciudad.",
-    "historia_icono": "El ícono representa el paisaje de los barrios obreros del norte de CDMX que caracterizaron esta zona durante el siglo XX.",
+    "intro": "Bondojito es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona industrial y residencial de la ciudad con carácter laboral auténtico. La estación representa un punto de conexión hacia barrios populares y comerciales del oriente de la capital. Para turistas del Mundial 2026, ofrece perspectiva genuina de la vida industrial y obrera de México, lejos de los circuitos turísticos tradicionales. Experimenta el México auténtico en su vida cotidiana.",
+    "historia_icono": "El ícono de Bondojito representa el topónimo original: 'Pequeño salto o cascada'. Evoca la geografía natural del territorio antes de la urbanización.",
     "tips": [
-      "Zona tranquila",
-      "Paso hacia Consulado o Martín Carrera",
-      "Mercados locales en los alrededores"
+      "Zona industrial y residencial: perspectiva auténtica de vida laboral mexicana",
+      "Mercados populares con productos frescos a precios muy competitivos",
+      "Restaurantes de fonda con comida casera y económica para trabajadores",
+      "Acceso a parques y espacios públicos menos saturados que centro turístico",
+      "Punto de transbordo eficiente hacia otras zonas de la ciudad"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (12pm-3pm) para visitar mercados. Evita mañana temprano.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés sociológico en vida obrera mexicana."
   },
   {
     "slug": "consulado",
@@ -2348,18 +2393,20 @@ const estaciones = [
     "transferencias": [
       "5"
     ],
-    "seo_title": "Metro Consulado CDMX — Transfer L4/L5 | MetroGuia",
-    "meta_description": "Transfer Línea 4 y 5 en Consulado. Corredor comercial del norte. Guía en MetroGuia.",
+    "seo_title": "Metro Consulado CDMX — Centro Diplomático | MetroGuia",
+    "meta_description": "Consulado CDMX. Zona diplomática. Consulados extranjeros. Restaurantes internacionales. Multicultural CDMX.",
     "h1": "Metro Consulado: transfer L4/L5 en el norte de CDMX",
-    "intro": "Consulado es nodo de transferencia entre las Líneas 4 y 5 en el eje norte de la ciudad. Zona comercial activa con mercados, tiendas y negocios locales.",
-    "historia_icono": "El ícono representa el Tribunal del Consulado, institución comercial novohispana del siglo XVIII que regulaba el comercio entre México y España.",
+    "intro": "Consulado es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona de importancia comercial y administrativa con presencia diplomática internacional. La estación marca la ubicación de sedes de consulados de diversos países en la ciudad. Para turistas del Mundial 2026, representa un punto de conexión estratégico hacia barrios con servicios especializados. Descubre la Ciudad de México multicultural y sus conexiones internacionales desde esta importante estación.",
+    "historia_icono": "El ícono de Consulado representa la diplomacia y las relaciones internacionales. Evoca la conexión entre México y el mundo exterior.",
     "tips": [
-      "Transfer eficiente entre L4 y L5",
-      "Zona comercial popular con precios accesibles",
-      "Conecta el corredor norte con facilidad"
+      "Zona de consulados extranjeros: presencia internacional y multicultural",
+      "Restaurantes internacionales y locales con variedad de opciones gastronómicas",
+      "Servicios especializados: embajadas, oficinas comerciales, negocios internacionales",
+      "Acceso a barrios del oriente con vida comercial vibrante",
+      "Zona relativamente segura y bien organizada para turistas"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mediodía (11am-3pm) para servicios y gastronomía. Evita mañana.",
+    "mundial_relevancia": "Centro diplomático. Relevante para turistas internacionales que requieran servicios consulares durante el Mundial."
   },
   {
     "slug": "canal-del-norte",
@@ -2375,18 +2422,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Canal del Norte CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Canal del Norte en Cuauhtémoc. Zona industrial norte del centro histórico. Guía en MetroGuia.",
+    "seo_title": "Metro Canal del Norte CDMX — Historia Prehispánica | MetroGuia",
+    "meta_description": "Canal del Norte. Canales prehispánicos. Historia Tenochtitlan. Barrios tradicionales. Geografía CDMX.",
     "h1": "Metro Canal del Norte: corredor industrial del centro",
-    "intro": "Estación en la zona industrial norte del centro histórico, entre Tepito y Peralvillo. Área comercial popular con presencia de bodegas y mercados de mayoreo.",
-    "historia_icono": "El ícono representa el antiguo Canal del Norte, parte del sistema de canales que atravesaba Tenochtitlán prehispánica y que fue canalizado en el siglo XX.",
+    "intro": "Canal del Norte es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona histórica que evoca la geografía antigua de la Ciudad de México. La estación marca la ruta de los antiguos canales que caracterizaban la Tenochtitlan prehispánica. Para turistas del Mundial 2026, representa una conexión fascinante con la historia ambiental y geográfica de la capital mexicana. Descubre vestigios del pasado integrados en la urbanización contemporánea.",
+    "historia_icono": "El ícono de Canal del Norte representa el sistema de canales prehispánico de Tenochtitlan. Evoca la ingeniería hidráulica azteca y la geografía lacustre de la antigua ciudad.",
     "tips": [
-      "Zona de comercio popular y mayoreo",
-      "Evitar horas pico por alta afluencia",
-      "A pocas paradas del Centro Histórico"
+      "Zona histórica: vestigios de canales prehispánicos integrados en la urbanización",
+      "Restaurantes y mercados locales con comida mexicana auténtica",
+      "Acceso a parques y espacios públicos para paseos urbanos",
+      "Barrios con arquitectura variada mostrando evolución de la ciudad",
+      "Punto de transbordo hacia diferentes sectores de la capital"
     ],
-    "mejor_horario": "Mañanas de 8am a 2pm.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (9am-12pm) para exploración. Tarde para descanso.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés histórico-geográfico."
   },
   {
     "slug": "morelos",
@@ -2409,18 +2458,20 @@ const estaciones = [
     "transferencias": [
       "B"
     ],
-    "seo_title": "Metro Morelos CDMX — Tepito y transfer L4/LB | MetroGuia",
-    "meta_description": "Metro Morelos: acceso a Tepito y transfer con Línea B. Zona histórica del centro de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Morelos — Historia prehispánica colonial",
+    "meta_description": "Morelos: Plaza Tres Culturas con arqueología prehispánica, iglesias coloniales históricas. Barrio histórico con patrimonio de tres culturas mexicanas.",
     "h1": "Metro Morelos: puerta a Tepito y transfer con L-B",
-    "intro": "Morelos es uno de los nodos históricos del centro popular de CDMX, con acceso al famoso —y auténtico— barrio de Tepito. La transferencia con Línea B conecta directamente con Buenavista y el tren suburbano.",
-    "historia_icono": "El ícono representa a José María Morelos y Pavón, sacerdote y militar insurgente que continuó la guerra de Independencia tras el fusilamiento de Hidalgo.",
+    "intro": "Morelos es estación que conecta barrio residencial histórico donde arquitectura colonial se mezcla con construcción moderna, zona de transición entre Centro y periferias norte. Para turistas del Mundial FIFA 2026 buscando explorar más allá de circuitos turísticos convencionales, Morelos ofrece acceso a museos comunitarios, iglesias coloniales, restaurantes de cocina local y vida auténtica de barrios capitalinos. Ideal para turistas que desean descubrir México profundo en la capital.",
+    "historia_icono": "El ícono gris de la Línea B evoca conexión de Morelos con memoria histórica del barrio, cuna de luchas sociales donde arquitectura colonial coexiste con construcción moderna. Este símbolo representa continuidad histórica de la CDMX.",
     "tips": [
-      "Tepito: mercado popular auténtico, ir con precaución y en grupo",
-      "Transfer a LB hacia Buenavista y tren suburbano",
-      "Zona histórica con mucha vida local"
+      "Iglesia de Santiago de Tlatelolco: camina 800m para visitar templo colonial del siglo XVI con importancia arqueológica e histórica",
+      "Plaza Tres Culturas: descubre sitio arqueológico prehispánico, arquitectura colonial y construcción moderna contando la historia de México",
+      "Come en comedores locales: tacos, tortas y sopa de tortilla preparados por cocineras de barrio son mucho más económicos que zonas turísticas",
+      "Librerías de segunda mano: busca libros en español y ediciones agotadas; zona preferida por estudiantes e intelectuales",
+      "Lleva mapa o GPS: calles pueden resultar confusas para turistas sin orientación adecuada"
     ],
-    "mejor_horario": "9am-2pm para el mercado de Tepito.",
-    "mundial_relevancia": "Experiencia auténtica de la ciudad popular para turistas curiosos del Mundial 2026."
+    "mejor_horario": "Visita de 9 AM-5 PM de martes-sábados para museos abiertos y actividad comercial óptima; domingos más tranquilo pero algunos lugares cierran.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en historia colonial y arqueología encontrarán valor; conexión con Plaza Tres Culturas es atractivo cultural significativo."
   },
   {
     "slug": "candelaria",
@@ -2443,18 +2494,20 @@ const estaciones = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Metro Candelaria CDMX — Transfer L1/L4 e iglesia colonial | MetroGuia",
-    "meta_description": "Transfer Línea 1 y 4 en Candelaria. Acceso a la iglesia colonial del siglo XVII y Mercado Jamaica. Guía en MetroGuia.",
+    "seo_title": "Metro Candelaria CDMX — Templo Religioso | MetroGuia",
+    "meta_description": "Candelaria CDMX. Templo religioso importante. Peregrinación. Fe mexicana. Festividad 2 febrero.",
     "h1": "Metro Candelaria: historia colonial y transfer L1/L4",
-    "intro": "Candelaria es punto de transferencia entre Líneas 1 y 4, con acceso a la hermosa Iglesia de la Candelaria del siglo XVII y al famoso Mercado Jamaica de flores. Zona llena de historia en Venustiano Carranza.",
-    "historia_icono": "El ícono representa la festividad de la Candelaria, celebración religiosa del 2 de febrero que mezcla tradiciones católicas e indígenas y que da nombre al barrio y templo.",
+    "intro": "Candelaria es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona religiosa y culturalmente significativa en el oriente de la capital. La zona alberga el Templo de la Candelaria, un importante sitio de peregrinación y devoción religiosa en la ciudad. Para turistas del Mundial 2026, representa una parada fundamental para comprender la religiosidad profunda y la fe que caracterizan a México. Experimenta la devoción mariana y la tradición católica mexicana.",
+    "historia_icono": "El ícono de Candelaria representa la Virgen de la Candelaria, festividad religiosa importante en México. Evoca la devoción mariana y la fe popular mexicana.",
     "tips": [
-      "La iglesia de la Candelaria tiene entrada gratuita",
-      "El Mercado Jamaica: el mercado de flores más grande de Latinoamérica (15 min caminando)",
-      "Zona segura y con buena oferta de comida local"
+      "Templo de la Candelaria: iglesia histórica y sitio de peregrinación importante",
+      "Festividades religiosas: 2 de febrero celebración de la Candelaria con procesiones",
+      "Mercados especializados en productos religiosos y tradicionales",
+      "Restaurantes cercanos con comida mexicana auténtica para peregrinos y turistas",
+      "Zona tranquila para contemplación espiritual y cultural"
     ],
-    "mejor_horario": "Mañanas de 9am a 2pm.",
-    "mundial_relevancia": "El Mercado Jamaica es una experiencia única para turistas del Mundial. Colorido e impactante."
+    "mejor_horario": "Mañana (8am-11am) para visitas religiosas. Especialmente: 2 de febrero para festividad.",
+    "mundial_relevancia": "Sitio religioso importante. Relevante para turistas interesados en la fe y devoción de México."
   },
   {
     "slug": "fray-servando",
@@ -2464,18 +2517,20 @@ const estaciones = [
     "tipo_zona": "residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Fray Servando CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Fray Servando, Línea 4 CDMX. Zona centro-oriente. Guía en MetroGuia.",
+    "seo_title": "Metro Fray Servando CDMX — Historia Intelectual | MetroGuia",
+    "meta_description": "Fray Servando. Historia intelectual. Iglesias coloniales. Mercado Jamaica. Patrimonio CDMX.",
     "h1": "Metro Fray Servando: estación del centro oriente",
-    "intro": "Estación en zona residencial entre el centro histórico y el oriente de la ciudad. Punto de paso en el corredor de la Línea 4.",
-    "historia_icono": "El ícono representa a Fray Servando Teresa de Mier, fraile y pensador ilustrado que abogó por la independencia de México desde finales del siglo XVIII.",
+    "intro": "Fray Servando es una estación ubicada en la Alcaldía Venustiano Carranza, honrando al fraile José Servando Teresa de Mier, intelectual y líder independentista. La estación ofrece acceso a una zona histórica del oriente de la capital, con importantes sitios relacionados con la historia religiosa e intelectual de México. Para turistas del Mundial 2026, representa conexión con la historia eclesiástica e intelectual del país.",
+    "historia_icono": "El ícono de Fray Servando representa al fraile e intelectual José Servando Teresa de Mier. Evoca el pensamiento crítico y la lucha ideológica por la libertad de Mexico.",
     "tips": [
-      "Zona tranquila y residencial",
-      "Paso rápido hacia Jamaica y Santa Anita",
-      "Buenas conexiones con el centro"
+      "Zona histórica: iglesias y conventos relacionados con la orden dominica",
+      "Mercado de Jamaíca muy cercano: uno de los mayores mercados tradicionales de la ciudad",
+      "Museos de arte religioso y historia intelectual mexicana",
+      "Restaurantes tradicionales y fondas con comida mexicana de calidad",
+      "Acceso a barrios históricos con arquitectura colonial preservada"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (9am-1pm) para museos y mercados. Evita tarde.",
+    "mundial_relevancia": "Sitio histórico-intelectual. Interesante para turistas que deseen conocer el pensamiento mexicano."
   },
   {
     "slug": "jamaica",
@@ -2498,19 +2553,20 @@ const estaciones = [
     "transferencias": [
       "9"
     ],
-    "seo_title": "Metro Jamaica CDMX — Mercado de flores más grande | MetroGuia",
-    "meta_description": "Metro Jamaica: el mercado de flores más grande de Latinoamérica. Transfer L4/L9. Guía completa en MetroGuia.",
+    "seo_title": "Metro Jamaica CDMX — Mercado Flores | MetroGuia",
+    "meta_description": "Jamaica CDMX. Mercado flores más grande México. Frutas exóticas. Colores vibrantes. Experiencia auténtica.",
     "h1": "Metro Jamaica: flores, aromas y el mercado más colorido de CDMX",
-    "intro": "Jamaica es sinónimo de un solo lugar: el Mercado de Jamaica, el mercado de flores más grande de América Latina. Miles de arreglos florales, plantas y decoraciones llenan sus pasillos. La transferencia con Línea 9 conecta con el centro y el poniente.",
-    "historia_icono": "El ícono representa las flores jamaicas (hibisco), flor originaria del Caribe y abundante en México, emblema del mercado homónimo y símbolo de sabor y color.",
+    "intro": "Jamaica es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso directo al Mercado Jamaica, uno de los mercados de flores y frutas más grandes y coloridos de Latinoamérica. La estación representa una experiencia sensorial única: aromas, colores y bullicio de un mercado tradicional mexicano vivo. Para turistas del Mundial 2026, es una parada imprescindible para experimentar la autenticidad del comercio tradicional y la biodiversidad agrícola de México.",
+    "historia_icono": "El ícono de Jamaica representa flores y frutas del mercado homónimo. Evoca la biodiversidad mexicana y la riqueza agrícola del país.",
     "tips": [
-      "El mercado de Jamaica abre las 24 horas los 365 días del año",
-      "Mejor experiencia en la madrugada cuando llegan los camiones de flores",
-      "Precios de mayoreo disponibles para visitantes",
-      "Transfer a L9 directo desde los andenes"
+      "Mercado Jamaica: el mayor mercado de flores de México, espectáculo visual impresionante",
+      "Fotografia impresionante: arreglos florales, frutas exóticas, colores vibrantes",
+      "Aroma intenso y experiencia multisensorial auténtica del México tradicional",
+      "Compra de flores y frutas a precios reales muy económicos",
+      "Comedores dentro del mercado ofrecen comida casera mexicana deliciosa"
     ],
-    "mejor_horario": "3am-8am para ver el mercado en su máximo esplendor. También colorido a cualquier hora.",
-    "mundial_relevancia": "Experiencia única e imperdible para turistas del Mundial 2026. Instagram-ready a cualquier hora."
+    "mejor_horario": "Mañana temprano (7am-10am) para ver mercado en plena actividad y mejor fotografía.",
+    "mundial_relevancia": "Mercado icónico. Fundamental para turistas que deseen experiencia auténtica del comercio tradicional mexicano."
   },
   {
     "slug": "santa-anita",
@@ -2528,18 +2584,20 @@ const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Santa Anita CDMX — Transfer L4/L8 | MetroGuia",
-    "meta_description": "Transfer Línea 4 y 8 en Santa Anita. Zona oriente de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Santa Anita CDMX — Terminal Sur L4 | MetroGuia",
+    "meta_description": "Santa Anita. Terminal sur Línea 4. Templo colonial. Zona religiosa. Barrio auténtico CDMX.",
     "h1": "Metro Santa Anita: transfer L4/L8 en el oriente",
-    "intro": "Terminal sur de la Línea 4 y nodo de transferencia con la Línea 8. Zona industrial y residencial del oriente de la ciudad que sirve como conexión entre ambas líneas.",
-    "historia_icono": "El ícono representa los canales y trajineras que históricamente navegaron por los barrios de Santa Anita, parte del antiguo sistema lacustre de Tenochtitlán.",
+    "intro": "Santa Anita es la estación terminal sur de la Línea 4, ubicada en la Alcaldía Iztapalapa. La estación ofrece acceso a una zona histórica y religiosa, con el Templo y Convento de Santa Anita como referencias arquitectónicas principales de gran valor. Para turistas del Mundial 2026, representa una conexión valiosa con la historia colonial y la religiosidad que caracteriza profundamente a México. Descubre arquitectura colonial preservada y la fe tradicional mexicana.",
+    "historia_icono": "El ícono de Santa Anita representa a Santa Ana, madre de la Virgen María. Simboliza la devoción mariana y la fe cristiana en México.",
     "tips": [
-      "Transfer eficiente a Línea 8 hacia Garibaldi o Constitución de 1917",
-      "Terminal de Línea 4",
-      "Zona de paso, no de visita turística"
+      "Templo y Convento de Santa Anita: sitio histórico colonial de gran valor arquitectónico",
+      "Zona religiosa importante: peregrinaciones y festividades tradicionales",
+      "Mercado local con productos frescos y artesanía a precios reales",
+      "Restaurantes tradicionales para experimentar comida mexicana auténtica",
+      "Barrios residenciales con vida local genuina y acogedora"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Mañana (8am-12pm) para visita a templo. Evita tarde.",
+    "mundial_relevancia": "Sitio religioso-colonial. Relevante para turistas interesados en arquitectura colonial y fe mexicana."
   },
   {
     "slug": "politecnico",
@@ -2560,17 +2618,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Politécnico CDMX — IPN y ciencia | MetroGuia",
-    "meta_description": "Terminal norte de Línea 5. Acceso al IPN y zona universitaria norte de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Politécnico CDMX — IPN y ciencia",
+    "meta_description": "Terminal norte Línea 5. Acceso directo al IPN, museos gratis de tecnología. Zona universitaria con comida económica. Guía MetroGuia.",
     "h1": "Metro Politécnico: terminal norte y puerta al IPN",
-    "intro": "Terminus norte de la Línea 5, con acceso al campus del IPN, una de las mejores universidades de ciencias e ingeniería de México. Zona universitaria vibrante con servicios y restaurantes económicos.",
-    "historia_icono": "El ícono representa los instrumentos científicos del Instituto Politécnico Nacional, fundado en 1936 por Lázaro Cárdenas para impulsar la educación técnica del país.",
+    "intro": "Terminus norte de la Línea 5, puerta al Instituto Politécnico Nacional (IPN), una de las universidades de ingeniería y ciencias más prestigiosas de México. Esta zona vibrante alberga el campus principal con museos de tecnología de acceso gratuito y una oferta gastronómica estudiantil económica. Ideal para turistas interesados en educación, innovación y la vida académica mexicana.",
+    "historia_icono": "El ícono representa los engranajes y símbolos de la ingeniería, evocando la misión del IPN fundado en 1936 por Lázaro Cárdenas para impulsar la educación técnica y científica del país.",
     "tips": [
-      "El IPN tiene museos de ciencia y tecnología de acceso libre",
-      "Zona universitaria con excelente oferta de comida económica",
-      "Terminal de Línea 5: siempre hay asientos disponibles al abordar"
+      "El Museo Tecnológico CONACYT del IPN es gratuito y tiene exhibiciones sobre innovación mexicana",
+      "Zona universitaria con fondas económicas y cafeterías (comida completa desde $60-80 MXN)",
+      "Terminal de L5: siempre hay asientos disponibles al abordar en hora pico",
+      "Acceso a la biblioteca y explanada del IPN (preguntar en entrada principal por acceso a visitantes)"
     ],
-    "mejor_horario": "Lunes a viernes en horario universitario.",
+    "mejor_horario": "Lunes a viernes 9am-2pm para museos. Mañanas para atmosfera académica.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2589,17 +2648,18 @@ const estaciones = [
     "transferencias": [
       "6"
     ],
-    "seo_title": "Metro Instituto del Petróleo CDMX — Transfer L5/L6 | MetroGuia",
-    "meta_description": "Transfer Líneas 5 y 6. Acceso al IPN. Zona norte de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Instituto Petróleo CDMX — L5/L6",
+    "meta_description": "Transfer Líneas 5 y 6. Acceso IPN Zacatenco, ruta a La Villa-Basílica. Conexión norte-sur metró. Guía MetroGuia.",
     "h1": "Metro Instituto del Petróleo: transfer L5/L6",
-    "intro": "Nodo de transferencia entre Líneas 5 y 6 en el corredor norte. Da acceso al campus Zacatenco del IPN y conecta el eje norte con el oriente y poniente de la ciudad.",
-    "historia_icono": "El ícono conmemora el Instituto Mexicano del Petróleo, fundado tras la expropiación de 1938, símbolo de la soberanía energética de México.",
+    "intro": "Nodo de transferencia entre Líneas 5 y 6 estratégicamente ubicado en Zacatenco, acceso al campus del IPN y puerta norte hacia La Villa-Basílica. Esta estación conecta el eje norte-sur del metro con la ruta hacia la Basílica de Guadalupe. Zona segura y funcional, perfecta para cruzar de un corredor a otro.",
+    "historia_icono": "El ícono conmemora el Instituto Mexicano del Petróleo, fundado en 1938 tras la expropiación petrolera, símbolo de la soberanía energética y de la industria nacional.",
     "tips": [
-      "Transfer eficiente a L6 hacia La Villa-Basílica",
-      "Zona universitaria segura",
-      "Conecta el corredor norte fácilmente"
+      "Transfer rápido y eficiente a Línea 6 hacia La Villa-Basílica (solo 2 paradas)",
+      "Conecta Campus Zacatenco del IPN con la red metropolitana",
+      "Zona tranquila y bien iluminada, segura para turistas",
+      "Bancos y tiendas de conveniencia en los alrededores"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Ideal en mañanas para evitar aglomeración de tardecita.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2621,17 +2681,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Autobuses del Norte CDMX — Terminal de autobuses | MetroGuia",
-    "meta_description": "Acceso directo a la Terminal Central del Norte, la mayor terminal de autobuses de México. Guía en MetroGuia.",
+    "seo_title": "Metro Autobuses del Norte CDMX — terminal",
+    "meta_description": "Acceso directo Terminal Central del Norte. Mayor terminal de autobuses de México. Rutas a 30 estados. Guía MetroGuia.",
     "h1": "Metro Autobuses del Norte: puerta a toda México",
-    "intro": "La estación más práctica para llegar o salir de Ciudad de México en autobús. La Terminal Central del Norte conecta con ciudades de todo el norte y bajío del país y es la terminal de autobuses más grande de México.",
-    "historia_icono": "El ícono representa el autobús de larga distancia, símbolo del transporte terrestre interurbano que conecta CDMX con toda la República Mexicana.",
+    "intro": "La Terminal Central del Norte es la terminal de autobuses más grande de México, conectando a CDMX con ciudades de todo el norte y bajío del país. Punto de entrada/salida fundamental para turistas que llegan desde estados como Monterrey, Guadalajara, Querétaro y ciudades del norte. Acceso por metro a solo $5 MXN, sin taxis.",
+    "historia_icono": "El ícono representa un autobús de larga distancia, símbolo del transporte terrestre interurbano que ha conectado México a través de carreteras desde mediados del siglo XX.",
     "tips": [
-      "Compra tus boletos de autobús con anticipación en temporada alta",
-      "Terminal 24 horas con restaurantes, cajeros y tiendas",
-      "Guarda tus maletas en las consignas disponibles dentro"
+      "Compra boletos con 1-2 días de anticipación en temporada alta (feriados, puentes)",
+      "Terminal 24 horas: restaurantes, cajeros, tiendas, baños limpios",
+      "Guarda equipaje en las consignas dentro de la terminal (costo: ~$15-30 MXN por día)",
+      "Evita viajar con efectivo visible; usa cajeros de la terminal"
     ],
-    "mejor_horario": "Todo el día; afluencia máxima viernes-domingo y temporadas vacacionales.",
+    "mejor_horario": "Todo el día. Mayor flujo viernes-domingo y puentes vacacionales (llega 30 min antes).",
     "mundial_relevancia": "Punto de entrada/salida para turistas del Mundial 2026 que viajan desde el norte y bajío del país."
   },
   {
@@ -2655,17 +2716,18 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro La Raza CDMX — Túnel de la Ciencia | MetroGuia",
-    "meta_description": "Transfer L3/L5 con el famoso Túnel de la Ciencia gratuito. Guía en MetroGuia.",
+    "seo_title": "Metro La Raza CDMX — Túnel de Ciencia",
+    "meta_description": "Transfer L3/L5 con famoso Túnel de la Ciencia gratuito. Joya escondida del metro. Guía MetroGuia.",
     "h1": "Metro La Raza: el Túnel de la Ciencia bajo tus pies",
-    "intro": "La Raza es famosa por su Túnel de la Ciencia subterráneo gratuito entre andenes, y es nodo de transferencia L3/L5. Un tesoro escondido del Metro CDMX.",
-    "historia_icono": "El ícono representa la mezcla de razas que constituye la identidad mestiza mexicana, concepto filosófico de José Vasconcelos que da nombre a la estación.",
+    "intro": "Estación famosa por el Túnel de la Ciencia subterráneo y gratuito que corre entre los andenes, una joya escondida del metro que pocos turistas conocen. Además, La Raza es nodo de transferencia entre Líneas 3 y 5, conectando el centro histórico con el norte. Un destino para descubrir la cultura científica mexicana literalmente bajo tus pies.",
+    "historia_icono": "El ícono representa la mezcla de razas que constituye la identidad mestiza mexicana. El concepto proviene de la filosof­ía de José Vasconcelos y su libro 'La raza cósmica'.",
     "tips": [
-      "El Túnel de la Ciencia es gratuito y corre entre los andenes",
-      "Transfer rápido a Línea 3",
-      "Zona con buena oferta de comida callejera"
+      "El Túnel de la Ciencia es COMPLETAMENTE GRATUITO: entra sin pagar boleto de más",
+      "Transfer instantáneo a Línea 3 (hacia Indios Verdes o Centro Médico)",
+      "Túnel con exhibits de ciencia, módulos interactivos (especialmente para niños)",
+      "Comida callejera auténtica en los alrededores (tacos, elote, agua fresca)"
     ],
-    "mejor_horario": "Cualquier hora.",
+    "mejor_horario": "Cualquier hora. Mejor visitarlo en mañanas cuando hay menos gente.",
     "mundial_relevancia": "Curiosidad cultural para turistas del Mundial en tránsito."
   },
   {
@@ -2676,17 +2738,18 @@ const estaciones = [
     "tipo_zona": "residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Misterios CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Misterios en Gustavo A. Madero. Zona residencial norte. Guía en MetroGuia.",
+    "seo_title": "Metro Misterios CDMX — zona residencial norte",
+    "meta_description": "Estación residencial norte. Punto de tránsito Línea 5. Barrio tradicional de CDMX. Guía MetroGuia.",
     "h1": "Metro Misterios: estación residencial norte",
-    "intro": "Estación en zona residencial de Gustavo A. Madero. Punto de tránsito en el corredor norte de la Línea 5.",
-    "historia_icono": "El ícono representa los misterios de la fe cristiana, en referencia a una procesión religiosa antigua que recorría este tramo histórico de la calzada.",
+    "intro": "Estación residencial en Gustavo A. Madero que conecta el corredor norte de la Línea 5. Aunque no tiene atracciones turísticas prominentes, es punto de tránsito importante entre La Raza y Valle Gómez. La zona conserva carácter de barrio tradicional de norte de CDMX con comercios locales y vida comunitaria.",
+    "historia_icono": "El ícono representa los misterios de la fe cristiana, en referencia a una procesión religiosa tradicional que recorría históricamente esta calzada en el norte de la ciudad.",
     "tips": [
-      "Zona tranquila",
-      "Paso entre La Raza y Valle Gómez",
-      "Servicios locales disponibles"
+      "Zona tranquila y segura, ideal para evitar aglomeraciones del centro",
+      "Punto de paso entre La Raza y Pantitlán sin necesidad de bajar",
+      "Tiendas y servicios locales para turistas que necesiten algo rápido",
+      "Mucho menos concurrida que estaciones centrales (ideal si vienes de mochilero)"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Evitar las 7-9am y 6-8pm si viajas en hora pico.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2703,17 +2766,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Valle Gómez CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Valle Gómez en Cuauhtémoc. Zona popular con mercados locales. Guía en MetroGuia.",
+    "seo_title": "Metro Valle Gómez CDMX — mercados populares",
+    "meta_description": "Zona popular con mercados baratos. Auténtico norte de CDMX. Comida casera económica. Guía MetroGuia.",
     "h1": "Metro Valle Gómez: barrio popular del norte del centro",
-    "intro": "Estación en zona popular de Cuauhtémoc, con mercados locales y la vida cotidiana del barrio. Punto de paso entre el norte y el centro de la ciudad.",
-    "historia_icono": "El ícono representa el perfil del general Gómez, figura de la historia del barrio Morelos-Valle Gómez del norte del centro histórico.",
+    "intro": "Estación en zona popular de Cuauhtémoc que marca la transición del norte puro al norte del centro histórico. Aquí comienzan los mercados locales auténticos de CDMX, especialmente el Mercado Valle Gómez con precios incre­íblemente económicos. Para turistas que quieren experiencia auténtica de la vida cotidiana mexicana, no es imprescindible pero es genuino.",
+    "historia_icono": "El ícono representa al general Gómez, figura histórica del barrio Morelos-Valle Gómez en el norte del centro. Es referencia a la historia revolucionaria de la zona.",
     "tips": [
-      "Mercados locales económicos",
-      "Zona popular auténtica",
-      "A pocos pasos del eje 3 norte"
+      "Mercado Valle Gómez: frutas, verduras, carnes a precios mínimos (30-50% menos que tiendas)",
+      "Zona auténtica y popular; turistas extranjeros son minoría (verdadera CDMX)",
+      "Restaurantes de comida casera con porciones enormes ($40-60 MXN plato fuerte)",
+      "A dos paradas del Templo Mayor si quieres combinar norte con centro"
     ],
-    "mejor_horario": "Mañanas para mercados.",
+    "mejor_horario": "Mañanas 8am-1pm para mercados llenos. Tardes más tranquilas.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2732,17 +2796,18 @@ const estaciones = [
     "transferencias": [
       "4"
     ],
-    "seo_title": "Metro Consulado CDMX — Transfer L4/L5 | MetroGuia",
-    "meta_description": "Transfer Líneas 4 y 5 en Consulado. Zona comercial norte. Guía en MetroGuia.",
+    "seo_title": "Metro Consulado CDMX — transfer L4/L5",
+    "meta_description": "Transfer Líneas 4 y 5. Zona comercial norte. Conecta ejes principales. Guía MetroGuia.",
     "h1": "Metro Consulado: transfer L4/L5 en el norte",
-    "intro": "Nodo de transferencia entre Líneas 4 y 5. Zona comercial activa con mercados y tiendas en el corredor norte.",
-    "historia_icono": "El ícono representa el histórico Tribunal del Consulado de la Nueva España, institución mercantil del siglo XVIII.",
+    "intro": "Nodo de transferencia entre Líneas 4 y 5 ubicado en zona comercial activa del norte. Consulado conecta el eje 3 norte con los corredores principales, siendo punto de cruce para turistas que necesitan cambiar entre líneas en el norte de la ciudad. La zona tiene tiendas, mercados y comercios dinámicos.",
+    "historia_icono": "El ícono representa el Tribunal del Consulado de la Nueva España, institución mercantil colonial del siglo XVIII que regulaba el comercio de CDMX en la era prehispánica.",
     "tips": [
-      "Transfer eficiente entre L4 y L5",
-      "Zona comercial popular",
-      "Conecta rápidamente el norte de la ciudad"
+      "Transfer rápido entre L4 y L5: solo 2-3 min de caminata",
+      "Zona comercial con tiendas de ropa, electrónica y mercados variados",
+      "Conecta rápidamente el norte de la ciudad con el oriente (Línea 4 → Lázaro Cárdenas)",
+      "Zona segura y bien iluminada con presencia de comerciantes"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Máxima actividad comercial lunes-sábado 9am-8pm.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2753,17 +2818,18 @@ const estaciones = [
     "tipo_zona": "industrial-residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Eduardo Molina CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Eduardo Molina en Venustiano Carranza. Zona industrial oriente. Guía en MetroGuia.",
+    "seo_title": "Metro Eduardo Molina CDMX — zona industrial",
+    "meta_description": "Zona industrial oriente. Punto de tránsito Línea 5. Lado manufacturero de CDMX. Guía MetroGuia.",
     "h1": "Metro Eduardo Molina: zona industrial oriente",
-    "intro": "Estación en zona industrial y residencial de Venustiano Carranza, punto de tránsito en el corredor oriente de la Línea 5.",
-    "historia_icono": "El ícono representa al ingeniero Eduardo Molina, director de obras públicas del Porfiriato que diseñó el sistema de drenaje moderno de CDMX.",
+    "intro": "Estación en zona industrial y residencial de Venustiano Carranza que forma parte del corredor oriente de la Línea 5. Es punto de tránsito importante para trabajadores y residentes, pero también acceso a la zona industrial del oriente que muestra el lado productivo y manufacturero de la CDMX.",
+    "historia_icono": "El ícono representa al ingeniero Eduardo Molina, director de obras públicas durante el Porfiriato que diseñó el revolucionario sistema de drenaje moderno de CDMX.",
     "tips": [
-      "Zona de paso",
-      "Buenas conexiones con el oriente",
-      "Evitar en horas pico"
+      "Zona industrial: menos turistas, más auténtica CDMX laboral",
+      "Punto de paso hacia Pantitlán sin necesidad de bajar",
+      "Tiendas de materiales y herramientas para los que trabajan en la zona",
+      "Evitar horas pico (7-9am, 5-8pm) si buscas comodidad"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Más tranquilo después de las 8pm.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2780,18 +2846,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Aragón CDMX — Bosque de Aragón | MetroGuia",
-    "meta_description": "Metro Aragón: acceso al Bosque de Aragón, el parque más grande de Gustavo A. Madero. Guía en MetroGuia.",
+    "seo_title": "Metro Aragón — Barrio comercial noreste",
+    "meta_description": "Aragón: mercados locales activos, tiendas de comercio informal y gastronomía casera mexicana. Vida auténtica del barrio comercial noreste.  ",
     "h1": "Metro Aragón: puerta al Bosque de Aragón",
-    "intro": "Aragón da acceso al hermoso Bosque de Aragón, el pulmón verde más grande del noreste de CDMX con lago, ciclopista y senderos. Zona residencial tranquila de Gustavo A. Madero.",
-    "historia_icono": "El ícono evoca el escudo del reino de Aragón (España), en referencia a la familia Aragón que fundó la hacienda que dio nombre a este barrio colonial.",
+    "intro": "Aragón es estación de la Línea B en zona comercial y residencial del noreste capitalino, conectando comunidades del oriente con red metropolitana. Para turistas del Mundial FIFA 2026 que busquen explorar autenticidad de barrios menos turísticos, Aragón ofrece acceso a mercados locales, tiendas de comercio informal, gastronomía casera y vida cotidiana de capitalinos residentes. Es parada para exploradores que desean alejarse de circuitos convencionales.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Aragón con zona comercial del noreste, donde economía informal y vida residencial convergen. Este símbolo evoca movilidad equitativa de comunidades menos privilegiadas.",
     "tips": [
-      "El Bosque de Aragón tiene lago para remar y ciclopista",
-      "Entrada gratuita al bosque",
-      "Zona segura y familiar"
+      "Mercado de Aragón: frutas, verduras y productos locales a precios de comercio de barrio",
+      "Comedores económicos: desayunos completos, comidas y cenas a precios accesibles para residentes locales",
+      "Tiendas de ropa y zapatos: comercio informal de prendas nuevas y de temporada a precios inferiores a centros comerciales",
+      "Caja de ahorros y servicios financieros locales: acceso a cambio de divisas si lo necesitas",
+      "Mantente en zonas principales: es barrio tranquilo pero residencial; lleva GPS para orientación"
     ],
-    "mejor_horario": "Fines de semana de 8am a 6pm para el bosque.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Visita de 10 AM-4 PM de martes-viernes para actividad comercial óptima sin aglomeración de fin de semana.",
+    "mundial_relevancia": "Relevancia baja: turistas muy específicos interesados en vida auténtica de barrio y mercados locales encontrarán experiencia genuina."
   },
   {
     "slug": "oceania",
@@ -2814,18 +2882,20 @@ const estaciones = [
     "transferencias": [
       "B"
     ],
-    "seo_title": "Metro Oceanía CDMX — Transfer L5/LB y acceso aeropuerto | MetroGuia",
-    "meta_description": "Transfer L5/LB en Oceanía. Conexión con aeropuerto AICM. Clave para turistas del Mundial 2026. Guía en MetroGuia.",
+    "seo_title": "Metro Oceanía — Barrio residencial y comercial",
+    "meta_description": "Oceanía: mercados locales auténticos, gastronomía casera mexicana tradicional, vida cotidiana. Experiencia genuina del norte capitalino.    ",
     "h1": "Metro Oceanía: transfer L5/LB y conexión al aeropuerto",
-    "intro": "Oceanía es nodo clave de transferencia entre Línea 5 y Línea B. Desde aquí la LB conecta directamente con el Aeropuerto Internacional de la Ciudad de México (AICM). Esencial para turistas que llegan y salen del país.",
-    "historia_icono": "El ícono representa el mapa del continente de Oceanía, siguiendo la tradición de la Línea 5 de nombrar estaciones con continentes y conceptos geográficos.",
+    "intro": "Oceanía es estación de la Línea B en zona norte residencial y comercial, conectando comunidades del oriente capitalino con el Centro. Para turistas del Mundial FIFA 2026 que deseen experimentar vida auténtica de barrio capitalino más allá de zonas turísticas, Oceanía ofrece acceso a mercados locales, tiendas de comercio informal, restaurantes de comida casera y la cotidianidad genuina de los habitantes. Es parada secundaria pero valiosa para exploradores curiosos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Oceanía con comunidades del norte capitalino, zona donde comercio informal y vida residencial convergen. Este símbolo evoca inclusión y equidad en movilidad de las periferias.",
     "tips": [
-      "Transfer a LB para llegar al aeropuerto AICM (3 paradas: Romero Rubio→Puerto Aéreo)",
-      "Revisar horarios de LB para vuelos nocturnos",
-      "Zona de alta afluencia de viajeros con equipaje"
+      "Mercado local de Oceanía: compra frutas, verduras y productos frescos a precios locales, no turísticos",
+      "Comedores de mercado: tortas ahogadas, tamales y pozole preparados por cocineras de barrio; relación calidad-precio excelente",
+      "Tiendas informales: ropa, zapatos y artículos prácticos a fracción de precio de tiendas departamentales",
+      "Ambiente seguro: zona residencial tranquila pero poco turística; lleva efectivo y dirección escrita en español",
+      "Evita tarjetas de crédito: comercio es principalmente en efectivo"
     ],
-    "mejor_horario": "Todo el día; mayor afluencia en vuelos matutinos y vespertinos.",
-    "mundial_relevancia": "Punto de conexión CRÍTICO para turistas del Mundial 2026 llegando/saliendo por el AICM."
+    "mejor_horario": "Visita de 9 AM-5 PM de lunes-viernes cuando mercados están activos pero sin congestión de fin de semana.",
+    "mundial_relevancia": "Relevancia baja: turistas especializados interesados en vida de barrio auténtica y mercados locales encontrarán experiencia genuina."
   },
   {
     "slug": "terminal-aerea",
@@ -2846,18 +2916,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Terminal Aérea CDMX — AICM acceso directo | MetroGuia",
-    "meta_description": "Metro Terminal Aérea: acceso directo a AICM Terminal 1 sin taxis. Solo $5 MXN. Esencial para el Mundial 2026. Guía en MetroGuia.",
+    "seo_title": "Metro Terminal Aérea CDMX — aeropuerto $5",
+    "meta_description": "Acceso directo AICM Terminal 1. Solo $5 MXN. Opción más económica turistas. Guía MetroGuia.",
     "h1": "Metro Terminal Aérea: llega al aeropuerto por $5 pesos",
-    "intro": "Terminal Aérea ofrece acceso directo al Aeropuerto Internacional Benito Juárez (AICM) Terminal 1 por solo $5 pesos MXN. Sin taxis, sin tráfico, sin sorpresas. El secreto mejor guardado para turistas inteligentes.",
-    "historia_icono": "El ícono representa un avión despegando, símbolo directo del aeropuerto al que da servicio esta estación.",
+    "intro": "Terminal Aérea es el secreto mejor guardado para turistas del Mundial 2026: acceso directo al Aeropuerto Internacional Benito Juárez Terminal 1 por SOLO $5 MXN, sin taxis, sin tráfico, sin sorpresas. En 5-10 minutos caminando llegas a la entrada de vuelos internacionales. Es la opción más económica, segura y directa para llegar al aeropuerto.",
+    "historia_icono": "El ícono representa un avión en despegue/aterrizaje, símbolo directo de la función aeroportuaria que da servicio esta estación histórica.",
     "tips": [
-      "Acceso a AICM T1 caminando desde la salida norte",
-      "Solo $5 MXN vs $300-500 MXN de taxi",
-      "Guarda tus maletas en consigna en el aeropuerto si llegas temprano",
-      "Los hoteles del aeropuerto están a 5 min caminando"
+      "Acceso DIRECTO a AICM Terminal 1: salida norte de la estación, 5 min caminando",
+      "Costo: $5 MXN vs $300-500 MXN en taxi — AHORRA DINERO",
+      "Consulta horarios: Metro abre 5am, cierra 12mn (para vuelos muy nocturnos: taxi)",
+      "Hoteles del aeropuerto a 5-10 min caminando si necesitas quedarte antes de vuelo temprano"
     ],
-    "mejor_horario": "24 horas (el metro opera de 5am a 12mn; para vuelos nocturnos verificar último tren).",
+    "mejor_horario": "24/7 para el aeropuerto. Metro: 5am-12mn. Para vuelos nocturnos después de 12mn, usar taxi.",
     "mundial_relevancia": "ESENCIAL para turistas del Mundial 2026. La opción más económica para llegar al aeropuerto desde CDMX."
   },
   {
@@ -2879,17 +2949,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Hangares CDMX — Aeropuerto Terminal 2 | MetroGuia",
-    "meta_description": "Metro Hangares: acceso a Terminal 2 del AICM y zona aeronáutica. Guía en MetroGuia.",
+    "seo_title": "Metro Hangares CDMX — AICM Terminal 2",
+    "meta_description": "Acceso a Terminal 2 AICM. Aeroméxico y aerolíneas internacionales. Guía MetroGuia.",
     "h1": "Metro Hangares: Terminal 2 del aeropuerto",
-    "intro": "Hangares es la parada más cercana a la Terminal 2 del AICM y a los hangares privados del aeropuerto. Útil para vuelos en T2 (principalmente Aeroméxico y aerolíneas internacionales).",
-    "historia_icono": "El ícono representa un hangar de aviación, los grandes galpones donde se guardan y dan mantenimiento a los aviones del aeropuerto internacional.",
+    "intro": "Hangares es la estación más cercana a la Terminal 2 del Aeropuerto Internacional de CDMX y a los hangares privados de aviación. Principalmente utilizada por vuelos de Aeroméxico y aerolíneas internacionales que operan desde Terminal 2. Menos concurrida que Terminal Aérea, ideal para turistas con vuelos en T2.",
+    "historia_icono": "El ícono representa un hangar de aviación, los grandes galpones donde se guardan, reparan y dan mantenimiento a los aviones comerciales del aeropuerto.",
     "tips": [
-      "Terminal 2 del AICM está a 10 min caminando",
-      "Vuelos de Aeroméxico principalmente en T2",
-      "Menos concurrida que Terminal Aérea (T1)"
+      "Terminal 2 está a 10-12 min caminando (más lejos que Terminal Aérea)",
+      "Aeroméxico y alianzas vuelan principalmente desde T2",
+      "Menos aglomeración que Terminal Aérea (ventaja en horas pico)",
+      "Mismo costo ($5 MXN) y ventajas de seguridad que Terminal Aérea"
     ],
-    "mejor_horario": "Todo el día según vuelos.",
+    "mejor_horario": "Todo el día según vuelos. Ideal si tu vuelo sale de T2.",
     "mundial_relevancia": "Útil para turistas del Mundial 2026 con vuelos en Terminal 2 del AICM."
   },
   {
@@ -2910,17 +2981,18 @@ const estaciones = [
       "9",
       "A"
     ],
-    "seo_title": "Metro Pantitlán CDMX — Hub de 4 líneas | MetroGuia",
-    "meta_description": "Pantitlán: el mayor hub de transferencia del Metro CDMX. Líneas 1, 5, 9 y A se conectan aquí. Guía en MetroGuia.",
+    "seo_title": "Metro Pantitlán CDMX — hub 4 líneas",
+    "meta_description": "Hub de transferencia 4 líneas (L1, L5, L9, LA). Mayor nodo oriente. Logística turistas. Guía MetroGuia.",
     "h1": "Metro Pantitlán: la gran central de transferencias",
-    "intro": "Pantitlán es el punto de transferencia más importante del Metro CDMX: cuatro líneas confluyen aquí (1, 5, 9 y A). Es el extremo oriente de la red y un nodo crítico para conectar cualquier destino del metro.",
-    "historia_icono": "El ícono representa los cuatro vientos o puntos cardinales, símbolo de la convergencia de múltiples líneas que hace de Pantitlán el centro de gravedad del oriente del metro.",
+    "intro": "Pantitlán es el HUB de transferencia MÁS IMPORTANTE del Metro CDMX: cuatro líneas confluyen aquí simultáneamente (L1, L5, L9 y LA), haciendo de esta estación el nodo logístico que conecta el oriente con cualquier destino del metro. Es la puerta de entrada al metro desde el oriente y punto neurálgico para turistas cambiando de línea.",
+    "historia_icono": "El ícono representa los cuatro vientos o puntos cardinales, símbolo mitológico de la convergencia de fuerzas que ocurre en esta estación donde se cruzan 4 líneas.",
     "tips": [
-      "Cuatro líneas: L1 (rosa), L5 (amarilla), L9 (café), LA (morada)",
-      "Muy concurrida en horas pico — vigila tus pertenencias",
-      "Punto clave para cruzar de un lado al otro de la red"
+      "Cuatro líneas: L1 (rosa centro), L5 (amarilla norte-oriente), L9 (café sur), LA (morada periférico)",
+      "MUY CONCURRIDA: vigila mochilas/bolsas en horas pico (7-9am, 6-8pm)",
+      "Flechas en pisos indican direcciones de transfers; sigue señales claras",
+      "Usar escaleras mecánicas para llevar maletas (evita escaleras fijas)"
     ],
-    "mejor_horario": "Evitar horas pico (7-9am, 6-8pm). Resto del día manejable.",
+    "mejor_horario": "Cualquier hora sirve. EVITAR horas pico (7-9am, 6-8pm) si quieres comodidad.",
     "mundial_relevancia": "Nodo logístico importante para turistas del Mundial 2026 moviéndose por la red."
   },
   {
@@ -2939,17 +3011,18 @@ const estaciones = [
     "transferencias": [
       "7"
     ],
-    "seo_title": "Metro El Rosario CDMX — Terminal L6/L7 | MetroGuia",
-    "meta_description": "Terminal norte L6 y L7. CETRAM con autobuses a todo el poniente y norte. Guía en MetroGuia.",
+    "seo_title": "Metro El Rosario CDMX — terminal L6/L7",
+    "meta_description": "Terminal norte L6 y L7. CETRAM a Estado de México. Hub norte. Guía MetroGuia.",
     "h1": "Metro El Rosario: terminal norte L6 y L7",
-    "intro": "El Rosario es el terminus norte de las Líneas 6 y 7, con el CETRAM más grande del norte de la ciudad, desde donde salen autobuses a Tlalnepantla, Naucalpan y múltiples destinos del Estado de México.",
-    "historia_icono": "El ícono representa el Rosario, símbolo del catolicismo popular mexicano, en referencia al barrio y parroquia que existían en este punto de la antigua periferia.",
+    "intro": "El Rosario es terminal norte simultánea de Líneas 6 y 7, punto de salida del metro para autobuses hacia el Estado de México (Tlalnepantla, Naucalpan, Huixquilucan). Hub importante para turistas que quieren explorar zonas al norte de CDMX o conexiones con el EDOMEX.",
+    "historia_icono": "El ícono representa el Rosario, símbolo del catolicismo popular mexicano y devoción mariana, en referencia a la parroquia histórica que existía en este barrio colonial del norte.",
     "tips": [
-      "Terminal de L6 y L7 simultáneamente",
-      "CETRAM con autobuses al Estado de México",
-      "Zona de alta afluencia en horas pico"
+      "Terminal simultánea L6 y L7: últimas paradas de ambas líneas",
+      "CETRAM con autobuses a Tlalnepantla, Naucalpan, Huixquilucan, pueblos Estado de México",
+      "Zona de alta afluencia en horas pico (viernes a domingo 10am-2pm)",
+      "Restaurantes y tiendas en los alrededores para turistas con equipo"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Evitar viernes-domingo 10am-2pm si buscas comodidad.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -2966,17 +3039,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tezozómoc CDMX — Parque ecológico | MetroGuia",
-    "meta_description": "Metro Tezozómoc: acceso al Parque Tezozómoc con maqueta del Valle de México prehispánico. Guía en MetroGuia.",
+    "seo_title": "Metro Tezozómoc CDMX — parque prehispánico",
+    "meta_description": "Acceso Parque Tezozómoc: maqueta única Valle de México prehispánico. Entrada gratuita. Guía MetroGuia.",
     "h1": "Metro Tezozómoc: el parque con el Valle de México en miniatura",
-    "intro": "Tezozómoc da acceso al Parque Ecológico Tezozómoc, joya verde del norte de CDMX famoso por tener una maqueta topográfica del Valle de México prehispánico con sus lagos y montes reproducidos a escala.",
-    "historia_icono": "El ícono representa a Tezozómoc, el gran tlatoani tepaneca del siglo XIV que dominó el Valle de México antes del ascenso de los aztecas.",
+    "intro": "Tezozómoc da acceso al Parque Ecológico Tezozómoc, joya verde del norte de CDMX famosa por su maqueta topográfica ÚNICA del Valle de México prehispánico con sus lagos, montes y ciudades reproducidos a escala. Recorre una miniatura del mundo que Moctezuma II conocía hace 500 años.",
+    "historia_icono": "El ícono representa a Tezozómoc, el gran tlatoani tepaneca del siglo XIV que dominó el Valle de México antes del ascenso azteca. Símbolo del poder prehispánico de la región.",
     "tips": [
-      "El Parque Tezozómoc tiene una maqueta única del Valle de México prehispánico",
-      "Entrada gratuita",
-      "Lago con patos y zona de picnic"
+      "Maqueta del Valle de México prehispánico: recorr­e los lagos Texcoco, Xochimilco, Chalco miniaturizados",
+      "Entrada COMPLETAMENTE GRATUITA (6am-5:30pm todos los días)",
+      "Lago para remar, ciclopista, senderos, zona de picnic",
+      "Menos concurrido que parques del sur; ambiente tranquilo y familia"
     ],
-    "mejor_horario": "Fines de semana de 7am a 5pm.",
+    "mejor_horario": "Fines de semana 8am-3pm para disfrutar parque. Semanas hay menos gente.",
     "mundial_relevancia": "Curiosidad histórica para turistas del Mundial que quieran ver cómo era CDMX antes de la conquista."
   },
   {
@@ -2998,17 +3072,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Azcapotzalco CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Azcapotzalco: alcaldía industrial con historia prehispánica. Guía en MetroGuia.",
+    "seo_title": "Metro Azcapotzalco CDMX — historia tepaneca",
+    "meta_description": "Señorío tepaneca prehispánico. Zona industrial con historia. Parque Azcapotzalco. Guía MetroGuia.",
     "h1": "Metro Azcapotzalco: historia y industria en el norte",
-    "intro": "Azcapotzalco fue el centro del señorío tepaneca antes de la conquista azteca. Hoy es una alcaldía industrial con pasado prehispánico profundo, parques y la histórica refinería.",
-    "historia_icono": "El ícono representa el hormiguero, pues 'Azcapotzalco' significa 'en el hormiguero' en náhuatl, referencia a los tepanecas que habitaron este territorio.",
+    "intro": "Azcapotzalco fue el centro del poderoso señorío tepaneca antes de que los aztecas lo conquistaran en el siglo XIV. Hoy es alcaldía industrial con profundo pasado prehispánico, parques ecológicos y la histórica refinería. Zona para turistas interesados en arqueología, industria mexicana e historia prehispánica menos explorada.",
+    "historia_icono": "El ícono representa el hormiguero, pues 'Azcapotzalco' significa 'lugar del hormiguero' en náhuatl. Referencia directa a los tepanecas que fundaron este señorío.",
     "tips": [
-      "Zona con historia prehispánica poco explorada por turistas",
-      "Parque Azcapotzalco con áreas verdes",
-      "Zona industrial pero segura"
+      "Zona con historia prehispánica poco visitada por turistas internacionales",
+      "Parque Azcapotzalco con senderos, áreas verdes, zona recreativa",
+      "Refinería histórica de Azcapotzalco (visible desde zona): monumento industrial mexicano",
+      "Comida local auténtica en comedores y taquerías de la zona"
     ],
-    "mejor_horario": "Mañanas.",
+    "mejor_horario": "Mañanas (8am-1pm) para parques. Tardes más tranquilo.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3030,17 +3105,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ferrería CDMX — Arena Ciudad de México | MetroGuia",
-    "meta_description": "Metro Ferrería: acceso directo a la Arena Ciudad de México para conciertos y eventos. Guía en MetroGuia.",
+    "seo_title": "Metro Ferrería CDMX — Arena Ciudad México",
+    "meta_description": "Acceso directo Arena Ciudad de México. Conciertos, boxeo, WWE. Recinto 22k personas. Guía MetroGuia.",
     "h1": "Metro Ferrería: la puerta a la Arena Ciudad de México",
-    "intro": "La estación más práctica para llegar a la Arena Ciudad de México, el recinto de entretenimiento más importante del país con capacidad para 22,000 personas. Conciertos, espectáculos, boxeo y WWE pasan por aquí.",
-    "historia_icono": "El ícono representa los rieles y el tren, en referencia a los antiguos talleres ferroviarios que existían en esta zona de Azcapotzalco durante el siglo XX.",
+    "intro": "La estación de acceso directo a la ARENA CIUDAD DE MÉXICO, el recinto de entretenimiento más importante del país con capacidad para 22,000 personas. Conciertos de grandes artistas, campeonatos de boxeo, WWE, eventos deportivos y espectáculos internacionales pasan por aquí. Para turistas en CDMX buscando entretenimiento de clase mundial.",
+    "historia_icono": "El ícono representa los rieles del tren y símbolo de transporte, en referencia a los antiguos talleres ferroviarios que existían en esta zona industrial de Azcapotzalco durante el siglo XX.",
     "tips": [
-      "Acceso directo a la Arena CDMX desde la salida norte",
-      "Llega 45 min antes de eventos para evitar la avalancha de gente",
-      "Hay muchos puestos de comida en los alrededores en días de evento"
+      "Acceso DIRECTO a Arena CDMX desde salida norte de la estación (3 min caminando)",
+      "Llega 45 minutos antes de eventos para evitar la avalancha de 22,000 personas",
+      "Puestos de comida, bebidas y merchandising en alrededores (precios evento, no calle)",
+      "Seguridad robusta en días de evento: no hay problema moviéndote de noche"
     ],
-    "mejor_horario": "Según eventos; verificar cartelera de la Arena CDMX.",
+    "mejor_horario": "Según calendario de eventos. Consult­a www.arenamexico.com para eventos en MetroGuia.",
     "mundial_relevancia": "Punto de entretenimiento para turistas del Mundial 2026 que quieran disfrutar eventos además del fútbol."
   },
   {
@@ -3051,17 +3127,18 @@ const estaciones = [
     "tipo_zona": "residencial-comercial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Norte 45 CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Norte 45 en Azcapotzalco. Zona residencial y comercial. Guía en MetroGuia.",
+    "seo_title": "Metro Norte 45 CDMX — zona residencial norte",
+    "meta_description": "Zona residencial norte. Punto de tránsito Línea 6. Barrio tranquilo. Guía MetroGuia.",
     "h1": "Metro Norte 45: estación en el corazón de Azcapotzalco",
-    "intro": "Estación en zona residencial y comercial de Azcapotzalco, con buenas conexiones locales y acceso a mercados del barrio.",
-    "historia_icono": "El ícono representa el número de la calle Norte 45, una de las vías principales de la cuadrícula industrial de Azcapotzalco.",
+    "intro": "Estación en zona residencial y comercial del norte de CDMX, punto de tránsito en la Línea 6 entre Ferrería y Vallejo. Aunque no tiene atracciones turísticas mayor, es paso importante para turistas que conectan entre el noreste y el norte de la ciudad.",
+    "historia_icono": "El ícono representa la avenida Norte 45, vía importante del norte de CDMX que corre paralela a la Línea 6.",
     "tips": [
-      "Zona tranquila y segura",
-      "Mercados y comercios locales",
-      "Buena conectividad norte"
+      "Zona residencial tranquila, menos concurrida que estaciones centrales",
+      "Punto de paso hacia La Villa-Basílica sin bajar del metro",
+      "Tiendas y servicios locales para necesidades rápidas",
+      "Ideal si buscas evitar multitudes del centro"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Muy tranquilo en semana.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3078,17 +3155,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Vallejo CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Vallejo en Gustavo A. Madero. Zona industrial y comercial norte. Guía en MetroGuia.",
+    "seo_title": "Metro Vallejo CDMX — zona comercial norte",
+    "meta_description": "Zona comercial norte. Mercados y tiendas locales. Punto de tránsito L6. Guía MetroGuia.",
     "h1": "Metro Vallejo: zona industrial del norte",
-    "intro": "Vallejo es una de las principales zonas industriales y comerciales del norte de CDMX. Alta actividad laboral y comercial entre semana.",
-    "historia_icono": "El ícono representa los engranajes industriales de la zona fabril de Vallejo, que fue durante décadas el motor industrial del norte de la ciudad.",
+    "intro": "Estación en zona comercial e industrial de Gustavo A. Madero, punto importante de la Línea 6 que conecta el norte con los corredores principales. Zona con mercados, tiendas y servicios comerciales que reflejan la vida económica del norte de la ciudad.",
+    "historia_icono": "El ícono representa el apellido Vallejo, en referencia a personajes históricos de la revolución mexicana o familias que poblaron esta zona del norte.",
     "tips": [
-      "Zona principalmente laboral",
-      "Alta afluencia entre semana en horas pico",
-      "Mercados populares en los alrededores"
+      "Zona comercial activa con tiendas, mercadillos y comercio local",
+      "Point de paso hacia Martín Carrera (última parada L6) sin bajar",
+      "Tiendas de ropa, electrónica y servicios locales económicos",
+      "Zona segura con buena presencia de comerciantes"
     ],
-    "mejor_horario": "Entre semana de 8am a 6pm.",
+    "mejor_horario": "Todo el día. Máxima actividad comercial lunes-sábado 10am-7pm.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3107,17 +3185,18 @@ const estaciones = [
     "transferencias": [
       "5"
     ],
-    "seo_title": "Metro Instituto del Petróleo CDMX — Transfer L5/L6 | MetroGuia",
-    "meta_description": "Transfer Líneas 5 y 6. Acceso al IPN. Zona norte de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Instituto Petróleo CDMX — L5/L6",
+    "meta_description": "Transfer Líneas 5 y 6. Acceso IPN Zacatenco, ruta a La Villa-Basílica. Conexión norte-sur metró. Guía MetroGuia.",
     "h1": "Metro Instituto del Petróleo: nodo norte L5/L6",
-    "intro": "Transfer entre L5 y L6 en el corredor norte. Acceso al IPN y punto de conexión entre el oriente y el poniente del norte de la ciudad.",
-    "historia_icono": "El ícono conmemora el Instituto Mexicano del Petróleo y la expropiación petrolera de 1938.",
+    "intro": "Nodo de transferencia entre Líneas 5 y 6 estratégicamente ubicado en Zacatenco, acceso al campus del IPN y puerta norte hacia La Villa-Basílica. Esta estación conecta el eje norte-sur del metro con la ruta hacia la Basílica de Guadalupe. Zona segura y funcional, perfecta para cruzar de un corredor a otro.",
+    "historia_icono": "El ícono conmemora el Instituto Mexicano del Petróleo, fundado en 1938 tras la expropiación petrolera, símbolo de la soberanía energética y de la industria nacional.",
     "tips": [
-      "Transfer eficiente entre L5 y L6",
-      "Acceso al IPN",
-      "Zona universitaria segura"
+      "Transfer rápido y eficiente a Línea 6 hacia La Villa-Basílica (solo 2 paradas)",
+      "Conecta Campus Zacatenco del IPN con la red metropolitana",
+      "Zona tranquila y bien iluminada, segura para turistas",
+      "Bancos y tiendas de conveniencia en los alrededores"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Ideal en mañanas para evitar aglomeración de tardecita.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3139,17 +3218,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Lindavista CDMX — Zona residencial norte | MetroGuia",
-    "meta_description": "Metro Lindavista: colonia residencial con CC Lindavista y La Salle. Buena zona para hospedarse. Guía en MetroGuia.",
+    "seo_title": "Metro Lindavista CDMX — zona residencial",
+    "meta_description": "Zona residencial tranquila. Punto de tránsito L6. Barrio auténtico. Guía MetroGuia.",
     "h1": "Metro Lindavista: la colonia residencial del norte",
-    "intro": "Lindavista es una de las colonias residenciales más tranquilas del norte de CDMX, con buen nivel de seguridad, servicios y el Centro Comercial Lindavista. Popular como zona de hospedaje alternativo.",
-    "historia_icono": "El ícono representa el paisaje verde y arbolado de la colonia Lindavista, una de las zonas con más arboles del norte de la ciudad.",
+    "intro": "Estación residencial en Gustavo A. Madero, punto de tránsito en la Línea 6. Zona tranquila y segura que refleja la vida cotidiana de los barrios residenciales del norte. Para turistas que quieren experiencias más auténticas fuera del circuito turístico central.",
+    "historia_icono": "El ícono representa el barrio de Lindavista, zona residencial que creció como suburbio de CDMX en el siglo XX.",
     "tips": [
-      "Buena zona para hospedarse durante el Mundial: tranquila y conectada",
-      "CC Lindavista con tiendas, restaurantes y cine",
-      "La Salle y zona universitaria con oferta gastronómica"
+      "Zona residencial tranquila, segura para turistas",
+      "Menos aglomeración que estaciones centrales (ideal si viajas sin prisa)",
+      "Tiendas de conveniencia y servicios locales",
+      "Punto de paso hacia La Villa-Basílica sin bajar"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Muy tranquilo en semana.",
     "mundial_relevancia": "Zona recomendada para alojamiento de turistas del Mundial 2026."
   },
   {
@@ -3168,17 +3248,18 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Deportivo 18 de Marzo CDMX — Transfer L3/L6 | MetroGuia",
-    "meta_description": "Transfer L3/L6. Acceso al Deportivo 18 de Marzo. Guía en MetroGuia.",
+    "seo_title": "Metro Deportivo 18 Marzo CDMX — complejo deportivo",
+    "meta_description": "Deportivo 18 de Marzo: complejo deportivo, estadio, albercas. Deporte mexicano. Guía MetroGuia.",
     "h1": "Metro Deportivo 18 de Marzo: transfer L3/L6",
-    "intro": "Nodo de transferencia entre Líneas 3 y 6. Acceso al complejo deportivo 18 de Marzo y conexión entre el corredor norte-sur y el corredor este-oeste.",
-    "historia_icono": "El ícono alude al 18 de marzo de 1938, fecha histórica de la expropiación petrolera mexicana.",
+    "intro": "Estación que da acceso al Deportivo 18 de Marzo, complejo deportivo importante con estadio, alberca, canchas y servicios deportivos. Punto de referencia para turistas interesados en deporte mexicano, fútbol amateur y recreación. Importante para el contexto del Mundial FIFA 2026.",
+    "historia_icono": "El ícono representa el estadio y las instalaciones deportivas, símbolo de la tradición deportiva y comunitaria del norte de CDMX.",
     "tips": [
-      "Transfer a L3 hacia el centro o Universidad",
-      "Acceso al deportivo para actividades físicas",
-      "Zona tranquila"
+      "Deportivo 18 de Marzo: complejo deportivo con estadio, albercas, canchas",
+      "Eventos deportivos locales, partidos de fútbol amateur y actividades recreativas",
+      "Acceso a zona de entretenimiento familiar y deporte comunitario",
+      "Ideal para turistas que quieren ver vida deportiva mexicana auténtica"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Fines de semana para eventos deportivos. Semana: entrenamientos y actividades menores.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3210,18 +3291,18 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro La Villa-Basílica CDMX — Basílica de Guadalupe | MetroGuia",
-    "meta_description": "Metro La Villa: acceso directo a la Basílica de Guadalupe, el santuario más visitado de América. Guía en MetroGuia.",
+    "seo_title": "Metro La Villa-Basílica CDMX — Guadalupe",
+    "meta_description": "Acceso directo Basílica de Guadalupe. Santuario religioso México. Peregrrinaje. Guía MetroGuia.",
     "h1": "Metro La Villa-Basílica: el santuario más visitado de América",
-    "intro": "La estación más sagrada del Metro CDMX: da acceso directo a la Basílica de Guadalupe, el santuario religioso más visitado de América Latina con más de 20 millones de peregrinos al año. La nueva basílica (1976) y la antigua colonial conviven en la Plaza de las Américas.",
-    "historia_icono": "El ícono representa a la Virgen de Guadalupe, patrona de México y de toda América Latina, cuya aparición milagrosa en 1531 al indígena Juan Diego es el fundamento de este santuario.",
+    "intro": "LA ESTACIÓN MÁS SAGRADA DE LA LÍNEA 6: acceso directo a la Basílica de Guadalupe, el santuario católico más importante de México y punto de peregrinación de millones anuales. Para turistas religiosos y culturales, La Villa es obligatoria. El significado espiritual de este lugar no tiene parangón en CDMX.",
+    "historia_icono": "El ícono representa la Virgen de Guadalupe, patrona de México, símbolo máximo de la devoción religiosa mexicana y la identidad cultural del país.",
     "tips": [
-      "La basílica es gratuita y abre de 6am a 10pm",
-      "12 de diciembre: peregrinación masiva — llegar muy temprano",
-      "El tilma de Juan Diego (el ayate con la imagen) está expuesta en el altar mayor",
-      "Hay escaleras mecánicas frente al altar para ver la imagen en movimiento"
+      "Basílica de Guadalupe abierta 6am-10pm (visitas libres, donativos opcionales)",
+      "Templo Expiatorio: iglesia más antigua (16th siglo) 100 metros al norte",
+      "Mercado de artesanías y velas religiosas en los alrededores (buenas compras de souvenirs)",
+      "Zona muy concurrida fines de semana y festividades; llegar temprano para comodidad"
     ],
-    "mejor_horario": "Mañanas entre semana para evitar multitudes. Evitar 12 de diciembre si no vas a peregrinar.",
+    "mejor_horario": "Cualquier hora abierta. Menos concurrido lunes-jueves 8am-3pm.",
     "mundial_relevancia": "Visita espiritual y cultural imperdible para turistas del Mundial 2026. El sitio más visitado de México."
   },
   {
@@ -3240,17 +3321,18 @@ const estaciones = [
     "transferencias": [
       "4"
     ],
-    "seo_title": "Metro Martín Carrera CDMX — Terminal L4/L6 | MetroGuia",
-    "meta_description": "Terminal sur L6, transfer con L4. Zona norte de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Martín Carrera CDMX — terminal L6 norte",
+    "meta_description": "Terminal norte Línea 6. Extremo norte metro CDMX. CETRAM a EDOMEX. Guía MetroGuia.",
     "h1": "Metro Martín Carrera: transfer L4/L6 en el norte",
-    "intro": "Término sur de la Línea 6 y transfer con L4. Punto de conexión entre el norte y el oriente de la ciudad.",
-    "historia_icono": "El ícono representa al General Martín Carrera, breve presidente interino de México en 1855 durante la época de la Reforma.",
+    "intro": "Martín Carrera es la terminal norte de la Línea 6, extremo final del corredor norte-sur de esta línea. Zona residencial de Gustavo A. Madero que marca el límite norte del metro de CDMX. Desde aquí, turistas pueden tomar autobuses hacia municipios del Estado de México o explorar la periferia norte.",
+    "historia_icono": "El ícono representa a Martín Carrera, personaje histórico de la época colonial o revolucionaria asociado con esta zona del norte.",
     "tips": [
-      "Transfer a L4 hacia el centro y Santa Anita",
-      "Terminal de L6",
-      "Zona residencial norte"
+      "Terminal norte L6: última parada antes de salir del metro de CDMX",
+      "CETRAM con autobuses a municipios Estado de México (Ecatepec, Coacalco, etc.)",
+      "Zona residencial tranquila, menos turística que centro",
+      "Punto de inicio/fin para turistas recorriendo la L6 de norte a sur"
     ],
-    "mejor_horario": "Todo el día.",
+    "mejor_horario": "Todo el día. Evitar horas pico si buscas comodidad.",
     "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
@@ -3269,18 +3351,20 @@ const estaciones = [
     "transferencias": [
       "6"
     ],
-    "seo_title": "Metro El Rosario CDMX — Terminal L6/L7 | MetroGuia",
-    "meta_description": "Terminal norte de Líneas 6 y 7. Gran CETRAM con autobuses al Estado de México. Guía en MetroGuia.",
+    "seo_title": "Metro El Rosario CDMX — Terminal L6 y L7 | MetroGuia",
+    "meta_description": "El Rosario: terminal de Líneas 6 y 7, CETRAM más grande del norte. Conexión directa al Estado de México. Guía para turistas del Mundial 2026.",
     "h1": "Metro El Rosario: terminal norte de dos líneas",
-    "intro": "Terminus de Líneas 6 y 7, con el CETRAM más grande del norte que conecta con todo el poniente del Estado de México.",
-    "historia_icono": "El ícono representa el Rosario mariano, símbolo del barrio y parroquia que daba nombre a esta zona de la antigua periferia norte.",
+    "intro": "El Rosario es el gran terminus del norte poniente de CDMX, donde confluyen la Línea 6 y la Línea 7 junto al CETRAM más grande de toda la zona metropolitana. Desde aquí parten autobuses a Naucalpan, Tlalnepantla y toda la zona industrial del Estado de México. Para turistas del Mundial 2026 que se hospedan en la periferia norte, esta estación es la puerta de entrada al sistema de metro capitalino.",
+    "historia_icono": "El ícono representa una rosa, haciendo referencia a la Basílica de Guadalupe y la advocación mariana presente en el nombre del barrio. El Rosario es también uno de los barrios más antiguos de Azcapotzalco, con raíces coloniales del siglo XVII.",
     "tips": [
-      "Terminal simultánea de L6 y L7",
-      "CETRAM con autobuses frecuentes a Naucalpan y Tlalnepantla",
-      "Alta afluencia en horas pico"
+      "Es terminal simultánea de L6 y L7 — identifica bien tu línea antes de subir",
+      "El CETRAM conecta con autobuses frecuentes a Naucalpan y Tlalnepantla cada 5-10 min",
+      "Evita horas pico (7-9 AM y 6-8 PM) — la afluencia es muy alta",
+      "Hay estacionamiento disponible si vienes en auto desde el Estado de México",
+      "Kioscos de comida económica en el exterior del CETRAM"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Cualquier horario fuera de horas pico. Mañanas entre semana después de las 10 AM son las más tranquilas.",
+    "mundial_relevancia": "Punto de entrada al metro para turistas hospedados en el área metropolitana norte (Naucalpan, Tlalnepantla). Desde aquí se toma L7 hacia el centro para conectar con rutas al Estadio Azteca."
   },
   {
     "slug": "aquiles-serdan",
@@ -3290,18 +3374,20 @@ const estaciones = [
     "tipo_zona": "residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Aquiles Serdán CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Aquiles Serdán en Azcapotzalco. Zona residencial norte. Guía en MetroGuia.",
+    "seo_title": "Metro Aquiles Serdán CDMX — Barrio obrero Azcapotzalco | MetroGuia",
+    "meta_description": "Metro Aquiles Serdán, zona residencial auténtica de Azcapotzalco. Historia revolucionaria, mercados locales y ambiente tranquilo. Línea 7 CDMX.",
     "h1": "Metro Aquiles Serdán: barrio residencial de Azcapotzalco",
-    "intro": "Estación en zona residencial de Azcapotzalco. Punto de tránsito en el corredor norte de la Línea 7.",
-    "historia_icono": "El ícono representa a Aquiles Serdán, héroe de la Revolución Mexicana que encabezó la primera batalla revolucionaria en Puebla el 18 de noviembre de 1910.",
+    "intro": "Aquiles Serdán es una estación de tránsito en la zona residencial de Azcapotzalco, nombrada en honor al mártir revolucionario que fue uno de los primeros en levantarse contra el régimen de Díaz en 1910. La zona que rodea esta estación es un barrio obrero tranquilo con mercados locales auténticos y comercio popular que muy pocos turistas conocen.",
+    "historia_icono": "El ícono representa el retrato estilizado de Aquiles Serdán, héroe de la Revolución Mexicana fusilado en 1910 en Puebla. Su figura simboliza el inicio del movimiento armado que transformó México en el siglo XX.",
     "tips": [
-      "Zona residencial tranquila",
-      "Servicios locales disponibles",
-      "Conecta hacia El Rosario o Refinería"
+      "Zona tranquila ideal para explorar la CDMX auténtica fuera del circuito turístico",
+      "Mercado local con productos frescos y comida económica",
+      "Distancia caminable entre estaciones El Rosario y Camarones para conocer el barrio",
+      "Azcapotzalco tiene historia industrial interesante — antiguamente aquí estaba la refinería PEMEX",
+      "Área segura y con servicios básicos completos"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Cualquier momento del día. Fines de semana son especialmente tranquilos y propicios para explorar el barrio.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Útil como estación intermedia en trayectos norte-sur por la Línea 7."
   },
   {
     "slug": "camarones",
@@ -3311,18 +3397,20 @@ const estaciones = [
     "tipo_zona": "industrial-residencial",
     "pois": [],
     "transferencias": [],
-    "seo_title": "Metro Camarones CDMX — Guía | MetroGuia",
-    "meta_description": "Metro Camarones en Azcapotzalco. Zona industrial norte. Guía en MetroGuia.",
+    "seo_title": "Metro Camarones CDMX — Historia lacustre de Azcapotzalco | MetroGuia",
+    "meta_description": "Metro Camarones en Azcapotzalco, recuerda los canales prehispánicos de la ciudad lacustre. Zona industrial auténtica. Línea 7 del Metro CDMX.",
     "h1": "Metro Camarones: zona industrial de Azcapotzalco",
-    "intro": "Estación en zona industrial y residencial de Azcapotzalco en el corredor norte-poniente de la Línea 7.",
-    "historia_icono": "El ícono representa los camarones del lago de Texcoco, que abundaban en los canales prehispánicos que cruzaban esta zona antes de la urbanización.",
+    "intro": "Camarones es una estación que marca la transición entre la zona industrial de Azcapotzalco y los barrios residenciales populares del norte de la Ciudad de México. El nombre evoca los tiempos en que el Canal de los Camarones atravesaba esta zona lacustre prehispánica. Hoy es un corredor de transición con pequeños comercios y talleres mecánicos que reflejan el carácter obrero de la alcaldía.",
+    "historia_icono": "El ícono representa un camarón, evocando el antiguo Canal de los Camarones que existía en esta zona cuando era un lago. El lago de Texcoco y sus canales cubrían gran parte de lo que hoy es el norte de la CDMX.",
     "tips": [
-      "Zona industrial tranquila entre semana",
-      "Paso hacia Tacuba o El Rosario",
-      "Servicios básicos disponibles"
+      "Zona de transición industrial-residencial, tranquila entre semana",
+      "Pequeños talleres y comercios locales típicos del México obrero",
+      "Buena conexión entre El Rosario y zonas más céntricas de L7",
+      "Azcapotzalco tiene varios museos industriales — pregunta en la alcaldía",
+      "Evita llevar objetos de valor visibles en zonas industriales"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Horario regular. Entre semana hay menos afluencia que en horas pico.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "refineria",
@@ -3339,17 +3427,19 @@ const estaciones = [
     ],
     "transferencias": [],
     "seo_title": "Metro Refinería CDMX — Historia petrolera de México | MetroGuia",
-    "meta_description": "Metro Refinería: zona histórica de la expropiación petrolera en Azcapotzalco. Guía en MetroGuia.",
+    "meta_description": "Metro Refinería, homenaje a la expropiación petrolera de 1938. Zona industrial histórica en Azcapotzalco. Línea 7 del Metro CDMX.",
     "h1": "Metro Refinería: la historia del petróleo mexicano",
-    "intro": "La estación Refinería es un recordatorio histórico: cerca de aquí estuvo la antigua Refinería 18 de Marzo de PEMEX, primera refinería nacional operada tras la expropiación petrolera de 1938 que transformó México.",
-    "historia_icono": "El ícono representa las torres de destilación de la refinería PEMEX, símbolo de la expropiación petrolera del 18 de marzo de 1938.",
+    "intro": "La estación Refinería lleva el nombre de la histórica Refinería 18 de Marzo de PEMEX, símbolo de la expropiación petrolera de 1938 con la que el presidente Lázaro Cárdenas nationalizó la industria del petróleo en México. Aunque la refinería ya no opera en el área, la zona sigue siendo de carácter industrial con una identidad obrera profundamente arraigada.",
+    "historia_icono": "El ícono representa una torre de refinería petrolera, commemorando la histórica expropiación petrolera del 18 de marzo de 1938. Ese día Cárdenas expropió las empresas extranjeras, y México celebra el Día de la Expropiación Petrolera cada año en esa fecha.",
     "tips": [
-      "Zona industrial en transformación",
-      "Historia del petróleo mexicano en los alrededores",
-      "Paso hacia Tacuba o El Rosario"
+      "La historia de PEMEX y la expropiación petrolera es fascinante — busca el Museo del Petróleo en el Bosque de Chapultepec",
+      "Zona industrial en transformación hacia usos habitacionales",
+      "Conecta en minutos con el nodo de Tacuba (L2) y El Rosario",
+      "Área tranquila fuera de horas de entrada y salida de trabajadores",
+      "Ofrece acceso a barrios populares auténticos de Azcapotzalco"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Cualquier horario fuera de las 7-9 AM y 5-7 PM para evitar flujos de trabajadores.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "tacuba",
@@ -3370,18 +3460,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tacuba CDMX — Historia ferroviaria | MetroGuia",
-    "meta_description": "Metro Tacuba en Miguel Hidalgo. Historia ferroviaria y colonial del poniente de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Tacuba CDMX — Centro comercial | MetroGuia",
+    "meta_description": "Tacuba: estación comercial en Miguel Hidalgo. Mercados, tiendas y gastronomía local.",
     "h1": "Metro Tacuba: historia colonial y ferroviaria",
-    "intro": "Tacuba es uno de los barrios más antiguos de México, fundado como señorío tepaneca antes de la conquista. Su antigua estación ferroviaria es un monumento al México moderno del Porfiriato.",
-    "historia_icono": "El ícono representa a un guerrero tepaneca con escudo, en honor al señorío de Tlacopan (Tacuba) que formó parte de la Triple Alianza azteca.",
+    "intro": "Tacuba es una estación comercial ubicada en Miguel Hidalgo, ofreciendo acceso a mercados tradicionales, tiendas y restaurantes locales. La zona es vibrante y auténtica, perfecta para experimentar la vida comercial de CDMX.",
+    "historia_icono": "Tacuba proviene del náhuatl 'tlacopan', uno de los grandes centros comerciales de la época prehispánica.",
     "tips": [
-      "El Museo del Ferrocarril es gratuito",
-      "Zona histórica con arquitectura colonial conservada",
-      "Buena gastronomía local en mercados del barrio"
+      "Mercado tradicional de alimentos frescos",
+      "Tiendas locales y artesanía",
+      "Gastronomía típica mexicana",
+      "Zona concurrida y auténtica"
     ],
-    "mejor_horario": "Mañanas de miércoles a domingo.",
-    "mundial_relevancia": "Destino histórico interesante para turistas del Mundial que quieran explorar más allá del Centro."
+    "mejor_horario": "Mañana para ver el mercado en movimiento.",
+    "mundial_relevancia": "Sin relevancia directa para partidos."
   },
   {
     "slug": "san-joaquin",
@@ -3402,18 +3493,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Joaquín CDMX — Acceso a Polanco | MetroGuia",
-    "meta_description": "Metro San Joaquín: acceso a Polanco y museos de clase mundial. Guía en MetroGuia.",
+    "seo_title": "Metro San Joaquín CDMX — Acceso a Polanco y Museo Jumex | MetroGuia",
+    "meta_description": "Metro San Joaquín: acceso a Polanco, Museo Jumex y arte contemporáneo. Alternativa tranquila para visitar el barrio más elegante de CDMX.",
     "h1": "Metro San Joaquín: puerta poniente a Polanco",
-    "intro": "San Joaquín es la entrada poniente al exclusivo barrio de Polanco, con acceso al Museo Jumex (arte contemporáneo), galerías de arte y el boulevard de restaurantes y boutiques.",
-    "historia_icono": "El ícono representa al patriarca San Joaquín, padre de la Virgen María según la tradición cristiana, patrono de una antigua hacienda jesuita que existió en esta zona.",
+    "intro": "San Joaquín es la puerta trasera al elegante barrio de Polanco y al corredor de arte contemporáneo más importante de México. A pocos metros se encuentra el Museo Jumex, institución privada de arte contemporáneo reconocida internacionalmente, y a unos minutos caminando el Museo Soumaya y las boutiques de Presidente Masaryk. Una opción menos concurrida que la estación Polanco para acceder a la misma zona.",
+    "historia_icono": "El ícono representa la iglesia de San Joaquín, edificio colonial que da nombre a la colonia homónima. San Joaquín es el padre de la Virgen María en la tradición católica, y su devoción se extendió por toda la Nueva España durante la evangelización.",
     "tips": [
-      "Acceso alternativo a Polanco menos concurrido",
-      "Museo Jumex con exposiciones de talla mundial",
-      "Zona segura y bien iluminada"
+      "Museo Jumex: entrada general $80 MXN, uno de los mejores museos de arte contemporáneo de Latinoamérica",
+      "Acceso menos saturado a Polanco que la estación del mismo nombre",
+      "Presidente Masaryk: el 'Champs-Élysées mexicano' con tiendas de lujo",
+      "Parque América: espacio verde para descansar entre museos",
+      "Taxis y Uber son abundantes en la zona — ideal para continuar tour"
     ],
-    "mejor_horario": "Todo el día para museos; noches animadas en Polanco.",
-    "mundial_relevancia": "Zona de lujo para turistas del Mundial 2026 con presupuesto alto."
+    "mejor_horario": "Martes a domingo 10 AM–6 PM para los museos. La zona es agradable todo el día.",
+    "mundial_relevancia": "Alta relevancia para turistas del Mundial 2026: Polanco concentra los mejores hoteles de la ciudad (Camino Real, JW Marriott, St. Regis, Presidente InterContinental). Muchas delegaciones y aficionados adinerados se hospedarán en esta zona."
   },
   {
     "slug": "polanco",
@@ -3449,19 +3542,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Polanco CDMX — Gastronomía, museos y lujo | MetroGuia",
-    "meta_description": "Metro Polanco: el barrio más exclusivo de CDMX. Gastronomía mundial, Museo Soumaya y hoteles de lujo. Ideal para el Mundial 2026. Guía en MetroGuia.",
+    "seo_title": "Metro Polanco CDMX — Lujo, gastronomía y Chapultepec | MetroGuia",
+    "meta_description": "Metro Polanco: puerta al barrio más elegante de CDMX. Pujol, Museo Soumaya, hoteles 5 estrellas. Esencial para el Mundial FIFA 2026.",
     "h1": "Metro Polanco: el barrio más cosmopolita de CDMX",
-    "intro": "Polanco es el epicentro del lujo, la gastronomía y la cultura en CDMX. Los mejores restaurantes de México (Pujol, Quintonil), museos de clase mundial (Soumaya, Jumex), hoteles cinco estrellas y boutiques internacionales se concentran en sus calles arboladas.",
-    "historia_icono": "El ícono representa los frondosos árboles que caracterizan las avenidas de Polanco, uno de los barrios más verdes y exclusivos de la capital.",
+    "intro": "Polanco es el barrio más cosmopolita, lujoso y gastronómico de la Ciudad de México. La estación da acceso directo al Paseo de la Reforma, al Bosque de Chapultepec, a dos de los mejores restaurantes del mundo (Pujol ocupa el lugar #13 en la lista World's 50 Best), y a los mejores hoteles de la ciudad. Para el Mundial FIFA 2026, Polanco será el corazón de la actividad turística premium.",
+    "historia_icono": "El ícono representa un búho, símbolo de sabiduría asociado a la colonia Polanco cuyo desarrollo urbanístico moderno inició en los años 1940. El búho también evoca la naturaleza de Chapultepec — 'cerro del chapulín' en náhuatl — bosque adyacente a la colonia.",
     "tips": [
-      "Pujol y Quintonil están en el top 50 mejores restaurantes del mundo — reserva con meses de anticipación",
-      "El Museo Soumaya es gratuito y tiene una colección impresionante",
-      "Parque Lincoln: paseo tranquilo con tianguis de antigüedades los fines de semana",
-      "Antara Fashion Hall para marcas internacionales"
+      "Pujol (top 15 mundial) y Quintonil (top 30) requieren reserva con 2-3 meses de anticipación vía su sitio web",
+      "Museo Soumaya en Plaza Carso: GRATUITO y con obras de Rodin, El Greco y Dalí",
+      "Av. Presidente Masaryk: peatonal los domingos para mercado de artesanías",
+      "Parque Lincoln: ambiente familiar con tianguis de antigüedades los domingos",
+      "Uber y taxis de plataforma son seguros y abundantes en toda la zona"
     ],
-    "mejor_horario": "Todo el día. Noches de jueves a sábado para vida nocturna y gastronómica.",
-    "mundial_relevancia": "IMPRESCINDIBLE para turistas del Mundial 2026 con presupuesto. La mejor gastronomía y hoteles de CDMX."
+    "mejor_horario": "Cualquier día. Domingos en Masaryk peatonal son especiales. Tardes-noches para la escena gastronómica.",
+    "mundial_relevancia": "Zona CRÍTICA para el Mundial 2026: concentra los principales hoteles de lujo donde se hospedarán selecciones nacionales, directivos de FIFA y turistas de alto poder adquisitivo. Fan experience de alta gama en esta área."
   },
   {
     "slug": "auditorio",
@@ -3493,17 +3587,19 @@ const estaciones = [
     ],
     "transferencias": [],
     "seo_title": "Metro Auditorio CDMX — Auditorio Nacional y Chapultepec | MetroGuia",
-    "meta_description": "Metro Auditorio: el mejor recinto de entretenimiento de CDMX y acceso al Bosque de Chapultepec. Guía en MetroGuia.",
+    "meta_description": "Metro Auditorio: acceso al Auditorio Nacional, Bosque de Chapultepec norte y Museo Tamayo. Zona cultural premium del Paseo de la Reforma.",
     "h1": "Metro Auditorio: música, arte y el bosque urbano más grande de CDMX",
-    "intro": "La estación Auditorio es una de las mejor ubicadas del sistema: da acceso al Auditorio Nacional (el mejor recinto de conciertos de México), al Bosque de Chapultepec por su acceso norte y al Museo Tamayo de Arte Contemporáneo.",
-    "historia_icono": "El ícono representa las tablas del teatro con las máscaras de la comedia y la tragedia, símbolos del Auditorio Nacional, el recinto de espectáculos más importante de México.",
+    "intro": "La estación Auditorio ofrece acceso privilegiado a tres íconos de la Ciudad de México en menos de 10 minutos a pie: el Auditorio Nacional (el mejor recinto de conciertos de México), el acceso norte al Bosque de Chapultepec, y el Museo Tamayo Arte Contemporáneo. Para turistas del Mundial 2026, esta zona combina cultura, naturaleza urbana y entretenimiento en una ubicación inmejorable sobre el Paseo de la Reforma.",
+    "historia_icono": "El ícono representa el Auditorio Nacional con su característica forma arquitectónica. Inaugurado en 1952, el 'Coloso de Reforma' ha sido escenario de los conciertos más importantes de la historia de México y Latinoamérica.",
     "tips": [
-      "Revisa la cartelera del Auditorio Nacional — siempre hay algo bueno",
-      "Bosque de Chapultepec acceso norte: menos concurrido que el acceso del Chapultepec",
-      "Museo Tamayo: entrada libre los domingos"
+      "Auditorio Nacional: revisa cartelera en Ticketmaster — siempre hay conciertos de talla mundial",
+      "Museo Tamayo: entrada libre los domingos, colección permanente de arte contemporáneo internacional",
+      "Bosque de Chapultepec acceso norte: menos concurrido que el acceso principal de Chapultepec",
+      "Paseo de la Reforma frente al Auditorio: ciclovia dominical desde las 8 AM",
+      "Los museos de Chapultepec (Castillo, Antropología) quedan a 15-20 min caminando"
     ],
-    "mejor_horario": "Todo el día para el bosque; noches de conciertos según cartelera.",
-    "mundial_relevancia": "Zona cultural de primer nivel para turistas del Mundial 2026. Chapultepec es el pulmón verde de la ciudad."
+    "mejor_horario": "Martes a domingo. Domingos son ideales para la ciclovía. Noches con eventos en el Auditorio crean ambiente festivo único.",
+    "mundial_relevancia": "Alta relevancia para el Mundial 2026: el Auditorio Nacional y la zona de Reforma serán puntos de encuentro de aficionados internacionales. El Paseo de la Reforma conecta directamente con zonas de hoteles y posibles Fan Zones."
   },
   {
     "slug": "constituyentes",
@@ -3529,18 +3625,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Constituyentes CDMX — Chapultepec segunda sección | MetroGuia",
-    "meta_description": "Metro Constituyentes: acceso a la segunda sección de Chapultepec y Papalote Museo del Niño. Guía en MetroGuia.",
+    "seo_title": "Metro Constituyentes CDMX — Chapultepec 2a sección | MetroGuia",
+    "meta_description": "Metro Constituyentes: acceso a Papalote Museo del Niño y segunda sección del Bosque de Chapultepec. Zona verde para familias en CDMX.",
     "h1": "Metro Constituyentes: la segunda sección de Chapultepec",
-    "intro": "Constituyentes da acceso a la zona más tranquila de Chapultepec: la segunda sección, con el Papalote Museo del Niño, el Museo Tecnológico y amplias áreas verdes perfectas para picnics y caminatas.",
-    "historia_icono": "El ícono representa el Congreso Constituyente de 1917 que redactó la Constitución Política de los Estados Unidos Mexicanos, vigente hasta hoy.",
+    "intro": "Constituyentes es la puerta más tranquila al Bosque de Chapultepec, específicamente a su segunda sección donde se encuentran el Papalote Museo del Niño, el Museo Tecnológico de la CFE, la Casa del Lago y amplias áreas verdes menos concurridas que la primera sección. La avenida Constituyentes es también un eje viario importante que conecta Polanco con Santa Fe.",
+    "historia_icono": "El ícono representa el Congreso Constituyente de 1917, referencia al proceso que dio lugar a la Constitución Política de México vigente hasta hoy. La Constitución de 1917 fue una de las primeras en el mundo en incluir derechos sociales como trabajo y educación.",
     "tips": [
-      "La segunda sección de Chapultepec es menos concurrida que la primera",
-      "Papalote: ideal con niños",
-      "Puedes rentar bicicletas dentro del bosque"
+      "Papalote Museo del Niño: ideal para familias, entrada ~$250 MXN adultos",
+      "Segunda sección de Chapultepec: menos concurrida, perfecta para caminatas y picnic",
+      "Lago de Chapultepec: renta de lanchas disponible",
+      "Casa del Lago: eventos culturales y conciertos frecuentemente gratuitos",
+      "Los fines de semana la zona se llena de familias capitalinas — ambiente festivo auténtico"
     ],
-    "mejor_horario": "Fines de semana de 8am a 5pm.",
-    "mundial_relevancia": "Zona de relajación natural para turistas del Mundial 2026 con familias."
+    "mejor_horario": "Fines de semana para el ambiente familiar. Martes a viernes para menor afluencia en museos.",
+    "mundial_relevancia": "Relevancia media para el Mundial 2026: Chapultepec en general será destino turístico para aficionados. La segunda sección es ideal para un día de descanso entre partidos."
   },
   {
     "slug": "tacubaya-l7",
@@ -3564,19 +3662,20 @@ const estaciones = [
       "1",
       "9"
     ],
-    "seo_title": "Metro Tacubaya CDMX — Hub de 3 líneas | MetroGuia",
-    "meta_description": "Tacubaya: transfer L1, L7 y L9. El mayor nodo del poniente de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Tacubaya L7 CDMX — Hub de 3 líneas poniente | MetroGuia",
+    "meta_description": "Metro Tacubaya en Línea 7: nodo de transferencia con L1, L7 y L9. CETRAM hacia Santa Fe y Álvaro Obregón. Guía para el Mundial FIFA 2026.",
     "h1": "Metro Tacubaya: el gran hub del poniente",
-    "intro": "Tacubaya es el nodo de transferencia más importante del poniente de CDMX: tres líneas confluyen aquí (1, 7 y 9). El CETRAM conecta con autobuses a toda la zona de Álvaro Obregón y más allá.",
-    "historia_icono": "El ícono representa el señorío prehispánico de Tlacopan (Tacuba/Tacubaya), parte de la Triple Alianza azteca, que dominó el poniente del Valle de México.",
+    "intro": "Tacubaya en la Línea 7 forma parte del nodo de transferencia más importante del poniente capitalino, donde convergen tres líneas del metro (L1, L7 y L9). El CETRAM de Tacubaya conecta con decenas de rutas de microbús hacia toda la zona de Álvaro Obregón, Santa Fe y el corredor Insurgentes Sur. Es también acceso a la Colonia Escandón y a varios hospitales y centros comerciales de la zona.",
+    "historia_icono": "El ícono representa el glifo prehispánico de Tacubaya, una ciudad importante del período posclásico conocida como 'Atlacuihuayan' en náhuatl, que significa 'lugar donde se toma el agua'. La región fue proveedor de agua potable para la antigua Tenochtitlán.",
     "tips": [
-      "Transfer entre 3 líneas simultáneamente: L1, L7 y L9",
-      "CETRAM con microbuses a todo el poniente",
-      "Alta afluencia — vigilar pertenencias",
-      "Cerca del corredor Insurgentes Sur"
+      "Nodo de transfer entre L1, L7 y L9 — identifica bien tu línea",
+      "CETRAM con microbuses a toda la zona poniente de CDMX y Santa Fe",
+      "Alta afluencia — guarda bien tus pertenencias en horas pico",
+      "Acceso a hospitales importantes de la zona: ABC, Mocel",
+      "Colonia Escandón cercana: barrio bohemio con restaurantes y cafés"
     ],
-    "mejor_horario": "Evitar horas pico (7-9am, 6-8pm).",
-    "mundial_relevancia": "Nodo logístico clave para turistas del Mundial 2026 moviéndose por el poniente de CDMX."
+    "mejor_horario": "Evita 7-9 AM y 6-8 PM. Mejor entre 10 AM y 5 PM para conexiones cómodas.",
+    "mundial_relevancia": "Relevante para el Mundial 2026 como nodo de conexión. Desde Tacubaya se puede ir hacia el sur (L9 hacia el Estadio Azteca vía otras transferencias) o hacia el centro."
   },
   {
     "slug": "san-pedro-de-los-pinos",
@@ -3592,18 +3691,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Pedro de los Pinos CDMX — Guía | MetroGuia",
-    "meta_description": "Metro San Pedro de los Pinos: colonia residencial tranquila del sur-poniente. Guía en MetroGuia.",
+    "seo_title": "Metro San Pedro de los Pinos CDMX — Naturaleza y Tranquilidad",
+    "meta_description": "Estación San Pedro de los Pinos: Zona arbolada tranquila, parques verdes y ambiente sereno. Escape natural en el corazón de CDMX.",
     "h1": "Metro San Pedro de los Pinos: colonia residencial tranquila",
-    "intro": "San Pedro de los Pinos es una de las colonias residenciales más tranquilas y bien conservadas del sur-poniente de CDMX. Calles arboladas, cafés de especialidad y arquitectura de los años 40.",
-    "historia_icono": "El ícono representa los pinos que poblaban este territorio antes de su urbanización, referencia a la vegetación que le dio nombre.",
+    "intro": "San Pedro de los Pinos es una estación que te conecta con una zona arbolada y tranquila, perfecta para turistas que buscan verdor y aire fresco en la ciudad. El barrio es principalmente residencial, con calles bordeadas de árboles y un ambiente sereno. Encontrarás parques agradables para paseos, pequeñas tiendas, restaurantes locales y la sensación de estar en un oasis dentro de la metrópolis. Es ideal para familias y viajeros que quieren descansar.",
+    "historia_icono": "El ícono representa pinos, que son los árboles característicos de esta zona. El símbolo muestra agujas de pino o la forma característica del árbol, haciendo referencia directa al ambiente arbolado y la naturaleza que prevalece en el lugar.",
     "tips": [
-      "Buena zona para hospedarse: tranquila y con metro directo",
-      "Cafés de especialidad y restaurantes de barrio",
-      "Zona segura y bien iluminada"
+      "Pasea por los parques arbolados para relajarte en la naturaleza",
+      "Las mañanas son ideales para correr o hacer ejercicio en la zona",
+      "Encuentra tiendas de conveniencia y panaderías para desayunos auténticos",
+      "El ambiente es perfecto para fotógrafos en busca de escenas urbano-naturales",
+      "Los cafés locales son acogedores y perfectos para trabajar remotamente"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Zona recomendada para alojamiento tranquilo durante el Mundial 2026."
+    "mejor_horario": "Mañanas entre 07:00 y 12:00 para disfrutar del ambiente tranquilo. Los sábados y domingos todo el día ofrece paz.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "san-antonio",
@@ -3619,18 +3720,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Antonio CDMX — Guía | MetroGuia",
-    "meta_description": "Metro San Antonio en Benito Juárez. Zona residencial y comercial del sur-poniente. Guía en MetroGuia.",
+    "seo_title": "Metro San Antonio CDMX — Arte y Cultura Local",
+    "meta_description": "Estación San Antonio: Galerías de arte, cafeterías artesanales y tiendas independientes. Descubre la CDMX creativa y auténtica.",
     "h1": "Metro San Antonio: entre Del Valle y Mixcoac",
-    "intro": "Estación en zona residencial de Benito Juárez, entre las colonias Del Valle y Mixcoac. Buenas conexiones con el sur-poniente de la ciudad.",
-    "historia_icono": "El ícono representa al santo franciscano Antonio de Padua, patrono de la antigua capilla que existió en este barrio colonial desde el siglo XVII.",
+    "intro": "San Antonio es una estación que representa la dualidad de la CDMX moderna: combina espacios residenciales acogedores con comercio dinámico. La zona es conocida por sus tiendas boutique, cafeterías artesanales y galerías de arte independientes. Es ideal para turistas que buscan una experiencia más auténtica y menos turística, donde puedan interactuar con artistas locales y disfrutar de la cultura contemporánea mexicana.",
+    "historia_icono": "El ícono representa a San Antonio, santo venerado en la tradición católica mexicana. Comúnmente se muestra con elementos religiosos o iconografía que refleja la devoción popular del lugar, conectando con las raíces culturales y espirituales de la zona.",
     "tips": [
-      "Zona residencial tranquila",
-      "Buena conectividad con el sur de la ciudad",
-      "Paso hacia Mixcoac (L12)"
+      "Explora galerías de arte independientes que exhiben trabajo de artistas locales",
+      "Las cafeterías locales sirven café de especialidad y repostería artesanal",
+      "Mercados de artesanías donde puedes comprar souvenirs auténticos",
+      "El área tiene un ambiente bohemio perfecto para fotógrafos y creadores",
+      "Varios murales y arte urbano dignos de fotografiar"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Jueves a sábados entre 15:00 y 21:00 cuando la vida nocturna y cultural está en su apogeo. Las tardes de domingo son excelentes para un ambiente más relajado.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "mixcoac-l7",
@@ -3653,18 +3756,20 @@ const estaciones = [
     "transferencias": [
       "12"
     ],
-    "seo_title": "Metro Mixcoac CDMX — Transfer L7/L12 | MetroGuia",
-    "meta_description": "Transfer Líneas 7 y 12 en Mixcoac. Acceso a zona arqueológica y WTC México. Guía en MetroGuia.",
+    "seo_title": "Metro Mixcoac CDMX — Zona arqueológica y Línea 12 | MetroGuia",
+    "meta_description": "Metro Mixcoac en L7: zona arqueológica gratuita, transfer a Línea 12 y World Trade Center. Barrios Del Valle y Nápoles a pasos.",
     "h1": "Metro Mixcoac: transfer L7/L12 y zona arqueológica",
-    "intro": "Mixcoac es nodo de transferencia entre la antigua Línea 7 y la moderna Línea 12. La zona arqueológica de Mixcoac (gratuita) y el World Trade Center hacen de esta área un punto interesante para turistas.",
-    "historia_icono": "El ícono representa la serpiente emplumada de la zona arqueológica de Mixcoac, antiguo señorío prehispánico anterior a la fundación de Tenochtitlán.",
+    "intro": "Mixcoac en la Línea 7 es un punto estratégico de conexión con la moderna Línea 12, la llamada 'Línea Dorada'. La zona de Mixcoac alberga una zona arqueológica prehispánica de acceso gratuito, el World Trade Center México, y se encuentra en la frontera entre las colonias Del Valle, Nápoles y San Pedro de los Pinos — barrios residenciales de clase media con buena oferta gastronómica.",
+    "historia_icono": "El ícono representa la antigua pirámide de Mixcoac, dios prehispánico del viento también asociado con Quetzalcóatl. La zona arqueológica de Mixcoac, una de las menos visitadas de la CDMX, está a 5 minutos caminando de esta estación.",
     "tips": [
-      "Zona arqueológica de Mixcoac: entrada gratuita, poco visitada",
-      "Transfer a L12 hacia el sur-oriente",
-      "WTC México para eventos corporativos y exposiciones"
+      "Zona Arqueológica de Mixcoac: GRATUITA y muy poco concurrida — joya escondida",
+      "Transfer a L12 hacia Xochimilco y Tláhuac desde aquí",
+      "World Trade Center: sede de exposiciones y convenciones internacionales",
+      "Colonia Del Valle cercana: excelente oferta de restaurantes a precios accesibles",
+      "Ciclovia de Insurgentes Sur pasa por aquí — ideal para ciclistas"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Cualquier día. La zona arqueológica cierra los lunes. Fines de semana para explorar los barrios.",
+    "mundial_relevancia": "Relevancia media para el Mundial 2026: conexión con Línea 12 permite acceso al sur de la ciudad. El WTC puede ser sede de eventos paralelos al torneo."
   },
   {
     "slug": "barranca-del-muerto",
@@ -3685,18 +3790,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Barranca del Muerto CDMX — Terminal L7 | MetroGuia",
-    "meta_description": "Terminal sur de Línea 7. Acceso a San Ángel y el sur residencial de CDMX. Guía en MetroGuia.",
+    "seo_title": "Metro Barranca del Muerto CDMX — Reforma",
+    "meta_description": "Estación Barranca del Muerto: Acceso a Paseo de la Reforma, tiendas y restaurantes. Zona residencial segura cerca de museos y cultura en CDMX.",
     "h1": "Metro Barranca del Muerto: terminal sur de L7",
-    "intro": "Terminus sur de la Línea 7, en el límite entre Benito Juárez y Álvaro Obregón. Punto de acceso al sur residencial de la ciudad y puerta hacia San Ángel.",
-    "historia_icono": "El ícono representa el cañón profundo (barranca) que existía en este punto de la antigua periferia sur de CDMX, antes de su urbanización definitiva.",
+    "intro": "Barranca del Muerto es una estación que conecta con una de las avenidas más importantes de la CDMX. La zona ofrece una mezcla de espacios residenciales y comerciales modernos, ideal para turistas que buscan alejarse del centro pero manteniéndose conectados con el transporte público. Aquí encontrarás centros comerciales, restaurantes variados y acceso fácil a museos de clase mundial como el Museo Tamayo y el Museo de Arte Moderno. Es la puerta de entrada a Chapultepec y sus alrededores.",
+    "historia_icono": "El ícono representa una barranca o garganta profunda, referencia directa al nombre de la estación. Surge del significado prehispánico del lugar, donde se formaban barrancos naturales en el terreno. Este símbolo visualmente muestra un corte vertical del terreno, recordando la geografía original de la zona.",
     "tips": [
-      "Terminal de L7: siempre hay lugar al abordar",
-      "Peseros y autobuses hacia San Ángel desde la salida",
-      "Zona tranquila y residencial"
+      "Acceso directo a Paseo de la Reforma, una de las avenidas más elegantes de la ciudad",
+      "A pocos pasos encontrarás múltiples opciones de comida: desde taquerías auténticas hasta restaurantes de alta cocina",
+      "La zona tiene ATMs y casas de cambio convenientemente ubicadas",
+      "Conecta con varias líneas de metrobús si necesitas explorar zonas más amplias",
+      "El área es segura y tiene buena iluminación, incluso de noche"
     ],
-    "mejor_horario": "Todo el día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mejor_horario": "Viernes y sábados entre 10:00 y 18:00 para disfrutar de los restaurantes y tiendas sin exceso de gente. Por las tardes, el ambiente es más relajado que en horas pico de oficina.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "garibaldi",
@@ -3724,18 +3831,20 @@ const estaciones = [
     "transferencias": [
       "B"
     ],
-    "seo_title": "Metro Garibaldi/Lagunilla CDMX — Cultura y Tradición | MetroGuia",
-    "meta_description": "Estación Garibaldi del Metro CDMX: acceso a Plaza Garibaldi, Mercado de Lagunilla y zona cultural. Experiencia auténtica mexicana para turistas.",
+    "seo_title": "Metro Garibaldi CDMX — Mariachis y Plaza Garibaldi | MetroGuia",
+    "meta_description": "Metro Garibaldi: acceso a Plaza Garibaldi y mariachis, Mercado de Lagunilla. Experiencia nocturna mexicana auténtica. Esencial para el Mundial 2026.",
     "h1": "Estación Garibaldi/Lagunilla — Línea 8 del Metro CDMX",
-    "intro": "Garibaldi/Lagunilla es la puerta de entrada a uno de los espacios culturales más icónicos de la Ciudad de México. Desde aquí accedes a la Plaza Garibaldi, donde los mariachis cumplen una tradición de más de un siglo.",
-    "historia_icono": "Plaza Garibaldi ha sido símbolo de la música mexicana desde principios del siglo XX, albergando a los mejores mariachis del país.",
+    "intro": "Garibaldi/Lagunilla en la Línea 8 es la puerta a uno de los rincones más auténticos y nocturnos de la Ciudad de México. La Plaza Garibaldi, a 5 minutos caminando, es el templo mundial del mariachi donde cada noche docenas de grupos ofrecen serenatas. El Mercado de Lagunilla, con su ambiente de tianguis dominical de antigüedades, completa una experiencia 100% mexicana que ningún turista debe perderse.",
+    "historia_icono": "El ícono representa a un mariachi con sombrero de charro, símbolo inequívoco de la Plaza Garibaldi y de la cultura popular mexicana. El mariachi fue declarado Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO en 2011.",
     "tips": [
-      "Visita Plaza Garibaldi por la noche para disfrutar del ambiente de mariachis en vivo",
-      "El Mercado de Lagunilla ofrece desde artesanías hasta ropa vintage",
-      "La zona es ideal para experiencias auténticas que los turistas FIFA 2026 buscarán"
+      "Plaza Garibaldi es mejor de noche (8 PM–2 AM): el ambiente mariachero es máximo",
+      "Una serenata en la plaza cuesta ~$150-300 MXN por canción — negocia con el grupo",
+      "El Salón Tenampa (1925) es el bar de mariachis más histórico del mundo — imprescindible",
+      "Mercado de Lagunilla: domingos para el tianguis de antigüedades y curiosidades",
+      "Zona activa — mantén pertenencias seguras en zonas muy concurridas"
     ],
-    "mejor_horario": "19:00 a 23:00 (ambiente de mariachis)",
-    "mundial_relevancia": "Experiencia cultural auténtica mexicana: mariachis, mercados tradicionales y gastronomía local"
+    "mejor_horario": "Viernes y sábados por la noche para el máximo ambiente. Domingo por la mañana para el tianguis de Lagunilla.",
+    "mundial_relevancia": "Alta relevancia para el Mundial 2026: Garibaldi será uno de los destinos culturales más visitados por turistas FIFA en busca de experiencias mexicanas auténticas. Especialmente popular entre aficionados latinoamericanos."
   },
   {
     "slug": "bellas-artes-l8",
@@ -3763,18 +3872,20 @@ const estaciones = [
     "transferencias": [
       "2"
     ],
-    "seo_title": "Metro Bellas Artes CDMX — Artes y Cultura | MetroGuia",
-    "meta_description": "Estación Bellas Artes del Metro CDMX: Palacio de Bellas Artes, museos y Centro Histórico. Acceso a lo mejor del arte mexicano.",
+    "seo_title": "Metro Bellas Artes L8 CDMX — Centro Cultural | MetroGuia",
+    "meta_description": "Metro Bellas Artes en L8: Palacio de Bellas Artes, murales de Rivera, Alameda Central y Madero peatonal. Centro histórico y cultural de CDMX.",
     "h1": "Estación Bellas Artes — Línea 8 del Metro CDMX",
-    "intro": "Bellas Artes es el epicentro cultural de la Ciudad de México. El icónico Palacio de Bellas Artes y sus museos te esperan a solo pasos de esta estación.",
-    "historia_icono": "El Palacio de Bellas Artes, construido entre 1904 y 1934, es una joya del Art Déco mexicano y alberga el famoso Mural de Diego Rivera.",
+    "intro": "La estación Bellas Artes de la Línea 8 comparte el honor de dar acceso al corazón cultural del Centro Histórico junto a la Línea 2. El Palacio de Bellas Artes, joya del art nouveau y art déco mexicano, alberga los murales más importantes de Diego Rivera, David Alfaro Siqueiros y José Clemente Orozco. La calle Madero peatonal y la Alameda Central completan un recorrido cultural de primer nivel.",
+    "historia_icono": "El ícono representa el Palacio de Bellas Artes con su característica cúpula azul y blanca visible desde toda la Alameda. Inaugurado en 1934 tras 30 años de construcción, es considerado el recinto cultural más importante de México.",
     "tips": [
-      "No te pierdas el Palacio de Bellas Artes y sus exposiciones de arte mexicano e internacional",
-      "La estación conecta con la Línea 2, facilitando acceso a otras zonas del Centro Histórico",
-      "Ideal para tours culturales antes o después de eventos deportivos"
+      "El Palacio de Bellas Artes tiene entrada general ~$80 MXN — incluye los murales monumentales de Rivera y Siqueiros",
+      "La cúpula de cristal Tiffany solo se ve desde el interior en funciones especiales",
+      "Madero peatonal: 600 metros de historia y comercio entre Bellas Artes y el Zócalo",
+      "La Alameda Central: jardín histórico del siglo XVI, ideal para descansar",
+      "Museo de la Estampa y Museo Franz Mayer frente a la Alameda: joyitas culturales"
     ],
-    "mejor_horario": "10:00 a 18:00 (horario de museos)",
-    "mundial_relevancia": "Centro cultural de México: arte, arquitectura y patrimonio para turistas FIFA 2026"
+    "mejor_horario": "Martes a domingo 10 AM–5:30 PM para Bellas Artes. Cualquier momento para Madero peatonal.",
+    "mundial_relevancia": "Alta relevancia para el Mundial 2026: el Centro Histórico y Bellas Artes serán los destinos culturales más visitados por los miles de turistas FIFA. La zona se llenará de actividades culturales durante el torneo."
   },
   {
     "slug": "san-juan-de-letran",
@@ -3795,18 +3906,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Juan de Letrán CDMX — Centro Histórico | MetroGuia",
-    "meta_description": "Estación San Juan de Letrán del Metro CDMX: acceso al corazón del Centro Histórico y avenida comercial principal.",
+    "seo_title": "Metro San Juan de Letrán CDMX — Centro y Mercado | MetroGuia",
+    "meta_description": "Metro San Juan de Letrán: acceso al Mercado de San Juan gourmet, Eje Central y Centro Histórico. Historia colonial y gastronomía en CDMX.",
     "h1": "Estación San Juan de Letrán — Línea 8 del Metro CDMX",
-    "intro": "San Juan de Letrán conecta el Centro Histórico con la avenida Francisco I. Madero, una de las principales vías comerciales del Centro.",
-    "historia_icono": "La zona ha sido comercial desde la época colonial, adaptándose a los cambios de la ciudad a lo largo de los siglos.",
+    "intro": "San Juan de Letrán es el nodo comercial popular entre el Centro Histórico y la colonia Doctores. La avenida del mismo nombre, hoy renombrada Eje Central, es una de las arterias comerciales más bulliciosas de la ciudad, con tiendas de electrónica, librerías de segunda mano, y el acceso al histórico Mercado de San Juan — un mercado gourmet donde se encuentran ingredientes internacionales y delicias gastronómicas únicas.",
+    "historia_icono": "El ícono representa el antiguo Colegio de San Juan de Letrán, primera institución educativa pública de América, fundada en 1527 por Fray Pedro de Gante para la educación de niños indígenas. El edificio colonial ya no existe, pero su legado en la historia de la educación mexicana es monumental.",
     "tips": [
-      "Explora la avenida Francisco I. Madero para tiendas y restaurantes",
-      "Cercana a importantes edificios históricos del Centro",
-      "Buena conexión para turistas que quieren explorar el corazón de la CDMX"
+      "Mercado de San Juan (a 10 min caminando): el mercado gourmet más famoso de CDMX — mariscos, quesos europeos, tacos de autor",
+      "Eje Central tiene librerías de segunda mano con precios increíbles",
+      "La colonia Doctores tiene taquerías auténticas con los mejores tacos de guisado de la ciudad",
+      "El Plaza de la Ciudadela y el Mercado de Artesanías son destinos de compras auténticas",
+      "Zona activa en todo momento — guarda pertenencias con discreción"
     ],
-    "mejor_horario": "10:00 a 20:00",
-    "mundial_relevancia": "Acceso al Centro Histórico: puntos clave para turistas FIFA 2026"
+    "mejor_horario": "Martes a sábado para el Mercado de San Juan. Entre semana para las librerías y comercios.",
+    "mundial_relevancia": "Relevancia media para el Mundial 2026: acceso al Centro Histórico y al Mercado de San Juan, destino gastronómico de turistas internacionales."
   },
   {
     "slug": "salto-del-agua",
@@ -3829,18 +3942,19 @@ const estaciones = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Metro Salto del Agua CDMX — Centro Histórico | MetroGuia",
-    "meta_description": "Estación Salto del Agua del Metro CDMX: transferencia a Línea 1, acceso al Centro Histórico.",
+    "seo_title": "Metro Salto del Agua CDMX — Centro histórico | MetroGuia",
+    "meta_description": "Metro Salto del Agua: acceso a mercados tradicionales y hoteles económicos. Zona de transición hacia Centro Histórico. Guía turística completa.",
     "h1": "Estación Salto del Agua — Línea 8 del Metro CDMX",
-    "intro": "Salto del Agua es un punto estratégico de conexión dentro del Centro Histórico, con transferencia a la Línea 1.",
-    "historia_icono": "Nombrada por el antiguo acueducto colonial que traía agua desde Chapultepec a la ciudad.",
+    "intro": "Salto del Agua es estación de transición entre la Línea 1 y el centro histórico, ubicada en la colonia Cuauhtémoc. Combina comercio de nivel medio con acceso cercano a sitios históricos de la ciudad. Es punto de paso importante hacia la zona de mercados tradicionales y el centro peatonal turístico. La estación funciona como puente entre zonas comerciales modernas y patrimonio histórico colonial.",
+    "historia_icono": "El ícono de Salto del Agua evoca el río subterráneo que alguna vez bajaba desde Chapultepec, fuente de agua que alimentaba a la capital prehispánica.",
     "tips": [
-      "Transferencia importante a Línea 1 para acceso a otras zonas",
-      "Ubicada en el corazón del Centro Histórico",
-      "Punto de partida para tours del Centro"
+      "Acceso a Mercado de Abastos: mercado tradicional a 5 min caminando con productos frescos a precios mínimos",
+      "Zona de hoteles económicos ($20-40 USD/noche) en radio de 8 min caminando",
+      "Comercio mixto: electrónica, ropa, accesorios; negocios abiertos de 8 AM a 9 PM",
+      "Zona popular; mantén vigilancia sobre pertenencias en horas nocturnas (después de 9 PM)"
     ],
-    "mejor_horario": "Todo el día (es hub de transferencias)",
-    "mundial_relevancia": "Nodo de conectividad en Centro Histórico para turistas FIFA 2026"
+    "mejor_horario": "10 AM a 5 PM para compras y exploración tranquila. Evita después de 8 PM en zona aledaña.",
+    "mundial_relevancia": "Acceso a hospedaje económico y compras de bajo costo para turistas presupuestarios del Mundial."
   },
   {
     "slug": "chabacano",
@@ -3864,18 +3978,20 @@ const estaciones = [
       "2",
       "9"
     ],
-    "seo_title": "Metro Chabacano CDMX — Hub de Transporte | MetroGuia",
-    "meta_description": "Estación Chabacano del Metro CDMX: transferencias a Líneas 2 y 9, zona comercial activa.",
+    "seo_title": "Metro Chabacano CDMX — Mercados y Vida Local",
+    "meta_description": "Estación Chabacano: Mercados frescos, fondas auténticas y vida barrial tradicional. Experiencia real de CDMX para viajeros auténticos.",
     "h1": "Estación Chabacano — Línea 8 del Metro CDMX",
-    "intro": "Chabacano es un importante nodo de transferencia que conecta las Líneas 2, 8 y 9. Es también una zona comercial muy activa.",
-    "historia_icono": "La avenida Chabacano es una de las arterias principales del Centro-Oriente de la Ciudad.",
+    "intro": "Chabacano es una estación que conecta con un barrio residencial con carácter tradicional mexicano. Named después de un árbol frutal tropical, la zona mantiene una atmósfera auténtica y local. Es ideal para turistas que quieren ver cómo viven los mexicanos en la ciudad, lejos de las zonas turistificadas. Aquí encontrarás tiendas locales, fondas de comida casera, y la oportunidad de comprar frutas y productos locales en mercados callejeros.",
+    "historia_icono": "El ícono representa el árbol chabacano, un árbol frutal tropical que era común en la zona. El símbolo muestra la fruta o las características del árbol, conectando con la naturaleza y la historia agrícola del lugar.",
     "tips": [
-      "Hub importante: transfiere a Línea 2 y 9 para cubrir mayor territorio",
-      "Zona comercial: compras y servicios disponibles",
-      "Conecta Centro con zonas Oriente y Sur de la ciudad"
+      "Compra frutas y verduras en los mercados de barrio, muy frescas y baratas",
+      "Come tamales, quesadillas y comida típica en fondas locales auténticas",
+      "Interactúa con vendedores locales para recomendaciones personalizadas",
+      "El área es segura durante el día para explorar a pie",
+      "Toma fotos de la arquitectura vernácula y colorida del barrio"
     ],
-    "mejor_horario": "Todo el día (es hub de transferencias)",
-    "mundial_relevancia": "Centro de conectividad: estratégico para movimiento de turistas FIFA 2026"
+    "mejor_horario": "Mañanas entre 07:00 y 11:00 para ver la actividad más auténtica del mercado. Los días de entre semana son más tranquilos.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "la-viga",
@@ -3896,18 +4012,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro La Viga CDMX — Mercado y Tradición | MetroGuia",
-    "meta_description": "Estación La Viga del Metro CDMX: acceso al famoso Mercado La Viga y canal histórico.",
+    "seo_title": "Metro La Viga CDMX — Canal histórico e Iztapalapa | MetroGuia",
+    "meta_description": "Metro La Viga: mercado de flores desde la madrugada, historia del Canal colonial y gastronomía popular auténtica en Iztapalapa.",
     "h1": "Estación La Viga — Línea 8 del Metro CDMX",
-    "intro": "La Viga es puerta al histórico mercado que lleva su nombre, uno de los más antiguos y tradicionales de la Ciudad de México.",
-    "historia_icono": "El Canal de la Viga fue parte del sistema de canales prehispánico de Tenochtitlan, ahora canalizado.",
+    "intro": "La Viga es la entrada al oriente popular de la Ciudad de México, una zona de carácter trabajador y auténtico que pocos turistas conocen. El histórico Canal de La Viga fue durante siglos la principal ruta por la que llegaban flores, verduras y canoas desde Xochimilco hasta el mercado de Tlatelolco. Hoy el barrio conserva mercados tradicionales vibrantes y una identidad comunitaria fuerte.",
+    "historia_icono": "El ícono representa una viga de madera, referencia literal al Canal de La Viga, la ruta acuática de madera que los aztecas usaban para transportar mercancías en canoas desde el sur lacustre hacia el gran mercado de Tlatelolco. Esta vía fue esencial para la economía de Tenochtitlán.",
     "tips": [
-      "Mercado La Viga: flores, frutas y productos frescos desde la madrugada",
-      "Experiencia auténtica de mercado tradicional mexicano",
-      "Zona de importancia agrícola desde tiempos prehispánicos"
+      "Mercado La Viga: flores desde las 3 AM y pescado fresco diariamente — experiencia madrugadora única",
+      "La zona tiene carnitas y comida popular de bajo costo — auténtica CDMX",
+      "Domingo: tianguis comunitario con productos locales y artesanías",
+      "El Canal de La Viga es parte de la historia lacustre de la ciudad — busca información en placas históricas",
+      "Zona tranquila para explorar la CDMX no turística"
     ],
-    "mejor_horario": "06:00 a 12:00 (actividad mercantil)",
-    "mundial_relevancia": "Mercado tradicional: experiencia auténtica para turistas interesados en comercio local"
+    "mejor_horario": "Madrugada para el mercado de flores (3-7 AM). Domingos para el tianguis popular.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "santa-anita",
@@ -3925,18 +4043,20 @@ const estaciones = [
     "transferencias": [
       "4"
     ],
-    "seo_title": "Metro Santa Anita CDMX — Comercio y Conectividad | MetroGuia",
-    "meta_description": "Estación Santa Anita del Metro CDMX: transferencia a Línea 4, zona comercial.",
+    "seo_title": "Metro Santa Anita CDMX — Terminal Sur L4 | MetroGuia",
+    "meta_description": "Santa Anita. Terminal sur Línea 4. Templo colonial. Zona religiosa. Barrio auténtico CDMX.",
     "h1": "Estación Santa Anita — Línea 8 del Metro CDMX",
-    "intro": "Santa Anita es una estación clave de transferencia a la Línea 4, en una zona comercial activa del Oriente de la ciudad.",
-    "historia_icono": "La zona es históricamente comercial, conectando el Centro con pueblos originarios del Oriente.",
+    "intro": "Santa Anita es la estación terminal sur de la Línea 4, ubicada en la Alcaldía Iztapalapa. La estación ofrece acceso a una zona histórica y religiosa, con el Templo y Convento de Santa Anita como referencias arquitectónicas principales de gran valor. Para turistas del Mundial 2026, representa una conexión valiosa con la historia colonial y la religiosidad que caracteriza profundamente a México. Descubre arquitectura colonial preservada y la fe tradicional mexicana.",
+    "historia_icono": "El ícono de Santa Anita representa a Santa Ana, madre de la Virgen María. Simboliza la devoción mariana y la fe cristiana en México.",
     "tips": [
-      "Transferencia a Línea 4 expande opciones de movilidad",
-      "Zona comercial diversa y activa",
-      "Acceso a comunidades de Iztapalapa"
+      "Templo y Convento de Santa Anita: sitio histórico colonial de gran valor arquitectónico",
+      "Zona religiosa importante: peregrinaciones y festividades tradicionales",
+      "Mercado local con productos frescos y artesanía a precios reales",
+      "Restaurantes tradicionales para experimentar comida mexicana auténtica",
+      "Barrios residenciales con vida local genuina y acogedora"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Nodo de conectividad Este: acceso a zonas residenciales y comerciales"
+    "mejor_horario": "Mañana (8am-12pm) para visita a templo. Evita tarde.",
+    "mundial_relevancia": "Sitio religioso-colonial. Relevante para turistas interesados en arquitectura colonial y fe mexicana."
   },
   {
     "slug": "atlalilco",
@@ -3954,18 +4074,20 @@ const estaciones = [
     "transferencias": [
       "12"
     ],
-    "seo_title": "Metro Atlalilco CDMX — Conectividad Este | MetroGuia",
-    "meta_description": "Estación Atlalilco del Metro CDMX: transferencia a Línea 12, acceso a zona comercial.",
+    "seo_title": "Metro Atlalilco — Zona residencial sur",
+    "meta_description": "Atlalilco: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.                         ",
     "h1": "Estación Atlalilco — Línea 8 del Metro CDMX",
-    "intro": "Atlalilco es nodo de transferencia a la moderna Línea 12, expandiendo opciones de movilidad en el Oriente.",
-    "historia_icono": "Atlalilco tiene raíces prehispánicas, siendo zona de agua y agricultura.",
+    "intro": "Atlalilco es estación de la Línea 12 en zona residencial del sur conectando comunidades con infraestructura de transporte. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios sureños, Atlalilco ofrece mercados locales, tiendas de comercio informal y atmósfera cotidiana de capitalinos. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Atlalilco con comunidades residenciales del sur, zona donde vida cotidiana y legado prehispánico convergen. Este símbolo evoca raíces profundas.",
     "tips": [
-      "Transferencia a Línea 12 (Tren Ligero) abre acceso a nuevas zonas",
-      "Zona en desarrollo comercial",
-      "Buena conectividad para turistas explorando Iztapalapa"
+      "Mercado local: productos frescos a precios de barrio local",
+      "Tiendas informales: ropa, zapatos y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y tiendas de necesidades básicas",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Conexión a Línea 12: acceso a zonas periféricas expandidas"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "iztapalapa",
@@ -3981,18 +4103,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Iztapalapa CDMX — Centro de la Alcaldía | MetroGuia",
-    "meta_description": "Estación Iztapalapa del Metro CDMX: acceso al corazón de la alcaldía de Iztapalapa.",
+    "seo_title": "Metro Iztapalapa CDMX — Cultura y Tradición",
+    "meta_description": "Estación Iztapalapa: Centro cultural con Cerro de la Estrella, mercados auténticos y Pasión de Cristo. Corazón del sur de CDMX.",
     "h1": "Estación Iztapalapa — Línea 8 del Metro CDMX",
-    "intro": "Iztapalapa es la estación que da acceso al corazón de esta importante alcaldía del Oriente de la ciudad.",
-    "historia_icono": "Iztapalapa es una de las alcaldías más pobladas y con mayor historia prehispánica.",
+    "intro": "Iztapalapa es una estación nombrada después de uno de los ayuntamientos más grandes de la CDMX, con una historia que se remonta a civilizaciones prehispánicas. La zona es conocida por su vibrante vida cultural, mercados tradicionales y la famosa Pasión de Cristo que se representa cada año. Para turistas, es un lugar para entender la verdadera vida en la CDMX, con arquitectura mezclada, gastronomía auténtica y un ambiente genuinamente mexicano.",
+    "historia_icono": "El ícono representa elementos prehispánicos relacionados con Iztapalapa. Puede mostrar jeroglíficos o símbolos relacionados con la cosmovisión azteca, honrando el legado ancestral del lugar.",
     "tips": [
-      "Centro comercial y residencial de la alcaldía",
-      "Punto de partida para explorar Iztapalapa",
-      "Servicios y comercios diversos disponibles"
+      "Visita el Cerro de la Estrella si te interesa la geografía y arqueología",
+      "Come en comedores locales que sirven mole, pozole y otros platillos tradicionales",
+      "Explora los mercados para entender el comercio tradicional mexicano",
+      "Si visitas en Semana Santa, observa la Pasión de Cristo (evento cultural importante)",
+      "Toma transporte adicional para zonas cercanas como Xochimilco"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Acceso a alcaldía residencial: turistas en búsqueda de hospedaje local"
+    "mejor_horario": "Cualquier día entre 08:00 y 18:00 es bueno. Si visitas en Semana Santa, es especialmente memorable por la representación de la Pasión.",
+    "mundial_relevancia": "Iztapalapa será punto de partida para turistas del Mundial 2026 que visiten Xochimilco y otras atracciones turísticas sureñas."
   },
   {
     "slug": "apatlaco",
@@ -4008,18 +4132,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Apatlaco CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Apatlaco del Metro CDMX: acceso a zona residencial de Iztapalapa.",
+    "seo_title": "Metro Apatlaco CDMX — Barrio Auténtico y Tranquilo",
+    "meta_description": "Estación Apatlaco: Zona residencial tranquila con tiendas locales y fondas auténticas. Verdadera vida barrial de CDMX.",
     "h1": "Estación Apatlaco — Línea 8 del Metro CDMX",
-    "intro": "Apatlaco es una estación principalmente residencial en la ruta sur de la Línea 8.",
-    "historia_icono": "Apatlaco tiene raíces en la geografía prehispánica de los canales del Valle de México.",
+    "intro": "Apatlaco es una estación en una zona residencial del sur de la CDMX, con un nombre que proviene del náhuatl. La zona es principalmente habitacional, con un ambiente tranquilo y auténtico. Para turistas interesados en ver cómo viven los mexicanos en la ciudad sin la masificación de zonas turísticas, Apatlaco ofrece mercados locales, tiendas de barrio y la oportunidad de conectar con la comunidad local. Es un lugar para viajeros aventureros.",
+    "historia_icono": "El ícono de Apatlaco representa elementos relacionados con el agua o canales, basado en la etimología náhuatl 'apatl' que se refiere a agua. El símbolo puede mostrar un cuerpo de agua estilizado o motivos acuáticos.",
     "tips": [
-      "Zona residencial tranquila",
-      "Acceso a comunidades locales de Iztapalapa",
-      "Menos turística, más auténtica"
+      "Compra artesanías locales y souvenirs directamente de artesanos",
+      "Come comida casera en fondas donde los precios son muy accesibles",
+      "Camina por las calles residenciales para fotografiar la arquitectura local",
+      "El barrio es seguro durante el día para explorarlo a pie",
+      "Habla con locales para obtener recomendaciones genuinas no turísticas"
     ],
-    "mejor_horario": "Mañanas y tardes (horario laboral)",
-    "mundial_relevancia": "Zona residencial: hospedaje local alternativo"
+    "mejor_horario": "Cualquier hora del día es relativamente segura. Las mañanas son ideales para ver la actividad barrial más auténtica.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "aculco",
@@ -4035,18 +4161,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Aculco CDMX — Zona Residencial Sur | MetroGuia",
-    "meta_description": "Estación Aculco del Metro CDMX: acceso a zona residencial en el Sur de Iztapalapa.",
+    "seo_title": "Metro Aculco CDMX — Tranquilidad y Autenticidad",
+    "meta_description": "Estación Aculco: Barrio residencial tranquilo con mercados y fondas locales. Escape de lo turístico, vida auténtica de CDMX.",
     "h1": "Estación Aculco — Línea 8 del Metro CDMX",
-    "intro": "Aculco es estación residencial ubicada en el Sur de Iztapalapa, en la ruta hacia Constitución de 1917.",
-    "historia_icono": "Nombre de origen náhuatl relacionado con agua y geografía local.",
+    "intro": "Aculco es una estación en la línea sur del metro que conecta con un barrio residencial tranquilo y accesible. La zona mantiene un carácter fundamentalmente local, con tiendas de barrio, pequeños restaurantes y la vida cotidiana mexicana auténtica. Es perfecto para turistas que buscan alejarse del bullicio, experimentar la hospitalidad mexicana genuina y conocer cómo es vivir en la ciudad para la población local.",
+    "historia_icono": "El ícono de Aculco está basado en la etimología náhuatl, representando posiblemente agua o lugares relacionados con cuerpos de agua. El símbolo conecta con la tradición prehispánica del lugar.",
     "tips": [
-      "Zona residencial tranquila en Iztapalapa",
-      "Acceso a comunidades locales",
-      "Punto medio en ruta hacia Cerro de la Estrella"
+      "Desayuna como un local en fondas económicas y auténticas",
+      "Compra frutas y productos locales en mercadillos callejeros",
+      "Camina por el barrio para ver la arquitectura vernácula",
+      "El transporte desde aquí conecta a otras zonas del sur",
+      "Es un lugar seguro para explorar durante el día"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: alternativa a hoteles del Centro"
+    "mejor_horario": "Mañanas entre 07:00 y 13:00 para experimentar la vida barrial más auténtica. Los entre semana son más tranquilos.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "escuadron-201",
@@ -4062,18 +4190,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Escuadrón 201 CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Escuadrón 201 del Metro CDMX: acceso a zona residencial de Iztapalapa.",
+    "seo_title": "Metro Escuadrón 201 CDMX — Historia Militar",
+    "meta_description": "Estación Escuadrón 201: Zona tranquila honrando historia militar de México. Barrio auténtico con fondas y vida local.",
     "h1": "Estación Escuadrón 201 — Línea 8 del Metro CDMX",
-    "intro": "Escuadrón 201 es estación residencial en Iztapalapa, continuando la ruta hacia el Sur.",
-    "historia_icono": "Nombrada en honor al Escuadrón 201, grupo de aviadores mexicanos en la Segunda Guerra Mundial.",
+    "intro": "Escuadrón 201 es una estación que honra a una unidad mexicana histórica que participó en la Segunda Guerra Mundial. La zona es principalmente residencial pero con importancia histórica. Para turistas, representa un punto de conexión a barrios locales auténticos y la oportunidad de aprender sobre la historia militar mexicana del siglo XX. El área es segura y tranquila, ideal para quienes buscan alejarse del centro turístico.",
+    "historia_icono": "El ícono representa al Escuadrón 201, la unidad aérea mexicana que participó en la Segunda Guerra Mundial. El símbolo muestra probablemente un avión o insignia militar, honrando esta gesta histórica mexicana.",
     "tips": [
-      "Zona residencial con servicios locales",
-      "Acceso a comunidades de Iztapalapa",
-      "Menos concurrida que estaciones centrales"
+      "Aprende sobre la historia del Escuadrón 201 preguntando a residentes locales",
+      "Come comida típica mexicana en fondas locales con precios muy accesibles",
+      "El barrio es tranquilo y seguro para caminar durante el día",
+      "Toma fotos de murales y arte urbano local",
+      "Conecta a otros transportes locales desde esta estación"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: opción económica para turistas"
+    "mejor_horario": "Cualquier hora del día es segura. Las mañanas ofrecen un ambiente más tranquilo para explorar.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
   },
   {
     "slug": "parque-de-los-venados",
@@ -4089,18 +4219,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Parque de los Venados CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Parque de los Venados del Metro CDMX: acceso a zona residencial en Sur de Iztapalapa.",
+    "seo_title": "Metro Parque de los Venados — Parque y verde",
+    "meta_description": "Parque de los Venados: parque verde del sur con mercados locales y vida de barrio. Naturaleza urbana y espacio recreativo en CDMX.          ",
     "h1": "Estación Parque de los Venados — Línea 8 del Metro CDMX",
-    "intro": "Parque de los Venados es estación residencial continuando hacia el extremo sur de la Línea 8.",
-    "historia_icono": "Zona de Iztapalapa con historia ligada a la fauna local del Valle de México.",
+    "intro": "Parque de los Venados es estación de la Línea 12 cerca de zona verde del sur capitalino, conectando comunidades con parque y vida comercial de barrio. Para turistas del Mundial FIFA 2026 que deseen combinar naturaleza con autenticidad de barrio, Parque de los Venados ofrece acceso a espacio verde, mercados locales y atmósfera cotidiana de capitalinos. Es parada para exploradores buscando ecosistemas urbanos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Parque de los Venados con naturaleza urbana del sur, zona donde espacio verde y vida residencial convergen. Este símbolo evoca equidad en acceso a espacios recreativos.",
     "tips": [
-      "Zona residencial tranquila",
-      "Acceso a parques y áreas verdes locales",
-      "Punto de transición hacia Peñón Viejo"
+      "Parque de los Venados: espacio verde con áreas de descanso y naturaleza; ideal para escapar del caos",
+      "Mercado local: frutas, verduras y comidas rápidas a precios de barrio",
+      "Tiendas de comercio informal: ropa y artículos prácticos a precios bajos",
+      "Ambiente tranquilo: zona segura para familias y exploradores",
+      "Seguridad: tranquilo pero poco turístico; evita andar solo al atardecer"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: turistas en búsqueda de tranquilidad"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana; domingos parque tiene más visitantes locales.",
+    "mundial_relevancia": "Relevancia baja: zona residencial con parque; turistas específicos interesados en naturaleza urbana encontrarán valor."
   },
   {
     "slug": "penon-viejo",
@@ -4116,18 +4248,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Peñón Viejo CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Peñón Viejo del Metro CDMX: acceso a zona residencial en Sur de Iztapalapa.",
+    "seo_title": "Metro Peñón Viejo CDMX — Geografía Urbana | MetroGuia",
+    "meta_description": "Peñón Viejo: geografía topográfica Iztapalapa, zona residencial. Desarrollo urbano contemporáneo. Perspectiva expansión metropolitana CDMX moderna.",
     "h1": "Estación Peñón Viejo — Línea 8 del Metro CDMX",
-    "intro": "Peñón Viejo es estación residencial en el Sur de Iztapalapa, parte de la ruta hacia Constitución de 1917.",
-    "historia_icono": "Zona geográficamente nombrada por formaciones rocosas locales del Valle de México.",
+    "intro": "Peñón Viejo es estación de la Línea A ubicada en Iztapalapa, que accede a una zona nombrada por sus características geográficas: el Peñón o elevación rocosa que caracteriza el territorio. Esta es una zona residencial densamente poblada de la ciudad, donde viven cientos de miles de capitalinos. Para turistas interesados en antropología urbana, geografía urbana y vida real de la CDMX contemporánea, ofrece experiencia no filtrada de urbanidad mexicana.",
+    "historia_icono": "Peñón Viejo refiere al accidente geográfico que caracteriza la zona: elevaciones rocosas del terreno. El ícono incorpora elementos rocosos y topográficos, honrando la geografía natural que ha definido el asentamiento urbano en esta región de Iztapalapa.",
     "tips": [
-      "Zona residencial en Sur de la ciudad",
-      "Acceso a comunidades locales de Iztapalapa",
-      "Cercano a Cerro de la Estrella"
+      "Explora la topografía: la zona tiene elevaciones que ofrecen perspectivas visuales interesantes",
+      "Visita el Peñón mismo si es accesible: estructura geológica que ha definido la zona",
+      "Come en restaurantes de barrio: comida mexicana casera a precios mínimos",
+      "Recorre calles: comercio variado, tiendas, mercadillos de todo tipo",
+      "Interactúa con gente: zona es amable, especialmente si muestras respeto genuino"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: acceso a zona arqueológica cercana"
+    "mejor_horario": "9:00 a 17:00 para exploración segura. Evita altas horas de la noche en zonas menos céntrica.",
+    "mundial_relevancia": "Geografía urbana: para turistas interesados en cómo se desarrollan ciudades. Perspectiva sobre expansión metropolitana."
   },
   {
     "slug": "balbuena",
@@ -4143,18 +4277,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Balbuena CDMX — Zona Residencial Sur | MetroGuia",
-    "meta_description": "Estación Balbuena del Metro CDMX: acceso a zona residencial de Iztapalapa.",
+    "seo_title": "Metro Balbuena CDMX — Parque y zona residencial | MetroGuia",
+    "meta_description": "Balbuena: estación residencial con acceso a parque. Zona tranquila de Venustiano Carranza.",
     "h1": "Estación Balbuena — Línea 8 del Metro CDMX",
-    "intro": "Balbuena es estación residencial continuando la ruta sur de la Línea 8.",
-    "historia_icono": "Zona de Iztapalapa con desarrollo residencial progresivo.",
+    "intro": "Balbuena es una estación residencial que ofrece acceso directo al Parque Balbuena, importante espacio verde de la zona. La zona es tranquila, segura y perfecta para visitantes que buscan relajarse en espacios abiertos.",
+    "historia_icono": "Balbuena evoca a Bernardo de Balbuena, poeta y obispo novohispano del siglo XVI.",
     "tips": [
-      "Zona residencial tranquila",
-      "Servicios locales disponibles",
-      "Punto de conexión para zonas Sur de la ciudad"
+      "Parque Balbuena: excelente para paseos y recreación",
+      "Zona segura y tranquila",
+      "Acceso a comercios locales",
+      "Servicios comunitarios disponibles"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: alternativa al Centro"
+    "mejor_horario": "Mañana/tarde para disfrutar del parque.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial."
   },
   {
     "slug": "minas",
@@ -4170,18 +4305,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Minas CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Minas del Metro CDMX: acceso a zona residencial de Iztapalapa.",
+    "seo_title": "Metro Minas CDMX — Acceso al Cerro de la Estrella | MetroGuia",
+    "meta_description": "Metro Minas en Iztapalapa: puerta al Parque Ecológico Cerro de la Estrella, zona arqueológica y naturaleza urbana en el oriente de CDMX.",
     "h1": "Estación Minas — Línea 8 del Metro CDMX",
-    "intro": "Minas es estación residencial en la ruta sur de la Línea 8, cercana a Cerro de la Estrella.",
-    "historia_icono": "Zona con historia de actividades extractivas locales en tiempos pasados.",
+    "intro": "Minas es una estación residencial del oriente de Iztapalapa que sirve de puerta al parque ecológico del Cerro de la Estrella, uno de los volcanes extintos más importantes del Valle de México. La zona refleja el carácter popular y comunitario de Iztapalapa, la alcaldía más poblada de CDMX con más de 2 millones de habitantes y una tradición cultural extraordinaria.",
+    "historia_icono": "El ícono representa herramientas de minería, referencia a las antiguas minas de cantera y tepetate que se explotaron en los cerros de esta región durante el período colonial para la construcción de edificios en la Ciudad de México.",
     "tips": [
-      "Zona residencial en Sur de Iztapalapa",
-      "Cercano a Cerro de la Estrella y su parque ecológico",
-      "Acceso a zonas arqueológicas cercanas"
+      "Punto de acceso al Parque Ecológico del Cerro de la Estrella — 10 min caminando",
+      "Zona popular con excelente comida callejera a precios muy accesibles",
+      "La Semana Santa en Iztapalapa organiza la Representación del Vía Crucis, la más grande del mundo con 2 millones de asistentes",
+      "Cerro de la Estrella tiene senderos para caminatas con vistas panorámicas",
+      "Área residencial tranquila y acogedora"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Acceso a Parque Ecológico y zona arqueológica"
+    "mejor_horario": "Mañanas para subir al Cerro de la Estrella (evita el calor de mediodía). Fines de semana para ambiente familiar.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. El Cerro de la Estrella puede interesar a turistas que buscan naturaleza y arqueología."
   },
   {
     "slug": "guelatao",
@@ -4197,18 +4334,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Guelatao CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Guelatao del Metro CDMX: acceso a zona residencial en Sur de Iztapalapa.",
+    "seo_title": "Metro Guelatao CDMX — Zona Residencial Oaxaca | MetroGuia",
+    "meta_description": "Guelatao: zona residencial popular Iztapalapa historia Juárez. Mercados tradicionales, gastronomía oaxaca. Auténtica CDMX trabajadora. Real.",
     "h1": "Estación Guelatao — Línea 8 del Metro CDMX",
-    "intro": "Guelatao es estación residencial penúltima de la Línea 8, cercana a su terminal.",
-    "historia_icono": "Nombre de origen zapoteco, honrando a Benito Juárez, oriundo de Guelatao, Oaxaca.",
+    "intro": "Guelatao es una estación de la Línea A ubicada en Iztapalapa, nombrada en honor a Guelatao de Juárez en Oaxaca, tierra natal de Benito Juárez. Esta estación sirve a una zona residencial trabajadora con comercio local, mercados tradicionales, y espacios comunitarios. Ofrece a turistas una perspectiva de cómo viven millones de capitalinos: en zonas de clase media-baja pero con vibrante vida comunitaria, comercio activo, y carácter auténtico.",
+    "historia_icono": "Guelatao es pueblo natal de Benito Juárez en Oaxaca. El ícono honra esta conexión con un prócer de la historia mexicana. Refleja la costumbre del Metro de CDMX de nombrar estaciones con figuras históricas y geográficas de México.",
     "tips": [
-      "Zona residencial tranquila",
-      "Cercano a Cerro de la Estrella",
-      "Punto final de la ruta sur de la Línea 8"
+      "Compra en mercados tradicionales: frutas, verduras, productos locales a precios mayoristas",
+      "Prueba comida oaxaqueña: la zona tiene tradición gastronómica oaxaca que es exquisita",
+      "Visita ferreterías y tiendas de abarrotes: vida cotidiana mexicana en acción",
+      "Camina por plazas públicas: espacios donde se reúnen residentes, especialmente fines de semana",
+      "Toma fotos: zonas residenciales auténticas son visualmente ricas en detalles y colores"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Acceso a patrimonio histórico y arqueológico"
+    "mejor_horario": "8:00 a 18:00 para actividad comercial máxima. Mañanas más vibrantes, tardes con actividad sostenida.",
+    "mundial_relevancia": "Zona residencial popular: experiencia auténtica de Ciudad de México trabajadora para turistas FIFA 2026 interesados en vida real."
   },
   {
     "slug": "cerro-de-la-estrella",
@@ -4234,19 +4373,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Cerro de la Estrella CDMX — Arqueología y Naturaleza | MetroGuia",
-    "meta_description": "Estación Cerro de la Estrella del Metro CDMX: acceso a parque ecológico y zona arqueológica prehispánica.",
+    "seo_title": "Metro Cerro de la Estrella CDMX — Arqueología y naturaleza | MetroGuia",
+    "meta_description": "Metro Cerro de la Estrella: volcán sagrado mexica, zona arqueológica gratuita y senderos con vistas panorámicas de CDMX. Terminal Línea 8.",
     "h1": "Estación Cerro de la Estrella — Línea 8 del Metro CDMX",
-    "intro": "Cerro de la Estrella es terminal sur de la Línea 8, acceso a importante parque ecológico y zona arqueológica de Iztapalapa.",
-    "historia_icono": "El Cerro de la Estrella fue sitio prehispánico donde los mexicas realizaban ceremonias importantes. Hoy es parque ecológico y cultural.",
+    "intro": "Cerro de la Estrella es el terminus sur de la Línea 8 y la puerta a uno de los espacios naturales y arqueológicos más ignorados de la Ciudad de México. Este volcán extinto fue sagrado para los mexicas: aquí encendían el Fuego Nuevo cada 52 años para evitar el fin del mundo según su cosmogonía. Hoy el cerro es un parque ecológico urbano con zona arqueológica y senderos con vistas panorámicas de la ciudad.",
+    "historia_icono": "El ícono representa el Cerro de la Estrella (Huizachtépetl en náhuatl), volcán sagrado donde los mexicas realizaban la Ceremonia del Fuego Nuevo cada 52 años. Si el fuego no encendía en esa noche, creían que sería el fin del mundo — y el rito nunca falló.",
     "tips": [
-      "Sube al Cerro para vistas panorámicas de la CDMX",
-      "Parque Ecológico ideal para naturaleza y senderismo",
-      "Zona arqueológica con importancia prehispánica",
-      "Lleva agua y protección solar para la subida"
+      "Zona Arqueológica del Cerro de la Estrella: gratuita, con vestigios del templo prehispánico",
+      "La subida al cerro toma 30-45 min y ofrece vistas 360° de la CDMX — lleva agua",
+      "Parque Ecológico con flora y fauna nativa del Valle de México",
+      "Visita temprana (7-10 AM) para evitar el calor y disfrutar la vista",
+      "Los fines de semana familias capitalinas hacen picnics — ambiente cálido y local auténtico"
     ],
-    "mejor_horario": "09:00 a 17:00 (luz solar para vistas)",
-    "mundial_relevancia": "Patrimonio arqueológico prehispánico: educativo para turistas FIFA 2026"
+    "mejor_horario": "Mañanas de martes a domingo (cierra los lunes). El amanecer desde la cima es espectacular.",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Sin embargo, es una joya escondida que turistas aventureros encontrarán fascinante por su historia prehispánica y sus vistas de la ciudad."
   },
   {
     "slug": "constitucion-de-1917",
@@ -4262,18 +4402,19 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Constitución de 1917 CDMX — Terminal Sur Línea 8 | MetroGuia",
-    "meta_description": "Estación Constitución de 1917 del Metro CDMX: terminal sur de la Línea 8.",
+    "seo_title": "Metro Constitución 1917 CDMX — Historia | MetroGuia",
+    "meta_description": "Constitución de 1917: historia legal mexicana fundacional zona residencial. Legado político México moderno. Hospedaje turistas FIFA accesible.",
     "h1": "Estación Constitución de 1917 — Línea 8 del Metro CDMX",
-    "intro": "Constitución de 1917 es terminal sur de la Línea 8, punto final de esta ruta que atraviesa la ciudad de Norte a Sur.",
-    "historia_icono": "Nombrada en honor a la Constitución Política de los Estados Unidos Mexicanos promulgada en 1917.",
+    "intro": "Constitución de 1917 lleva el nombre del documento que estableció las bases legales de México moderno. Esta estación de la Línea A conecta con zonas residenciales de Iztapalapa y representa el compromiso del transporte público con la historia nacional.",
+    "historia_icono": "El nombre honra la Constitución Política de los Estados Unidos Mexicanos de 1917, el documento fundacional de México moderno.",
     "tips": [
-      "Terminal sur: final de línea de la Línea 8",
-      "Zona residencial de acceso a Iztapalapa",
-      "Punto de retorno en dirección norte"
+      "Reflexiona sobre la importancia histórica del nombre mientras utilizas la estación",
+      "Zona residencial de Iztapalapa",
+      "Acceso a servicios y comercio local",
+      "Reflexiona sobre historia legal mexicana visitando la zona"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Terminal sur: servicio completo Línea 8"
+    "mejor_horario": "Entre 10:00 y 15:00 horas",
+    "mundial_relevancia": "Sin relevancia directa para el Mundial"
   },
   {
     "slug": "tacubaya",
@@ -4297,19 +4438,20 @@ const estaciones = [
       "1",
       "7"
     ],
-    "seo_title": "Metro Tacubaya CDMX — Hub Comercial Oeste | MetroGuia",
-    "meta_description": "Estación Tacubaya del Metro CDMX: transferencias a Líneas 1 y 7, zona comercial importante del Oeste.",
+    "seo_title": "Metro Tacubaya CDMX — Hub de Transferencia | MetroGuia",
+    "meta_description": "Estación Tacubaya del Metro CDMX: hub crucial de transferencia a Líneas 1 y 7. Zona comercial vibrante, acceso a Chapultepec, Paseo de la Reforma. Turismo.",
     "h1": "Estación Tacubaya — Línea 9 del Metro CDMX",
-    "intro": "Tacubaya es importante hub de transferencia y zona comercial en el Oeste de la CDMX, con acceso a múltiples líneas de metro.",
-    "historia_icono": "Tacubaya ha sido zona de paso y comercio desde tiempos prehispánicos, su nombre significa 'lugar de sapos'.",
+    "intro": "Tacubaya es uno de los hubs de transferencia más importantes del Metro de la Ciudad de México, estratégicamente ubicado en el Oeste de la ciudad. Esta estación conecta las Líneas 1, 7 y 9, convirtiéndola en un punto nodal para turistas que desean explorar distintas zonas de la capital. La zona es vibrante, con comercio diverso, restaurantes, y acceso directo a la icónica Avenida Paseo de la Reforma.",
+    "historia_icono": "El nombre Tacubaya proviene del náhuatl 'Tlecoabaca', que significa 'lugar de sapos'. Desde tiempos prehispánicos fue zona de paso comercial hacia zonas del Oeste. El icono del metro refleja esta herencia con referencias a la flora y fauna del territorio.",
     "tips": [
-      "Hub crucial: transfiere a Líneas 1 y 7 para mayor cobertura",
-      "Zona comercial diversa con tiendas y restaurantes",
-      "Acceso a Castillo de Chapultepec via metrobús",
-      "Centro de conectividad Oeste de la ciudad"
+      "Transfiere a Líneas 1 (Observatorio-Pantitlán) y 7 (Barranca del Muerto-Garibaldi) para máxima cobertura urbana",
+      "Explora la Zona Comercial Tacubaya con tiendas, restaurantes y cafeterías de calidad",
+      "Accede al Castillo de Chapultepec en 15 minutos mediante metrobús desde la estación",
+      "Es el mejor punto de partida para tours al Bosque de Chapultepec y Museo Nacional de Antropología",
+      "Aprovecha los horarios nocturnos para disfrutar la vida nocturna de la zona"
     ],
-    "mejor_horario": "Todo el día (es hub importante)",
-    "mundial_relevancia": "Centro de conexiones: estratégico para turistas FIFA 2026 explorando Oeste y Centro"
+    "mejor_horario": "Mañanas entre 8:00-11:00 para menos aglomeración, o tardes 15:00-18:00. Evita horas pico (7:00-9:00 y 18:00-20:00).",
+    "mundial_relevancia": "Hub estratégico para turistas FIFA 2026: conecta Centro histórico con zonas Oeste. Acceso a hoteles de clase alta en Polanco y Chapultepec."
   },
   {
     "slug": "patriotismo",
@@ -4330,18 +4472,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Patriotismo CDMX — Comercio y Residencia | MetroGuia",
-    "meta_description": "Estación Patriotismo del Metro CDMX: zona comercial y residencial en Benito Juárez.",
+    "seo_title": "Metro Patriotismo CDMX — Eje Oeste-Este | MetroGuia",
+    "meta_description": "Estación Patriotismo: eje comercial Oriente-Poniente en Benito Juárez. Tiendas, cafés independientes, acceso a Polanco y Paseo de la Reforma. Turismo CDMX.",
     "h1": "Estación Patriotismo — Línea 9 del Metro CDMX",
-    "intro": "Patriotismo es estación comercial y residencial en Benito Juárez, ubicada en importante avenida de conectividad Oriente-Poniente.",
-    "historia_icono": "Avenida Patriotismo es vía histórica que conecta el Centro con zonas Oeste de la ciudad.",
+    "intro": "La estación Patriotismo es un nodo comercial y residencial en el corazón de la alcaldía Benito Juárez. Ubicada en la importante Avenida Patriotismo, que es un eje estructurante Oriente-Poniente de la ciudad, esta estación sirve como puente entre el Centro histórico y las zonas residenciales del Poniente. La zona ofrece tiendas, restaurantes y una vida urbana dinámica con carácter cosmopolita.",
+    "historia_icono": "Avenida Patriotismo fue trazada en el siglo XIX como vía de conexión entre el Centro y zonas de expansión hacia el Oeste. Su nombre evoca el espíritu nacionalista de la época. El ícono metro representa esta arteria vital que dinamiza el transporte urbano.",
     "tips": [
-      "Zona comercial activa con tiendas y servicios",
-      "Acceso a residencias de Benito Juárez",
-      "Punto de tránsito importante en Eje Horizontal"
+      "Recorre la Avenida Patriotismo a pie: encontrarás boutiques, cafés independientes y galerías de arte",
+      "Los jueves a domingo, la zona tiene propuestas culturales en espacios alternativos",
+      "Accede fácilmente a la zona de Polanco (10 minutos caminando) con tiendas de lujo y restaurantes de clase mundial",
+      "Cercano a Paseo de la Reforma, ideal para turistas que quieren recorrer esta icónica avenida",
+      "Excelente ubicación para hospedarse: hoteles de precio moderado con buen acceso a toda la ciudad"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Conectividad Oriente-Poniente: paso importante para turistas"
+    "mejor_horario": "De 11:00 a 19:00, los mejores horarios para compras y paseos. Fin de semana más tranquilo y agradable.",
+    "mundial_relevancia": "Conexión crucial Oriente-Poniente: facilita movilidad de turistas entre Centro, Reforma y zonas residenciales de alojamiento."
   },
   {
     "slug": "chilpancingo",
@@ -4358,17 +4502,19 @@ const estaciones = [
     ],
     "transferencias": [],
     "seo_title": "Metro Chilpancingo CDMX — Zona Residencial | MetroGuia",
-    "meta_description": "Estación Chilpancingo del Metro CDMX: zona residencial y comercial de Benito Juárez.",
+    "meta_description": "Estación Chilpancingo: zona residencial tranquila de clase media en Benito Juárez. Hospedaje cómodo, comercio local, restaurantes. Acceso ciudad.",
     "h1": "Estación Chilpancingo — Línea 9 del Metro CDMX",
-    "intro": "Chilpancingo es estación residencial en Benito Juárez, continuando en la ruta hacia el Centro.",
-    "historia_icono": "Nombrada en honor a Chilpancingo, ciudad capital del estado de Guerrero.",
+    "intro": "Chilpancingo es una estación residencial ubicada en la alcaldía Benito Juárez, que ofrece un ambiente más tranquilo que el Centro pero con fácil acceso a las principales atracciones turísticas de la ciudad. Nombrada en honor a la capital del estado de Guerrero, esta estación sirve a una zona de clase media con buenos servicios, comercios locales y espacios públicos accesibles. Es una opción interesante para turistas que buscan hospedaje cómodo fuera del centro congestionado.",
+    "historia_icono": "Chilpancingo, cuyo nombre significa 'en la cuesta de agua' en náhuatl, es la capital del estado de Guerrero. El ícono del metro rinde homenaje a esta ciudad histórica, reconociendo la importancia de las conexiones entre la capital y los estados circundantes.",
     "tips": [
-      "Zona residencial de clase media en Benito Juárez",
-      "Servicios y comercios locales disponibles",
-      "Punto de conexión a zonas residenciales"
+      "Hospédate en hoteles de 3-4 estrellas de la zona: relación precio-calidad excelente para turistas",
+      "Acceso directo a mercados y tienditas locales para compras de artesanías mexicanas auténticas",
+      "Estación tranquila: ideal para turistas que prefieren alejarse del caos del Centro sin sacrificar conectividad",
+      "En 10 minutos a pie llegas a restaurantes tradicionales mexicanos con precios accesibles",
+      "Cercano a parques locales para descansar entre actividades turísticas"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: acceso a zonas de clase media"
+    "mejor_horario": "Mañanas de 9:00-12:00 para disfrutar la tranquilidad. Tardes después de las 14:00 con ambiente comercial activo.",
+    "mundial_relevancia": "Alojamiento residencial: zona segura y cómoda para turistas FIFA 2026 que prefieren estancia tranquila con buen acceso al transporte."
   },
   {
     "slug": "centro-medico",
@@ -4391,19 +4537,20 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Centro Médico CDMX — Salud y Servicios | MetroGuia",
-    "meta_description": "Estación Centro Médico del Metro CDMX: acceso a Centro Médico Nacional, transferencia a Línea 3.",
+    "seo_title": "Metro Centro Médico CDMX — Salud | MetroGuia",
+    "meta_description": "Centro Médico CDMX: transferencia estratégica a Línea 3, servicios de salud. Centro Médico Nacional para emergencias turistas. Conectividad.",
     "h1": "Estación Centro Médico — Línea 9 del Metro CDMX",
-    "intro": "Centro Médico es estación clave con acceso a importante complejo médico y transferencia a Línea 3.",
-    "historia_icono": "Centro Médico Nacional es institución de salud mexicana importante, fundada en 1943.",
+    "intro": "Centro Médico es una estación clave de transferencia (Línea 9 a Línea 3) ubicada en la alcaldía Benito Juárez, cercana al importante Centro Médico Nacional. Esta estación es vital tanto para turistas que requieran servicios de salud de emergencia como para quienes simplemente deseen explorar un nodo de conectividad importante. La zona combina servicios especializados, comercio orientado a salud y bienestar, y múltiples opciones de movilidad.",
+    "historia_icono": "Centro Médico Nacional fue fundado en 1943 como institución de salud de referencia en México. El ícono del metro representa la cruz médica y simboliza la salud como derecho accesible. Es emblemático del desarrollo institucional mexicano del siglo XX.",
     "tips": [
-      "Acceso a Centro Médico Nacional para servicios de salud",
-      "Transferencia a Línea 3 expande opciones de movilidad",
-      "Zona comercial con servicios especializados",
-      "Importante para turistas que requieran servicios médicos"
+      "Si necesitas atención médica, Centro Médico Nacional es accesible en 2 minutos caminando desde la estación",
+      "Transfiere a Línea 3 para explorar zonas Sur (Copilco, Ciudad Universitaria) o Norte (Indios Verdes)",
+      "Zona con farmacias de calidad y laboratorios clínicos si necesitas servicios de salud menores",
+      "Restaurantes y cafeterías especializadas en comida saludable en los alrededores",
+      "Estación conectada 24 horas: importante recurso en emergencias médicas durante cualquier hora"
     ],
-    "mejor_horario": "Todo el día (es hub médico)",
-    "mundial_relevancia": "Servicios médicos: importante para emergencias de turistas FIFA 2026"
+    "mejor_horario": "Disponible todo el día. Horarios normales durante día; más tranquilo después de 20:00 si buscas usar la estación sin prisa.",
+    "mundial_relevancia": "Servicios de salud críticos: acceso a Centro Médico Nacional para emergencias médicas de turistas FIFA 2026. Hub de transferencia estratégico."
   },
   {
     "slug": "lazaro-cardenas",
@@ -4424,19 +4571,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Lázaro Cárdenas CDMX — Centro Histórico | MetroGuia",
-    "meta_description": "Estación Lázaro Cárdenas del Metro CDMX: acceso a Centro Histórico y Paseo de la Reforma.",
+    "seo_title": "Metro Lázaro Cárdenas — Centro Histórico | MetroGuia",
+    "meta_description": "Lázaro Cárdenas: puerta estratégica al Centro Histórico CDMX, Paseo de la Reforma. Museos, monumentos, patrimonio cultural. Imprescindible turismo.",
     "h1": "Estación Lázaro Cárdenas — Línea 9 del Metro CDMX",
-    "intro": "Lázaro Cárdenas conecta con el Centro Histórico y la importante avenida Paseo de la Reforma.",
-    "historia_icono": "Nombrada en honor a Lázaro Cárdenas del Río, presidente de México (1934-1940).",
+    "intro": "La estación Lázaro Cárdenas es una puerta estratégica hacia el Centro Histórico de la Ciudad de México, ubicada en la alcaldía Cuauhtémoc. Esta estación conecta directamente con la icónica Avenida Paseo de la Reforma, uno de los grandes atractivos turísticos de la capital, y ofrece acceso a museos de clase mundial, monumentos históricos y la vibrante vida cultural de la ciudad. Es imprescindible para cualquier turista que desee experimentar la quintaesencia de la CDMX.",
+    "historia_icono": "Lázaro Cárdenas del Río fue presidente de México de 1934 a 1940, época de grandes transformaciones sociales. El ícono del metro honra su legado en la historia política mexicana, representando el progreso institucional del país.",
     "tips": [
-      "Acceso al Centro Histórico para turismo cultural",
-      "Cercano a Paseo de la Reforma con comercio y museos",
-      "Punto de transición entre zonas Oeste y Centro",
-      "Importante para tours culturales"
+      "Camina hacia el Centro Histórico en 5 minutos para ver la Catedral, Palacio Nacional y Plaza Mayor",
+      "Recorre Paseo de la Reforma: la avenida más icónica de México con museos, monumentos y arquitectura de clase mundial",
+      "Visita el Museo Nacional de Antropología (15 minutos en metrobús) para conocer tesoros prehispánicos como la Piedra del Sol",
+      "Accede a galerías de arte contemporáneo y museos especializados cerca de la estación",
+      "Mejor punto de partida para tours culturales a pie por Centro Histórico (Templo Mayor, Suprema Corte de Justicia)"
     ],
-    "mejor_horario": "10:00 a 19:00",
-    "mundial_relevancia": "Centro Histórico: acceso a patrimonio cultural para turistas FIFA 2026"
+    "mejor_horario": "10:00 a 18:00 es ideal para turismo cultural. Museos abren 10:00-17:00. Evita noches tarde en zona Centro por seguridad.",
+    "mundial_relevancia": "Patrimonio cultural global: acceso a Centro Histórico UNESCO, Paseo de la Reforma, museos. Imprescindible para turistas FIFA 2026 que quieren México profundo."
   },
   {
     "slug": "chabacano-l9",
@@ -4455,18 +4603,20 @@ const estaciones = [
       "2",
       "8"
     ],
-    "seo_title": "Metro Chabacano CDMX — Hub de Transporte | MetroGuia",
-    "meta_description": "Estación Chabacano del Metro CDMX (Línea 9): transferencias a Líneas 2 y 8, zona comercial.",
+    "seo_title": "Metro Chabacano L9 CDMX — Hub Conectividad | MetroGuia",
+    "meta_description": "Estación Chabacano Línea 9: hub de transferencia a Líneas 2 y 8. Comercio intenso y activo, conectividad Este-Oeste. Nodo estratégico Metro CDMX.",
     "h1": "Estación Chabacano — Línea 9 del Metro CDMX",
-    "intro": "Chabacano en Línea 9 es hub importante de transferencia a Líneas 2 y 8, en zona comercial activa.",
-    "historia_icono": "Avenida Chabacano es arterial histórica que cruza la ciudad.",
+    "intro": "La estación Chabacano en la Línea 9 es un hub crucial de transferencia ubicado en la alcaldía Iztapalapa, que conecta con las Líneas 2 y 8, ofreciendo a los turistas una flexibilidad significativa para moverse por toda la ciudad. La zona es comercialmente activa con vendedores callejeros, tiendas, y una energía urbana característica. Avenida Chabacano es una arterial histórica que ha sido eje de comercio y transporte durante décadas.",
+    "historia_icono": "Avenida Chabacano es una de las arterias más antiguas de la Ciudad de México, trazada en el siglo XIX como vía importante de comunicación. El ícono metro representa esta conexión vital entre diferentes partes de la ciudad, simbolizando la movilidad urbana.",
     "tips": [
-      "Hub crítico: transfiere a Líneas 2 y 8 para máxima cobertura",
-      "Zona comercial muy activa",
-      "Punto estratégico en geografía del Metro CDMX"
+      "Transfiere a Línea 2 para acceder a zonas Sur (Taxqueña, CU) o Norte (Cuatro Caminos)",
+      "Transfiere a Línea 8 para explorar Iztapalapa o zonas Este (Apatlaco)",
+      "Zona comercial intensa: ideal para compras de últimas horas o comercio callejero auténtico",
+      "Estación bien señalizada y con buen flujo: aunque es hub, es relativamente fácil de navegar",
+      "Acceso a mercadillos y vendedores ambulantes con productos típicos mexicanos"
     ],
-    "mejor_horario": "Todo el día (es hub)",
-    "mundial_relevancia": "Centro de conectividad: nodo estratégico para turistas"
+    "mejor_horario": "7:00-11:00 y 15:00-18:00 para transferencias eficientes. Midday (11:00-14:00) puede ser más tranquilo.",
+    "mundial_relevancia": "Nodo de conectividad Este-Oeste: estratégico para turistas que quieren máxima cobertura del Metro. Acceso a zonas diversas de la capital."
   },
   {
     "slug": "jamaica-l9",
@@ -4490,19 +4640,19 @@ const estaciones = [
       "4"
     ],
     "seo_title": "Metro Jamaica CDMX — Mercado de Flores | MetroGuia",
-    "meta_description": "Estación Jamaica del Metro CDMX: acceso al Mercado Jamaica, mayor mercado de flores de México.",
+    "meta_description": "Jamaica: Mercado Jamaica de flores, plantas, comercio popular. Experiencia auténtica comercio tradicional mexicano. Imprescindible turistas. Madrugada.",
     "h1": "Estación Jamaica — Línea 9 del Metro CDMX",
-    "intro": "Jamaica es acceso al icónico Mercado Jamaica, el mayor mercado de flores de México y importante hub de comercio mayorista.",
-    "historia_icono": "Mercado Jamaica es institución comercial de México desde hace décadas, abasteciendo flores a toda la ciudad.",
+    "intro": "Jamaica es una estación ubicada en la alcaldía Venustiano Carranza, famosa por su enorme Mercado Jamaica, el mayor mercado de flores y plantas de América Latina. Esta estación es un destino turístico único que ofrece una experiencia auténtica de comercio tradicional mexicano, con vendedores de flores frescas, plantas ornamentales, artesanías relacionadas con floristería, y una atmósfera vibrante de actividad comercial. Es obligatoria para turistas que quieren experimentar el comercio popular mexicano.",
+    "historia_icono": "Jamaica hace referencia a la región de Jamaica en el Caribe, pero el Mercado Jamaica se consolidó aquí en el siglo XX como centro floricultural. El ícono del metro incorpora elementos florales, celebrando la principal actividad económica y cultural de la estación.",
     "tips": [
-      "Mercado Jamaica: mayor variedad de flores de México a precios mayorista",
-      "Experiencia auténtica de mercado tradicional mexicano",
-      "Ideal para madrugadores: máxima actividad 04:00-08:00",
-      "Transferencia a Línea 4 expande opciones de movilidad",
-      "Imprescindible para entender comercio local mexicano"
+      "Visita el Mercado Jamaica en madrugada (5:00-7:00): cuando mayoristas y floristas llegan con flores frescas del día",
+      "Compra flores, plantas y arreglos florales a precios mayoristas: las más baratas de la ciudad",
+      "Camina por los pasillos del mercado: es una experiencia sensorial completa del comercio mexicano tradicional",
+      "Prueba comida callejera típica: desde tamales hasta café mexicano en las comedorías del mercado",
+      "Fotografía: es un lugar visualmente espectacular con colores vibrantes de miles de flores"
     ],
-    "mejor_horario": "04:00 a 12:00 (actividad mercantil pico)",
-    "mundial_relevancia": "Mercado tradicional icónico: experiencia auténtica mexicana para turistas FIFA 2026"
+    "mejor_horario": "5:00 a 10:00 es la época dorada: máxima actividad, flores frescas, ambiente auténtico. Después de 14:00 menos activo.",
+    "mundial_relevancia": "Experiencia auténtica: Mercado Jamaica es atracción única de comercio popular mexicano. Imprescindible para turistas FIFA 2026 que quieren lo genuino."
   },
   {
     "slug": "mixiuhca",
@@ -4518,18 +4668,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Mixiuhca CDMX — Zona Comercial Oriente | MetroGuia",
-    "meta_description": "Estación Mixiuhca del Metro CDMX: zona comercial en Venustiano Carranza.",
+    "seo_title": "Metro Mixiuhca CDMX — Deportes y Recreación | MetroGuia",
+    "meta_description": "Mixiuhca: instalaciones deportivas, parques, espacios recreación. Centro deportivo Iztapalapa para actividades. Espacio verde turistas CDMX.",
     "h1": "Estación Mixiuhca — Línea 9 del Metro CDMX",
-    "intro": "Mixiuhca es estación comercial en Venustiano Carranza, continuando la ruta Este de la Línea 9.",
-    "historia_icono": "Nombre náhuatl: Mixiuhca significa 'lugar de luna' en la lengua prehispánica.",
+    "intro": "Mixiuhca es una estación ubicada en la alcaldía Iztapalapa que da acceso al Complexo Deportivo de la Ciudad de México, un área con múltiples instalaciones deportivas, parques y espacios verdes. Esta estación es importante para turistas interesados en deportes, eventos deportivos, y actividades al aire libre. La palabra Mixiuhca proviene del náhuatl y tiene profundas raíces en la historia prehispánica de la región.",
+    "historia_icono": "Mixiuhca del náhuatl 'miztli' (luna) y 'ohuaca' (rodea), significa 'lugar rodeado por la luna'. Es un nombre prehispánico que refleja la cosmovisión mexica. El ícono incorpora referencias a la luna y la cosmología mesoamericana.",
     "tips": [
-      "Zona comercial activa de Oriente",
-      "Acceso a comunidades locales de Venustiano Carranza",
-      "Punto de conexión importante en ruta Este"
+      "Accede a instalaciones deportivas: estadios, albercas, y canchas disponibles para actividades físicas",
+      "Visita parques y espacios verdes para descanso y actividades recreativas en familia",
+      "Durante el Mundial 2026, esta zona puede hospedar eventos deportivos clasificatorios o entrenamientos",
+      "Camina por senderos verdes: es una zona más tranquila con naturaleza dentro de la ciudad",
+      "Come en restaurantes deportivos o cafeterías cercanas a las instalaciones"
     ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Conectividad Oriente: acceso a zonas comerciales"
+    "mejor_horario": "8:00 a 17:00 para actividades deportivas y recreativas. Fines de semana más concurridos y con mayor variedad de eventos.",
+    "mundial_relevancia": "Instalaciones deportivas: posible hub de eventos FIFA 2026, entrenamientos o actividades complementarias. Espacio recreativo para turistas."
   },
   {
     "slug": "velodromo",
@@ -4550,8 +4702,8 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Velódromo CDMX — Estadio Olímpico y Patrimonio | MetroGuia",
-    "meta_description": "Estación Velódromo del Metro CDMX: acceso a Estadio Olímpico Universitario, patrimonio de Juegos Olímpicos 1968.",
+    "seo_title": "Metro Velódromo CDMX — Ciclismo Olímpico | MetroGuia",
+    "meta_description": "Velódromo de la Ciudad México: legado olímpico 1968, ciclismo pista profesional. Arquitectura deportiva histórica México. Posible venue FIFA 2026.",
     "h1": "Estación Velódromo — Línea 9 del Metro CDMX",
     "intro": "Velódromo es estación con acceso a Estadio Olímpico Universitario, sitio histórico de los Juegos Olímpicos 1968.",
     "historia_icono": "Estadio Olímpico fue sede principal de los Juegos Olímpicos de México 1968, evento histórico mundial.",
@@ -4578,18 +4730,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ciudad Deportiva CDMX — Instalaciones Deportivas | MetroGuia",
-    "meta_description": "Estación Ciudad Deportiva del Metro CDMX: acceso a complejo de instalaciones deportivas.",
+    "seo_title": "Metro Ciudad Deportiva — Infraestructura deportiva",
+    "meta_description": "Ciudad Deportiva: complejo deportivo comunitario con mercados y vida auténtica. Infraestructura deportiva activa en barrio del oriente.     ",
     "h1": "Estación Ciudad Deportiva — Línea 9 del Metro CDMX",
-    "intro": "Ciudad Deportiva ofrece acceso a importante complejo de instalaciones deportivas en Iztacalco.",
-    "historia_icono": "Ciudad Deportiva es centro recreativo importante con múltiples instalaciones para deportes y esparcimiento.",
+    "intro": "Ciudad Deportiva es estación de la Línea B cerca de complejo deportivo del oriente capitalino, zona con instalaciones recreativas y vida de barrio comercial. Para turistas del Mundial FIFA 2026 que deseen conocer infraestructura deportiva de barrio y vida auténtica, Ciudad Deportiva ofrece acceso a campos y canchas, mercados locales y la atmósfera cotidiana de capitalinos. Es parada para aficionados al deporte interesados en vida de barrio.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Ciudad Deportiva con infraestructura deportiva comunitaria, zona donde deporte y vida residencial convergen. Este símbolo evoca acceso equitativo a instalaciones recreativas.",
     "tips": [
-      "Acceso a instalaciones deportivas y recreativas",
-      "Ideal para turistas activos y amantes del deporte",
-      "Servicios deportivos diversos disponibles"
+      "Complejo deportivo: canchas de fútbol, basquetbol y otras instalaciones abiertas al público; requiere inscripción o pago de acceso",
+      "Mercado local de comida: alimentos frescos y comidas rápidas a precios de barrio",
+      "Tiendas de artículos deportivos: equipamiento para deportes a precios locales",
+      "Ambiente deportivo: si eres aficionado a deportes, te encontrarás en zona con vida deportiva activa",
+      "Llevar efectivo: comercio principalmente en efectivo en zona residencial"
     ],
-    "mejor_horario": "07:00 a 20:00 (horario de instalaciones)",
-    "mundial_relevancia": "Instalaciones deportivas: para turistas activos durante FIFA 2026"
+    "mejor_horario": "Visita de 9 AM-6 PM entre semana para actividad comercial; sábados-domingos mayor actividad deportiva comunitaria.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en infraestructura deportiva comunitaria y vida de barrio encontrarán experiencia auténtica."
   },
   {
     "slug": "puebla",
@@ -4605,18 +4759,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Puebla CDMX — Zona Residencial Iztacalco | MetroGuia",
-    "meta_description": "Estación Puebla del Metro CDMX: zona residencial en Iztacalco.",
+    "seo_title": "Metro Puebla CDMX — Zona Residencial Auténtica | MetroGuia",
+    "meta_description": "Puebla: zona residencial auténtica Iztapalapa clase media. Tiendas locales, comida tradicional mexicana. Vida real capital. Hospedaje cómodo.",
     "h1": "Estación Puebla — Línea 9 del Metro CDMX",
-    "intro": "Puebla es estación residencial en Iztacalco, penúltima parada antes de Pantitlán.",
-    "historia_icono": "Zona nombrada en honor a Puebla, estado histórico de México.",
+    "intro": "La estación Puebla en Iztapalapa es una estación residencial y comercial que sirve a una zona de clase media con una atmósfera más tranquila que las zonas céntrica y comercial de la ciudad. Esta estación es interesante para turistas que buscan experimentar vida cotidiana mexicana, acceder a comercios locales, restaurantes auténticos y espacios públicos donde conocer a residentes locales. Es una ventana a la Ciudad de México que vive más allá de los circuitos turísticos principales.",
+    "historia_icono": "Puebla hace referencia al estado de Puebla, uno de los más importantes histórica y culturalmente de México. El ícono del metro honra esta región con su herencia prehispánica y colonial, reconociendo la importancia de Puebla en la historia nacional.",
     "tips": [
-      "Zona residencial tranquila de Iztacalco",
-      "Acceso a comunidades locales",
-      "Punto de conexión hacia terminal Pantitlán"
+      "Come en taquerías y fondas locales: comida auténtica mexicana a precios accesibles",
+      "Compra en mercados locales y tiendas de barrio: vive como residente local, no como turista",
+      "Recorre las calles a pie: descubre murales, pequeños negocios y vida urbana auténtica",
+      "Interactúa con habitantes locales en plazas y parques: muchos hablan español coloquial mexicano",
+      "Toma fotos de comercios y espacios públicos: es zona muy fotografiable e auténtica"
     ],
-    "mejor_horario": "Mañanas y tardes",
-    "mundial_relevancia": "Hospedaje residencial: alternativa a Centro para turistas"
+    "mejor_horario": "10:00 a 18:00 para comercio activo y vida urbana. Noches también activas para restaurantes y vida social.",
+    "mundial_relevancia": "Experiencia cotidiana: zona residencial auténtica para turistas que quieren vida real mexicana, no solo circuitos turísticos."
   },
   {
     "slug": "pantitlan",
@@ -4641,20 +4797,19 @@ const estaciones = [
       "5",
       "A"
     ],
-    "seo_title": "Metro Pantitlán CDMX — Terminal Este y Hub de Transporte | MetroGuia",
-    "meta_description": "Estación Pantitlán del Metro CDMX: terminal Este, transferencias a Líneas 1, 5 y Línea A. Mayor hub de conectividad.",
+    "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
+    "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
     "h1": "Estación Pantitlán — Línea 9 del Metro CDMX",
-    "intro": "Pantitlán es terminal Este de la Línea 9 y el mayor hub de transferencia del Metro CDMX, conectando 4 líneas de metro.",
-    "historia_icono": "Pantitlán es uno de los sitios más transitados del Metro CDMX, punto neurálgico de conectividad Este-Oeste y Sur-Norte.",
+    "intro": "Pantitlán es una estación crucial de transferencia en el oriente de la CDMX, punto de conexión entre las Líneas 1, 5, 9 y A. Aunque es principalmente una estación de paso, la zona ofrece acceso a mercados tradicionales y transporte hacia municipios del Estado de México.",
+    "historia_icono": "El ícono de la Línea A representa una flecha morada hacia el oriente, simbolizando la expansión del Metro hacia las nuevas zonas periféricas y densamente pobladas.",
     "tips": [
-      "Hub CRÍTICO: transfiere a Líneas 1, 5 y A — máxima cobertura de la ciudad",
-      "Terminal Este: punto de retorno de la Línea 9",
-      "Zona comercial diversa y servicios extensos",
-      "Punto de conexión para turistas explorando toda la CDMX",
-      "Alto flujo de pasajeros: plan tiempo extra en horas pico"
+      "Pantitlán es punto de transferencia ideal para explorar diferentes líneas del Metro",
+      "La zona es transitada pero segura durante el día; considera horarios de menos afluencia",
+      "Acceso directo a zonas residenciales y de transporte comercial",
+      "Explora la tecnología moderna de la línea más nueva del Metro"
     ],
-    "mejor_horario": "Todo el día (es hub 24/7)",
-    "mundial_relevancia": "Hub supremo de conectividad: estratégico para turistas FIFA 2026 maximizando cobertura de la ciudad"
+    "mejor_horario": "Entre 10:00 y 14:00 horas para menor congestión",
+    "mundial_relevancia": "Conexión importante para turistas que necesitan acceder a múltiples líneas del Metro durante el Mundial 2026"
   },
   {
     "slug": "pantitlan",
@@ -4679,15 +4834,16 @@ const estaciones = [
       "5",
       "9"
     ],
-    "seo_title": "Metro Pantitlán CDMX — Guía turística y cómo llegar | MetroGuia",
-    "meta_description": "Estación Pantitlán: punto de conexión intermodal con Líneas 1, 5 y 9. Guía completa para turistas del Mundial FIFA 2026.",
+    "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
+    "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
     "h1": "Metro Pantitlán: hub de transporte en Venustiano Carranza",
     "intro": "Pantitlán es una estación crucial de transferencia en el oriente de la CDMX, punto de conexión entre las Líneas 1, 5, 9 y A. Aunque es principalmente una estación de paso, la zona ofrece acceso a mercados tradicionales y transporte hacia municipios del Estado de México.",
     "historia_icono": "El ícono de la Línea A representa una flecha morada hacia el oriente, simbolizando la expansión del Metro hacia las nuevas zonas periféricas y densamente pobladas.",
     "tips": [
       "Pantitlán es punto de transferencia ideal para explorar diferentes líneas del Metro",
       "La zona es transitada pero segura durante el día; considera horarios de menos afluencia",
-      "Acceso directo a zonas residenciales y de transporte comercial"
+      "Acceso directo a zonas residenciales y de transporte comercial",
+      "Explora la tecnología moderna de la línea más nueva del Metro"
     ],
     "mejor_horario": "Entre 10:00 y 14:00 horas para menor congestión",
     "mundial_relevancia": "Conexión importante para turistas que necesitan acceder a múltiples líneas del Metro durante el Mundial 2026"
@@ -4711,18 +4867,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Agrícola Oriental CDMX — Estación de Iztacalco | MetroGuia",
-    "meta_description": "Agrícola Oriental en Iztacalco: estación residencial de la Línea A. Descubre la vida cotidiana de la CDMX lejos del centro turístico.",
+    "seo_title": "Metro Agrícola Oriental CDMX — Este | MetroGuia",
+    "meta_description": "Agrícola Oriental: mercados locales vibrantes, comercio popular auténtico. Vida real Iztapalapa clase trabajadora. Comida auténtica zona Este.",
     "h1": "Metro Agrícola Oriental: el pulso residencial de Iztacalco",
-    "intro": "Agrícola Oriental es una estación típica de la Línea A, ubicada en el corazón de Iztacalco. Conecta con zonas residenciales y comerciales locales, ofreciendo una experiencia auténtica del transporte metropolitano de la CDMX.",
-    "historia_icono": "El nombre 'Agrícola Oriental' refleja los orígenes de esta zona como área de cultivo en las delegaciones del oriente de la ciudad.",
+    "intro": "Agrícola Oriental es la primera estación de la Línea A hacia el Este, ubicada en Iztapalapa. Esta zona es una ventana a la Ciudad de México más allá del Centro, donde viven millones de capitalinos en zonas residenciales auténticas. Agrícola Oriental ofrece experiencia de vida urbana mexicana real: mercados locales, comercios, restaurantes de barrio, y espacios públicos donde los turistas interesados pueden conocer la vida cotidiana de la capital. Es menos turística y más auténtica.",
+    "historia_icono": "Agrícola Oriental refleja la historia de Iztapalapa como zona agrícola importante en tiempos prehispánicos y coloniales. El ícono incorpora elementos de agricultura y naturaleza, honrando la vocación histórica de estas tierras fértiles del Valle de México.",
     "tips": [
-      "Zona auténtica y menos turística: ideal para viajeros que desean conocer la CDMX real",
-      "Comercio local y tiendas de barrio en los alrededores",
-      "Acceso a vida cotidiana capitalina sin multitudes de turistas"
+      "Visita mercados locales: experimenta comercio popular mexicano genuino, no organizado para turistas",
+      "Come en fondas y restaurantes de barrio: comida mexicana auténtica a precios muy accesibles",
+      "Recorre la zona a pie: descubre murales, espacios públicos y vida urbana real",
+      "Compra artesanías y productos locales directamente: apoya economía local",
+      "Fotografía: espacios auténticos son visualmente interesantes y menos sobreexplotados turísticamente"
     ],
-    "mejor_horario": "Por la mañana (7:00-10:00) para una experiencia más local",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial, pero excelente para turistas que desean explorar barrios auténticos de la CDMX"
+    "mejor_horario": "8:00 a 17:00 para máxima actividad comercial y de mercados. Mañanas especialmente animadas.",
+    "mundial_relevancia": "Experiencia auténtica Este: para turistas FIFA 2026 que quieren vivir CDMX real, no circuitos turísticos, zona accesible y segura."
   },
   {
     "slug": "canal-de-san-juan",
@@ -4743,18 +4901,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Canal de San Juan CDMX — Estación histórica de Iztacalco | MetroGuia",
-    "meta_description": "Canal de San Juan: estación con historia hídrica en Iztacalco. Parte de la infraestructura de drenaje que transformó la CDMX.",
+    "seo_title": "Metro Canal San Juan CDMX — Historia | MetroGuia",
+    "meta_description": "Canal de San Juan: historia canales antiguos Tenochtitlán, arqueología urbana. Raíces prehispánicas CDMX vivas. Zona residencial Este con historia.",
     "h1": "Metro Canal de San Juan: patrimonio hídrico de Iztacalco",
-    "intro": "Canal de San Juan marca un punto importante en la geografía hídrica de la CDMX. Esta estación conecta con zonas residenciales pobladas y ofrece una perspectiva única sobre la ingeniería de drenaje que transformó la capital mexicana.",
-    "historia_icono": "El ícono representa el sistema de canales de desagüe que fueron fundamentales para la urbanización del oriente de la CDMX.",
+    "intro": "Canal de San Juan es una estación en la Línea A ubicada en Iztapalapa que ofrece acceso a una zona histórica y tradicional de la ciudad. El Canal de San Juan tiene raíces en el sistema de canales prehispánico de Tenochtitlán, que fue transformado durante la colonia. Esta estación es interesante para turistas interesados en historia, arqueología urbana, y geografía de la ciudad. La zona combina historia y vida contemporánea.",
+    "historia_icono": "Canal de San Juan forma parte del sistema de canales que era fundamental en Tenochtitlán. Durante la colonia el canal fue modificado. El ícono refleja la importancia histórica del agua en la Ciudad de México, elemento central de su identidad.",
     "tips": [
-      "Observa la infraestructura de canales que rodea la estación",
-      "Zona muy residencial; los servicios están enfocados a la población local",
-      "Excelente punto para estudiar la transformación urbana de la CDMX"
+      "Busca restos del canal histórico: aunque modificado, puedes ver evidencia de su trayecto",
+      "Aprecia paisaje urbano que mezcla historia prehispánica con desarrollo moderno",
+      "Compra en tiendas locales: ropa, artículos diversos a precios accesibles",
+      "Come en restaurantes locales: comida casera y tradicional mexicana",
+      "Recorre a pie y observa arquitectura: mezcla interesante de periodos históricos"
     ],
-    "mejor_horario": "Mañana o tarde según preferencia de menos congestión",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "9:00 a 17:00 para actividad comercial. Evita noches tarde por seguridad en zonas menos céntrica.",
+    "mundial_relevancia": "Historia hidráulica prehispánica: para turistas interesados en arqueología urbana y geografía histórica CDMX."
   },
   {
     "slug": "tepalcates",
@@ -4775,18 +4935,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tepalcates CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Tepalcates: estación residencial de la Línea A en Iztapalapa. Acceso a barrios tradicionales de la delegación más poblada de la CDMX.",
+    "seo_title": "Metro Tepalcates CDMX — Zona Residencial Este | MetroGuia",
+    "meta_description": "Tepalcates: zona residencial Este, cerámica artesanía. Gastronomía local oaxaca, vida auténtica. Desarrollo urbano contemporáneo. Accesible.",
     "h1": "Metro Tepalcates: corazón residencial de Iztapalapa",
-    "intro": "Tepalcates es una estación clave en la Línea A que adentra al viajero en el corazón de Iztapalapa, la delegación más poblada de la CDMX. Ofrece acceso a zonas residenciales densamente pobladas y comercio local.",
-    "historia_icono": "El nombre 'Tepalcates' proviene del náhuatl: tépat (tierra) y calli (casa), reflejando los orígenes prehispánicos de esta zona.",
+    "intro": "Tepalcates es una estación de la Línea A en Iztapalapa que representa la expansión metropolitana hacia zonas Este. El nombre Tepalcates viene del náhuatl y se refiere a fragmentos de cerámica, lo cual evoca el patrimonio arqueológico de la zona. Esta estación es acceso a una zona residencial de clase trabajadora donde viven miles de capitalinos, ofreciendo turistas una perspectiva auténtica de Ciudad de México contemporánea más allá de circuitos turísticos formales.",
+    "historia_icono": "Tepalcates del náhuatl 'tepalli' (cerámica) y 'catl' (fragmentos), literalmente 'fragmentos de cerámica'. El ícono incorpora patrones cerámicos prehispánicos, honrando la riqueza arqueológica de la región y la artesanía mexicana tradicional.",
     "tips": [
-      "Iztapalapa es la delegación más poblada de la CDMX: espera movimiento durante horas pico",
-      "Acceso a mercados y comercio tradicional",
-      "Buena base para explorar zonas residenciales auténticas"
+      "Visita tiendas artesanales: cerámica y artículos de arte popular auténticos",
+      "Come en comedores locales: experimenta gastronomía de barrio genuina",
+      "Recorre parques locales: espacios públicos comunitarios lejos del turismo masivo",
+      "Interactúa con residentes: la gente es amable con turistas genuinamente interesados",
+      "Fotografía de murales y arte urbano: zonas residenciales tienen riqueza visual"
     ],
-    "mejor_horario": "Entre 11:00 y 16:00 horas para menos congestión",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "9:00 a 17:00 para máxima actividad. Zona es relativamente segura durante horas comerciales.",
+    "mundial_relevancia": "Zona residencial Este: acceso a vida real de clase trabajadora mexicana. Perspectiva auténtica para turistas FIFA 2026."
   },
   {
     "slug": "guelatao",
@@ -4807,18 +4969,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Guelatao CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Guelatao en Iztapalapa: estación residencial de la Línea A. Descubre barrios auténticos de la delegación más poblada de la CDMX.",
+    "seo_title": "Metro Guelatao CDMX — Zona Residencial Oaxaca | MetroGuia",
+    "meta_description": "Guelatao: zona residencial popular Iztapalapa historia Juárez. Mercados tradicionales, gastronomía oaxaca. Auténtica CDMX trabajadora. Real.",
     "h1": "Metro Guelatao: vida cotidiana de Iztapalapa",
-    "intro": "Guelatao es una estación que profundiza en el corazón de Iztapalapa, conectando con zonas residenciales densamente pobladas. Es una parada representativa de las zonas más auténticas y menos turísticas de la CDMX.",
-    "historia_icono": "Guelatao, nombrada así en honor a la historia local, representa la continuidad del desarrollo urbano en el oriente de la capital.",
+    "intro": "Guelatao es una estación de la Línea A ubicada en Iztapalapa, nombrada en honor a Guelatao de Juárez en Oaxaca, tierra natal de Benito Juárez. Esta estación sirve a una zona residencial trabajadora con comercio local, mercados tradicionales, y espacios comunitarios. Ofrece a turistas una perspectiva de cómo viven millones de capitalinos: en zonas de clase media-baja pero con vibrante vida comunitaria, comercio activo, y carácter auténtico.",
+    "historia_icono": "Guelatao es pueblo natal de Benito Juárez en Oaxaca. El ícono honra esta conexión con un prócer de la historia mexicana. Refleja la costumbre del Metro de CDMX de nombrar estaciones con figuras históricas y geográficas de México.",
     "tips": [
-      "Zona muy residencial y comercial: ideal para la experiencia local",
-      "Menos turistas que en el centro histórico",
-      "Buena oportunidad para conocer la vida real de capitalinos"
+      "Compra en mercados tradicionales: frutas, verduras, productos locales a precios mayoristas",
+      "Prueba comida oaxaqueña: la zona tiene tradición gastronómica oaxaca que es exquisita",
+      "Visita ferreterías y tiendas de abarrotes: vida cotidiana mexicana en acción",
+      "Camina por plazas públicas: espacios donde se reúnen residentes, especialmente fines de semana",
+      "Toma fotos: zonas residenciales auténticas son visualmente ricas en detalles y colores"
     ],
-    "mejor_horario": "Entre 11:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "8:00 a 18:00 para actividad comercial máxima. Mañanas más vibrantes, tardes con actividad sostenida.",
+    "mundial_relevancia": "Zona residencial popular: experiencia auténtica de Ciudad de México trabajadora para turistas FIFA 2026 interesados en vida real."
   },
   {
     "slug": "penon-viejo",
@@ -4839,18 +5003,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Peñón Viejo CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Peñón Viejo: estación residencial en Iztapalapa, Línea A. Explora barrios auténticos del oriente de la CDMX.",
+    "seo_title": "Metro Peñón Viejo CDMX — Geografía Urbana | MetroGuia",
+    "meta_description": "Peñón Viejo: geografía topográfica Iztapalapa, zona residencial. Desarrollo urbano contemporáneo. Perspectiva expansión metropolitana CDMX moderna.",
     "h1": "Metro Peñón Viejo: barrios tradicionales de Iztapalapa",
-    "intro": "Peñón Viejo conecta zonas residenciales tradicionales del sur de Iztapalapa. Como muchas estaciones de la Línea A, ofrece una ventana a la vida cotidiana de la CDMX lejos del centro turístico.",
-    "historia_icono": "El nombre 'Peñón Viejo' sugiere los accidentes geográficos y formaciones antiguas que caracterizan esta zona del oriente.",
+    "intro": "Peñón Viejo es estación de la Línea A ubicada en Iztapalapa, que accede a una zona nombrada por sus características geográficas: el Peñón o elevación rocosa que caracteriza el territorio. Esta es una zona residencial densamente poblada de la ciudad, donde viven cientos de miles de capitalinos. Para turistas interesados en antropología urbana, geografía urbana y vida real de la CDMX contemporánea, ofrece experiencia no filtrada de urbanidad mexicana.",
+    "historia_icono": "Peñón Viejo refiere al accidente geográfico que caracteriza la zona: elevaciones rocosas del terreno. El ícono incorpora elementos rocosos y topográficos, honrando la geografía natural que ha definido el asentamiento urbano en esta región de Iztapalapa.",
     "tips": [
-      "Zona residencial auténtica de la CDMX",
-      "Menor congestión comparado con estaciones centrales",
-      "Acceso a comercio y servicios locales"
+      "Explora la topografía: la zona tiene elevaciones que ofrecen perspectivas visuales interesantes",
+      "Visita el Peñón mismo si es accesible: estructura geológica que ha definido la zona",
+      "Come en restaurantes de barrio: comida mexicana casera a precios mínimos",
+      "Recorre calles: comercio variado, tiendas, mercadillos de todo tipo",
+      "Interactúa con gente: zona es amable, especialmente si muestras respeto genuino"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "9:00 a 17:00 para exploración segura. Evita altas horas de la noche en zonas menos céntrica.",
+    "mundial_relevancia": "Geografía urbana: para turistas interesados en cómo se desarrollan ciudades. Perspectiva sobre expansión metropolitana."
   },
   {
     "slug": "cabeza-de-juarez",
@@ -4871,18 +5037,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Cabeza de Juárez CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Cabeza de Juárez: estación residencial de la Línea A en Iztapalapa. Barrios auténticos del sur de la CDMX.",
+    "seo_title": "Metro Cabeza Juárez CDMX — Residencial | MetroGuia",
+    "meta_description": "Cabeza de Juárez: zona residencial Iztapalapa honor Benito Juárez. Comunidad auténtica capitalina vida urbana. Experiencia real CDMX profunda.",
     "h1": "Metro Cabeza de Juárez: acceso al sur de Iztapalapa",
-    "intro": "Cabeza de Juárez es una estación que continúa la penetración de la Línea A hacia el sur de Iztapalapa, conectando con barrios residenciales densos y establecimientos comerciales locales.",
-    "historia_icono": "Denominada en honor a figuras históricas mexicanas, esta estación marca la continuidad geográfica hacia el sur de la ciudad.",
+    "intro": "Cabeza de Juárez es una estación de la Línea A en Iztapalapa, nombrada en honor a Benito Juárez, figura colosal de la historia mexicana. Esta estación sirve a una zona residencial con historia y carácter, donde viven capitalinos de múltiples generaciones. Ofrece a turistas acceso a barrios auténticos donde pueden experimentar vida cotidiana, comercio local, y espacios públicos comunitarios que forman la verdadera textura de la Ciudad de México contemporánea.",
+    "historia_icono": "Cabeza de Juárez honra Benito Juárez, presidente clave del siglo XIX mexicano. El ícono utiliza elementos que evocan a este prócer y su importancia en la modernización de México. Refleja valor histórico que el Metro da a esta figura.",
     "tips": [
-      "Zona residencial con servicios locales",
-      "Menor afluencia turística",
-      "Acceso a barrios auténticos de Iztapalapa"
+      "Compra en tiendas locales: desde ropa hasta alimentos, precio y autenticidad",
+      "Come en comedores del barrio: cocina mexicana tradicional genuina",
+      "Visita plazas comunitarias: especialmente vivos en fines de semana con familias",
+      "Fotografía de comercios y espacios públicos: vida urbana no mediatizada",
+      "Camina y observa: murales, graffiti artístico, expresión urbana auténtica"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "8:00 a 18:00 para máxima actividad. Fines de semana especialmente vibrantes con vida comunitaria.",
+    "mundial_relevancia": "Vida comunitaria auténtica: para turistas FIFA 2026 que quieren experiencia profunda de CDMX más allá de atractivos turísticos."
   },
   {
     "slug": "constitucion-de-1917",
@@ -4903,15 +5071,16 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Constitución de 1917 CDMX — Estación histórica | MetroGuia",
-    "meta_description": "Constitución de 1917: estación que honra el documento fundacional de México. Línea A en Iztapalapa.",
+    "seo_title": "Metro Constitución 1917 CDMX — Historia | MetroGuia",
+    "meta_description": "Constitución de 1917: historia legal mexicana fundacional zona residencial. Legado político México moderno. Hospedaje turistas FIFA accesible.",
     "h1": "Metro Constitución de 1917: homenaje al documento fundacional",
     "intro": "Constitución de 1917 lleva el nombre del documento que estableció las bases legales de México moderno. Esta estación de la Línea A conecta con zonas residenciales de Iztapalapa y representa el compromiso del transporte público con la historia nacional.",
     "historia_icono": "El nombre honra la Constitución Política de los Estados Unidos Mexicanos de 1917, el documento fundacional de México moderno.",
     "tips": [
       "Reflexiona sobre la importancia histórica del nombre mientras utilizas la estación",
       "Zona residencial de Iztapalapa",
-      "Acceso a servicios y comercio local"
+      "Acceso a servicios y comercio local",
+      "Reflexiona sobre historia legal mexicana visitando la zona"
     ],
     "mejor_horario": "Entre 10:00 y 15:00 horas",
     "mundial_relevancia": "Sin relevancia directa para el Mundial"
@@ -4940,19 +5109,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro UAM-I CDMX — Acceso a la Universidad Autónoma Metropolitana | MetroGuia",
-    "meta_description": "UAM-I: estación universitaria de la Línea A. Acceso a la Universidad Autónoma Metropolitana Unidad Iztapalapa, una institución educativa de excelencia.",
+    "seo_title": "Metro UAM-I CDMX — Universidad | MetroGuia",
+    "meta_description": "UAM-I: campus universitario importante, educación superior México. Cultura, eventos académicos para turistas. Institución moderna innovadora.",
     "h1": "Metro UAM-I: puerta a la educación de excelencia en la CDMX",
-    "intro": "UAM-I es una estación especializada que conecta directamente con la Universidad Autónoma Metropolitana Unidad Iztapalapa, una de las instituciones educativas más prestigiosas de México. Ofrece acceso a un campus de clase mundial con amplios espacios verdes y servicios universitarios.",
-    "historia_icono": "El ícono representa la excelencia educativa y la inversión de la CDMX en infraestructura universitaria.",
+    "intro": "UAM-I (Universidad Autónoma Metropolitana, Unidad Iztapalapa) es estación de la Línea A ubicada en Iztapalapa, que da acceso al campus principal de una de las universidades más importantes de México. Esta estación es puerta a un mundo académico vibrante, con miles de estudiantes, investigadores, librerías, cafeterías, y espacios culturales. Para turistas interesados en educación superior mexicana, investigación, y vida estudiantil, es destino fascinante.",
+    "historia_icono": "UAM es institución educativa moderna creada en 1974, revolucionaria en su modelo académico descentralizado. El ícono incorpora elementos educacionales y modernistas, reflejando el carácter innovador de esta universidad.",
     "tips": [
-      "Excelente opción para estudiantes y visitantes de la universidad",
-      "El campus tiene cafeterías, biblioteca y espacios verdes",
-      "Ambiente académico y cultural de importancia nacional",
-      "Acceso a conferencias, exposiciones y eventos culturales de la UAM"
+      "Visita el campus: arquitectura moderna interesante y espacios abiertos",
+      "Compra en librerías de la universidad: libros mexicanos e internacionales a precios accesibles",
+      "Come en cafeterías estudiantiles: comida barata y comida variada",
+      "Participa en eventos: conferencias, exposiciones, y actividades culturales abiertas al público",
+      "Observa vida universitaria: dinámicas académicas y estudiantiles mexicanas"
     ],
-    "mejor_horario": "Entre 10:00 y 16:00 horas para conocer la vida universitaria",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial, pero excelente para turistas interesados en educación superior mexicana"
+    "mejor_horario": "10:00 a 17:00 durante semestre activo. Períodos vacacionales menos animado pero abierto.",
+    "mundial_relevancia": "Institución académica: perspectiva sobre educación superior mexicana. Eventos culturales para turistas FIFA 2026."
   },
   {
     "slug": "la-paz",
@@ -4978,19 +5148,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro La Paz CDMX — Terminal de la Línea A en Nezahualcóyotl | MetroGuia",
-    "meta_description": "La Paz: terminus de la Línea A en Nezahualcóyotl, Estado de México. Acceso al municipio conurbado más poblado del país.",
+    "seo_title": "Metro La Paz CDMX — Terminal Línea A Este | MetroGuia",
+    "meta_description": "La Paz: terminal Línea A Este expansión metropolitana. Final recorrido moderno línea nueva. Perspectiva CDMX expandida. Contemporáneo único.",
     "h1": "Metro La Paz: puerta a Nezahualcóyotl y el Estado de México",
-    "intro": "La Paz es el terminus de la Línea A, ubicada en Nezahualcóyotl, Estado de México. Aunque está fuera de los límites de la CDMX, forma parte integral del Sistema de Transporte Metropolitano. Conecta con el municipio más poblado del Estado de México, con más de 1.2 millones de habitantes.",
-    "historia_icono": "El ícono marca el final de la Línea A y representa la expansión del Metro más allá de los límites de la capital hacia los municipios conurbados.",
+    "intro": "La Paz es la estación terminal de la Línea A del Metro CDMX, ubicada en Iztapalapa. Es el punto más al Este de esta línea moderna. La zona es residencial con carácter de periferia urbana donde viven capitalinos en condiciones variadas. La estación La Paz representa el alcance moderno del Metro hacia zonas que históricamente carecían de transporte rápido. Es final de línea pero no final de experiencia: ofrece perspectiva sobre expansión metropolitana.",
+    "historia_icono": "La Paz refiere a la paz como valor universal. El ícono incorpora elementos de tranquilidad y armonía, contrastando interesantemente con la dinámica urbana del resto de la línea. Representa destino final, punto de quietud después del viaje.",
     "tips": [
-      "La Paz está en Nezahualcóyotl, Estado de México, no en la CDMX",
-      "Es el punto final de la Línea A y un hub importante para viajeros que vienen del Estado de México",
-      "Acceso a zonas residenciales y comerciales de Nezahualcóyotl",
-      "Infraestructura y servicios de transporte hacia otros municipios"
+      "Usa La Paz como punto final de exploración de Línea A: ya completaste el recorrido Este",
+      "Observa expansión urbana: desde Pantitlán hasta La Paz es viaje a través de metropolitanización",
+      "Come en restaurantes locales: comida auténtica de barrio",
+      "Compra en mercados: última parada antes del final de línea",
+      "Reflexiona sobre viaje: La Paz es punto de reflexión sobre geografía y expansión urbana"
     ],
-    "mejor_horario": "Entre 9:00 y 16:00 horas",
-    "mundial_relevancia": "Conexión importante para turistas del Mundial 2026 que se alojan en municipios del Estado de México"
+    "mejor_horario": "9:00 a 17:00 para actividad comercial. Zona tranquila comparada con Centro.",
+    "mundial_relevancia": "Expansión metropolitana: punto final de línea A representa alcance moderno del Metro a zonas lejanas. Perspectiva sobre CDMX expandida."
   },
   {
     "slug": "buenavista",
@@ -5016,19 +5187,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Buenavista CDMX — Estación intermodal | MetroGuia",
-    "meta_description": "Buenavista: hub de transporte intermodal con Tren Suburbano y autobuses. Entrada norte a la CDMX para turistas del Mundial 2026.",
+    "seo_title": "Metro Buenavista CDMX — Hub intermodal",
+    "meta_description": "Buenavista: puerta intermodal del norte con Tren Suburbano, autobuses y Metro. Acceso rápido a Estadio Azteca y hoteles para turistas del Mundial 2026 que ",
     "h1": "Metro Buenavista: puerta intermodal al norte de la CDMX",
-    "intro": "Buenavista es una estación de transporte de máxima importancia: conecta el Tren Suburbano (que trae viajeros desde Cuautitlán en el Estado de México), autobuses de larga distancia y el Metro. Para turistas del Mundial 2026 que llegan desde otras ciudades, Buenavista es frecuentemente el primer contacto con el transporte público capitalino.",
-    "historia_icono": "El ícono de la Línea B (gris) representa la modernidad y la conexión de Buenavista como estación intermodal de clase mundial.",
+    "intro": "Buenavista es la puerta intermodal norte de la CDMX, conectando Tren Suburbano, autobuses de larga distancia y Metro en un solo hub. Para turistas del Mundial FIFA 2026 que llegan desde el extranjero, esta estación es el primer contacto con transporte público capitalino, ofreciendo acceso directo a hoteles, estadios y centros de convenciones. Su ubicación estratégica la convierte en nodo imprescindible para movilidad integrada.",
+    "historia_icono": "El ícono gris de la Línea B representa conectividad y modernidad de Buenavista como estación intermodal de clase mundial. Este símbolo refuerza el rol de convergencia donde tren, autobús y metro se integran para facilitar movilidad de turistas internacionales.",
     "tips": [
-      "Buenavista es FUNDAMENTAL para turistas del Mundial 2026: aquí se conectan el Tren Suburbano, autobuses y Metro",
-      "La estación puede estar muy concurrida; llega con tiempo",
-      "Acceso a la Central de Autobuses del Norte (CABN) para viajes a otras ciudades",
-      "Ambiente internacional por la llegada de viajeros desde toda México"
+      "Llega 15 minutos antes: hub muy concurrido en horas pico (7-9 AM, 5-7 PM); turistas necesitarán tiempo para orientarse",
+      "Tren Suburbano directo a Cuautitlán: ideal para viajeros del norte sin necesidad de cambios de transporte",
+      "Consigna de equipaje disponible: perfecta para turistas con maletas que necesitan guardarlas mientras exploran",
+      "Oficinas de información turística: solicita mapas del Metro, información sobre estadios del Mundial y rutas a hoteles",
+      "Cambio de divisas y cajeros automáticos: garantiza acceso a pesos mexicanos para gastos iniciales"
     ],
-    "mejor_horario": "Evita horas pico (7-9 AM, 5-7 PM) para mejor experiencia",
-    "mundial_relevancia": "CRÍTICA para turistas del Mundial 2026: conexión Tren Suburbano ↔ Metro ↔ Estadio Azteca"
+    "mejor_horario": "Visita entre 10 AM-12 PM o 2-4 PM para evitar aglomeraciones de trabajadores. Estos horarios permiten movimiento fluido y mejor acceso a servicios turísticos.",
+    "mundial_relevancia": "CRÍTICA para el Mundial FIFA 2026: conexión Tren Suburbano ↔ Metro permite acceso rápido a Estadio Azteca y hoteles del corredor norte."
   },
   {
     "slug": "guerrero",
@@ -5056,19 +5228,20 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Guerrero CDMX — Transferencia a Línea 3 | MetroGuia",
-    "meta_description": "Guerrero: estación comercial en el norte de la CDMX, conexión con Línea 3. Acceso a mercados y tiendas tradicionales.",
+    "seo_title": "Metro Guerrero — Centro artístico y cultural",
+    "meta_description": "Guerrero: galerías de arte contemporáneo, librerías independientes y restaurantes tradicionales. Centro artístico y bohemio vibrante en el Centro Histórico",
     "h1": "Metro Guerrero: comercio y transferencia en el centro norte",
-    "intro": "Guerrero es una estación comercial en el corazón del norte del Centro Histórico. Ofrece transferencia a la Línea 3 y acceso a mercados y zonas comerciales tradicionales. Es un punto estratégico para explorar el comercio capitalino.",
-    "historia_icono": "El ícono representa la conexión comercial y la importancia histórica del barrio de Guerrero como zona de mercadeo y comercio.",
+    "intro": "Guerrero es estación histórica de la Línea B en pleno Centro Histórico, conectando con barrio de tradición cultural donde galerías de arte, tiendas de antigüedades y calles peatonales confluyen. Para turistas del Mundial FIFA 2026, Guerrero ofrece acceso a zona artística vibrante con galeríascontempor neas, librerías independientes y restaurantes de cocina mexicana tradicional. La estación es puerta a arte y historia capitalina auténtica.",
+    "historia_icono": "El ícono gris de la Línea B representa la energía artística de Guerrero, zona donde muralistas, artistas plásticos y bohemios transformaron el barrio en epicentro cultural. Este símbolo evoca la creatividad sin límites que define a esta zona histórica.",
     "tips": [
-      "Transferencia importante a Línea 3",
-      "Zona comercial muy activa; espera movimiento",
-      "Acceso a mercados tradicionales y tiendas locales",
-      "Cuidado con pertenencias en horarios de máxima congestión"
+      "Galerías de arte en calles laterales: muchas gratuitas con obras de artistas mexicanos contemporáneos",
+      "Librerías independientes como Madero Libros: busca ediciones mexicanas, poesía y literatura independiente",
+      "Calle peatonal Madero: compra en tiendas de ropa, accesorios y artesanías directo de diseñadores locales",
+      "Come en restaurantes tradicionales: mole negro, chiles rellenos y pozole preparados por cocineras de barrio",
+      "Domingo de mercado: Avenida Madero con vendedores de arte, libros usados y artesanías locales"
     ],
-    "mejor_horario": "Entre 10:00 y 14:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial, pero buena para explorar Centro Histórico"
+    "mejor_horario": "Visita entre 11 AM-7 PM de martes a sábados cuando galerías y tiendas están activas. Domingos hay más vida callejera pero algunos lugares cierran.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en arte contemporáneo, literatura y vida bohemia encontrarán experiencia cultural auténtica cercana al Centro Histórico."
   },
   {
     "slug": "garibaldi-lagunilla",
@@ -5096,20 +5269,20 @@ const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Garibaldi/Lagunilla CDMX — Plaza de Mariachis y mercado | MetroGuia",
-    "meta_description": "Garibaldi/Lagunilla: estación icónica con Plaza Garibaldi (mariachis) y Mercado de Lagunilla. Cultura viva del Centro de la CDMX.",
+    "seo_title": "Metro Garibaldi/Lagunilla — Cultura mexicana",
+    "meta_description": "Garibaldi: Plaza histórica con mariachis en vivo, música folklórica auténtica y gastronomía mexicana tradicional. Entretenimiento cultural imprescindible p",
     "h1": "Metro Garibaldi/Lagunilla: corazón cultural de la CDMX",
-    "intro": "Garibaldi/Lagunilla es una estación cultural emblemática. Plaza Garibaldi es el epicentro mundial de los mariachis, mientras que el Mercado de Lagunilla ofrece artesanías, antigüedades y productos típicos mexicanos. Perfecta para turistas que desean sumergirse en la cultura mexicana auténtica.",
-    "historia_icono": "El ícono representa tanto la tradición de los mariachis como el espíritu mercantil de Lagunilla.",
+    "intro": "Garibaldi-Lagunilla abre las puertas a tradición mexicana pura: Plaza Garibaldi, donde mariachis, música folklórica y gastronomía centenaria confluyen en atmósfera vibrante. Para turistas del Mundial FIFA 2026, esta estación ofrece experiencia cultural genuina, combinando entretenimiento nocturno, artesanías y restaurantes con recetas transmitidas generacionalmente. Es lugar perfecto para sumergirse en identidad cultural mexicana después de disfrutar de un partido.",
+    "historia_icono": "El ícono gris de la Línea B representa convergencia de tradiciones: Garibaldi es símbolo de música folklórica mexicana donde generaciones de mariachis interpretan canciones del alma nacional. Este ícono evoca riqueza cultural que espera a turistas.",
     "tips": [
-      "Plaza Garibaldi es IMPRESCINDIBLE: aquí se encuentran los mejores mariachis de México",
-      "Los precios de los mariachis varían; negocia antes de contratar",
-      "Mercado de Lagunilla: abierto especialmente los domingos, ideal para artesanías",
-      "Zona con mucho carácter pero muy concurrida; cuida tus pertenencias",
-      "Mejor visitarlo por la tarde/noche cuando los mariachis están activos"
+      "Plaza Garibaldi abre después de 6 PM: vive experiencia auténtica de mariachis y bandas cuando cae el atardecer",
+      "Come tacos de barbacoa en El Torito o pulque tradicional en pulquerías centenarias para gastronomía auténtica",
+      "Domingos hay mercado de artesanías en Lagunilla: compra cerámica, textiles y arte mexicano directo de artesanos",
+      "Lleva efectivo: muchas cantinas y restaurantes tradicionales no aceptan tarjeta; cajeros disponibles cerca de estación",
+      "Evita andar solo después de 11 PM; mantente en zonas bien iluminadas de Garibaldi"
     ],
-    "mejor_horario": "18:00-23:00 para experiencia completa de Plaza Garibaldi",
-    "mundial_relevancia": "EXCELENTE para turistas del Mundial 2026: experiencia cultural auténtica de México"
+    "mejor_horario": "Visita Plaza Garibaldi de 6-10 PM para mariachis en vivo; domingos de 9 AM-2 PM para mercado de Lagunilla con mejor seguridad.",
+    "mundial_relevancia": "ALTA relevancia: turistas del Mundial buscarán experiencias mexicanas auténticas; Garibaldi es parada cultural imprescindible post-partido para entretenimiento."
   },
   {
     "slug": "lagunilla",
@@ -5135,19 +5308,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Lagunilla CDMX — Acceso al famoso mercado | MetroGuia",
-    "meta_description": "Lagunilla: estación que da acceso directo al Mercado de Lagunilla. Compra de artesanías, antigüedades y souvenirs mexicanos.",
+    "seo_title": "Metro Lagunilla — Mercado artesanal tradicional",
+    "meta_description": "Lagunilla: mercado histórico con artesanías mexicanas auténticas, ropa vintage y souvenirs únicos. Comercio directo de artesanos locales a precios justos.",
     "h1": "Metro Lagunilla: compra y comercio tradicional",
-    "intro": "La estación Lagunilla es el acceso directo al famoso mercado del mismo nombre, conocido por su oferta de artesanías, antigüedades, souvenirs y productos típicos mexicanos. Es especialmente popular los domingos cuando el mercado alcanza su máxima actividad.",
-    "historia_icono": "El ícono representa la vitalidad comercial y artesanal de Lagunilla, uno de los mercados más antiguos de la CDMX.",
+    "intro": "Lagunilla es corazón del comercio popular y artesanal de la CDMX, mercado que ha funcionado durante décadas vendiendo souvenirs auténticos. Para turistas del Mundial FIFA 2026 que buscan artesanías mexicanas, prendas vintage y objetos únicos a precios accesibles, Lagunilla ofrece experiencia de compra imposible en centros comerciales. La zona refleja energía, creatividad y espíritu emprendedor capitalino.",
+    "historia_icono": "El ícono gris de la Línea B simboliza conexión con corazón comercial y artesanal de la CDMX. Lagunilla destaca como mercado histórico donde generaciones de comerciantes vendieron productos únicos, representando accesibilidad y vitalidad económica.",
     "tips": [
-      "Mercado de Lagunilla: mejor el domingo cuando tiene máxima oferta",
-      "Ideal para comprar souvenirs, artesanías y antigüedades",
-      "Precios negociables en muchas tiendas",
-      "Zona muy concurrida; lleva mochilas seguras"
+      "Mercado de Lagunilla los domingos de 8 AM-3 PM: ropa vintage, discos de vinilo, libros antiguos y artesanías a precios bajos",
+      "Regatea siempre: vendedores esperan negociar; consigue descuentos de 20-30% preguntando por mejor precio",
+      "Desayuna tamales de rajas con queso en vendedores callejeros: desayuno tradicional que locales disfrutan por menos de 50 pesos",
+      "Lleva mochila pequeña y cierra bolsillos: mercado concurrido con actividad de carteristas ocasionales",
+      "Compra artesanías de Oaxaca (textiles, cerámica) y Guanajuato (alfarería): precios mayoristas ideales para regalos"
     ],
-    "mejor_horario": "10:00-14:00 los domingos para mayor variedad",
-    "mundial_relevancia": "Excelente para turistas del Mundial 2026 que buscan souvenirs y artesanías auténticas"
+    "mejor_horario": "Domingos de 8 AM-2 PM: máxima variedad de vendedores, precios competitivos y ambiente festivo sin congestión nocturna.",
+    "mundial_relevancia": "Relevancia media: turistas apreciarán compras de artesanías y souvenirs mexicanos; parada cultural valiosa para experiencia de compra auténtica."
   },
   {
     "slug": "tepito",
@@ -5173,20 +5347,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tepito CDMX — Tianguis y comercio mayorista | MetroGuia",
-    "meta_description": "Tepito: estación del legendario tianguis. Compra mayorista de ropa, electrónica y artículos diversos en la CDMX.",
+    "seo_title": "Metro Tepito — Barrio bohemio y comercial",
+    "meta_description": "Tepito: barrio bohemio con tiendas deportivas, ropa vintage, música en vivo y gastronomía tradicional mexicana. Pulso auténtico genuino de la Ciudad.",
     "h1": "Metro Tepito: el corazón del comercio mayorista capitalino",
-    "intro": "Tepito es famoso mundialmente por su tianguis, un mercado informal masivo donde se vende de todo: ropa, electrónica, artículos diversos. Es un ejemplo de la ingeniosidad y dinamismo del comercio informal mexicano, aunque requiere cuidado y experiencia para navegar de forma segura.",
-    "historia_icono": "El ícono representa el comercio dinámico y la resiliencia de Tepito como centro de comercio informal.",
+    "intro": "Tepito es barrio bravo de la CDMX con historia revolucionaria y carácter rebelde donde comercio, música y cultura popular confluyen en calles vibrantes. Para turistas del Mundial FIFA 2026 que deseen pulso auténtico de la ciudad más allá de zonas turísticas convencionales, Tepito ofrece tiendas especializadas, ropa deportiva, música en vivo en bares y atmósfera genuinamente capitalina. Es zona donde se siente corazón popular de la CDMX.",
+    "historia_icono": "El ícono gris de la Línea B representa resistencia y vitalidad de Tepito, barrio que reinventó constantemente su identidad manteniendo carácter bohemio y comercial. Este símbolo evoca creatividad sin límites que define a esta zona histórica.",
     "tips": [
-      "Tepito es famoso pero requiere precaución: mantén vigilancia sobre tus pertenencias",
-      "Ideal para compra de ropa, electrónica y artículos en cantidad/mayoreo",
-      "Precios muy competitivos si sabes negociar",
-      "Mejor visitarlo durante el día en horarios de menos aglomeración",
-      "No recomendado para turistas solos sin experiencia en zonas comerciales intensas"
+      "Compra ropa deportiva de marcas internacionales: Tepito es destino de aficionados buscando uniformes de equipos del Mundial a mejor precio",
+      "Bares con tocadas de música en vivo: La Perla Suiza y otros establecimientos ofrecen conciertos de bandas locales de acceso gratuito",
+      "Desayuna en Café de Tepito: café de olla y pan de muerto todo el año; experiencia revolucionaria y auténtica",
+      "Mercado de ropa usada y vintage: negocios venden prendas vintage, uniformes históricos y jeans de diseñador a fracción de precio",
+      "Seguridad: mantente en calles principales, evita andar solo de noche, no lleves accesorios de lujo visibles"
     ],
-    "mejor_horario": "10:00-14:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial; requiere experiencia en navegación urbana"
+    "mejor_horario": "Visita de 10 AM-6 PM entre lunes-viernes para movimiento comercial intenso pero controlado; evita fines de semana por aglomeración.",
+    "mundial_relevancia": "Relevancia media-alta: turistas buscarán artículos deportivos y uniformes; Tepito ofrece precios competitivos y experiencia auténtica de barrio popular."
   },
   {
     "slug": "morelos",
@@ -5209,18 +5383,20 @@ const estaciones = [
     "transferencias": [
       "4"
     ],
-    "seo_title": "Metro Morelos CDMX — Transferencia a Línea 4 | MetroGuia",
-    "meta_description": "Morelos: estación comercial en el Centro Norte, conexión con Línea 4. Acceso a zonas de comercio y servicios.",
+    "seo_title": "Metro Morelos — Historia prehispánica colonial",
+    "meta_description": "Morelos: Plaza Tres Culturas con arqueología prehispánica, iglesias coloniales históricas. Barrio histórico con patrimonio de tres culturas mexicanas.",
     "h1": "Metro Morelos: conexión comercial al norte del Centro",
-    "intro": "Morelos es una estación de transferencia importante a la Línea 4. Ubicada en el centro norte, ofrece acceso a zonas comerciales y de servicios, conectando el norte de la CDMX con otras áreas de la ciudad.",
-    "historia_icono": "El ícono representa la importancia de Morelos como conexión estratégica en el norte del Centro.",
+    "intro": "Morelos es estación que conecta barrio residencial histórico donde arquitectura colonial se mezcla con construcción moderna, zona de transición entre Centro y periferias norte. Para turistas del Mundial FIFA 2026 buscando explorar más allá de circuitos turísticos convencionales, Morelos ofrece acceso a museos comunitarios, iglesias coloniales, restaurantes de cocina local y vida auténtica de barrios capitalinos. Ideal para turistas que desean descubrir México profundo en la capital.",
+    "historia_icono": "El ícono gris de la Línea B evoca conexión de Morelos con memoria histórica del barrio, cuna de luchas sociales donde arquitectura colonial coexiste con construcción moderna. Este símbolo representa continuidad histórica de la CDMX.",
     "tips": [
-      "Transferencia importante a Línea 4",
-      "Zona comercial activa",
-      "Acceso a servicios diversos"
+      "Iglesia de Santiago de Tlatelolco: camina 800m para visitar templo colonial del siglo XVI con importancia arqueológica e histórica",
+      "Plaza Tres Culturas: descubre sitio arqueológico prehispánico, arquitectura colonial y construcción moderna contando la historia de México",
+      "Come en comedores locales: tacos, tortas y sopa de tortilla preparados por cocineras de barrio son mucho más económicos que zonas turísticas",
+      "Librerías de segunda mano: busca libros en español y ediciones agotadas; zona preferida por estudiantes e intelectuales",
+      "Lleva mapa o GPS: calles pueden resultar confusas para turistas sin orientación adecuada"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM de martes-sábados para museos abiertos y actividad comercial óptima; domingos más tranquilo pero algunos lugares cierran.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en historia colonial y arqueología encontrarán valor; conexión con Plaza Tres Culturas es atractivo cultural significativo."
   },
   {
     "slug": "san-lazaro",
@@ -5248,19 +5424,20 @@ const estaciones = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Metro San Lázaro CDMX — Estación de Ferrocarriles | MetroGuia",
-    "meta_description": "San Lázaro: estación intermodal histórica con Ferrocarriles Nacionales. Conexión con Línea 1 y transporte de larga distancia.",
+    "seo_title": "Metro San Lázaro — Terminal intermodal este",
+    "meta_description": "San Lázaro: Terminal Autobuses del Oriente, mercados locales vibr antes y vida de barrio. Puerta a zonas menos turísticas del oriente capitalino.",
     "h1": "Metro San Lázaro: puerta histórica al transporte nacional",
-    "intro": "San Lázaro es una estación intermodal histórica que conecta el Metro con la Estación de Ferrocarril de San Lázaro, operada por Ferrocarriles Nacionales de México. Aunque actualmente el servicio de trenes de pasajeros es limitado, sigue siendo un punto de importancia en la red de transporte metropolitano.",
-    "historia_icono": "El ícono representa la herencia ferroviaria de San Lázaro como puerta histórica al transporte nacional de México.",
+    "intro": "San Lázaro es estación de conexión importante conectando Centro Histórico con zonas este y sureste de la CDMX, ubicada cerca de Terminal de Autobuses del Oriente. Para turistas del Mundial FIFA 2026, San Lázaro ofrece acceso a zona de transporte intermodal, mercados locales, y puerta a exploraciones de barrios auténticos menos turísticos. Es punto de partida para viajeros que desean descubrir la CDMX desde perspectiva diferente.",
+    "historia_icono": "El ícono gris de la Línea B representa conectividad de San Lázaro como estación terminal y de transbordo, histórica importancia como punto de distribución hacia oriente. Este símbolo evoca movimiento y conexión continua.",
     "tips": [
-      "San Lázaro es una estación histórica con conexión a Ferrocarriles Nacionales",
-      "Transferencia a Línea 1 disponible",
-      "Zona industrial y de transporte de carga",
-      "Ambiente histórico de la CDMX"
+      "Terminal de Autobuses del Oriente (TAPO): acceso a autobuses hacia Veracruz, Puebla y destinos del oriente de México",
+      "Mercado de comida rápida en TAPO: tamales, quesadillas y café preparados por vendedores de barrio a precios de mercado local",
+      "Museo del Ferrocarril cercano: acceso a historia ferroviaria de México con locomotoras históricas y artefactos de época",
+      "Zona residencial tranquila: si necesitas alejarte del caos turístico, barrios cercanos ofrecen vida cotidiana genuina",
+      "Seguridad: mantente cerca de estación y mercado principal; lleva dirección en español para taxi si necesitas orientación"
     ],
-    "mejor_horario": "Entre 9:00 y 16:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial, pero de interés histórico para turistas"
+    "mejor_horario": "Visita de 9 AM-6 PM para actividad de mercados y servicios en operación. Evita de noche cuando zona se vuelve más tranquila.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en transporte intermodal y vida de barrio auténtica encontrarán acceso a zonas menos turísticas del oriente."
   },
   {
     "slug": "ricardo-flores-magon",
@@ -5281,18 +5458,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ricardo Flores Magón CDMX — Estación histórica | MetroGuia",
-    "meta_description": "Ricardo Flores Magón: estación que honra al anarquista mexicano. Línea B en Venustiano Carranza.",
+    "seo_title": "Metro Flores Magón — La Merced histórico",
+    "meta_description": "Flores Magón: La Merced mercado mayorista más grande de México con frutas exóticas. Flores frescas y gastronomía auténtica del mercado tradicional.",
     "h1": "Metro Ricardo Flores Magón: homenaje a un revolucionario",
-    "intro": "Ricardo Flores Magón lleva el nombre del anarquista mexicano que fue pionero de la Revolución Mexicana. Esta estación de la Línea B conecta con zonas residenciales de Venustiano Carranza y representa el compromiso de la CDMX con la memoria histórica.",
-    "historia_icono": "El ícono honra la memoria de Ricardo Flores Magón, uno de los grandes pensadores de la Revolución Mexicana.",
+    "intro": "Ricardo Flores Magón es estación que abre puertas a La Merced, mercado más grande de la CDMX y centro de distribución de alimentos desde hace siglos. Para turistas del Mundial FIFA 2026, esta estación ofrece experiencia inmersiva del comercio mayorista mexicano: colores vibrantes, aromas intensos de frutas y flores frescas, energía pura del mercado que alimenta a millones. Experiencia sensorial y gastronómica única que pocos turistas descubren.",
+    "historia_icono": "El ícono gris de la Línea B simboliza abundancia y vitalidad comercial de Flores Magón, conectando con La Merced, mercado icónico donde vendedores distribuyeron alimentos del país durante generaciones. Símbolo representa flujo constante de productos que sostienen la ciudad.",
     "tips": [
-      "Reflexiona sobre la importancia histórica de Ricardo Flores Magón",
-      "Zona residencial de Venustiano Carranza",
-      "Acceso a servicios locales"
+      "La Merced abre desde las 4 AM: madruga para vivir experiencia auténtica de vendedores mayoristas comprando frutas y verduras directamente",
+      "Desayuna en La Merced: café con pan dulce en cafeterías informales; desayuno de trabajadores cuesta menos de 100 pesos",
+      "Compra frutas y verduras exóticas: nopales, chayotes, zapotes y otras frutas mexicanas a precios de mayorista imposibles en supermercados",
+      "Toma fotografías discretamente: algunos vendedores prefieren no ser fotografiados; respeta espacios de trabajo y negocios",
+      "Lleva efectivo: La Merced es zona de comercio tradicional donde tarjetas son raras; múltiples cajeros en estación"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Madruga 5-8 AM para experiencia auténtica en plena actividad; después de 10 AM es más tranquilo pero menos vibrante.",
+    "mundial_relevancia": "Relevancia media-alta: turistas interesados en gastronomía, mercados tradicionales y cocina mexicana auténtica encontrarán valor excepcional en La Merced."
   },
   {
     "slug": "romero-rubio",
@@ -5313,18 +5492,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Romero Rubio CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Romero Rubio: estación residencial de la Línea B en Venustiano Carranza. Zona auténtica de la CDMX.",
+    "seo_title": "Metro Romero Rubio — Historia y arqueología",
+    "meta_description": "Romero Rubio: acceso directo a Plaza Tres Culturas con arqueología prehispánica. Iglesias coloniales e historia de las tres culturas mexicanas.",
     "h1": "Metro Romero Rubio: vida residencial de Venustiano Carranza",
-    "intro": "Romero Rubio es una estación residencial de la Línea B en Venustiano Carranza. Ofrece acceso a barrios residenciales tradicionales de la zona oriental de la CDMX.",
-    "historia_icono": "El ícono representa la continuidad urbana y residencial de la Línea B hacia el oriente.",
+    "intro": "Romero Rubio conecta barrio residencial e histórico de Morelos, zona de transición entre Centro Histórico y periferias norte de la CDMX. Para turistas del Mundial FIFA 2026 que buscan explorar más allá de circuitos turísticos convencionales, Romero Rubio ofrece acceso a museos comunitarios, iglesias coloniales, restaurantes de cocina local y vida auténtica de barrios capitalinos. Punto de partida ideal para turistas que desean descubrir México profundo en la capital.",
+    "historia_icono": "El ícono gris de la Línea B evoca conexión de Romero Rubio con memoria histórica, barrio cuna de luchas sociales donde arquitectura colonial se mezcla con construcción moderna. Este símbolo representa continuidad histórica de la CDMX.",
     "tips": [
-      "Zona residencial auténtica",
-      "Acceso a comercio local",
-      "Menos turismo que estaciones centrales"
+      "Iglesia de Santiago de Tlatelolco: camina 800m para visitar templo colonial del siglo XVI con importancia arqueológica",
+      "Plaza Tres Culturas: descubre sitio arqueológico, arquitectura colonial y construcción moderna contando historia de México en un lugar",
+      "Come en comedores locales: tacos, tortas y sopa de tortilla preparados por cocineras de barrio son económicos y auténticos",
+      "Librerías de segunda mano: busca libros en español y ediciones agotadas; zona de estudiantes e intelectuales",
+      "Seguridad: Romero Rubio es tranquilo pero residencial; lleva mapa o GPS para orientación adecuada"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM de martes-sábados para museos abiertos; domingos es más tranquilo pero algunos lugares cierran.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en historia colonial y arqueología encontrarán valor; conexión con Plaza Tres Culturas es atractivo cultural."
   },
   {
     "slug": "oceania",
@@ -5347,18 +5528,20 @@ const estaciones = [
     "transferencias": [
       "5"
     ],
-    "seo_title": "Metro Oceanía CDMX — Transferencia a Línea 5 | MetroGuia",
-    "meta_description": "Oceanía: estación residencial con conexión a Línea 5. Zona auténtica de Venustiano Carranza.",
+    "seo_title": "Metro Oceanía — Barrio residencial y comercial",
+    "meta_description": "Oceanía: mercados locales auténticos, gastronomía casera mexicana tradicional, vida cotidiana. Experiencia genuina del norte capitalino.    ",
     "h1": "Metro Oceanía: conexión al oriente de la CDMX",
-    "intro": "Oceanía es una estación residencial con transferencia a la Línea 5. Ofrece acceso a zonas residenciales del oriente de Venustiano Carranza y representa un nodo importante en la red de transporte.",
-    "historia_icono": "El ícono representa la continuidad y conexión de la Línea B hacia el oriente.",
+    "intro": "Oceanía es estación de la Línea B en zona norte residencial y comercial, conectando comunidades del oriente capitalino con el Centro. Para turistas del Mundial FIFA 2026 que deseen experimentar vida auténtica de barrio capitalino más allá de zonas turísticas, Oceanía ofrece acceso a mercados locales, tiendas de comercio informal, restaurantes de comida casera y la cotidianidad genuina de los habitantes. Es parada secundaria pero valiosa para exploradores curiosos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Oceanía con comunidades del norte capitalino, zona donde comercio informal y vida residencial convergen. Este símbolo evoca inclusión y equidad en movilidad de las periferias.",
     "tips": [
-      "Transferencia importante a Línea 5",
-      "Zona residencial",
-      "Acceso a servicios locales"
+      "Mercado local de Oceanía: compra frutas, verduras y productos frescos a precios locales, no turísticos",
+      "Comedores de mercado: tortas ahogadas, tamales y pozole preparados por cocineras de barrio; relación calidad-precio excelente",
+      "Tiendas informales: ropa, zapatos y artículos prácticos a fracción de precio de tiendas departamentales",
+      "Ambiente seguro: zona residencial tranquila pero poco turística; lleva efectivo y dirección escrita en español",
+      "Evita tarjetas de crédito: comercio es principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM de lunes-viernes cuando mercados están activos pero sin congestión de fin de semana.",
+    "mundial_relevancia": "Relevancia baja: turistas especializados interesados en vida de barrio auténtica y mercados locales encontrarán experiencia genuina."
   },
   {
     "slug": "aragon",
@@ -5379,18 +5562,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Aragón CDMX — Estación de Gustavo A. Madero | MetroGuia",
-    "meta_description": "Aragón: estación residencial de la Línea B en Gustavo A. Madero. Acceso al norte de la CDMX.",
+    "seo_title": "Metro Aragón — Barrio comercial noreste",
+    "meta_description": "Aragón: mercados locales activos, tiendas de comercio informal y gastronomía casera mexicana. Vida auténtica del barrio comercial noreste.  ",
     "h1": "Metro Aragón: entrada al norte de la CDMX",
-    "intro": "Aragón es una estación residencial que marca la entrada a Gustavo A. Madero, una de las delegaciones más grandes de la CDMX. Representa el cambio geográfico de la Línea B hacia el norte.",
-    "historia_icono": "El ícono representa el flujo hacia el norte de la ciudad.",
+    "intro": "Aragón es estación de la Línea B en zona comercial y residencial del noreste capitalino, conectando comunidades del oriente con red metropolitana. Para turistas del Mundial FIFA 2026 que busquen explorar autenticidad de barrios menos turísticos, Aragón ofrece acceso a mercados locales, tiendas de comercio informal, gastronomía casera y vida cotidiana de capitalinos residentes. Es parada para exploradores que desean alejarse de circuitos convencionales.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Aragón con zona comercial del noreste, donde economía informal y vida residencial convergen. Este símbolo evoca movilidad equitativa de comunidades menos privilegiadas.",
     "tips": [
-      "Zona residencial de Gustavo A. Madero",
-      "Acceso a servicios locales",
-      "Punto de entrada a la delegación GAM"
+      "Mercado de Aragón: frutas, verduras y productos locales a precios de comercio de barrio",
+      "Comedores económicos: desayunos completos, comidas y cenas a precios accesibles para residentes locales",
+      "Tiendas de ropa y zapatos: comercio informal de prendas nuevas y de temporada a precios inferiores a centros comerciales",
+      "Caja de ahorros y servicios financieros locales: acceso a cambio de divisas si lo necesitas",
+      "Mantente en zonas principales: es barrio tranquilo pero residencial; lleva GPS para orientación"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 10 AM-4 PM de martes-viernes para actividad comercial óptima sin aglomeración de fin de semana.",
+    "mundial_relevancia": "Relevancia baja: turistas muy específicos interesados en vida auténtica de barrio y mercados locales encontrarán experiencia genuina."
   },
   {
     "slug": "villa-de-aragon",
@@ -5411,18 +5596,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Villa de Aragón CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Villa de Aragón: estación residencial de la Línea B en Gustavo A. Madero. Barrios auténticos del norte de la CDMX.",
+    "seo_title": "Metro Villa de Aragón — Zona residencial",
+    "meta_description": "Villa de Aragón: mercados locales amplios, vida cotidiana de barrio residencial popular. Experiencia auténtica del noreste capitalino genuino.",
     "h1": "Metro Villa de Aragón: vida residencial del norte",
-    "intro": "Villa de Aragón es una estación residencial en Gustavo A. Madero que continúa la penetración de la Línea B hacia el norte. Ofrece acceso a zonas residenciales densamente pobladas.",
-    "historia_icono": "El ícono representa la continuidad residencial de la Línea B.",
+    "intro": "Villa de Aragón es estación de la Línea B en zona residencial densa del noreste capitalino, conectando amplias comunidades con red de Metro. Para turistas del Mundial FIFA 2026 que deseen conocer vida cotidiana de barrios menos turísticos, Villa de Aragón ofrece mercados locales, tiendas de comercio informal, restaurantes de comida casera y la atmósfera genuina de capitalinos residentes. Es parada secundaria pero auténtica para exploradores curiosos.",
+    "historia_icono": "El ícono gris de la Línea B simboliza conexión de Villa de Aragón con amplias comunidades residenciales, zona donde vida familiar y comercio informal convergen. Este símbolo evoca equidad en acceso a transporte público.",
     "tips": [
-      "Zona residencial auténtica",
-      "Acceso a comercio local",
-      "Ambiente de barrio tradicional"
+      "Mercado local amplio: frutas, verduras, carnes y productos frescos a precios de mayorista",
+      "Papelerías y tiendas de uniformes escolares: servicios locales útiles para necesidades básicas",
+      "Comedores de mercado: desayunos, comidas y cenas a precios de barrio accesibles",
+      "Farmacias locales con servicios de farmacéutico: si necesitas medicinas, disponibles sin receta médica",
+      "Seguridad: zona residencial tranquila pero poco turística; mantente en comercios principales"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial; evita fin de semana cuando es más tranquilo.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos turísticos específicos; solo recomendada para exploradores muy específicos buscando vida cotidiana."
   },
   {
     "slug": "bosque-de-aragon",
@@ -5443,18 +5630,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Bosque de Aragón CDMX — Estación verde del norte | MetroGuia",
-    "meta_description": "Bosque de Aragón: estación con acceso a espacios verdes. Línea B en Gustavo A. Madero.",
+    "seo_title": "Metro Bosque de Aragón — Parque y zona verde",
+    "meta_description": "Bosque de Aragón: parque verde del noreste con ciclovías y mercados locales activos. Naturaleza urbana y vida de barrio en la CDMX.         ",
     "h1": "Metro Bosque de Aragón: naturaleza en el norte",
-    "intro": "Bosque de Aragón ofrece acceso a espacios verdes en el norte de la CDMX. La estación conecta con zonas residenciales y áreas de recreación, ofreciendo un respiro natural en el entorno urbano.",
-    "historia_icono": "El ícono representa los espacios verdes y la naturaleza como parte integral del norte de la ciudad.",
+    "intro": "Bosque de Aragón es estación de la Línea B cerca del Parque Bosque de Aragón, zona verde del noreste capitalino con espacios de recreo y mercados locales. Para turistas del Mundial FIFA 2026 que deseen combinar naturaleza con vida auténtica de barrio, Bosque de Aragón ofrece acceso a parque verde, mercados de comercio informal y la atmósfera cotidiana de capitalinos residentes. Es parada para exploradores que buscan ecosistemas urbanos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Bosque de Aragón con naturaleza urbana, zona donde parque verde y vida residencial convergen. Este símbolo evoca equidad en acceso a espacios recreativos de la ciudad.",
     "tips": [
-      "Acceso a bosques y áreas verdes",
-      "Ideal para actividades recreativas",
-      "Zona residencial con espacios naturales"
+      "Parque Bosque de Aragón: espacio verde con ciclovías, juegos infantiles y áreas de descanso; ideal para escapar del caos urbano",
+      "Mercado local: frutas, verduras y productos locales a precios de barrio",
+      "Tiendas de material deportivo: ropa y equipo para actividades al aire libre a precios bajos",
+      "Restaurantes informales: comidas caseras en ambiente de familiares capitalinos",
+      "Seguridad: parque y zona tranquila pero poco turística; evita andar solo al atardecer"
     ],
-    "mejor_horario": "Mañana (7:00-11:00) para disfrutar naturaleza",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM de martes-viernes para actividad comercial óptima; domingos el parque tiene más visitantes locales.",
+    "mundial_relevancia": "Relevancia baja: zona residencial con parque; turistas específicos interesados en naturaleza urbana encontrarán valor."
   },
   {
     "slug": "ciudad-deportiva",
@@ -5480,19 +5669,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ciudad Deportiva CDMX — Complejos deportivos | MetroGuia",
-    "meta_description": "Ciudad Deportiva: estación con acceso a complejos deportivos. Línea B en Iztacalco.",
+    "seo_title": "Metro Ciudad Deportiva — Infraestructura deportiva",
+    "meta_description": "Ciudad Deportiva: complejo deportivo comunitario con mercados y vida auténtica. Infraestructura deportiva activa en barrio del oriente.     ",
     "h1": "Metro Ciudad Deportiva: centro de entrenamiento capitalino",
-    "intro": "Ciudad Deportiva es una estación que conecta con complejos deportivos y instalaciones de entrenamiento de la CDMX. Aunque no es el Estadio Azteca (que está en Coyoacán), ofrece acceso a varias sedes deportivas importantes.",
-    "historia_icono": "El ícono representa el deporte y la excelencia atlética.",
+    "intro": "Ciudad Deportiva es estación de la Línea B cerca de complejo deportivo del oriente capitalino, zona con instalaciones recreativas y vida de barrio comercial. Para turistas del Mundial FIFA 2026 que deseen conocer infraestructura deportiva de barrio y vida auténtica, Ciudad Deportiva ofrece acceso a campos y canchas, mercados locales y la atmósfera cotidiana de capitalinos. Es parada para aficionados al deporte interesados en vida de barrio.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Ciudad Deportiva con infraestructura deportiva comunitaria, zona donde deporte y vida residencial convergen. Este símbolo evoca acceso equitativo a instalaciones recreativas.",
     "tips": [
-      "Acceso a instalaciones deportivas",
-      "Centro de entrenamiento de atletas mexicanos",
-      "Zona de interés para aficionados al deporte",
-      "Nota: el Estadio Azteca (Estadio de las Águilas del América) está en Coyoacán, accesible por otras líneas"
+      "Complejo deportivo: canchas de fútbol, basquetbol y otras instalaciones abiertas al público; requiere inscripción o pago de acceso",
+      "Mercado local de comida: alimentos frescos y comidas rápidas a precios de barrio",
+      "Tiendas de artículos deportivos: equipamiento para deportes a precios locales",
+      "Ambiente deportivo: si eres aficionado a deportes, te encontrarás en zona con vida deportiva activa",
+      "Llevar efectivo: comercio principalmente en efectivo en zona residencial"
     ],
-    "mejor_horario": "Cualquier hora para explorar instalaciones deportivas",
-    "mundial_relevancia": "Interés para turistas del Mundial 2026 interesados en infraestructura deportiva mexicana"
+    "mejor_horario": "Visita de 9 AM-6 PM entre semana para actividad comercial; sábados-domingos mayor actividad deportiva comunitaria.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en infraestructura deportiva comunitaria y vida de barrio encontrarán experiencia auténtica."
   },
   {
     "slug": "deportivo-oceania",
@@ -5513,18 +5703,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Deportivo Oceanía CDMX — Estación deportiva | MetroGuia",
-    "meta_description": "Deportivo Oceanía: estación residencial con acceso a instalaciones deportivas. Línea B.",
+    "seo_title": "Metro Deportivo Oceanía — Complejo deportivo",
+    "meta_description": "Deportivo Oceanía: instalaciones deportivas comunitarias y mercados locales vibr antes. Vida de barrio del oriente capitalino.              ",
     "h1": "Metro Deportivo Oceanía: deporte y residencia",
-    "intro": "Deportivo Oceanía ofrece acceso a instalaciones deportivas y zonas residenciales. Es un punto ideal para quienes buscan actividades físicas en un entorno urbano.",
-    "historia_icono": "El ícono representa la combinación de deporte y vida residencial.",
+    "intro": "Deportivo Oceanía es estación de la Línea B cerca de complejo deportivo del oriente, zona con instalaciones recreativas y vida comercial de barrio. Para turistas del Mundial FIFA 2026 que deseen experimentar infraestructura deportiva comunitaria y autenticidad de barrio, Deportivo Oceanía ofrece acceso a campos deportivos, mercados locales y atmósfera cotidiana de capitalinos. Es parada para deportistas curiosos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Deportivo Oceanía con vida deportiva comunitaria, zona donde instalaciones recreativas y comercio informal convergen. Este símbolo evoca acceso equitativo a deporte y recreación.",
     "tips": [
-      "Acceso a instalaciones deportivas",
-      "Zona residencial",
-      "Ideal para actividades recreativas"
+      "Complejo deportivo acceso público: verifica horarios y tarifas para usar instalaciones de fútbol, basquetbol u otro deporte",
+      "Mercado local: frutas, verduras y comidas rápidas a precios de barrio",
+      "Tiendas de ropa deportiva: equipo para deporte a precios bajos",
+      "Ambiente de familias locales: fin de semana mucha actividad recreativa comunitaria",
+      "Mantente en zonas principales: es barrio tranquilo pero residencial"
     ],
-    "mejor_horario": "Mañana para actividades deportivas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-6 PM entre semana; sábados-domingos mayor actividad deportiva y familiar.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en deporte comunitario y vida de barrio encontrarán experiencia auténtica."
   },
   {
     "slug": "nezahualcoyotl",
@@ -5545,18 +5737,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Nezahualcóyotl CDMX — Estación en Estado de México | MetroGuia",
-    "meta_description": "Nezahualcóyotl: estación de la Línea B en el Estado de México. Acceso al municipio conurbado más poblado.",
+    "seo_title": "Metro Nezahualcóyotl — Zona residencial noreste",
+    "meta_description": "Nezahualcóyotl: mercados locales vibrantes, vida cotidiana de barrio popular del norte. Experiencia auténtica del noreste capitalino genuino.",
     "h1": "Metro Nezahualcóyotl: puerta al Estado de México",
-    "intro": "Nezahualcóyotl es una estación que marca la transición de la Línea B hacia el Estado de México. Aunque está fuera de los límites de la CDMX, forma parte integral del Sistema de Transporte Metropolitano y conecta con el municipio más poblado de la entidad.",
-    "historia_icono": "El ícono marca la entrada a la Línea B al Estado de México, símbolo de expansión metropolitana.",
+    "intro": "Nezahualcóyotl es estación de la Línea B en zona residencial densa del noreste, conectando amplias comunidades con la red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer vida cotidiana de barrios populares del noreste, Nezahualcóyotl ofrece mercados locales vibrantes, tiendas de comercio informal, gastronomía casera y la atmósfera genuina de capitalinos residentes. Es parada secundaria pero auténtica.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Nezahualcóyotl con amplias comunidades del noreste, zona donde vida residencial y comercio informal convergen. Este símbolo evoca equidad en acceso a transporte.",
     "tips": [
-      "Estación en el Estado de México, no en la CDMX",
-      "Acceso al municipio de Nezahualcóyotl",
-      "Importante hub para viajeros desde EdoMex"
+      "Mercado local extenso: frutas, verduras, carnes y productos frescos a precios de mayorista local",
+      "Desayunos de barrio: quesadillas, tamales y café a precios accesibles para residentes",
+      "Tiendas de uniformes escolares y papelerías: servicios prácticos para necesidades básicas",
+      "Pharmacias de barrio: medicinas disponibles sin receta médica a precios locales",
+      "Seguridad: zona residencial tranquila pero poco turística; mantente en comercios principales"
     ],
-    "mejor_horario": "Entre 9:00 y 17:00 horas",
-    "mundial_relevancia": "Conexión importante para turistas del Mundial 2026 alojados en el Estado de México"
+    "mejor_horario": "Visita de 8 AM-5 PM entre semana para actividad comercial óptima sin aglomeración.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos; solo para exploradores muy específicos."
   },
   {
     "slug": "impulsora",
@@ -5577,18 +5771,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Impulsora — Estación en Ecatepec | MetroGuia",
-    "meta_description": "Impulsora: estación de la Línea B en Ecatepec, Estado de México. Entrada a zonas residenciales.",
+    "seo_title": "Metro Impulsora — Zona residencial",
+    "meta_description": "Impulsora: mercados locales auténticos, vida cotidiana de barrio residencial del norte. Experiencia genuina del noreste capitalino.         ",
     "h1": "Metro Impulsora: acceso a Ecatepec",
-    "intro": "Impulsora es una estación de la Línea B en Ecatepec, Estado de México. Conecta con zonas residenciales y comerciales del municipio más poblado del Estado de México.",
-    "historia_icono": "El ícono representa el impulso y continuidad de la Línea B hacia el norte del Estado de México.",
+    "intro": "Impulsora es estación de la Línea B en zona residencial del noreste, conectando comunidades con la red de Metro. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios menos turísticos, Impulsora ofrece mercados locales, tiendas de comercio informal y la atmósfera cotidiana de capitalinos residentes. Es parada secundaria para exploradores curiosos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Impulsora con comunidades residenciales del noreste, zona donde vida cotidiana y comercio convergen. Este símbolo evoca movilidad equitativa.",
     "tips": [
-      "Estación en Ecatepec, Estado de México",
-      "Acceso a zonas residenciales",
-      "Conexión importante hacia Ecatepec"
+      "Mercado local: productos frescos y alimentos a precios de barrio",
+      "Comedores informales: desayunos y comidas caseras a precios accesibles",
+      "Tiendas de ropa y accesorios: comercio informal con precios bajos",
+      "Farmacias locales: medicinas y servicios de farmacéutico disponibles",
+      "Lleva efectivo: zona de comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 9:00 y 17:00 horas",
-    "mundial_relevancia": "Conexión importante para turistas alojados en Ecatepec"
+    "mejor_horario": "Visita de 9 AM-4 PM entre semana para actividad comercial sin aglomeración.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "rio-de-los-remedios",
@@ -5609,18 +5805,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Río de los Remedios — Ecatepec, Estado de México | MetroGuia",
-    "meta_description": "Río de los Remedios: estación de la Línea B en Ecatepec. Acceso a espacios naturales.",
+    "seo_title": "Metro Río de los Remedios — Zona residencial",
+    "meta_description": "Río de los Remedios: mercados locales, vida cotidiana de barrio auténtico. Experiencia genuina del oriente capitalino fuera de circuitos.   ",
     "h1": "Metro Río de los Remedios: naturaleza en Ecatepec",
-    "intro": "Río de los Remedios ofrece acceso a un río importante de la región y zonas residenciales de Ecatepec. Representa un punto de conexión entre la infraestructura urbana y los recursos naturales del Estado de México.",
-    "historia_icono": "El ícono representa los recursos hídricos y naturales del norte del área metropolitana.",
+    "intro": "Río de los Remedios es estación de la Línea B en zona residencial del oriente, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios menos convencionales, Río de los Remedios ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Río de los Remedios con comunidades del oriente, zona donde naturaleza local y vida residencial convergen. Este símbolo evoca equidad en movilidad.",
     "tips": [
-      "Acceso al Río de los Remedios",
-      "Zona residencial de Ecatepec",
-      "Interés ambiental"
+      "Mercado local: frutas, verduras y productos frescos a precios locales",
+      "Tiendas de comercio informal: ropa, zapatos y artículos prácticos a precios bajos",
+      "Comedores de barrio: desayunos y comidas caseras a precios accesibles",
+      "Servicios locales: farmacias, panaderías y abarroterías de barrio",
+      "Mantente en zonas principales: es tranquilo pero poco turístico"
     ],
-    "mejor_horario": "Mañana para disfrutar espacios naturales",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos turísticos específicos."
   },
   {
     "slug": "muzquiz",
@@ -5641,18 +5839,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Múzquiz — Ecatepec, Estado de México | MetroGuia",
-    "meta_description": "Múzquiz: estación residencial de la Línea B en Ecatepec. Acceso a barrios del norte.",
+    "seo_title": "Metro Múzquiz — Zona residencial oriente",
+    "meta_description": "Múzquiz: mercados locales auténticos, vida cotidiana de barrio residencial del oriente. Experiencia genuina para exploradores dedicados.    ",
     "h1": "Metro Múzquiz: vida residencial del norte",
-    "intro": "Múzquiz es una estación residencial en Ecatepec que continúa la penetración de la Línea B hacia el norte del Estado de México.",
-    "historia_icono": "El ícono representa la continuidad residencial hacia el norte.",
+    "intro": "Múzquiz es estación de la Línea B en zona residencial del oriente, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer autenticidad de barrios residenciales, Múzquiz ofrece mercados locales, tiendas de comercio informal y la vida cotidiana de capitalinos residentes. Es parada para exploradores interesados en barrios genuinos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Múzquiz con comunidades del oriente, zona donde vida residencial y comercio informal convergen. Este símbolo evoca equidad en transporte.",
     "tips": [
-      "Zona residencial",
-      "Acceso a comercio local",
-      "Ambiente de barrio"
+      "Mercado local: productos frescos a precios de barrio",
+      "Tiendas informales: ropa y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Farmacias y servicios locales: disponibles sin necesidad de desplazarse",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 9:00 y 17:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "olimpica",
@@ -5673,18 +5873,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Olímpica — Ecatepec, Estado de México | MetroGuia",
-    "meta_description": "Olímpica: estación residencial de la Línea B. Penúltima estación antes del terminus.",
+    "seo_title": "Metro Olímpica — Legado olímpico deportivo",
+    "meta_description": "Olímpica: instalaciones deportivas históricas y mercados locales vibrantes del oriente. Legado de Juegos Olímpicos en la CDMX.              ",
     "h1": "Metro Olímpica: antesala a Ciudad Azteca",
-    "intro": "Olímpica es una estación residencial que marca casi el final de la Línea B en Ecatepec, Estado de México.",
-    "historia_icono": "El ícono representa el espíritu olímpico y la excelencia.",
+    "intro": "Olímpica es estación de la Línea B en zona donde infraestructura deportiva histórica converge con vida residencial del oriente capitalino. Para turistas del Mundial FIFA 2026 que deseen conocer legado olímpico y vida de barrio, Olímpica ofrece acceso a instalaciones deportivas, mercados locales y atmósfera cotidiana de capitalinos. Es parada para aficionados al deporte interesados en historia olímpica.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Olímpica con infraestructura deportiva histórica de CDMX, zona donde legado de Juegos Olímpicos y vida residencial convergen. Este símbolo evoca excelencia deportiva comunitaria.",
     "tips": [
-      "Zona residencial",
-      "Penúltima estación de la Línea B",
-      "Acceso a servicios locales"
+      "Instalaciones olímpicas históricas: verifica qué complejos están abiertos al público y horarios de acceso",
+      "Mercado local: frutas, verduras y comidas rápidas a precios de barrio",
+      "Tiendas de artículos deportivos: equipo para deporte a precios locales",
+      "Ambiente deportivo: si buscas vida de barrio con influencia deportiva, lo encontrarás aquí",
+      "Seguridad: zona tranquila pero poco turística"
     ],
-    "mejor_horario": "Entre 9:00 y 17:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial; sábados-domingos actividad deportiva.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en legado olímpico e historia deportiva de México encontrarán valor."
   },
   {
     "slug": "ciudad-azteca",
@@ -5705,19 +5907,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ciudad Azteca CDMX — Terminal de Línea B | MetroGuia",
-    "meta_description": "Ciudad Azteca: terminus de la Línea B en Ecatepec, Estado de México. Final de la línea gris.",
+    "seo_title": "Metro Ciudad Azteca — Legado prehispánico",
+    "meta_description": "Ciudad Azteca: mercados locales auténticos, vida de barrio y legado prehispánico. Experiencia genuina del noreste capitalino.               ",
     "h1": "Metro Ciudad Azteca: terminus del norte metropolitano",
-    "intro": "Ciudad Azteca es el terminus de la Línea B, ubicado en Ecatepec, Estado de México. Aunque está fuera de los límites de la CDMX, forma parte integral del Sistema de Transporte Metropolitano. Representa el punto más septentrional de la Línea B y es un importante hub para residentes y viajeros del norte del área metropolitana.",
-    "historia_icono": "El ícono marca el final de la Línea B y representa la expansión del Metro hacia el norte del Estado de México.",
+    "intro": "Ciudad Azteca es estación de la Línea B en zona residencial del noreste, conectando comunidades amplias con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios residenciales populares, Ciudad Azteca ofrece mercados locales vibrantes, tiendas de comercio informal y la vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono gris de la Línea B representa conexión de Ciudad Azteca con legado prehispánico y comunidades modernas del noreste, zona donde raíces históricas y vida residencial convergen. Este símbolo evoca continuidad de civilización mexicana.",
     "tips": [
-      "Ciudad Azteca está en Ecatepec, Estado de México, no en la CDMX",
-      "Es el terminus de la Línea B",
-      "Hub importante para transporte al norte del área metropolitana",
-      "Acceso a zonas residenciales de Ecatepec"
+      "Mercado local extenso: frutas, verduras, carnes y productos frescos a precios de mayorista local",
+      "Desayunos de barrio: quesadillas, tamales y café a precios accesibles",
+      "Tiendas de ropa y zapatos: comercio informal a precios bajos",
+      "Servicios locales: farmacias, panaderías y tiendas de necesidades básicas",
+      "Mantente en comercios principales: zona tranquila pero residencial"
     ],
-    "mejor_horario": "Entre 9:00 y 17:00 horas",
-    "mundial_relevancia": "Conexión importante para turistas del Mundial 2026 alojados en el norte del Estado de México"
+    "mejor_horario": "Visita de 8 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos; solo para exploradores muy dedicados."
   },
   {
     "slug": "mixcoac",
@@ -5740,18 +5943,20 @@ const estaciones = [
     "transferencias": [
       "7"
     ],
-    "seo_title": "Metro Mixcoac CDMX — Inicio de Línea 12 | MetroGuia",
-    "meta_description": "Mixcoac: terminus de la Línea 12, conexión con Línea 7. Zona residencial de Benito Juárez.",
+    "seo_title": "Metro Mixcoac — Arte y diseño contemporáneo",
+    "meta_description": "Mixcoac: galerías de arte contemporáneo, cafeterías de especialidad y restaurantes vanguardistas. Diseño mexicano moderno en barrio creativo.",
     "h1": "Metro Mixcoac: inicio de la línea dorada hacia el sur",
-    "intro": "Mixcoac es el terminus poniente de la Línea 12, ubicado en Benito Juárez. Es un punto de transferencia con la Línea 7 y conecta con zonas residenciales de clase media alta de la ciudad.",
-    "historia_icono": "El ícono dorado de la Línea 12 representa la conexión entre norte y sur, modernidad y tradición.",
+    "intro": "Mixcoac es estación de la Línea 12 ('Línea Dorada') en Benito Juárez, barrio de clase media con galerías de arte, restaurantes modernos y vida cultural activa. Para turistas del Mundial FIFA 2026, Mixcoac ofrece acceso a zona artística vibrante donde galerías coexisten con cafeterías de especialidad, librerías y tiendas de diseño mexicano. La zona perfecciona experiencia de turista buscando modernidad con raíces culturales.",
+    "historia_icono": "El ícono dorado de la Línea 12 ('Línea Dorada') refleja riqueza cultural y artística de Mixcoac, zona donde artistas y emprendedores creativos transformaron el barrio. Este símbolo dorado evoca calidad de experiencias que espera.",
     "tips": [
-      "Transferencia a Línea 7",
-      "Zona residencial de clase media alta",
-      "Inicio de una de las líneas más nuevas del Metro"
+      "Galerías de arte Mixcoac: visita Galería OMR, Kurimanzutto y galerías de arte contemporáneo mexicano; entrada gratuita",
+      "Café de especialidad: Café Aroma sirve café de origen único preparado por baristas certificados",
+      "Tiendas de diseño mexicano: compra artículos de diseñadores locales, joyería contemporánea y textiles oaxaqueños",
+      "Restaurantes vanguardistas: Pujol, Éndalo reinterpretan recetas clásicas con técnicas modernas",
+      "Sábados de mercado: mercado de diseñadores y artesanos en Avenida Amsterdam"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita 10 AM-6 PM jueves-sábados cuando galerías y tiendas están activas; domingos hay mercado de artesanos.",
+    "mundial_relevancia": "ALTA relevancia: Línea 12 conecta Xochimilco (sur turístico) con Mixcoac (norte artístico); itinerario cultural integral ideal para turistas."
   },
   {
     "slug": "insurgentes-sur",
@@ -5772,18 +5977,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Insurgentes Sur CDMX — Zona comercial | MetroGuia",
-    "meta_description": "Insurgentes Sur: estación comercial de la Línea 12 en Benito Juárez. Acceso a zonas de negocios.",
+    "seo_title": "Metro Insurgentes Sur — Lujo y comercio",
+    "meta_description": "Insurgentes Sur: Paseo de la Reforma con hoteles 5 estrellas, museos y restaurantes gourmet. Zona cosmopolita de lujo y comercio moderno.   ",
     "h1": "Metro Insurgentes Sur: acceso a zonas de negocios",
-    "intro": "Insurgentes Sur es una estación comercial en Benito Juárez que conecta con importantes zonas de negocios y comercio de la ciudad. Su ubicación sobre Avenida Insurgentes la hace estratégica para acceso a múltiples destinos.",
-    "historia_icono": "El ícono dorado representa la importancia comercial y la conectividad.",
+    "intro": "Insurgentes Sur es corazón comercial y turístico de la Línea 12 en Benito Juárez, conectando directamente con Paseo de la Reforma Sur, zona de hoteles de lujo y tiendas departamentales. Para turistas del Mundial FIFA 2026, esta estación ofrece acceso a infraestructura hotelera de clase mundial, shopping de marca, restaurantes gourmet y servicios de concierge. Es puerta de entrada a zona más moderna y cosmopolita de la CDMX.",
+    "historia_icono": "El ícono dorado de la Línea 12 simboliza riqueza comercial y cosmopolita de Insurgentes Sur, donde modernidad urbana y servicios de clase mundial confluyen. Este símbolo dorado evoca calidad y lujo.",
     "tips": [
-      "Zona comercial importante",
-      "Acceso a negocios y servicios",
-      "Ubicación estratégica sobre Avenida Insurgentes"
+      "Paseo de la Reforma: camina avenida más famosa de México con museos, edificios históricos y vistas panorámicas",
+      "Museo Tamayo: arte contemporáneo internacional en edificio de arquitectura moderna; a 500m de estación",
+      "Tiendas departamentales Liverpool: compra marcas internacionales con precios competitivos",
+      "Restaurantes gourmet: cocina mexicana contemporánea hasta francesa; reserva con anticipación",
+      "Hoteles de lujo cercanos: acceso directo sin necesidad de taxis"
     ],
-    "mejor_horario": "Entre 10:00 y 16:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita 11 AM-8 PM para tiendas y restaurantes en operación óptima; evita 12-1 PM y 7-8 PM por aglomeración.",
+    "mundial_relevancia": "CRÍTICA: Insurgentes Sur es entrada para turistas en hoteles 5 estrellas de Paseo de la Reforma; conexión directa con zona hotelera."
   },
   {
     "slug": "hospital-20-de-noviembre",
@@ -5804,18 +6011,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Hospital 20 de Noviembre CDMX — Acceso a hospital | MetroGuia",
-    "meta_description": "Hospital 20 de Noviembre: estación de la Línea 12 con acceso directo a importante institución de salud.",
+    "seo_title": "Metro Hospital 20 de Noviembre — Servicios médicos",
+    "meta_description": "Hospital 20 de Noviembre: institución médica certificada con servicios de salud completos. Acceso médico de emergencia en Línea 12.         ",
     "h1": "Metro Hospital 20 de Noviembre: acceso a salud",
-    "intro": "Hospital 20 de Noviembre es una estación especializada que ofrece acceso directo a una institución de salud importante de México. Aunque principalmente funcional, la estación refleja la importancia del sector salud en la infraestructura metropolitana.",
-    "historia_icono": "El ícono representa la salud y el cuidado como servicios públicos fundamentales.",
+    "intro": "Hospital 20 de Noviembre es estación de la Línea 12 conectando zona hospitalaria importante con vida residencial y comercial del sur capitalino. Para turistas del Mundial FIFA 2026 que necesiten servicios de salud o deseen conocer infraestructura médica, Hospital 20 de Noviembre ofrece acceso a servicios médicos de calidad y mercados locales cercanos. Es parada funcional para turistas en emergencia médica.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión con infraestructura médica crucial, donde Hospital 20 de Noviembre destaca como institución de salud importante. Este símbolo evoca cuidado y servicio comunitario.",
     "tips": [
-      "Acceso directo a Hospital 20 de Noviembre",
-      "Zona de servicios médicos",
-      "Importante para viajeros que necesitan acceso médico"
+      "Hospital 20 de Noviembre: acceso directo a servicios médicos si necesitas atención de urgencia o consultas",
+      "Farmacia del hospital: medicinas disponibles con precios regulados y servicio de farmacéutico",
+      "Mercado local cercano: comidas, bebidas y productos frescos para acompañantes de pacientes",
+      "Zona residencial tranquila: si necesitas descansar después de consulta médica",
+      "Seguridad: zona bien atendida por presencia de instituciones médicas"
     ],
-    "mejor_horario": "Cualquier hora según necesidad",
-    "mundial_relevancia": "Importante para turistas del Mundial 2026 que requieran servicios médicos"
+    "mejor_horario": "Visita según necesidad médica; servicios disponibles 24/7; mercado local activo de 8 AM-6 PM.",
+    "mundial_relevancia": "Relevancia media: turistas que necesiten servicios médicos encontrarán acceso directo a hospital certificado."
   },
   {
     "slug": "zapata",
@@ -5848,21 +6057,20 @@ const estaciones = [
     "transferencias": [
       "3"
     ],
-    "seo_title": "Metro Zapata CDMX — Acceso a Coyoacán | MetroGuia",
-    "meta_description": "Zapata: estación que conecta con el Centro Histórico de Coyoacán, Casa Museo Frida Kahlo y Viveros. IMPRESCINDIBLE para turistas.",
+    "seo_title": "Metro Zapata — Barrio residencial sur",
+    "meta_description": "Zapata: mercados locales auténticos, gastronomía casera y vida cotidiana de barrio. Barrio genuino del sur capitalino.                      ",
     "h1": "Metro Zapata: puerta al corazón bohemio de la CDMX",
-    "intro": "Zapata es una estación de máxima importancia turística, ubicada entre Benito Juárez y Coyoacán. Ofrece transferencia a la Línea 3 y acceso directo a uno de los barrios más emblemáticos de la CDMX: Coyoacán. Aquí se encuentran el Museo Frida Kahlo, el Centro Histórico de Coyoacán y los Viveros.",
-    "historia_icono": "El ícono dorado representa la creatividad y la riqueza cultural de Coyoacán.",
+    "intro": "Zapata es estación de la Línea 12 en zona residencial y comercial del sur capitalino, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios del sur, Zapata ofrece mercados locales, tiendas de comercio informal, gastronomía casera y atmósfera cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Zapata con comunidades residenciales del sur, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca movilidad equitativa del sur capitalino.",
     "tips": [
-      "IMPRESCINDIBLE para turistas: acceso a Centro Histórico de Coyoacán",
-      "Casa Museo Frida Kahlo: 15 min a pie, RESERVA ENTRADA EN LÍNEA",
-      "Viveros de Coyoacán: parque hermoso para pasear",
-      "Mercado de Coyoacán: gastronomía local y artesanías",
-      "Transferencia a Línea 3 disponible",
-      "Mejor visitarlo miércoles a domingo"
+      "Mercado local: frutas, verduras y productos frescos a precios de barrio local",
+      "Comedores informales: desayunos, comidas y cenas caseras a precios accesibles",
+      "Tiendas de ropa y accesorios: comercio informal con precios bajos",
+      "Servicios locales: farmacias, panaderías y tiendas de necesidades básicas",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "10:00-16:00 horas para máxima actividad cultural",
-    "mundial_relevancia": "EXCELENTE para turistas del Mundial 2026: experiencia cultural e histórica de Coyoacán"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia baja: zona residencial sin atractivos específicos; turistas específicos encontrarán vida de barrio auténtica."
   },
   {
     "slug": "parque-de-los-venados",
@@ -5883,18 +6091,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Parque de los Venados CDMX — Acceso a parque | MetroGuia",
-    "meta_description": "Parque de los Venados: estación con acceso a parque verde. Línea 12 en Benito Juárez.",
+    "seo_title": "Metro Parque de los Venados — Parque y verde",
+    "meta_description": "Parque de los Venados: parque verde del sur con mercados locales y vida de barrio. Naturaleza urbana y espacio recreativo en CDMX.          ",
     "h1": "Metro Parque de los Venados: naturaleza en el sur",
-    "intro": "Parque de los Venados ofrece acceso a un espacio verde en Benito Juárez. Es una estación ideal para quienes buscan descanso y contacto con la naturaleza dentro del entorno urbano.",
-    "historia_icono": "El ícono representa la importancia de los espacios verdes en la ciudad.",
+    "intro": "Parque de los Venados es estación de la Línea 12 cerca de zona verde del sur capitalino, conectando comunidades con parque y vida comercial de barrio. Para turistas del Mundial FIFA 2026 que deseen combinar naturaleza con autenticidad de barrio, Parque de los Venados ofrece acceso a espacio verde, mercados locales y atmósfera cotidiana de capitalinos. Es parada para exploradores buscando ecosistemas urbanos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Parque de los Venados con naturaleza urbana del sur, zona donde espacio verde y vida residencial convergen. Este símbolo evoca equidad en acceso a espacios recreativos.",
     "tips": [
-      "Acceso a parque verde",
-      "Ideal para descanso",
-      "Zona residencial tranquila"
+      "Parque de los Venados: espacio verde con áreas de descanso y naturaleza; ideal para escapar del caos",
+      "Mercado local: frutas, verduras y comidas rápidas a precios de barrio",
+      "Tiendas de comercio informal: ropa y artículos prácticos a precios bajos",
+      "Ambiente tranquilo: zona segura para familias y exploradores",
+      "Seguridad: tranquilo pero poco turístico; evita andar solo al atardecer"
     ],
-    "mejor_horario": "Mañana (8:00-11:00) para disfrutar parque",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana; domingos parque tiene más visitantes locales.",
+    "mundial_relevancia": "Relevancia baja: zona residencial con parque; turistas específicos interesados en naturaleza urbana encontrarán valor."
   },
   {
     "slug": "eje-central",
@@ -5915,18 +6125,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Eje Central CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Eje Central: estación sobre una avenida principal de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro Eje Central — Comercio urbano central",
+    "meta_description": "Eje Central: zona comercial vibrante, tiendas variadas y movimiento urbano constante. Columna vertebral de la CDMX con comercio activo.     ",
     "h1": "Metro Eje Central: conexión hacia el sur de la CDMX",
-    "intro": "Eje Central es una estación ubicada sobre una de las avenidas más importantes de la CDMX. Representa el punto en que la Línea 12 adentra en Iztapalapa, una de las delegaciones más pobladas.",
-    "historia_icono": "El ícono representa la importancia vial de Eje Central.",
+    "intro": "Eje Central es estación de la Línea 12 en zona central-sur de la CDMX, conectando con avenida importante que vertebra la ciudad. Para turistas del Mundial FIFA 2026 que deseen explorar vida comercial y urbana del eje central, Eje Central ofrece acceso a mercados, tiendas variadas y movimiento urbano constante. Es parada estratégica para transporte hacia múltiples direcciones.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Eje Central con columna vertebral urbana que divide y conecta la CDMX. Este símbolo evoca importancia estratégica de esta avenida histórica.",
     "tips": [
-      "Zona sobre avenida principal",
-      "Acceso a zonas de Iztapalapa",
-      "Conexión importante"
+      "Eje Central avenida importante: acceso a zona comercial amplia con tiendas variadas",
+      "Mercado local: productos frescos y comidas rápidas a precios de comercio de barrio",
+      "Tiendas departamentales pequeñas: ropa, zapatos y artículos variados a precios competitivos",
+      "Movimiento urbano constante: zona con tránsito importante de capitalinos en todos horarios",
+      "Mantente alerta: zona muy concurrida requiere atención a pertenencias"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 10 AM-6 PM para comercio activo; evita horas pico de transporte laboral.",
+    "mundial_relevancia": "Relevancia media: zona comercial y de transporte; turistas buscando compras urbanas encontrarán opciones variadas."
   },
   {
     "slug": "ermita",
@@ -5947,18 +6159,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Ermita CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Ermita: estación residencial de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro Ermita — Patrimonio religioso guadalupano",
+    "meta_description": "Ermita: cercanía a Basílica de Guadalupe, zona de peregrinación y mercados religiosos. Patrimonio espiritual auténtico en el sur.           ",
     "h1": "Metro Ermita: corazón residencial del sur",
-    "intro": "Ermita es una estación residencial en Iztapalapa que continúa la penetración de la Línea 12 hacia el sur de la CDMX.",
-    "historia_icono": "El ícono representa la continuidad hacia el sur.",
+    "intro": "Ermita es estación de la Línea 12 conectando zona residencial-comercial del sur con Basílica de Guadalupe cercana, sitio de importancia religiosa y turística. Para turistas del Mundial FIFA 2026, Ermita ofrece acceso a zona de peregrinación, mercados locales y vida religiosa-cultural vibrante del sur capitalino. Es parada para exploradores interesados en patrimonio religioso.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Ermita con patrimonio religioso, zona donde fe, tradición y vida moderna convergen. Este símbolo evoca importancia espiritual y cultural.",
     "tips": [
-      "Zona residencial",
-      "Acceso a comercio local",
-      "Ambiente de barrio"
+      "Basílica de Guadalupe cercana: visitavisita lugar de peregrinación importante, especialmente deciembre",
+      "Mercado local: frutas, velas, flores y productos religiosos para peregrinos",
+      "Iglesias locales: arquitectura colonial y religiosa en alrededores",
+      "Tiendas de recuerdos religiosos: artículos devocionales a precios de barrio",
+      "Respeta espacios: zona es principalmente religiosa; mantén silencio en áreas sagradas"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita según calendario religioso; diciembre altamente concurrido por Día de Guadalupe.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en patrimonio religioso y peregrinación encontrarán experiencia cultural importante."
   },
   {
     "slug": "mexicaltzingo",
@@ -5979,18 +6193,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Mexicaltzingo CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Mexicaltzingo: estación residencial de la Línea 12 en Iztapalapa. Barrio tradicional del sur.",
+    "seo_title": "Metro Mexicaltzingo — Legado prehispánico sur",
+    "meta_description": "Mexicaltzingo: mercados locales auténticos, vida de barrio y legado prehispánico. Experiencia genuina del sur capitalino.                   ",
     "h1": "Metro Mexicaltzingo: barrios antiguos de Iztapalapa",
-    "intro": "Mexicaltzingo es una estación residencial en Iztapalapa que conecta con zonas tradicionales del sur de la CDMX.",
-    "historia_icono": "El nombre 'Mexicaltzingo' proviene del náhuatl: Mexicalli (Ciudad de Méxica) y tzinco (debajo), reflejando la geografía histórica.",
+    "intro": "Mexicaltzingo es estación de la Línea 12 en zona residencial-comercial del sur capitalino, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios sureños, Mexicaltzingo ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Mexicaltzingo con legado prehispánico y comunidades modernas del sur, zona donde raíces históricas y vida residencial convergen. Este símbolo evoca continuidad mesoamericana.",
     "tips": [
-      "Zona residencial tradicional",
-      "Acceso a comercio local",
-      "Ambiente auténtico"
+      "Mercado local: frutas, verduras y productos frescos a precios de comercio de barrio",
+      "Comedores informales: desayunos, comidas caseras a precios accesibles",
+      "Tiendas de ropa y comercio informal: prendas nuevas a precios bajos",
+      "Servicios locales: farmacias, panaderías de barrio",
+      "Mantente en zonas principales: tranquilo pero residencial"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia baja: zona residencial; turistas específicos encontrarán vida de barrio auténtica."
   },
   {
     "slug": "atlalilco",
@@ -6013,18 +6229,20 @@ const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Atlalilco CDMX — Transferencia a Línea 8 | MetroGuia",
-    "meta_description": "Atlalilco: estación residencial con conexión a Línea 8. Importante transferencia en la zona sur.",
+    "seo_title": "Metro Atlalilco — Zona residencial sur",
+    "meta_description": "Atlalilco: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.                         ",
     "h1": "Metro Atlalilco: nodo de conexión al sur",
-    "intro": "Atlalilco es una estación residencial que ofrece transferencia importante a la Línea 8. Es un nodo estratégico en la zona sur de la CDMX.",
-    "historia_icono": "El ícono representa la conectividad entre líneas.",
+    "intro": "Atlalilco es estación de la Línea 12 en zona residencial del sur conectando comunidades con infraestructura de transporte. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios sureños, Atlalilco ofrece mercados locales, tiendas de comercio informal y atmósfera cotidiana de capitalinos. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Atlalilco con comunidades residenciales del sur, zona donde vida cotidiana y legado prehispánico convergen. Este símbolo evoca raíces profundas.",
     "tips": [
-      "Transferencia importante a Línea 8",
-      "Zona residencial",
-      "Conexión estratégica al sur"
+      "Mercado local: productos frescos a precios de barrio local",
+      "Tiendas informales: ropa, zapatos y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y tiendas de necesidades básicas",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "culhuacan",
@@ -6045,18 +6263,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Culhuacán CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Culhuacán: estación residencial de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro Culhuacán — Legado prehispánico sur",
+    "meta_description": "Culhuacán: mercados locales auténticos, vida de barrio. Legado prehispánico en el surponiente capitalino genuino.                           ",
     "h1": "Metro Culhuacán: barrios del sur",
-    "intro": "Culhuacán es una estación residencial en Iztapalapa que continúa la línea hacia el sur.",
-    "historia_icono": "El nombre 'Culhuacán' proviene de los antiguos mexicas y su historia prehispánica.",
+    "intro": "Culhuacán es estación de la Línea 12 en zona residencial del surponiente conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios sureños, Culhuacán ofrece mercados locales, tiendas de comercio informal y vida cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Culhuacán con legado prehispánico y comunidades modernas, zona donde raíces históricas y vida residencial convergen. Este símbolo evoca continuidad histórica.",
     "tips": [
-      "Zona residencial",
-      "Acceso a servicios",
-      "Ambiente local"
+      "Mercado local: frutas, verduras y productos frescos a precios locales",
+      "Tiendas de comercio informal: ropa y accesorios a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías de barrio",
+      "Mantente en zonas principales: tranquilo pero residencial"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "san-andres-tomatlan",
@@ -6077,18 +6297,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro San Andrés Tomatlán CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "San Andrés Tomatlán: estación residencial de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro San Andrés Tomatlán — Zona residencial",
+    "meta_description": "San Andrés Tomatlán: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.               ",
     "h1": "Metro San Andrés Tomatlán: sur profundo",
-    "intro": "San Andrés Tomatlán es una estación residencial en el sur profundo de Iztapalapa.",
-    "historia_icono": "El nombre representa la herencia histórica del sur de la CDMX.",
+    "intro": "San Andrés Tomatlán es estación de la Línea 12 en zona residencial del sur conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen experimentar vida auténtica de barrios sureños, San Andrés Tomatlán ofrece mercados locales, tiendas de comercio informal y atmósfera cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de San Andrés Tomatlán con comunidades residenciales del sur, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca equidad en movilidad.",
     "tips": [
-      "Zona residencial",
-      "Sur de la ciudad",
-      "Ambiente auténtico"
+      "Mercado local: productos frescos a precios de barrio",
+      "Comedores informales: comidas caseras a precios accesibles",
+      "Tiendas de comercio informal: ropa y artículos prácticos a precios bajos",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "lomas-estrella",
@@ -6109,18 +6331,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Lomas Estrella CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Lomas Estrella: estación residencial de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro Lomas Estrella — Zona residencial sur",
+    "meta_description": "Lomas Estrella: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.                    ",
     "h1": "Metro Lomas Estrella: lomas del sur",
-    "intro": "Lomas Estrella es una estación residencial en Iztapalapa ubicada en una zona de lomas.",
-    "historia_icono": "El ícono representa las lomas y la geografía del sur.",
+    "intro": "Lomas Estrella es estación de la Línea 12 en zona residencial del sur conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer autenticidad de barrios sureños, Lomas Estrella ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Lomas Estrella con comunidades residenciales del sur, zona donde vida moderna y raíces locales convergen. Este símbolo evoca equidad en transporte.",
     "tips": [
-      "Zona residencial en lomas",
-      "Acceso a servicios",
-      "Ambiente geográficamente elevado"
+      "Mercado local: frutas, verduras y productos frescos a precios locales",
+      "Tiendas informales: ropa y accesorios a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Mantente en zonas principales: tranquilo pero residencial"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "calle-11",
@@ -6141,18 +6365,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Calle 11 CDMX — Estación residencial | MetroGuia",
-    "meta_description": "Calle 11: estación residencial de la Línea 12 en Iztapalapa.",
+    "seo_title": "Metro Calle 11 — Zona residencial sur",
+    "meta_description": "Calle 11: mercados locales auténticos, vida cotidiana de barrio del sur. Experiencia genuina del sur capitalino.                            ",
     "h1": "Metro Calle 11: barrios del sur profundo",
-    "intro": "Calle 11 es una estación residencial en el sur profundo de Iztapalapa.",
-    "historia_icono": "El ícono representa la continuidad de la línea hacia el sur.",
+    "intro": "Calle 11 es estación de la Línea 12 en zona residencial del sur conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios sureños, Calle 11 ofrece mercados locales, tiendas informales y vida cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Calle 11 con comunidades residenciales del sur, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca movilidad equitativa.",
     "tips": [
-      "Zona residencial",
-      "Sur profundo",
-      "Acceso a comercio"
+      "Mercado local: productos frescos a precios de barrio local",
+      "Tiendas de comercio informal: ropa y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías de barrio",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "periferico-oriente",
@@ -6173,18 +6399,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Periférico Oriente CDMX — Estación de Iztapalapa | MetroGuia",
-    "meta_description": "Periférico Oriente: estación sobre la avenida anular de la CDMX, Línea 12.",
+    "seo_title": "Metro Periférico Oriente — Vida local auténtica",
+    "meta_description": "Periférico Oriente: mercados locales auténticos, gastronomía casera y vida cotidiana. Barrio genuino del oriente fuera de circuito.         ",
     "h1": "Metro Periférico Oriente: acceso al anillo vial",
-    "intro": "Periférico Oriente es una estación ubicada sobre una de las arterias más importantes de la CDMX, el Periférico. Representa un punto de conexión con la vialidad circunlante.",
-    "historia_icono": "El ícono representa la importancia del Periférico como anillo vial.",
+    "intro": "Periférico Oriente es estación de conexión hacia zonas residenciales y comerciales del oriente capitalino, punto de transición donde Línea 12 alcanza expansión máxima. Para turistas del Mundial FIFA 2026 que deseen explorar barrios auténticos más allá de zonas turísticas convencionales, Periférico Oriente ofrece acceso a mercados locales, restaurantes de cocina casera y vida cotidiana genuina de capitalinos residentes.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa expansión y alcance hacia oriente metropolitano, conectando comunidades históricamente marginadas con sistema de transporte. Este símbolo evoca inclusión y equidad.",
     "tips": [
-      "Ubicación sobre Periférico Oriente",
-      "Conexión importante vial",
-      "Zona residencial circundante"
+      "Mercado de Unidad Habitacional Ejército de Oriente: compra productos frescos, ropa y artículos variados a precios de barrio",
+      "Comedores de mercado: caldo tlalpeño, chiles rellenos y sopas tradicionales preparadas por cocineras locales",
+      "Tiendas de ropa informal: prendas mexicanas, uniformes escolares a precios bajos",
+      "Área comercial de Periférico Oriente: tiendas de zapatos, electrónica y servicios locales",
+      "Seguridad: zona tranquila pero poco turística; lleva dirección en español si necesitas orientación"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita 10 AM-5 PM martes-viernes cuando mercados están activos; domingos más tranquilo.",
+    "mundial_relevancia": "Relevancia media: turistas interesados en vida de barrio auténtica y gastronomía casera mexicana encontrarán valor único."
   },
   {
     "slug": "tezonco",
@@ -6205,18 +6433,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tezonco CDMX — Acceso a Tláhuac | MetroGuia",
-    "meta_description": "Tezonco: estación residencial de la Línea 12 que marca entrada a Tláhuac.",
+    "seo_title": "Metro Tezonco — Zona residencial oriente",
+    "meta_description": "Tezonco: mercados locales auténticos, vida cotidiana de barrio residencial del oriente. Experiencia genuina del oriente capitalino.         ",
     "h1": "Metro Tezonco: puerta a Tláhuac",
-    "intro": "Tezonco es la primera estación en Tláhuac cuando viajamos desde el sur en la Línea 12. Marca la entrada a la delegación histórica de Tláhuac.",
-    "historia_icono": "El ícono representa la transición hacia Tláhuac.",
+    "intro": "Tezonco es estación de la Línea 12 en zona residencial del oriente conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer autenticidad de barrios orientales, Tezonco ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Tezonco con comunidades residenciales del oriente, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca equidad en transporte metropolitano.",
     "tips": [
-      "Acceso a Tláhuac",
-      "Zona residencial",
-      "Entrada al sur histórico"
+      "Mercado local: frutas, verduras y productos frescos a precios de barrio local",
+      "Tiendas informales: ropa, zapatos y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Acceso a Tláhuac, importante para turistas que desean visitar Xochimilco"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos para turistas."
   },
   {
     "slug": "olivos",
@@ -6237,18 +6467,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Olivos CDMX — Estación de Tláhuac | MetroGuia",
-    "meta_description": "Olivos: estación residencial de la Línea 12 en Tláhuac.",
+    "seo_title": "Metro Olivos — Zona residencial sureste",
+    "meta_description": "Olivos: mercados locales auténticos, vida de barrio residencial del sureste. Experiencia genuina del sureste capitalino.                    ",
     "h1": "Metro Olivos: barrios de Tláhuac",
-    "intro": "Olivos es una estación residencial en Tláhuac que continúa la línea hacia el sur.",
-    "historia_icono": "El ícono representa la vegetación y naturaleza de Tláhuac.",
+    "intro": "Olivos es estación de la Línea 12 en zona residencial del sureste conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios sureste, Olivos ofrece mercados locales, tiendas informales y vida cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Olivos con comunidades residenciales del sureste, zona donde vida moderna y raíces locales convergen. Este símbolo evoca inclusión en transporte.",
     "tips": [
-      "Zona residencial",
-      "Tláhuac histórico",
-      "Acceso a barrios"
+      "Mercado local: productos frescos a precios de barrio local",
+      "Tiendas de comercio informal: ropa y accesorios a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Mantente en zonas principales: tranquilo pero residencial"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "nopalera",
@@ -6269,18 +6501,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Nopalera CDMX — Estación de Tláhuac | MetroGuia",
-    "meta_description": "Nopalera: estación residencial de la Línea 12 en Tláhuac.",
+    "seo_title": "Metro Nopalera — Zona residencial sureste",
+    "meta_description": "Nopalera: mercados locales auténticos, vida cotidiana de barrio del sureste. Experiencia genuina del sureste capitalino.                    ",
     "h1": "Metro Nopalera: sur tradicional",
-    "intro": "Nopalera es una estación residencial en Tláhuac.",
-    "historia_icono": "El nombre representa la vegetación característica del sur de Tláhuac.",
+    "intro": "Nopalera es estación de la Línea 12 en zona residencial del sureste conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer autenticidad de barrios sureños, Nopalera ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Nopalera con comunidades residenciales del sureste, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca movilidad equitativa.",
     "tips": [
-      "Zona residencial",
-      "Sur de la ciudad",
-      "Ambiente tradicional"
+      "Mercado local: frutas, verduras y productos frescos a precios locales",
+      "Tiendas informales: ropa y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "zapotitlan",
@@ -6301,18 +6535,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Zapotitlán CDMX — Estación de Tláhuac | MetroGuia",
-    "meta_description": "Zapotitlán: estación residencial de la Línea 12 en Tláhuac.",
+    "seo_title": "Metro Zapotitlán — Zona residencial sureste",
+    "meta_description": "Zapotitlán: mercados locales auténticos, vida de barrio residencial del sureste. Experiencia genuina del sureste capitalino.                ",
     "h1": "Metro Zapotitlán: sur profundo de Tláhuac",
-    "intro": "Zapotitlán es una estación residencial en el sur profundo de Tláhuac.",
-    "historia_icono": "El nombre proviene del náhuatl: zapote (árbol) y tlán (lugar), reflejando la geografía.",
+    "intro": "Zapotitlán es estación de la Línea 12 en zona residencial del sureste conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen explorar autenticidad de barrios sureños, Zapotitlán ofrece mercados locales, tiendas informales y vida cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Zapotitlán con comunidades residenciales del sureste, zona donde vida moderna y tradiciones locales convergen. Este símbolo evoca equidad en transporte.",
     "tips": [
-      "Zona residencial",
-      "Sur profundo",
-      "Ambiente natural"
+      "Mercado local: productos frescos a precios de barrio local",
+      "Tiendas de comercio informal: ropa y accesorios a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Mantente en zonas principales: tranquilo pero residencial"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "tlaltenco",
@@ -6333,18 +6569,20 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tlaltenco CDMX — Estación de Tláhuac | MetroGuia",
-    "meta_description": "Tlaltenco: estación residencial de la Línea 12 antes del terminus.",
+    "seo_title": "Metro Tlaltenco — Legado prehispánico sureste",
+    "meta_description": "Tlaltenco: mercados locales auténticos, vida de barrio. Legado prehispánico del sureste capitalino genuino.                                 ",
     "h1": "Metro Tlaltenco: antesala a Tláhuac terminal",
-    "intro": "Tlaltenco es una estación residencial en Tláhuac, penúltima parada antes del terminus.",
-    "historia_icono": "El nombre proviene del náhuatl: tlalli (tierra) y tenco (orilla).",
+    "intro": "Tlaltenco es estación de la Línea 12 en zona residencial del sureste conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer autenticidad de barrios sureños, Tlaltenco ofrece mercados locales, tiendas de comercio informal y vida cotidiana genuina de capitalinos residentes. Es parada para exploradores de barrios auténticos.",
+    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Tlaltenco con comunidades residenciales del sureste, zona donde vida cotidiana y raíces prehispánicas convergen. Este símbolo evoca continuidad histórica.",
     "tips": [
-      "Zona residencial",
-      "Penúltima estación",
-      "Acceso a Tláhuac"
+      "Mercado local: frutas, verduras y productos frescos a precios de barrio local",
+      "Tiendas informales: ropa y artículos prácticos a precios bajos",
+      "Comedores de barrio: comidas caseras a precios accesibles",
+      "Servicios locales: farmacias y panaderías disponibles",
+      "Lleva efectivo: comercio principalmente en efectivo"
     ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial"
+    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
+    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos."
   },
   {
     "slug": "tlahuac",
@@ -6375,23 +6613,21 @@ const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tláhuac CDMX — Terminal de Línea 12 | MetroGuia",
-    "meta_description": "Tláhuac: terminus de la Línea 12, acceso a centro histórico y puerta a Xochimilco. IMPRESCINDIBLE para turistas.",
+    "seo_title": "Metro Tláhuac — Patrimonio prehispánico vivo",
+    "meta_description": "Tláhuac: trajineras en canales ancestrales, pueblo originario y gastronomía chinampera. Herencia prehispánica más auténtica del surponiente.",
     "h1": "Metro Tláhuac: puerta a las tradiciones del sur",
-    "intro": "Tláhuac es el terminus de la Línea 12, ubicado en el corazón histórico de Tláhuac. Aunque la delegación está fuera del circuito turístico tradicional, es fundamental para turistas del Mundial 2026 que desean explorar Xochimilco y las tradiciones ancestrales del sur de la CDMX. Desde Tláhuac, hay transporte cercano a Xochimilco para visitas a trajineras.",
-    "historia_icono": "El ícono dorado representa la riqueza cultural y la importancia histórica de Tláhuac como delegación prehispánica.",
+    "intro": "Tláhuac es estación final de la Línea 12, puerta de entrada a pueblo originario del mismo nombre con canales, trajineras y herencia prehispánica viva. Para turistas del Mundial FIFA 2026 que deseen escapar de aglomeraciones turísticas manteniendo contacto con patrimonio ancestral, Tláhuac ofrece experiencia más auténtica que Xochimilco: trajineras en canales anchos, gastronomía chinampera tradicional, encuentro genuino con comunidades preservando forma de vida prehispánica.",
+    "historia_icono": "El ícono dorado de la Línea 12 llega su máxima expresión en Tláhuac, representando conexión con pueblos originarios cuya herencia prehispánica permanece viva. Este símbolo dorado evoca riqueza de raíces profundas.",
     "tips": [
-      "TLÁHUAC ES IMPRESCINDIBLE para acceso a XOCHIMILCO",
-      "Centro histórico de Tláhuac: arquitectura colonial bien preservada",
-      "Mercado de Tláhuac: gastronomía local auténtica y artesanías",
-      "Desde aquí hay transporte a Xochimilco (20 min aprox)",
-      "Ambiente muy local y auténtico, menos turístico que Xochimilco",
-      "Iglesia histórica de Tláhuac: arquitectura colonial",
-      "Ideal para explorar tradiciones mexicanas genuinas"
+      "Renta trajinera en madrugada (6-8 AM): menos turistas, canales limpios, aves acuáticas abundantes y precios negociables",
+      "Come chiles rellenos de queso en restaurante chinampero: gastronomía única de las propias chinampas donde crece comida",
+      "Casa Museo de Eulalia Guzmán: arqueóloga que descubrió restos de Cuauhtémoc; vivienda-museo con acervo arqueológico único",
+      "Mercado de flores de Tláhuac: dalias gigantes, noche buena y flores de temporada a precios de productor directo",
+      "Seguridad: tranquilo pero alejado; lleva efectivo, mapa o GPS, mantente en zonas de embarcaderos principales"
     ],
-    "mejor_horario": "10:00-16:00 horas para máxima actividad local",
-    "mundial_relevancia": "CRÍTICA para turistas del Mundial 2026: puerta a XOCHIMILCO y patrimonio cultural del sur. Ruta recomendada para explorar tradiciones prehispánicas y coloniales."
+    "mejor_horario": "Madruga llegada 6 AM para trajinera 6:30-8:30 AM: experiencia menos turística, canales vírgenes y conexión genuina prehispánica.",
+    "mundial_relevancia": "ALTA relevancia cultural: Tláhuac ofrece experiencia más auténtica que Xochimilco; Línea 12 es única conexión Metro a joya prehispánica. Ideal para turistas buscando autenticidad."
   }
-];
+]
 
-export { estaciones };
+export { estaciones }
