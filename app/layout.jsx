@@ -85,14 +85,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <meta name="google-adsense-account" content="ca-pub-5779958677522085" />
-        {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
-        <script dangerouslySetInnerHTML={{ __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-`}} />
+        {/* GA4: Add your Measurement ID here — see https://analytics.google.com */}
       </head>
       <body>
         {/* ── Navigation ── */}
