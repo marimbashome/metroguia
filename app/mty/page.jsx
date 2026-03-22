@@ -1,4 +1,3 @@
-'use client';
 
 import Link from 'next/link';
 import { lineasMTY } from '@/data/mty/lineas-detalle';

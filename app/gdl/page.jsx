@@ -1,4 +1,3 @@
-'use client';
 
 import { lineasGDL } from '@/data/gdl/lineas-detalle';
 import { estacionesGDL } from '@/data/gdl/estaciones';
