@@ -104,7 +104,7 @@ export default function EstacionMTY({ params }) {
       </section>
 
       {/* Ad 1 — Banner despues del hero */}
-      <AdBanner slot="SLOT_ID_1" format="auto" />
+      <AdBanner slot="4434764790" format="auto" />
 
       {/* INFORMACIÓN GENERAL */}
       <section style={{
@@ -369,7 +369,7 @@ export default function EstacionMTY({ params }) {
       )}
 
       {/* Ad 2 — Banner antes de navegacion */}
-      <AdBanner slot="SLOT_ID_3" format="auto" />
+      <AdBanner slot="4434764790" format="auto" />
 
       {/* NAVEGACIÓN */}
       <section style={{

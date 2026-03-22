@@ -96,7 +96,7 @@ export default function ZonaPage({ params }) {
       </section>
 
       {/* Ad 1 */}
-      <AdBanner slot="SLOT_ID_1" format="auto" />
+      <AdBanner slot="4434764790" format="auto" />
 
       {/* DESCRIPCIÓN PRINCIPAL */}
       <section style={{ padding: '4rem 1.25rem' }}>
@@ -173,7 +173,7 @@ export default function ZonaPage({ params }) {
       )}
 
       {/* Ad 2 */}
-      <AdBannerInArticle slot="SLOT_ID_2" />
+      <AdBannerInArticle slot="1082410395" />
 
       {/* TIPS PARA TURISTAS */}
       {zona.tips_turistas && zona.tips_turistas.length > 0 && (
@@ -215,7 +215,7 @@ export default function ZonaPage({ params }) {
       )}
 
       {/* Ad 3 */}
-      <AdBanner slot="SLOT_ID_3" format="auto" />
+      <AdBanner slot="4434764790" format="auto" />
 
       {/* LLAMADA A ACCIÓN */}
       <section className="section-tips">
