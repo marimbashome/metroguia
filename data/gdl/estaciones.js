@@ -782,7 +782,45 @@ export const estacionesGDL = [
       "Comercios artesanales"
     ],
     "mejor_horario": "Mañana o tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso directo al histórico barrio de San Andrés, uno de los más antiguos de Guadalajara con arquitectura colonial bien preservada. El Templo de San Andrés es un referente cultural importante. Ideal para turistas interesados en la historia y gastronomía tradicional tapatía.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 1 (2010). Rampa de acceso disponible. Acceso limitado sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos en horas pico."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Templo de San Andrés",
+        "tipo": "Cultura",
+        "distancia": "250 metros",
+        "descripcion": "Templo colonial del siglo XVII con relevancia histórica y arquitectónica importante."
+      },
+      {
+        "nombre": "Barrio San Andrés",
+        "tipo": "Barrio Histórico",
+        "distancia": "150 metros",
+        "descripcion": "Barrio tradicional con calles empedradas, tiendas artesanales y restaurantes de cocina local."
+      },
+      {
+        "nombre": "Centro Histórico",
+        "tipo": "Cultural",
+        "distancia": "1.5 km",
+        "descripcion": "Corazón histórico de Guadalajara con Catedral, plazas y museos."
+      },
+      {
+        "nombre": "Mercado San Juan de Dios",
+        "tipo": "Mercado",
+        "distancia": "1 km",
+        "descripcion": "Mercado Libertad, mercado tradicional con artesanías y gastronomía local."
+      }
+    ]
   },
   {
     "slug": "san-jacinto",
@@ -1222,7 +1260,39 @@ export const estacionesGDL = [
       "Restaurantes variados"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Estación de conexión entre Línea 1 y Línea 2 en zona comercial activa. Paseo La Aurora es punto de acceso a tiendas, restaurantes y centros de entretenimiento modernos. Ideal para turistas buscando compras y gastronomía variada.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2. Rampa de acceso disponible. Servicio de asistencia básica."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Paseo La Aurora",
+        "tipo": "Compras",
+        "distancia": "100 metros",
+        "descripcion": "Centro comercial moderno con tiendas internacionales, cafeterías y restaurantes."
+      },
+      {
+        "nombre": "Zona comercial Chapultepec",
+        "tipo": "Compras",
+        "distancia": "500 metros",
+        "descripcion": "Área comercial activa con tiendas departamentales y tiendas especializadas."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas desde cocina local hasta internacional."
+      }
+    ]
   },
   {
     "slug": "san-jacinto-l2",
@@ -1251,7 +1321,45 @@ export const estacionesGDL = [
       "Vida nocturna activa"
     ],
     "mejor_horario": "Tarde para disfrutar el barrio",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso al legendario barrio San Jacinto, centro vibrante de arte, cultura y vida nocturna tapatía. Lleno de galerías de arte, tiendas artesanales y murales coloridos. Visita obligada para turistas interesados en el arte local y la atmósfera bohemia.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 en zona histórica. Acceso mediante rampa disponible."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Barrio San Jacinto",
+        "tipo": "Cultural",
+        "distancia": "100 metros",
+        "descripcion": "Barrio artístico bohemio con galerías de arte, murales coloridos y tiendas artesanales."
+      },
+      {
+        "nombre": "Galerías de arte locales",
+        "tipo": "Arte",
+        "distancia": "200 metros",
+        "descripcion": "Espacios dedicados a artistas emergentes tapatíos con exposiciones regulares."
+      },
+      {
+        "nombre": "Restaurantes y bares",
+        "tipo": "Gastronomía",
+        "distancia": "150 metros",
+        "descripcion": "Opciones de comida y bebida con ambiente artístico y bohemio."
+      },
+      {
+        "nombre": "Tiendas de artesanía",
+        "tipo": "Compras",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas con artesanías locales auténticas y obras de arte."
+      }
+    ]
   },
   {
     "slug": "san-andres-l2",
@@ -1285,7 +1393,45 @@ export const estacionesGDL = [
       "Comercios artesanales"
     ],
     "mejor_horario": "Mañana o tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso al histórico barrio de San Andrés con arquitectura colonial bien preservada y el Templo de San Andrés como referente cultural. Perfecta para turistas que desean explorar la historia tapatía y disfrutar de gastronomía tradicional local.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 en zona histórica. Rampa de acceso disponible."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Templo de San Andrés",
+        "tipo": "Cultura",
+        "distancia": "200 metros",
+        "descripcion": "Templo colonial del siglo XVII con importancia histórica y arquitectónica."
+      },
+      {
+        "nombre": "Barrio San Andrés",
+        "tipo": "Barrio Histórico",
+        "distancia": "100 metros",
+        "descripcion": "Barrio tradicional con arquitectura colonial, tiendas artesanales y comercios locales."
+      },
+      {
+        "nombre": "Restaurantes locales",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Ofertas gastronómicas auténticas de cocina tapatía tradicional."
+      },
+      {
+        "nombre": "Centro Histórico",
+        "tipo": "Cultural",
+        "distancia": "1.8 km",
+        "descripcion": "Corazón histórico de Guadalajara con plazas y monumentos coloniales."
+      }
+    ]
   },
   {
     "slug": "cristobal-de-onate-l2",
@@ -1313,7 +1459,39 @@ export const estacionesGDL = [
       "Fácil acceso a otras líneas"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial central en la Avenida Cristóbal de Oñate con conexión a Línea 1. Acceso a tiendas, servicios y comercios variados. Punto estratégico para turistas que buscan compras y servicios en el centro de Guadalajara.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 en zona comercial central. Rampa de acceso disponible."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Avenida Cristóbal de Oñate",
+        "tipo": "Comercio",
+        "distancia": "Inmediato",
+        "descripcion": "Avenida comercial importante con tiendas, servicios y restaurantes."
+      },
+      {
+        "nombre": "Zona comercial central",
+        "tipo": "Compras",
+        "distancia": "300 metros",
+        "descripcion": "Área comercial dinámica con múltiples opciones de compras."
+      },
+      {
+        "nombre": "Centro Histórico",
+        "tipo": "Cultural",
+        "distancia": "1.5 km",
+        "descripcion": "Corazón histórico de Guadalajara con plazas monumentales."
+      }
+    ]
   },
   {
     "slug": "belisario-dominguez-l2",
@@ -1341,7 +1519,39 @@ export const estacionesGDL = [
       "Restaurantes cercanos"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial activa en la Avenida Belisario Domínguez con conexión directa a Línea 1. Acceso a tiendas, restaurantes y servicios variados en el corazón comercial de Guadalajara. Ideal para turistas buscando compras y gastronomía.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 en zona comercial. Rampa de acceso disponible."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Avenida Belisario Domínguez",
+        "tipo": "Comercio",
+        "distancia": "Inmediato",
+        "descripcion": "Avenida comercial con tiendas, servicios bancarios y restaurantes."
+      },
+      {
+        "nombre": "Zona comercial activa",
+        "tipo": "Compras",
+        "distancia": "200 metros",
+        "descripcion": "Área dinámica con opciones variadas de compras y entretenimiento."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas desde comida local hasta internacional."
+      }
+    ]
   },
   {
     "slug": "san-juan-de-dios-l2",
@@ -1370,7 +1580,39 @@ export const estacionesGDL = [
       "Experiencia tapatía genuina"
     ],
     "mejor_horario": "Mañana para compras",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso directo al Mercado San Juan de Dios (Mercado Libertad), el mercado tradicional más icónico de Guadalajara. Experiencia tapatía genuina con productos locales, artesanías y gastronomía auténtica. Imprescindible para conocer la cultura local.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 (2009). Rampa de acceso disponible. Mercado tradicional con acceso limitado en algunas áreas."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Mercado abierto desde temprano."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado San Juan de Dios",
+        "tipo": "Mercado",
+        "distancia": "100 metros",
+        "descripcion": "Mercado Libertad, mercado tradicional más grande de Guadalajara con artesanías, comida y productos locales."
+      },
+      {
+        "nombre": "Plaza Tapatía",
+        "tipo": "Plaza",
+        "distancia": "500 metros",
+        "descripcion": "Centro histórico con plazas conectadas y monumentos coloniales."
+      },
+      {
+        "nombre": "Catedral de Guadalajara",
+        "tipo": "Cultural",
+        "distancia": "1 km",
+        "descripcion": "Catedral metropolitana emblemática del centro histórico tapatío."
+      }
+    ]
   },
   {
     "slug": "plaza-universidad-l2",
@@ -1405,7 +1647,39 @@ export const estacionesGDL = [
       "Información turística"
     ],
     "mejor_horario": "Mañana",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Nodo de conexión entre Línea 2 y Línea 3, junto a campus de la Universidad de Guadalajara. Acceso a la Rectoría (edificio emblemático con arquitectura neoclásica). Centro académico y cultural importante para conocer la educación tapatía.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 (2009). Rampa de acceso disponible. Campus con topografía variable."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Frecuencia: cada 3-5 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Universidad de Guadalajara",
+        "tipo": "Educación",
+        "distancia": "300 metros",
+        "descripcion": "Campus universitario histórico, segunda universidad más importante de México."
+      },
+      {
+        "nombre": "Rectoría de la Universidad",
+        "tipo": "Cultural",
+        "distancia": "400 metros",
+        "descripcion": "Edificio emblemático con arquitectura neoclásica notable de Guadalajara."
+      },
+      {
+        "nombre": "Biblioteca Central",
+        "tipo": "Cultural",
+        "distancia": "500 metros",
+        "descripcion": "Biblioteca universitaria con acervo importante y exposiciones."
+      }
+    ]
   },
   {
     "slug": "juarez-l2",
@@ -1444,7 +1718,45 @@ export const estacionesGDL = [
       "Centro de información turística"
     ],
     "mejor_horario": "Mañana o tarde para explorar monumentos",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Terminal poniente de Línea 2, puerta de entrada al Centro Histórico de Guadalajara. Acceso directo a la Catedral Metropolitana, Teatro Degollado y plazas emblemáticas. Imprescindible para conocer la historia colonial tapatía.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación de Línea 2 (2009), terminal de línea. Rampa de acceso disponible. Centro histórico con calles irregulares."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 7:00-23:00. Terminal de línea."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Catedral Metropolitana",
+        "tipo": "Cultural",
+        "distancia": "300 metros",
+        "descripcion": "Catedral emblemática del siglo XVI con arquitectura colonial neoclásica."
+      },
+      {
+        "nombre": "Teatro Degollado",
+        "tipo": "Cultural",
+        "distancia": "350 metros",
+        "descripcion": "Teatro histórico con arquitectura neoclásica, sede de presentaciones artísticas."
+      },
+      {
+        "nombre": "Plaza Tapatía",
+        "tipo": "Plaza",
+        "distancia": "200 metros",
+        "descripcion": "Centro histórico con plazas conectadas, fuentes y monumentos coloniales."
+      },
+      {
+        "nombre": "Centro de información turística",
+        "tipo": "Información",
+        "distancia": "Radiante",
+        "descripcion": "Centro oficial de información para turistas con mapas y guías."
+      }
+    ]
   },
   {
     "slug": "arcos-de-zapopan",
@@ -1478,7 +1790,45 @@ export const estacionesGDL = [
       "Comercio local"
     ],
     "mejor_horario": "Mañana para visitar basílica",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Terminal norte de Línea 3, acceso a los emblemáticos Arcos de Zapopan símbolo de la ciudad. La Basílica de Zapopan es uno de los santuarios más importantes de México. Área cultural y religiosa fundamental para comprender Guadalajara.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023) con accesibilidad completa. Elevador disponible. Terminal de línea."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Terminal de línea."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Arcos de Zapopan",
+        "tipo": "Cultural",
+        "distancia": "100 metros",
+        "descripcion": "Monumentales arcos de 30 metros de altura, símbolo icónico de Guadalajara."
+      },
+      {
+        "nombre": "Basílica de Zapopan",
+        "tipo": "Cultural",
+        "distancia": "300 metros",
+        "descripcion": "Santuario importante del siglo XVII, uno de los principales templos de México."
+      },
+      {
+        "nombre": "Centro de Zapopan",
+        "tipo": "Comercio",
+        "distancia": "200 metros",
+        "descripcion": "Área comercial y administrativa de Zapopan con tiendas y servicios."
+      },
+      {
+        "nombre": "Plazas y jardines",
+        "tipo": "Parque",
+        "distancia": "400 metros",
+        "descripcion": "Espacios verdes conectados para caminar y descansar."
+      }
+    ]
   },
   {
     "slug": "zapopan-centro",
@@ -1510,7 +1860,39 @@ export const estacionesGDL = [
       "Plazas públicas"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Centro comercial y cultural de Zapopan con tiendas locales, restaurantes y plazas públicas. Zona dinámica perfecta para turistas buscando compras, gastronomía variada y ambiente de ciudad moderna.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa con elevadores y rampas."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Centro de Zapopan",
+        "tipo": "Comercio",
+        "distancia": "100 metros",
+        "descripcion": "Centro comercial con tiendas departamentales, restaurantes y servicios."
+      },
+      {
+        "nombre": "Plazas públicas",
+        "tipo": "Plaza",
+        "distancia": "200 metros",
+        "descripcion": "Espacios públicos con bancas, fuentes y áreas verdes."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas desde cocina local hasta internacional."
+      }
+    ]
   },
   {
     "slug": "plaza-patria",
@@ -1542,7 +1924,39 @@ export const estacionesGDL = [
       "Zona segura y bien atendida"
     ],
     "mejor_horario": "Tarde para compras",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Centro comercial importante de Guadalajara con Plaza Patria como punto de referencia. Acceso a tiendas departamentales, restaurantes modernos y cines. Zona segura y bien estructurada para turistas interesados en shopping.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa con elevadores."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Plaza Patria",
+        "tipo": "Compras",
+        "distancia": "100 metros",
+        "descripcion": "Centro comercial moderno con tiendas departamentales, restaurantes y cines."
+      },
+      {
+        "nombre": "Tiendas especializadas",
+        "tipo": "Compras",
+        "distancia": "200 metros",
+        "descripcion": "Tiendas de marca con productos variados y servicios especializados."
+      },
+      {
+        "nombre": "Restaurantes modernos",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Cadenas de restaurantes internacionales y comida local de calidad."
+      }
+    ]
   },
   {
     "slug": "santuario",
@@ -1569,7 +1983,39 @@ export const estacionesGDL = [
       "Restaurantes tradicionales"
     ],
     "mejor_horario": "Mañana",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona de importancia religiosa y cultural en Zapopan. Acceso a sitios espirituales importantes y comercio local tradicional. Restaurantes con cocina auténtica tapatía. Perfecto para turistas interesados en la fe y cultura local.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Santuario",
+        "tipo": "Cultural",
+        "distancia": "200 metros",
+        "descripcion": "Sitio religioso importante con significado cultural en la región."
+      },
+      {
+        "nombre": "Comercio local",
+        "tipo": "Compras",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas tradicionales con productos locales y artesanías."
+      },
+      {
+        "nombre": "Restaurantes tradicionales",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Establecimientos con cocina tapatía auténtica y tradicional."
+      }
+    ]
   },
   {
     "slug": "independencia",
@@ -1595,7 +2041,39 @@ export const estacionesGDL = [
       "Acceso fácil a otras zonas"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial activa en la Avenida Independencia con tiendas, restaurantes y servicios variados. Acceso fácil a otras zonas de Zapopan. Punto estratégico para turistas buscando opciones comerciales modernas.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Avenida Independencia",
+        "tipo": "Comercio",
+        "distancia": "Inmediato",
+        "descripcion": "Avenida comercial con tiendas, restaurantes y servicios variados."
+      },
+      {
+        "nombre": "Centros comerciales",
+        "tipo": "Compras",
+        "distancia": "300 metros",
+        "descripcion": "Centros comerciales cercanos con múltiples opciones de tiendas."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas con cocina local e internacional."
+      }
+    ]
   },
   {
     "slug": "guadalajara-centro",
@@ -1627,7 +2105,45 @@ export const estacionesGDL = [
       "Plazas y jardines históricos"
     ],
     "mejor_horario": "Mañana o tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso directo al Centro Histórico de Guadalajara, corazón cultural de la ciudad. Catedral Metropolitana, Teatro Degollado y plazas emblemáticas. Imprescindible para turistas que desean explorar la arquitectura colonial y la historia de Jalisco.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa. Centro histórico con calles con topografía variable."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Catedral Metropolitana",
+        "tipo": "Cultural",
+        "distancia": "300 metros",
+        "descripcion": "Catedral del siglo XVI con arquitectura colonial neoclásica, símbolo de Guadalajara."
+      },
+      {
+        "nombre": "Teatro Degollado",
+        "tipo": "Cultural",
+        "distancia": "350 metros",
+        "descripcion": "Teatro histórico neoclásico, sede de presentaciones artísticas y culturales."
+      },
+      {
+        "nombre": "Plaza Tapatía",
+        "tipo": "Plaza",
+        "distancia": "200 metros",
+        "descripcion": "Centro histórico con plazas conectadas, fuentes y monumentos coloniales."
+      },
+      {
+        "nombre": "Hospicio Cabañas",
+        "tipo": "Cultural",
+        "distancia": "800 metros",
+        "descripcion": "Patrimonio UNESCO con murales de Orozco, obra maestra de arquitectura colonial."
+      }
+    ]
   },
   {
     "slug": "la-normal",
@@ -1653,7 +2169,39 @@ export const estacionesGDL = [
       "Restaurantes cercanos"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial activa de Guadalajara en La Normal. Acceso a tiendas diversas, restaurantes y servicios. Punto estratégico para turistas buscando compras, gastronomía variada y entretenimiento en zona céntrica.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona comercial La Normal",
+        "tipo": "Compras",
+        "distancia": "200 metros",
+        "descripcion": "Centro comercial con tiendas departamentales, tiendas especializadas y servicios."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas desde comida rápida hasta restaurantes de calidad."
+      },
+      {
+        "nombre": "Servicios comerciales",
+        "tipo": "Servicios",
+        "distancia": "Radiante",
+        "descripcion": "Bancos, oficinas y servicios comerciales para turistas."
+      }
+    ]
   },
   {
     "slug": "avila-camacho-l3",
@@ -1682,7 +2230,39 @@ export const estacionesGDL = [
       "Comercios y restaurantes"
     ],
     "mejor_horario": "Mañana o tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Nodo importante de conexión entre Línea 1, Línea 2 y Línea 3. Acceso a barrios históricos tradicionales como San Jacinto con arte, galerías y vida bohemia. Punto estratégico para turistas interesados en explorar múltiples líneas y barrios históricos.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023) con conexiones. Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 3-5 minutos en horas pico."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Barrio San Jacinto",
+        "tipo": "Cultural",
+        "distancia": "500 metros",
+        "descripcion": "Barrio artístico bohemio con galerías, murales y tiendas artesanales."
+      },
+      {
+        "nombre": "Comercios locales",
+        "tipo": "Compras",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas artesanales, cafeterías y restaurantes con ambiente local."
+      },
+      {
+        "nombre": "Conexiones de línea",
+        "tipo": "Transporte",
+        "distancia": "Inmediato",
+        "descripcion": "Nodo de conexión entre Línea 1, Línea 2 y Línea 3 del Tren Ligero."
+      }
+    ]
   },
   {
     "slug": "plaza-universidad-l3",
@@ -1712,7 +2292,39 @@ export const estacionesGDL = [
       "Servicios académicos"
     ],
     "mejor_horario": "Mañana",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Nodo de conexión entre Línea 1, Línea 2 y Línea 3 en campus universitario. Acceso a la Universidad de Guadalajara, su Rectoría y Biblioteca Central. Centro académico e intelectual importante para conocer la educación superior tapatía.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023) con accesibilidad completa en conexiones."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Universidad de Guadalajara",
+        "tipo": "Educación",
+        "distancia": "300 metros",
+        "descripcion": "Campus histórico, segunda universidad más importante de México."
+      },
+      {
+        "nombre": "Rectoría",
+        "tipo": "Cultural",
+        "distancia": "400 metros",
+        "descripcion": "Edificio emblemático con arquitectura neoclásica."
+      },
+      {
+        "nombre": "Biblioteca Central",
+        "tipo": "Cultural",
+        "distancia": "500 metros",
+        "descripcion": "Biblioteca universitaria con exposiciones y acervo importante."
+      }
+    ]
   },
   {
     "slug": "cucei",
@@ -1739,7 +2351,39 @@ export const estacionesGDL = [
       "Servicios estudiantiles"
     ],
     "mejor_horario": "Mañana",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Acceso al Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI), institución académica destacada de la Universidad de Guadalajara. Campus moderno con biblioteca universitaria. Ideal para conocer la educación técnica tapatía.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa. Campus con topografía variable."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "CUCEI",
+        "tipo": "Educación",
+        "distancia": "100 metros",
+        "descripcion": "Centro Universitario de Ciencias Exactas e Ingenierías, campus moderno educativo."
+      },
+      {
+        "nombre": "Biblioteca CUCEI",
+        "tipo": "Cultural",
+        "distancia": "300 metros",
+        "descripcion": "Biblioteca universitaria con colecciones especializadas."
+      },
+      {
+        "nombre": "Cafeterías estudiantiles",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Establecimientos de comida para estudiantes y visitantes."
+      }
+    ]
   },
   {
     "slug": "rio-nilo-l3",
@@ -1767,7 +2411,39 @@ export const estacionesGDL = [
       "Tiendas y restaurantes"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial de Tlaquepaque con conexión a Línea 1 en Avenida Río Nilo. Tiendas y restaurantes variados. Punto estratégico para turistas que desean explorar la zona y llegar fácilmente a otras líneas del Tren Ligero.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Avenida Río Nilo",
+        "tipo": "Comercio",
+        "distancia": "Inmediato",
+        "descripcion": "Avenida comercial con tiendas, restaurantes y servicios variados."
+      },
+      {
+        "nombre": "Centro comercial",
+        "tipo": "Compras",
+        "distancia": "300 metros",
+        "descripcion": "Zona comercial dinámica con múltiples opciones de tiendas."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas desde local hasta internacional."
+      }
+    ]
   },
   {
     "slug": "estadio-chivas",
@@ -1796,7 +2472,39 @@ export const estacionesGDL = [
       "Transporte Mi Macro Periférico disponible"
     ],
     "mejor_horario": "Hora del partido",
-    "mundial_relevancia": "Estación de acceso al Estadio Akron. Desde aquí tomar Mi Macro Periférico hasta Estadio Chivas o caminar 20 minutos."
+    "mundial_relevancia": "Estación de acceso al Estadio Akron. Desde aquí tomar Mi Macro Periférico hasta Estadio Chivas o caminar 20 minutos.",
+    "descripcion_turistica": "Estación clave de acceso al Estadio Akron, sede oficial de partidos de la FIFA Copa Mundial 2026. Estadio de última generación, hogar del CD Guadalajara. Punto de partida para fans de todo el mundo que deseen presenciar la historia del fútbol mundial en territorio tapatío.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa. Conexión a Mi Macro Periférico para llegar al estadio."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Aumenta frecuencia en días de eventos deportivos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Estadio Akron",
+        "tipo": "Deportes",
+        "distancia": "1.5 km",
+        "descripcion": "Estadio de última generación con capacidad para 46,000 espectadores. Sede FIFA 2026. Casa del CD Guadalajara."
+      },
+      {
+        "nombre": "Mi Macro Periférico",
+        "tipo": "Transporte",
+        "distancia": "Inmediato",
+        "descripcion": "Conexión de transporte directo al estadio, disponible en días de partidos."
+      },
+      {
+        "nombre": "Zonas de estacionamiento",
+        "tipo": "Servicios",
+        "distancia": "Radiante",
+        "descripcion": "Estacionamientos disponibles para aficionados que llegan en automóvil."
+      }
+    ]
   },
   {
     "slug": "mariano-otero",
@@ -1822,7 +2530,39 @@ export const estacionesGDL = [
       "Fácil acceso a otras áreas"
     ],
     "mejor_horario": "Tarde",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Zona comercial activa de Zapopan con tiendas, restaurantes y servicios variados. Punto estratégico para turistas buscando compras y gastronomía moderna. Fácil acceso a otras áreas de la ciudad.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Frecuencia: cada 5-7 minutos."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona comercial Mariano Otero",
+        "tipo": "Compras",
+        "distancia": "200 metros",
+        "descripcion": "Centro comercial con tiendas departamentales y servicios variados."
+      },
+      {
+        "nombre": "Restaurantes y tiendas",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Opciones gastronómicas diversas y tiendas especializadas."
+      },
+      {
+        "nombre": "Servicios comerciales",
+        "tipo": "Servicios",
+        "distancia": "Radiante",
+        "descripcion": "Bancos, oficinas de servicios y establecimientos comerciales."
+      }
+    ]
   },
   {
     "slug": "central-de-autobuses",
@@ -1849,6 +2589,44 @@ export const estacionesGDL = [
       "Servicios de viajero"
     ],
     "mejor_horario": "Mañana para viajes",
-    "mundial_relevancia": "Sin relevancia directa al Estadio Akron"
+    "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
+    "descripcion_turistica": "Terminal sur de Línea 3 con conexión directa a Central de Autobuses de Tlaquepaque. Punto crucial para turistas que llegan o salen de Guadalajara. Nodo intermodal importante para explorar la región del Occidente de México.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación moderna de Línea 3 (2023). Accesibilidad completa. Terminal de línea."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "23:00",
+      "notas": "SITEUR Tren Ligero. L-S 5:00-23:00, Dom 6:00-23:00. Terminal de línea."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Central de Autobuses",
+        "tipo": "Transporte",
+        "distancia": "100 metros",
+        "descripcion": "Central de Autobuses de Tlaquepaque con autobuses hacia otras ciudades de Jalisco y México."
+      },
+      {
+        "nombre": "Información de viajes",
+        "tipo": "Servicios",
+        "distancia": "Inmediato",
+        "descripcion": "Centro de información de rutas y horarios de autobuses."
+      },
+      {
+        "nombre": "Restaurantes en terminal",
+        "tipo": "Gastronomía",
+        "distancia": "Radiante",
+        "descripcion": "Cafeterías y restaurantes para viajeros con opciones rápidas."
+      },
+      {
+        "nombre": "Tlaquepaque centro",
+        "tipo": "Cultural",
+        "distancia": "2 km",
+        "descripcion": "Centro de Tlaquepaque con tiendas de artesanía y cerámica local."
+      }
+    ]
   }
 ];

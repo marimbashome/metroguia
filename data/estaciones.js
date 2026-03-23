@@ -102,7 +102,39 @@ const estaciones = [
       "Conexión cercana con Línea 7 en Tacubaya (2 estaciones norte)"
     ],
     "mejor_horario": "Entre 10 AM y 5 PM para disfrutar el parque con luz natural. Menos concurrencia que en horas pico del centro.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026.",
+    "descripcion_turistica": "Juanacatlán es estación residencial tranquila en Álvaro Obregón con acceso a Parque Juanacatlán. Zona ideal para turistas que buscan experiencia auténtica capitalina lejos del ajetreo del centro. Neighborhood residencial seguro con comercios locales y vida cotidiana de los capitalinos.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Juanacatlán",
+        "tipo": "Parque",
+        "distancia": "5 min",
+        "descripcion": "Parque público de zona residencial, ideal para paseos matutinos y actividades al aire libre."
+      },
+      {
+        "nombre": "Mercado Juanacatlán",
+        "tipo": "Mercado",
+        "distancia": "3 min",
+        "descripcion": "Mercadito local con comida auténtica y artesanías a precios bajos. Experiencia de vida local."
+      },
+      {
+        "nombre": "Comercios locales en Av. Revolución",
+        "tipo": "Zona comercial",
+        "distancia": "2 min",
+        "descripcion": "Tiendas, cafeterías y pequeños restaurantes que sirven la población local."
+      }
+    ]
   },
   {
     "slug": "tacubaya",
@@ -454,7 +486,45 @@ const estaciones = [
       "Zona universitaria cercana; ambiente joven dinámico; tiendas de libros, discos y arte contemporáneo"
     ],
     "mejor_horario": "10 AM-8 PM para compras y gastronomía. Noche (8 PM-11 PM) para bares y vida social.",
-    "mundial_relevancia": "Acceso a experiencia auténtica de CDMX para turistas del Mundial que buscan algo más allá del circuito turístico."
+    "mundial_relevancia": "Acceso a experiencia auténtica de CDMX para turistas del Mundial que buscan algo más allá del circuito turístico.",
+    "descripcion_turistica": "Cuauhtémoc es hub comercial y cultural en el corazón de la Zona Rosa. Acceso directo a Paseo de la Reforma, mercados tradicionales y gastronomía variada. Zona bohemia con museos, galerías y tiendas especializadas. Ideal para turistas que buscan experiencia auténtica capitalina con mucha vida cultural.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador, requiere escaleras auxiliares."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado de Sonora",
+        "tipo": "Mercado tradicional",
+        "distancia": "8 min",
+        "descripcion": "Mercado tradicional mexicano con artesanías, hierbas medicinales y productos típicos. Abierto 10 AM a 6 PM. Experiencia auténtica de vida local."
+      },
+      {
+        "nombre": "Paseo de la Reforma",
+        "tipo": "Avenida histórica",
+        "distancia": "1 min",
+        "descripcion": "Principal avenida de la ciudad con tiendas, museos, restaurantes y monumentos históricos. Comercio de lujo y vida cultural."
+      },
+      {
+        "nombre": "Gastronomía variada",
+        "tipo": "Zona gastronómica",
+        "distancia": "2-5 min",
+        "descripcion": "Restaurantes de múltiples nacionalidades: tacos, tortas, comida italiana, china, árabe a precios accesibles."
+      },
+      {
+        "nombre": "Museos y galerías",
+        "tipo": "Cultura",
+        "distancia": "5 min",
+        "descripcion": "Galerías de arte contemporáneo y museos especializados. Zona universitaria con tiendas de libros y discos."
+      }
+    ]
   },
   {
     "slug": "balderas",
@@ -645,7 +715,45 @@ const estaciones = [
       "Restaurantes tradicionales mexicanos"
     ],
     "mejor_horario": "Mañana temprano para evitar multitudes turísticas.",
-    "mundial_relevancia": "Parada obligatoria para turistas FIFA 2026 interesados en historia."
+    "mundial_relevancia": "Parada obligatoria para turistas FIFA 2026 interesados en historia.",
+    "descripcion_turistica": "Isabel la Católica es puerta de acceso al corazón histórico de la Ciudad de México. Ubicada en el Centro Histórico, ofrece acceso directo a la Catedral Metropolitana, el Zócalo y ruinas del Templo Mayor. Imprescindible para turistas interesados en historia colonial y prehispánica de México.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil completa. Sin elevador, requiere escaleras auxiliares."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Catedral Metropolitana",
+        "tipo": "Monumento religioso",
+        "distancia": "8 min",
+        "descripcion": "Catedral más grande de América Latina, construcción de 250 años mezclando estilos arquitectónicos. Entrada gratuita. Imprescindible."
+      },
+      {
+        "nombre": "Zócalo de la Ciudad",
+        "tipo": "Plaza histórica",
+        "distancia": "10 min",
+        "descripcion": "Segunda plaza más grande del mundo. Centro administrativo y cultural. Rodeada de museos, restaurantes y tiendas. Epicentro histórico de México."
+      },
+      {
+        "nombre": "Museo del Templo Mayor",
+        "tipo": "Museo arqueológico",
+        "distancia": "7 min",
+        "descripcion": "Ruinas del templo azteca Tenochtitlan en pleno centro. Museo de clase mundial con artefactos prehispánicos. Entrada: ~$100 MXN."
+      },
+      {
+        "nombre": "Iglesias coloniales",
+        "tipo": "Monumentos religiosos",
+        "distancia": "5 min",
+        "descripcion": "Iglesias históricas del período colonial español. Arquitectura colonial única. Centro Histórico es Patrimonio de la UNESCO."
+      }
+    ]
   },
   {
     "slug": "pino-suarez",
@@ -772,7 +880,45 @@ const estaciones = [
       "Mejor visitar en horario diurno"
     ],
     "mejor_horario": "Mañana (7-10 AM) para ver el mercado en movimiento.",
-    "mundial_relevancia": "Sin relevancia directa para partidos, pero experiencia auténtica de CDMX."
+    "mundial_relevancia": "Sin relevancia directa para partidos, pero experiencia auténtica de CDMX.",
+    "descripcion_turistica": "Merced es acceso directo al Mercado de la Merced, el mercado más grande de América Latina. Zona vibrante y auténtica con gastronomía local, comercio tradicional y experiencia de vida cotidiana capitalina. Iglesia histórica del siglo XVI. Ideal para turistas que buscan autenticidad mexicana.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado de la Merced",
+        "tipo": "Mercado tradicional",
+        "distancia": "3 min",
+        "descripcion": "Mercado más grande de América Latina. Frutas, verduras, flores, especias y artesanías. Abierto desde muy temprano. Experiencia auténtica de comercio mexicano."
+      },
+      {
+        "nombre": "Iglesia de la Merced",
+        "tipo": "Monumento religioso",
+        "distancia": "2 min",
+        "descripcion": "Iglesia histórica del siglo XVI. Arquitectura colonial española. Obra maestra de la época virreinal."
+      },
+      {
+        "nombre": "Gastronomía local",
+        "tipo": "Zona gastronómica",
+        "distancia": "2-5 min",
+        "descripcion": "Comedores locales con comida auténtica mexicana a precios muy accesibles. Especialidades: tamales, pozole, tacos."
+      },
+      {
+        "nombre": "Comercio tradicional",
+        "tipo": "Zona comercial",
+        "distancia": "1 min",
+        "descripcion": "Tiendas de comercio tradicional alrededor del mercado. Ropa, accesorios y artículos diversos."
+      }
+    ]
   },
   {
     "slug": "candelaria",
@@ -813,39 +959,34 @@ const estaciones = [
       "elevador": false,
       "rampa": true,
       "piso_tactil": true,
-      "notas": "Rampas de acceso. Señalización táctil. Estación intermedia con servicios estándar."
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador, requiere escaleras."
     },
     "horarios": {
       "apertura": "05:00",
       "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
     },
     "lugares_cercanos": [
       {
-        "nombre": "Barrio La Candelaria",
-        "tipo": "Zona residencial",
-        "distancia": "0m",
-        "descripcion": "Barrio residencial tranquilo con vida local."
+        "nombre": "Bosque de Chapultepec",
+        "tipo": "Parque",
+        "distancia": "1.5km",
+        "descripcion": "Principal pulmón verde de la ciudad con museos, castillo y lagos. Imprescindible para turistas."
       },
       {
-        "nombre": "Zona comercial pequeña",
-        "tipo": "Retail",
-        "distancia": "100m",
-        "descripcion": "Tiendas y servicios locales de barrio."
+        "nombre": "Museo Tamayo",
+        "tipo": "Museo",
+        "distancia": "1.2km",
+        "descripcion": "Galería de arte contemporáneo en la entrada al Bosque. Entrada gratuita los domingos."
       },
       {
-        "nombre": "Centro Histórico",
-        "tipo": "Zona turística",
-        "distancia": "3 estaciones sur",
-        "descripcion": "Acceso cercano a Zócalo y atracciones."
-      },
-      {
-        "nombre": "Restaurantes Candelaria",
-        "tipo": "Gastronomía",
-        "distancia": "100m",
-        "descripcion": "Opciones de comida familiar mexicana."
+        "nombre": "Avenida Paseo de la Reforma",
+        "tipo": "Zona comercial",
+        "distancia": "800m",
+        "descripcion": "Principal avenida de negocios y comercio de CDMX con restaurantes y vida nocturna."
       }
-    ]
+    ],
+    "descripcion_turistica": "Estación en zona de Tacubaya, puerta de entrada occidental al metro. Cercana al Bosque de Chapultepec y con acceso a avenidas principales de la ciudad."
   },
   {
     "slug": "san-lazaro",
@@ -941,7 +1082,39 @@ const estaciones = [
       "Buen ambiente para descansar"
     ],
     "mejor_horario": "Cualquier hora, zona tranquila.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Moctezuma es estación residencial tranquila en Venustiano Carranza. Zona de vida local con comercios comunitarios y servicios básicos. Ideal para turistas que buscan alejarse del ajetreo del centro y experimentar vida residencial mexicana auténtica.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Moctezuma",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila de clase media. Comercios locales de barrio. Vida comunitaria auténtica."
+      },
+      {
+        "nombre": "Comercios locales",
+        "tipo": "Zona comercial",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas de comercio local, farmacias, tortererías y pequeños restaurantes de barrio."
+      },
+      {
+        "nombre": "Servicios comunitarios",
+        "tipo": "Servicios",
+        "distancia": "5 min",
+        "descripcion": "Escuelas, centros de salud y espacios comunitarios de la zona residencial."
+      }
+    ]
   },
   {
     "slug": "balbuena",
@@ -969,7 +1142,39 @@ const estaciones = [
       "Servicios comunitarios disponibles"
     ],
     "mejor_horario": "Mañana/tarde para disfrutar del parque.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Balbuena es estación residencial con acceso directo a Parque Balbuena, importante espacio verde de Venustiano Carranza. Zona tranquila y segura con comercios locales. Ideal para turistas que buscan relajarse en espacios abiertos y experimentar vida residencial mexicana.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Balbuena",
+        "tipo": "Parque",
+        "distancia": "5 min",
+        "descripcion": "Parque importante con áreas verdes, juegos recreativos y espacios para paseos. Ideal para familias. Acceso gratuito."
+      },
+      {
+        "nombre": "Zona residencial",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales de barrio y servicios comunitarios."
+      },
+      {
+        "nombre": "Comercios locales",
+        "tipo": "Zona comercial",
+        "distancia": "3 min",
+        "descripcion": "Tiendas, farmacias, tortererías y pequeños restaurantes de barrio."
+      }
+    ]
   },
   {
     "slug": "boulevard-puerto-aereo",
@@ -1002,7 +1207,39 @@ const estaciones = [
       "Buena conectividad"
     ],
     "mejor_horario": "Horario diurno para servicios completos.",
-    "mundial_relevancia": "Útil para conexiones a otros puntos de la ciudad."
+    "mundial_relevancia": "Útil para conexiones a otros puntos de la ciudad.",
+    "descripcion_turistica": "Boulevard Puerto Aéreo es estación comercial ubicada en Venustiano Carranza con acceso a terminales de autobuses e interconexiones de transporte. Zona comercial activa. Funciona como hub para viajeros que requieren múltiples opciones de transporte.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Terminal de autobuses",
+        "tipo": "Transporte",
+        "distancia": "5 min",
+        "descripcion": "Terminal de autobuses con conexiones a otras ciudades. Centro de transporte intermodal."
+      },
+      {
+        "nombre": "Zona comercial local",
+        "tipo": "Zona comercial",
+        "distancia": "3 min",
+        "descripcion": "Comercios diversos, tiendas y restaurantes. Zona comercial bien surtida para viajeros."
+      },
+      {
+        "nombre": "Servicios de transporte",
+        "tipo": "Transporte",
+        "distancia": "1-5 min",
+        "descripcion": "Múltiples opciones de transporte: autobuses, taxis, servicios de ride-sharing."
+      }
+    ]
   },
   {
     "slug": "gomez-farias",
@@ -1030,7 +1267,39 @@ const estaciones = [
       "Buen descanso para viajeros"
     ],
     "mejor_horario": "Cualquier hora del día.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Gómez Farías es estación residencial tranquila en Venustiano Carranza. Zona segura con servicios locales y comercios de barrio. Ideal para turistas que buscan descanso en ambiente residencial auténtico mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Gómez Farías",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila de clase media con comercios locales y servicios de barrio."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias, tortererías y servicios básicos para la población local."
+      },
+      {
+        "nombre": "Ambiente seguro",
+        "tipo": "Residencial",
+        "distancia": "0 min",
+        "descripcion": "Zona segura y tranquila, ideal para descanso."
+      }
+    ]
   },
   {
     "slug": "zaragoza",
@@ -1058,7 +1327,39 @@ const estaciones = [
       "Comercios locales"
     ],
     "mejor_horario": "Cualquier hora, zona segura.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Zaragoza es estación residencial tranquila ubicada en Venustiano Carranza. Zona segura con servicios comunitarios básicos. Ideal para turistas que buscan descansar en ambiente residencial auténtico mexicano, alejados del ajetreo del centro.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Zaragoza",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con servicios comunitarios básicos. Comercios locales de barrio."
+      },
+      {
+        "nombre": "Servicios comunitarios",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Escuelas, centros de salud, tiendas y servicios básicos de la zona residencial."
+      },
+      {
+        "nombre": "Comercios locales",
+        "tipo": "Zona comercial",
+        "distancia": "1 min",
+        "descripcion": "Tiendas, farmacias, tortererías y pequeños restaurantes de barrio."
+      }
+    ]
   },
   {
     "slug": "pantitlan",
@@ -1221,7 +1522,39 @@ const estaciones = [
       "Buen punto de partida al centro"
     ],
     "mejor_horario": "Mañana para transporte eficiente.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Panteones es estación residencial ubicada en Naucalpan, Estado de México, conectando directamente a CDMX. Zona tranquila y segura con acceso a servicios locales. Punto de entrada importante desde el Estado de México hacia la capital.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Panteón Municipal",
+        "tipo": "Sitio histórico",
+        "distancia": "5 min",
+        "descripcion": "Panteón histórico, sitio cultural importante. Lugar de interés para entender historia local."
+      },
+      {
+        "nombre": "Zona residencial Naucalpan",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios básicos."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias y servicios comunitarios para la población."
+      }
+    ]
   },
   {
     "slug": "tacuba",
@@ -1325,7 +1658,39 @@ const estaciones = [
       "Buen descanso"
     ],
     "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Cuitláhuac es estación residencial ubicada en Azcapotzalco. Zona tranquila y segura con servicios comunitarios. Ideal para turistas que buscan descanso en ambiente residencial auténtico, alejados del ajetreo del centro.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Azcapotzalco",
+        "tipo": "Residencial",
+        "distancia": "3 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios comunitarios."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias y servicios básicos para la población local."
+      },
+      {
+        "nombre": "Parques cercanos",
+        "tipo": "Espacios públicos",
+        "distancia": "5-10 min",
+        "descripcion": "Parques y espacios verdes para recreación y descanso."
+      }
+    ]
   },
   {
     "slug": "popotla",
@@ -1353,7 +1718,39 @@ const estaciones = [
       "Buena conectividad al centro"
     ],
     "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Popotla es estación residencial ubicada en Miguel Hidalgo. Zona tranquila y segura con servicios locales. Ideal para turistas que buscan descanso en ambiente residencial auténtico mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Popotla",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios básicos de barrio."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias, tortererías y pequeños restaurantes de la zona."
+      },
+      {
+        "nombre": "Comercios de barrio",
+        "tipo": "Zona comercial",
+        "distancia": "1 min",
+        "descripcion": "Tiendas tradicionales y servicios comunitarios."
+      }
+    ]
   },
   {
     "slug": "colegio-militar",
@@ -1386,7 +1783,39 @@ const estaciones = [
       "Zona cultural e histórica"
     ],
     "mejor_horario": "Mañana para visita completa al museo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Colegio Militar es estación cultural ubicada en Miguel Hidalgo con acceso a importante museo militar histórico. Zona con valor histórico y proximidad a Castillo de Chapultepec. Ideal para turistas interesados en historia militar y patrimonio mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil completa. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Museo del Colegio Militar",
+        "tipo": "Museo histórico",
+        "distancia": "3 min",
+        "descripcion": "Importante museo militar con historia de México. Institución fundada en 1823. Entrada: ~$50 MXN. Abierto de martes a domingo."
+      },
+      {
+        "nombre": "Castillo de Chapultepec",
+        "tipo": "Monumento histórico",
+        "distancia": "10 min",
+        "descripcion": "Fortaleza histórica con vistas panorámicas. Residencia presidencial. Imprescindible para turistas."
+      },
+      {
+        "nombre": "Bosque de Chapultepec",
+        "tipo": "Parque urbano",
+        "distancia": "10 min",
+        "descripcion": "Parque importante con museos y espacios verdes. Pulmón verde de la ciudad."
+      }
+    ]
   },
   {
     "slug": "normal",
@@ -1419,7 +1848,39 @@ const estaciones = [
       "Ambiente académico"
     ],
     "mejor_horario": "Horario escolar para ambiente completo.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Normal es estación educativa ubicada en Cuauhtémoc con acceso directo a Escuela Normal de México. Zona tranquila y segura dedicada a educación. Importante institución pedagógica fundada en 1823. Ideal para turistas interesados en historia educativa de México.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Escuela Normal de México",
+        "tipo": "Institución educativa",
+        "distancia": "2 min",
+        "descripcion": "Institución pedagógica fundada en 1823. Importante para historia educativa mexicana. Centro histórico educativo."
+      },
+      {
+        "nombre": "Zona universitaria",
+        "tipo": "Zona educativa",
+        "distancia": "3 min",
+        "descripcion": "Zona con institutos de educación superior. Ambiente académico."
+      },
+      {
+        "nombre": "Comercios de zona educativa",
+        "tipo": "Comercios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, librerías, cafeterías para estudiantes."
+      }
+    ]
   },
   {
     "slug": "san-cosme",
@@ -1452,7 +1913,39 @@ const estaciones = [
       "Buena conectividad"
     ],
     "mejor_horario": "Tarde para ambiente comercial.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "San Cosme es estación comercial ubicada en Cuauhtémoc con acceso directo a Paseo de la Reforma. Zona comercial moderna y bien conectada con iglesia histórica. Acceso a tiendas, servicios y avenida principal de la ciudad.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Paseo de la Reforma",
+        "tipo": "Avenida histórica",
+        "distancia": "5 min",
+        "descripcion": "Principal avenida de la ciudad con tiendas, museos, monumentos. Centro comercial y cultural."
+      },
+      {
+        "nombre": "Iglesia de San Cosme",
+        "tipo": "Monumento religioso",
+        "distancia": "2 min",
+        "descripcion": "Iglesia histórica, patrón de los cirujanos. Arquitectura colonial."
+      },
+      {
+        "nombre": "Zona comercial",
+        "tipo": "Zona comercial",
+        "distancia": "1-5 min",
+        "descripcion": "Tiendas, restaurantes, cafeterías y servicios comerciales modernos."
+      }
+    ]
   },
   {
     "slug": "revolucion",
@@ -1485,7 +1978,39 @@ const estaciones = [
       "Restaurantes y cafés cercanos"
     ],
     "mejor_horario": "Mañana para visita completa al museo.",
-    "mundial_relevancia": "Parada importante para turistas interesados en historia moderna de México."
+    "mundial_relevancia": "Parada importante para turistas interesados en historia moderna de México.",
+    "descripcion_turistica": "Revolución es estación histórica ubicada en Cuauhtémoc con acceso directo a Museo de la Revolución Mexicana e icónico Monumento a la Revolución. Zona culturalmente significativa para entender historia moderna de México. Imprescindible para turistas interesados en la Revolución de 1910.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Museo de la Revolución Mexicana",
+        "tipo": "Museo histórico",
+        "distancia": "3 min",
+        "descripcion": "Museo imprescindible para entender Revolución Mexicana de 1910. Entrada: ~$80 MXN. Abierto de martes a domingo."
+      },
+      {
+        "nombre": "Monumento a la Revolución",
+        "tipo": "Monumento icónico",
+        "distancia": "2 min",
+        "descripcion": "Uno de símbolos más icónicos de México. Acceso a vistas panorámicas. Foto obligatoria. Entrada: ~$60 MXN."
+      },
+      {
+        "nombre": "Restaurantes y cafés",
+        "tipo": "Gastronomía",
+        "distancia": "1-5 min",
+        "descripcion": "Restaurantes tradicionales y cafés alrededor del monumento. Gastronomía mexicana auténtica."
+      }
+    ]
   },
   {
     "slug": "hidalgo",
@@ -1934,7 +2459,45 @@ const estaciones = [
       "Toma fotos de la arquitectura popular y colorida de las casas"
     ],
     "mejor_horario": "Lunes a sábados entre 08:00 y 17:00 para visitar mercados activos y espacios culturales. Evita noches si no estás familiarizado con la zona.",
-    "mundial_relevancia": "San Antonio Abad será una estación importante para turistas del Mundial 2026 que busquen experimentar la CDMX auténtica y menos conocida."
+    "mundial_relevancia": "San Antonio Abad será una estación importante para turistas del Mundial 2026 que busquen experimentar la CDMX auténtica y menos conocida.",
+    "descripcion_turistica": "San Antonio Abad es estación comercial ubicada en el sur de CDMX que abre puerta a zona histórica de Iztapalapa. Zona vibrante con mercados dinámicos, iglesia histórica, gastronomía auténtica y vida real de capitalinos. Ideal para turistas interesados en cultura popular mexicana y CDMX auténtica, menos visitada por turismo masivo.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Iglesia de San Antonio Abad",
+        "tipo": "Monumento religioso",
+        "distancia": "3 min",
+        "descripcion": "Templo histórico de importancia colonial. Iglesia venerada. Arquitectura colonial mexicana."
+      },
+      {
+        "nombre": "Mercado de la Jamaica",
+        "tipo": "Mercado tradicional",
+        "distancia": "5 min",
+        "descripcion": "Uno de mercados más grandes de CDMX. Flores, plantas y frutas. Experiencia auténtica de comercio local."
+      },
+      {
+        "nombre": "Zona comercial San Antonio",
+        "tipo": "Zona comercial",
+        "distancia": "2 min",
+        "descripcion": "Tiendas, comercios y comedores populares con comida auténtica mexicana a precios accesibles."
+      },
+      {
+        "nombre": "Arte urbano y murales",
+        "tipo": "Cultura local",
+        "distancia": "1-5 min",
+        "descripcion": "Arte urbano y murales que narran historias locales. Arquitectura popular colorida."
+      }
+    ]
   },
   {
     "slug": "chabacano",
@@ -2042,7 +2605,39 @@ const estaciones = [
       "Zona segura durante día; bien conectada con otras líneas metro"
     ],
     "mejor_horario": "9 AM-7 PM para compras y servicios. Menos turística que estaciones céntrica.",
-    "mundial_relevancia": "Punto de transbordo estratégico para turistas que conectan líneas principales del Metro."
+    "mundial_relevancia": "Punto de transbordo estratégico para turistas que conectan líneas principales del Metro.",
+    "descripcion_turistica": "Viaducto es estación ubicada bajo el Viaducto Miguel Alemán, importante arteria de transporte de CDMX. Zona comercial y de servicios con ambiente urbano típico capitalino. Hub de conexión hacia múltiples direcciones de la ciudad. Ideal para turistas que necesitan desplazarse hacia zonas residenciales y comerciales.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Eje Viaducto Miguel Alemán",
+        "tipo": "Arteria de transporte",
+        "distancia": "1 min",
+        "descripcion": "Importante viaducto con flujo vehicular intenso. Infraestructura moderna de la ciudad."
+      },
+      {
+        "nombre": "Zona comercial local",
+        "tipo": "Zona comercial",
+        "distancia": "2 min",
+        "descripcion": "Tiendas, electrónica, ropa y servicios variados. Comercio local diverso."
+      },
+      {
+        "nombre": "Restaurantes y cafés",
+        "tipo": "Gastronomía",
+        "distancia": "1-5 min",
+        "descripcion": "Opciones gastronómicas variadas con precios para todos los presupuestos."
+      }
+    ]
   },
   {
     "slug": "xola",
@@ -2070,7 +2665,39 @@ const estaciones = [
       "Buen descanso"
     ],
     "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Xola es estación residencial ubicada en Benito Juárez. Zona tranquila y segura con servicios comunitarios locales. Ideal para turistas que buscan descanso en ambiente residencial auténtico mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Xola",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios básicos."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias, tortererías y servicios comunitarios."
+      },
+      {
+        "nombre": "Parques cercanos",
+        "tipo": "Espacios públicos",
+        "distancia": "5-10 min",
+        "descripcion": "Parques y espacios verdes para recreación."
+      }
+    ]
   },
   {
     "slug": "villa-de-cortes",
@@ -2098,7 +2725,39 @@ const estaciones = [
       "Buen descanso"
     ],
     "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Villa de Cortés es estación residencial ubicada en Benito Juárez. Zona tranquila y segura con servicios locales. Ideal para turistas que buscan descanso en ambiente residencial auténtico mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Villa de Cortés",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios básicos."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias, tortererías y servicios comunitarios."
+      },
+      {
+        "nombre": "Parques cercanos",
+        "tipo": "Espacios públicos",
+        "distancia": "5-10 min",
+        "descripcion": "Parques y espacios verdes para recreación."
+      }
+    ]
   },
   {
     "slug": "nativitas",
@@ -2127,7 +2786,39 @@ const estaciones = [
       "Los vecinos son amables y abiertos a conversaciones"
     ],
     "mejor_horario": "Mañanas de 07:00 a 12:00 para ver actividad auténtica. Entre semana es más tranquilo que fines de semana.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026.",
+    "descripcion_turistica": "Nativitas es estación residencial ubicada en Benito Juárez. Barrio tranquilo y seguro con atmosphere auténticamente mexicano. Zona con mercados locales, fondas familiares y vida comunitaria. Ideal para turistas que buscan experiencia real del sur capitalino.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Nativitas",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Barrio residencial tranquilo con comercios locales y vida auténtica."
+      },
+      {
+        "nombre": "Fondas familiares",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Comedores locales con comida casera típica mexicana a precios accesibles."
+      },
+      {
+        "nombre": "Mercados locales",
+        "tipo": "Comercios",
+        "distancia": "2-5 min",
+        "descripcion": "Mercados con productos frescos y artesanías locales. Experiencia auténtica."
+      }
+    ]
   },
   {
     "slug": "portales",
@@ -2155,7 +2846,39 @@ const estaciones = [
       "Buen descanso"
     ],
     "mejor_horario": "Cualquier hora.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Portales es estación residencial ubicada en Benito Juárez. Zona tranquila y segura con servicios básicos locales. Ideal para turistas que buscan descanso en ambiente residencial auténtico mexicano.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Portales",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Zona residencial tranquila con comercios locales y servicios básicos."
+      },
+      {
+        "nombre": "Servicios locales",
+        "tipo": "Servicios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, farmacias, tortererías y servicios comunitarios."
+      },
+      {
+        "nombre": "Parques cercanos",
+        "tipo": "Espacios públicos",
+        "distancia": "5-10 min",
+        "descripcion": "Parques y espacios verdes para recreación."
+      }
+    ]
   },
   {
     "slug": "ermita",
@@ -2250,7 +2973,39 @@ const estaciones = [
       "Interactúa con vecinos para recomendaciones auténticas"
     ],
     "mejor_horario": "Cualquier hora del día es segura. Las mañanas entre 07:00 y 11:00 son más auténticas.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026.",
+    "descripcion_turistica": "General Anaya es estación residencial ubicada en Coyoacán. Zona residencial tranquila con character local auténtico. Acceso a barrio genuino con tiendas locales, fondas y vida real de CDMX. Ideal para turistas que buscan experiencia auténtica lejos de rutas turísticas.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona residencial Coyoacán",
+        "tipo": "Residencial",
+        "distancia": "2 min",
+        "descripcion": "Barrio residencial tranquilo con vida local auténtica."
+      },
+      {
+        "nombre": "Fondas locales",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Comedores con comida casera y precios muy accesibles."
+      },
+      {
+        "nombre": "Tiendas de barrio",
+        "tipo": "Comercios",
+        "distancia": "1-5 min",
+        "descripcion": "Tiendas locales, panaderías y comercios tradicionales."
+      }
+    ]
   },
   {
     "slug": "tasquena",
@@ -2292,7 +3047,39 @@ const estaciones = [
       "Múltiples cafés y servicios de comida"
     ],
     "mejor_horario": "Crucial: Llegar con 2-3 horas de anticipación a partidos.",
-    "mundial_relevancia": "CRÍTICA ABSOLUTA para FIFA 2026. ÚNICA conexión Metro → Estadio Azteca. IMPRESCINDIBLE entender que tarjeta Metro ≠ Tren Ligero."
+    "mundial_relevancia": "CRÍTICA ABSOLUTA para FIFA 2026. ÚNICA conexión Metro → Estadio Azteca. IMPRESCINDIBLE entender que tarjeta Metro ≠ Tren Ligero.",
+    "descripcion_turistica": "Estación terminal sur de Línea 2 en Coyoacán, zona bohemia y universitaria. Punto de inicio/fin de línea con zona comercial y cultural vibrante.",
+    "lugares_cercanos": [
+      {
+        "nombre": "Coyoacán Centro Histórico",
+        "tipo": "Barrio histórico",
+        "distancia": "1.5km",
+        "descripcion": "Barrio colonial con plazas, iglesias, galerías de arte y cafés tradicionales. Patrimonio cultural de CDMX."
+      },
+      {
+        "nombre": "Casa de Frida Kahlo",
+        "tipo": "Museo",
+        "distancia": "2km",
+        "descripcion": "Casa Azul, hogar de Frida Kahlo. Reservar en línea. Costo: ~$200-250 MXN."
+      },
+      {
+        "nombre": "Mercado Coyoacán",
+        "tipo": "Mercado",
+        "distancia": "1.2km",
+        "descripcion": "Mercado tradicional con comida local auténtica, artesanías y ambiente típico mexicano."
+      }
+    ],
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
+    },
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación antigua con rampas. Sin elevador. Señalización táctil disponible."
+    }
   },
   {
     "slug": "indios-verdes",
@@ -2395,7 +3182,39 @@ const estaciones = [
       "Horario de actividades: 6am-10pm (verifica eventos especiales en línea)"
     ],
     "mejor_horario": "Mañana (7am-11am) para ver entrenamientos en vivo. Tardes tranquilas de 2pm-5pm para explorar sin multitudes.",
-    "mundial_relevancia": "Centro de entrenamientos y eventos deportivos. Relevante para turistas interesados en la infraestructura deportiva mexicana que alberga entrenamientos del Mundial."
+    "mundial_relevancia": "Centro de entrenamientos y eventos deportivos. Relevante para turistas interesados en la infraestructura deportiva mexicana que alberga entrenamientos del Mundial.",
+    "descripcion_turistica": "Estación en zona deportiva de Benito Juárez. Cercana a estadios y complejos deportivos con ambiente activo y energético.",
+    "lugares_cercanos": [
+      {
+        "nombre": "Estadio Azteca",
+        "tipo": "Estadio",
+        "distancia": "2km",
+        "descripcion": "Legendario estadio de futbol, hogar del Club América. Visitas guiadas disponibles."
+      },
+      {
+        "nombre": "Magdalena Mixhuca",
+        "tipo": "Zona deportiva",
+        "distancia": "500m",
+        "descripcion": "Centro deportivo olímpico con velódromo, alberca y canchas. Abierto para público."
+      },
+      {
+        "nombre": "Avenida Paseo de la Reforma",
+        "tipo": "Avenida comercial",
+        "distancia": "1.5km",
+        "descripcion": "Conexión directa hacia zona de negocios y comercio de la ciudad."
+      }
+    ],
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
+    },
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": false,
+      "piso_tactil": true,
+      "notas": "Estación sin elevador ni rampa. Escaleras fijas. Señalización táctil en plataforma."
+    }
   },
   {
     "slug": "potrero",
@@ -2424,7 +3243,39 @@ const estaciones = [
       "Horario de transbordo: rápido y eficiente durante todo el día"
     ],
     "mejor_horario": "Mediodía (12pm-2pm) cuando la afluencia de trasbordo es moderada. Ideal para explorar comercios cercanos.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor principal como estación de conexión para optimizar desplazamientos."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor principal como estación de conexión para optimizar desplazamientos.",
+    "descripcion_turistica": "Potrero es estación de transferencia fundamental en Línea 3 que conecta con Línea 5. Ubicada en Gustavo A. Madero con acceso a zona comercial y residencial. Hub de conexión ideal para turistas que deseen optimizar desplazamientos hacia diversas zonas de la ciudad.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado Potrero",
+        "tipo": "Mercado",
+        "distancia": "5 min",
+        "descripcion": "Mercado tradicional con comercio local. Experiencia auténtica."
+      },
+      {
+        "nombre": "Zona comercial",
+        "tipo": "Comercios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas, restaurantes y servicios para descanso entre traslados."
+      },
+      {
+        "nombre": "Barrios residenciales",
+        "tipo": "Residencial",
+        "distancia": "5-10 min",
+        "descripcion": "Arquitectura histórica mexicana en barrios cercanos."
+      }
+    ]
   },
   {
     "slug": "la-raza",
@@ -2465,7 +3316,39 @@ const estaciones = [
       "Tranquilidad relativa en horario matutino para contemplación sin aglomeraciones"
     ],
     "mejor_horario": "Mañana (8am-11am) para fotografia clara del monumento. Evita tarde (6pm-8pm) cuando el monumento se oscurece.",
-    "mundial_relevancia": "Sitio cultural emblemático. Recomendado para turistas que quieran comprender la identidad mexicana durante su visita por el Mundial 2026."
+    "mundial_relevancia": "Sitio cultural emblemático. Recomendado para turistas que quieran comprender la identidad mexicana durante su visita por el Mundial 2026.",
+    "descripcion_turistica": "Estación importante de intercambio en zona norte, conexión entre Línea 3 y 5. Centro de movilidad con ambiente urbano dinámico.",
+    "lugares_cercanos": [
+      {
+        "nombre": "IMSS La Raza",
+        "tipo": "Hospital",
+        "distancia": "200m",
+        "descripcion": "Institución de salud pública importante. Estación nombrada por la cercanía."
+      },
+      {
+        "nombre": "Paseo de la Reforma",
+        "tipo": "Avenida",
+        "distancia": "500m",
+        "descripcion": "Continuación de la principal avenida con centros comerciales y negocios."
+      },
+      {
+        "nombre": "Zona residencial norte",
+        "tipo": "Barrio",
+        "distancia": "800m",
+        "descripcion": "Área residencial de clase media-alta con comercios locales variados."
+      }
+    ],
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
+    },
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación con rampas para acceso. Sin elevador. Señalización táctil completa."
+    }
   },
   {
     "slug": "tlatelolco",
@@ -2895,7 +3778,39 @@ const estaciones = [
       "Restaurantes y cafés en Chapultepec para comer con vistas al parque"
     ],
     "mejor_horario": "Mañana (9am-12pm) para entrar a museos con menos afluencia. Tarde para pasear el parque sin calor intenso.",
-    "mundial_relevancia": "Conexión a Chapultepec, sitio patrimonial fundamental. Esencial para turistas que deseen comprender la historia militar mexicana."
+    "mundial_relevancia": "Conexión a Chapultepec, sitio patrimonial fundamental. Esencial para turistas que deseen comprender la historia militar mexicana.",
+    "descripcion_turistica": "Niños Héroes es estación que commemora cadetes que defendieron México. Ubicada en centro histórico con acceso directo a Chapultepec. Parque de 3 secciones con castillo, bosque y museos imprescindibles. Conexión patrimonial fundamental para turistas del Mundial 2026.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Chapultepec",
+        "tipo": "Parque histórico",
+        "distancia": "5 min",
+        "descripcion": "Parque de 686 hectáreas con castillo, bosque y museos. Pulmón verde de la ciudad. Imprescindible."
+      },
+      {
+        "nombre": "Castillo de Chapultepec",
+        "tipo": "Monumento histórico",
+        "distancia": "15 min",
+        "descripcion": "Residencia presidencial con vistas panorámicas. Entrada: ~$80 MXN."
+      },
+      {
+        "nombre": "Museos de Chapultepec",
+        "tipo": "Museos",
+        "distancia": "10-15 min",
+        "descripcion": "Museo Antropología, Arte Moderno, Historia Natural. Entrada: $85 MXN."
+      }
+    ]
   },
   {
     "slug": "hospital-general",
@@ -2924,7 +3839,39 @@ const estaciones = [
       "Transferencias a Línea 1 para explorar diferentes barrios"
     ],
     "mejor_horario": "Horario variable según necesidades médicas. Si visitas por turismo: mediodía (12pm-3pm).",
-    "mundial_relevancia": "Centro médico. Relevante para turistas que requieran atención sanitaria durante el Mundial 2026."
+    "mundial_relevancia": "Centro médico. Relevante para turistas que requieran atención sanitaria durante el Mundial 2026.",
+    "descripcion_turistica": "Hospital General es estación ubicada en Benito Juárez con acceso a zona médica y administrativa de CDMX. Uno de mayores complejos médicos de Latinoamérica. Servicios médicos de primer nivel 24/7. Relevante para turistas que requieran atención sanitaria durante su visita.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Hospital General de México",
+        "tipo": "Hospital",
+        "distancia": "2 min",
+        "descripcion": "Mayor complejo médico de Latinoamérica. Servicios 24/7. Centro de referencia nacional."
+      },
+      {
+        "nombre": "Servicios médicos",
+        "tipo": "Salud",
+        "distancia": "1-5 min",
+        "descripcion": "Farmacias, clínicas y servicios de salud especializados."
+      },
+      {
+        "nombre": "Restaurantes para acompañantes",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Comedores y cafeterías cercanas para acompañantes durante consultas."
+      }
+    ]
   },
   {
     "slug": "centro-medico",
@@ -3027,7 +3974,39 @@ const estaciones = [
       "Menor afluencia turística: experiencia más auténtica de la vida metropolitana"
     ],
     "mejor_horario": "Mediodía (11am-2pm) para visitar mercados y comer. Evita noche después de 8pm.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en mostrar CDMX más allá de zonas turísticas tradicionales."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en mostrar CDMX más allá de zonas turísticas tradicionales.",
+    "descripcion_turistica": "Etiopía/Plaza de la Transparencia es estación ubicada en Benito Juárez que ofrece acceso a zona administrativa y barrios residenciales auténticos. Espacio público moderno con arquitectura contemporánea. Punto de conexión hacia perspectivas menos turísticas de CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Plaza de la Transparencia",
+        "tipo": "Parque público",
+        "distancia": "2 min",
+        "descripcion": "Espacio público moderno con arquitectura contemporánea. Lugar de descanso."
+      },
+      {
+        "nombre": "Mercados locales",
+        "tipo": "Comercios",
+        "distancia": "3-5 min",
+        "descripcion": "Productos frescos y artesanías a precios reales. Experiencia auténtica."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Comida variada con precios accesibles. Cocina mexicana e internacional."
+      }
+    ]
   },
   {
     "slug": "eugenia",
@@ -3056,7 +4035,39 @@ const estaciones = [
       "Conecta fácilmente con otras líneas para explorar diferentes áreas"
     ],
     "mejor_horario": "Tarde (2pm-6pm) para compras y exploración. Horario flexible para pasos entre destinos.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial.",
+    "descripcion_turistica": "Eugenia es estación ubicada en Benito Juárez que marca transición hacia barrios residenciales y comerciales diversos. Mezcla de vida urbana y comercial con acceso a tiendas y restaurantes. Experiencia de vida cotidiana mexicana fuera de atracciones turísticas principales.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona comercial Eugenia",
+        "tipo": "Comercios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas locales e internacionales para compras. Comercio diverso."
+      },
+      {
+        "nombre": "Restaurantes variados",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Comida rápida mexicana hasta cocina internacional. Precios variados."
+      },
+      {
+        "nombre": "Barrios residenciales",
+        "tipo": "Residencial",
+        "distancia": "5-10 min",
+        "descripcion": "Vida auténtica de la ciudad fuera de rutas turísticas."
+      }
+    ]
   },
   {
     "slug": "division-del-norte",
@@ -3085,7 +4096,39 @@ const estaciones = [
       "Mercado de alimentos frescos y tiendas locales con precios competitivos"
     ],
     "mejor_horario": "Tarde-noche (5pm-10pm) para disfrutar de vida cultural y gastronómica local.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés en cultura alternativa y vida nocturna."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés en cultura alternativa y vida nocturna.",
+    "descripcion_turistica": "División del Norte es estación ubicada en Benito Juárez que ofrece acceso a zona comercial importante y barrios históricos bohemios. Mezcla de comercio tradicional y moderno, galerías de arte y cafeterías alternativas. Parada interesante para descubrir vida cultural y artística fuera del centro histórico.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Hundido",
+        "tipo": "Parque",
+        "distancia": "5 min",
+        "descripcion": "Parque importante con espacios verdes. Lugar de recreación."
+      },
+      {
+        "nombre": "Galerías de arte",
+        "tipo": "Cultura",
+        "distancia": "2-5 min",
+        "descripcion": "Galerías de arte alternativo y galerías locales. Vida cultural."
+      },
+      {
+        "nombre": "Vida bohemia",
+        "tipo": "Gastronomía y noche",
+        "distancia": "1-5 min",
+        "descripcion": "Cafeterías, antros y bares con ambiente local alternativo. Vida nocturna."
+      }
+    ]
   },
   {
     "slug": "zapata",
@@ -3275,7 +4318,39 @@ const estaciones = [
       "Los domingos hay menos gente y es muy pacífico"
     ],
     "mejor_horario": "Mañanas de 07:00 a 12:00 para ver la naturaleza con luz hermosa. Los domingos todo el día es tranquilo.",
-    "mundial_relevancia": "Viveros de Coyoacán será un destino importante para turistas del Mundial 2026 buscando espacios verdes y descanso en la naturaleza."
+    "mundial_relevancia": "Viveros de Coyoacán será un destino importante para turistas del Mundial 2026 buscando espacios verdes y descanso en la naturaleza.",
+    "descripcion_turistica": "Viveros/Derechos Humanos es estación que conecta con uno de pulmones verdes más bellos de CDMX. Parque histórico con senderos arbolados, plantas hermosas. Lugar de tranquilidad en metrópolis. Ideal para familias, amantes naturaleza y quienes buscan paz urbana.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Viveros de Coyoacán",
+        "tipo": "Parque verde",
+        "distancia": "2 min",
+        "descripcion": "Parque histórico con senderos arbolados, plantas hermosas. Pulmón verde de CDMX."
+      },
+      {
+        "nombre": "CNDH",
+        "tipo": "Monumento",
+        "distancia": "5 min",
+        "descripcion": "Comisión Nacional de Derechos Humanos. Sitio importante de memoria histórica."
+      },
+      {
+        "nombre": "Áreas para picnic",
+        "tipo": "Espacios públicos",
+        "distancia": "2-5 min",
+        "descripcion": "Áreas verdes para descanso y fotografía de naturaleza."
+      }
+    ]
   },
   {
     "slug": "miguel-angel-de-quevedo",
@@ -3309,7 +4384,39 @@ const estaciones = [
       "Menor afluencia turística: experiencia más genuina que zonas peatonales principales"
     ],
     "mejor_horario": "Mañana (8am-11am) para mercados frescos. Tarde (3pm-6pm) para exploración relajada.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en experiencia auténtica de vida coyoacanense."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Valor en experiencia auténtica de vida coyoacanense.",
+    "descripcion_turistica": "Miguel Ángel de Quevedo es estación ubicada en Coyoacán con acceso a avenida homónima, importante vía de la zona. Barrios residenciales y comerciales de Coyoacán con menos aglomeración que zonas peatonales centrales. Parada para experiencias auténticas y menos masificadas de la región.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Avenida Miguel Ángel de Quevedo",
+        "tipo": "Avenida comercial",
+        "distancia": "1 min",
+        "descripcion": "Comercio local, restaurantes y tiendas tradicionales. Importante vía de la zona."
+      },
+      {
+        "nombre": "Barrios residenciales coyoacanenses",
+        "tipo": "Residencial",
+        "distancia": "2-5 min",
+        "descripcion": "Arquitectura colonial y bohemia. Barrios auténticos de Coyoacán."
+      },
+      {
+        "nombre": "Mercado local",
+        "tipo": "Mercado",
+        "distancia": "3-5 min",
+        "descripcion": "Productos frescos mexicanos y artesanías a precios reales."
+      }
+    ]
   },
   {
     "slug": "copilco",
@@ -3343,7 +4450,39 @@ const estaciones = [
       "Ideal para amantes del arte, literatura y academia"
     ],
     "mejor_horario": "Lunes a viernes de 10:00 a 20:00 es cuando hay más vida académica. Fines de semana más tranquilo.",
-    "mundial_relevancia": "Copilco será punto de acceso para turistas que visiten UNAM, una institución icónica mexicana."
+    "mundial_relevancia": "Copilco será punto de acceso para turistas que visiten UNAM, una institución icónica mexicana.",
+    "descripcion_turistica": "Copilco es estación en Coyoacán cercana a Universidad Nacional Autónoma de México (UNAM). Zona con carácter estudiantil y académico, librerías, cafés de intelectuales y ambiente bohemio. Acceso importante a UNAM y su campus hermoso. Zona vibrante, segura y perfecta para vida cultural y académica.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Campus UNAM",
+        "tipo": "Universidad",
+        "distancia": "3 min",
+        "descripcion": "Universidad Nacional Autónoma de México. Campus histórico. Accesible a visitantes."
+      },
+      {
+        "nombre": "Cafés estudiantiles",
+        "tipo": "Gastronomía",
+        "distancia": "2-5 min",
+        "descripcion": "Cafeterías con precios accesibles. Ambiente intelectual."
+      },
+      {
+        "nombre": "Librerías",
+        "tipo": "Cultura",
+        "distancia": "2-5 min",
+        "descripcion": "Librerías y espacios intelectuales. Vida académica."
+      }
+    ]
   },
   {
     "slug": "universidad",
@@ -3528,7 +4667,39 @@ const estaciones = [
       "Punto de transbordo cómodo y eficiente hacia otras líneas"
     ],
     "mejor_horario": "Mediodía (12pm-2pm) para mercados y comida. Evita horas pico.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Utilidad como punto de conexión residencial.",
+    "descripcion_turistica": "Talismán es estación ubicada en Gustavo A. Madero con acceso a zona residencial comercial vibrante. Punto de conexión entre norte residencial y centro histórico. Parada auténtica para experimentar vida cotidiana de barrios mexicanos menos turísticos. Mercados locales, restaurantes caseros y hospitalidad genuina.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados y domingos puede variar."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado Talismán",
+        "tipo": "Mercado",
+        "distancia": "3 min",
+        "descripcion": "Mercado local con comida y artesanías. Precios accesibles."
+      },
+      {
+        "nombre": "Comercio local",
+        "tipo": "Comercios",
+        "distancia": "2-5 min",
+        "descripcion": "Tiendas y restaurantes de comida casera mexicana."
+      },
+      {
+        "nombre": "Iglesias coloniales",
+        "tipo": "Monumentos",
+        "distancia": "5-10 min",
+        "descripcion": "Edificios históricos de la zona."
+      }
+    ]
   },
   {
     "slug": "bondojito",
@@ -3554,41 +4725,36 @@ const estaciones = [
     "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés sociológico en vida obrera mexicana.",
     "accesibilidad": {
       "elevador": false,
-      "rampa": true,
+      "rampa": false,
       "piso_tactil": true,
-      "notas": "Rampas de acceso. Señalización táctil. Estación pequeña con servicios básicos."
+      "notas": "Estación antigua sin elevador. Escaleras fijas. Señalización táctil en plataforma."
     },
     "horarios": {
       "apertura": "05:00",
       "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
     },
     "lugares_cercanos": [
       {
-        "nombre": "Barrio residencial",
-        "tipo": "Zona residencial",
-        "distancia": "0m",
-        "descripcion": "Zona residencial con vida local tranquila."
+        "nombre": "Basílica de Guadalupe",
+        "tipo": "Templo religioso",
+        "distancia": "2.5km",
+        "descripcion": "Sitio sagrado más importante de México. Accesible en 10 min desde estación cercana."
       },
       {
-        "nombre": "Servicios locales",
-        "tipo": "Comercios",
-        "distancia": "100m",
-        "descripcion": "Tiendas y servicios de barrio."
+        "nombre": "Mercado local Bondojito",
+        "tipo": "Mercado",
+        "distancia": "300m",
+        "descripcion": "Mercado tradicional con comida auténtica y productos locales a precios bajos."
       },
       {
-        "nombre": "Centro Histórico",
-        "tipo": "Zona turística",
-        "distancia": "5 estaciones sur",
-        "descripcion": "Acceso a atracciones principales vía Línea 4."
-      },
-      {
-        "nombre": "Área comercial pequeña",
-        "tipo": "Retail",
-        "distancia": "200m",
-        "descripcion": "Tiendas y comedores locales."
+        "nombre": "Zona residencial GAM",
+        "tipo": "Barrio",
+        "distancia": "500m",
+        "descripcion": "Área residencial de clase trabajadora con comercios básicos y ambiente seguro."
       }
-    ]
+    ],
+    "descripcion_turistica": "Estación en zona residencial norte de Gustavo A. Madero. Área urbana con mercados locales y vida cotidiana de capitalinos."
   },
   {
     "slug": "consulado",
@@ -3622,41 +4788,36 @@ const estaciones = [
     "mundial_relevancia": "Centro diplomático. Relevante para turistas internacionales que requieran servicios consulares durante el Mundial.",
     "accesibilidad": {
       "elevador": false,
-      "rampa": true,
+      "rampa": false,
       "piso_tactil": true,
-      "notas": "Rampas funcionales. Señalización táctil. Estación de tránsito con servicios estándar."
+      "notas": "Estación sin elevador. Acceso por escaleras. Señalización táctil disponible."
     },
     "horarios": {
       "apertura": "05:00",
       "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
     },
     "lugares_cercanos": [
       {
-        "nombre": "Zona Consulado",
-        "tipo": "Área oficial",
-        "distancia": "0m",
-        "descripcion": "Zona con sedes diplomáticas y servicios consulares."
+        "nombre": "Basílica de Guadalupe",
+        "tipo": "Templo religioso",
+        "distancia": "1.5km",
+        "descripcion": "Santuario más importante de México, lugar de peregrinación anual de millones. Centro espiritual."
       },
       {
-        "nombre": "Zona comercial intermedia",
-        "tipo": "Retail",
-        "distancia": "100m",
-        "descripcion": "Tiendas y servicios comerciales."
+        "nombre": "Calzada de Guadalupe",
+        "tipo": "Avenida histórica",
+        "distancia": "500m",
+        "descripcion": "Avenida principal con comercios tradicionales y acceso a la Basílica."
       },
       {
-        "nombre": "Centro Histórico",
-        "tipo": "Zona turística",
-        "distancia": "7 estaciones sur",
-        "descripcion": "Acceso a Zócalo y atracciones históricas."
-      },
-      {
-        "nombre": "Restaurantes zona norte",
-        "tipo": "Gastronomía",
-        "distancia": "150m",
-        "descripcion": "Opciones de comida variada con precios moderados."
+        "nombre": "Mercado Consulado",
+        "tipo": "Mercado",
+        "distancia": "400m",
+        "descripcion": "Mercado local con comida típica mexicana y productos frescos."
       }
-    ]
+    ],
+    "descripcion_turistica": "Estación en zona norte cerca de la Basílica de Guadalupe. Puerta de entrada a sitios religiosos más importantes de México."
   },
   {
     "slug": "canal-del-norte",
@@ -3685,7 +4846,39 @@ const estaciones = [
       "Punto de transbordo hacia diferentes sectores de la capital"
     ],
     "mejor_horario": "Mañana (9am-12pm) para exploración. Tarde para descanso.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés histórico-geográfico."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. Interés histórico-geográfico.",
+    "descripcion_turistica": "Estación en zona histórica norte cerca del Canal de Moctezuma. Área residencial con patrimonio prehispánico y moderno.",
+    "lugares_cercanos": [
+      {
+        "nombre": "Basílica de Guadalupe",
+        "tipo": "Templo",
+        "distancia": "3km",
+        "descripcion": "Sitio sagrado más visitado de México, accesible en 20 min desde la estación."
+      },
+      {
+        "nombre": "Parque Metropolitano Canal del Norte",
+        "tipo": "Parque",
+        "distancia": "500m",
+        "descripcion": "Área verde de recuperación ambiental en torno al canal histórico."
+      },
+      {
+        "nombre": "Mercado Canal del Norte",
+        "tipo": "Mercado",
+        "distancia": "300m",
+        "descripcion": "Mercado tradicional con comida local auténtica y ambiente genuino."
+      }
+    ],
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
+    },
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": false,
+      "piso_tactil": true,
+      "notas": "Estación antigua sin ascensor. Acceso por escaleras. Señalización táctil completa."
+    }
   },
   {
     "slug": "morelos",
@@ -3794,39 +4987,34 @@ const estaciones = [
       "elevador": false,
       "rampa": true,
       "piso_tactil": true,
-      "notas": "Rampas de acceso. Señalización táctil. Estación intermedia con servicios estándar."
+      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador, requiere escaleras."
     },
     "horarios": {
       "apertura": "05:00",
       "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
     },
     "lugares_cercanos": [
       {
-        "nombre": "Barrio La Candelaria",
-        "tipo": "Zona residencial",
-        "distancia": "0m",
-        "descripcion": "Barrio residencial tranquilo con vida local."
+        "nombre": "Bosque de Chapultepec",
+        "tipo": "Parque",
+        "distancia": "1.5km",
+        "descripcion": "Principal pulmón verde de la ciudad con museos, castillo y lagos. Imprescindible para turistas."
       },
       {
-        "nombre": "Zona comercial pequeña",
-        "tipo": "Retail",
-        "distancia": "100m",
-        "descripcion": "Tiendas y servicios locales de barrio."
+        "nombre": "Museo Tamayo",
+        "tipo": "Museo",
+        "distancia": "1.2km",
+        "descripcion": "Galería de arte contemporáneo en la entrada al Bosque. Entrada gratuita los domingos."
       },
       {
-        "nombre": "Centro Histórico",
-        "tipo": "Zona turística",
-        "distancia": "3 estaciones sur",
-        "descripcion": "Acceso cercano a Zócalo y atracciones."
-      },
-      {
-        "nombre": "Restaurantes Candelaria",
-        "tipo": "Gastronomía",
-        "distancia": "100m",
-        "descripcion": "Opciones de comida familiar mexicana."
+        "nombre": "Avenida Paseo de la Reforma",
+        "tipo": "Zona comercial",
+        "distancia": "800m",
+        "descripcion": "Principal avenida de negocios y comercio de CDMX con restaurantes y vida nocturna."
       }
-    ]
+    ],
+    "descripcion_turistica": "Estación en zona de Tacubaya, puerta de entrada occidental al metro. Cercana al Bosque de Chapultepec y con acceso a avenidas principales de la ciudad."
   },
   {
     "slug": "fray-servando",
@@ -3849,7 +5037,39 @@ const estaciones = [
       "Acceso a barrios históricos con arquitectura colonial preservada"
     ],
     "mejor_horario": "Mañana (9am-1pm) para museos y mercados. Evita tarde.",
-    "mundial_relevancia": "Sitio histórico-intelectual. Interesante para turistas que deseen conocer el pensamiento mexicano."
+    "mundial_relevancia": "Sitio histórico-intelectual. Interesante para turistas que deseen conocer el pensamiento mexicano.",
+    "descripcion_turistica": "Fray Servando honra al fraile e intelectual José Servando Teresa de Mier. La zona ofrece iglesias coloniales, mercados tradicionales y acceso a patrimonio intelectual mexicano. Ideal para turistas interesados en historia y arquitectura religiosa.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampa. Estación con escaleras pero con apoyo para discapacidad motriz."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "L-V horario regular. Sábados y domingos puede variar. Mercado Jamaica más activo mañana."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado Jamaica",
+        "tipo": "mercado",
+        "distancia": "5 min",
+        "descripcion": "Uno de los mercados de flores más grandes de México con experiencia sensorial única."
+      },
+      {
+        "nombre": "Iglesia de la Natividad",
+        "tipo": "iglesia",
+        "distancia": "8 min",
+        "descripcion": "Templo colonial con arquitectura religiosa española del siglo XVI."
+      },
+      {
+        "nombre": "Barrio de Tepito",
+        "tipo": "barrio",
+        "distancia": "10 min",
+        "descripcion": "Zona comercial popular con tiendas y vida auténtica de CDMX."
+      }
+    ]
   },
   {
     "slug": "jamaica",
@@ -4204,7 +5424,39 @@ const estaciones = [
       "A dos paradas del Templo Mayor si quieres combinar norte con centro"
     ],
     "mejor_horario": "Mañanas 8am-1pm para mercados llenos. Tardes más tranquilas.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Valle Gómez es zona popular y auténtica del norte del centro donde comienzan los mercados locales. El Mercado Valle Gómez ofrece frutas y verduras a precios increíblemente económicos. Ideal para turistas que buscan experiencia genuina de la vida cotidiana mexicana.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampa. Estación con escaleras. Plataforma de tamaño reducido."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "L-V horario regular. Sábados y domingos puede variar. Mercado más activo madrugada y mañana."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado Valle Gómez",
+        "tipo": "mercado",
+        "distancia": "3 min",
+        "descripcion": "Mercado popular con frutas, verduras y carnes a precios muy económicos."
+      },
+      {
+        "nombre": "Templo Mayor",
+        "tipo": "sitio arqueológico",
+        "distancia": "15 min",
+        "descripcion": "Zona arqueológica del Templo Mayor a dos paradas de distancia en metro."
+      },
+      {
+        "nombre": "Comedores locales",
+        "tipo": "restaurante",
+        "distancia": "adyacente",
+        "descripcion": "Fondas con comida casera mexicana a precios accesibles."
+      }
+    ]
   },
   {
     "slug": "eduardo-molina",
@@ -4226,7 +5478,39 @@ const estaciones = [
       "Evitar horas pico (7-9am, 5-8pm) si buscas comodidad"
     ],
     "mejor_horario": "Todo el día. Más tranquilo después de las 8pm.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Eduardo Molina es zona industrial y residencial del oriente que muestra el lado productivo y manufacturero de CDMX. La estación comunica trabajadores y residentes, ofreciendo perspectiva auténtica de la economía laboral de la ciudad.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampa. Estación con escaleras y espacios funcionales."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "L-V horario regular. Más activa en horas pico (7-9am, 5-8pm)."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona Industrial Oriente",
+        "tipo": "área comercial",
+        "distancia": "adyacente",
+        "descripcion": "Corredor industrial con tiendas de materiales y herramientas."
+      },
+      {
+        "nombre": "Pantitlán",
+        "tipo": "estación",
+        "distancia": "3 min",
+        "descripcion": "Siguiente estación en Línea 5 hacia el oriente."
+      },
+      {
+        "nombre": "Tiendas de abastecimiento",
+        "tipo": "comercio",
+        "distancia": "adyacente",
+        "descripcion": "Tiendas de materiales, herramientas y suministros para trabajadores."
+      }
+    ]
   },
   {
     "slug": "aragon",
@@ -6580,7 +7864,39 @@ const estaciones = [
       "Servicios comunitarios disponibles"
     ],
     "mejor_horario": "Mañana/tarde para disfrutar del parque.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
+    "descripcion_turistica": "Estación en zona oriental de Iztapalapa. Punto de conexión con área comercial y residencial densamente poblada.",
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Naucalli",
+        "tipo": "Parque",
+        "distancia": "1.5km",
+        "descripcion": "Parque tradicional de la zona con vegetación y paseos tranquilos."
+      },
+      {
+        "nombre": "Centro Comercial Balbuena",
+        "tipo": "Centro comercial",
+        "distancia": "800m",
+        "descripcion": "Zona comercial local con tiendas departamentales y restaurantes."
+      },
+      {
+        "nombre": "Mercado Balbuena",
+        "tipo": "Mercado",
+        "distancia": "400m",
+        "descripcion": "Mercado tradicional con comida casera y productos frescos locales."
+      }
+    ],
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
+    },
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": false,
+      "piso_tactil": true,
+      "notas": "Estación antigua sin elevador. Acceso por escaleras. Señalización táctil en plataforma."
+    }
   },
   {
     "slug": "minas",
@@ -6609,7 +7925,39 @@ const estaciones = [
       "Área residencial tranquila y acogedora"
     ],
     "mejor_horario": "Mañanas para subir al Cerro de la Estrella (evita el calor de mediodía). Fines de semana para ambiente familiar.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. El Cerro de la Estrella puede interesar a turistas que buscan naturaleza y arqueología."
+    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026. El Cerro de la Estrella puede interesar a turistas que buscan naturaleza y arqueología.",
+    "descripcion_turistica": "Minas es puerta al Parque Ecológico del Cerro de la Estrella, uno de los volcanes extintos más importantes del Valle de México. La zona ofrece senderos con vistas panorámicas, gastronomía popular accesible y experiencia de la Semana Santa más grande del mundo durante Pascua.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso mediante rampa. Estación con escaleras. Cerro de la Estrella tiene senderos sin infraestructura especial de accesibilidad."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "L-V horario regular. Fines de semana más activa por visitantes del Cerro de la Estrella."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Ecológico Cerro de la Estrella",
+        "tipo": "parque",
+        "distancia": "10 min",
+        "descripcion": "Volcán extinto con senderos para caminatas, vistas panorámicas de CDMX y zona arqueológica."
+      },
+      {
+        "nombre": "Representación del Vía Crucis (Semana Santa)",
+        "tipo": "evento",
+        "distancia": "variable",
+        "descripcion": "La representación del Vía Crucis más grande del mundo, atrae 2 millones de asistentes durante Semana Santa."
+      },
+      {
+        "nombre": "Mercado y comida callejera",
+        "tipo": "gastronomía",
+        "distancia": "adyacente",
+        "descripcion": "Comida popular a precios muy accesibles en zona residencial de Iztapalapa."
+      }
+    ]
   },
   {
     "slug": "guelatao",
@@ -10907,4 +12255,4 @@ const estaciones = [
   }
 ];
 
-module.exports = { estaciones };
+export default estaciones;
