@@ -145,8 +145,37 @@ export default function LineaTijuanaPage({ params }) {
     marginBottom: '20px',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Tijuana',
+        item: 'https://metroguia.mx/tijuana/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: linea.nombre,
+        item: `https://metroguia.mx/tijuana/linea/${linea.id}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section style={heroStyles}>
         <div style={containerStyles}>
           <h1 style={{ fontSize: '42px', fontWeight: 'bold', marginBottom: '10px' }}>

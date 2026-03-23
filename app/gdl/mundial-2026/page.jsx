@@ -11,6 +11,71 @@ export const metadata = {
   },
 };
 
+// JSON-LD structured data for World Cup events in Guadalajara
+const eventosGDL = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (11 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026 en Guadalajara',
+    startDate: '2026-06-11',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio Akron',
+      address: { '@type': 'PostalAddress', addressLocality: 'Guadalajara', addressRegion: 'Jalisco', addressCountry: 'MX' },
+      geo: { '@type': 'GeoCoordinates', latitude: 20.488056, longitude: -103.268889 }
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (18 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-18',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio Akron',
+      address: { '@type': 'PostalAddress', addressLocality: 'Guadalajara', addressRegion: 'Jalisco', addressCountry: 'MX' }
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (23 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-23',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio Akron',
+      address: { '@type': 'PostalAddress', addressLocality: 'Guadalajara', addressRegion: 'Jalisco', addressCountry: 'MX' }
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (26 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-26',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio Akron',
+      address: { '@type': 'PostalAddress', addressLocality: 'Guadalajara', addressRegion: 'Jalisco', addressCountry: 'MX' }
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  }
+];
+
 const partidos = [
   {
     fecha: 'Jueves, 11 de Junio',
@@ -46,6 +111,13 @@ const partidos = [
 export default function Mundial2026Page() {
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      {eventosGDL.map((evento, idx) => (
+        <script
+          key={idx}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(evento) }}
+        />
+      ))}
       {/* HERO */}
       <section
         style={{
@@ -422,6 +494,96 @@ export default function Mundial2026Page() {
                 💵 Costo: $9.50 MXN
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* GUADALAJARA COMO DESTINO */}
+      <section style={{
+        backgroundColor: '#fef3c7',
+        padding: '80px 24px',
+      }}>
+        <div style={{ maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2 style={{
+            fontSize: '40px',
+            fontFamily: 'Syne, sans-serif',
+            fontWeight: '700',
+            marginBottom: '48px',
+            color: '#1f2937',
+          }}>
+            🍹 Guadalajara: Más Allá del Fútbol
+          </h2>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '24px',
+            marginBottom: '48px',
+          }}>
+            {[
+              {
+                icono: '🥃',
+                titulo: 'Tequila & Distilería',
+                desc: 'Visita destilerías en los alrededores de Guadalajara. Tours de 2-3 horas desde el centro. Prueba tequila autêntico en bodegas locales.',
+              },
+              {
+                icono: '🍽️',
+                titulo: 'Comida Tapatía',
+                desc: 'Birria, tortas ahogadas, gorditas. Come en mercados locales (Mercado San Juan de Dios) o restaurantes tradicionales cerca de la Catedral.',
+              },
+              {
+                icono: '🎵',
+                titulo: 'Música y Cultura',
+                desc: 'Cuna del Mariachi. En las noches, escucha música en vivo en Plaza Guadalajara o en restaurantes del Centro Histórico.',
+              },
+              {
+                icono: '🎭',
+                titulo: 'Vida Nocturna',
+                desc: 'Bares y cantinas en Chapultepec. Después de los partidos, la zona de la Avenida México es popular con turistas y locales.',
+              },
+              {
+                icono: '🏛️',
+                titulo: 'Centro Histórico',
+                desc: 'Catedral Metropolitana, Teatro Degollado, Museos. Todo accesible a pie desde la estación Morelos (Línea 3).',
+              },
+              {
+                icono: '🛍️',
+                titulo: 'Compras',
+                desc: 'Artesanía mexicana: cerámica, vidrio soplado, textiles. Tianguis en El Baratillo — ve de día, es la zona con más delincuencia en noches.',
+              },
+            ].map((item, idx) => (
+              <div key={idx} style={{
+                padding: '24px',
+                backgroundColor: '#ffffff',
+                borderRadius: '8px',
+                border: '2px solid #f59e0b',
+              }}>
+                <h3 style={{
+                  fontSize: '28px',
+                  margin: '0 0 12px 0',
+                }}>
+                  {item.icono}
+                </h3>
+                <h4 style={{
+                  fontSize: '18px',
+                  fontFamily: 'Syne, sans-serif',
+                  fontWeight: '700',
+                  margin: '0 0 8px 0',
+                  color: '#1f2937',
+                }}>
+                  {item.titulo}
+                </h4>
+                <p style={{
+                  fontSize: '14px',
+                  color: '#6b7280',
+                  margin: '0',
+                  fontFamily: 'DM Sans, sans-serif',
+                  lineHeight: '1.6',
+                }}>
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

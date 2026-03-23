@@ -53,6 +53,105 @@ export default function EstacionPage({ params }) {
     },
   }
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'CDMX',
+        item: 'https://metroguia.mx/cdmx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${estacion.linea}`,
+        item: `https://metroguia.mx/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.nombre,
+        item: `https://metroguia.mx/estacion/${estacion.slug}/`
+      }
+    ]
+  }
+
+  // Generate FAQ schema dynamically from station data
+  const faqItems = []
+
+  // Q1: How do I get to this station?
+  faqItems.push({
+    '@type': 'Question',
+    name: `¿Cómo llego a la estación ${estacion.nombre}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `La estación ${estacion.nombre} está ubicada en la Alcaldía ${estacion.alcaldia} y pertenece a la Línea ${estacion.linea} del Metro CDMX. Puedes acceder desde las principales estaciones conectadas a través de sus transferencias.${estacion.transferencias && estacion.transferencias.length > 0 ? ` Las líneas de transferencia disponibles son: Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}. ` : ''} Consulta el mapa del metro o usa nuestro planificador de rutas para obtener direcciones específicas.`
+    }
+  })
+
+  // Q2: What's nearby this station?
+  if (estacion.pois && estacion.pois.length > 0) {
+    const poiList = estacion.pois.slice(0, 5).map(p => `${p.nombre} (${p.tipo}, a ${p.distancia})`).join(', ')
+    faqItems.push({
+      '@type': 'Question',
+      name: `¿Qué hay cerca de la estación ${estacion.nombre}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `Alrededor de la estación ${estacion.nombre} encontrarás varios lugares de interés: ${poiList}. La zona ofrece diversos servicios, entretenimiento y opciones de transporte alternativo. Consulta la sección de "Lugares cercanos" en esta página para una lista completa con descripciones detalladas de cada sitio.`
+      }
+    })
+  }
+
+  // Q3: What are the station hours?
+  faqItems.push({
+    '@type': 'Question',
+    name: `¿Cuál es el horario de la estación ${estacion.nombre}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `El Metro CDMX opera de lunes a viernes de 5:00 AM a 12:00 AM (medianoche), sábados de 6:00 AM a 12:00 AM, y domingos y festivos de 7:00 AM a 12:00 AM. La estación ${estacion.nombre} (Línea ${estacion.linea}) sigue estos horarios estándar. Para un mejor viaje, consulta nuestra sección "Mejor horario para visitar" que ofrece recomendaciones específicas para evitar horas pico.`
+    }
+  })
+
+  // Q4: Is the station accessible?
+  // Check if station data includes accessibility info or infer from tips
+  const hasAccessibilityInfo = estacion.tips && estacion.tips.some(tip => tip.toLowerCase().includes('accesib') || tip.toLowerCase().includes('silla') || tip.toLowerCase().includes('discapacid'))
+  if (hasAccessibilityInfo) {
+    faqItems.push({
+      '@type': 'Question',
+      name: `¿La estación ${estacion.nombre} es accesible?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `La estación ${estacion.nombre} cuenta con facilidades de accesibilidad para personas con movilidad reducida. El Metro CDMX ha implementado mejoras en ascensores, rampas y áreas de circulación en muchas estaciones. Consulta nuestra sección de "Tips para turistas" en esta página para información específica sobre las instalaciones de accesibilidad disponibles en esta estación.`
+      }
+    })
+  }
+
+  // Q5: Which line passes through this station?
+  if (estacion.transferencias && estacion.transferencias.length > 0) {
+    faqItems.push({
+      '@type': 'Question',
+      name: `¿Qué líneas pasan por la estación ${estacion.nombre}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `La estación ${estacion.nombre} es una parada principal de la Línea ${estacion.linea} del Metro CDMX. Además, esta estación cuenta con transferencias directas a las Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}, lo que la convierte en un punto de conexión importante en la red del Metro. Esto permite acceso rápido a múltiples destinos en la ciudad.`
+      }
+    })
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems
+  }
+
   // Get line color from CSS variable
   const lineaClasses = {
     '1': '--linea-1',
@@ -88,6 +187,14 @@ export default function EstacionPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* ── BREADCRUMBS ── */}

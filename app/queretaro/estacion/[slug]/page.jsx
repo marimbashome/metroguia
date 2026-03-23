@@ -102,8 +102,43 @@ export default function EstacionQueretaroPage({ params }) {
     marginBottom: '10px',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Querétaro',
+        item: 'https://metroguia.mx/queretaro/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: estacion.linea || 'Línea',
+        item: `https://metroguia.mx/queretaro/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.nombre,
+        item: `https://metroguia.mx/queretaro/estacion/${estacion.slug}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section style={heroStyles}>
         <div style={heroContentStyles}>

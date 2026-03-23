@@ -2,20 +2,23 @@ import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Tren Maya — Conecta el Caribe Mexicano | MetroGuia',
-  description: 'Guía completa del Tren Maya. 1554 km de ferrocarril turístico conectando Cancún, Riviera Maya, Chichén Itzá y Mérida. Perfecto para fans del FIFA 2026.',
-  openGraph: {
-    title: 'Tren Maya — Conecta el Caribe Mexicano',
-    description: 'Descubre el Tren Maya con MetroGuia. Cancún, Riviera Maya, Chichén Itzá, Mérida y más. Destino turístico masivo.',
-    url: 'https://metroguia.mx/tren-maya',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export function generateMetadata() {
+  return {
+    title: 'Tren Maya — Conecta el Caribe Mexicano | MetroGuia',
+    description: 'Guía completa del Tren Maya. 1554 km de ferrocarril turístico conectando Cancún, Riviera Maya, Chichén Itzá y Mérida. Perfecto para fans del FIFA 2026.',
+    keywords: 'Tren Maya, Yucatán, Quintana Roo, Cancún, Riviera Maya, Tulum, Chichén Itzá, Mérida, tren turístico, viaje caribeño',
+    openGraph: {
+      title: 'Tren Maya — Conecta el Caribe Mexicano',
+      description: 'Descubre el Tren Maya con MetroGuia. Cancún, Riviera Maya, Chichén Itzá, Mérida y más. Destino turístico masivo.',
+      url: 'https://metroguia.mx/tren-maya',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function TrenMayaPage() {
   const estacionesDestacadas = estacionesTrenMaya.filter(e =>
@@ -23,8 +26,9 @@ export default function TrenMayaPage() {
   );
 
   const heroStyles = {
-    background: 'linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)',
-    color: '#ffffff',
+    background: 'linear-gradient(135deg, var(--surface) 0%, rgba(14, 165, 233, 0.08) 100%)',
+    borderBottom: '1px solid var(--border)',
+    color: 'var(--text)',
     padding: '60px 20px',
     textAlign: 'center',
   };
@@ -33,24 +37,28 @@ export default function TrenMayaPage() {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '40px 20px',
+    color: 'var(--text)',
   };
 
   const sectionTitleStyles = {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: '#1f2937',
+    color: 'var(--text)',
     textAlign: 'center',
+    paddingBottom: '15px',
+    borderBottom: '2px solid var(--border)',
   };
 
   const tramoCardStyles = {
-    backgroundColor: '#f9fafb',
-    border: '2px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '2px solid var(--border)',
     borderRadius: '8px',
     padding: '20px',
     marginBottom: '20px',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
+    color: 'var(--text)',
   };
 
   const colorDotStyles = {
@@ -63,11 +71,12 @@ export default function TrenMayaPage() {
   };
 
   const estacionCardStyles = {
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     padding: '15px',
     marginBottom: '15px',
+    color: 'var(--text)',
   };
 
   const gridStyles = {
@@ -80,7 +89,7 @@ export default function TrenMayaPage() {
   const ctaButtonStyles = {
     display: 'inline-block',
     backgroundColor: '#0EA5E9',
-    color: '#ffffff',
+    color: 'var(--text)',
     padding: '14px 28px',
     borderRadius: '6px',
     textDecoration: 'none',
@@ -109,19 +118,58 @@ export default function TrenMayaPage() {
     borderTop: '3px solid #ef4444',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Tren Maya',
+        item: 'https://metroguia.mx/tren-maya/'
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO SECTION */}
       <section style={heroStyles}>
-        <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold' }}>
-          🌊 Tren Maya
-        </h1>
-        <p style={{ fontSize: '20px', marginBottom: '20px' }}>
-          Ferrocarril turístico conectando el Caribe mexicano a través de 1554 km de vías
-        </p>
-        <p style={{ fontSize: '16px', opacity: '0.95' }}>
-          7 tramos • 16 estaciones principales • Cancún a Chichén Itzá pasando por Riviera Maya
-        </p>
+        <div style={containerStyles}>
+          <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold', color: '#0EA5E9' }}>
+            Tren Maya
+          </h1>
+          <p style={{ fontSize: '20px', marginBottom: '20px', color: 'var(--text-muted)' }}>
+            Ferrocarril turístico conectando el Caribe mexicano a través de 1554 km de vías
+          </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
+            7 tramos • 16 estaciones principales • Cancún a Chichén Itzá pasando por Riviera Maya
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '30px', marginTop: '30px' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#0EA5E9' }}>1,554</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Kilómetros de Vías</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#0EA5E9' }}>7</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Tramos Principales</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#0EA5E9' }}>3 Estados</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Quintana Roo, Yucatán, Campeche</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* SOBRE TREN MAYA */}
@@ -314,14 +362,14 @@ export default function TrenMayaPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '60px' }}>
-        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: '#1f2937' }}>
+      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '40px', borderTop: '1px solid var(--border)' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: 'var(--text)' }}>
           Explora el Caribe Mexicano en Tren Maya
         </h2>
-        <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '30px' }}>
+        <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
           Descubre cada tramo y estación del ferrocarril turístico más importante del Caribe mexicano.
         </p>
-        <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginBottom: '40px' }}>
           <Link href="/tren-maya/linea/T1" style={ctaButtonStyles}>
             Explorar Tramo 1: Riviera Maya
           </Link>
@@ -331,6 +379,21 @@ export default function TrenMayaPage() {
           <Link href="/tren-maya/linea/T6" style={ctaButtonStyles}>
             Explorar Tramo 6: Mérida
           </Link>
+        </div>
+
+        {/* FOOTER: Links to other cities */}
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: '40px', marginTop: '40px', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '12px' }}>
+            Explora Otros Destinos
+          </h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px' }}>
+            <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
+            <Link href="/gdl" style={{ textDecoration: 'none', color: '#FF6B2C', fontWeight: '500', fontSize: '14px' }}>RIT Guadalajara</Link>
+            <Link href="/mty" style={{ textDecoration: 'none', color: '#00A884', fontWeight: '500', fontSize: '14px' }}>Línea 1 Monterrey</Link>
+            <Link href="/puebla" style={{ textDecoration: 'none', color: '#8B5CF6', fontWeight: '500', fontSize: '14px' }}>RUTA Puebla</Link>
+            <Link href="/merida" style={{ textDecoration: 'none', color: '#F59E0B', fontWeight: '500', fontSize: '14px' }}>SIT Mérida</Link>
+            <Link href="/queretaro" style={{ textDecoration: 'none', color: '#EF4444', fontWeight: '500', fontSize: '14px' }}>Q-BUS Querétaro</Link>
+          </div>
         </div>
       </section>
     </main>

@@ -133,8 +133,43 @@ export default function EstacionChihuahuaPage({ params }) {
     marginBottom: '20px',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Chihuahua',
+        item: 'https://metroguia.mx/chihuahua/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${estacion.linea}`,
+        item: `https://metroguia.mx/chihuahua/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.h1,
+        item: `https://metroguia.mx/chihuahua/estacion/${estacion.slug}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section style={heroStyles}>
         <div style={containerStyles}>
           <p style={{ fontSize: '14px', marginBottom: '10px', opacity: '0.9' }}>

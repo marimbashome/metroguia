@@ -2,20 +2,23 @@ import { lineasQueretaro } from '@/data/queretaro/lineas-detalle';
 import { estacionesQueretaro } from '@/data/queretaro/estaciones';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Q-BUS Querétaro — Sistema de Transporte | MetroGuia',
-  description: 'Q-BUS Querétaro: 3 corredores de transporte rápido conectando el Centro Histórico Patrimonio UNESCO, Acueducto y zonas de negocios.',
-  openGraph: {
-    title: 'Q-BUS Querétaro — Sistema de Transporte | MetroGuia',
-    description: 'Q-BUS Querétaro: 3 corredores de transporte rápido conectando el Centro Histórico Patrimonio UNESCO, Acueducto y zonas de negocios.',
-    url: 'https://metroguia.mx/queretaro',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export function generateMetadata() {
+  return {
+    title: 'Q-BUS Querétaro — Sistema de Transporte y Turismo | MetroGuia',
+    description: 'Q-BUS Querétaro: 3 corredores BRT, 18 estaciones. Centro Histórico Patrimonio UNESCO, Acueducto de 300 años, pueblos mágicos cercanos y hub aeroespacial.',
+    keywords: 'Q-BUS Querétaro, transporte, turismo, Centro Histórico UNESCO, Acueducto, Pueblos Mágicos',
+    openGraph: {
+      title: 'Q-BUS Querétaro — Sistema de Transporte',
+      description: 'Q-BUS Querétaro: 3 corredores de transporte rápido conectando el Centro Histórico Patrimonio UNESCO, Acueducto y zonas de negocios.',
+      url: 'https://metroguia.mx/queretaro',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function QueretatoPage() {
   const estacionesDestacadas = estacionesQueretaro.filter(e => 
@@ -26,13 +29,15 @@ export default function QueretatoPage() {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '40px 20px',
+    color: 'var(--text)',
   };
 
   const heroStyles = {
-    background: 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)',
-    color: '#ffffff',
+    background: 'linear-gradient(135deg, var(--surface) 0%, rgba(239, 68, 68, 0.08) 100%)',
+    borderBottom: '1px solid var(--border)',
+    color: 'var(--text)',
     padding: '60px 20px',
-    marginBottom: '40px',
+    marginBottom: '0',
   };
 
   const heroContentStyles = {
@@ -65,10 +70,10 @@ export default function QueretatoPage() {
   const sectionTitleStyles = {
     fontSize: '32px',
     fontWeight: 'bold',
-    color: '#1f2937',
+    color: 'var(--text)',
     marginBottom: '30px',
     paddingBottom: '15px',
-    borderBottom: '3px solid #EF4444',
+    borderBottom: '2px solid var(--border)',
   };
 
   const gridStyles = {
@@ -79,20 +84,22 @@ export default function QueretatoPage() {
   };
 
   const cardStyles = {
-    backgroundColor: '#f9fafb',
-    border: '1px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     padding: '20px',
+    color: 'var(--text)',
   };
 
   const lineaCardStyles = {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'var(--surface)',
     border: '2px solid',
     borderRadius: '8px',
     padding: '20px',
     marginBottom: '20px',
     cursor: 'pointer',
     transition: 'transform 0.2s, box-shadow 0.2s',
+    color: 'var(--text)',
   };
 
   const colorIndicatorStyles = {
@@ -105,26 +112,28 @@ export default function QueretatoPage() {
   };
 
   const estacionCardStyles = {
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     padding: '15px',
     marginBottom: '15px',
+    color: 'var(--text)',
   };
 
   const highlightBoxStyles = {
-    backgroundColor: '#FEF3C7',
-    borderLeft: '4px solid #F59E0B',
+    backgroundColor: 'rgba(239, 68, 68, 0.08)',
+    borderLeft: '4px solid #EF4444',
     padding: '20px',
     marginBottom: '30px',
     borderRadius: '4px',
+    color: 'var(--text)',
   };
 
   const ctaButtonStyles = {
     display: 'inline-block',
     padding: '12px 24px',
     backgroundColor: '#EF4444',
-    color: '#ffffff',
+    color: 'var(--text)',
     textDecoration: 'none',
     borderRadius: '6px',
     fontWeight: 'bold',
@@ -134,46 +143,70 @@ export default function QueretatoPage() {
   };
 
   const infoBoxStyles = {
-    backgroundColor: '#ECFDF5',
+    backgroundColor: 'rgba(16, 185, 129, 0.08)',
     borderLeft: '4px solid #10B981',
     padding: '20px',
     marginBottom: '20px',
     borderRadius: '4px',
+    color: 'var(--text)',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Querétaro',
+        item: 'https://metroguia.mx/queretaro/'
+      }
+    ]
+  }
+
   return (
-    <main style={{ backgroundColor: '#ffffff' }}>
+    <main style={{ backgroundColor: 'var(--bg)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section style={heroStyles}>
         <div style={heroContentStyles}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '10px' }}>
-            🏰 Q-BUS Querétaro
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '10px', color: '#EF4444' }}>
+            Q-BUS Querétaro
           </h1>
-          <p style={{ fontSize: '20px', marginBottom: '10px', opacity: '0.95' }}>
+          <p style={{ fontSize: '20px', marginBottom: '10px', color: 'var(--text-muted)' }}>
             Sistema Rápido de Transporte Urbano
           </p>
-          <p style={{ fontSize: '16px', opacity: '0.85', marginBottom: '20px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
             Conecta el Centro Histórico Patrimonio UNESCO, el Acueducto y zonas de innovación
           </p>
           <div style={statsRowStyles}>
             <div style={statItemStyles}>
-              <div style={statNumberStyles}>3</div>
-              <div style={statLabelStyles}>Corredores</div>
+              <div style={{ ...statNumberStyles, color: '#EF4444' }}>3</div>
+              <div style={{ ...statLabelStyles, color: 'var(--text-muted)' }}>Corredores</div>
             </div>
             <div style={statItemStyles}>
-              <div style={statNumberStyles}>18</div>
-              <div style={statLabelStyles}>Estaciones</div>
+              <div style={{ ...statNumberStyles, color: '#EF4444' }}>18</div>
+              <div style={{ ...statLabelStyles, color: 'var(--text-muted)' }}>Estaciones</div>
             </div>
             <div style={statItemStyles}>
-              <div style={statNumberStyles}>Patrimonio</div>
-              <div style={statLabelStyles}>UNESCO</div>
+              <div style={{ ...statNumberStyles, color: '#EF4444' }}>UNESCO</div>
+              <div style={{ ...statLabelStyles, color: 'var(--text-muted)' }}>Patrimonio</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* MAIN CONTENT */}
-      <section style={containerStyles}>
+      <section style={{ ...containerStyles, borderTop: '1px solid var(--border)' }}>
         {/* SOBRE QUERÉTARO */}
         <div style={{ marginBottom: '50px' }}>
           <h2 style={sectionTitleStyles}>Sobre Querétaro</h2>
@@ -371,11 +404,11 @@ export default function QueretatoPage() {
         </div>
 
         {/* CTA FINAL */}
-        <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid #e5e7eb' }}>
-          <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#1f2937', marginBottom: '30px' }}>
+        <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid var(--border)' }}>
+          <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '30px' }}>
             Explora los Corredores
           </h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', marginBottom: '40px' }}>
             {lineasQueretaro.map((linea) => (
               <Link
                 key={linea.id}
@@ -395,6 +428,21 @@ export default function QueretatoPage() {
                 </button>
               </Link>
             ))}
+          </div>
+
+          {/* FOOTER: Links to other cities */}
+          <div style={{ borderTop: '1px solid var(--border)', paddingTop: '40px', marginTop: '40px', textAlign: 'center' }}>
+            <h3 style={{ fontSize: '12px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Explora Otros Destinos
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px' }}>
+              <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
+              <Link href="/gdl" style={{ textDecoration: 'none', color: '#FF6B2C', fontWeight: '500', fontSize: '14px' }}>RIT Guadalajara</Link>
+              <Link href="/mty" style={{ textDecoration: 'none', color: '#00A884', fontWeight: '500', fontSize: '14px' }}>Línea 1 Monterrey</Link>
+              <Link href="/puebla" style={{ textDecoration: 'none', color: '#8B5CF6', fontWeight: '500', fontSize: '14px' }}>RUTA Puebla</Link>
+              <Link href="/merida" style={{ textDecoration: 'none', color: '#F59E0B', fontWeight: '500', fontSize: '14px' }}>SIT Mérida</Link>
+              <Link href="/leon" style={{ textDecoration: 'none', color: '#10B981', fontWeight: '500', fontSize: '14px' }}>Optibus León</Link>
+            </div>
           </div>
         </div>
       </section>

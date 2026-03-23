@@ -145,8 +145,37 @@ export default function LineaPueblaPage({ params }) {
     marginBottom: '20px',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Puebla',
+        item: 'https://metroguia.mx/puebla/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: linea.nombre,
+        item: `https://metroguia.mx/puebla/linea/${linea.id}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section style={heroStyles}>
         <div style={containerStyles}>

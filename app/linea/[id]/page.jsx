@@ -49,11 +49,40 @@ export default function LineaPage({ params }) {
     })),
   }
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'CDMX',
+        item: 'https://metroguia.mx/cdmx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${linea.id}`,
+        item: `https://metroguia.mx/linea/${linea.id}/`
+      }
+    ]
+  }
+
   return (
     <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="hero" style={{ backgroundColor: linea.color }}>

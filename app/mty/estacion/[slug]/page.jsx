@@ -46,8 +46,43 @@ export default function EstacionMTY({ params }) {
   const colorLinea = linea?.color || '#999';
   const colorNombreLinea = linea?.colorNombre || 'Desconocido';
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'MTY',
+        item: 'https://metroguia.mx/mty/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${estacion.linea}`,
+        item: `https://metroguia.mx/mty/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.nombre,
+        item: `https://metroguia.mx/mty/estacion/${estacion.slug}`
+      }
+    ]
+  };
+
   return (
     <main style={{ backgroundColor: '#fff', color: '#1a1a1a' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section style={{
         background: `linear-gradient(135deg, ${colorLinea} 0%, ${estacion.linea === '1' ? '#F97316' : '#EC4899'} 100%)`,

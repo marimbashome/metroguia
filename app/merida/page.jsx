@@ -2,20 +2,23 @@ import { lineasMerida } from '@/data/merida/lineas-detalle';
 import { estacionesMerida } from '@/data/merida/estaciones';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'SIT Mérida — Guía turística completa de La Ciudad Blanca | MetroGuia',
-  description: 'Guía completa del SIT Mérida. 4 corredores de transporte público. Centro histórico, Paseo de Montejo, Gran Museo del Mundo Maya, Mercado Lucas de Gálvez.',
-  openGraph: {
-    title: 'SIT Mérida — Guía turística completa',
-    description: 'Descubre Mérida con MetroGuia. Centro Histórico, Gran Museo Maya, Paseo de Montejo y más. La Ciudad Blanca de Yucatán.',
-    url: 'https://metroguia.mx/merida',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export function generateMetadata() {
+  return {
+    title: 'SIT Mérida — Guía turística completa de La Ciudad Blanca | MetroGuia',
+    description: 'Guía completa del SIT Mérida. 4 corredores. Centro histórico UNESCO, Paseo de Montejo, Gran Museo del Mundo Maya, Cenotes y Chichén Itzá a 1.5h.',
+    keywords: 'SIT Mérida, transporte, turismo, Gran Museo Maya, Chichén Itzá, Cenotes, La Ciudad Blanca',
+    openGraph: {
+      title: 'SIT Mérida — Guía turística completa',
+      description: 'Descubre Mérida con MetroGuia. Centro Histórico, Gran Museo Maya, Paseo de Montejo y más. La Ciudad Blanca de Yucatán.',
+      url: 'https://metroguia.mx/merida',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function MeridaPage() {
   const estacionesDestacadas = estacionesMerida.filter(e =>
@@ -23,8 +26,9 @@ export default function MeridaPage() {
   );
 
   const heroStyles = {
-    background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-    color: '#ffffff',
+    background: 'linear-gradient(135deg, var(--surface) 0%, rgba(245, 158, 11, 0.08) 100%)',
+    borderBottom: '1px solid var(--border)',
+    color: 'var(--text)',
     padding: '60px 20px',
     textAlign: 'center',
   };
@@ -33,24 +37,28 @@ export default function MeridaPage() {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '40px 20px',
+    color: 'var(--text)',
   };
 
   const sectionTitleStyles = {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: '#1f2937',
+    color: 'var(--text)',
     textAlign: 'center',
+    paddingBottom: '15px',
+    borderBottom: '2px solid var(--border)',
   };
 
   const lineaCardStyles = {
-    backgroundColor: '#f9fafb',
-    border: '2px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '2px solid var(--border)',
     borderRadius: '8px',
     padding: '20px',
     marginBottom: '20px',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
+    color: 'var(--text)',
   };
 
   const colorDotStyles = {
@@ -63,11 +71,12 @@ export default function MeridaPage() {
   };
 
   const estacionCardStyles = {
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     padding: '15px',
     marginBottom: '15px',
+    color: 'var(--text)',
   };
 
   const gridStyles = {
@@ -80,7 +89,7 @@ export default function MeridaPage() {
   const ctaButtonStyles = {
     display: 'inline-block',
     backgroundColor: '#F59E0B',
-    color: '#ffffff',
+    color: 'var(--text)',
     padding: '14px 28px',
     borderRadius: '6px',
     textDecoration: 'none',
@@ -93,26 +102,66 @@ export default function MeridaPage() {
   };
 
   const infoBoxStyles = {
-    backgroundColor: '#fffbeb',
+    backgroundColor: 'rgba(245, 158, 11, 0.08)',
     borderLeft: '4px solid #F59E0B',
     padding: '20px',
     marginBottom: '20px',
     borderRadius: '4px',
+    color: 'var(--text)',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Mérida',
+        item: 'https://metroguia.mx/merida/'
+      }
+    ]
+  }
+
   return (
-    <main style={{ backgroundColor: '#ffffff' }}>
+    <main style={{ backgroundColor: 'var(--bg)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO SECTION */}
       <section style={heroStyles}>
-        <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold' }}>
-          🏛️ SIT Mérida
-        </h1>
-        <p style={{ fontSize: '20px', marginBottom: '20px' }}>
-          Sistema Integrado de Transporte conectando "La Ciudad Blanca" y la Península de Yucatán
-        </p>
-        <p style={{ fontSize: '16px', opacity: '0.95' }}>
-          4 corredores • 16 estaciones • Acceso a Gran Museo Maya, Paseo de Montejo y cenotes
-        </p>
+        <div style={containerStyles}>
+          <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold', color: '#F59E0B' }}>
+            SIT Mérida
+          </h1>
+          <p style={{ fontSize: '20px', marginBottom: '20px', color: 'var(--text-muted)' }}>
+            Sistema Integrado de Transporte conectando "La Ciudad Blanca" y la Península de Yucatán
+          </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
+            4 corredores • 16 estaciones • Acceso a Gran Museo Maya, Paseo de Montejo y cenotes
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '30px', marginTop: '30px' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>4</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Corredores</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>16</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Estaciones</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>1.5h</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>A Chichén Itzá</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ABOUT MÉRIDA */}
@@ -165,7 +214,7 @@ export default function MeridaPage() {
       </section>
 
       {/* ESTACIONES DESTACADAS */}
-      <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>
+      <section style={{ ...containerStyles, backgroundColor: 'var(--surface)', padding: '40px 20px', marginTop: '40px', borderTop: '1px solid var(--border)' }}>
         <h2 style={sectionTitleStyles}>Estaciones Turísticas Imprescindibles</h2>
         <div style={gridStyles}>
           {estacionesDestacadas.map((estacion) => (
@@ -246,7 +295,7 @@ export default function MeridaPage() {
       </section>
 
       {/* TIPS Y HORARIOS */}
-      <section style={{ ...containerStyles, backgroundColor: '#fffbeb', padding: '40px 20px', marginTop: '40px', borderRadius: '8px' }}>
+      <section style={{ ...containerStyles, backgroundColor: 'rgba(245, 158, 11, 0.06)', padding: '40px 20px', marginTop: '40px', borderTop: '1px solid var(--border)', borderRadius: '0' }}>
         <h2 style={sectionTitleStyles}>Tips para Viajar en Mérida</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
           <div>
@@ -277,14 +326,14 @@ export default function MeridaPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '60px' }}>
-        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: '#1f2937' }}>
+      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '40px', borderTop: '1px solid var(--border)' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: 'var(--text)' }}>
           Explora Mérida con MetroGuia
         </h2>
-        <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '30px' }}>
+        <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
           Descubre cada rincón de la Ciudad Blanca a través de nuestras guías detalladas de estaciones y corredores del SIT Mérida.
         </p>
-        <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginBottom: '40px' }}>
           <Link href="/merida/linea/D1" style={ctaButtonStyles}>
             Explorar Corredor Dorado
           </Link>
@@ -297,6 +346,21 @@ export default function MeridaPage() {
           <Link href="/merida/linea/A4" style={ctaButtonStyles}>
             Explorar Corredor Azul
           </Link>
+        </div>
+
+        {/* FOOTER: Links to other cities */}
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: '40px', marginTop: '40px', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '12px' }}>
+            Explora Otros Destinos
+          </h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px' }}>
+            <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
+            <Link href="/gdl" style={{ textDecoration: 'none', color: '#FF6B2C', fontWeight: '500', fontSize: '14px' }}>RIT Guadalajara</Link>
+            <Link href="/mty" style={{ textDecoration: 'none', color: '#00A884', fontWeight: '500', fontSize: '14px' }}>Línea 1 Monterrey</Link>
+            <Link href="/puebla" style={{ textDecoration: 'none', color: '#8B5CF6', fontWeight: '500', fontSize: '14px' }}>RUTA Puebla</Link>
+            <Link href="/leon" style={{ textDecoration: 'none', color: '#10B981', fontWeight: '500', fontSize: '14px' }}>Optibus León</Link>
+            <Link href="/queretaro" style={{ textDecoration: 'none', color: '#EF4444', fontWeight: '500', fontSize: '14px' }}>Q-BUS Querétaro</Link>
+          </div>
         </div>
       </section>
     </main>

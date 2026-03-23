@@ -58,8 +58,43 @@ export default function EstacionGDLPage({ params }) {
 
   const colorLinea = estacion.linea === '1' ? '#E63946' : estacion.linea === '2' ? '#06B6D4' : '#F97316';
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'GDL',
+        item: 'https://metroguia.mx/gdl/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${estacion.linea}`,
+        item: `https://metroguia.mx/gdl/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.nombre,
+        item: `https://metroguia.mx/gdl/estacion/${estacion.slug}`
+      }
+    ]
+  };
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section
         style={{

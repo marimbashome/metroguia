@@ -133,8 +133,43 @@ export default function EstacionMeridaPage({ params }) {
     marginBottom: '20px',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Mérida',
+        item: 'https://metroguia.mx/merida/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${estacion.linea}`,
+        item: `https://metroguia.mx/merida/linea/${estacion.linea}/`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: estacion.h1,
+        item: `https://metroguia.mx/merida/estacion/${estacion.slug}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section style={heroStyles}>
         <div style={containerStyles}>

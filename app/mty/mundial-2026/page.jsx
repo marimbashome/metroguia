@@ -12,9 +12,69 @@ export const metadata = {
   canonical: 'https://metroguia.mx/mty/mundial-2026'
 };
 
+// JSON-LD structured data for World Cup events in Monterrey
+const eventosMTY = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (14 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026 en Monterrey',
+    startDate: '2026-06-14',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio BBVA Bancomer',
+      address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' },
+      geo: { '@type': 'GeoCoordinates', latitude: 25.643333, longitude: -100.305556 }
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (20 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-20',
+    location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (24 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-24',
+    location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (29 junio)',
+    description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    startDate: '2026-06-29',
+    location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    organizer: { '@type': 'Organization', name: 'FIFA' }
+  }
+];
+
 export default function Mundial2026() {
   return (
     <main style={{ backgroundColor: '#fff', color: '#1a1a1a' }}>
+      {eventosMTY.map((evento, idx) => (
+        <script
+          key={idx}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(evento) }}
+        />
+      ))}
       {/* HERO */}
       <section style={{
         background: 'linear-gradient(135deg, #F97316 0%, #EC4899 100%)',
@@ -548,6 +608,99 @@ export default function Mundial2026() {
               <li><strong>Accesibilidad:</strong> Línea 1 tiene acceso para personas con movilidad reducida en varias estaciones</li>
               <li><strong>Información en vivo:</strong> Descarga la app del Metrorrey para horarios actualizados</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* MONTERREY COMO DESTINO */}
+      <section style={{
+        background: 'linear-gradient(135deg, #FCA5A5 0%, #FBBF24 100%)',
+        color: '#1f2937',
+        padding: '80px 20px',
+        marginTop: '60px'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Syne, sans-serif',
+            fontSize: '40px',
+            fontWeight: 700,
+            margin: '0 0 48px 0',
+            color: '#1f2937',
+            textAlign: 'center'
+          }}>
+            🏔️ Monterrey: La Ciudad de la Montaña
+          </h2>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '24px',
+            marginBottom: '48px'
+          }}>
+            {[
+              {
+                icono: '🥩',
+                titulo: 'Carne Asada Regia',
+                desc: 'Especialidad de Monterrey. Come en restaurantes de la Macroplaza o barrios locales. Acompañado con tortillas de harina calientitas y salsa.',
+              },
+              {
+                icono: '🌳',
+                titulo: 'Parque Fundidora',
+                desc: 'Pulmón verde de Monterrey con 65 hectáreas. Acceso fácil por Línea 1 (estación Parque Fundidora). Camina, come en restaurantes, relájate.',
+              },
+              {
+                icono: '🏛️',
+                titulo: 'Barrio Antiguo (Fundadores)',
+                desc: 'Centro histórico con arquitectura colonial. Cafeterías, galerías, tiendas. Perfectamente ubicado para acceder a Línea 1 y 2.',
+              },
+              {
+                icono: '🎨',
+                titulo: 'Museos y Galerías',
+                desc: 'MARCO (Museo de Arte Contemporáneo), Barrio Antiguo Museum. Muchos son gratuitos o de bajo costo. Abiertos días de partido.',
+              },
+              {
+                icono: '🍴',
+                titulo: 'Comida Norteña',
+                desc: 'Cabrito, pan de machacado, dulces típicos. Come en restaurantes locales del Barrio Antiguo o Fundidora, no solo en cadenas.',
+              },
+              {
+                icono: '📸',
+                titulo: 'Paseo Santa Lucia',
+                desc: 'Canal artificial pasando por el centro. Camina de noche, come en restaurantes con vista. Romántico y seguro, lleno de turistas.',
+              },
+            ].map((item, idx) => (
+              <div key={idx} style={{
+                padding: '24px',
+                backgroundColor: '#ffffff',
+                borderRadius: '8px',
+                border: '2px solid #EC4899',
+              }}>
+                <h3 style={{
+                  fontSize: '28px',
+                  margin: '0 0 12px 0',
+                }}>
+                  {item.icono}
+                </h3>
+                <h4 style={{
+                  fontSize: '18px',
+                  fontFamily: 'Syne, sans-serif',
+                  fontWeight: '700',
+                  margin: '0 0 8px 0',
+                  color: '#1f2937',
+                }}>
+                  {item.titulo}
+                </h4>
+                <p style={{
+                  fontSize: '14px',
+                  color: '#6b7280',
+                  margin: '0',
+                  fontFamily: 'DM Sans, sans-serif',
+                  lineHeight: '1.6',
+                }}>
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

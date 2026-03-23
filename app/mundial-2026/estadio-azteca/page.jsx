@@ -4,8 +4,61 @@ export const metadata = {
 }
 
 export default function EstadioAztecaPage() {
+  const estadioSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    name: 'Estadio Azteca',
+    description: 'Estadio de fútbol icónico en Ciudad de México, sede de partidos del Mundial FIFA 2026',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Calzada de Tlalpan 3665',
+      addressLocality: 'Ciudad de México',
+      addressRegion: 'Ciudad de México',
+      postalCode: '14020',
+      addressCountry: 'MX'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 19.302500,
+      longitude: -99.145833
+    },
+    sameAs: 'https://es.wikipedia.org/wiki/Estadio_Azteca',
+    capacity: 87523,
+    amenityFeature: [
+      { '@type': 'LocationFeatureSpecification', name: 'Metro access', value: 'Tren Ligero — Estación Estadio Azteca' },
+      { '@type': 'LocationFeatureSpecification', name: 'Accessibility', value: 'Wheelchair accessible' }
+    ]
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Mundial 2026',
+        item: 'https://metroguia.mx/mundial-2026/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Estadio Azteca',
+        item: 'https://metroguia.mx/mundial-2026/estadio-azteca/'
+      }
+    ]
+  }
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(estadioSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="hero" style={{ backgroundColor: '#1a472a' }}>
         <div className="container">
           <h1>Cómo llegar al Estadio Azteca</h1>
@@ -31,7 +84,25 @@ export default function EstadioAztecaPage() {
             </div>
           ))}
 
-          <h2 style={{ marginBottom: '1.5rem', marginTop: '2rem' }}>Mapa del viaje</h2>
+          <h2 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Alrededor del Estadio Azteca</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+            {[
+              { emoji: '🍔', titulo: 'Comida', desc: 'Vendedores de tacos, elotes y refrescos fuera del estadio. Dentro: hamburguesas y comida rápida. Lleva dinero en efectivo.' },
+              { emoji: '💰', titulo: 'Cajeros ATM', desc: '7-Eleven y tiendas cercanas tienen ATMs. Retira efectivo ANTES de llegar — habrá largas colas.' },
+              { emoji: '🛡️', titulo: 'Seguridad', desc: 'Revisión de bolsas en la entrada. No se permiten botellas de vidrio, latas o sustancias. Viaja en grupos después del partido.' },
+              { emoji: '⏰', titulo: 'Horario de Llegada', desc: 'Llega 2-3 horas antes. La entrada se abre 3 horas previas. Evita últimos 30 min antes del inicio.' },
+              { emoji: '🎒', titulo: 'Qué Llevar', desc: 'Documento de identidad, dinero, boleto impreso. NO llevar: botellas, latas, cámaras profesionales, armas.' },
+              { emoji: '📱', titulo: 'Descanso Post-Partido', desc: 'Después del partido: espera 30-45 min antes de irte. La estación Tasqueña estará muy congestionada.' },
+            ].map((item, i) => (
+              <div key={i} style={{ backgroundColor: 'var(--surface-hover)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: 'var(--radius)' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>{item.emoji}</h3>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: '600' }}>{item.titulo}</h4>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0' }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 style={{ marginBottom: '1.5rem' }}>Mapa del viaje</h2>
           <div style={{ backgroundColor: 'var(--metro-gray)', padding: '2rem', borderRadius: 'var(--radius)', marginBottom: '3rem', textAlign: 'center', fontFamily: 'monospace' }}>
             <pre style={{ overflow: 'auto' }}>
 {`Tu ubicación (ej: Centro Histórico)

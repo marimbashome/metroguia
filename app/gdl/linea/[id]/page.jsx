@@ -58,8 +58,37 @@ export default function LineaGDLPage({ params }) {
 
   const estacionesLinea = estacionesGDL.filter((e) => e.linea === linea.id);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'GDL',
+        item: 'https://metroguia.mx/gdl/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `Línea ${linea.id}`,
+        item: `https://metroguia.mx/gdl/linea/${linea.id}/`
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section
         style={{

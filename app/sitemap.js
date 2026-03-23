@@ -77,6 +77,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/explorar/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/mundial-2026/`,
       lastModified,
       changeFrequency: 'weekly',
@@ -86,19 +92,31 @@ export default function sitemap() {
       url: `${baseUrl}/mundial-2026/estadio-azteca/`,
       lastModified,
       changeFrequency: 'monthly',
-      priority: 1.0,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/mundial-2026/gdl/`,
       lastModified,
       changeFrequency: 'monthly',
-      priority: 1.0,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/mundial-2026/mty/`,
       lastModified,
       changeFrequency: 'monthly',
-      priority: 1.0,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/gdl/mundial-2026/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mty/mundial-2026/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/privacy-policy/`,

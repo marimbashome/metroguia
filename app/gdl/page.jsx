@@ -22,8 +22,31 @@ const estacionesDestacadas = estacionesGDL.filter(e =>
 );
 
 export default function GDLPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Guadalajara',
+        item: 'https://metroguia.mx/gdl/'
+      }
+    ]
+  }
+
   return (
     <main style={{ backgroundColor: '#0A0A0F', color: '#F0F0F5' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section
         className="hero"

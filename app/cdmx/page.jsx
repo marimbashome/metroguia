@@ -37,8 +37,31 @@ export default function CDMXPage() {
     { fecha: '5 de julio', hora: '21:00' },
   ]
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'CDMX',
+        item: 'https://metroguia.mx/cdmx/'
+      }
+    ]
+  }
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section — Dark gradient with CDMX pink */}
       <section className="hero" style={{
         background: 'linear-gradient(135deg, var(--surface) 0%, rgba(233, 30, 140, 0.05) 100%)',

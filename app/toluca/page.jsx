@@ -2,20 +2,23 @@ import { lineasToluca } from '@/data/toluca/lineas-detalle';
 import { estacionesToluca } from '@/data/toluca/estaciones';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Toluca y Tren Interurbano México-Toluca — Guía Completa | MetroGuia',
-  description: 'Guía completa de Toluca con Tren Interurbano México-Toluca + Mexibús. 65 minutos a CDMX FIFA 2026. Cosmovitral, Metepec artesanal, Nevado y Portales únicos.',
-  openGraph: {
-    title: 'Toluca y Tren Interurbano — Sistema de Transporte',
-    description: 'Descubre Toluca con el Tren Interurbano y Mexibús. Viaja a CDMX sede FIFA 2026 en 65 minutos. Hospedaje más económico.',
-    url: 'https://metroguia.mx/toluca',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export function generateMetadata() {
+  return {
+    title: 'Toluca y Tren Interurbano México-Toluca — Guía Completa | MetroGuia',
+    description: 'Guía completa de Toluca con Tren Interurbano México-Toluca + Mexibús. 65 minutos a CDMX FIFA 2026. Cosmovitral, Metepec artesanal, Nevado y Portales únicos.',
+    keywords: 'Toluca, Tren Interurbano México-Toluca, Mexibús, Cosmovitral, Metepec, artesanía, Sierra de las Cruces, Iztaccíhuatl',
+    openGraph: {
+      title: 'Toluca y Tren Interurbano — Sistema de Transporte',
+      description: 'Descubre Toluca con el Tren Interurbano y Mexibús. Viaja a CDMX sede FIFA 2026 en 65 minutos. Hospedaje más económico.',
+      url: 'https://metroguia.mx/toluca',
+      type: 'website',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function TolucaPage() {
   const estacionesDestacadas = estacionesToluca.filter(e =>
@@ -23,8 +26,9 @@ export default function TolucaPage() {
   );
 
   const heroStyles = {
-    background: 'linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%)',
-    color: '#ffffff',
+    background: 'linear-gradient(135deg, var(--surface) 0%, rgba(124, 58, 237, 0.08) 100%)',
+    borderBottom: '1px solid var(--border)',
+    color: 'var(--text)',
     padding: '60px 20px',
     textAlign: 'center',
   };
@@ -33,24 +37,28 @@ export default function TolucaPage() {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '40px 20px',
+    color: 'var(--text)',
   };
 
   const sectionTitleStyles = {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: '#1f2937',
+    color: 'var(--text)',
     textAlign: 'center',
+    paddingBottom: '15px',
+    borderBottom: '2px solid var(--border)',
   };
 
   const lineaCardStyles = {
-    backgroundColor: '#f9fafb',
-    border: '2px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '2px solid var(--border)',
     borderRadius: '8px',
     padding: '20px',
     marginBottom: '20px',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
+    color: 'var(--text)',
   };
 
   const colorDotStyles = {
@@ -63,11 +71,12 @@ export default function TolucaPage() {
   };
 
   const estacionCardStyles = {
-    backgroundColor: '#ffffff',
-    border: '1px solid #e5e7eb',
+    backgroundColor: 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     padding: '15px',
     marginBottom: '15px',
+    color: 'var(--text)',
   };
 
   const gridStyles = {
@@ -80,7 +89,7 @@ export default function TolucaPage() {
   const ctaButtonStyles = {
     display: 'inline-block',
     backgroundColor: '#7C3AED',
-    color: '#ffffff',
+    color: 'var(--text)',
     padding: '14px 28px',
     borderRadius: '6px',
     textDecoration: 'none',
@@ -101,36 +110,77 @@ export default function TolucaPage() {
   };
 
   const highlightBoxStyles = {
-    backgroundColor: '#FEF3C7',
+    backgroundColor: 'rgba(245, 158, 11, 0.08)',
     border: '2px solid #F59E0B',
     padding: '20px',
     marginBottom: '30px',
     borderRadius: '8px',
     textAlign: 'center',
+    color: 'var(--text)',
   };
 
   const fifaBoxStyles = {
-    backgroundColor: '#DBEAFE',
+    backgroundColor: 'rgba(59, 130, 246, 0.08)',
     border: '2px solid #3B82F6',
     padding: '20px',
     marginBottom: '30px',
     borderRadius: '8px',
     textAlign: 'center',
+    color: 'var(--text)',
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'MetroGuia',
+        item: 'https://metroguia.mx'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Toluca',
+        item: 'https://metroguia.mx/toluca/'
+      }
+    ]
+  }
+
   return (
-    <main style={{ backgroundColor: '#ffffff' }}>
+    <main style={{ backgroundColor: 'var(--bg)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO SECTION */}
       <section style={heroStyles}>
-        <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold' }}>
-          🚄 Toluca + Tren Interurbano
-        </h1>
-        <p style={{ fontSize: '20px', marginBottom: '20px' }}>
-          Tren Interurbano México-Toluca + Mexibús. El tren más nuevo de México.
-        </p>
-        <p style={{ fontSize: '16px', opacity: '0.95' }}>
-          57.7 km en 65 minutos • 3 líneas de transporte • Cosmovitral, Metepec, Nevado y Portales únicos
-        </p>
+        <div style={containerStyles}>
+          <h1 style={{ fontSize: '48px', marginBottom: '10px', fontWeight: 'bold', color: '#7C3AED' }}>
+            Toluca + Tren Interurbano
+          </h1>
+          <p style={{ fontSize: '20px', marginBottom: '20px', color: 'var(--text-muted)' }}>
+            Tren Interurbano México-Toluca + Mexibús. El tren más nuevo de México.
+          </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
+            57.7 km en 65 minutos • 3 líneas de transporte • Cosmovitral, Metepec, Nevado y Portales únicos
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '30px', marginTop: '30px' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#7C3AED' }}>65</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Minutos a CDMX</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#7C3AED' }}>40%</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Más Económica</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#7C3AED' }}>4,631m</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Altitud del Nevado</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ABOUT TOLUCA */}
@@ -323,14 +373,14 @@ export default function TolucaPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '60px' }}>
-        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: '#1f2937' }}>
+      <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '40px', borderTop: '1px solid var(--border)' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: 'var(--text)' }}>
           Explora Toluca con MetroGuia
         </h2>
-        <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '30px' }}>
+        <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
           Descubre Toluca y el Tren Interurbano a través de nuestras guías detalladas de estaciones y líneas de transporte.
         </p>
-        <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginBottom: '40px' }}>
           <Link href="/toluca/linea/TI" style={ctaButtonStyles}>
             Tren Interurbano
           </Link>
@@ -340,6 +390,21 @@ export default function TolucaPage() {
           <Link href="/toluca/linea/M2" style={ctaButtonStyles}>
             Mexibús Línea 2
           </Link>
+        </div>
+
+        {/* FOOTER: Links to other cities */}
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: '40px', marginTop: '40px', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '12px' }}>
+            Explora Otros Destinos
+          </h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px' }}>
+            <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
+            <Link href="/gdl" style={{ textDecoration: 'none', color: '#FF6B2C', fontWeight: '500', fontSize: '14px' }}>RIT Guadalajara</Link>
+            <Link href="/mty" style={{ textDecoration: 'none', color: '#00A884', fontWeight: '500', fontSize: '14px' }}>Línea 1 Monterrey</Link>
+            <Link href="/puebla" style={{ textDecoration: 'none', color: '#8B5CF6', fontWeight: '500', fontSize: '14px' }}>RUTA Puebla</Link>
+            <Link href="/merida" style={{ textDecoration: 'none', color: '#F59E0B', fontWeight: '500', fontSize: '14px' }}>SIT Mérida</Link>
+            <Link href="/queretaro" style={{ textDecoration: 'none', color: '#EF4444', fontWeight: '500', fontSize: '14px' }}>Q-BUS Querétaro</Link>
+          </div>
         </div>
       </section>
     </main>
