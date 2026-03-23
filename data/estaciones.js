@@ -4,7 +4,7 @@
 // Enriquecido: 2026-03-22
 // =============================================================
 
-const estaciones = [
+export const estaciones = [
   {
     "slug": "observatorio",
     "nombre": "Observatorio",
@@ -12255,4 +12255,3 @@ const estaciones = [
   }
 ];
 
-export default estaciones;
