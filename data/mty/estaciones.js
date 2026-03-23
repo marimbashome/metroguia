@@ -1304,7 +1304,7 @@ export const estacionesMTY = [
     ]
   },
   {
-    "slug": "anáhuac",
+    "slug": "anahuac",
     "nombre": "Anáhuac",
     "linea": "2",
     "municipio": "San Nicolás de los Garza",

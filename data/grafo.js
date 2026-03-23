@@ -403,7 +403,9 @@ export const grafo = {
     lineas: ['2', 'TL'],
     adyacentes: [
       { slug: 'portales', tiempo: 2, linea: '2', tipo: 'linea' },
-      { slug: 'tren-ligero-estadio-azteca', tiempo: 25, linea: 'TL', tipo: 'tren-ligero' }
+      { slug: 'tren-ligero-estadio-azteca', tiempo: 25, linea: 'TL', tipo: 'tren-ligero' },
+      { slug: 'xochimilco', tiempo: 35, linea: 'TL', tipo: 'tren-ligero' },
+      { slug: 'tasquena', tiempo: 0, linea: '2', tipo: 'transbordo' }
     ]
   },
 
@@ -492,7 +494,8 @@ export const grafo = {
     lineas: ['3'],
     adyacentes: [
       { slug: 'niños-heroes', tiempo: 2, linea: '3', tipo: 'linea' },
-      { slug: 'centro-medico', tiempo: 2, linea: '3', tipo: 'linea' }
+      { slug: 'centro-medico', tiempo: 2, linea: '3', tipo: 'linea' },
+      { slug: 'roma', tiempo: 3, linea: '3', tipo: 'linea' }
     ]
   },
   'centro-medico': {
@@ -676,7 +679,8 @@ export const grafo = {
     lineas: ['5'],
     adyacentes: [
       { slug: 'hangares', tiempo: 2, linea: '5', tipo: 'linea' },
-      { slug: 'oceania', tiempo: 2, linea: '5', tipo: 'linea' }
+      { slug: 'oceania', tiempo: 2, linea: '5', tipo: 'linea' },
+      { slug: 'aeropuerto', tiempo: 2, linea: '5', tipo: 'linea' }
     ]
   },
   'oceania': {
@@ -1090,7 +1094,8 @@ export const grafo = {
     lineas: ['9'],
     adyacentes: [
       { slug: 'centro-medico', tiempo: 2, linea: '9', tipo: 'linea' },
-      { slug: 'patriotismo', tiempo: 2, linea: '9', tipo: 'linea' }
+      { slug: 'patriotismo', tiempo: 2, linea: '9', tipo: 'linea' },
+      { slug: 'condesa', tiempo: 3, linea: '9', tipo: 'linea' }
     ]
   },
   'patriotismo': {
@@ -1490,6 +1495,50 @@ export const grafo = {
     lineas: ['TL'],
     adyacentes: [
       { slug: 'taxquena', tiempo: 25, linea: 'TL', tipo: 'tren-ligero' }
+    ]
+  },
+
+  // ============================================
+  // NODOS VIRTUALES — aliases turísticos para SEO
+  // ============================================
+  'tasquena': {
+    ciudad: 'cdmx',
+    nombre: 'Tasqueña',
+    lineas: ['2', 'TL'],
+    adyacentes: [
+      { slug: 'taxquena', tiempo: 0, linea: '2', tipo: 'transbordo' }
+    ]
+  },
+  'aeropuerto': {
+    ciudad: 'cdmx',
+    nombre: 'Aeropuerto (Terminal Aérea)',
+    lineas: ['5'],
+    adyacentes: [
+      { slug: 'terminal-aerea', tiempo: 2, linea: '5', tipo: 'linea' }
+    ]
+  },
+  'xochimilco': {
+    ciudad: 'cdmx',
+    nombre: 'Xochimilco (Tren Ligero)',
+    lineas: ['TL'],
+    adyacentes: [
+      { slug: 'taxquena', tiempo: 35, linea: 'TL', tipo: 'tren-ligero' }
+    ]
+  },
+  'condesa': {
+    ciudad: 'cdmx',
+    nombre: 'Condesa (Chilpancingo)',
+    lineas: ['9'],
+    adyacentes: [
+      { slug: 'chilpancingo', tiempo: 3, linea: '9', tipo: 'linea' }
+    ]
+  },
+  'roma': {
+    ciudad: 'cdmx',
+    nombre: 'Roma (Hospital General)',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'hospital-general', tiempo: 3, linea: '3', tipo: 'linea' }
     ]
   },
 

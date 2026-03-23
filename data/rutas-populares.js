@@ -41,6 +41,7 @@ export const rutasPopulares = [
   { origen: "insurgentes", destino: "zocalo", titulo: "Insurgentes a Zócalo" },
   { origen: "insurgentes", destino: "chapultepec", titulo: "Insurgentes a Chapultepec" },
   { origen: "insurgentes", destino: "condesa", titulo: "Insurgentes a Condesa" },
+  { origen: "insurgentes", destino: "coyoacan", titulo: "Insurgentes a Coyoacán" },
 
   // ========== RUTAS TURÍSTICAS: Polanco ==========
   { origen: "polanco", destino: "bellas-artes", titulo: "Polanco a Bellas Artes" },

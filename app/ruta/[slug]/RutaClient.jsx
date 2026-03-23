@@ -83,12 +83,12 @@ export default function RutaClient({ slug }) {
 
     // Generate Schema.org JSON-LD
     if (origenSlug && destinoSlug && resultado && resultado.encontrada) {
-      const itineraryItems = resultado.estaciones.map((estacion, idx) => ({
+      const itineraryItems = resultado.pasos.map((paso, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
         'item': {
           '@type': 'TransitStation',
-          'name': estacion,
+          'name': paso.nombre,
         }
       }))
 

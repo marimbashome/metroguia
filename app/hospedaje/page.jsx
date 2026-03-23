@@ -47,6 +47,19 @@ export default function HospedajePage() {
     'casa': '🏠',
     'habitacion': '🛏️',
     'hotel-boutique': '⭐',
+    'estudio': '🛏️',
+    'loft': '🏢',
+    'zona-recomendada': '📍',
+  }
+
+  const tipoLabel = {
+    'departamento': 'Departamento',
+    'casa': 'Casa',
+    'habitacion': 'Habitación',
+    'hotel-boutique': 'Boutique',
+    'estudio': 'Estudio',
+    'loft': 'Loft',
+    'zona-recomendada': 'Zona',
   }
 
   const renderListingCard = (listing) => (
@@ -57,6 +70,25 @@ export default function HospedajePage() {
       borderLeft: `4px solid ${cityColors[listing.ciudad].text}`,
       position: 'relative',
     }}>
+      {/* Marimbas Home Badge */}
+      {listing.es_marimbas && (
+        <div style={{
+          position: 'absolute',
+          top: '-0.5rem',
+          right: '1rem',
+          backgroundColor: 'var(--primary)',
+          color: '#000',
+          fontSize: '0.625rem',
+          fontWeight: 700,
+          padding: '0.25rem 0.75rem',
+          borderRadius: 'var(--radius-full)',
+          textTransform: 'uppercase',
+          letterSpacing: '0.1em',
+        }}>
+          Marimbas Home
+        </div>
+      )}
+
       {/* Header: Nombre + Tipo */}
       <div style={{
         display: 'flex',
@@ -95,8 +127,8 @@ export default function HospedajePage() {
           fontWeight: 600,
           whiteSpace: 'nowrap',
         }}>
-          <span>{tipoIcono[listing.tipo]}</span>
-          {listing.tipo === 'departamento' ? 'Departamento' : listing.tipo === 'casa' ? 'Casa' : listing.tipo === 'habitacion' ? 'Habitación' : 'Boutique'}
+          <span>{tipoIcono[listing.tipo] || '🏠'}</span>
+          {tipoLabel[listing.tipo] || listing.tipo}
         </div>
       </div>
 
@@ -176,10 +208,10 @@ export default function HospedajePage() {
         </div>
       </div>
 
-      {/* Precio y Huéspedes */}
+      {/* Precio, Huéspedes, Recámaras */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+        gridTemplateColumns: listing.recamaras ? '1fr 1fr 1fr' : '1fr 1fr',
         gap: '1rem',
         paddingTop: '0.75rem',
         borderTop: '1px solid var(--border)',
@@ -217,9 +249,29 @@ export default function HospedajePage() {
             fontWeight: 700,
             fontSize: '1.25rem',
           }}>
-            {listing.huespedes} personas
+            {listing.huespedes}
           </p>
         </div>
+        {listing.recamaras && (
+          <div>
+            <p style={{
+              fontSize: '0.75rem',
+              color: 'var(--text-muted)',
+              marginBottom: '0.25rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}>
+              Recámaras
+            </p>
+            <p style={{
+              color: 'var(--text)',
+              fontWeight: 700,
+              fontSize: '1.25rem',
+            }}>
+              {listing.recamaras}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Mundial Relevancia */}

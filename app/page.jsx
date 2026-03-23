@@ -49,11 +49,11 @@ const proximamente = [
   { id: 'toluca', nombre: 'Toluca', sistema: 'Tren Interurbano', color: '#7C3AED', href: '/toluca/' },
 ]
 
-const rutasPopulares = [
-  { origen: 'Zócalo', destino: 'Estadio Azteca', etiqueta: 'FIFA 2026', color: '#F5A623' },
-  { origen: 'Aeropuerto', destino: 'Centro Histórico', etiqueta: 'Turismo', color: '#3B82F6' },
-  { origen: 'Pantitlán', destino: 'Tacubaya', etiqueta: 'Conexión', color: '#22C55E' },
-  { origen: 'Buenavista', destino: 'Bellas Artes', etiqueta: 'Cultura', color: '#8B5CF6' },
+const rutasPopularesHome = [
+  { origen: 'Zócalo', destino: 'Tasqueña', slug: 'zocalo-a-tasquena', etiqueta: 'FIFA 2026', color: '#F5A623' },
+  { origen: 'Aeropuerto', destino: 'Bellas Artes', slug: 'aeropuerto-a-bellas-artes', etiqueta: 'Turismo', color: '#3B82F6' },
+  { origen: 'Pantitlán', destino: 'Chapultepec', slug: 'pantitlan-a-chapultepec', etiqueta: 'Conexión', color: '#22C55E' },
+  { origen: 'Insurgentes', destino: 'Coyoacán', slug: 'insurgentes-a-coyoacan', etiqueta: 'Cultura', color: '#8B5CF6' },
 ]
 
 export default function LandingPage() {
@@ -129,12 +129,10 @@ export default function LandingPage() {
             gap: '0.75rem',
             flexWrap: 'wrap',
           }}>
-            {rutasPopulares.map((ruta) => {
-              const slug = `${ruta.origen.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')}-a-${ruta.destino.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')}`
-              return (
+            {rutasPopularesHome.map((ruta) => (
                 <a
-                  key={slug}
-                  href={`/ruta/${slug}`}
+                  key={ruta.slug}
+                  href={`/ruta/${ruta.slug}/`}
                   className="card"
                   style={{
                     display: 'flex',
@@ -171,8 +169,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </a>
-              )
-            })}
+            ))}
           </div>
         </div>
       </section>

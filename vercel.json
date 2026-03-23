@@ -133,6 +133,16 @@
       "permanent": false
     }
   ],
+  "rewrites": [
+    {
+      "source": "/ruta/:path/",
+      "destination": "/ruta/calc/"
+    },
+    {
+      "source": "/ruta/:path",
+      "destination": "/ruta/calc/"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

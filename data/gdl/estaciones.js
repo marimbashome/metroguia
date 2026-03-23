@@ -751,7 +751,7 @@ export const estacionesGDL = [
     ]
   },
   {
-    "slug": "san-andrés",
+    "slug": "san-andres",
     "nombre": "San Andrés",
     "linea": "1",
     "municipio": "Guadalajara",
