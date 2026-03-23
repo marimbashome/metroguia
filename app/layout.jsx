@@ -14,7 +14,7 @@ export const metadata = {
       'en': 'https://metroguia.mx/en',
     }
   },
-  verification: { google: 'NxUm-fKQqE8x692QtQr2mfRXFtFnIvBoJggZuDPbAA4' },
+  verification: { google: ['NxUm-fKQqE8x692QtQr2mfRXFtFnIvBoJggZuDPbAA4', 'jEOAszLlW5NEWqazqwFSNP-9FoGGHtNVTAffuywcsBY'] },
   openGraph: {
     title: 'MetroGuia.mx — Tu trip planner de transporte urbano en México',
     description: 'Calcula rutas, explora estaciones y planifica tu viaje en metro, tren ligero y BRT en CDMX, Guadalajara y Monterrey.',
