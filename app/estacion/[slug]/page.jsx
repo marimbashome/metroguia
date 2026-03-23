@@ -1,4 +1,5 @@
 import { estaciones } from '@/data/estaciones'
+import { hospedaje } from '@/data/hospedaje'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
@@ -70,6 +71,17 @@ export default function EstacionPage({ params }) {
 
   // Calculate hero gradient
   const heroGradient = `linear-gradient(135deg, var(--bg) 0%, var(--surface) 100%)`
+
+  // Nearby stations mapping — stations that should show Condesa listings
+  const nearbyStationMap = {
+    'chilpancingo': 'chilpancingo',
+    'patriotismo': 'chilpancingo',
+    'juanacatlan': 'chilpancingo',
+    'chapultepec': 'chilpancingo',
+  }
+  const lookupSlug = nearbyStationMap[estacion.slug] || estacion.slug
+  const nearbyListings = hospedaje.filter(h => h.estacion_cercana === lookupSlug && h.es_marimbas)
+  const isDirectStation = estacion.slug === lookupSlug
 
   return (
     <div>
@@ -571,6 +583,146 @@ export default function EstacionPage({ params }) {
                 }}>
                   {estacion.mundial_relevancia}
                 </p>
+              </div>
+            </div>
+          )}
+
+          {/* HOSPEDAJE CERCA — STR Listings CTA */}
+          {nearbyListings.length > 0 && (
+            <div style={{ marginBottom: '3rem' }}>
+              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+                🏠 {isDirectStation
+                  ? `Hospedaje cerca de ${estacion.nombre}`
+                  : `Hospedaje en La Condesa — a minutos de ${estacion.nombre}`}
+              </h2>
+              <div style={{
+                backgroundColor: 'rgba(245, 166, 35, 0.06)',
+                border: '1px solid var(--primary-border)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '1.5rem',
+                marginBottom: '1.5rem',
+              }}>
+                <p style={{
+                  fontSize: '0.9rem',
+                  color: 'var(--text-muted)',
+                  margin: 0,
+                  marginBottom: '1.25rem',
+                  lineHeight: 1.6,
+                }}>
+                  {isDirectStation
+                    ? `Departamentos verificados a ${nearbyListings[0]?.distancia_metro || '5 min'} de la estación ${estacion.nombre}. Ideales para turistas y visitantes del Mundial 2026.`
+                    : `Departamentos en La Condesa, a minutos caminando de la estación ${estacion.nombre}. Zona segura con restaurantes, parques y vida nocturna.`}
+                </p>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '1rem',
+                }}>
+                  {nearbyListings.slice(0, 4).map((listing) => (
+                    <a
+                      key={listing.id}
+                      href={listing.url_reserva}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'block',
+                        backgroundColor: 'var(--surface)',
+                        border: '1px solid var(--border)',
+                        borderRadius: 'var(--radius)',
+                        padding: '1.25rem',
+                        textDecoration: 'none',
+                        transition: 'border-color 0.2s ease',
+                      }}
+                    >
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        marginBottom: '0.75rem',
+                      }}>
+                        <span style={{
+                          fontSize: '0.7rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          color: 'var(--primary)',
+                          backgroundColor: 'rgba(245, 166, 35, 0.12)',
+                          padding: '0.2rem 0.5rem',
+                          borderRadius: '4px',
+                        }}>
+                          Marimbas Home
+                        </span>
+                        <span style={{
+                          fontSize: '0.75rem',
+                          color: 'var(--text-dim)',
+                          textTransform: 'capitalize',
+                        }}>
+                          {listing.tipo}
+                        </span>
+                      </div>
+                      <h4 style={{
+                        fontSize: '0.95rem',
+                        fontWeight: 700,
+                        color: 'var(--text)',
+                        marginBottom: '0.5rem',
+                        lineHeight: 1.3,
+                      }}>
+                        {listing.nombre}
+                      </h4>
+                      <div style={{
+                        display: 'flex',
+                        gap: '0.75rem',
+                        fontSize: '0.8rem',
+                        color: 'var(--text-muted)',
+                        marginBottom: '0.75rem',
+                        flexWrap: 'wrap',
+                      }}>
+                        <span>👥 {listing.huespedes} huéspedes</span>
+                        <span>🛏 {listing.recamaras} rec</span>
+                        <span>🚿 {listing.banos} baño{listing.banos > 1 ? 's' : ''}</span>
+                      </div>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                      }}>
+                        <div style={{
+                          fontSize: '1.1rem',
+                          fontWeight: 800,
+                          color: 'var(--text)',
+                        }}>
+                          ${listing.precio_noche.toLocaleString()} <span style={{
+                            fontSize: '0.75rem',
+                            fontWeight: 400,
+                            color: 'var(--text-dim)',
+                          }}>MXN/noche</span>
+                        </div>
+                        <span style={{
+                          fontSize: '0.85rem',
+                          fontWeight: 700,
+                          color: 'var(--primary)',
+                        }}>
+                          Reservar →
+                        </span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+                {nearbyListings.length > 4 && (
+                  <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+                    <a
+                      href="/hospedaje/"
+                      style={{
+                        fontSize: '0.9rem',
+                        fontWeight: 600,
+                        color: 'var(--primary)',
+                        textDecoration: 'none',
+                      }}
+                    >
+                      Ver los {nearbyListings.length} hospedajes disponibles →
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           )}
