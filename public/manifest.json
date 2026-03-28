@@ -1,13 +1,23 @@
 {
-  "name": "MetroGuia — Transporte urbano en México",
+  "name": "MetroGuia.mx — Transporte urbano en México",
   "short_name": "MetroGuia",
-  "description": "Guía offline de metro, tren ligero y BRT para turistas en México. Trip planner, estaciones y rutas.",
+  "description": "Guía offline de metro, tren ligero y BRT para turistas en México. Trip planner con rutas de transporte urbano, información de estaciones y horarios para CDMX, Guadalajara y Monterrey.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0A0A0F",
   "theme_color": "#F5A623",
   "orientation": "portrait-primary",
   "categories": ["travel", "navigation", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Buscar ruta",
+      "short_name": "Ruta",
+      "description": "Busca una ruta en metro",
+      "url": "/ruta/calc/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    }
+  ],
   "icons": [
     {
       "src": "/logo.png",

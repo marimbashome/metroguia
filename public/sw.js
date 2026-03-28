@@ -1,8 +1,8 @@
-const CACHE_NAME = 'metroguia-v4-20260322';
+const CACHE_NAME = 'metroguia-v5-20260328';
 const STATIC_ASSETS = [
   '/',
   '/cdmx/',
-  '/cdmx/estacion/',
+  '/cdmx/page',
   '/gdl/',
   '/gdl/estacion/',
   '/gdl/linea/',
@@ -20,10 +20,12 @@ const STATIC_ASSETS = [
   '/hospedaje/',
   '/mundial-2026/',
   '/lineas/',
-  '/rutas/',
+  '/explorar/',
+  '/ruta/calc/',
   '/offline/',
   '/logo.png',
   '/og-image.png',
+  '/og-image.svg',
   '/manifest.json'
 ];
 

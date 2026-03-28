@@ -61,16 +61,25 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="es">
+    <html lang="es" dir="ltr">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="description" content="Trip planner de transporte urbano en México. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. Guía para el Mundial FIFA 2026." />
+        <meta httpEquiv="x-ua-compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0A0A0F" />
+        <meta name="theme-color" content="#F5A623" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="apple-touch-icon" href="/logo.png" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/yorkfx/icons-metro-df@master/files/css/ui-transport-mx.css"

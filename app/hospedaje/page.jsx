@@ -2,13 +2,14 @@ import { hospedaje } from '@/data/hospedaje'
 
 export function generateMetadata() {
   return {
-    title: 'Hospedaje cerca del Metro — Mundial FIFA 2026 | MetroGuia',
-    description: 'Alojamiento en CDMX, GDL y MTY cerca de estaciones de metro y estadios del Mundial 2026. Departamentos, casas y hoteles boutique con acceso al transporte público.',
-    keywords: 'hospedaje, alojamiento, hotel, apartamento, metro, mundial 2026, CDMX, Guadalajara, Monterrey',
+    title: 'Hospedaje cerca del Metro — Alojamiento para FIFA 2026 | MetroGuia',
+    description: 'Alojamiento en CDMX, GDL y MTY cerca de estaciones de metro y estadios del Mundial 2026. Departamentos, casas y hoteles con acceso directo a transporte público y sedes del torneo.',
+    keywords: 'hospedaje, alojamiento, hotel, apartamento, Airbnb, metro, mundial 2026, CDMX, Guadalajara, Monterrey, estadios',
     openGraph: {
-      title: 'Hospedaje cerca del Metro — MetroGuia',
-      description: 'Encuentra alojamiento cerca de estaciones de metro en las sedes del Mundial FIFA 2026',
+      title: 'Hospedaje — Alojamiento cerca del Metro para FIFA 2026',
+      description: 'Encuentra alojamiento con acceso al metro en las 3 sedes mexicanas del Mundial',
       type: 'website',
+      url: 'https://metroguia.mx/hospedaje/',
     },
   }
 }
