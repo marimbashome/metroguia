@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react'
 import PWAInstall from '@/app/components/PWAInstall'
 import LanguageSwitcher from '@/app/components/LanguageSwitcher'
 import HrefLangTags from '@/app/components/HrefLangTags'
+import AutoLangRedirect from '@/app/components/AutoLangRedirect'
 
 export const metadata = {
   title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
@@ -333,6 +334,7 @@ export default function RootLayout({ children }) {
     });
   }
 `}} />
+        <AutoLangRedirect />
         <HrefLangTags />
         <PWAInstall />
         <Analytics />
