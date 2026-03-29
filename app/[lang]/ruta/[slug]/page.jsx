@@ -1,59 +1,28 @@
 import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { LANGUAGES, t } from '@/lib/i18n'
 import { rutasPopulares, getRelatedRoutes } from '@/data/rutas-populares'
+import { STATION_DISPLAY_NAMES, cdmxStationSet } from '@/data/rutas-engine'
 
-// Name map for display (slug → proper name with accents)
-const STATION_NAMES = {
-  'aeropuerto': 'Aeropuerto',
-  'balderas': 'Balderas',
-  'barranca-del-muerto': 'Barranca del Muerto',
-  'bellas-artes': 'Bellas Artes',
-  'buenavista': 'Buenavista',
-  'centro-medico': 'Centro Médico',
-  'chabacano': 'Chabacano',
-  'chapultepec': 'Chapultepec',
-  'condesa': 'Condesa',
-  'constitucion-de-1917': 'Constitución de 1917',
-  'copilco': 'Copilco',
-  'coyoacan': 'Coyoacán',
-  'cuatro-caminos': 'Cuatro Caminos',
-  'el-rosario': 'El Rosario',
-  'garibaldi': 'Garibaldi',
-  'hidalgo': 'Hidalgo',
-  'hospital-general': 'Hospital General',
-  'indios-verdes': 'Indios Verdes',
-  'insurgentes': 'Insurgentes',
-  'jamaica': 'Jamaica',
-  'la-raza': 'La Raza',
-  'martin-carrera': 'Martín Carrera',
-  'mixcoac': 'Mixcoac',
-  'observatorio': 'Observatorio',
-  'pantitlan': 'Pantitlán',
-  'polanco': 'Polanco',
-  'roma': 'Roma',
-  'san-lazaro': 'San Lázaro',
-  'tacuba': 'Tacuba',
-  'tacubaya': 'Tacubaya',
-  'tasquena': 'Tasqueña',
-  'tepito': 'Tepito',
-  'universidad': 'Universidad',
-  'xochimilco': 'Xochimilco',
-  'zapata': 'Zapata',
-  'zocalo': 'Zócalo',
-}
+// ISR: allow any route slug in any language
+export const dynamicParams = true
+export const revalidate = false
 
 function getStationName(slug) {
-  return STATION_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+  return STATION_DISPLAY_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
 
 function parseSlug(slug) {
   if (!slug) return null
   const parts = slug.split('-a-')
   if (parts.length < 2) return null
-  return { origen: parts[0], destino: parts.slice(1).join('-a-') }
+  const origen = parts[0]
+  const destino = parts.slice(1).join('-a-')
+  if (!cdmxStationSet.has(origen) || !cdmxStationSet.has(destino)) return null
+  return { origen, destino }
 }
 
-// Generate static params for top 50 routes × 6 languages
+// Pre-build top 50 routes x 6 languages at build time
+// All other combos generated on-demand via ISR
 export function generateStaticParams() {
   const params = []
   LANGUAGES.filter(l => l !== 'es').forEach(lang => {
@@ -125,32 +94,15 @@ export default function RutaPageLang({ params }) {
 
   const origenName = getStationName(parsed.origen)
   const destinoName = getStationName(parsed.destino)
-
-  // Get related routes for internal linking
   const related = getRelatedRoutes(parsed.origen, parsed.destino, 6)
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'MetroGuia',
-        item: 'https://metroguia.mx'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Rutas',
-        item: `https://metroguia.mx/${lang}/`
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: `${origenName} → ${destinoName}`,
-        item: `https://metroguia.mx/${lang}/ruta/${params.slug}/`
-      }
+      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Rutas', item: `https://metroguia.mx/${lang}/` },
+      { '@type': 'ListItem', position: 3, name: `${origenName} → ${destinoName}`, item: `https://metroguia.mx/${lang}/ruta/${params.slug}/` }
     ]
   }
 
@@ -174,7 +126,6 @@ export default function RutaPageLang({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero */}
       <section style={{
         background: `linear-gradient(135deg, var(--surface) 0%, ${colorPrimary}15 100%)`,
         paddingTop: '4rem',
@@ -194,110 +145,50 @@ export default function RutaPageLang({ params }) {
           </h1>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
             <div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem', fontWeight: 600 }}>
-                {l.time}
-              </div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: colorPrimary }}>
-                ~5-40 min
-              </div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem', fontWeight: 600 }}>{l.time}</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: colorPrimary }}>~5-40 min</div>
             </div>
             <div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem', fontWeight: 600 }}>
-                {l.cost}
-              </div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: colorPrimary }}>
-                $5 MXN
-              </div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem', fontWeight: 600 }}>{l.cost}</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: colorPrimary }}>$5 MXN</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Route info */}
       <section style={{ padding: '3rem 1rem' }}>
         <div className="container">
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-            {l.findRoute}
-          </p>
-          <a
-            href={`/ruta/${params.slug}`}
-            style={{
-              display: 'inline-block',
-              padding: '0.75rem 1.5rem',
-              backgroundColor: colorPrimary,
-              color: '#000',
-              borderRadius: 'var(--radius-sm)',
-              textDecoration: 'none',
-              fontWeight: 700,
-              fontSize: '0.9rem',
-            }}
-          >
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>{l.findRoute}</p>
+          <a href={`/ruta/${params.slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', backgroundColor: colorPrimary, color: '#000', borderRadius: 'var(--radius-sm)', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>
             {origenName} → {destinoName} (Español)
           </a>
         </div>
       </section>
 
-      {/* AdBanner */}
       <div style={{ padding: '1rem', borderTop: '1px solid var(--border)' }}>
-        <div className="container">
-          <AdBannerLazy slot="4434764790" />
-        </div>
+        <div className="container"><AdBannerLazy slot="4434764790" /></div>
       </div>
 
-      {/* Tips */}
-      <section style={{
-        padding: '3rem 1rem',
-        borderTop: '1px solid var(--border)',
-        backgroundColor: 'var(--surface)',
-      }}>
+      <section style={{ padding: '3rem 1rem', borderTop: '1px solid var(--border)', backgroundColor: 'var(--surface)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>
-            {t(translations, 'station.tips')}
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '1.5rem',
-          }}>
+          <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>{t(translations, 'station.tips')}</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             {[l.tipCost, l.tipHours, l.tipAccess].map((tip, idx) => (
               <div key={idx} className="card" style={{ padding: '1rem' }}>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                  {tip}
-                </p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>{tip}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Related Routes */}
       {related.length > 0 && (
         <section style={{ padding: '3rem 1rem', borderTop: '1px solid var(--border)' }}>
           <div className="container">
-            <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>
-              {l.relatedTitle}
-            </h2>
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-              gap: '0.75rem',
-            }}>
+            <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>{l.relatedTitle}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.75rem' }}>
               {related.map((r, idx) => (
-                <a
-                  key={idx}
-                  href={`/${lang}/ruta/${r.origen}-a-${r.destino}`}
-                  style={{
-                    display: 'block',
-                    padding: '0.75rem 1rem',
-                    borderRadius: 'var(--radius-sm)',
-                    border: '1px solid var(--border)',
-                    backgroundColor: 'var(--surface)',
-                    color: 'var(--text)',
-                    textDecoration: 'none',
-                    fontSize: '0.85rem',
-                    fontWeight: 500,
-                  }}
-                >
+                <a key={idx} href={`/${lang}/ruta/${r.origen}-a-${r.destino}`} style={{ display: 'block', padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', backgroundColor: 'var(--surface)', color: 'var(--text)', textDecoration: 'none', fontSize: '0.85rem', fontWeight: 500 }}>
                   {getStationName(r.origen)} → {getStationName(r.destino)}
                 </a>
               ))}

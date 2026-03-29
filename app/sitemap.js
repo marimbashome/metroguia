@@ -2,6 +2,7 @@ import { estaciones } from '@/data/estaciones';
 import { lineasDetalle } from '@/data/lineas-detalle';
 import { zonas } from '@/data/zonas';
 import { rutasPopulares, buildRutaSlug } from '@/data/rutas-populares';
+import { generateAllRouteSlugs } from '@/data/rutas-engine';
 import { mundial2026 } from '@/data/mundial';
 
 // Import station data for all cities
@@ -218,12 +219,14 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // Páginas de rutas populares (4,742 routes — longtail SEO Phase 1+2)
-  const rutasPages = (rutasPopulares || []).map((ruta) => ({
-    url: `${baseUrl}/ruta/${ruta.origen}-a-${ruta.destino}/`,
+  // ALL 24,180 route pages (ISR — generated on-demand, all in sitemap for Google)
+  const allRouteSlugs = generateAllRouteSlugs();
+  // Build a set of FIFA routes (to tasquena) for priority boost
+  const rutasPages = allRouteSlugs.map((slug) => ({
+    url: `${baseUrl}/ruta/${slug}/`,
     lastModified,
     changeFrequency: 'monthly',
-    priority: ruta.destino === 'tasquena' ? 0.85 : 0.7,
+    priority: slug.endsWith('-a-tasquena') ? 0.85 : 0.7,
   }));
 
   // Language versions (en, pt, fr, de, ja, ko) for key pages
@@ -289,9 +292,9 @@ export default function sitemap() {
     });
   });
 
-  // Popular route pages in other languages (top 50 for i18n)
+  // Top 200 route pages in other languages (ISR handles the rest)
   languages.forEach(lang => {
-    rutasPopulares.slice(0, 50).forEach(ruta => {
+    rutasPopulares.slice(0, 200).forEach(ruta => {
       languagePages.push({
         url: `${baseUrl}/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`,
         lastModified,
