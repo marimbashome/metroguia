@@ -218,12 +218,12 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // Páginas de rutas populares
+  // Páginas de rutas populares (931 routes — longtail SEO)
   const rutasPages = (rutasPopulares || []).map((ruta) => ({
-    url: `${baseUrl}/rutas/${buildRutaSlug(ruta.origen, ruta.destino)}/`,
+    url: `${baseUrl}/ruta/${ruta.origen}-a-${ruta.destino}/`,
     lastModified,
     changeFrequency: 'monthly',
-    priority: 0.7,
+    priority: ruta.destino === 'tasquena' ? 0.85 : 0.7,
   }));
 
   // Language versions (en, pt, fr, de, ja, ko) for key pages
@@ -289,11 +289,11 @@ export default function sitemap() {
     });
   });
 
-  // Popular route pages in other languages
+  // Popular route pages in other languages (top 50 for i18n)
   languages.forEach(lang => {
-    rutasPopulares.slice(0, 10).forEach(ruta => {
+    rutasPopulares.slice(0, 50).forEach(ruta => {
       languagePages.push({
-        url: `${baseUrl}/${lang}/ruta/${buildRutaSlug(ruta.origen, ruta.destino)}/`,
+        url: `${baseUrl}/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`,
         lastModified,
         changeFrequency: 'monthly',
         priority: 0.7,

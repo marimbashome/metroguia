@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react'
 import { findRoute, findAlternativeRoute } from '@/lib/pathfinder'
 import { grafo } from '@/data/grafo'
+import { rutasPopulares, getRelatedRoutes } from '@/data/rutas-populares'
 import SearchBar from '@/app/components/SearchBar'
 import RouteResult from '@/app/components/RouteResult'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
 // Line color map
 const lineColors = {
@@ -133,9 +135,40 @@ export default function RutaClient({ slug }) {
         ]
       }
 
+      // HowTo schema for rich results
+      const estimatedMinutes = Math.round(resultado.pasos.length * 2 + 3)
+      const howtoSteps = resultado.pasos.map((paso, idx) => ({
+        '@type': 'HowToStep',
+        'position': idx + 1,
+        'name': `${idx === 0 ? 'Aborda' : 'Dirígete'} en estación ${paso.nombre}`,
+        'text': `${idx === 0 ? 'Dirígete a la estación' : 'Continúa a la estación'} ${paso.nombre} de Línea ${paso.linea}`,
+        'url': `https://metroguia.mx/ruta/${slug}#paso-${idx + 1}`
+      }))
+
+      const howtoSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        'name': `Cómo llegar de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre} en Metro CDMX`,
+        'description': `Guía paso a paso para viajar de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre} usando el Metro de Ciudad de México.`,
+        'totalTime': `PT${estimatedMinutes}M`,
+        'estimatedCost': {
+          '@type': 'MonetaryAmount',
+          'currency': 'MXN',
+          'value': '6'
+        },
+        'step': howtoSteps,
+        'tool': [
+          {
+            '@type': 'HowToTool',
+            'name': 'Tarjeta de Movilidad Integrada'
+          }
+        ]
+      }
+
       setSchemaJson({
         trip: JSON.stringify(tripSchema),
-        breadcrumb: JSON.stringify(breadcrumbSchema)
+        breadcrumb: JSON.stringify(breadcrumbSchema),
+        howto: JSON.stringify(howtoSchema)
       })
     }
   }, [slug])
@@ -159,6 +192,12 @@ export default function RutaClient({ slug }) {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: schemaJson.breadcrumb }}
           />
+          {schemaJson.howto && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: schemaJson.howto }}
+            />
+          )}
         </>
       )}
 
@@ -235,6 +274,11 @@ export default function RutaClient({ slug }) {
         </div>
       )}
 
+      {/* Ad banner after route */}
+      {ruta && ruta.encontrada && (
+        <AdBannerLazy slot="4434764790" />
+      )}
+
       {/* Alternative route */}
       {rutaAlt && rutaAlt.encontrada && (
         <div style={{ marginBottom: '2rem' }}>
@@ -267,12 +311,13 @@ export default function RutaClient({ slug }) {
         </div>
       )}
 
-      {/* Search again */}
+      {/* Search again section with related routes */}
       <div style={{
         padding: '1.5rem',
         borderRadius: 'var(--radius-lg)',
         border: '1px solid var(--border)',
         backgroundColor: 'var(--surface)',
+        marginBottom: '2rem',
       }}>
         <h6 style={{
           color: 'var(--text-dim)',
@@ -286,6 +331,125 @@ export default function RutaClient({ slug }) {
         </h6>
         <SearchBar ciudad="cdmx" onResult={handleNewResult} />
       </div>
+
+      {/* Related routes section */}
+      {origenNombre && (
+        <div style={{
+          marginBottom: '2rem',
+        }}>
+          <h6 style={{
+            color: 'var(--text-dim)',
+            fontSize: '0.7rem',
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            marginBottom: '1rem',
+          }}>
+            Rutas populares desde {origenNombre}
+          </h6>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+            gap: '0.75rem',
+          }}>
+            {getRelatedRoutes(
+              slug.split('-a-')[0],
+              slug.split('-a-')[1],
+              6
+            ).map((ruta, idx) => (
+              <a
+                key={idx}
+                href={`/ruta/${ruta.origen}-a-${ruta.destino}`}
+                style={{
+                  padding: '0.75rem',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border)',
+                  backgroundColor: 'var(--surface)',
+                  color: 'var(--primary)',
+                  textDecoration: 'none',
+                  fontSize: '0.875rem',
+                  fontWeight: 500,
+                  transition: 'all 0.2s ease',
+                  display: 'block',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--primary)'
+                  e.currentTarget.style.color = '#fff'
+                  e.currentTarget.style.borderColor = 'var(--primary)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--surface)'
+                  e.currentTarget.style.color = 'var(--primary)'
+                  e.currentTarget.style.borderColor = 'var(--border)'
+                }}
+              >
+                {ruta.titulo}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* SEO content section */}
+      {ruta && ruta.encontrada && (
+        <div style={{
+          padding: '1.5rem',
+          borderRadius: 'var(--radius-lg)',
+          border: '1px solid var(--border)',
+          backgroundColor: 'var(--surface)',
+          lineHeight: 1.6,
+        }}>
+          <h3 style={{
+            fontSize: '1.25rem',
+            fontWeight: 700,
+            marginBottom: '1rem',
+            marginTop: 0,
+          }}>
+            Cómo llegar de {origenNombre} a {destinoNombre}
+          </h3>
+
+          <p style={{
+            fontSize: '0.95rem',
+            color: 'var(--text)',
+            margin: '0 0 1rem 0',
+          }}>
+            Esta ruta en el Metro de la Ciudad de México te lleva de {origenNombre} a {destinoNombre} en aproximadamente {Math.round(ruta.pasos.length * 2 + 3)} minutos. Utiliza las líneas {ruta.lineas_usadas.join(', ')} para completar tu viaje de forma rápida y económica.
+          </p>
+
+          <h4 style={{
+            fontSize: '1rem',
+            fontWeight: 600,
+            marginBottom: '0.75rem',
+            marginTop: '1.5rem',
+          }}>
+            Consejos para tu viaje
+          </h4>
+
+          <ul style={{
+            margin: 0,
+            paddingLeft: '1.5rem',
+            fontSize: '0.95rem',
+            color: 'var(--text)',
+          }}>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Utiliza la Tarjeta de Movilidad Integrada para acceder al Metro con tan solo $6 MXN.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Evita viajar en horas pico (8-10 AM y 5-7 PM) para una experiencia más cómoda.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Verifica el estado de las líneas antes de viajar consultando el sitio oficial del Metro.
+            </li>
+            <li>
+              Asegúrate de tener conexión de datos para descargar planos del Metro como referencia.
+            </li>
+          </ul>
+
+          <AdBannerLazyInArticle slot="4434764790" />
+        </div>
+      )}
 
       {/* Alerts (Tren Ligero, etc.) */}
       {ruta && ruta.alertas && ruta.alertas.length > 0 && (
