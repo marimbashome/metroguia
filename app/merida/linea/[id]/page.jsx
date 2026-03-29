@@ -1,6 +1,7 @@
 import { lineasMerida } from '@/data/merida/lineas-detalle';
 import { estacionesMerida } from '@/data/merida/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasMerida.map((linea) => ({ id: linea.id }));
@@ -193,6 +194,7 @@ export default function LineaMeridaPage({ params }) {
 
       {/* DESCRIPCIÓN */}
       <section style={{ ...containerStyles, ...sectionStyles, paddingTop: '40px' }}>
+        <AdBannerLazy adSlot="4434764790" format="auto" />
         <h2 style={sectionTitleStyles}>Descripción del Corredor</h2>
         <div style={infoBoxStyles}>
           <p style={{ fontSize: '16px', color: '#374151', lineHeight: '1.7', margin: 0 }}>
@@ -271,6 +273,7 @@ export default function LineaMeridaPage({ params }) {
 
       {/* TODAS LAS ESTACIONES */}
       <section style={{ ...containerStyles, ...sectionStyles, paddingTop: '40px' }}>
+        <AdBannerLazyInArticle adSlot="1082410395" />
         <h2 style={sectionTitleStyles}>Todas las Estaciones del Corredor {linea.id}</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '15px' }}>
           {estacionesLinea.map((estacion, idx) => (

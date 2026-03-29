@@ -1,5 +1,6 @@
 import { estacionesLeon } from '@/data/leon/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return estacionesLeon.map((estacion) => ({
@@ -165,6 +166,8 @@ export default function EstacionLeonPage({ params }) {
           </p>
         </div>
 
+        <AdBannerLazy adSlot="4434764790" format="auto" />
+
         {/* TIPS */}
         <div style={tipsBoxStyles}>
           <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#059669', marginBottom: '12px' }}>
@@ -190,6 +193,7 @@ export default function EstacionLeonPage({ params }) {
         {/* POIS */}
         {estacion.pois && estacion.pois.length > 0 && (
           <div style={{ marginTop: '40px' }}>
+            <AdBannerLazyInArticle adSlot="1082410395" />
             <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
               📍 Atracciones cercanas
             </h2>

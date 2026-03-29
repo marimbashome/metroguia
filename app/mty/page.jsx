@@ -148,6 +148,8 @@ export default function MTYPage() {
               Kilómetros
             </p>
           </div>
+        </div>
+      </section>
 
       <AdBannerLazy slot="4434764790" format="auto" />
 
@@ -381,6 +383,8 @@ export default function MTYPage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
 
       <AdBannerLazyInArticle slot="1082410395" />
 
@@ -392,11 +396,10 @@ export default function MTYPage() {
         }}
       >
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-
-      {/* Affiliate Transport Card */}
-      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
-        <AffiliateTransportCard ciudad="MTY" estacion={null} fechas={null} />
-      </div>
+          {/* Affiliate Transport Card */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+            <AffiliateTransportCard ciudad="MTY" estacion={null} fechas={null} />
+          </div>
           <h2
             style={{
               fontSize: '2rem',
@@ -510,9 +513,14 @@ export default function MTYPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Affiliate Mundial */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+        <AffiliateMundial ciudad="MTY" />
+      </div>
 
       <AdBannerLazy slot="4434764790" format="auto" />
-    </section>
     </main>
   );
 }

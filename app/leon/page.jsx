@@ -1,6 +1,7 @@
 import { lineasLeon } from '@/data/leon/lineas-detalle';
 import { estacionesLeon } from '@/data/leon/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -189,6 +190,7 @@ export default function LeonPage() {
 
       {/* ABOUT LEÓN */}
       <section style={containerStyles}>
+        <AdBannerLazy adSlot="4434764790" format="auto" />
         <h2 style={sectionTitleStyles}>Sobre León</h2>
         <div style={infoBoxStyles}>
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#374151', marginBottom: '15px' }}>
@@ -294,6 +296,7 @@ export default function LeonPage() {
 
       {/* INFORMACIÓN TURÍSTICA ADICIONAL */}
       <section style={containerStyles}>
+        <AdBannerLazyInArticle adSlot="1082410395" />
         <h2 style={sectionTitleStyles}>Qué Hacer en León</h2>
         <div style={gridStyles}>
           <div style={estacionCardStyles}>

@@ -325,6 +325,9 @@ export default function CDMXPage() {
                 </div>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
 
       <AdBannerLazyInArticle slot="1082410395" />
 
