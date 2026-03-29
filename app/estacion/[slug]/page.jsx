@@ -1,5 +1,6 @@
 import { estaciones } from '@/data/estaciones'
 import { hospedaje } from '@/data/hospedaje'
+import { rutasPopulares } from '@/data/rutas-populares'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
@@ -863,49 +864,72 @@ export default function EstacionPage({ params }) {
           <AdBanner slot="4434764790" format="auto" />
 
           {/* RUTAS POPULARES DESDE ESTA ESTACIÓN */}
-          <div style={{ marginBottom: '3rem' }}>
-            <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
-              🚀 Rutas populares desde {estacion.nombre}
-            </h2>
-            <div className="grid-2" style={{
-              marginBottom: '1.5rem',
-            }}>
-              {[
-                { destino: 'Estadio Azteca', slug: 'estadio-azteca' },
-                { destino: 'Aeropuerto', slug: 'aeropuerto' },
-                { destino: 'Zócalo', slug: 'zocalo' },
-                { destino: 'Bellas Artes', slug: 'bellas-artes' },
-              ].map((ruta) => (
-                <a
-                  key={ruta.destino}
-                  href={`/ruta/${estacion.slug}_${ruta.slug}`}
-                  className="card"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                    padding: '1rem 1.25rem',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <div style={{
-                    fontSize: '0.95rem',
-                    fontWeight: 600,
-                    color: 'var(--text)',
-                  }}>
-                    {estacion.nombre} → {ruta.destino}
-                  </div>
-                  <span style={{
-                    color: 'var(--primary)',
-                    fontWeight: 700,
-                  }}>
-                    →
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
+          {(() => {
+            const rutasDesde = rutasPopulares.filter(r => r.origen === estacion.slug).slice(0, 8)
+            const rutasHacia = rutasPopulares.filter(r => r.destino === estacion.slug).slice(0, 4)
+            return (rutasDesde.length > 0 || rutasHacia.length > 0) ? (
+              <div style={{ marginBottom: '3rem' }}>
+                {rutasDesde.length > 0 && (
+                  <>
+                    <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
+                      Rutas desde {estacion.nombre}
+                    </h2>
+                    <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
+                      {rutasDesde.map((ruta) => (
+                        <a
+                          key={ruta.destino}
+                          href={`/ruta/${ruta.origen}-a-${ruta.destino}/`}
+                          className="card"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: '1rem',
+                            padding: '1rem 1.25rem',
+                            textDecoration: 'none',
+                          }}
+                        >
+                          <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)' }}>
+                            {ruta.titulo}
+                          </div>
+                          <span style={{ color: 'var(--primary)', fontWeight: 700 }}>→</span>
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {rutasHacia.length > 0 && (
+                  <>
+                    <h3 style={{ marginBottom: '1rem', color: 'var(--text-dim)', fontSize: '1rem' }}>
+                      Cómo llegar a {estacion.nombre}
+                    </h3>
+                    <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
+                      {rutasHacia.map((ruta) => (
+                        <a
+                          key={ruta.origen}
+                          href={`/ruta/${ruta.origen}-a-${ruta.destino}/`}
+                          className="card"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: '1rem',
+                            padding: '1rem 1.25rem',
+                            textDecoration: 'none',
+                          }}
+                        >
+                          <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)' }}>
+                            Desde {ruta.titulo.split(' a ')[0] || ruta.origen}
+                          </div>
+                          <span style={{ color: 'var(--primary)', fontWeight: 700 }}>→</span>
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            ) : null
+          })()}
 
           {/* NAVIGATION SECTION */}
           <div style={{

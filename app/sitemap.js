@@ -218,7 +218,7 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // Páginas de rutas populares (931 routes — longtail SEO)
+  // Páginas de rutas populares (4,742 routes — longtail SEO Phase 1+2)
   const rutasPages = (rutasPopulares || []).map((ruta) => ({
     url: `${baseUrl}/ruta/${ruta.origen}-a-${ruta.destino}/`,
     lastModified,

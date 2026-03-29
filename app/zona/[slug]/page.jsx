@@ -1,7 +1,8 @@
 import { zonas } from '@/data/zonas'
 import { estaciones } from '@/data/estaciones'
 import { lineasDetalle } from '@/data/lineas-detalle'
-import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
+import { rutasPopulares } from '@/data/rutas-populares'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
 export function generateStaticParams() {
   return zonas.map((z) => ({ slug: z.slug }))
@@ -62,9 +63,14 @@ export default function ZonaPage({ params }) {
     .map(id => Object.values(lineasDetalle).find(l => l.id === id))
     .filter(Boolean)
 
+  // Obtener rutas que van A estaciones en esta zona
+  const rutasAZona = rutasPopulares.filter(ruta =>
+    zona.estaciones.includes(ruta.destino)
+  ).slice(0, 20) // Limitar a top 20 para no saturar la página
+
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
+    '@type': ['TouristAttraction', 'HowTo'],
     name: `${zona.nombre} - CDMX`,
     description: zona.meta_description,
     url: `https://metroguia.mx/zona/${zona.slug}/`,
@@ -75,6 +81,16 @@ export default function ZonaPage({ params }) {
       addressLocality: 'Ciudad de México',
       addressCountry: 'MX',
     },
+    headline: `Cómo llegar a ${zona.nombre} en metro`,
+    step: zona.estaciones.slice(0, 3).map((estacion_slug, idx) => {
+      const estacion = estaciones.find(e => e.slug === estacion_slug)
+      return {
+        '@type': 'HowToStep',
+        position: idx + 1,
+        name: `Dirígete a la estación ${estacion?.nombre || estacion_slug}`,
+        text: `La estación ${estacion?.nombre || estacion_slug} en la Línea ${estacion?.linea || '?'} te acerca a ${zona.nombre}`
+      }
+    })
   }
 
   return (
@@ -96,7 +112,7 @@ export default function ZonaPage({ params }) {
       </section>
 
       {/* Ad 1 */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* DESCRIPCIÓN PRINCIPAL */}
       <section style={{ padding: '4rem 1.25rem' }}>
@@ -173,7 +189,7 @@ export default function ZonaPage({ params }) {
       )}
 
       {/* Ad 2 */}
-      <AdBannerInArticle slot="1082410395" />
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {/* TIPS PARA TURISTAS */}
       {zona.tips_turistas && zona.tips_turistas.length > 0 && (
@@ -189,6 +205,72 @@ export default function ZonaPage({ params }) {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* RUTAS POPULARES A ESTA ZONA */}
+      {rutasAZona.length > 0 && (
+        <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--metro-gray)' }}>
+          <div className="container" style={{ maxWidth: '1000px' }}>
+            <h2 style={{ marginBottom: '1rem' }}>Cómo llegar a {zona.nombre}</h2>
+            <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '2rem' }}>
+              Rutas populares desde diferentes puntos de la ciudad hasta {zona.nombre}
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+              {rutasAZona.map((ruta, idx) => {
+                const origen_nombre = estaciones.find(e => e.slug === ruta.origen)?.nombre || ruta.origen.replace(/-/g, ' ')
+                return (
+                  <a
+                    key={idx}
+                    href={`/ruta/${ruta.origen}-a-${ruta.destino}/`}
+                    className="lugar-card"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '1rem',
+                      padding: '1.25rem',
+                      textDecoration: 'none',
+                      color: 'inherit',
+                      backgroundColor: 'white',
+                      border: '1px solid #e0e0e0',
+                      borderRadius: '6px',
+                      transition: 'all 0.2s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = 'var(--metro-orange)'
+                      e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = '#e0e0e0'
+                      e.currentTarget.style.boxShadow = 'none'
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: '0.875rem', color: '#999', marginBottom: '0.25rem' }}>
+                        Desde
+                      </div>
+                      <div style={{ fontSize: '1rem', fontWeight: 600 }}>
+                        {origen_nombre}
+                      </div>
+                    </div>
+                    <div style={{ fontSize: '1.25rem', color: 'var(--metro-orange)' }}>
+                      →
+                    </div>
+                  </a>
+                )
+              })}
+            </div>
+            <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+              <a href={`/ruta/?a=${zona.estacion_principal}`} style={{
+                color: 'var(--metro-orange)',
+                fontWeight: 600,
+                textDecoration: 'none'
+              }}>
+                Ver todas las rutas a {zona.nombre} →
+              </a>
             </div>
           </div>
         </section>
@@ -215,7 +297,7 @@ export default function ZonaPage({ params }) {
       )}
 
       {/* Ad 3 */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* LLAMADA A ACCIÓN */}
       <section className="section-tips">
