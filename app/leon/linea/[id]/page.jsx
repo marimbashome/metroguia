@@ -1,6 +1,7 @@
 import { lineasLeon } from '@/data/leon/lineas-detalle';
 import { estacionesLeon } from '@/data/leon/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasLeon.map((linea) => ({
@@ -173,6 +174,7 @@ export default function LineaLeonPage({ params }) {
       {/* MAIN CONTENT */}
       <section style={containerStyles}>
         {/* DESCRIPCIÓN */}
+        <AdBannerLazy adSlot="4434764790" format="auto" />
         <div style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#1f2937', marginBottom: '15px' }}>
             Descripción del Corredor
@@ -183,6 +185,7 @@ export default function LineaLeonPage({ params }) {
         </div>
 
         {/* ESTACIONES */}
+        <AdBannerLazyInArticle adSlot="1082410395" />
         <div style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
             🚉 Estaciones del Corredor {linea.id}

@@ -1,6 +1,6 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
-import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 
 export const metadata = {
   title: 'Líneas del Metro CDMX — MetroGuia.mx',

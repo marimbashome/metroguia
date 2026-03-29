@@ -4,7 +4,7 @@ import { rutasPopulares } from '@/data/rutas-populares'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
-import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 export function generateStaticParams() {
   return estaciones.map((e) => ({ slug: e.slug }))
 }

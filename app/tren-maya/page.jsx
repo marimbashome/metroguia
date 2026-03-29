@@ -1,6 +1,7 @@
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -189,6 +190,7 @@ export default function TrenMayaPage() {
             <li><strong>Destino turístico:</strong> Maravillas del mundo maya, cenotes, playas y gastronomía yucateca</li>
           </ul>
         </div>
+        <AdBannerLazy adSlot="4434764790" format="auto" />
       </section>
 
       {/* ESPECIAL PARA FIFA 2026 */}
@@ -251,6 +253,7 @@ export default function TrenMayaPage() {
 
       {/* ESTACIONES DESTACADAS */}
       <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>
+        <AdBannerLazyInArticle adSlot="1082410395" />
         <h2 style={sectionTitleStyles}>Estaciones Turísticas Imprescindibles</h2>
         <div style={gridStyles}>
           {estacionesDestacadas.map((estacion) => (
