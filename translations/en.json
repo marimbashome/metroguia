@@ -152,5 +152,48 @@
     "installDesc": "Access offline and calculate routes instantly",
     "install": "Install",
     "dismiss": "Not now"
+  },
+  "searchBar": {
+    "origin": "Origin",
+    "destination": "Destination",
+    "originPlaceholder": "Starting station...",
+    "destinationPlaceholder": "Destination station...",
+    "swapTitle": "Swap origin and destination",
+    "searchRoute": "Search Route",
+    "quickAzteca": "Azteca Stadium",
+    "quickAirport": "Airport",
+    "quickDowntown": "Historic Center",
+    "quickCoyoacan": "Coyoacán"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Plan your trip in 3 steps, no apps or mobile data",
+    "step1Title": "Search your route",
+    "step1Desc": "Enter your origin and destination. The search finds the nearest station with autocomplete.",
+    "step2Title": "Review the steps",
+    "step2Desc": "See lines, transfers, estimated time and cost. Includes safety alerts and tips.",
+    "step3Title": "Travel like a local",
+    "step3Desc": "Install the app (PWA) for offline access. Check your route without internet inside the metro."
+  },
+  "comingSoon": {
+    "title": "Coming soon — 8 more cities",
+    "explore": "Explore"
+  },
+  "layout": {
+    "lines": "Lines",
+    "worldCup": "World Cup 2026",
+    "accommodation": "Accommodation",
+    "cities": "Cities",
+    "resources": "Resources",
+    "privacy": "Privacy",
+    "footerDesc": "Urban transit planner in Mexico. Calculate routes, explore stations and travel like a local.",
+    "footerTagline": "CDMX · Guadalajara · Monterrey — Information for FIFA World Cup 2026 tourists",
+    "hostCitiesFifa": "FIFA 2026 Host Cities",
+    "hostCitiesDesc": "Guided urban transport for 3 Mexican World Cup host cities",
+    "guidedStations": "Guided stations",
+    "transitLines": "Transit lines",
+    "activeCities": "Active cities",
+    "fifaMatches": "FIFA matches in Mexico",
+    "network": "network"
   }
 }

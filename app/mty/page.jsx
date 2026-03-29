@@ -1,6 +1,7 @@
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Metrorrey Monterrey — Metro 2 líneas, 32 estaciones + FIFA 2026 | MetroGuia',
@@ -145,8 +146,8 @@ export default function MTYPage() {
               Kilómetros
             </p>
           </div>
-        </div>
-      </section>
+
+      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" />
 
       {/* MUNDIAL 2026 */}
       <section
@@ -378,8 +379,8 @@ export default function MTYPage() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
+
+      <AdBannerLazyInArticle adSlot=\"1082410395\" />
 
       {/* ESTACIONES DESTACADAS */}
       <section
@@ -502,7 +503,9 @@ export default function MTYPage() {
             ))}
           </div>
         </div>
-      </section>
+
+      <AdBannerLazy adSlot="4434764790" format="auto" />
+    </section>
     </main>
   );
 }

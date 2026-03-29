@@ -152,5 +152,48 @@
     "installDesc": "오프라인에서 액세스하고 경로를 즉시 계산",
     "install": "설치",
     "dismiss": "나중에"
+  },
+  "searchBar": {
+    "origin": "출발지",
+    "destination": "목적지",
+    "originPlaceholder": "출발 역...",
+    "destinationPlaceholder": "목적지 역...",
+    "swapTitle": "출발지와 목적지 교환",
+    "searchRoute": "경로 검색",
+    "quickAzteca": "아즈텍 경기장",
+    "quickAirport": "공항",
+    "quickDowntown": "역사 지구",
+    "quickCoyoacan": "코요아칸"
+  },
+  "howItWorks": {
+    "title": "작동 방식",
+    "subtitle": "3단계로 여행 계획, 앱이나 모바일 데이터 불필요",
+    "step1Title": "경로 검색",
+    "step1Desc": "출발지와 목적지를 입력합니다. 검색 엔진이 자동 완성으로 가장 가까운 역을 찾습니다.",
+    "step2Title": "단계 검토",
+    "step2Desc": "노선, 환승, 예상 시간 및 요금을 확인합니다. 안전 경고 및 팁 포함.",
+    "step3Title": "현지인처럼 여행",
+    "step3Desc": "앱(PWA)을 설치하여 오프라인 접근. 지하철 내에서 인터넷 없이 경로 확인."
+  },
+  "comingSoon": {
+    "title": "곧 출시 — 8개 도시 추가",
+    "explore": "살펴보기"
+  },
+  "layout": {
+    "lines": "노선",
+    "worldCup": "2026년 월드컵",
+    "accommodation": "숙박",
+    "cities": "도시",
+    "resources": "리소스",
+    "privacy": "개인정보",
+    "footerDesc": "멕시코 도시 교통 플래너. 경로를 계산하고, 역을 탐색하며, 현지인처럼 여행하세요.",
+    "footerTagline": "CDMX · 과달라하라 · 몬테레이 — 2026년 FIFA 월드컵 관광객 정보",
+    "hostCitiesFifa": "2026년 FIFA 개최 도시",
+    "hostCitiesDesc": "3개 멕시코 월드컵 개최 도시를 위한 안내 도시 교통",
+    "guidedStations": "안내 역",
+    "transitLines": "교통 노선",
+    "activeCities": "활성 도시",
+    "fifaMatches": "멕시코의 FIFA 경기",
+    "network": "네트워크"
   }
 }

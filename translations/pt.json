@@ -152,5 +152,48 @@
     "installDesc": "Acesse offline e calcule rotas instantaneamente",
     "install": "Instalar",
     "dismiss": "Agora não"
+  },
+  "searchBar": {
+    "origin": "Origem",
+    "destination": "Destino",
+    "originPlaceholder": "Estação de partida...",
+    "destinationPlaceholder": "Estação de destino...",
+    "swapTitle": "Trocar origem e destino",
+    "searchRoute": "Pesquisar Rota",
+    "quickAzteca": "Estádio Azteca",
+    "quickAirport": "Aeroporto",
+    "quickDowntown": "Centro Histórico",
+    "quickCoyoacan": "Coyoacán"
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "subtitle": "Planeje sua viagem em 3 passos, sem aplicativos ou dados móveis",
+    "step1Title": "Procure sua rota",
+    "step1Desc": "Digite sua origem e destino. O mecanismo de busca encontra a estação mais próxima com autocompletar.",
+    "step2Title": "Revise os passos",
+    "step2Desc": "Veja as linhas, transferências, tempo estimado e custo. Inclui alertas de segurança e dicas.",
+    "step3Title": "Viaje como um local",
+    "step3Desc": "Instale o aplicativo (PWA) para acesso offline. Consulte sua rota sem internet dentro do metrô."
+  },
+  "comingSoon": {
+    "title": "Em breve — 8 cidades adicionais",
+    "explore": "Explorar"
+  },
+  "layout": {
+    "lines": "Linhas",
+    "worldCup": "Copa do Mundo 2026",
+    "accommodation": "Hospedagem",
+    "cities": "Cidades",
+    "resources": "Recursos",
+    "privacy": "Privacidade",
+    "footerDesc": "Planejador de trânsito urbano no México. Calcule rotas, explore estações e viaje como um local.",
+    "footerTagline": "CDMX · Guadalajara · Monterrey — Informações para turistas da Copa do Mundo FIFA 2026",
+    "hostCitiesFifa": "Cidades-sede da FIFA 2026",
+    "hostCitiesDesc": "Transporte urbano guiado para 3 cidades-sede mexicanas da Copa do Mundo",
+    "guidedStations": "Estações guiadas",
+    "transitLines": "Linhas de trânsito",
+    "activeCities": "Cidades ativas",
+    "fifaMatches": "Partidas da FIFA no México",
+    "network": "rede"
   }
 }

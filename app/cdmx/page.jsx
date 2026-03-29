@@ -2,6 +2,7 @@ import { lineasDetalle } from '@/data/lineas-detalle'
 import { estaciones } from '@/data/estaciones'
 import { mundial } from '@/data/mundial'
 import SearchBar from '@/app/components/SearchBar'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
 export function generateMetadata() {
   return {
@@ -156,6 +157,8 @@ export default function CDMXPage() {
           <SearchBar />
         </div>
       </section>
+
+      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" />
 
       {/* Rutas Populares al Mundial — Horizontal scroll cards */}
       <section style={{
@@ -320,9 +323,8 @@ export default function CDMXPage() {
                 </div>
               </a>
             ))}
-          </div>
-        </div>
-      </section>
+
+      <AdBannerLazyInArticle adSlot=\"1082410395\" />
 
       {/* Estaciones Destacadas — grid-3 */}
       {estacionesTuristicas.length > 0 && (
@@ -597,7 +599,9 @@ export default function CDMXPage() {
         </div>
       </section>
 
-      {/* CTA Hospedaje — accommodation section */}
+      {/* CTA Hospedaje
+
+      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" /> — accommodation section */}
       <section style={{
         padding: '4rem 1rem',
         background: 'linear-gradient(135deg, rgba(233, 30, 140, 0.05) 0%, var(--surface) 100%)',

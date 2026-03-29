@@ -1,9 +1,11 @@
 import './globals-v2.css'
 import { Analytics } from '@vercel/analytics/react'
 import PWAInstall from '@/app/components/PWAInstall'
-import LanguageSwitcher from '@/app/components/LanguageSwitcher'
+import NavBar from '@/app/components/NavBar'
+import FooterBar from '@/app/components/FooterBar'
 import HrefLangTags from '@/app/components/HrefLangTags'
 import AutoLangRedirect from '@/app/components/AutoLangRedirect'
+import NetworkStatus from '@/app/components/NetworkStatus'
 
 export const metadata = {
   title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
@@ -68,12 +70,15 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="preload" as="image" href="/logo.png" fetchPriority="high" />
         <meta name="theme-color" content="#F5A623" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -88,11 +93,6 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
-          crossOrigin="anonymous"
-        />
         <meta name="google-adsense-account" content="ca-pub-5779958677522085" />
         {/* GA4 */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YQMP6V81D" />
@@ -102,208 +102,25 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'G-7YQMP6V81D');
         `}} />
+        <script
+          async
+          defer
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
+          crossOrigin="anonymous"
+        />
       </head>
       <body>
         {/* ── Navigation ── */}
-        <header style={{
-          backgroundColor: 'var(--surface)',
-          borderBottom: '1px solid var(--border)',
-          position: 'sticky',
-          top: 0,
-          zIndex: 100,
-        }}>
-          <div style={{
-            maxWidth: '1000px',
-            margin: '0 auto',
-            padding: '0.75rem 1rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}>
-            {/* Logo */}
-            <a href="/" style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.625rem',
-              textDecoration: 'none',
-            }}>
-              <img
-                src="/logo.png"
-                alt="MetroGuia"
-                style={{ height: '32px', width: 'auto', borderRadius: '6px' }}
-              />
-              <span style={{
-                fontSize: '1.125rem',
-                fontWeight: 800,
-                color: 'var(--primary)',
-                letterSpacing: '-0.02em',
-              }}>
-                MetroGuia
-              </span>
-            </a>
-
-            {/* Nav Links */}
-            <nav style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1.5rem',
-            }}>
-              <a href="/lineas/" style={{
-                color: 'var(--text-muted)',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                textDecoration: 'none',
-              }}>Líneas</a>
-              <a href="/mundial-2026/" style={{
-                color: 'var(--text-muted)',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                textDecoration: 'none',
-              }}>Mundial 2026</a>
-              <a href="/hospedaje/" style={{
-                color: 'var(--text-muted)',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                textDecoration: 'none',
-              }}>Hospedaje</a>
-
-              {/* City pills */}
-              <div style={{
-                display: 'flex',
-                gap: '0.375rem',
-                borderLeft: '1px solid var(--border)',
-                paddingLeft: '1rem',
-                marginLeft: '0.25rem',
-              }}>
-                <a href="/cdmx/" style={{
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  padding: '0.25rem 0.625rem',
-                  borderRadius: 'var(--radius-full)',
-                  backgroundColor: 'var(--primary-glow)',
-                  border: '1px solid var(--primary-border)',
-                  color: 'var(--primary)',
-                  textDecoration: 'none',
-                }}>CDMX</a>
-                <a href="/gdl/" style={{
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  padding: '0.25rem 0.625rem',
-                  borderRadius: 'var(--radius-full)',
-                  backgroundColor: 'rgba(6,182,212,0.1)',
-                  border: '1px solid rgba(6,182,212,0.3)',
-                  color: '#06B6D4',
-                  textDecoration: 'none',
-                }}>GDL</a>
-                <a href="/mty/" style={{
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  padding: '0.25rem 0.625rem',
-                  borderRadius: 'var(--radius-full)',
-                  backgroundColor: 'rgba(236,72,153,0.1)',
-                  border: '1px solid rgba(236,72,153,0.3)',
-                  color: '#EC4899',
-                  textDecoration: 'none',
-                }}>MTY</a>
-              </div>
-
-              {/* Language Switcher */}
-              <div style={{
-                borderLeft: '1px solid var(--border)',
-                paddingLeft: '1rem',
-                marginLeft: '0.25rem',
-              }}>
-                <LanguageSwitcher />
-              </div>
-            </nav>
-          </div>
-        </header>
+        <NavBar />
 
         {/* ── Main Content ── */}
-        <main>{children}</main>
+        <main>
+          <NetworkStatus />
+          {children}
+        </main>
 
         {/* ── Footer ── */}
-        <footer style={{
-          backgroundColor: 'var(--surface)',
-          borderTop: '1px solid var(--border)',
-          padding: '3rem 1rem',
-          marginTop: '4rem',
-        }}>
-          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            {/* Top row */}
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'flex-start',
-              flexWrap: 'wrap',
-              gap: '2rem',
-              marginBottom: '2rem',
-            }}>
-              <div>
-                <div style={{
-                  fontSize: '1.125rem',
-                  fontWeight: 800,
-                  color: 'var(--primary)',
-                  marginBottom: '0.5rem',
-                }}>MetroGuia.mx</div>
-                <p style={{
-                  fontSize: '0.875rem',
-                  color: 'var(--text-muted)',
-                  maxWidth: '300px',
-                  lineHeight: 1.6,
-                  margin: 0,
-                }}>
-                  Trip planner de transporte urbano en México. Calcula rutas, explora estaciones y viaja como local.
-                </p>
-              </div>
-
-              <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
-                <div>
-                  <h6 style={{ color: 'var(--text-dim)', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>Ciudades</h6>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <a href="/cdmx/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>CDMX</a>
-                    <a href="/gdl/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>Guadalajara</a>
-                    <a href="/mty/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>Monterrey</a>
-                  </div>
-                </div>
-                <div>
-                  <h6 style={{ color: 'var(--text-dim)', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>Recursos</h6>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <a href="/lineas/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>Líneas</a>
-                    <a href="/mundial-2026/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>Mundial 2026</a>
-                    <a href="/privacy-policy/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>Privacidad</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom row */}
-            <div style={{
-              borderTop: '1px solid var(--border)',
-              paddingTop: '1.5rem',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '0.75rem',
-            }}>
-              <p style={{
-                margin: 0,
-                fontSize: '0.8rem',
-                color: 'var(--text-dim)',
-              }}>
-                MetroGuia.mx © 2026
-              </p>
-              <p style={{
-                margin: 0,
-                fontSize: '0.8rem',
-                color: 'var(--text-dim)',
-              }}>
-                CDMX · Guadalajara · Monterrey — Información para turistas del Mundial FIFA 2026
-              </p>
-            </div>
-          </div>
-        </footer>
+        <FooterBar />
 
         {/* ── Service Worker Registration ── */}
         <script dangerouslySetInnerHTML={{ __html: `
@@ -311,26 +128,34 @@ export default function RootLayout({ children }) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/sw.js', { scope: '/' })
         .then(reg => {
-          console.log('MetroGuia SW registered, scope:', reg.scope);
-          
-          // Check for updates periodically
+          // Check for updates every 5 minutes (not 60s — too aggressive)
           setInterval(() => {
-            reg.update().catch(err => console.log('SW update check failed:', err));
-          }, 60000); // Check every 60 seconds
-          
-          // Handle SW updates
+            reg.update().catch(() => {});
+          }, 300000);
+
+          // Handle SW updates with user notification
           reg.addEventListener('updatefound', () => {
             const newWorker = reg.installing;
             if (newWorker) {
               newWorker.addEventListener('statechange', () => {
                 if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  console.log('MetroGuia SW update available');
+                  // New version available — activate immediately
+                  newWorker.postMessage({ type: 'SKIP_WAITING' });
                 }
               });
             }
           });
+
+          // Refresh page when new SW takes over
+          let refreshing = false;
+          navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (!refreshing) {
+              refreshing = true;
+              window.location.reload();
+            }
+          });
         })
-        .catch(err => console.log('SW registration failed:', err));
+        .catch(() => {});
     });
   }
 `}} />

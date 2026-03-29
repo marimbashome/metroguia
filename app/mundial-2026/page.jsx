@@ -1,3 +1,5 @@
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+
 export const metadata = {
   title: 'Mundial FIFA 2026 en CDMX — Cómo llegar en Metro | MetroGuia',
   description: 'Guía completa para llegar al Estadio Azteca durante el Mundial 2026. Fechas de partidos, rutas en metro, precios y tips para turistas.',
@@ -142,6 +144,7 @@ export default function MundialPage() {
       <section style={{ padding: '4rem 1.25rem' }}>
         <div className="container" style={{ maxWidth: '1000px' }}>
           <Countdown />
+          <AdBannerLazy slotId="4434764790" format="auto" />
 
           <h2 style={{ marginBottom: '2rem', textAlign: 'center' }}>Las 3 Ciudades Sedes del Mundial 2026</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
@@ -187,6 +190,8 @@ export default function MundialPage() {
               </div>
             ))}
           </div>
+
+          <AdBannerLazyInArticle slotId="1082410395" />
 
           <h2 style={{ marginBottom: '2.5rem', textAlign: 'center' }}>Fan Zones y FIFA Fan Festival</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
@@ -246,6 +251,8 @@ export default function MundialPage() {
               </tbody>
             </table>
           </div>
+
+          <AdBannerLazy slotId="4434764790" format="auto" />
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
             <a href="/mundial-2026/estadio-azteca/" style={{ textDecoration: 'none' }}>

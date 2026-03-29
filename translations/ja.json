@@ -152,5 +152,48 @@
     "installDesc": "オフラインでアクセスしてルートを即座に計算",
     "install": "インストール",
     "dismiss": "後で"
+  },
+  "searchBar": {
+    "origin": "出発駅",
+    "destination": "到着駅",
+    "originPlaceholder": "出発駅...",
+    "destinationPlaceholder": "到着駅...",
+    "swapTitle": "出発駅と到着駅を入れ替える",
+    "searchRoute": "ルート検索",
+    "quickAzteca": "アステカスタジアム",
+    "quickAirport": "空港",
+    "quickDowntown": "歴史地区",
+    "quickCoyoacan": "コヨアカン"
+  },
+  "howItWorks": {
+    "title": "使い方",
+    "subtitle": "3ステップで旅をプランニング、アプリやモバイルデータは不要",
+    "step1Title": "ルートを検索",
+    "step1Desc": "出発地と目的地を入力します。検索エンジンが自動補完で最寄り駅を見つけます。",
+    "step2Title": "ステップを確認",
+    "step2Desc": "路線、乗り換え、所要時間、運賃を確認。安全アラートとアドバイスも含まれます。",
+    "step3Title": "地元のように旅をする",
+    "step3Desc": "アプリ（PWA）をインストールしてオフラインアクセス。メトロ内でインターネットなしでルートを確認。"
+  },
+  "comingSoon": {
+    "title": "近日公開 — さらに8都市",
+    "explore": "詳しく見る"
+  },
+  "layout": {
+    "lines": "路線",
+    "worldCup": "2026年ワールドカップ",
+    "accommodation": "宿泊",
+    "cities": "都市",
+    "resources": "リソース",
+    "privacy": "プライバシー",
+    "footerDesc": "メキシコの都市交通プランナー。ルートを計算し、駅を探索し、地元のように旅をしましょう。",
+    "footerTagline": "CDMX · グアダラハラ · モンテレイ — 2026年FIFAワールドカップ観光客向け情報",
+    "hostCitiesFifa": "2026年FIFA開催地",
+    "hostCitiesDesc": "3つのメキシコ・ワールドカップ開催都市向けの案内付き都市交通",
+    "guidedStations": "案内付き駅",
+    "transitLines": "交通路線",
+    "activeCities": "アクティブな都市",
+    "fifaMatches": "メキシコのFIFAマッチ",
+    "network": "ネットワーク"
   }
 }

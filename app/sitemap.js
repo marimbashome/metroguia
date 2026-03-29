@@ -2,7 +2,7 @@ import { estaciones } from '@/data/estaciones';
 import { lineasDetalle } from '@/data/lineas-detalle';
 import { zonas } from '@/data/zonas';
 import { rutasPopulares, buildRutaSlug } from '@/data/rutas-populares';
-import { generateAllRouteSlugs } from '@/data/rutas-engine';
+import { generateCityRoutes } from '@/data/rutas-engine';
 import { mundial2026 } from '@/data/mundial';
 
 // Import station data for all cities
@@ -219,15 +219,27 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // ALL 24,180 route pages (ISR — generated on-demand, all in sitemap for Google)
-  const allRouteSlugs = generateAllRouteSlugs();
-  // Build a set of FIFA routes (to tasquena) for priority boost
-  const rutasPages = allRouteSlugs.map((slug) => ({
+  // ALL 26,894 route pages — CDMX (24,180) + GDL (1,722) + MTY (992)
+  // ISR: generated on-demand, all listed in sitemap for Google discovery
+  const cdmxRoutes = generateCityRoutes('cdmx').map(slug => ({
     url: `${baseUrl}/ruta/${slug}/`,
     lastModified,
     changeFrequency: 'monthly',
-    priority: slug.endsWith('-a-tasquena') ? 0.85 : 0.7,
+    priority: slug.endsWith('-a-tasquena') || slug.endsWith('-a-tren-ligero-estadio-azteca') ? 0.85 : 0.7,
   }));
+  const gdlRoutes = generateCityRoutes('gdl').map(slug => ({
+    url: `${baseUrl}/gdl/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: slug.endsWith('-a-estadio-chivas') ? 0.85 : 0.65,
+  }));
+  const mtyRoutes = generateCityRoutes('mty').map(slug => ({
+    url: `${baseUrl}/mty/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: slug.endsWith('-a-exposicion') ? 0.85 : 0.65,
+  }));
+  const rutasPages = [...cdmxRoutes, ...gdlRoutes, ...mtyRoutes];
 
   // Language versions (en, pt, fr, de, ja, ko) for key pages
   const languages = ['en', 'pt', 'fr', 'de', 'ja', 'ko'];
@@ -263,23 +275,52 @@ export default function sitemap() {
     });
   });
 
-  // Sample station pages in other languages (top 20 tourist stations)
-  const topTouristStations = estaciones
-    .filter(e => e.tipo_zona === 'turistico')
-    .slice(0, 20);
-  
+  // ALL CDMX station pages in other languages (195 × 6 = 1,170)
   languages.forEach(lang => {
-    topTouristStations.forEach(estacion => {
+    (estaciones || []).forEach(estacion => {
       languagePages.push({
         url: `${baseUrl}/${lang}/cdmx/estacion/${estacion.slug}/`,
         lastModified,
         changeFrequency: 'monthly',
-        priority: 0.75,
+        priority: 0.7,
       });
     });
   });
 
-  // CDMX line pages in other languages
+  // GDL + MTY station pages in other languages
+  const cityStationSets = [
+    { data: estacionesGDL, city: 'gdl' },
+    { data: estacionesMTY, city: 'mty' },
+  ];
+  languages.forEach(lang => {
+    cityStationSets.forEach(({ data, city }) => {
+      (data || []).forEach(estacion => {
+        languagePages.push({
+          url: `${baseUrl}/${lang}/${city}/estacion/${estacion.slug}/`,
+          lastModified,
+          changeFrequency: 'monthly',
+          priority: 0.65,
+        });
+      });
+    });
+  });
+
+  // All city hub pages in other languages (11 cities × 6 langs = 66)
+  const allCities = ['cdmx', 'gdl', 'mty', 'puebla', 'merida', 'leon', 'chihuahua', 'tijuana', 'toluca', 'queretaro', 'tren-maya'];
+  languages.forEach(lang => {
+    allCities.forEach(city => {
+      if (city !== 'cdmx') { // cdmx already added above
+        languagePages.push({
+          url: `${baseUrl}/${lang}/${city}/`,
+          lastModified,
+          changeFrequency: 'weekly',
+          priority: 0.8,
+        });
+      }
+    });
+  });
+
+  // CDMX line pages in other languages (12 × 6 = 72)
   const cdmxLineIds = Object.keys(lineasDetalle).slice(0, 12);
   languages.forEach(lang => {
     cdmxLineIds.forEach(lineId => {
@@ -287,19 +328,19 @@ export default function sitemap() {
         url: `${baseUrl}/${lang}/cdmx/linea/${lineId}/`,
         lastModified,
         changeFrequency: 'monthly',
-        priority: 0.75,
+        priority: 0.7,
       });
     });
   });
 
-  // Top 200 route pages in other languages (ISR handles the rest)
+  // Top 500 route pages in other languages (500 × 6 = 3,000)
   languages.forEach(lang => {
-    rutasPopulares.slice(0, 200).forEach(ruta => {
+    rutasPopulares.slice(0, 500).forEach(ruta => {
       languagePages.push({
         url: `${baseUrl}/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`,
         lastModified,
         changeFrequency: 'monthly',
-        priority: 0.7,
+        priority: 0.65,
       });
     });
   });

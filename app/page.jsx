@@ -3,6 +3,7 @@ import FAQSchema from '@/app/components/FAQSchema'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
 import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
 import { homeFAQs, transitAgencies } from '@/data/faqs'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
 export const metadata = {
   title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
@@ -198,6 +199,11 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Ad — After Popular Routes ── */}
+      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
+        <AdBannerLazy slot="4434764790" format="auto" />
+      </div>
+
       {/* ── Ciudades Activas ── */}
       <section id="ciudades" style={{ padding: '3rem 1rem' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -375,6 +381,11 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Ad — Mid-page ── */}
+      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
+        <AdBannerLazyInArticle slot="1082410395" />
+      </div>
 
       {/* ── Stats Banner ── */}
       <section style={{

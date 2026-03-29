@@ -1,4 +1,5 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
 export function generateStaticParams() {
   return Object.keys(lineasDetalle).map((id) => ({ id }))
@@ -139,6 +140,8 @@ export default function LineaPage({ params }) {
             </div>
           </div>
 
+          <AdBannerLazy slot="4434764790" format="auto" />
+
           <h2 style={{ marginBottom: '1.5rem' }}>Estaciones</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem', marginBottom: '3rem' }}>
             {linea.estaciones.map((est) => (
@@ -160,6 +163,8 @@ export default function LineaPage({ params }) {
               </a>
             ))}
           </div>
+
+          <AdBannerLazyInArticle slot="1082410395" />
 
           {linea.ruta_1_dia && linea.ruta_1_dia.paradas.length > 0 && (
             <>

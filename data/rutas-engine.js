@@ -203,10 +203,114 @@ export const STATION_DISPLAY_NAMES = {
   'xochimilco': 'Xochimilco',
   'condesa': 'Condesa',
   'roma': 'Roma',
+  // GDL display names
+  'auditorio': 'Auditorio',
+  'periferico-norte': 'Periférico Norte',
+  'mexicaltzingo': 'Mexicaltzingo',
+  'avila-camacho': 'Ávila Camacho',
+  'juarez': 'Juárez',
+  'washington': 'Washington',
+  'mezquitan': 'Mezquitán',
+  'san-juan-de-dios': 'San Juan de Dios',
+  'belisario-dominguez': 'Belisario Domínguez',
+  'cristobal-de-onate': 'Cristóbal de Oñate',
+  'la-aurora': 'La Aurora',
+  'plaza-universidad': 'Plaza Universidad',
+  'san-andres': 'San Andrés',
+  'san-jacinto': 'San Jacinto',
+  'transferencia': 'Transferencia',
+  'lino-portes-gil': 'Lino Portes Gil',
+  'santa-isabel': 'Santa Isabel',
+  'rio-nilo': 'Río Nilo',
+  'periferico-sur': 'Periférico Sur',
+  'tetlan': 'Tetlán',
+  'la-aurora-l2': 'La Aurora (L2)',
+  'san-jacinto-l2': 'San Jacinto (L2)',
+  'san-andres-l2': 'San Andrés (L2)',
+  'cristobal-de-onate-l2': 'Cristóbal de Oñate (L2)',
+  'belisario-dominguez-l2': 'Belisario Domínguez (L2)',
+  'san-juan-de-dios-l2': 'San Juan de Dios (L2)',
+  'plaza-universidad-l2': 'Plaza Universidad (L2)',
+  'juarez-l2': 'Juárez (L2)',
+  'arcos-de-zapopan': 'Arcos de Zapopan',
+  'zapopan-centro': 'Zapopan Centro',
+  'plaza-patria': 'Plaza Patria',
+  'santuario': 'Santuario',
+  'independencia': 'Independencia',
+  'guadalajara-centro': 'Guadalajara Centro',
+  'la-normal': 'La Normal',
+  'avila-camacho-l3': 'Ávila Camacho (L3)',
+  'plaza-universidad-l3': 'Plaza Universidad (L3)',
+  'cucei': 'CUCEI',
+  'rio-nilo-l3': 'Río Nilo (L3)',
+  'estadio-chivas': 'Estadio Chivas (Akron)',
+  'mariano-otero': 'Mariano Otero',
+  'central-de-autobuses': 'Central de Autobuses',
+  // MTY display names
+  'talleres': 'Talleres',
+  'san-bernabe': 'San Bernabé',
+  'unidad-modelo': 'Unidad Modelo',
+  'aztlan': 'Aztlán',
+  'penitenciaria': 'Penitenciaría',
+  'alfonso-reyes': 'Alfonso Reyes',
+  'mitras': 'Mitras',
+  'simon-bolivar': 'Simón Bolívar',
+  'hospital': 'Hospital',
+  'edison': 'Edison',
+  'central': 'Central',
+  'cuauhtemoc': 'Cuauhtémoc',
+  'del-golfo': 'Del Golfo',
+  'felix-u-gomez': 'Félix U. Gómez',
+  'parque-fundidora': 'Parque Fundidora',
+  'y-griega': 'Y Griega',
+  'eloy-cavazos': 'Eloy Cavazos',
+  'lerdo-de-tejada': 'Lerdo de Tejada',
+  'exposicion': 'Exposición',
+  'sendero': 'Sendero',
+  'tapia': 'Tapia',
+  'san-nicolas': 'San Nicolás',
+  'anahuac': 'Anáhuac',
+  'universidad': 'Universidad',
+  'ninos-heroes': 'Niños Héroes',
+  'regina': 'Regina',
+  'general-anaya': 'General Anaya',
+  'cuauhtemoc-l2': 'Cuauhtémoc (L2)',
+  'alameda': 'Alameda',
+  'fundadores': 'Fundadores',
+  'padre-mier': 'Padre Mier',
+  'general-i-zaragoza': 'General I. Zaragoza',
 }
 
-// Set for O(1) validation
+// GDL stations (42 — SITEUR L1, L2, L3 + Mi Macro)
+export const gdlStations = [
+  'auditorio', 'periferico-norte', 'mexicaltzingo', 'avila-camacho', 'juarez',
+  'washington', 'mezquitan', 'san-juan-de-dios', 'belisario-dominguez',
+  'cristobal-de-onate', 'la-aurora', 'plaza-universidad', 'san-andres',
+  'san-jacinto', 'transferencia', 'lino-portes-gil', 'santa-isabel', 'rio-nilo',
+  'periferico-sur', 'tetlan', 'la-aurora-l2', 'san-jacinto-l2', 'san-andres-l2',
+  'cristobal-de-onate-l2', 'belisario-dominguez-l2', 'san-juan-de-dios-l2',
+  'plaza-universidad-l2', 'juarez-l2', 'arcos-de-zapopan', 'zapopan-centro',
+  'plaza-patria', 'santuario', 'independencia', 'guadalajara-centro', 'la-normal',
+  'avila-camacho-l3', 'plaza-universidad-l3', 'cucei', 'rio-nilo-l3',
+  'estadio-chivas', 'mariano-otero', 'central-de-autobuses',
+]
+
+// MTY stations (32 — Metrorrey L1 + L2)
+export const mtyStations = [
+  'talleres', 'san-bernabe', 'unidad-modelo', 'aztlan', 'penitenciaria',
+  'alfonso-reyes', 'mitras', 'simon-bolivar', 'hospital', 'edison',
+  'central', 'cuauhtemoc', 'del-golfo', 'felix-u-gomez', 'parque-fundidora',
+  'y-griega', 'eloy-cavazos', 'lerdo-de-tejada', 'exposicion', 'sendero',
+  'tapia', 'san-nicolas', 'anahuac', 'universidad', 'ninos-heroes',
+  'regina', 'general-anaya', 'cuauhtemoc-l2', 'alameda', 'fundadores',
+  'padre-mier', 'general-i-zaragoza',
+]
+
+// Sets for O(1) validation
 export const cdmxStationSet = new Set(cdmxStations)
+export const gdlStationSet = new Set(gdlStations)
+export const mtyStationSet = new Set(mtyStations)
+export const allStationSet = new Set([...cdmxStations, ...gdlStations, ...mtyStations])
 
 /**
  * Get display name for a station slug
@@ -229,16 +333,41 @@ export function generateRouteTitulo(origen, destino) {
 }
 
 /**
- * Generate ALL 24,180 route slugs for sitemap
- * Called once during sitemap generation
+ * Generate route slugs for a single city
  */
-export function generateAllRouteSlugs() {
+function generateCityRouteSlugs(stations, prefix = '') {
   const slugs = []
-  for (let i = 0; i < cdmxStations.length; i++) {
-    for (let j = 0; j < cdmxStations.length; j++) {
+  for (let i = 0; i < stations.length; i++) {
+    for (let j = 0; j < stations.length; j++) {
       if (i === j) continue
-      slugs.push(`${cdmxStations[i]}-a-${cdmxStations[j]}`)
+      const slug = `${stations[i]}-a-${stations[j]}`
+      slugs.push(prefix ? `${prefix}/${slug}` : slug)
     }
   }
   return slugs
+}
+
+/**
+ * Generate ALL 26,894 route slugs for sitemap
+ * CDMX: 24,180 + GDL: 1,722 + MTY: 992
+ * Called once during sitemap generation
+ */
+export function generateAllRouteSlugs() {
+  return [
+    ...generateCityRouteSlugs(cdmxStations),
+    ...generateCityRouteSlugs(gdlStations),
+    ...generateCityRouteSlugs(mtyStations),
+  ]
+}
+
+/**
+ * Generate route slugs for a specific city only
+ */
+export function generateCityRoutes(city) {
+  switch (city) {
+    case 'cdmx': return generateCityRouteSlugs(cdmxStations)
+    case 'gdl': return generateCityRouteSlugs(gdlStations)
+    case 'mty': return generateCityRouteSlugs(mtyStations)
+    default: return []
+  }
 }

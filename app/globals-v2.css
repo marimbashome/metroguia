@@ -1,8 +1,6 @@
 /* ── MetroGuia.mx — Design System v2 ──────────────────────── */
 /* Dark mode first · Inter · Platform UI                        */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 :root {
   /* ── Core ─────────────────────────────── */
   --bg: #0A0A0F;
@@ -1036,6 +1034,25 @@ textarea,
 .poi-card,
 .lugar-card {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* Performance: CSS Containment                                 */
+/* ──────────────────────────────────────────────────────────── */
+
+.card,
+.route-card,
+.poi-card,
+.lugar-card {
+  contain: content;
+}
+
+main {
+  contain: layout style;
+}
+
+footer {
+  contain: layout style paint;
 }
 
 /* ──────────────────────────────────────────────────────────── */

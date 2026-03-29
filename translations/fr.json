@@ -152,5 +152,48 @@
     "installDesc": "Accédez hors ligne et calculez les trajets instantanément",
     "install": "Installer",
     "dismiss": "Plus tard"
+  },
+  "searchBar": {
+    "origin": "Origine",
+    "destination": "Destination",
+    "originPlaceholder": "Station de départ...",
+    "destinationPlaceholder": "Station de destination...",
+    "swapTitle": "Inverser l'origine et la destination",
+    "searchRoute": "Rechercher un Itinéraire",
+    "quickAzteca": "Stade Aztèque",
+    "quickAirport": "Aéroport",
+    "quickDowntown": "Centre Historique",
+    "quickCoyoacan": "Coyoacán"
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "subtitle": "Planifiez votre voyage en 3 étapes, sans applications ni données mobiles",
+    "step1Title": "Recherchez votre itinéraire",
+    "step1Desc": "Entrez votre origine et destination. Le moteur de recherche trouve la station la plus proche avec saisie automatique.",
+    "step2Title": "Vérifiez les étapes",
+    "step2Desc": "Voyez les lignes, les correspondances, l'heure estimée et le coût. Inclut les alertes de sécurité et les conseils.",
+    "step3Title": "Voyagez comme un local",
+    "step3Desc": "Installez l'application (PWA) pour un accès hors ligne. Consultez votre itinéraire sans Internet dans le métro."
+  },
+  "comingSoon": {
+    "title": "Bientôt — 8 villes supplémentaires",
+    "explore": "Explorer"
+  },
+  "layout": {
+    "lines": "Lignes",
+    "worldCup": "Coupe du Monde 2026",
+    "accommodation": "Hébergement",
+    "cities": "Villes",
+    "resources": "Ressources",
+    "privacy": "Confidentialité",
+    "footerDesc": "Planificateur de transit urbain au Mexique. Calculez les itinéraires, explorez les stations et voyagez comme un local.",
+    "footerTagline": "CDMX · Guadalajara · Monterrey — Informations pour les touristes de la Coupe du Monde FIFA 2026",
+    "hostCitiesFifa": "Villes hôtes de la FIFA 2026",
+    "hostCitiesDesc": "Transport urbain guidé pour 3 villes hôtes mexicaines de la Coupe du Monde",
+    "guidedStations": "Stations guidées",
+    "transitLines": "Lignes de transit",
+    "activeCities": "Villes actives",
+    "fifaMatches": "Matchs de la FIFA au Mexique",
+    "network": "réseau"
   }
 }

@@ -1,20 +1,39 @@
 {
+  "id": "/",
   "name": "MetroGuia.mx — Transporte urbano en México",
   "short_name": "MetroGuia",
-  "description": "Guía offline de metro, tren ligero y BRT para turistas en México. Trip planner con rutas de transporte urbano, información de estaciones y horarios para CDMX, Guadalajara y Monterrey.",
+  "description": "Guía offline de metro, tren ligero y BRT para turistas en México. Trip planner con rutas de transporte urbano para CDMX, Guadalajara y Monterrey.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#0A0A0F",
   "theme_color": "#F5A623",
   "orientation": "portrait-primary",
+  "prefer_related_applications": false,
   "categories": ["travel", "navigation", "utilities"],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "shortcuts": [
     {
       "name": "Buscar ruta",
       "short_name": "Ruta",
-      "description": "Busca una ruta en metro",
+      "description": "Calcula una ruta en metro",
       "url": "/ruta/calc/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "CDMX Metro",
+      "short_name": "CDMX",
+      "description": "Metro de la Ciudad de México",
+      "url": "/cdmx/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "Mundial 2026",
+      "short_name": "FIFA",
+      "description": "Guía de transporte para el Mundial",
+      "url": "/mundial-2026/",
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     }
   ],
@@ -47,8 +66,10 @@
   "screenshots": [
     {
       "src": "/og-image.png",
-      "sizes": "540x720",
-      "type": "image/png"
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "MetroGuia.mx — Trip planner de transporte urbano"
     }
   ]
 }

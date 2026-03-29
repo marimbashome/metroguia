@@ -152,5 +152,48 @@
     "installDesc": "Accede sin conexión y calcula rutas al instante",
     "install": "Instalar",
     "dismiss": "Ahora no"
+  },
+  "searchBar": {
+    "origin": "Origen",
+    "destination": "Destino",
+    "originPlaceholder": "Estación de inicio...",
+    "destinationPlaceholder": "Estación de destino...",
+    "swapTitle": "Intercambiar origen y destino",
+    "searchRoute": "Buscar Ruta",
+    "quickAzteca": "Estadio Azteca",
+    "quickAirport": "Aeropuerto",
+    "quickDowntown": "Centro Histórico",
+    "quickCoyoacan": "Coyoacán"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Planifica tu viaje en 3 pasos, sin apps ni datos móviles",
+    "step1Title": "Busca tu ruta",
+    "step1Desc": "Escribe tu origen y destino. El buscador encuentra la estación más cercana con autocompletado.",
+    "step2Title": "Revisa los pasos",
+    "step2Desc": "Ve las líneas, transbordos, tiempo estimado y costo. Incluye alertas de seguridad y tips.",
+    "step3Title": "Viaja como local",
+    "step3Desc": "Instala la app (PWA) para acceso offline. Consulta tu ruta sin internet dentro del metro."
+  },
+  "comingSoon": {
+    "title": "Próximamente — 8 ciudades más",
+    "explore": "Explorar"
+  },
+  "layout": {
+    "lines": "Líneas",
+    "worldCup": "Mundial 2026",
+    "accommodation": "Hospedaje",
+    "cities": "Ciudades",
+    "resources": "Recursos",
+    "privacy": "Privacidad",
+    "footerDesc": "Trip planner de transporte urbano en México. Calcula rutas, explora estaciones y viaja como local.",
+    "footerTagline": "CDMX · Guadalajara · Monterrey — Información para turistas del Mundial FIFA 2026",
+    "hostCitiesFifa": "Ciudades sede FIFA 2026",
+    "hostCitiesDesc": "Transporte urbano guiado para las 3 sedes mexicanas del Mundial",
+    "guidedStations": "Estaciones guiadas",
+    "transitLines": "Líneas de transporte",
+    "activeCities": "Ciudades activas",
+    "fifaMatches": "Partidos FIFA en México",
+    "network": "red"
   }
 }

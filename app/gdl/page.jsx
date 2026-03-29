@@ -1,6 +1,7 @@
 import { lineasGDL } from '@/data/gdl/lineas-detalle';
 import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'SITEUR Guadalajara — Tren Ligero 3 líneas, 48 estaciones + FIFA 2026 | MetroGuia',
@@ -145,8 +146,8 @@ export default function GDLPage() {
               Kilómetros
             </p>
           </div>
-        </div>
-      </section>
+
+      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" />
 
       {/* MUNDIAL 2026 */}
       <section
@@ -378,8 +379,8 @@ export default function GDLPage() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
+
+      <AdBannerLazyInArticle adSlot=\"1082410395\" />
 
       {/* ESTACIONES DESTACADAS */}
       <section
@@ -502,7 +503,9 @@ export default function GDLPage() {
             ))}
           </div>
         </div>
-      </section>
+
+      <AdBannerLazy adSlot="4434764790" format="auto" />
+    </section>
     </main>
   );
 }

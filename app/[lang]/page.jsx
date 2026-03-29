@@ -330,7 +330,7 @@ export default function LandingPageLang({ params }) {
                   fontWeight: 600,
                   fontSize: '0.85rem',
                 }}>
-                  {t(translations, 'home.hostCities')} →
+                  {t(translations, 'comingSoon.explore')} →
                 </span>
               </a>
             ))}
@@ -359,7 +359,7 @@ export default function LandingPageLang({ params }) {
             letterSpacing: '0.1em',
             marginBottom: '1rem',
           }}>
-            Próximamente — 8 ciudades más
+            {t(translations, 'comingSoon.title')}
           </h6>
           <div style={{
             display: 'flex',
@@ -447,28 +447,28 @@ export default function LandingPageLang({ params }) {
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-            {t(translations, 'home.offlineReady')}
+            {t(translations, 'howItWorks.title')}
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2rem' }}>
-            {t(translations, 'home.installApp')}
+            {t(translations, 'howItWorks.subtitle')}
           </p>
 
           <div className="grid-3">
             {[
               {
                 num: '01',
-                title: t(translations, 'home.searchPlaceholder'),
-                desc: 'Escribe tu origen y destino.',
+                title: t(translations, 'howItWorks.step1Title'),
+                desc: t(translations, 'howItWorks.step1Desc'),
               },
               {
                 num: '02',
-                title: 'Revisa los pasos',
-                desc: 'Ve líneas, transbordos, tiempo estimado y costo.',
+                title: t(translations, 'howItWorks.step2Title'),
+                desc: t(translations, 'howItWorks.step2Desc'),
               },
               {
                 num: '03',
-                title: 'Viaja como local',
-                desc: 'Instala la app PWA para acceso offline.',
+                title: t(translations, 'howItWorks.step3Title'),
+                desc: t(translations, 'howItWorks.step3Desc'),
               },
             ].map((step) => (
               <div key={step.num} className="card" style={{ padding: '1.5rem' }}>

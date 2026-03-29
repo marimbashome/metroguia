@@ -3,11 +3,23 @@ import { useState, useRef, useEffect } from 'react'
 import { searchEstaciones } from '@/lib/search'
 import { findRoute, generateRouteSlug } from '@/lib/pathfinder'
 
+import esT from '@/translations/es.json'
+import enT from '@/translations/en.json'
+import ptT from '@/translations/pt.json'
+import frT from '@/translations/fr.json'
+import deT from '@/translations/de.json'
+import jaT from '@/translations/ja.json'
+import koT from '@/translations/ko.json'
+
+const allT = { es: esT, en: enT, pt: ptT, fr: frT, de: deT, ja: jaT, ko: koT }
+
 export default function SearchBar({
   ciudad = 'cdmx',
   defaultDestino = '',
   onResult = null,
+  lang = 'es',
 }) {
+  const t = allT[lang]?.searchBar || allT.es.searchBar
   const [origen, setOrigen] = useState('')
   const [destino, setDestino] = useState(defaultDestino)
   const [origenSlug, setOrigenSlug] = useState('')
@@ -20,10 +32,10 @@ export default function SearchBar({
   const destinoRef = useRef(null)
 
   const quickActions = [
-    { label: '⚽ Estadio Azteca', value: 'Estadio Azteca' },
-    { label: '✈️ Aeropuerto', value: 'Aeropuerto Internacional' },
-    { label: '🏛️ Centro Histórico', value: 'Centro Histórico' },
-    { label: '🌸 Coyoacán', value: 'Coyoacán' },
+    { label: `⚽ ${t.quickAzteca}`, value: 'Estadio Azteca' },
+    { label: `✈️ ${t.quickAirport}`, value: 'Aeropuerto Internacional' },
+    { label: `🏛️ ${t.quickDowntown}`, value: 'Centro Histórico' },
+    { label: `🌸 ${t.quickCoyoacan}`, value: 'Coyoacán' },
   ]
 
   // Handle origen input with autocomplete
@@ -273,11 +285,11 @@ export default function SearchBar({
         <div style={inputGroupStyle} ref={origenRef}>
           <label style={labelStyle}>
             <span style={{ ...dotStyle, color: '#00FF00' }}>●</span>
-            Origen
+            {t.origin}
           </label>
           <input
             type="text"
-            placeholder="Estación de inicio..."
+            placeholder={t.originPlaceholder}
             value={origen}
             onChange={handleOrigenChange}
             onFocus={() => {
@@ -312,11 +324,11 @@ export default function SearchBar({
         <div style={inputGroupStyle} ref={destinoRef}>
           <label style={labelStyle}>
             <span style={{ ...dotStyle, color: '#FF8C00' }}>●</span>
-            Destino
+            {t.destination}
           </label>
           <input
             type="text"
-            placeholder="Estación de destino..."
+            placeholder={t.destinationPlaceholder}
             value={destino}
             onChange={handleDestinoChange}
             onFocus={() => {
@@ -352,7 +364,7 @@ export default function SearchBar({
           type="button"
           onClick={handleSwap}
           style={swapButtonStyle}
-          title="Intercambiar origen y destino"
+          title={t.swapTitle}
         >
           ↕
         </button>
@@ -384,7 +396,7 @@ export default function SearchBar({
             : submitButtonStyle
         }
       >
-        Buscar Ruta
+        {t.searchRoute}
       </button>
     </form>
   )

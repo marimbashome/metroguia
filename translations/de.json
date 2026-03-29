@@ -152,5 +152,48 @@
     "installDesc": "Greifen Sie offline zu und berechnen Sie Routen sofort",
     "install": "Installieren",
     "dismiss": "Später"
+  },
+  "searchBar": {
+    "origin": "Ausgangsort",
+    "destination": "Ziel",
+    "originPlaceholder": "Bahnhof starten...",
+    "destinationPlaceholder": "Zielbahnhof...",
+    "swapTitle": "Ausgangsort und Ziel vertauschen",
+    "searchRoute": "Route Suchen",
+    "quickAzteca": "Azteken-Stadion",
+    "quickAirport": "Flughafen",
+    "quickDowntown": "Historisches Zentrum",
+    "quickCoyoacan": "Coyoacán"
+  },
+  "howItWorks": {
+    "title": "Wie es funktioniert",
+    "subtitle": "Planen Sie Ihre Reise in 3 Schritten ohne Apps oder Mobilfunkdaten",
+    "step1Title": "Suchen Sie Ihre Route",
+    "step1Desc": "Geben Sie Ihren Ausgangsort und Ihr Ziel ein. Die Suche findet den nächstgelegenen Bahnhof mit Autovervollständigung.",
+    "step2Title": "Überprüfen Sie die Schritte",
+    "step2Desc": "Sehen Sie Linien, Umstiege, geschätzte Zeit und Kosten. Enthält Sicherheitswarnungen und Tipps.",
+    "step3Title": "Reisen Sie wie ein Einheimischer",
+    "step3Desc": "Installieren Sie die App (PWA) für Offline-Zugriff. Prüfen Sie Ihre Route ohne Internet in der U-Bahn."
+  },
+  "comingSoon": {
+    "title": "Kommt bald — 8 weitere Städte",
+    "explore": "Erkunden"
+  },
+  "layout": {
+    "lines": "Linien",
+    "worldCup": "Weltmeisterschaft 2026",
+    "accommodation": "Unterkunft",
+    "cities": "Städte",
+    "resources": "Ressourcen",
+    "privacy": "Datenschutz",
+    "footerDesc": "Planer für städtischen Nahverkehr in Mexiko. Berechnen Sie Routen, erkunden Sie Bahnhöfe und reisen Sie wie ein Einheimischer.",
+    "footerTagline": "CDMX · Guadalajara · Monterrey — Informationen für FIFA-Weltmeisterschaftstouristen 2026",
+    "hostCitiesFifa": "Gastgeberstädte der FIFA 2026",
+    "hostCitiesDesc": "Geführter Nahverkehr für 3 mexikanische Weltmeisterschaftsstädte",
+    "guidedStations": "Geführte Bahnhöfe",
+    "transitLines": "Transitlinien",
+    "activeCities": "Aktive Städte",
+    "fifaMatches": "FIFA-Spiele in Mexiko",
+    "network": "Netzwerk"
   }
 }
