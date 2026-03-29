@@ -1,5 +1,6 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import { estaciones } from '@/data/estaciones'
+import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { LANGUAGES, t } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -241,6 +242,13 @@ export default function LineaPageLang({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── AdBanner after station list ── */}
+      <div style={{ padding: '1rem', borderTop: '1px solid var(--border)', backgroundColor: 'var(--surface)' }}>
+        <div className="container">
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
     </div>
   )
 }

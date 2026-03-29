@@ -1,6 +1,7 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import { estaciones } from '@/data/estaciones'
 import SearchBar from '@/app/components/SearchBar'
+import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -152,6 +153,13 @@ export default function CDMXPageLang({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── AdBanner ── */}
+      <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
 
       {/* Líneas */}
       <section style={{ padding: '3rem 1rem' }}>

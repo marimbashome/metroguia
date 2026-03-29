@@ -1,3 +1,4 @@
+import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { LANGUAGES, t } from '@/lib/i18n'
 
 // Placeholder route data - in production, fetch from database
@@ -281,6 +282,13 @@ export default function RutaPageLang({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── AdBanner ── */}
+      <div style={{ padding: '1rem', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
 
       {/* Tips */}
       <section style={{

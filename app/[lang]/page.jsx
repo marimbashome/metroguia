@@ -2,6 +2,7 @@ import SearchBar from '@/app/components/SearchBar'
 import FAQSchema from '@/app/components/FAQSchema'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
 import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
+import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { homeFAQs, transitAgencies } from '@/data/faqs'
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 
@@ -336,6 +337,13 @@ export default function LandingPageLang({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── AdBanner ── */}
+      <div style={{ padding: '0 1rem' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
 
       {/* ── Próximamente ── */}
       <section style={{

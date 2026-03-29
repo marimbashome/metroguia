@@ -1,3 +1,4 @@
+import AdBannerLazy from '@/app/components/AdBannerLazy'
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -235,6 +236,13 @@ export default function Mundial2026Lang({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── AdBanner ── */}
+      <div style={{ padding: '1rem', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
 
       {/* Tips */}
       <section style={{

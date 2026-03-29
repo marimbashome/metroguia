@@ -1,4 +1,5 @@
 import { estaciones } from '@/data/estaciones'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -158,6 +159,13 @@ export default function EstacionPageLang({ params }) {
         </div>
       </section>
 
+      {/* ── AdBanner after Information ── */}
+      <div style={{ padding: '1rem' }}>
+        <div className="container">
+          <AdBannerLazy slot="4434764790" />
+        </div>
+      </div>
+
       {/* Cita a la acción */}
       <section style={{ padding: '3rem 1rem' }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -185,6 +193,13 @@ export default function EstacionPageLang({ params }) {
           </a>
         </div>
       </section>
+
+      {/* ── AdBanner bottom ── */}
+      <div style={{ padding: '1rem', borderTop: '1px solid var(--border)', backgroundColor: 'var(--surface)' }}>
+        <div className="container">
+          <AdBannerLazyInArticle slot="1082410395" />
+        </div>
+      </div>
     </div>
   )
 }
