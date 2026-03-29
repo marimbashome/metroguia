@@ -1,6 +1,7 @@
 import { lineasQueretaro } from '@/data/queretaro/lineas-detalle';
 import { estacionesQueretaro } from '@/data/queretaro/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -235,6 +236,8 @@ export default function QueretatoPage() {
           </p>
         </div>
 
+        <AdBannerLazy slot="4434764790" format="auto" />
+
         {/* LOS 3 CORREDORES */}
         <div style={{ marginBottom: '50px' }}>
           <h2 style={sectionTitleStyles}>Los 3 Corredores Q-BUS</h2>
@@ -270,6 +273,7 @@ export default function QueretatoPage() {
         {/* ESTACIONES IMPRESCINDIBLES */}
         <div style={{ marginBottom: '50px' }}>
           <h2 style={sectionTitleStyles}>🌟 Estaciones Imprescindibles</h2>
+          <AdBannerLazyInArticle slot="1082410395" />
           <div style={gridStyles}>
             {estacionesDestacadas.map((estacion) => (
               <Link

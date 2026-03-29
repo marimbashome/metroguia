@@ -1,6 +1,7 @@
 import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import { estacionesTijuana } from '@/data/tijuana/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasTijuana.map((linea) => ({ id: linea.id }));
@@ -199,6 +200,8 @@ export default function LineaTijuanaPage({ params }) {
         </div>
       </section>
 
+      <AdBannerLazy slot="4434764790" format="auto" />
+
       <section style={{ ...containerStyles, ...sectionStyles, paddingTop: '40px' }}>
         <h2 style={sectionTitleStyles}>{linea.ruta_1_dia.titulo}</h2>
         <div style={{ backgroundColor: '#f9fafb', padding: '30px', borderRadius: '8px' }}>
@@ -223,6 +226,8 @@ export default function LineaTijuanaPage({ params }) {
           })}
         </div>
       </section>
+
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {linea.estaciones_turisticas.length > 0 && (
         <section style={{ ...containerStyles, ...sectionStyles, paddingTop: '40px' }}>

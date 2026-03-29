@@ -1,4 +1,5 @@
 import { zonas } from '@/data/zonas'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Zonas turísticas de CDMX — Guía de metro | MetroGuia',

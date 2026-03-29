@@ -2,6 +2,7 @@ import { lineasGDL } from '@/data/gdl/lineas-detalle';
 import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import SearchBar from '@/app/components/SearchBar';
 
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 import AffiliateMundial from '@/app/components/AffiliateMundial'
@@ -148,6 +149,40 @@ export default function GDLPage() {
               Kilómetros
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* TRIP PLANNER */}
+      <section
+        style={{
+          backgroundColor: '#0A0A0F',
+          padding: '60px 24px',
+          borderBottom: '1px solid #2A2A3E',
+        }}
+      >
+        <div style={{ maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '1.75rem',
+              fontWeight: '800',
+              marginBottom: '12px',
+              textAlign: 'center',
+              color: '#F0F0F5',
+            }}
+          >
+            🚇 Planifica tu Ruta en Guadalajara
+          </h2>
+          <p
+            style={{
+              fontSize: '1rem',
+              textAlign: 'center',
+              marginBottom: '24px',
+              color: '#8888A0',
+            }}
+          >
+            Calcula la mejor ruta entre estaciones del SITEUR
+          </p>
+          <SearchBar ciudad="gdl" />
         </div>
       </section>
 

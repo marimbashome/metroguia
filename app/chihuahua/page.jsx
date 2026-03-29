@@ -1,6 +1,7 @@
 import { lineasChihuahua } from '@/data/chihuahua/lineas-detalle';
 import { estacionesChihuahua } from '@/data/chihuahua/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -167,6 +168,7 @@ export default function ChihuahuaPage() {
       {/* SECCIÓN ESPECIAL: EL CHEPE COMO VIAJE EXPERIENCIAL */}
       <section style={containerStyles}>
         <h2 style={sectionTitleStyles}>El Chepe Express — La Ruta Más Espectacular de México</h2>
+        <AdBannerLazy slot="4434764790" format="auto" />
         <div style={infoBoxStyles}>
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#374151', marginBottom: '15px' }}>
             <strong>El Ferrocarril Chihuahua al Pacífico (Chepe Express)</strong> es uno de los viajes en tren más espectaculares del mundo. Durante 16 horas, recorres 673 kilómetros atravesando las legendarias <strong>Barrancas del Cobre</strong> — seis barrancas que son más profundas y abruptas que el Gran Cañón de Arizona.
@@ -186,6 +188,7 @@ export default function ChihuahuaPage() {
       {/* BARRANCAS DEL COBRE */}
       <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>
         <h2 style={sectionTitleStyles}>Las Barrancas del Cobre (Copper Canyon)</h2>
+        <AdBannerLazyInArticle slot="1082410395" />
         <div style={gridStyles}>
           <div style={estacionCardStyles}>
             <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#D97706', marginBottom: '10px' }}>

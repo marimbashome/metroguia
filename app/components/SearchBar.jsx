@@ -31,12 +31,27 @@ export default function SearchBar({
   const origenRef = useRef(null)
   const destinoRef = useRef(null)
 
-  const quickActions = [
-    { label: `⚽ ${t.quickAzteca}`, value: 'Estadio Azteca' },
-    { label: `✈️ ${t.quickAirport}`, value: 'Aeropuerto Internacional' },
-    { label: `🏛️ ${t.quickDowntown}`, value: 'Centro Histórico' },
-    { label: `🌸 ${t.quickCoyoacan}`, value: 'Coyoacán' },
-  ]
+  const quickActionsByCity = {
+    cdmx: [
+      { label: `⚽ ${t.quickAzteca}`, value: 'Estadio Azteca' },
+      { label: `✈️ ${t.quickAirport}`, value: 'Aeropuerto Internacional' },
+      { label: `🏛️ ${t.quickDowntown}`, value: 'Centro Histórico' },
+      { label: `🌸 ${t.quickCoyoacan}`, value: 'Coyoacán' },
+    ],
+    gdl: [
+      { label: '⚽ Estadio Akron', value: 'Estadio Chivas' },
+      { label: '⛪ Centro Histórico', value: 'Juárez' },
+      { label: '🏛️ Plaza Universidad', value: 'Plaza Universidad' },
+      { label: '🌳 Arcos de Zapopan', value: 'Arcos de Zapopan' },
+    ],
+    mty: [
+      { label: '⚽ Estadio BBVA', value: 'Exposición' },
+      { label: '🏭 Parque Fundidora', value: 'Parque Fundidora' },
+      { label: '🏛️ Central', value: 'Central' },
+      { label: '🎭 Cuauhtémoc', value: 'Cuauhtémoc' },
+    ],
+  }
+  const quickActions = quickActionsByCity[ciudad] || quickActionsByCity.cdmx
 
   // Handle origen input with autocomplete
   const handleOrigenChange = (e) => {
@@ -113,7 +128,8 @@ export default function SearchBar({
       onResult(route)
     } else {
       const slug = generateRouteSlug(origenKey, destinoKey)
-      window.location.href = `/ruta/${slug}`
+      const cityPrefix = ciudad === 'cdmx' ? '' : `/${ciudad}`
+      window.location.href = `${cityPrefix}/ruta/${slug}`
     }
   }
 

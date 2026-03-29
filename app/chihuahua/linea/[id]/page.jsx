@@ -1,6 +1,7 @@
 import { lineasChihuahua } from '@/data/chihuahua/lineas-detalle';
 import { estacionesChihuahua } from '@/data/chihuahua/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasChihuahua.map((linea) => ({ id: linea.id }));

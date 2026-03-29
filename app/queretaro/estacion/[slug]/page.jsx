@@ -1,5 +1,6 @@
 import { estacionesQueretaro } from '@/data/queretaro/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return estacionesQueretaro.map((estacion) => ({
@@ -166,7 +167,12 @@ export default function EstacionQueretaroPage({ params }) {
           </p>
         </div>
 
+        <AdBannerLazy slot="4434764790" format="auto" />
+
         {/* TIPS */}
+        <AdBannerLazy slot="4434764790" format="auto" />
+
+
         <div style={tipsBoxStyles}>
           <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#B45309', marginBottom: '12px' }}>
             💡 Tips para tu visita
@@ -187,6 +193,8 @@ export default function EstacionQueretaroPage({ params }) {
             {estacion.mejor_horario}
           </p>
         </div>
+
+        <AdBannerLazyInArticle slot="1082410395" />
 
         {/* POIS */}
         {estacion.pois && estacion.pois.length > 0 && (

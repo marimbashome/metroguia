@@ -1,6 +1,7 @@
 import { lineasToluca } from '@/data/toluca/lineas-detalle';
 import { estacionesToluca } from '@/data/toluca/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasToluca.map((linea) => ({
@@ -182,6 +183,8 @@ export default function LineaTolucaPage({ params }) {
           </p>
         </div>
 
+        <AdBannerLazy slot="4434764790" format="auto" />
+
         {/* ESTACIONES */}
         <div style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
@@ -243,6 +246,8 @@ export default function LineaTolucaPage({ params }) {
             </div>
           </div>
         )}
+
+        <AdBannerLazyInArticle slot="1082410395" />
 
         {/* INFORMACIÓN ADICIONAL */}
         <div style={{ marginTop: '40px' }}>

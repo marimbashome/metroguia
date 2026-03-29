@@ -1,6 +1,7 @@
 import { lineasToluca } from '@/data/toluca/lineas-detalle';
 import { estacionesToluca } from '@/data/toluca/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -201,6 +202,8 @@ export default function TolucaPage() {
         </div>
       </section>
 
+      <AdBannerLazy slot="4434764790" format="auto" />
+
       {/* FIFA 2026 SECTION */}
       <section style={fifaBoxStyles}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '15px', color: '#1E40AF' }}>
@@ -259,6 +262,8 @@ export default function TolucaPage() {
           ))}
         </div>
       </section>
+
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {/* ESTACIONES DESTACADAS */}
       <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>

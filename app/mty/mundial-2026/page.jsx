@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'FIFA World Cup 2026 Monterrey — Guía Completa | MetroGuia',

@@ -1,4 +1,5 @@
 import { hospedaje, marimbasListings, totalReviews, avgRating, precioDesde, maxHuespedes } from '@/data/hospedaje'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {

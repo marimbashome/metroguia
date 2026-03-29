@@ -1,6 +1,7 @@
 import { estacionesTijuana } from '@/data/tijuana/estaciones';
 import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return estacionesTijuana.map((estacion) => ({ slug: estacion.slug }));
@@ -184,6 +185,8 @@ export default function EstacionTijuanaPage({ params }) {
         </div>
       </section>
 
+      <AdBannerLazy slot="4434764790" format="auto" />
+
       <section style={{ ...containerStyles, paddingTop: '40px', paddingBottom: '40px' }}>
         <div style={sidebarStyles}>
           <h2 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937' }}>
@@ -217,6 +220,8 @@ export default function EstacionTijuanaPage({ params }) {
             </div>
           </div>
         )}
+
+        <AdBannerLazyInArticle slot="1082410395" />
 
         {estacion.tips.length > 0 && (
           <div style={sectionStyles}>

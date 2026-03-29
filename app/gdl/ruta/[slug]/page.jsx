@@ -1,5 +1,6 @@
 import { gdlStations, STATION_DISPLAY_NAMES } from '@/data/rutas-engine'
 import RutaClient from '@/app/ruta/[slug]/RutaClient'
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export const dynamicParams = true
 export const revalidate = false

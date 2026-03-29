@@ -1,6 +1,7 @@
 import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import { estacionesTijuana } from '@/data/tijuana/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export function generateMetadata() {
   return {
@@ -164,6 +165,8 @@ export default function TijuanaPage() {
         </div>
       </section>
 
+      <AdBannerLazy slot="4434764790" format="auto" />
+
       {/* SECCIÓN ESPECIAL: FIFA 2026 / SAN DIEGO */}
       <section style={containerStyles}>
         <h2 style={sectionTitleStyles}>🏆 FIFA 2026 — Alójate en Tijuana, Juega en San Diego</h2>
@@ -232,6 +235,8 @@ export default function TijuanaPage() {
           ))}
         </div>
       </section>
+
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {/* ESTACIONES DESTACADAS */}
       <section style={{ ...containerStyles, backgroundColor: '#f9fafb', padding: '40px 20px', marginTop: '40px' }}>
