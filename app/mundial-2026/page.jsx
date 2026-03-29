@@ -1,4 +1,5 @@
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import AffiliateHospedaje from '@/app/components/affiliate/AffiliateHospedaje'
 
 export const metadata = {
   title: 'Mundial FIFA 2026 en CDMX — Cómo llegar en Metro | MetroGuia',
@@ -172,6 +173,11 @@ export default function MundialPage() {
                 <span style={{ color: 'var(--mty)', fontWeight: '600', fontSize: '0.9rem' }}>Ver guía →</span>
               </div>
             </a>
+          </div>
+
+          {/* Affiliate Hospedaje */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+            <AffiliateHospedaje ciudad="CDMX" estacion={null} fechas={null} />
           </div>
           <h2 style={{ marginBottom: '2.5rem', textAlign: 'center' }}>Consejos Prácticos para Turistas</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>

@@ -5,6 +5,7 @@ import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
 import { homeFAQs, transitAgencies } from '@/data/faqs'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
+import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
 export const metadata = {
   title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
   description: 'Trip planner de transporte urbano. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. 400+ estaciones. Guía Mundial FIFA 2026.',
@@ -428,6 +429,11 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+      {/* ── Affiliate Mundial ── */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem' }}>
+        <AffiliateMundial />
+      </div>
       {/* ── How it works ── */}
       <section style={{
         padding: '3rem 1rem',

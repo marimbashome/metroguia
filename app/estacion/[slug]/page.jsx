@@ -4,6 +4,7 @@ import { rutasPopulares } from '@/data/rutas-populares'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 
+import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
 export function generateStaticParams() {
   return estaciones.map((e) => ({ slug: e.slug }))
 }
@@ -673,6 +674,11 @@ export default function EstacionPage({ params }) {
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* Affiliate Transport Card */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+            <AffiliateTransportCard ciudad="CDMX" estacion={null} fechas={null} />
           </div>
 
           {/* MEJOR HORARIO */}

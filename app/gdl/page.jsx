@@ -3,8 +3,8 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
-import AffiliateMundial from '@/app/components/AffiliateMundial'
+import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
 export const metadata = {
   title: 'SITEUR Guadalajara — Tren Ligero 3 líneas, 48 estaciones + FIFA 2026 | MetroGuia',
   description: 'SITEUR Guadalajara: guía turística completa del Tren Ligero. 3 líneas, 48 estaciones. Centro Histórico, Catedral, Basílica Zapopan, Estadio Akron, Plaza Patria. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',

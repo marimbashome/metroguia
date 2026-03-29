@@ -4,8 +4,8 @@ import { mundial } from '@/data/mundial'
 import SearchBar from '@/app/components/SearchBar'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
-import AffiliateMundial from '@/app/components/AffiliateMundial'
+import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
 export function generateMetadata() {
   return {
     title: 'Metro CDMX — Guía de movilidad turística | MetroGuia',

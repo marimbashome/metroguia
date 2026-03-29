@@ -1,5 +1,6 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
 
 export const metadata = {
   title: 'Líneas del Metro CDMX — MetroGuia.mx',
@@ -35,6 +36,11 @@ export default function LineasPage() {
           </div>
           <AdBannerLazy slotId="4434764790" format="auto" style={{ margin: '2rem 0' }} />
           <div className="grid grid-3">
+
+      {/* Affiliate Transport Card */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+        <AffiliateTransportCard ciudad="CDMX" estacion={null} fechas={null} />
+      </div>
             {lineas.slice(6).map((linea) => (
               <a key={linea.id} href={`/linea/${linea.id}/`} style={{ textDecoration: 'none' }}>
                 <div className="lugar-card">

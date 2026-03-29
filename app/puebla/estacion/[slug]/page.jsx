@@ -1,6 +1,7 @@
 import { estacionesPuebla } from '@/data/puebla/estaciones';
 import { lineasPuebla } from '@/data/puebla/lineas-detalle';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return estacionesPuebla.map((estacion) => ({ slug: estacion.slug }));
@@ -187,6 +188,7 @@ export default function EstacionPueblaPage({ params }) {
 
       {/* CONTENIDO PRINCIPAL */}
       <section style={{ ...containerStyles, paddingTop: '40px', paddingBottom: '40px' }}>
+        <AdBannerLazy adSlot="4434764790" format="auto" />
         {/* INFORMACIÓN RÁPIDA */}
         <div style={sidebarStyles}>
           <h2 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937' }}>
@@ -203,6 +205,7 @@ export default function EstacionPueblaPage({ params }) {
         {/* PUNTOS DE INTERES */}
         {estacion.pois.length > 0 && (
           <div style={sectionStyles}>
+            <AdBannerLazyInArticle adSlot="1082410395" />
             <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
             <div style={gridStyles}>
               {estacion.pois.map((poi, idx) => (
