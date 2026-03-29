@@ -3,6 +3,8 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
   title: 'SITEUR Guadalajara — Tren Ligero 3 líneas, 48 estaciones + FIFA 2026 | MetroGuia',
   description: 'SITEUR Guadalajara: guía turística completa del Tren Ligero. 3 líneas, 48 estaciones. Centro Histórico, Catedral, Basílica Zapopan, Estadio Akron, Plaza Patria. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
@@ -390,6 +392,11 @@ export default function GDLPage() {
         }}
       >
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+
+      {/* Affiliate Transport Card */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+        <AffiliateTransportCard ciudad="GDL" estacion={null} fechas={null} />
+      </div>
           <h2
             style={{
               fontSize: '2rem',
@@ -508,4 +515,9 @@ export default function GDLPage() {
     </section>
     </main>
   );
+
+      {/* Affiliate Mundial */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+        <AffiliateMundial ciudad="GDL" />
+      </div>
 }

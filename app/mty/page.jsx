@@ -3,6 +3,8 @@ import { estacionesMTY } from '@/data/mty/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
 export const metadata = {
   title: 'Metrorrey Monterrey — Metro 2 líneas, 32 estaciones + FIFA 2026 | MetroGuia',
   description: 'Metrorrey Monterrey: guía turística completa del Metro. 2 líneas, 32 estaciones. Parque Fundidora, Barrio Antiguo, MARCO, Macroplaza, Estadio BBVA. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
@@ -390,6 +392,11 @@ export default function MTYPage() {
         }}
       >
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+
+      {/* Affiliate Transport Card */}
+      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
+        <AffiliateTransportCard ciudad="MTY" estacion={null} fechas={null} />
+      </div>
           <h2
             style={{
               fontSize: '2rem',
