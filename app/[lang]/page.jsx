@@ -1,4 +1,8 @@
 import SearchBar from '@/app/components/SearchBar'
+import FAQSchema from '@/app/components/FAQSchema'
+import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
+import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
+import { homeFAQs, transitAgencies } from '@/data/faqs'
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 
 export function generateStaticParams() {
@@ -90,6 +94,13 @@ export default function LandingPageLang({ params }) {
 
   return (
     <div>
+      {/* ── SEO Schemas ── */}
+      <FAQSchema faqs={homeFAQs[lang] || homeFAQs.es} lang={lang} />
+      <BreadcrumbSchema items={[{ name: 'MetroGuia', url: `/${lang}/` }]} />
+      {transitAgencies.map((agency) => (
+        <LocalBusinessSchema key={agency.name} agency={agency} />
+      ))}
+
       {/* ── Hero + Search ── */}
       <section style={{
         background: 'linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%)',

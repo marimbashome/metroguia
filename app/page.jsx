@@ -1,8 +1,25 @@
 import SearchBar from '@/app/components/SearchBar'
+import FAQSchema from '@/app/components/FAQSchema'
+import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
+import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
+import { homeFAQs, transitAgencies } from '@/data/faqs'
 
 export const metadata = {
   title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
   description: 'Trip planner de transporte urbano. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. 400+ estaciones. Guía Mundial FIFA 2026.',
+  alternates: {
+    canonical: 'https://metroguia.mx/',
+    languages: {
+      'es': 'https://metroguia.mx/',
+      'en': 'https://metroguia.mx/en/',
+      'pt': 'https://metroguia.mx/pt/',
+      'fr': 'https://metroguia.mx/fr/',
+      'de': 'https://metroguia.mx/de/',
+      'ja': 'https://metroguia.mx/ja/',
+      'ko': 'https://metroguia.mx/ko/',
+      'x-default': 'https://metroguia.mx/',
+    },
+  },
 }
 
 const ciudades = [
@@ -59,6 +76,13 @@ const rutasPopularesHome = [
 export default function LandingPage() {
   return (
     <div>
+      {/* ── SEO Schemas ── */}
+      <FAQSchema faqs={homeFAQs.es} lang="es" />
+      <BreadcrumbSchema items={[{ name: 'Inicio', url: '/' }]} />
+      {transitAgencies.map((agency) => (
+        <LocalBusinessSchema key={agency.name} agency={agency} />
+      ))}
+
       {/* ── Hero + Search ── */}
       <section style={{
         background: 'linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%)',
