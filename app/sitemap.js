@@ -287,38 +287,9 @@ export default function sitemap() {
     });
   });
 
-  // GDL + MTY station pages in other languages
-  const cityStationSets = [
-    { data: estacionesGDL, city: 'gdl' },
-    { data: estacionesMTY, city: 'mty' },
-  ];
-  languages.forEach(lang => {
-    cityStationSets.forEach(({ data, city }) => {
-      (data || []).forEach(estacion => {
-        languagePages.push({
-          url: `${baseUrl}/${lang}/${city}/estacion/${estacion.slug}/`,
-          lastModified,
-          changeFrequency: 'monthly',
-          priority: 0.65,
-        });
-      });
-    });
-  });
-
-  // All city hub pages in other languages (11 cities × 6 langs = 66)
-  const allCities = ['cdmx', 'gdl', 'mty', 'puebla', 'merida', 'leon', 'chihuahua', 'tijuana', 'toluca', 'queretaro', 'tren-maya'];
-  languages.forEach(lang => {
-    allCities.forEach(city => {
-      if (city !== 'cdmx') { // cdmx already added above
-        languagePages.push({
-          url: `${baseUrl}/${lang}/${city}/`,
-          lastModified,
-          changeFrequency: 'weekly',
-          priority: 0.8,
-        });
-      }
-    });
-  });
+  // NOTE: GDL/MTY station pages and non-CDMX city hub pages in other languages
+  // were removed — no /[lang]/gdl/, /[lang]/mty/, etc. routes exist in the app router.
+  // Only /[lang]/cdmx/ has actual pages. Re-add when those routes are created.
 
   // CDMX line pages in other languages (12 × 6 = 72)
   const cdmxLineIds = Object.keys(lineasDetalle).slice(0, 12);

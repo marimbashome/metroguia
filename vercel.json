@@ -3,146 +3,137 @@
     {
       "has": [{ "type": "host", "value": "cdmx.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/cdmx",
+      "destination": "https://metroguia.mx/cdmx/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "cdmx.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/$1",
+      "destination": "https://metroguia.mx/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/gdl",
+      "destination": "https://metroguia.mx/gdl/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "gdl.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/gdl/$1",
+      "destination": "https://metroguia.mx/gdl/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/mty",
+      "destination": "https://metroguia.mx/mty/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "mty.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/mty/$1",
-      "permanent": false
-    },
-    {
-      "has": [{ "type": "host", "value": "puebla.metroguia.mx" }],
-      "source": "/(.*)",
-      "destination": "https://metroguia.mx/puebla/$1",
+      "destination": "https://metroguia.mx/mty/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "puebla.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/puebla",
+      "destination": "https://metroguia.mx/puebla/",
+      "permanent": false
+    },
+    {
+      "has": [{ "type": "host", "value": "puebla.metroguia.mx" }],
+      "source": "/(.*)",
+      "destination": "https://metroguia.mx/puebla/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "merida.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/merida",
+      "destination": "https://metroguia.mx/merida/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "merida.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/merida/$1",
+      "destination": "https://metroguia.mx/merida/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "leon.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/leon",
+      "destination": "https://metroguia.mx/leon/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "leon.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/leon/$1",
+      "destination": "https://metroguia.mx/leon/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "trenmaya.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/tren-maya",
+      "destination": "https://metroguia.mx/tren-maya/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "trenmaya.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/tren-maya/$1",
+      "destination": "https://metroguia.mx/tren-maya/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "queretaro.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/queretaro",
+      "destination": "https://metroguia.mx/queretaro/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "queretaro.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/queretaro/$1",
+      "destination": "https://metroguia.mx/queretaro/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "chihuahua.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/chihuahua",
+      "destination": "https://metroguia.mx/chihuahua/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "chihuahua.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/chihuahua/$1",
+      "destination": "https://metroguia.mx/chihuahua/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "tijuana.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/tijuana",
+      "destination": "https://metroguia.mx/tijuana/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "tijuana.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/tijuana/$1",
+      "destination": "https://metroguia.mx/tijuana/$1/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "toluca.metroguia.mx" }],
       "source": "/",
-      "destination": "https://metroguia.mx/toluca",
+      "destination": "https://metroguia.mx/toluca/",
       "permanent": false
     },
     {
       "has": [{ "type": "host", "value": "toluca.metroguia.mx" }],
       "source": "/(.*)",
-      "destination": "https://metroguia.mx/toluca/$1",
+      "destination": "https://metroguia.mx/toluca/$1/",
       "permanent": false
     }
   ],
-  "rewrites": [
-    {
-      "source": "/ruta/:path/",
-      "destination": "/ruta/calc/"
-    },
-    {
-      "source": "/ruta/:path",
-      "destination": "/ruta/calc/"
-    }
-  ],
+  "rewrites": [],
   "headers": [
     {
       "source": "/(.*)",
