@@ -3,8 +3,8 @@ import { estacionesMTY } from '@/data/mty/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
-import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
-import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
   title: 'Metrorrey Monterrey — Metro 2 líneas, 32 estaciones + FIFA 2026 | MetroGuia',
   description: 'Metrorrey Monterrey: guía turística completa del Metro. 2 líneas, 32 estaciones. Parque Fundidora, Barrio Antiguo, MARCO, Macroplaza, Estadio BBVA. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',

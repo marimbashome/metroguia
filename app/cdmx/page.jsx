@@ -4,8 +4,8 @@ import { mundial } from '@/data/mundial'
 import SearchBar from '@/app/components/SearchBar'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 
-import AffiliateTransportCard from '@/app/components/affiliate/AffiliateTransportCard'
-import AffiliateMundial from '@/app/components/affiliate/AffiliateMundial'
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
+import AffiliateMundial from '@/app/components/AffiliateMundial'
 export function generateMetadata() {
   return {
     title: 'Metro CDMX — Guía de movilidad turística | MetroGuia',
@@ -614,9 +614,7 @@ export default function CDMXPage() {
       <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
         <AffiliateMundial ciudad="CDMX" />
       </div>
-      {/* CTA Hospedaje
-
-      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" /> — accommodation section */}
+      {/* CTA Hospedaje — accommodation section */}
       <section style={{
         padding: '4rem 1rem',
         background: 'linear-gradient(135deg, rgba(233, 30, 140, 0.05) 0%, var(--surface) 100%)',
