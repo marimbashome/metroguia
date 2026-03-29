@@ -95,6 +95,18 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/mundial-2026/como-llegar-estadio-azteca/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mundial-2026/transporte-publico-cdmx/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/mundial-2026/gdl/`,
       lastModified,
       changeFrequency: 'monthly',

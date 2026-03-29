@@ -7,12 +7,33 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const linea = lineasDetalle[params.id]
   if (!linea) return { title: 'Línea no encontrada' }
+
+  // Enhanced metadata for Línea B with station count, terminals, and key destinations
+  let title = linea.seo_title
+  let description = linea.meta_description
+
+  if (params.id === 'B') {
+    title = `Línea B Metro CDMX - ${linea.total} estaciones de ${linea.inicio} a ${linea.fin} | Guía turística`
+
+    // Build description with key destinations and tourist highlights
+    const keyDestinations = linea.estaciones_turisticas && linea.estaciones_turisticas.length > 0
+      ? `Estaciones destacadas: ${linea.estaciones_turisticas.map(slug => {
+          const station = linea.estaciones.find(e => e.slug === slug)
+          return station ? station.nombre : slug
+        }).join(', ')}. `
+      : ''
+
+    const routeInfo = `Ruta completa de ${linea.inicio} (terminal) hasta ${linea.fin} (terminal). Conecta barrios culturales con zonas residenciales. `
+
+    description = `${linea.descripcion} ${keyDestinations}${routeInfo}Guía completa con ${linea.total} estaciones, transbordos, horarios y tips de viaje.`
+  }
+
   return {
-    title: linea.seo_title,
-    description: linea.meta_description,
+    title,
+    description,
     openGraph: {
-      title: linea.seo_title,
-      description: linea.meta_description,
+      title,
+      description,
       url: `https://metroguia.mx/linea/${linea.id}/`,
       siteName: 'MetroGuia',
       locale: 'es_MX',

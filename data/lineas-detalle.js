@@ -440,9 +440,9 @@ export const lineasDetalle = {
         { estacion: "Tepito", actividad: "El Barrio Bravo — mercado informal y cultura popular auténtica de CDMX", duracion: "1 hora" }
       ]
     },
-    seo_title: "Línea B Metro CDMX — Buenavista, Garibaldi y Tepito | MetroGuia",
-    meta_description: "Línea B Gris del Metro CDMX: 21 estaciones de Buenavista a Ciudad Azteca. Garibaldi, Lagunilla, Tepito y barrios populares del norte.",
-    h1: "Línea B Metro CDMX — Del centro al nororiente"
+    seo_title: "Línea B Metro CDMX - 21 estaciones Buenavista a Ciudad Azteca | Guía turística",
+    meta_description: "Línea B Gris: 21 estaciones, Buenavista (Tren Suburbano) a Ciudad Azteca. Garibaldi (mariachis), Lagunilla (antigüedades), Tepito (comercio). Transbordos Línea 8. Ruta completa y tips.",
+    h1: "Línea B Metro CDMX — Guía completa con 21 estaciones"
   },
 
   "12": {

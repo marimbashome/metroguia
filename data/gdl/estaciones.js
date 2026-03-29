@@ -277,8 +277,8 @@ export const estacionesGDL = [
     "transferencias": [
       "2"
     ],
-    "seo_title": "Estación Juárez — Metro Guadalajara | MetroGuia",
-    "meta_description": "Estación Juárez con acceso al Centro Histórico de Guadalajara, Catedral y Teatro Degollado. Punto turístico principal.",
+    "seo_title": "Estación Juárez — Centro Histórico Guadalajara, Catedral, Teatro Degollado | MetroGuia",
+    "meta_description": "Estación Juárez (Línea 1). Centro Histórico de Guadalajara. Catedral Metropolitana, Teatro Degollado, Plaza Guadalajara. Hub turístico principal.",
     "h1": "Estación Juárez — Línea 1 (Conexión L2)",
     "intro": "Corazón del centro histórico de Guadalajara. Acceso directo a monumentos históricos, plazas y sitios de interés cultural.",
     "tips": [
@@ -705,8 +705,8 @@ export const estacionesGDL = [
       "2",
       "3"
     ],
-    "seo_title": "Estación Plaza Universidad — Metro Guadalajara | MetroGuia",
-    "meta_description": "Estación Plaza Universidad con conexión a Líneas 2 y 3. Acceso a Universidad de Guadalajara.",
+    "seo_title": "Estación Plaza Universidad — Rectoría UDG, Campus, Centro Guadalajara | MetroGuia",
+    "meta_description": "Estación Plaza Universidad (Línea 1). Rectoría neoclásica de la Universidad de Guadalajara, campus principal, zona académica.",
     "h1": "Estación Plaza Universidad — Línea 1 (Conexión L2, L3)",
     "intro": "Nodo importante de conexión entre Línea 1, 2 y 3. Centro académico y cultural de Guadalajara.",
     "tips": [
@@ -1779,8 +1779,8 @@ export const estacionesGDL = [
     "transferencias": [
       "1"
     ],
-    "seo_title": "Estación Arcos de Zapopan — Metro Guadalajara | MetroGuia",
-    "meta_description": "Estación Arcos de Zapopan de la Línea 3. Terminal norte. Acceso a Basílica.",
+    "seo_title": "Estación Arcos de Zapopan — Terminal Línea 3, Basílica, Centro Zapopan | MetroGuia",
+    "meta_description": "Estación Arcos de Zapopan (Línea 3 Terminal). Acceso a Basílica de Zapopan, Arcos icónicos de 30m, centro histórico religioso. Guía turística y transporte.",
     "h1": "Estación Arcos de Zapopan — Línea 3 (Terminal)",
     "intro": "Estación terminal norte de Línea 3. Acceso a los emblemáticos Arcos de Zapopan y la Basílica.",
     "tips": [

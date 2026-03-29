@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export function generateMetadata() {
   return {
-    title: 'Tren Maya — Conecta el Caribe Mexicano | MetroGuia',
-    description: 'Guía completa del Tren Maya. 1554 km de ferrocarril turístico conectando Cancún, Riviera Maya, Chichén Itzá y Mérida. Perfecto para fans del FIFA 2026.',
-    keywords: 'Tren Maya, Yucatán, Quintana Roo, Cancún, Riviera Maya, Tulum, Chichén Itzá, Mérida, tren turístico, viaje caribeño',
+    title: 'Tren Maya — 1554 km Caribe: Cancún, Riviera Maya, Chichén Itzá | MetroGuia',
+    description: 'Tren Maya: guía turística de 1554 km conectando el Caribe mexicano. Cancún, Playa del Carmen, Tulum, Bacalar, Chichén Itzá, Mérida. Tren turístico perfecto para fans del FIFA 2026. Destino masivo de viajeros.',
+    keywords: 'Tren Maya, Yucatán, Quintana Roo, Cancún, Riviera Maya, Tulum, Chichén Itzá, Mérida, tren turístico, viaje caribeño, transporte turístico',
     openGraph: {
       title: 'Tren Maya — Conecta el Caribe Mexicano',
-      description: 'Descubre el Tren Maya con MetroGuia. Cancún, Riviera Maya, Chichén Itzá, Mérida y más. Destino turístico masivo.',
+      description: 'Descubre el Tren Maya: Cancún, Riviera Maya, Chichén Itzá, Mérida y más. El tren turístico más exclusivo de México.',
       url: 'https://metroguia.mx/tren-maya',
       type: 'website',
     },

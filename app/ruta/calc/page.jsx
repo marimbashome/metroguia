@@ -1,8 +1,8 @@
 import CalcClient from './CalcClient'
 
 export const metadata = {
-  title: 'Calculadora de Ruta — MetroGuia.mx',
-  description: 'Calcula tu ruta en metro, tren ligero y BRT en México. Trip planner con tiempo, transbordos y costo.',
+  title: 'Calcular ruta metro CDMX — Calculadora de rutas | MetroGuia.mx',
+  description: 'Calcular ruta en metro: encuentra la ruta más rápida con transbordos, tiempo estimado, líneas y costo. Calculadora en tiempo real para Metro CDMX, tren ligero y BRT.',
 }
 
 export default function CalcPage() {

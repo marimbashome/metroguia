@@ -10,12 +10,37 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const estacion = estaciones.find((e) => e.slug === params.slug)
   if (!estacion) return { title: 'Estación no encontrada' }
+
+  // Build enhanced metadata for Línea B stations with practical info
+  let title = estacion.seo_title
+  let description = estacion.meta_description
+
+  // For Línea B specifically: include line color, connecting lines, and tourist tips
+  if (estacion.linea === 'B') {
+    title = `Estación ${estacion.nombre} - Línea ${estacion.linea} Metro CDMX | Guía completa`
+
+    // Build description with transbordos + POI + tourist tips
+    const transbordoText = estacion.transferencias && estacion.transferencias.length > 0
+      ? `Transbordos a Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}. `
+      : 'Sin transferencias directas. '
+
+    const poiText = estacion.pois && estacion.pois.length > 0
+      ? `Cerca: ${estacion.pois.slice(0, 3).map(p => p.nombre).join(', ')}. `
+      : ''
+
+    const tourTip = estacion.tips && estacion.tips.length > 0
+      ? `Consejo: ${estacion.tips[0]} `
+      : ''
+
+    description = `${estacion.nombre} en Línea B del Metro CDMX. ${transbordoText}${poiText}${tourTip}Ubicada en ${estacion.alcaldia}.`
+  }
+
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title,
+    description,
     openGraph: {
-      title: estacion.seo_title,
-      description: estacion.meta_description,
+      title,
+      description,
       url: `https://metroguia.mx/estacion/${estacion.slug}/`,
       siteName: 'MetroGuia',
       locale: 'es_MX',

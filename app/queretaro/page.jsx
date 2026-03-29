@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export function generateMetadata() {
   return {
-    title: 'Q-BUS Querétaro — Sistema de Transporte y Turismo | MetroGuia',
-    description: 'Q-BUS Querétaro: 3 corredores BRT, 18 estaciones. Centro Histórico Patrimonio UNESCO, Acueducto de 300 años, pueblos mágicos cercanos y hub aeroespacial.',
-    keywords: 'Q-BUS Querétaro, transporte, turismo, Centro Histórico UNESCO, Acueducto, Pueblos Mágicos',
+    title: 'Q-BUS Querétaro — BRT 3 corredores, 18 estaciones + Patrimonio UNESCO | MetroGuia',
+    description: 'Q-BUS Querétaro: sistema de transporte rápido con 3 corredores BRT, 18 estaciones. Centro Histórico Patrimonio UNESCO, Acueducto de 300 años, Tequisquiapan, plaza comercial CAME. Guía turística completa para visitantes.',
+    keywords: 'Q-BUS Querétaro, transporte, turismo, Centro Histórico UNESCO, Acueducto, Pueblos Mágicos, Tequisquiapan',
     openGraph: {
-      title: 'Q-BUS Querétaro — Sistema de Transporte',
-      description: 'Q-BUS Querétaro: 3 corredores de transporte rápido conectando el Centro Histórico Patrimonio UNESCO, Acueducto y zonas de negocios.',
+      title: 'Q-BUS Querétaro — BRT + Centro Histórico UNESCO',
+      description: 'Descubre Querétaro con Q-BUS. Centro Histórico Patrimonio UNESCO, Acueducto de 300 años y pueblos mágicos cercanos.',
       url: 'https://metroguia.mx/queretaro',
       type: 'website',
     },

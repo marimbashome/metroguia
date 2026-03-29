@@ -593,8 +593,8 @@ export const estacionesMTY = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Estación Central Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Central de la Línea 1 del Metrorrey.",
+    "seo_title": "Estación Central — Línea 1, Centro Histórico Monterrey, Macroplaza | MetroGuia",
+    "meta_description": "Estación Central (Línea 1). Centro Histórico de Monterrey, Macroplaza, Catedral, plazas principales. Hub turístico de la ciudad.",
     "h1": "Estación Central — Línea 1 Metrorrey",
     "intro": "Estación central con acceso a zonas comerciales importantes de Monterrey.",
     "tips": [
@@ -657,8 +657,8 @@ export const estacionesMTY = [
     "transferencias": [
       "2"
     ],
-    "seo_title": "Estación Cuauhtémoc Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Cuauhtémoc de la Línea 1 del Metrorrey. Conexión a Línea 2.",
+    "seo_title": "Estación Cuauhtémoc — Línea 2, Barrio Antiguo, Zona Hogar | MetroGuia",
+    "meta_description": "Estación Cuauhtémoc (Línea 2). Barrio Antiguo histórico de Monterrey, zona de tiendas y comercio.",
     "h1": "Estación Cuauhtémoc — Línea 1 Metrorrey",
     "intro": "Estación estratégica en el centro de Monterrey con transferencia a la Línea 2. Acceso a zonas históricas y comerciales.",
     "tips": [
@@ -844,8 +844,8 @@ export const estacionesMTY = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Estación Parque Fundidora Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Parque Fundidora de la Línea 1 del Metrorrey. Acceso al parque y centro cultural.",
+    "seo_title": "Estación Parque Fundidora — Línea 2, Pulmón Verde Monterrey | MetroGuia",
+    "meta_description": "Estación Parque Fundidora (Línea 2). Acceso al principal parque urbano de Monterrey. Macroplaza, MARCO, zonas verdes. Destino turístico principal.",
     "h1": "Estación Parque Fundidora — Línea 1 Metrorrey",
     "intro": "Estación turística que proporciona acceso al icónico Parque Fundidora, pulmón verde de Monterrey con múltiples atracciones.",
     "tips": [
@@ -1084,8 +1084,8 @@ export const estacionesMTY = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Estación Exposición Metro L1 Monterrey — Acceso Estadio BBVA FIFA 2026 | MetroGuia",
-    "meta_description": "Estación Exposición de la Línea 1 del Metrorrey. Acceso al Estadio BBVA para el Mundial 2026.",
+    "seo_title": "Estación Exposición — Línea 1, Acceso Estadio BBVA, Barrio Antiguo | MetroGuia",
+    "meta_description": "Estación Exposición (Línea 1). Acceso a Estadio BBVA para partidos FIFA 2026. Barrio Antiguo y centro comercial.",
     "h1": "Estación Exposición — Terminal Línea 1 Metrorrey",
     "intro": "Estación terminal oriental de la Línea 1, puerta principal de acceso al Estadio BBVA Bancomer para los partidos del Mundial 2026.",
     "tips": [

@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export function generateMetadata() {
   return {
-    title: 'Tijuana — Guía Turística Completa FIFA 2026 | MetroGuia',
-    description: 'Guía completa de Tijuana. Frontera, gastronomía, playas y conexión a San Diego, sede FIFA 2026. 80 millones de cruces fronterizos al año.',
-    keywords: 'Tijuana, frontera, gastronomía mexicana, San Diego FIFA 2026, tacos adobada, Valle de Guadalupe, Zona Río',
+    title: 'Tijuana — Frontera, Gastronomía + Base para FIFA 2026 San Diego | MetroGuia',
+    description: 'Guía completa de Tijuana: frontera México-USA, gastronomía (tacos adobada), playas, Zona Río, Valle de Guadalupe. Tu base para el Mundial 2026 en San Diego (35% más barato). A 5 minutos del cruce fronterizo.',
+    keywords: 'Tijuana, frontera, gastronomía mexicana, San Diego FIFA 2026, tacos adobada, Valle de Guadalupe, Zona Río, transporte fronterizo',
     openGraph: {
       title: 'Tijuana — Tu Base para el Mundial 2026 en San Diego',
-      description: 'Alójate en Tijuana (35% más barato) y cruza a San Diego para los partidos. A 5 minutos a pie del cruce fronterizo.',
+      description: 'Alójate en Tijuana (35% más barato) y cruza a San Diego para los partidos FIFA 2026. A 5 minutos a pie del cruce fronterizo.',
       url: 'https://metroguia.mx/tijuana',
       type: 'website',
     },

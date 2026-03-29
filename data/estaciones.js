@@ -9500,8 +9500,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Buenavista CDMX — Hub intermodal",
-    "meta_description": "Buenavista: puerta intermodal del norte con Tren Suburbano, autobuses y Metro. Acceso rápido a Estadio Azteca y hoteles para turistas del Mundial 2026 que ",
+    "seo_title": "Estación Buenavista - Línea B Metro CDMX | Guía completa con Tren Suburbano",
+    "meta_description": "Buenavista en Línea B: Terminal norte intermodal con Tren Suburbano directo a Aeropuerto, Central Autobuses del Norte, Biblioteca Vasconcelos. Consejo: llega 15 min antes en horas pico.",
     "h1": "Metro Buenavista: puerta intermodal al norte de la CDMX",
     "intro": "Buenavista es la puerta intermodal norte de la CDMX, conectando Tren Suburbano, autobuses de larga distancia y Metro en un solo hub. Para turistas del Mundial FIFA 2026 que llegan desde el extranjero, esta estación es el primer contacto con transporte público capitalino, ofreciendo acceso directo a hoteles, estadios y centros de convenciones. Su ubicación estratégica la convierte en nodo imprescindible para movilidad integrada.",
     "historia_icono": "El ícono gris de la Línea B representa conectividad y modernidad de Buenavista como estación intermodal de clase mundial. Este símbolo refuerza el rol de convergencia donde tren, autobús y metro se integran para facilitar movilidad de turistas internacionales.",
@@ -9646,8 +9646,8 @@ export const estaciones = [
     "transferencias": [
       "8"
     ],
-    "seo_title": "Metro Garibaldi/Lagunilla — Cultura mexicana",
-    "meta_description": "Garibaldi: Plaza histórica con mariachis en vivo, música folklórica auténtica y gastronomía mexicana tradicional. Entretenimiento cultural imprescindible p",
+    "seo_title": "Estación Garibaldi/Lagunilla - Línea B Metro CDMX | Mariachis, cultura y mercado",
+    "meta_description": "Garibaldi/Lagunilla en Línea B: Plaza histórica con mariachis en vivo, Mercado de Lagunilla antigüedades, Iglesia Candelaria. Transbordo a Línea 8. Tip: visita 6-10 PM.",
     "h1": "Metro Garibaldi/Lagunilla: corazón cultural de la CDMX",
     "intro": "Garibaldi-Lagunilla abre las puertas a tradición mexicana pura: Plaza Garibaldi, donde mariachis, música folklórica y gastronomía centenaria confluyen en atmósfera vibrante. Para turistas del Mundial FIFA 2026, esta estación ofrece experiencia cultural genuina, combinando entretenimiento nocturno, artesanías y restaurantes con recetas transmitidas generacionalmente. Es lugar perfecto para sumergirse en identidad cultural mexicana después de disfrutar de un partido.",
     "historia_icono": "El ícono gris de la Línea B representa convergencia de tradiciones: Garibaldi es símbolo de música folklórica mexicana donde generaciones de mariachis interpretan canciones del alma nacional. Este ícono evoca riqueza cultural que espera a turistas.",
@@ -9788,8 +9788,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Tepito — Barrio bohemio y comercial",
-    "meta_description": "Tepito: barrio bohemio con tiendas deportivas, ropa vintage, música en vivo y gastronomía tradicional mexicana. Pulso auténtico genuino de la Ciudad.",
+    "seo_title": "Estación Tepito - Línea B Metro CDMX | Tianguis, ropa y comercio mayorista",
+    "meta_description": "Tepito en Línea B: Tianguis de comercio mayorista, ropa deportiva, uniformes Mundial, música en vivo. Consejo: visita 10 AM-6 PM entre lunes-viernes.",
     "h1": "Metro Tepito: el corazón del comercio mayorista capitalino",
     "intro": "Tepito es barrio bravo de la CDMX con historia revolucionaria y carácter rebelde donde comercio, música y cultura popular confluyen en calles vibrantes. Para turistas del Mundial FIFA 2026 que deseen pulso auténtico de la ciudad más allá de zonas turísticas convencionales, Tepito ofrece tiendas especializadas, ropa deportiva, música en vivo en bares y atmósfera genuinamente capitalina. Es zona donde se siente corazón popular de la CDMX.",
     "historia_icono": "El ícono gris de la Línea B representa resistencia y vitalidad de Tepito, barrio que reinventó constantemente su identidad manteniendo carácter bohemio y comercial. Este símbolo evoca creatividad sin límites que define a esta zona histórica.",
@@ -10327,8 +10327,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Bosque de Aragón — Parque y zona verde",
-    "meta_description": "Bosque de Aragón: parque verde del noreste con ciclovías y mercados locales activos. Naturaleza urbana y vida de barrio en la CDMX.         ",
+    "seo_title": "Estación Bosque de Aragón - Línea B Metro CDMX | Parque, ciclovías y zona residencial",
+    "meta_description": "Bosque de Aragón en Línea B: Parque verde con ciclovías, juegos infantiles, mercados locales. Naturaleza urbana y tranquilidad. Tip: visita martes-viernes 9 AM-5 PM.",
     "h1": "Metro Bosque de Aragón: naturaleza en el norte",
     "intro": "Bosque de Aragón es estación de la Línea B cerca del Parque Bosque de Aragón, zona verde del noreste capitalino con espacios de recreo y mercados locales. Para turistas del Mundial FIFA 2026 que deseen combinar naturaleza con vida auténtica de barrio, Bosque de Aragón ofrece acceso a parque verde, mercados de comercio informal y la atmósfera cotidiana de capitalinos residentes. Es parada para exploradores que buscan ecosistemas urbanos.",
     "historia_icono": "El ícono gris de la Línea B representa conexión de Bosque de Aragón con naturaleza urbana, zona donde parque verde y vida residencial convergen. Este símbolo evoca equidad en acceso a espacios recreativos de la ciudad.",
@@ -10596,8 +10596,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [],
-    "seo_title": "Metro Impulsora — Zona residencial",
-    "meta_description": "Impulsora: mercados locales auténticos, vida cotidiana de barrio residencial del norte. Experiencia genuina del noreste capitalino.         ",
+    "seo_title": "Estación Impulsora - Línea B Metro CDMX | Acceso a Ecatepec y zona residencial",
+    "meta_description": "Impulsora en Línea B: Zona residencial del noreste en Ecatepec, mercados locales, tiendas comercio informal. Experiencia auténtica de barrio.",
     "h1": "Metro Impulsora: acceso a Ecatepec",
     "intro": "Impulsora es estación de la Línea B en zona residencial del noreste, conectando comunidades con la red de Metro. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios menos turísticos, Impulsora ofrece mercados locales, tiendas de comercio informal y la atmósfera cotidiana de capitalinos residentes. Es parada secundaria para exploradores curiosos.",
     "historia_icono": "El ícono gris de la Línea B representa conexión de Impulsora con comunidades residenciales del noreste, zona donde vida cotidiana y comercio convergen. Este símbolo evoca movilidad equitativa.",

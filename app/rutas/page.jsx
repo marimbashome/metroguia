@@ -1,16 +1,16 @@
 import BuscadorRutas from '@/app/components/BuscadorRutas';
 
 export const metadata = {
-  title: 'Planea tu ruta en Metro CDMX — MetroGuia.mx',
+  title: 'Calcular ruta en metro CDMX — Planificador MetroGuia.mx',
   description:
-    'Buscador de rutas en el Metro de Ciudad de México. Encuentra la ruta más rápida entre cualquier estación, tiempos estimados, transbordos y costo.',
+    'Calcular ruta metro CDMX: encuentra la ruta más rápida entre estaciones, transbordos, tiempo estimado, líneas de metro y costo. Planificador gratuito en tiempo real.',
   keywords:
-    'ruta metro CDMX, como llegar en metro, rutas metro ciudad de mexico, buscador metro, FIFA 2026 estadio azteca metro',
+    'calcular ruta metro CDMX, cómo llegar en metro, rutas metro ciudad de méxico, buscador metro, planificador de rutas, como llegar en metro, estadio azteca metro',
   alternates: { canonical: '/rutas/' },
   openGraph: {
-    title: 'Planea tu ruta en Metro CDMX — MetroGuia.mx',
+    title: 'Calcular ruta en Metro CDMX — Planificador MetroGuia.mx',
     description:
-      'Buscador de rutas en el Metro de Ciudad de México para turistas del Mundial FIFA 2026.',
+      'Calculadora de rutas del Metro de Ciudad de México. Ruta más rápida, transbordos, tiempos reales y costo del transporte.',
     url: 'https://metroguia.mx/rutas/',
   },
 };

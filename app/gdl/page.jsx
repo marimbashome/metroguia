@@ -3,11 +3,12 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'SITEUR Guadalajara — Guía Turística FIFA 2026 | MetroGuia',
-  description: 'Descubre el Tren Ligero de Guadalajara (SITEUR). 3 líneas, 48 estaciones. Cómo llegar al Estadio Akron para el Mundial 2026. Estaciones, conexiones y guía turística premium.',
+  title: 'SITEUR Guadalajara — Tren Ligero 3 líneas, 48 estaciones + FIFA 2026 | MetroGuia',
+  description: 'SITEUR Guadalajara: guía turística completa del Tren Ligero. 3 líneas, 48 estaciones. Centro Histórico, Catedral, Basílica Zapopan, Estadio Akron, Plaza Patria. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
+  keywords: 'SITEUR Guadalajara, Tren Ligero, transporte Guadalajara, turismo, Centro Histórico, Estadio Akron, FIFA 2026',
   openGraph: {
-    title: 'SITEUR Guadalajara — Guía Turística FIFA 2026',
-    description: 'Sistema de transporte rápido de Guadalajara. Acceso a Centro Histórico, Basílica de Zapopan y Estadio Akron.',
+    title: 'SITEUR Guadalajara — Tren Ligero + Guía FIFA 2026',
+    description: 'Descubre las 3 líneas del Tren Ligero de Guadalajara. Acceso directo a Centro Histórico, Basílica de Zapopan, Estadio Akron y más.',
     url: 'https://metroguia.mx/gdl',
     type: 'website',
   },

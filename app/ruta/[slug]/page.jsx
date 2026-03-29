@@ -14,18 +14,26 @@ export function generateMetadata({ params }) {
   const parts = slug.split('-a-')
   if (parts.length < 2) {
     return {
-      title: 'Ruta — MetroGuia.mx',
-      description: 'Planifica tu ruta en metro, tren ligero y BRT en México.',
+      title: 'Ruta en Metro CDMX — Cómo llegar | MetroGuia.mx',
+      description: 'Planificador de rutas en el Metro de Ciudad de México. Encuentra tu ruta, transbordos, tiempo estimado y costo del transporte público.',
     }
   }
+
   const origen = parts[0].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   const destino = parts.slice(1).join('-a-').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+
+  // Optimized title with CTR keywords: "cómo llegar", "ruta en metro", station names
+  const title = `Cómo llegar de ${origen} a ${destino} en metro | MetroGuia.mx`
+
+  // Enhanced description with travel time indication, practical details
+  const description = `Ruta en metro de ${origen} a ${destino} en CDMX. Transbordos, tiempo estimado, líneas de metro, costo y alternativas. Planificador de transporte en tiempo real.`
+
   return {
-    title: `${origen} a ${destino} — Ruta en Metro | MetroGuia.mx`,
-    description: `Cómo llegar de ${origen} a ${destino} en metro CDMX. Ruta más rápida, transbordos, tiempo estimado y costo. Trip planner MetroGuia.mx.`,
+    title,
+    description,
     openGraph: {
-      title: `${origen} → ${destino} — MetroGuia.mx`,
-      description: `Ruta de ${origen} a ${destino} en transporte público de CDMX.`,
+      title: `${origen} → ${destino} en Metro`,
+      description: `Cómo llegar en transporte público de CDMX.`,
     },
   }
 }

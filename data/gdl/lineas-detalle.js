@@ -65,8 +65,8 @@ export const lineasGDL = [
         }
       ]
     },
-    seo_title: "Línea 1 Metro Guadalajara — Roja, Centro Histórico | MetroGuia",
-    meta_description: "Línea 1 del Tren Ligero de Guadalajara. Ruta norte-sur con 20 estaciones. Acceso a Centro Histórico, barrios tradicionales y monumentos.",
+    seo_title: "Línea 1 Roja SITEUR Guadalajara — Centro Histórico, 20 estaciones | MetroGuia",
+    meta_description: "Línea 1 Roja del SITEUR Guadalajara. Ruta norte-sur con 20 estaciones. Centro Histórico, Catedral, Teatro Degollado, barrios tradicionales tapatíos.",
     h1: "Línea 1 — Rojo | Metro Guadalajara"
   },
   {
@@ -120,8 +120,8 @@ export const lineasGDL = [
         }
       ]
     },
-    seo_title: "Línea 2 Metro Guadalajara — Verde, Este-Oeste | MetroGuia",
-    meta_description: "Línea 2 del Tren Ligero de Guadalajara. Ruta transversal este-oeste con 10 estaciones. Barrios artísticos y Centro Histórico.",
+    seo_title: "Línea 2 Verde SITEUR Guadalajara — Transversal este-oeste, 10 estaciones | MetroGuia",
+    meta_description: "Línea 2 Verde del SITEUR Guadalajara. Línea transversal este-oeste conectando zonas comerciales y residenciales. 10 estaciones.",
     h1: "Línea 2 — Verde | Metro Guadalajara"
   },
   {
@@ -185,8 +185,8 @@ export const lineasGDL = [
         }
       ]
     },
-    seo_title: "Línea 3 Metro Guadalajara — Naranja, Estadio Akron FIFA 2026 | MetroGuia",
-    meta_description: "Línea 3 del Tren Ligero de Guadalajara. Ruta noroeste-sureste con 18 estaciones. Acceso a Basílica Zapopan, Centro Histórico y Estadio Akron.",
+    seo_title: "Línea 3 Naranja SITEUR Guadalajara — Estadio Akron FIFA 2026, 18 estaciones | MetroGuia",
+    meta_description: "Línea 3 Naranja del SITEUR Guadalajara. Conexión directa a Estadio Akron para partidos FIFA 2026. Arcos de Zapopan, Basílica, 18 estaciones.",
     h1: "Línea 3 — Naranja | Metro Guadalajara"
   }
 ];

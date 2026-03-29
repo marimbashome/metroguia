@@ -51,8 +51,8 @@ export const lineasMTY = [
         }
       ]
     },
-    seo_title: "Línea 1 Metrorrey — Guía completa Talleres a Exposición | MetroGuia",
-    meta_description: "Línea 1 del Metrorrey: 19 estaciones de Talleres a Exposición. Acceso al Estadio BBVA para FIFA 2026.",
+    seo_title: "Línea 1 Rosa Metrorrey Monterrey — Centro Histórico, Estadio BBVA FIFA 2026, 16 estaciones | MetroGuia",
+    meta_description: "Línea 1 Rosa del Metrorrey Monterrey. Ruta principal norte-sur. Centro Histórico, Macroplaza, acceso directo a Estadio BBVA para partidos FIFA 2026.",
     h1: "Línea 1 Metrorrey — De Talleres a Exposición"
   },
   {
@@ -101,8 +101,8 @@ export const lineasMTY = [
         }
       ]
     },
-    seo_title: "Línea 2 Metrorrey — Guía completa Sendero a General Zaragoza | MetroGuia",
-    meta_description: "Línea 2 del Metrorrey: 13 estaciones. Acceso a Macroplaza, Barrio Antiguo y centro histórico.",
+    seo_title: "Línea 2 Naranja Metrorrey Monterrey — Parque Fundidora, MARCO, 16 estaciones | MetroGuia",
+    meta_description: "Línea 2 Naranja del Metrorrey Monterrey. Línea este-oeste conectando Parque Fundidora, MARCO y zonas residenciales. 16 estaciones.",
     h1: "Línea 2 Metrorrey — De Sendero a General I. Zaragoza"
   }
 ];

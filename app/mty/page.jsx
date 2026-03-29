@@ -3,11 +3,12 @@ import { estacionesMTY } from '@/data/mty/estaciones';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Metrorrey Monterrey — Guía Turística FIFA 2026 | MetroGuia',
-  description: 'Descubre el Metrorrey de Monterrey. 2 líneas, 32 estaciones. Cómo llegar al Estadio BBVA para el Mundial 2026. Estaciones, conexiones y guía turística premium.',
+  title: 'Metrorrey Monterrey — Metro 2 líneas, 32 estaciones + FIFA 2026 | MetroGuia',
+  description: 'Metrorrey Monterrey: guía turística completa del Metro. 2 líneas, 32 estaciones. Parque Fundidora, Barrio Antiguo, MARCO, Macroplaza, Estadio BBVA. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
+  keywords: 'Metrorrey Monterrey, Metro, transporte Monterrey, Parque Fundidora, Estadio BBVA, FIFA 2026, turismo',
   openGraph: {
-    title: 'Metrorrey Monterrey — Guía Turística FIFA 2026',
-    description: 'Sistema de transporte rápido de Monterrey. Acceso a Parque Fundidora, MARCO y Estadio BBVA.',
+    title: 'Metrorrey Monterrey — Metro + Guía FIFA 2026',
+    description: 'Descubre las 2 líneas del Metrorrey de Monterrey. Acceso directo a Parque Fundidora, MARCO, Macroplaza y Estadio BBVA.',
     url: 'https://metroguia.mx/mty',
     type: 'website',
   },

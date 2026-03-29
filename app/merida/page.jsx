@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export function generateMetadata() {
   return {
-    title: 'SIT Mérida — Guía turística completa de La Ciudad Blanca | MetroGuia',
-    description: 'Guía completa del SIT Mérida. 4 corredores. Centro histórico UNESCO, Paseo de Montejo, Gran Museo del Mundo Maya, Cenotes y Chichén Itzá a 1.5h.',
-    keywords: 'SIT Mérida, transporte, turismo, Gran Museo Maya, Chichén Itzá, Cenotes, La Ciudad Blanca',
+    title: 'SIT Mérida — Transporte 4 corredores + La Ciudad Blanca Yucatán | MetroGuia',
+    description: 'SIT Mérida: guía turística completa de la Ciudad Blanca. 4 corredores de transporte. Centro Histórico, Paseo de Montejo, Gran Museo del Mundo Maya, Cenotes, Chichén Itzá a 1.5h. Turismo arqueológico y gastronómico.',
+    keywords: 'SIT Mérida, transporte Mérida, La Ciudad Blanca, Gran Museo Maya, Chichén Itzá, Cenotes, Paseo Montejo, turismo arqueológico',
     openGraph: {
-      title: 'SIT Mérida — Guía turística completa',
-      description: 'Descubre Mérida con MetroGuia. Centro Histórico, Gran Museo Maya, Paseo de Montejo y más. La Ciudad Blanca de Yucatán.',
+      title: 'SIT Mérida — Guía turística La Ciudad Blanca',
+      description: 'Explora Mérida con SIT. Centro Histórico, Gran Museo Maya, Paseo de Montejo y excursiones a Chichén Itzá y cenotes.',
       url: 'https://metroguia.mx/merida',
       type: 'website',
     },
