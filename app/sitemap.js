@@ -2,6 +2,7 @@ import { estaciones } from '@/data/estaciones';
 import { lineasDetalle } from '@/data/lineas-detalle';
 import { zonas } from '@/data/zonas';
 import { rutasPopulares, buildRutaSlug } from '@/data/rutas-populares';
+import { mundial2026 } from '@/data/mundial';
 
 // Import station data for all cities
 import { estacionesGDL } from '@/data/gdl/estaciones';
@@ -131,12 +132,31 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/mundial-2026/partidos/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/privacy-policy/`,
       lastModified,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
   ];
+
+  // FIFA match pages (individual partido pages)
+  const fifaMatchPages = [];
+  Object.entries(mundial2026.sedes).forEach(([cityKey, sede]) => {
+    sede.partidos.forEach((partido) => {
+      fifaMatchPages.push({
+        url: `${baseUrl}/mundial-2026/partidos/${cityKey}-${partido.fecha}/`,
+        lastModified,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      });
+    });
+  });
 
   // Helper to map lines to sitemap entries
   const mapLineas = (lineas, ciudad) => (lineas || []).map((linea) => ({
@@ -206,12 +226,89 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
+  // Language versions (en, pt, fr, de, ja, ko) for key pages
+  const languages = ['en', 'pt', 'fr', 'de', 'ja', 'ko'];
+  const languagePages = [];
+
+  // Home pages in other languages
+  languages.forEach(lang => {
+    languagePages.push({
+      url: `${baseUrl}/${lang}/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    });
+  });
+
+  // CDMX hub in other languages
+  languages.forEach(lang => {
+    languagePages.push({
+      url: `${baseUrl}/${lang}/cdmx/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    });
+  });
+
+  // FIFA 2026 hub in other languages
+  languages.forEach(lang => {
+    languagePages.push({
+      url: `${baseUrl}/${lang}/mundial-2026/`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    });
+  });
+
+  // Sample station pages in other languages (top 20 tourist stations)
+  const topTouristStations = estaciones
+    .filter(e => e.tipo_zona === 'turistico')
+    .slice(0, 20);
+  
+  languages.forEach(lang => {
+    topTouristStations.forEach(estacion => {
+      languagePages.push({
+        url: `${baseUrl}/${lang}/cdmx/estacion/${estacion.slug}/`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.75,
+      });
+    });
+  });
+
+  // CDMX line pages in other languages
+  const cdmxLineIds = Object.keys(lineasDetalle).slice(0, 12);
+  languages.forEach(lang => {
+    cdmxLineIds.forEach(lineId => {
+      languagePages.push({
+        url: `${baseUrl}/${lang}/cdmx/linea/${lineId}/`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.75,
+      });
+    });
+  });
+
+  // Popular route pages in other languages
+  languages.forEach(lang => {
+    rutasPopulares.slice(0, 10).forEach(ruta => {
+      languagePages.push({
+        url: `${baseUrl}/${lang}/ruta/${buildRutaSlug(ruta.origen, ruta.destino)}/`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    });
+  });
+
   return [
     ...staticPages,
+    ...fifaMatchPages,
     ...cityPages,
     ...lineasPages,
     ...estacionesPages,
     ...zonasPages,
     ...rutasPages,
+    ...languagePages,
   ];
 }

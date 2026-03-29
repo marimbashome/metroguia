@@ -11,7 +11,13 @@ export const metadata = {
     canonical: '/',
     languages: {
       'es': 'https://metroguia.mx',
-      'en': 'https://metroguia.mx/en',
+      'en': 'https://metroguia.mx/en/',
+      'pt': 'https://metroguia.mx/pt/',
+      'fr': 'https://metroguia.mx/fr/',
+      'de': 'https://metroguia.mx/de/',
+      'ja': 'https://metroguia.mx/ja/',
+      'ko': 'https://metroguia.mx/ko/',
+      'x-default': 'https://metroguia.mx',
     }
   },
   verification: { google: ['NxUm-fKQqE8x692QtQr2mfRXFtFnIvBoJggZuDPbAA4', 'jEOAszLlW5NEWqazqwFSNP-9FoGGHtNVTAffuywcsBY'] },
