@@ -152,9 +152,10 @@ export default function SearchBar({
     flexDirection: 'column',
     gap: '16px',
     padding: '20px',
-    backgroundColor: '#14141F',
-    borderRadius: '8px',
-    border: '1px solid #2A2A3E',
+    backgroundColor: 'var(--surface)',
+    borderRadius: '12px',
+    border: '1px solid var(--border)',
+    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)',
   }
 
   const inputRowStyle = {
@@ -177,7 +178,7 @@ export default function SearchBar({
     marginBottom: '6px',
     fontSize: '12px',
     fontWeight: '600',
-    color: '#A0A0B0',
+    color: 'var(--text-muted)',
     textTransform: 'uppercase',
   }
 
@@ -189,19 +190,20 @@ export default function SearchBar({
   const inputStyle = {
     width: '100%',
     padding: '12px 14px',
-    backgroundColor: '#1A1A27',
-    border: '1px solid #2A2A3E',
-    borderRadius: '6px',
-    color: '#FFFFFF',
+    backgroundColor: 'var(--bg)',
+    border: '1px solid var(--border)',
+    borderRadius: '8px',
+    color: 'var(--text)',
     fontSize: '14px',
     fontFamily: 'inherit',
-    transition: 'border-color 0.2s',
+    transition: 'border-color 0.2s, box-shadow 0.2s',
     outline: 'none',
   }
 
   const inputStyleFocus = {
     ...inputStyle,
-    borderColor: '#FF8C00',
+    borderColor: 'var(--primary)',
+    boxShadow: '0 0 0 3px var(--primary-glow)',
   }
 
   const dropdownStyle = {
@@ -210,35 +212,36 @@ export default function SearchBar({
     left: 0,
     right: 0,
     marginTop: '4px',
-    backgroundColor: '#1A1A27',
-    border: '1px solid #2A2A3E',
-    borderRadius: '6px',
+    backgroundColor: 'var(--bg)',
+    border: '1px solid var(--border)',
+    borderRadius: '8px',
     zIndex: 1000,
     maxHeight: '250px',
     overflowY: 'auto',
+    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
   }
 
   const dropdownItemStyle = {
     padding: '12px 14px',
-    color: '#E0E0E8',
+    color: 'var(--text)',
     cursor: 'pointer',
-    borderBottom: '1px solid #2A2A3E',
+    borderBottom: '1px solid var(--border)',
     fontSize: '14px',
-    transition: 'background-color 0.2s',
+    transition: 'background-color 0.15s',
   }
 
   const dropdownItemHoverStyle = {
     ...dropdownItemStyle,
-    backgroundColor: '#252530',
+    backgroundColor: 'var(--surface)',
   }
 
   const swapButtonStyle = {
     marginTop: '24px',
     padding: '10px 14px',
     backgroundColor: 'transparent',
-    border: '1px solid #2A2A3E',
-    borderRadius: '6px',
-    color: '#FF8C00',
+    border: '1px solid var(--border)',
+    borderRadius: '8px',
+    color: 'var(--primary)',
     cursor: 'pointer',
     fontSize: '18px',
     transition: 'border-color 0.2s',
@@ -255,10 +258,10 @@ export default function SearchBar({
 
   const pillStyle = {
     padding: '8px 14px',
-    backgroundColor: '#1A1A27',
-    border: '1px solid #2A2A3E',
+    backgroundColor: 'var(--bg)',
+    border: '1px solid var(--border)',
     borderRadius: '20px',
-    color: '#E0E0E8',
+    color: 'var(--text)',
     cursor: 'pointer',
     fontSize: '12px',
     transition: 'all 0.2s',
@@ -267,25 +270,26 @@ export default function SearchBar({
 
   const pillHoverStyle = {
     ...pillStyle,
-    borderColor: '#FF8C00',
-    color: '#FF8C00',
+    borderColor: 'var(--primary)',
+    color: 'var(--primary)',
+    backgroundColor: 'var(--primary-glow)',
   }
 
   const submitButtonStyle = {
     padding: '12px 24px',
-    backgroundColor: '#FF8C00',
+    backgroundColor: 'var(--primary)',
     border: 'none',
-    borderRadius: '6px',
+    borderRadius: '8px',
     color: '#FFFFFF',
     fontSize: '14px',
     fontWeight: '600',
     cursor: 'pointer',
-    transition: 'opacity 0.2s',
+    transition: 'all 0.2s',
   }
 
   const submitButtonDisabledStyle = {
     ...submitButtonStyle,
-    opacity: 0.5,
+    opacity: 0.4,
     cursor: 'not-allowed',
   }
 
@@ -300,7 +304,7 @@ export default function SearchBar({
         {/* Origen */}
         <div style={inputGroupStyle} ref={origenRef}>
           <label style={labelStyle}>
-            <span style={{ ...dotStyle, color: '#00FF00' }}>●</span>
+            <span style={{ ...dotStyle, color: '#16A34A' }}>●</span>
             {t.origin}
           </label>
           <input
@@ -339,7 +343,7 @@ export default function SearchBar({
         {/* Destino */}
         <div style={inputGroupStyle} ref={destinoRef}>
           <label style={labelStyle}>
-            <span style={{ ...dotStyle, color: '#FF8C00' }}>●</span>
+            <span style={{ ...dotStyle, color: 'var(--primary)' }}>●</span>
             {t.destination}
           </label>
           <input

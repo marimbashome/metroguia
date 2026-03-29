@@ -135,7 +135,7 @@ export default function MatchPage({ params }) {
         </div>
       </section>
 
-      <section style={{ padding: '3rem 1.25rem', backgroundColor: '#0A0A0F' }}>
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           {/* Match Info Card */}
           <div style={{ backgroundColor: color.bg, border: `1px solid ${color.primary}`, padding: '2rem', borderRadius: '0.5rem', marginBottom: '3rem' }}>

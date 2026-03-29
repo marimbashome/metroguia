@@ -47,7 +47,7 @@ export default function GDLPage() {
   }
 
   return (
-    <main style={{ backgroundColor: '#0A0A0F', color: '#F0F0F5' }}>
+    <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -109,9 +109,9 @@ export default function GDLPage() {
       {/* ESTADÍSTICAS */}
       <section
         style={{
-          backgroundColor: '#14141F',
+          backgroundColor: 'var(--surface)',
           padding: '48px 24px',
-          borderBottom: '1px solid #2A2A3E',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div
@@ -129,7 +129,7 @@ export default function GDLPage() {
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
               48
             </p>
-            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+            <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Estaciones
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function GDLPage() {
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
               3
             </p>
-            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+            <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Líneas Operativas
             </p>
           </div>
@@ -145,7 +145,7 @@ export default function GDLPage() {
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
               30
             </p>
-            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0', fontWeight: '500' }}>
+            <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Kilómetros
             </p>
           </div>
@@ -155,9 +155,9 @@ export default function GDLPage() {
       {/* TRIP PLANNER */}
       <section
         style={{
-          backgroundColor: '#0A0A0F',
+          backgroundColor: 'var(--bg)',
           padding: '60px 24px',
-          borderBottom: '1px solid #2A2A3E',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div style={{ maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -167,7 +167,7 @@ export default function GDLPage() {
               fontWeight: '800',
               marginBottom: '12px',
               textAlign: 'center',
-              color: '#F0F0F5',
+              color: 'var(--text)',
             }}
           >
             🚇 Planifica tu Ruta en Guadalajara
@@ -177,7 +177,7 @@ export default function GDLPage() {
               fontSize: '1rem',
               textAlign: 'center',
               marginBottom: '24px',
-              color: '#8888A0',
+              color: 'var(--text-muted)',
             }}
           >
             Calcula la mejor ruta entre estaciones del SITEUR
@@ -191,9 +191,9 @@ export default function GDLPage() {
       {/* MUNDIAL 2026 */}
       <section
         style={{
-          backgroundColor: '#0A0A0F',
+          backgroundColor: 'var(--bg)',
           padding: '80px 24px',
-          borderBottom: '1px solid #2A2A3E',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -203,7 +203,7 @@ export default function GDLPage() {
               fontWeight: '800',
               marginBottom: '16px',
               textAlign: 'center',
-              color: '#F0F0F5',
+              color: 'var(--text)',
               letterSpacing: '-0.01em',
             }}
           >
@@ -214,7 +214,7 @@ export default function GDLPage() {
               fontSize: '1.125rem',
               textAlign: 'center',
               marginBottom: '48px',
-              color: '#8888A0',
+              color: 'var(--text-muted)',
               fontWeight: '400',
               maxWidth: '600px',
               marginLeft: 'auto',
@@ -226,8 +226,8 @@ export default function GDLPage() {
 
           <div
             style={{
-              backgroundColor: '#14141F',
-              border: '1px solid #2A2A3E',
+              backgroundColor: 'var(--surface)',
+              border: '1px solid var(--border)',
               borderRadius: '10px',
               padding: '32px',
               marginBottom: '32px',
@@ -239,7 +239,7 @@ export default function GDLPage() {
                 fontWeight: '700',
                 margin: '0 0 24px 0',
                 textAlign: 'center',
-                color: '#F0F0F5',
+                color: 'var(--text)',
               }}
             >
               Partidos Confirmados
@@ -260,7 +260,7 @@ export default function GDLPage() {
                 <div
                   key={idx}
                   style={{
-                    backgroundColor: '#1C1C2E',
+                    backgroundColor: 'var(--surface-hover)',
                     padding: '16px',
                     borderRadius: '8px',
                     borderLeft: '3px solid #06B6D4',
@@ -283,7 +283,7 @@ export default function GDLPage() {
                       fontSize: '1rem',
                       fontWeight: '500',
                       margin: '0',
-                      color: '#F0F0F5',
+                      color: 'var(--text)',
                       lineHeight: '1.4',
                     }}
                   >
@@ -296,17 +296,17 @@ export default function GDLPage() {
 
           <div
             style={{
-              backgroundColor: '#1C1C2E',
-              border: '1px solid #2A2A3E',
+              backgroundColor: 'var(--surface-hover)',
+              border: '1px solid var(--border)',
               borderRadius: '10px',
               padding: '24px',
               textAlign: 'center',
             }}
           >
-            <p style={{ fontSize: '1rem', color: '#8888A0', margin: '0 0 12px 0' }}>
+            <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0 0 12px 0' }}>
               🚇 Línea 3 → Estación Chivas → Caminata 20 minutos al Estadio Akron
             </p>
-            <p style={{ fontSize: '0.875rem', color: '#555566', margin: '0', fontWeight: '400' }}>
+            <p style={{ fontSize: '0.875rem', color: 'var(--text-dim)', margin: '0', fontWeight: '400' }}>
               Consulta horarios especiales los días de partido. Llegada recomendada: 2 horas antes del evento.
             </p>
           </div>
@@ -316,9 +316,9 @@ export default function GDLPage() {
       {/* LÍNEAS */}
       <section
         style={{
-          backgroundColor: '#0A0A0F',
+          backgroundColor: 'var(--bg)',
           padding: '80px 24px',
-          borderBottom: '1px solid #2A2A3E',
+          borderBottom: '1px solid var(--border)',
         }}
       >
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -328,7 +328,7 @@ export default function GDLPage() {
               fontWeight: '800',
               marginBottom: '48px',
               textAlign: 'center',
-              color: '#F0F0F5',
+              color: 'var(--text)',
               letterSpacing: '-0.01em',
             }}
           >
@@ -345,7 +345,7 @@ export default function GDLPage() {
               <Link href={`/gdl/linea/${linea.id}`} key={linea.id}>
                 <div
                   style={{
-                    backgroundColor: '#14141F',
+                    backgroundColor: 'var(--surface)',
                     border: `2px solid ${linea.color}`,
                     borderRadius: '10px',
                     padding: '24px',
@@ -386,7 +386,7 @@ export default function GDLPage() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: '#8888A0',
+                      color: 'var(--text-muted)',
                       margin: '0 0 12px 0',
                       fontWeight: '400',
                     }}
@@ -396,7 +396,7 @@ export default function GDLPage() {
                   <p
                     style={{
                       fontSize: '0.95rem',
-                      color: '#F0F0F5',
+                      color: 'var(--text)',
                       margin: '0 0 16px 0',
                       lineHeight: '1.5',
                       fontWeight: '400',
@@ -426,7 +426,7 @@ export default function GDLPage() {
       {/* ESTACIONES DESTACADAS */}
       <section
         style={{
-          backgroundColor: '#0A0A0F',
+          backgroundColor: 'var(--bg)',
           padding: '80px 24px',
         }}
       >
@@ -441,7 +441,7 @@ export default function GDLPage() {
               fontWeight: '800',
               marginBottom: '48px',
               textAlign: 'center',
-              color: '#F0F0F5',
+              color: 'var(--text)',
               letterSpacing: '-0.01em',
             }}
           >
@@ -458,8 +458,8 @@ export default function GDLPage() {
               <Link href={`/gdl/estacion/${estacion.slug}`} key={estacion.slug}>
                 <div
                   style={{
-                    backgroundColor: '#14141F',
-                    border: '1px solid #2A2A3E',
+                    backgroundColor: 'var(--surface)',
+                    border: '1px solid var(--border)',
                     borderRadius: '10px',
                     padding: '24px',
                     cursor: 'pointer',
@@ -498,7 +498,7 @@ export default function GDLPage() {
                         fontSize: '1.125rem',
                         fontWeight: '700',
                         margin: '0',
-                        color: '#F0F0F5',
+                        color: 'var(--text)',
                       }}
                     >
                       {estacion.nombre}
@@ -507,7 +507,7 @@ export default function GDLPage() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: '#8888A0',
+                      color: 'var(--text-muted)',
                       margin: '0 0 12px 0',
                       fontWeight: '400',
                     }}
@@ -533,7 +533,7 @@ export default function GDLPage() {
                           key={idx}
                           style={{
                             fontSize: '0.875rem',
-                            color: '#F0F0F5',
+                            color: 'var(--text)',
                             margin: '0 0 4px 0',
                             lineHeight: '1.3',
                           }}

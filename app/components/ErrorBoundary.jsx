@@ -43,7 +43,7 @@ export default class ErrorBoundary extends Component {
             alignItems: 'center',
             justifyContent: 'center',
             minHeight: '400px',
-            backgroundColor: '#0A0A0F',
+            backgroundColor: 'var(--bg)',
             color: '#E0E0E0',
             fontFamily: 'Inter, sans-serif',
             padding: '2rem',
@@ -117,7 +117,7 @@ export default class ErrorBoundary extends Component {
                 style={{
                   padding: '0.75rem 1.5rem',
                   backgroundColor: '#00D4FF',
-                  color: '#0A0A0F',
+                  color: 'var(--bg)',
                   border: 'none',
                   borderRadius: '0.375rem',
                   fontSize: '0.875rem',

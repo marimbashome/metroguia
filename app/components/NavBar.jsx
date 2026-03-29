@@ -28,11 +28,14 @@ export default function NavBar() {
 
   return (
     <header style={{
-      backgroundColor: 'var(--surface)',
+      backgroundColor: 'rgba(255, 255, 255, 0.92)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--border)',
       position: 'sticky',
       top: 0,
       zIndex: 100,
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.04)',
     }}>
       <div style={{
         maxWidth: '1000px',

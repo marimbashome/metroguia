@@ -1,25 +1,25 @@
-/* ── MetroGuia.mx — Design System v2 ──────────────────────── */
-/* Dark mode first · Inter · Platform UI                        */
+/* ── MetroGuia.mx — Design System v2.1 ────────────────────── */
+/* Light mode · Inter · Transit-app UI (Citymapper/Google Maps) */
 
 :root {
   /* ── Core ─────────────────────────────── */
-  --bg: #0A0A0F;
-  --surface: #14141F;
-  --surface-hover: #1C1C2E;
-  --surface-active: #242438;
-  --border: #2A2A3E;
-  --border-light: #3A3A50;
-  
+  --bg: #FFFFFF;
+  --surface: #F6F7F9;
+  --surface-hover: #EDEEF2;
+  --surface-active: #E4E5EB;
+  --border: #E0E2E8;
+  --border-light: #CDD0D9;
+
   /* ── Text ─────────────────────────────── */
-  --text: #F0F0F5;
-  --text-muted: #8888A0;
-  --text-dim: #555566;
-  
+  --text: #1A1D2B;
+  --text-muted: #5F6477;
+  --text-dim: #8E93A6;
+
   /* ── Brand ────────────────────────────── */
-  --primary: #F5A623;
-  --primary-hover: #E89A1C;
-  --primary-glow: rgba(245,166,35,0.15);
-  --primary-border: rgba(245,166,35,0.3);
+  --primary: #E8960E;
+  --primary-hover: #D48A0C;
+  --primary-glow: rgba(232,150,14,0.08);
+  --primary-border: rgba(232,150,14,0.25);
   
   /* ── Cities ───────────────────────────── */
   --cdmx: #E91E8C;
@@ -42,10 +42,10 @@
   --linea-TL: #06B6D4;
   
   /* ── Semantic ─────────────────────────── */
-  --success: #22C55E;
-  --warning: #F59E0B;
-  --danger: #EF4444;
-  --info: #3B82F6;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+  --info: #2563EB;
   
   /* ── Spacing & Radius ─────────────────── */
   --radius-sm: 6px;
@@ -241,7 +241,7 @@ a:hover {
 .card:hover {
   background-color: var(--surface-hover);
   border-color: var(--border-light);
-  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .zona-route-card:hover {
@@ -324,20 +324,20 @@ a:hover {
 }
 
 .badge.badge-success {
-  background-color: rgba(34, 197, 94, 0.15);
-  border-color: rgba(34, 197, 94, 0.3);
+  background-color: rgba(22, 163, 74, 0.08);
+  border-color: rgba(22, 163, 74, 0.2);
   color: var(--success);
 }
 
 .badge.badge-warning {
-  background-color: rgba(245, 158, 11, 0.15);
-  border-color: rgba(245, 158, 11, 0.3);
+  background-color: rgba(217, 119, 6, 0.08);
+  border-color: rgba(217, 119, 6, 0.2);
   color: var(--warning);
 }
 
 .badge.badge-danger {
-  background-color: rgba(239, 68, 68, 0.15);
-  border-color: rgba(239, 68, 68, 0.3);
+  background-color: rgba(220, 38, 38, 0.08);
+  border-color: rgba(220, 38, 38, 0.2);
   color: var(--danger);
 }
 
@@ -356,7 +356,7 @@ a:hover {
   font-size: 0.875rem;
   color: white;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .linea-badge.linea-1 { background-color: var(--linea-1); }
@@ -400,14 +400,14 @@ a:hover {
 
 .btn-primary {
   background-color: var(--primary);
-  color: #000;
+  color: #FFFFFF;
   border: 1px solid var(--primary);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
-  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.25);
+  box-shadow: 0 4px 12px rgba(232, 150, 14, 0.3);
 }
 
 .btn-primary:active {
@@ -442,7 +442,7 @@ a:hover {
 
 .cta-btn {
   background-color: var(--primary);
-  color: #000;
+  color: #FFFFFF;
   border: 1px solid var(--primary);
 }
 
@@ -474,7 +474,7 @@ a:hover {
 .route-card:hover {
   background-color: var(--surface-hover);
   border-color: var(--border-light);
-  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .route-card-header {
@@ -529,7 +529,7 @@ a:hover {
 .poi-card:hover {
   background-color: var(--surface-hover);
   border-color: var(--border-light);
-  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .poi-card-image {
@@ -646,26 +646,26 @@ a:hover {
 }
 
 .alert.alert-warning {
-  background-color: rgba(245, 158, 11, 0.08);
-  border-color: rgba(245, 158, 11, 0.3);
+  background-color: rgba(217, 119, 6, 0.06);
+  border-color: rgba(217, 119, 6, 0.2);
   color: var(--warning);
 }
 
 .alert.alert-danger {
-  background-color: rgba(239, 68, 68, 0.08);
-  border-color: rgba(239, 68, 68, 0.3);
+  background-color: rgba(220, 38, 38, 0.06);
+  border-color: rgba(220, 38, 38, 0.2);
   color: var(--danger);
 }
 
 .alert.alert-success {
-  background-color: rgba(34, 197, 94, 0.08);
-  border-color: rgba(34, 197, 94, 0.3);
+  background-color: rgba(22, 163, 74, 0.06);
+  border-color: rgba(22, 163, 74, 0.2);
   color: var(--success);
 }
 
 .alert.alert-info {
-  background-color: rgba(59, 130, 246, 0.08);
-  border-color: rgba(59, 130, 246, 0.3);
+  background-color: rgba(37, 99, 235, 0.06);
+  border-color: rgba(37, 99, 235, 0.2);
   color: var(--info);
 }
 
@@ -735,12 +735,15 @@ a:hover {
 /* ──────────────────────────────────────────────────────────── */
 
 .nav-header {
-  background-color: var(--surface);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .nav-header-inner {
@@ -788,7 +791,7 @@ a:hover {
 /* ──────────────────────────────────────────────────────────── */
 
 .hero {
-  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-hover) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
   padding: 4rem 1rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
@@ -857,7 +860,7 @@ a:hover {
 .lugar-card:hover {
   background-color: var(--surface-hover);
   border-color: var(--border-light);
-  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 /* ──────────────────────────────────────────────────────────── */

@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preload" as="image" href="/logo.png" fetchPriority="high" />
-        <meta name="theme-color" content="#F5A623" />
+        <meta name="theme-color" content="#FFFFFF" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="apple-touch-icon" href="/logo.png" />

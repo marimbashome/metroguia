@@ -170,7 +170,7 @@ export default function OfflineClient() {
             onClick={() => window.location.reload()}
             style={{
               backgroundColor: 'var(--primary)',
-              color: '#0A0A0F',
+              color: 'var(--bg)',
               border: 'none',
               padding: '0.75rem 1.5rem',
               borderRadius: 'var(--radius)',

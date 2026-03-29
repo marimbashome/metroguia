@@ -69,7 +69,7 @@ export default function PartidosPage() {
 
   return (
     <div>
-      <section style={{ backgroundColor: '#0A0A0F', padding: '3rem 1.25rem' }}>
+      <section style={{ backgroundColor: 'var(--bg)', padding: '3rem 1.25rem' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h1 style={{ color: '#00D4FF', marginBottom: '1rem', fontSize: '2.5rem' }}>Calendario de Partidos</h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.1rem', margin: '0' }}>
@@ -78,7 +78,7 @@ export default function PartidosPage() {
         </div>
       </section>
 
-      <section style={{ padding: '3rem 1.25rem', backgroundColor: '#0A0A0F' }}>
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           {/* CDMX Section */}
           <div style={{ marginBottom: '4rem' }}>

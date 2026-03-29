@@ -87,7 +87,7 @@ export default function LandingPage() {
 
       {/* ── Hero + Search ── */}
       <section style={{
-        background: 'linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%)',
+        background: 'linear-gradient(180deg, #FFFFFF 0%, var(--surface) 100%)',
         padding: '4rem 1rem 3rem',
         borderBottom: '1px solid var(--border)',
       }}>

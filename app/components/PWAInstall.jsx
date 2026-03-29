@@ -61,7 +61,7 @@ export default function PWAInstall() {
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#14141F',
+    backgroundColor: 'var(--surface)',
     borderTop: '2px solid #F5A623',
     padding: '16px 20px',
     display: 'flex',
@@ -96,7 +96,7 @@ export default function PWAInstall() {
 
   const installButtonStyles = {
     backgroundColor: '#F5A623',
-    color: '#0A0A0F',
+    color: 'var(--bg)',
     border: 'none',
     padding: '8px 16px',
     borderRadius: '6px',

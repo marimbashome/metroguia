@@ -657,7 +657,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               style={{
                 display: 'inline-block',
                 background: '#00D4FF',
-                color: '#0A0A0F',
+                color: 'var(--bg)',
                 padding: '0.875rem 2rem',
                 borderRadius: 'var(--radius)',
                 textDecoration: 'none',

@@ -7,8 +7,8 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const containerStyle = {
     padding: '18px',
-    backgroundColor: isAlternative ? '#0F0F1A' : '#14141F',
-    border: '1px solid #2A2A3E',
+    backgroundColor: isAlternative ? '#0F0F1A' : 'var(--surface)',
+    border: '1px solid var(--border)',
     borderRadius: '8px',
     opacity: isAlternative ? 0.7 : 1,
     transition: 'opacity 0.2s',
@@ -37,7 +37,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const summaryLabelStyle = {
     fontSize: '11px',
-    color: '#A0A0B0',
+    color: 'var(--text-muted)',
     fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',
@@ -51,7 +51,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const badgeStyle = {
     padding: '6px 12px',
-    backgroundColor: '#FF8C00',
+    backgroundColor: 'var(--primary)',
     color: '#FFFFFF',
     fontSize: '11px',
     fontWeight: '600',
@@ -68,12 +68,12 @@ export default function RouteResult({ ruta, isAlternative = false }) {
   const routeStripContainerStyle = {
     marginBottom: '20px',
     paddingBottom: '20px',
-    borderBottom: '1px solid #2A2A3E',
+    borderBottom: '1px solid var(--border)',
   }
 
   const stripLabelStyle = {
     fontSize: '11px',
-    color: '#A0A0B0',
+    color: 'var(--text-muted)',
     fontWeight: '600',
     marginBottom: '12px',
     textTransform: 'uppercase',
@@ -112,7 +112,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const stepLabelStyle = {
     fontSize: '11px',
-    color: '#A0A0B0',
+    color: 'var(--text-muted)',
     fontWeight: '600',
     marginBottom: '12px',
     textTransform: 'uppercase',
@@ -124,7 +124,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
     gap: '12px',
     marginBottom: '12px',
     paddingBottom: '12px',
-    borderBottom: '1px solid #1A1A27',
+    borderBottom: '1px solid var(--bg)',
   }
 
   const stepStyle_last = {
@@ -141,7 +141,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
     width: '32px',
     height: '32px',
     borderRadius: '50%',
-    backgroundColor: '#1A1A27',
+    backgroundColor: 'var(--bg)',
     flexShrink: 0,
     fontSize: '14px',
   }
@@ -161,7 +161,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const actionTextStyle = {
     fontSize: '12px',
-    color: '#A0A0B0',
+    color: 'var(--text-muted)',
   }
 
   const lineBadgeSmallStyle = {
