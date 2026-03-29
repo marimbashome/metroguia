@@ -239,14 +239,7 @@ export default function ZonaPage({ params }) {
                       transition: 'all 0.2s ease',
                       cursor: 'pointer'
                     }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = 'var(--metro-orange)'
-                      e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = '#e0e0e0'
-                      e.currentTarget.style.boxShadow = 'none'
-                    }}
+                    className="zona-route-card"
                   >
                     <div style={{ flex: 1 }}>
                       <div style={{ fontSize: '0.875rem', color: '#999', marginBottom: '0.25rem' }}>

@@ -246,6 +246,11 @@ a:hover {
   box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
 }
 
+.zona-route-card:hover {
+  border-color: var(--accent) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
 .card.card-active {
   background-color: var(--surface-active);
   border-color: var(--primary);
