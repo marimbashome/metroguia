@@ -147,7 +147,7 @@ export default function GDLPage() {
             </p>
           </div>
 
-      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* MUNDIAL 2026 */}
       <section
@@ -380,7 +380,7 @@ export default function GDLPage() {
             ))}
           </div>
 
-      <AdBannerLazyInArticle adSlot=\"1082410395\" />
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {/* ESTACIONES DESTACADAS */}
       <section
@@ -504,7 +504,7 @@ export default function GDLPage() {
           </div>
         </div>
 
-      <AdBannerLazy adSlot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
     </section>
     </main>
   );

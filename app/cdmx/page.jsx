@@ -158,7 +158,7 @@ export default function CDMXPage() {
         </div>
       </section>
 
-      <AdBannerLazy adSlot=\"4434764790\" format=\"auto\" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* Rutas Populares al Mundial — Horizontal scroll cards */}
       <section style={{
@@ -324,7 +324,7 @@ export default function CDMXPage() {
               </a>
             ))}
 
-      <AdBannerLazyInArticle adSlot=\"1082410395\" />
+      <AdBannerLazyInArticle slot="1082410395" />
 
       {/* Estaciones Destacadas — grid-3 */}
       {estacionesTuristicas.length > 0 && (

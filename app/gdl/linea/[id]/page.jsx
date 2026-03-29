@@ -1,6 +1,7 @@
 import { lineasGDL } from '@/data/gdl/lineas-detalle';
 import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasGDL.map((linea) => ({
@@ -184,6 +185,8 @@ export default function LineaGDLPage({ params }) {
             {linea.descripcion}
           </p>
         </div>
+
+        <AdBannerLazy slot="4434764790" />
 
         {/* RUTA DE 1 DÍA */}
         <div style={{ marginBottom: '80px' }}>
@@ -379,6 +382,8 @@ export default function LineaGDLPage({ params }) {
             ))}
           </div>
         </div>
+
+        <AdBannerLazyInArticle slot="4434764790" />
       </section>
 
       {/* CTA */}

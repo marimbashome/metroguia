@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 
@@ -139,7 +139,7 @@ export default function EstacionMTY({ params }) {
       </section>
 
       {/* Ad 1 — Banner despues del hero */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* INFORMACIÓN GENERAL */}
       <section style={{
@@ -404,7 +404,7 @@ export default function EstacionMTY({ params }) {
       )}
 
       {/* Ad 2 — Banner antes de navegacion */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* NAVEGACIÓN */}
       <section style={{

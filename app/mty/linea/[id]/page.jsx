@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 import { estacionesMTY } from '@/data/mty/estaciones';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasMTY.map(linea => ({
@@ -229,6 +230,8 @@ export default function LineaMTY({ params }) {
             </p>
           </div>
         </div>
+
+        <AdBannerLazy slot="4434764790" />
       </section>
 
       {/* RUTA DE 1 DÍA */}
@@ -393,6 +396,8 @@ export default function LineaMTY({ params }) {
             </Link>
           ))}
         </div>
+
+        <AdBannerLazyInArticle slot="4434764790" />
       </section>
 
       {/* MUNICIPIOS */}

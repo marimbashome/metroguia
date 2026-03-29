@@ -1,5 +1,5 @@
 import { estacionesGDL } from '@/data/gdl/estaciones';
-import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
@@ -148,7 +148,7 @@ export default function EstacionGDLPage({ params }) {
       </section>
 
       {/* Ad 1 — Banner despues del hero */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* CONTENIDO PRINCIPAL */}
       <section style={{ maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto', padding: '80px 24px' }}>
@@ -441,7 +441,7 @@ export default function EstacionGDLPage({ params }) {
       </section>
 
       {/* Ad 2 — Banner antes del CTA */}
-      <AdBanner slot="4434764790" format="auto" />
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* CTA HOSPEDAJE */}
       <section
