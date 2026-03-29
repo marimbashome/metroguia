@@ -1,6 +1,7 @@
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return lineasTrenMaya.map((linea) => ({ id: linea.id }));

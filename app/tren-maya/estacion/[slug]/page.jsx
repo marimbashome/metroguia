@@ -1,6 +1,7 @@
 import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 import Link from 'next/link';
+import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
 export async function generateStaticParams() {
   return estacionesTrenMaya.map((estacion) => ({ slug: estacion.slug }));
@@ -200,9 +201,12 @@ export default function EstacionTrenMayaPage({ params }) {
           </ul>
         </div>
 
+        <AdBannerLazy adSlot="4434764790" format="auto" />
+
         {/* PUNTOS DE INTERES */}
         {estacion.pois.length > 0 && (
           <div style={sectionStyles}>
+            <AdBannerLazyInArticle adSlot="1082410395" />
             <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
             <div style={gridStyles}>
               {estacion.pois.map((poi, idx) => (
