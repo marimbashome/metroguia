@@ -393,7 +393,7 @@ export default function EstacionEcoviaPage({ params }) {
                     Tipo de Zona
                   </p>
                   <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
-                    {estacion.tipo_zona.replace('-', ' / ')}
+                    {(estacion.tipo_zona || '').replace('-', ' / ')}
                   </p>
                 </div>
                 {estacion.mejor_horario && (

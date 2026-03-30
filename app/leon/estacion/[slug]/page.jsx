@@ -41,7 +41,7 @@ export default function EstacionLeonPage({ params }) {
     return (
       <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
         <h1>Estación no encontrada</h1>
-        <p>La estación "{params.slug}" no existe en el sistema Optibus SIT de León.</p>
+        <p>La estación &ldquo;{params.slug}&rdquo; no existe en el sistema Optibus SIT de León.</p>
         <Link href="/leon" style={{ color: '#10B981', textDecoration: 'none', fontWeight: 'bold' }}>
           Volver al inicio de León
         </Link>
@@ -174,7 +174,7 @@ export default function EstacionLeonPage({ params }) {
             💡 Tips para tu visita
           </h3>
           <ul style={{ fontSize: '14px', color: '#374151', lineHeight: '1.8', paddingLeft: '20px' }}>
-            {(estacion.tips || []).map((tip, idx) => (
+            {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
               <li key={idx}>{tip}</li>
             ))}
           </ul>

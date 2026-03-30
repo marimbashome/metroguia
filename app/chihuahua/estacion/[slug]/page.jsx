@@ -198,11 +198,11 @@ export default function EstacionChihuahuaPage({ params }) {
           </ul>
         </div>
 
-        {estacion.pois.length > 0 && (
+        {(estacion.pois || []).length > 0 && (
           <div style={sectionStyles}>
             <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
             <div style={gridStyles}>
-              {estacion.pois.map((poi, idx) => (
+              {(estacion.pois || []).map((poi, idx) => (
                 <div key={idx} style={poiStyles}>
                   <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }}>
                     {poi.nombre}
@@ -219,11 +219,11 @@ export default function EstacionChihuahuaPage({ params }) {
           </div>
         )}
 
-        {(estacion.tips || []).length > 0 && (
+        {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
           <div style={sectionStyles}>
             <h2 style={sectionTitleStyles}>Tips y Recomendaciones</h2>
             <div style={cardStyles}>
-              {(estacion.tips || []).map((tip, idx) => (
+              {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                 <div key={idx} style={tipStyles}>
                   <div style={tipNumberStyles}>{idx + 1}</div>
                   <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.6', margin: 0 }}>

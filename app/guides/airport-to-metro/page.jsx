@@ -141,7 +141,7 @@ export default function AirportToMetroPage() {
               <div style={{ flex: '1' }}>
                 <h3 style={{ marginBottom: '0.75rem', marginTop: '0' }}>Localiza la Estación de Metro L5 (Benito Juárez)</h3>
                 <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                  Sigue señales azules de "Metro". La estación está DENTRO de la terminal. Busca avisos que digan "Línea 5" o el símbolo amarillo.
+                  Sigue señales azules de &ldquo;Metro&rdquo;. La estación está DENTRO de la terminal. Busca avisos que digan &ldquo;Línea 5&rdquo; o el símbolo amarillo.
                 </p>
                 <div style={{ backgroundColor: 'var(--surface)', padding: '1rem', borderRadius: 'var(--radius)', marginTop: '1rem' }}>
                   <strong style={{ color: 'var(--warning)' }}>⚠️ Importante:</strong> No confundas con Tren Suburbano (servicio de pago diferente). El metro es mucho más económico.
@@ -204,7 +204,7 @@ export default function AirportToMetroPage() {
               <div style={{ flex: '1' }}>
                 <h3 style={{ marginBottom: '0.75rem', marginTop: '0' }}>Entra al Metro — Línea 5 (Amarilla)</h3>
                 <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                  Pasa tu tarjeta (o boleto) en el torniquete. Verás un lector azul — coloca tu tarjeta de frente a la altura del pecho. Escucharás un "bip" y podrás entrar.
+                  Pasa tu tarjeta (o boleto) en el torniquete. Verás un lector azul — coloca tu tarjeta de frente a la altura del pecho. Escucharás un &ldquo;bip&rdquo; y podrás entrar.
                 </p>
                 <div style={{ backgroundColor: 'var(--surface)', padding: '1rem', borderRadius: 'var(--radius)', marginTop: '1rem' }}>
                   <strong style={{ color: 'var(--text)' }}>Recuerda tu tarjeta:</strong> No todos los torniquetes funcionan igual. Si uno no abre, intenta con otro cercano o pide ayuda.
@@ -233,7 +233,7 @@ export default function AirportToMetroPage() {
               <div style={{ flex: '1' }}>
                 <h3 style={{ marginBottom: '0.75rem', marginTop: '0' }}>Sube al Tren hacia Bellas Artes</h3>
                 <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                  Dirección: <strong>Benito Juárez → Bellas Artes</strong> (dirección "hacia el centro"). Los trenes vienen cada 3-5 minutos. Busca paneles informativos que indiquen la dirección.
+                  Dirección: <strong>Benito Juárez → Bellas Artes</strong> (dirección &ldquo;hacia el centro&rdquo;). Los trenes vienen cada 3-5 minutos. Busca paneles informativos que indiquen la dirección.
                 </p>
                 <p style={{ color: 'var(--text)', marginBottom: '1rem' }}>
                   <strong>Paradas Línea 5 (orden desde el aeropuerto):</strong>

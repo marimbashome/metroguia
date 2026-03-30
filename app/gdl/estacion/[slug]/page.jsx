@@ -174,39 +174,45 @@ export default function EstacionGDLPage({ params }) {
                 Puntos de Interés Cercanos
               </h2>
               <div style={{ display: 'grid', gap: '16px' }}>
-                {estacion.pois.map((poi, idx) => (
-                  <div
-                    key={idx}
-                    style={{
-                      padding: '16px',
-                      backgroundColor: '#f9fafb',
-                      borderLeft: `4px solid ${colorLinea}`,
-                      borderRadius: '4px',
-                    }}
-                  >
-                    <h3
+                {(estacion.pois || []).map((poi, idx) => {
+                  const poiName = typeof poi === 'string' ? poi : poi.nombre;
+                  const poiDetail = typeof poi === 'string' ? null : `${poi.tipo} • ${poi.distancia}`;
+                  return (
+                    <div
+                      key={idx}
                       style={{
-                        fontSize: '16px',
-                        fontFamily: 'Syne, sans-serif',
-                        fontWeight: '700',
-                        margin: '0 0 4px 0',
-                        color: '#1f2937',
+                        padding: '16px',
+                        backgroundColor: '#f9fafb',
+                        borderLeft: `4px solid ${colorLinea}`,
+                        borderRadius: '4px',
                       }}
                     >
-                      {poi.nombre}
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: '13px',
-                        color: '#6b7280',
-                        margin: '0',
-                        fontFamily: 'DM Sans, sans-serif',
-                      }}
-                    >
-                      {poi.tipo} • {poi.distancia}
-                    </p>
-                  </div>
-                ))}
+                      <h3
+                        style={{
+                          fontSize: '16px',
+                          fontFamily: 'Syne, sans-serif',
+                          fontWeight: '700',
+                          margin: '0 0 4px 0',
+                          color: '#1f2937',
+                        }}
+                      >
+                        {poiName}
+                      </h3>
+                      {poiDetail && (
+                        <p
+                          style={{
+                            fontSize: '13px',
+                            color: '#6b7280',
+                            margin: '0',
+                            fontFamily: 'DM Sans, sans-serif',
+                          }}
+                        >
+                          {poiDetail}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -343,7 +349,7 @@ export default function EstacionGDLPage({ params }) {
                     Tipo de Zona
                   </p>
                   <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
-                    {estacion.tipo_zona.replace('-', ' / ')}
+                    {(estacion.tipo_zona || '').replace('-', ' / ')}
                   </p>
                 </div>
                 <div>
@@ -358,7 +364,7 @@ export default function EstacionGDLPage({ params }) {
             </div>
 
             {/* TRANSFERENCIAS */}
-            {estacion.transferencias.length > 0 && (
+            {(estacion.transferencias || []).length > 0 && (
               <div
                 style={{
                   backgroundColor: '#f3f4f6',
@@ -380,7 +386,7 @@ export default function EstacionGDLPage({ params }) {
                   Conexiones
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
-                  {estacion.transferencias.map((transf, idx) => (
+                  {(estacion.transferencias || []).map((transf, idx) => (
                     <div
                       key={idx}
                       style={{

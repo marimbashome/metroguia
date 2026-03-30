@@ -174,7 +174,7 @@ export default function EstacionMacrobusPage({ params }) {
           {/* COLUMNA IZQUIERDA */}
           <div>
             {/* PUNTOS DE INTERÉS */}
-            {estacion.pois && estacion.pois.length > 0 && (
+            {(estacion.pois || []).length > 0 && (
               <div style={{ marginBottom: '64px' }}>
                 <h2
                   style={{
@@ -190,7 +190,7 @@ export default function EstacionMacrobusPage({ params }) {
                   Puntos de Interés Cercanos
                 </h2>
                 <div style={{ display: 'grid', gap: '16px' }}>
-                  {estacion.pois.map((poi, idx) => (
+                  {(estacion.pois || []).map((poi, idx) => (
                     <div
                       key={idx}
                       style={{
@@ -228,7 +228,7 @@ export default function EstacionMacrobusPage({ params }) {
             )}
 
             {/* TIPS */}
-            {(estacion.tips || []).length > 0 && (
+            {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
               <div style={{ marginBottom: '64px' }}>
                 <h2
                   style={{
@@ -252,7 +252,7 @@ export default function EstacionMacrobusPage({ params }) {
                     gap: '12px',
                   }}
                 >
-                  {(estacion.tips || []).map((tip, idx) => (
+                  {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                     <li
                       key={idx}
                       style={{
@@ -326,7 +326,7 @@ export default function EstacionMacrobusPage({ params }) {
                     Tipo de Zona
                   </p>
                   <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
-                    {estacion.tipo_zona.replace('-', ' / ')}
+                    {(estacion.tipo_zona || '').replace('-', ' / ')}
                   </p>
                 </div>
                 {estacion.mejor_horario && (
@@ -343,7 +343,7 @@ export default function EstacionMacrobusPage({ params }) {
             </div>
 
             {/* TRANSFERENCIAS */}
-            {estacion.transferencias && estacion.transferencias.length > 0 && (
+            {(estacion.transferencias || []).length > 0 && (
               <div
                 style={{
                   backgroundColor: '#f3f4f6',
@@ -365,7 +365,7 @@ export default function EstacionMacrobusPage({ params }) {
                   Conexiones
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
-                  {estacion.transferencias.map((transf, idx) => (
+                  {(estacion.transferencias || []).map((transf, idx) => (
                     <div
                       key={idx}
                       style={{

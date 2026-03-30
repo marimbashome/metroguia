@@ -293,14 +293,14 @@ export default function EcoviaPage() {
                         fontWeight: '400',
                       }}
                     >
-                      {estacion.tipo_zona.replace('-', ' / ')}
+                      {(estacion.tipo_zona || '').replace('-', ' / ')}
                     </p>
-                    {estacion.transferencias && estacion.transferencias.length > 0 && (
+                    {(estacion.transferencias || []).length > 0 && (
                       <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
                         <p style={{ fontSize: '12px', color: '#3B82F6', fontWeight: '700', margin: '0', marginBottom: '4px' }}>
                           Conecta con:
                         </p>
-                        {estacion.transferencias.map((transf, idx) => (
+                        {(estacion.transferencias || []).map((transf, idx) => (
                           <p
                             key={idx}
                             style={{
@@ -400,14 +400,14 @@ export default function EcoviaPage() {
                         fontWeight: '400',
                       }}
                     >
-                      {estacion.tipo_zona.replace('-', ' / ')}
+                      {(estacion.tipo_zona || '').replace('-', ' / ')}
                     </p>
-                    {estacion.transferencias && estacion.transferencias.length > 0 && (
+                    {(estacion.transferencias || []).length > 0 && (
                       <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
                         <p style={{ fontSize: '12px', color: '#3B82F6', fontWeight: '700', margin: '0', marginBottom: '4px' }}>
                           Conecta con:
                         </p>
-                        {estacion.transferencias.map((transf, idx) => (
+                        {(estacion.transferencias || []).map((transf, idx) => (
                           <p
                             key={idx}
                             style={{
@@ -494,9 +494,9 @@ export default function EcoviaPage() {
                     <p style={{ fontSize: '14px', fontWeight: '700', color: '#15803D', margin: '0' }}>
                       {estacion.nombre}
                     </p>
-                    {estacion.transferencias && estacion.transferencias.length > 0 && (
+                    {(estacion.transferencias || []).length > 0 && (
                       <p style={{ fontSize: '12px', color: '#65A30D', margin: '4px 0 0 0' }}>
-                        {estacion.transferencias.join(' • ')}
+                        {(estacion.transferencias || []).join(' • ')}
                       </p>
                     )}
                   </div>

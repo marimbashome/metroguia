@@ -211,11 +211,11 @@ export default function MatchPage({ params }) {
           </div>
 
           {/* Match Day Tips */}
-          {(sede.tips || []).length > 0 && (
+          {(Array.isArray(sede.tips) ? sede.tips : []).length > 0 && (
           <>
           <h2 style={{ color: '#00D4FF', marginBottom: '2rem', fontSize: '1.5rem' }}>Tips para el día del partido</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-            {(sede.tips || []).map((tip, idx) => (
+            {(Array.isArray(sede.tips) ? sede.tips : []).map((tip, idx) => (
               <div 
                 key={idx}
                 style={{

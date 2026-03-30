@@ -178,7 +178,7 @@ export default function EstacionQueretaroPage({ params }) {
             💡 Tips para tu visita
           </h3>
           <ul style={{ fontSize: '14px', color: '#374151', lineHeight: '1.8', paddingLeft: '20px' }}>
-            {(estacion.tips || []).map((tip, idx) => (
+            {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
               <li key={idx}>{tip}</li>
             ))}
           </ul>

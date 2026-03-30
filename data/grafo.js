@@ -4997,7 +4997,941 @@ export const grafo = {
       { slug: 'mb-avenida-general-anaya', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-el-caminero', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
-  },  'corredor-norte-tb': {
+  },
+  'mb-san-lazaro': {
+    ciudad: 'cdmx',
+    nombre: 'San Lázaro',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-merced', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-merced': {
+    ciudad: 'cdmx',
+    nombre: 'Merced',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-san-lazaro', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-centro-medico', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-centro-medico': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Médico',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-merced', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-balance', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-balance': {
+    ciudad: 'cdmx',
+    nombre: 'Balance',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-centro-medico', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-juarez', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-juarez': {
+    ciudad: 'cdmx',
+    nombre: 'Juárez',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-balance', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-hidalgo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-hidalgo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Hidalgo',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-juarez', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-belen', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-belen': {
+    ciudad: 'cdmx',
+    nombre: 'Belén',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-hidalgo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-santa-maria-la-redonda', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-santa-maria-la-redonda': {
+    ciudad: 'cdmx',
+    nombre: 'Santa María la Redonda',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-belen', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-san-pablo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-san-pablo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida San Pablo',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-santa-maria-la-redonda', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-norte-88', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-norte-88': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Norte 88',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-san-pablo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-norte-45', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-norte-45': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Norte 45',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-norte-88', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-poniente-150', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-poniente-150': {
+    ciudad: 'cdmx',
+    nombre: 'Poniente 150',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-norte-45', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-pdte-carranza', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-pdte-carranza': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Pdte. Carranza',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-poniente-150', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-la-paz', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-la-paz': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida La Paz',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-pdte-carranza', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-melchor-ocampo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-melchor-ocampo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Melchor Ocampo',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-la-paz', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-toreo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-toreo': {
+    ciudad: 'cdmx',
+    nombre: 'Toreo',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-melchor-ocampo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-palacio-nacional': {
+    ciudad: 'cdmx',
+    nombre: 'Palacio Nacional',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-zocalo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-zocalo': {
+    ciudad: 'cdmx',
+    nombre: 'Zócalo',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-palacio-nacional', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-isabel-la-catolica', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-isabel-la-catolica': {
+    ciudad: 'cdmx',
+    nombre: 'Isabel la Católica',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-zocalo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-benito-juarez', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-benito-juarez': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Benito Juárez',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-isabel-la-catolica', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-lazaro-cardenas', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-lazaro-cardenas': {
+    ciudad: 'cdmx',
+    nombre: 'Lázaro Cárdenas',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-benito-juarez', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-paseo-de-la-reforma': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Paseo de la Reforma',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-lazaro-cardenas', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-pdte-masaryk', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-pdte-masaryk': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Pdte. Masaryk',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-ejercito-nacional-oriente', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-ejercito-nacional-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Ejército Nacional Oriente',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-pdte-masaryk', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-mariano-escobedo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-mariano-escobedo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Mariano Escobedo',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-ejercito-nacional-oriente', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-observatorio', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-observatorio': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Observatorio',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-mariano-escobedo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-constituyentes', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-constituyentes': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Constituyentes',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-observatorio', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-lopez-mateos-oriente', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-lopez-mateos-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida López Mateos Oriente',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-constituyentes', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-cuauhtemoc', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-cuauhtemoc': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Cuauhtémoc',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-lopez-mateos-oriente', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-san-antonio-de-padua', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-san-antonio-de-padua': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida San Antonio de Padua',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-cuauhtemoc', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-terminal-2-aeropuerto', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-terminal-2-aeropuerto': {
+    ciudad: 'cdmx',
+    nombre: 'Terminal 2 Aeropuerto',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-san-antonio-de-padua', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-puerto-aéreo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-puerto-aéreo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Puerto Aéreo',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-terminal-2-aeropuerto', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-benito-juarez-aeropuerto', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-benito-juarez-aeropuerto': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Benito Juárez Aeropuerto',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-puerto-aéreo', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-terminal-1', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-terminal-1': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Terminal 1',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-benito-juarez-aeropuerto', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-avenida-terminal-3', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-terminal-3': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Terminal 3',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-terminal-1', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
+      { slug: 'mb-aeropuerto-internacional', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-aeropuerto-internacional': {
+    ciudad: 'cdmx',
+    nombre: 'Aeropuerto Internacional',
+    lineas: ['MB-L3'],
+    adyacentes: [
+      { slug: 'mb-avenida-terminal-3', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ]
+  },
+  'mb-santa-ursula': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Úrsula',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-chimalpopoca', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-chimalpopoca': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Chimalpopoca',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-santa-ursula', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-del-pedregal', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-del-pedregal': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida del Pedregal',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-chimalpopoca', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-universidad-sur-l4', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-universidad-sur-l4': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Universidad Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-del-pedregal', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-rio-magdalena', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-rio-magdalena': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Río Magdalena',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-universidad-sur-l4', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-san-jerónimo', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-san-jerónimo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida San Jerónimo',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-rio-magdalena', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-desierto-de-los-leones', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-desierto-de-los-leones': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Desierto de los Leones',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-san-jerónimo', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-contreras', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-contreras': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Contreras',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-desierto-de-los-leones', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-san-luis-potosi', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-san-luis-potosi': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida San Luis Potosí',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-contreras', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-eje-3-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-eje-3-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Eje 3 Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-san-luis-potosi', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-del-carmen', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-del-carmen': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida del Carmen',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-eje-3-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-miguel-angel-de-quevedo', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-miguel-angel-de-quevedo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Miguel Ángel de Quevedo',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-del-carmen', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-universidad-sur-coyoacan', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-universidad-sur-coyoacan': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Universidad Sur Coyoacán',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-miguel-angel-de-quevedo', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-mexico-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-mexico-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida México Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-universidad-sur-coyoacan', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-nativitas-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-nativitas-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Nativitas Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-mexico-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-avenida-xotepingo-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-xotepingo-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Xotepingo Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-nativitas-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' },
+      { slug: 'mb-terminal-central-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-terminal-central-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Terminal Central del Sur',
+    lineas: ['MB-L4'],
+    adyacentes: [
+      { slug: 'mb-avenida-xotepingo-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ]
+  },
+  'mb-indios-verdes-l5': {
+    ciudad: 'cdmx',
+    nombre: 'Indios Verdes',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-gustavo-baz', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-gustavo-baz': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Gustavo Báz',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-indios-verdes-l5', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-canada', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-canada': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Cañada',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-gustavo-baz', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-ecatepec', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-ecatepec': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Ecatepec',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-canada', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-aztecas', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-aztecas': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Aztecas',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-ecatepec', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-norte-180', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-norte-180': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Norte 180',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-aztecas', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-norte-200', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-norte-200': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Norte 200',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-norte-180', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-las-torres', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-las-torres': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Las Torres',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-norte-200', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-san-juan-de-dios', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-san-juan-de-dios': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida San Juan de Dios',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-las-torres', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-mariano-escobedo-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-mariano-escobedo-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Mariano Escobedo Norte',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-san-juan-de-dios', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-constituyentes-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-constituyentes-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Constituyentes Norte',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-mariano-escobedo-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-homero', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-homero': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Homero',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-constituyentes-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-veracruz', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-veracruz': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Veracruz',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-homero', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-ejercito-nacional-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-ejercito-nacional-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Ejército Nacional Norte',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-veracruz', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-avenida-monte-blanco', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-monte-blanco': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Monte Blanco',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-ejercito-nacional-norte', tiempo: 3, linea: 'MB-L5', tipo: 'linea' },
+      { slug: 'mb-observatorio', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-observatorio': {
+    ciudad: 'cdmx',
+    nombre: 'Observatorio',
+    lineas: ['MB-L5'],
+    adyacentes: [
+      { slug: 'mb-avenida-monte-blanco', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ]
+  },
+  'mb-circuito-poniente': {
+    ciudad: 'cdmx',
+    nombre: 'Circuito Interior Poniente',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-revolucion-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-revolucion-circuito': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Revolución',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-circuito-poniente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-paseo-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-paseo-circuito': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Paseo',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-revolucion-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-nueva-york', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-nueva-york': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Nueva York',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-paseo-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-amsterdam': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Ámsterdam',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-nueva-york', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-belgica': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Bélgica',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-bruselas': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Bruselas',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-estocolmo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-estocolmo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Estocolmo',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-republica-de-el-salvador', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-republica-de-el-salvador': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida República de El Salvador',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-estocolmo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-viaducto', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-viaducto': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Viaducto',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-republica-de-el-salvador', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-eje-central-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-eje-central-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Eje Central Norte',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-viaducto', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-reforma-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-reforma-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Reforma Norte',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-eje-central-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-chapultepec-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-chapultepec-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Chapultepec Oriente',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-reforma-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-tolstoi': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Tolstoi',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-chapultepec-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-aristoteles', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-aristoteles': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Aristóteles',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-pdte-luis-echeverria', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-pdte-luis-echeverria': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Pdte. Luis Echeverría',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-aristoteles', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-tlaxcala', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-tlaxcala': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Tlaxcala',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-pdte-luis-echeverria', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-morelos-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-morelos-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Morelos Oriente',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-tlaxcala', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-periferico-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-periferico-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Periférico Norte',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-morelos-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-circuito-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-circuito-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Circuito Interior Oriente',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-periferico-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-periferico-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Periférico Norte',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-lomas-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-lomas-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Lomas Norte',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-periferico-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-tlalpan-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-tlalpan-norte': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Tlalpan Norte',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-lomas-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-tolstoi-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-tolstoi-l7': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Tolstoi',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-tlalpan-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-periferico-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-periferico-oriente': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Periférico Oriente',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-tolstoi-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-estadio-azteca', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-estadio-azteca': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Estadio Azteca',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-periferico-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-periferico-sur-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-periferico-sur-l7': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Periférico Sur',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-estadio-azteca', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-ajusco', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-ajusco': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Ajusco',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-periferico-sur-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-contreras-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Contreras Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-ajusco', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-desierto-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-desierto-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Desierto Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-universidad-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-universidad-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Universidad Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-desierto-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-miguel-de-quevedo-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-miguel-de-quevedo-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Miguel de Quevedo Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-universidad-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-copilco-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-copilco-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Copilco Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-miguel-de-quevedo-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-division-norte-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-division-norte-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida División del Norte Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-copilco-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-insurrentes-sur-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-insurrentes-sur-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Insurgentes Sur Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-division-norte-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-periferico-sur', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-periferico-sur': {
+    ciudad: 'cdmx',
+    nombre: 'Periférico Sur',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-insurrentes-sur-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'corredor-norte-tb': {
     ciudad: 'cdmx',
     nombre: 'Corredor Norte Tb',
     lineas: ['TB-1'],

@@ -205,7 +205,7 @@ export default function EstacionMTY({ params }) {
               color: '#1a1a1a',
               textTransform: 'capitalize'
             }}>
-              {estacion.tipo_zona.replace('-', ' ')}
+              {(estacion.tipo_zona || '').replace('-', ' ')}
             </p>
           </div>
           <div style={{
@@ -237,7 +237,7 @@ export default function EstacionMTY({ params }) {
           </div>
         </div>
 
-        {estacion.transferencias.length > 0 && (
+        {(estacion.transferencias || []).length > 0 && (
           <div style={{
             background: '#FEF3C7',
             border: '2px solid #F97316',
@@ -260,14 +260,14 @@ export default function EstacionMTY({ params }) {
               color: '#78350f',
               margin: '0'
             }}>
-              Conecta con Línea {estacion.transferencias.join(', ')} en esta estación
+              Conecta con Línea {(estacion.transferencias || []).join(', ')} en esta estación
             </p>
           </div>
         )}
       </section>
 
       {/* PUNTOS DE INTERÉS */}
-      {estacion.pois.length > 0 && (
+      {(estacion.pois || []).length > 0 && (
         <section style={{
           background: '#f9fafb',
           padding: '50px 20px'
@@ -289,42 +289,51 @@ export default function EstacionMTY({ params }) {
               gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
               gap: '20px'
             }}>
-              {estacion.pois.map((poi, idx) => (
-                <div key={idx} style={{
-                  background: '#fff',
-                  padding: '20px',
-                  borderRadius: '8px',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                  borderTop: `4px solid ${colorLinea}`
-                }}>
-                  <h3 style={{
-                    fontFamily: 'Syne, sans-serif',
-                    fontSize: '18px',
-                    fontWeight: 700,
-                    margin: '0 0 8px 0',
-                    color: '#1a1a1a'
+              {(estacion.pois || []).map((poi, idx) => {
+                const poiName = typeof poi === 'string' ? poi : poi.nombre;
+                const poiTipo = typeof poi === 'string' ? null : poi.tipo;
+                const poiDist = typeof poi === 'string' ? null : poi.distancia;
+                return (
+                  <div key={idx} style={{
+                    background: '#fff',
+                    padding: '20px',
+                    borderRadius: '8px',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                    borderTop: `4px solid ${colorLinea}`
                   }}>
-                    {poi.nombre}
-                  </h3>
-                  <p style={{
-                    fontFamily: 'DM Sans, sans-serif',
-                    fontSize: '14px',
-                    color: '#666',
-                    margin: '0 0 8px 0',
-                    textTransform: 'capitalize'
-                  }}>
-                    📍 {poi.tipo}
-                  </p>
-                  <p style={{
-                    fontFamily: 'DM Sans, sans-serif',
-                    fontSize: '13px',
-                    color: '#999',
-                    margin: '0'
-                  }}>
-                    ⏱️ {poi.distancia}
-                  </p>
-                </div>
-              ))}
+                    <h3 style={{
+                      fontFamily: 'Syne, sans-serif',
+                      fontSize: '18px',
+                      fontWeight: 700,
+                      margin: '0 0 8px 0',
+                      color: '#1a1a1a'
+                    }}>
+                      {poiName}
+                    </h3>
+                    {poiTipo && (
+                      <p style={{
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontSize: '14px',
+                        color: '#666',
+                        margin: '0 0 8px 0',
+                        textTransform: 'capitalize'
+                      }}>
+                        📍 {poiTipo}
+                      </p>
+                    )}
+                    {poiDist && (
+                      <p style={{
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontSize: '13px',
+                        color: '#999',
+                        margin: '0'
+                      }}>
+                        ⏱️ {poiDist}
+                      </p>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

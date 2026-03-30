@@ -122,19 +122,24 @@ export default function MexicableEstacionPage({ params }) {
             <div style={{ marginBottom: '2rem' }}>
               <h2 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '1rem' }}>Lugares cercanos</h2>
               <div style={{ display: 'grid', gap: '0.75rem' }}>
-                {estacion.pois.map((poi, i) => (
-                  <div key={i} style={{
-                    padding: '1rem', borderRadius: 'var(--radius)',
-                    border: '1px solid var(--border)', backgroundColor: 'var(--surface)',
-                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                  }}>
-                    <div>
-                      <div style={{ fontWeight: 600, color: 'var(--text)', marginBottom: '0.125rem' }}>{poi.nombre}</div>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>{poi.tipo}</div>
+                {estacion.pois.map((poi, i) => {
+                  const poiName = typeof poi === 'string' ? poi : poi.nombre
+                  const poiType = typeof poi === 'string' ? '' : poi.tipo
+                  const poiDistance = typeof poi === 'string' ? '' : poi.distancia
+                  return (
+                    <div key={i} style={{
+                      padding: '1rem', borderRadius: 'var(--radius)',
+                      border: '1px solid var(--border)', backgroundColor: 'var(--surface)',
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                    }}>
+                      <div>
+                        <div style={{ fontWeight: 600, color: 'var(--text)', marginBottom: '0.125rem' }}>{poiName}</div>
+                        {poiType && <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>{poiType}</div>}
+                      </div>
+                      {poiDistance && <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{poiDistance}</div>}
                     </div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{poi.distancia}</div>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           )}

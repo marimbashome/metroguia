@@ -307,7 +307,7 @@ export default function EstacionPage({ params }) {
                     borderColor: 'var(--border-light)',
                     textTransform: 'capitalize',
                   }}>
-                    {estacion.tipo_zona.replace('-', ' ')}
+                    {(estacion.tipo_zona || '').replace('-', ' ')}
                   </span>
                 )}
               </div>
