@@ -227,11 +227,11 @@ export default function EstacionTrenMayaPage({ params }) {
         )}
 
         {/* TIPS Y RECOMENDACIONES */}
-        {estacion.tips.length > 0 && (
+        {(estacion.tips || []).length > 0 && (
           <div style={sectionStyles}>
             <h2 style={sectionTitleStyles}>Tips y Recomendaciones</h2>
             <div style={cardStyles}>
-              {estacion.tips.map((tip, idx) => (
+              {(estacion.tips || []).map((tip, idx) => (
                 <div key={idx} style={tipStyles}>
                   <div style={tipNumberStyles}>{idx + 1}</div>
                   <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.6', margin: 0 }}>

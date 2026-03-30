@@ -228,7 +228,7 @@ export default function EstacionMacrobusPage({ params }) {
             )}
 
             {/* TIPS */}
-            {estacion.tips && estacion.tips.length > 0 && (
+            {(estacion.tips || []).length > 0 && (
               <div style={{ marginBottom: '64px' }}>
                 <h2
                   style={{
@@ -252,7 +252,7 @@ export default function EstacionMacrobusPage({ params }) {
                     gap: '12px',
                   }}
                 >
-                  {estacion.tips.map((tip, idx) => (
+                  {(estacion.tips || []).map((tip, idx) => (
                     <li
                       key={idx}
                       style={{

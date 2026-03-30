@@ -295,7 +295,13 @@ export default function BuscadorRutas({ asPage = false }) {
       totalEstaciones: path.length,
     });
 
-    setTimeout(() => resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 150);
+    setTimeout(() => {
+      const isMobile = window.innerWidth <= 768;
+      resultRef.current?.scrollIntoView({
+        behavior: isMobile ? 'auto' : 'smooth',
+        block: 'start'
+      });
+    }, 150);
   }, [origen, destino]);
 
   const handleSwap = () => {
@@ -524,12 +530,17 @@ const s = {
     zIndex: 1000,
     overflow: 'hidden',
     border: '1px solid #eee',
+    maxHeight: '200px',
+    overflowY: 'auto',
   },
   dropdownItem: {
     padding: '0.75rem 1rem',
     cursor: 'pointer',
     borderBottom: '1px solid #f4f4f4',
     transition: 'background 0.1s',
+    minHeight: '44px',
+    display: 'flex',
+    alignItems: 'center',
   },
   dropdownName: {
     fontSize: '0.95rem',
@@ -625,6 +636,8 @@ const s = {
     gap: '0.5rem',
     flexShrink: 0,
     minWidth: '70px',
+    minHeight: '44px',
+    justifyContent: 'center',
   },
   stripDot: {
     width: '16px',
@@ -750,7 +763,7 @@ const s = {
   },
   routeGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(170px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))',
     gap: '0.65rem',
   },
   routeCard: {
@@ -766,6 +779,8 @@ const s = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
     fontFamily: "'DM Sans', sans-serif",
     transition: 'box-shadow 0.15s, border-color 0.15s',
+    minHeight: '44px',
+    justifyContent: 'center',
   },
   routeCardActive: {
     border: '2px solid var(--metro-orange)',

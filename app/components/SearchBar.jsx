@@ -161,7 +161,7 @@ export default function SearchBar({
   const inputRowStyle = {
     display: 'flex',
     gap: '12px',
-    alignItems: 'flex-start',
+    alignItems: 'flex-end',
     flexWrap: 'wrap',
   }
 
@@ -216,7 +216,7 @@ export default function SearchBar({
     border: '1px solid var(--border)',
     borderRadius: '8px',
     zIndex: 1000,
-    maxHeight: '250px',
+    maxHeight: '200px',
     overflowY: 'auto',
     boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
   }
@@ -228,16 +228,23 @@ export default function SearchBar({
     borderBottom: '1px solid var(--border)',
     fontSize: '14px',
     transition: 'background-color 0.15s',
+    minHeight: '44px',
+    display: 'flex',
+    alignItems: 'center',
   }
 
   const dropdownItemHoverStyle = {
     ...dropdownItemStyle,
     backgroundColor: 'var(--surface)',
+    minHeight: '44px',
+    display: 'flex',
+    alignItems: 'center',
   }
 
   const swapButtonStyle = {
-    marginTop: '24px',
     padding: '10px 14px',
+    minHeight: '44px',
+    minWidth: '44px',
     backgroundColor: 'transparent',
     border: '1px solid var(--border)',
     borderRadius: '8px',

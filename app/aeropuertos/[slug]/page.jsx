@@ -131,13 +131,13 @@ export default function AeropuertoPage({ params }) {
           </div>
 
           {/* Tips */}
-          {airport.comoLlegar.tips && airport.comoLlegar.tips.length > 0 && (
+          {(airport.comoLlegar?.tips || []).length > 0 && (
             <div style={{
               padding: '1rem 1.25rem', borderRadius: 'var(--radius)',
               backgroundColor: 'var(--primary-glow)', border: '1px solid var(--primary-border)',
             }}>
               <div style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>💡 Tips</div>
-              {airport.comoLlegar.tips.map((tip, i) => (
+              {(airport.comoLlegar?.tips || []).map((tip, i) => (
                 <p key={i} style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: i < airport.comoLlegar.tips.length - 1 ? '0 0 0.5rem' : 0, lineHeight: 1.5 }}>
                   • {tip}
                 </p>
