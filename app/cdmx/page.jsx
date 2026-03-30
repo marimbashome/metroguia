@@ -1,5 +1,4 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
-import { lineasMetro } from '@/data/cdmx/metro'
 import { metrobusLineas, metrobusSistema } from '@/data/cdmx/metrobus'
 import { cablebusLineas, cablebusSistema } from '@/data/cdmx/cablebus'
 import { estaciones } from '@/data/estaciones'
