@@ -4751,6 +4751,67 @@ export const rutasPopulares = [
   { origen: "buenavista", destino: "zapotitlan", titulo: "Buenavista a Zapotitlán" },
   { origen: "buenavista", destino: "zaragoza", titulo: "Buenavista a Zaragoza" },
 
+  // ─── MULTIMODAL ROUTES (Mexicable + Metro + Tren Ligero) ───
+  { origen: "aeropuerto", destino: "zocalo", titulo: "Aeropuerto CDMX al Centro Histórico (Zócalo)" },
+  { origen: "aeropuerto", destino: "xochimilco", titulo: "Aeropuerto CDMX a Xochimilco (Metro + Tren Ligero)" },
+  { origen: "aeropuerto", destino: "tren-ligero-estadio-azteca", titulo: "Aeropuerto CDMX al Estadio Azteca" },
+  { origen: "buenavista", destino: "tren-ligero-estadio-azteca", titulo: "Buenavista (Tren Suburbano) al Estadio Azteca" },
+  { origen: "indios-verdes", destino: "coyoacan", titulo: "Indios Verdes a Coyoacán" },
+  { origen: "indios-verdes", destino: "universidad", titulo: "Indios Verdes a Ciudad Universitaria" },
+  { origen: "indios-verdes", destino: "tren-ligero-estadio-azteca", titulo: "Indios Verdes al Estadio Azteca" },
+  { origen: "mexicable-indios-verdes", destino: "zocalo", titulo: "Mexicable (Ecatepec) al Centro Histórico" },
+  { origen: "mexicable-indios-verdes", destino: "bellas-artes", titulo: "Mexicable (Ecatepec) a Bellas Artes" },
+  { origen: "mexicable-indios-verdes", destino: "chapultepec", titulo: "Mexicable (Ecatepec) a Chapultepec" },
+  { origen: "mexicable-indios-verdes", destino: "coyoacan", titulo: "Mexicable (Ecatepec) a Coyoacán" },
+  { origen: "mexicable-indios-verdes", destino: "tren-ligero-estadio-azteca", titulo: "Mexicable (Ecatepec) al Estadio Azteca" },
+  { origen: "mexicable-indios-verdes", destino: "aeropuerto", titulo: "Mexicable (Ecatepec) al Aeropuerto CDMX" },
+  { origen: "mexicable-indios-verdes", destino: "insurgentes", titulo: "Mexicable (Ecatepec) a Insurgentes" },
+  { origen: "mexicable-indios-verdes", destino: "polanco", titulo: "Mexicable (Ecatepec) a Polanco" },
+  { origen: "mexicable-la-canada", destino: "zocalo", titulo: "Mexicable La Cañada al Centro Histórico" },
+  { origen: "mexicable-la-canada", destino: "aeropuerto", titulo: "Mexicable La Cañada al Aeropuerto CDMX" },
+  { origen: "mexicable-santa-clara", destino: "zocalo", titulo: "Mexicable Santa Clara al Centro Histórico" },
+  { origen: "constitucion-de-1917", destino: "zocalo", titulo: "Constitución de 1917 al Zócalo (Metro L8)" },
+  { origen: "pantitlan", destino: "xochimilco", titulo: "Pantitlán a Xochimilco (Metro + Tren Ligero)" },
+  { origen: "pantitlan", destino: "tren-ligero-estadio-azteca", titulo: "Pantitlán al Estadio Azteca" },
+  { origen: "el-rosario", destino: "tren-ligero-estadio-azteca", titulo: "El Rosario al Estadio Azteca" },
+  { origen: "universidad", destino: "tren-ligero-estadio-azteca", titulo: "Universidad al Estadio Azteca" },
+  { origen: "tacuba", destino: "xochimilco", titulo: "Tacuba a Xochimilco" },
+  { origen: "polanco", destino: "xochimilco", titulo: "Polanco a Xochimilco" },
+  { origen: "aeropuerto", destino: "polanco", titulo: "Aeropuerto CDMX a Polanco" },
+  { origen: "aeropuerto", destino: "condesa", titulo: "Aeropuerto CDMX a la Condesa" },
+  { origen: "aeropuerto", destino: "roma", titulo: "Aeropuerto CDMX a la Roma" },
+
+  // ============================================
+  // GDL — Rutas populares Guadalajara (20 curated)
+  // FIFA 2026, turismo, aeropuerto, destinos clave
+  // ============================================
+  // FIFA 2026 — Estadio Akron
+  { origen: "guadalajara-centro", destino: "estadio-chivas-mp", titulo: "Centro a Estadio Akron (FIFA 2026)", ciudad: "gdl" },
+  { origen: "arcos-de-zapopan", destino: "estadio-chivas-mp", titulo: "Zapopan a Estadio Akron (FIFA 2026)", ciudad: "gdl" },
+  { origen: "central-de-autobuses", destino: "estadio-chivas-mp", titulo: "Central de Autobuses a Estadio Akron", ciudad: "gdl" },
+  { origen: "gdl-juarez", destino: "estadio-chivas-mp", titulo: "Juárez a Estadio Akron en tren", ciudad: "gdl" },
+  { origen: "tlaquepaque-centro", destino: "estadio-chivas-mp", titulo: "Tlaquepaque a Estadio Akron", ciudad: "gdl" },
+  { origen: "periferico-sur", destino: "estadio-chivas-mp", titulo: "Periférico Sur a Estadio Akron", ciudad: "gdl" },
+  // Aeropuerto GDL (via Macro Periférico Barranca → conectar)
+  { origen: "barranca-huentitan-mp", destino: "guadalajara-centro", titulo: "Aeropuerto GDL a Centro", ciudad: "gdl" },
+  { origen: "guadalajara-centro", destino: "barranca-huentitan-mp", titulo: "Centro a zona Aeropuerto GDL", ciudad: "gdl" },
+  // Tlaquepaque-Zapopan
+  { origen: "arcos-de-zapopan", destino: "tlaquepaque-centro", titulo: "Zapopan a Tlaquepaque Pueblo Mágico", ciudad: "gdl" },
+  { origen: "tlaquepaque-centro", destino: "arcos-de-zapopan", titulo: "Tlaquepaque a Zapopan Basílica", ciudad: "gdl" },
+  // Destinos turísticos
+  { origen: "gdl-juarez", destino: "arcos-de-zapopan", titulo: "Centro a Basílica de Zapopan", ciudad: "gdl" },
+  { origen: "guadalajara-centro", destino: "san-juan-de-dios", titulo: "Centro a Mercado San Juan de Dios", ciudad: "gdl" },
+  { origen: "guadalajara-centro", destino: "zoologico-mc", titulo: "Centro a Zoológico de Guadalajara", ciudad: "gdl" },
+  { origen: "zapopan-centro", destino: "guadalajara-centro", titulo: "Zapopan Centro a Guadalajara Centro", ciudad: "gdl" },
+  { origen: "gdl-juarez", destino: "central-de-autobuses", titulo: "Centro a Central de Autobuses", ciudad: "gdl" },
+  // Línea 4 — Tlajomulco
+  { origen: "las-juntas", destino: "tlajomulco-centro", titulo: "Las Juntas a Tlajomulco en L4", ciudad: "gdl" },
+  { origen: "tlajomulco-centro", destino: "guadalajara-centro", titulo: "Tlajomulco a Centro Guadalajara", ciudad: "gdl" },
+  // Macro Periférico ring
+  { origen: "periferico-norte-mp", destino: "periferico-sur-mp", titulo: "Periférico Norte a Sur en Macro", ciudad: "gdl" },
+  { origen: "iteso-mp", destino: "periferico-belenes-mp", titulo: "ITESO a Periférico Belenes", ciudad: "gdl" },
+  { origen: "lopez-mateos-mp", destino: "estadio-chivas-mp", titulo: "López Mateos a Estadio Akron", ciudad: "gdl" },
+
 ];
 
 /**

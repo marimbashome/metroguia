@@ -1,4 +1,7 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
+import { lineasMetro } from '@/data/cdmx/metro'
+import { metrobusLineas, metrobusSistema } from '@/data/cdmx/metrobus'
+import { cablebusLineas, cablebusSistema } from '@/data/cdmx/cablebus'
 import { estaciones } from '@/data/estaciones'
 import { mundial } from '@/data/mundial'
 import SearchBar from '@/app/components/SearchBar'
@@ -8,9 +11,9 @@ import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export function generateMetadata() {
   return {
-    title: 'Metro CDMX — Guía de movilidad turística | MetroGuia',
-    description: 'Plataforma de movilidad para el Metro Ciudad de México. 195 estaciones, 12 líneas, rutas al Estadio Azteca. Planea tu viaje al Mundial FIFA 2026.',
-    keywords: 'Metro CDMX, transporte, movilidad, turismo, Mundial 2026',
+    title: 'Transporte CDMX — 7 sistemas: Metro, Mexicable, Cablebús, Tren Ligero | MetroGuia',
+    description: 'Guía de 7 sistemas de transporte en CDMX: Metro (12 líneas), Tren Ligero, Mexicable, Cablebús, Trolebús, Tren Suburbano y Metrobús. Rutas al Estadio Azteca. Mundial FIFA 2026.',
+    keywords: 'Metro CDMX, Mexicable, Cablebús, Tren Ligero, Tren Suburbano, Trolebús, Metrobús, transporte, movilidad, turismo, Mundial 2026',
   }
 }
 
@@ -100,7 +103,7 @@ export default function CDMXPage() {
             marginBottom: '2rem',
             lineHeight: '1.6',
           }}>
-            Plataforma de movilidad para turistas · 195 estaciones · 12 líneas · 226 km
+            Plataforma de movilidad para turistas · 6 sistemas · 250+ estaciones · Metro, Tren Ligero, Tren Suburbano, Trolebús
           </p>
 
           {/* Stats badges */}
@@ -329,6 +332,152 @@ export default function CDMXPage() {
         </div>
       </section>
 
+      {/* Otros Sistemas de Transporte */}
+      <section style={{
+        padding: '4rem 1rem',
+        borderBottom: '1px solid var(--border)',
+        background: 'linear-gradient(135deg, rgba(0, 114, 206, 0.03) 0%, var(--surface) 100%)',
+      }}>
+        <div className="container">
+          <h2 style={{ marginBottom: '0.5rem' }}>Más Sistemas de Transporte</h2>
+          <p style={{
+            color: 'var(--text-muted)',
+            marginBottom: '2rem',
+            fontSize: '0.95rem',
+          }}>
+            Tren Ligero, Tren Suburbano y Trolebús — conectados con la red de Metro
+          </p>
+
+          <div className="grid-3">
+            <a href="/cdmx/tren-ligero/" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div style={{
+                    backgroundColor: '#FFD700', width: '2.5rem', height: '2.5rem', borderRadius: 'var(--radius)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '1.25rem', flexShrink: 0,
+                  }}>🚊</div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.25rem', color: 'var(--text)' }}>Tren Ligero</h4>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Tasqueña → Xochimilco</p>
+                  </div>
+                </div>
+                <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                  18 estaciones · Estadio Azteca · Trajineras · $3 MXN
+                </div>
+                <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.875rem', marginTop: 'auto' }}>
+                  Ver estaciones →
+                </div>
+              </div>
+            </a>
+
+            <a href="/cdmx/tren-suburbano/" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div style={{
+                    backgroundColor: '#00A651', width: '2.5rem', height: '2.5rem', borderRadius: 'var(--radius)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '1.25rem', flexShrink: 0,
+                  }}>🚆</div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.25rem', color: 'var(--text)' }}>Tren Suburbano</h4>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Buenavista → Cuautitlán + AIFA</p>
+                  </div>
+                </div>
+                <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                  8 estaciones · Ramal AIFA · $11-35 MXN
+                </div>
+                <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.875rem', marginTop: 'auto' }}>
+                  Ver estaciones →
+                </div>
+              </div>
+            </a>
+
+            <a href="/cdmx/trolebus/" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div style={{
+                    backgroundColor: '#0072CE', width: '2.5rem', height: '2.5rem', borderRadius: 'var(--radius)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '1.25rem', flexShrink: 0,
+                  }}>🚎</div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.25rem', color: 'var(--text)' }}>Trolebús</h4>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>11 líneas + L11 Elevada</p>
+                  </div>
+                </div>
+                <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                  L11 Elevada: Constitución de 1917 → Chalco · $4-13 MXN
+                </div>
+                <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.875rem', marginTop: 'auto' }}>
+                  Ver líneas →
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Metrobús — 7 líneas de Tránsito Rápido */}
+      <section style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '3rem' }}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h3 style={{ marginBottom: '0.5rem', color: 'var(--text)' }}>Metrobús</h3>
+          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+            Sistema de tránsito rápido con 7 líneas y 151 estaciones. Conecta zonas metropolitanas clave.
+          </p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+          {Object.entries(metrobusLineas).map(([id, linea]) => (
+            <a key={id} href={`/cdmx/metrobus/linea/${id}/`} style={{ textDecoration: 'none' }}>
+              <div className="card" style={{
+                display: 'flex', flexDirection: 'column', gap: '0.5rem', padding: '1rem',
+                backgroundColor: linea.color || '#FF6B35', color: '#fff'
+              }}>
+                <div style={{ fontWeight: 700, fontSize: '1rem' }}>Línea {linea.numero || id}</div>
+                <div style={{ fontSize: '0.75rem', opacity: 0.9 }}>
+                  {linea.origen} → {linea.destino || 'Destino'}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div style={{ marginTop: '1.5rem' }}>
+          <a href="/cdmx/metrobus/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}>
+            Ver todas las líneas y estaciones →
+          </a>
+        </div>
+      </section>
+
+      {/* Cablebús — 3 líneas de teleférico */}
+      <section style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '3rem' }}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h3 style={{ marginBottom: '0.5rem', color: 'var(--text)' }}>Cablebús</h3>
+          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+            Transporte aéreo por cable con 3 líneas y 19 estaciones. Acceso a zonas de difícil transporte terrestre.
+          </p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+          {Object.entries(cablebusLineas).map(([id, linea]) => (
+            <a key={id} href={`/cdmx/cablebus/linea/${id}/`} style={{ textDecoration: 'none' }}>
+              <div className="card" style={{
+                display: 'flex', flexDirection: 'column', gap: '0.5rem', padding: '1rem',
+                backgroundColor: linea.color || '#9B59B6', color: '#fff'
+              }}>
+                <div style={{ fontWeight: 700, fontSize: '1rem' }}>Línea {linea.numero || id}</div>
+                <div style={{ fontSize: '0.75rem', opacity: 0.9 }}>
+                  {linea.origen} → {linea.destino || 'Destino'}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div style={{ marginTop: '1.5rem' }}>
+          <a href="/cdmx/cablebus/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}>
+            Ver todas las líneas y estaciones →
+          </a>
+        </div>
+      </section>
       <AdBannerLazyInArticle slot="1082410395" />
 
       {/* Affiliate Transport Card */}

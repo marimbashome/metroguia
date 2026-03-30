@@ -93,6 +93,18 @@ export default function NavBar() {
             fontWeight: 500,
             textDecoration: 'none',
           }}>{t.nav?.accommodation || 'Hospedaje'}</a>
+          <a href={`${prefix}/aeropuertos/`} style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            fontWeight: 500,
+            textDecoration: 'none',
+          }}>{"Aeropuertos"}</a>
+          <a href={`${prefix}/terminales/`} style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            fontWeight: 500,
+            textDecoration: 'none',
+          }}>{"Terminales"}</a>
 
           {/* City pills */}
           <div style={{

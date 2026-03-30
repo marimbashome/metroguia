@@ -637,7 +637,7 @@ export const estacionesMTY = [
     ]
   },
   {
-    "slug": "cuauhtemoc",
+    "slug": "mty-cuauhtemoc",
     "nombre": "Cuauhtémoc",
     "linea": "1",
     "municipio": "Monterrey",
@@ -1362,7 +1362,7 @@ export const estacionesMTY = [
     ]
   },
   {
-    "slug": "universidad",
+    "slug": "mty-universidad",
     "nombre": "Universidad",
     "linea": "2",
     "municipio": "San Nicolás de los Garza",
@@ -1923,6 +1923,438 @@ export const estacionesMTY = [
         "tipo": "Gastronomía",
         "distancia": "300 metros",
         "descripcion": "Restaurantes con comida regional y especialidades norteñas."
+      }
+    ]
+  }
+  , {
+    "slug": "hospital-metropolitano",
+    "nombre": "Hospital Metropolitano",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "salud",
+    "pois": ["Hospital Metropolitano", "Zona médica", "Clínicas privadas"],
+    "transferencias": [],
+    "seo_title": "Estación Hospital Metropolitano Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Terminal norte de Línea 3. Zona hospitalaria con acceso directo a Hospital Metropolitano y servicios de salud. Guía turística MetroGuia.",
+    "h1": "Estación Hospital Metropolitano - Línea 3",
+    "intro": "Terminal norte de Línea 3, punto de acceso principal a la zona médica más importante del área metropolitana. Estación moderna con elevadores y rampas de acceso, ubicada estratégicamente para visitantes que requieran servicios de salud.",
+    "tips": "Accesibilidad completa para personas con movilidad reducida. Elevadores de gran capacidad y rampas señalizadas. Estacionamiento para usuarios de transporte privado. Servicios de información turística disponibles.",
+    "mejor_horario": "Mañana (6:00-9:00) para menor congestión. Evitar horarios de cambios de turno hospitalario.",
+    "mundial_relevancia": "Centro médico de referencia regional con equipamiento de clase internacional.",
+    "descripcion_turistica": "Acceso directo a uno de los principales centros hospitalarios privados de la región. La zona cuenta con servicios complementarios, farmacias, laboratorios y restaurantes especializados para acompañantes.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Terminal subterránea con elevadores de 2.5 metros de altura. Rampas con pendiente accesible. Piso táctil en toda la estación. Acceso prioritario para personas con discapacidad."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00. Terminal de línea operada 24/7 con personal de seguridad y asistencia."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Hospital Metropolitano",
+        "tipo": "Salud",
+        "distancia": "Acceso directo",
+        "descripcion": "Complejo hospitalario con servicios de urgencias, cirugía y especialidades médicas."
+      },
+      {
+        "nombre": "Zona de Farmacias y Laboratorios",
+        "tipo": "Salud",
+        "distancia": "100 metros",
+        "descripcion": "Múltiples farmacias y laboratorios clínicos para análisis y servicios médicos complementarios."
+      },
+      {
+        "nombre": "Restaurantes para Acompañantes",
+        "tipo": "Gastronomía",
+        "distancia": "150 metros",
+        "descripcion": "Cafeterías y restaurantes de comida rápida y saludable para visitantes y acompañantes."
+      }
+    ]
+  },
+  {
+    "slug": "los-angeles",
+    "nombre": "Los Ángeles",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "residencial",
+    "pois": ["Zona residencial Los Ángeles", "Parques vecinales", "Comercio local"],
+    "transferencias": [],
+    "seo_title": "Estación Los Ángeles Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Los Ángeles L3. Acceso a zona residencial consolidada con parques y comercio local. Guía turística MetroGuia.",
+    "h1": "Estación Los Ángeles - Línea 3",
+    "intro": "Estación que sirve a la consolidada zona residencial de Los Ángeles, barrio tradicional de Monterrey con carácter vecinal y comercio local establecido. Punto de conexión ideal para residentes y visitantes que exploren la autenticidad de la ciudad.",
+    "tips": "Explora las tiendas tradicionales alrededor de la estación. Los fines de semana hay mayor afluencia de comercio local. Acerca transporte seguro a residencias de clase media consolidada.",
+    "mejor_horario": "Tarde (14:00-18:00) para interactuar con comercio local. Mañana para menos congestión.",
+    "mundial_relevancia": "Barrio residencial tradicional que representa la estructura urbana de Monterrey.",
+    "descripcion_turistica": "Acceso a una zona residencial auténtica donde conviven viviendas consolidadas, pequeños comercios y espacios verdes. Ideal para quienes deseen conocer cómo viven los regiomontanos fuera de zonas turísticas.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación subterránea con elevadores funcionales. Rampas de acceso en buenas condiciones. Piso táctil señalizado."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Los Ángeles",
+        "tipo": "Recreación",
+        "distancia": "200 metros",
+        "descripcion": "Parque vecinal con juegos infantiles, áreas verdes y cancha de básquetbol."
+      },
+      {
+        "nombre": "Comercio Local Tradicional",
+        "tipo": "Comercio",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas de abarrotes, panaderías y negocios familiares de barrio."
+      },
+      {
+        "nombre": "Restaurantes de Comida Casera",
+        "tipo": "Gastronomía",
+        "distancia": "150 metros",
+        "descripcion": "Comedores con cocina norteña tradicional y platillos caseros regionales."
+      }
+    ]
+  },
+  {
+    "slug": "ruiz-cortines",
+    "nombre": "Ruiz Cortines",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "residencial-comercial",
+    "pois": ["Av. Ruiz Cortines", "Zona comercial", "Servicios varios"],
+    "transferencias": ["Ecovía"],
+    "seo_title": "Estación Ruiz Cortines Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Ruiz Cortines L3 con transferencia a Ecovía. Zona comercial y residencial. Guía turística MetroGuia.",
+    "h1": "Estación Ruiz Cortines - Línea 3",
+    "intro": "Estación de transferencia entre Metro Línea 3 y BRT Ecovía, ubicada en la importante avenida Ruiz Cortines. Zona con mezcla de comercio local y residencias, punto estratégico para viajeros que necesiten conectar diferentes modos de transporte.",
+    "tips": "Transferencia a Ecovía disponible con conexión directa. Excelente punto para acceder a comercios locales de la avenida. Zona segura con presencia de transportistas. Ideal como punto de conexión multimodal.",
+    "mejor_horario": "Mañana (7:00-10:00) para transferencias rápidas. Tarde para compras comerciales.",
+    "mundial_relevancia": "Nodo de intermodalidad que conecta transporte masivo con BRT regional.",
+    "descripcion_turistica": "Estación estratégica que permite conectar el metro con el sistema Ecovía de autobuses de tránsito rápido. La zona de Ruiz Cortines es comercial y transitada, con opciones de compras y servicios diversos.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación con elevadores para transbordo accesible a Ecovía. Rampas señalizadas en zona de conexión. Piso táctil en plataforma."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00. Conexión con Ecovía L-S 5:00-22:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Estaciones Ecovía",
+        "tipo": "Transporte",
+        "distancia": "Acceso directo",
+        "descripcion": "Conexión rápida a sistema Ecovía con rutas regionales hacia municipios cercanos."
+      },
+      {
+        "nombre": "Zona Comercial Ruiz Cortines",
+        "tipo": "Comercio",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas de ropa, electrónica, servicios financieros y comercio variado."
+      },
+      {
+        "nombre": "Cafeterías y Restaurantes",
+        "tipo": "Gastronomía",
+        "distancia": "200 metros",
+        "descripcion": "Amplia oferta de restaurantes y cafeterías para diferentes presupuestos."
+      }
+    ]
+  },
+  {
+    "slug": "moderna",
+    "nombre": "Colonia Moderna",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "residencial",
+    "pois": ["Colonia Moderna", "Zona residencial", "Parques locales"],
+    "transferencias": [],
+    "seo_title": "Estación Colonia Moderna Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Colonia Moderna L3. Acceso a zona residencial establecida de Monterrey. Guía turística MetroGuia.",
+    "h1": "Estación Colonia Moderna - Línea 3",
+    "intro": "Estación que da acceso a Colonia Moderna, una de las zonas residenciales más establecidas y seguras de Monterrey. Barrio con arquitectura característica y vida comunitaria vibrante, punto de conexión para residentes y visitantes interesados en la Monterrey auténtica.",
+    "tips": "Zona segura y bien iluminada. Parques vecinales con horarios regulares. Buen acceso a servicios de salud y educación. Espacios verdes disponibles para descanso.",
+    "mejor_horario": "Tarde y fin de semana para disfrutar parques. Mañana para acceso rápido.",
+    "mundial_relevancia": "Barrio residencial consolidado que ejemplifica desarrollo urbano ordenado.",
+    "descripcion_turistica": "Acceso a una colonia residencial con carácter propio, donde conviven residencias, pequeños comercios y áreas verdes. Ideal para experimentar la vida cotidiana regiomontana fuera de circuitos turísticos tradicionales.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación subterránea completamente accesible con elevadores operativos y rampas en excelente estado."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Colonia Moderna",
+        "tipo": "Recreación",
+        "distancia": "150 metros",
+        "descripcion": "Parque principal con áreas verdes, juegos infantiles y senderos para correr."
+      },
+      {
+        "nombre": "Escuelas y Servicios Educativos",
+        "tipo": "Educación",
+        "distancia": "300 metros",
+        "descripcion": "Varias escuelas primarias y secundarias de buena reputación en la zona."
+      },
+      {
+        "nombre": "Clínicas y Farmacias",
+        "tipo": "Salud",
+        "distancia": "200 metros",
+        "descripcion": "Servicios de salud privada y farmacias para atención médica local."
+      }
+    ]
+  },
+  {
+    "slug": "metalurgicos",
+    "nombre": "Metalúrgicos",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "industrial",
+    "pois": ["Zona industrial", "Plantas manufactureras", "Talleres"],
+    "transferencias": [],
+    "seo_title": "Estación Metalúrgicos Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Metalúrgicos L3. Acceso a zona industrial de Monterrey. Guía turística MetroGuia.",
+    "h1": "Estación Metalúrgicos - Línea 3",
+    "intro": "Estación que da acceso a la histórica zona industrial de Monterrey, cuna de la industria manufacturera norteña. Área que representa el desarrollo económico e industrial de la región, con plantas de producción y talleres especializados.",
+    "tips": "Zona con horarios de entrada y salida de trabajadores. Restaurantes económicos en la zona. Acceso para trabajadores y visitantes interesados en industria metalúrgica. Seguridad garantizada durante horarios laborales.",
+    "mejor_horario": "Horarios de entrada/salida laboral (6:00-9:00 y 17:00-19:00). Evitar madrugadas.",
+    "mundial_relevancia": "Núcleo histórico de industria manufacturera mexicana de clase mundial.",
+    "descripcion_turistica": "Acceso a la zona industrial que ha definido la identidad económica de Monterrey. Para visitantes interesados en comprender la base industrial y manufacturera de la región y su importancia histórica.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación con accesibilidad completa para trabajadores con discapacidad. Elevadores operativos y rampas señalizadas."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00. Mayor afluencia 6:00-9:00 AM y 5:00-7:00 PM."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Plantas Manufactureras",
+        "tipo": "Industria",
+        "distancia": "100-500 metros",
+        "descripcion": "Complejos industriales de metalurgia, electrónica y manufactura diversa."
+      },
+      {
+        "nombre": "Comedores Económicos",
+        "tipo": "Gastronomía",
+        "distancia": "150 metros",
+        "descripcion": "Restaurantes y comedores con precios accesibles para trabajadores industriales."
+      },
+      {
+        "nombre": "Servicios para Trabajadores",
+        "tipo": "Servicios",
+        "distancia": "200 metros",
+        "descripcion": "Tiendas de herramientas, servicios técnicos y comercios especializados para industria."
+      }
+    ]
+  },
+  {
+    "slug": "felix-u-gomez-l3",
+    "nombre": "Félix U. Gómez",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "comercial",
+    "pois": ["Mercado", "Zona comercial", "Centro de abastos"],
+    "transferencias": ["1"],
+    "seo_title": "Estación Félix U. Gómez Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Félix U. Gómez L3 con transferencia a L1. Zona comercial y mercado. Guía turística MetroGuia.",
+    "h1": "Estación Félix U. Gómez - Línea 3",
+    "intro": "Estación de transferencia entre Metro Línea 3 y Línea 1, ubicada en zona comercial vibrante. Acceso directo a mercados tradicionales y zona de abastos, punto focal para compras cotidianas y comercio local. Centro multimodal importante del sistema.",
+    "tips": "Transferencia directa a Línea 1 muy eficiente. Mercado activo especialmente mañanas. Zona comercial diversa con tiendas para todos los presupuestos. Seguridad reforzada en horas de mayor concurrencia comercial.",
+    "mejor_horario": "Mañana (7:00-12:00) para compras en mercado. Tarde para comercio local. Evitar madrugadas.",
+    "mundial_relevancia": "Nodo de interconexión de líneas de metro con zona comercial tradicional.",
+    "descripcion_turistica": "Centro comercial y de mercado que es corazón de intercambios económicos locales. Punto de acceso a mercados tradicionales mexicanos, tiendas de abastos y comercio diverso que refleja la vida cotidiana regiomontana.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación con elevadores para transferencia accesible a L1. Rampas en buenas condiciones. Acceso fácil a zona de mercado."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00. Mercado activo 6:00-15:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Mercado Central",
+        "tipo": "Comercio",
+        "distancia": "Acceso directo",
+        "descripcion": "Mercado tradicional con frutas, verduras, flores y productos de consumo diario."
+      },
+      {
+        "nombre": "Tiendas de Ropa y Abastos",
+        "tipo": "Comercio",
+        "distancia": "Radiante",
+        "descripcion": "Comercios variados de ropa, calzado, abarrotes y servicios especializados."
+      },
+      {
+        "nombre": "Restaurantes Tradicionales",
+        "tipo": "Gastronomía",
+        "distancia": "100 metros",
+        "descripcion": "Restaurantes con comida casera norteña y antojitos mexicanos tradicionales."
+      }
+    ]
+  },
+  {
+    "slug": "colonia-obrera",
+    "nombre": "Colonia Obrera",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "residencial",
+    "pois": ["Colonia Obrera", "Zona residencial", "Servicios locales"],
+    "transferencias": [],
+    "seo_title": "Estación Colonia Obrera Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Colonia Obrera L3. Acceso a zona residencial de Monterrey. Guía turística MetroGuia.",
+    "h1": "Estación Colonia Obrera - Línea 3",
+    "intro": "Estación que sirve a la histórica Colonia Obrera, tradicional zona residencial de trabajadores y clase media de Monterrey. Barrio con identidad propia, vida comunitaria arraigada y comercio local establecido, ideal para conocer la Monterrey más auténtica.",
+    "tips": "Zona tranquila y segura. Parques vecinales bien mantenidos. Comercio local tradicional con precios accesibles. Excelente para descanso y compras de necesidades diarias.",
+    "mejor_horario": "Mañana para comercio local. Tarde para parques y vida comunitaria.",
+    "mundial_relevancia": "Barrio obrero histórico que conserva carácter y tradición urbana.",
+    "descripcion_turistica": "Acceso a un barrio de trabajadores que mantiene su tradición y carácter comunitario. Ideal para visitantes que deseen conocer cómo vive la clase media regiomontana en colonias establecidas con identidad propia.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación completamente accesible con elevadores funcionales y rampas bien mantenidas."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Parque Colonia Obrera",
+        "tipo": "Recreación",
+        "distancia": "150 metros",
+        "descripcion": "Parque principal con áreas verdes, juegos infantiles y cancha de fútbol."
+      },
+      {
+        "nombre": "Tiendas Locales Tradicionales",
+        "tipo": "Comercio",
+        "distancia": "Radiante",
+        "descripcion": "Comercios de barrio con productos de consumo diario y servicios locales."
+      },
+      {
+        "nombre": "Restaurantes de Comida Regional",
+        "tipo": "Gastronomía",
+        "distancia": "200 metros",
+        "descripcion": "Restaurantes con comida norteña auténtica y especialidades regionales."
+      }
+    ]
+  },
+  {
+    "slug": "santa-lucia",
+    "nombre": "Santa Lucía",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "residencial-comercial",
+    "pois": ["Santa Lucía", "Zona mixta", "Comercio y vivienda"],
+    "transferencias": [],
+    "seo_title": "Estación Santa Lucía Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación Santa Lucía L3. Zona residencial-comercial de Monterrey. Guía turística MetroGuia.",
+    "h1": "Estación Santa Lucía - Línea 3",
+    "intro": "Estación en zona de mezcla residencial-comercial que combina viviendas, pequeños comercios y servicios. Área de transición con buena accesibilidad y conectividad, que sirve tanto a residentes locales como a visitantes que requieran servicios diversos.",
+    "tips": "Zona con oferta comercial variada. Buena combinación de residencias y servicios. Seguridad garantizada. Acceso fácil a servicios de salud y educación locales.",
+    "mejor_horario": "Mañana para comercio. Tarde para acceso residencial. Fin de semana para actividades locales.",
+    "mundial_relevancia": "Zona de uso mixto que representa desarrollo urbano balanceado.",
+    "descripcion_turistica": "Acceso a zona de uso mixto donde convergen viviendas y comercio local. Ideal para quienes busquen experiencias más integradas de vida cotidiana regiomontana con servicios y compras accesibles.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación con accesibilidad completa. Elevadores operativos y rampas señalizadas en buen estado."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Zona Comercial Local",
+        "tipo": "Comercio",
+        "distancia": "150 metros",
+        "descripcion": "Tiendas de ropa, zapatos, abarrotes y servicios variados para la comunidad."
+      },
+      {
+        "nombre": "Servicios de Salud",
+        "tipo": "Salud",
+        "distancia": "200 metros",
+        "descripcion": "Clínicas, farmacias y consultorios médicos generales para atención local."
+      },
+      {
+        "nombre": "Restaurantes y Cafeterías",
+        "tipo": "Gastronomía",
+        "distancia": "100 metros",
+        "descripcion": "Variedad de restaurantes y cafeterías para diferentes presupuestos y preferencias."
+      }
+    ]
+  },
+  {
+    "slug": "general-i-zaragoza-l3",
+    "nombre": "General I. Zaragoza",
+    "linea": "3",
+    "municipio": "Monterrey",
+    "tipo_zona": "transporte",
+    "pois": ["Terminal de autobuses", "Zona comercial", "Centro de transportes"],
+    "transferencias": ["2"],
+    "seo_title": "Estación General I. Zaragoza Metro L3 Monterrey — Guía turística | MetroGuia",
+    "meta_description": "Estación General I. Zaragoza L3 con transferencia a L2. Terminal de autobuses. Guía turística MetroGuia.",
+    "h1": "Estación General I. Zaragoza - Línea 3",
+    "intro": "Terminal sur de Línea 3 con transferencia a Línea 2. Estación conectada directamente con la terminal de autobuses interurbana, punto neurálgico para viajeros que requieren transportación regional y de largo alcance. Centro de movilidad multimodo fundamental.",
+    "tips": "Transferencia rápida a Línea 2 disponible. Acceso directo a autobuses interurbanos hacia todo el estado. Zona comercial amplia para compras antes de viajar. Información de transporte y asesoría disponible. Luggage storage y servicios de viajero.",
+    "mejor_horario": "Mañana (6:00-9:00) para salidas de autobuses. Tarde (14:00-18:00) para llegadas. Evitar horas pico. Planificar con anticipación.",
+    "mundial_relevancia": "Terminal que conecta transporte urbano con red regional de largo alcance.",
+    "descripcion_turistica": "Punto de conexión principal entre transporte metropolitano y servicios de autobuses interurbanos. Terminal comercial con tiendas, restaurantes y servicios para viajeros. Ideal para quienes exploren municipios cercanos o salgan hacia otras regiones de Nuevo León.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación terminal completamente accesible con elevadores para transferencia a L2 y acceso a terminal de autobuses. Rampas en excelente estado. Piso táctil en plataforma y transición a autobuses."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Metrorrey. L-S 5:00-00:00, Dom 6:30-00:00. Terminal de autobuses opera 24/7 con servicios de transporte permanente."
+    },
+    "lugares_cercanos": [
+      {
+        "nombre": "Terminal de Autobuses Interurbana",
+        "tipo": "Transporte",
+        "distancia": "Acceso directo",
+        "descripcion": "Terminal con autobuses hacia toda la región: Saltillo, Nuevo Laredo, Reynosa, y municipios del estado."
+      },
+      {
+        "nombre": "Zona Comercial Terminal",
+        "tipo": "Comercio",
+        "distancia": "Radiante",
+        "descripcion": "Tiendas, cafeterías, restaurantes y servicios diversos para viajeros."
+      },
+      {
+        "nombre": "Servicios de Viajero",
+        "tipo": "Servicios",
+        "distancia": "Acceso directo",
+        "descripcion": "Información turística, cambio de dinero, tarjetas telefónicas y servicios de consultoría."
       }
     ]
   }

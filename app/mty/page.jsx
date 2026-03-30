@@ -1,5 +1,6 @@
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 import { estacionesMTY } from '@/data/mty/estaciones';
+import { estacionesEcovia } from '@/data/mty/ecovia';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -7,12 +8,12 @@ import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'Metrorrey Monterrey — Metro 2 líneas, 32 estaciones + FIFA 2026 | MetroGuia',
-  description: 'Metrorrey Monterrey: guía turística completa del Metro. 2 líneas, 32 estaciones. Parque Fundidora, Barrio Antiguo, MARCO, Macroplaza, Estadio BBVA. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
+  title: 'Metrorrey Monterrey — Metro 3 líneas, 83 estaciones + FIFA 2026 | MetroGuia',
+  description: 'Metrorrey Monterrey: guía turística completa del Metro. 3 líneas Metro + Ecovía BRT, 83 estaciones totales. Parque Fundidora, Barrio Antiguo, MARCO, Macroplaza, Estadio BBVA. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
   keywords: 'Metrorrey Monterrey, Metro, transporte Monterrey, Parque Fundidora, Estadio BBVA, FIFA 2026, turismo',
   openGraph: {
-    title: 'Metrorrey Monterrey — Metro + Guía FIFA 2026',
-    description: 'Descubre las 2 líneas del Metrorrey de Monterrey. Acceso directo a Parque Fundidora, MARCO, Macroplaza y Estadio BBVA.',
+    title: 'Metrorrey Monterrey — Metro 3 Líneas + Ecovía BRT',
+    description: 'Descubre las 3 líneas del Metrorrey + Ecovía BRT de Monterrey. Acceso directo a Parque Fundidora, MARCO, Macroplaza y Estadio BBVA.',
     url: 'https://metroguia.mx/mty',
     type: 'website',
   },
@@ -23,7 +24,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesMTY.filter(e =>
-  ['parque-fundidora', 'exposicion', 'central', 'cuauhtemoc'].includes(e.slug)
+  ['parque-fundidora', 'exposicion', 'central', 'mty-cuauhtemoc'].includes(e.slug)
 );
 
 export default function MTYPage() {
@@ -88,7 +89,7 @@ export default function MTYPage() {
               lineHeight: '1.4',
             }}
           >
-            Metro Rápido · 2 Líneas · 32 Estaciones
+            Metro 3 Líneas + Ecovía BRT · 83 Estaciones
           </p>
           <p
             style={{
@@ -127,7 +128,7 @@ export default function MTYPage() {
         >
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#EC4899', margin: '0 0 8px 0' }}>
-              32
+              83
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Estaciones
@@ -135,15 +136,15 @@ export default function MTYPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#EC4899', margin: '0 0 8px 0' }}>
-              2
+              3
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Líneas Operativas
+              Líneas + BRT
             </p>
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#EC4899', margin: '0 0 8px 0' }}>
-              30
+              56
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Kilómetros
@@ -332,7 +333,7 @@ export default function MTYPage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Las 2 Líneas del Metrorrey
+            Las 3 Líneas del Metrorrey
           </h2>
           <div
             style={{
@@ -421,6 +422,103 @@ export default function MTYPage() {
         </div>
       </section>
 
+
+      {/* ECOVÍA BRT */}
+      <section
+        style={{
+          backgroundColor: 'var(--surface)',
+          padding: '80px 24px',
+          borderBottom: '1px solid var(--border)',
+        }}
+      >
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '48px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            Ecovía TransMetro — BRT
+          </h2>
+          <Link href="/mty/ecovia">
+            <div
+              style={{
+                backgroundColor: 'var(--bg)',
+                border: '2px solid #10B981',
+                borderRadius: '10px',
+                padding: '32px',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                maxWidth: '600px',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+              }}
+            >
+              <div
+                style={{
+                  width: '56px',
+                  height: '56px',
+                  backgroundColor: '#10B981',
+                  borderRadius: '12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#FFFFFF',
+                  fontSize: '24px',
+                  fontWeight: '800',
+                  marginBottom: '16px',
+                }}
+              >
+                BRT
+              </div>
+              <h3
+                style={{
+                  fontSize: '1.5rem',
+                  fontWeight: '700',
+                  margin: '0 0 8px 0',
+                  color: '#10B981',
+                }}
+              >
+                Ecovía TransMetro
+              </h3>
+              <p
+                style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--text-muted)',
+                  margin: '0 0 12px 0',
+                }}
+              >
+                Lincoln → Valle Soleado
+              </p>
+              <p
+                style={{
+                  fontSize: '0.95rem',
+                  color: 'var(--text)',
+                  margin: '0 0 16px 0',
+                  lineHeight: '1.5',
+                }}
+              >
+                Sistema BRT de 42 estaciones climatizadas, 30 km de recorrido. Conexiones con Metrorrey en Mitras (L1), Regina (L2) y Ruiz Cortines (L3).
+              </p>
+              <p
+                style={{
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  color: '#10B981',
+                  margin: '0',
+                }}
+              >
+                42 estaciones · 30 km · Ver todas →
+              </p>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       <AdBannerLazyInArticle slot="1082410395" />
 
       {/* ESTACIONES DESTACADAS */}
@@ -447,6 +545,19 @@ export default function MTYPage() {
           >
             Estaciones Destacadas
           </h2>
+          <p
+            style={{
+              fontSize: '1rem',
+              textAlign: 'center',
+              marginBottom: '32px',
+              color: 'var(--text-muted)',
+              maxWidth: '700px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Principales estaciones con conexiones al Metro Línea 1, 2 y 3, más acceso a Ecovía BRT en Mitras, Regina y Ruiz Cortines.
+          </p>
           <div
             style={{
               display: 'grid',

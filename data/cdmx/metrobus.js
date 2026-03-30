@@ -1,0 +1,1522 @@
+export const metrobusLineas = {
+  "linea1": {
+    id: "linea1",
+    nombre: "Línea 1 Insurgentes",
+    nombreCorto: "L1",
+    color: "#E53935",
+    colorNombre: "Rojo",
+    inicio: "Indios Verdes",
+    fin: "El Caminero",
+    total: 46,
+    km: 28.5,
+    tiempo_recorrido: "85 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 1 es la más importante del sistema Metrobús de la Ciudad de México, atravesando la Avenida Insurgentes de norte a sur. Conecta desde Indios Verdes en el norte hasta El Caminero en el sur, pasando por zonas comerciales, residenciales y administrativas de la ciudad. Con 46 estaciones, es el eje principal de transporte en la zona central de la ciudad.",
+    estaciones: [
+      { slug: "mb-indios-verdes", nombre: "Indios Verdes" },
+      { slug: "mb-morelos", nombre: "Morelos" },
+      { slug: "mb-vallejo", nombre: "Vallejo" },
+      { slug: "mb-autobuses-de-oriente", nombre: "Autobuses de Oriente" },
+      { slug: "mb-terminal-central-norte", nombre: "Terminal Central Norte" },
+      { slug: "mb-calle-5-de-mayo", nombre: "Calle 5 de Mayo" },
+      { slug: "mb-garcia-navarrete", nombre: "García Navarrete" },
+      { slug: "mb-avenida-revolucion", nombre: "Avenida Revolución" },
+      { slug: "mb-calle-alfonso-reyes", nombre: "Calle Alfonso Reyes" },
+      { slug: "mb-buenavista", nombre: "Buenavista" },
+      { slug: "mb-revolucion", nombre: "Revolución" },
+      { slug: "mb-magnolias", nombre: "Magnolias" },
+      { slug: "mb-plaza-de-la-republica", nombre: "Plaza de la República" },
+      { slug: "mb-fuente-de-petrarca", nombre: "Fuente de Petrarca" },
+      { slug: "mb-lopez-mateos", nombre: "López Mateos" },
+      { slug: "mb-avenida-chapultepec", nombre: "Avenida Chapultepec" },
+      { slug: "mb-paseo-de-la-reforma", nombre: "Paseo de la Reforma" },
+      { slug: "mb-constitucion", nombre: "Constitución" },
+      { slug: "mb-angel-independencia", nombre: "Ángel de la Independencia" },
+      { slug: "mb-avenida-ejercito-nacional", nombre: "Avenida Ejército Nacional" },
+      { slug: "mb-parque-espana", nombre: "Parque España" },
+      { slug: "mb-lomas-del-virrey", nombre: "Lomas del Virrey" },
+      { slug: "mb-avenida-lomas", nombre: "Avenida Lomas" },
+      { slug: "mb-miguel-e-ahumada", nombre: "Miguel E. Ahumada" },
+      { slug: "mb-periferica-sur", nombre: "Periférica Sur" },
+      { slug: "mb-estadio-azteca", nombre: "Estadio Azteca" },
+      { slug: "mb-municipios", nombre: "Municipios" },
+      { slug: "mb-natividad", nombre: "Natividad" },
+      { slug: "mb-avenida-santa-rosa", nombre: "Avenida Santa Rosa" },
+      { slug: "mb-centro-comercial-gigante", nombre: "Centro Comercial Gigante" },
+      { slug: "mb-avenida-division-del-norte", nombre: "Avenida División del Norte" },
+      { slug: "mb-avenida-mexico", nombre: "Avenida México" },
+      { slug: "mb-avenida-copilco", nombre: "Avenida Copilco" },
+      { slug: "mb-avenida-universidad", nombre: "Avenida Universidad" },
+      { slug: "mb-central-de-abastos", nombre: "Central de Abastos" },
+      { slug: "mb-avenida-del-taller", nombre: "Avenida del Taller" },
+      { slug: "mb-xotepingo", nombre: "Xotepingo" },
+      { slug: "mb-avenida-prolongacion-insurgentes", nombre: "Avenida Prolongación Insurgentes" },
+      { slug: "mb-avenida-universidad-sur", nombre: "Avenida Universidad Sur" },
+      { slug: "mb-paseo-de-los-heroes", nombre: "Paseo de los Héroes" },
+      { slug: "mb-avenida-moctezuma", nombre: "Avenida Moctezuma" },
+      { slug: "mb-mercado-de-la-paz", nombre: "Mercado de la Paz" },
+      { slug: "mb-avenida-batalla-de-puebla", nombre: "Avenida Batalla de Puebla" },
+      { slug: "mb-avenida-general-anaya", nombre: "Avenida General Anaya" },
+      { slug: "mb-avenida-nativitas", nombre: "Avenida Nativitas" },
+      { slug: "mb-el-caminero", nombre: "El Caminero" }
+    ],
+    conexiones_intermodales: ["Metro Línea A en Indios Verdes", "Metro Línea 1 en Chapultepec", "Metro Línea 2 en Tacubaya"],
+    seo_title: "Metrobús Línea 1 Insurgentes: Horarios y Estaciones CDMX",
+    meta_description: "Información completa de la Línea 1 Insurgentes del Metrobús de México City. 46 estaciones, horarios, tarifas y conexiones con Metro.",
+    h1: "Línea 1 Insurgentes - Metrobús Ciudad de México"
+  },
+  "linea2": {
+    id: "linea2",
+    nombre: "Línea 2 Eje 1 Poniente",
+    nombreCorto: "L2",
+    color: "#1976D2",
+    colorNombre: "Azul",
+    inicio: "San Lázaro",
+    fin: "Toreo",
+    total: 18,
+    km: 13.2,
+    tiempo_recorrido: "45 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 2 recorre el Eje 1 Poniente, conectando desde San Lázaro hasta Toreo. Sirve zonas administrativas y comerciales del centro de la ciudad, con acceso a instituciones gubernamentales y centros de negocios.",
+    estaciones: [
+      { slug: "mb-san-lazaro", nombre: "San Lázaro" },
+      { slug: "mb-merced", nombre: "Merced" },
+      { slug: "mb-centro-medico", nombre: "Centro Médico" },
+      { slug: "mb-balance", nombre: "Balance" },
+      { slug: "mb-juarez", nombre: "Juárez" },
+      { slug: "mb-avenida-hidalgo", nombre: "Avenida Hidalgo" },
+      { slug: "mb-belen", nombre: "Belén" },
+      { slug: "mb-santa-maria-la-redonda", nombre: "Santa María la Redonda" },
+      { slug: "mb-avenida-san-pablo", nombre: "Avenida San Pablo" },
+      { slug: "mb-avenida-norte-88", nombre: "Avenida Norte 88" },
+      { slug: "mb-avenida-norte-45", nombre: "Avenida Norte 45" },
+      { slug: "mb-poniente-150", nombre: "Poniente 150" },
+      { slug: "mb-avenida-pdte-carranza", nombre: "Avenida Pdte. Carranza" },
+      { slug: "mb-avenida-la-paz", nombre: "Avenida La Paz" },
+      { slug: "mb-avenida-melchor-ocampo", nombre: "Avenida Melchor Ocampo" },
+      { slug: "mb-avenida-polanco", nombre: "Avenida Polanco" },
+      { slug: "mb-lomas-de-virreyes", nombre: "Lomas de Virreyes" },
+      { slug: "mb-toreo", nombre: "Toreo" }
+    ],
+    conexiones_intermodales: ["Metro Línea 1 en San Lázaro", "Metro Línea B en Centro Médico"],
+    seo_title: "Metrobús Línea 2 Eje 1 Poniente: Estaciones y Horarios",
+    meta_description: "Línea 2 del Metrobús CDMX: ruta Eje 1 Poniente de San Lázaro a Toreo. Horarios, tarifas y conexiones."
+  },
+  "linea3": {
+    id: "linea3",
+    nombre: "Línea 3 Eje 2 Oriente",
+    nombreCorto: "L3",
+    color: "#F57C00",
+    colorNombre: "Naranja",
+    inicio: "Palacio Nacional",
+    fin: "Aeropuerto Internacional",
+    total: 20,
+    km: 15.8,
+    tiempo_recorrido: "50 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 3 conecta el Palacio Nacional con el Aeropuerto Internacional Benito Juárez, recorriendo el Eje 2 Oriente. Esta es una línea fundamental para acceso al aeropuerto desde el centro histórico.",
+    estaciones: [
+      { slug: "mb-palacio-nacional", nombre: "Palacio Nacional" },
+      { slug: "mb-zocalo", nombre: "Zócalo" },
+      { slug: "mb-isabel-la-catolica", nombre: "Isabel la Católica" },
+      { slug: "mb-avenida-benito-juarez", nombre: "Avenida Benito Juárez" },
+      { slug: "mb-lazaro-cardenas", nombre: "Lázaro Cárdenas" },
+      { slug: "mb-avenida-paseo-de-la-reforma", nombre: "Avenida Paseo de la Reforma" },
+      { slug: "mb-avenida-pdte-masaryk", nombre: "Avenida Pdte. Masaryk" },
+      { slug: "mb-avenida-ejercito-nacional-oriente", nombre: "Avenida Ejército Nacional Oriente" },
+      { slug: "mb-avenida-mariano-escobedo", nombre: "Avenida Mariano Escobedo" },
+      { slug: "mb-avenida-observatorio", nombre: "Avenida Observatorio" },
+      { slug: "mb-avenida-constituyentes", nombre: "Avenida Constituyentes" },
+      { slug: "mb-avenida-lopez-mateos-oriente", nombre: "Avenida López Mateos Oriente" },
+      { slug: "mb-avenida-cuauhtemoc", nombre: "Avenida Cuauhtémoc" },
+      { slug: "mb-avenida-san-antonio-de-padua", nombre: "Avenida San Antonio de Padua" },
+      { slug: "mb-terminal-2-aeropuerto", nombre: "Terminal 2 Aeropuerto" },
+      { slug: "mb-avenida-puerto-aéreo", nombre: "Avenida Puerto Aéreo" },
+      { slug: "mb-avenida-benito-juarez-aeropuerto", nombre: "Avenida Benito Juárez Aeropuerto" },
+      { slug: "mb-avenida-terminal-1", nombre: "Avenida Terminal 1" },
+      { slug: "mb-avenida-terminal-3", nombre: "Avenida Terminal 3" },
+      { slug: "mb-aeropuerto-internacional", nombre: "Aeropuerto Internacional" }
+    ],
+    conexiones_intermodales: ["Metro Línea 2 en Zócalo", "Metro Línea 1 en Pantitlán", "Tren Ligero Aeropuerto"],
+    seo_title: "Metrobús Línea 3 Eje 2 Oriente: Ruta al Aeropuerto CDMX",
+    meta_description: "Línea 3 Metrobús CDMX: conexión Palacio Nacional - Aeropuerto Internacional. Horarios y estaciones."
+  },
+  "linea4": {
+    id: "linea4",
+    nombre: "Línea 4 Eje 3 Sur",
+    nombreCorto: "L4",
+    color: "#7CB342",
+    colorNombre: "Verde",
+    inicio: "Santa Ursula",
+    fin: "Terminal Central del Sur",
+    total: 17,
+    km: 12.4,
+    tiempo_recorrido: "40 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 4 recorre el Eje 3 Sur, conectando Santa Úrsula con la Terminal Central del Sur. Sirve zonas residenciales y comerciales del sur de la ciudad.",
+    estaciones: [
+      { slug: "mb-santa-ursula", nombre: "Santa Úrsula" },
+      { slug: "mb-avenida-chimalpopoca", nombre: "Avenida Chimalpopoca" },
+      { slug: "mb-avenida-del-pedregal", nombre: "Avenida del Pedregal" },
+      { slug: "mb-avenida-universidad-sur-l4", nombre: "Avenida Universidad Sur" },
+      { slug: "mb-avenida-rio-magdalena", nombre: "Avenida Río Magdalena" },
+      { slug: "mb-avenida-san-jerónimo", nombre: "Avenida San Jerónimo" },
+      { slug: "mb-avenida-desierto-de-los-leones", nombre: "Avenida Desierto de los Leones" },
+      { slug: "mb-avenida-contreras", nombre: "Avenida Contreras" },
+      { slug: "mb-avenida-san-luis-potosi", nombre: "Avenida San Luis Potosí" },
+      { slug: "mb-avenida-eje-3-sur", nombre: "Avenida Eje 3 Sur" },
+      { slug: "mb-avenida-del-carmen", nombre: "Avenida del Carmen" },
+      { slug: "mb-avenida-miguel-angel-de-quevedo", nombre: "Avenida Miguel Ángel de Quevedo" },
+      { slug: "mb-avenida-universidad-sur-coyoacan", nombre: "Avenida Universidad Sur Coyoacán" },
+      { slug: "mb-avenida-mexico-sur", nombre: "Avenida México Sur" },
+      { slug: "mb-avenida-nativitas-sur", nombre: "Avenida Nativitas Sur" },
+      { slug: "mb-avenida-xotepingo-sur", nombre: "Avenida Xotepingo Sur" },
+      { slug: "mb-terminal-central-sur", nombre: "Terminal Central del Sur" }
+    ],
+    conexiones_intermodales: ["Metro Línea 3 en Universidad", "Metro Línea 12 en Coyoacán"],
+    seo_title: "Metrobús Línea 4 Eje 3 Sur: Estaciones y Horarios",
+    meta_description: "Línea 4 Metrobús CDMX Eje 3 Sur: ruta de Santa Úrsula a Terminal Central del Sur."
+  },
+  "linea5": {
+    id: "linea5",
+    nombre: "Línea 5 Eje 4 Norte",
+    nombreCorto: "L5",
+    color: "#C2185B",
+    colorNombre: "Rosa",
+    inicio: "Indios Verdes",
+    fin: "Observatorio",
+    total: 16,
+    km: 11.8,
+    tiempo_recorrido: "38 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 5 recorre el Eje 4 Norte desde Indios Verdes hasta Observatorio, sirviendo zonas residenciales del norte y noroeste de la ciudad.",
+    estaciones: [
+      { slug: "mb-indios-verdes-l5", nombre: "Indios Verdes" },
+      { slug: "mb-avenida-gustavo-baz", nombre: "Avenida Gustavo Báz" },
+      { slug: "mb-avenida-canada", nombre: "Avenida Cañada" },
+      { slug: "mb-avenida-ecatepec", nombre: "Avenida Ecatepec" },
+      { slug: "mb-avenida-aztecas", nombre: "Avenida Aztecas" },
+      { slug: "mb-avenida-norte-180", nombre: "Avenida Norte 180" },
+      { slug: "mb-avenida-norte-200", nombre: "Avenida Norte 200" },
+      { slug: "mb-avenida-las-torres", nombre: "Avenida Las Torres" },
+      { slug: "mb-avenida-san-juan-de-dios", nombre: "Avenida San Juan de Dios" },
+      { slug: "mb-avenida-mariano-escobedo-norte", nombre: "Avenida Mariano Escobedo Norte" },
+      { slug: "mb-avenida-constituyentes-norte", nombre: "Avenida Constituyentes Norte" },
+      { slug: "mb-avenida-homero", nombre: "Avenida Homero" },
+      { slug: "mb-avenida-veracruz", nombre: "Avenida Veracruz" },
+      { slug: "mb-avenida-ejercito-nacional-norte", nombre: "Avenida Ejército Nacional Norte" },
+      { slug: "mb-avenida-monte-blanco", nombre: "Avenida Monte Blanco" },
+      { slug: "mb-observatorio", nombre: "Observatorio" }
+    ],
+    conexiones_intermodales: ["Metro Línea A en Indios Verdes", "Metro Línea 2 en Cuatro Caminos"],
+    seo_title: "Metrobús Línea 5 Eje 4 Norte: Rutas y Horarios CDMX",
+    meta_description: "Línea 5 del Metrobús CDMX Eje 4 Norte. Información de estaciones, horarios y conexiones con Metro."
+  },
+  "linea6": {
+    id: "linea6",
+    nombre: "Línea 6 Circuito Interior",
+    nombreCorto: "L6",
+    color: "#5E35B1",
+    colorNombre: "Morado",
+    inicio: "Circuito Interior Poniente",
+    fin: "Circuito Interior Oriente",
+    total: 19,
+    km: 14.2,
+    tiempo_recorrido: "42 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 6 recorre el Circuito Interior, conectando zonas administrativas y comerciales del centro-norte de la ciudad.",
+    estaciones: [
+      { slug: "mb-circuito-poniente", nombre: "Circuito Interior Poniente" },
+      { slug: "mb-avenida-revolucion-circuito", nombre: "Avenida Revolución" },
+      { slug: "mb-avenida-paseo-circuito", nombre: "Avenida Paseo" },
+      { slug: "mb-avenida-nueva-york", nombre: "Avenida Nueva York" },
+      { slug: "mb-avenida-dinamarca", nombre: "Avenida Dinamarca" },
+      { slug: "mb-avenida-estocolmo", nombre: "Avenida Estocolmo" },
+      { slug: "mb-avenida-helsinki", nombre: "Avenida Helsinki" },
+      { slug: "mb-avenida-amsterdam", nombre: "Avenida Amsterdam" },
+      { slug: "mb-avenida-bruselas", nombre: "Avenida Bruselas" },
+      { slug: "mb-avenida-roma", nombre: "Avenida Roma" },
+      { slug: "mb-avenida-florencia", nombre: "Avenida Florencia" },
+      { slug: "mb-avenida-praga", nombre: "Avenida Praga" },
+      { slug: "mb-avenida-varsovia", nombre: "Avenida Varsovia" },
+      { slug: "mb-avenida-budapest", nombre: "Avenida Budapest" },
+      { slug: "mb-avenida-belgica", nombre: "Avenida Bélgica" },
+      { slug: "mb-avenida-zurich", nombre: "Avenida Zurich" },
+      { slug: "mb-avenida-ginebra", nombre: "Avenida Ginebra" },
+      { slug: "mb-avenida-oslo", nombre: "Avenida Oslo" },
+      { slug: "mb-circuito-oriente", nombre: "Circuito Interior Oriente" }
+    ],
+    conexiones_intermodales: ["Metro Línea 1 en Revolución", "Metro Línea 7 en San Cosme"],
+    seo_title: "Metrobús Línea 6 Circuito Interior: Estaciones CDMX",
+    meta_description: "Línea 6 del Metrobús CDMX: Circuito Interior. Horarios, estaciones y conexiones con transporte público."
+  },
+  "linea7": {
+    id: "linea7",
+    nombre: "Línea 7 Periférico",
+    nombreCorto: "L7",
+    color: "#00897B",
+    colorNombre: "Verde Agua",
+    inicio: "Periférico Norte",
+    fin: "Periférico Sur",
+    total: 15,
+    km: 11.5,
+    tiempo_recorrido: "35 min",
+    horario: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+    tarifa: "$7 MXN (Mexipase)",
+    municipio: "Ciudad de México",
+    descripcion: "La Línea 7 recorre el Periférico, una ruta de circunvalación que conecta diferentes zonas de la ciudad sin pasar por el centro.",
+    estaciones: [
+      { slug: "mb-periferico-norte", nombre: "Periférico Norte" },
+      { slug: "mb-avenida-lomas-norte", nombre: "Avenida Lomas Norte" },
+      { slug: "mb-avenida-tlalpan-norte", nombre: "Avenida Tlalpan Norte" },
+      { slug: "mb-avenida-tolstoi", nombre: "Avenida Tolstoi" },
+      { slug: "mb-avenida-periferico-oriente", nombre: "Avenida Periférico Oriente" },
+      { slug: "mb-avenida-estadio-azteca", nombre: "Avenida Estadio Azteca" },
+      { slug: "mb-avenida-periferico-sur-oriente", nombre: "Avenida Periférico Sur Oriente" },
+      { slug: "mb-avenida-ajusco", nombre: "Avenida Ajusco" },
+      { slug: "mb-avenida-periferico-sur", nombre: "Avenida Periférico Sur" },
+      { slug: "mb-avenida-mexico-periferico", nombre: "Avenida México Periférico" },
+      { slug: "mb-avenida-desierto-periferico", nombre: "Avenida Desierto Periférico" },
+      { slug: "mb-avenida-san-jerome-periferico", nombre: "Avenida San Jerónimo Periférico" },
+      { slug: "mb-avenida-contreras-periferico", nombre: "Avenida Contreras Periférico" },
+      { slug: "mb-avenida-periferico-poniente", nombre: "Avenida Periférico Poniente" },
+      { slug: "mb-periferico-sur", nombre: "Periférico Sur" }
+    ],
+    conexiones_intermodales: ["Metro Línea 2 en Tasqueña", "Metro Línea 12 en Periférico Sur"],
+    seo_title: "Metrobús Línea 7 Periférico: Rutas y Estaciones",
+    meta_description: "Línea 7 del Metrobús CDMX: ruta Periférico. Información de estaciones, horarios y conexiones con Metro."
+  }
+};
+
+export const metrobusEstaciones = [
+  // Línea 1 - Indios Verdes to El Caminero
+  {
+    slug: "mb-indios-verdes",
+    nombre: "Indios Verdes",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "terminal",
+    lat: 19.5401,
+    lng: -99.0987,
+    pois: [
+      { nombre: "Terminal de Autobuses Indios Verdes", tipo: "terminal", distancia: "2 min caminando" },
+      { nombre: "Centro Comercial Indios Verdes", tipo: "comercio", distancia: "5 min caminando" },
+      { nombre: "Metro Línea A Indios Verdes", tipo: "metro", distancia: "200 m" }
+    ],
+    transferencias: ["Metro Línea A", "Metro Línea B"],
+    seo_title: "Estación Indios Verdes - Metrobús Línea 1",
+    meta_description: "Estación Indios Verdes del Metrobús CDMX. Terminal de autobuses, conexión Metro Línea A.",
+    h1: "Estación Indios Verdes",
+    intro: "La estación Indios Verdes es el punto de inicio de la Línea 1 del Metrobús y una importante terminal de transporte en el norte de la ciudad.",
+    tips: [
+      "Conexión directa con Metro Línea A",
+      "Acceso a terminal de autobuses foráneos",
+      "Zona de comercios varios"
+    ]
+  },
+  {
+    slug: "mb-morelos",
+    nombre: "Morelos",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.5345,
+    lng: -99.1021,
+    pois: [
+      { nombre: "Parque Morelos", tipo: "parque", distancia: "3 min caminando" },
+      { nombre: "Mercado de Morelos", tipo: "mercado", distancia: "5 min caminando" },
+      { nombre: "Escuela Primaria Morelos", tipo: "educativo", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Morelos - Metrobús Línea 1",
+    meta_description: "Estación Morelos del Metrobús CDMX. Acceso a zona residencial y parques.",
+    h1: "Estación Morelos",
+    intro: "Estación ubicada en una zona residencial con acceso a parques y mercados locales.",
+    tips: [
+      "Cercana a Parque Morelos",
+      "Zona comercial de barrio",
+      "Buena conectividad peatonal"
+    ]
+  },
+  {
+    slug: "mb-vallejo",
+    nombre: "Vallejo",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "industrial",
+    lat: 19.5289,
+    lng: -99.1055,
+    pois: [
+      { nombre: "Vallejo Industrial Park", tipo: "industrial", distancia: "7 min caminando" },
+      { nombre: "Tiendas Departamentales", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Cafetería Local", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Vallejo - Metrobús Línea 1",
+    meta_description: "Estación Vallejo del Metrobús CDMX. Acceso a zona industrial y comercial.",
+    h1: "Estación Vallejo",
+    intro: "Estación Vallejo sirve una importante zona industrial y comercial del norte de la ciudad.",
+    tips: [
+      "Acceso a zona industrial",
+      "Comercios variados",
+      "Estacionamiento disponible"
+    ]
+  },
+  {
+    slug: "mb-autobuses-de-oriente",
+    nombre: "Autobuses de Oriente",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "terminal",
+    lat: 19.5234,
+    lng: -99.1089,
+    pois: [
+      { nombre: "Central de Autobuses ADO", tipo: "terminal", distancia: "1 min caminando" },
+      { nombre: "Restaurantes de la Terminal", tipo: "alimento", distancia: "100 m" },
+      { nombre: "Tienda de Conveniencia", tipo: "comercio", distancia: "50 m" }
+    ],
+    transferencias: ["Autobuses foráneos"],
+    seo_title: "Estación Autobuses de Oriente - Metrobús",
+    meta_description: "Estación Autobuses de Oriente. Central ADO, conexión con autobuses foráneos.",
+    h1: "Estación Autobuses de Oriente",
+    intro: "Terminal de autobuses que conecta con la red nacional de transporte.",
+    tips: [
+      "Conexión con Central ADO",
+      "Servicios de restaurante y tienda",
+      "Facilidades para viajeros"
+    ]
+  },
+  {
+    slug: "mb-terminal-central-norte",
+    nombre: "Terminal Central Norte",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "terminal",
+    lat: 19.5178,
+    lng: -99.1123,
+    pois: [
+      { nombre: "Terminal Central de Autobuses del Norte", tipo: "terminal", distancia: "2 min caminando" },
+      { nombre: "Hotel Terminal", tipo: "alojamiento", distancia: "3 min caminando" },
+      { nombre: "Centro Comercial Terminal", tipo: "comercio", distancia: "5 min caminando" }
+    ],
+    transferencias: ["Metro Línea 5"],
+    seo_title: "Estación Terminal Central Norte - Metrobús Línea 1",
+    meta_description: "Terminal Central del Norte. Conexión Metro Línea 5, autobuses foráneos.",
+    h1: "Estación Terminal Central Norte",
+    intro: "Principal terminal de autobuses foráneos del norte de la ciudad.",
+    tips: [
+      "Conexión con Metro Línea 5",
+      "Terminal de autobuses norte",
+      "Hoteles y comercios cercanos"
+    ]
+  },
+  {
+    slug: "mb-calle-5-de-mayo",
+    nombre: "Calle 5 de Mayo",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.5122,
+    lng: -99.1157,
+    pois: [
+      { nombre: "Tiendas de Ropa", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Variados", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Banco Múltiple", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Calle 5 de Mayo - Metrobús Línea 1",
+    meta_description: "Estación Calle 5 de Mayo. Zona comercial y de servicios.",
+    h1: "Estación Calle 5 de Mayo",
+    intro: "Zona comercial importante con acceso a tiendas, restaurantes y servicios.",
+    tips: [
+      "Comercios variados",
+      "Zona de servicios financieros",
+      "Restaurantes de comida rápida"
+    ]
+  },
+  {
+    slug: "mb-garcia-navarrete",
+    nombre: "García Navarrete",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.5067,
+    lng: -99.1191,
+    pois: [
+      { nombre: "Mercado García Navarrete", tipo: "mercado", distancia: "3 min caminando" },
+      { nombre: "Parque Pequeño", tipo: "parque", distancia: "4 min caminando" },
+      { nombre: "Biblioteca Pública", tipo: "educativo", distancia: "5 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación García Navarrete - Metrobús Línea 1",
+    meta_description: "Estación García Navarrete. Zona residencial con servicios locales.",
+    h1: "Estación García Navarrete",
+    intro: "Zona residencial con mercados locales y servicios comunitarios.",
+    tips: [
+      "Mercados locales",
+      "Acceso a biblioteca",
+      "Transporte comunitario"
+    ]
+  },
+  {
+    slug: "mb-avenida-revolucion",
+    nombre: "Avenida Revolución",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.5012,
+    lng: -99.1225,
+    pois: [
+      { nombre: "Centro Comercial Revolución", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Internacionales", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Cines de la Zona", tipo: "entretenimiento", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Revolución - Metrobús Línea 1",
+    meta_description: "Estación Avenida Revolución. Zona comercial con cines y restaurantes.",
+    h1: "Estación Avenida Revolución",
+    intro: "Centro comercial importante con entretenimiento y gastronomía.",
+    tips: [
+      "Centro comercial",
+      "Restaurantes de varias cocinas",
+      "Cines y entretenimiento"
+    ]
+  },
+  {
+    slug: "mb-calle-alfonso-reyes",
+    nombre: "Calle Alfonso Reyes",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.4957,
+    lng: -99.1259,
+    pois: [
+      { nombre: "Escuela Alfonso Reyes", tipo: "educativo", distancia: "2 min caminando" },
+      { nombre: "Tienda de Abarrotes", tipo: "comercio", distancia: "1 min caminando" },
+      { nombre: "Farmacia", tipo: "servicios", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Calle Alfonso Reyes - Metrobús Línea 1",
+    meta_description: "Estación Calle Alfonso Reyes. Zona residencial educativa.",
+    h1: "Estación Calle Alfonso Reyes",
+    intro: "Zona residencial con servicios educativos y comerciales.",
+    tips: [
+      "Acceso a escuelas",
+      "Tiendas de barrio",
+      "Servicios de salud"
+    ]
+  },
+  {
+    slug: "mb-buenavista",
+    nombre: "Buenavista",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "terminal",
+    lat: 19.4902,
+    lng: -99.1293,
+    pois: [
+      { nombre: "Estación Buenavista", tipo: "terminal", distancia: "3 min caminando" },
+      { nombre: "Mercado de Buenavista", tipo: "mercado", distancia: "2 min caminando" },
+      { nombre: "Centro de Salud", tipo: "servicios", distancia: "4 min caminando" }
+    ],
+    transferencias: ["Metro Línea B"],
+    seo_title: "Estación Buenavista - Metrobús Línea 1",
+    meta_description: "Estación Buenavista. Conexión Metro Línea B, terminal de trenes.",
+    h1: "Estación Buenavista",
+    intro: "Importante estación de transporte con conexión a Metro.",
+    tips: [
+      "Conexión Metro Línea B",
+      "Terminal de trenes",
+      "Mercados locales"
+    ]
+  },
+  {
+    slug: "mb-revolucion",
+    nombre: "Revolución",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4847,
+    lng: -99.1327,
+    pois: [
+      { nombre: "Monumento a la Revolución", tipo: "turismo", distancia: "1 min caminando" },
+      { nombre: "Museo de la Revolución", tipo: "cultura", distancia: "2 min caminando" },
+      { nombre: "Plaza de la República", tipo: "parque", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Revolución - Metrobús Línea 1",
+    meta_description: "Estación Revolución. Monumento a la Revolución, zona histórica.",
+    h1: "Estación Revolución",
+    intro: "Centro histórico con monumentos y museos importantes.",
+    tips: [
+      "Monumento a la Revolución",
+      "Museos culturales",
+      "Zona peatonal"
+    ]
+  },
+  {
+    slug: "mb-magnolias",
+    nombre: "Magnolias",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "parque",
+    lat: 19.4792,
+    lng: -99.1361,
+    pois: [
+      { nombre: "Parque España", tipo: "parque", distancia: "2 min caminando" },
+      { nombre: "Cafeterías Variadas", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Librerías", tipo: "comercio", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Magnolias - Metrobús Línea 1",
+    meta_description: "Estación Magnolias. Acceso a Parque España, zona de librerías.",
+    h1: "Estación Magnolias",
+    intro: "Zona con parques y vida cultural diversa.",
+    tips: [
+      "Parque España",
+      "Cafeterías y librerías",
+      "Vida cultural activa"
+    ]
+  },
+  {
+    slug: "mb-plaza-de-la-republica",
+    nombre: "Plaza de la República",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "parque",
+    lat: 19.4737,
+    lng: -99.1395,
+    pois: [
+      { nombre: "Plaza de la República", tipo: "parque", distancia: "1 min caminando" },
+      { nombre: "Restaurantes con Terraza", tipo: "alimento", distancia: "2 min caminando" },
+      { nombre: "Centro de Convenciones", tipo: "negocios", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Plaza de la República - Metrobús Línea 1",
+    meta_description: "Estación Plaza de la República. Centro comercial y cultural.",
+    h1: "Estación Plaza de la República",
+    intro: "Centro recreativo con restaurantes y espacios para eventos.",
+    tips: [
+      "Plaza principal",
+      "Restaurantes con terraza",
+      "Centro de eventos"
+    ]
+  },
+  {
+    slug: "mb-fuente-de-petrarca",
+    nombre: "Fuente de Petrarca",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4682,
+    lng: -99.1429,
+    pois: [
+      { nombre: "Centro Comercial Petrarca", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Fuente de Petrarca", tipo: "parque", distancia: "1 min caminando" },
+      { nombre: "Galerías de Arte", tipo: "cultura", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Fuente de Petrarca - Metrobús Línea 1",
+    meta_description: "Estación Fuente de Petrarca. Centro cultural y comercial.",
+    h1: "Estación Fuente de Petrarca",
+    intro: "Zona con comercios, arte y espacios públicos.",
+    tips: [
+      "Fuente de Petrarca",
+      "Centro comercial",
+      "Galerías de arte"
+    ]
+  },
+  {
+    slug: "mb-lopez-mateos",
+    nombre: "López Mateos",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4627,
+    lng: -99.1463,
+    pois: [
+      { nombre: "Tiendas Departamentales", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurants Populares", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Servicios Bancarios", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación López Mateos - Metrobús Línea 1",
+    meta_description: "Estación López Mateos. Zona comercial con tiendas y servicios.",
+    h1: "Estación López Mateos",
+    intro: "Centro comercial importante con servicios variados.",
+    tips: [
+      "Tiendas departamentales",
+      "Restaurantes varios",
+      "Servicios financieros"
+    ]
+  },
+  {
+    slug: "mb-avenida-chapultepec",
+    nombre: "Avenida Chapultepec",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "parque",
+    lat: 19.4572,
+    lng: -99.1497,
+    pois: [
+      { nombre: "Parque Chapultepec", tipo: "parque", distancia: "5 min caminando" },
+      { nombre: "Museos de Chapultepec", tipo: "cultura", distancia: "10 min caminando" },
+      { nombre: "Castillo de Chapultepec", tipo: "turismo", distancia: "15 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Chapultepec - Metrobús Línea 1",
+    meta_description: "Estación Avenida Chapultepec. Acceso a Parque Chapultepec y museos.",
+    h1: "Estación Avenida Chapultepec",
+    intro: "Acceso a importantes espacios culturales y recreativos de la ciudad.",
+    tips: [
+      "Parque Chapultepec",
+      "Museos nacionales",
+      "Castillo de Chapultepec"
+    ]
+  },
+  {
+    slug: "mb-paseo-de-la-reforma",
+    nombre: "Paseo de la Reforma",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4517,
+    lng: -99.1531,
+    pois: [
+      { nombre: "Paseo de la Reforma", tipo: "avenida", distancia: "1 min caminando" },
+      { nombre: "Ángel de la Independencia", tipo: "turismo", distancia: "3 min caminando" },
+      { nombre: "Hoteles 5 Estrellas", tipo: "alojamiento", distancia: "2 min caminando" }
+    ],
+    transferencias: ["Metro Línea 1"],
+    seo_title: "Estación Paseo de la Reforma - Metrobús Línea 1",
+    meta_description: "Estación Paseo de la Reforma. Centro administrativo y turístico.",
+    h1: "Estación Paseo de la Reforma",
+    intro: "Avenida principal de la ciudad con importantes edificios administrativos.",
+    tips: [
+      "Paseo de la Reforma",
+      "Ángel de la Independencia",
+      "Hoteles de lujo"
+    ]
+  },
+  {
+    slug: "mb-constitucion",
+    nombre: "Constitución",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4462,
+    lng: -99.1565,
+    pois: [
+      { nombre: "Tiendas de Moda", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Gourmet", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Galería de Arte Contemporáneo", tipo: "cultura", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Constitución - Metrobús Línea 1",
+    meta_description: "Estación Constitución. Zona de moda y gastronomía.",
+    h1: "Estación Constitución",
+    intro: "Centro de moda y gastronomía de calidad.",
+    tips: [
+      "Tiendas de diseñador",
+      "Restaurantes premium",
+      "Vida cultural intensa"
+    ]
+  },
+  {
+    slug: "mb-angel-independencia",
+    nombre: "Ángel de la Independencia",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "turismo",
+    lat: 19.4407,
+    lng: -99.1599,
+    pois: [
+      { nombre: "Ángel de la Independencia", tipo: "turismo", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Mexicanos", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Tiendas de Artesanías", tipo: "comercio", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Ángel de la Independencia - Metrobús Línea 1",
+    meta_description: "Estación Ángel de la Independencia. Icono turístico de la ciudad.",
+    h1: "Estación Ángel de la Independencia",
+    intro: "Centro turístico icónico de la ciudad.",
+    tips: [
+      "Monumento emblemático",
+      "Restaurantes mexicanos",
+      "Tiendas de recuerdos"
+    ]
+  },
+  {
+    slug: "mb-avenida-ejercito-nacional",
+    nombre: "Avenida Ejército Nacional",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.4352,
+    lng: -99.1633,
+    pois: [
+      { nombre: "Escuela Privada", tipo: "educativo", distancia: "3 min caminando" },
+      { nombre: "Tienda de Conveniencia", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Parque Pequeño", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Ejército Nacional - Metrobús Línea 1",
+    meta_description: "Estación Avenida Ejército Nacional. Zona residencial tranquila.",
+    h1: "Estación Avenida Ejército Nacional",
+    intro: "Zona residencial de calidad con servicios educativos.",
+    tips: [
+      "Escuelas particulares",
+      "Tiendas de barrio",
+      "Ambiente tranquilo"
+    ]
+  },
+  {
+    slug: "mb-parque-espana",
+    nombre: "Parque España",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "parque",
+    lat: 19.4297,
+    lng: -99.1667,
+    pois: [
+      { nombre: "Parque España", tipo: "parque", distancia: "2 min caminando" },
+      { nombre: "Cafés Artesanales", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Tienda de Ropa", tipo: "comercio", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Parque España - Metrobús Línea 1",
+    meta_description: "Estación Parque España. Zona verde con cafés y tiendas.",
+    h1: "Estación Parque España",
+    intro: "Zona con espacios verdes y vida comercial activa.",
+    tips: [
+      "Parque con áreas verdes",
+      "Cafeterías y librerías",
+      "Zona peatonal"
+    ]
+  },
+  {
+    slug: "mb-lomas-del-virrey",
+    nombre: "Lomas del Virrey",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.4242,
+    lng: -99.1701,
+    pois: [
+      { nombre: "Residencias Lomas", tipo: "alojamiento", distancia: "5 min caminando" },
+      { nombre: "Centro de Wellness", tipo: "servicios", distancia: "4 min caminando" },
+      { nombre: "Restaurante Gourmet", tipo: "alimento", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Lomas del Virrey - Metrobús Línea 1",
+    meta_description: "Estación Lomas del Virrey. Zona residencial de lujo.",
+    h1: "Estación Lomas del Virrey",
+    intro: "Zona residencial de alto nivel con servicios premium.",
+    tips: [
+      "Residencias exclusivas",
+      "Servicios de bienestar",
+      "Gastronomía de calidad"
+    ]
+  },
+  {
+    slug: "mb-avenida-lomas",
+    nombre: "Avenida Lomas",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.4187,
+    lng: -99.1735,
+    pois: [
+      { nombre: "Centro Médico Privado", tipo: "servicios", distancia: "3 min caminando" },
+      { nombre: "Farmacia de Cadena", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Tienda de Alimentos", tipo: "comercio", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Lomas - Metrobús Línea 1",
+    meta_description: "Estación Avenida Lomas. Zona residencial con servicios.",
+    h1: "Estación Avenida Lomas",
+    intro: "Zona residencial con servicios médicos y comerciales.",
+    tips: [
+      "Clínicas y farmacias",
+      "Tiendas de alimentos",
+      "Zona segura"
+    ]
+  },
+  {
+    slug: "mb-miguel-e-ahumada",
+    nombre: "Miguel E. Ahumada",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.4132,
+    lng: -99.1769,
+    pois: [
+      { nombre: "Centro Comercial Ahumada", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Variados", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Servicios Financieros", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Miguel E. Ahumada - Metrobús Línea 1",
+    meta_description: "Estación Miguel E. Ahumada. Centro comercial importante.",
+    h1: "Estación Miguel E. Ahumada",
+    intro: "Centro comercial con servicios y gastronomía diversa.",
+    tips: [
+      "Centro comercial",
+      "Restaurantes varios",
+      "Servicios bancarios"
+    ]
+  },
+  {
+    slug: "mb-periferica-sur",
+    nombre: "Periférica Sur",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "vialidad",
+    lat: 19.4077,
+    lng: -99.1803,
+    pois: [
+      { nombre: "Centro Comercial Periférica", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Servicios Automotrices", tipo: "servicios", distancia: "4 min caminando" },
+      { nombre: "Gasolinera", tipo: "servicios", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Periférica Sur - Metrobús Línea 1",
+    meta_description: "Estación Periférica Sur. Vialidad principal de la ciudad.",
+    h1: "Estación Periférica Sur",
+    intro: "Acceso a la Periférica Sur con servicios automotrices.",
+    tips: [
+      "Vialidad principal",
+      "Servicios para autos",
+      "Centro comercial"
+    ]
+  },
+  {
+    slug: "mb-estadio-azteca",
+    nombre: "Estadio Azteca",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "deportivo",
+    lat: 19.4022,
+    lng: -99.1837,
+    pois: [
+      { nombre: "Estadio Azteca", tipo: "deportivo", distancia: "3 min caminando" },
+      { nombre: "Tienda del Estadio", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurante Deportivo", tipo: "alimento", distancia: "4 min caminando" }
+    ],
+    transferencias: ["Metro Línea 2"],
+    seo_title: "Estación Estadio Azteca - Metrobús Línea 1",
+    meta_description: "Estación Estadio Azteca. Acceso Metro Línea 2 y estadio.",
+    h1: "Estación Estadio Azteca",
+    intro: "Acceso al Estadio Azteca, principal estadio de México.",
+    tips: [
+      "Estadio Azteca",
+      "Conexión Metro Línea 2",
+      "Servicios deportivos"
+    ]
+  },
+  {
+    slug: "mb-municipios",
+    nombre: "Municipios",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.3967,
+    lng: -99.1871,
+    pois: [
+      { nombre: "Centro Administrativo", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Tiendas Comerciales", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Oficinas Públicas", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Municipios - Metrobús Línea 1",
+    meta_description: "Estación Municipios. Centro administrativo de la ciudad.",
+    h1: "Estación Municipios",
+    intro: "Centro administrativo con servicios públicos.",
+    tips: [
+      "Oficinas de gobierno",
+      "Servicios administrativos",
+      "Comercios variados"
+    ]
+  },
+  {
+    slug: "mb-natividad",
+    nombre: "Natividad",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3912,
+    lng: -99.1905,
+    pois: [
+      { nombre: "Templo de la Natividad", tipo: "religioso", distancia: "2 min caminando" },
+      { nombre: "Mercado Local", tipo: "mercado", distancia: "3 min caminando" },
+      { nombre: "Parque de Barrio", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Natividad - Metrobús Línea 1",
+    meta_description: "Estación Natividad. Zona residencial con servicios locales.",
+    h1: "Estación Natividad",
+    intro: "Zona residencial de barrio con servicios comunitarios.",
+    tips: [
+      "Templo histórico",
+      "Mercados locales",
+      "Ambiente de barrio"
+    ]
+  },
+  {
+    slug: "mb-avenida-santa-rosa",
+    nombre: "Avenida Santa Rosa",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3857,
+    lng: -99.1939,
+    pois: [
+      { nombre: "Tienda de Ropa", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurante Local", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Farmacia", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Santa Rosa - Metrobús Línea 1",
+    meta_description: "Estación Avenida Santa Rosa. Zona comercial de barrio.",
+    h1: "Estación Avenida Santa Rosa",
+    intro: "Zona comercial local con servicios residenciales.",
+    tips: [
+      "Tiendas locales",
+      "Restaurantes de barrio",
+      "Servicios básicos"
+    ]
+  },
+  {
+    slug: "mb-centro-comercial-gigante",
+    nombre: "Centro Comercial Gigante",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.3802,
+    lng: -99.1973,
+    pois: [
+      { nombre: "Centro Comercial Gigante", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Tienda de Supermercado", tipo: "comercio", distancia: "1 min caminando" },
+      { nombre: "Cine Comercial", tipo: "entretenimiento", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Centro Comercial Gigante - Metrobús Línea 1",
+    meta_description: "Estación Centro Comercial Gigante. Shopping y entretenimiento.",
+    h1: "Estación Centro Comercial Gigante",
+    intro: "Centro comercial con tiendas y entretenimiento.",
+    tips: [
+      "Centro comercial",
+      "Supermercado grande",
+      "Cines"
+    ]
+  },
+  {
+    slug: "mb-avenida-division-del-norte",
+    nombre: "Avenida División del Norte",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.3747,
+    lng: -99.2007,
+    pois: [
+      { nombre: "Centro Médico División", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Tiendas de Ropa", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Restaurante Popular", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida División del Norte - Metrobús Línea 1",
+    meta_description: "Estación Avenida División del Norte. Centro médico y comercial.",
+    h1: "Estación Avenida División del Norte",
+    intro: "Centro comercial con servicios médicos y tiendas.",
+    tips: [
+      "Centros de salud",
+      "Tiendas variadas",
+      "Restaurantes"
+    ]
+  },
+  {
+    slug: "mb-avenida-mexico",
+    nombre: "Avenida México",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3692,
+    lng: -99.2041,
+    pois: [
+      { nombre: "Escuela Secundaria", tipo: "educativo", distancia: "3 min caminando" },
+      { nombre: "Tienda de Alimentos", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Parque", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida México - Metrobús Línea 1",
+    meta_description: "Estación Avenida México. Zona residencial educativa.",
+    h1: "Estación Avenida México",
+    intro: "Zona residencial con servicios educativos.",
+    tips: [
+      "Escuelas",
+      "Tiendas locales",
+      "Parques"
+    ]
+  },
+  {
+    slug: "mb-avenida-copilco",
+    nombre: "Avenida Copilco",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "educativo",
+    lat: 19.3637,
+    lng: -99.2075,
+    pois: [
+      { nombre: "Universidad Nacional Autónoma", tipo: "educativo", distancia: "10 min caminando" },
+      { nombre: "Librería Universitaria", tipo: "comercio", distancia: "5 min caminando" },
+      { nombre: "Cafetería Estudiantil", tipo: "alimento", distancia: "4 min caminando" }
+    ],
+    transferencias: ["Metro Línea 3"],
+    seo_title: "Estación Avenida Copilco - Metrobús Línea 1",
+    meta_description: "Estación Avenida Copilco. Acceso UNAM, conexión Metro Línea 3.",
+    h1: "Estación Avenida Copilco",
+    intro: "Acceso a universidad principal de México.",
+    tips: [
+      "Universidad Nacional",
+      "Zona universitaria",
+      "Vida estudiantil"
+    ]
+  },
+  {
+    slug: "mb-avenida-universidad",
+    nombre: "Avenida Universidad",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "educativo",
+    lat: 19.3582,
+    lng: -99.2109,
+    pois: [
+      { nombre: "Campus UNAM", tipo: "educativo", distancia: "3 min caminando" },
+      { nombre: "Biblioteca Central", tipo: "educativo", distancia: "5 min caminando" },
+      { nombre: "Comedor Universitario", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Universidad - Metrobús Línea 1",
+    meta_description: "Estación Avenida Universidad. Centro universitario UNAM.",
+    h1: "Estación Avenida Universidad",
+    intro: "Centro educativo principal de la ciudad.",
+    tips: [
+      "Campus universitario",
+      "Biblioteca importante",
+      "Zona académica"
+    ]
+  },
+  {
+    slug: "mb-central-de-abastos",
+    nombre: "Central de Abastos",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "mercado",
+    lat: 19.3527,
+    lng: -99.2143,
+    pois: [
+      { nombre: "Central de Abastos", tipo: "mercado", distancia: "2 min caminando" },
+      { nombre: "Mercado Mayorista", tipo: "mercado", distancia: "1 min caminando" },
+      { nombre: "Restaurantes de Comida", tipo: "alimento", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Central de Abastos - Metrobús Línea 1",
+    meta_description: "Estación Central de Abastos. Principal mercado mayorista.",
+    h1: "Estación Central de Abastos",
+    intro: "Principal mercado mayorista de la ciudad.",
+    tips: [
+      "Mercado mayorista",
+      "Precios competitivos",
+      "Gran variedad"
+    ]
+  },
+  {
+    slug: "mb-avenida-del-taller",
+    nombre: "Avenida del Taller",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "industrial",
+    lat: 19.3472,
+    lng: -99.2177,
+    pois: [
+      { nombre: "Talleres Automotrices", tipo: "servicios", distancia: "3 min caminando" },
+      { nombre: "Comercios Industriales", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurante de Trabajadores", tipo: "alimento", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida del Taller - Metrobús Línea 1",
+    meta_description: "Estación Avenida del Taller. Zona industrial y comercial.",
+    h1: "Estación Avenida del Taller",
+    intro: "Zona industrial con talleres y comercios.",
+    tips: [
+      "Talleres automotrices",
+      "Zona industrial",
+      "Comercios especializados"
+    ]
+  },
+  {
+    slug: "mb-xotepingo",
+    nombre: "Xotepingo",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3417,
+    lng: -99.2211,
+    pois: [
+      { nombre: "Mercado de Xotepingo", tipo: "mercado", distancia: "2 min caminando" },
+      { nombre: "Templo de Xotepingo", tipo: "religioso", distancia: "3 min caminando" },
+      { nombre: "Parque Comunitario", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Xotepingo - Metrobús Línea 1",
+    meta_description: "Estación Xotepingo. Zona residencial con tradición.",
+    h1: "Estación Xotepingo",
+    intro: "Zona residencial con tradición y servicios comunitarios.",
+    tips: [
+      "Mercado tradicional",
+      "Sitio histórico",
+      "Comunidad local"
+    ]
+  },
+  {
+    slug: "mb-avenida-prolongacion-insurgentes",
+    nombre: "Avenida Prolongación Insurgentes",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3362,
+    lng: -99.2245,
+    pois: [
+      { nombre: "Tiendas de Ropa", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes Variados", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Servicios Financieros", tipo: "servicios", distancia: "1 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Prolongación Insurgentes - Metrobús Línea 1",
+    meta_description: "Estación Avenida Prolongación Insurgentes. Continuación de ruta.",
+    h1: "Estación Avenida Prolongación Insurgentes",
+    intro: "Continuación de la Avenida Insurgentes hacia el sur.",
+    tips: [
+      "Tiendas comerciales",
+      "Restaurantes varios",
+      "Servicios bancarios"
+    ]
+  },
+  {
+    slug: "mb-avenida-universidad-sur",
+    nombre: "Avenida Universidad Sur",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "educativo",
+    lat: 19.3307,
+    lng: -99.2279,
+    pois: [
+      { nombre: "Campus Universitario", tipo: "educativo", distancia: "4 min caminando" },
+      { nombre: "Librería Académica", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Comedor Estudiantil", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Universidad Sur - Metrobús Línea 1",
+    meta_description: "Estación Avenida Universidad Sur. Centro educativo.",
+    h1: "Estación Avenida Universidad Sur",
+    intro: "Zona educativa con infraestructura académica.",
+    tips: [
+      "Instituciones educativas",
+      "Librería especializada",
+      "Servicios estudiantiles"
+    ]
+  },
+  {
+    slug: "mb-paseo-de-los-heroes",
+    nombre: "Paseo de los Héroes",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.3252,
+    lng: -99.2313,
+    pois: [
+      { nombre: "Centro Comercial Héroes", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurante Temático", tipo: "alimento", distancia: "3 min caminando" },
+      { nombre: "Parque de la Memoria", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Paseo de los Héroes - Metrobús Línea 1",
+    meta_description: "Estación Paseo de los Héroes. Centro comercial y cultural.",
+    h1: "Estación Paseo de los Héroes",
+    intro: "Zona comercial con referencias históricas.",
+    tips: [
+      "Centro comercial",
+      "Restaurantes variados",
+      "Zonas verdes"
+    ]
+  },
+  {
+    slug: "mb-avenida-moctezuma",
+    nombre: "Avenida Moctezuma",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3197,
+    lng: -99.2347,
+    pois: [
+      { nombre: "Tienda de Conveniencia", tipo: "comercio", distancia: "1 min caminando" },
+      { nombre: "Farmacia Local", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Parque de Barrio", tipo: "parque", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Moctezuma - Metrobús Línea 1",
+    meta_description: "Estación Avenida Moctezuma. Zona residencial tranquila.",
+    h1: "Estación Avenida Moctezuma",
+    intro: "Zona residencial con servicios básicos.",
+    tips: [
+      "Tiendas locales",
+      "Farmacias",
+      "Ambiente tranquilo"
+    ]
+  },
+  {
+    slug: "mb-mercado-de-la-paz",
+    nombre: "Mercado de la Paz",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "mercado",
+    lat: 19.3142,
+    lng: -99.2381,
+    pois: [
+      { nombre: "Mercado de la Paz", tipo: "mercado", distancia: "2 min caminando" },
+      { nombre: "Vendedores de Frutas", tipo: "comercio", distancia: "1 min caminando" },
+      { nombre: "Comedor de Mercado", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Mercado de la Paz - Metrobús Línea 1",
+    meta_description: "Estación Mercado de la Paz. Mercado local tradicional.",
+    h1: "Estación Mercado de la Paz",
+    intro: "Mercado tradicional de la zona sur.",
+    tips: [
+      "Mercado variado",
+      "Precios accesibles",
+      "Comida local"
+    ]
+  },
+  {
+    slug: "mb-avenida-batalla-de-puebla",
+    nombre: "Avenida Batalla de Puebla",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "comercial",
+    lat: 19.3087,
+    lng: -99.2415,
+    pois: [
+      { nombre: "Centro Médico Batalla", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Tiendas Comerciales", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Restaurante Popular", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Batalla de Puebla - Metrobús Línea 1",
+    meta_description: "Estación Avenida Batalla de Puebla. Centro médico y comercial.",
+    h1: "Estación Avenida Batalla de Puebla",
+    intro: "Centro comercial con servicios de salud.",
+    tips: [
+      "Clínicas médicas",
+      "Comercios variados",
+      "Restaurantes"
+    ]
+  },
+  {
+    slug: "mb-avenida-general-anaya",
+    nombre: "Avenida General Anaya",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.3032,
+    lng: -99.2449,
+    pois: [
+      { nombre: "Escuela Primaria", tipo: "educativo", distancia: "3 min caminando" },
+      { nombre: "Tienda de Ropa", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Parque Pequeño", tipo: "parque", distancia: "4 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida General Anaya - Metrobús Línea 1",
+    meta_description: "Estación Avenida General Anaya. Zona residencial educativa.",
+    h1: "Estación Avenida General Anaya",
+    intro: "Zona residencial con escuelas y servicios.",
+    tips: [
+      "Escuelas primarias",
+      "Tiendas locales",
+      "Parques"
+    ]
+  },
+  {
+    slug: "mb-avenida-nativitas",
+    nombre: "Avenida Nativitas",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "residencial",
+    lat: 19.2977,
+    lng: -99.2483,
+    pois: [
+      { nombre: "Tienda de Alimentos", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Farmacia", tipo: "servicios", distancia: "1 min caminando" },
+      { nombre: "Salón Comunitario", tipo: "servicios", distancia: "3 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Avenida Nativitas - Metrobús Línea 1",
+    meta_description: "Estación Avenida Nativitas. Zona residencial con servicios.",
+    h1: "Estación Avenida Nativitas",
+    intro: "Zona residencial tranquila con servicios básicos.",
+    tips: [
+      "Tiendas locales",
+      "Servicios de salud",
+      "Comunidad activa"
+    ]
+  },
+  {
+    slug: "mb-el-caminero",
+    nombre: "El Caminero",
+    linea: "Metrobús Línea 1 Insurgentes",
+    lineaId: "linea1",
+    sistema: "Metrobús",
+    municipio: "Ciudad de México",
+    tipo_zona: "terminal",
+    lat: 19.2922,
+    lng: -99.2517,
+    pois: [
+      { nombre: "Terminal El Caminero", tipo: "terminal", distancia: "2 min caminando" },
+      { nombre: "Centro Comercial Terminal", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Restaurante Terminal", tipo: "alimento", distancia: "2 min caminando" }
+    ],
+    transferencias: [],
+    seo_title: "Estación El Caminero - Metrobús Línea 1",
+    meta_description: "Estación El Caminero. Terminal sur de la Línea 1.",
+    h1: "Estación El Caminero",
+    intro: "Terminal sur de la Línea 1 Insurgentes.",
+    tips: [
+      "Terminal de línea",
+      "Centro comercial",
+      "Servicios de terminal"
+    ]
+  }
+];
+
+export const metrobusSistema = {
+  nombre: "Metrobús CDMX",
+  nombreCompleto: "Sistema de Transporte Metrobús de la Ciudad de México",
+  descripcion: "El Metrobús es un sistema de transporte de autobús de tránsito rápido (BRT) de la Ciudad de México. Proporciona servicio confiable, rápido y de bajo costo en cariles exclusivos a lo largo de las principales avenidas de la ciudad.",
+  total_lineas: 7,
+  total_estaciones: 150,
+  inicio_operaciones: 2005,
+  horario_general: "Lun-Vie 5:00-23:30 · Sáb 6:00-23:30 · Dom 7:00-23:30",
+  tarifa_general: "$7 MXN",
+  seo_title: "Sistema Metrobús CDMX: Líneas, Horarios y Estaciones",
+  meta_description: "Información completa del Metrobús de la Ciudad de México. 7 líneas BRT, 150+ estaciones, horarios y tarifas.",
+  h1: "Sistema Metrobús Ciudad de México",
+  intro: "El Metrobús es el principal sistema de transporte de autobús de tránsito rápido en la Ciudad de México, sirviendo a millones de pasajeros diarios.",
+  tips: [
+    "Utiliza cariles exclusivos para tránsito rápido",
+    "Tarifa única de $7 MXN sin cambios",
+    "Conexiones con Metro y otros sistemas de transporte",
+    "Estaciones accesibles para personas con discapacidad"
+  ]
+};

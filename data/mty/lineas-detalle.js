@@ -21,7 +21,7 @@ export const lineasMTY = [
       "hospital",
       "edison",
       "central",
-      "cuauhtemoc",
+      "mty-cuauhtemoc",
       "del-golfo",
       "felix-u-gomez",
       "parque-fundidora",
@@ -34,7 +34,7 @@ export const lineasMTY = [
       titulo: "Ruta de 1 día completo en Línea 1 Metrorrey + Estadio BBVA",
       paradas: [
         {
-          estacion: "cuauhtemoc",
+          estacion: "mty-cuauhtemoc",
           actividad: "Comienza en el centro histórico. Explora Barrio Antiguo (casas coloniales, galerías) — 1 hora"
         },
         {
@@ -70,7 +70,7 @@ export const lineasMTY = [
       "tapia",
       "san-nicolas",
       "anáhuac",
-      "universidad",
+      "mty-universidad",
       "ninos-heroes",
       "regina",
       "general-anaya",
@@ -101,8 +101,50 @@ export const lineasMTY = [
         }
       ]
     },
-    seo_title: "Línea 2 Naranja Metrorrey Monterrey — Parque Fundidora, MARCO, 16 estaciones | MetroGuia",
-    meta_description: "Línea 2 Naranja del Metrorrey Monterrey. Línea este-oeste conectando Parque Fundidora, MARCO y zonas residenciales. 16 estaciones.",
+    seo_title: "Línea 2 Verde Metrorrey Monterrey — Macroplaza, Barrio Antiguo, 13 estaciones | MetroGuia",
+    meta_description: "Línea 2 Verde del Metrorrey Monterrey. Línea norte-sur conectando Sendero con General I. Zaragoza. Acceso a Macroplaza, Barrio Antiguo y centro histórico.",
     h1: "Línea 2 Metrorrey — De Sendero a General I. Zaragoza"
+  },
+  {
+    id: "3",
+    color: "#FF6B00",
+    colorNombre: "Naranja",
+    inicio: "Hospital Metropolitano",
+    fin: "General I. Zaragoza",
+    total: 9,
+    municipios: ["Monterrey"],
+    descripcion: "La Línea 3 del Metrorrey (naranja) conecta desde Hospital Metropolitano en el norte hasta General I. Zaragoza en el sur. Inaugurada en 2024, es la línea más nueva del sistema con 8 estaciones elevadas y 1 subterránea. Conexión clave con L1 en Félix U. Gómez y con L2 en General I. Zaragoza.",
+    estaciones_turisticas: ["felix-u-gomez-l3", "general-i-zaragoza-l3"],
+    estaciones: [
+      "hospital-metropolitano",
+      "los-angeles",
+      "ruiz-cortines",
+      "moderna",
+      "metalurgicos",
+      "felix-u-gomez-l3",
+      "colonia-obrera",
+      "santa-lucia",
+      "general-i-zaragoza-l3"
+    ],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día en Línea 3 Metrorrey — Conexiones al Centro",
+      paradas: [
+        {
+          estacion: "hospital-metropolitano",
+          actividad: "Comienza en la terminal norte de L3, zona hospitalaria y servicios — 30 min"
+        },
+        {
+          estacion: "felix-u-gomez-l3",
+          actividad: "Transbordo a L1. Accede a Parque Fundidora caminando o en una estación más — 2 horas"
+        },
+        {
+          estacion: "general-i-zaragoza-l3",
+          actividad: "Transbordo a L2. Ve a Fundadores para Macroplaza o a Regina para Barrio Antiguo — 2 horas"
+        }
+      ]
+    },
+    seo_title: "Línea 3 Naranja Metrorrey Monterrey — Hospital Metropolitano a Zaragoza, 9 estaciones | MetroGuia",
+    meta_description: "Línea 3 Naranja del Metrorrey Monterrey. La línea más nueva (2024). 9 estaciones de Hospital Metropolitano a General I. Zaragoza con conexiones a L1 y L2.",
+    h1: "Línea 3 Metrorrey — De Hospital Metropolitano a General I. Zaragoza"
   }
 ];

@@ -7,7 +7,7 @@ export const revalidate = false
 
 // Pre-build top 100 GDL routes at build time (rest via ISR)
 export function generateStaticParams() {
-  const hubs = ['guadalajara-centro', 'estadio-chivas', 'central-de-autobuses', 'auditorio', 'san-juan-de-dios']
+  const hubs = ['guadalajara-centro', 'estadio-chivas', 'central-de-autobuses', 'gdl-auditorio', 'san-juan-de-dios']
   const params = []
   for (const hub of hubs) {
     for (const station of gdlStations) {

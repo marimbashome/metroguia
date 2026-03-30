@@ -29,6 +29,16 @@ import { lineasQueretaro } from '@/data/queretaro/lineas-detalle';
 import { lineasToluca } from '@/data/toluca/lineas-detalle';
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 
+// CDMX auxiliary transit systems
+import { trolebusData } from '@/data/cdmx/trolebus';
+import { mexicableEstaciones, mexicableLineas, mexicableSistema } from '@/data/cdmx/mexicable';
+import { metrobusEstaciones, metrobusLineas, metrobusSistema } from '@/data/cdmx/metrobus';
+import { cablebusEstaciones, cablebusLineas, cablebusSistema } from '@/data/cdmx/cablebus';
+import { trenLigeroData } from '@/data/cdmx/tren-ligero';
+import { trenSuburbanoData } from '@/data/cdmx/tren-suburbano';
+import { aeropuertos } from '@/data/aeropuertos';
+import { terminales } from '@/data/terminales';
+
 export default function sitemap() {
   const baseUrl = 'https://metroguia.mx';
   const lastModified = new Date();
@@ -219,8 +229,80 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // ALL 26,894 route pages — CDMX (24,180) + GDL (1,722) + MTY (992)
+  // ALL route pages — CDMX + GDL + MTY
   // ISR: generated on-demand, all listed in sitemap for Google discovery
+  // CDMX Transit System Pages
+  const cdmxTransitPages = [
+    // Trolebús hub + lines + stations
+    { url: `${baseUrl}/cdmx/trolebus/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...Object.keys(trolebusData.lineas).map(id => ({
+      url: `${baseUrl}/cdmx/trolebus/linea/${id}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    ...(trolebusData.estaciones || []).map(e => ({
+      url: `${baseUrl}/cdmx/trolebus/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Mexicable hub + lines + stations
+    { url: `${baseUrl}/cdmx/mexicable/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...Object.keys(mexicableLineas).map(id => ({
+      url: `${baseUrl}/cdmx/mexicable/linea/${id}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    ...mexicableEstaciones.map(e => ({
+      url: `${baseUrl}/cdmx/mexicable/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Metrobús hub + lines + stations
+    { url: `${baseUrl}/cdmx/metrobus/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...Object.keys(metrobusLineas).map(id => ({
+      url: `${baseUrl}/cdmx/metrobus/linea/${id}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    ...metrobusEstaciones.map(e => ({
+      url: `${baseUrl}/cdmx/metrobus/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Cablebús hub + lines + stations
+    { url: `${baseUrl}/cdmx/cablebus/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...Object.keys(cablebusLineas).map(id => ({
+      url: `${baseUrl}/cdmx/cablebus/linea/${id}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    ...cablebusEstaciones.map(e => ({
+      url: `${baseUrl}/cdmx/cablebus/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Tren Ligero hub + stations
+    { url: `${baseUrl}/cdmx/tren-ligero/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...(trenLigeroData.estaciones || []).map(e => ({
+      url: `${baseUrl}/cdmx/tren-ligero/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Tren Suburbano hub + lines + stations
+    { url: `${baseUrl}/cdmx/tren-suburbano/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...Object.keys(trenSuburbanoData.lineas).map(id => ({
+      url: `${baseUrl}/cdmx/tren-suburbano/linea/${id}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    ...(trenSuburbanoData.estaciones || []).map(e => ({
+      url: `${baseUrl}/cdmx/tren-suburbano/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Aeropuertos
+    { url: `${baseUrl}/aeropuertos/`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    ...(aeropuertos || []).map(a => ({
+      url: `${baseUrl}/aeropuertos/${a.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+    // Terminales de autobús
+    { url: `${baseUrl}/terminales/`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    ...(terminales || []).map(t => ({
+      url: `${baseUrl}/terminales/${t.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+  ];
+
   const cdmxRoutes = generateCityRoutes('cdmx').map(slug => ({
     url: `${baseUrl}/ruta/${slug}/`,
     lastModified,
@@ -317,6 +399,7 @@ export default function sitemap() {
   });
 
   return [
+    ...cdmxTransitPages,
     ...staticPages,
     ...fifaMatchPages,
     ...cityPages,

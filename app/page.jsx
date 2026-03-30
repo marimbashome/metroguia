@@ -7,8 +7,8 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
-  description: 'Trip planner de transporte urbano. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. 400+ estaciones. Guía Mundial FIFA 2026.',
+  title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero, teleférico y BRT en México',
+  description: 'Trip planner de transporte urbano. Calcula rutas en metro, tren ligero, Mexicable, Cablebús y BRT para CDMX, Guadalajara y Monterrey. 7 sistemas de transporte en CDMX. Guía Mundial FIFA 2026.',
   alternates: {
     canonical: 'https://metroguia.mx/',
     languages: {
@@ -28,8 +28,8 @@ const ciudades = [
   {
     id: 'cdmx',
     nombre: 'Ciudad de México',
-    sistema: 'Metro · Tren Ligero',
-    stats: { estaciones: 195, lineas: 12, km: 226 },
+    sistema: 'Metro · Tren Ligero · Cablebús · Mexicable · Trolebús · Tren Suburbano · Metrobús',
+    stats: { estaciones: 468, lineas: 22, km: 391 },
     color: '#F5A623',
     href: '/cdmx/',
     fifa: { estadio: 'Estadio Azteca', fechas: '11, 17, 24 jun · 30 jun · 5 jul' },
@@ -377,6 +377,128 @@ export default function LandingPage() {
                   opacity: 0.6,
                 }} />
                 {c.nombre}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Aeropuertos ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+            marginBottom: '1.5rem',
+          }}>
+            <div>
+              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Aeropuertos de México</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+                Cómo llegar del aeropuerto al centro en transporte público
+              </p>
+            </div>
+            <a href="/aeropuertos/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
+              Ver todos →
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+            {[
+              { iata: 'MEX', ciudad: 'CDMX', slug: 'aeropuerto-ciudad-de-mexico', color: '#F5A623' },
+              { iata: 'GDL', ciudad: 'Guadalajara', slug: 'aeropuerto-guadalajara', color: '#06B6D4' },
+              { iata: 'MTY', ciudad: 'Monterrey', slug: 'aeropuerto-monterrey', color: '#EC4899' },
+              { iata: 'CUN', ciudad: 'Cancún', slug: 'aeropuerto-cancun', color: '#8B5CF6' },
+              { iata: 'TIJ', ciudad: 'Tijuana', slug: 'aeropuerto-tijuana', color: '#6B7280' },
+              { iata: 'PVR', ciudad: 'Puerto Vallarta', slug: 'aeropuerto-puerto-vallarta', color: '#0EA5E9' },
+            ].map((a) => (
+              <a
+                key={a.iata}
+                href={`/aeropuertos/${a.slug}/`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.5rem 0.875rem',
+                  borderRadius: 'var(--radius-full)',
+                  backgroundColor: 'var(--surface)',
+                  border: '1px solid var(--border)',
+                  textDecoration: 'none',
+                  fontSize: '0.8rem',
+                  fontWeight: 500,
+                  color: 'var(--text-muted)',
+                  transition: 'all 0.2s',
+                }}
+              >
+                <span style={{ fontWeight: 700, color: a.color }}>{a.iata}</span>
+                {a.ciudad}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Terminales de Autobuses ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+            marginBottom: '1.5rem',
+          }}>
+            <div>
+              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Terminales de Autobuses</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+                Cómo llegar a las principales terminales en metro y transporte público
+              </p>
+            </div>
+            <a href="/terminales/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
+              Ver todas →
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+            {[
+              { nombre: 'TAPO', slug: 'tapo', metro: 'San Lázaro' },
+              { nombre: 'Central del Norte', slug: 'central-del-norte', metro: 'Autobuses del Norte' },
+              { nombre: 'Observatorio', slug: 'terminal-poniente', metro: 'Observatorio' },
+              { nombre: 'Taxqueña', slug: 'terminal-del-sur', metro: 'Taxqueña' },
+            ].map((t) => (
+              <a
+                key={t.slug}
+                href={`/terminales/${t.slug}/`}
+                className="card"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '0.75rem 1rem',
+                  textDecoration: 'none',
+                  flex: '1 1 220px',
+                  minWidth: '220px',
+                }}
+              >
+                <div style={{
+                  width: '2rem',
+                  height: '2rem',
+                  borderRadius: 'var(--radius)',
+                  backgroundColor: 'var(--primary-glow)',
+                  border: '1px solid var(--primary-border)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.9rem',
+                  flexShrink: 0,
+                }}>🚌</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{t.nombre}</div>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Metro {t.metro}</div>
+                </div>
               </a>
             ))}
           </div>

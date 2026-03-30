@@ -2,8 +2,11 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import Link from 'next/link';
 
+// Only tren-ligero stations at /gdl/estacion/; macrobús at /gdl/macrobus/estacion/
+const trenLigeroEstaciones = estacionesGDL.filter(e => e.sistema !== 'macrobus');
+
 export async function generateStaticParams() {
-  return estacionesGDL.map((estacion) => ({
+  return trenLigeroEstaciones.map((estacion) => ({
     slug: estacion.slug,
   }));
 }

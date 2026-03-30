@@ -7,12 +7,12 @@ import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'SITEUR Guadalajara — Tren Ligero 3 líneas, 48 estaciones + FIFA 2026 | MetroGuia',
-  description: 'SITEUR Guadalajara: guía turística completa del Tren Ligero. 3 líneas, 48 estaciones. Centro Histórico, Catedral, Basílica Zapopan, Estadio Akron, Plaza Patria. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
-  keywords: 'SITEUR Guadalajara, Tren Ligero, transporte Guadalajara, turismo, Centro Histórico, Estadio Akron, FIFA 2026',
+  title: 'SITEUR Guadalajara — Tren Ligero 4 líneas + Mi Macro · 125 estaciones | MetroGuia',
+  description: 'SITEUR Guadalajara: guía turística completa del Tren Ligero (4 líneas, 48 estaciones) + Mi Macro BRT (2 líneas, 69 estaciones). Centro Histórico, Catedral, Basílica Zapopan, Estadio Akron, Plaza Patria. Horarios, mapas, tickets y cómo llegar a partidos del Mundial 2026.',
+  keywords: 'SITEUR Guadalajara, Tren Ligero, Mi Macro, transporte Guadalajara, turismo, Centro Histórico, Estadio Akron, FIFA 2026',
   openGraph: {
-    title: 'SITEUR Guadalajara — Tren Ligero + Guía FIFA 2026',
-    description: 'Descubre las 3 líneas del Tren Ligero de Guadalajara. Acceso directo a Centro Histórico, Basílica de Zapopan, Estadio Akron y más.',
+    title: 'SITEUR Guadalajara — Tren Ligero + Mi Macro',
+    description: 'Descubre el Tren Ligero (4 líneas) + Mi Macro (2 líneas). Acceso directo a Centro Histórico, Basílica de Zapopan, Estadio Akron y más.',
     url: 'https://metroguia.mx/gdl',
     type: 'website',
   },
@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesGDL.filter(e =>
-  ['juarez', 'arcos-de-zapopan', 'estadio-chivas', 'plaza-universidad', 'san-juan-de-dios'].includes(e.slug)
+  ['gdl-juarez', 'arcos-de-zapopan', 'estadio-chivas', 'plaza-universidad', 'san-juan-de-dios', 'estadio-chivas-mp'].includes(e.slug)
 );
 
 export default function GDLPage() {
@@ -88,7 +88,7 @@ export default function GDLPage() {
               lineHeight: '1.4',
             }}
           >
-            Tren Ligero · 3 Líneas · 48 Estaciones
+            Tren Ligero · 4 Líneas + Mi Macro · 125 Estaciones
           </p>
           <p
             style={{
@@ -127,7 +127,7 @@ export default function GDLPage() {
         >
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
-              48
+              125
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Estaciones
@@ -135,7 +135,7 @@ export default function GDLPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
-              3
+              6
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Líneas Operativas
@@ -143,7 +143,7 @@ export default function GDLPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#06B6D4', margin: '0 0 8px 0' }}>
-              30
+              ~80
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Kilómetros
@@ -251,69 +251,66 @@ export default function GDLPage() {
                 gap: '16px',
               }}
             >
-              {[
-                { fecha: '11 junio', partido: 'Corea del Sur vs. Playoff UEFA' },
-                { fecha: '18 junio', partido: 'México vs. Corea del Sur' },
-                { fecha: '23 junio', partido: 'Colombia vs. Playoff Intercontinental' },
-                { fecha: '26 junio', partido: 'Uruguay vs. España' },
-              ].map((match, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    backgroundColor: 'var(--surface-hover)',
-                    padding: '16px',
-                    borderRadius: '8px',
-                    borderLeft: '3px solid #06B6D4',
-                  }}
-                >
-                  <p
-                    style={{
-                      fontSize: '0.875rem',
-                      fontWeight: '600',
-                      margin: '0 0 8px 0',
-                      color: '#06B6D4',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
-                    {match.fecha}
-                  </p>
-                  <p
-                    style={{
-                      fontSize: '1rem',
-                      fontWeight: '500',
-                      margin: '0',
-                      color: 'var(--text)',
-                      lineHeight: '1.4',
-                    }}
-                  >
-                    {match.partido}
-                  </p>
-                </div>
-              ))}
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  padding: '16px',
+                  borderRadius: '6px',
+                  borderLeft: '3px solid #06B6D4',
+                  textAlign: 'center',
+                }}
+              >
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Fase de Grupos</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>USA vs MEX</p>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>11 de junio</p>
+              </div>
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  padding: '16px',
+                  borderRadius: '6px',
+                  borderLeft: '3px solid #06B6D4',
+                  textAlign: 'center',
+                }}
+              >
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Fase de Grupos</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>MEX vs POL</p>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>17 de junio</p>
+              </div>
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  padding: '16px',
+                  borderRadius: '6px',
+                  borderLeft: '3px solid #06B6D4',
+                  textAlign: 'center',
+                }}
+              >
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Fase de Grupos</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>MEX vs ARA</p>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>22 de junio</p>
+              </div>
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  padding: '16px',
+                  borderRadius: '6px',
+                  borderLeft: '3px solid #06B6D4',
+                  textAlign: 'center',
+                }}
+              >
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Fase Knockout</p>
+                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>Octavos de Final</p>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>Por confirmar</p>
+              </div>
             </div>
           </div>
 
-          <div
-            style={{
-              backgroundColor: 'var(--surface-hover)',
-              border: '1px solid var(--border)',
-              borderRadius: '10px',
-              padding: '24px',
-              textAlign: 'center',
-            }}
-          >
-            <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0 0 12px 0' }}>
-              🚇 Línea 3 → Estación Chivas → Caminata 20 minutos al Estadio Akron
-            </p>
-            <p style={{ fontSize: '0.875rem', color: 'var(--text-dim)', margin: '0', fontWeight: '400' }}>
-              Consulta horarios especiales los días de partido. Llegada recomendada: 2 horas antes del evento.
-            </p>
-          </div>
+          <AffiliateMundial ciudad="GDL" estadio="Estadio Akron" estacion="estadio-chivas" />
         </div>
       </section>
 
-      {/* LÍNEAS */}
+      {/* LAS 4 LÍNEAS DEL TREN LIGERO */}
       <section
         style={{
           backgroundColor: 'var(--bg)',
@@ -332,7 +329,7 @@ export default function GDLPage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Las 3 Líneas del SITEUR
+            Las 4 Líneas del Tren Ligero
           </h2>
           <div
             style={{
@@ -341,7 +338,7 @@ export default function GDLPage() {
               gap: '24px',
             }}
           >
-            {lineasGDL.map((linea) => (
+            {lineasGDL.filter(l => l.id === '1' || l.id === '2' || l.id === '3' || l.id === '4').map((linea) => (
               <Link href={`/gdl/linea/${linea.id}`} key={linea.id}>
                 <div
                   style={{
@@ -421,6 +418,198 @@ export default function GDLPage() {
         </div>
       </section>
 
+      {/* MI MACRO SECTION */}
+      <section
+        style={{
+          backgroundColor: 'var(--surface)',
+          padding: '80px 24px',
+          borderBottom: '1px solid var(--border)',
+        }}
+      >
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '16px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            Mi Macro — Tránsito Rápido de Guadalajara
+          </h2>
+          <p
+            style={{
+              fontSize: '1.125rem',
+              textAlign: 'center',
+              marginBottom: '48px',
+              color: 'var(--text-muted)',
+              fontWeight: '400',
+              maxWidth: '600px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            2 líneas de autobús de tránsito rápido (BRT) que complementan la red del Tren Ligero
+          </p>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+            }}
+          >
+            <Link href="/gdl/macrobus/">
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  border: '2px solid #8B5CF6',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  display: 'block',
+                }}
+              >
+                <div
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    backgroundColor: '#8B5CF6',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#FFFFFF',
+                    fontSize: '20px',
+                    fontWeight: '800',
+                    marginBottom: '16px',
+                  }}
+                >
+                  MC
+                </div>
+                <h3
+                  style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: '#8B5CF6',
+                  }}
+                >
+                  Mi Macro Calzada
+                </h3>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text-muted)',
+                    margin: '0 0 12px 0',
+                    fontWeight: '400',
+                  }}
+                >
+                  Centro → Sur
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#8B5CF6',
+                    margin: '0',
+                  }}
+                >
+                  35+ estaciones
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/gdl/macrobus/">
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  border: '2px solid #7C3AED',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  display: 'block',
+                }}
+              >
+                <div
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    backgroundColor: '#7C3AED',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#FFFFFF',
+                    fontSize: '20px',
+                    fontWeight: '800',
+                    marginBottom: '16px',
+                  }}
+                >
+                  MP
+                </div>
+                <h3
+                  style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: '#7C3AED',
+                  }}
+                >
+                  Mi Macro Periférico
+                </h3>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text-muted)',
+                    margin: '0 0 12px 0',
+                    fontWeight: '400',
+                  }}
+                >
+                  Circunvalación
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    color: '#7C3AED',
+                    margin: '0',
+                  }}
+                >
+                  30+ estaciones
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <Link href="/gdl/macrobus/">
+              <button
+                style={{
+                  padding: '12px 32px',
+                  backgroundColor: '#8B5CF6',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: '6px',
+                  fontSize: '1rem',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  fontFamily: 'Syne, sans-serif',
+                }}
+              >
+                Explorar Mi Macro
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <AdBannerLazyInArticle slot="1082410395" />
 
       {/* ESTACIONES DESTACADAS */}
@@ -455,7 +644,10 @@ export default function GDLPage() {
             }}
           >
             {estacionesDestacadas.map((estacion) => (
-              <Link href={`/gdl/estacion/${estacion.slug}`} key={estacion.slug}>
+              <Link
+                href={estacion.sistema === 'macrobus' ? `/gdl/macrobus/estacion/${estacion.slug}` : `/gdl/estacion/${estacion.slug}`}
+                key={estacion.slug}
+              >
                 <div
                   style={{
                     backgroundColor: 'var(--surface)',
@@ -469,93 +661,42 @@ export default function GDLPage() {
                     display: 'block',
                   }}
                 >
-                  <div
+                  <h3
                     style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      marginBottom: '12px',
+                      fontSize: '1.25rem',
+                      fontWeight: '700',
+                      margin: '0 0 8px 0',
+                      color: 'var(--text)',
                     }}
                   >
-                    <div
-                      style={{
-                        width: '32px',
-                        height: '32px',
-                        backgroundColor: '#06B6D4',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: '#FFFFFF',
-                        fontSize: '14px',
-                        fontWeight: '700',
-                        marginRight: '12px',
-                      }}
-                    >
-                      L{estacion.linea}
-                    </div>
-                    <h3
-                      style={{
-                        fontSize: '1.125rem',
-                        fontWeight: '700',
-                        margin: '0',
-                        color: 'var(--text)',
-                      }}
-                    >
-                      {estacion.nombre}
-                    </h3>
-                  </div>
+                    {estacion.nombre}
+                  </h3>
                   <p
                     style={{
                       fontSize: '0.875rem',
                       color: 'var(--text-muted)',
                       margin: '0 0 12px 0',
-                      fontWeight: '400',
+                      fontWeight: '500',
                     }}
                   >
-                    {estacion.municipio} · {estacion.tipo_zona}
+                    {estacion.municipio}
                   </p>
-                  {estacion.pois && estacion.pois.length > 0 && (
-                    <div>
-                      <p
-                        style={{
-                          fontSize: '0.75rem',
-                          textTransform: 'uppercase',
-                          color: '#06B6D4',
-                          fontWeight: '600',
-                          letterSpacing: '0.05em',
-                          margin: '0 0 8px 0',
-                        }}
-                      >
-                        Puntos de Interés
-                      </p>
-                      {estacion.pois.slice(0, 2).map((poi, idx) => (
-                        <p
-                          key={idx}
-                          style={{
-                            fontSize: '0.875rem',
-                            color: 'var(--text)',
-                            margin: '0 0 4px 0',
-                            lineHeight: '1.3',
-                          }}
-                        >
-                          • {poi.nombre}
-                        </p>
-                      ))}
-                    </div>
-                  )}
+                  <p
+                    style={{
+                      fontSize: '0.95rem',
+                      color: 'var(--text)',
+                      margin: '0',
+                      lineHeight: '1.6',
+                    }}
+                  >
+                    {estacion.intro}
+                  </p>
                 </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Affiliate Mundial */}
-      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
-        <AffiliateMundial ciudad="GDL" />
-      </div>
-
-      <AdBannerLazy slot="4434764790" format="auto" />
     </main>
   );
 }
