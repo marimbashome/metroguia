@@ -4044,402 +4044,6 @@ export const grafo = {
       { slug: 'taxquena', tiempo: 3, linea: '2', tipo: 'transbordo' }
     ]
   },
-  'mb-indios-verdes': {
-    ciudad: 'cdmx',
-    nombre: 'Indios Verdes',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-morelos', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'indios-verdes', tiempo: 5, linea: 'metro-1', tipo: 'transbordo' },
-      { slug: 'cb-indios-verdes', tiempo: 5, linea: 'CB-1', tipo: 'transbordo' }
-    ]
-  },
-  'mb-morelos': {
-    ciudad: 'cdmx',
-    nombre: 'Morelos',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-indios-verdes', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-vallejo', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-vallejo': {
-    ciudad: 'cdmx',
-    nombre: 'Vallejo',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-morelos', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-avenida-san-juan-de-dios', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-san-juan-de-dios': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida San Juan de Dios',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-vallejo', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-avenida-5-de-mayo', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-5-de-mayo': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida 5 de Mayo',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-avenida-san-juan-de-dios', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-la-raza', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-la-raza': {
-    ciudad: 'cdmx',
-    nombre: 'La Raza',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-avenida-5-de-mayo', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-misterios', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-misterios': {
-    ciudad: 'cdmx',
-    nombre: 'Misterios',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-la-raza', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-revolucion', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-revolucion': {
-    ciudad: 'cdmx',
-    nombre: 'Revolución',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-misterios', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-5-de-febrero', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-5-de-febrero': {
-    ciudad: 'cdmx',
-    nombre: '5 de Febrero',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-revolucion', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-tepito', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-tepito': {
-    ciudad: 'cdmx',
-    nombre: 'Tepito',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-5-de-febrero', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-santa-anita', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-santa-anita': {
-    ciudad: 'cdmx',
-    nombre: 'Santa Anita',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-tepito', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-merced', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-merced': {
-    ciudad: 'cdmx',
-    nombre: 'Merced',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-santa-anita', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-mixcalco', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-mixcalco': {
-    ciudad: 'cdmx',
-    nombre: 'Mixcalco',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-merced', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-jesus-maria', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-jesus-maria': {
-    ciudad: 'cdmx',
-    nombre: 'Jesús María',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-mixcalco', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-isabel-la-catolica', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-isabel-la-catolica': {
-    ciudad: 'cdmx',
-    nombre: 'Isabel la Católica',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-jesus-maria', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-zocalo', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-zocalo': {
-    ciudad: 'cdmx',
-    nombre: 'Zócalo',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-isabel-la-catolica', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-corregidora', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-corregidora': {
-    ciudad: 'cdmx',
-    nombre: 'Corregidora',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-zocalo', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-san-antonio-abad', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-san-antonio-abad': {
-    ciudad: 'cdmx',
-    nombre: 'San Antonio Abad',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-corregidora', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-niño-artillero', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-niño-artillero': {
-    ciudad: 'cdmx',
-    nombre: 'Niño Artillero',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-san-antonio-abad', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-doctores', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-doctores': {
-    ciudad: 'cdmx',
-    nombre: 'Doctores',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-niño-artillero', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-roma-sur', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-roma-sur': {
-    ciudad: 'cdmx',
-    nombre: 'Roma Sur',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-doctores', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-insurgentes-sur', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-insurgentes-sur': {
-    ciudad: 'cdmx',
-    nombre: 'Insurgentes Sur',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-roma-sur', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-xoco', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-xoco': {
-    ciudad: 'cdmx',
-    nombre: 'Xoco',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-insurgentes-sur', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-nino-perdido', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-nino-perdido': {
-    ciudad: 'cdmx',
-    nombre: 'Niño Perdido',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-xoco', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-leyes-de-reforma', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-leyes-de-reforma': {
-    ciudad: 'cdmx',
-    nombre: 'Leyes de Reforma',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-nino-perdido', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-mixcoac', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-mixcoac': {
-    ciudad: 'cdmx',
-    nombre: 'Mixcoac',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-leyes-de-reforma', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-jardin-balbuena', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-jardin-balbuena': {
-    ciudad: 'cdmx',
-    nombre: 'Jardín Balbuena',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-mixcoac', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-copilco', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-copilco': {
-    ciudad: 'cdmx',
-    nombre: 'Copilco',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-jardin-balbuena', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-pedregal', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-pedregal': {
-    ciudad: 'cdmx',
-    nombre: 'Pedregal',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-copilco', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-villa-olimpica', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-villa-olimpica': {
-    ciudad: 'cdmx',
-    nombre: 'Villa Olímpica',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-pedregal', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-la-noria', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-la-noria': {
-    ciudad: 'cdmx',
-    nombre: 'La Noria',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-villa-olimpica', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-canela', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-canela': {
-    ciudad: 'cdmx',
-    nombre: 'Canela',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-la-noria', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-san-francisco', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-san-francisco': {
-    ciudad: 'cdmx',
-    nombre: 'San Francisco',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-canela', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-buenavista', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-buenavista': {
-    ciudad: 'cdmx',
-    nombre: 'Buenavista',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-san-francisco', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-azcapotzalco', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-azcapotzalco': {
-    ciudad: 'cdmx',
-    nombre: 'Azcapotzalco',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-buenavista', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-refineria', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-refineria': {
-    ciudad: 'cdmx',
-    nombre: 'Refinería',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-azcapotzalco', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-escritores', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-escritores': {
-    ciudad: 'cdmx',
-    nombre: 'Escritores',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-refineria', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-san-rafael', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-san-rafael': {
-    ciudad: 'cdmx',
-    nombre: 'San Rafael',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-escritores', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-santa-maria-la-redonda', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-santa-maria-la-redonda': {
-    ciudad: 'cdmx',
-    nombre: 'Santa María la Redonda',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-san-rafael', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-guerrero', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-guerrero': {
-    ciudad: 'cdmx',
-    nombre: 'Guerrero',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-santa-maria-la-redonda', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-beltran', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-beltran': {
-    ciudad: 'cdmx',
-    nombre: 'Beltrán',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-guerrero', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-algarin', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-algarin': {
-    ciudad: 'cdmx',
-    nombre: 'Algarín',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-beltran', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-penitenciaria', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-penitenciaria': {
-    ciudad: 'cdmx',
-    nombre: 'Penitenciaria',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-algarin', tiempo: 2, linea: 'MB-1', tipo: 'linea' },
-      { slug: 'mb-el-caminero', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
-  'mb-el-caminero': {
-    ciudad: 'cdmx',
-    nombre: 'El Caminero',
-    lineas: ['MB-1'],
-    adyacentes: [
-      { slug: 'mb-penitenciaria', tiempo: 2, linea: 'MB-1', tipo: 'linea' }
-    ]
-  },
   'cb-indios-verdes': {
     ciudad: 'cdmx',
     nombre: 'Indios Verdes',
@@ -4610,9 +4214,526 @@ export const grafo = {
       { slug: 'constituyentes', tiempo: 5, linea: 'metro-1', tipo: 'transbordo' }
     ]
   },
+  'corredor-norte-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Corredor Norte Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'bellas-artes-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Bellas Artes Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'corredor-norte-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
+      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'eje-central-salto-agua-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Eje Central Salto Agua Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
+      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'eje-central-chabacano-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Eje Central Chabacano Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
+      { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'eje-central-nativitas-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Eje Central Nativitas Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
+      { slug: 'huipulco-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'huipulco-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Huipulco Tb',
+    lineas: ['TB-1'],
+    adyacentes: [
+      { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ]
+  },
+  'pantitlan-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Pantitlan Tb',
+    lineas: ['TB-10'],
+    adyacentes: [
+      { slug: 'av-texcoco-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
+    ]
+  },
+  'av-texcoco-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Av Texcoco Tb',
+    lineas: ['TB-10'],
+    adyacentes: [
+      { slug: 'pantitlan-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' },
+      { slug: 'cd-neza-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
+    ]
+  },
+  'cd-neza-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Cd Neza Tb',
+    lineas: ['TB-10'],
+    adyacentes: [
+      { slug: 'av-texcoco-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
+    ]
+  },
+  'constitucion-1917-tb11': {
+    ciudad: 'cdmx',
+    nombre: 'Constitucion 1917 Tb11',
+    lineas: ['TB-11'],
+    adyacentes: [
+      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
+    ]
+  },
+  'santa-cruz-meyehualco-tb11': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Cruz Meyehualco Tb11',
+    lineas: ['TB-11'],
+    adyacentes: [
+      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
+      { slug: 'peñon-viejo-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
+    ]
+  },
+  'peñon-viejo-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Peñon Viejo Tb',
+    lineas: ['TB-11'],
+    adyacentes: [
+      { slug: 'santa-cruz-meyehualco-tb11', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
+      { slug: 'la-calma-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
+    ]
+  },
+  'chapultepec-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Chapultepec Tb',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'centro-historico-tb2': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb2',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
+      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'merced-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Merced Tb',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
+      { slug: 'calzada-viga-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'calzada-viga-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Calzada Viga Tb',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'alamos-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Alamos Tb',
+    lineas: ['TB-3'],
+    adyacentes: [
+      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ]
+  },
+  'patriotismo-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Patriotismo Tb',
+    lineas: ['TB-3'],
+    adyacentes: [
+      { slug: 'alamos-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
+      { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ]
+  },
+  'mixcoac-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Mixcoac Tb',
+    lineas: ['TB-3'],
+    adyacentes: [
+      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
+      { slug: 'tacubaya-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ]
+  },
+  'tacubaya-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Tacubaya Tb',
+    lineas: ['TB-3'],
+    adyacentes: [
+      { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ]
+  },
+  'san-lazaro-tb': {
+    ciudad: 'cdmx',
+    nombre: 'San Lazaro Tb',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  },
+  'zaragoza-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Zaragoza Tb',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'san-lazaro-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
+      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  },
+  'iztapalapa-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Iztapalapa Tb',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
+      { slug: 'santa-martha-tb4', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  },
+  'santa-martha-tb4': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Martha Tb4',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  },
+  'san-lazaro-tb5': {
+    ciudad: 'cdmx',
+    nombre: 'San Lazaro Tb5',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'canal-san-juan-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Canal San Juan Tb',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'san-lazaro-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
+      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'constitucion-1917-tb5': {
+    ciudad: 'cdmx',
+    nombre: 'Constitucion 1917 Tb5',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
+      { slug: 'la-turba-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'la-turba-tb': {
+    ciudad: 'cdmx',
+    nombre: 'La Turba Tb',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'hidalgo-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Hidalgo Tb',
+    lineas: ['TB-6'],
+    adyacentes: [
+      { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+    ]
+  },
+  'doctores-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Doctores Tb',
+    lineas: ['TB-6'],
+    adyacentes: [
+      { slug: 'hidalgo-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' },
+      { slug: 'hospital-general-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+    ]
+  },
+  'hospital-general-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Hospital General Tb',
+    lineas: ['TB-6'],
+    adyacentes: [
+      { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+    ]
+  },
+  'chapultepec-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Chapultepec Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'insurgentes-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Insurgentes Tb',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'mixcoac-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Mixcoac Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'cu-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Cu Tb',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'constitucion-1917-tb8': {
+    ciudad: 'cdmx',
+    nombre: 'Constitucion 1917 Tb8',
+    lineas: ['TB-8'],
+    adyacentes: [
+      { slug: 'santa-cruz-meyehualco-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
+    ]
+  },
+  'santa-cruz-meyehualco-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Cruz Meyehualco Tb',
+    lineas: ['TB-8'],
+    adyacentes: [
+      { slug: 'constitucion-1917-tb8', tiempo: 3, linea: 'TB-8', tipo: 'linea' },
+      { slug: 'iztapalapa-centro-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
+    ]
+  },
+  'iztapalapa-centro-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Iztapalapa Centro Tb',
+    lineas: ['TB-8'],
+    adyacentes: [
+      { slug: 'santa-cruz-meyehualco-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
+    ]
+  },
+  'garibaldi-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Garibaldi Tb',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },
+  'centro-historico-tb9': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb9',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
+      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },
+  'obrera-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Obrera Tb',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
+      { slug: 'villa-cortes-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },
+  'villa-cortes-tb': {
+    ciudad: 'cdmx',
+    nombre: 'Villa Cortes Tb',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },  'cb-cuautepec': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Cuautepec',
+    lineas: ['CB-1'],
+    adyacentes: [
+      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
+      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+    ]
+  },
+  'cb-la-pastora': {
+    ciudad: 'cdmx',
+    nombre: 'Cb La Pastora',
+    lineas: ['CB-1'],
+    adyacentes: [
+      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
+      { slug: 'cb-torres-buenavista', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+    ]
+  },
+  'cb-torres-buenavista': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Torres Buenavista',
+    lineas: ['CB-1'],
+    adyacentes: [
+      { slug: 'cb-la-pastora', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+    ]
+  },
+  'cb-lomas-estancia': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Lomas Estancia',
+    lineas: ['CB-2'],
+    adyacentes: [
+      { slug: 'cb-tlalpexco', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
+      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+    ]
+  },
+  'cb-xalpa': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Xalpa',
+    lineas: ['CB-2'],
+    adyacentes: [
+      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
+      { slug: 'cb-los-pinos', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+    ]
+  },
+  'cb-charreria': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Charreria',
+    lineas: ['CB-3'],
+    adyacentes: [
+      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
+      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ]
+  },
+  'cb-campos-revolucion': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Campos Revolucion',
+    lineas: ['CB-3'],
+    adyacentes: [
+      { slug: 'cb-charreria', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
+      { slug: 'cb-parcur', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ]
+  },
+  'cb-parcur': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Parcur',
+    lineas: ['CB-3'],
+    adyacentes: [
+      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
+      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ]
+  },
+  'cb-cineteca-bodega': {
+    ciudad: 'cdmx',
+    nombre: 'Cb Cineteca Bodega',
+    lineas: ['CB-3'],
+    adyacentes: [
+      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
+      { slug: 'cb-miguel-teotongo', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ]
+  },
+  'centro-historico-tb2': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb2',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
+      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'centro-historico-tb9': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb9',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
+      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },
+  'chapultepec-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Chapultepec Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'mixcoac-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Mixcoac Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'san-lazaro-tb5': {
+    ciudad: 'cdmx',
+    nombre: 'San Lazaro Tb5',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
+      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'santa-martha-tb4': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Martha Tb4',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
+      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  },
+  // === METROBÚS (151 estaciones, 7 líneas) ===
+  'mb-indios-verdes': {
+    ciudad: 'cdmx',
+    nombre: 'Indios Verdes',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-morelos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
+  'mb-morelos': {
+    ciudad: 'cdmx',
+    nombre: 'Morelos',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-indios-verdes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
+      { slug: 'mb-vallejo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
+  'mb-vallejo': {
+    ciudad: 'cdmx',
+    nombre: 'Vallejo',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-morelos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
+      { slug: 'mb-autobuses-de-oriente', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
   'mb-autobuses-de-oriente': {
     ciudad: 'cdmx',
-    nombre: 'Mb Autobuses De Oriente',
+    nombre: 'Autobuses de Oriente',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-vallejo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4621,7 +4742,7 @@ export const grafo = {
   },
   'mb-terminal-central-norte': {
     ciudad: 'cdmx',
-    nombre: 'Mb Terminal Central Norte',
+    nombre: 'Terminal Central Norte',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-autobuses-de-oriente', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4630,35 +4751,7 @@ export const grafo = {
   },
   'mb-calle-5-de-mayo': {
     ciudad: 'cdmx',
-    nombre: 'Mb Calle 5 De Mayo',
-    lineas: ['MB-L1'],
-    adyacentes: [
-      { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
-      { slug: 'mb-garcia-navarrete', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
-    ]
-  }
-,
-  'mb-autobuses-de-oriente': {
-    ciudad: 'cdmx',
-    nombre: 'Mb Autobuses De Oriente',
-    lineas: ['MB-L1'],
-    adyacentes: [
-      { slug: 'mb-vallejo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
-      { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
-    ]
-  },
-  'mb-terminal-central-norte': {
-    ciudad: 'cdmx',
-    nombre: 'Mb Terminal Central Norte',
-    lineas: ['MB-L1'],
-    adyacentes: [
-      { slug: 'mb-autobuses-de-oriente', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
-      { slug: 'mb-calle-5-de-mayo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
-    ]
-  },
-  'mb-calle-5-de-mayo': {
-    ciudad: 'cdmx',
-    nombre: 'Mb Calle 5 De Mayo',
+    nombre: 'Calle 5 de Mayo',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4667,7 +4760,7 @@ export const grafo = {
   },
   'mb-garcia-navarrete': {
     ciudad: 'cdmx',
-    nombre: 'Mb Garcia Navarrete',
+    nombre: 'García Navarrete',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-calle-5-de-mayo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4676,7 +4769,7 @@ export const grafo = {
   },
   'mb-avenida-revolucion': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Revolucion',
+    nombre: 'Avenida Revolución',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-garcia-navarrete', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4685,16 +4778,34 @@ export const grafo = {
   },
   'mb-calle-alfonso-reyes': {
     ciudad: 'cdmx',
-    nombre: 'Mb Calle Alfonso Reyes',
+    nombre: 'Calle Alfonso Reyes',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-buenavista', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
+  'mb-buenavista': {
+    ciudad: 'cdmx',
+    nombre: 'Buenavista',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-calle-alfonso-reyes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
+      { slug: 'mb-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
+  'mb-revolucion': {
+    ciudad: 'cdmx',
+    nombre: 'Revolución',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-buenavista', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
+      { slug: 'mb-magnolias', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
   'mb-magnolias': {
     ciudad: 'cdmx',
-    nombre: 'Mb Magnolias',
+    nombre: 'Magnolias',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4703,7 +4814,7 @@ export const grafo = {
   },
   'mb-plaza-de-la-republica': {
     ciudad: 'cdmx',
-    nombre: 'Mb Plaza De La Republica',
+    nombre: 'Plaza de la República',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-magnolias', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4712,7 +4823,7 @@ export const grafo = {
   },
   'mb-fuente-de-petrarca': {
     ciudad: 'cdmx',
-    nombre: 'Mb Fuente De Petrarca',
+    nombre: 'Fuente de Petrarca',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-plaza-de-la-republica', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4721,7 +4832,7 @@ export const grafo = {
   },
   'mb-lopez-mateos': {
     ciudad: 'cdmx',
-    nombre: 'Mb Lopez Mateos',
+    nombre: 'López Mateos',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-fuente-de-petrarca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4730,7 +4841,7 @@ export const grafo = {
   },
   'mb-avenida-chapultepec': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Chapultepec',
+    nombre: 'Avenida Chapultepec',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-lopez-mateos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4739,7 +4850,7 @@ export const grafo = {
   },
   'mb-paseo-de-la-reforma': {
     ciudad: 'cdmx',
-    nombre: 'Mb Paseo De La Reforma',
+    nombre: 'Paseo de la Reforma',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-chapultepec', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4748,7 +4859,7 @@ export const grafo = {
   },
   'mb-constitucion': {
     ciudad: 'cdmx',
-    nombre: 'Mb Constitucion',
+    nombre: 'Constitución',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4757,7 +4868,7 @@ export const grafo = {
   },
   'mb-angel-independencia': {
     ciudad: 'cdmx',
-    nombre: 'Mb Angel Independencia',
+    nombre: 'Ángel de la Independencia',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-constitucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4766,7 +4877,7 @@ export const grafo = {
   },
   'mb-avenida-ejercito-nacional': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Ejercito Nacional',
+    nombre: 'Avenida Ejército Nacional',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-angel-independencia', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4775,7 +4886,7 @@ export const grafo = {
   },
   'mb-parque-espana': {
     ciudad: 'cdmx',
-    nombre: 'Mb Parque Espana',
+    nombre: 'Parque España',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-ejercito-nacional', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4784,7 +4895,7 @@ export const grafo = {
   },
   'mb-lomas-del-virrey': {
     ciudad: 'cdmx',
-    nombre: 'Mb Lomas Del Virrey',
+    nombre: 'Lomas del Virrey',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-parque-espana', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4793,7 +4904,7 @@ export const grafo = {
   },
   'mb-avenida-lomas': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Lomas',
+    nombre: 'Avenida Lomas',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-lomas-del-virrey', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4802,7 +4913,7 @@ export const grafo = {
   },
   'mb-miguel-e-ahumada': {
     ciudad: 'cdmx',
-    nombre: 'Mb Miguel E Ahumada',
+    nombre: 'Miguel E. Ahumada',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-lomas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4811,7 +4922,7 @@ export const grafo = {
   },
   'mb-periferica-sur': {
     ciudad: 'cdmx',
-    nombre: 'Mb Periferica Sur',
+    nombre: 'Periférica Sur',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-miguel-e-ahumada', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4820,7 +4931,7 @@ export const grafo = {
   },
   'mb-estadio-azteca': {
     ciudad: 'cdmx',
-    nombre: 'Mb Estadio Azteca',
+    nombre: 'Estadio Azteca',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-periferica-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4829,7 +4940,7 @@ export const grafo = {
   },
   'mb-municipios': {
     ciudad: 'cdmx',
-    nombre: 'Mb Municipios',
+    nombre: 'Municipios',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-estadio-azteca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4838,7 +4949,7 @@ export const grafo = {
   },
   'mb-natividad': {
     ciudad: 'cdmx',
-    nombre: 'Mb Natividad',
+    nombre: 'Natividad',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-municipios', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4847,7 +4958,7 @@ export const grafo = {
   },
   'mb-avenida-santa-rosa': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Santa Rosa',
+    nombre: 'Avenida Santa Rosa',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-natividad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4856,7 +4967,7 @@ export const grafo = {
   },
   'mb-centro-comercial-gigante': {
     ciudad: 'cdmx',
-    nombre: 'Mb Centro Comercial Gigante',
+    nombre: 'Centro Comercial Gigante',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-santa-rosa', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4865,7 +4976,7 @@ export const grafo = {
   },
   'mb-avenida-division-del-norte': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Division Del Norte',
+    nombre: 'Avenida División del Norte',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-centro-comercial-gigante', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4874,7 +4985,7 @@ export const grafo = {
   },
   'mb-avenida-mexico': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Mexico',
+    nombre: 'Avenida México',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-division-del-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4883,7 +4994,7 @@ export const grafo = {
   },
   'mb-avenida-copilco': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Copilco',
+    nombre: 'Avenida Copilco',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-mexico', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4892,7 +5003,7 @@ export const grafo = {
   },
   'mb-avenida-universidad': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Universidad',
+    nombre: 'Avenida Universidad',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-copilco', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4901,7 +5012,7 @@ export const grafo = {
   },
   'mb-central-de-abastos': {
     ciudad: 'cdmx',
-    nombre: 'Mb Central De Abastos',
+    nombre: 'Central de Abastos',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-universidad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4910,7 +5021,7 @@ export const grafo = {
   },
   'mb-avenida-del-taller': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Del Taller',
+    nombre: 'Avenida del Taller',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-central-de-abastos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4919,7 +5030,7 @@ export const grafo = {
   },
   'mb-xotepingo': {
     ciudad: 'cdmx',
-    nombre: 'Mb Xotepingo',
+    nombre: 'Xotepingo',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-del-taller', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4928,7 +5039,7 @@ export const grafo = {
   },
   'mb-avenida-prolongacion-insurgentes': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Prolongacion Insurgentes',
+    nombre: 'Avenida Prolongación Insurgentes',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-xotepingo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4937,7 +5048,7 @@ export const grafo = {
   },
   'mb-avenida-universidad-sur': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Universidad Sur',
+    nombre: 'Avenida Universidad Sur',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-prolongacion-insurgentes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4946,7 +5057,7 @@ export const grafo = {
   },
   'mb-paseo-de-los-heroes': {
     ciudad: 'cdmx',
-    nombre: 'Mb Paseo De Los Heroes',
+    nombre: 'Paseo de los Héroes',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-universidad-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4955,7 +5066,7 @@ export const grafo = {
   },
   'mb-avenida-moctezuma': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Moctezuma',
+    nombre: 'Avenida Moctezuma',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-paseo-de-los-heroes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4964,7 +5075,7 @@ export const grafo = {
   },
   'mb-mercado-de-la-paz': {
     ciudad: 'cdmx',
-    nombre: 'Mb Mercado De La Paz',
+    nombre: 'Mercado de la Paz',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-moctezuma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4973,7 +5084,7 @@ export const grafo = {
   },
   'mb-avenida-batalla-de-puebla': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Batalla De Puebla',
+    nombre: 'Avenida Batalla de Puebla',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-mercado-de-la-paz', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4982,7 +5093,7 @@ export const grafo = {
   },
   'mb-avenida-general-anaya': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida General Anaya',
+    nombre: 'Avenida General Anaya',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-batalla-de-puebla', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
@@ -4991,11 +5102,19 @@ export const grafo = {
   },
   'mb-avenida-nativitas': {
     ciudad: 'cdmx',
-    nombre: 'Mb Avenida Nativitas',
+    nombre: 'Avenida Nativitas',
     lineas: ['MB-L1'],
     adyacentes: [
       { slug: 'mb-avenida-general-anaya', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-el-caminero', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+    ]
+  },
+  'mb-el-caminero': {
+    ciudad: 'cdmx',
+    nombre: 'El Caminero',
+    lineas: ['MB-L1'],
+    adyacentes: [
+      { slug: 'mb-avenida-nativitas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
   'mb-san-lazaro': {
@@ -5129,6 +5248,24 @@ export const grafo = {
     lineas: ['MB-L2'],
     adyacentes: [
       { slug: 'mb-avenida-la-paz', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-avenida-polanco', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-polanco': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Polanco',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-melchor-ocampo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
+      { slug: 'mb-lomas-de-virreyes', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ]
+  },
+  'mb-lomas-de-virreyes': {
+    ciudad: 'cdmx',
+    nombre: 'Lomas de Virreyes',
+    lineas: ['MB-L2'],
+    adyacentes: [
+      { slug: 'mb-avenida-polanco', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
       { slug: 'mb-toreo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
     ]
   },
@@ -5137,7 +5274,7 @@ export const grafo = {
     nombre: 'Toreo',
     lineas: ['MB-L2'],
     adyacentes: [
-      { slug: 'mb-avenida-melchor-ocampo', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+      { slug: 'mb-lomas-de-virreyes', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
     ]
   },
   'mb-palacio-nacional': {
@@ -5643,33 +5780,15 @@ export const grafo = {
     lineas: ['MB-L6'],
     adyacentes: [
       { slug: 'mb-avenida-paseo-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-dinamarca', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-amsterdam': {
+  'mb-avenida-dinamarca': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Ámsterdam',
+    nombre: 'Avenida Dinamarca',
     lineas: ['MB-L6'],
     adyacentes: [
       { slug: 'mb-avenida-nueva-york', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-belgica': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida Bélgica',
-    lineas: ['MB-L6'],
-    adyacentes: [
-      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-bruselas': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida Bruselas',
-    lineas: ['MB-L6'],
-    adyacentes: [
-      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
       { slug: 'mb-avenida-estocolmo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
@@ -5678,106 +5797,115 @@ export const grafo = {
     nombre: 'Avenida Estocolmo',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-republica-de-el-salvador', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-dinamarca', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-helsinki', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-republica-de-el-salvador': {
+  'mb-avenida-helsinki': {
     ciudad: 'cdmx',
-    nombre: 'Avenida República de El Salvador',
+    nombre: 'Avenida Helsinki',
     lineas: ['MB-L6'],
     adyacentes: [
       { slug: 'mb-avenida-estocolmo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-viaducto', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-viaducto': {
+  'mb-avenida-amsterdam': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Viaducto',
+    nombre: 'Avenida Amsterdam',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-republica-de-el-salvador', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-eje-central-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-helsinki', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-eje-central-norte': {
+  'mb-avenida-bruselas': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Eje Central Norte',
+    nombre: 'Avenida Bruselas',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-viaducto', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-reforma-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-roma', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-reforma-norte': {
+  'mb-avenida-roma': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Reforma Norte',
+    nombre: 'Avenida Roma',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-eje-central-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-chapultepec-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-bruselas', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-florencia', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-chapultepec-oriente': {
+  'mb-avenida-florencia': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Chapultepec Oriente',
+    nombre: 'Avenida Florencia',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-reforma-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-roma', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-praga', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-tolstoi': {
+  'mb-avenida-praga': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Tolstoi',
+    nombre: 'Avenida Praga',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-chapultepec-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-aristoteles', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-florencia', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-varsovia', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-aristoteles': {
+  'mb-avenida-varsovia': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Aristóteles',
+    nombre: 'Avenida Varsovia',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-pdte-luis-echeverria', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-praga', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-budapest', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-pdte-luis-echeverria': {
+  'mb-avenida-budapest': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Pdte. Luis Echeverría',
+    nombre: 'Avenida Budapest',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-aristoteles', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-tlaxcala', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-varsovia', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-tlaxcala': {
+  'mb-avenida-belgica': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Tlaxcala',
+    nombre: 'Avenida Bélgica',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-pdte-luis-echeverria', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-morelos-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-budapest', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-zurich', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-morelos-oriente': {
+  'mb-avenida-zurich': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Morelos Oriente',
+    nombre: 'Avenida Zurich',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-tlaxcala', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
-      { slug: 'mb-avenida-periferico-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-belgica', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-ginebra', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
-  'mb-avenida-periferico-norte': {
+  'mb-avenida-ginebra': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Periférico Norte',
+    nombre: 'Avenida Ginebra',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-morelos-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-zurich', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
+      { slug: 'mb-avenida-oslo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-oslo': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida Oslo',
+    lineas: ['MB-L6'],
+    adyacentes: [
+      { slug: 'mb-avenida-ginebra', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
       { slug: 'mb-circuito-oriente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
@@ -5786,7 +5914,7 @@ export const grafo = {
     nombre: 'Circuito Interior Oriente',
     lineas: ['MB-L6'],
     adyacentes: [
-      { slug: 'mb-avenida-periferico-norte', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+      { slug: 'mb-avenida-oslo', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
     ]
   },
   'mb-periferico-norte': {
@@ -5812,10 +5940,10 @@ export const grafo = {
     lineas: ['MB-L7'],
     adyacentes: [
       { slug: 'mb-avenida-lomas-norte', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-tolstoi-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-tolstoi-l7': {
+  'mb-avenida-tolstoi': {
     ciudad: 'cdmx',
     nombre: 'Avenida Tolstoi',
     lineas: ['MB-L7'],
@@ -5829,7 +5957,7 @@ export const grafo = {
     nombre: 'Avenida Periférico Oriente',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-tolstoi-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-tolstoi', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
       { slug: 'mb-avenida-estadio-azteca', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
@@ -5839,12 +5967,12 @@ export const grafo = {
     lineas: ['MB-L7'],
     adyacentes: [
       { slug: 'mb-avenida-periferico-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-periferico-sur-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-periferico-sur-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-periferico-sur-l7': {
+  'mb-avenida-periferico-sur-oriente': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Periférico Sur',
+    nombre: 'Avenida Periférico Sur Oriente',
     lineas: ['MB-L7'],
     adyacentes: [
       { slug: 'mb-avenida-estadio-azteca', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
@@ -5856,16 +5984,25 @@ export const grafo = {
     nombre: 'Avenida Ajusco',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-periferico-sur-l7', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-periferico-sur-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-periferico-sur', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-contreras-periferico': {
+  'mb-avenida-periferico-sur': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Contreras Periférico',
+    nombre: 'Avenida Periférico Sur',
     lineas: ['MB-L7'],
     adyacentes: [
       { slug: 'mb-avenida-ajusco', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-mexico-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ]
+  },
+  'mb-avenida-mexico-periferico': {
+    ciudad: 'cdmx',
+    nombre: 'Avenida México Periférico',
+    lineas: ['MB-L7'],
+    adyacentes: [
+      { slug: 'mb-avenida-periferico-sur', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
       { slug: 'mb-avenida-desierto-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
@@ -5874,52 +6011,34 @@ export const grafo = {
     nombre: 'Avenida Desierto Periférico',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-universidad-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-mexico-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-san-jerome-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-universidad-periferico': {
+  'mb-avenida-san-jerome-periferico': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Universidad Periférico',
+    nombre: 'Avenida San Jerónimo Periférico',
     lineas: ['MB-L7'],
     adyacentes: [
       { slug: 'mb-avenida-desierto-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-miguel-de-quevedo-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-miguel-de-quevedo-periferico': {
+  'mb-avenida-contreras-periferico': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Miguel de Quevedo Periférico',
+    nombre: 'Avenida Contreras Periférico',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-universidad-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-copilco-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-san-jerome-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-periferico-poniente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'mb-avenida-copilco-periferico': {
+  'mb-avenida-periferico-poniente': {
     ciudad: 'cdmx',
-    nombre: 'Avenida Copilco Periférico',
+    nombre: 'Avenida Periférico Poniente',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-miguel-de-quevedo-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-division-norte-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-division-norte-periferico': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida División del Norte Periférico',
-    lineas: ['MB-L7'],
-    adyacentes: [
-      { slug: 'mb-avenida-copilco-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
-      { slug: 'mb-avenida-insurrentes-sur-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
-    ]
-  },
-  'mb-avenida-insurrentes-sur-periferico': {
-    ciudad: 'cdmx',
-    nombre: 'Avenida Insurgentes Sur Periférico',
-    lineas: ['MB-L7'],
-    adyacentes: [
-      { slug: 'mb-avenida-division-norte-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
+      { slug: 'mb-avenida-contreras-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
       { slug: 'mb-periferico-sur', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
@@ -5928,497 +6047,8 @@ export const grafo = {
     nombre: 'Periférico Sur',
     lineas: ['MB-L7'],
     adyacentes: [
-      { slug: 'mb-avenida-insurrentes-sur-periferico', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+      { slug: 'mb-avenida-periferico-poniente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
-  'corredor-norte-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Corredor Norte Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'bellas-artes-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Bellas Artes Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'corredor-norte-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
-      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'eje-central-salto-agua-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Eje Central Salto Agua Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
-      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'eje-central-chabacano-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Eje Central Chabacano Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
-      { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'eje-central-nativitas-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Eje Central Nativitas Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
-      { slug: 'huipulco-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'huipulco-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Huipulco Tb',
-    lineas: ['TB-1'],
-    adyacentes: [
-      { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
-    ]
-  },
-  'pantitlan-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Pantitlan Tb',
-    lineas: ['TB-10'],
-    adyacentes: [
-      { slug: 'av-texcoco-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
-    ]
-  },
-  'av-texcoco-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Av Texcoco Tb',
-    lineas: ['TB-10'],
-    adyacentes: [
-      { slug: 'pantitlan-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' },
-      { slug: 'cd-neza-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
-    ]
-  },
-  'cd-neza-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Cd Neza Tb',
-    lineas: ['TB-10'],
-    adyacentes: [
-      { slug: 'av-texcoco-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
-    ]
-  },
-  'constitucion-1917-tb11': {
-    ciudad: 'cdmx',
-    nombre: 'Constitucion 1917 Tb11',
-    lineas: ['TB-11'],
-    adyacentes: [
-      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
-    ]
-  },
-  'santa-cruz-meyehualco-tb11': {
-    ciudad: 'cdmx',
-    nombre: 'Santa Cruz Meyehualco Tb11',
-    lineas: ['TB-11'],
-    adyacentes: [
-      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
-      { slug: 'peñon-viejo-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
-    ]
-  },
-  'peñon-viejo-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Peñon Viejo Tb',
-    lineas: ['TB-11'],
-    adyacentes: [
-      { slug: 'santa-cruz-meyehualco-tb11', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
-      { slug: 'la-calma-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
-    ]
-  },
-  'chapultepec-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Chapultepec Tb',
-    lineas: ['TB-2'],
-    adyacentes: [
-      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
-    ]
-  },
-  'centro-historico-tb2': {
-    ciudad: 'cdmx',
-    nombre: 'Centro Historico Tb2',
-    lineas: ['TB-2'],
-    adyacentes: [
-      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
-      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
-    ]
-  },
-  'merced-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Merced Tb',
-    lineas: ['TB-2'],
-    adyacentes: [
-      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
-      { slug: 'calzada-viga-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
-    ]
-  },
-  'calzada-viga-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Calzada Viga Tb',
-    lineas: ['TB-2'],
-    adyacentes: [
-      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
-    ]
-  },
-  'alamos-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Alamos Tb',
-    lineas: ['TB-3'],
-    adyacentes: [
-      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
-    ]
-  },
-  'patriotismo-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Patriotismo Tb',
-    lineas: ['TB-3'],
-    adyacentes: [
-      { slug: 'alamos-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
-      { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
-    ]
-  },
-  'mixcoac-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Mixcoac Tb',
-    lineas: ['TB-3'],
-    adyacentes: [
-      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
-      { slug: 'tacubaya-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
-    ]
-  },
-  'tacubaya-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Tacubaya Tb',
-    lineas: ['TB-3'],
-    adyacentes: [
-      { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
-    ]
-  },
-  'san-lazaro-tb': {
-    ciudad: 'cdmx',
-    nombre: 'San Lazaro Tb',
-    lineas: ['TB-4'],
-    adyacentes: [
-      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
-    ]
-  },
-  'zaragoza-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Zaragoza Tb',
-    lineas: ['TB-4'],
-    adyacentes: [
-      { slug: 'san-lazaro-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
-      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
-    ]
-  },
-  'iztapalapa-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Iztapalapa Tb',
-    lineas: ['TB-4'],
-    adyacentes: [
-      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
-      { slug: 'santa-martha-tb4', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
-    ]
-  },
-  'santa-martha-tb4': {
-    ciudad: 'cdmx',
-    nombre: 'Santa Martha Tb4',
-    lineas: ['TB-4'],
-    adyacentes: [
-      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
-    ]
-  },
-  'san-lazaro-tb5': {
-    ciudad: 'cdmx',
-    nombre: 'San Lazaro Tb5',
-    lineas: ['TB-5'],
-    adyacentes: [
-      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
-    ]
-  },
-  'canal-san-juan-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Canal San Juan Tb',
-    lineas: ['TB-5'],
-    adyacentes: [
-      { slug: 'san-lazaro-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
-      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
-    ]
-  },
-  'constitucion-1917-tb5': {
-    ciudad: 'cdmx',
-    nombre: 'Constitucion 1917 Tb5',
-    lineas: ['TB-5'],
-    adyacentes: [
-      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
-      { slug: 'la-turba-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
-    ]
-  },
-  'la-turba-tb': {
-    ciudad: 'cdmx',
-    nombre: 'La Turba Tb',
-    lineas: ['TB-5'],
-    adyacentes: [
-      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
-    ]
-  },
-  'hidalgo-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Hidalgo Tb',
-    lineas: ['TB-6'],
-    adyacentes: [
-      { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
-    ]
-  },
-  'doctores-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Doctores Tb',
-    lineas: ['TB-6'],
-    adyacentes: [
-      { slug: 'hidalgo-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' },
-      { slug: 'hospital-general-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
-    ]
-  },
-  'hospital-general-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Hospital General Tb',
-    lineas: ['TB-6'],
-    adyacentes: [
-      { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
-    ]
-  },
-  'chapultepec-tb7': {
-    ciudad: 'cdmx',
-    nombre: 'Chapultepec Tb7',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'insurgentes-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Insurgentes Tb',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
-      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'mixcoac-tb7': {
-    ciudad: 'cdmx',
-    nombre: 'Mixcoac Tb7',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
-      { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'cu-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Cu Tb',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'constitucion-1917-tb8': {
-    ciudad: 'cdmx',
-    nombre: 'Constitucion 1917 Tb8',
-    lineas: ['TB-8'],
-    adyacentes: [
-      { slug: 'santa-cruz-meyehualco-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
-    ]
-  },
-  'santa-cruz-meyehualco-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Santa Cruz Meyehualco Tb',
-    lineas: ['TB-8'],
-    adyacentes: [
-      { slug: 'constitucion-1917-tb8', tiempo: 3, linea: 'TB-8', tipo: 'linea' },
-      { slug: 'iztapalapa-centro-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
-    ]
-  },
-  'iztapalapa-centro-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Iztapalapa Centro Tb',
-    lineas: ['TB-8'],
-    adyacentes: [
-      { slug: 'santa-cruz-meyehualco-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
-    ]
-  },
-  'garibaldi-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Garibaldi Tb',
-    lineas: ['TB-9'],
-    adyacentes: [
-      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
-    ]
-  },
-  'centro-historico-tb9': {
-    ciudad: 'cdmx',
-    nombre: 'Centro Historico Tb9',
-    lineas: ['TB-9'],
-    adyacentes: [
-      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
-      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
-    ]
-  },
-  'obrera-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Obrera Tb',
-    lineas: ['TB-9'],
-    adyacentes: [
-      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
-      { slug: 'villa-cortes-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
-    ]
-  },
-  'villa-cortes-tb': {
-    ciudad: 'cdmx',
-    nombre: 'Villa Cortes Tb',
-    lineas: ['TB-9'],
-    adyacentes: [
-      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
-    ]
-  },  'cb-cuautepec': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Cuautepec',
-    lineas: ['CB-1'],
-    adyacentes: [
-      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
-      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
-    ]
-  },
-  'cb-la-pastora': {
-    ciudad: 'cdmx',
-    nombre: 'Cb La Pastora',
-    lineas: ['CB-1'],
-    adyacentes: [
-      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
-      { slug: 'cb-torres-buenavista', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
-    ]
-  },
-  'cb-torres-buenavista': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Torres Buenavista',
-    lineas: ['CB-1'],
-    adyacentes: [
-      { slug: 'cb-la-pastora', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
-    ]
-  },
-  'cb-lomas-estancia': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Lomas Estancia',
-    lineas: ['CB-2'],
-    adyacentes: [
-      { slug: 'cb-tlalpexco', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
-      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
-    ]
-  },
-  'cb-xalpa': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Xalpa',
-    lineas: ['CB-2'],
-    adyacentes: [
-      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
-      { slug: 'cb-los-pinos', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
-    ]
-  },
-  'cb-charreria': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Charreria',
-    lineas: ['CB-3'],
-    adyacentes: [
-      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
-      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
-    ]
-  },
-  'cb-campos-revolucion': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Campos Revolucion',
-    lineas: ['CB-3'],
-    adyacentes: [
-      { slug: 'cb-charreria', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
-      { slug: 'cb-parcur', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
-    ]
-  },
-  'cb-parcur': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Parcur',
-    lineas: ['CB-3'],
-    adyacentes: [
-      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
-      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
-    ]
-  },
-  'cb-cineteca-bodega': {
-    ciudad: 'cdmx',
-    nombre: 'Cb Cineteca Bodega',
-    lineas: ['CB-3'],
-    adyacentes: [
-      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
-      { slug: 'cb-miguel-teotongo', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
-    ]
-  },
-  'centro-historico-tb2': {
-    ciudad: 'cdmx',
-    nombre: 'Centro Historico Tb2',
-    lineas: ['TB-2'],
-    adyacentes: [
-      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
-      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
-    ]
-  },
-  'centro-historico-tb9': {
-    ciudad: 'cdmx',
-    nombre: 'Centro Historico Tb9',
-    lineas: ['TB-9'],
-    adyacentes: [
-      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
-      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
-    ]
-  },
-  'chapultepec-tb7': {
-    ciudad: 'cdmx',
-    nombre: 'Chapultepec Tb7',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
-      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'mixcoac-tb7': {
-    ciudad: 'cdmx',
-    nombre: 'Mixcoac Tb7',
-    lineas: ['TB-7'],
-    adyacentes: [
-      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
-      { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
-    ]
-  },
-  'san-lazaro-tb5': {
-    ciudad: 'cdmx',
-    nombre: 'San Lazaro Tb5',
-    lineas: ['TB-5'],
-    adyacentes: [
-      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
-      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
-    ]
-  },
-  'santa-martha-tb4': {
-    ciudad: 'cdmx',
-    nombre: 'Santa Martha Tb4',
-    lineas: ['TB-4'],
-    adyacentes: [
-      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
-      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
-    ]
-  }
+
 };

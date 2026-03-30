@@ -324,6 +324,16 @@ export default function sitemap() {
     })),
   ];
 
+  // GDL Macrobús Transit Pages
+  const gdlMacrobusStations = (estacionesGDL || []).filter(e => e.lineas && e.lineas.some(l => l.includes('Macro')));
+  const gdlMacrobusPages = [
+    { url: `${baseUrl}/gdl/macrobus/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...gdlMacrobusStations.map(e => ({
+      url: `${baseUrl}/gdl/macrobus/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+  ];
+
   // MTY Ecovía Transit Pages
   const mtyEcoviaPages = [
     { url: `${baseUrl}/mty/ecovia/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
@@ -430,6 +440,7 @@ export default function sitemap() {
 
   return [
     ...cdmxTransitPages,
+    ...gdlMacrobusPages,
     ...mtyEcoviaPages,
     ...staticPages,
     ...fifaMatchPages,
