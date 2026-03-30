@@ -378,7 +378,7 @@ export default function EstacionMacrobusPage({ params }) {
                         fontWeight: '600',
                       }}
                     >
-                      → {transf}
+                      → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
                     </div>
                   ))}
                 </div>

@@ -399,7 +399,7 @@ export default function EstacionGDLPage({ params }) {
                         fontWeight: '600',
                       }}
                     >
-                      → {transf}
+                      → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
                     </div>
                   ))}
                 </div>
