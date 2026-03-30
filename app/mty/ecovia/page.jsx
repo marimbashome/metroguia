@@ -309,7 +309,7 @@ export default function EcoviaPage() {
                               margin: '2px 0',
                             }}
                           >
-                            → {transf}
+                            → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
                           </p>
                         ))}
                       </div>
@@ -416,7 +416,7 @@ export default function EcoviaPage() {
                               margin: '2px 0',
                             }}
                           >
-                            → {transf}
+                            → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
                           </p>
                         ))}
                       </div>
@@ -496,7 +496,7 @@ export default function EcoviaPage() {
                     </p>
                     {(estacion.transferencias || []).length > 0 && (
                       <p style={{ fontSize: '12px', color: '#65A30D', margin: '4px 0 0 0' }}>
-                        {(estacion.transferencias || []).join(' • ')}
+                        {(estacion.transferencias || []).map(t => typeof t === 'string' ? t : `${t.tipo || t.linea} → ${t.estacion}`).join(' • ')}
                       </p>
                     )}
                   </div>
