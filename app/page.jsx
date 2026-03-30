@@ -38,7 +38,7 @@ const ciudades = [
   {
     id: 'gdl',
     nombre: 'Guadalajara',
-    sistema: 'SITEUR · Tren Ligero',
+    sistema: 'Tren Ligero · Macrobús',
     stats: { estaciones: 48, lineas: 3, km: 30 },
     color: '#06B6D4',
     href: '/gdl/',
@@ -48,7 +48,7 @@ const ciudades = [
   {
     id: 'mty',
     nombre: 'Monterrey',
-    sistema: 'Metrorrey',
+    sistema: 'Metrorrey · Ecovía',
     stats: { estaciones: 32, lineas: 2, km: 30 },
     color: '#EC4899',
     href: '/mty/',

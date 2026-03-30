@@ -344,7 +344,7 @@ export default function CDMXPage() {
             marginBottom: '2rem',
             fontSize: '0.95rem',
           }}>
-            Tren Ligero, Tren Suburbano y Trolebús — conectados con la red de Metro
+            7 sistemas complementarios conectados con la red de Metro
           </p>
 
           <div className="grid-3">
@@ -410,6 +410,28 @@ export default function CDMXPage() {
                 </div>
                 <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.875rem', marginTop: 'auto' }}>
                   Ver líneas →
+                </div>
+              </div>
+            </a>
+
+            <a href="/cdmx/mexicable/" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div style={{
+                    backgroundColor: '#8B5CF6', width: '2.5rem', height: '2.5rem', borderRadius: 'var(--radius)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '1.25rem', flexShrink: 0,
+                  }}>🚡</div>
+                  <div>
+                    <h4 style={{ marginBottom: '0.25rem', color: 'var(--text)' }}>Mexicable</h4>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Teleférico Iztapalapa</p>
+                  </div>
+                </div>
+                <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                  2 líneas · 10 estaciones · Conexión L12 Metro · $0 MXN*
+                </div>
+                <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.875rem', marginTop: 'auto' }}>
+                  Ver estaciones →
                 </div>
               </div>
             </a>
