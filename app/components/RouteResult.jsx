@@ -7,10 +7,10 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const containerStyle = {
     padding: '18px',
-    backgroundColor: isAlternative ? '#0F0F1A' : 'var(--surface)',
+    backgroundColor: isAlternative ? 'var(--surface-hover)' : 'var(--surface)',
     border: '1px solid var(--border)',
     borderRadius: '8px',
-    opacity: isAlternative ? 0.7 : 1,
+    opacity: isAlternative ? 0.85 : 1,
     transition: 'opacity 0.2s',
   }
 
@@ -46,7 +46,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
   const summaryValueStyle = {
     fontSize: '20px',
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: 'var(--text)',
   }
 
   const badgeStyle = {
@@ -62,7 +62,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const alternativeBadgeStyle = {
     ...badgeStyle,
-    backgroundColor: '#5A5A6A',
+    backgroundColor: 'var(--text-muted)',
   }
 
   const routeStripContainerStyle = {
@@ -102,7 +102,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
     width: '4px',
     height: '4px',
     borderRadius: '50%',
-    backgroundColor: '#4A4A5A',
+    backgroundColor: 'var(--border-light)',
     flexShrink: 0,
   }
 
@@ -124,7 +124,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
     gap: '12px',
     marginBottom: '12px',
     paddingBottom: '12px',
-    borderBottom: '1px solid var(--bg)',
+    borderBottom: '1px solid var(--border)',
   }
 
   const stepStyle_last = {
@@ -141,9 +141,10 @@ export default function RouteResult({ ruta, isAlternative = false }) {
     width: '32px',
     height: '32px',
     borderRadius: '50%',
-    backgroundColor: 'var(--bg)',
+    backgroundColor: 'var(--surface-active)',
     flexShrink: 0,
     fontSize: '14px',
+    color: 'var(--text)',
   }
 
   const stepContentStyle = {
@@ -156,7 +157,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
   const stationNameStyle = {
     fontSize: '14px',
     fontWeight: '600',
-    color: '#FFFFFF',
+    color: 'var(--text)',
   }
 
   const actionTextStyle = {
@@ -176,10 +177,10 @@ export default function RouteResult({ ruta, isAlternative = false }) {
 
   const alertStyle = {
     padding: '12px 14px',
-    backgroundColor: '#8B3A1A',
-    border: '1px solid #FF6B3A',
+    backgroundColor: 'rgba(220, 38, 38, 0.06)',
+    border: '1px solid rgba(220, 38, 38, 0.2)',
     borderRadius: '6px',
-    color: '#FFB8A0',
+    color: 'var(--danger)',
     fontSize: '13px',
     marginTop: '16px',
     display: 'flex',
