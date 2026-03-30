@@ -87,7 +87,11 @@
     "viewAllLines": "Voir toutes les lignes",
     "nearbyAccommodation": "Hébergement à proximité",
     "touristGuide": "Guide touristique",
-    "worldCupVenue": "Siège de la Coupe 2026"
+    "worldCupVenue": "Siège de la Coupe 2026",
+    "cdmxSystem": "Métro + Tramway Léger",
+    "cdmxTitle": "Métro de Mexico City",
+    "touristicStationsSubtitle": "Les 6 stations touristiques les plus importantes",
+    "allLinesSubtitle": "Toutes les lignes du Métro de Mexico City"
   },
   "worldCup": {
     "title": "Coupe du Monde FIFA 2026 au Mexique",
@@ -108,7 +112,22 @@
     "estAkron": "Stade Akron",
     "estBBVA": "Stade BBVA",
     "matchDates": "Dates des matchs",
-    "viewRoute": "Voir le trajet vers le stade"
+    "viewRoute": "Voir le trajet vers le stade",
+    "stadiumsHeading": "3 Stades Accueil",
+    "matchDateLabel": "Matches",
+    "tipsSubtitle": "Conseils pour utiliser les transports en commun pendant la Coupe du Monde",
+    "tipArriveEarly": "Arrivez à l'avance",
+    "tipArrivyEarlyDesc": "Prévoyez d'arriver 90 minutes à l'avance. Le métro est plein les jours de match.",
+    "tipBaggage": "Ne transportez pas de gros bagages",
+    "tipBaggageDesc": "Les gros sacs à dos peuvent ne pas être autorisés. Vérifiez la politique du stade.",
+    "tipCard": "Apportez une carte de transport",
+    "tipCardDesc": "La carte Movilidad (CDMX) est plus rapide que de payer en espèces. Rechargez-la à l'avance.",
+    "tipAvoidPeak": "Évitez les heures de pointe",
+    "tipAvoidPeakDesc": "Si possible, voyagez avant la fin du match précédent. Ce sera moins encombré.",
+    "tipOfflineMap": "Téléchargez la carte hors ligne",
+    "tipOfflineMapDesc": "Installez MetroGuia en tant qu'application PWA pour avoir les itinéraires disponibles sans internet.",
+    "tipBattery": "Gardez votre téléphone chargé",
+    "tipBatteryDesc": "La batterie est vitale. Emportez une batterie externe de secours en cas d'urgence."
   },
   "accommodation": {
     "title": "Logez près du métro",

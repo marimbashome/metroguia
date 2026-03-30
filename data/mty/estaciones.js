@@ -190,7 +190,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Aztlán Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Aztlán de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Aztlán (Línea 1) del Metrorrey: acceso al auténtico barrio de Aztlán. Zona residencial con tiendas locales, restaurantes familiares y vida comunitaria regiomontana.",
     "h1": "Estación Aztlán — Línea 1 Metrorrey",
     "intro": "Estación residencial en la zona de Aztlán, conectando comunidades del oeste de Monterrey con el centro.",
     "tips": [
@@ -361,7 +361,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Mitras Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Mitras de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Mitras (Línea 1) del Metrorrey: barrio residencial tradicional de Monterrey. Acceso a parques locales, tiendas y la vida cotidiana auténtica de la ciudad.",
     "h1": "Estación Mitras — Línea 1 Metrorrey",
     "intro": "Estación que sirve a la zona residencial de Mitras, una comunidad tradicional de Monterrey.",
     "tips": [
@@ -475,7 +475,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Hospital Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Hospital de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Hospital (Línea 1) del Metrorrey: conexión estratégica a servicios médicos. Punto importante para turistas que necesiten atención sanitaria durante su visita.",
     "h1": "Estación Hospital — Línea 1 Metrorrey",
     "intro": "Estación cercana a instalaciones hospitalarias de Monterrey, importante para acceso a servicios de salud.",
     "tips": [
@@ -532,7 +532,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Edison Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Edison de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Edison (Línea 1) del Metrorrey: zona comercial y residencial. Punto estratégico para turistas en tránsito hacia el centro con tiendas y servicios locales.",
     "h1": "Estación Edison — Línea 1 Metrorrey",
     "intro": "Estación intermedia en la Línea 1 con acceso a zona comercial y residencial.",
     "tips": [
@@ -716,7 +716,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Del Golfo Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Del Golfo de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Del Golfo (Línea 1) del Metrorrey: zona comercial en ruta central. Tiendas y servicios para turistas en tránsito hacia atracciones principales.",
     "h1": "Estación Del Golfo — Línea 1 Metrorrey",
     "intro": "Estación comercial en la Línea 1 con acceso a zonas de negocios.",
     "tips": [
@@ -904,7 +904,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Y Griega Metro L1 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Y Griega de la Línea 1 del Metrorrey.",
+    "meta_description": "Estación Y Griega (Línea 1) del Metrorrey: zona residencial del noreste. Comercios locales y barrio tradicional para explorar la Monterrey auténtica.",
     "h1": "Estación Y Griega — Línea 1 Metrorrey",
     "intro": "Estación residencial que sirve a la comunidad local de la zona noreste de Monterrey.",
     "tips": [
@@ -1144,7 +1144,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Sendero Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Sendero de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación Sendero (Línea 2) del Metrorrey: terminal norte elevada. Zona residencial con vida local auténtica, ideal para turistas que buscan explorar más allá de las zonas turísticas.",
     "h1": "Estación Sendero — Línea 2 Metrorrey",
     "intro": "Sendero es la estación terminal nororiental de la Línea 2 del Metrorrey, acceso a la zona residencial del norte.",
     "tips": [
@@ -1202,7 +1202,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Tapia Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Tapia de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación Tapia (Línea 2) del Metrorrey: acceso a zona residencial de San Nicolás. Descubre tiendas, restaurantes locales y la auténtica vida comunitaria del norte de Monterrey.",
     "h1": "Estación Tapia — Línea 2 Metrorrey",
     "intro": "Estación elevada en San Nicolás que sirve a la comunidad residencial de esta importante zona.",
     "tips": [
@@ -1260,7 +1260,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación San Nicolás Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación San Nicolás de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación San Nicolás (Línea 2) del Metrorrey: centro comercial elevado. Tiendas, restaurantes y servicios variados en zona importante del área metropolitana.",
     "h1": "Estación San Nicolás — Línea 2 Metrorrey",
     "intro": "Estación comercial en San Nicolás de los Garza, zona importante de la zona norte de la metrópolis.",
     "tips": [
@@ -1318,7 +1318,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Anáhuac Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Anáhuac de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación Anáhuac (Línea 2) del Metrorrey: zona residencial consolidada en San Nicolás. Tiendas locales, vida comunitaria auténtica y servicios para viajeros.",
     "h1": "Estación Anáhuac — Línea 2 Metrorrey",
     "intro": "Estación residencial que accede a la zona de Anáhuac en San Nicolás.",
     "tips": [
@@ -1691,7 +1691,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Alameda Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Alameda de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación Alameda (Línea 2) del Metrorrey: centro comercial subterráneo. Acceso a tiendas, restaurantes y servicios. Punto central para turistas explorando Monterrey.",
     "h1": "Estación Alameda — Línea 2 Metrorrey",
     "intro": "Estación comercial en el centro de Monterrey con acceso a importantes zonas de negocios y comercio.",
     "tips": [
@@ -1824,7 +1824,7 @@ export const estacionesMTY = [
     ],
     "transferencias": [],
     "seo_title": "Estación Padre Mier Metro L2 Monterrey — Guía turística | MetroGuia",
-    "meta_description": "Estación Padre Mier de la Línea 2 del Metrorrey.",
+    "meta_description": "Estación Padre Mier (Línea 2) del Metrorrey: centro comercial subterráneo. Avenida con tiendas, restaurantes y servicios. Hub central para exploración urbana.",
     "h1": "Estación Padre Mier — Línea 2 Metrorrey",
     "intro": "Estación comercial ubicada en la avenida Padre Mier, importante vía de la zona sureste del centro.",
     "tips": [

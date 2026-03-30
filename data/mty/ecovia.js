@@ -33,6 +33,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Terminal norte: punto de partida ideal para recorridos hacia el centro",
+      "Amplio estacionamiento disponible para quienes llegan en auto",
+      "Recomendado tomar Ecovía en horarios de 6-9 AM para mayor rapidez"
+    ],
     mundial_relevancia: "Estación 1/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -68,6 +73,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona residencial tranquila, ideal para comenzar el viaje en la mañana",
+      "Sin estacionamiento en la estación, busca opciones en vías aledañas",
+      "Acceso mediante rampa, accesible para usuarios de sillas de ruedas"
     ],
     mundial_relevancia: "Estación 2/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -105,6 +115,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Acceso a la zona de Cumbres, colonias aledañas bien conectadas",
+      "Rampa disponible para accesibilidad, piso táctil para orientación",
+      "Zona residencial con baja concurrencia, ideal para viajes tranquilos"
+    ],
     mundial_relevancia: "Estación 3/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -140,6 +155,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Entrada a zona residencial Plumbago, muy tranquila y segura",
+      "Servicios limitados en inmediaciones, abastécete antes de bajar",
+      "Accesibilidad total: rampa, piso táctil, sin elevador"
     ],
     mundial_relevancia: "Estación 4/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -177,6 +197,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Acceso a comercios locales sobre Av. Plutarco Elías Calles",
+      "Zona con tráfico moderado durante horas pico",
+      "Rampa y piso táctil disponibles para accesibilidad"
+    ],
     mundial_relevancia: "Estación 5/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -212,6 +237,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona industrial: acceso a logística y negocios mayoristas",
+      "Pocos comercios cercanos, planifica tus compras antes",
+      "Accesible con rampa y piso táctil para orientación"
     ],
     mundial_relevancia: "Estación 6/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -249,6 +279,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Cercana a Panteón Municipal, zona de servicios funerarios",
+      "Área residencial tranquila en horarios matutinos",
+      "Rampa y piso táctil para accesibilidad completa"
+    ],
     mundial_relevancia: "Estación 7/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -284,6 +319,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Acceso a Col. Cardenal, zona residencial establecida",
+      "Servicios locales moderados, mejor opción antes de viaje largo",
+      "Accesible total: rampa, piso táctil, fácil circulación"
     ],
     mundial_relevancia: "Estación 8/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -321,6 +361,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Fraccionamiento Valle Verde cerca, área segura y residencial",
+      "Baja afluencia durante la tarde, viajes más cómodos",
+      "Rampa y piso táctil garantizan accesibilidad"
+    ],
     mundial_relevancia: "Estación 9/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -356,6 +401,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Cercana al Hospital de Cardiología IMSS, importante para emergencias",
+      "Zona con servicio médico especializado disponible",
+      "Acceso mediante rampa y piso táctil"
     ],
     mundial_relevancia: "Estación 10/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -393,6 +443,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Acceso a Col. Santa Cecilia, zona residencial tranquila",
+      "Servicios locales disponibles, buena opción para abastecimiento",
+      "Rampa y piso táctil para accesibilidad total"
+    ],
     mundial_relevancia: "Estación 11/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -428,6 +483,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Col. Villa Mitras, acceso a zona residencial bien establecida",
+      "Zona con baja concurrencia fuera de horas pico",
+      "Accesible: rampa, piso táctil, sin estacionamiento"
     ],
     mundial_relevancia: "Estación 12/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -465,6 +525,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Sobre Av. Rangel Frías, vía principal de la ciudad",
+      "Comercios disponibles en la avenida y alrededores",
+      "Rampa y piso táctil para accesibilidad garantizada"
+    ],
     mundial_relevancia: "Estación 13/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -500,6 +565,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Cercana a Oficinas de Tránsito, referencia importante para trámites vehiculares",
+      "Zona comercial moderada, servicios disponibles",
+      "Accesible con rampa y piso táctil"
     ],
     mundial_relevancia: "Estación 14/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -537,6 +607,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Sobre Av. Laredo, avenida importante con comercios",
+      "Buenas opciones de servicios y tiendas en la zona",
+      "Rampa y piso táctil para accesibilidad completa"
+    ],
     mundial_relevancia: "Estación 15/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -572,6 +647,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Sobre Av. Rodrigo Gómez, acceso a zona de comercios",
+      "Muchas opciones de comida y servicios cercanos",
+      "Accesible: rampa, piso táctil, sin estacionamiento"
     ],
     mundial_relevancia: "Estación 16/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -609,6 +689,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "TRANSBORDO METRO L1: transferencia en 5 minutos hacia línea metro",
+      "Combinación Ecovía+Metro ideal para alcanzar toda la ciudad",
+      "La misma tarjeta FERIA funciona en Ecovía y Metro"
+    ],
     mundial_relevancia: "Estación 17/42 de la Ecovía BRT Monterrey. Transbordo con Metro."
   },
   {
@@ -644,6 +729,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona industrial de Celulosa, acceso a área comercial-industrial",
+      "Pocos servicios de venta al público, planifica tus viajes",
+      "Accesible: rampa, piso táctil"
     ],
     mundial_relevancia: "Estación 18/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -681,6 +771,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Sobre Av. 20 de Noviembre, avenida importante de la ciudad",
+      "Acceso a comercios y servicios en la avenida",
+      "Rampa y piso táctil para accesibilidad"
+    ],
     mundial_relevancia: "Estación 19/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -716,6 +811,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona centro Hidalgo, área comercial y de servicios importante",
+      "Alta afluencia en horarios pico, viajes más concurridos",
+      "Accesible: rampa, piso táctil, área central"
     ],
     mundial_relevancia: "Estación 20/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -753,6 +853,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Col. Bella Vista, acceso a zona residencial bien establecida",
+      "Servicios comerciales disponibles en los alrededores",
+      "Rampa y piso táctil para accesibilidad garantizada"
+    ],
     mundial_relevancia: "Estación 21/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -788,6 +893,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "TRANSBORDO METRO L2: conexión a línea 2 del metro en 5 minutos",
+      "Punto importante para cambiar a diferentes líneas de metro",
+      "Tarjeta FERIA funciona en Ecovía y Metro sin cargo adicional"
     ],
     mundial_relevancia: "Estación 22/42 de la Ecovía BRT Monterrey. Transbordo con Metro."
   },
@@ -825,6 +935,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Antigua zona Asarco, área industrial con acceso limitado",
+      "Servicios comerciales escasos, planifica tu viaje",
+      "Accesible con rampa y piso táctil"
+    ],
     mundial_relevancia: "Estación 23/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -860,6 +975,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona Cementos, área industrial importante de la ciudad",
+      "Acceso a empresas y almacenes, servicios muy limitados",
+      "Rampa y piso táctil disponibles"
     ],
     mundial_relevancia: "Estación 24/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -897,6 +1017,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "TRANSBORDO METRO L3: acceso a línea 3 del metro en 5 minutos",
+      "Tercera línea de metro disponible desde Ecovía",
+      "Mismo carnet FERIA válido en todas las líneas"
+    ],
     mundial_relevancia: "Estación 25/42 de la Ecovía BRT Monterrey. Transbordo con Metro."
   },
   {
@@ -932,6 +1057,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Cercana a Clínica 15 IMSS, referencia médica importante",
+      "Servicio médico disponible, importante para emergencias",
+      "Accesible: rampa, piso táctil"
     ],
     mundial_relevancia: "Estación 26/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -969,6 +1099,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Acceso a Col. Coyoacán, zona residencial de Monterrey",
+      "Comercios y servicios disponibles en la zona",
+      "Accesible con rampa y piso táctil"
+    ],
     mundial_relevancia: "Estación 27/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1004,6 +1139,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona comercial y residencial de importancia en el sur",
+      "Buenos servicios comerciales en la área",
+      "Rampa y piso táctil para accesibilidad"
     ],
     mundial_relevancia: "Estación 28/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1041,6 +1181,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Zona Vidriera, área industrial y comercial del sur",
+      "Servicios comerciales disponibles en la zona",
+      "Accesible: rampa, piso táctil"
+    ],
     mundial_relevancia: "Estación 29/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1076,6 +1221,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Acceso a Fraccionamiento Las Américas, zona residencial sur",
+      "Servicios comerciales moderados, buenos para compras básicas",
+      "Rampa y piso táctil disponibles"
     ],
     mundial_relevancia: "Estación 30/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1113,6 +1263,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Zona sur, acceso a comercios y servicios variados",
+      "Área residencial tranquila en horarios no pico",
+      "Accesible con rampa y piso táctil"
+    ],
     mundial_relevancia: "Estación 31/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1148,6 +1303,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Central de Carga, zona logística importante de Guadalupe",
+      "Servicios limitados, planifica compras antes",
+      "Rampa y piso táctil para accesibilidad"
     ],
     mundial_relevancia: "Estación 32/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1185,6 +1345,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Zona residencial sur de Guadalupe, acceso cómodo",
+      "Servicios comerciales disponibles en los alrededores",
+      "Accesible: rampa, piso táctil"
+    ],
     mundial_relevancia: "Estación 33/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1220,6 +1385,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Sobre vía importante de Guadalupe, acceso a comercios",
+      "Buen servicio de transporte y conexiones",
+      "Rampa y piso táctil para accesibilidad total"
     ],
     mundial_relevancia: "Estación 34/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1257,6 +1427,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Zona sur de Guadalupe, acceso a comercios locales",
+      "Servicios disponibles moderados en la zona",
+      "Accesible con rampa y piso táctil"
+    ],
     mundial_relevancia: "Estación 35/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1292,6 +1467,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Zona de De La Zanja, área residencial tranquila",
+      "Servicios comerciales básicos disponibles",
+      "Rampa y piso táctil para accesibilidad"
     ],
     mundial_relevancia: "Estación 36/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1329,6 +1509,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Zona industrial de Aceros, área comercial importante",
+      "Servicios limitados, abastécete en estaciones anteriores",
+      "Accesible: rampa, piso táctil"
+    ],
     mundial_relevancia: "Estación 37/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1364,6 +1549,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Sobre Av. Guadalajara, avenida comercial de Guadalupe",
+      "Comercios y servicios disponibles en la zona",
+      "Rampa y piso táctil para accesibilidad completa"
     ],
     mundial_relevancia: "Estación 38/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1401,6 +1591,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Col. San Miguel, zona residencial sur de Guadalupe",
+      "Servicios comerciales disponibles en la zona",
+      "Accesible con rampa y piso táctil"
+    ],
     mundial_relevancia: "Estación 39/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1436,6 +1631,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Fracc. Valle Fértil, fraccionamiento residencial seguro",
+      "Servicios comerciales en la zona residencial",
+      "Rampa y piso táctil para accesibilidad"
     ],
     mundial_relevancia: "Estación 40/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
@@ -1473,6 +1673,11 @@ export const estacionesEcovia = [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
     ],
+    tips: [
+      "Centro Movilidad MTY, centro de información de transporte importante",
+      "Información sobre toda la red de transporte disponible",
+      "Accesible: rampa, piso táctil"
+    ],
     mundial_relevancia: "Estación 41/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   },
   {
@@ -1508,6 +1713,11 @@ export const estacionesEcovia = [
     practico_tips: [
       "Ecovía usa tarjeta FERIA recargable ($12 MXN por viaje)",
       "Frecuencia cada 3-5 minutos en hora pico, 8-10 min fuera de pico"
+    ],
+    tips: [
+      "Terminal sur de la Ecovía, fin del recorrido hacia Guadalupe",
+      "Amplio estacionamiento disponible para vehículos propios",
+      "Centro de información y servicios para el sur de la ciudad"
     ],
     mundial_relevancia: "Estación 42/42 de la Ecovía BRT Monterrey. Acceso rápido al corredor BRT."
   }

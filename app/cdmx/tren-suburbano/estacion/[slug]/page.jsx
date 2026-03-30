@@ -14,6 +14,15 @@ export function generateMetadata({ params }) {
   return {
     title: `Estación ${estacion.nombre} — Tren Suburbano CDMX | MetroGuia`,
     description: estacion.descripcion_turistica || `Guía de la estación ${estacion.nombre} del Tren Suburbano CDMX. Ubicación, conexiones y tips para turistas.`,
+    alternates: { canonical: `https://metroguia.mx/cdmx/tren-suburbano/estacion/${estacion.slug}/` },
+    openGraph: {
+      title: `Estación ${estacion.nombre} — Tren Suburbano CDMX`,
+      description: estacion.descripcion_turistica || `Guía de la estación ${estacion.nombre} del Tren Suburbano CDMX.`,
+      url: `https://metroguia.mx/cdmx/tren-suburbano/estacion/${estacion.slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
+    },
   }
 }
 

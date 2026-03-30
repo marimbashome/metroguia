@@ -87,7 +87,11 @@
     "viewAllLines": "Ver todas las líneas",
     "nearbyAccommodation": "Hospedaje cercano",
     "touristGuide": "Guía turística",
-    "worldCupVenue": "Sede Mundial 2026"
+    "worldCupVenue": "Sede Mundial 2026",
+    "cdmxSystem": "Metro + Tren Ligero",
+    "cdmxTitle": "Metro de la Ciudad de México",
+    "touristicStationsSubtitle": "Las 6 estaciones turísticas más importantes",
+    "allLinesSubtitle": "Todas las líneas del Metro de CDMX"
   },
   "worldCup": {
     "title": "Mundial FIFA 2026 en México",
@@ -108,7 +112,22 @@
     "estAkron": "Estadio Akron",
     "estBBVA": "Estadio BBVA",
     "matchDates": "Fechas de partidos",
-    "viewRoute": "Ver ruta al estadio"
+    "viewRoute": "Ver ruta al estadio",
+    "stadiumsHeading": "3 Estadios sede",
+    "matchDateLabel": "Partidos",
+    "tipsSubtitle": "Consejos para usar transporte público durante el Mundial",
+    "tipArriveEarly": "Llega con tiempo",
+    "tipArrivyEarlyDesc": "Planifica llegar con 90 minutos de anticipación. El metro se llena los días de partido.",
+    "tipBaggage": "No lleves mucho equipaje",
+    "tipBaggageDesc": "Las mochilas grandes pueden no estar permitidas. Revisa la política del estadio.",
+    "tipCard": "Trae tarjeta de transporte",
+    "tipCardDesc": "La tarjeta Movilidad (CDMX) es más rápida que pagar en efectivo. Recargala con anticipación.",
+    "tipAvoidPeak": "Evita horas pico",
+    "tipAvoidPeakDesc": "Si puedes, viaja antes de que termine el partido anterior. Será menos congestionado.",
+    "tipOfflineMap": "Descarga el mapa offline",
+    "tipOfflineMapDesc": "Instala MetroGuia como app PWA para tener las rutas disponibles sin internet.",
+    "tipBattery": "Mantén tu teléfono cargado",
+    "tipBatteryDesc": "La batería es vital. Lleva un power bank de respaldo para emergencias."
   },
   "accommodation": {
     "title": "Hospedaje cerca del metro",

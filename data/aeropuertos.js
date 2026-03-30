@@ -2,6 +2,13 @@ export const aeropuertos = [
   {
     slug: 'benito-juarez-cdmx',
     nombre: 'Aeropuerto Internacional Benito Juárez',
+    intro: 'Principal puerta de entrada a México, el aeropuerto Benito Juárez conecta a la Ciudad de México con más de 300 destinos internacionales. Con la Terminal Aérea en Metro Línea 5, es una de las formas más eficientes y económicas de llegar al centro histórico. Recibe anualmente millones de viajeros en sus dos modernas terminales.',
+    pois: [
+      { nombre: 'Museo Tamayo', descripcion: 'Museo de arte contemporáneo a 20 min en Metro Línea 5 hacia Coyoacán' },
+      { nombre: 'Bosque de Chapultepec', descripcion: 'Parque central con castillo y museos a 15 min desde el aeropuerto en Metro' },
+      { nombre: 'Centro Histórico de CDMX', descripcion: 'Zócalo, Catedral y Palacio Nacional a 45-50 min en Metro directo' },
+      { nombre: 'Mercado de Sonora', descripcion: 'Tradicional mercado mexicano a 25 min en Metro desde Terminal Aérea' },
+    ],
     iata: 'MEX',
     ciudad: 'Ciudad de México',
     estado: 'Ciudad de México',
@@ -52,6 +59,13 @@ export const aeropuertos = [
   {
     slug: 'felipe-angeles-edomex',
     nombre: 'Aeropuerto Internacional Felipe Ángeles',
+    intro: 'Aeropuerto alternativo ubicado en Zumpango, Estado de México, a 35 km al norte de la Ciudad de México. Abierto 24/7 con servicios de autobús directo y Uber. Ideal para viajeros con destino al norte CDMX o Estado de México que buscan evitar el tráfico del aeropuerto principal.',
+    pois: [
+      { nombre: 'Zumpango Centro', descripcion: 'Pueblo mágico con arquitectura colonial a 20 min de autobús' },
+      { nombre: 'Polanco', descripcion: 'Zona de lujo CDMX a 60 min en autobús directo o 45 min en Uber' },
+      { nombre: 'Santa Fe', descripcion: 'Centro financiero moderno de CDMX a 50 min en Uber' },
+      { nombre: 'Mercado del Valle', descripcion: 'Centro comercial tradicional en ruta hacia el norte' },
+    ],
     iata: 'NLU',
     ciudad: 'Zumpango',
     estado: 'Estado de México',
@@ -99,6 +113,13 @@ export const aeropuertos = [
   {
     slug: 'miguel-hidalgo-guadalajara',
     nombre: 'Aeropuerto Internacional Miguel Hidalgo',
+    intro: 'El segundo aeropuerto más importante de México, ubicado a 16 km al sur de Guadalajara. Conecta la capital jalisciense con destinos principales en América del Norte y Europa. Acceso directo mediante Macrobús BRT (línea MAX Rojo) hacia el centro histórico y zonas turísticas.',
+    pois: [
+      { nombre: 'Centro Histórico de Guadalajara', descripcion: 'Casco antiguo con plazas y templos coloniales a 50 min en Macrobús' },
+      { nombre: 'Tlaquepaque', descripcion: 'Pueblo artesanal con galerías y cerámica tradicional a 30 min en Macrobús' },
+      { nombre: 'Tonalá', descripcion: 'Mercado de artesanías y vidrio soplado mexicano a 35 min en Macrobús' },
+      { nombre: 'Zapopan', descripcion: 'Zona residencial y comercial a 40 min en Macrobús' },
+    ],
     iata: 'GDL',
     ciudad: 'Guadalajara',
     estado: 'Jalisco',
@@ -146,6 +167,13 @@ export const aeropuertos = [
   {
     slug: 'mariano-escobedo-monterrey',
     nombre: 'Aeropuerto Internacional Mariano Escobedo',
+    intro: 'Principal hub aeroportuario del norte mexicano, ubicado en Apodaca a 24 km de Monterrey. Centro de conexiones para negocios en el Bajío y norte de México. Sin conexión directa de Metrorrey, requiere taxi, Uber o autobús hacia el centro de la ciudad.',
+    pois: [
+      { nombre: 'Barrio Antiguo', descripcion: 'Centro histórico de Monterrey a 40 min en taxi con arquitectura colonial' },
+      { nombre: 'Paseo Santa Lucia', descripcion: 'Paseo acuático artificial al corazón de Monterrey a 40 min en Uber' },
+      { nombre: 'MARCO (Museo de Arte Contemporáneo)', descripcion: 'Museo moderno a 35 min en taxi desde el aeropuerto' },
+      { nombre: 'Macroplaza', descripcion: 'Centro comercial y plaza más grande del mundo a 35 min en Uber' },
+    ],
     iata: 'MTY',
     ciudad: 'Monterrey',
     estado: 'Nuevo León',
@@ -193,6 +221,13 @@ export const aeropuertos = [
   {
     slug: 'cancun-cun',
     nombre: 'Aeropuerto Internacional de Cancún',
+    intro: 'Puerta de entrada a la Riviera Maya, ubicado a 20 km al sur de Cancún. Es el aeropuerto turístico más importante de México con conexiones a la Zona Hotelera, Playa del Carmen y Tulum. Acceso mediante autobús turístico, Uber o servicio de shuttle directo a resorts.',
+    pois: [
+      { nombre: 'Playa del Carmen', descripcion: 'Resort y zona turística a 45 min en autobús' },
+      { nombre: 'Tulum', descripcion: 'Ruinas mayas frente al mar a 70 min en autobús' },
+      { nombre: 'Cenote Tankah', descripcion: 'Sinkhole natural para buceo y natación a 60 min en Uber' },
+      { nombre: 'Isla de Cozumel', descripcion: 'Isla de buceo de clase mundial, ferry desde Playa del Carmen a 60 min' },
+    ],
     iata: 'CUN',
     ciudad: 'Cancún',
     estado: 'Quintana Roo',
@@ -248,6 +283,13 @@ export const aeropuertos = [
   {
     slug: 'los-cabos-sjd',
     nombre: 'Aeropuerto Internacional de Los Cabos',
+    intro: 'Destino turístico de lujo ubicado en la punta sur de la Península de Baja California, a 48 km de Cabo San Lucas. Hub para el turismo de lujo en México con resorts de clase mundial. Acceso mediante shuttle, Uber o servicio de resort directo a hoteles de la zona.',
+    pois: [
+      { nombre: 'Cabo San Lucas', descripcion: 'Marina con yates de lujo y restaurantes a 50 min en Uber' },
+      { nombre: 'El Arco', descripcion: 'Formación rocosa icónica en la punta de Baja California a 60 min' },
+      { nombre: 'San José del Cabo', descripcion: 'Pueblo colonial artístico a 45 min con galerías y tiendas' },
+      { nombre: 'Flora Farms', descripcion: 'Resort gastronómico y tienda de lujo a 40 min en Uber' },
+    ],
     iata: 'SJD',
     ciudad: 'San José del Cabo',
     estado: 'Baja California Sur',
@@ -295,6 +337,13 @@ export const aeropuertos = [
   {
     slug: 'puerto-vallarta-pvr',
     nombre: 'Aeropuerto Internacional Licenciado Gustavo Díaz Ordaz',
+    intro: 'Principal aeropuerto de la Costa Jalisco, ubicado a 8 km de Puerto Vallarta. Conecta la playa con resorts de lujo y el pueblo turístico tradicional. Acceso mediante autobús local, taxi o Uber directo a la Zona Hotelera y centro histórico.',
+    pois: [
+      { nombre: 'Malecón de Puerto Vallarta', descripcion: 'Paseo costero con vistas al Pacífico a 15 min en taxi' },
+      { nombre: 'Centro Histórico', descripcion: 'Galerías, tiendas y restaurantes a 10 min en taxi' },
+      { nombre: 'Yelapa', descripcion: 'Playa paradisíaca sin acceso carretero, ferry desde Puerto Vallarta a 30 min' },
+      { nombre: 'Sayulita', descripcion: 'Pueblo bohemio con playas y tiendas a 35 min en auto' },
+    ],
     iata: 'PVR',
     ciudad: 'Puerto Vallarta',
     estado: 'Jalisco',
@@ -342,6 +391,13 @@ export const aeropuertos = [
   {
     slug: 'tijuana-tij',
     nombre: 'Aeropuerto Internacional General Abelardo L. Rodríguez',
+    intro: 'Puerta norte de México ubicada a 5 km del centro de Tijuana y muy cerca de la frontera con San Diego. Conecta con destinos internacionales y el sur de California. Acceso mediante taxi, Uber o autobús local al centro y zonas comerciales.',
+    pois: [
+      { nombre: 'Avenida Revolución', descripcion: 'Centro comercial y gastronómico de Tijuana a 10 min en taxi' },
+      { nombre: 'Plaza Río', descripcion: 'Centro comercial con vistas a San Diego a 12 min en Uber' },
+      { nombre: 'Rosarito Beach', descripcion: 'Playa resort a 30 min de auto hacia el sur' },
+      { nombre: 'Ensenada', descripcion: 'Puerto de pescado y gastronomía a 60 min en auto' },
+    ],
     iata: 'TIJ',
     ciudad: 'Tijuana',
     estado: 'Baja California',
@@ -392,6 +448,13 @@ export const aeropuertos = [
   {
     slug: 'merida-mid',
     nombre: 'Aeropuerto Internacional Manuel Crescencio Rejón',
+    intro: 'Puerta a la Península de Yucatán ubicada a 9 km al suroeste de Mérida. Conecta la capital yucateca con destinos nacionales e internacionales. Acceso mediante autobús local, taxi o Uber al centro histórico y zonas arqueológicas mayas cercanas.',
+    pois: [
+      { nombre: 'Centro Histórico de Mérida', descripcion: 'Ciudad colonial con palacios y plazas a 15 min en taxi' },
+      { nombre: 'Chichén Itzá', descripcion: 'Zona arqueológica maya a 2 horas de auto hacia el este' },
+      { nombre: 'Uxmal', descripcion: 'Sitio arqueológico con arquitectura Puuc a 60 min al sur' },
+      { nombre: 'Cenote Ik-Kil', descripcion: 'Cenote subterráneo para nadar a 45 min hacia Chichén Itzá' },
+    ],
     iata: 'MID',
     ciudad: 'Mérida',
     estado: 'Yucatán',
@@ -440,6 +503,13 @@ export const aeropuertos = [
   {
     slug: 'chihuahua-cuu',
     nombre: 'Aeropuerto Internacional General Roberto Fierro Villalobos',
+    intro: 'Aeropuerto del norte de Chihuahua ubicado a 15 km de la capital estatal. Hub para viajeros de negocios y aventureros en la Sierra Madre. Acceso mediante autobús local, taxi o Uber al centro histórico y destinos rurales circundantes.',
+    pois: [
+      { nombre: 'Centro Histórico de Chihuahua', descripcion: 'Plaza de armas con museos y catedrales a 20 min en taxi' },
+      { nombre: 'Barrio Antiguo', descripcion: 'Zona restaurada con tiendas y gastronomía a 18 min en Uber' },
+      { nombre: 'Barrancas del Cobre', descripcion: 'Cañones espectaculares acceso vía tren desde Chihuahua a 4 horas' },
+      { nombre: 'Casas Grandes', descripcion: 'Zona arqueológica a 300 km hacia el norte' },
+    ],
     iata: 'CUU',
     ciudad: 'Chihuahua',
     estado: 'Chihuahua',
@@ -481,6 +551,13 @@ export const aeropuertos = [
   {
     slug: 'bajio-leon-bjx',
     nombre: 'Aeropuerto Internacional de Bajío',
+    intro: 'Aeropuerto regional ubicado entre León, Guanajuato y el Bajío. Hub importante para viajeros de negocios en la zona de manufactura mexicana. Acceso mediante autobús, Uber o servicio de renta de autos a ciudades del Bajío.',
+    pois: [
+      { nombre: 'Guanajuato Centro Histórico', descripcion: 'Ciudad minera colonial UNESCO a 45 min en auto' },
+      { nombre: 'León Centro', descripcion: 'Capital de la industria de calzado a 30 min en Uber' },
+      { nombre: 'Dolores Hidalgo', descripcion: 'Pueblo mágico cuna de la independencia a 60 min en auto' },
+      { nombre: 'San Miguel de Allende', descripcion: 'Pueblo artístico con galerías y tiendas a 90 min' },
+    ],
     iata: 'BJX',
     ciudad: 'León',
     estado: 'Guanajuato',
@@ -528,6 +605,13 @@ export const aeropuertos = [
   {
     slug: 'queretaro-qro',
     nombre: 'Aeropuerto Internacional Querétaro',
+    intro: 'Aeropuerto del Bajío ubicado a 27 km al norte de Querétaro. Sirve como conexión regional para destinos del norte y negocios en la zona. Acceso mediante autobús, Uber o renta de autos hacia el centro histórico UNESCO.',
+    pois: [
+      { nombre: 'Centro Histórico de Querétaro', descripcion: 'Zona UNESCO con plazas coloniales a 30 min en Uber' },
+      { nombre: 'Acueducto de Querétaro', descripcion: 'Obra del siglo XVIII visible desde la ciudad' },
+      { nombre: 'Tequisquiapan', descripcion: 'Pueblo mágico con viñedos a 45 min en auto' },
+      { nombre: 'San Juan del Río', descripcion: 'Centro de joyería y gemas a 35 min' },
+    ],
     iata: 'QRO',
     ciudad: 'Querétaro',
     estado: 'Querétaro',
@@ -575,6 +659,13 @@ export const aeropuertos = [
   {
     slug: 'oaxaca-oax',
     nombre: 'Aeropuerto Internacional Xoxocotlán',
+    intro: 'Puerta a la cultura prehispánica ubicada a 11 km de Oaxaca. Conecta la zona de textiles y gastronomía tradicional mexicana con destinos nacionales. Acceso mediante taxi, Uber o autobús local a la capital cultural de México.',
+    pois: [
+      { nombre: 'Centro Histórico de Oaxaca', descripcion: 'UNESCO con mercados y templos a 15 min en taxi' },
+      { nombre: 'Templo de Santo Domingo', descripcion: 'Iglesia barroca del siglo XVI a 12 min en Uber' },
+      { nombre: 'Hierve el Agua', descripcion: 'Cascadas minerales y piscinas naturales a 60 min de auto' },
+      { nombre: 'Puerto Escondido', descripcion: 'Playa de surf de clase mundial a 90 min hacia la costa' },
+    ],
     iata: 'OAX',
     ciudad: 'Oaxaca',
     estado: 'Oaxaca',
@@ -623,6 +714,13 @@ export const aeropuertos = [
   {
     slug: 'toluca-tlc',
     nombre: 'Aeropuerto Internacional Adolfo López Mateos',
+    intro: 'Aeropuerto alternativo ubicado a 20 km de Toluca en el Estado de México. Opción de bajo costo para viajeros con destino al oeste de la Ciudad de México y pueblos mágicos. Acceso mediante autobús, Uber o Tren Suburbano hacia CDMX.',
+    pois: [
+      { nombre: 'Valle de Bravo', descripcion: 'Pueblo mágico lacustre a 70 min en auto' },
+      { nombre: 'Tepoztlán', descripcion: 'Pueblo mágico con ruinas prehispánicas a 90 min' },
+      { nombre: 'Cuernavaca', descripcion: 'Ciudad de eterna primavera a 80 min en auto' },
+      { nombre: 'Malinalco', descripcion: 'Pueblo arqueológico a 60 min' },
+    ],
     iata: 'TLC',
     ciudad: 'Toluca',
     estado: 'Estado de México',
@@ -671,6 +769,13 @@ export const aeropuertos = [
   {
     slug: 'tapachula-tap',
     nombre: 'Aeropuerto Internacional de Tapachula',
+    intro: 'Puerta sur fronteriza ubicada a 22 km de Tapachula, Chiapas, cerca de la frontera con Guatemala. Conecta Centroamérica con el interior de México. Acceso mediante autobús, taxi o Uber a la ciudad y conecta con Chiapas interior.',
+    pois: [
+      { nombre: 'Tapachula Centro', descripcion: 'Centro urbano con mercados y comida local a 20 min' },
+      { nombre: 'Izapa', descripcion: 'Zona arqueológica prehispánica a 30 min en auto' },
+      { nombre: 'Volcán Tacana', descripcion: 'Volcán compartido con Guatemala a 60 min en auto' },
+      { nombre: 'Puerto Arista', descripcion: 'Playa cercana a 45 min hacia la costa' },
+    ],
     iata: 'TAP',
     ciudad: 'Tapachula',
     estado: 'Chiapas',
@@ -713,6 +818,13 @@ export const aeropuertos = [
   {
     slug: 'veracruz-ver',
     nombre: 'Aeropuerto Internacional General Heriberto Jara',
+    intro: 'Principal aeropuerto del Golfo de México ubicado a 12 km de Veracruz. Conecta la ciudad portuaria histórica con destinos nacionales. Acceso mediante autobús, taxi o Uber al centro histórico y malecón veracruzano.',
+    pois: [
+      { nombre: 'Centro Histórico de Veracruz', descripcion: 'Fortaleza colonial y malecón a 15 min en taxi' },
+      { nombre: 'Castillo de San Juan de Ulúa', descripcion: 'Fuerte histórico en la bahía a 20 min' },
+      { nombre: 'Xalapa', descripcion: 'Capital del estado en las montañas a 90 min' },
+      { nombre: 'Cempoala', descripcion: 'Zona arqueológica prehispánica a 45 min en auto' },
+    ],
     iata: 'VER',
     ciudad: 'Veracruz',
     estado: 'Veracruz',
@@ -755,6 +867,13 @@ export const aeropuertos = [
   {
     slug: 'villahermosa-vsa',
     nombre: 'Aeropuerto Internacional Carlos Rovirosa',
+    intro: 'Puerta a Tabasco ubicada a 18 km de Villahermosa. Conecta con la Ruta Maya hacia Palenque y destinos del sureste. Acceso mediante autobús local, taxi o Uber hacia el centro y zonas arqueológicas cercanas.',
+    pois: [
+      { nombre: 'Parque La Venta', descripcion: 'Museo al aire libre con artefactos olmecas a 5 min' },
+      { nombre: 'Palenque', descripcion: 'Ruinas mayas en la selva a 150 km hacia Chiapas' },
+      { nombre: 'Calakmul', descripcion: 'Zona arqueológica remotay hacia Campeche a 300 km' },
+      { nombre: 'Centro Histórico de Villahermosa', descripcion: 'Plaza de armas y templos a 20 min en taxi' },
+    ],
     iata: 'VSA',
     ciudad: 'Villahermosa',
     estado: 'Tabasco',
@@ -797,6 +916,13 @@ export const aeropuertos = [
   {
     slug: 'aguascalientes-agu',
     nombre: 'Aeropuerto Internacional Jesús Terán Peredo',
+    intro: 'Aeropuerto del Bajío ubicado a 27 km de Aguascalientes. Hub para viajeros de negocios y acceso a la Feria Nacional de Aguascalientes. Acceso mediante autobús, Uber o renta de autos hacia el centro y el Bajío.',
+    pois: [
+      { nombre: 'Centro Histórico de Aguascalientes', descripcion: 'Plaza de armas con templos barrocos a 30 min' },
+      { nombre: 'Parque del Siglo', descripcion: 'Parque recreativo principal a 25 min en taxi' },
+      { nombre: 'Presa de Aguamilpa', descripcion: 'Embalse para deportes acuáticos a 45 min' },
+      { nombre: 'Lagos de Moreno', descripcion: 'Pueblo mágico con destilería de tequila a 90 min' },
+    ],
     iata: 'AGU',
     ciudad: 'Aguascalientes',
     estado: 'Aguascalientes',
@@ -839,6 +965,13 @@ export const aeropuertos = [
   {
     slug: 'hermosillo-hmo',
     nombre: 'Aeropuerto Internacional General Ignacio Pesqueira',
+    intro: 'Aeropuerto de Sonora ubicado a 17 km de Hermosillo. Puerta al noroeste de México con acceso al desierto de Sonora y frontera con Arizona. Acceso mediante autobús, taxi o Uber hacia el centro y destinos del norte.',
+    pois: [
+      { nombre: 'Hermosillo Centro Histórico', descripcion: 'Plaza de armas y catedral a 20 min en taxi' },
+      { nombre: 'Bahía de Kino', descripcion: 'Playa desértica con pueblo costero a 100 km' },
+      { nombre: 'Desierto de Pinacate', descripcion: 'Reserva natural UNESCO a 140 km' },
+      { nombre: 'Puerto Peñasco', descripcion: 'Pueblo costero con playas y mariscos a 160 km' },
+    ],
     iata: 'HMO',
     ciudad: 'Hermosillo',
     estado: 'Sonora',
@@ -881,6 +1014,13 @@ export const aeropuertos = [
   {
     slug: 'mazatlan-mzt',
     nombre: 'Aeropuerto Internacional General Rafael Buelna',
+    intro: 'Aeropuerto turístico de Sinaloa ubicado a 20 km de Mazatlán. Conecta la Riviera del Pacífico con destinos nacionales e internacionales. Acceso mediante autobús, taxi o Uber al malecón y centro turístico de Mazatlán.',
+    pois: [
+      { nombre: 'Malecón de Mazatlán', descripcion: 'Paseo costero con vistas al Pacífico a 20 min' },
+      { nombre: 'Centro Histórico de Mazatlán', descripcion: 'Zona peatonal con tiendas y restaurantes a 25 min' },
+      { nombre: 'Islas de Mazatlán', descripcion: 'Archipiélago con playas vírgenes a 15 min en ferry' },
+      { nombre: 'Durango', descripcion: 'Ciudad colonial al interior a 180 km' },
+    ],
     iata: 'MZT',
     ciudad: 'Mazatlán',
     estado: 'Sinaloa',
@@ -929,6 +1069,13 @@ export const aeropuertos = [
   {
     slug: 'acapulco-aca',
     nombre: 'Aeropuerto Internacional General Juan N. Álvarez',
+    intro: 'Legendario aeropuerto turístico ubicado a 24 km de Acapulco, Guerrero. Conecta la playa más famosa de México con destinos nacionales. Acceso mediante autobús, taxi o Uber hacia el malecón y resorts de lujo.',
+    pois: [
+      { nombre: 'Bahía de Acapulco', descripcion: 'Playa semicircular con vistas espectaculares a 25 min' },
+      { nombre: 'Acantilados de Acapulco', descripcion: 'Playas con rocas y cuevas cercanas a 10 min' },
+      { nombre: 'Fuerte de San Diego', descripcion: 'Fortaleza histórica del siglo XVII a 25 min' },
+      { nombre: 'Laguna Coyuca', descripcion: 'Laguna natural con mariscos frescos a 30 min' },
+    ],
     iata: 'ACA',
     ciudad: 'Acapulco',
     estado: 'Guerrero',
@@ -977,6 +1124,13 @@ export const aeropuertos = [
   {
     slug: 'tuxtla-gutierrez-tgz',
     nombre: 'Aeropuerto Internacional Ángel Albino Corzo',
+    intro: 'Puerta a Chiapas ubicada a 36 km de Tuxtla Gutiérrez. Conecta la Ruta Maya con destinos nacionales. Acceso mediante autobús, taxi o Uber hacia el centro y las ruinas de San Cristóbal, Palenque y Bonampak.',
+    pois: [
+      { nombre: 'Cañón del Sumidero', descripcion: 'Cañón espectacular a 30 min en auto' },
+      { nombre: 'San Cristóbal de las Casas', descripcion: 'Pueblo mágico colonial a 60 min en auto' },
+      { nombre: 'Palenque', descripcion: 'Ruinas mayas en la selva a 180 km al norte' },
+      { nombre: 'Agua Azul', descripcion: 'Cascadas turquesas a 110 km' },
+    ],
     iata: 'TGZ',
     ciudad: 'Tuxtla Gutiérrez',
     estado: 'Chiapas',
@@ -1019,6 +1173,13 @@ export const aeropuertos = [
   {
     slug: 'ciudad-del-carmen-cme',
     nombre: 'Aeropuerto Internacional de Ciudad del Carmen',
+    intro: 'Aeropuerto petrolero ubicado a 25 km de Ciudad del Carmen, Campeche. Hub para trabajadores de la industria energética y acceso a la Península de Yucatán. Acceso mediante taxi, Uber o autobús local hacia la ciudad isla.',
+    pois: [
+      { nombre: 'Centro Histórico de Ciudad del Carmen', descripcion: 'Puerto histórico con malecón a 25 min' },
+      { nombre: 'Banco de Campeche', descripcion: 'Arrecife de coral para buceo a 15 min en ferry' },
+      { nombre: 'Estuary Tour', descripcion: 'Tours de manglares y fauna marina a 30 min' },
+      { nombre: 'Campeche Centro', descripcion: 'Ciudad amurallada UNESCO a 60 km al sur' },
+    ],
     iata: 'CME',
     ciudad: 'Ciudad del Carmen',
     estado: 'Campeche',
@@ -1061,6 +1222,13 @@ export const aeropuertos = [
   {
     slug: 'zacatecas-zcl',
     nombre: 'Aeropuerto Internacional General Leobardo C. Ruiz',
+    intro: 'Aeropuerto de Zacatecas ubicado a 27 km de la capital estatal. Conecta la ciudad minera colonial UNESCO con destinos nacionales. Acceso mediante taxi, Uber o autobús local hacia el centro histórico en las montañas.',
+    pois: [
+      { nombre: 'Centro Histórico de Zacatecas', descripcion: 'Barroco colonial en montaña a 30 min en auto' },
+      { nombre: 'Catedral Metropolitana', descripcion: 'Joya arquitectónica del siglo XVI a 30 min' },
+      { nombre: 'Mina de Edén', descripcion: 'Mina convertida en discoteca a 25 min' },
+      { nombre: 'Fresnillo', descripcion: 'Pueblo minero cercano a 45 min' },
+    ],
     iata: 'ZCL',
     ciudad: 'Zacatecas',
     estado: 'Zacatecas',

@@ -14,6 +14,15 @@ export function generateMetadata({ params }) {
   return {
     title: `Estación ${estacion.nombre} — Tren Ligero Xochimilco | MetroGuia`,
     description: estacion.descripcion_turistica || `Guía de la estación ${estacion.nombre} del Tren Ligero. Ubicación, conexiones y tips.`,
+    alternates: { canonical: `https://metroguia.mx/cdmx/tren-ligero/estacion/${estacion.slug}/` },
+    openGraph: {
+      title: `Estación ${estacion.nombre} — Tren Ligero Xochimilco`,
+      description: estacion.descripcion_turistica || `Guía de la estación ${estacion.nombre} del Tren Ligero. Ubicación, conexiones y tips.`,
+      url: `https://metroguia.mx/cdmx/tren-ligero/estacion/${estacion.slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
+    },
   }
 }
 
@@ -48,9 +57,17 @@ export default function TrenLigeroEstacionPage({ params }) {
     ]
   }
 
+  const stationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TrainStation',
+    name: `Estación ${estacion.nombre} — Tren Ligero`,
+    description: estacion.descripcion_turistica,
+    address: { '@type': 'PostalAddress', addressLocality: estacion.alcaldia, addressRegion: 'CDMX', addressCountry: 'MX' }
+  }
+
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, stationSchema]) }} />
       
       <section style={{
         background: 'linear-gradient(135deg, var(--surface) 0%, rgba(255, 215, 0, 0.08) 100%)',

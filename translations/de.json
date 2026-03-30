@@ -87,7 +87,11 @@
     "viewAllLines": "Alle Linien anzeigen",
     "nearbyAccommodation": "Unterkunft in der Nähe",
     "touristGuide": "Touristenführer",
-    "worldCupVenue": "Schauplatz der WM 2026"
+    "worldCupVenue": "Schauplatz der WM 2026",
+    "cdmxSystem": "U-Bahn + Stadtbahn",
+    "cdmxTitle": "Mexiko-Stadt U-Bahn",
+    "touristicStationsSubtitle": "Die 6 wichtigsten Touristenstationen",
+    "allLinesSubtitle": "Alle Mexiko-Stadt U-Bahn-Linien"
   },
   "worldCup": {
     "title": "FIFA-Weltmeisterschaft 2026 in Mexiko",
@@ -108,7 +112,22 @@
     "estAkron": "Stadion Akron",
     "estBBVA": "Stadion BBVA",
     "matchDates": "Spieltage",
-    "viewRoute": "Route zum Stadion anzeigen"
+    "viewRoute": "Route zum Stadion anzeigen",
+    "stadiumsHeading": "3 Austragungsstadien",
+    "matchDateLabel": "Spiele",
+    "tipsSubtitle": "Tipps für die Nutzung öffentlicher Verkehrsmittel während der Weltmeisterschaft",
+    "tipArriveEarly": "Komm früh an",
+    "tipArrivyEarlyDesc": "Planen Sie, 90 Minuten vorher anzukommen. Die U-Bahn ist an Spieltagen voll.",
+    "tipBaggage": "Tragen Sie kein großes Gepäck",
+    "tipBaggageDesc": "Große Rucksäcke sind möglicherweise nicht erlaubt. Überprüfen Sie die Stadionrichtlinie.",
+    "tipCard": "Bring eine Fahrkarte mit",
+    "tipCardDesc": "Die Movilidad-Karte (CDMX) ist schneller als bar zu bezahlen. Laden Sie es im Voraus auf.",
+    "tipAvoidPeak": "Vermeiden Sie Stoßzeiten",
+    "tipAvoidPeakDesc": "Falls möglich, fahren Sie vor Ende des vorherigen Spiels. Es wird weniger überlaufen sein.",
+    "tipOfflineMap": "Laden Sie die Offline-Karte herunter",
+    "tipOfflineMapDesc": "Installieren Sie MetroGuia als PWA-App, um Routen ohne Internet verfügbar zu haben.",
+    "tipBattery": "Halten Sie Ihr Telefon geladen",
+    "tipBatteryDesc": "Der Akku ist lebenswichtig. Führen Sie eine externe Batterie für Notfälle mit sich."
   },
   "accommodation": {
     "title": "Unterkunft in der Nähe der U-Bahn",

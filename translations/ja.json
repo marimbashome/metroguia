@@ -87,7 +87,11 @@
     "viewAllLines": "すべての路線を表示",
     "nearbyAccommodation": "近くの宿泊施設",
     "touristGuide": "観光ガイド",
-    "worldCupVenue": "2026年ワールドカップ会場"
+    "worldCupVenue": "2026年ワールドカップ会場",
+    "cdmxSystem": "メトロ + ライトレール",
+    "cdmxTitle": "メキシコシティメトロ",
+    "touristicStationsSubtitle": "最も重要な6つの観光駅",
+    "allLinesSubtitle": "メキシコシティメトロのすべての路線"
   },
   "worldCup": {
     "title": "メキシコでのFIFAワールドカップ2026",
@@ -108,7 +112,22 @@
     "estAkron": "アクロンスタジアム",
     "estBBVA": "BBVAスタジアム",
     "matchDates": "試合日程",
-    "viewRoute": "スタジアムへのルートを表示"
+    "viewRoute": "スタジアムへのルートを表示",
+    "stadiumsHeading": "3つのスタジアム会場",
+    "matchDateLabel": "試合",
+    "tipsSubtitle": "ワールドカップ中の公共交通機関利用のコツ",
+    "tipArriveEarly": "早めに到着する",
+    "tipArrivyEarlyDesc": "試合日の90分前に到着するようにスケジュールしてください。メトロは試合日に満員になります。",
+    "tipBaggage": "大きな荷物を持参しないでください",
+    "tipBaggageDesc": "大きなバックパックは許可されない場合があります。スタジアムのポリシーを確認してください。",
+    "tipCard": "交通カードを持参する",
+    "tipCardDesc": "Movilidadカード（CDMX）は現金払いより高速です。事前にチャージしてください。",
+    "tipAvoidPeak": "ラッシュアワーを避ける",
+    "tipAvoidPeakDesc": "可能であれば、前の試合が終わる前に移動してください。混雑が少なくなります。",
+    "tipOfflineMap": "オフラインマップをダウンロード",
+    "tipOfflineMapDesc": "MetroGuiaをPWAアプリとしてインストールすると、インターネットなしでルートを利用できます。",
+    "tipBattery": "携帯電話を充電した状態に保つ",
+    "tipBatteryDesc": "バッテリーは重要です。緊急時のためにモバイルバッテリーを携帯してください。"
   },
   "accommodation": {
     "title": "メトロ近くの宿泊施設",

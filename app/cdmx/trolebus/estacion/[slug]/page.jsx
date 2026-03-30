@@ -12,6 +12,15 @@ export function generateMetadata({ params }) {
   return {
     title: `${estacion.nombre} — Trolebús CDMX | MetroGuia`,
     description: estacion.descripcion_turistica,
+    alternates: { canonical: `https://metroguia.mx/cdmx/trolebus/estacion/${estacion.slug}/` },
+    openGraph: {
+      title: `${estacion.nombre} — Trolebús CDMX`,
+      description: estacion.descripcion_turistica,
+      url: `https://metroguia.mx/cdmx/trolebus/estacion/${estacion.slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
+    },
   }
 }
 
@@ -35,8 +44,30 @@ export default function TrolebusEstacionPage({ params }) {
   const prevStation = idx > 0 ? lineaEstaciones[idx - 1] : null
   const nextStation = idx < lineaEstaciones.length - 1 ? lineaEstaciones[idx + 1] : null
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'CDMX', item: 'https://metroguia.mx/cdmx/' },
+      { '@type': 'ListItem', position: 3, name: 'Trolebús', item: 'https://metroguia.mx/cdmx/trolebus/' },
+      ...(linea ? [{ '@type': 'ListItem', position: 4, name: linea.nombre, item: `https://metroguia.mx/cdmx/trolebus/linea/${linea.id}/` }] : []),
+      { '@type': 'ListItem', position: (linea ? 5 : 4), name: estacion.nombre, item: `https://metroguia.mx/cdmx/trolebus/estacion/${estacion.slug}/` },
+    ]
+  }
+
+  const stationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BusStation',
+    name: `Estación ${estacion.nombre} — Trolebús CDMX`,
+    description: estacion.descripcion_turistica,
+    address: { '@type': 'PostalAddress', addressLocality: estacion.alcaldia, addressRegion: 'CDMX', addressCountry: 'MX' }
+  }
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, stationSchema]) }} />
+
       <section style={{
         background: `linear-gradient(135deg, var(--surface) 0%, ${linea?.color || '#0072CE'}11 100%)`,
         paddingTop: '5rem', paddingBottom: '4rem',

@@ -20,10 +20,14 @@ export async function generateMetadata({ params }) {
   return {
     title: estacion.seo_title,
     description: estacion.meta_description,
+    alternates: { canonical: `https://metroguia.mx/gdl/macrobus/estacion/${estacion.slug}/` },
     openGraph: {
       title: estacion.seo_title,
       description: estacion.meta_description,
-      url: `https://metroguia.mx/gdl/macrobus/estacion/${estacion.slug}`,
+      url: `https://metroguia.mx/gdl/macrobus/estacion/${estacion.slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
     },
   };
 }

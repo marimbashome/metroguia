@@ -87,7 +87,11 @@
     "viewAllLines": "View all lines",
     "nearbyAccommodation": "Nearby accommodation",
     "touristGuide": "Tourist guide",
-    "worldCupVenue": "World Cup 2026 venue"
+    "worldCupVenue": "World Cup 2026 venue",
+    "cdmxSystem": "Metro + Light Rail",
+    "cdmxTitle": "Mexico City Metro",
+    "touristicStationsSubtitle": "The 6 most important tourist stations",
+    "allLinesSubtitle": "All Mexico City Metro lines"
   },
   "worldCup": {
     "title": "FIFA World Cup 2026 in Mexico",
@@ -108,7 +112,22 @@
     "estAkron": "Estadio Akron",
     "estBBVA": "Estadio BBVA",
     "matchDates": "Match dates",
-    "viewRoute": "View route to stadium"
+    "viewRoute": "View route to stadium",
+    "stadiumsHeading": "3 Stadium Venues",
+    "matchDateLabel": "Matches",
+    "tipsSubtitle": "Tips for using public transport during the World Cup",
+    "tipArriveEarly": "Arrive early",
+    "tipArrivyEarlyDesc": "Plan to arrive 90 minutes in advance. The metro fills up on match days.",
+    "tipBaggage": "Don't bring large luggage",
+    "tipBaggageDesc": "Large backpacks may not be allowed. Check the stadium's policy.",
+    "tipCard": "Bring a transport card",
+    "tipCardDesc": "The Movilidad card (CDMX) is faster than paying in cash. Recharge it in advance.",
+    "tipAvoidPeak": "Avoid rush hours",
+    "tipAvoidPeakDesc": "If you can, travel before the previous match ends. It will be less crowded.",
+    "tipOfflineMap": "Download the offline map",
+    "tipOfflineMapDesc": "Install MetroGuia as a PWA app to have routes available without internet.",
+    "tipBattery": "Keep your phone charged",
+    "tipBatteryDesc": "Battery is vital. Carry a backup power bank for emergencies."
   },
   "accommodation": {
     "title": "Stay near the metro",

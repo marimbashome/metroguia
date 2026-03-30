@@ -71,7 +71,7 @@ export default function CDMXPageLang({ params }) {
             textTransform: 'uppercase',
             fontWeight: 600,
           }}>
-            Metro + Tren Ligero
+            {t(translations, 'city.cdmxSystem')}
           </p>
           <h1 style={{
             fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
@@ -79,7 +79,7 @@ export default function CDMXPageLang({ params }) {
             lineHeight: 1.15,
             marginBottom: '1rem',
           }}>
-            Metro de la Ciudad de México
+            {t(translations, 'city.cdmxTitle')}
           </h1>
           <p style={{
             fontSize: '1rem',
@@ -101,7 +101,7 @@ export default function CDMXPageLang({ params }) {
             {t(translations, 'station.nearbyPlaces')}
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0 0 2rem 0' }}>
-            Las 6 estaciones turísticas más importantes
+            {t(translations, 'city.touristicStationsSubtitle')}
           </p>
           <div className="grid-3">
             {estacionesTuristicas.map(est => (
@@ -166,7 +166,7 @@ export default function CDMXPageLang({ params }) {
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>12 {t(translations, 'station.lines')}</h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0 0 2rem 0' }}>
-            Todas las líneas del Metro de CDMX
+            {t(translations, 'city.allLinesSubtitle')}
           </p>
           <div style={{
             display: 'grid',

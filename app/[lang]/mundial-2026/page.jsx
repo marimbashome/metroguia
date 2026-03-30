@@ -120,7 +120,7 @@ export default function Mundial2026Lang({ params }) {
       {/* Estadios */}
       <section style={{ padding: '4rem 1rem' }}>
         <div className="container">
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>3 Estadios sede</h2>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{t(translations, 'worldCup.stadiumsHeading')}</h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0 0 2.5rem 0' }}>
             {t(translations, 'home.fifa2026Desc')}
           </p>
@@ -190,7 +190,7 @@ export default function Mundial2026Lang({ params }) {
                       letterSpacing: '0.05em',
                       marginBottom: '0.5rem',
                     }}>
-                      Partidos
+                      {t(translations, 'worldCup.matchDateLabel')}
                     </div>
                     <div style={{
                       display: 'flex',
@@ -254,33 +254,33 @@ export default function Mundial2026Lang({ params }) {
             {t(translations, 'station.tips')}
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0 0 2rem 0' }}>
-            Consejos para usar transporte público durante el Mundial
+            worldCup.tipsSubtitle
           </p>
           <div className="grid-3">
             {[
               {
-                titulo: 'Llega con tiempo',
-                desc: 'Planifica llegar con 90 minutos de anticipación. El metro se llena los días de partido.',
+                titulo: t(translations, 'worldCup.tipArriveEarly'),
+                desc: t(translations, 'worldCup.tipArrivyEarlyDesc'),
               },
               {
-                titulo: 'No lleves mucho equipaje',
-                desc: 'Las mochilas grandes pueden no estar permitidas. Revisa la política del estadio.',
+                titulo: t(translations, 'worldCup.tipBaggage'),
+                desc: t(translations, 'worldCup.tipBaggageDesc'),
               },
               {
-                titulo: 'Trae tarjeta de transporte',
-                desc: 'La tarjeta Movilidad (CDMX) es más rápida que pagar en efectivo. Recargala con anticipación.',
+                titulo: t(translations, 'worldCup.tipCard'),
+                desc: t(translations, 'worldCup.tipCardDesc'),
               },
               {
-                titulo: 'Evita horas pico',
-                desc: 'Si puedes, viaja antes de que termine el partido anterior. Será menos congestionado.',
+                titulo: t(translations, 'worldCup.tipAvoidPeak'),
+                desc: t(translations, 'worldCup.tipAvoidPeakDesc'),
               },
               {
-                titulo: 'Descarga el mapa offline',
-                desc: 'Instala MetroGuia como app PWA para tener las rutas disponibles sin internet.',
+                titulo: t(translations, 'worldCup.tipOfflineMap'),
+                desc: t(translations, 'worldCup.tipOfflineMapDesc'),
               },
               {
-                titulo: 'Mantén tu teléfono cargado',
-                desc: 'La batería es vital. Lleva un power bank de respaldo para emergencias.',
+                titulo: t(translations, 'worldCup.tipBattery'),
+                desc: t(translations, 'worldCup.tipBatteryDesc'),
               },
             ].map((tip, idx) => (
               <div key={idx} className="card" style={{ padding: '1.5rem' }}>
