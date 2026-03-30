@@ -1,14 +1,14 @@
 // =============================================================
 // MetroGuia.mx — data/estaciones.js
-// Base de datos completa: 195 estaciones del Metro CDMX
+// Base de datos completa: 155 estaciones del Metro CDMX
 // Enriquecido: 2026-03-22
+// FIXED: 26 duplicates merged
 // =============================================================
 
 export const estaciones = [
   {
     "slug": "observatorio",
     "nombre": "Observatorio",
-    "linea": "1",
     "alcaldia": "Álvaro Obregón",
     "tipo_zona": "residencial",
     "pois": [
@@ -74,12 +74,14 @@ export const estaciones = [
         "distancia": "1km",
         "descripcion": "Principal avenida de la ciudad con tiendas, restaurantes y vida nocturna. Conexión directa hacia centro."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "juanacatlan",
     "nombre": "Juanacatlán",
-    "linea": "1",
     "alcaldia": "Álvaro Obregón",
     "tipo_zona": "residencial",
     "pois": [
@@ -134,12 +136,14 @@ export const estaciones = [
         "distancia": "2 min",
         "descripcion": "Tiendas, cafeterías y pequeños restaurantes que sirven la población local."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "tacubaya",
     "nombre": "Tacubaya",
-    "linea": "1",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "transporte",
     "pois": [
@@ -161,7 +165,8 @@ export const estaciones = [
     ],
     "transferencias": [
       "7",
-      "9"
+      "9",
+      "1"
     ],
     "seo_title": "Metro Tacubaya CDMX — Hub de Transferencia | MetroGuia",
     "meta_description": "Estación Tacubaya del Metro CDMX: hub crucial de transferencia a Líneas 1 y 7. Zona comercial vibrante, acceso a Chapultepec, Paseo de la Reforma. Turismo.",
@@ -208,12 +213,15 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Tiendas y comercios diversos"
       }
+    ],
+    "lineas": [
+      "1",
+      "9"
     ]
   },
   {
     "slug": "chapultepec",
     "nombre": "Chapultepec",
-    "linea": "1",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -300,12 +308,14 @@ export const estaciones = [
         "distancia": "800m",
         "descripcion": "Galería de arte contemporáneo mexicano. Entrada gratuita domingos. Ubicado dentro del Bosque."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "sevilla",
     "nombre": "Sevilla",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -371,12 +381,14 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Restaurantes de alta cocina mexicana e internacional. Ambiente elegante, precios premium."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "insurgentes",
     "nombre": "Insurgentes",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -453,12 +465,14 @@ export const estaciones = [
         "distancia": "100m",
         "descripcion": "Boutiques con diseño mexicano contemporáneo, joyería artesanal, ropa de diseñadores locales. Souvenirs únicos."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "cuauhtemoc",
     "nombre": "Cuauhtémoc",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -524,12 +538,14 @@ export const estaciones = [
         "distancia": "5 min",
         "descripcion": "Galerías de arte contemporáneo y museos especializados. Zona universitaria con tiendas de libros y discos."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "balderas",
     "nombre": "Balderas",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -545,7 +561,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "3"
+      "3",
+      "1"
     ],
     "seo_title": "Metro Balderas CDMX — Plaza Garibaldi y Alameda | MetroGuia",
     "meta_description": "Balderas. Transbordo Línea 1-3. Plaza Garibaldi. Alameda Central. Música en vivo tradicional.",
@@ -598,12 +615,15 @@ export const estaciones = [
         "distancia": "150m",
         "descripcion": "Múltiples bares, cantinas tradicionales y restaurantes modernos. Vida nocturna activa en la zona."
       }
+    ],
+    "lineas": [
+      "1",
+      "3"
     ]
   },
   {
     "slug": "salto-del-agua",
     "nombre": "Salto del Agua",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -619,7 +639,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "8"
+      "8",
+      "1"
     ],
     "seo_title": "Metro Salto del Agua CDMX — Centro histórico | MetroGuia",
     "meta_description": "Metro Salto del Agua: acceso a mercados tradicionales y hoteles económicos. Zona de transición hacia Centro Histórico. Guía turística completa.",
@@ -671,12 +692,15 @@ export const estaciones = [
         "distancia": "50m",
         "descripcion": "Múltiples opciones de comida rápida y restaurantes con cocina mexicana tradicional. Ambiente local."
       }
+    ],
+    "lineas": [
+      "1",
+      "8"
     ]
   },
   {
     "slug": "isabel-la-catolica",
     "nombre": "Isabel la Católica",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -753,12 +777,14 @@ export const estaciones = [
         "distancia": "5 min",
         "descripcion": "Iglesias históricas del período colonial español. Arquitectura colonial única. Centro Histórico es Patrimonio de la UNESCO."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "pino-suarez",
     "nombre": "Pino Suárez",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -789,7 +815,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "2"
+      "2",
+      "1"
     ],
     "seo_title": "Metro Pino Suárez CDMX — Centro histórico | MetroGuia",
     "meta_description": "Metro Pino Suárez: acceso al Zócalo, Catedral, Templo Mayor. Patrimonio histórico UNESCO. Guía imprescindible para turistas del Mundial.",
@@ -841,12 +868,15 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Restaurantes familiares con comida tradicional mexicana. Enchiladas, tacos, pozole, precios accesibles."
       }
+    ],
+    "lineas": [
+      "1",
+      "2"
     ]
   },
   {
     "slug": "merced",
     "nombre": "Merced",
-    "linea": "1",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -918,12 +948,14 @@ export const estaciones = [
         "distancia": "1 min",
         "descripcion": "Tiendas de comercio tradicional alrededor del mercado. Ropa, accesorios y artículos diversos."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "candelaria",
     "nombre": "Candelaria",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "comercial",
     "pois": [
@@ -939,7 +971,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "4"
+      "4",
+      "1"
     ],
     "seo_title": "Metro Candelaria CDMX — Templo Religioso | MetroGuia",
     "meta_description": "Candelaria CDMX. Templo religioso importante. Peregrinación. Fe mexicana. Festividad 2 febrero.",
@@ -986,12 +1019,15 @@ export const estaciones = [
         "descripcion": "Principal avenida de negocios y comercio de CDMX con restaurantes y vida nocturna."
       }
     ],
-    "descripcion_turistica": "Estación en zona de Tacubaya, puerta de entrada occidental al metro. Cercana al Bosque de Chapultepec y con acceso a avenidas principales de la ciudad."
+    "descripcion_turistica": "Estación en zona de Tacubaya, puerta de entrada occidental al metro. Cercana al Bosque de Chapultepec y con acceso a avenidas principales de la ciudad.",
+    "lineas": [
+      "1",
+      "4"
+    ]
   },
   {
     "slug": "san-lazaro",
     "nombre": "San Lázaro",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "transporte",
     "pois": [
@@ -1007,7 +1043,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "B"
+      "B",
+      "1"
     ],
     "seo_title": "Metro San Lázaro — Terminal intermodal este",
     "meta_description": "San Lázaro: Terminal Autobuses del Oriente, mercados locales vibr antes y vida de barrio. Puerta a zonas menos turísticas del oriente capitalino.",
@@ -1054,12 +1091,15 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Tianguis tradicional con productos frescos"
       }
+    ],
+    "lineas": [
+      "1",
+      "B"
     ]
   },
   {
     "slug": "moctezuma",
     "nombre": "Moctezuma",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1114,12 +1154,14 @@ export const estaciones = [
         "distancia": "5 min",
         "descripcion": "Escuelas, centros de salud y espacios comunitarios de la zona residencial."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "balbuena",
     "nombre": "Balbuena",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1174,12 +1216,15 @@ export const estaciones = [
         "distancia": "3 min",
         "descripcion": "Tiendas, farmacias, tortererías y pequeños restaurantes de barrio."
       }
+    ],
+    "lineas": [
+      "1",
+      "8"
     ]
   },
   {
     "slug": "boulevard-puerto-aereo",
     "nombre": "Boulevard Puerto Aéreo",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "comercial",
     "pois": [
@@ -1239,12 +1284,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Múltiples opciones de transporte: autobuses, taxis, servicios de ride-sharing."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "gomez-farias",
     "nombre": "Gómez Farías",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1299,12 +1346,14 @@ export const estaciones = [
         "distancia": "0 min",
         "descripcion": "Zona segura y tranquila, ideal para descanso."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "zaragoza",
     "nombre": "Zaragoza",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1359,12 +1408,14 @@ export const estaciones = [
         "distancia": "1 min",
         "descripcion": "Tiendas, farmacias, tortererías y pequeños restaurantes de barrio."
       }
+    ],
+    "lineas": [
+      "1"
     ]
   },
   {
     "slug": "pantitlan",
     "nombre": "Pantitlán",
-    "linea": "1",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "transporte",
     "pois": [
@@ -1382,7 +1433,8 @@ export const estaciones = [
     "transferencias": [
       "5",
       "9",
-      "A"
+      "A",
+      "1"
     ],
     "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
     "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
@@ -1428,12 +1480,16 @@ export const estaciones = [
         "distancia": "600m",
         "descripcion": "Mercado tradicional con productos locales y frescos"
       }
+    ],
+    "lineas": [
+      "1",
+      "9",
+      "A"
     ]
   },
   {
     "slug": "cuatro-caminos",
     "nombre": "Cuatro Caminos",
-    "linea": "2",
     "alcaldia": "Naucalpan",
     "tipo_zona": "residencial",
     "pois": [
@@ -1494,12 +1550,14 @@ export const estaciones = [
         "distancia": "10 estaciones",
         "descripcion": "Acceso directo al Zócalo, Centro Histórico y atractivos principales. Línea 2 recorre zona céntrica norte a sur."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "panteones",
     "nombre": "Panteones",
-    "linea": "2",
     "alcaldia": "Naucalpan",
     "tipo_zona": "residencial",
     "pois": [
@@ -1554,12 +1612,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Tiendas, farmacias y servicios comunitarios para la población."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "tacuba",
     "nombre": "Tacuba",
-    "linea": "2",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "comercial",
     "pois": [
@@ -1630,12 +1690,15 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Mercado local con textiles, cerámica y artesanías mexicanas auténticas. Precios más económicos que Reforma."
       }
+    ],
+    "lineas": [
+      "2",
+      "7"
     ]
   },
   {
     "slug": "cuitlahuac",
     "nombre": "Cuitláhuac",
-    "linea": "2",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial",
     "pois": [
@@ -1690,12 +1753,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Parques y espacios verdes para recreación y descanso."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "popotla",
     "nombre": "Popotla",
-    "linea": "2",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "residencial",
     "pois": [
@@ -1750,12 +1815,14 @@ export const estaciones = [
         "distancia": "1 min",
         "descripcion": "Tiendas tradicionales y servicios comunitarios."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "colegio-militar",
     "nombre": "Colegio Militar",
-    "linea": "2",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1815,12 +1882,14 @@ export const estaciones = [
         "distancia": "10 min",
         "descripcion": "Parque importante con museos y espacios verdes. Pulmón verde de la ciudad."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "normal",
     "nombre": "Normal",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "educativo",
     "pois": [
@@ -1880,12 +1949,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Tiendas, librerías, cafeterías para estudiantes."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "san-cosme",
     "nombre": "San Cosme",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -1945,12 +2016,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Tiendas, restaurantes, cafeterías y servicios comerciales modernos."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "revolucion",
     "nombre": "Revolución",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -2010,12 +2083,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Restaurantes tradicionales y cafés alrededor del monumento. Gastronomía mexicana auténtica."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "hidalgo",
     "nombre": "Hidalgo",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -2036,7 +2111,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "3"
+      "3",
+      "2"
     ],
     "seo_title": "Metro Hidalgo CDMX — Catedral y Zócalo | MetroGuia",
     "meta_description": "Hidalgo CDMX. Catedral Metropolitana. Palacio Nacional. Zócalo. Centro Histórico y Patrimonio.",
@@ -2095,12 +2171,15 @@ export const estaciones = [
         "distancia": "100m",
         "descripcion": "Múltiples cafeterías tradicionales mexicanas alrededor del parque, famosas por tamales y pan dulce."
       }
+    ],
+    "lineas": [
+      "2",
+      "3"
     ]
   },
   {
     "slug": "bellas-artes",
     "nombre": "Bellas Artes",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -2183,12 +2262,14 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Colección de monedas y billetes mexicanos históricos. Entrada libre. Ubicado en Banco de México."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "allende",
     "nombre": "Allende",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -2260,12 +2341,14 @@ export const estaciones = [
         "distancia": "100m",
         "descripcion": "Comedores tradicionales con antojitos mexicanos. Ambiente local, precios bajos."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "zocalo",
     "nombre": "Zócalo",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -2352,85 +2435,14 @@ export const estaciones = [
         "distancia": "150m",
         "descripcion": "Colección de arte prehispánico y moderno. Entrada libre. Ubicado en Palacio de Iturbide, arquitectura espectacular."
       }
-    ]
-  },
-  {
-    "slug": "pino-suarez",
-    "nombre": "Pino Suárez",
-    "linea": "2",
-    "alcaldia": "Cuauhtémoc",
-    "tipo_zona": "historico",
-    "pois": [
-      {
-        "nombre": "Zócalo (transferencia a Línea 1)",
-        "tipo": "historico",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Centro histórico",
-        "tipo": "historico",
-        "distancia": "1 min caminando"
-      }
     ],
-    "transferencias": [
-      "1"
-    ],
-    "seo_title": "Metro Pino Suárez CDMX — Centro histórico | MetroGuia",
-    "meta_description": "Metro Pino Suárez: acceso al Zócalo, Catedral, Templo Mayor. Patrimonio histórico UNESCO. Guía imprescindible para turistas del Mundial.",
-    "h1": "Metro Pino Suárez (Línea 2): acceso al Zócalo",
-    "intro": "Pino Suárez es estación de la Línea 1 ubicada en el corazón del Centro Histórico, junto al Zócalo de la Ciudad de México. La zona es epicentro de patrimonio cultural con templos coloniales, museos importantes, comercio tradicional y plazas históricas. Para turistas del Mundial es punto de acceso imprescindible al patrimonio histórico de la capital, declarado Patrimonio de la Humanidad por UNESCO. Conecta directamente con Línea 2 hacia Estadio Azteca.",
-    "historia_icono": "El ícono de Pino Suárez representa al personaje histórico Benito Juárez Pino Suárez, presidente reformista de México.",
-    "tips": [
-      "Zócalo a 2 min caminando: plaza más grande de América Latina, Catedral Metropolitana (entrada $6 USD)",
-      "Museos gratuitos domingos para residentes; turistas extranjeros pagan tarifa normal de $4-8 USD",
-      "Templo Mayor prehispánico a 3 min: entrada $6 USD, una de las ruinas más significativas de México",
-      "Zona muy concurrida; evita 11 AM-3 PM. Mejor: 8-10 AM o después de 5 PM para exploración tranquila"
-    ],
-    "mejor_horario": "8-11 AM para museos y monumentos sin filas enormes. Atardeceres (5-7 PM) ofrecen iluminación dorada del Zócalo.",
-    "mundial_relevancia": "Atracción histórica esencial para turistas del Mundial. Centro neurálgico que conecta con Línea 2 hacia Estadio Azteca.",
-    "descripcion_turistica": "Estación en zona céntrica con conexión directa a Línea 2. Ubicada junto a iglesias coloniales y cerca del Zócalo. Acceso a vida comercial intensa y gastronomía tradicional. Punto de transferencia clave para turistas que exploran el Centro Histórico durante World Cup 2026.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Rampas de acceso disponibles. Señalización táctil completa. Escaleras mecánicas en horarios pico."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Iglesia de la Santísima Trinidad",
-        "tipo": "Iglesia colonial",
-        "distancia": "100m",
-        "descripcion": "Templo barroco del siglo XVIII. Arquitectura espectacular. Abierta para visitantes y misas."
-      },
-      {
-        "nombre": "Mercado de la Merced",
-        "tipo": "Mercado tradicional",
-        "distancia": "400m",
-        "descripcion": "Uno de los mercados más grandes de México. Caótico pero auténtico, con comida, flores y artesanías. Experiencia local pura."
-      },
-      {
-        "nombre": "Zócalo",
-        "tipo": "Plaza histórica",
-        "distancia": "300m",
-        "descripcion": "A pie en 5 minutos. Centro neurálgico de Mexico City con monumentos imprescindibles para turistas."
-      },
-      {
-        "nombre": "Zona de Gastronomía Popular",
-        "tipo": "Restaurantes y comida",
-        "distancia": "200m",
-        "descripcion": "Restaurantes familiares con comida tradicional mexicana. Enchiladas, tacos, pozole, precios accesibles."
-      }
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "san-antonio-abad",
     "nombre": "San Antonio Abad",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -2497,12 +2509,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Arte urbano y murales que narran historias locales. Arquitectura popular colorida."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "chabacano",
     "nombre": "Chabacano",
-    "linea": "2",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "comercial",
     "pois": [
@@ -2519,7 +2533,8 @@ export const estaciones = [
     ],
     "transferencias": [
       "8",
-      "9"
+      "9",
+      "2"
     ],
     "seo_title": "Metro Chabacano CDMX — Mercados y Vida Local",
     "meta_description": "Estación Chabacano: Mercados frescos, fondas auténticas y vida barrial tradicional. Experiencia real de CDMX para viajeros auténticos.",
@@ -2572,12 +2587,15 @@ export const estaciones = [
         "distancia": "50m",
         "descripcion": "Opciones de comida tradicional y rápida. Precios accesibles para turistas en tránsito."
       }
+    ],
+    "lineas": [
+      "2",
+      "8"
     ]
   },
   {
     "slug": "viaducto",
     "nombre": "Viaducto",
-    "linea": "2",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial",
     "pois": [
@@ -2637,12 +2655,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Opciones gastronómicas variadas con precios para todos los presupuestos."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "xola",
     "nombre": "Xola",
-    "linea": "2",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -2697,12 +2717,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Parques y espacios verdes para recreación."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "villa-de-cortes",
     "nombre": "Villa de Cortés",
-    "linea": "2",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -2757,12 +2779,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Parques y espacios verdes para recreación."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "nativitas",
     "nombre": "Nativitas",
-    "linea": "2",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -2818,12 +2842,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Mercados con productos frescos y artesanías locales. Experiencia auténtica."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "portales",
     "nombre": "Portales",
-    "linea": "2",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -2878,12 +2904,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Parques y espacios verdes para recreación."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "ermita",
     "nombre": "Ermita",
-    "linea": "2",
     "alcaldia": "Coyoacán",
     "tipo_zona": "residencial",
     "pois": [
@@ -2944,12 +2972,15 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Espacio para actividades comunitarias"
       }
+    ],
+    "lineas": [
+      "12",
+      "2"
     ]
   },
   {
     "slug": "general-anaya",
     "nombre": "General Anaya",
-    "linea": "2",
     "alcaldia": "Coyoacán",
     "tipo_zona": "residencial",
     "pois": [
@@ -3005,12 +3036,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Tiendas locales, panaderías y comercios tradicionales."
       }
+    ],
+    "lineas": [
+      "2"
     ]
   },
   {
     "slug": "tasquena",
     "nombre": "Tasqueña",
-    "linea": "2",
     "alcaldia": "Coyoacán",
     "tipo_zona": "transporte",
     "pois": [
@@ -3079,12 +3112,14 @@ export const estaciones = [
       "rampa": true,
       "piso_tactil": true,
       "notas": "Estación antigua con rampas. Sin elevador. Señalización táctil disponible."
-    }
+    },
+    "lineas": [
+      "2"
+    ]
   },
   {
     "slug": "indios-verdes",
     "nombre": "Indios Verdes",
-    "linea": "3",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -3151,12 +3186,14 @@ export const estaciones = [
         "distancia": "10 estaciones",
         "descripcion": "Acceso directo a Zócalo, museos y principales atracciones históricas de la ciudad."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "deportivo-18-de-marzo",
     "nombre": "Deportivo 18 de Marzo",
-    "linea": "3",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "deportivo-residencial",
     "pois": [
@@ -3214,12 +3251,14 @@ export const estaciones = [
       "rampa": false,
       "piso_tactil": true,
       "notas": "Estación sin elevador ni rampa. Escaleras fijas. Señalización táctil en plataforma."
-    }
+    },
+    "lineas": [
+      "3"
+    ]
   },
   {
     "slug": "potrero",
     "nombre": "Potrero",
-    "linea": "3",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -3275,12 +3314,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Arquitectura histórica mexicana en barrios cercanos."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "la-raza",
     "nombre": "La Raza",
-    "linea": "3",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "cultural-residencial",
     "pois": [
@@ -3348,12 +3389,14 @@ export const estaciones = [
       "rampa": true,
       "piso_tactil": true,
       "notas": "Estación con rampas para acceso. Sin elevador. Señalización táctil completa."
-    }
+    },
+    "lineas": [
+      "3"
+    ]
   },
   {
     "slug": "tlatelolco",
     "nombre": "Tlatelolco",
-    "linea": "3",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico",
     "pois": [
@@ -3435,12 +3478,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Torre histórica visible desde la plaza. Sitio de eventos culturales importantes en historia mexicana."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "guerrero",
     "nombre": "Guerrero",
-    "linea": "3",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial-popular",
     "pois": [
@@ -3456,7 +3501,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "B"
+      "B",
+      "3"
     ],
     "seo_title": "Metro Guerrero — Centro artístico y cultural",
     "meta_description": "Guerrero: galerías de arte contemporáneo, librerías independientes y restaurantes tradicionales. Centro artístico y bohemio vibrante en el Centro Histórico",
@@ -3503,102 +3549,15 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Mercado informal diario"
       }
-    ]
-  },
-  {
-    "slug": "hidalgo",
-    "nombre": "Hidalgo",
-    "linea": "3",
-    "alcaldia": "Cuauhtémoc",
-    "tipo_zona": "cultural-historico",
-    "pois": [
-      {
-        "nombre": "Alameda Central",
-        "tipo": "parque",
-        "distancia": "3 min caminando"
-      },
-      {
-        "nombre": "Palacio de Bellas Artes",
-        "tipo": "teatro",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Museo Franz Mayer",
-        "tipo": "museo",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Torre Latinoamericana",
-        "tipo": "monumento",
-        "distancia": "8 min caminando"
-      }
     ],
-    "transferencias": [
-      "2"
-    ],
-    "seo_title": "Metro Hidalgo CDMX — Catedral y Zócalo | MetroGuia",
-    "meta_description": "Hidalgo CDMX. Catedral Metropolitana. Palacio Nacional. Zócalo. Centro Histórico y Patrimonio.",
-    "h1": "Metro Hidalgo: puerta a la Alameda y Bellas Artes",
-    "intro": "Hidalgo es una estación estratégica en el corazón del Centro Histórico de la Ciudad de México, ofreciendo acceso directo a la Catedral Metropolitana, el Palacio Nacional y la Zócalo, la plaza más grande de Latinoamérica. Esta estación es obligatoria para turistas internacionales del Mundial 2026 que deseen conectar con los símbolos más icónicos de México. Desde aquí confluyen historia prehispánica, colonial y moderna en un solo espacio.",
-    "historia_icono": "El ícono de Hidalgo representa a Miguel Hidalgo y Costilla, padre de la Independencia mexicana. Simboliza la lucha por la libertad en el corazón del México Colonial.",
-    "tips": [
-      "Acceso directo a la Catedral Metropolitana, construcción de 5 siglos emblemática",
-      "Palacio Nacional con murales de Diego Rivera: historia de México en imágenes",
-      "Zócalo a pasos: observa banderas, mercados y vida cultural en la plaza más grande de Latinoamérica",
-      "Museos adyacentes: Museo del Templo Mayor, Museo Nacional de Arte a corta distancia",
-      "Come en fondas tradicionales cercanas con precios asequibles y sabor auténtico"
-    ],
-    "mejor_horario": "Mañana (8am-10am) para evitar multitudes en sitios arqueológicos. Tarde (4pm-6pm) para fotos del atardecer en Zócalo.",
-    "mundial_relevancia": "Centro neurálgico de la capital. Fundamental para turistas del Mundial que busquen el símbolo más icónico de México: la Zócalo.",
-    "descripcion_turistica": "Estación en la zona de la Alameda Central, principal parque histórico de la ciudad con acceso a Palacio de Bellas Artes. Conexión directa con Línea 3. Ubicación perfecta para turistas que visitan el corazón cultural de Mexico City durante el World Cup 2026.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Estación con elevador funcional. Accesibilidad completa en pasillos y plataforma. Una de las mejor equipadas del sistema."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Alameda Central",
-        "tipo": "Parque histórico",
-        "distancia": "200m",
-        "descripcion": "Parque más antiguo de América Latina, ideal para paseos tranquilos. Rodeado de cafeterías y tiendas artesanales."
-      },
-      {
-        "nombre": "Palacio de Bellas Artes",
-        "tipo": "Museo y teatro",
-        "distancia": "400m",
-        "descripcion": "Icónico palacio con cúpula de vidrio empleado. Presenta ballet folklórico y exposiciones de arte. Entrada: ~$60 MXN."
-      },
-      {
-        "nombre": "Museo Mural Diego Rivera",
-        "tipo": "Museo",
-        "distancia": "300m",
-        "descripcion": "Pequeño museo dedicado a murales de Diego Rivera. Acceso rápido desde Hidalgo, entrada económica."
-      },
-      {
-        "nombre": "Barrio de Artesanías",
-        "tipo": "Zona comercial",
-        "distancia": "250m",
-        "descripcion": "Tiendas de artesanías mexicanas tradicionales, souvenirs auténticos, buen lugar para comprar regalos."
-      },
-      {
-        "nombre": "Cafeterías Alameda",
-        "tipo": "Gastronomía",
-        "distancia": "100m",
-        "descripcion": "Múltiples cafeterías tradicionales mexicanas alrededor del parque, famosas por tamales y pan dulce."
-      }
+    "lineas": [
+      "3",
+      "B"
     ]
   },
   {
     "slug": "juarez",
     "nombre": "Juárez",
-    "linea": "3",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -3675,86 +3634,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Amplia oferta de restaurantes internacionales, cafeterías y bares. Ideal para comer antes o después de eventos World Cup."
       }
-    ]
-  },
-  {
-    "slug": "balderas",
-    "nombre": "Balderas",
-    "linea": "3",
-    "alcaldia": "Cuauhtémoc",
-    "tipo_zona": "comercial",
-    "pois": [
-      {
-        "nombre": "Mercado de Artesanías Ciudadela",
-        "tipo": "mercado",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "La Ciudadela (centro cultural)",
-        "tipo": "museo",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [
-      "1"
-    ],
-    "seo_title": "Metro Balderas CDMX — Plaza Garibaldi y Alameda | MetroGuia",
-    "meta_description": "Balderas. Transbordo Línea 1-3. Plaza Garibaldi. Alameda Central. Música en vivo tradicional.",
-    "h1": "Metro Balderas: el mercado de artesanías de La Ciudadela",
-    "intro": "Balderas es una estación estratégica de transbordo entre las Líneas 1 y 3, ubicada en el corazón del Centro Histórico de la Ciudad de México. La estación ofrece acceso a la Alameda Central, Plaza Garibaldi y al barrio histórico de Centro. Para turistas del Mundial 2026, es un punto neurálgico para conectar con sitios culturales, musicales y arqueológicos de la capital mexicana.",
-    "historia_icono": "El ícono de Balderas representa a los Niños Héroes de Chapultepec, jóvenes soldados que dieron sus vidas defendiendo México. Símbolo del heroísmo y sacrificio nacional.",
-    "tips": [
-      "Centro de transbordo perfecto: conecta Línea 1 y 3 para explorar múltiples zonas",
-      "Plaza Garibaldi a pasos: música en vivo, cantantes callejeros y romerías tradicionales",
-      "Alameda Central: parque histórico con museos, esculpturas y espacio para descansar",
-      "Gastronomía diversa: desde taquerías hasta restaurantes de chef en la zona",
-      "Actividad intensa: ideal para turistas que quieran vivir el bullicio de la capital"
-    ],
-    "mejor_horario": "Noche (8pm-11pm) para experimentar Plaza Garibaldi con música en vivo. Día para museos.",
-    "mundial_relevancia": "Centro cultural fundamental. Conecta turistas con experiencias auténticas de la CDMX durante el Mundial.",
-    "descripcion_turistica": "Estación con conexión directa a Línea 3, ubicada en zona comercial del Centro Histórico. Avenida Reforma cercana con acceso a tiendas y vida cultural. Punto de transferencia crucial para turistas que combinan actividades centro-norte durante World Cup 2026.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Rampas de acceso. Señalización táctil. Escaleras mecánicas en pasillos principales."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Paseo de la Reforma",
-        "tipo": "Avenida comercial",
-        "distancia": "200m",
-        "descripcion": "Eje principal con tiendas de lujo, hoteles y vida cultural. Acceso a monumentos y entretenimiento."
-      },
-      {
-        "nombre": "Barrio Juárez-Santa María la Ribera",
-        "tipo": "Zona residencial",
-        "distancia": "300m",
-        "descripcion": "Barrio bohemio con vida nocturna, bares, galerías y tiendas boutique. Ambiente artístico y joven."
-      },
-      {
-        "nombre": "Estela de Luz",
-        "tipo": "Monumento moderno",
-        "distancia": "500m",
-        "descripcion": "Monumento a la independencia mexicana con vista panorámica. Ubicado en Reforma, accesible a pie."
-      },
-      {
-        "nombre": "Zona de bares y restaurantes",
-        "tipo": "Gastronomía",
-        "distancia": "150m",
-        "descripcion": "Múltiples bares, cantinas tradicionales y restaurantes modernos. Vida nocturna activa en la zona."
-      }
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "ninos-heroes",
     "nombre": "Niños Héroes",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -3810,12 +3697,14 @@ export const estaciones = [
         "distancia": "10-15 min",
         "descripcion": "Museo Antropología, Arte Moderno, Historia Natural. Entrada: $85 MXN."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "hospital-general",
     "nombre": "Hospital General",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "medico",
     "pois": [
@@ -3871,12 +3760,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Comedores y cafeterías cercanas para acompañantes durante consultas."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "centro-medico",
     "nombre": "Centro Médico",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "medico-residencial",
     "pois": [
@@ -3892,7 +3783,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "9"
+      "9",
+      "3"
     ],
     "seo_title": "Metro Centro Médico CDMX — Salud | MetroGuia",
     "meta_description": "Centro Médico CDMX: transferencia estratégica a Línea 3, servicios de salud. Centro Médico Nacional para emergencias turistas. Conectividad.",
@@ -3945,12 +3837,15 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Barrio residencial con tiendas, restaurantes y vida urbana activa."
       }
+    ],
+    "lineas": [
+      "3",
+      "9"
     ]
   },
   {
     "slug": "etiopia",
     "nombre": "Etiopía/Plaza de la Transparencia",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -4006,12 +3901,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Comida variada con precios accesibles. Cocina mexicana e internacional."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "eugenia",
     "nombre": "Eugenia",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -4067,12 +3964,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Vida auténtica de la ciudad fuera de rutas turísticas."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "division-del-norte",
     "nombre": "División del Norte",
-    "linea": "3",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "comercial-residencial",
     "pois": [
@@ -4128,12 +4027,14 @@ export const estaciones = [
         "distancia": "1-5 min",
         "descripcion": "Cafeterías, antros y bares con ambiente local alternativo. Vida nocturna."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "zapata",
     "nombre": "Zapata",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "residencial",
     "pois": [
@@ -4144,7 +4045,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "12"
+      "12",
+      "3"
     ],
     "seo_title": "Metro Zapata — Barrio residencial sur",
     "meta_description": "Zapata: mercados locales auténticos, gastronomía casera y vida cotidiana de barrio. Barrio genuino del sur capitalino.                      ",
@@ -4191,12 +4093,15 @@ export const estaciones = [
         "distancia": "600m",
         "descripcion": "Tianguis tradicional"
       }
+    ],
+    "lineas": [
+      "12",
+      "3"
     ]
   },
   {
     "slug": "coyoacan",
     "nombre": "Coyoacán",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -4284,12 +4189,14 @@ export const estaciones = [
         "distancia": "150m",
         "descripcion": "Múltiples galerías de arte, cafeterías con ambiente bohemio, restaurantes de comida mexicana artesanal. Precios medios."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "viveros",
     "nombre": "Viveros/Derechos Humanos",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "parque-residencial",
     "pois": [
@@ -4350,12 +4257,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Áreas verdes para descanso y fotografía de naturaleza."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "miguel-angel-de-quevedo",
     "nombre": "Miguel Ángel de Quevedo",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "cultural-residencial",
     "pois": [
@@ -4416,12 +4325,14 @@ export const estaciones = [
         "distancia": "3-5 min",
         "descripcion": "Productos frescos mexicanos y artesanías a precios reales."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "copilco",
     "nombre": "Copilco",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "universitario",
     "pois": [
@@ -4482,12 +4393,14 @@ export const estaciones = [
         "distancia": "2-5 min",
         "descripcion": "Librerías y espacios intelectuales. Vida académica."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "universidad",
     "nombre": "Universidad",
-    "linea": "3",
     "alcaldia": "Coyoacán",
     "tipo_zona": "universitario",
     "pois": [
@@ -4569,12 +4482,14 @@ export const estaciones = [
         "distancia": "1km",
         "descripcion": "Complejo universitario expansivo con museos, galerías y vida académica. Ideal para recorrido cultural."
       }
+    ],
+    "lineas": [
+      "3"
     ]
   },
   {
     "slug": "martin-carrera",
     "nombre": "Martín Carrera",
-    "linea": "4",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial-transporte",
     "pois": [
@@ -4638,12 +4553,14 @@ export const estaciones = [
         "distancia": "6 estaciones",
         "descripcion": "Acceso directo a Centro Histórico y principales atracciones turísticas."
       }
+    ],
+    "lineas": [
+      "4"
     ]
   },
   {
     "slug": "talisman",
     "nombre": "Talismán",
-    "linea": "4",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "comercial-residencial",
     "pois": [
@@ -4699,12 +4616,14 @@ export const estaciones = [
         "distancia": "5-10 min",
         "descripcion": "Edificios históricos de la zona."
       }
+    ],
+    "lineas": [
+      "4"
     ]
   },
   {
     "slug": "bondojito",
     "nombre": "Bondojito",
-    "linea": "4",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial",
     "pois": [],
@@ -4754,12 +4673,14 @@ export const estaciones = [
         "descripcion": "Área residencial de clase trabajadora con comercios básicos y ambiente seguro."
       }
     ],
-    "descripcion_turistica": "Estación en zona residencial norte de Gustavo A. Madero. Área urbana con mercados locales y vida cotidiana de capitalinos."
+    "descripcion_turistica": "Estación en zona residencial norte de Gustavo A. Madero. Área urbana con mercados locales y vida cotidiana de capitalinos.",
+    "lineas": [
+      "4"
+    ]
   },
   {
     "slug": "consulado",
     "nombre": "Consulado",
-    "linea": "4",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "comercial",
     "pois": [
@@ -4817,12 +4738,14 @@ export const estaciones = [
         "descripcion": "Mercado local con comida típica mexicana y productos frescos."
       }
     ],
-    "descripcion_turistica": "Estación en zona norte cerca de la Basílica de Guadalupe. Puerta de entrada a sitios religiosos más importantes de México."
+    "descripcion_turistica": "Estación en zona norte cerca de la Basílica de Guadalupe. Puerta de entrada a sitios religiosos más importantes de México.",
+    "lineas": [
+      "4"
+    ]
   },
   {
     "slug": "canal-del-norte",
     "nombre": "Canal del Norte",
-    "linea": "4",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "industrial-comercial",
     "pois": [
@@ -4878,12 +4801,14 @@ export const estaciones = [
       "rampa": false,
       "piso_tactil": true,
       "notas": "Estación antigua sin ascensor. Acceso por escaleras. Señalización táctil completa."
-    }
+    },
+    "lineas": [
+      "4"
+    ]
   },
   {
     "slug": "morelos",
     "nombre": "Morelos",
-    "linea": "4",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "historico-popular",
     "pois": [
@@ -4899,7 +4824,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "B"
+      "B",
+      "4"
     ],
     "seo_title": "Metro Morelos — Historia prehispánica colonial",
     "meta_description": "Morelos: Plaza Tres Culturas con arqueología prehispánica, iglesias coloniales históricas. Barrio histórico con patrimonio de tres culturas mexicanas.",
@@ -4946,80 +4872,15 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Tianguis tradicional con productos variados"
       }
+    ],
+    "lineas": [
+      "4",
+      "B"
     ]
-  },
-  {
-    "slug": "candelaria",
-    "nombre": "Candelaria",
-    "linea": "4",
-    "alcaldia": "Venustiano Carranza",
-    "tipo_zona": "historico",
-    "pois": [
-      {
-        "nombre": "Iglesia de la Candelaria (s. XVII)",
-        "tipo": "iglesia",
-        "distancia": "3 min caminando"
-      },
-      {
-        "nombre": "Mercado Jamaica (flores)",
-        "tipo": "mercado",
-        "distancia": "10 min caminando"
-      }
-    ],
-    "transferencias": [
-      "1"
-    ],
-    "seo_title": "Metro Candelaria CDMX — Templo Religioso | MetroGuia",
-    "meta_description": "Candelaria CDMX. Templo religioso importante. Peregrinación. Fe mexicana. Festividad 2 febrero.",
-    "h1": "Metro Candelaria: historia colonial y transfer L1/L4",
-    "intro": "Candelaria es una estación ubicada en la Alcaldía Venustiano Carranza, ofreciendo acceso a una zona religiosa y culturalmente significativa en el oriente de la capital. La zona alberga el Templo de la Candelaria, un importante sitio de peregrinación y devoción religiosa en la ciudad. Para turistas del Mundial 2026, representa una parada fundamental para comprender la religiosidad profunda y la fe que caracterizan a México. Experimenta la devoción mariana y la tradición católica mexicana.",
-    "historia_icono": "El ícono de Candelaria representa la Virgen de la Candelaria, festividad religiosa importante en México. Evoca la devoción mariana y la fe popular mexicana.",
-    "tips": [
-      "Templo de la Candelaria: iglesia histórica y sitio de peregrinación importante",
-      "Festividades religiosas: 2 de febrero celebración de la Candelaria con procesiones",
-      "Mercados especializados en productos religiosos y tradicionales",
-      "Restaurantes cercanos con comida mexicana auténtica para peregrinos y turistas",
-      "Zona tranquila para contemplación espiritual y cultural"
-    ],
-    "mejor_horario": "Mañana (8am-11am) para visitas religiosas. Especialmente: 2 de febrero para festividad.",
-    "mundial_relevancia": "Sitio religioso importante. Relevante para turistas interesados en la fe y devoción de México.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Acceso mediante rampas. Señalización táctil en plataforma. Sin elevador, requiere escaleras."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Bosque de Chapultepec",
-        "tipo": "Parque",
-        "distancia": "1.5km",
-        "descripcion": "Principal pulmón verde de la ciudad con museos, castillo y lagos. Imprescindible para turistas."
-      },
-      {
-        "nombre": "Museo Tamayo",
-        "tipo": "Museo",
-        "distancia": "1.2km",
-        "descripcion": "Galería de arte contemporáneo en la entrada al Bosque. Entrada gratuita los domingos."
-      },
-      {
-        "nombre": "Avenida Paseo de la Reforma",
-        "tipo": "Zona comercial",
-        "distancia": "800m",
-        "descripcion": "Principal avenida de negocios y comercio de CDMX con restaurantes y vida nocturna."
-      }
-    ],
-    "descripcion_turistica": "Estación en zona de Tacubaya, puerta de entrada occidental al metro. Cercana al Bosque de Chapultepec y con acceso a avenidas principales de la ciudad."
   },
   {
     "slug": "fray-servando",
     "nombre": "Fray Servando",
-    "linea": "4",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "residencial",
     "pois": [],
@@ -5069,12 +4930,14 @@ export const estaciones = [
         "distancia": "10 min",
         "descripcion": "Zona comercial popular con tiendas y vida auténtica de CDMX."
       }
+    ],
+    "lineas": [
+      "4"
     ]
   },
   {
     "slug": "jamaica",
     "nombre": "Jamaica",
-    "linea": "4",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "comercial-mercado",
     "pois": [
@@ -5143,12 +5006,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Artesanías y souvenirs locales"
       }
+    ],
+    "lineas": [
+      "4"
     ]
   },
   {
     "slug": "santa-anita",
     "nombre": "Santa Anita",
-    "linea": "4",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial-industrial",
     "pois": [
@@ -5159,7 +5024,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "8"
+      "8",
+      "4"
     ],
     "seo_title": "Metro Santa Anita CDMX — Terminal Sur L4 | MetroGuia",
     "meta_description": "Santa Anita. Terminal sur Línea 4. Templo colonial. Zona religiosa. Barrio auténtico CDMX.",
@@ -5212,12 +5078,15 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Vida comunitaria tranquila, restaurantes familiares, precios accesibles."
       }
+    ],
+    "lineas": [
+      "4",
+      "8"
     ]
   },
   {
     "slug": "politecnico",
     "nombre": "Politécnico",
-    "linea": "5",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "universitario",
     "pois": [
@@ -5277,12 +5146,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Mercado tradicional donde encontrarás comida local auténtica y artesanías"
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "autobuses-del-norte",
     "nombre": "Autobuses del Norte",
-    "linea": "5",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "transporte",
     "pois": [
@@ -5342,12 +5213,14 @@ export const estaciones = [
         "distancia": "600m",
         "descripcion": "Parque urbano con áreas verdes y ciclovía"
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "misterios",
     "nombre": "Misterios",
-    "linea": "5",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial",
     "pois": [],
@@ -5396,12 +5269,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Área verde con juegos infantiles y espacios para relajarse"
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "valle-gomez",
     "nombre": "Valle Gómez",
-    "linea": "5",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "residencial-popular",
     "pois": [
@@ -5456,12 +5331,14 @@ export const estaciones = [
         "distancia": "adyacente",
         "descripcion": "Fondas con comida casera mexicana a precios accesibles."
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "eduardo-molina",
     "nombre": "Eduardo Molina",
-    "linea": "5",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "industrial-residencial",
     "pois": [],
@@ -5510,12 +5387,14 @@ export const estaciones = [
         "distancia": "adyacente",
         "descripcion": "Tiendas de materiales, herramientas y suministros para trabajadores."
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "aragon",
     "nombre": "Aragón",
-    "linea": "5",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial",
     "pois": [
@@ -5571,12 +5450,15 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro educativo importante"
       }
+    ],
+    "lineas": [
+      "5",
+      "B"
     ]
   },
   {
     "slug": "oceania",
     "nombre": "Oceanía",
-    "linea": "5",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "transporte",
     "pois": [
@@ -5592,7 +5474,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "B"
+      "B",
+      "5"
     ],
     "seo_title": "Metro Oceanía — Barrio residencial y comercial",
     "meta_description": "Oceanía: mercados locales auténticos, gastronomía casera mexicana tradicional, vida cotidiana. Experiencia genuina del norte capitalino.    ",
@@ -5639,12 +5522,15 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de salud local"
       }
+    ],
+    "lineas": [
+      "5",
+      "B"
     ]
   },
   {
     "slug": "terminal-aerea",
     "nombre": "Terminal Aérea",
-    "linea": "5",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "transporte",
     "pois": [
@@ -5704,12 +5590,14 @@ export const estaciones = [
         "distancia": "800m",
         "descripcion": "Área verde cercana para relajarse antes de vuelo"
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "hangares",
     "nombre": "Hangares",
-    "linea": "5",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "aeronautico",
     "pois": [
@@ -5769,12 +5657,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida casera frecuentada por trabajadores locales"
       }
+    ],
+    "lineas": [
+      "5"
     ]
   },
   {
     "slug": "tezozomoc",
     "nombre": "Tezozómoc",
-    "linea": "6",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial",
     "pois": [
@@ -5835,12 +5725,14 @@ export const estaciones = [
         "distancia": "2km",
         "descripcion": "Museo de arte contemporáneo accesible en metro desde Polanco"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "azcapotzalco",
     "nombre": "Azcapotzalco",
-    "linea": "6",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "industrial-residencial",
     "pois": [
@@ -5906,12 +5798,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Comida típica mexicana en ambiente tradicional"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "ferreria",
     "nombre": "Ferrería/Arena Ciudad de México",
-    "linea": "6",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "entretenimiento",
     "pois": [
@@ -5971,12 +5865,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida casera mexicana, frecuentado por trabajadores locales"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "norte-45",
     "nombre": "Norte 45",
-    "linea": "6",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial-comercial",
     "pois": [],
@@ -6025,12 +5921,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Café local con pasteles y desayuno mexicano"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "vallejo",
     "nombre": "Vallejo",
-    "linea": "6",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "industrial-comercial",
     "pois": [
@@ -6085,12 +5983,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana tradicional en ambiente agradable"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "lindavista",
     "nombre": "Lindavista",
-    "linea": "6",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -6150,12 +6050,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Café con desayunos mexicanos e internacionales"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "la-villa-basilica",
     "nombre": "La Villa-Basílica",
-    "linea": "6",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "religioso",
     "pois": [
@@ -6231,12 +6133,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Comida mexicana tradicional, ambiente familiar"
       }
+    ],
+    "lineas": [
+      "6"
     ]
   },
   {
     "slug": "aquiles-serdan",
     "nombre": "Aquiles Serdán",
-    "linea": "7",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial",
     "pois": [],
@@ -6286,12 +6190,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Café con pasteles mexicanos y desayunos"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "camarones",
     "nombre": "Camarones",
-    "linea": "7",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "industrial-residencial",
     "pois": [],
@@ -6341,12 +6247,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Comida casera mexicana"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "refineria",
     "nombre": "Refinería",
-    "linea": "7",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "industrial",
     "pois": [
@@ -6402,83 +6310,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida tradicional y asequible"
       }
-    ]
-  },
-  {
-    "slug": "tacuba",
-    "nombre": "Tacuba",
-    "linea": "7",
-    "alcaldia": "Miguel Hidalgo",
-    "tipo_zona": "historico-residencial",
-    "pois": [
-      {
-        "nombre": "Estación Ferroviaria Tacuba (histórica)",
-        "tipo": "monumento",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Museo del Ferrocarril",
-        "tipo": "museo",
-        "distancia": "8 min caminando"
-      }
     ],
-    "transferencias": [],
-    "seo_title": "Metro Tacuba CDMX — Centro comercial | MetroGuia",
-    "meta_description": "Tacuba: estación comercial en Miguel Hidalgo. Mercados, tiendas y gastronomía local.",
-    "h1": "Metro Tacuba: historia colonial y ferroviaria",
-    "intro": "Tacuba es una estación comercial ubicada en Miguel Hidalgo, ofreciendo acceso a mercados tradicionales, tiendas y restaurantes locales. La zona es vibrante y auténtica, perfecta para experimentar la vida comercial de CDMX.",
-    "historia_icono": "Tacuba proviene del náhuatl 'tlacopan', uno de los grandes centros comerciales de la época prehispánica.",
-    "tips": [
-      "Mercado tradicional de alimentos frescos",
-      "Tiendas locales y artesanía",
-      "Gastronomía típica mexicana",
-      "Zona concurrida y auténtica"
-    ],
-    "mejor_horario": "Mañana para ver el mercado en movimiento.",
-    "mundial_relevancia": "Sin relevancia directa para partidos.",
-    "descripcion_turistica": "Estación histórica en el barrio antiguo de Tacuba, uno de los primeros asentamientos de la Ciudad de México. Acceso a calles coloniales, tiendas tradicionales y vida local auténtica. Perfecto para turistas que buscan la Mexico City histórica durante el World Cup 2026.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Acceso mediante rampas. Señalización táctil. Estación histórica con infraestructura básica pero funcional."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Barrio de Tacuba",
-        "tipo": "Zona histórica",
-        "distancia": "0m",
-        "descripcion": "Barrio prehispánico con calles coloniales. Comercio tradicional, tiendas locales y auténtica vida chilanga."
-      },
-      {
-        "nombre": "Templo de San Francisco",
-        "tipo": "Iglesia colonial",
-        "distancia": "300m",
-        "descripcion": "Convento del siglo XVI, uno de los primeros edificios religiosos de la Nueva España. Abierto para visitantes."
-      },
-      {
-        "nombre": "Museo de la Ciudad de México",
-        "tipo": "Museo histórico",
-        "distancia": "600m",
-        "descripcion": "Ubicado en Palacio de los Condes de Santiago de Calimaya. Historia de Mexico City desde época prehispánica. Entrada: $50 MXN."
-      },
-      {
-        "nombre": "Mercado de Artesanías",
-        "tipo": "Mercado tradicional",
-        "distancia": "200m",
-        "descripcion": "Mercado local con textiles, cerámica y artesanías mexicanas auténticas. Precios más económicos que Reforma."
-      }
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "san-joaquin",
     "nombre": "San Joaquín",
-    "linea": "7",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -6539,12 +6378,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana casera"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "polanco",
     "nombre": "Polanco",
-    "linea": "7",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "comercial-residencial",
     "pois": [
@@ -6632,12 +6473,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Eje comercial exclusivo con tiendas, cafés y galerías"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "auditorio",
     "nombre": "Auditorio",
-    "linea": "7",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "cultural",
     "pois": [
@@ -6714,12 +6557,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Acceso a uno de los parques más grandes y famosos de Latinoamérica"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "constituyentes",
     "nombre": "Constituyentes",
-    "linea": "7",
     "alcaldia": "Miguel Hidalgo",
     "tipo_zona": "residencial-cultural",
     "pois": [
@@ -6791,12 +6636,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Museo de arte mexicano moderno y contemporáneo"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "san-pedro-de-los-pinos",
     "nombre": "San Pedro de los Pinos",
-    "linea": "7",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial",
     "pois": [
@@ -6852,12 +6699,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Comida gourmet en casa colonial renovada"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "san-antonio",
     "nombre": "San Antonio",
-    "linea": "7",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -6913,12 +6762,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida casera mexicana"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "barranca-del-muerto",
     "nombre": "Barranca del Muerto",
-    "linea": "7",
     "alcaldia": "Álvaro Obregón",
     "tipo_zona": "residencial",
     "pois": [
@@ -6979,12 +6830,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida sureña mexicana"
       }
+    ],
+    "lineas": [
+      "7"
     ]
   },
   {
     "slug": "garibaldi",
     "nombre": "Garibaldi/Lagunilla",
-    "linea": "8",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "cultural-nocturno",
     "pois": [
@@ -7058,12 +6911,14 @@ export const estaciones = [
         "distancia": "150m",
         "descripcion": "Artesanías mexicanas, souvenirs típicos"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "san-juan-de-letran",
     "nombre": "San Juan de Letrán",
-    "linea": "8",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial-histórico",
     "pois": [
@@ -7124,160 +6979,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Zona comercial con tiendas y restaurantes"
       }
-    ]
-  },
-  {
-    "slug": "salto-del-agua",
-    "nombre": "Salto del Agua",
-    "linea": "8",
-    "alcaldia": "Cuauhtémoc",
-    "tipo_zona": "histórico",
-    "pois": [
-      {
-        "nombre": "Centro Histórico",
-        "tipo": "cultural",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Eje Central Lázaro Cárdenas",
-        "tipo": "transporte",
-        "distancia": "2 min caminando"
-      }
     ],
-    "transferencias": [
-      "1"
-    ],
-    "seo_title": "Metro Salto del Agua CDMX — Centro histórico | MetroGuia",
-    "meta_description": "Metro Salto del Agua: acceso a mercados tradicionales y hoteles económicos. Zona de transición hacia Centro Histórico. Guía turística completa.",
-    "h1": "Estación Salto del Agua — Línea 8 del Metro CDMX",
-    "intro": "Salto del Agua es estación de transición entre la Línea 1 y el centro histórico, ubicada en la colonia Cuauhtémoc. Combina comercio de nivel medio con acceso cercano a sitios históricos de la ciudad. Es punto de paso importante hacia la zona de mercados tradicionales y el centro peatonal turístico. La estación funciona como puente entre zonas comerciales modernas y patrimonio histórico colonial.",
-    "historia_icono": "El ícono de Salto del Agua evoca el río subterráneo que alguna vez bajaba desde Chapultepec, fuente de agua que alimentaba a la capital prehispánica.",
-    "tips": [
-      "Acceso a Mercado de Abastos: mercado tradicional a 5 min caminando con productos frescos a precios mínimos",
-      "Zona de hoteles económicos ($20-40 USD/noche) en radio de 8 min caminando",
-      "Comercio mixto: electrónica, ropa, accesorios; negocios abiertos de 8 AM a 9 PM",
-      "Zona popular; mantén vigilancia sobre pertenencias en horas nocturnas (después de 9 PM)"
-    ],
-    "mejor_horario": "10 AM a 5 PM para compras y exploración tranquila. Evita después de 8 PM en zona aledaña.",
-    "mundial_relevancia": "Acceso a hospedaje económico y compras de bajo costo para turistas presupuestarios del Mundial.",
-    "descripcion_turistica": "Estación en zona céntrica oriental del Centro Histórico. Acceso a iglesias coloniales y avenidas comerciales con vida local intensa. Punto de transferencia para viajeros que se desplazan entre diferentes zonas del centro durante World Cup 2026.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Rampas funcionando. Señalización táctil en plataforma. Estación antigua con infraestructura mejorada."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Avenida 20 de Noviembre",
-        "tipo": "Avenida comercial",
-        "distancia": "0m",
-        "descripcion": "Eje comercial importante con tiendas, cafeterías y vida urbana intensa. Dirección hacia Zócalo."
-      },
-      {
-        "nombre": "Iglesia de Santa Catarina",
-        "tipo": "Iglesia colonial",
-        "distancia": "200m",
-        "descripcion": "Templo del siglo XVI con arquitectura barroca. Abierta para visitas y misas diarias."
-      },
-      {
-        "nombre": "Zona de tiendas Centro",
-        "tipo": "Zona comercial",
-        "distancia": "100m",
-        "descripcion": "Tiendas variadas de ropa, electrónica, accesorios. Precios competitivos y ambiente comercial tradicional."
-      },
-      {
-        "nombre": "Restaurantes Avenida 20 de Noviembre",
-        "tipo": "Gastronomía",
-        "distancia": "50m",
-        "descripcion": "Múltiples opciones de comida rápida y restaurantes con cocina mexicana tradicional. Ambiente local."
-      }
-    ]
-  },
-  {
-    "slug": "chabacano",
-    "nombre": "Chabacano",
-    "linea": "8",
-    "alcaldia": "Iztapalapa",
-    "tipo_zona": "comercial",
-    "pois": [
-      {
-        "nombre": "Zona comercial Chabacano",
-        "tipo": "comercial",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Avenida Chabacano",
-        "tipo": "transporte",
-        "distancia": "adyacente"
-      }
-    ],
-    "transferencias": [
-      "2",
-      "9"
-    ],
-    "seo_title": "Metro Chabacano CDMX — Mercados y Vida Local",
-    "meta_description": "Estación Chabacano: Mercados frescos, fondas auténticas y vida barrial tradicional. Experiencia real de CDMX para viajeros auténticos.",
-    "h1": "Estación Chabacano — Línea 8 del Metro CDMX",
-    "intro": "Chabacano es una estación que conecta con un barrio residencial con carácter tradicional mexicano. Named después de un árbol frutal tropical, la zona mantiene una atmósfera auténtica y local. Es ideal para turistas que quieren ver cómo viven los mexicanos en la ciudad, lejos de las zonas turistificadas. Aquí encontrarás tiendas locales, fondas de comida casera, y la oportunidad de comprar frutas y productos locales en mercados callejeros.",
-    "historia_icono": "El ícono representa el árbol chabacano, un árbol frutal tropical que era común en la zona. El símbolo muestra la fruta o las características del árbol, conectando con la naturaleza y la historia agrícola del lugar.",
-    "tips": [
-      "Compra frutas y verduras en los mercados de barrio, muy frescas y baratas",
-      "Come tamales, quesadillas y comida típica en fondas locales auténticas",
-      "Interactúa con vendedores locales para recomendaciones personalizadas",
-      "El área es segura durante el día para explorar a pie",
-      "Toma fotos de la arquitectura vernácula y colorida del barrio"
-    ],
-    "mejor_horario": "Mañanas entre 07:00 y 11:00 para ver la actividad más auténtica del mercado. Los días de entre semana son más tranquilos.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial FIFA 2026.",
-    "descripcion_turistica": "Estación de transferencia importante con conexión a Líneas 8 y 9. Ubicada en zona de comercio intenso con vida local auténtica. Punto clave para turistas que se desplazan entre diferentes zonas de la ciudad durante World Cup 2026.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Excelente accesibilidad con elevador operativo. Estación de transferencia bien equipada para personas con movilidad reducida."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Nodo de Transferencia Chabacano",
-        "tipo": "Centro de transporte",
-        "distancia": "0m",
-        "descripcion": "Hub importante de metro con conexión a líneas 2, 8 y 9. Central de transporte clave para movilidad urbana."
-      },
-      {
-        "nombre": "Zona comercial Chabacano",
-        "tipo": "Área retail",
-        "distancia": "100m",
-        "descripcion": "Tiendas, mercados y vida comercial intensa. Ambiente de barrio tradicional con servicios variados."
-      },
-      {
-        "nombre": "Iglesia de Chabacano",
-        "tipo": "Iglesia",
-        "distancia": "200m",
-        "descripcion": "Templo histórico de barrio. Abierto para visitantes."
-      },
-      {
-        "nombre": "Restaurantes y comedores",
-        "tipo": "Gastronomía",
-        "distancia": "50m",
-        "descripcion": "Opciones de comida tradicional y rápida. Precios accesibles para turistas en tránsito."
-      }
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "la-viga",
     "nombre": "La Viga",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "comercial",
     "pois": [
@@ -7338,81 +7047,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Comida de mercado, auténtica y económica"
       }
-    ]
-  },
-  {
-    "slug": "santa-anita",
-    "nombre": "Santa Anita",
-    "linea": "8",
-    "alcaldia": "Iztapalapa",
-    "tipo_zona": "comercial",
-    "pois": [
-      {
-        "nombre": "Zona comercial Santa Anita",
-        "tipo": "comercial",
-        "distancia": "2 min caminando"
-      }
     ],
-    "transferencias": [
-      "4"
-    ],
-    "seo_title": "Metro Santa Anita CDMX — Terminal Sur L4 | MetroGuia",
-    "meta_description": "Santa Anita. Terminal sur Línea 4. Templo colonial. Zona religiosa. Barrio auténtico CDMX.",
-    "h1": "Estación Santa Anita — Línea 8 del Metro CDMX",
-    "intro": "Santa Anita es la estación terminal sur de la Línea 4, ubicada en la Alcaldía Iztapalapa. La estación ofrece acceso a una zona histórica y religiosa, con el Templo y Convento de Santa Anita como referencias arquitectónicas principales de gran valor. Para turistas del Mundial 2026, representa una conexión valiosa con la historia colonial y la religiosidad que caracteriza profundamente a México. Descubre arquitectura colonial preservada y la fe tradicional mexicana.",
-    "historia_icono": "El ícono de Santa Anita representa a Santa Ana, madre de la Virgen María. Simboliza la devoción mariana y la fe cristiana en México.",
-    "tips": [
-      "Templo y Convento de Santa Anita: sitio histórico colonial de gran valor arquitectónico",
-      "Zona religiosa importante: peregrinaciones y festividades tradicionales",
-      "Mercado local con productos frescos y artesanía a precios reales",
-      "Restaurantes tradicionales para experimentar comida mexicana auténtica",
-      "Barrios residenciales con vida local genuina y acogedora"
-    ],
-    "mejor_horario": "Mañana (8am-12pm) para visita a templo. Evita tarde.",
-    "mundial_relevancia": "Sitio religioso-colonial. Relevante para turistas interesados en arquitectura colonial y fe mexicana.",
-    "descripcion_turistica": "Estación terminal sur de Línea 4, ubicada en zona residencial sur con vida local tradicional. Acceso a servicios comunitarios y mercados locales. Punto estratégico para turistas que inician o terminan recorridos en Línea 4 durante World Cup 2026.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Rampas funcionales. Señalización táctil. Estación terminal con servicios básicos."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Barrio de Santa Anita",
-        "tipo": "Zona residencial",
-        "distancia": "0m",
-        "descripcion": "Barrio residencial con vida local auténtica, mercados y restaurantes tradicionales. Ambiente tranquilo."
-      },
-      {
-        "nombre": "Mercado Santa Anita",
-        "tipo": "Mercado tradicional",
-        "distancia": "150m",
-        "descripcion": "Mercado local con alimentos, frutas, comida. Experiencia de mercado tradicional mexicano."
-      },
-      {
-        "nombre": "Iglesia de Santa Anita",
-        "tipo": "Iglesia",
-        "distancia": "200m",
-        "descripcion": "Templo histórico del barrio. Abierto para visitantes."
-      },
-      {
-        "nombre": "Zona residencial sur",
-        "tipo": "Barrio",
-        "distancia": "500m",
-        "descripcion": "Vida comunitaria tranquila, restaurantes familiares, precios accesibles."
-      }
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "atlalilco",
     "nombre": "Atlalilco",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "comercial",
     "pois": [
@@ -7423,7 +7065,8 @@ export const estaciones = [
       }
     ],
     "transferencias": [
-      "12"
+      "12",
+      "8"
     ],
     "seo_title": "Metro Atlalilco — Zona residencial sur",
     "meta_description": "Atlalilco: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.                         ",
@@ -7470,12 +7113,15 @@ export const estaciones = [
         "distancia": "700m",
         "descripcion": "Área verde con importancia ecológica"
       }
+    ],
+    "lineas": [
+      "12",
+      "8"
     ]
   },
   {
     "slug": "iztapalapa",
     "nombre": "Iztapalapa",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7531,12 +7177,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Mercado local con comida y productos"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "apatlaco",
     "nombre": "Apatlaco",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7592,12 +7240,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida tradicional mexicana"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "aculco",
     "nombre": "Aculco",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7653,12 +7303,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana casera"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "escuadron-201",
     "nombre": "Escuadrón 201",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7714,12 +7366,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "parque-de-los-venados",
     "nombre": "Parque de los Venados",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7775,12 +7429,15 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro de capacitación profesional"
       }
+    ],
+    "lineas": [
+      "12",
+      "8"
     ]
   },
   {
     "slug": "penon-viejo",
     "nombre": "Peñón Viejo",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7836,72 +7493,15 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro de salud de acceso comunitario"
       }
+    ],
+    "lineas": [
+      "8",
+      "A"
     ]
-  },
-  {
-    "slug": "balbuena",
-    "nombre": "Balbuena",
-    "linea": "8",
-    "alcaldia": "Iztapalapa",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona Balbuena",
-        "tipo": "residencial",
-        "distancia": "adyacente"
-      }
-    ],
-    "transferencias": [],
-    "seo_title": "Metro Balbuena CDMX — Parque y zona residencial | MetroGuia",
-    "meta_description": "Balbuena: estación residencial con acceso a parque. Zona tranquila de Venustiano Carranza.",
-    "h1": "Estación Balbuena — Línea 8 del Metro CDMX",
-    "intro": "Balbuena es una estación residencial que ofrece acceso directo al Parque Balbuena, importante espacio verde de la zona. La zona es tranquila, segura y perfecta para visitantes que buscan relajarse en espacios abiertos.",
-    "historia_icono": "Balbuena evoca a Bernardo de Balbuena, poeta y obispo novohispano del siglo XVI.",
-    "tips": [
-      "Parque Balbuena: excelente para paseos y recreación",
-      "Zona segura y tranquila",
-      "Acceso a comercios locales",
-      "Servicios comunitarios disponibles"
-    ],
-    "mejor_horario": "Mañana/tarde para disfrutar del parque.",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial.",
-    "descripcion_turistica": "Estación en zona oriental de Iztapalapa. Punto de conexión con área comercial y residencial densamente poblada.",
-    "lugares_cercanos": [
-      {
-        "nombre": "Parque Naucalli",
-        "tipo": "Parque",
-        "distancia": "1.5km",
-        "descripcion": "Parque tradicional de la zona con vegetación y paseos tranquilos."
-      },
-      {
-        "nombre": "Centro Comercial Balbuena",
-        "tipo": "Centro comercial",
-        "distancia": "800m",
-        "descripcion": "Zona comercial local con tiendas departamentales y restaurantes."
-      },
-      {
-        "nombre": "Mercado Balbuena",
-        "tipo": "Mercado",
-        "distancia": "400m",
-        "descripcion": "Mercado tradicional con comida casera y productos frescos locales."
-      }
-    ],
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes horario regular. Sábados de 06:00 a 00:00, domingos y festivos de 07:00 a 00:00."
-    },
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación antigua sin elevador. Acceso por escaleras. Señalización táctil en plataforma."
-    }
   },
   {
     "slug": "minas",
     "nombre": "Minas",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -7957,12 +7557,14 @@ export const estaciones = [
         "distancia": "adyacente",
         "descripcion": "Comida popular a precios muy accesibles en zona residencial de Iztapalapa."
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "guelatao",
     "nombre": "Guelatao",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -8018,12 +7620,15 @@ export const estaciones = [
         "distancia": "700m",
         "descripcion": "Área verde con áreas de esparcimiento"
       }
+    ],
+    "lineas": [
+      "8",
+      "A"
     ]
   },
   {
     "slug": "cerro-de-la-estrella",
     "nombre": "Cerro de la Estrella",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "patrimonio-arqueologico",
     "pois": [
@@ -8089,12 +7694,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida con vistas del cerro"
       }
+    ],
+    "lineas": [
+      "8"
     ]
   },
   {
     "slug": "constitucion-de-1917",
     "nombre": "Constitución de 1917",
-    "linea": "8",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "residencial",
     "pois": [
@@ -8149,81 +7756,15 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Tiendas y servicios variados"
       }
-    ]
-  },
-  {
-    "slug": "tacubaya",
-    "nombre": "Tacubaya",
-    "linea": "9",
-    "alcaldia": "Miguel Hidalgo",
-    "tipo_zona": "comercial-residencial",
-    "pois": [
-      {
-        "nombre": "Zona Comercial Tacubaya",
-        "tipo": "comercial",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Castillo de Chapultepec",
-        "tipo": "cultural",
-        "distancia": "15 min en metrobús"
-      }
     ],
-    "transferencias": [
-      "1",
-      "7"
-    ],
-    "seo_title": "Metro Tacubaya CDMX — Hub de Transferencia | MetroGuia",
-    "meta_description": "Estación Tacubaya del Metro CDMX: hub crucial de transferencia a Líneas 1 y 7. Zona comercial vibrante, acceso a Chapultepec, Paseo de la Reforma. Turismo.",
-    "h1": "Estación Tacubaya — Línea 9 del Metro CDMX",
-    "intro": "Tacubaya es uno de los hubs de transferencia más importantes del Metro de la Ciudad de México, estratégicamente ubicado en el Oeste de la ciudad. Esta estación conecta las Líneas 1, 7 y 9, convirtiéndola en un punto nodal para turistas que desean explorar distintas zonas de la capital. La zona es vibrante, con comercio diverso, restaurantes, y acceso directo a la icónica Avenida Paseo de la Reforma.",
-    "historia_icono": "El nombre Tacubaya proviene del náhuatl 'Tlecoabaca', que significa 'lugar de sapos'. Desde tiempos prehispánicos fue zona de paso comercial hacia zonas del Oeste. El icono del metro refleja esta herencia con referencias a la flora y fauna del territorio.",
-    "tips": [
-      "Transfiere a Líneas 1 (Observatorio-Pantitlán) y 7 (Barranca del Muerto-Garibaldi) para máxima cobertura urbana",
-      "Explora la Zona Comercial Tacubaya con tiendas, restaurantes y cafeterías de calidad",
-      "Accede al Castillo de Chapultepec en 15 minutos mediante metrobús desde la estación",
-      "Es el mejor punto de partida para tours al Bosque de Chapultepec y Museo Nacional de Antropología",
-      "Aprovecha los horarios nocturnos para disfrutar la vida nocturna de la zona"
-    ],
-    "mejor_horario": "Mañanas entre 8:00-11:00 para menos aglomeración, o tardes 15:00-18:00. Evita horas pico (7:00-9:00 y 18:00-20:00).",
-    "mundial_relevancia": "Hub estratégico para turistas FIFA 2026: conecta Centro histórico con zonas Oeste. Acceso a hoteles de clase alta en Polanco y Chapultepec.",
-    "descripcion_turistica": "Tacubaya es hub intermodal importante conectando múltiples líneas. Acceso a zona histórica occidente. Para turistas FIFA 2026 que necesitan transferencia eficiente o explorar Tacubaya.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Estación completamente accesible intermodal con múltiples líneas. Centro de transferencia con todos los servicios."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V horario regular. Sábados hasta 01:00. Domingos y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Barrio Histórico Tacubaya",
-        "tipo": "Zona Histórica",
-        "distancia": "300m",
-        "descripcion": "Zona colonial con arquitectura tradicional mexicana"
-      },
-      {
-        "nombre": "Mercado Tacubaya",
-        "tipo": "Mercado",
-        "distancia": "250m",
-        "descripcion": "Mercado tradicional con comida y artesanías"
-      },
-      {
-        "nombre": "Zona Comercial",
-        "tipo": "Zona Comercial",
-        "distancia": "200m",
-        "descripcion": "Tiendas y comercios diversos"
-      }
+    "lineas": [
+      "8",
+      "A"
     ]
   },
   {
     "slug": "patriotismo",
     "nombre": "Patriotismo",
-    "linea": "9",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -8284,12 +7825,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana casera"
       }
+    ],
+    "lineas": [
+      "9"
     ]
   },
   {
     "slug": "chilpancingo",
     "nombre": "Chilpancingo",
-    "linea": "9",
     "alcaldia": "Benito Juárez",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -8345,86 +7888,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana tradicional"
       }
-    ]
-  },
-  {
-    "slug": "centro-medico",
-    "nombre": "Centro Médico",
-    "linea": "9",
-    "alcaldia": "Benito Juárez",
-    "tipo_zona": "médico-comercial",
-    "pois": [
-      {
-        "nombre": "Centro Médico Nacional",
-        "tipo": "médico",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Zona comercial Centro Médico",
-        "tipo": "comercial",
-        "distancia": "3 min caminando"
-      }
     ],
-    "transferencias": [
-      "3"
-    ],
-    "seo_title": "Metro Centro Médico CDMX — Salud | MetroGuia",
-    "meta_description": "Centro Médico CDMX: transferencia estratégica a Línea 3, servicios de salud. Centro Médico Nacional para emergencias turistas. Conectividad.",
-    "h1": "Estación Centro Médico — Línea 9 del Metro CDMX",
-    "intro": "Centro Médico es una estación clave de transferencia (Línea 9 a Línea 3) ubicada en la alcaldía Benito Juárez, cercana al importante Centro Médico Nacional. Esta estación es vital tanto para turistas que requieran servicios de salud de emergencia como para quienes simplemente deseen explorar un nodo de conectividad importante. La zona combina servicios especializados, comercio orientado a salud y bienestar, y múltiples opciones de movilidad.",
-    "historia_icono": "Centro Médico Nacional fue fundado en 1943 como institución de salud de referencia en México. El ícono del metro representa la cruz médica y simboliza la salud como derecho accesible. Es emblemático del desarrollo institucional mexicano del siglo XX.",
-    "tips": [
-      "Si necesitas atención médica, Centro Médico Nacional es accesible en 2 minutos caminando desde la estación",
-      "Transfiere a Línea 3 para explorar zonas Sur (Copilco, Ciudad Universitaria) o Norte (Indios Verdes)",
-      "Zona con farmacias de calidad y laboratorios clínicos si necesitas servicios de salud menores",
-      "Restaurantes y cafeterías especializadas en comida saludable en los alrededores",
-      "Estación conectada 24 horas: importante recurso en emergencias médicas durante cualquier hora"
-    ],
-    "mejor_horario": "Disponible todo el día. Horarios normales durante día; más tranquilo después de 20:00 si buscas usar la estación sin prisa.",
-    "mundial_relevancia": "Servicios de salud críticos: acceso a Centro Médico Nacional para emergencias médicas de turistas FIFA 2026. Hub de transferencia estratégico.",
-    "descripcion_turistica": "Estación con acceso a complejos médicos importantes y vida urbana céntrica. Ubicación estratégica entre Centro Histórico y zona sur. Punto de referencia para turistas que buscan servicios de salud o descanso durante exploración en World Cup 2026.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Excelente accesibilidad con elevador operativo. Estación médica con acceso completo para personas con movilidad reducida."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "Lunes a viernes. Sábados cierre 01:00. Domingos y festivos 00:00."
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Instituto Nacional de Cardiología",
-        "tipo": "Hospital",
-        "distancia": "100m",
-        "descripcion": "Centro médico de clase mundial. Referencia nacional para cardiología. Servicios para turistas."
-      },
-      {
-        "nombre": "Centro Médico General",
-        "tipo": "Complejo hospitalario",
-        "distancia": "200m",
-        "descripcion": "Complejo de servicios médicos integrales. Infraestructura moderna."
-      },
-      {
-        "nombre": "Parque España",
-        "tipo": "Parque",
-        "distancia": "400m",
-        "descripcion": "Pequeño parque público para descanso, tranquilo, con vegetación."
-      },
-      {
-        "nombre": "Zona Nápoles",
-        "tipo": "Barrio comercial",
-        "distancia": "500m",
-        "descripcion": "Barrio residencial con tiendas, restaurantes y vida urbana activa."
-      }
+    "lineas": [
+      "9"
     ]
   },
   {
     "slug": "lazaro-cardenas",
     "nombre": "Lázaro Cárdenas",
-    "linea": "9",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "comercial-histórico",
     "pois": [
@@ -8485,12 +7956,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida mexicana"
       }
+    ],
+    "lineas": [
+      "9"
     ]
   },
   {
     "slug": "mixiuhca",
     "nombre": "Mixiuhca",
-    "linea": "9",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "comercial",
     "pois": [
@@ -8546,12 +8019,14 @@ export const estaciones = [
         "distancia": "350m",
         "descripcion": "Comida saludable para deportistas"
       }
+    ],
+    "lineas": [
+      "9"
     ]
   },
   {
     "slug": "velodromo",
     "nombre": "Velódromo",
-    "linea": "9",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "deportivo-histórico",
     "pois": [
@@ -8611,12 +8086,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida para deportistas y espectadores"
       }
+    ],
+    "lineas": [
+      "9"
     ]
   },
   {
     "slug": "ciudad-deportiva",
     "nombre": "Ciudad Deportiva",
-    "linea": "9",
     "alcaldia": "Iztacalco",
     "tipo_zona": "deportivo",
     "pois": [
@@ -8672,12 +8149,15 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Tianguis comunitario"
       }
+    ],
+    "lineas": [
+      "9",
+      "B"
     ]
   },
   {
     "slug": "puebla",
     "nombre": "Puebla",
-    "linea": "9",
     "alcaldia": "Iztacalco",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -8733,150 +8213,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida poblana y mexicana"
       }
-    ]
-  },
-  {
-    "slug": "pantitlan",
-    "nombre": "Pantitlán",
-    "linea": "9",
-    "alcaldia": "Venustiano Carranza",
-    "tipo_zona": "hub-terminal",
-    "pois": [
-      {
-        "nombre": "Terminal Pantitlán",
-        "tipo": "transporte",
-        "distancia": "adyacente"
-      },
-      {
-        "nombre": "Zona Comercial Pantitlán",
-        "tipo": "comercial",
-        "distancia": "2 min caminando"
-      }
     ],
-    "transferencias": [
-      "1",
-      "5",
-      "A"
-    ],
-    "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
-    "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
-    "h1": "Estación Pantitlán — Línea 9 del Metro CDMX",
-    "intro": "Pantitlán es una estación crucial de transferencia en el oriente de la CDMX, punto de conexión entre las Líneas 1, 5, 9 y A. Aunque es principalmente una estación de paso, la zona ofrece acceso a mercados tradicionales y transporte hacia municipios del Estado de México.",
-    "historia_icono": "El ícono de la Línea A representa una flecha morada hacia el oriente, simbolizando la expansión del Metro hacia las nuevas zonas periféricas y densamente pobladas.",
-    "tips": [
-      "Pantitlán es punto de transferencia ideal para explorar diferentes líneas del Metro",
-      "La zona es transitada pero segura durante el día; considera horarios de menos afluencia",
-      "Acceso directo a zonas residenciales y de transporte comercial",
-      "Explora la tecnología moderna de la línea más nueva del Metro"
-    ],
-    "mejor_horario": "Entre 10:00 y 14:00 horas para menor congestión",
-    "mundial_relevancia": "Conexión importante para turistas que necesitan acceder a múltiples líneas del Metro durante el Mundial 2026",
-    "descripcion_turistica": "Pantitlán es el terminal oriental de la Línea A, ubicado en la zona de Los Reyes Iztacalco. La estación conecta con importantes rutas de transporte hacia el oriente de la ciudad y zonas residenciales. Es punto de acceso para viajeros hacia el Estado de México.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación sin elevadores. Escaleras convencionales disponibles."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Colegio de Bachilleres No. 1",
-        "tipo": "Institución Educativa",
-        "distancia": "500m",
-        "descripcion": "Centro de educación superior importante en la zona"
-      },
-      {
-        "nombre": "Avenida Texcoco",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Zona con tiendas, farmacias y servicios varios"
-      },
-      {
-        "nombre": "Mercado Los Reyes",
-        "tipo": "Mercado",
-        "distancia": "600m",
-        "descripcion": "Mercado tradicional con productos locales y frescos"
-      }
-    ]
-  },
-  {
-    "slug": "pantitlan",
-    "nombre": "Pantitlán",
-    "linea": "A",
-    "alcaldia": "Venustiano Carranza, CDMX",
-    "tipo_zona": "transporte",
-    "pois": [
-      {
-        "nombre": "Mercado Morelos",
-        "tipo": "mercado",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Zona residencial tradicional",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      }
-    ],
-    "transferencias": [
-      "1",
-      "5",
+    "lineas": [
       "9"
-    ],
-    "seo_title": "Metro Pantitlán LA CDMX — Línea Moderna | MetroGuia",
-    "meta_description": "Pantitlán Línea A: acceso directo a zonas Este modernas Iztapalapa. Línea nueva 2018 con tecnología contemporánea avanzada. Transporte moderno.",
-    "h1": "Metro Pantitlán: hub de transporte en Venustiano Carranza",
-    "intro": "Pantitlán es una estación crucial de transferencia en el oriente de la CDMX, punto de conexión entre las Líneas 1, 5, 9 y A. Aunque es principalmente una estación de paso, la zona ofrece acceso a mercados tradicionales y transporte hacia municipios del Estado de México.",
-    "historia_icono": "El ícono de la Línea A representa una flecha morada hacia el oriente, simbolizando la expansión del Metro hacia las nuevas zonas periféricas y densamente pobladas.",
-    "tips": [
-      "Pantitlán es punto de transferencia ideal para explorar diferentes líneas del Metro",
-      "La zona es transitada pero segura durante el día; considera horarios de menos afluencia",
-      "Acceso directo a zonas residenciales y de transporte comercial",
-      "Explora la tecnología moderna de la línea más nueva del Metro"
-    ],
-    "mejor_horario": "Entre 10:00 y 14:00 horas para menor congestión",
-    "mundial_relevancia": "Conexión importante para turistas que necesitan acceder a múltiples líneas del Metro durante el Mundial 2026",
-    "descripcion_turistica": "Pantitlán es el terminal oriental de la Línea A, ubicado en la zona de Los Reyes Iztacalco. La estación conecta con importantes rutas de transporte hacia el oriente de la ciudad y zonas residenciales. Es punto de acceso para viajeros hacia el Estado de México.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación sin elevadores. Escaleras convencionales disponibles."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Colegio de Bachilleres No. 1",
-        "tipo": "Institución Educativa",
-        "distancia": "500m",
-        "descripcion": "Centro de educación superior importante en la zona"
-      },
-      {
-        "nombre": "Avenida Texcoco",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Zona con tiendas, farmacias y servicios varios"
-      },
-      {
-        "nombre": "Mercado Los Reyes",
-        "tipo": "Mercado",
-        "distancia": "600m",
-        "descripcion": "Mercado tradicional con productos locales y frescos"
-      }
     ]
   },
   {
     "slug": "agricola-oriental",
     "nombre": "Agrícola Oriental",
-    "linea": "A",
     "alcaldia": "Iztacalco, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -8937,12 +8281,14 @@ export const estaciones = [
         "distancia": "1km",
         "descripcion": "Área verde con ciclovía y espacios para actividad física"
       }
+    ],
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "canal-de-san-juan",
     "nombre": "Canal de San Juan",
-    "linea": "A",
     "alcaldia": "Iztacalco, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -9003,12 +8349,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Centro educativo importante en la comunidad"
       }
+    ],
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "tepalcates",
     "nombre": "Tepalcates",
-    "linea": "A",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -9069,144 +8417,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de atención primaria para la zona"
       }
-    ]
-  },
-  {
-    "slug": "guelatao",
-    "nombre": "Guelatao",
-    "linea": "A",
-    "alcaldia": "Iztapalapa, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial densa",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Escuelas y servicios comunitarios",
-        "tipo": "residencial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [],
-    "seo_title": "Metro Guelatao CDMX — Zona Residencial Oaxaca | MetroGuia",
-    "meta_description": "Guelatao: zona residencial popular Iztapalapa historia Juárez. Mercados tradicionales, gastronomía oaxaca. Auténtica CDMX trabajadora. Real.",
-    "h1": "Metro Guelatao: vida cotidiana de Iztapalapa",
-    "intro": "Guelatao es una estación de la Línea A ubicada en Iztapalapa, nombrada en honor a Guelatao de Juárez en Oaxaca, tierra natal de Benito Juárez. Esta estación sirve a una zona residencial trabajadora con comercio local, mercados tradicionales, y espacios comunitarios. Ofrece a turistas una perspectiva de cómo viven millones de capitalinos: en zonas de clase media-baja pero con vibrante vida comunitaria, comercio activo, y carácter auténtico.",
-    "historia_icono": "Guelatao es pueblo natal de Benito Juárez en Oaxaca. El ícono honra esta conexión con un prócer de la historia mexicana. Refleja la costumbre del Metro de CDMX de nombrar estaciones con figuras históricas y geográficas de México.",
-    "tips": [
-      "Compra en mercados tradicionales: frutas, verduras, productos locales a precios mayoristas",
-      "Prueba comida oaxaqueña: la zona tiene tradición gastronómica oaxaca que es exquisita",
-      "Visita ferreterías y tiendas de abarrotes: vida cotidiana mexicana en acción",
-      "Camina por plazas públicas: espacios donde se reúnen residentes, especialmente fines de semana",
-      "Toma fotos: zonas residenciales auténticas son visualmente ricas en detalles y colores"
-    ],
-    "mejor_horario": "8:00 a 18:00 para actividad comercial máxima. Mañanas más vibrantes, tardes con actividad sostenida.",
-    "mundial_relevancia": "Zona residencial popular: experiencia auténtica de Ciudad de México trabajadora para turistas FIFA 2026 interesados en vida real.",
-    "descripcion_turistica": "Guelatao honra la memoria de Benito Juárez, nacido en San Pablo Guelatao, Oaxaca. La estación comunica zonas residenciales de Iztacalco con el resto del sistema metro.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Acceso mediante escaleras. Espacios reducidos en plataforma."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Centro Cultural Benito Juárez",
-        "tipo": "Cultura",
-        "distancia": "500m",
-        "descripcion": "Espacio dedicado a la historia y legado del Benemérito"
-      },
-      {
-        "nombre": "Tianguis Guelatao",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Mercado tradicional con oferta variada"
-      },
-      {
-        "nombre": "Parque Benito Juárez",
-        "tipo": "Recreación",
-        "distancia": "700m",
-        "descripcion": "Área verde con áreas de esparcimiento"
-      }
-    ]
-  },
-  {
-    "slug": "penon-viejo",
-    "nombre": "Peñón Viejo",
-    "linea": "A",
-    "alcaldia": "Iztapalapa, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial de Iztapalapa",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Servicios comerciales locales",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
-    ],
-    "transferencias": [],
-    "seo_title": "Metro Peñón Viejo CDMX — Geografía Urbana | MetroGuia",
-    "meta_description": "Peñón Viejo: geografía topográfica Iztapalapa, zona residencial. Desarrollo urbano contemporáneo. Perspectiva expansión metropolitana CDMX moderna.",
-    "h1": "Metro Peñón Viejo: barrios tradicionales de Iztapalapa",
-    "intro": "Peñón Viejo es estación de la Línea A ubicada en Iztapalapa, que accede a una zona nombrada por sus características geográficas: el Peñón o elevación rocosa que caracteriza el territorio. Esta es una zona residencial densamente poblada de la ciudad, donde viven cientos de miles de capitalinos. Para turistas interesados en antropología urbana, geografía urbana y vida real de la CDMX contemporánea, ofrece experiencia no filtrada de urbanidad mexicana.",
-    "historia_icono": "Peñón Viejo refiere al accidente geográfico que caracteriza la zona: elevaciones rocosas del terreno. El ícono incorpora elementos rocosos y topográficos, honrando la geografía natural que ha definido el asentamiento urbano en esta región de Iztapalapa.",
-    "tips": [
-      "Explora la topografía: la zona tiene elevaciones que ofrecen perspectivas visuales interesantes",
-      "Visita el Peñón mismo si es accesible: estructura geológica que ha definido la zona",
-      "Come en restaurantes de barrio: comida mexicana casera a precios mínimos",
-      "Recorre calles: comercio variado, tiendas, mercadillos de todo tipo",
-      "Interactúa con gente: zona es amable, especialmente si muestras respeto genuino"
-    ],
-    "mejor_horario": "9:00 a 17:00 para exploración segura. Evita altas horas de la noche en zonas menos céntrica.",
-    "mundial_relevancia": "Geografía urbana: para turistas interesados en cómo se desarrollan ciudades. Perspectiva sobre expansión metropolitana.",
-    "descripcion_turistica": "Peñón Viejo es estación de la Línea A ubicada en zona residencial del oriente de Iztacalco. Facilita conectividad hacia áreas de vivienda popular y comercio local.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación sin equipamiento elevador. Solo escaleras disponibles."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Escuela Técnica Peñón Viejo",
-        "tipo": "Educación",
-        "distancia": "400m",
-        "descripcion": "Centro formativo técnico-profesional"
-      },
-      {
-        "nombre": "Mercado Peñón Viejo",
-        "tipo": "Comercio",
-        "distancia": "200m",
-        "descripcion": "Tianguis diario con productos frescos y diversos"
-      },
-      {
-        "nombre": "Clínica Comunitaria",
-        "tipo": "Salud",
-        "distancia": "500m",
-        "descripcion": "Centro de salud de acceso comunitario"
-      }
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "cabeza-de-juarez",
     "nombre": "Cabeza de Juárez",
-    "linea": "A",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -9267,77 +8485,14 @@ export const estaciones = [
         "distancia": "600m",
         "descripcion": "Centro de capacitación técnica"
       }
-    ]
-  },
-  {
-    "slug": "constitucion-de-1917",
-    "nombre": "Constitución de 1917",
-    "linea": "A",
-    "alcaldia": "Iztapalapa, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial de Iztapalapa",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Servicios comerciales",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [],
-    "seo_title": "Metro Constitución 1917 CDMX — Historia | MetroGuia",
-    "meta_description": "Constitución de 1917: historia legal mexicana fundacional zona residencial. Legado político México moderno. Hospedaje turistas FIFA accesible.",
-    "h1": "Metro Constitución de 1917: homenaje al documento fundacional",
-    "intro": "Constitución de 1917 lleva el nombre del documento que estableció las bases legales de México moderno. Esta estación de la Línea A conecta con zonas residenciales de Iztapalapa y representa el compromiso del transporte público con la historia nacional.",
-    "historia_icono": "El nombre honra la Constitución Política de los Estados Unidos Mexicanos de 1917, el documento fundacional de México moderno.",
-    "tips": [
-      "Reflexiona sobre la importancia histórica del nombre mientras utilizas la estación",
-      "Zona residencial de Iztapalapa",
-      "Acceso a servicios y comercio local",
-      "Reflexiona sobre historia legal mexicana visitando la zona"
-    ],
-    "mejor_horario": "Entre 10:00 y 15:00 horas",
-    "mundial_relevancia": "Sin relevancia directa para el Mundial",
-    "descripcion_turistica": "Constitución de 1917 conmemora la promulgación de la Constitución Mexicana. La estación es punto de acceso a zonas residenciales e industriales del norte de Iztacalco, con importante flujo de trabajadores.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Sin elevadores. Escaleras como único acceso vertical."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Museo Constitucional",
-        "tipo": "Cultura",
-        "distancia": "800m",
-        "descripcion": "Espacio dedicado a la historia constitucional mexicana"
-      },
-      {
-        "nombre": "Parque Industrial Iztacalco",
-        "tipo": "Comercio",
-        "distancia": "1km",
-        "descripcion": "Zona de empleo industrial importante"
-      },
-      {
-        "nombre": "Centro Comercial Avenida Morelos",
-        "tipo": "Comercio",
-        "distancia": "500m",
-        "descripcion": "Tiendas y servicios variados"
-      }
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "uam-i",
     "nombre": "UAM-I",
-    "linea": "A",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "universitario",
     "pois": [
@@ -9403,12 +8558,14 @@ export const estaciones = [
         "distancia": "150m",
         "descripcion": "Comida y servicios para la comunidad universitaria"
       }
+    ],
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "la-paz",
     "nombre": "La Paz",
-    "linea": "A",
     "alcaldia": "Nezahualcóyotl, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -9474,12 +8631,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Clínica de servicios primarios"
       }
+    ],
+    "lineas": [
+      "A"
     ]
   },
   {
     "slug": "buenavista",
     "nombre": "Buenavista",
-    "linea": "B",
     "alcaldia": "Cuauhtémoc, CDMX",
     "tipo_zona": "transporte",
     "pois": [
@@ -9545,85 +8704,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Mercado tradicional con productos frescos"
       }
-    ]
-  },
-  {
-    "slug": "guerrero",
-    "nombre": "Guerrero",
-    "linea": "B",
-    "alcaldia": "Cuauhtémoc, CDMX",
-    "tipo_zona": "comercial",
-    "pois": [
-      {
-        "nombre": "Galerías comerciales y tiendas",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Mercados tradicionales",
-        "tipo": "mercado",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Zona de transporte de pasajeros",
-        "tipo": "transporte",
-        "distancia": "alrededor"
-      }
     ],
-    "transferencias": [
-      "3"
-    ],
-    "seo_title": "Metro Guerrero — Centro artístico y cultural",
-    "meta_description": "Guerrero: galerías de arte contemporáneo, librerías independientes y restaurantes tradicionales. Centro artístico y bohemio vibrante en el Centro Histórico",
-    "h1": "Metro Guerrero: comercio y transferencia en el centro norte",
-    "intro": "Guerrero es estación histórica de la Línea B en pleno Centro Histórico, conectando con barrio de tradición cultural donde galerías de arte, tiendas de antigüedades y calles peatonales confluyen. Para turistas del Mundial FIFA 2026, Guerrero ofrece acceso a zona artística vibrante con galeríascontempor neas, librerías independientes y restaurantes de cocina mexicana tradicional. La estación es puerta a arte y historia capitalina auténtica.",
-    "historia_icono": "El ícono gris de la Línea B representa la energía artística de Guerrero, zona donde muralistas, artistas plásticos y bohemios transformaron el barrio en epicentro cultural. Este símbolo evoca la creatividad sin límites que define a esta zona histórica.",
-    "tips": [
-      "Galerías de arte en calles laterales: muchas gratuitas con obras de artistas mexicanos contemporáneos",
-      "Librerías independientes como Madero Libros: busca ediciones mexicanas, poesía y literatura independiente",
-      "Calle peatonal Madero: compra en tiendas de ropa, accesorios y artesanías directo de diseñadores locales",
-      "Come en restaurantes tradicionales: mole negro, chiles rellenos y pozole preparados por cocineras de barrio",
-      "Domingo de mercado: Avenida Madero con vendedores de arte, libros usados y artesanías locales"
-    ],
-    "mejor_horario": "Visita entre 11 AM-7 PM de martes a sábados cuando galerías y tiendas están activas. Domingos hay más vida callejera pero algunos lugares cierran.",
-    "mundial_relevancia": "Relevancia media: turistas interesados en arte contemporáneo, literatura y vida bohemia encontrarán experiencia cultural auténtica cercana al Centro Histórico.",
-    "descripcion_turistica": "Guerrero comunica la Línea B con la zona centro de Cuauhtémoc. Ubicada en el corazón del barrio histórico de Guerrero, con vivienda antigua y patrimonio arquitectónico significativo.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación antigua sin elevadores. Solo escaleras."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Barrio de Guerrero",
-        "tipo": "Patrimonio",
-        "distancia": "0m",
-        "descripcion": "Zona histórica con casonas coloniales y arquitectura antigua"
-      },
-      {
-        "nombre": "Iglesia de Santiago Tlatelolco",
-        "tipo": "Patrimonio",
-        "distancia": "600m",
-        "descripcion": "Templo colonial de importancia histórica"
-      },
-      {
-        "nombre": "Tianguis Guerrero",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Mercado informal diario"
-      }
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "garibaldi-lagunilla",
     "nombre": "Garibaldi/Lagunilla",
-    "linea": "B",
     "alcaldia": "Cuauhtémoc, CDMX",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -9691,12 +8779,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Galería de arte fotográfico"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "lagunilla",
     "nombre": "Lagunilla",
-    "linea": "B",
     "alcaldia": "Cuauhtémoc, CDMX",
     "tipo_zona": "comercial",
     "pois": [
@@ -9762,12 +8852,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Comida típica mexicana y antojitos"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "tepito",
     "nombre": "Tepito",
-    "linea": "B",
     "alcaldia": "Cuauhtémoc, CDMX",
     "tipo_zona": "comercial",
     "pois": [
@@ -9833,153 +8925,14 @@ export const estaciones = [
         "distancia": "0m",
         "descripcion": "Zona histórica con tradición barrial única"
       }
-    ]
-  },
-  {
-    "slug": "morelos",
-    "nombre": "Morelos",
-    "linea": "B",
-    "alcaldia": "Cuauhtémoc, CDMX",
-    "tipo_zona": "comercial",
-    "pois": [
-      {
-        "nombre": "Zona comercial y de servicios",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Mercados y tiendas",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [
-      "4"
-    ],
-    "seo_title": "Metro Morelos — Historia prehispánica colonial",
-    "meta_description": "Morelos: Plaza Tres Culturas con arqueología prehispánica, iglesias coloniales históricas. Barrio histórico con patrimonio de tres culturas mexicanas.",
-    "h1": "Metro Morelos: conexión comercial al norte del Centro",
-    "intro": "Morelos es estación que conecta barrio residencial histórico donde arquitectura colonial se mezcla con construcción moderna, zona de transición entre Centro y periferias norte. Para turistas del Mundial FIFA 2026 buscando explorar más allá de circuitos turísticos convencionales, Morelos ofrece acceso a museos comunitarios, iglesias coloniales, restaurantes de cocina local y vida auténtica de barrios capitalinos. Ideal para turistas que desean descubrir México profundo en la capital.",
-    "historia_icono": "El ícono gris de la Línea B evoca conexión de Morelos con memoria histórica del barrio, cuna de luchas sociales donde arquitectura colonial coexiste con construcción moderna. Este símbolo representa continuidad histórica de la CDMX.",
-    "tips": [
-      "Iglesia de Santiago de Tlatelolco: camina 800m para visitar templo colonial del siglo XVI con importancia arqueológica e histórica",
-      "Plaza Tres Culturas: descubre sitio arqueológico prehispánico, arquitectura colonial y construcción moderna contando la historia de México",
-      "Come en comedores locales: tacos, tortas y sopa de tortilla preparados por cocineras de barrio son mucho más económicos que zonas turísticas",
-      "Librerías de segunda mano: busca libros en español y ediciones agotadas; zona preferida por estudiantes e intelectuales",
-      "Lleva mapa o GPS: calles pueden resultar confusas para turistas sin orientación adecuada"
-    ],
-    "mejor_horario": "Visita de 9 AM-5 PM de martes-sábados para museos abiertos y actividad comercial óptima; domingos más tranquilo pero algunos lugares cierran.",
-    "mundial_relevancia": "Relevancia media: turistas interesados en historia colonial y arqueología encontrarán valor; conexión con Plaza Tres Culturas es atractivo cultural significativo.",
-    "descripcion_turistica": "Morelos honra al Siervo de la Nación José María Morelos. Estación en zona centro de la ciudad, conectando con barrios históricos y zonas comerciales tradicionales del nororiente capitalino.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Sin elevadores. Escaleras como acceso vertical único."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Monumento a Morelos",
-        "tipo": "Patrimonio",
-        "distancia": "300m",
-        "descripcion": "Escultura dedicada al héroe independentista"
-      },
-      {
-        "nombre": "Centro Comunitario Barrio Antiguo",
-        "tipo": "Cultura",
-        "distancia": "400m",
-        "descripcion": "Espacios de actividad cultural local"
-      },
-      {
-        "nombre": "Mercado Morelos",
-        "tipo": "Comercio",
-        "distancia": "200m",
-        "descripcion": "Tianguis tradicional con productos variados"
-      }
-    ]
-  },
-  {
-    "slug": "san-lazaro",
-    "nombre": "San Lázaro",
-    "linea": "B",
-    "alcaldia": "Venustiano Carranza, CDMX",
-    "tipo_zona": "transporte",
-    "pois": [
-      {
-        "nombre": "Estación de Ferrocarril San Lázaro",
-        "tipo": "transporte",
-        "distancia": "100m caminando"
-      },
-      {
-        "nombre": "Estación Intermodal de Transporte",
-        "tipo": "transporte",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Terminal de Autobuses",
-        "tipo": "transporte",
-        "distancia": "5 min caminando"
-      }
-    ],
-    "transferencias": [
-      "1"
-    ],
-    "seo_title": "Metro San Lázaro — Terminal intermodal este",
-    "meta_description": "San Lázaro: Terminal Autobuses del Oriente, mercados locales vibr antes y vida de barrio. Puerta a zonas menos turísticas del oriente capitalino.",
-    "h1": "Metro San Lázaro: puerta histórica al transporte nacional",
-    "intro": "San Lázaro es estación de conexión importante conectando Centro Histórico con zonas este y sureste de la CDMX, ubicada cerca de Terminal de Autobuses del Oriente. Para turistas del Mundial FIFA 2026, San Lázaro ofrece acceso a zona de transporte intermodal, mercados locales, y puerta a exploraciones de barrios auténticos menos turísticos. Es punto de partida para viajeros que desean descubrir la CDMX desde perspectiva diferente.",
-    "historia_icono": "El ícono gris de la Línea B representa conectividad de San Lázaro como estación terminal y de transbordo, histórica importancia como punto de distribución hacia oriente. Este símbolo evoca movimiento y conexión continua.",
-    "tips": [
-      "Terminal de Autobuses del Oriente (TAPO): acceso a autobuses hacia Veracruz, Puebla y destinos del oriente de México",
-      "Mercado de comida rápida en TAPO: tamales, quesadillas y café preparados por vendedores de barrio a precios de mercado local",
-      "Museo del Ferrocarril cercano: acceso a historia ferroviaria de México con locomotoras históricas y artefactos de época",
-      "Zona residencial tranquila: si necesitas alejarte del caos turístico, barrios cercanos ofrecen vida cotidiana genuina",
-      "Seguridad: mantente cerca de estación y mercado principal; lleva dirección en español para taxi si necesitas orientación"
-    ],
-    "mejor_horario": "Visita de 9 AM-6 PM para actividad de mercados y servicios en operación. Evita de noche cuando zona se vuelve más tranquila.",
-    "mundial_relevancia": "Relevancia media: turistas interesados en transporte intermodal y vida de barrio auténtica encontrarán acceso a zonas menos turísticas del oriente.",
-    "descripcion_turistica": "San Lázaro es terminal oriental de la Línea B con conexión crítica: TAPO (Terminal de Autobuses Poniente/Oriente), uno de los mayores centros de transporte de la Ciudad. Acceso a viajes foráneos hacia todo México.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Sin elevadores. Escaleras convencionales."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "TAPO (Terminal de Autobuses Oriente)",
-        "tipo": "Transporte",
-        "distancia": "300m",
-        "descripcion": "Terminal de autobuses foráneos más importante del oriente"
-      },
-      {
-        "nombre": "Estación de Ferrocarriles San Lázaro",
-        "tipo": "Transporte",
-        "distancia": "400m",
-        "descripcion": "Terminal ferroviaria histórica"
-      },
-      {
-        "nombre": "Mercado San Lázaro",
-        "tipo": "Comercio",
-        "distancia": "200m",
-        "descripcion": "Tianguis tradicional con productos frescos"
-      }
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "ricardo-flores-magon",
     "nombre": "Ricardo Flores Magón",
-    "linea": "B",
     "alcaldia": "Venustiano Carranza, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10040,12 +8993,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Mercado tradicional diario"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "romero-rubio",
     "nombre": "Romero Rubio",
-    "linea": "B",
     "alcaldia": "Venustiano Carranza, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10106,146 +9061,14 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Comercios de necesidad diaria"
       }
-    ]
-  },
-  {
-    "slug": "oceania",
-    "nombre": "Oceanía",
-    "linea": "B",
-    "alcaldia": "Venustiano Carranza, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Servicios comerciales",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [
-      "5"
-    ],
-    "seo_title": "Metro Oceanía — Barrio residencial y comercial",
-    "meta_description": "Oceanía: mercados locales auténticos, gastronomía casera mexicana tradicional, vida cotidiana. Experiencia genuina del norte capitalino.    ",
-    "h1": "Metro Oceanía: conexión al oriente de la CDMX",
-    "intro": "Oceanía es estación de la Línea B en zona norte residencial y comercial, conectando comunidades del oriente capitalino con el Centro. Para turistas del Mundial FIFA 2026 que deseen experimentar vida auténtica de barrio capitalino más allá de zonas turísticas, Oceanía ofrece acceso a mercados locales, tiendas de comercio informal, restaurantes de comida casera y la cotidianidad genuina de los habitantes. Es parada secundaria pero valiosa para exploradores curiosos.",
-    "historia_icono": "El ícono gris de la Línea B representa conexión de Oceanía con comunidades del norte capitalino, zona donde comercio informal y vida residencial convergen. Este símbolo evoca inclusión y equidad en movilidad de las periferias.",
-    "tips": [
-      "Mercado local de Oceanía: compra frutas, verduras y productos frescos a precios locales, no turísticos",
-      "Comedores de mercado: tortas ahogadas, tamales y pozole preparados por cocineras de barrio; relación calidad-precio excelente",
-      "Tiendas informales: ropa, zapatos y artículos prácticos a fracción de precio de tiendas departamentales",
-      "Ambiente seguro: zona residencial tranquila pero poco turística; lleva efectivo y dirección escrita en español",
-      "Evita tarjetas de crédito: comercio es principalmente en efectivo"
-    ],
-    "mejor_horario": "Visita de 9 AM-5 PM de lunes-viernes cuando mercados están activos pero sin congestión de fin de semana.",
-    "mundial_relevancia": "Relevancia baja: turistas especializados interesados en vida de barrio auténtica y mercados locales encontrarán experiencia genuina.",
-    "descripcion_turistica": "Oceanía conecta Línea B con zona residencial del nororiente. Nombre que remite a la geografía y modernidad en nomenclatura urbana.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación sin elevadores."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Parque Ecológico Oceanía",
-        "tipo": "Recreación",
-        "distancia": "500m",
-        "descripcion": "Área verde importante de la zona"
-      },
-      {
-        "nombre": "Centros Comerciales",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Tiendas y servicios variados"
-      },
-      {
-        "nombre": "Clínica Comunitaria",
-        "tipo": "Salud",
-        "distancia": "400m",
-        "descripcion": "Centro de salud local"
-      }
-    ]
-  },
-  {
-    "slug": "aragon",
-    "nombre": "Aragón",
-    "linea": "B",
-    "alcaldia": "Gustavo A. Madero, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Comercio local",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
-    ],
-    "transferencias": [],
-    "seo_title": "Metro Aragón — Barrio comercial noreste",
-    "meta_description": "Aragón: mercados locales activos, tiendas de comercio informal y gastronomía casera mexicana. Vida auténtica del barrio comercial noreste.  ",
-    "h1": "Metro Aragón: entrada al norte de la CDMX",
-    "intro": "Aragón es estación de la Línea B en zona comercial y residencial del noreste capitalino, conectando comunidades del oriente con red metropolitana. Para turistas del Mundial FIFA 2026 que busquen explorar autenticidad de barrios menos turísticos, Aragón ofrece acceso a mercados locales, tiendas de comercio informal, gastronomía casera y vida cotidiana de capitalinos residentes. Es parada para exploradores que desean alejarse de circuitos convencionales.",
-    "historia_icono": "El ícono gris de la Línea B representa conexión de Aragón con zona comercial del noreste, donde economía informal y vida residencial convergen. Este símbolo evoca movilidad equitativa de comunidades menos privilegiadas.",
-    "tips": [
-      "Mercado de Aragón: frutas, verduras y productos locales a precios de comercio de barrio",
-      "Comedores económicos: desayunos completos, comidas y cenas a precios accesibles para residentes locales",
-      "Tiendas de ropa y zapatos: comercio informal de prendas nuevas y de temporada a precios inferiores a centros comerciales",
-      "Caja de ahorros y servicios financieros locales: acceso a cambio de divisas si lo necesitas",
-      "Mantente en zonas principales: es barrio tranquilo pero residencial; lleva GPS para orientación"
-    ],
-    "mejor_horario": "Visita de 10 AM-4 PM de martes-viernes para actividad comercial óptima sin aglomeración de fin de semana.",
-    "mundial_relevancia": "Relevancia baja: turistas muy específicos interesados en vida auténtica de barrio y mercados locales encontrarán experiencia genuina.",
-    "descripcion_turistica": "Aragón conecta Línea B hacia zonas del nororiente de la ciudad. Acceso a colonias residenciales importantes del área nororiental.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Sin equipamiento elevador."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Colonia Aragón",
-        "tipo": "Residencial",
-        "distancia": "0m",
-        "descripcion": "Zona residencial establecida"
-      },
-      {
-        "nombre": "Mercado Aragón",
-        "tipo": "Comercio",
-        "distancia": "200m",
-        "descripcion": "Tianguis tradicional"
-      },
-      {
-        "nombre": "Primaria Estatal",
-        "tipo": "Educación",
-        "distancia": "400m",
-        "descripcion": "Centro educativo importante"
-      }
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "villa-de-aragon",
     "nombre": "Villa de Aragón",
-    "linea": "B",
     "alcaldia": "Gustavo A. Madero, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10306,12 +9129,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Área verde comunitaria"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "bosque-de-aragon",
     "nombre": "Bosque de Aragón",
-    "linea": "B",
     "alcaldia": "Gustavo A. Madero, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10372,83 +9197,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro de salud"
       }
-    ]
-  },
-  {
-    "slug": "ciudad-deportiva",
-    "nombre": "Ciudad Deportiva",
-    "linea": "B",
-    "alcaldia": "Iztacalco, CDMX",
-    "tipo_zona": "cultural-turistico",
-    "pois": [
-      {
-        "nombre": "Estadios y complejos deportivos",
-        "tipo": "estadio",
-        "distancia": "5 min caminando"
-      },
-      {
-        "nombre": "Instalaciones de entrenamiento",
-        "tipo": "estadio",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Parques deportivos",
-        "tipo": "parque",
-        "distancia": "10 min caminando"
-      }
     ],
-    "transferencias": [],
-    "seo_title": "Metro Ciudad Deportiva — Infraestructura deportiva",
-    "meta_description": "Ciudad Deportiva: complejo deportivo comunitario con mercados y vida auténtica. Infraestructura deportiva activa en barrio del oriente.     ",
-    "h1": "Metro Ciudad Deportiva: centro de entrenamiento capitalino",
-    "intro": "Ciudad Deportiva es estación de la Línea B cerca de complejo deportivo del oriente capitalino, zona con instalaciones recreativas y vida de barrio comercial. Para turistas del Mundial FIFA 2026 que deseen conocer infraestructura deportiva de barrio y vida auténtica, Ciudad Deportiva ofrece acceso a campos y canchas, mercados locales y la atmósfera cotidiana de capitalinos. Es parada para aficionados al deporte interesados en vida de barrio.",
-    "historia_icono": "El ícono gris de la Línea B representa conexión de Ciudad Deportiva con infraestructura deportiva comunitaria, zona donde deporte y vida residencial convergen. Este símbolo evoca acceso equitativo a instalaciones recreativas.",
-    "tips": [
-      "Complejo deportivo: canchas de fútbol, basquetbol y otras instalaciones abiertas al público; requiere inscripción o pago de acceso",
-      "Mercado local de comida: alimentos frescos y comidas rápidas a precios de barrio",
-      "Tiendas de artículos deportivos: equipamiento para deportes a precios locales",
-      "Ambiente deportivo: si eres aficionado a deportes, te encontrarás en zona con vida deportiva activa",
-      "Llevar efectivo: comercio principalmente en efectivo en zona residencial"
-    ],
-    "mejor_horario": "Visita de 9 AM-6 PM entre semana para actividad comercial; sábados-domingos mayor actividad deportiva comunitaria.",
-    "mundial_relevancia": "Relevancia media: turistas interesados en infraestructura deportiva comunitaria y vida de barrio encontrarán experiencia auténtica.",
-    "descripcion_turistica": "Ciudad Deportiva es terminal de Línea B hacia el nororiente. Nombre que alude a zona de instalaciones deportivas. Importante para FIFA 2026 con capacidades atlético-recreativas.",
-    "accesibilidad": {
-      "elevador": false,
-      "rampa": false,
-      "piso_tactil": true,
-      "notas": "Estación sin elevadores."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Unidad Deportiva Ciudad Deportiva",
-        "tipo": "Deportes",
-        "distancia": "300m",
-        "descripcion": "Complejo de instalaciones deportivas"
-      },
-      {
-        "nombre": "Estadio Azul",
-        "tipo": "Deportes",
-        "distancia": "1km",
-        "descripcion": "Estadio histórico del Cruz Azul FC"
-      },
-      {
-        "nombre": "Mercado Local",
-        "tipo": "Comercio",
-        "distancia": "400m",
-        "descripcion": "Tianguis comunitario"
-      }
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "deportivo-oceania",
     "nombre": "Deportivo Oceanía",
-    "linea": "B",
     "alcaldia": "Venustiano Carranza, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10509,12 +9265,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Tiendas y cafeterías"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "nezahualcoyotl",
     "nombre": "Nezahualcóyotl",
-    "linea": "B",
     "alcaldia": "Nezahualcóyotl, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10575,12 +9333,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Mercado tradicional"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "impulsora",
     "nombre": "Impulsora",
-    "linea": "B",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10641,12 +9401,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de salud"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "rio-de-los-remedios",
     "nombre": "Río de los Remedios",
-    "linea": "B",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10707,12 +9469,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Tiendas y servicios"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "muzquiz",
     "nombre": "Múzquiz",
-    "linea": "B",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10773,12 +9537,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro de capacitación"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "olimpica",
     "nombre": "Olímpica",
-    "linea": "B",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10839,12 +9605,14 @@ export const estaciones = [
         "distancia": "700m",
         "descripcion": "Centro dedicado a historia olímpica"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "ciudad-azteca",
     "nombre": "Ciudad Azteca",
-    "linea": "B",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "residencial",
     "pois": [
@@ -10905,12 +9673,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centros educativos locales"
       }
+    ],
+    "lineas": [
+      "B"
     ]
   },
   {
     "slug": "mixcoac",
     "nombre": "Mixcoac",
-    "linea": "12",
     "alcaldia": "Benito Juárez, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -10973,12 +9743,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Área verde importante de la zona"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "insurgentes-sur",
     "nombre": "Insurgentes Sur",
-    "linea": "12",
     "alcaldia": "Benito Juárez, CDMX",
     "tipo_zona": "comercial",
     "pois": [
@@ -11039,12 +9811,14 @@ export const estaciones = [
         "distancia": "300m",
         "descripcion": "Variada oferta gastronómica"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "hospital-20-de-noviembre",
     "nombre": "Hospital 20 de Noviembre",
-    "linea": "12",
     "alcaldia": "Benito Juárez, CDMX",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -11105,156 +9879,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Tiendas cercanas"
       }
-    ]
-  },
-  {
-    "slug": "zapata",
-    "nombre": "Zapata",
-    "linea": "12",
-    "alcaldia": "Coyoacán, CDMX",
-    "tipo_zona": "cultural-turistico",
-    "pois": [
-      {
-        "nombre": "Centro Histórico de Coyoacán",
-        "tipo": "cultural-turistico",
-        "distancia": "10 min caminando"
-      },
-      {
-        "nombre": "Museo Frida Kahlo",
-        "tipo": "museo",
-        "distancia": "15 min caminando"
-      },
-      {
-        "nombre": "Parque Viveros de Coyoacán",
-        "tipo": "parque",
-        "distancia": "10 min caminando"
-      },
-      {
-        "nombre": "Mercado de Coyoacán",
-        "tipo": "mercado",
-        "distancia": "12 min caminando"
-      }
     ],
-    "transferencias": [
-      "3"
-    ],
-    "seo_title": "Metro Zapata — Barrio residencial sur",
-    "meta_description": "Zapata: mercados locales auténticos, gastronomía casera y vida cotidiana de barrio. Barrio genuino del sur capitalino.                      ",
-    "h1": "Metro Zapata: puerta al corazón bohemio de la CDMX",
-    "intro": "Zapata es estación de la Línea 12 en zona residencial y comercial del sur capitalino, conectando comunidades con red metropolitana. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios del sur, Zapata ofrece mercados locales, tiendas de comercio informal, gastronomía casera y atmósfera cotidiana de capitalinos residentes. Es parada para exploradores de barrios genuinos.",
-    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Zapata con comunidades residenciales del sur, zona donde vida cotidiana y comercio informal convergen. Este símbolo evoca movilidad equitativa del sur capitalino.",
-    "tips": [
-      "Mercado local: frutas, verduras y productos frescos a precios de barrio local",
-      "Comedores informales: desayunos, comidas y cenas caseras a precios accesibles",
-      "Tiendas de ropa y accesorios: comercio informal con precios bajos",
-      "Servicios locales: farmacias, panaderías y tiendas de necesidades básicas",
-      "Lleva efectivo: comercio principalmente en efectivo"
-    ],
-    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial óptima.",
-    "mundial_relevancia": "Relevancia baja: zona residencial sin atractivos específicos; turistas específicos encontrarán vida de barrio auténtica.",
-    "descripcion_turistica": "Zapata honra a Emiliano Zapata, revolucionario del sur. Estación de Línea 12 en zona de Coyoacán. Acceso a zonas residenciales y culturales importantes del sur.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Con elevadores. Acceso completo para personas con discapacidad."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Coyoacán Histórico",
-        "tipo": "Patrimonio",
-        "distancia": "800m",
-        "descripcion": "Centro cultural y patrimonial del sur"
-      },
-      {
-        "nombre": "Museo Casa de Trotsky",
-        "tipo": "Cultura",
-        "distancia": "1km",
-        "descripcion": "Casa-museo histórica"
-      },
-      {
-        "nombre": "Mercado Coyoacán",
-        "tipo": "Comercio",
-        "distancia": "600m",
-        "descripcion": "Tianguis tradicional"
-      }
-    ]
-  },
-  {
-    "slug": "parque-de-los-venados",
-    "nombre": "Parque de los Venados",
-    "linea": "12",
-    "alcaldia": "Benito Juárez, CDMX",
-    "tipo_zona": "parque",
-    "pois": [
-      {
-        "nombre": "Parque de los Venados",
-        "tipo": "parque",
-        "distancia": "3 min caminando"
-      },
-      {
-        "nombre": "Zona residencial",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      }
-    ],
-    "transferencias": [],
-    "seo_title": "Metro Parque de los Venados — Parque y verde",
-    "meta_description": "Parque de los Venados: parque verde del sur con mercados locales y vida de barrio. Naturaleza urbana y espacio recreativo en CDMX.          ",
-    "h1": "Metro Parque de los Venados: naturaleza en el sur",
-    "intro": "Parque de los Venados es estación de la Línea 12 cerca de zona verde del sur capitalino, conectando comunidades con parque y vida comercial de barrio. Para turistas del Mundial FIFA 2026 que deseen combinar naturaleza con autenticidad de barrio, Parque de los Venados ofrece acceso a espacio verde, mercados locales y atmósfera cotidiana de capitalinos. Es parada para exploradores buscando ecosistemas urbanos.",
-    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Parque de los Venados con naturaleza urbana del sur, zona donde espacio verde y vida residencial convergen. Este símbolo evoca equidad en acceso a espacios recreativos.",
-    "tips": [
-      "Parque de los Venados: espacio verde con áreas de descanso y naturaleza; ideal para escapar del caos",
-      "Mercado local: frutas, verduras y comidas rápidas a precios de barrio",
-      "Tiendas de comercio informal: ropa y artículos prácticos a precios bajos",
-      "Ambiente tranquilo: zona segura para familias y exploradores",
-      "Seguridad: tranquilo pero poco turístico; evita andar solo al atardecer"
-    ],
-    "mejor_horario": "Visita de 9 AM-5 PM entre semana; domingos parque tiene más visitantes locales.",
-    "mundial_relevancia": "Relevancia baja: zona residencial con parque; turistas específicos interesados en naturaleza urbana encontrarán valor.",
-    "descripcion_turistica": "Parque de los Venados es estación de Línea 12 en zona residencial del sur. Nombre que evoca espacios naturales. Acceso a parques y recreación.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Con elevadores y acceso total."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Parque de los Venados",
-        "tipo": "Recreación",
-        "distancia": "300m",
-        "descripcion": "Parque urbano con ciclovía y áreas verdes"
-      },
-      {
-        "nombre": "Centro Comercial",
-        "tipo": "Comercio",
-        "distancia": "400m",
-        "descripcion": "Tiendas y servicios"
-      },
-      {
-        "nombre": "Instituto Técnico",
-        "tipo": "Educación",
-        "distancia": "500m",
-        "descripcion": "Centro de capacitación profesional"
-      }
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "eje-central",
     "nombre": "Eje Central",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11315,78 +9947,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centros educativos varios"
       }
-    ]
-  },
-  {
-    "slug": "ermita",
-    "nombre": "Ermita",
-    "linea": "12",
-    "alcaldia": "Iztapalapa, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Comercio local",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [],
-    "seo_title": "Metro Ermita — Patrimonio religioso guadalupano",
-    "meta_description": "Ermita: cercanía a Basílica de Guadalupe, zona de peregrinación y mercados religiosos. Patrimonio espiritual auténtico en el sur.           ",
-    "h1": "Metro Ermita: corazón residencial del sur",
-    "intro": "Ermita es estación de la Línea 12 conectando zona residencial-comercial del sur con Basílica de Guadalupe cercana, sitio de importancia religiosa y turística. Para turistas del Mundial FIFA 2026, Ermita ofrece acceso a zona de peregrinación, mercados locales y vida religiosa-cultural vibrante del sur capitalino. Es parada para exploradores interesados en patrimonio religioso.",
-    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Ermita con patrimonio religioso, zona donde fe, tradición y vida moderna convergen. Este símbolo evoca importancia espiritual y cultural.",
-    "tips": [
-      "Basílica de Guadalupe cercana: visitavisita lugar de peregrinación importante, especialmente deciembre",
-      "Mercado local: frutas, velas, flores y productos religiosos para peregrinos",
-      "Iglesias locales: arquitectura colonial y religiosa en alrededores",
-      "Tiendas de recuerdos religiosos: artículos devocionales a precios de barrio",
-      "Respeta espacios: zona es principalmente religiosa; mantén silencio en áreas sagradas"
-    ],
-    "mejor_horario": "Visita según calendario religioso; diciembre altamente concurrido por Día de Guadalupe.",
-    "mundial_relevancia": "Relevancia media: turistas interesados en patrimonio religioso y peregrinación encontrarán experiencia cultural importante.",
-    "descripcion_turistica": "Ermita es estación de Línea 12 en zona residencial del sur. Acceso a colonias pobladas y comercio local diversificado de Iztapalapa.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Con elevadores. Acceso total para discapacitados."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Ermita de Santa Cruz",
-        "tipo": "Patrimonio",
-        "distancia": "400m",
-        "descripcion": "Templo colonial histórico"
-      },
-      {
-        "nombre": "Mercado Ermita",
-        "tipo": "Comercio",
-        "distancia": "200m",
-        "descripcion": "Tianguis tradicional"
-      },
-      {
-        "nombre": "Centro Comunitario",
-        "tipo": "Servicios",
-        "distancia": "300m",
-        "descripcion": "Espacio para actividades comunitarias"
-      }
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "mexicaltzingo",
     "nombre": "Mexicaltzingo",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11447,80 +10015,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Área verde comunitaria"
       }
-    ]
-  },
-  {
-    "slug": "atlalilco",
-    "nombre": "Atlalilco",
-    "linea": "12",
-    "alcaldia": "Iztapalapa, CDMX",
-    "tipo_zona": "residencial",
-    "pois": [
-      {
-        "nombre": "Zona residencial",
-        "tipo": "residencial",
-        "distancia": "alrededor"
-      },
-      {
-        "nombre": "Comercio local",
-        "tipo": "comercial",
-        "distancia": "5 min caminando"
-      }
     ],
-    "transferencias": [
-      "8"
-    ],
-    "seo_title": "Metro Atlalilco — Zona residencial sur",
-    "meta_description": "Atlalilco: mercados locales auténticos, vida de barrio residencial del sur. Experiencia genuina del sur capitalino.                         ",
-    "h1": "Metro Atlalilco: nodo de conexión al sur",
-    "intro": "Atlalilco es estación de la Línea 12 en zona residencial del sur conectando comunidades con infraestructura de transporte. Para turistas del Mundial FIFA 2026 que deseen conocer vida auténtica de barrios sureños, Atlalilco ofrece mercados locales, tiendas de comercio informal y atmósfera cotidiana de capitalinos. Es parada para exploradores de barrios genuinos.",
-    "historia_icono": "El ícono dorado de la Línea 12 representa conexión de Atlalilco con comunidades residenciales del sur, zona donde vida cotidiana y legado prehispánico convergen. Este símbolo evoca raíces profundas.",
-    "tips": [
-      "Mercado local: productos frescos a precios de barrio local",
-      "Tiendas informales: ropa, zapatos y artículos prácticos a precios bajos",
-      "Comedores de barrio: comidas caseras a precios accesibles",
-      "Servicios locales: farmacias y tiendas de necesidades básicas",
-      "Lleva efectivo: comercio principalmente en efectivo"
-    ],
-    "mejor_horario": "Visita de 9 AM-5 PM entre semana para actividad comercial.",
-    "mundial_relevancia": "Relevancia muy baja: zona residencial sin atractivos específicos.",
-    "descripcion_turistica": "Atlalilco (del náhuatl 'lugar en el agua') es estación de Línea 12 en Iztapalapa. Zona lacustre histórica con importancia en memoria prehispánica.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Con elevadores. Acceso total."
-    },
-    "horarios": {
-      "apertura": "05:00",
-      "cierre": "00:00",
-      "notas": "L-V 05:00-00:00. Sáb hasta 01:00. Dom y festivos hasta 00:00"
-    },
-    "lugares_cercanos": [
-      {
-        "nombre": "Zona Arqueológica Atlalilco",
-        "tipo": "Patrimonio",
-        "distancia": "600m",
-        "descripcion": "Sitio con vestigios prehispánicos"
-      },
-      {
-        "nombre": "Tianguis Atlalilco",
-        "tipo": "Comercio",
-        "distancia": "300m",
-        "descripcion": "Mercado tradicional"
-      },
-      {
-        "nombre": "Parque Ecológico",
-        "tipo": "Naturaleza",
-        "distancia": "700m",
-        "descripcion": "Área verde con importancia ecológica"
-      }
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "culhuacan",
     "nombre": "Culhuacán",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11581,12 +10083,14 @@ export const estaciones = [
         "distancia": "250m",
         "descripcion": "Tianguis local tradicional"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "san-andres-tomatlan",
     "nombre": "San Andrés Tomatlán",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11647,12 +10151,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de salud"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "lomas-estrella",
     "nombre": "Lomas Estrella",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11713,12 +10219,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro educativo comunitario"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "calle-11",
     "nombre": "Calle 11",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11779,12 +10287,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de atención primaria"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "periferico-oriente",
     "nombre": "Periférico Oriente",
-    "linea": "12",
     "alcaldia": "Iztapalapa, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11845,12 +10355,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro de formación profesional"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "tezonco",
     "nombre": "Tezonco",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11911,12 +10423,14 @@ export const estaciones = [
         "distancia": "500m",
         "descripcion": "Centro cultural comunitario"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "olivos",
     "nombre": "Olivos",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -11977,12 +10491,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Clínica comunitaria"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "nopalera",
     "nombre": "Nopalera",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -12043,12 +10559,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro de salud"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "zapotitlan",
     "nombre": "Zapotitlán",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -12109,12 +10627,14 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Espacio cultural comunitario"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "tlaltenco",
     "nombre": "Tlaltenco",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "residencial",
     "pois": [
@@ -12175,12 +10695,14 @@ export const estaciones = [
         "distancia": "200m",
         "descripcion": "Mercado local"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   },
   {
     "slug": "tlahuac",
     "nombre": "Tláhuac",
-    "linea": "12",
     "alcaldia": "Tláhuac, CDMX",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -12251,7 +10773,9 @@ export const estaciones = [
         "distancia": "400m",
         "descripcion": "Centro comercial importante de la delegación"
       }
+    ],
+    "lineas": [
+      "12"
     ]
   }
 ];
-
