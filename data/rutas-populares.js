@@ -4812,7 +4812,117 @@ export const rutasPopulares = [
   { origen: "iteso-mp", destino: "periferico-belenes-mp", titulo: "ITESO a Periférico Belenes", ciudad: "gdl" },
   { origen: "lopez-mateos-mp", destino: "estadio-chivas-mp", titulo: "López Mateos a Estadio Akron", ciudad: "gdl" },
 
+  // ============================================
+  // GDL MULTIMODAL — Tren Ligero + BRT combos
+  // ============================================
+  { origen: "gdl-auditorio", destino: "carretera-chapala-mp", titulo: "Auditorio a Carretera a Chapala (Tren+Macro)", ciudad: "gdl" },
+  { origen: "periferico-belenes-mp", destino: "san-juan-de-dios", titulo: "Periférico Belenes a San Juan de Dios", ciudad: "gdl" },
+  { origen: "barranca-huentitan-mp", destino: "central-de-autobuses", titulo: "Huentitán a Central de Autobuses L3", ciudad: "gdl" },
+  { origen: "chapalita-inn-mp", destino: "guadalajara-centro", titulo: "Chapalita a Centro en Macro+Tren", ciudad: "gdl" },
+  { origen: "estadio-chivas-mp", destino: "san-juan-de-dios", titulo: "Estadio Akron a Mercado San Juan de Dios", ciudad: "gdl" },
+  { origen: "arcos-de-zapopan", destino: "periferico-sur", titulo: "Zapopan a Periférico Sur L1 completa", ciudad: "gdl" },
+  { origen: "gdl-juarez", destino: "periferico-belenes-mp", titulo: "Juárez a Periférico Belenes (L1+L3+Macro)", ciudad: "gdl" },
+  { origen: "independencia-norte-mp", destino: "arcos-de-zapopan", titulo: "Independencia a Arcos de Zapopan (Macro+L3)", ciudad: "gdl" },
+  { origen: "tlajomulco-centro", destino: "estadio-chivas-mp", titulo: "Tlajomulco a Estadio Akron (L4+Macro)", ciudad: "gdl" },
+  { origen: "las-juntas", destino: "central-de-autobuses", titulo: "Las Juntas a Central Camionera (L4→L3)", ciudad: "gdl" },
+  { origen: "arcos-de-zapopan", destino: "oblatos", titulo: "Zapopan a Oblatos vía L3+L2", ciudad: "gdl" },
+  { origen: "periferico-norte-mp", destino: "tlaquepaque-centro", titulo: "Periférico Norte a Tlaquepaque (Macro+L3)", ciudad: "gdl" },
+
+  // ============================================
+  // MTY — Metrorrey + Ecovía combos, FIFA 2026
+  // ============================================
+  { origen: "mty-cuauhtemoc", destino: "parque-fundidora", titulo: "Cuauhtémoc a Parque Fundidora", ciudad: "mty" },
+  { origen: "mty-cuauhtemoc", destino: "mty-universidad", titulo: "Cuauhtémoc a Universidad UANL", ciudad: "mty" },
+  { origen: "general-i-zaragoza", destino: "sendero", titulo: "Zaragoza a Sendero por L2", ciudad: "mty" },
+  { origen: "exposicion", destino: "parque-fundidora", titulo: "Exposición a Parque Fundidora", ciudad: "mty" },
+  { origen: "hospital", destino: "mty-universidad", titulo: "Hospital a Universidad L1→L2", ciudad: "mty" },
+  { origen: "felix-u-gomez", destino: "general-i-zaragoza", titulo: "Félix U. Gómez a Zaragoza L1→L2", ciudad: "mty" },
+  { origen: "talleres", destino: "exposicion", titulo: "Talleres a Exposición L1", ciudad: "mty" },
+  { origen: "mty-cuauhtemoc", destino: "santa-lucia", titulo: "Cuauhtémoc a Santa Lucía L3", ciudad: "mty" },
+  { origen: "hospital-metropolitano", destino: "mty-cuauhtemoc", titulo: "Hospital Metropolitano a Cuauhtémoc (L3→L1)", ciudad: "mty" },
+  { origen: "sendero", destino: "santa-lucia", titulo: "Sendero a Santa Lucía (L2→L3)", ciudad: "mty" },
+  { origen: "mty-universidad", destino: "parque-fundidora", titulo: "Universidad a Fundidora (L2→L1)", ciudad: "mty" },
+  { origen: "mitras-ecovia", destino: "guadalajara-ecovia", titulo: "Mitras a Guadalajara en Ecovía", ciudad: "mty" },
+  { origen: "regina-ecovia", destino: "mty-cuauhtemoc", titulo: "Regina a Cuauhtémoc (Ecovía→Metro)", ciudad: "mty" },
+  { origen: "ruiz-cortines-ecovia", destino: "parque-fundidora", titulo: "Ruiz Cortines a Fundidora (Ecovía→Metro)", ciudad: "mty" },
+  { origen: "san-nicolas", destino: "general-i-zaragoza-l3", titulo: "San Nicolás a Zaragoza (L3)", ciudad: "mty" },
+
+  // ============================================
+  // PUEBLA — BRT RUTA
+  // ============================================
+  { origen: "capu", destino: "zocalo-centro", titulo: "CAPU a Zócalo de Puebla", ciudad: "puebla" },
+  { origen: "zocalo-centro", destino: "cholula", titulo: "Centro a Pirámide de Cholula", ciudad: "puebla" },
+  { origen: "angelopolis", destino: "zocalo-centro", titulo: "Angelópolis a Centro Histórico", ciudad: "puebla" },
+  { origen: "buap", destino: "zocalo-centro", titulo: "BUAP a Zócalo", ciudad: "puebla" },
+  { origen: "capu", destino: "cholula", titulo: "Terminal CAPU a Cholula", ciudad: "puebla" },
+
+  // ============================================
+  // MÉRIDA — Va y Ven
+  // ============================================
+  { origen: "aeropuerto-manuel-crescencio-rejon", destino: "centro-historico", titulo: "Aeropuerto a Centro Histórico Mérida", ciudad: "merida" },
+  { origen: "centro-historico", destino: "gran-museo-mundo-maya", titulo: "Centro a Gran Museo del Mundo Maya", ciudad: "merida" },
+  { origen: "paseo-montejo", destino: "altabrisa", titulo: "Paseo de Montejo a Altabrisa", ciudad: "merida" },
+  { origen: "terminal-came", destino: "centro-historico", titulo: "Terminal CAME a Centro Histórico", ciudad: "merida" },
+  { origen: "centro-historico", destino: "itzimna", titulo: "Centro a Itzimná", ciudad: "merida" },
+
+  // ============================================
+  // LEÓN — SIT
+  // ============================================
+  { origen: "capu-leon", destino: "catedral-basilica", titulo: "Central Camionera a Catedral León", ciudad: "leon" },
+  { origen: "estadio-leon", destino: "catedral-basilica", titulo: "Estadio León a Centro", ciudad: "leon" },
+  { origen: "poliforum-leon", destino: "plaza-de-los-martires", titulo: "Polifórum a Plaza de los Mártires", ciudad: "leon" },
+  { origen: "aeropuerto-bajio-acceso", destino: "catedral-basilica", titulo: "Aeropuerto del Bajío a Centro León", ciudad: "leon" },
+  { origen: "gran-plaza-leon", destino: "zona-piel-leon", titulo: "Gran Plaza a Zona Piel", ciudad: "leon" },
+
+  // ============================================
+  // CHIHUAHUA — Chepe Express
+  // ============================================
+  { origen: "los-mochis", destino: "creel", titulo: "Los Mochis a Creel (Barrancas del Cobre)", ciudad: "chihuahua" },
+  { origen: "creel", destino: "divisadero", titulo: "Creel a Divisadero (Mirador)", ciudad: "chihuahua" },
+  { origen: "el-fuerte", destino: "divisadero", titulo: "El Fuerte a Divisadero en Chepe", ciudad: "chihuahua" },
+  { origen: "catedral-chihuahua", destino: "museo-quinta-gameros", titulo: "Catedral a Quinta Gameros", ciudad: "chihuahua" },
+  { origen: "centro-chihuahua", destino: "pancho-villa-museo", titulo: "Centro a Museo Pancho Villa", ciudad: "chihuahua" },
+
+  // ============================================
+  // TIJUANA — SITT
+  // ============================================
+  { origen: "san-ysidro-frontera", destino: "zona-centro", titulo: "Frontera San Ysidro a Centro Tijuana", ciudad: "tijuana" },
+  { origen: "aeropuerto-tj", destino: "zona-centro", titulo: "Aeropuerto TJ a Zona Centro", ciudad: "tijuana" },
+  { origen: "puente-cross-border", destino: "zona-centro", titulo: "Cross Border Xpress a Centro", ciudad: "tijuana" },
+  { origen: "zona-centro", destino: "playas-tj", titulo: "Centro a Playas de Tijuana", ciudad: "tijuana" },
+  { origen: "zona-centro", destino: "valle-guadalupe-acceso", titulo: "Tijuana a Valle de Guadalupe", ciudad: "tijuana" },
+
+  // ============================================
+  // QUERÉTARO — QroBús
+  // ============================================
+  { origen: "terminal-5-febrero", destino: "centro-historico-qro", titulo: "Terminal a Centro Histórico Querétaro", ciudad: "queretaro" },
+  { origen: "centro-historico-qro", destino: "acueducto-qro", titulo: "Centro a Acueducto de Querétaro", ciudad: "queretaro" },
+  { origen: "tec-monterrey-qro", destino: "centro-historico-qro", titulo: "Tec de Monterrey a Centro QRO", ciudad: "queretaro" },
+  { origen: "juriquilla-qro", destino: "centro-historico-qro", titulo: "Juriquilla a Centro Histórico", ciudad: "queretaro" },
+  { origen: "estadio-corregidora-qro", destino: "centro-historico-qro", titulo: "Estadio Corregidora a Centro", ciudad: "queretaro" },
+
+  // ============================================
+  // TOLUCA — Tren Interurbano
+  // ============================================
+  { origen: "zinacantepec-terminal", destino: "toluca-centro-bus", titulo: "Zinacantepec a Centro Toluca", ciudad: "toluca" },
+  { origen: "metepec", destino: "toluca-centro-bus", titulo: "Metepec a Centro Toluca", ciudad: "toluca" },
+  { origen: "observatorio-cdmx", destino: "zinacantepec-terminal", titulo: "Observatorio CDMX a Zinacantepec (TI completo)", ciudad: "toluca" },
+  { origen: "aeropuerto-toluca", destino: "toluca-centro-bus", titulo: "Aeropuerto Toluca a Centro", ciudad: "toluca" },
+  { origen: "cosmovitral", destino: "metepec-artesanal", titulo: "Cosmovitral a Metepec Artesanías", ciudad: "toluca" },
+
+  // ============================================
+  // TREN MAYA — rutas turísticas
+  // ============================================
+  { origen: "cancun", destino: "tulum", titulo: "Cancún a Tulum en Tren Maya", ciudad: "tren-maya" },
+  { origen: "cancun", destino: "chichen-itza", titulo: "Cancún a Chichén Itzá en Tren Maya", ciudad: "tren-maya" },
+  { origen: "playa-del-carmen", destino: "tulum", titulo: "Playa del Carmen a Tulum", ciudad: "tren-maya" },
+  { origen: "merida-oriente", destino: "chichen-itza", titulo: "Mérida a Chichén Itzá en Tren Maya", ciudad: "tren-maya" },
+  { origen: "cancun", destino: "bacalar", titulo: "Cancún a Bacalar (Laguna de los 7 Colores)", ciudad: "tren-maya" },
+  { origen: "palenque", destino: "escarcega", titulo: "Palenque a Escárcega en Tren Maya", ciudad: "tren-maya" },
+  { origen: "merida-oriente", destino: "uxmal", titulo: "Mérida a Uxmal en Tren Maya", ciudad: "tren-maya" },
+
 ];
+
 
 /**
  * Parsea slug de ruta formato: [origen]_[destino]

@@ -7,8 +7,8 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero, teleférico y BRT en México',
-  description: 'Trip planner de transporte urbano. Calcula rutas en metro, tren ligero, Mexicable, Cablebús y BRT para CDMX, Guadalajara y Monterrey. 7 sistemas de transporte en CDMX. Guía Mundial FIFA 2026.',
+  title: 'MetroGuia.mx — Transporte público en 11 ciudades de México | Trip Planner + FIFA 2026',
+  description: 'Trip planner de transporte urbano en México. 786 estaciones, 77 líneas en 11 ciudades: CDMX, Guadalajara, Monterrey, Puebla, Mérida, León, Querétaro, Chihuahua, Tijuana, Toluca y Tren Maya. Guía Mundial FIFA 2026.',
   alternates: {
     canonical: 'https://metroguia.mx/',
     languages: {
@@ -29,7 +29,7 @@ const ciudades = [
     id: 'cdmx',
     nombre: 'Ciudad de México',
     sistema: 'Metro · Tren Ligero · Cablebús · Mexicable · Trolebús · Tren Suburbano · Metrobús',
-    stats: { estaciones: 468, lineas: 22, km: 391 },
+    stats: { estaciones: 436, lineas: 40, km: 391 },
     color: '#F5A623',
     href: '/cdmx/',
     fifa: { estadio: 'Estadio Azteca', fechas: '11, 17, 24 jun · 30 jun · 5 jul' },
@@ -38,8 +38,8 @@ const ciudades = [
   {
     id: 'gdl',
     nombre: 'Guadalajara',
-    sistema: 'Tren Ligero · Macrobús',
-    stats: { estaciones: 48, lineas: 3, km: 30 },
+    sistema: 'Mi Tren L1-L4 · Mi Macro Calzada · Mi Macro Periférico',
+    stats: { estaciones: 125, lineas: 6, km: 126 },
     color: '#06B6D4',
     href: '/gdl/',
     fifa: { estadio: 'Estadio Akron', fechas: '11, 18, 23, 26 jun' },
@@ -48,8 +48,8 @@ const ciudades = [
   {
     id: 'mty',
     nombre: 'Monterrey',
-    sistema: 'Metrorrey · Ecovía',
-    stats: { estaciones: 32, lineas: 2, km: 30 },
+    sistema: 'Metrorrey L1-L3 · Ecovía',
+    stats: { estaciones: 83, lineas: 4, km: 56 },
     color: '#EC4899',
     href: '/mty/',
     fifa: { estadio: 'Estadio BBVA', fechas: '14, 20, 24, 29 jun' },
@@ -57,15 +57,15 @@ const ciudades = [
   },
 ]
 
-const proximamente = [
-  { id: 'puebla', nombre: 'Puebla', sistema: 'RUTA BRT', color: '#8B5CF6', href: '/puebla/' },
-  { id: 'merida', nombre: 'Mérida', sistema: 'SIT Mérida', color: '#F59E0B', href: '/merida/' },
-  { id: 'leon', nombre: 'León', sistema: 'Optibus SIT', color: '#10B981', href: '/leon/' },
-  { id: 'tren-maya', nombre: 'Tren Maya', sistema: 'Ferroviario', color: '#0EA5E9', href: '/tren-maya/' },
-  { id: 'queretaro', nombre: 'Querétaro', sistema: 'Q-BUS BRT', color: '#EF4444', href: '/queretaro/' },
-  { id: 'chihuahua', nombre: 'Chihuahua', sistema: 'Chepe Express', color: '#D97706', href: '/chihuahua/' },
-  { id: 'tijuana', nombre: 'Tijuana', sistema: 'SITT BRT', color: '#6B7280', href: '/tijuana/' },
-  { id: 'toluca', nombre: 'Toluca', sistema: 'Tren Interurbano', color: '#7C3AED', href: '/toluca/' },
+const ciudadesSecundarias = [
+  { id: 'puebla', nombre: 'Puebla', sistema: 'RUTA BRT · 3 líneas', stats: { estaciones: 16, lineas: 3 }, color: '#8B5CF6', href: '/puebla/', activa: true },
+  { id: 'merida', nombre: 'Mérida', sistema: 'Va y Ven · 4 rutas', stats: { estaciones: 16, lineas: 4 }, color: '#F59E0B', href: '/merida/', activa: true },
+  { id: 'leon', nombre: 'León', sistema: 'SIT León · 4 líneas', stats: { estaciones: 20, lineas: 4 }, color: '#10B981', href: '/leon/', activa: true },
+  { id: 'tren-maya', nombre: 'Tren Maya', sistema: '7 tramos · Yucatán a Chiapas', stats: { estaciones: 15, lineas: 6 }, color: '#0EA5E9', href: '/tren-maya/', activa: true },
+  { id: 'queretaro', nombre: 'Querétaro', sistema: 'QroBús · 3 líneas', stats: { estaciones: 30, lineas: 3 }, color: '#EF4444', href: '/queretaro/', activa: true },
+  { id: 'chihuahua', nombre: 'Chihuahua', sistema: 'Chepe Express', stats: { estaciones: 15, lineas: 2 }, color: '#D97706', href: '/chihuahua/', activa: true },
+  { id: 'tijuana', nombre: 'Tijuana', sistema: 'SITT · 2 líneas', stats: { estaciones: 15, lineas: 2 }, color: '#6B7280', href: '/tijuana/', activa: true },
+  { id: 'toluca', nombre: 'Toluca', sistema: 'Tren Interurbano · Mexibús', stats: { estaciones: 15, lineas: 3 }, color: '#7C3AED', href: '/toluca/', activa: true },
 ]
 
 const rutasPopularesHome = [
@@ -76,6 +76,36 @@ const rutasPopularesHome = [
 ]
 
 export default function LandingPage() {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'MetroGuia.mx',
+    url: 'https://metroguia.mx',
+    description: 'Trip planner de transporte público en 11 ciudades de México. 786 estaciones, 77 líneas.',
+    inLanguage: ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://metroguia.mx/ruta/{origin}-a-{destination}/',
+      'query-input': 'required name=origin required name=destination',
+    },
+  }
+
+  const allCiudades = [...ciudades, ...ciudadesSecundarias]
+  const transitSystemSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Sistemas de transporte público en México',
+    description: 'Cobertura de MetroGuia.mx: 11 ciudades, 786 estaciones, 77 líneas',
+    numberOfItems: allCiudades.length,
+    itemListElement: allCiudades.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.nombre,
+      description: c.sistema,
+      url: `https://metroguia.mx${c.href}`,
+    })),
+  }
+
   return (
     <div>
       {/* ── SEO Schemas ── */}
@@ -84,6 +114,8 @@ export default function LandingPage() {
       {transitAgencies.map((agency) => (
         <LocalBusinessSchema key={agency.name} agency={agency} />
       ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(transitSystemSchema) }} />
 
       {/* ── Hero + Search ── */}
       <section style={{
@@ -343,40 +375,43 @@ export default function LandingPage() {
             letterSpacing: '0.1em',
             marginBottom: '1rem',
           }}>
-            Próximamente — 8 ciudades más
+            Más ciudades — 8 sistemas de transporte
           </h6>
           <div style={{
-            display: 'flex',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
             gap: '0.5rem',
-            flexWrap: 'wrap',
           }}>
-            {proximamente.map((c) => (
+            {ciudadesSecundarias.map((c) => (
               <a
                 key={c.id}
                 href={c.href}
                 style={{
-                  display: 'inline-flex',
+                  display: 'flex',
                   alignItems: 'center',
                   gap: '0.5rem',
-                  padding: '0.5rem 0.875rem',
-                  borderRadius: 'var(--radius-full)',
+                  padding: '0.625rem 0.875rem',
+                  borderRadius: 'var(--radius)',
                   backgroundColor: 'var(--surface)',
                   border: '1px solid var(--border)',
                   textDecoration: 'none',
                   fontSize: '0.8rem',
                   fontWeight: 500,
-                  color: 'var(--text-muted)',
+                  color: 'var(--text)',
                   transition: 'all 0.2s',
                 }}
               >
                 <span style={{
-                  width: '6px',
-                  height: '6px',
+                  width: '8px',
+                  height: '8px',
                   borderRadius: '50%',
                   backgroundColor: c.color,
-                  opacity: 0.6,
+                  flexShrink: 0,
                 }} />
-                {c.nombre}
+                <span>
+                  <strong>{c.nombre}</strong>
+                  <span style={{ color: 'var(--text-dim)', fontSize: '0.7rem', display: 'block' }}>{c.stats.estaciones} est. · {c.stats.lineas} líneas</span>
+                </span>
               </a>
             ))}
           </div>
@@ -407,12 +442,12 @@ export default function LandingPage() {
           </div>
           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
             {[
-              { iata: 'MEX', ciudad: 'CDMX', slug: 'aeropuerto-ciudad-de-mexico', color: '#F5A623' },
-              { iata: 'GDL', ciudad: 'Guadalajara', slug: 'aeropuerto-guadalajara', color: '#06B6D4' },
-              { iata: 'MTY', ciudad: 'Monterrey', slug: 'aeropuerto-monterrey', color: '#EC4899' },
-              { iata: 'CUN', ciudad: 'Cancún', slug: 'aeropuerto-cancun', color: '#8B5CF6' },
-              { iata: 'TIJ', ciudad: 'Tijuana', slug: 'aeropuerto-tijuana', color: '#6B7280' },
-              { iata: 'PVR', ciudad: 'Puerto Vallarta', slug: 'aeropuerto-puerto-vallarta', color: '#0EA5E9' },
+              { iata: 'MEX', ciudad: 'CDMX', slug: 'benito-juarez-cdmx', color: '#F5A623' },
+              { iata: 'GDL', ciudad: 'Guadalajara', slug: 'miguel-hidalgo-guadalajara', color: '#06B6D4' },
+              { iata: 'MTY', ciudad: 'Monterrey', slug: 'mariano-escobedo-monterrey', color: '#EC4899' },
+              { iata: 'CUN', ciudad: 'Cancún', slug: 'cancun-cun', color: '#8B5CF6' },
+              { iata: 'TIJ', ciudad: 'Tijuana', slug: 'tijuana-tij', color: '#6B7280' },
+              { iata: 'PVR', ciudad: 'Puerto Vallarta', slug: 'puerto-vallarta-pvr', color: '#0EA5E9' },
             ].map((a) => (
               <a
                 key={a.iata}

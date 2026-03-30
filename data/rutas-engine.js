@@ -391,11 +391,29 @@ export const mtyStations = [
   'san-miguel-ecovia', 'valle-fertil', 'movilidad-monterrey', 'valle-soleado',
 ]
 
+// Secondary cities
+export const pueblaStations = ["20-de-noviembre","analco","angelopolis","barrio-artista","buap","capu","cholula","la-paz","loreto","los-fuertes","mercado-artesanias","periferico-ecologico","san-manuel","udla","valsequillo","zocalo-centro"];
+export const meridaStations = ["aeropuerto-manuel-crescencio-rejon","altabrisa","caucel","centro-historico","ciudad-caucel","gran-museo-mundo-maya","hospital-general","itzimna","la-plancha","mercado-lucas-galez","parque-centenario","paseo-montejo","plaza-las-americas","terminal-came","terminal-noreste","uady"];
+export const leonStations = ["aeropuerto-bajio-acceso","blvd-adolfo-lopez-mateos","capu-leon","catedral-basilica","delta-leon","estadio-leon","expo-leon","forum-metropolitano-leon","gran-plaza-leon","hospital-imss-bajio","industrial-norte-leon","la-calzada","plaza-de-los-martires","plaza-mayor","plaza-toros-leon","poliforum-leon","terminal-central-leon","universidad-campus-leon","zona-centro-leon","zona-piel-leon"];
+export const chihuahuaStations = ["bahuichivo","catedral-chihuahua","centro-chihuahua","chihuahua-central","creel","cuauhtemoc","divisadero","el-fuerte","los-mochis","museo-quinta-gameros","palacio-gobierno","pancho-villa-museo","posada-barrancas","uach","zona-dorada-chi"];
+export const tijuanaStations = ["aeropuerto-tj","buena-vista","catedral-tijuana","chaparral","hospital-general-tj","la-mesa-tj","mercado-hidalgo","otay-comercial","playas-tj","plaza-rio","plaza-santa-cecilia","puente-cross-border","san-ysidro-frontera","valle-guadalupe-acceso","zona-centro"];
+export const queretaroStations = ["acueducto","acueducto-qro","alameda-qro","aromas","barrio-la-cruz-qro","campus-aeroespacial-qro","centro-historico-qro","cimatario-qro","constituyentes","constituyentes-qro","el-pueblito","estadio-corregidora","estadio-corregidora-qro","hospital-angeles","hospital-general-qro","jardin-zenea-qro","juriquilla","juriquilla-qro","la-canada","parque-industrial-qro","plaza-dorada-qro","san-pedrito","santa-rosa-viterbo-qro","teatro-republica","tec-monterrey-qro","tecnologico","terminal-5-febrero","uaq-campus-qro","universidad-autonoma"];
+export const tolucaStations = ["aeropuerto-toluca","cosmovitral","lerma","lerma-centro","metepec","metepec-artesanal","nevado-toluca-acceso","observatorio-cdmx","parque-lerma","portales-toluca","san-mateo-atenco","san-salvador-metepec","toluca-centro-bus","universidad-toluca","zinacantepec-terminal"];
+export const trenmayaStations = ["agua-azul","bacalar","calakmul-balamku","cancun","chetumal","chichen-itza","escarcega","izamal","merida-oriente","palenque","playa-del-carmen","tulum","uxmal","valladolid","xcaret"];
+
 // Sets for O(1) validation
 export const cdmxStationSet = new Set(cdmxStations)
 export const gdlStationSet = new Set(gdlStations)
 export const mtyStationSet = new Set(mtyStations)
-export const allStationSet = new Set([...cdmxStations, ...gdlStations, ...mtyStations])
+export const pueblaStationSet = new Set(pueblaStations)
+export const meridaStationSet = new Set(meridaStations)
+export const leonStationSet = new Set(leonStations)
+export const chihuahuaStationSet = new Set(chihuahuaStations)
+export const tijuanaStationSet = new Set(tijuanaStations)
+export const queretaroStationSet = new Set(queretaroStations)
+export const tolucaStationSet = new Set(tolucaStations)
+export const trenmayaStationSet = new Set(trenmayaStations)
+export const allStationSet = new Set([...cdmxStations, ...gdlStations, ...mtyStations, ...pueblaStations, ...meridaStations, ...leonStations, ...chihuahuaStations, ...tijuanaStations, ...queretaroStations, ...tolucaStations, ...trenmayaStations])
 
 /**
  * Get display name for a station slug
@@ -453,6 +471,14 @@ export function generateCityRoutes(city) {
     case 'cdmx': return generateCityRouteSlugs(cdmxStations)
     case 'gdl': return generateCityRouteSlugs(gdlStations)
     case 'mty': return generateCityRouteSlugs(mtyStations)
+    case 'puebla': return generateCityRouteSlugs(pueblaStations)
+    case 'merida': return generateCityRouteSlugs(meridaStations)
+    case 'leon': return generateCityRouteSlugs(leonStations)
+    case 'chihuahua': return generateCityRouteSlugs(chihuahuaStations)
+    case 'tijuana': return generateCityRouteSlugs(tijuanaStations)
+    case 'queretaro': return generateCityRouteSlugs(queretaroStations)
+    case 'toluca': return generateCityRouteSlugs(tolucaStations)
+    case 'tren-maya': return generateCityRouteSlugs(trenmayaStations)
     default: return []
   }
 }

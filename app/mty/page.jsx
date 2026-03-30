@@ -24,7 +24,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesMTY.filter(e =>
-  ['parque-fundidora', 'exposicion', 'central', 'mty-cuauhtemoc'].includes(e.slug)
+  ['parque-fundidora', 'exposicion', 'central', 'cuauhtemoc'].includes(e.slug)
 );
 
 export default function MTYPage() {

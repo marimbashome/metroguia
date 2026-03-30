@@ -1,4 +1,7 @@
 import { gdlStations, STATION_DISPLAY_NAMES } from '@/data/rutas-engine'
+import { findRoute } from '@/lib/pathfinder'
+import { grafo } from '@/data/grafo'
+import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from '@/app/ruta/[slug]/RutaClient'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
@@ -64,5 +67,33 @@ export function generateMetadata({ params }) {
 }
 
 export default function RutaGDLPage({ params }) {
-  return <RutaClient slug={params.slug} />
+  const { slug } = params
+  let rutaSchema = null
+
+  if (isValidRouteSlug(slug)) {
+    const parts = slug.split('-a-')
+    const origen = parts[0]
+    const destino = parts.slice(1).join('-a-')
+    const resultado = findRoute(origen, destino)
+    if (resultado && resultado.encontrada) {
+      rutaSchema = {
+        origen: grafo[origen]?.nombre || getStationName(origen),
+        destino: grafo[destino]?.nombre || getStationName(destino),
+        pasos: resultado.pasos,
+        tiempoTotal: Math.round(resultado.pasos.length * 2 + 3),
+        costoTotal: '9.50',
+        transbordos: resultado.transbordos || 0,
+        lineas_usadas: resultado.lineas_usadas || [],
+        slug,
+        ciudad: 'gdl',
+      }
+    }
+  }
+
+  return (
+    <>
+      {rutaSchema && <RouteSchema {...rutaSchema} />}
+      <RutaClient slug={params.slug} />
+    </>
+  )
 }

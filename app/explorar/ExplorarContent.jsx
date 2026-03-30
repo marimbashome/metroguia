@@ -1,14 +1,17 @@
 'use client'
 
-export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas, rutasDestacadas, lineasArray, breadcrumbSchema }) {
+export default function ExplorarContent({ ciudades, zonasDestacadas, estacionesTuristicas, rutasDestacadas, lineasArray, breadcrumbSchema, explorarSchema }) {
   return (
     <div>
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify(explorarSchema)}
+      </script>
 
       {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* HERO SECTION */}
+      {/* HERO SECTION — National scope */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section style={{
         background: 'linear-gradient(135deg, var(--surface) 0%, rgba(0, 212, 255, 0.05) 100%)',
@@ -36,7 +39,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
           }}>
-            Descubre CDMX en Metro
+            Explora México en Transporte Público
           </h1>
           <p style={{
             fontSize: '1.125rem',
@@ -45,10 +48,9 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
             lineHeight: '1.6',
             maxWidth: '700px',
           }}>
-            Hub interactivo para turistas. Explora zonas turísticas, estaciones destacadas, rutas populares y qué hacer en cada línea del metro.
+            11 ciudades, 786 estaciones, 77 líneas. Descubre zonas turísticas, rutas populares y cómo moverte en metro, tren y BRT.
           </p>
 
-          {/* Stats badges */}
           <div style={{
             display: 'flex',
             gap: '1rem',
@@ -67,7 +69,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               fontSize: '0.875rem',
               fontWeight: 600,
             }}>
-              <span style={{ fontSize: '1.25rem' }}>{zonasDestacadas.length}</span> Zonas Destacadas
+              <span style={{ fontSize: '1.25rem' }}>11</span> Ciudades
             </div>
             <div style={{
               display: 'inline-flex',
@@ -81,7 +83,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               fontSize: '0.875rem',
               fontWeight: 600,
             }}>
-              <span style={{ fontSize: '1.25rem' }}>{rutasDestacadas.length}+</span> Rutas Populares
+              <span style={{ fontSize: '1.25rem' }}>786</span> Estaciones
             </div>
             <div style={{
               display: 'inline-flex',
@@ -95,14 +97,14 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               fontSize: '0.875rem',
               fontWeight: 600,
             }}>
-              <span style={{ fontSize: '1.25rem' }}>12</span> Líneas de Metro
+              <span style={{ fontSize: '1.25rem' }}>77</span> Líneas
             </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* ZONAS TURÍSTICAS */}
+      {/* CIUDADES — National grid */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section style={{
         padding: '4rem 1rem',
@@ -110,12 +112,200 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
       }}>
         <div className="container">
           <div style={{ marginBottom: '2rem' }}>
-            <h2 style={{ marginBottom: '0.5rem' }}>Zonas Turísticas Destacadas</h2>
+            <h2 style={{ marginBottom: '0.5rem' }}>Ciudades con Transporte Público</h2>
             <p style={{
               color: 'var(--text-muted)',
               fontSize: '0.95rem',
             }}>
-              Explora los barrios y lugares más visitados de CDMX
+              Elige una ciudad para explorar estaciones, líneas y rutas
+            </p>
+          </div>
+
+          {/* Top 3 FIFA cities */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '1.5rem',
+            marginBottom: '1.5rem',
+          }}>
+            {ciudades.slice(0, 3).map((ciudad) => (
+              <a
+                key={ciudad.id}
+                href={ciudad.href}
+                style={{
+                  display: 'block',
+                  background: 'var(--surface)',
+                  border: `2px solid ${ciudad.color}33`,
+                  borderRadius: 'var(--radius-lg)',
+                  padding: '1.75rem',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = ciudad.color
+                  e.currentTarget.style.boxShadow = `0 0 20px ${ciudad.color}22`
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = `${ciudad.color}33`
+                  e.currentTarget.style.boxShadow = 'none'
+                }}
+              >
+                <div style={{
+                  position: 'absolute',
+                  top: '0.75rem',
+                  right: '0.75rem',
+                  background: `${ciudad.color}22`,
+                  border: `1px solid ${ciudad.color}44`,
+                  borderRadius: 'var(--radius-sm)',
+                  padding: '0.25rem 0.625rem',
+                  fontSize: '0.7rem',
+                  fontWeight: 700,
+                  color: ciudad.color,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                }}>
+                  FIFA 2026
+                </div>
+                <h3 style={{
+                  color: 'var(--text)',
+                  fontSize: '1.5rem',
+                  fontWeight: 700,
+                  marginBottom: '0.5rem',
+                }}>
+                  {ciudad.nombre}
+                </h3>
+                <p style={{
+                  color: 'var(--text-muted)',
+                  fontSize: '0.85rem',
+                  marginBottom: '1rem',
+                  lineHeight: '1.4',
+                }}>
+                  {ciudad.sistema}
+                </p>
+                <div style={{
+                  display: 'flex',
+                  gap: '1.5rem',
+                  marginBottom: '0.75rem',
+                }}>
+                  <div>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 700, color: ciudad.color }}>{ciudad.stats.estaciones}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>estaciones</div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 700, color: ciudad.color }}>{ciudad.stats.lineas}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>líneas</div>
+                  </div>
+                </div>
+                <div style={{
+                  color: ciudad.color,
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                }}>
+                  Explorar {ciudad.nombre} →
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Secondary cities grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '1rem',
+          }}>
+            {ciudades.slice(3).map((ciudad) => (
+              <a
+                key={ciudad.id}
+                href={ciudad.href}
+                style={{
+                  display: 'block',
+                  background: 'var(--surface)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--radius-lg)',
+                  padding: '1.25rem',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = ciudad.color
+                  e.currentTarget.style.background = 'var(--surface-hover)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--border)'
+                  e.currentTarget.style.background = 'var(--surface)'
+                }}
+              >
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  marginBottom: '0.75rem',
+                }}>
+                  <div style={{
+                    width: '12px',
+                    height: '12px',
+                    borderRadius: '50%',
+                    background: ciudad.color,
+                    flexShrink: 0,
+                  }} />
+                  <h3 style={{
+                    color: 'var(--text)',
+                    fontSize: '1.1rem',
+                    fontWeight: 600,
+                    margin: 0,
+                  }}>
+                    {ciudad.nombre}
+                  </h3>
+                </div>
+                <p style={{
+                  color: 'var(--text-muted)',
+                  fontSize: '0.8rem',
+                  marginBottom: '0.5rem',
+                }}>
+                  {ciudad.sistema}
+                </p>
+                <div style={{
+                  display: 'flex',
+                  gap: '1rem',
+                  marginBottom: '0.5rem',
+                }}>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>
+                    {ciudad.stats.estaciones} est.
+                  </span>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>
+                    {ciudad.stats.lineas} líneas
+                  </span>
+                </div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  color: ciudad.color,
+                  fontWeight: 500,
+                }}>
+                  {ciudad.destacado}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      {/* ZONAS TURÍSTICAS — CDMX featured */}
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      <section style={{
+        padding: '4rem 1rem',
+        borderBottom: '1px solid var(--border)',
+      }}>
+        <div className="container">
+          <div style={{ marginBottom: '2rem' }}>
+            <h2 style={{ marginBottom: '0.5rem' }}>Zonas Turísticas — CDMX</h2>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '0.95rem',
+            }}>
+              Explora los barrios y lugares más visitados de la Ciudad de México
             </p>
           </div>
 
@@ -262,9 +452,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
                   e.currentTarget.style.borderColor = 'var(--border)'
                 }}
               >
-                <div style={{
-                  flex: 1,
-                }}>
+                <div style={{ flex: 1 }}>
                   <h3 style={{
                     color: 'var(--text)',
                     fontSize: '1rem',
@@ -294,7 +482,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* DISCOVER BY LINE */}
+      {/* DISCOVER BY LINE — CDMX Metro */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       <section style={{
         padding: '4rem 1rem',
@@ -302,7 +490,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
       }}>
         <div className="container">
           <div style={{ marginBottom: '2rem' }}>
-            <h2 style={{ marginBottom: '0.5rem' }}>Descubre por Línea de Metro</h2>
+            <h2 style={{ marginBottom: '0.5rem' }}>Líneas de Metro CDMX</h2>
             <p style={{
               color: 'var(--text-muted)',
               fontSize: '0.95rem',
@@ -333,7 +521,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'var(--surface-hover)'
                   e.currentTarget.style.transform = 'translateY(-4px)'
-                  e.currentTarget.style.boxShadow = `0 12px 24px rgba(0, 212, 255, 0.1)`
+                  e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 212, 255, 0.1)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = 'var(--surface)'
@@ -507,7 +695,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               marginBottom: '1rem',
               fontSize: '1.75rem',
             }}>
-              🌍 Mundial FIFA 2026
+              Mundial FIFA 2026 — 3 Sedes en México
             </h2>
             <p style={{
               color: 'var(--text)',
@@ -517,9 +705,9 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               maxWidth: '600px',
               margin: '0 auto 1.5rem',
             }}>
-              Acceso rápido al Estadio Azteca desde cualquier punto turístico.
+              Guía de movilidad para CDMX (Estadio Azteca), Guadalajara (Estadio Akron) y Monterrey (Estadio BBVA).
               {' '}
-              <strong>Viaja en metro y evita tráfico.</strong>
+              <strong>Viaja en transporte público y evita tráfico.</strong>
             </p>
             <a
               href="/mundial-2026"
@@ -545,79 +733,6 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
             >
               Guía de Movilidad para el Mundial →
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* QUICK LINKS TO CITY HUBS */}
-      {/* ═══════════════════════════════════════════════════════════════ */}
-      <section style={{
-        padding: '4rem 1rem',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div className="container">
-          <div style={{ marginBottom: '2rem' }}>
-            <h2 style={{ marginBottom: '0.5rem' }}>Centros Principales</h2>
-            <p style={{
-              color: 'var(--text-muted)',
-              fontSize: '0.95rem',
-            }}>
-              Acceso directo a los hubs turísticos más importantes
-            </p>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '1rem',
-          }}>
-            {[
-              { nombre: 'Centro Histórico', slug: 'centro-historico', emoji: '🏛️' },
-              { nombre: 'Condesa', slug: 'condesa', emoji: '🎨' },
-              { nombre: 'Roma Norte', slug: 'roma-norte', emoji: '🍽️' },
-              { nombre: 'Polanco', slug: 'polanco', emoji: '✨' },
-              { nombre: 'Coyoacán', slug: 'coyoacan', emoji: '🎭' },
-              { nombre: 'Xochimilco', slug: 'xochimilco', emoji: '🚤' },
-            ].map((hub) => (
-              <a
-                key={hub.slug}
-                href={`/zona/${hub.slug}`}
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '1rem',
-                  background: 'var(--surface)',
-                  border: '1px solid var(--border)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.75rem 1rem',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease',
-                  textAlign: 'center',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'var(--surface-hover)'
-                  e.currentTarget.style.borderColor = '#00D4FF'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'var(--surface)'
-                  e.currentTarget.style.borderColor = 'var(--border)'
-                }}
-              >
-                <div style={{ fontSize: '2.5rem' }}>
-                  {hub.emoji}
-                </div>
-                <h3 style={{
-                  color: 'var(--text)',
-                  fontSize: '1.125rem',
-                  fontWeight: 600,
-                  margin: 0,
-                }}>
-                  {hub.nombre}
-                </h3>
-              </a>
-            ))}
           </div>
         </div>
       </section>
@@ -650,7 +765,7 @@ export default function ExplorarContent({ zonasDestacadas, estacionesTuristicas,
               maxWidth: '500px',
               margin: '0 auto 2rem',
             }}>
-              Usa nuestro planificador de rutas para obtener instrucciones paso a paso con transferencias.
+              Usa nuestro planificador de rutas para obtener instrucciones paso a paso con transferencias en cualquiera de las 11 ciudades.
             </p>
             <a
               href="/"

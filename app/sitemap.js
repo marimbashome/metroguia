@@ -324,10 +324,12 @@ export default function sitemap() {
     })),
   ];
 
-  // GDL Macrobús Transit Pages
-  const gdlMacrobusStations = (estacionesGDL || []).filter(e => e.lineas && e.lineas.some(l => l.includes('Macro')));
+  // GDL Macrobús (Mi Macro) Transit Pages — MC + MP lines
+  const gdlMacrobusStations = (estacionesGDL || []).filter(e => e.sistema === 'macrobus');
   const gdlMacrobusPages = [
-    { url: `${baseUrl}/gdl/macrobus/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/gdl/macrobus/`, lastModified, changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${baseUrl}/gdl/macrobus/linea/MC/`, lastModified, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${baseUrl}/gdl/macrobus/linea/MP/`, lastModified, changeFrequency: 'monthly', priority: 0.75 },
     ...gdlMacrobusStations.map(e => ({
       url: `${baseUrl}/gdl/macrobus/estacion/${e.slug}/`,
       lastModified, changeFrequency: 'monthly', priority: 0.7,
@@ -361,7 +363,60 @@ export default function sitemap() {
     changeFrequency: 'monthly',
     priority: slug.endsWith('-a-exposicion') ? 0.85 : 0.65,
   }));
-  const rutasPages = [...cdmxRoutes, ...gdlRoutes, ...mtyRoutes];
+  const pueblaRoutes = generateCityRoutes('puebla').map(slug => ({
+    url: `${baseUrl}/puebla/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const meridaRoutes = generateCityRoutes('merida').map(slug => ({
+    url: `${baseUrl}/merida/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const leonRoutes = generateCityRoutes('leon').map(slug => ({
+    url: `${baseUrl}/leon/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const chihuahuaRoutes = generateCityRoutes('chihuahua').map(slug => ({
+    url: `${baseUrl}/chihuahua/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.55,
+  }));
+  const tijuanaRoutes = generateCityRoutes('tijuana').map(slug => ({
+    url: `${baseUrl}/tijuana/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.55,
+  }));
+  const queretaroRoutes = generateCityRoutes('queretaro').map(slug => ({
+    url: `${baseUrl}/queretaro/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const tolucaRoutes = generateCityRoutes('toluca').map(slug => ({
+    url: `${baseUrl}/toluca/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.55,
+  }));
+  const trenmayaRoutes = generateCityRoutes('tren-maya').map(slug => ({
+    url: `${baseUrl}/tren-maya/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const rutasPages = [
+    ...cdmxRoutes, ...gdlRoutes, ...mtyRoutes,
+    ...pueblaRoutes, ...meridaRoutes, ...leonRoutes,
+    ...chihuahuaRoutes, ...tijuanaRoutes, ...queretaroRoutes,
+    ...tolucaRoutes, ...trenmayaRoutes,
+  ];
 
   // Language versions (en, pt, fr, de, ja, ko) for key pages
   const languages = ['en', 'pt', 'fr', 'de', 'ja', 'ko'];
