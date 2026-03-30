@@ -102,14 +102,14 @@ export default function MexicableEstacionPage({ params }) {
           </div>
 
           {/* Tips */}
-          {(estacion.tips || []).length > 0 && (
+          {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
             <div style={{
               padding: '1.25rem', borderRadius: 'var(--radius)',
               border: '1px solid var(--border)', backgroundColor: 'var(--surface)',
               marginBottom: '2rem',
             }}>
               <h2 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '1rem' }}>Tips para viajeros</h2>
-              {(estacion.tips || []).map((tip, i) => (
+              {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, i) => (
                 <p key={i} style={{ color: 'var(--text-muted)', marginBottom: i < estacion.tips.length - 1 ? '0.5rem' : 0, lineHeight: 1.6, fontSize: '0.9rem' }}>
                   → {tip}
                 </p>

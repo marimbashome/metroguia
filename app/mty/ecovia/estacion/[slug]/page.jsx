@@ -250,7 +250,7 @@ export default function EstacionEcoviaPage({ params }) {
             )}
 
             {/* TIPS */}
-            {(estacion.tips || []).length > 0 && (
+            {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
               <div style={{ marginBottom: '64px' }}>
                 <h2
                   style={{
@@ -274,7 +274,7 @@ export default function EstacionEcoviaPage({ params }) {
                     gap: '12px',
                   }}
                 >
-                  {(estacion.tips || []).map((tip, idx) => (
+                  {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                     <li
                       key={idx}
                       style={{
