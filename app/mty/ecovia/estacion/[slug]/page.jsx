@@ -548,7 +548,12 @@ export default function EstacionEcoviaPage({ params }) {
                         fontWeight: '600',
                       }}
                     >
-                      → {transf}
+                      → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
+                      {typeof transf === 'object' && transf.tiempo_medio && (
+                        <span style={{ display: 'block', fontSize: '12px', color: '#3b82f6', fontWeight: 400, marginTop: '2px' }}>
+                          ⏱ {transf.tiempo_medio}
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>
