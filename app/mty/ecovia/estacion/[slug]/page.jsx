@@ -332,7 +332,7 @@ export default function EstacionEcoviaPage({ params }) {
                         fontFamily: 'DM Sans, sans-serif',
                       }}
                     >
-                      📍 {lugar}
+                      📍 {typeof lugar === 'string' ? lugar : lugar.nombre}{typeof lugar === 'object' && lugar.descripcion && <span style={{ display: 'block', fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>{lugar.descripcion}</span>}
                     </li>
                   ))}
                 </ul>
