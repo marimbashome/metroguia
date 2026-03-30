@@ -225,7 +225,6 @@ export default function ZonaPage({ params }) {
                   <a
                     key={idx}
                     href={`/ruta/${ruta.origen}-a-${ruta.destino}/`}
-                    className="lugar-card"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
