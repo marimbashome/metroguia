@@ -5429,8 +5429,62 @@ export const grafo = {
     nombre: 'Cb Cineteca Bodega',
     lineas: ['CB-3'],
     adyacentes: [
-      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+      { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-miguel-teotongo', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
     ]
   },
+  'centro-historico-tb2': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb2',
+    lineas: ['TB-2'],
+    adyacentes: [
+      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
+      { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ]
+  },
+  'centro-historico-tb9': {
+    ciudad: 'cdmx',
+    nombre: 'Centro Historico Tb9',
+    lineas: ['TB-9'],
+    adyacentes: [
+      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
+      { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ]
+  },
+  'chapultepec-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Chapultepec Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'mixcoac-tb7': {
+    ciudad: 'cdmx',
+    nombre: 'Mixcoac Tb7',
+    lineas: ['TB-7'],
+    adyacentes: [
+      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
+      { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ]
+  },
+  'san-lazaro-tb5': {
+    ciudad: 'cdmx',
+    nombre: 'San Lazaro Tb5',
+    lineas: ['TB-5'],
+    adyacentes: [
+      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
+      { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ]
+  },
+  'santa-martha-tb4': {
+    ciudad: 'cdmx',
+    nombre: 'Santa Martha Tb4',
+    lineas: ['TB-4'],
+    adyacentes: [
+      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
+      { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ]
+  }
 };

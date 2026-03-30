@@ -1,5 +1,8 @@
 import { rutasPopulares } from '@/data/rutas-populares'
 import { STATION_DISPLAY_NAMES, cdmxStations } from '@/data/rutas-engine'
+import { findRoute } from '@/lib/pathfinder'
+import { grafo } from '@/data/grafo'
+import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from './RutaClient'
 
 // ISR: allow any station-to-station slug, not just pre-built ones
@@ -63,5 +66,41 @@ export function generateMetadata({ params }) {
 }
 
 export default function RutaPage({ params }) {
-  return <RutaClient slug={params.slug} />
+  const { slug } = params
+
+  // Parse slug and validate
+  const parts = slug.split('-a-')
+  const origen = parts[0]
+  const destino = parts.slice(1).join('-a-')
+
+  // Calculate route server-side for schema generation
+  let rutaSchema = null
+  if (isValidRouteSlug(slug)) {
+    const resultado = findRoute(origen, destino)
+    if (resultado && resultado.encontrada) {
+      const origenNombre = grafo[origen]?.nombre || getStationName(origen)
+      const destinoNombre = grafo[destino]?.nombre || getStationName(destino)
+      const tiempoEstimado = Math.round(resultado.pasos.length * 2 + 3)
+
+      rutaSchema = {
+        origen: origenNombre,
+        destino: destinoNombre,
+        pasos: resultado.pasos,
+        tiempoTotal: tiempoEstimado,
+        costoTotal: '6',
+        transbordos: resultado.transbordos || 0,
+        lineas_usadas: resultado.lineas_usadas || [],
+        slug
+      }
+    }
+  }
+
+  return (
+    <>
+      {rutaSchema && (
+        <RouteSchema {...rutaSchema} />
+      )}
+      <RutaClient slug={params.slug} />
+    </>
+  )
 }
