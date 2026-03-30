@@ -2143,80 +2143,6 @@ export const grafo = {
   },
 
   // ============================================
-  // GDL SITEUR - LÍNEA 4 (Naranja) - 8 estaciones
-  // ============================================
-  'las-juntas': {
-    ciudad: 'gdl',
-    nombre: 'Las Juntas',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'jalisco-200', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'jalisco-200': {
-    ciudad: 'gdl',
-    nombre: 'Jalisco 200',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'las-juntas', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'real-del-valle', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'real-del-valle': {
-    ciudad: 'gdl',
-    nombre: 'Real del Valle',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'jalisco-200', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'concepcion-del-valle', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'concepcion-del-valle': {
-    ciudad: 'gdl',
-    nombre: 'Concepción del Valle',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'real-del-valle', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'el-cuervo', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'el-cuervo': {
-    ciudad: 'gdl',
-    nombre: 'El Cuervo',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'concepcion-del-valle', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'lomas-del-sur', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'lomas-del-sur': {
-    ciudad: 'gdl',
-    nombre: 'Lomas del Sur',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'el-cuervo', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'cutlajo', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'cutlajo': {
-    ciudad: 'gdl',
-    nombre: 'Cutlajo',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'lomas-del-sur', tiempo: 5, linea: '4', tipo: 'linea' },
-      { slug: 'tlajomulco-centro', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-  'tlajomulco-centro': {
-    ciudad: 'gdl',
-    nombre: 'Tlajomulco Centro',
-    lineas: ['4'],
-    adyacentes: [
-      { slug: 'cutlajo', tiempo: 5, linea: '4', tipo: 'linea' }
-    ]
-  },
-
-  // ============================================
   // GDL MI MACRO CALZADA (Azul) - 27 estaciones
   // ============================================
   'mirador-mc': {
@@ -2847,6 +2773,81 @@ export const grafo = {
       { slug: 'barranca-huentitan-mp', tiempo: 2, linea: 'MP', tipo: 'linea' }
     ]
   },
+
+  // ============================================
+  // GDL SITEUR - LÍNEA 4 (Naranja) - 8 estaciones
+  // ============================================
+  'las-juntas': {
+    ciudad: 'gdl',
+    nombre: 'Las Juntas',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'jalisco-200', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'jalisco-200': {
+    ciudad: 'gdl',
+    nombre: 'Jalisco 200 Años',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'las-juntas', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'real-del-valle', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'real-del-valle': {
+    ciudad: 'gdl',
+    nombre: 'Real del Valle',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'jalisco-200', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'concepcion-del-valle', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'concepcion-del-valle': {
+    ciudad: 'gdl',
+    nombre: 'Concepción del Valle',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'real-del-valle', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'el-cuervo', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'el-cuervo': {
+    ciudad: 'gdl',
+    nombre: 'El Cuervo',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'concepcion-del-valle', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'lomas-del-sur', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'lomas-del-sur': {
+    ciudad: 'gdl',
+    nombre: 'Lomas del Sur',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'el-cuervo', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'cutlajo', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'cutlajo': {
+    ciudad: 'gdl',
+    nombre: 'CUTLAJO',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'lomas-del-sur', tiempo: 2, linea: '4', tipo: 'linea' },
+      { slug: 'tlajomulco-centro', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'tlajomulco-centro': {
+    ciudad: 'gdl',
+    nombre: 'Tlajomulco Centro',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'cutlajo', tiempo: 2, linea: '4', tipo: 'linea' }
+    ]
+  },
+
   // MTY METRORREY - LÍNEA 1 (Amarilla) - 19 estaciones
   // ============================================
   'talleres': {
@@ -3232,390 +3233,436 @@ export const grafo = {
   },
 
   // ============================================
+  // ============================================
   // MTY ECOVÍA (TransMetro BRT) - 42 estaciones
   // ============================================
-  'lincoln': {
+  'barrio-antiguo': {
     ciudad: 'mty',
-    nombre: 'Lincoln',
+    nombre: 'Barrio Antiguo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'astros', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'fundidora', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'fundidora', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'astros': {
+  'fundidora': {
     ciudad: 'mty',
-    nombre: 'Astros',
+    nombre: 'Fundidora',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'lincoln', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'cumbres', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'barrio-antiguo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'mitras', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'mitras', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'cumbres': {
-    ciudad: 'mty',
-    nombre: 'Cumbres',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'astros', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'plumbago', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'plumbago': {
-    ciudad: 'mty',
-    nombre: 'Plumbago',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'cumbres', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'plutarco-elias-calles', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'plutarco-elias-calles': {
-    ciudad: 'mty',
-    nombre: 'Plutarco Elías Calles',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'plumbago', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'embotelladora', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'embotelladora': {
-    ciudad: 'mty',
-    nombre: 'Embotelladora',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'plutarco-elias-calles', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'panteon-municipal', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'panteon-municipal': {
-    ciudad: 'mty',
-    nombre: 'Panteón Municipal',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'embotelladora', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'cardenal', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'cardenal': {
-    ciudad: 'mty',
-    nombre: 'Cardenal',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'panteon-municipal', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'valle-verde', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'valle-verde': {
-    ciudad: 'mty',
-    nombre: 'Valle Verde',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'cardenal', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'cardiologia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'cardiologia': {
-    ciudad: 'mty',
-    nombre: 'Cardiología',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'valle-verde', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'santa-cecilia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'santa-cecilia': {
-    ciudad: 'mty',
-    nombre: 'Santa Cecilia',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'cardiologia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'villa-mitras', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'villa-mitras': {
-    ciudad: 'mty',
-    nombre: 'Villa Mitras',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'santa-cecilia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'rangel-frias', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'rangel-frias': {
-    ciudad: 'mty',
-    nombre: 'Rangel Frías',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'villa-mitras', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'transito', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'transito': {
-    ciudad: 'mty',
-    nombre: 'Tránsito',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'rangel-frias', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'laredo', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'laredo': {
-    ciudad: 'mty',
-    nombre: 'Laredo',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'transito', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'rodrigo-gomez', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'rodrigo-gomez': {
-    ciudad: 'mty',
-    nombre: 'Rodrigo Gómez',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'laredo', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'mitras-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'mitras-ecovia': {
+  'mitras': {
     ciudad: 'mty',
     nombre: 'Mitras',
-    lineas: ['ecovia'],
+    lineas: ['ecovia', '1'],
     adyacentes: [
-      { slug: 'rodrigo-gomez', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'celulosa', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'fundidora', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'obispado', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'mitras', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
       { slug: 'mitras', tiempo: 5, linea: '1', tipo: 'transbordo' }
     ]
   },
-  'celulosa': {
+  'obispado': {
     ciudad: 'mty',
-    nombre: 'Celulosa',
+    nombre: 'Obispado',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'mitras-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'veinte-de-noviembre', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'mitras', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'barrio-viejo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'barrio-viejo', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'veinte-de-noviembre': {
+  'barrio-viejo': {
     ciudad: 'mty',
-    nombre: '20 de Noviembre',
+    nombre: 'Barrio Viejo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'celulosa', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'hidalgo-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'obispado', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'regina', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'regina', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'hidalgo-ecovia': {
-    ciudad: 'mty',
-    nombre: 'Hidalgo',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'veinte-de-noviembre', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'bella-vista', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'bella-vista': {
-    ciudad: 'mty',
-    nombre: 'Bella Vista',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'hidalgo-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'regina-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'regina-ecovia': {
+  'regina': {
     ciudad: 'mty',
     nombre: 'Regina',
-    lineas: ['ecovia'],
+    lineas: ['2', 'ecovia'],
     adyacentes: [
-      { slug: 'bella-vista', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'asarco', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'barrio-viejo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'gomez-morin', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'ninos-heroes', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
       { slug: 'regina', tiempo: 5, linea: '2', tipo: 'transbordo' }
     ]
   },
-  'asarco': {
+  'gomez-morin': {
     ciudad: 'mty',
-    nombre: 'Asarco',
+    nombre: 'Gómez Morín',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'regina-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'cementos', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'regina', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'ruiz-cortines', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'ruiz-cortines', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'cementos': {
-    ciudad: 'mty',
-    nombre: 'Cementos',
-    lineas: ['ecovia'],
-    adyacentes: [
-      { slug: 'asarco', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'ruiz-cortines-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
-    ]
-  },
-  'ruiz-cortines-ecovia': {
+  'ruiz-cortines': {
     ciudad: 'mty',
     nombre: 'Ruiz Cortines',
-    lineas: ['ecovia'],
+    lineas: ['3', 'ecovia'],
     adyacentes: [
-      { slug: 'cementos', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'clinica-15', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'gomez-morin', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'adolfo-lopez-mateos', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'ruiz-cortines', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
       { slug: 'ruiz-cortines', tiempo: 5, linea: '3', tipo: 'transbordo' }
     ]
   },
-  'clinica-15': {
+  'adolfo-lopez-mateos': {
     ciudad: 'mty',
-    nombre: 'Clínica 15',
+    nombre: 'Adolfo López Mateos',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'ruiz-cortines-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'coyoacan-mty', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'ruiz-cortines', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'las-torres', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'las-torres', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'coyoacan-mty': {
+  'las-torres': {
     ciudad: 'mty',
-    nombre: 'Coyoacán',
+    nombre: 'Las Torres',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'clinica-15', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'churubusco', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'adolfo-lopez-mateos', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'mariano-escobedo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'mariano-escobedo', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'churubusco': {
+  'mariano-escobedo': {
     ciudad: 'mty',
-    nombre: 'Churubusco',
+    nombre: 'Mariano Escobedo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'coyoacan-mty', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'vidriera', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'las-torres', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'solidaridad', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'solidaridad', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'vidriera': {
+  'solidaridad': {
     ciudad: 'mty',
-    nombre: 'Vidriera',
+    nombre: 'Solidaridad',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'churubusco', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'las-americas', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'mariano-escobedo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'sendero', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'sendero', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'las-americas': {
+  'sendero': {
     ciudad: 'mty',
-    nombre: 'Las Américas',
-    lineas: ['ecovia'],
+    nombre: 'Sendero',
+    lineas: ['2', 'ecovia'],
     adyacentes: [
-      { slug: 'vidriera', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'adolfo-prieto', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'solidaridad', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'santa-catarina', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'tapia', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'sendero', tiempo: 5, linea: '2', tipo: 'transbordo' }
     ]
   },
-  'adolfo-prieto': {
+  'santa-catarina': {
     ciudad: 'mty',
-    nombre: 'Adolfo Prieto',
+    nombre: 'Santa Catarina',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'las-americas', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'central-de-carga', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'sendero', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'apodaca', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'apodaca', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'central-de-carga': {
+  'apodaca': {
     ciudad: 'mty',
-    nombre: 'Central de Carga',
+    nombre: 'Apodaca',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'adolfo-prieto', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'tauro', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'santa-catarina', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-nicolas', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-nicolas', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'tauro': {
+  'san-nicolas': {
     ciudad: 'mty',
-    nombre: 'Tauro',
-    lineas: ['ecovia'],
+    nombre: 'San Nicolás',
+    lineas: ['2', 'ecovia'],
     adyacentes: [
-      { slug: 'central-de-carga', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'miguel-aleman', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'apodaca', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'puente-largo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'tapia', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-nicolas', tiempo: 5, linea: '2', tipo: 'transbordo' }
     ]
   },
-  'miguel-aleman': {
+  'puente-largo': {
     ciudad: 'mty',
-    nombre: 'Miguel Alemán',
+    nombre: 'Puente Largo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'tauro', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'calle-nueva', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'san-nicolas', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'constitucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'constitucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'calle-nueva': {
+  'constitucion': {
     ciudad: 'mty',
-    nombre: 'Calle Nueva',
+    nombre: 'Constitución',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'miguel-aleman', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'de-la-zanja', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'puente-largo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'primero-de-mayo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'primero-de-mayo', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'de-la-zanja': {
+  'primero-de-mayo': {
     ciudad: 'mty',
-    nombre: 'De La Zanja',
+    nombre: 'Primero de Mayo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'calle-nueva', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'aceros', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'constitucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'exposicion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'exposicion', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'aceros': {
+  'exposicion': {
     ciudad: 'mty',
-    nombre: 'Aceros',
-    lineas: ['ecovia'],
+    nombre: 'Exposición',
+    lineas: ['1', 'ecovia'],
     adyacentes: [
-      { slug: 'de-la-zanja', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'guadalajara-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'primero-de-mayo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'puente-nuevo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'lerdo-de-tejada', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'exposicion', tiempo: 5, linea: '1', tipo: 'transbordo' }
     ]
   },
-  'guadalajara-ecovia': {
+  'puente-nuevo': {
     ciudad: 'mty',
-    nombre: 'Guadalajara',
+    nombre: 'Puente Nuevo',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'aceros', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'san-miguel-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'exposicion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'santa-cruz', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'santa-cruz', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'san-miguel-ecovia': {
+  'santa-cruz': {
     ciudad: 'mty',
-    nombre: 'San Miguel',
+    nombre: 'Santa Cruz',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'guadalajara-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'valle-fertil', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'puente-nuevo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'libertad', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'libertad', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'valle-fertil': {
+  'libertad': {
     ciudad: 'mty',
-    nombre: 'Valle Fértil',
+    nombre: 'Libertad',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'san-miguel-ecovia', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'movilidad-monterrey', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'santa-cruz', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-bernabe', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-bernabe', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
-  'movilidad-monterrey': {
+  'san-bernabe': {
     ciudad: 'mty',
-    nombre: 'Movilidad Monterrey',
-    lineas: ['ecovia'],
+    nombre: 'San Bernabé',
+    lineas: ['1', 'ecovia'],
     adyacentes: [
-      { slug: 'valle-fertil', tiempo: 2, linea: 'ecovia', tipo: 'linea' },
-      { slug: 'valle-soleado', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'libertad', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'reforma', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-bernabe', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-bernabe', tiempo: 5, linea: '1', tipo: 'transbordo' }
     ]
   },
-  'valle-soleado': {
+  'reforma': {
     ciudad: 'mty',
-    nombre: 'Valle Soleado',
+    nombre: 'Reforma',
     lineas: ['ecovia'],
     adyacentes: [
-      { slug: 'movilidad-monterrey', tiempo: 2, linea: 'ecovia', tipo: 'linea' }
+      { slug: 'san-bernabe', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'iturbide', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'iturbide', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'iturbide': {
+    ciudad: 'mty',
+    nombre: 'Iturbide',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'reforma', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'madero', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'madero', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'madero': {
+    ciudad: 'mty',
+    nombre: 'Madero',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'iturbide', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'hermosillo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'hermosillo', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'hermosillo': {
+    ciudad: 'mty',
+    nombre: 'Hermosillo',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'madero', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'rayos-del-sol', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'rayos-del-sol', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'rayos-del-sol': {
+    ciudad: 'mty',
+    nombre: 'Rayos del Sol',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'hermosillo', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'guadalupe-terminal', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'guadalupe-terminal', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'guadalupe-terminal': {
+    ciudad: 'mty',
+    nombre: 'Guadalupe Terminal',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'rayos-del-sol', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-roberto', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-roberto', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'san-roberto': {
+    ciudad: 'mty',
+    nombre: 'San Roberto',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'guadalupe-terminal', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'estrellas', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'estrellas', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'estrellas': {
+    ciudad: 'mty',
+    nombre: 'Estrellas',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'san-roberto', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'revolucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'revolucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'revolucion': {
+    ciudad: 'mty',
+    nombre: 'Revolución',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'estrellas', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'centro-guadalupe', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'centro-guadalupe', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'centro-guadalupe': {
+    ciudad: 'mty',
+    nombre: 'Centro Guadalupe',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'revolucion', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'parque-industrial', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'parque-industrial', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'parque-industrial': {
+    ciudad: 'mty',
+    nombre: 'Parque Industrial',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'centro-guadalupe', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'industrial-este', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'industrial-este', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'industrial-este': {
+    ciudad: 'mty',
+    nombre: 'Industrial Este',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'parque-industrial', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'industrial-sur', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'industrial-sur', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'industrial-sur': {
+    ciudad: 'mty',
+    nombre: 'Industrial Sur',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'industrial-este', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'puerta-oriental', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'puerta-oriental', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'puerta-oriental': {
+    ciudad: 'mty',
+    nombre: 'Puerta Oriental',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'industrial-sur', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-isidro', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'san-isidro', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'san-isidro': {
+    ciudad: 'mty',
+    nombre: 'San Isidro',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'puerta-oriental', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'santa-ana', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'santa-ana', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'santa-ana': {
+    ciudad: 'mty',
+    nombre: 'Santa Ana',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'san-isidro', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'oriente': {
+    ciudad: 'mty',
+    nombre: 'Oriente',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'santa-ana', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'terminal-oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'terminal-oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
+    ]
+  },
+  'terminal-oriente': {
+    ciudad: 'mty',
+    nombre: 'Terminal Oriente',
+    lineas: ['ecovia'],
+    adyacentes: [
+      { slug: 'oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' },
+      { slug: 'oriente', tiempo: 3, linea: 'ecovia', tipo: 'linea' }
     ]
   },
 
-    // ============================================
-  // CDMX TREN SUBURBANO - LÍNEA TS (Verde #00A651) - 7+1 estaciones
+    // CDMX TREN SUBURBANO - LÍNEA TS (Verde #00A651) - 7+1 estaciones
   // ============================================
   'buenavista-ts': {
     ciudad: 'cdmx',
