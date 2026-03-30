@@ -4643,7 +4643,7 @@ export const grafo = {
     nombre: 'Mb Autobuses De Oriente',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-vallejo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-vallejo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4652,7 +4652,7 @@ export const grafo = {
     nombre: 'Mb Terminal Central Norte',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-autobuses-de-oriente', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-autobuses-de-oriente', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-calle-5-de-mayo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4661,7 +4661,7 @@ export const grafo = {
     nombre: 'Mb Calle 5 De Mayo',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-terminal-central-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-garcia-navarrete', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4670,7 +4670,7 @@ export const grafo = {
     nombre: 'Mb Garcia Navarrete',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-calle-5-de-mayo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-calle-5-de-mayo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4679,7 +4679,7 @@ export const grafo = {
     nombre: 'Mb Avenida Revolucion',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-garcia-navarrete', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-garcia-navarrete', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-calle-alfonso-reyes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4688,7 +4688,7 @@ export const grafo = {
     nombre: 'Mb Calle Alfonso Reyes',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-buenavista', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4697,7 +4697,7 @@ export const grafo = {
     nombre: 'Mb Magnolias',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-revolucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-plaza-de-la-republica', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4706,7 +4706,7 @@ export const grafo = {
     nombre: 'Mb Plaza De La Republica',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-magnolias', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-magnolias', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-fuente-de-petrarca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4715,7 +4715,7 @@ export const grafo = {
     nombre: 'Mb Fuente De Petrarca',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-plaza-de-la-republica', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-plaza-de-la-republica', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-lopez-mateos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4724,7 +4724,7 @@ export const grafo = {
     nombre: 'Mb Lopez Mateos',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-fuente-de-petrarca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-fuente-de-petrarca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-chapultepec', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4733,7 +4733,7 @@ export const grafo = {
     nombre: 'Mb Avenida Chapultepec',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-lopez-mateos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-lopez-mateos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4742,7 +4742,7 @@ export const grafo = {
     nombre: 'Mb Paseo De La Reforma',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-chapultepec', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-chapultepec', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-constitucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4751,7 +4751,7 @@ export const grafo = {
     nombre: 'Mb Constitucion',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-paseo-de-la-reforma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-angel-independencia', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4760,7 +4760,7 @@ export const grafo = {
     nombre: 'Mb Angel Independencia',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-constitucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-constitucion', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-ejercito-nacional', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4769,7 +4769,7 @@ export const grafo = {
     nombre: 'Mb Avenida Ejercito Nacional',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-angel-independencia', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-angel-independencia', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-parque-espana', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4778,7 +4778,7 @@ export const grafo = {
     nombre: 'Mb Parque Espana',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-ejercito-nacional', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-ejercito-nacional', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-lomas-del-virrey', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4787,7 +4787,7 @@ export const grafo = {
     nombre: 'Mb Lomas Del Virrey',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-parque-espana', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-parque-espana', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-lomas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4796,7 +4796,7 @@ export const grafo = {
     nombre: 'Mb Avenida Lomas',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-lomas-del-virrey', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-lomas-del-virrey', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-miguel-e-ahumada', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4805,7 +4805,7 @@ export const grafo = {
     nombre: 'Mb Miguel E Ahumada',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-lomas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-lomas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-periferica-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4814,7 +4814,7 @@ export const grafo = {
     nombre: 'Mb Periferica Sur',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-miguel-e-ahumada', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-miguel-e-ahumada', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-estadio-azteca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4823,7 +4823,7 @@ export const grafo = {
     nombre: 'Mb Estadio Azteca',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-periferica-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-periferica-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-municipios', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4832,7 +4832,7 @@ export const grafo = {
     nombre: 'Mb Municipios',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-estadio-azteca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-estadio-azteca', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-natividad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4841,7 +4841,7 @@ export const grafo = {
     nombre: 'Mb Natividad',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-municipios', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-municipios', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-santa-rosa', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4850,7 +4850,7 @@ export const grafo = {
     nombre: 'Mb Avenida Santa Rosa',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-natividad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-natividad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-centro-comercial-gigante', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4859,7 +4859,7 @@ export const grafo = {
     nombre: 'Mb Centro Comercial Gigante',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-santa-rosa', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-santa-rosa', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-division-del-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4868,7 +4868,7 @@ export const grafo = {
     nombre: 'Mb Avenida Division Del Norte',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-centro-comercial-gigante', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-centro-comercial-gigante', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-mexico', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4877,7 +4877,7 @@ export const grafo = {
     nombre: 'Mb Avenida Mexico',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-division-del-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-division-del-norte', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-copilco', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4886,7 +4886,7 @@ export const grafo = {
     nombre: 'Mb Avenida Copilco',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-mexico', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-mexico', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-universidad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4895,7 +4895,7 @@ export const grafo = {
     nombre: 'Mb Avenida Universidad',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-copilco', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-copilco', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-central-de-abastos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4904,7 +4904,7 @@ export const grafo = {
     nombre: 'Mb Central De Abastos',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-universidad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-universidad', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-del-taller', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4913,7 +4913,7 @@ export const grafo = {
     nombre: 'Mb Avenida Del Taller',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-central-de-abastos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-central-de-abastos', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-xotepingo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4922,7 +4922,7 @@ export const grafo = {
     nombre: 'Mb Xotepingo',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-del-taller', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-del-taller', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-prolongacion-insurgentes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4931,7 +4931,7 @@ export const grafo = {
     nombre: 'Mb Avenida Prolongacion Insurgentes',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-xotepingo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-xotepingo', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-universidad-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4940,7 +4940,7 @@ export const grafo = {
     nombre: 'Mb Avenida Universidad Sur',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-prolongacion-insurgentes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-prolongacion-insurgentes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-paseo-de-los-heroes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4949,7 +4949,7 @@ export const grafo = {
     nombre: 'Mb Paseo De Los Heroes',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-universidad-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-universidad-sur', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-moctezuma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4958,7 +4958,7 @@ export const grafo = {
     nombre: 'Mb Avenida Moctezuma',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-paseo-de-los-heroes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-paseo-de-los-heroes', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-mercado-de-la-paz', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4967,7 +4967,7 @@ export const grafo = {
     nombre: 'Mb Mercado De La Paz',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-moctezuma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-moctezuma', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-batalla-de-puebla', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4976,7 +4976,7 @@ export const grafo = {
     nombre: 'Mb Avenida Batalla De Puebla',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-mercado-de-la-paz', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-mercado-de-la-paz', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-general-anaya', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4985,7 +4985,7 @@ export const grafo = {
     nombre: 'Mb Avenida General Anaya',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-batalla-de-puebla', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-batalla-de-puebla', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-avenida-nativitas', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },
@@ -4994,7 +4994,7 @@ export const grafo = {
     nombre: 'Mb Avenida Nativitas',
     lineas: ['MB-L1'],
     adyacentes: [
-      { slug: 'mb-avenida-general-anaya', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
+      { slug: 'mb-avenida-general-anaya', tiempo: 3, linea: 'MB-L1', tipo: 'linea' },
       { slug: 'mb-el-caminero', tiempo: 3, linea: 'MB-L1', tipo: 'linea' }
     ]
   },  'corredor-norte-tb': {
@@ -5010,7 +5010,7 @@ export const grafo = {
     nombre: 'Bellas Artes Tb',
     lineas: ['TB-1'],
     adyacentes: [
-      { slug: 'corredor-norte-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+      { slug: 'corredor-norte-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
       { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
     ]
   },
@@ -5019,7 +5019,7 @@ export const grafo = {
     nombre: 'Eje Central Salto Agua Tb',
     lineas: ['TB-1'],
     adyacentes: [
-      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+      { slug: 'bellas-artes-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
       { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
     ]
   },
@@ -5028,7 +5028,7 @@ export const grafo = {
     nombre: 'Eje Central Chabacano Tb',
     lineas: ['TB-1'],
     adyacentes: [
-      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+      { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
       { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
     ]
   },
@@ -5037,7 +5037,7 @@ export const grafo = {
     nombre: 'Eje Central Nativitas Tb',
     lineas: ['TB-1'],
     adyacentes: [
-      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+      { slug: 'eje-central-chabacano-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
       { slug: 'huipulco-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
     ]
   },
@@ -5062,7 +5062,7 @@ export const grafo = {
     nombre: 'Av Texcoco Tb',
     lineas: ['TB-10'],
     adyacentes: [
-      { slug: 'pantitlan-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
+      { slug: 'pantitlan-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' },
       { slug: 'cd-neza-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
     ]
   },
@@ -5087,7 +5087,7 @@ export const grafo = {
     nombre: 'Santa Cruz Meyehualco Tb11',
     lineas: ['TB-11'],
     adyacentes: [
-      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
+      { slug: 'santa-maria-aztahuacan-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
       { slug: 'peñon-viejo-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
     ]
   },
@@ -5096,7 +5096,7 @@ export const grafo = {
     nombre: 'Peñon Viejo Tb',
     lineas: ['TB-11'],
     adyacentes: [
-      { slug: 'santa-cruz-meyehualco-tb11', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
+      { slug: 'santa-cruz-meyehualco-tb11', tiempo: 3, linea: 'TB-11', tipo: 'linea' },
       { slug: 'la-calma-tb', tiempo: 3, linea: 'TB-11', tipo: 'linea' }
     ]
   },
@@ -5113,7 +5113,7 @@ export const grafo = {
     nombre: 'Centro Historico Tb2',
     lineas: ['TB-2'],
     adyacentes: [
-      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+      { slug: 'chapultepec-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
       { slug: 'merced-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
     ]
   },
@@ -5122,7 +5122,7 @@ export const grafo = {
     nombre: 'Merced Tb',
     lineas: ['TB-2'],
     adyacentes: [
-      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+      { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
       { slug: 'calzada-viga-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
     ]
   },
@@ -5147,7 +5147,7 @@ export const grafo = {
     nombre: 'Patriotismo Tb',
     lineas: ['TB-3'],
     adyacentes: [
-      { slug: 'alamos-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+      { slug: 'alamos-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
       { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
     ]
   },
@@ -5156,7 +5156,7 @@ export const grafo = {
     nombre: 'Mixcoac Tb',
     lineas: ['TB-3'],
     adyacentes: [
-      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+      { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
       { slug: 'tacubaya-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
     ]
   },
@@ -5181,7 +5181,7 @@ export const grafo = {
     nombre: 'Zaragoza Tb',
     lineas: ['TB-4'],
     adyacentes: [
-      { slug: 'san-lazaro-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+      { slug: 'san-lazaro-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
       { slug: 'iztapalapa-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
     ]
   },
@@ -5190,7 +5190,7 @@ export const grafo = {
     nombre: 'Iztapalapa Tb',
     lineas: ['TB-4'],
     adyacentes: [
-      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+      { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
       { slug: 'santa-martha-tb4', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
     ]
   },
@@ -5215,7 +5215,7 @@ export const grafo = {
     nombre: 'Canal San Juan Tb',
     lineas: ['TB-5'],
     adyacentes: [
-      { slug: 'san-lazaro-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+      { slug: 'san-lazaro-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
       { slug: 'constitucion-1917-tb5', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
     ]
   },
@@ -5224,7 +5224,7 @@ export const grafo = {
     nombre: 'Constitucion 1917 Tb5',
     lineas: ['TB-5'],
     adyacentes: [
-      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+      { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
       { slug: 'la-turba-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
     ]
   },
@@ -5249,7 +5249,7 @@ export const grafo = {
     nombre: 'Doctores Tb',
     lineas: ['TB-6'],
     adyacentes: [
-      { slug: 'hidalgo-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+      { slug: 'hidalgo-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' },
       { slug: 'hospital-general-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
     ]
   },
@@ -5274,7 +5274,7 @@ export const grafo = {
     nombre: 'Insurgentes Tb',
     lineas: ['TB-7'],
     adyacentes: [
-      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+      { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
       { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
     ]
   },
@@ -5283,7 +5283,7 @@ export const grafo = {
     nombre: 'Mixcoac Tb7',
     lineas: ['TB-7'],
     adyacentes: [
-      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+      { slug: 'insurgentes-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
       { slug: 'cu-tb', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
     ]
   },
@@ -5308,7 +5308,7 @@ export const grafo = {
     nombre: 'Santa Cruz Meyehualco Tb',
     lineas: ['TB-8'],
     adyacentes: [
-      { slug: 'constitucion-1917-tb8', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
+      { slug: 'constitucion-1917-tb8', tiempo: 3, linea: 'TB-8', tipo: 'linea' },
       { slug: 'iztapalapa-centro-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
     ]
   },
@@ -5333,7 +5333,7 @@ export const grafo = {
     nombre: 'Centro Historico Tb9',
     lineas: ['TB-9'],
     adyacentes: [
-      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+      { slug: 'garibaldi-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
       { slug: 'obrera-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
     ]
   },
@@ -5342,7 +5342,7 @@ export const grafo = {
     nombre: 'Obrera Tb',
     lineas: ['TB-9'],
     adyacentes: [
-      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+      { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' },
       { slug: 'villa-cortes-tb', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
     ]
   },
@@ -5358,7 +5358,7 @@ export const grafo = {
     nombre: 'Cb Cuautepec',
     lineas: ['CB-1'],
     adyacentes: [
-      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
       { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
     ]
   },
@@ -5367,7 +5367,7 @@ export const grafo = {
     nombre: 'Cb La Pastora',
     lineas: ['CB-1'],
     adyacentes: [
-      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+      { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
       { slug: 'cb-torres-buenavista', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
     ]
   },
@@ -5384,7 +5384,7 @@ export const grafo = {
     nombre: 'Cb Lomas Estancia',
     lineas: ['CB-2'],
     adyacentes: [
-      { slug: 'cb-tlalpexco', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+      { slug: 'cb-tlalpexco', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
       { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
     ]
   },
@@ -5393,7 +5393,7 @@ export const grafo = {
     nombre: 'Cb Xalpa',
     lineas: ['CB-2'],
     adyacentes: [
-      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+      { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
       { slug: 'cb-los-pinos', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
     ]
   },
@@ -5402,7 +5402,7 @@ export const grafo = {
     nombre: 'Cb Charreria',
     lineas: ['CB-3'],
     adyacentes: [
-      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+      { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
     ]
   },
@@ -5411,7 +5411,7 @@ export const grafo = {
     nombre: 'Cb Campos Revolucion',
     lineas: ['CB-3'],
     adyacentes: [
-      { slug: 'cb-charreria', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+      { slug: 'cb-charreria', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-parcur', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
     ]
   },
@@ -5420,7 +5420,7 @@ export const grafo = {
     nombre: 'Cb Parcur',
     lineas: ['CB-3'],
     adyacentes: [
-      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+      { slug: 'cb-campos-revolucion', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
     ]
   },

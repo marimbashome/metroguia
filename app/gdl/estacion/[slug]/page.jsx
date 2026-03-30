@@ -234,7 +234,7 @@ export default function EstacionGDLPage({ params }) {
                   gap: '12px',
                 }}
               >
-                {(estacion.tips || []).map((tip, idx) => (
+                {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                   <li
                     key={idx}
                     style={{

@@ -39,6 +39,9 @@ import { trenSuburbanoData } from '@/data/cdmx/tren-suburbano';
 import { aeropuertos } from '@/data/aeropuertos';
 import { terminales } from '@/data/terminales';
 
+// MTY Ecovía
+import { estacionesEcovia } from '@/data/mty/ecovia';
+
 export default function sitemap() {
   const baseUrl = 'https://metroguia.mx';
   const lastModified = new Date();
@@ -303,6 +306,15 @@ export default function sitemap() {
     })),
   ];
 
+  // MTY Ecovía Transit Pages
+  const mtyEcoviaPages = [
+    { url: `${baseUrl}/mty/ecovia/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...(estacionesEcovia || []).map(e => ({
+      url: `${baseUrl}/mty/ecovia/estacion/${e.slug}/`,
+      lastModified, changeFrequency: 'monthly', priority: 0.7,
+    })),
+  ];
+
   const cdmxRoutes = generateCityRoutes('cdmx').map(slug => ({
     url: `${baseUrl}/ruta/${slug}/`,
     lastModified,
@@ -400,6 +412,7 @@ export default function sitemap() {
 
   return [
     ...cdmxTransitPages,
+    ...mtyEcoviaPages,
     ...staticPages,
     ...fifaMatchPages,
     ...cityPages,

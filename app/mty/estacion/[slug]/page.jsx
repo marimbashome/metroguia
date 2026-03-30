@@ -331,7 +331,7 @@ export default function EstacionMTY({ params }) {
       )}
 
       {/* TIPS */}
-      {(estacion.tips || []).length > 0 && (
+      {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
         <section style={{
           maxWidth: '1200px',
           margin: '50px auto',
@@ -350,7 +350,7 @@ export default function EstacionMTY({ params }) {
             padding: '0',
             margin: '0'
           }}>
-            {(estacion.tips || []).map((tip, idx) => (
+            {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
               <li key={idx} style={{
                 background: '#fff',
                 border: `2px solid ${colorLinea}`,

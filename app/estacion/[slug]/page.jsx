@@ -30,8 +30,9 @@ export function generateMetadata({ params }) {
       ? `Cerca: ${estacion.pois.slice(0, 3).map(p => p.nombre).join(', ')}. `
       : ''
 
-    const tourTip = estacion.tips && estacion.tips.length > 0
-      ? `Consejo: ${estacion.tips[0]} `
+    const tipsArr = Array.isArray(estacion.tips) ? estacion.tips : []
+    const tourTip = tipsArr.length > 0
+      ? `Consejo: ${tipsArr[0]} `
       : ''
 
     description = `${estacion.nombre} en Línea B del Metro CDMX. ${transbordoText}${poiText}${tourTip}Ubicada en ${estacion.alcaldia}.`
@@ -149,7 +150,8 @@ export default function EstacionPage({ params }) {
 
   // Q4: Is the station accessible?
   // Check if station data includes accessibility info or infer from tips
-  const hasAccessibilityInfo = estacion.tips && estacion.tips.some(tip => tip.toLowerCase().includes('accesib') || tip.toLowerCase().includes('silla') || tip.toLowerCase().includes('discapacid'))
+  const safeTips = Array.isArray(estacion.tips) ? estacion.tips : []
+  const hasAccessibilityInfo = safeTips.some(tip => tip.toLowerCase().includes('accesib') || tip.toLowerCase().includes('silla') || tip.toLowerCase().includes('discapacid'))
   if (hasAccessibilityInfo) {
     faqItems.push({
       '@type': 'Question',
@@ -637,6 +639,7 @@ export default function EstacionPage({ params }) {
           </div>
 
           {/* TIPS PARA TURISTAS */}
+          {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
           <div style={{ marginBottom: '3rem' }}>
             <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
               💡 Tips para turistas
@@ -649,11 +652,11 @@ export default function EstacionPage({ params }) {
                 padding: 0,
                 margin: 0,
               }}>
-                {estacion.tips.map((tip, idx) => (
+                {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                   <li
                     key={idx}
                     style={{
-                      marginBottom: idx < estacion.tips.length - 1 ? '1rem' : 0,
+                      marginBottom: idx < (Array.isArray(estacion.tips) ? estacion.tips : []).length - 1 ? '1rem' : 0,
                       paddingLeft: '2rem',
                       position: 'relative',
                       fontSize: '0.95rem',
@@ -675,6 +678,7 @@ export default function EstacionPage({ params }) {
               </ul>
             </div>
           </div>
+          )}
 
           {/* Affiliate Transport Card */}
           <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
