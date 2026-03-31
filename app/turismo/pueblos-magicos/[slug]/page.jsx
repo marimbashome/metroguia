@@ -1,5 +1,17 @@
 import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
 
+const regionColors = {
+  Norte: '#D97706',
+  Noroeste: '#06B6D4',
+  Noreste: '#EC4899',
+  Bajío: '#8B5CF6',
+  Occidente: '#16A34A',
+  Centro: '#E91E8C',
+  Golfo: '#2563EB',
+  'Pacífico Sur': '#F59E0B',
+  Sureste: '#0EA5E9',
+};
+
 export async function generateStaticParams() {
   return pueblosMagicos.map((pueblo) => ({
     slug: pueblo.slug,
@@ -17,14 +29,14 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: pueblo.seo_title,
-    description: pueblo.meta_description,
-    keywords: `${pueblo.nombre}, ${pueblo.estado}, pueblos mágicos, turismo`,
+    title: `${pueblo.nombre}, ${pueblo.estado} — Pueblo Mágico | MetroGuia`,
+    description: pueblo.descripcion,
+    keywords: `${pueblo.nombre}, ${pueblo.estado}, pueblos mágicos, turismo, ${pueblo.region}`,
     openGraph: {
-      title: pueblo.seo_title,
-      description: pueblo.meta_description,
+      title: `${pueblo.nombre}, ${pueblo.estado} | MetroGuia`,
+      description: pueblo.descripcion,
       type: 'website',
-      url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}`,
+      url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}/`,
     },
   };
 }
@@ -34,10 +46,15 @@ export default function PuebloDetailPage({ params }) {
 
   if (!pueblo) {
     return (
-      <div style={{ padding: '40px', textAlign: 'center' }}>
-        <h1>Pueblo no encontrado</h1>
-        <p>El pueblo mágico que buscas no existe.</p>
-        <a href="/turismo/pueblos-magicos" style={{ color: 'var(--primary)' }}>
+      <div style={{ padding: '40px 20px', textAlign: 'center', maxWidth: 'var(--maxWidth)', margin: '0 auto' }}>
+        <h1 style={{ color: 'var(--text)', fontFamily: 'Inter, sans-serif' }}>Pueblo no encontrado</h1>
+        <p style={{ color: 'var(--text-muted)', fontFamily: 'Inter, sans-serif' }}>
+          El pueblo mágico que buscas no existe.
+        </p>
+        <a
+          href="/turismo/pueblos-magicos/"
+          style={{ color: 'var(--primary)', fontFamily: 'Inter, sans-serif', textDecoration: 'none' }}
+        >
           Volver a Pueblos Mágicos
         </a>
       </div>
@@ -46,193 +63,152 @@ export default function PuebloDetailPage({ params }) {
 
   const styles = {
     container: {
-      maxWidth: '900px',
+      maxWidth: 'var(--maxWidth)',
       margin: '0 auto',
       backgroundColor: 'var(--bg)',
       color: 'var(--text)',
-      fontFamily: 'system-ui, -apple-system, sans-serif',
+      fontFamily: 'Inter, sans-serif',
     },
     hero: {
       backgroundColor: 'var(--surface)',
-      padding: '40px 20px',
-      borderBottom: '1px solid var(--border)',
+      padding: '3rem 2rem',
+      borderBottom: `1px solid var(--border)`,
     },
     heroContent: {
-      maxWidth: '900px',
+      maxWidth: 'var(--maxWidth)',
       margin: '0 auto',
     },
     breadcrumb: {
-      fontSize: '13px',
-      color: 'var(--text)',
-      opacity: 0.7,
-      marginBottom: '16px',
+      fontSize: '0.875rem',
+      color: 'var(--text-muted)',
+      marginBottom: '1rem',
     },
     breadcrumbLink: {
       color: 'var(--primary)',
       textDecoration: 'none',
     },
     title: {
-      fontSize: '48px',
+      fontSize: '2.5rem',
       fontWeight: 'bold',
-      marginBottom: '12px',
+      marginBottom: '1.5rem',
       color: 'var(--text)',
     },
     heroMeta: {
-      fontSize: '16px',
+      fontSize: '1rem',
       color: 'var(--text)',
-      opacity: 0.8,
-      marginBottom: '20px',
       display: 'flex',
-      gap: '20px',
+      gap: '2rem',
       flexWrap: 'wrap',
+      alignItems: 'center',
     },
     badge: {
       display: 'inline-block',
-      backgroundColor: 'var(--primary)',
+      backgroundColor: regionColors[pueblo.region],
       color: 'white',
-      padding: '6px 12px',
+      padding: '0.5rem 1rem',
       borderRadius: '4px',
-      fontSize: '13px',
+      fontSize: '0.875rem',
       fontWeight: 'bold',
     },
     content: {
-      padding: '40px 20px',
+      padding: '3rem 2rem',
     },
     contentInner: {
-      maxWidth: '900px',
+      maxWidth: 'var(--maxWidth)',
       margin: '0 auto',
     },
     section: {
-      marginBottom: '40px',
+      marginBottom: '3rem',
     },
     sectionTitle: {
-      fontSize: '28px',
+      fontSize: '1.75rem',
       fontWeight: 'bold',
-      marginBottom: '20px',
+      marginBottom: '1.5rem',
       color: 'var(--text)',
-      paddingBottom: '12px',
-      borderBottom: '2px solid var(--primary)',
+      paddingBottom: '0.75rem',
+      borderBottom: `2px solid var(--primary)`,
     },
     description: {
-      fontSize: '16px',
+      fontSize: '1.0625rem',
       lineHeight: 1.8,
       color: 'var(--text)',
-      marginBottom: '24px',
+      marginBottom: '1.5rem',
     },
-    highlightsList: {
+    atractivos: {
       listStyle: 'none',
       padding: 0,
       margin: 0,
     },
-    highlightItem: {
-      padding: '16px',
-      marginBottom: '12px',
+    attractivoItem: {
+      padding: '1rem',
+      marginBottom: '0.75rem',
       backgroundColor: 'var(--surface)',
-      border: '1px solid var(--border)',
-      borderLeft: '4px solid var(--primary)',
+      border: `1px solid var(--border)`,
+      borderLeftWidth: '4px',
+      borderLeftColor: regionColors[pueblo.region],
       borderRadius: '6px',
     },
-    highlightTitle: {
-      fontSize: '16px',
-      fontWeight: 'bold',
-      color: 'var(--text)',
-      marginBottom: '8px',
-    },
-    highlightText: {
-      fontSize: '14px',
-      color: 'var(--text)',
-      opacity: 0.8,
-    },
-    tipsList: {
-      listStyle: 'none',
-      padding: 0,
+    attractivoText: {
+      fontSize: '1rem',
+      color: 'var(--text-muted)',
       margin: 0,
-    },
-    tipItem: {
-      padding: '16px',
-      marginBottom: '12px',
-      backgroundColor: 'var(--surface)',
-      border: '1px solid var(--border)',
-      borderRadius: '6px',
-      paddingLeft: '40px',
-      position: 'relative',
-    },
-    tipIcon: {
-      position: 'absolute',
-      left: '12px',
-      top: '16px',
-      fontSize: '18px',
-    },
-    tipText: {
-      fontSize: '14px',
-      lineHeight: 1.6,
-      color: 'var(--text)',
     },
     comoLlegarBox: {
       backgroundColor: 'var(--surface)',
-      border: '1px solid var(--border)',
-      padding: '24px',
+      border: `1px solid var(--border)`,
+      padding: '2rem',
       borderRadius: '8px',
       lineHeight: 1.8,
     },
-    comoLlegarText: {
-      fontSize: '15px',
+    comoLlegarItem: {
+      marginBottom: '1.5rem',
+    },
+    comoLlegarLabel: {
+      fontSize: '0.9375rem',
+      fontWeight: 'bold',
       color: 'var(--text)',
-      whiteSpace: 'pre-wrap',
+      marginBottom: '0.25rem',
+    },
+    comoLlegarText: {
+      fontSize: '1rem',
+      color: 'var(--text-muted)',
+      margin: 0,
     },
     ctaSection: {
       backgroundColor: 'var(--primary)',
       color: 'white',
-      padding: '32px 20px',
+      padding: '2rem',
       textAlign: 'center',
       borderRadius: '8px',
-      marginTop: '40px',
+      marginTop: '3rem',
     },
     ctaText: {
-      fontSize: '18px',
-      marginBottom: '20px',
+      fontSize: '1.125rem',
+      marginBottom: '1.5rem',
       lineHeight: 1.6,
     },
     ctaLink: {
       display: 'inline-block',
       backgroundColor: 'white',
       color: 'var(--primary)',
-      padding: '12px 32px',
+      padding: '0.75rem 2rem',
       borderRadius: '6px',
       textDecoration: 'none',
       fontWeight: 'bold',
-      fontSize: '16px',
-    },
-    coordsBox: {
-      backgroundColor: 'var(--surface)',
-      border: '1px solid var(--border)',
-      padding: '16px',
-      borderRadius: '6px',
-      fontSize: '13px',
-      color: 'var(--text)',
-      opacity: 0.8,
+      fontSize: '1rem',
     },
   };
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
+    '@type': 'TouristDestination',
     name: pueblo.nombre,
     description: pueblo.descripcion,
-    url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}`,
+    url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}/`,
     address: {
       '@type': 'PostalAddress',
       addressRegion: pueblo.estado,
       addressCountry: 'Mexico',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: pueblo.coords.lat,
-      longitude: pueblo.coords.lng,
-    },
-    potentialAction: {
-      '@type': 'PlanAction',
-      target: `https://metroguia.mx/mundial-2026/planificador`,
     },
   };
 
@@ -243,79 +219,82 @@ export default function PuebloDetailPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div style={styles.container}>
+        {/* Hero Section */}
         <div style={styles.hero}>
           <div style={styles.heroContent}>
             <div style={styles.breadcrumb}>
-              <a href="/turismo/pueblos-magicos" style={styles.breadcrumbLink}>
+              <a href="/turismo/" style={styles.breadcrumbLink}>
+                Turismo
+              </a>
+              {' → '}
+              <a href="/turismo/pueblos-magicos/" style={styles.breadcrumbLink}>
                 Pueblos Mágicos
               </a>
-              {' / '}
+              {' → '}
               <span>{pueblo.nombre}</span>
             </div>
-            <h1 style={styles.title}>{pueblo.h1}</h1>
+            <h1 style={styles.title}>{pueblo.nombre}</h1>
             <div style={styles.heroMeta}>
               <span>
                 <strong>Estado:</strong> {pueblo.estado}
               </span>
-              <span>
-                <strong>Región:</strong> {pueblo.region}
-              </span>
-              <span style={styles.badge}>Designado en {pueblo.año_designacion}</span>
+              <span style={styles.badge}>{pueblo.region}</span>
             </div>
           </div>
         </div>
 
+        {/* Content Section */}
         <div style={styles.content}>
           <div style={styles.contentInner}>
+            {/* Description */}
             <section style={styles.section}>
               <p style={styles.description}>{pueblo.descripcion}</p>
             </section>
 
+            {/* Atractivos */}
             <section style={styles.section}>
-              <h2 style={styles.sectionTitle}>Puntos de Interés</h2>
-              <ul style={styles.highlightsList}>
-                {pueblo.highlights.map((highlight, index) => (
-                  <li key={index} style={styles.highlightItem}>
-                    <h3 style={styles.highlightTitle}>{highlight.titulo}</h3>
-                    <p style={styles.highlightText}>{highlight.descripcion}</p>
+              <h2 style={styles.sectionTitle}>Atractivos Principales</h2>
+              <ul style={styles.atractivos}>
+                {pueblo.atractivos.map((atractivo, idx) => (
+                  <li key={idx} style={styles.attractivoItem}>
+                    <p style={styles.attractivoText}>{atractivo}</p>
                   </li>
                 ))}
               </ul>
             </section>
 
-            <section style={styles.section}>
-              <h2 style={styles.sectionTitle}>Consejos para tu Visita</h2>
-              <ul style={styles.tipsList}>
-                {pueblo.tips.map((tip, index) => (
-                  <li key={index} style={styles.tipItem}>
-                    <span style={styles.tipIcon}>💡</span>
-                    <p style={styles.tipText}>{tip}</p>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
+            {/* Cómo Llegar */}
             <section style={styles.section}>
               <h2 style={styles.sectionTitle}>Cómo Llegar</h2>
               <div style={styles.comoLlegarBox}>
-                <p style={styles.comoLlegarText}>{pueblo.como_llegar}</p>
-              </div>
-              <div style={styles.coordsBox}>
-                Coordenadas: {pueblo.coords.lat.toFixed(4)}, {pueblo.coords.lng.toFixed(4)}
+                {pueblo.comoLlegar.aeropuertoCercano && (
+                  <div style={styles.comoLlegarItem}>
+                    <p style={styles.comoLlegarLabel}>Aeropuerto Cercano</p>
+                    <p style={styles.comoLlegarText}>{pueblo.comoLlegar.aeropuertoCercano}</p>
+                  </div>
+                )}
+                {pueblo.comoLlegar.terminalBus && (
+                  <div style={styles.comoLlegarItem}>
+                    <p style={styles.comoLlegarLabel}>Terminal de Autobús</p>
+                    <p style={styles.comoLlegarText}>{pueblo.comoLlegar.terminalBus}</p>
+                  </div>
+                )}
+                {pueblo.comoLlegar.transportePublico && (
+                  <div style={styles.comoLlegarItem}>
+                    <p style={styles.comoLlegarLabel}>Transporte Público</p>
+                    <p style={styles.comoLlegarText}>{pueblo.comoLlegar.transportePublico}</p>
+                  </div>
+                )}
               </div>
             </section>
 
-            {pueblo.ciudad_metroguia && (
-              <section style={styles.ctaSection}>
-                <p style={styles.ctaText}>
-                  {pueblo.nombre} está cerca de {pueblo.ciudad_metroguia}. Planifica tu viaje al
-                  Mundial 2026 aprovechando esta oportunidad.
-                </p>
-                <a href="/mundial-2026/planificador" style={styles.ctaLink}>
-                  Planificar Mi Viaje
-                </a>
-              </section>
-            )}
+            {/* CTA */}
+            <section style={styles.ctaSection}>
+              <p style={styles.ctaText}>Vuelve a explorar más pueblos mágicos de México</p>
+              <a href="/turismo/pueblos-magicos/" style={styles.ctaLink}>
+                Regresar a la lista completa
+              </a>
+            </section>
           </div>
         </div>
       </div>

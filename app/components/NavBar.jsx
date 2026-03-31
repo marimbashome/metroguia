@@ -106,6 +106,12 @@ export default function NavBar() {
             fontWeight: 500,
             textDecoration: 'none',
           }}>{t.nav?.terminals || 'Terminales'}</a>
+          <a href={`${prefix}/turismo/`} style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            fontWeight: 500,
+            textDecoration: 'none',
+          }}>{t.nav?.tourism || 'Turismo'}</a>
           <a href={`${prefix}/ferries/`} style={{
             color: 'var(--text-muted)',
             fontSize: '0.9rem',

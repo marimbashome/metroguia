@@ -721,6 +721,74 @@ export default function LandingPage() {
       <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem' }}>
         <AffiliateMundial />
       </div>
+      {/* ── Turismo ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+        backgroundColor: 'var(--surface)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <div>
+              <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>Turismo en México</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                177 Pueblos Mágicos, zonas arqueológicas y más — conectados al transporte público
+              </p>
+            </div>
+            <a href="/turismo/" style={{
+              color: 'var(--primary)',
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              textDecoration: 'none',
+            }}>Ver todo →</a>
+          </div>
+          <div className="grid-3">
+            <a href="/turismo/pueblos-magicos/" style={{
+              display: 'block',
+              textDecoration: 'none',
+              color: 'inherit',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+              borderTop: '4px solid #E91E8C',
+              borderRadius: '8px',
+              padding: '1.25rem',
+            }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🏘️</div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>177 Pueblos Mágicos</h3>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Pueblos con encanto colonial, tradiciones vivas y paisajes únicos en 31 estados.</p>
+            </a>
+            <a href="/turismo/zonas-arqueologicas/" style={{
+              display: 'block',
+              textDecoration: 'none',
+              color: 'inherit',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+              borderTop: '4px solid #D97706',
+              borderRadius: '8px',
+              padding: '1.25rem',
+            }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🏛️</div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>Zonas Arqueológicas</h3>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Ciudades prehispánicas mayas, aztecas y zapotecas. De Teotihuacán a Chichén Itzá.</p>
+            </a>
+            <a href="/mundial-2026/" style={{
+              display: 'block',
+              textDecoration: 'none',
+              color: 'inherit',
+              backgroundColor: 'var(--bg)',
+              border: '1px solid var(--border)',
+              borderTop: '4px solid var(--primary)',
+              borderRadius: '8px',
+              padding: '1.25rem',
+            }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>⚽</div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>Mundial FIFA 2026</h3>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Guía de transporte a los estadios en CDMX, Guadalajara y Monterrey.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── How it works ── */}
       <section style={{
         padding: '3rem 1rem',

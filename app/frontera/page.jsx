@@ -124,7 +124,7 @@ export default function FronteraPage() {
 
             <div className="grid-3" style={styles.grid}>
               {cruces.map((cruce) => (
-                <Link
+                <a
                   key={cruce.slug}
                   href={`/frontera/${cruce.slug}/`}
                   style={{ textDecoration: 'none' }}
@@ -174,7 +174,7 @@ export default function FronteraPage() {
                     {/* CTA */}
                     <p style={styles.cta}>Ver detalles →</p>
                   </article>
-                </Link>
+                </a>
               ))}
             </div>
           </section>
