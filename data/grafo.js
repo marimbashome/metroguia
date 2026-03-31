@@ -6302,7 +6302,7 @@ export const grafo = {
     ciudad: 'tren-maya',
     nombre: 'Estación Cancún Tren Maya',
     lineas: ['T1'],
-    adyacentes: [{ slug: 'playa-del-carmen', tiempo: 5, linea: 'T1', tipo: 'linea' }, { slug: 'valladolid', tiempo: 90, linea: 'T7', tipo: 'transbordo' }]
+    adyacentes: [{ slug: 'playa-del-carmen', tiempo: 5, linea: 'T1', tipo: 'linea' }, { slug: 'valladolid', tiempo: 90, linea: 'T7', tipo: 'transbordo' }, { slug: 'puerto-juarez', tiempo: 15, linea: 'transbordo', tipo: 'transbordo' }]
   },
   'capu': {
     ciudad: 'puebla',
@@ -6749,7 +6749,7 @@ export const grafo = {
     ciudad: 'tren-maya',
     nombre: 'Quinta Avenida',
     lineas: ['T1'],
-    adyacentes: [{ slug: 'xcaret', tiempo: 5, linea: 'T1', tipo: 'linea' }, { slug: 'cancun', tiempo: 5, linea: 'T1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'xcaret', tiempo: 5, linea: 'T1', tipo: 'linea' }, { slug: 'cancun', tiempo: 5, linea: 'T1', tipo: 'linea' }, { slug: 'terminal-maritima-playa', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }]
   },
   'playas-tj': {
     ciudad: 'tijuana',
@@ -6852,7 +6852,7 @@ export const grafo = {
     ciudad: 'tijuana',
     nombre: 'Puerto de Entrada San Ysidro',
     lineas: ['1'],
-    adyacentes: [{ slug: 'chaparral', tiempo: 3, linea: '1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'chaparral', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'san-ysidro-usa', tiempo: 45, linea: 'frontera', tipo: 'frontera' }, { slug: 'cbx-tijuana', tiempo: 20, linea: 'transbordo', tipo: 'transbordo' }]
   },
   'santa-rosa-viterbo-qro': {
     ciudad: 'queretaro',
@@ -7026,6 +7026,627 @@ export const grafo = {
     nombre: 'Zona Piel León',
     lineas: ['Morado'],
     adyacentes: [{ slug: 'forum-metropolitano-leon', tiempo: 3, linea: 'Morado', tipo: 'linea' }]
+  },
+
+  // ============================================
+  // FERRY NODES — Conexiones marítimas
+  // ============================================
+  'puerto-juarez': {
+    ciudad: 'tren-maya',
+    nombre: 'Puerto Juárez (Ferry a Isla Mujeres)',
+    lineas: ['ferry'],
+    adyacentes: [
+      { slug: 'cancun', tiempo: 15, linea: 'transbordo', tipo: 'transbordo' },
+      { slug: 'isla-mujeres', tiempo: 20, linea: 'ferry', tipo: 'ferry' }
+    ]
+  },
+  'isla-mujeres': {
+    ciudad: 'tren-maya',
+    nombre: 'Isla Mujeres',
+    lineas: ['ferry'],
+    adyacentes: [
+      { slug: 'puerto-juarez', tiempo: 20, linea: 'ferry', tipo: 'ferry' }
+    ]
+  },
+  'terminal-maritima-playa': {
+    ciudad: 'tren-maya',
+    nombre: 'Terminal Marítima Playa del Carmen (Ferry a Cozumel)',
+    lineas: ['ferry'],
+    adyacentes: [
+      { slug: 'playa-del-carmen', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' },
+      { slug: 'cozumel', tiempo: 35, linea: 'ferry', tipo: 'ferry' }
+    ]
+  },
+  'cozumel': {
+    ciudad: 'tren-maya',
+    nombre: 'Cozumel',
+    lineas: ['ferry'],
+    adyacentes: [
+      { slug: 'terminal-maritima-playa', tiempo: 35, linea: 'ferry', tipo: 'ferry' }
+    ]
+  },
+
+  // ============================================
+  // FRONTERA NODES — Cruces fronterizos
+  // ============================================
+  'san-ysidro-usa': {
+    ciudad: 'tijuana',
+    nombre: 'San Ysidro (Lado USA)',
+    lineas: ['frontera'],
+    adyacentes: [
+      { slug: 'san-ysidro-frontera', tiempo: 45, linea: 'frontera', tipo: 'frontera' }
+    ]
+  },
+  'cbx-tijuana': {
+    ciudad: 'tijuana',
+    nombre: 'Cross Border Xpress (CBX)',
+    lineas: ['frontera'],
+    adyacentes: [
+  'cbx-tijuana': {
+    ciudad: 'tijuana',
+    nombre: 'Cross Border Xpress (CBX)',
+    lineas: ['frontera'],
+    adyacentes: [
+      { slug: 'san-ysidro-frontera', tiempo: 20, linea: 'transbordo', tipo: 'transbordo' }
+    ]
+  },
+
+  // ============================================
+  // TREN MAYA — Estaciones faltantes para completar el loop
+  // ============================================
+  'merida-teya': {
+    ciudad: 'tren-maya',
+    nombre: 'Mérida-Teya',
+    lineas: ['T7'],
+    adyacentes: [
+      { slug: 'izamal', tiempo: 45, linea: 'T7', tipo: 'linea' },
+      { slug: 'chichen-itza', tiempo: 60, linea: 'T7', tipo: 'linea' }
+    ]
+  },
+  'calkini': {
+    ciudad: 'tren-maya',
+    nombre: 'Calkiní',
+    lineas: ['T2'],
+    adyacentes: [
+      { slug: 'campeche', tiempo: 50, linea: 'T2', tipo: 'linea' },
+      { slug: 'escarcega', tiempo: 60, linea: 'T2', tipo: 'linea' }
+    ]
+  },
+  'campeche': {
+    ciudad: 'tren-maya',
+    nombre: 'Campeche',
+    lineas: ['T2'],
+    adyacentes: [
+      { slug: 'calkini', tiempo: 50, linea: 'T2', tipo: 'linea' }
+    ]
+  },
+  'puerto-morelos': {
+    ciudad: 'tren-maya',
+    nombre: 'Puerto Morelos',
+    lineas: ['T1'],
+    adyacentes: [
+      { slug: 'playa-del-carmen', tiempo: 30, linea: 'T1', tipo: 'linea' },
+      { slug: 'cancun', tiempo: 30, linea: 'T1', tipo: 'linea' }
+    ]
+  },
+
+  // ============================================
+  // CHIHUAHUA BRT BOWÍ — 14 estaciones
+  // ============================================
+  'terminal-norte-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Terminal Norte Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'periferico-norte-bowi', tiempo: 3, linea: '3', tipo: 'linea' },
+      { slug: 'centro-chihuahua', tiempo: 8, linea: '3', tipo: 'transbordo' }
+    ]
+  },
+  'periferico-norte-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Periférico Norte Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'terminal-norte-bowi', tiempo: 3, linea: '3', tipo: 'linea' },
+      { slug: 'deportiva-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'deportiva-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Deportiva Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'periferico-norte-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'universidad-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'universidad-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Universidad Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'deportiva-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'politecnico-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'politecnico-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Politécnico Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'universidad-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'av-juarez-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'av-juarez-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Av. Juárez Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'politecnico-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'centro-bowi', tiempo: 5, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'centro-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Centro Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'av-juarez-bowi', tiempo: 5, linea: '3', tipo: 'linea' },
+      { slug: 'catedral-chihuahua', tiempo: 3, linea: '3', tipo: 'transbordo' },
+      { slug: 'av-libertad-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'av-libertad-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Av. Libertad Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'centro-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'paseo-bolvar-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'paseo-bolvar-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Paseo Bolívar Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'av-libertad-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'av-pacheco-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'av-pacheco-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Av. Pacheco Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'paseo-bolvar-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'av-tecnologico-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'av-tecnologico-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Av. Tecnológico Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'av-pacheco-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'poliforum-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'poliforum-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Polifórum Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'av-tecnologico-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'campus-ii-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'campus-ii-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Campus II Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'poliforum-bowi', tiempo: 4, linea: '3', tipo: 'linea' },
+      { slug: 'terminal-sur-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'terminal-sur-bowi': {
+    ciudad: 'chihuahua',
+    nombre: 'Terminal Sur Bowí',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'campus-ii-bowi', tiempo: 4, linea: '3', tipo: 'linea' }
+    ]
+  },
+
+  // ============================================
+  // TIJUANA SITT BRT — 12 estaciones
+  // ============================================
+  'garita-san-ysidro-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Garita San Ysidro SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'zona-norte-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'san-ysidro-frontera', tiempo: 8, linea: '2', tipo: 'transbordo' }
+    ]
+  },
+  'zona-norte-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Zona Norte SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'garita-san-ysidro-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'plaza-civica-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'plaza-civica-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Plaza Cívica SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'zona-norte-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'catedral-itt', tiempo: 3, linea: '2', tipo: 'transbordo' },
+      { slug: 'pino-suarez-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'pino-suarez-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Pino Suárez SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'plaza-civica-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'hidalgo-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'hidalgo-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Hidalgo SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'pino-suarez-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'rio-tijuana-brt', tiempo: 5, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'rio-tijuana-brt': {
+    ciudad: 'tijuana',
+    nombre: 'Río Tijuana BRT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'hidalgo-sitt', tiempo: 5, linea: '2', tipo: 'linea' },
+      { slug: 'otay-mesa-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'otay-mesa-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Otay Mesa SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'rio-tijuana-brt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'la-mesa-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'la-mesa-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'La Mesa SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'otay-mesa-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'villa-benito-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'villa-benito-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Villa Benito SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'la-mesa-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'camino-verde-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'camino-verde-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Camino Verde SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'villa-benito-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'hospital-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'hospital-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Hospital SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'camino-verde-sitt', tiempo: 4, linea: '2', tipo: 'linea' },
+      { slug: 'lomas-taurinas-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+  'lomas-taurinas-sitt': {
+    ciudad: 'tijuana',
+    nombre: 'Lomas Taurinas SITT',
+    lineas: ['2'],
+    adyacentes: [
+      { slug: 'hospital-sitt', tiempo: 4, linea: '2', tipo: 'linea' }
+    ]
+  },
+
+  // ============================================
+  // CAMPECHE TREN LIGERO — 14 estaciones
+  // ============================================
+  'centro-historico-camp': {
+    ciudad: 'campeche',
+    nombre: 'Centro Histórico Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'puerta-tierra-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'intermodal-tren-maya', tiempo: 8, linea: '1', tipo: 'transbordo' }
+    ]
+  },
+  'puerta-tierra-camp': {
+    ciudad: 'campeche',
+    nombre: 'Puerta de Tierra Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'av-juan-pablo-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'av-juan-pablo-camp': {
+    ciudad: 'campeche',
+    nombre: 'Av. Juan Pablo II Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'puerta-tierra-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'chiapas-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'chiapas-camp': {
+    ciudad: 'campeche',
+    nombre: 'Chiapas Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'av-juan-pablo-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'benemerito-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'benemerito-camp': {
+    ciudad: 'campeche',
+    nombre: 'Benemérito Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'chiapas-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'republica-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'republica-camp': {
+    ciudad: 'campeche',
+    nombre: 'República Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'benemerito-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'tecnologico-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'tecnologico-camp': {
+    ciudad: 'campeche',
+    nombre: 'Tecnológico Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'republica-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'bosque-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'bosque-camp': {
+    ciudad: 'campeche',
+    nombre: 'Bosque Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'tecnologico-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'la-laguna-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'la-laguna-camp': {
+    ciudad: 'campeche',
+    nombre: 'La Laguna Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'bosque-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'san-roman-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'san-roman-camp': {
+    ciudad: 'campeche',
+    nombre: 'San Román Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'la-laguna-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'helioport-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'helioport-camp': {
+    ciudad: 'campeche',
+    nombre: 'Helipuerto Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'san-roman-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'costa-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'costa-camp': {
+    ciudad: 'campeche',
+    nombre: 'Costa Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'helioport-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'zona-costera-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'zona-costera-camp': {
+    ciudad: 'campeche',
+    nombre: 'Zona Costera Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'costa-camp', tiempo: 4, linea: '1', tipo: 'linea' },
+      { slug: 'san-francisco-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'san-francisco-camp': {
+    ciudad: 'campeche',
+    nombre: 'San Francisco Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'zona-costera-camp', tiempo: 4, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'intermodal-tren-maya': {
+    ciudad: 'campeche',
+    nombre: 'Intermodal Tren Maya Campeche',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-camp', tiempo: 8, linea: '1', tipo: 'transbordo' },
+      { slug: 'campeche', tiempo: 15, linea: 'T2', tipo: 'transbordo' }
+    ]
+  },
+
+  // ============================================
+  // PUEBLA LÍNEA 4 — estaciones
+  // ============================================
+  'atlixcayotl-pue': {
+    ciudad: 'puebla',
+    nombre: 'Atlixcayotl Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'cholula', tiempo: 3, linea: '4', tipo: 'transbordo' },
+      { slug: 'huejotzacan-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'huejotzacan-pue': {
+    ciudad: 'puebla',
+    nombre: 'Huejotzacán Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'atlixcayotl-pue', tiempo: 3, linea: '4', tipo: 'linea' },
+      { slug: 'angelopolis', tiempo: 3, linea: '4', tipo: 'transbordo' },
+      { slug: 'reserva-territorial-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'reserva-territorial-pue': {
+    ciudad: 'puebla',
+    nombre: 'Reserva Territorial Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'huejotzacan-pue', tiempo: 3, linea: '4', tipo: 'linea' },
+      { slug: 'loma-del-boni-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'loma-del-boni-pue': {
+    ciudad: 'puebla',
+    nombre: 'Loma del Boni Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'reserva-territorial-pue', tiempo: 3, linea: '4', tipo: 'linea' },
+      { slug: 'san-andres-cholula-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'san-andres-cholula-pue': {
+    ciudad: 'puebla',
+    nombre: 'San Andrés Cholula Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'loma-del-boni-pue', tiempo: 3, linea: '4', tipo: 'linea' },
+      { slug: 'valsequillo-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'valsequillo-pue': {
+    ciudad: 'puebla',
+    nombre: 'Valsequillo Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'san-andres-cholula-pue', tiempo: 3, linea: '4', tipo: 'linea' },
+      { slug: 'loreto', tiempo: 3, linea: '4', tipo: 'transbordo' },
+      { slug: 'santa-clara-xitla-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+  'santa-clara-xitla-pue': {
+    ciudad: 'puebla',
+    nombre: 'Santa Clara Xitla Puebla',
+    lineas: ['4'],
+    adyacentes: [
+      { slug: 'valsequillo-pue', tiempo: 3, linea: '4', tipo: 'linea' }
+    ]
+  },
+
+  // ============================================
+  // TOURIST HUBS — Oaxaca, Morelia, Veracruz, Villahermosa
+  // ============================================
+  'centro-historico-oax': {
+    ciudad: 'oaxaca',
+    nombre: 'Centro Histórico Oaxaca',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'monte-alban-oax', tiempo: 30, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'monte-alban-oax': {
+    ciudad: 'oaxaca',
+    nombre: 'Monte Albán Oaxaca',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-oax', tiempo: 30, linea: '1', tipo: 'linea' }
+    ]
+  },
+
+  'centro-historico-morelia': {
+    ciudad: 'morelia',
+    nombre: 'Centro Histórico Morelia',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'santuario-morelia', tiempo: 25, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'santuario-morelia': {
+    ciudad: 'morelia',
+    nombre: 'Santuario de Guadalupe Morelia',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-morelia', tiempo: 25, linea: '1', tipo: 'linea' }
+    ]
+  },
+
+  'centro-historico-ver': {
+    ciudad: 'veracruz',
+    nombre: 'Centro Histórico Veracruz',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'puerto-ver', tiempo: 20, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'puerto-ver': {
+    ciudad: 'veracruz',
+    nombre: 'Puerto de Veracruz',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-ver', tiempo: 20, linea: '1', tipo: 'linea' }
+    ]
+  },
+
+  'centro-historico-villa': {
+    ciudad: 'villahermosa',
+    nombre: 'Centro Histórico Villahermosa',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'cimadevilla', tiempo: 20, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'cimadevilla': {
+    ciudad: 'villahermosa',
+    nombre: 'Cima de Villahermosa',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'centro-historico-villa', tiempo: 20, linea: '1', tipo: 'linea' }
+    ]
   }
 
 };

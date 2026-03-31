@@ -13,7 +13,9 @@
     "explore": "탐색",
     "search": "역 검색...",
     "planRoute": "경로 계획",
-    "language": "언어"
+    "language": "언어",
+    "airports": "공항",
+    "terminals": "터미널"
   },
   "home": {
     "heroTitle": "멕시코 대중교통 가이드",

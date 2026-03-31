@@ -13,7 +13,9 @@
     "explore": "探索",
     "search": "駅を検索...",
     "planRoute": "ルートを計画",
-    "language": "言語"
+    "language": "言語",
+    "airports": "空港",
+    "terminals": "ターミナル"
   },
   "home": {
     "heroTitle": "メキシコの公共交通ガイド",

@@ -52,5 +52,34 @@ export const lineasChihuahua = [
     seo_title: "Línea Urbana Chihuahua — Centro Histórico y Revolución | MetroGuia",
     meta_description: "Línea urbana de Chihuahua. Centro Histórico, Palacio de Gobierno, Catedral y museos revolucionarios.",
     h1: "Línea Urbana Chihuahua — Patrimonio Histórico"
+  },
+  {
+    id: "3",
+    color: "#2563EB",
+    colorNombre: "Azul BRT",
+    inicio: "Terminal Norte",
+    fin: "Terminal Sur",
+    total: 14,
+    municipios: ["Chihuahua"],
+    descripcion: "Línea 3 BRT Bowí: sistema moderno de transporte rápido de 22 km que conecta Terminal Norte hasta Terminal Sur. Pasa por zonas educativas (universidades), comerciales (Américas), residenciales (Altavista, Campestre) y zona industrial. Transporte de clase mundial para viajeros FIFA 2026.",
+    estaciones_turisticas: ["terminal-norte-bowi", "centro-bowi", "americas-chi", "terminal-sur-bowi"],
+    estaciones: ["terminal-norte-bowi", "periferico-norte", "universidad-chihuahua", "tecnologico-chihuahua", "sacramento", "ninos-heroes-chi", "centro-bowi", "independencia-chi", "americas-chi", "altavista-chi", "cantera-chi", "campestre-chi", "vialidad-sacramento", "terminal-sur-bowi"],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 Día: BRT Bowí Norte a Sur",
+      paradas: [
+        { estacion: "terminal-norte-bowi", actividad: "8:00 AM - Salida de Terminal Norte" },
+        { estacion: "periferico-norte", actividad: "8:15 AM - Compras en centro comercial" },
+        { estacion: "universidad-chihuahua", actividad: "8:45 AM - Visita Campus universitario" },
+        { estacion: "tecnologico-chihuahua", actividad: "9:30 AM - Tour institución técnica" },
+        { estacion: "centro-bowi", actividad: "11:00 AM - Transferencia y descanso en centro" },
+        { estacion: "independencia-chi", actividad: "12:00 PM - Almuerzo en Avenida Independencia" },
+        { estacion: "americas-chi", actividad: "1:30 PM - Compras Centro Comercial Américas" },
+        { estacion: "altavista-chi", actividad: "3:30 PM - Paseo zona residencial" },
+        { estacion: "terminal-sur-bowi", actividad: "5:00 PM - Llegada Terminal Sur" }
+      ]
+    },
+    seo_title: "Línea 3 BRT Bowí — Sistema Rápido Chihuahua | MetroGuia",
+    meta_description: "BRT Bowí Línea 3: transporte rápido de 22 km en Chihuahua. Terminal Norte a Terminal Sur con 14 estaciones.",
+    h1: "Línea 3 BRT Bowí — Transporte Rápido Moderno"
   }
 ];

@@ -73,5 +73,32 @@ export const lineasPuebla = [
     seo_title: "Corredor 3 RUTA BRT Puebla — Naturaleza y Periférico Ecológico | MetroGuia",
     meta_description: "Corredor 3 del RUTA BRT de Puebla. Conecta zonas residenciales con el Periférico Ecológico.",
     h1: "Corredor 3 — RUTA BRT Puebla"
+  },
+  {
+    id: "4",
+    color: "#7C3AED",
+    colorNombre: "Violeta oscuro",
+    inicio: "FINSA",
+    fin: "Valsequillo",
+    total: 16,
+    municipios: ["Puebla"],
+    descripcion: "Corredor oriente que conecta el sector comercial e industrial de FINSA con la zona residencial de Valsequillo. Recorre el Periférico norte atravesando áreas de desarrollo empresarial y zonas residenciales en expansión.",
+    estaciones_turisticas: ["finsa-puebla", "plaza-crystal", "atlixcayotl"],
+    estaciones: ["finsa-puebla", "periferico-norte-pue", "san-jose-xilotzingo", "bosques-puebla", "plaza-crystal", "periferico-ecologico-line4", "lomas-angelopolis", "atlixcayotl", "via-atlixcayotl", "valsequillo-pue"],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día: Desarrollo Empresarial y Zonas Modernas",
+      paradas: [
+        { estacion: "finsa-puebla", actividad: "FINSA y zona comercial (8:00 AM)" },
+        { estacion: "periferico-norte-pue", actividad: "Periférico norte y servicios (9:30 AM)" },
+        { estacion: "san-jose-xilotzingo", actividad: "San José Xilotzingo, área residencial (10:30 AM)" },
+        { estacion: "bosques-puebla", actividad: "Bosques de Puebla, zonas verdes (11:30 AM)" },
+        { estacion: "plaza-crystal", actividad: "Plaza Crystal, comercios y compras (1:00 PM)" },
+        { estacion: "atlixcayotl", actividad: "Atlixcayotl, centro de negocios (2:30 PM)" },
+        { estacion: "valsequillo-pue", actividad: "Valsequillo, fin de línea (4:00 PM)" }
+      ]
+    },
+    seo_title: "Corredor 4 RUTA BRT Puebla — FINSA a Valsequillo | MetroGuia",
+    meta_description: "Corredor 4 del RUTA BRT de Puebla. Conecta FINSA con Valsequillo via Periférico norte, pasando por zonas comerciales y residenciales modernas.",
+    h1: "Corredor 4 — RUTA BRT Puebla"
   }
 ];

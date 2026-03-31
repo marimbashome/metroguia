@@ -5,12 +5,12 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 export function generateMetadata() {
   return {
-    title: 'Tren Maya — 1554 km Caribe: Cancún, Riviera Maya, Chichén Itzá | MetroGuia',
-    description: 'Tren Maya: guía turística de 1554 km conectando el Caribe mexicano. Cancún, Playa del Carmen, Tulum, Bacalar, Chichén Itzá, Mérida. Tren turístico perfecto para fans del FIFA 2026. Destino masivo de viajeros.',
+    title: 'Tren Maya — 1,554 km Loop Completo: Palenque, Mérida, Cancún, Tulum, Chetumal | MetroGuia',
+    description: 'Tren Maya: guía completa del loop de 1,554 km a través de 5 estados mexicanos (Chiapas, Tabasco, Campeche, Yucatán, Quintana Roo). 34+ estaciones, 7 tramos: Palenque UNESCO, Escárcega, Mérida, Chichén Itzá (7 Maravillas), Cancún, Riviera Maya, Tulum, Chetumal. Tren turístico premium.',
     keywords: 'Tren Maya, Yucatán, Quintana Roo, Cancún, Riviera Maya, Tulum, Chichén Itzá, Mérida, tren turístico, viaje caribeño, transporte turístico',
     openGraph: {
-      title: 'Tren Maya — Conecta el Caribe Mexicano',
-      description: 'Descubre el Tren Maya: Cancún, Riviera Maya, Chichén Itzá, Mérida y más. El tren turístico más exclusivo de México.',
+      title: 'Tren Maya — Loop Completo: Chiapas a Quintana Roo',
+      description: 'Descubre el Tren Maya completo: 1,554 km en loop a través de 5 estados. Palenque, Escárcega, Mérida, Chichén Itzá, Cancún, Tulum y Chetumal. 34+ estaciones y 7 tramos del tren turístico más grande de México.',
       url: 'https://metroguia.mx/tren-maya',
       type: 'website',
     },
@@ -178,16 +178,16 @@ export default function TrenMayaPage() {
         <h2 style={sectionTitleStyles}>Sobre el Tren Maya</h2>
         <div style={infoBoxStyles}>
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#374151', marginBottom: '15px' }}>
-            <strong>El Tren Maya</strong> es un tren turístico de pasajeros inaugurado en 2023 que recorre 1,554 kilómetros en forma de circuito por la Península de Yucatán. Conecta directamente los principales destinos turísticos del sureste de México: desde las playas de Cancún y Riviera Maya hasta las zonas arqueológicas de Chichén Itzá, Palenque y Uxmal.
+            <strong>El Tren Maya</strong> es un tren turístico de pasajeros inaugurado en 2023 que recorre 1,554 kilómetros en forma de loop completo a través de 5 estados mexicanos: Chiapas, Tabasco, Campeche, Yucatán y Quintana Roo. Conecta 34+ estaciones y destinos principales: desde la UNESCO Palenque (Chiapas) pasando por Mérida, Chichén Itzá (7 Maravillas), Cancún y toda la Riviera Maya hasta Tulum, Bacalar y Chetumal, formando un circuito cerrado.
           </p>
           <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#374151', paddingLeft: '20px' }}>
             <li><strong>Inaugurado:</strong> 2023, ferrocarril turístico moderno</li>
-            <li><strong>Recorrido:</strong> 1554 km en forma de circuito cerrado</li>
+            <li><strong>Recorrido:</strong> 1,554 km loop completo en 7 tramos, cobertura en 5 estados mexicanos</li>
             <li><strong>Velocidad máxima:</strong> 160 km/h</li>
-            <li><strong>Estaciones principales:</strong> Cancún, Playa del Carmen, Tulum, Bacalar, Palenque, Mérida, Chichén Itzá</li>
+            <li><strong>Estaciones principales:</strong> Palenque (UNESCO), Escárcega, Campeche, Mérida, Chichén Itzá (7 Maravillas), Cancún, Playa del Carmen, Xcaret, Tulum, Bacalar, Chetumal</li>
             <li><strong>Precio típico:</strong> Desde $480 MXN (clase turista) hasta $1500+ (clases premium)</li>
             <li><strong>Duración de viajes:</strong> 1-3 horas entre estaciones principales</li>
-            <li><strong>Destino turístico:</strong> Maravillas del mundo maya, cenotes, playas y gastronomía yucateca</li>
+            <li><strong>Destino turístico:</strong> Patrimonio UNESCO, 7 Maravillas del Mundo, Pueblos Mágicos, cenotes, playas, arqueología maya, gastronomía regional de 5 estados</li>
           </ul>
         </div>
         <AdBannerLazy adSlot="4434764790" format="auto" />
@@ -223,7 +223,7 @@ export default function TrenMayaPage() {
 
       {/* TRAMOS/LINEAS */}
       <section style={containerStyles}>
-        <h2 style={sectionTitleStyles}>Los 6 Tramos Principales del Tren Maya</h2>
+        <h2 style={sectionTitleStyles}>Los 7 Tramos del Tren Maya — Loop Completo de 1,554 km</h2>
         <div style={gridStyles}>
           {lineasTrenMaya.map((tramo) => (
             <Link

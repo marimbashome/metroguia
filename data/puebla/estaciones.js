@@ -330,5 +330,196 @@ export const estacionesPuebla = [
     tips: ["Talavera poblana auténtica", "Cerámica de calidad", "Precios negociables", "Artesanos locales", "Ideal para souvenirs"],
     mejor_horario: "Mañana para más opciones",
     mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "finsa-puebla",
+    nombre: "FINSA",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "industrial",
+    pois: [
+      { nombre: "Parque Industrial FINSA", tipo: "industrial", distancia: "2 min caminando" },
+      { nombre: "Zona de servicios logísticos", tipo: "comercio", distancia: "5 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada FINSA RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada FINSA del RUTA BRT Corredor 4. Inicio de línea, acceso a zona industrial de Puebla.",
+    h1: "Parada FINSA — RUTA Corredor 4",
+    intro: "Estación terminal norte del Corredor 4 RUTA, ubicada en el Parque Industrial FINSA. Punto de partida para recorrer hacia el sur de Puebla.",
+    tips: ["Zona industrial principal", "Servicios de logística", "Acceso a empresas manufactureras", "Estacionamiento disponible"],
+    mejor_horario: "Mañana para evitar congestión",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "periferico-norte-pue",
+    nombre: "Periférico Norte",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "transporte",
+    pois: [
+      { nombre: "Periférico de Puebla", tipo: "transporte", distancia: "1 min caminando" },
+      { nombre: "Estaciones de servicio", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Periférico Norte RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada Periférico Norte del RUTA BRT Corredor 4. Acceso a principal vía de circunvalación de Puebla.",
+    h1: "Parada Periférico Norte — RUTA Corredor 4",
+    intro: "Estación estratégica en el Periférico Norte, principal ruta de circunvalación de Puebla. Acceso a diversas zonas de la ciudad.",
+    tips: ["Conexión a Periférico", "Estaciones de combustible cercanas", "Acceso a múltiples zonas", "Tránsito estratégico"],
+    mejor_horario: "Mañana o atardecer",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "san-jose-xilotzingo",
+    nombre: "San José Xilotzingo",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial San José Xilotzingo", tipo: "residencial", distancia: "2 min caminando" },
+      { nombre: "Comercios locales", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada San José Xilotzingo RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada San José Xilotzingo del RUTA BRT Corredor 4. Acceso a zona residencial del norte poblano.",
+    h1: "Parada San José Xilotzingo — RUTA Corredor 4",
+    intro: "Estación en la zona residencial de San José Xilotzingo, área poblada del norte de Puebla con servicios locales y comercios.",
+    tips: ["Zona residencial activa", "Tiendas locales", "Servicios de proximidad", "Comunidad accesible"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "bosques-puebla",
+    nombre: "Bosques de Santa Anita",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona Bosques de Santa Anita", tipo: "residencial", distancia: "2 min caminando" },
+      { nombre: "Centros comerciales", tipo: "comercio", distancia: "5 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Bosques de Santa Anita RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada Bosques de Santa Anita del RUTA BRT Corredor 4. Acceso a zona residencial de lujo en Puebla.",
+    h1: "Parada Bosques de Santa Anita — RUTA Corredor 4",
+    intro: "Estación en la zona residencial de Bosques de Santa Anita, área de desarrollo moderno con servicios premium y comercios selectos.",
+    tips: ["Zona residencial moderna", "Centros comerciales cercanos", "Servicios de calidad", "Zona segura y bien desarrollada"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "plaza-crystal",
+    nombre: "Plaza Crystal",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Centro Comercial Plaza Crystal", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Restaurantes y cines", tipo: "entretenimiento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Plaza Crystal RUTA BRT Puebla — Centro Comercial | MetroGuia",
+    meta_description: "Parada Plaza Crystal del RUTA BRT Corredor 4. Acceso a centro comercial principal del norte poblano.",
+    h1: "Parada Plaza Crystal — RUTA Corredor 4",
+    intro: "Estación con acceso directo al Centro Comercial Plaza Crystal, principal centro de compras y entretenimiento del norte de Puebla.",
+    tips: ["Centro comercial importante", "Tiendas departamentales", "Restaurantes y cines", "Zona de entretenimiento", "Ideal para compras"],
+    mejor_horario: "Tarde y noche para entretenimiento",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "periferico-ecologico-line4",
+    nombre: "Periférico Ecológico",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "parques",
+    pois: [
+      { nombre: "Periférico Ecológico de Puebla", tipo: "parque", distancia: "3 min caminando" },
+      { nombre: "Ciclopista y áreas verdes", tipo: "recreación", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Periférico Ecológico RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada Periférico Ecológico del RUTA BRT Corredor 4. Acceso a espacios verdes y recreación.",
+    h1: "Parada Periférico Ecológico — RUTA Corredor 4",
+    intro: "Estación con acceso al Periférico Ecológico desde el Corredor 4, para recreación, ciclopista y espacios verdes.",
+    tips: ["Áreas verdes amplias", "Ciclopista para ciclistas", "Ejercicio y naturaleza", "Aire puro", "Ideal para familias"],
+    mejor_horario: "Mañana o atardecer",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "lomas-angelopolis",
+    nombre: "Lomas de Angelópolis",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Zona Lomas de Angelópolis", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Centros comerciales y restaurantes", tipo: "entretenimiento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Lomas de Angelópolis RUTA BRT Puebla — Zona Comercial Premium | MetroGuia",
+    meta_description: "Parada Lomas de Angelópolis del RUTA BRT Corredor 4. Acceso a zona comercial y residencial de lujo.",
+    h1: "Parada Lomas de Angelópolis — RUTA Corredor 4",
+    intro: "Estación en la prestigiosa zona Lomas de Angelópolis, centro comercial y residencial de lujo con servicios premium y gastronomía selecta.",
+    tips: ["Zona comercial premium", "Restaurantes de calidad", "Servicios selectos", "Zona segura y moderna", "Compras de lujo"],
+    mejor_horario: "Tarde y noche para restaurantes",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "atlixcayotl",
+    nombre: "Atlixcáyotl",
+    linea: ["3", "4"],
+    municipio: "Puebla",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Avenida Atlixcáyotl", tipo: "comercio", distancia: "1 min caminando" },
+      { nombre: "Plazas comerciales", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Zona de servicios", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: ["3", "4"],
+    seo_title: "Parada Atlixcáyotl RUTA BRT Puebla — Transferencia L3-L4 | MetroGuia",
+    meta_description: "Parada Atlixcáyotl del RUTA BRT. Transferencia entre Corredores 3 y 4. Zona comercial importante de Puebla.",
+    h1: "Parada Atlixcáyotl — RUTA Corredores 3 & 4",
+    intro: "Estación de transferencia entre los Corredores 3 y 4, ubicada en la importante Avenida Atlixcáyotl con múltiples opciones comerciales.",
+    tips: ["Transferencia L3-L4 disponible", "Zona comercial activa", "Múltiples tiendas", "Centro de servicios", "Conexión estratégica"],
+    mejor_horario: "Mañana y tarde",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "via-atlixcayotl",
+    nombre: "Vía Atlixcáyotl",
+    linea: "4",
+    municipio: "Puebla",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial Vía Atlixcáyotl", tipo: "residencial", distancia: "2 min caminando" },
+      { nombre: "Comercios y servicios locales", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Parada Vía Atlixcáyotl RUTA BRT Puebla — Corredor 4 | MetroGuia",
+    meta_description: "Parada Vía Atlixcáyotl del RUTA BRT Corredor 4. Zona residencial cercana a Atlixcáyotl.",
+    h1: "Parada Vía Atlixcáyotl — RUTA Corredor 4",
+    intro: "Estación en la zona residencial de Vía Atlixcáyotl, área conectada al importante eje comercial con servicios locales.",
+    tips: ["Zona residencial consolidada", "Servicios locales", "Comercios de proximidad", "Comunidad activa"],
+    mejor_horario: "Mañana y tarde",
+    mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "valsequillo-pue",
+    nombre: "Valsequillo",
+    linea: ["3", "4"],
+    municipio: "Puebla",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona de Valsequillo", tipo: "residencial", distancia: "2 min caminando" },
+      { nombre: "Mercado local", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: ["3", "4"],
+    seo_title: "Parada Valsequillo RUTA BRT Puebla — Transferencia L3-L4 Terminal | MetroGuia",
+    meta_description: "Parada Valsequillo del RUTA BRT. Terminal sur de Corredor 4, transferencia con Corredor 3.",
+    h1: "Parada Valsequillo — RUTA Corredores 3 & 4",
+    intro: "Estación terminal sur del Corredor 4 RUTA, con transferencia al Corredor 3. Importante nodo de conexión en la zona residencial de Valsequillo.",
+    tips: ["Terminal de Corredor 4", "Transferencia L3-L4", "Zona residencial sur", "Mercado local cercano", "Conexión importante"],
+    mejor_horario: "Mañana para menos aglomeración",
+    mundial_relevancia: "Sin relevancia directa"
   }
 ];

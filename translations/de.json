@@ -13,7 +13,9 @@
     "explore": "Erkunden",
     "search": "Station suchen...",
     "planRoute": "Route planen",
-    "language": "Sprache"
+    "language": "Sprache",
+    "airports": "Flughäfen",
+    "terminals": "Busbahnhöfe"
   },
   "home": {
     "heroTitle": "Ihr Leitfaden zum öffentlichen Nahverkehr in Mexiko",

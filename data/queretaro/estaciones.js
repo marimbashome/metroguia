@@ -577,5 +577,595 @@ export const estacionesQueretaro = [
     tips: ["Campus universitario amplio", "Biblioteca moderna", "Actividades culturales", "Zona académica", "Bus frecuente en semestre"],
     mejor_horario: "Mañana para estudiantes",
     mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "constituyentes-l154",
+    nombre: "Constituyentes L154",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Avenida Constituyentes", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Tiendas y restaurantes", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Constituyentes L154 Querétaro — Zona Comercial | MetroGuia",
+    meta_description: "Estación Constituyentes L154 del Q-BUS. Zona comercial en línea nueva hacia Juriquilla.",
+    h1: "Estación Constituyentes — Línea L154",
+    intro: "Parada comercial en la avenida Constituyentes conectando Centro Histórico con Juriquilla.",
+    tips: ["Zona comercial accesible", "Tiendas variadas", "Servicios de barrio", "Nueva línea L154", "Conexión rápida a Juriquilla"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Centro urbano moderno"
+  },
+  {
+    slug: "cimatario-l154",
+    nombre: "Cimatario L154",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "natural",
+    pois: [
+      { nombre: "Cerro de Cimatario", tipo: "naturaleza", distancia: "3 min caminando" },
+      { nombre: "Vista panorámica", tipo: "vistas", distancia: "5 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Cimatario L154 Querétaro — Vista Panorámica | MetroGuia",
+    meta_description: "Estación Cimatario L154 del Q-BUS. Vistas panorámicas de Querétaro en línea nueva.",
+    h1: "Estación Cimatario — Línea L154",
+    intro: "Acceso al Cerro de Cimatario con vistas panorámicas de la ciudad desde la nueva línea L154.",
+    tips: ["Vista panorámica espectacular", "Nueva línea L154", "Aire fresco", "Fotografía excelente", "Camino accesible"],
+    mejor_horario: "Atardecer",
+    mundial_relevancia: "Atracción natural"
+  },
+  {
+    slug: "santa-barbara-qro",
+    nombre: "Santa Bárbara",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial Santa Bárbara", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Comercios locales", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Santa Bárbara Querétaro — Zona Residencial | MetroGuia",
+    meta_description: "Estación Santa Bárbara del Q-BUS. Zona residencial en línea L154 hacia Juriquilla.",
+    h1: "Estación Santa Bárbara — Línea L154",
+    intro: "Zona residencial en la ruta de la línea L154 hacia Juriquilla Ampliación.",
+    tips: ["Zona residencial moderna", "Comercios locales", "Ambiente seguro", "Nueva línea L154", "Acceso fácil"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Desarrollo urbano"
+  },
+  {
+    slug: "juriquilla-premium-qro",
+    nombre: "Juriquilla Premium",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "residencial-lujo",
+    pois: [
+      { nombre: "Residencias premium", tipo: "servicios", distancia: "1 min caminando" },
+      { nombre: "Servicios de lujo", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Juriquilla Premium Querétaro — Residencias de Lujo | MetroGuia",
+    meta_description: "Estación Juriquilla Premium del Q-BUS. Zona residencial de lujo en línea L154.",
+    h1: "Estación Juriquilla Premium — Línea L154",
+    intro: "Zona de residencias premium en Juriquilla con servicios de alto nivel.",
+    tips: ["Residencias de lujo", "Servicios premium", "Seguridad privada", "Comercios selectos", "Zona exclusiva"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Desarrollo residencial"
+  },
+  {
+    slug: "campus-bicentenario-qro",
+    nombre: "Campus Bicentenario",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "educativo",
+    pois: [
+      { nombre: "Campus Bicentenario", tipo: "educación", distancia: "3 min caminando" },
+      { nombre: "Institutos educativos", tipo: "educación", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Campus Bicentenario Querétaro — Educación | MetroGuia",
+    meta_description: "Estación Campus Bicentenario del Q-BUS. Centro educativo en línea L154.",
+    h1: "Estación Campus Bicentenario — Línea L154",
+    intro: "Acceso a Campus Bicentenario, institución educativa en la línea L154 hacia Juriquilla.",
+    tips: ["Campus moderno", "Institutos especializados", "Educación de calidad", "Infraestructura moderna", "Ambiente académico"],
+    mejor_horario: "Horario escolar",
+    mundial_relevancia: "Educación superior"
+  },
+  {
+    slug: "carretera-tequisquiapan",
+    nombre: "Carretera Tequisquiapan",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "transitorio",
+    pois: [
+      { nombre: "Carretera federal", tipo: "transporte", distancia: "2 min caminando" },
+      { nombre: "Servicios de ruta", tipo: "servicios", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Carretera Tequisquiapan Querétaro — Conexión Regional | MetroGuia",
+    meta_description: "Estación Carretera Tequisquiapan del Q-BUS. Conexión hacia Juriquilla en línea L154.",
+    h1: "Estación Carretera Tequisquiapan — Línea L154",
+    intro: "Parada de conexión en la carretera federal hacia Juriquilla Ampliación.",
+    tips: ["Conexión regional", "Servicios de ruta", "Tránsito hacia otras ciudades", "Acceso a carretera federal", "Punto de transferencia"],
+    mejor_horario: "Mañana temprano",
+    mundial_relevancia: "Conexión interregional"
+  },
+  {
+    slug: "juriquilla-ampliacion-qro",
+    nombre: "Juriquilla Ampliación",
+    linea: "L154",
+    municipio: "Querétaro",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona Juriquilla Ampliación", tipo: "servicios", distancia: "2 min caminando" },
+      { nombre: "Nuevos desarrollos", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Juriquilla Ampliación Querétaro — Expansión Residencial | MetroGuia",
+    meta_description: "Estación Juriquilla Ampliación del Q-BUS. Zona de expansión residencial en línea L154.",
+    h1: "Estación Juriquilla Ampliación — Línea L154",
+    intro: "Terminal de la línea L154 en la zona de expansión residencial de Juriquilla Ampliación.",
+    tips: ["Zona en expansión", "Nuevos desarrollos", "Residencias modernas", "Servicios en construcción", "Crecimiento urbano"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Desarrollo urbano moderno"
+  },
+  {
+    slug: "periferico-norte-qro",
+    nombre: "Periférico Norte",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "transitorio",
+    pois: [
+      { nombre: "Periférico norte", tipo: "transporte", distancia: "2 min caminando" },
+      { nombre: "Acceso región norte", tipo: "transporte", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Periférico Norte Querétaro — Acceso Industrial | MetroGuia",
+    meta_description: "Estación Periférico Norte del Q-BUS. Línea L119 hacia Parque Industrial.",
+    h1: "Estación Periférico Norte — Línea L119",
+    intro: "Parada en el periférico norte conectando a zona industrial y manufacturera.",
+    tips: ["Acceso periférico norte", "Zona industrial cercana", "Servicios de transporte", "Nueva línea L119", "Acceso directo a manufactura"],
+    mejor_horario: "Mañana laboral",
+    mundial_relevancia: "Conexión industrial"
+  },
+  {
+    slug: "santa-rosa-industria-qro",
+    nombre: "Santa Rosa Industria",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "industrial",
+    pois: [
+      { nombre: "Zona industrial Santa Rosa", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Empresas manufactureras", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Santa Rosa Industria Querétaro — Zona Industrial | MetroGuia",
+    meta_description: "Estación Santa Rosa Industria del Q-BUS. Zona industrial en línea L119.",
+    h1: "Estación Santa Rosa Industria — Línea L119",
+    intro: "Acceso a zona industrial Santa Rosa con empresas manufactureras y de distribución.",
+    tips: ["Zona industrial activa", "Empresas diversas", "Negocios B2B", "Infraestructura logística", "Empleos disponibles"],
+    mejor_horario: "Horario laboral",
+    mundial_relevancia: "Economía manufacturera"
+  },
+  {
+    slug: "el-marques-acceso-qro",
+    nombre: "El Marqués Acceso",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "industrial",
+    pois: [
+      { nombre: "Zona El Marqués", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Acceso manufactura", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación El Marqués Acceso Querétaro — Zona Manufacturera | MetroGuia",
+    meta_description: "Estación El Marqués Acceso del Q-BUS. Acceso a zona manufacturera en línea L119.",
+    h1: "Estación El Marqués Acceso — Línea L119",
+    intro: "Parada de acceso a zona manufacturera en El Marqués conectada por línea L119.",
+    tips: ["Zona manufacturera importante", "Acceso a industrias", "Servicios logísticos", "Infraestructura moderna", "Desarrollo industrial"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Manufactura regional"
+  },
+  {
+    slug: "parque-logistico-qro",
+    nombre: "Parque Logístico",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "logistico",
+    pois: [
+      { nombre: "Parque Logístico", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Distribución y almacenes", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Parque Logístico Querétaro — Centro de Distribución | MetroGuia",
+    meta_description: "Estación Parque Logístico del Q-BUS. Línea L119 conecta distribución.",
+    h1: "Estación Parque Logístico — Línea L119",
+    intro: "Centro de distribución y logística en el Parque Logístico conectado por línea L119.",
+    tips: ["Centro logístico importante", "Almacenes y distribución", "Infraestructura moderna", "Servicios de carga", "Zona segura"],
+    mejor_horario: "Mañana temprano",
+    mundial_relevancia: "Logística regional"
+  },
+  {
+    slug: "distribucion-qro",
+    nombre: "Distribución",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Zona distribución", tipo: "comercio", distancia: "2 min caminando" },
+      { nombre: "Centros de distribución", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Distribución Querétaro — Centro de Distribución | MetroGuia",
+    meta_description: "Estación Distribución del Q-BUS. Zona de distribución en línea L119.",
+    h1: "Estación Distribución — Línea L119",
+    intro: "Zona de centros de distribución en la línea L119 hacia Parque Industrial.",
+    tips: ["Centros de distribución", "Servicios logísticos", "Infraestructura moderna", "Acceso fácil", "Negocios B2B"],
+    mejor_horario: "Horario laboral",
+    mundial_relevancia: "Distribución comercial"
+  },
+  {
+    slug: "fabrica-autos-qro",
+    nombre: "Fábrica Autos",
+    linea: "L119",
+    municipio: "Querétaro",
+    tipo_zona: "industrial",
+    pois: [
+      { nombre: "Fábricas automotrices", tipo: "comercio", distancia: "3 min caminando" },
+      { nombre: "Sector automotriz", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Fábrica Autos Querétaro — Sector Automotriz | MetroGuia",
+    meta_description: "Estación Fábrica Autos del Q-BUS. Sector automotriz en línea L119.",
+    h1: "Estación Fábrica Autos — Línea L119",
+    intro: "Acceso a fábricas y sector automotriz de Querétaro en la línea L119.",
+    tips: ["Sector automotriz importante", "Fábricas modernas", "Empleos manufactureros", "Infraestructura de clase mundial", "Producción industrial"],
+    mejor_horario: "Horario laboral",
+    mundial_relevancia: "Industria automotriz"
+  },
+  {
+    slug: "plaza-independencia-qro",
+    nombre: "Plaza Independencia",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "historico-turistico",
+    pois: [
+      { nombre: "Plaza Independencia", tipo: "plaza", distancia: "1 min caminando" },
+      { nombre: "Centro Histórico UNESCO", tipo: "historico", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Plaza Independencia Querétaro Eco-Tram — Centro Histórico | MetroGuia",
+    meta_description: "Estación Plaza Independencia del Eco-Tram Eléctrico. Inicio del tranvía en Centro Histórico UNESCO.",
+    h1: "Estación Plaza Independencia — Eco-Tram Eléctrico",
+    intro: "Terminal inicial del Eco-Tram Eléctrico en Plaza Independencia, corazón del Centro Histórico.",
+    tips: ["Plaza principal Centro Histórico", "Tranvía eléctrico ecológico", "Cero emisiones", "Transporte sostenible", "Patrimonio UNESCO"],
+    mejor_horario: "Mañana temprano",
+    mundial_relevancia: "Patrimonio UNESCO"
+  },
+  {
+    slug: "palacio-gobierno-qro",
+    nombre: "Palacio de Gobierno",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "historico-politico",
+    pois: [
+      { nombre: "Palacio de Gobierno", tipo: "monumentos", distancia: "1 min caminando" },
+      { nombre: "Sede administrativa", tipo: "politico", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Palacio de Gobierno Querétaro Eco-Tram — Monumento Histórico | MetroGuia",
+    meta_description: "Estación Palacio de Gobierno del Eco-Tram. Sede colonial en Centro Histórico.",
+    h1: "Estación Palacio de Gobierno — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el icónico Palacio de Gobierno, sede administrativa colonial.",
+    tips: ["Palacio histórico", "Arquitectura colonial", "Sede gubernamental", "Tranvía ecológico", "Fotografía excelente"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio político colonial"
+  },
+  {
+    slug: "museo-arte-qro",
+    nombre: "Museo de Arte",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "cultural",
+    pois: [
+      { nombre: "Museo de Arte de Querétaro", tipo: "museo", distancia: "2 min caminando" },
+      { nombre: "Exposiciones de arte", tipo: "cultura", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Museo de Arte Querétaro Eco-Tram — Cultura y Arte | MetroGuia",
+    meta_description: "Estación Museo de Arte del Eco-Tram. Galería de arte en Centro Histórico.",
+    h1: "Estación Museo de Arte — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram frente al Museo de Arte de Querétaro con exposiciones contemporáneas.",
+    tips: ["Museo de arte importante", "Exposiciones variadas", "Galerías coloniales", "Tranvía sostenible", "Cultura queretana"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Arte y cultura"
+  },
+  {
+    slug: "casa-corregidora-qro",
+    nombre: "Casa de la Corregidora",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "historico-cultural",
+    pois: [
+      { nombre: "Casa de la Corregidora", tipo: "monumento", distancia: "1 min caminando" },
+      { nombre: "Historia independentista", tipo: "historia", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Casa de la Corregidora Querétaro Eco-Tram — Historia | MetroGuia",
+    meta_description: "Estación Casa de la Corregidora del Eco-Tram. Monumento histórico independentista.",
+    h1: "Estación Casa de la Corregidora — Eco-Tram Eléctrico",
+    intro: "Parada histórica del Eco-Tram en la Casa de la Corregidora, sitio de importancia en la historia independentista mexicana.",
+    tips: ["Casa histórica emblemática", "Historia independentista", "Patrimonio colonial", "Tranvía eléctrico", "Educación histórica"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Historia independentista mexicana"
+  },
+  {
+    slug: "plazuela-corregidora-qro",
+    nombre: "Plazuela Corregidora",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "plaza-historica",
+    pois: [
+      { nombre: "Plazuela Corregidora", tipo: "plaza", distancia: "1 min caminando" },
+      { nombre: "Monumento Corregidora", tipo: "monumento", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Plazuela Corregidora Querétaro Eco-Tram — Plaza Histórica | MetroGuia",
+    meta_description: "Estación Plazuela Corregidora del Eco-Tram. Plaza histórica en Centro Histórico.",
+    h1: "Estación Plazuela Corregidora — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en Plazuela Corregidora con monumento a la heroína independentista.",
+    tips: ["Plaza histórica emblemática", "Monumento Corregidora", "Centro Histórico", "Tranvía sostenible", "Punto de referencia"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Patrimonio histórico"
+  },
+  {
+    slug: "templo-santa-rosa",
+    nombre: "Templo Santa Rosa",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "religioso",
+    pois: [
+      { nombre: "Templo de Santa Rosa de Viterbo", tipo: "monumento", distancia: "1 min caminando" },
+      { nombre: "Arquitectura barroca", tipo: "arquitectura", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Templo Santa Rosa Querétaro Eco-Tram — Joya Barroca | MetroGuia",
+    meta_description: "Estación Templo Santa Rosa del Eco-Tram. Templo barroco en Centro Histórico.",
+    h1: "Estación Templo Santa Rosa — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram dedicada al espectacular Templo de Santa Rosa de Viterbo, joya de la arquitectura barroca.",
+    tips: ["Templo barroco espectacular", "Arquitectura ornamentada", "Interior impresionante", "Tranvía ecológico", "Fotografía excelente"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio arquitectónico barroco"
+  },
+  {
+    slug: "convento-san-francisco-qro",
+    nombre: "Convento San Francisco",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "religioso",
+    pois: [
+      { nombre: "Convento de San Francisco", tipo: "monumento", distancia: "2 min caminando" },
+      { nombre: "Patrimonio religioso", tipo: "monumento", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Convento San Francisco Querétaro Eco-Tram — Religioso | MetroGuia",
+    meta_description: "Estación Convento San Francisco del Eco-Tram. Convento colonial en Centro Histórico.",
+    h1: "Estación Convento San Francisco — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el Convento de San Francisco, importante patrimonio religioso colonial.",
+    tips: ["Convento colonial histórico", "Arquitectura religiosa", "Patrimonio conservado", "Tranvía sostenible", "Zona tranquila"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio religioso colonial"
+  },
+  {
+    slug: "mercado-escobedo-qro",
+    nombre: "Mercado Escobedo",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "comercial-tradicional",
+    pois: [
+      { nombre: "Mercado Escobedo", tipo: "mercado", distancia: "1 min caminando" },
+      { nombre: "Comida local queretana", tipo: "alimento", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Mercado Escobedo Querétaro Eco-Tram — Gastronomía Local | MetroGuia",
+    meta_description: "Estación Mercado Escobedo del Eco-Tram. Mercado tradicional con comida queretana.",
+    h1: "Estación Mercado Escobedo — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el tradicional Mercado Escobedo con gastronomía queretana auténtica.",
+    tips: ["Mercado tradicional auténtico", "Comida local deliciosa", "Productos artesanales", "Tranvía ecológico", "Experiencia culinaria"],
+    mejor_horario: "Mediodía",
+    mundial_relevancia: "Gastronomía regional"
+  },
+  {
+    slug: "iglesia-santiago-qro",
+    nombre: "Iglesia Santiago",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "religioso",
+    pois: [
+      { nombre: "Iglesia de Santiago de Querétaro", tipo: "monumento", distancia: "2 min caminando" },
+      { nombre: "Arquitectura colonial", tipo: "arquitectura", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Iglesia Santiago Querétaro Eco-Tram — Monumento Colonial | MetroGuia",
+    meta_description: "Estación Iglesia Santiago del Eco-Tram. Iglesia colonial en Centro Histórico.",
+    h1: "Estación Iglesia Santiago — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en la Iglesia de Santiago, monumento religioso colonial en Centro Histórico.",
+    tips: ["Iglesia colonial histórica", "Arquitectura conservada", "Patrimonio religioso", "Tranvía sostenible", "Centro cultural"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio colonial"
+  },
+  {
+    slug: "acueducto-centro-qro",
+    nombre: "Acueducto Centro",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "monumento",
+    pois: [
+      { nombre: "Acueducto de Querétaro", tipo: "monumento", distancia: "2 min caminando" },
+      { nombre: "Arcos coloniales", tipo: "arquitectura", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Acueducto Centro Querétaro Eco-Tram — Monumento Histórico | MetroGuia",
+    meta_description: "Estación Acueducto Centro del Eco-Tram. Acceso a Acueducto histórico.",
+    h1: "Estación Acueducto Centro — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram cerca del emblemático Acueducto de Querétaro con sus 74 arcos coloniales.",
+    tips: ["Acueducto de 74 arcos", "Arquitectura colonial espectacular", "Patrimonio histórico", "Tranvía ecológico", "Fotografía impresionante"],
+    mejor_horario: "Atardecer",
+    mundial_relevancia: "Patrimonio UNESCO"
+  },
+  {
+    slug: "fuerte-qro",
+    nombre: "Fuerte",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "historico-militar",
+    pois: [
+      { nombre: "Fuerte Colonial", tipo: "monumento", distancia: "2 min caminando" },
+      { nombre: "Patrimonio militar", tipo: "historia", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Fuerte Querétaro Eco-Tram — Patrimonio Militar | MetroGuia",
+    meta_description: "Estación Fuerte del Eco-Tram. Fortaleza colonial en Centro Histórico.",
+    h1: "Estación Fuerte — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en la fortaleza colonial, importante patrimonio militar histórico.",
+    tips: ["Fuerte colonial histórico", "Patrimonio militar", "Arquitectura defensiva", "Tranvía sostenible", "Historia queretana"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio militar colonial"
+  },
+  {
+    slug: "barrio-artista-qro",
+    nombre: "Barrio Artista",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "cultural-artistico",
+    pois: [
+      { nombre: "Barrio Artista", tipo: "cultural", distancia: "1 min caminando" },
+      { nombre: "Galerías de arte", tipo: "cultura", distancia: "1 min" },
+      { nombre: "Murales y arte callejero", tipo: "arte", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Barrio Artista Querétaro Eco-Tram — Galerías y Arte | MetroGuia",
+    meta_description: "Estación Barrio Artista del Eco-Tram. Barrio bohemio con galerías en Centro Histórico.",
+    h1: "Estación Barrio Artista — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el bohemio Barrio Artista con galerías, murales y ambiente cultural.",
+    tips: ["Barrio artístico bohemio", "Galerías de arte", "Murales excelentes", "Tranvía ecológico", "Ambiente creativo"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Patrimonio cultural artístico"
+  },
+  {
+    slug: "centro-convenciones-qro",
+    nombre: "Centro de Convenciones",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "eventos",
+    pois: [
+      { nombre: "Centro de Convenciones", tipo: "eventos", distancia: "2 min caminando" },
+      { nombre: "Salones de eventos", tipo: "eventos", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Centro de Convenciones Querétaro Eco-Tram — Eventos | MetroGuia",
+    meta_description: "Estación Centro de Convenciones del Eco-Tram. Acceso a salones de eventos.",
+    h1: "Estación Centro de Convenciones — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el Centro de Convenciones para eventos y congresos en Centro Histórico.",
+    tips: ["Centro de eventos importante", "Salones modernos", "Infraestructura de conferencias", "Tranvía sostenible", "Acceso fácil"],
+    mejor_horario: "Según eventos",
+    mundial_relevancia: "Centro de eventos"
+  },
+  {
+    slug: "plaza-grande-centro-qro",
+    nombre: "Plaza Grande Centro",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "plaza-publica",
+    pois: [
+      { nombre: "Plaza Grande", tipo: "plaza", distancia: "1 min caminando" },
+      { nombre: "Espacio público", tipo: "plaza", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Plaza Grande Centro Querétaro Eco-Tram — Espacio Público | MetroGuia",
+    meta_description: "Estación Plaza Grande Centro del Eco-Tram. Plaza pública en Centro Histórico.",
+    h1: "Estación Plaza Grande Centro — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en Plaza Grande, espacio público principal del Centro Histórico.",
+    tips: ["Plaza pública principal", "Eventos culturales", "Espacios verdes", "Tranvía ecológico", "Centro de encuentro"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Espacio público histórico"
+  },
+  {
+    slug: "biblioteca-publica-qro",
+    nombre: "Biblioteca Pública",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "cultural-educativo",
+    pois: [
+      { nombre: "Biblioteca Pública de Querétaro", tipo: "cultura", distancia: "2 min caminando" },
+      { nombre: "Acervos bibliográficos", tipo: "educación", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Biblioteca Pública Querétaro Eco-Tram — Cultura | MetroGuia",
+    meta_description: "Estación Biblioteca Pública del Eco-Tram. Biblioteca histórica en Centro Histórico.",
+    h1: "Estación Biblioteca Pública — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en la Biblioteca Pública de Querétaro, centro de cultura e información.",
+    tips: ["Biblioteca importante", "Acervos históricos", "Cultura queretana", "Tranvía sostenible", "Espacio público"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Centro cultural"
+  },
+  {
+    slug: "museo-historia-natural-qro",
+    nombre: "Museo Historia Natural",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "cultural-cientifico",
+    pois: [
+      { nombre: "Museo Historia Natural", tipo: "museo", distancia: "2 min caminando" },
+      { nombre: "Exposiciones científicas", tipo: "educación", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Museo Historia Natural Querétaro Eco-Tram — Ciencia | MetroGuia",
+    meta_description: "Estación Museo Historia Natural del Eco-Tram. Museo científico en Centro Histórico.",
+    h1: "Estación Museo Historia Natural — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el Museo de Historia Natural con exposiciones de ciencia y naturaleza.",
+    tips: ["Museo científico", "Exposiciones educativas", "Historia natural", "Tranvía ecológico", "Aprendizaje interactivo"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Centro científico educativo"
+  },
+  {
+    slug: "teatro-republica-qro",
+    nombre: "Teatro República",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "cultural-teatral",
+    pois: [
+      { nombre: "Teatro de la República", tipo: "teatro", distancia: "1 min caminando" },
+      { nombre: "Eventos culturales", tipo: "cultura", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Teatro República Querétaro Eco-Tram — Cultura Teatral | MetroGuia",
+    meta_description: "Estación Teatro República del Eco-Tram. Teatro histórico en Centro Histórico.",
+    h1: "Estación Teatro República — Eco-Tram Eléctrico",
+    intro: "Parada del Eco-Tram en el icónico Teatro de la República, sede de eventos culturales y teatrales.",
+    tips: ["Teatro histórico emblemático", "Eventos culturales", "Conciertos y obras", "Tranvía sostenible", "Cultura queretana"],
+    mejor_horario: "Tarde para eventos",
+    mundial_relevancia: "Patrimonio teatral"
+  },
+  {
+    slug: "templo-santa-clara-qro",
+    nombre: "Templo Santa Clara",
+    linea: "Eléctrico",
+    municipio: "Querétaro",
+    tipo_zona: "religioso",
+    pois: [
+      { nombre: "Templo de Santa Clara", tipo: "monumento", distancia: "1 min caminando" },
+      { nombre: "Arquitectura barroca", tipo: "arquitectura", distancia: "1 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Templo Santa Clara Querétaro Eco-Tram — Joya Barroca | MetroGuia",
+    meta_description: "Estación Templo Santa Clara del Eco-Tram. Terminal final en templo barroco.",
+    h1: "Estación Templo Santa Clara — Eco-Tram Eléctrico",
+    intro: "Terminal final del Eco-Tram en el espectacular Templo de Santa Clara, joya de la arquitectura barroca queretana.",
+    tips: ["Templo barroco hermoso", "Arquitectura ornamentada", "Final de línea Eco-Tram", "Compras de artesanías", "Fotografía excelente"],
+    mejor_horario: "Tarde",
+    mundial_relevancia: "Patrimonio arquitectónico barroco UNESCO"
   }
 ];

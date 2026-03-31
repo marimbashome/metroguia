@@ -96,5 +96,30 @@ export const lineasMerida = [
     seo_title: "Corredor Azul (A4) SIT Mérida — Aeropuerto a Centro | MetroGuia",
     meta_description: "Corredor Azul (A4) del SIT Mérida. Conexión rápida desde Aeropuerto Internacional al Centro Histórico.",
     h1: "Corredor Azul (A4) — SIT Mérida"
+  },
+  {
+    id: "Ie-Tram",
+    color: "#22C55E",
+    colorNombre: "Verde Ecológico",
+    inicio: "Plaza Grande (Centro Histórico)",
+    fin: "Teya - Estación Tren Maya",
+    total: 6,
+    municipios: ["Mérida"],
+    descripcion: "Línea de tranvía eléctrico (Ie-Tram) que conecta el Centro Histórico de Mérida con la estación de Tren Maya en Teya. Sistema ecológico de transporte que integra la ciudad con la red regional de Tren Maya, permitiendo acceso directo a destinos del Caribe mexicano.",
+    estaciones_turisticas: ["plaza-grande-ie-tram", "paseo-montejo-ie-tram", "gran-museo-mundo-maya-ie-tram", "teya-tren-maya"],
+    estaciones: ["plaza-grande-ie-tram", "paseo-montejo-ie-tram", "gran-museo-mundo-maya-ie-tram", "xcanatun", "teya-tren-maya"],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día: Centro Histórico a Tren Maya",
+      paradas: [
+        { estacion: "plaza-grande-ie-tram", actividad: "Salida desde Plaza Grande (8:00 AM) - Desayuno en Zócalo" },
+        { estacion: "paseo-montejo-ie-tram", actividad: "Paseo de Montejo: mansiones porfirianas (9:30 AM)" },
+        { estacion: "gran-museo-mundo-maya-ie-tram", actividad: "Gran Museo del Mundo Maya (10:30 AM - 1:00 PM)" },
+        { estacion: "xcanatun", actividad: "Parada residencial y descanso (1:30 PM)" },
+        { estacion: "teya-tren-maya", actividad: "Llegada a Tren Maya en Teya (2:30 PM) - Salida hacia Cancún/Playa del Carmen" }
+      ]
+    },
+    seo_title: "Ie-Tram Mérida — Tranvía Eléctrico a Tren Maya | MetroGuia",
+    meta_description: "Ie-Tram Mérida. Línea de tranvía eléctrico conectando Centro Histórico con estación Tren Maya en Teya. Transporte ecológico y turístico.",
+    h1: "Ie-Tram — Tranvía Eléctrico Mérida a Tren Maya"
   }
 ];

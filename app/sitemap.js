@@ -38,6 +38,8 @@ import { trenLigeroData } from '@/data/cdmx/tren-ligero';
 import { trenSuburbanoData } from '@/data/cdmx/tren-suburbano';
 import { aeropuertos } from '@/data/aeropuertos';
 import { terminales } from '@/data/terminales';
+import { ferrys } from '@/data/ferrys';
+import { crucesFronterizos } from '@/data/cruces-fronterizos';
 
 // MTY Ecovía
 import { estacionesEcovia } from '@/data/mty/ecovia';

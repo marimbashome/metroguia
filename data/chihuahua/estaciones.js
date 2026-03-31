@@ -309,5 +309,285 @@ export const estacionesChihuahua = [
     tips: ["Casa original de Pancho Villa", "Muebles y objetos personales", "Armería histórica expuesta", "Documentos revolucionarios", "Importancia histórica nacional", "Ambiente rústico auténtico"],
     mejor_horario: "Tarde para exploración completa",
     mundial_relevancia: "Sin relevancia directa"
+  },
+  {
+    slug: "terminal-norte-bowi",
+    nombre: "Terminal Norte Bowí",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "transporte",
+    pois: [
+      { nombre: "Terminal Norte del BRT Bowí", tipo: "transporte", distancia: "0 min" },
+      { nombre: "Estacionamientos", tipo: "servicios", distancia: "2 min" },
+      { nombre: "Cafeterías y tiendas", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Terminal Norte Bowí — Inicio del BRT | MetroGuia",
+    meta_description: "Terminal Norte del BRT Bowí en Chihuahua. Estación inicial del sistema de transporte rápido.",
+    h1: "Terminal Norte Bowí — Inicio del Sistema BRT",
+    intro: "Terminal norte del BRT Bowí, punto de partida de la línea 3 del sistema de transporte rápido de Chihuahua. Modernamente equipada con servicios de pasajeros y estacionamiento.",
+    tips: ["Información en taquilla", "Estacionamiento disponible", "Servicios de café y comida", "Horarios frecuentes", "Zona segura y moderna"],
+    mejor_horario: "Temprano en la mañana",
+    mundial_relevancia: "Transporte para viajeros FIFA 2026"
+  },
+  {
+    slug: "periferico-norte",
+    nombre: "Periférico Norte",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Centro comercial", tipo: "comercio", distancia: "3 min" },
+      { nombre: "Restaurantes de comida rápida", tipo: "alimento", distancia: "2 min" },
+      { nombre: "Farmacia", tipo: "servicios", distancia: "5 min" }
+    ],
+    transferencias: [],
+    seo_title: "Periférico Norte Bowí — Comercio y Servicios | MetroGuia",
+    meta_description: "Estación Periférico Norte del BRT Bowí. Acceso a centros comerciales y servicios.",
+    h1: "Periférico Norte — Zona Comercial",
+    intro: "Estación del BRT Bowí en la zona comercial del Periférico Norte con acceso a centros comerciales, restaurantes y servicios diversos.",
+    tips: ["Centro comercial cercano", "Opciones de comida variadas", "Zona transitada", "Acceso a servicios", "Buen punto para compras"],
+    mejor_horario: "Mañana o tarde para compras",
+    mundial_relevancia: "Acceso a centros de compra"
+  },
+  {
+    slug: "universidad-chihuahua",
+    nombre: "Universidad de Chihuahua",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "educativo",
+    pois: [
+      { nombre: "Campus universitario", tipo: "educación", distancia: "5 min caminando" },
+      { nombre: "Biblioteca universitaria", tipo: "cultura", distancia: "5 min" },
+      { nombre: "Cafés de estudiantes", tipo: "alimento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Universidad de Chihuahua Bowí — Campus Académico | MetroGuia",
+    meta_description: "Estación Universidad de Chihuahua del BRT Bowí. Acceso al campus educativo.",
+    h1: "Universidad de Chihuahua — Centro Académico",
+    intro: "Estación del BRT Bowí que conecta con el campus de la Universidad de Chihuahua, una de las principales instituciones educativas del estado con vida académica activa.",
+    tips: ["Ambiente estudiantil", "Biblioteca moderna", "Cafés universitarios", "Actividad diurna intensa", "Horarios mayores en semestre"],
+    mejor_horario: "Día entre clases",
+    mundial_relevancia: "Acceso educativo"
+  },
+  {
+    slug: "tecnologico-chihuahua",
+    nombre: "Tecnológico de Chihuahua",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "educativo",
+    pois: [
+      { nombre: "Campus del Tecnológico", tipo: "educación", distancia: "3 min" },
+      { nombre: "Laboratorios de ingeniería", tipo: "educación", distancia: "5 min" },
+      { nombre: "Cafetería principal", tipo: "alimento", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Tecnológico de Chihuahua Bowí — Instituto de Ingeniería | MetroGuia",
+    meta_description: "Estación Tecnológico de Chihuahua del BRT Bowí. Acceso a instituto técnico.",
+    h1: "Tecnológico de Chihuahua — Centro Tecnológico",
+    intro: "Estación del BRT Bowí conecta con el Tecnológico de Chihuahua, principal institución de educación técnica y de ingeniería en la región.",
+    tips: ["Ambiente técnico y estudianti l", "Cafetería en campus", "Laboratorios avanzados", "Investigación activa", "Transporte frecuente de estudiantes"],
+    mejor_horario: "Mañana para actividades académicas",
+    mundial_relevancia: "Acceso educativo técnico"
+  },
+  {
+    slug: "sacramento",
+    nombre: "Sacramento",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial", tipo: "residencia", distancia: "5 min" },
+      { nombre: "Pequeños comercios locales", tipo: "comercio", distancia: "3 min" },
+      { nombre: "Parque público", tipo: "recreación", distancia: "10 min" }
+    ],
+    transferencias: [],
+    seo_title: "Sacramento Bowí — Zona Residencial | MetroGuia",
+    meta_description: "Estación Sacramento del BRT Bowí. Acceso a zona residencial.",
+    h1: "Sacramento — Zona Residencial",
+    intro: "Estación del BRT Bowí en la zona residencial de Sacramento, conectando comunidades locales con el resto de la ciudad.",
+    tips: ["Zona tranquila", "Comercios locales", "Acceso residencial", "Transporte comunitario", "Ambiente seguro"],
+    mejor_horario: "Todo el día para residentes",
+    mundial_relevancia: "Transporte local"
+  },
+  {
+    slug: "ninos-heroes-chi",
+    nombre: "Niños Héroes",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "historico-residencial",
+    pois: [
+      { nombre: "Monumento a Niños Héroes", tipo: "monumento", distancia: "2 min" },
+      { nombre: "Zona residencial histórica", tipo: "residencia", distancia: "3 min" },
+      { nombre: "Pequeños museos locales", tipo: "museo", distancia: "10 min" }
+    ],
+    transferencias: [],
+    seo_title: "Niños Héroes Bowí — Monumento Histórico | MetroGuia",
+    meta_description: "Estación Niños Héroes del BRT Bowí. Acceso a monumento histórico.",
+    h1: "Niños Héroes — Memoria Histórica",
+    intro: "Estación del BRT Bowí cerca del Monumento a los Niños Héroes, importante sitio histórico de Chihuahua en zona residencial.",
+    tips: ["Monumento visitable", "Zona histórica", "Residencias cercanas", "Área tranquila", "Valor histórico"],
+    mejor_horario: "Mañana para visitar monumento",
+    mundial_relevancia: "Sitio histórico importante"
+  },
+  {
+    slug: "centro-bowi",
+    nombre: "Centro Bowí",
+    linea: ["2", "3"],
+    municipio: "Chihuahua",
+    tipo_zona: "centro-conectivo",
+    pois: [
+      { nombre: "Centro de Chihuahua", tipo: "comercio", distancia: "5 min" },
+      { nombre: "Zona Dorada cercana", tipo: "comercio", distancia: "8 min" },
+      { nombre: "Tiendas y restaurantes", tipo: "alimento", distancia: "2 min" }
+    ],
+    transferencias: ["Línea 2"],
+    seo_title: "Centro Bowí — Transferencia Líneas 2 y 3 | MetroGuia",
+    meta_description: "Estación Centro Bowí del BRT. Punto de transferencia entre líneas 2 y 3.",
+    h1: "Centro Bowí — Estación de Transferencia",
+    intro: "Estación central del BRT Bowí que funciona como punto de transferencia entre la línea 2 (urbana) y línea 3 (BRT). Conecta con el centro de Chihuahua.",
+    tips: ["Transferencia entre líneas", "Centro comercial cercano", "Zona Dorada accesible", "Restaurantes variados", "Punto de conexión importante"],
+    mejor_horario: "Mediodía para conexiones",
+    mundial_relevancia: "Centro de conexión de transporte"
+  },
+  {
+    slug: "independencia-chi",
+    nombre: "Independencia",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "residencial-comercial",
+    pois: [
+      { nombre: "Avenida Independencia", tipo: "comercio", distancia: "3 min" },
+      { nombre: "Zona residencial", tipo: "residencia", distancia: "5 min" },
+      { nombre: "Mercadillos locales", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Independencia Bowí — Avenida Principal | MetroGuia",
+    meta_description: "Estación Independencia del BRT Bowí. Acceso a avenida comercial.",
+    h1: "Independencia — Avenida Comercial",
+    intro: "Estación del BRT Bowí en la histórica Avenida Independencia, con acceso a zona comercial y residencial de Chihuahua.",
+    tips: ["Avenida importante", "Comercio variado", "Transporte frecuente", "Zona activa", "Acceso mixto"],
+    mejor_horario: "Mañana a tarde",
+    mundial_relevancia: "Conectividad urbana"
+  },
+  {
+    slug: "americas-chi",
+    nombre: "Américas",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Centro comercial Américas", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Restaurantes internacionales", tipo: "alimento", distancia: "3 min" },
+      { nombre: "Tiendas especializadas", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Américas Bowí — Centro Comercial | MetroGuia",
+    meta_description: "Estación Américas del BRT Bowí. Centro comercial y restaurantes.",
+    h1: "Américas — Centro de Compras",
+    intro: "Estación del BRT Bowí en zona de compras con acceso a centro comercial Américas, restaurantes internacionales y tiendas especializadas.",
+    tips: ["Centro comercial grande", "Gastronomía variada", "Tiendas reconocidas", "Estacionamiento disponible", "Zona moderna"],
+    mejor_horario: "Tarde para compras y cena",
+    mundial_relevancia: "Compras y entretenimiento"
+  },
+  {
+    slug: "altavista-chi",
+    nombre: "Altavista",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Fraccionamiento Altavista", tipo: "residencia", distancia: "3 min" },
+      { nombre: "Espacios verdes", tipo: "recreación", distancia: "5 min" },
+      { nombre: "Servicios locales", tipo: "servicios", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Altavista Bowí — Zona Residencial | MetroGuia",
+    meta_description: "Estación Altavista del BRT Bowí. Acceso a zona residencial.",
+    h1: "Altavista — Fraccionamiento Residencial",
+    intro: "Estación del BRT Bowí en el fraccionamiento Altavista, conectando comunidades residenciales de Chihuahua.",
+    tips: ["Zona residencial tranquila", "Espacios verdes", "Servicios comunitarios", "Transporte de residentes", "Ambiente familiar"],
+    mejor_horario: "Mañana y tarde",
+    mundial_relevancia: "Transporte residencial"
+  },
+  {
+    slug: "cantera-chi",
+    nombre: "Cantera",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "industrial-comercial",
+    pois: [
+      { nombre: "Zona industrial", tipo: "industria", distancia: "5 min" },
+      { nombre: "Comercios locales", tipo: "comercio", distancia: "3 min" },
+      { nombre: "Talleres y servicios", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Cantera Bowí — Zona Industrial | MetroGuia",
+    meta_description: "Estación Cantera del BRT Bowí. Acceso a zona industrial.",
+    h1: "Cantera — Zona Industrial",
+    intro: "Estación del BRT Bowí en la zona industrial de Cantera, conectando área industrial y comercial de Chihuahua.",
+    tips: ["Zona industrial", "Servicios técnicos", "Comercios locales", "Horarios de trabajo", "Transporte de trabajadores"],
+    mejor_horario: "Mañana y atardecer laborales",
+    mundial_relevancia: "Transporte laboral"
+  },
+  {
+    slug: "campestre-chi",
+    nombre: "Campestre",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial Campestre", tipo: "residencia", distancia: "3 min" },
+      { nombre: "Áreas verdes", tipo: "recreación", distancia: "5 min" },
+      { nombre: "Servicios comunitarios", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Campestre Bowí — Zona Residencial | MetroGuia",
+    meta_description: "Estación Campestre del BRT Bowí. Acceso a zona residencial.",
+    h1: "Campestre — Zona Residencial",
+    intro: "Estación del BRT Bowí en la tranquila zona residencial de Campestre, con acceso a áreas verdes y servicios comunitarios.",
+    tips: ["Zona residencial segura", "Áreas verdes abundantes", "Servicios comunitarios", "Transporte de residentes", "Ambiente tranquilo"],
+    mejor_horario: "Mañana y tarde",
+    mundial_relevancia: "Transporte residencial"
+  },
+  {
+    slug: "vialidad-sacramento",
+    nombre: "Vialidad Sacramento",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Avenida Vialidad", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Zona residencial", tipo: "residencia", distancia: "3 min" },
+      { nombre: "Pequeños comercios", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Vialidad Sacramento Bowí — Avenida Principal | MetroGuia",
+    meta_description: "Estación Vialidad Sacramento del BRT Bowí. Acceso a avenida principal.",
+    h1: "Vialidad Sacramento — Avenida Conectiva",
+    intro: "Estación del BRT Bowí en la Vialidad Sacramento, conectando zona residencial con avenida comercial principal.",
+    tips: ["Avenida conectiva", "Comercios locales", "Zona residencial cercana", "Transporte frecuente", "Acceso variado"],
+    mejor_horario: "Mañana a tarde",
+    mundial_relevancia: "Conectividad urbana"
+  },
+  {
+    slug: "terminal-sur-bowi",
+    nombre: "Terminal Sur Bowí",
+    linea: "3",
+    municipio: "Chihuahua",
+    tipo_zona: "transporte",
+    pois: [
+      { nombre: "Terminal Sur del BRT Bowí", tipo: "transporte", distancia: "0 min" },
+      { nombre: "Estacionamientos", tipo: "servicios", distancia: "2 min" },
+      { nombre: "Servicios de pasajeros", tipo: "alimento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Terminal Sur Bowí — Final del BRT | MetroGuia",
+    meta_description: "Terminal Sur del BRT Bowí en Chihuahua. Estación final del sistema de transporte rápido.",
+    h1: "Terminal Sur Bowí — Final del Sistema BRT",
+    intro: "Terminal sur del BRT Bowí, punto final de la línea 3 del sistema de transporte rápido. Modernamente equipada con servicios completos para pasajeros.",
+    tips: ["Información en taquilla", "Estacionamiento grande", "Servicios de comida", "Horarios frecuentes", "Zona segura y organizada"],
+    mejor_horario: "Todo el día según horarios",
+    mundial_relevancia: "Transporte para viajeros FIFA 2026"
   }
 ];

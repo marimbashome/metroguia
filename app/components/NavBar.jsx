@@ -26,6 +26,7 @@ export default function NavBar() {
   const t = allTranslations[lang] || allTranslations.es
   const prefix = lang === 'es' ? '' : `/${lang}`
 
+
   return (
     <header style={{
       backgroundColor: 'rgba(255, 255, 255, 0.92)',
@@ -70,7 +71,7 @@ export default function NavBar() {
         </a>
 
         {/* Nav Links */}
-        <nav style={{
+        <nav suppressHydrationWarning style={{
           display: 'flex',
           alignItems: 'center',
           gap: '1.5rem',
@@ -98,13 +99,25 @@ export default function NavBar() {
             fontSize: '0.9rem',
             fontWeight: 500,
             textDecoration: 'none',
-          }}>{"Aeropuertos"}</a>
+          }}>{t.nav?.airports || 'Aeropuertos'}</a>
           <a href={`${prefix}/terminales/`} style={{
             color: 'var(--text-muted)',
             fontSize: '0.9rem',
             fontWeight: 500,
             textDecoration: 'none',
-          }}>{"Terminales"}</a>
+          }}>{t.nav?.terminals || 'Terminales'}</a>
+          <a href={`${prefix}/ferries/`} style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            fontWeight: 500,
+            textDecoration: 'none',
+          }}>Ferries</a>
+          <a href={`${prefix}/frontera/`} style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            fontWeight: 500,
+            textDecoration: 'none',
+          }}>Frontera</a>
 
           {/* City pills */}
           <div style={{

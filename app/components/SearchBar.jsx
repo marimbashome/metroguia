@@ -201,8 +201,16 @@ export default function SearchBar({
   }
 
   const inputStyleFocus = {
-    ...inputStyle,
-    borderColor: 'var(--primary)',
+    width: '100%',
+    padding: '12px 14px',
+    backgroundColor: 'var(--bg)',
+    borderRadius: '8px',
+    color: 'var(--text)',
+    fontSize: '14px',
+    fontFamily: 'inherit',
+    transition: 'border-color 0.2s, box-shadow 0.2s',
+    outline: 'none',
+    border: '1px solid var(--primary)',
     boxShadow: '0 0 0 3px var(--primary-glow)',
   }
 

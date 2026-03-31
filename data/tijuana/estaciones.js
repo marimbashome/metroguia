@@ -305,5 +305,246 @@ export const estacionesTijuana = [
     tips: ["Viñedos y bodegas abiertas", "Catas de vino", "Gastronomía de nivel mundial", "Hoteles boutique", "Paisaje espectacular"],
     mejor_horario: "Fin de semana de día completo",
     mundial_relevancia: "Descanso de lujo para turistas FIFA 2026"
+  },
+  {
+    slug: "garita-san-ysidro-sitt",
+    nombre: "Garita San Ysidro (SITT)",
+    linea: ["1", "2"],
+    municipio: "Tijuana",
+    tipo_zona: "frontera-transporte",
+    pois: [
+      { nombre: "Terminal SITT San Ysidro", tipo: "transporte", distancia: "0 min" },
+      { nombre: "Centro de transferencia", tipo: "transporte", distancia: "2 min" },
+      { nombre: "Servicios fronterizos", tipo: "servicios", distancia: "3 min" }
+    ],
+    transferencias: ["Línea 1"],
+    seo_title: "Garita San Ysidro SITT — Terminal Transporte | MetroGuia",
+    meta_description: "Garita San Ysidro SITT en Tijuana. Terminal BRT y punto de transferencia fronterizo.",
+    h1: "Garita San Ysidro SITT — Terminal Principal",
+    intro: "Terminal SITT San Ysidro es punto de transferencia clave entre Línea 1 (frontera) y Línea 2 (BRT rápido). Centro moderno de transporte en la frontera.",
+    tips: ["Punto de transferencia", "Transporte moderno BRT", "Conexión frontera-ciudad", "Servicios completos", "Acceso rápido"],
+    mejor_horario: "Mañana temprano",
+    mundial_relevancia: "Conexión para turistas FIFA 2026"
+  },
+  {
+    slug: "puerta-mexico-sitt",
+    nombre: "Puerta México",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Centro comercial local", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Restaurantes típicos", tipo: "alimento", distancia: "3 min" },
+      { nombre: "Farmacias", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Puerta México — Zona Comercial BRT | MetroGuia",
+    meta_description: "Puerta México en Tijuana. Zona comercial servida por transporte rápido SITT.",
+    h1: "Puerta México — Comercio Accesible",
+    intro: "Puerta México es zona comercial conectada por BRT SITT moderno. Acceso a tiendas locales, restaurantes y servicios. Transporte rápido para compras cotidianas.",
+    tips: ["Centro comercial accesible", "Restaurantes económicos", "Transporte frecuente BRT", "Estacionamiento disponible", "Zona segura"],
+    mejor_horario: "Mediodía para compras",
+    mundial_relevancia: "Comercio accesible para turistas"
+  },
+  {
+    slug: "revolucion-brt",
+    nombre: "Avenida Revolución (BRT)",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "comercial-turistico",
+    pois: [
+      { nombre: "Avenida Revolución tiendas", tipo: "comercio", distancia: "0 min" },
+      { nombre: "Bares y cantinas", tipo: "alimento", distancia: "2 min" },
+      { nombre: "Hoteles boutique", tipo: "hospedaje", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Avenida Revolución BRT — Centro Histórico Rápido | MetroGuia",
+    meta_description: "Avenida Revolución con acceso BRT. Centro histórico de Tijuana con transporte moderno.",
+    h1: "Avenida Revolución BRT — Centro Histórico",
+    intro: "Avenida Revolución ahora conectada por BRT moderno. Tiendas históricas, bares auténticos y ambiente tradicional de Tijuana. Transporte rápido al corazón de la ciudad.",
+    tips: ["Avenida icónica de Tijuana", "Bares tradicionales", "Tiendas de artesanías", "Acceso BRT frecuente", "Centro histórico"],
+    mejor_horario: "Noche para vida nocturna",
+    mundial_relevancia: "Centro histórico accesible"
+  },
+  {
+    slug: "cinco-y-diez-sitt",
+    nombre: "Cinco y Diez",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Centro comercial Cinco y Diez", tipo: "comercio", distancia: "0 min" },
+      { nombre: "Tiendas departamentales", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Comida rápida", tipo: "alimento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Cinco y Diez Tijuana — Centro Comercial BRT | MetroGuia",
+    meta_description: "Cinco y Diez en Tijuana. Centro comercial moderno con acceso directo BRT.",
+    h1: "Cinco y Diez — Compras Modernas",
+    intro: "Cinco y Diez es centro comercial moderno de Tijuana servido por BRT SITT. Acceso rápido a tiendas departamentales y servicios. Shopping de clase media accesible.",
+    tips: ["Centro comercial moderno", "Tiendas variadas", "Comida rápida", "BRT directo", "Estacionamiento"],
+    mejor_horario: "Tarde para compras",
+    mundial_relevancia: "Compras accesibles"
+  },
+  {
+    slug: "rio-tijuana-brt",
+    nombre: "Zona Río (BRT)",
+    linea: ["1", "2"],
+    municipio: "Tijuana",
+    tipo_zona: "comercial-turistica",
+    pois: [
+      { nombre: "Plaza Río Centro Comercial", tipo: "comercio", distancia: "0 min" },
+      { nombre: "Restaurantes gourmet", tipo: "alimento", distancia: "2 min" },
+      { nombre: "Museos y galerías", tipo: "cultura", distancia: "3 min" },
+      { nombre: "Hoteles 4-5 estrellas", tipo: "hospedaje", distancia: "2 min" }
+    ],
+    transferencias: ["Línea 1"],
+    seo_title: "Zona Río BRT — Centro Turístico Premium | MetroGuia",
+    meta_description: "Zona Río con acceso BRT rápido. Centro premium de Tijuana con transporte moderno de clase mundial.",
+    h1: "Zona Río BRT — Turismo Premium",
+    intro: "Zona Río conectada por BRT moderno. Centro turístico premium con Plaza Río, restaurantes gourmet y hoteles de lujo. Transporte rápido al corazón gastronómico de Tijuana.",
+    tips: ["Restaurantes de clase mundial", "Shopping premium", "Hoteles 4-5 estrellas", "BRT rápido y frecuente", "Zona segura"],
+    mejor_horario: "Tarde/noche para cenar",
+    mundial_relevancia: "Centro turístico para FIFA 2026"
+  },
+  {
+    slug: "otay-brt",
+    nombre: "Otay",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "comercial-residencial",
+    pois: [
+      { nombre: "Zona comercial Otay", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Restaurantes locales", tipo: "alimento", distancia: "3 min" },
+      { nombre: "Servicios diversos", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Otay Tijuana — Zona Comercial Accesible | MetroGuia",
+    meta_description: "Otay en Tijuana. Zona comercial y residencial servida por BRT moderno.",
+    h1: "Otay — Comercio y Residencia",
+    intro: "Otay es zona comercial-residencial de Tijuana conectada por BRT SITT moderno. Acceso a tiendas, restaurantes locales y servicios cotidianos. Transporte rápido para residentes.",
+    tips: ["Zona residencial y comercial", "Restaurantes auténticos", "Servicios locales", "BRT frecuente", "Precios accesibles"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Zona residencial accesible"
+  },
+  {
+    slug: "presa-rodriguez-sitt",
+    nombre: "Presa Rodríguez",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial Presa Rodríguez", tipo: "residencial", distancia: "2 min" },
+      { nombre: "Parques locales", tipo: "recreación", distancia: "3 min" },
+      { nombre: "Mercados de barrio", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Presa Rodríguez Tijuana — Residencia Accesible | MetroGuia",
+    meta_description: "Presa Rodríguez en Tijuana. Zona residencial con acceso BRT moderno.",
+    h1: "Presa Rodríguez — Residencia Tranquila",
+    intro: "Presa Rodríguez es zona residencial tranquila de Tijuana servida por BRT SITT. Parques, mercados de barrio y ambiente familiar. Acceso rápido al resto de la ciudad.",
+    tips: ["Zona residencial tranquila", "Parques para familias", "Mercados de barrio", "BRT directo", "Ambiente seguro"],
+    mejor_horario: "Día para explorar",
+    mundial_relevancia: "Hospedaje residencial"
+  },
+  {
+    slug: "via-rapida-oriente-sitt",
+    nombre: "Vía Rápida Oriente",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "transporte-comercial",
+    pois: [
+      { nombre: "Centro de transferencia", tipo: "transporte", distancia: "0 min" },
+      { nombre: "Zona comercial oriente", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Servicios varios", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Vía Rápida Oriente SITT — Hub de Transporte | MetroGuia",
+    meta_description: "Vía Rápida Oriente en Tijuana. Centro de transporte y comercio con BRT moderno.",
+    h1: "Vía Rápida Oriente — Centro de Conexión",
+    intro: "Vía Rápida Oriente es hub de transporte en la zona oriente de Tijuana. Centro de transferencia con acceso a comercios y servicios. BRT moderno conecta este sector estratégico.",
+    tips: ["Centro de transporte", "Conexión estratégica", "Comercio cercano", "BRT frecuente", "Servicios completos"],
+    mejor_horario: "Mañana para conexiones",
+    mundial_relevancia: "Centro de conexión de transporte"
+  },
+  {
+    slug: "plaza-monarca-sitt",
+    nombre: "Plaza Monarca",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "comercial",
+    pois: [
+      { nombre: "Plaza Monarca Centro Comercial", tipo: "comercio", distancia: "0 min" },
+      { nombre: "Restaurantes y cafés", tipo: "alimento", distancia: "2 min" },
+      { nombre: "Tiendas variadas", tipo: "comercio", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Plaza Monarca Tijuana — Centro Comercial Moderno | MetroGuia",
+    meta_description: "Plaza Monarca en Tijuana. Centro comercial moderno con acceso directo BRT.",
+    h1: "Plaza Monarca — Comercio Moderno",
+    intro: "Plaza Monarca es centro comercial moderno de Tijuana servido por BRT SITT. Restaurantes, cafés y tiendas variadas. Acceso rápido y fácil para compras.",
+    tips: ["Centro comercial moderno", "Restaurantes y cafés", "Tiendas variadas", "BRT directo", "Estacionamiento"],
+    mejor_horario: "Tarde para compras",
+    mundial_relevancia: "Compras modernas accesibles"
+  },
+  {
+    slug: "la-mesa-tj-sitt",
+    nombre: "La Mesa (SITT)",
+    linea: ["2", "3"],
+    municipio: "Tijuana",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial La Mesa", tipo: "residencial", distancia: "2 min" },
+      { nombre: "Comercios locales", tipo: "comercio", distancia: "3 min" },
+      { nombre: "Parques", tipo: "recreación", distancia: "5 min" }
+    ],
+    transferencias: ["Línea 3"],
+    seo_title: "La Mesa SITT — Residencia con Transporte Moderno | MetroGuia",
+    meta_description: "La Mesa en Tijuana con acceso BRT. Zona residencial con transporte rápido.",
+    h1: "La Mesa SITT — Residencia Conectada",
+    intro: "La Mesa ahora conectada por BRT SITT moderno y Línea 3 (cultural). Zona residencial tranquila de Tijuana con acceso rápido a toda la ciudad.",
+    tips: ["Zona residencial tranquila", "BRT moderno", "Menos turismo", "Comercios de barrio", "Seguridad"],
+    mejor_horario: "Día para explorar",
+    mundial_relevancia: "Hospedaje residencial accesible"
+  },
+  {
+    slug: "mariano-matamoros-sitt",
+    nombre: "Mariano Matamoros",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "residencial-comercial",
+    pois: [
+      { nombre: "Zona residencial Matamoros", tipo: "residencial", distancia: "2 min" },
+      { nombre: "Mercados y tiendas locales", tipo: "comercio", distancia: "2 min" },
+      { nombre: "Restaurantes de barrio", tipo: "alimento", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Mariano Matamoros Tijuana — Zona Residencial Local | MetroGuia",
+    meta_description: "Mariano Matamoros en Tijuana. Zona residencial servida por BRT SITT moderno.",
+    h1: "Mariano Matamoros — Residencia Local",
+    intro: "Mariano Matamoros es zona residencial-comercial de Tijuana servida por BRT SITT. Mercados locales, restaurantes de barrio y ambiente auténtico. Acceso rápido por transporte moderno.",
+    tips: ["Zona residencial auténtica", "Mercados de barrio", "Restaurantes típicos", "BRT frecuente", "Precios locales"],
+    mejor_horario: "Mañana o tarde",
+    mundial_relevancia: "Zona residencial auténtica"
+  },
+  {
+    slug: "terminal-sur-sitt",
+    nombre: "Terminal Sur (SITT)",
+    linea: "2",
+    municipio: "Tijuana",
+    tipo_zona: "transporte",
+    pois: [
+      { nombre: "Terminal Sur SITT", tipo: "transporte", distancia: "0 min" },
+      { nombre: "Centro de transferencia final", tipo: "transporte", distancia: "2 min" },
+      { nombre: "Servicios de viaje", tipo: "servicios", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Terminal Sur SITT — Estación Final Moderna | MetroGuia",
+    meta_description: "Terminal Sur SITT en Tijuana. Estación final moderna del sistema BRT.",
+    h1: "Terminal Sur SITT — Fin de Línea",
+    intro: "Terminal Sur SITT es estación final moderna del sistema BRT de Tijuana. Centro de transferencia para viajes de largo alcance. Acceso a servicios completos de transporte.",
+    tips: ["Terminal moderna", "Centro de transferencia", "Servicios de viaje", "Transporte confiable", "Información completa"],
+    mejor_horario: "Cualquier hora",
+    mundial_relevancia: "Terminal para turistas FIFA 2026"
   }
 ];

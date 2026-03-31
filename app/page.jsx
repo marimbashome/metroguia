@@ -540,6 +540,136 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Ferries ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+            marginBottom: '1.5rem',
+          }}>
+            <div>
+              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Ferries</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+                Conecta entre islas y costas principales
+              </p>
+            </div>
+            <a href="/ferries/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
+              Ver todos →
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+            {[
+              { nombre: 'Playa del Carmen ↔ Cozumel', slug: 'playa-cozumel', ruta: '30 min' },
+              { nombre: 'Cancún ↔ Isla Mujeres', slug: 'cancun-isla-mujeres', ruta: '20 min' },
+              { nombre: 'La Paz ↔ Mazatlán', slug: 'lapaz-mazatlan', ruta: '8h 30min' },
+              { nombre: 'Chiquilá ↔ Isla Holbox', slug: 'chiquila-holbox', ruta: '45 min' },
+            ].map((f) => (
+              <a
+                key={f.slug}
+                href={`/ferries/${f.slug}/`}
+                className="card"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '0.75rem 1rem',
+                  textDecoration: 'none',
+                  flex: '1 1 220px',
+                  minWidth: '220px',
+                }}
+              >
+                <div style={{
+                  width: '2rem',
+                  height: '2rem',
+                  borderRadius: 'var(--radius)',
+                  backgroundColor: 'var(--primary-glow)',
+                  border: '1px solid var(--primary-border)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.9rem',
+                  flexShrink: 0,
+                }}>⛴️</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{f.nombre}</div>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>{f.ruta}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Cruces Fronterizos ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+            marginBottom: '1.5rem',
+          }}>
+            <div>
+              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Cruces Fronterizos</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+                Información de paso a USA, Guatemala y Belice
+              </p>
+            </div>
+            <a href="/frontera/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
+              Ver todos →
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+            {[
+              { nombre: 'Tijuana', slug: 'tijuana', pais: 'USA' },
+              { nombre: 'Ciudad Juárez', slug: 'ciudad-juarez', pais: 'USA' },
+              { nombre: 'Nogales', slug: 'nogales', pais: 'USA' },
+              { nombre: 'Chetumal', slug: 'chetumal', pais: 'Belice' },
+            ].map((c) => (
+              <a
+                key={c.slug}
+                href={`/frontera/${c.slug}/`}
+                className="card"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '0.75rem 1rem',
+                  textDecoration: 'none',
+                  flex: '1 1 220px',
+                  minWidth: '220px',
+                }}
+              >
+                <div style={{
+                  width: '2rem',
+                  height: '2rem',
+                  borderRadius: 'var(--radius)',
+                  backgroundColor: 'var(--primary-glow)',
+                  border: '1px solid var(--primary-border)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.9rem',
+                  flexShrink: 0,
+                }}>🛂</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{c.nombre}</div>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Paso a {c.pais}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Ad — Mid-page ── */}
       <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
         <AdBannerLazyInArticle slot="1082410395" />

@@ -13,7 +13,9 @@
     "explore": "Explorer",
     "search": "Chercher une station...",
     "planRoute": "Planifier un trajet",
-    "language": "Langue"
+    "language": "Langue",
+    "airports": "Aéroports",
+    "terminals": "Terminaux"
   },
   "home": {
     "heroTitle": "Votre guide des transports publics au Mexique",

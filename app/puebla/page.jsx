@@ -6,7 +6,7 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 export function generateMetadata() {
   return {
     title: 'RUTA BRT Puebla — Guía turística completa | MetroGuia',
-    description: 'Guía completa del RUTA BRT de Puebla. 3 corredores, 60 paradas. Centro Histórico UNESCO, Catedral Metropolitana, Pirámide de Cholula, Barrio Artista y más.',
+    description: 'Guía completa del RUTA BRT de Puebla. 4 corredores, 76 paradas. Centro Histórico UNESCO, Catedral Metropolitana, Pirámide de Cholula, Barrio Artista y más.',
     keywords: 'RUTA BRT Puebla, transporte, turismo, Centro Histórico UNESCO, Cholula, Catedral',
     openGraph: {
       title: 'RUTA BRT Puebla — Guía turística completa',
@@ -152,15 +152,15 @@ export default function PueblaPage() {
             Transporte articulado que conecta el Centro Histórico UNESCO con toda la ciudad
           </p>
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
-            3 corredores • 60 paradas • Acceso a monumentos prehispánicos y coloniales
+            4 corredores • 76 paradas • Acceso a monumentos prehispánicos y coloniales
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '30px', marginTop: '30px' }}>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#8B5CF6' }}>3</div>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#8B5CF6' }}>4</div>
               <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Corredores</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#8B5CF6' }}>60</div>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#8B5CF6' }}>76</div>
               <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Paradas</div>
             </div>
             <div style={{ textAlign: 'center' }}>
@@ -192,7 +192,7 @@ export default function PueblaPage() {
 
       {/* CORREDORES/LINEAS */}
       <section style={containerStyles}>
-        <h2 style={sectionTitleStyles}>Los 3 Corredores del RUTA</h2>
+        <h2 style={sectionTitleStyles}>Los 4 Corredores del RUTA</h2>
         <div style={gridStyles}>
           {lineasPuebla.map((linea) => (
             <Link
@@ -350,6 +350,9 @@ export default function PueblaPage() {
           </Link>
           <Link href="/puebla/linea/3" style={ctaButtonStyles}>
             Explorar Corredor 3
+          </Link>
+          <Link href="/puebla/linea/4" style={ctaButtonStyles}>
+            Explorar Corredor 4
           </Link>
         </div>
 

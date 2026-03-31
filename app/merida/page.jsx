@@ -5,8 +5,8 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 export function generateMetadata() {
   return {
-    title: 'SIT Mérida — Transporte 4 corredores + La Ciudad Blanca Yucatán | MetroGuia',
-    description: 'SIT Mérida: guía turística completa de la Ciudad Blanca. 4 corredores de transporte. Centro Histórico, Paseo de Montejo, Gran Museo del Mundo Maya, Cenotes, Chichén Itzá a 1.5h. Turismo arqueológico y gastronómico.',
+    title: 'SIT Mérida — 5 Líneas de Transporte + Ie-Tram a Tren Maya | MetroGuia',
+    description: 'SIT Mérida: guía turística de la Ciudad Blanca. 4 corredores + Ie-Tram tranvía eléctrico conectando Centro Histórico con Tren Maya en Teya. Acceso a Gran Museo Maya, Paseo de Montejo, cenotes y Chichén Itzá.',
     keywords: 'SIT Mérida, transporte Mérida, La Ciudad Blanca, Gran Museo Maya, Chichén Itzá, Cenotes, Paseo Montejo, turismo arqueológico',
     openGraph: {
       title: 'SIT Mérida — Guía turística La Ciudad Blanca',
@@ -146,15 +146,15 @@ export default function MeridaPage() {
             Sistema Integrado de Transporte conectando "La Ciudad Blanca" y la Península de Yucatán
           </p>
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
-            4 corredores • 16 estaciones • Acceso a Gran Museo Maya, Paseo de Montejo y cenotes
+            5 líneas • 21 estaciones • Incluye Ie-Tram eléctrico a Tren Maya
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '30px', marginTop: '30px' }}>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>4</div>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>5</div>
               <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Corredores</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>16</div>
+              <div style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '5px', color: '#F59E0B' }}>21</div>
               <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Estaciones</div>
             </div>
             <div style={{ textAlign: 'center' }}>
@@ -187,7 +187,7 @@ export default function MeridaPage() {
 
       {/* CORREDORES/LINEAS */}
       <section style={containerStyles}>
-        <h2 style={sectionTitleStyles}>Los 4 Corredores del SIT Mérida</h2>
+        <h2 style={sectionTitleStyles}>Los 5 Sistemas de Transporte del SIT Mérida</h2>
         <div style={gridStyles}>
           {lineasMerida.map((linea) => (
             <Link
@@ -348,6 +348,9 @@ export default function MeridaPage() {
           </Link>
           <Link href="/merida/linea/A4" style={ctaButtonStyles}>
             Explorar Corredor Azul
+          <Link href="/merida/linea/Ie-Tram" style={ctaButtonStyles}>
+            Explorar Ie-Tram Eléctrico
+          </Link>
           </Link>
         </div>
 

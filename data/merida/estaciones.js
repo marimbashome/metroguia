@@ -316,5 +316,103 @@ export const estacionesMerida = [
     tips: ["Zona residencial moderna", "Escuelas privadas importantes", "Servicios de calidad"],
     mejor_horario: "Tarde",
     mundial_relevancia: "Zona hotelera y de turismo familiar"
+  },
+  {
+    slug: "plaza-grande-ie-tram",
+    nombre: "Plaza Grande (Ie-Tram)",
+    linea: "Ie-Tram",
+    municipio: "Mérida",
+    tipo_zona: "historico-turistico",
+    pois: [
+      { nombre: "Plaza Grande/Zócalo", tipo: "plaza", distancia: "inmediato" },
+      { nombre: "Catedral de San Ildefonso", tipo: "monumento", distancia: "2 min" },
+      { nombre: "Palacio de Gobierno", tipo: "arquitectura", distancia: "2 min" }
+    ],
+    transferencias: ["D1"],
+    seo_title: "Estación Plaza Grande Ie-Tram — Centro Histórico | MetroGuia",
+    meta_description: "Estación Plaza Grande del sistema Ie-Tram eléctrico de Mérida. Acceso al Centro Histórico y Tren Maya.",
+    h1: "Estación Plaza Grande — Ie-Tram Mérida",
+    intro: "Terminal de centro de la línea eléctrica Ie-Tram, conectando el corazón del Centro Histórico con la estación de Tren Maya en Teya.",
+    tips: ["Punto de partida hacia Tren Maya", "Transporte eléctrico ecológico", "Transferencia con Corredor Dorado (D1)", "Centro histórico preservado", "Acceso a museos y mercados"],
+    mejor_horario: "Cualquier hora",
+    mundial_relevancia: "Conexión a Tren Maya para turismo regional"
+  },
+  {
+    slug: "paseo-montejo-ie-tram",
+    nombre: "Paseo de Montejo (Ie-Tram)",
+    linea: "Ie-Tram",
+    municipio: "Mérida",
+    tipo_zona: "historico-turistico",
+    pois: [
+      { nombre: "Paseo de Montejo", tipo: "calle-historica", distancia: "2 min caminando" },
+      { nombre: "Museos en caserones porfirianos", tipo: "museo", distancia: "3 min" },
+      { nombre: "Tiendas de diseño", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Paseo de Montejo Ie-Tram — Arquitectura Porfiriana | MetroGuia",
+    meta_description: "Estación Paseo de Montejo del sistema Ie-Tram. Acceso al paseo más elegante de Mérida.",
+    h1: "Estación Paseo de Montejo — Ie-Tram Mérida",
+    intro: "Parada en el elegante Paseo de Montejo con mansiones porfirianas, museos y tiendas de diseño. Punto de acceso a la arquitectura más refinada de Mérida.",
+    tips: ["Mansiones porfirianas", "Museos de arte", "Gastronomía de lujo", "Tiendas de diseño local", "Ideal para fotógrafos"],
+    mejor_horario: "Tarde y atardecer",
+    mundial_relevancia: "Arquitectura colonial para turismo cultural"
+  },
+  {
+    slug: "gran-museo-mundo-maya-ie-tram",
+    nombre: "Gran Museo del Mundo Maya (Ie-Tram)",
+    linea: "Ie-Tram",
+    municipio: "Mérida",
+    tipo_zona: "cultural",
+    pois: [
+      { nombre: "Gran Museo del Mundo Maya", tipo: "museo", distancia: "3 min caminando" },
+      { nombre: "Restaurante del museo", tipo: "alimento", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Gran Museo Mundo Maya Ie-Tram — Museo Arqueológico | MetroGuia",
+    meta_description: "Estación Gran Museo del Mundo Maya del sistema Ie-Tram. Acceso a la colección arqueológica maya más importante.",
+    h1: "Estación Gran Museo del Mundo Maya — Ie-Tram Mérida",
+    intro: "Parada dedicada al mayor museo maya de Mesoamérica con arquitectura vanguardista y colecciones prehispánicas únicas. Punto de conexión entre la cultura clásica y moderna.",
+    tips: ["Museo de clase mundial", "Colecciones arqueológicas únicas", "Arquitectura contemporánea", "Restaurante con vista", "Guías especializadas"],
+    mejor_horario: "Mañana",
+    mundial_relevancia: "Patrimonio arqueológico para viajeros internacionales"
+  },
+  {
+    slug: "xcanatun",
+    nombre: "Xcanatún",
+    linea: "Ie-Tram",
+    municipio: "Mérida",
+    tipo_zona: "residencial",
+    pois: [
+      { nombre: "Zona residencial Xcanatún", tipo: "residencia", distancia: "3 min caminando" },
+      { nombre: "Parques y áreas verdes", tipo: "recreacion", distancia: "2 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Xcanatún Ie-Tram — Zona Residencial Norte | MetroGuia",
+    meta_description: "Estación Xcanatún del sistema Ie-Tram. Zona residencial norte en ruta hacia Tren Maya.",
+    h1: "Estación Xcanatún — Ie-Tram Mérida",
+    intro: "Parada en zona residencial norte de Mérida en ruta hacia la estación de Tren Maya. Conexión entre la ciudad y el sistema de transporte regional.",
+    tips: ["Zona residencial segura", "Acceso a parques", "Vida local merideña", "Camino hacia Tren Maya"],
+    mejor_horario: "Cualquier hora",
+    mundial_relevancia: "Acceso a Tren Maya desde zonas residenciales"
+  },
+  {
+    slug: "teya-tren-maya",
+    nombre: "Teya - Estación Tren Maya",
+    linea: "Ie-Tram",
+    municipio: "Mérida",
+    tipo_zona: "transporte",
+    pois: [
+      { nombre: "Estación Tren Maya Teya", tipo: "transporte", distancia: "inmediato" },
+      { nombre: "Centro de viajeros", tipo: "servicios", distancia: "2 min" },
+      { nombre: "Restaurantes y tiendas", tipo: "comercio", distancia: "3 min" }
+    ],
+    transferencias: [],
+    seo_title: "Estación Teya Tren Maya — Conexión Regional | MetroGuia",
+    meta_description: "Estación Teya del Tren Maya. Terminal del sistema Ie-Tram con conexiones a Cancún, Playa del Carmen y Cozumel.",
+    h1: "Estación Teya — Tren Maya (Ie-Tram Mérida)",
+    intro: "Terminal del sistema Ie-Tram en la estación de Tren Maya de Teya. Conexión con rutas de Tren Maya a Cancún, Playa del Carmen, Cozumel y el Caribe mexicano.",
+    tips: ["Acceso a Tren Maya", "Conexiones regionales", "Información turística", "Servicios de viajero", "Tiendas y restaurantes"],
+    mejor_horario: "Según horarios Tren Maya",
+    mundial_relevancia: "Puerta a Caribe mexicano y Tren Maya"
   }
 ];

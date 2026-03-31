@@ -18,13 +18,6 @@ export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
             if (entry.isIntersecting && !isLoaded) {
               setIsLoaded(true);
               observer.unobserve(entry.target);
-
-              // Load AdSense when in viewport
-              try {
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-              } catch (error) {
-                console.error('AdSense script error:', error);
-              }
             }
           });
         },
@@ -46,6 +39,20 @@ export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
     return () => clearTimeout(loadTimer);
   }, [isLoaded]);
 
+  const insRef = useRef(null);
+  const adPushed = useRef(false);
+
+  useEffect(() => {
+    if (isLoaded && insRef.current && !adPushed.current) {
+      adPushed.current = true;
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (error) {
+        // Silently ignore duplicate push errors
+      }
+    }
+  }, [isLoaded]);
+
   return (
     <div
       ref={containerRef}
@@ -58,6 +65,7 @@ export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
     >
       {isLoaded ? (
         <ins
+          ref={insRef}
           className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-5779958677522085"
@@ -101,13 +109,6 @@ export function AdBannerLazyInArticle({ slot, style = {} }) {
             if (entry.isIntersecting && !isLoaded) {
               setIsLoaded(true);
               observer.unobserve(entry.target);
-
-              // Load AdSense when in viewport
-              try {
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-              } catch (error) {
-                console.error('AdSense script error:', error);
-              }
             }
           });
         },
@@ -129,6 +130,20 @@ export function AdBannerLazyInArticle({ slot, style = {} }) {
     return () => clearTimeout(loadTimer);
   }, [isLoaded]);
 
+  const insRef = useRef(null);
+  const adPushed = useRef(false);
+
+  useEffect(() => {
+    if (isLoaded && insRef.current && !adPushed.current) {
+      adPushed.current = true;
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (error) {
+        // Silently ignore duplicate push errors
+      }
+    }
+  }, [isLoaded]);
+
   return (
     <div
       ref={containerRef}
@@ -141,6 +156,7 @@ export function AdBannerLazyInArticle({ slot, style = {} }) {
     >
       {isLoaded ? (
         <ins
+          ref={insRef}
           className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-5779958677522085"

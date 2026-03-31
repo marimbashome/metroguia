@@ -5,12 +5,12 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 export function generateMetadata() {
   return {
-    title: 'Chepe Express y Chihuahua — Barrancas del Cobre | MetroGuia',
-    description: 'Guía completa del Chepe Express (Ferrocarril Chihuahua al Pacífico). 673 km a través de las Barrancas del Cobre, más profundas que el Gran Cañón.',
-    keywords: 'Chepe Express, Chihuahua, Barrancas del Cobre, tren, viaje turístico, Creel, Divisadero, Rarámuri',
+    title: 'Chepe Express y BRT Bowí — Chihuahua Transporte y Barrancas | MetroGuia',
+    description: 'Guía completa de Chihuahua: Chepe Express (673 km por Barrancas del Cobre) y BRT Bowí (transporte rápido moderno). 3 líneas de transporte disponibles.',
+    keywords: 'Chepe Express, Chihuahua, Barrancas del Cobre, BRT Bowí, tren, transporte, viaje turístico, Creel, Divisadero, Rarámuri',
     openGraph: {
-      title: 'Chepe Express — La Ruta de Tren Más Espectacular de México',
-      description: 'Viaja 673 km desde Chihuahua a Los Mochis a través de las legendarias Barrancas del Cobre. El tren más espectacular del mundo.',
+      title: 'Chihuahua — Chepe Express y BRT Bowí',
+      description: 'Explora Chihuahua con el Chepe Express (673 km tren) y BRT Bowí (22 km transporte rápido). Barrancas del Cobre y conectividad moderna.',
       url: 'https://metroguia.mx/chihuahua',
       type: 'website',
     },
@@ -374,10 +374,10 @@ export default function ChihuahuaPage() {
       {/* CTA FINAL */}
       <section style={{ ...containerStyles, textAlign: 'center', paddingTop: '60px', paddingBottom: '40px', borderTop: '1px solid var(--border)' }}>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: 'var(--text)' }}>
-          Explora el Chepe
+          Explora Chihuahua
         </h2>
         <p style={{ fontSize: '16px', color: 'var(--text-muted)', marginBottom: '30px' }}>
-          Selecciona una ruta para conocer todas las estaciones, tips y experiencias del viaje más espectacular en tren de México.
+          Selecciona una ruta para conocer todas las estaciones, tips y experiencias. Desde el legendario Chepe hasta el moderno BRT Bowí.
         </p>
         <div style={{ marginBottom: '40px' }}>
           <Link href="/chihuahua/linea/1" style={ctaButtonStyles}>
@@ -385,6 +385,9 @@ export default function ChihuahuaPage() {
           </Link>
           <Link href="/chihuahua/linea/2" style={ctaButtonStyles}>
             Ver Chihuahua Ciudad
+          </Link>
+          <Link href="/chihuahua/linea/3" style={{ ...ctaButtonStyles, backgroundColor: '#2563EB' }}>
+            Ver BRT Bowí
           </Link>
         </div>
 

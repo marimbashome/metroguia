@@ -5,11 +5,11 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 export function generateMetadata() {
   return {
-    title: 'Tijuana — Frontera, Gastronomía + Base para FIFA 2026 San Diego | MetroGuia',
-    description: 'Guía completa de Tijuana: frontera México-USA, gastronomía (tacos adobada), playas, Zona Río, Valle de Guadalupe. Tu base para el Mundial 2026 en San Diego (35% más barato). A 5 minutos del cruce fronterizo.',
-    keywords: 'Tijuana, frontera, gastronomía mexicana, San Diego FIFA 2026, tacos adobada, Valle de Guadalupe, Zona Río, transporte fronterizo',
+    title: 'Tijuana — SITT BRT y Frontera, Gastronomía + Base para FIFA 2026 San Diego | MetroGuia',
+    description: 'Guía completa de Tijuana: SITT BRT (transporte rápido), frontera México-USA, gastronomía (tacos adobada), playas, Zona Río, Valle de Guadalupe. 3 líneas de transporte. Tu base para el Mundial 2026 en San Diego (35% más barato). A 5 minutos del cruce fronterizo.',
+    keywords: 'Tijuana, SITT BRT, frontera, gastronomía mexicana, San Diego FIFA 2026, tacos adobada, Valle de Guadalupe, Zona Río, transporte, transporte fronterizo',
     openGraph: {
-      title: 'Tijuana — Tu Base para el Mundial 2026 en San Diego',
+      title: 'Tijuana — SITT BRT y Frontera, tu Base para el Mundial 2026',
       description: 'Alójate en Tijuana (35% más barato) y cruza a San Diego para los partidos FIFA 2026. A 5 minutos a pie del cruce fronterizo.',
       url: 'https://metroguia.mx/tijuana',
       type: 'website',
@@ -332,7 +332,10 @@ export default function TijuanaPage() {
             Ver Línea 1 (Frontera)
           </Link>
           <Link href="/tijuana/linea/2" style={ctaButtonStyles}>
-            Ver Línea 2 (Cultura)
+            Ver SITT BRT
+          </Link>
+          <Link href="/tijuana/linea/3" style={{ ...ctaButtonStyles, backgroundColor: '#4B5563' }}>
+            Ver Línea 3 (Cultura)
           </Link>
         </div>
 
