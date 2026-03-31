@@ -22,6 +22,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'tacubaya', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'terminal-poniente', tiempo: 3, linea: 'terminal', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-observatorio', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'tacubaya': {
@@ -33,6 +35,8 @@ export const grafo = {
       { slug: 'juanacatlan', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'san-pedro-de-los-pinos', tiempo: 5, linea: '7', tipo: 'transbordo' },
       { slug: 'chilpancingo', tiempo: 5, linea: '9', tipo: 'transbordo' }
+    ,
+      { slug: 'tacubaya-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'juanacatlan': {
@@ -42,6 +46,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'tacubaya', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'chapultepec', tiempo: 2, linea: '1', tipo: 'linea' }
+    ,
+      { slug: 'mb-avenida-bruselas', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'chapultepec': {
@@ -51,6 +57,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'juanacatlan', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'sevilla', tiempo: 2, linea: '1', tipo: 'linea' }
+    ,
+      { slug: 'chapultepec-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'sevilla': {
@@ -69,6 +77,12 @@ export const grafo = {
     adyacentes: [
       { slug: 'sevilla', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'cuauhtemoc', tiempo: 2, linea: '1', tipo: 'linea' }
+    ,
+      { slug: 'insurgentes-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-avenida-revolucion-circuito', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'roma', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'balderas': {
@@ -109,6 +123,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'pino-suarez', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'candelaria', tiempo: 2, linea: '1', tipo: 'linea' }
+    ,
+      { slug: 'merced-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'candelaria': {
@@ -130,6 +146,12 @@ export const grafo = {
       { slug: 'morelos', tiempo: 2, linea: '1', tipo: 'linea' },
       { slug: 'ricardo-flores-magon', tiempo: 5, linea: 'B', tipo: 'transbordo' },
       { slug: 'terminal-tapo', tiempo: 3, linea: 'terminal', tipo: 'transbordo' }
+    ,
+      { slug: 'san-lazaro-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'san-lazaro-tb5', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-san-lazaro', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'morelos': {
@@ -181,6 +203,8 @@ export const grafo = {
       { slug: 'hangares', tiempo: 5, linea: '5', tipo: 'transbordo' },
       { slug: 'puebla', tiempo: 5, linea: '9', tipo: 'transbordo' },
       { slug: 'agricola-oriental', tiempo: 5, linea: 'A', tipo: 'transbordo' }
+    ,
+      { slug: 'pantitlan-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   // ============================================
@@ -222,6 +246,8 @@ export const grafo = {
       { slug: 'refineria', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'panteones', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'san-joaquin', tiempo: 5, linea: '7', tipo: 'transbordo' }
+    ,
+      { slug: 'cb-campos-revolucion', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'panteones': {
@@ -295,6 +321,10 @@ export const grafo = {
       { slug: 'revolucion', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'bellas-artes', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'juarez', tiempo: 5, linea: '3', tipo: 'transbordo' }
+    ,
+      { slug: 'hidalgo-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-avenida-hidalgo', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'bellas-artes': {
@@ -305,6 +335,8 @@ export const grafo = {
       { slug: 'hidalgo', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'allende', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'garibaldi', tiempo: 5, linea: '8', tipo: 'transbordo' }
+    ,
+      { slug: 'bellas-artes-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'allende': {
@@ -314,6 +346,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'bellas-artes', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'zocalo', tiempo: 2, linea: '2', tipo: 'linea' }
+    ,
+      { slug: 'garibaldi-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'zocalo': {
@@ -323,6 +357,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'allende', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'pino-suarez', tiempo: 2, linea: '2', tipo: 'linea' }
+    ,
+      { slug: 'mb-zocalo', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'san-antonio-abad': {
@@ -402,6 +438,8 @@ export const grafo = {
       { slug: 'tasquena', tiempo: 0, linea: '2', tipo: 'transbordo' },
       { slug: 'tasquena-tl', tiempo: 5, linea: 'TL', tipo: 'transbordo' },
       { slug: 'terminal-sur', tiempo: 3, linea: 'terminal', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-terminal-central-sur', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   // ============================================
@@ -416,6 +454,10 @@ export const grafo = {
       { slug: 'mexicable-indios-verdes', tiempo: 5, linea: 'MCV', tipo: 'transbordo' },
       { slug: 'mb-indios-verdes', tiempo: 5, linea: 'MB-1', tipo: 'transbordo' },
       { slug: 'cb-indios-verdes', tiempo: 5, linea: 'CB-1', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-indios-verdes-l5', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'cb-cuautepec', tiempo: 12, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'deportivo-18-de-marzo': {
@@ -476,6 +518,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'hidalgo', tiempo: 2, linea: '3', tipo: 'linea' },
       { slug: 'balderas', tiempo: 2, linea: '3', tipo: 'linea' }
+    ,
+      { slug: 'cb-torres-buenavista', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'niños-heroes': {
@@ -495,6 +539,10 @@ export const grafo = {
       { slug: 'hospital-general', tiempo: 2, linea: '3', tipo: 'linea' },
       { slug: 'etiopia-plaza-de-la-transparencia', tiempo: 2, linea: '3', tipo: 'linea' },
       { slug: 'chilpancingo', tiempo: 5, linea: '9', tipo: 'transbordo' }
+    ,
+      { slug: 'hospital-general-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-centro-medico', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'etiopia-plaza-de-la-transparencia': {
@@ -541,6 +589,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'zapata', tiempo: 2, linea: '3', tipo: 'linea' },
       { slug: 'viveros-derechos-humanos', tiempo: 2, linea: '3', tipo: 'linea' }
+    ,
+      { slug: 'cb-cineteca-bodega', tiempo: 8, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'viveros-derechos-humanos': {
@@ -839,6 +889,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'polanco', tiempo: 2, linea: '7', tipo: 'linea' },
       { slug: 'constituyentes', tiempo: 2, linea: '7', tipo: 'linea' }
+    ,
+      { slug: 'mb-avenida-paseo-de-la-reforma', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'san-pedro-de-los-pinos': {
@@ -848,6 +900,10 @@ export const grafo = {
     adyacentes: [
       { slug: 'tacubaya', tiempo: 2, linea: '7', tipo: 'linea' },
       { slug: 'san-antonio', tiempo: 2, linea: '7', tipo: 'linea' }
+    ,
+      { slug: 'cb-los-pinos', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'cb-xalpa', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'san-antonio': {
@@ -867,6 +923,10 @@ export const grafo = {
       { slug: 'san-antonio', tiempo: 2, linea: '7', tipo: 'linea' },
       { slug: 'barranca-del-muerto', tiempo: 2, linea: '7', tipo: 'linea' },
       { slug: 'insurgentes-sur', tiempo: 5, linea: '12', tipo: 'transbordo' }
+    ,
+      { slug: 'mixcoac-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mixcoac-tb7', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'barranca-del-muerto': {
@@ -988,6 +1048,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'atlalilco', tiempo: 2, linea: '8', tipo: 'linea' },
       { slug: 'cerro-de-la-estrella', tiempo: 2, linea: '8', tipo: 'linea' }
+    ,
+      { slug: 'iztapalapa-tb', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cerro-de-la-estrella': {
@@ -1016,6 +1078,10 @@ export const grafo = {
       { slug: 'u-a-m-i', tiempo: 2, linea: '8', tipo: 'linea' },
       { slug: 'constitucion-1917-tb11', tiempo: 5, linea: 'TB-11', tipo: 'transbordo' },
       { slug: 'cb-constitucion-1917', tiempo: 5, linea: 'CB-2', tipo: 'transbordo' }
+    ,
+      { slug: 'constitucion-1917-tb5', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'constitucion-1917-tb8', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   // ============================================
@@ -1141,6 +1207,8 @@ export const grafo = {
       { slug: 'acatitla', tiempo: 2, linea: 'A', tipo: 'linea' },
       { slug: 'los-reyes', tiempo: 2, linea: 'A', tipo: 'linea' },
       { slug: 'cb-santa-marta', tiempo: 5, linea: 'CB-2', tipo: 'transbordo' }
+    ,
+      { slug: 'cb-lomas-estancia', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'los-reyes': {
@@ -1506,6 +1574,8 @@ export const grafo = {
     lineas: ['3'],
     adyacentes: [
       { slug: 'hospital-general', tiempo: 3, linea: '3', tipo: 'linea' }
+    ,
+      { slug: 'insurgentes', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   // ============================================
@@ -2961,6 +3031,8 @@ export const grafo = {
     lineas: ['1'],
     adyacentes: [
       { slug: 'lerdo-de-tejada', tiempo: 2, linea: '1', tipo: 'linea' }
+    ,
+      { slug: 'sendero', tiempo: 8, linea: 'ecovia', tipo: 'transbordo' }
     ]
   },
   // ============================================
@@ -2972,6 +3044,8 @@ export const grafo = {
     lineas: ['2'],
     adyacentes: [
       { slug: 'tapia', tiempo: 2, linea: '2', tipo: 'linea' }
+    ,
+      { slug: 'exposicion', tiempo: 8, linea: 'ecovia', tipo: 'transbordo' }
     ]
   },
   'tapia': {
@@ -3007,10 +3081,10 @@ export const grafo = {
     lineas: ['2'],
     adyacentes: [
       { slug: 'anahuac', tiempo: 2, linea: '2', tipo: 'linea' },
-      { slug: 'ninos-heroes', tiempo: 2, linea: '2', tipo: 'linea' }
+      { slug: 'ninos-heroes-mty', tiempo: 2, linea: '2', tipo: 'linea' }
     ]
   },
-  'ninos-heroes': {
+  'ninos-heroes-mty': {
     ciudad: 'mty',
     nombre: 'Niños Héroes',
     lineas: ['2'],
@@ -3024,7 +3098,7 @@ export const grafo = {
     nombre: 'Regina',
     lineas: ['2'],
     adyacentes: [
-      { slug: 'ninos-heroes', tiempo: 2, linea: '2', tipo: 'linea' },
+      { slug: 'ninos-heroes-mty', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'general-anaya', tiempo: 2, linea: '2', tipo: 'linea' },
       { slug: 'regina-ecovia', tiempo: 5, linea: 'ecovia', tipo: 'transbordo' }
     ]
@@ -3724,6 +3798,10 @@ export const grafo = {
     adyacentes: [
       { slug: 'estadio-azteca-tl', tiempo: 2, linea: 'TL', tipo: 'linea' },
       { slug: 'xomali-tl', tiempo: 2, linea: 'TL', tipo: 'linea' }
+    ,
+      { slug: 'huipulco-tb', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'mb-avenida-estadio-azteca', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'xomali-tl': {
@@ -4140,6 +4218,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'corredor-norte-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' },
       { slug: 'eje-central-salto-agua-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ,
+      { slug: 'bellas-artes', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'eje-central-salto-agua-tb': {
@@ -4175,6 +4255,8 @@ export const grafo = {
     lineas: ['TB-1'],
     adyacentes: [
       { slug: 'eje-central-nativitas-tb', tiempo: 3, linea: 'TB-1', tipo: 'linea' }
+    ,
+      { slug: 'huipulco-tl', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'pantitlan-tb': {
@@ -4183,6 +4265,8 @@ export const grafo = {
     lineas: ['TB-10'],
     adyacentes: [
       { slug: 'av-texcoco-tb', tiempo: 3, linea: 'TB-10', tipo: 'linea' }
+    ,
+      { slug: 'pantitlan', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'av-texcoco-tb': {
@@ -4234,6 +4318,8 @@ export const grafo = {
     lineas: ['TB-2'],
     adyacentes: [
       { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ,
+      { slug: 'chapultepec', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'merced-tb': {
@@ -4243,6 +4329,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'centro-historico-tb2', tiempo: 3, linea: 'TB-2', tipo: 'linea' },
       { slug: 'calzada-viga-tb', tiempo: 3, linea: 'TB-2', tipo: 'linea' }
+    ,
+      { slug: 'merced', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'calzada-viga-tb': {
@@ -4277,6 +4365,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'patriotismo-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' },
       { slug: 'tacubaya-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ,
+      { slug: 'mixcoac', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'tacubaya-tb': {
@@ -4285,6 +4375,8 @@ export const grafo = {
     lineas: ['TB-3'],
     adyacentes: [
       { slug: 'mixcoac-tb', tiempo: 3, linea: 'TB-3', tipo: 'linea' }
+    ,
+      { slug: 'tacubaya', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'san-lazaro-tb': {
@@ -4293,6 +4385,8 @@ export const grafo = {
     lineas: ['TB-4'],
     adyacentes: [
       { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ,
+      { slug: 'san-lazaro', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'zaragoza-tb': {
@@ -4311,6 +4405,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'zaragoza-tb', tiempo: 3, linea: 'TB-4', tipo: 'linea' },
       { slug: 'santa-martha-tb4', tiempo: 3, linea: 'TB-4', tipo: 'linea' }
+    ,
+      { slug: 'iztapalapa', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'canal-san-juan-tb': {
@@ -4329,6 +4425,10 @@ export const grafo = {
     adyacentes: [
       { slug: 'canal-san-juan-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' },
       { slug: 'la-turba-tb', tiempo: 3, linea: 'TB-5', tipo: 'linea' }
+    ,
+      { slug: 'san-lazaro', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
+    ,
+      { slug: 'constitucion-de-1917', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'la-turba-tb': {
@@ -4345,6 +4445,8 @@ export const grafo = {
     lineas: ['TB-6'],
     adyacentes: [
       { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+    ,
+      { slug: 'hidalgo', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'doctores-tb': {
@@ -4362,6 +4464,8 @@ export const grafo = {
     lineas: ['TB-6'],
     adyacentes: [
       { slug: 'doctores-tb', tiempo: 3, linea: 'TB-6', tipo: 'linea' }
+    ,
+      { slug: 'hospital-general', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'insurgentes-tb': {
@@ -4371,6 +4475,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'chapultepec-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' },
       { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ,
+      { slug: 'insurgentes', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cu-tb': {
@@ -4379,6 +4485,8 @@ export const grafo = {
     lineas: ['TB-7'],
     adyacentes: [
       { slug: 'mixcoac-tb7', tiempo: 3, linea: 'TB-7', tipo: 'linea' }
+    ,
+      { slug: 'mixcoac', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'constitucion-1917-tb8': {
@@ -4387,6 +4495,8 @@ export const grafo = {
     lineas: ['TB-8'],
     adyacentes: [
       { slug: 'santa-cruz-meyehualco-tb', tiempo: 3, linea: 'TB-8', tipo: 'linea' }
+    ,
+      { slug: 'constitucion-de-1917', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'santa-cruz-meyehualco-tb': {
@@ -4412,6 +4522,8 @@ export const grafo = {
     lineas: ['TB-9'],
     adyacentes: [
       { slug: 'centro-historico-tb9', tiempo: 3, linea: 'TB-9', tipo: 'linea' }
+    ,
+      { slug: 'garibaldi', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'obrera-tb': {
@@ -4437,6 +4549,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'cb-indios-verdes', tiempo: 2, linea: 'CB-1', tipo: 'linea' },
       { slug: 'cb-ticoman', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+    ,
+      { slug: 'indios-verdes', tiempo: 12, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cb-la-pastora': {
@@ -4454,6 +4568,8 @@ export const grafo = {
     lineas: ['CB-1'],
     adyacentes: [
       { slug: 'cb-la-pastora', tiempo: 2, linea: 'CB-1', tipo: 'linea' }
+    ,
+      { slug: 'buenavista', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cb-lomas-estancia': {
@@ -4463,6 +4579,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'cb-tlalpexco', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
       { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+    ,
+      { slug: 'santa-marta', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cb-xalpa': {
@@ -4472,6 +4590,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'cb-constitucion-1917', tiempo: 2, linea: 'CB-2', tipo: 'linea' },
       { slug: 'cb-los-pinos', tiempo: 2, linea: 'CB-2', tipo: 'linea' }
+    ,
+      { slug: 'constituyentes', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cb-charreria': {
@@ -4490,6 +4610,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'cb-charreria', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-parcur', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ,
+      { slug: 'tacuba', tiempo: 10, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'cb-parcur': {
@@ -4508,6 +4630,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'cb-quetzalcoatl', tiempo: 2, linea: 'CB-3', tipo: 'linea' },
       { slug: 'cb-miguel-teotongo', tiempo: 2, linea: 'CB-3', tipo: 'linea' }
+    ,
+      { slug: 'coyoacan', tiempo: 8, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'centro-historico-tb2': {
@@ -4983,6 +5107,8 @@ export const grafo = {
     lineas: ['MB-L2'],
     adyacentes: [
       { slug: 'mb-merced', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ,
+      { slug: 'san-lazaro', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-merced': {
@@ -5001,6 +5127,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-merced', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
       { slug: 'mb-balance', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ,
+      { slug: 'centro-medico', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-balance': {
@@ -5028,6 +5156,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-juarez', tiempo: 3, linea: 'MB-L2', tipo: 'linea' },
       { slug: 'mb-belen', tiempo: 3, linea: 'MB-L2', tipo: 'linea' }
+    ,
+      { slug: 'hidalgo', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-belen': {
@@ -5152,6 +5282,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-palacio-nacional', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
       { slug: 'mb-isabel-la-catolica', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ,
+      { slug: 'zocalo', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-isabel-la-catolica': {
@@ -5188,6 +5320,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-lazaro-cardenas', tiempo: 3, linea: 'MB-L3', tipo: 'linea' },
       { slug: 'mb-avenida-pdte-masaryk', tiempo: 3, linea: 'MB-L3', tipo: 'linea' }
+    ,
+      { slug: 'auditorio', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-avenida-pdte-masaryk': {
@@ -5464,6 +5598,8 @@ export const grafo = {
     lineas: ['MB-L4'],
     adyacentes: [
       { slug: 'mb-avenida-xotepingo-sur', tiempo: 3, linea: 'MB-L4', tipo: 'linea' }
+    ,
+      { slug: 'taxquena', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-indios-verdes-l5': {
@@ -5472,6 +5608,8 @@ export const grafo = {
     lineas: ['MB-L5'],
     adyacentes: [
       { slug: 'mb-avenida-gustavo-baz', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ,
+      { slug: 'indios-verdes', tiempo: 5, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-avenida-gustavo-baz': {
@@ -5606,6 +5744,8 @@ export const grafo = {
     lineas: ['MB-L5'],
     adyacentes: [
       { slug: 'mb-avenida-monte-blanco', tiempo: 3, linea: 'MB-L5', tipo: 'linea' }
+    ,
+      { slug: 'observatorio', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-circuito-poniente': {
@@ -5623,6 +5763,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-circuito-poniente', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
       { slug: 'mb-avenida-paseo-circuito', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ,
+      { slug: 'insurgentes', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-avenida-paseo-circuito': {
@@ -5686,6 +5828,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-avenida-amsterdam', tiempo: 3, linea: 'MB-L6', tipo: 'linea' },
       { slug: 'mb-avenida-roma', tiempo: 3, linea: 'MB-L6', tipo: 'linea' }
+    ,
+      { slug: 'chilpancingo', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-avenida-roma': {
@@ -5828,6 +5972,8 @@ export const grafo = {
     adyacentes: [
       { slug: 'mb-avenida-periferico-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' },
       { slug: 'mb-avenida-periferico-sur-oriente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
+    ,
+      { slug: 'huipulco-tl', tiempo: 7, linea: 'transbordo', tipo: 'transbordo' }
     ]
   },
   'mb-avenida-periferico-sur-oriente': {
@@ -5910,43 +6056,112 @@ export const grafo = {
       { slug: 'mb-avenida-periferico-poniente', tiempo: 3, linea: 'MB-L7', tipo: 'linea' }
     ]
   },
+  // ============================================
+  // RESTORED CDMX METRO STATIONS (were overwritten by secondary city slugs)
+  // ============================================
   'constituyentes': {
+    ciudad: 'cdmx',
+    nombre: 'Constituyentes',
+    lineas: ['7'],
+    adyacentes: [
+      { slug: 'auditorio', tiempo: 2, linea: '7', tipo: 'linea' },
+      { slug: 'tacubaya', tiempo: 2, linea: '7', tipo: 'linea' }
+    ]
+  },
+  'cuauhtemoc': {
+    ciudad: 'cdmx',
+    nombre: 'Cuauhtémoc',
+    lineas: ['1'],
+    adyacentes: [
+      { slug: 'insurgentes', tiempo: 2, linea: '1', tipo: 'linea' },
+      { slug: 'balderas', tiempo: 2, linea: '1', tipo: 'linea' }
+    ]
+  },
+  'ninos-heroes': {
+    ciudad: 'cdmx',
+    nombre: 'Niños Héroes',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'hospital-general', tiempo: 2, linea: '3', tipo: 'linea' },
+      { slug: 'etiopia-plaza-de-la-transparencia', tiempo: 2, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'hospital-general': {
+    ciudad: 'cdmx',
+    nombre: 'Hospital General',
+    lineas: ['3'],
+    adyacentes: [
+      { slug: 'ninos-heroes', tiempo: 2, linea: '3', tipo: 'linea' },
+      { slug: 'centro-medico', tiempo: 2, linea: '3', tipo: 'linea' }
+    ]
+  },
+  'la-paz': {
+    ciudad: 'cdmx',
+    nombre: 'La Paz',
+    lineas: ['A'],
+    adyacentes: [
+      { slug: 'los-reyes', tiempo: 2, linea: 'A', tipo: 'linea' },
+      { slug: 'santa-marta', tiempo: 3, linea: 'A', tipo: 'linea' }
+    ]
+  },
+
+  'constituyentes-qro-hub': {
     ciudad: 'queretaro',
     nombre: 'Avenida Constituyentes',
     lineas: [],
     adyacentes: [{ slug: 'constituyentes-qro', tiempo: 5, linea: 'Q1', tipo: 'transbordo' }
+    ,
+      { slug: 'barrio-la-cruz-qro', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ,
+      { slug: 'acueducto', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
     ]
   },
-  'cuauhtemoc': {
+  'cuauhtemoc-chihuahua': {
     ciudad: 'chihuahua',
     nombre: 'Comunidades Menonitas',
     lineas: ['1'],
     adyacentes: [{ slug: 'creel', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'chihuahua-central', tiempo: 3, linea: '1', tipo: 'linea' }]
   },
-  'hospital-general': {
+  'hospital-general-merida': {
     ciudad: 'merida',
     nombre: 'Hospital General de Mérida',
     lineas: ['R2'],
-    adyacentes: [{ slug: 'itzimna', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'altabrisa', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'centro-historico', tiempo: 15, linea: 'D1', tipo: 'linea' }
+    adyacentes: [{ slug: 'itzimna', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'altabrisa', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'centro-historico-merida', tiempo: 15, linea: 'D1', tipo: 'linea' }
     ]
   },
-  'la-paz': {
+  'la-paz-puebla': {
     ciudad: 'puebla',
     nombre: 'Zona residencial La Paz',
     lineas: ['2'],
-    adyacentes: [{ slug: 'buap', tiempo: 3, linea: '2', tipo: 'linea' }, { slug: 'san-manuel', tiempo: 3, linea: '2', tipo: 'linea' }]
+    adyacentes: [
+      { slug: 'buap', tiempo: 3, linea: '2', tipo: 'linea' },
+      { slug: 'san-manuel', tiempo: 3, linea: '2', tipo: 'linea' },
+      { slug: 'udla', tiempo: 10, linea: 'conexion', tipo: 'transbordo' },
+      { slug: 'cholula', tiempo: 12, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   '20-de-noviembre': {
     ciudad: 'puebla',
     nombre: 'Tiendas departamentales',
     lineas: ['1'],
-    adyacentes: [{ slug: 'zocalo-centro', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'capu', tiempo: 3, linea: '1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'zocalo-centro', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'capu', tiempo: 3, linea: '1', tipo: 'linea' },
+      { slug: 'cholula', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ,
+      { slug: 'udla', tiempo: 5, linea: 'ruta-puebla', tipo: 'transbordo' }
+    ,
+      { slug: 'san-manuel', tiempo: 5, linea: 'ruta-puebla', tipo: 'transbordo' }
+    ,
+      { slug: 'la-paz-puebla', tiempo: 5, linea: 'ruta-puebla', tipo: 'transbordo' }
+    ]
   },
   'acueducto': {
     ciudad: 'queretaro',
     nombre: 'Acueducto de Querétaro',
     lineas: [],
     adyacentes: [{ slug: 'acueducto-qro', tiempo: 5, linea: 'Q1', tipo: 'transbordo' }
+    ,
+      ,
+      { slug: 'constituyentes-qro-hub', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
     ]
   },
   'acueducto-qro': {
@@ -5979,13 +6194,17 @@ export const grafo = {
     ciudad: 'toluca',
     nombre: 'Aeropuerto Internacional Toluca',
     lineas: ['M2'],
-    adyacentes: [{ slug: 'universidad-toluca', tiempo: 3, linea: 'M2', tipo: 'linea' }]
+    adyacentes: [{ slug: 'universidad-toluca', tiempo: 3, linea: 'M2', tipo: 'linea' },
+      { slug: 'zinacantepec-terminal', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   'agua-azul': {
     ciudad: 'tren-maya',
     nombre: 'Cascadas de Agua Azul',
     lineas: ['T5'],
-    adyacentes: [{ slug: 'palenque', tiempo: 5, linea: 'T5', tipo: 'linea' }]
+    adyacentes: [
+      { slug: 'palenque', tiempo: 5, linea: 'T5', tipo: 'linea' }
+    ]
   },
   'alameda-qro': {
     ciudad: 'queretaro',
@@ -5997,7 +6216,7 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Zona residencial Altabrisa',
     lineas: ['R2'],
-    adyacentes: [{ slug: 'hospital-general', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'plaza-las-americas', tiempo: 3, linea: 'R2', tipo: 'linea' }]
+    adyacentes: [{ slug: 'hospital-general-merida', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'plaza-las-americas', tiempo: 3, linea: 'R2', tipo: 'linea' }]
   },
   'analco': {
     ciudad: 'puebla',
@@ -6009,7 +6228,11 @@ export const grafo = {
     ciudad: 'puebla',
     nombre: 'Angelópolis Shopping Center',
     lineas: ['1'],
-    adyacentes: [{ slug: 'mercado-artesanias', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'cholula', tiempo: 3, linea: '1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'mercado-artesanias', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'cholula', tiempo: 3, linea: '1', tipo: 'linea' },
+      { slug: 'loreto', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ,
+      { slug: 'la-paz-puebla', tiempo: 12, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   'aromas': {
     ciudad: 'queretaro',
@@ -6040,7 +6263,9 @@ export const grafo = {
     ciudad: 'queretaro',
     nombre: 'Barrio La Cruz',
     lineas: ['Rojo'],
-    adyacentes: [{ slug: 'estadio-corregidora-qro', tiempo: 3, linea: 'Rojo', tipo: 'linea' }]
+    adyacentes: [{ slug: 'estadio-corregidora-qro', tiempo: 3, linea: 'Rojo', tipo: 'linea' },
+      { slug: 'constituyentes-qro-hub', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   'blvd-adolfo-lopez-mateos': {
     ciudad: 'leon',
@@ -6052,7 +6277,7 @@ export const grafo = {
     ciudad: 'puebla',
     nombre: 'Benemérita Universidad Autónoma de Puebla',
     lineas: ['2'],
-    adyacentes: [{ slug: 'la-paz', tiempo: 3, linea: '2', tipo: 'linea' }]
+    adyacentes: [{ slug: 'la-paz-puebla', tiempo: 3, linea: '2', tipo: 'linea' }]
   },
   'buena-vista': {
     ciudad: 'tijuana',
@@ -6113,7 +6338,7 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Zona Caucel',
     lineas: ['V3'],
-    adyacentes: [{ slug: 'cholul', tiempo: 3, linea: 'V3', tipo: 'linea' }, { slug: 'centro-historico', tiempo: 20, linea: 'V3', tipo: 'linea' }
+    adyacentes: [{ slug: 'centro-historico-merida', tiempo: 20, linea: 'V3', tipo: 'linea' }
     ]
   },
   'centro-chihuahua': {
@@ -6123,11 +6348,11 @@ export const grafo = {
     adyacentes: [{ slug: 'palacio-gobierno', tiempo: 3, linea: '2', tipo: 'linea' }, { slug: 'chihuahua-central', tiempo: 10, linea: '1', tipo: 'transbordo' }
     ]
   },
-  'centro-historico': {
+  'centro-historico-merida': {
     ciudad: 'merida',
     nombre: 'Catedral de San Ildefonso',
     lineas: ['A4', 'D1'],
-    adyacentes: [{ slug: 'mercado-lucas-galez', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'paseo-montejo', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'ciudad-caucel', tiempo: 3, linea: 'A4', tipo: 'linea' }, { slug: 'terminal-came', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'la-plancha', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'gran-museo-mundo-maya', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'paseo-montejo', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'mercado-lucas-galez', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'uady', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'aeropuerto-manuel-crescencio-rejon', tiempo: 5, linea: 'A4', tipo: 'transbordo' }, { slug: 'ciudad-caucel', tiempo: 5, linea: 'A4', tipo: 'transbordo' }, { slug: 'hospital-general', tiempo: 15, linea: 'D1', tipo: 'linea' }
+    adyacentes: [{ slug: 'mercado-lucas-galez', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'paseo-montejo', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'ciudad-caucel', tiempo: 3, linea: 'A4', tipo: 'linea' }, { slug: 'terminal-came', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'la-plancha', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'gran-museo-mundo-maya', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'paseo-montejo', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'mercado-lucas-galez', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'uady', tiempo: 5, linea: 'D1', tipo: 'transbordo' }, { slug: 'aeropuerto-manuel-crescencio-rejon', tiempo: 5, linea: 'A4', tipo: 'transbordo' }, { slug: 'ciudad-caucel', tiempo: 5, linea: 'A4', tipo: 'transbordo' }, { slug: 'hospital-general-merida', tiempo: 15, linea: 'D1', tipo: 'linea' }, { slug: 'caucel', tiempo: 15, linea: 'conexion', tipo: 'transbordo' }
     ]
   },
   'centro-historico-qro': {
@@ -6158,14 +6383,14 @@ export const grafo = {
     ciudad: 'chihuahua',
     nombre: 'Estación Central del Chepe',
     lineas: ['1'],
-    adyacentes: [{ slug: 'cuauhtemoc', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'centro-chihuahua', tiempo: 10, linea: '1', tipo: 'transbordo' }
+    adyacentes: [{ slug: 'cuauhtemoc-chihuahua', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'centro-chihuahua', tiempo: 10, linea: '1', tipo: 'transbordo' }
     ]
   },
   'cholula': {
     ciudad: 'puebla',
     nombre: 'Pirámide de Cholula',
     lineas: ['1'],
-    adyacentes: [{ slug: 'angelopolis', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'analco', tiempo: 3, linea: '1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'angelopolis', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'analco', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'la-paz-puebla', tiempo: 12, linea: 'conexion', tipo: 'transbordo' }, { slug: 'san-manuel', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }]
   },
   'cimatario-qro': {
     ciudad: 'queretaro',
@@ -6177,13 +6402,13 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Zona residencial Ciudad Caucel',
     lineas: ['A4'],
-    adyacentes: [{ slug: 'centro-historico', tiempo: 3, linea: 'A4', tipo: 'linea' }, { slug: 'aeropuerto-manuel-crescencio-rejon', tiempo: 3, linea: 'A4', tipo: 'linea' }]
+    adyacentes: [{ slug: 'centro-historico-merida', tiempo: 3, linea: 'A4', tipo: 'linea' }, { slug: 'aeropuerto-manuel-crescencio-rejon', tiempo: 3, linea: 'A4', tipo: 'linea' }]
   },
   'constituyentes-qro': {
     ciudad: 'queretaro',
     nombre: 'Zona comercial Constituyentes',
     lineas: ['Azul', 'Verde'],
-    adyacentes: [{ slug: 'campus-aeroespacial-qro', tiempo: 3, linea: 'Azul', tipo: 'linea' }, { slug: 'hospital-general-qro', tiempo: 3, linea: 'Azul', tipo: 'linea' }, { slug: 'acueducto-qro', tiempo: 3, linea: 'Verde', tipo: 'linea' }, { slug: 'parque-industrial-qro', tiempo: 3, linea: 'Verde', tipo: 'linea' }, { slug: 'alameda-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'cimatario-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'plaza-dorada-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'hospital-general-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'campus-aeroespacial-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'tec-monterrey-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'juriquilla-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'parque-industrial-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'acueducto-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'constituyentes', tiempo: 5, linea: 'Q1', tipo: 'transbordo' }
+    adyacentes: [{ slug: 'campus-aeroespacial-qro', tiempo: 3, linea: 'Azul', tipo: 'linea' }, { slug: 'hospital-general-qro', tiempo: 3, linea: 'Azul', tipo: 'linea' }, { slug: 'acueducto-qro', tiempo: 3, linea: 'Verde', tipo: 'linea' }, { slug: 'parque-industrial-qro', tiempo: 3, linea: 'Verde', tipo: 'linea' }, { slug: 'alameda-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'cimatario-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'plaza-dorada-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'hospital-general-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'campus-aeroespacial-qro', tiempo: 5, linea: 'Azul', tipo: 'transbordo' }, { slug: 'tec-monterrey-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'juriquilla-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'parque-industrial-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'acueducto-qro', tiempo: 5, linea: 'Verde', tipo: 'transbordo' }, { slug: 'constituyentes-qro-hub', tiempo: 5, linea: 'Q1', tipo: 'transbordo' }
     , { slug: 'aromas', tiempo: 15, linea: 'Q1', tipo: 'linea' }
     , { slug: 'el-pueblito', tiempo: 15, linea: 'Q1', tipo: 'linea' }
     , { slug: 'hospital-angeles', tiempo: 15, linea: 'Q1', tipo: 'linea' }
@@ -6205,7 +6430,7 @@ export const grafo = {
     ciudad: 'chihuahua',
     nombre: 'Plaza Principal de Creel',
     lineas: ['1'],
-    adyacentes: [{ slug: 'divisadero', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'cuauhtemoc', tiempo: 3, linea: '1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'divisadero', tiempo: 3, linea: '1', tipo: 'linea' }, { slug: 'cuauhtemoc-chihuahua', tiempo: 3, linea: '1', tipo: 'linea' }]
   },
   'delta-leon': {
     ciudad: 'leon',
@@ -6317,7 +6542,7 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Zona residencial Itzimná',
     lineas: ['R2'],
-    adyacentes: [{ slug: 'parque-centenario', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'hospital-general', tiempo: 3, linea: 'R2', tipo: 'linea' }]
+    adyacentes: [{ slug: 'parque-centenario', tiempo: 3, linea: 'R2', tipo: 'linea' }, { slug: 'hospital-general-merida', tiempo: 3, linea: 'R2', tipo: 'linea' }]
   },
   'izamal': {
     ciudad: 'tren-maya',
@@ -6386,7 +6611,9 @@ export const grafo = {
     ciudad: 'puebla',
     nombre: 'Zona residencial Loreto',
     lineas: ['3'],
-    adyacentes: [{ slug: 'periferico-ecologico', tiempo: 3, linea: '3', tipo: 'linea' }, { slug: 'los-fuertes', tiempo: 3, linea: '3', tipo: 'linea' }]
+    adyacentes: [{ slug: 'periferico-ecologico', tiempo: 3, linea: '3', tipo: 'linea' }, { slug: 'los-fuertes', tiempo: 3, linea: '3', tipo: 'linea' },
+      { slug: 'cholula', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   'los-fuertes': {
     ciudad: 'puebla',
@@ -6416,7 +6643,7 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Mercado Lucas de Gálvez',
     lineas: ['D1'],
-    adyacentes: [{ slug: 'uady', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'centro-historico', tiempo: 3, linea: 'D1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'uady', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'centro-historico-merida', tiempo: 3, linea: 'D1', tipo: 'linea' }]
   },
   'merida-oriente': {
     ciudad: 'tren-maya',
@@ -6446,7 +6673,9 @@ export const grafo = {
     ciudad: 'toluca',
     nombre: 'Nevado de Toluca / Xinantécatl',
     lineas: [],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'zinacantepec-terminal', tiempo: 15, linea: 'conexion', tipo: 'transbordo' }
+    ]
   },
   'observatorio-cdmx': {
     ciudad: 'toluca',
@@ -6508,7 +6737,7 @@ export const grafo = {
     ciudad: 'merida',
     nombre: 'Paseo de Montejo',
     lineas: ['D1'],
-    adyacentes: [{ slug: 'centro-historico', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'gran-museo-mundo-maya', tiempo: 3, linea: 'D1', tipo: 'linea' }]
+    adyacentes: [{ slug: 'centro-historico-merida', tiempo: 3, linea: 'D1', tipo: 'linea' }, { slug: 'gran-museo-mundo-maya', tiempo: 3, linea: 'D1', tipo: 'linea' }]
   },
   'periferico-ecologico': {
     ciudad: 'puebla',
@@ -6598,7 +6827,7 @@ export const grafo = {
     ciudad: 'puebla',
     nombre: 'Zona residencial San Manuel',
     lineas: ['2'],
-    adyacentes: [{ slug: 'la-paz', tiempo: 3, linea: '2', tipo: 'linea' }, { slug: 'hospital-general', tiempo: 3, linea: '2', tipo: 'linea' }]
+    adyacentes: [{ slug: 'la-paz-puebla', tiempo: 3, linea: '2', tipo: 'linea' }]
   },
   'san-mateo-atenco': {
     ciudad: 'toluca',
@@ -6709,7 +6938,8 @@ export const grafo = {
     ciudad: 'puebla',
     nombre: 'Universidad de las Américas',
     lineas: ['2'],
-    adyacentes: [{ slug: 'hospital-general', tiempo: 3, linea: '2', tipo: 'linea' }]
+    adyacentes: [
+    ]
   },
   'universidad-autonoma': {
     ciudad: 'queretaro',
@@ -6764,7 +6994,7 @@ export const grafo = {
     ciudad: 'toluca',
     nombre: 'Terminal Zinacantepec Tren Interurbano',
     lineas: ['M1', 'TI'],
-    adyacentes: [{ slug: 'metepec', tiempo: 3, linea: 'TI', tipo: 'linea' }, { slug: 'toluca-centro-bus', tiempo: 3, linea: 'M1', tipo: 'linea' }, { slug: 'observatorio-cdmx', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'lerma', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'san-mateo-atenco', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'metepec', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'toluca-centro-bus', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'portales-toluca', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'cosmovitral', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'metepec-artesanal', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'san-salvador-metepec', tiempo: 5, linea: 'M1', tipo: 'transbordo' }]
+    adyacentes: [{ slug: 'metepec', tiempo: 3, linea: 'TI', tipo: 'linea' }, { slug: 'toluca-centro-bus', tiempo: 3, linea: 'M1', tipo: 'linea' }, { slug: 'observatorio-cdmx', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'lerma', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'san-mateo-atenco', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'metepec', tiempo: 5, linea: 'TI', tipo: 'transbordo' }, { slug: 'toluca-centro-bus', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'portales-toluca', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'cosmovitral', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'metepec-artesanal', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'san-salvador-metepec', tiempo: 5, linea: 'M1', tipo: 'transbordo' }, { slug: 'nevado-toluca-acceso', tiempo: 15, linea: 'conexion', tipo: 'transbordo' }, { slug: 'aeropuerto-toluca', tiempo: 10, linea: 'conexion', tipo: 'transbordo' }]
   },
   'zocalo-centro': {
     ciudad: 'puebla',
