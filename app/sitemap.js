@@ -16,6 +16,11 @@ import { estacionesTijuana } from '@/data/tijuana/estaciones';
 import { estacionesQueretaro } from '@/data/queretaro/estaciones';
 import { estacionesToluca } from '@/data/toluca/estaciones';
 import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
+import { estacionesOaxaca } from '@/data/oaxaca/estaciones';
+import { estacionesMorelia } from '@/data/morelia/estaciones';
+import { estacionesVeracruz } from '@/data/veracruz/estaciones';
+import { estacionesCampeche } from '@/data/campeche/estaciones';
+import { estacionesVillahermosa } from '@/data/villahermosa/estaciones';
 
 // Import line data for all cities
 import { lineasGDL } from '@/data/gdl/lineas-detalle';
@@ -28,6 +33,11 @@ import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import { lineasQueretaro } from '@/data/queretaro/lineas-detalle';
 import { lineasToluca } from '@/data/toluca/lineas-detalle';
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
+import { lineasOaxaca } from '@/data/oaxaca/lineas-detalle';
+import { lineasMorelia } from '@/data/morelia/lineas-detalle';
+import { lineasVeracruz } from '@/data/veracruz/lineas-detalle';
+import { lineasCampeche } from '@/data/campeche/lineas-detalle';
+import { lineasVillahermosa } from '@/data/villahermosa/lineas-detalle';
 
 // CDMX auxiliary transit systems
 import { trolebusData } from '@/data/cdmx/trolebus';
@@ -43,6 +53,16 @@ import { crucesFronterizos } from '@/data/cruces-fronterizos';
 
 // MTY Ecovía
 import { estacionesEcovia } from '@/data/mty/ecovia';
+
+// Turismo data
+import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
+import { zonasArqueologicas } from '@/data/turismo/zonas-arqueologicas';
+import { ciudadesPatrimonio } from '@/data/turismo/ciudades-patrimonio';
+import { playas } from '@/data/turismo/playas';
+import { barriosMagicos } from '@/data/turismo/barrios-magicos';
+import { rutasGastronomicas } from '@/data/turismo/rutas-gastronomicas';
+import { destinosPrioritarios } from '@/data/turismo/destinos-prioritarios';
+import { naturaleza } from '@/data/turismo/naturaleza';
 
 export default function sitemap() {
   const baseUrl = 'https://metroguia.mx';
@@ -61,6 +81,11 @@ export default function sitemap() {
     { url: `${baseUrl}/toluca/`, priority: 0.9 },
     { url: `${baseUrl}/queretaro/`, priority: 0.9 },
     { url: `${baseUrl}/tren-maya/`, priority: 0.9 },
+    { url: `${baseUrl}/oaxaca/`, priority: 0.9 },
+    { url: `${baseUrl}/morelia/`, priority: 0.9 },
+    { url: `${baseUrl}/veracruz/`, priority: 0.9 },
+    { url: `${baseUrl}/campeche/`, priority: 0.9 },
+    { url: `${baseUrl}/villahermosa/`, priority: 0.9 },
   ].map((page) => ({
     ...page,
     lastModified,
@@ -207,6 +232,11 @@ export default function sitemap() {
     ...mapLineas(lineasQueretaro, 'queretaro'),
     ...mapLineas(lineasToluca, 'toluca'),
     ...mapLineas(lineasTrenMaya, 'tren-maya'),
+    ...mapLineas(lineasOaxaca, 'oaxaca'),
+    ...mapLineas(lineasMorelia, 'morelia'),
+    ...mapLineas(lineasVeracruz, 'veracruz'),
+    ...mapLineas(lineasCampeche, 'campeche'),
+    ...mapLineas(lineasVillahermosa, 'villahermosa'),
   ];
 
   // Helper to map stations to sitemap entries
@@ -230,6 +260,11 @@ export default function sitemap() {
     ...mapEstaciones(estacionesQueretaro, 'queretaro'),
     ...mapEstaciones(estacionesToluca, 'toluca'),
     ...mapEstaciones(estacionesTrenMaya, 'tren-maya'),
+    ...mapEstaciones(estacionesOaxaca, 'oaxaca'),
+    ...mapEstaciones(estacionesMorelia, 'morelia'),
+    ...mapEstaciones(estacionesVeracruz, 'veracruz'),
+    ...mapEstaciones(estacionesCampeche, 'campeche'),
+    ...mapEstaciones(estacionesVillahermosa, 'villahermosa'),
   ];
 
   // Páginas de zonas
@@ -401,11 +436,43 @@ export default function sitemap() {
     changeFrequency: 'monthly',
     priority: 0.6,
   }));
+  const oaxacaRoutes = generateCityRoutes('oaxaca').map(slug => ({
+    url: `${baseUrl}/oaxaca/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const moreliaRoutes = generateCityRoutes('morelia').map(slug => ({
+    url: `${baseUrl}/morelia/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const veracruzRoutes = generateCityRoutes('veracruz').map(slug => ({
+    url: `${baseUrl}/veracruz/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const campecheRoutes = generateCityRoutes('campeche').map(slug => ({
+    url: `${baseUrl}/campeche/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+  const villahermosaRoutes = generateCityRoutes('villahermosa').map(slug => ({
+    url: `${baseUrl}/villahermosa/ruta/${slug}/`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
   const rutasPages = [
     ...cdmxRoutes, ...gdlRoutes, ...mtyRoutes,
     ...pueblaRoutes, ...meridaRoutes, ...leonRoutes,
     ...chihuahuaRoutes, ...tijuanaRoutes, ...queretaroRoutes,
     ...tolucaRoutes, ...trenmayaRoutes,
+    ...oaxacaRoutes, ...moreliaRoutes, ...veracruzRoutes,
+    ...campecheRoutes, ...villahermosaRoutes,
   ];
 
   // Language versions (en, pt, fr, de, ja, ko) for key pages
@@ -483,6 +550,45 @@ export default function sitemap() {
     });
   });
 
+  // Turismo pages
+  const turismoHubPage = {
+    url: `${baseUrl}/turismo/`,
+    lastModified,
+    changeFrequency: 'weekly',
+    priority: 0.9,
+  };
+
+  const turismoSections = [
+    { data: pueblosMagicos, slug: 'pueblos-magicos' },
+    { data: zonasArqueologicas, slug: 'zonas-arqueologicas' },
+    { data: ciudadesPatrimonio, slug: 'ciudades-patrimonio' },
+    { data: playas, slug: 'playas' },
+    { data: barriosMagicos, slug: 'barrios-magicos' },
+    { data: rutasGastronomicas, slug: 'rutas-gastronomicas' },
+    { data: destinosPrioritarios, slug: 'destinos-prioritarios' },
+    { data: naturaleza, slug: 'naturaleza' },
+  ];
+
+  const turismoPages = [];
+  for (const section of turismoSections) {
+    // Hub page for each section
+    turismoPages.push({
+      url: `${baseUrl}/turismo/${section.slug}/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    });
+    // Detail pages
+    for (const item of (section.data || [])) {
+      turismoPages.push({
+        url: `${baseUrl}/turismo/${section.slug}/${item.slug}/`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
+  }
+
   return [
     ...cdmxTransitPages,
     ...gdlMacrobusPages,
@@ -493,6 +599,8 @@ export default function sitemap() {
     ...lineasPages,
     ...estacionesPages,
     ...zonasPages,
+    turismoHubPage,
+    ...turismoPages,
     ...rutasPages,
     ...languagePages,
   ];
