@@ -39,34 +39,14 @@ export default function RutasGastronomicasPage() {
                 </h2>
                 
                 <div style={{ marginBottom: 'var(--spacing-sm)' }}>
-                  <span style={{ fontSize: '0.85rem', backgroundColor: 'var(--color-accent-light)', color: 'var(--color-accent)', padding: '0.25rem 0.75rem', borderRadius: '1rem', display: 'inline-block', marginRight: '0.5rem', marginBottom: '0.5rem' }}>
-                    {ruta.region}
-                  </span>
-                  <span style={{ fontSize: '0.85rem', backgroundColor: 'var(--color-accent-light)', color: 'var(--color-accent)', padding: '0.25rem 0.75rem', borderRadius: '1rem', display: 'inline-block', marginRight: '0.5rem', marginBottom: '0.5rem' }}>
-                    {ruta.duracion_sugerida}
+                  <span style={{ fontSize: '0.85rem', backgroundColor: 'var(--color-accent-light)', color: 'var(--color-accent)', padding: '0.25rem 0.75rem', borderRadius: '1rem', display: 'inline-block' }}>
+                    {ruta.estado}
                   </span>
                 </div>
 
                 <p style={{ fontSize: '0.95rem', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-md)', lineHeight: '1.5' }}>
                   {ruta.descripcion.substring(0, 100)}...
                 </p>
-
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  {ruta.platillos_emblematicos.slice(0, 3).map((platillo, idx) => (
-                    <span
-                      key={idx}
-                      style={{
-                        fontSize: '0.75rem',
-                        backgroundColor: 'var(--color-bg-tertiary)',
-                        color: 'var(--color-text-secondary)',
-                        padding: '0.25rem 0.5rem',
-                        borderRadius: '0.25rem',
-                      }}
-                    >
-                      {platillo}
-                    </span>
-                  ))}
-                </div>
               </a>
             ))}
           </div>

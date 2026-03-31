@@ -219,7 +219,7 @@ export default function FronteraCrucePage({ params }) {
                     color: 'var(--primary)',
                   }}
                 >
-                  {cruce.volumen_diario ? cruce.volumen_diario.toLocaleString('es-MX') : 'N/A'}
+                  {cruce.volumen_diario || 'N/A'}
                 </p>
               </div>
 
@@ -228,7 +228,7 @@ export default function FronteraCrucePage({ params }) {
                   Ubicación
                 </p>
                 <p style={{ fontSize: '0.95rem' }}>
-                  {cruce.lat.toFixed(4)}°, {cruce.lng.toFixed(4)}°
+                  {cruce.lat && cruce.lng ? `${cruce.lat.toFixed(4)}°, ${cruce.lng.toFixed(4)}°` : 'N/A'}
                 </p>
               </div>
 
@@ -980,16 +980,52 @@ export default function FronteraCrucePage({ params }) {
               >
                 Diferencia Horaria
               </h3>
-              <p
+              <div
                 style={{
-                  margin: '0',
+                  display: 'grid',
+                  gap: '12px',
                   fontSize: '0.95rem',
                   color: 'var(--text)',
                   lineHeight: '1.6',
                 }}
               >
-                {cruce.diferencia_horaria}
-              </p>
+                {typeof cruce.diferencia_horaria === 'string' ? (
+                  <p style={{ margin: '0' }}>{cruce.diferencia_horaria}</p>
+                ) : (
+                  <>
+                    {cruce.diferencia_horaria.mexico && (
+                      <p style={{ margin: '0' }}>
+                        <span style={{ fontWeight: '600' }}>México:</span> {cruce.diferencia_horaria.mexico}
+                      </p>
+                    )}
+                    {cruce.diferencia_horaria.belice && (
+                      <p style={{ margin: '0' }}>
+                        <span style={{ fontWeight: '600' }}>Belice:</span> {cruce.diferencia_horaria.belice}
+                      </p>
+                    )}
+                    {cruce.diferencia_horaria.usa && (
+                      <p style={{ margin: '0' }}>
+                        <span style={{ fontWeight: '600' }}>EE.UU.:</span> {cruce.diferencia_horaria.usa}
+                      </p>
+                    )}
+                    {cruce.diferencia_horaria.guatemala && (
+                      <p style={{ margin: '0' }}>
+                        <span style={{ fontWeight: '600' }}>Guatemala:</span> {cruce.diferencia_horaria.guatemala}
+                      </p>
+                    )}
+                    {cruce.diferencia_horaria.diferencia && (
+                      <p style={{ margin: '0', fontStyle: 'italic' }}>
+                        {cruce.diferencia_horaria.diferencia}
+                      </p>
+                    )}
+                    {cruce.diferencia_horaria.nota && (
+                      <p style={{ margin: '0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                        {cruce.diferencia_horaria.nota}
+                      </p>
+                    )}
+                  </>
+                )}
+              </div>
             </section>
           )}
 

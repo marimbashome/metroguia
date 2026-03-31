@@ -116,29 +116,8 @@ export default function ZonasArqueologicasPage() {
                     borderColor: 'var(--primary)',
                   },
                 }}>
-                  {/* Header with Badges */}
+                  {/* Header */}
                   <div style={{ marginBottom: '16px' }}>
-                    <div style={{
-                      display: 'flex',
-                      gap: '8px',
-                      flexWrap: 'wrap',
-                      marginBottom: '12px',
-                    }}>
-                      {zona.patrimonio_unesco && (
-                        <span style={{
-                          display: 'inline-block',
-                          backgroundColor: 'rgba(184, 134, 11, 0.15)',
-                          color: 'rgb(184, 134, 11)',
-                          padding: '4px 12px',
-                          borderRadius: '20px',
-                          fontSize: '0.75rem',
-                          fontWeight: '600',
-                          textTransform: 'uppercase',
-                        }}>
-                          UNESCO
-                        </span>
-                      )}
-                    </div>
                     <h3 style={{
                       fontSize: '1.3rem',
                       fontWeight: '600',
@@ -148,26 +127,6 @@ export default function ZonasArqueologicasPage() {
                     }}>
                       {zona.nombre}
                     </h3>
-                  </div>
-
-                  {/* Meta Info */}
-                  <div style={{
-                    display: 'flex',
-                    gap: '16px',
-                    fontSize: '0.9rem',
-                    color: 'var(--text-muted)',
-                    marginBottom: '16px',
-                    paddingBottom: '16px',
-                    borderBottom: '1px solid var(--border)',
-                  }}>
-                    <div>
-                      <span style={{ fontWeight: '600', color: 'var(--text)' }}>Cultura: </span>
-                      {zona.cultura}
-                    </div>
-                    <div>
-                      <span style={{ fontWeight: '600', color: 'var(--text)' }}>Período: </span>
-                      {zona.periodo}
-                    </div>
                   </div>
 
                   {/* Description */}

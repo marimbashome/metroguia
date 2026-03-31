@@ -59,7 +59,7 @@ export default function CiudadesPatrimonioPage() {
             marginRight: 'auto',
             lineHeight: '1.6',
           }}>
-            Descubre las 15 ciudades mexicanas reconocidas por la UNESCO como Patrimonio de la Humanidad. Explora arquitectura colonial, historia y cultura en sitios de importancia mundial.
+            Descubre las ciudades mexicanas reconocidas por la UNESCO como Patrimonio de la Humanidad. Explora arquitectura colonial, historia y cultura en sitios de importancia mundial.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function CiudadesPatrimonioPage() {
               margin: '0 0 10px 0',
               fontWeight: '600',
             }}>
-              15 ciudades patrimonio
+              Ciudades patrimonio
             </h2>
             <p style={{
               fontSize: '1rem',
@@ -112,7 +112,7 @@ export default function CiudadesPatrimonioPage() {
                   cursor: 'pointer',
                   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
                 }}>
-                  {/* Header with Badges */}
+                  {/* Header with Badge */}
                   <div style={{ marginBottom: '16px' }}>
                     <div style={{
                       display: 'flex',
@@ -130,7 +130,7 @@ export default function CiudadesPatrimonioPage() {
                         fontWeight: '600',
                         textTransform: 'uppercase',
                       }}>
-                        UNESCO {ciudad.año_declaracion}
+                        UNESCO Patrimonio
                       </span>
                     </div>
                     <h3 style={{
@@ -156,33 +156,18 @@ export default function CiudadesPatrimonioPage() {
                       <span style={{ fontWeight: '600', color: 'var(--text)' }}>Estado: </span>
                       {ciudad.estado}
                     </div>
-                    <div style={{ marginTop: '8px' }}>
-                      <span style={{ fontWeight: '600', color: 'var(--text)' }}>Declaración: </span>
-                      {ciudad.año_declaracion}
-                    </div>
                   </div>
 
                   {/* Description */}
                   <p style={{
                     fontSize: '0.95rem',
                     color: 'var(--text-muted)',
-                    margin: '0 0 16px 0',
+                    margin: '0',
                     lineHeight: '1.6',
                     flex: 1,
                   }}>
                     {ciudad.descripcion.split('.')[0] + '.'}
                   </p>
-
-                  {/* Declaratoria Badge */}
-                  <div style={{
-                    fontSize: '0.85rem',
-                    color: 'var(--text-muted)',
-                    paddingTop: '12px',
-                    borderTop: '1px solid var(--border)',
-                    fontStyle: 'italic',
-                  }}>
-                    {ciudad.declaratoria}
-                  </div>
                 </div>
               </a>
             ))}

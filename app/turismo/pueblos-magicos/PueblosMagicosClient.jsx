@@ -3,25 +3,11 @@
 import { useState, useMemo } from 'react';
 import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
 
-const regionColors = {
-  Norte: '#D97706',
-  Noroeste: '#06B6D4',
-  Noreste: '#EC4899',
-  Bajío: '#8B5CF6',
-  Occidente: '#16A34A',
-  Centro: '#E91E8C',
-  Golfo: '#2563EB',
-  'Pacífico Sur': '#F59E0B',
-  Sureste: '#0EA5E9',
-};
-
 export default function PueblosMagicosClient() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedStates, setSelectedStates] = useState([]);
 
-  // Get unique values for filters
-  const uniqueRegions = [...new Set(pueblosMagicos.map((p) => p.region))].sort();
+  // Get unique states for filter
   const uniqueStates = [...new Set(pueblosMagicos.map((p) => p.estado))].sort();
 
   // Filter pueblos based on all criteria
@@ -32,20 +18,13 @@ export default function PueblosMagicosClient() {
         pueblo.estado.toLowerCase().includes(searchQuery.toLowerCase()) ||
         pueblo.descripcion.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesRegion = selectedRegions.length === 0 || selectedRegions.includes(pueblo.region);
       const matchesState = selectedStates.length === 0 || selectedStates.includes(pueblo.estado);
 
-      return matchesSearch && matchesRegion && matchesState;
+      return matchesSearch && matchesState;
     });
-  }, [searchQuery, selectedRegions, selectedStates]);
+  }, [searchQuery, selectedStates]);
 
   // Toggle filter selections
-  const toggleRegion = (region) => {
-    setSelectedRegions((prev) =>
-      prev.includes(region) ? prev.filter((r) => r !== region) : [...prev, region]
-    );
-  };
-
   const toggleState = (state) => {
     setSelectedStates((prev) =>
       prev.includes(state) ? prev.filter((s) => s !== state) : [...prev, state]
@@ -54,7 +33,6 @@ export default function PueblosMagicosClient() {
 
   const clearFilters = () => {
     setSearchQuery('');
-    setSelectedRegions([]);
     setSelectedStates([]);
   };
 
@@ -127,67 +105,6 @@ export default function PueblosMagicosClient() {
 
         {/* Filters Container */}
         <div style={{ marginBottom: '3rem' }}>
-          {/* Regions Filter */}
-          <div style={{ marginBottom: '2rem' }}>
-            <h3
-              style={{
-                fontSize: '1.125rem',
-                fontWeight: '600',
-                marginBottom: '1rem',
-                color: 'var(--text)',
-                fontFamily: 'Inter, sans-serif',
-              }}
-            >
-              Regiones
-            </h3>
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '0.75rem',
-              }}
-            >
-              {uniqueRegions.map((region) => (
-                <button
-                  key={region}
-                  onClick={() => toggleRegion(region)}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    borderRadius: '6px',
-                    border: selectedRegions.includes(region)
-                      ? `2px solid ${regionColors[region]}`
-                      : `2px solid var(--border)`,
-                    background: selectedRegions.includes(region)
-                      ? `${regionColors[region]}20`
-                      : 'white',
-                    color: selectedRegions.includes(region)
-                      ? regionColors[region]
-                      : 'var(--text-muted)',
-                    cursor: 'pointer',
-                    fontSize: '0.95rem',
-                    fontWeight: selectedRegions.includes(region) ? '600' : '500',
-                    transition: 'all 0.3s ease',
-                    fontFamily: 'Inter, sans-serif',
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!selectedRegions.includes(region)) {
-                      e.currentTarget.style.borderColor = regionColors[region];
-                      e.currentTarget.style.background = `${regionColors[region]}10`;
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!selectedRegions.includes(region)) {
-                      e.currentTarget.style.borderColor = 'var(--border)';
-                      e.currentTarget.style.background = 'white';
-                    }
-                  }}
-                >
-                  {region}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* States Filter */}
           <div style={{ marginBottom: '2rem' }}>
             <h3
@@ -250,7 +167,7 @@ export default function PueblosMagicosClient() {
           </div>
 
           {/* Clear Filters Button */}
-          {(searchQuery || selectedRegions.length > 0 || selectedStates.length > 0) && (
+          {(searchQuery || selectedStates.length > 0) && (
             <button
               onClick={clearFilters}
               style={{
@@ -326,13 +243,9 @@ export default function PueblosMagicosClient() {
                   style={{
                     position: 'relative',
                     overflow: 'hidden',
-                    borderTopWidth: '4px',
-                    borderTopStyle: 'solid',
-                    borderTopColor: regionColors[pueblo.region],
                     transition: 'all 0.3s ease',
                     background: 'var(--surface)',
                     border: `1px solid var(--border)`,
-                    borderTopColor: regionColors[pueblo.region],
                     borderRadius: '8px',
                     padding: '1.5rem',
                     cursor: 'pointer',
@@ -346,23 +259,6 @@ export default function PueblosMagicosClient() {
                     e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
                   }}
                 >
-                  {/* Region Badge */}
-                  <div
-                    style={{
-                      display: 'inline-block',
-                      background: regionColors[pueblo.region],
-                      color: 'white',
-                      padding: '0.35rem 0.75rem',
-                      borderRadius: '4px',
-                      fontSize: '0.8125rem',
-                      fontWeight: '600',
-                      marginBottom: '0.75rem',
-                      fontFamily: 'Inter, sans-serif',
-                    }}
-                  >
-                    {pueblo.region}
-                  </div>
-
                   {/* Content */}
                   <h3
                     style={{
@@ -399,32 +295,6 @@ export default function PueblosMagicosClient() {
                   >
                     {pueblo.descripcion.substring(0, 120)}...
                   </p>
-
-                  {/* Atractivos Badges */}
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '0.5rem',
-                    }}
-                  >
-                    {pueblo.atractivos.slice(0, 3).map((atractivo, idx) => (
-                      <span
-                        key={idx}
-                        style={{
-                          background: 'var(--bg)',
-                          color: 'var(--text-muted)',
-                          padding: '0.35rem 0.75rem',
-                          borderRadius: '4px',
-                          fontSize: '0.8125rem',
-                          fontWeight: '500',
-                          fontFamily: 'Inter, sans-serif',
-                        }}
-                      >
-                        {atractivo}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </a>
             ))}
