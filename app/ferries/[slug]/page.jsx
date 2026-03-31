@@ -330,7 +330,7 @@ export default function FerryPage({ params }) {
             </div>
           </div>
         </div>
-        </section>
+      </section>
 
       {/* Otros ferries */}
       <section style={{ padding: '2.5rem 1rem' }}>
