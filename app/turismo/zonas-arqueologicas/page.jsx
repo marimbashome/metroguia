@@ -2,12 +2,12 @@ import { zonasArqueologicas } from '@/data/turismo/zonas-arqueologicas'
 import ZonasArqueologicasContent from './ZonasArqueologicasContent'
 
 export const metadata = {
-  title: '164 Zonas Arqueológicas de México | MetroGuia',
-  description: 'Descubre todas las zonas arqueológicas de México. Información sobre horarios, costos, cómo llegar y patrimonio UNESCO.',
-  keywords: ['zonas arqueológicas', 'arqueología', 'patrimonio', 'turismo cultural', 'México', 'UNESCO', 'prehispánico'],
+  title: '188 Zonas Arqueológicas de México | MetroGuia',
+  description: 'Guía completa de 188 zonas arqueológicas de México: horarios, costos, cómo llegar y patrimonio UNESCO. De Teotihuacán a Ichkabal.',
+  keywords: ['zonas arqueológicas', 'arqueología', 'patrimonio', 'turismo cultural', 'México', 'UNESCO', 'prehispánico', 'INAH'],
   openGraph: {
-    title: '164 Zonas Arqueológicas de México | MetroGuia',
-    description: 'Descubre todas las zonas arqueológicas de México. Información sobre horarios, costos, cómo llegar y patrimonio UNESCO.',
+    title: '188 Zonas Arqueológicas de México | MetroGuia',
+    description: 'Guía completa de 188 zonas arqueológicas de México: horarios, costos, cómo llegar y patrimonio UNESCO. De Teotihuacán a Ichkabal.',
     type: 'website',
     url: 'https://metroguia.mx/turismo/zonas-arqueologicas',
     images: [{
