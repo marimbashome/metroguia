@@ -276,14 +276,6 @@ export default function FronteraCrucePage({ params }) {
                       transition: 'all 0.3s ease',
                       boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
                     }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
-                      e.currentTarget.style.transform = 'translateY(0)';
-                    }}
                   >
                     <h3
                       style={{
@@ -1104,12 +1096,6 @@ export default function FronteraCrucePage({ params }) {
                   fontSize: '0.95rem',
                   transition: 'background-color 0.3s ease',
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'var(--primary-glow)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'var(--primary)';
-                }}
               >
                 Visitar CBP Border Wait Times
               </a>
@@ -1159,16 +1145,6 @@ export default function FronteraCrucePage({ params }) {
                           cursor: 'pointer',
                           transition: 'all 0.3s ease',
                           height: '100%',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--primary)';
-                          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                          e.currentTarget.style.transform = 'translateY(-2px)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--border)';
-                          e.currentTarget.style.boxShadow = 'none';
-                          e.currentTarget.style.transform = 'translateY(0)';
                         }}
                       >
                         <p
@@ -1221,14 +1197,6 @@ export default function FronteraCrucePage({ params }) {
                     borderRadius: 'var(--radius-sm)',
                     fontWeight: '600',
                     transition: 'all 0.3s ease',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'var(--primary)';
-                    e.currentTarget.style.color = 'white';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'transparent';
-                    e.currentTarget.style.color = 'var(--primary)';
                   }}
                 >
                   Ver todos los cruces
