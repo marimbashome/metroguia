@@ -1,15 +1,35 @@
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 import AffiliateHospedaje from '@/app/components/AffiliateHospedaje'
+import BookingWidget from '@/app/components/BookingWidget'
+import ViatorToursWidget from '@/app/components/ViatorToursWidget'
+import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
 export const metadata = {
-  title: 'Mundial FIFA 2026 en CDMX — Cómo llegar en Metro | MetroGuia',
-  description: 'Guía completa para llegar al Estadio Azteca durante el Mundial 2026. Fechas de partidos, rutas en metro, precios y tips para turistas.',
-  keywords: 'mundial 2026, estadio azteca, metro cdmx, como llegar, fifa',
+  title: 'Mundial FIFA 2026 México — Transporte a Estadios | MetroGuia',
+  description: 'Guía completa de transporte para el Mundial FIFA 2026 en México. Cómo llegar al Estadio Azteca, Akron y BBVA en metro y transporte público. 13 partidos, 3 ciudades.',
+  keywords: 'mundial 2026, estadio azteca, metro cdmx, como llegar, fifa, estadio akron, estadio bbva',
+  alternates: {
+    canonical: 'https://metroguia.mx/mundial-2026/',
+  },
+  openGraph: {
+    title: 'Mundial FIFA 2026 México — Guía de Transporte Público',
+    description: 'Cómo llegar a los 13 partidos del Mundial en CDMX, Guadalajara y Monterrey. Rutas en metro, horarios y tips.',
+    url: 'https://metroguia.mx/mundial-2026/',
+    type: 'website',
+    siteName: 'MetroGuia.mx',
+    images: [{ url: 'https://metroguia.mx/og-image.png', width: 1200, height: 630, alt: 'Mundial FIFA 2026 — Transporte público en México' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mundial FIFA 2026 — Transporte a Estadios en México',
+    description: '13 partidos en 3 ciudades. Guía de metro y transporte público al Azteca, Akron y BBVA.',
+    images: ['https://metroguia.mx/og-image.png'],
+  },
 }
 
 function Countdown() {
-  const today = new Date('2026-03-23');
-  const inaugural = new Date('2026-06-11');
+  const today = new Date();
+  const inaugural = new Date('2026-06-11T00:00:00-06:00');
   const daysLeft = Math.floor((inaugural - today) / (1000 * 60 * 60 * 24));
   
   return (
@@ -179,6 +199,12 @@ export default function MundialPage() {
           <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
             <AffiliateHospedaje ciudad="CDMX" estacion={null} fechas={null} />
           </div>
+
+          {/* Marimbas Condesa */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '3rem' }}>
+            <MarimbasCondesa compact={false} />
+          </div>
+
           <h2 style={{ marginBottom: '2.5rem', textAlign: 'center' }}>Consejos Prácticos para Turistas</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
             {[
@@ -198,6 +224,11 @@ export default function MundialPage() {
           </div>
 
           <AdBannerLazyInArticle slotId="1082410395" />
+
+          {/* Booking Widget */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '3rem' }}>
+            <BookingWidget ciudad="CDMX" />
+          </div>
 
           <h2 style={{ marginBottom: '2.5rem', textAlign: 'center' }}>Fan Zones y FIFA Fan Festival</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
@@ -259,6 +290,11 @@ export default function MundialPage() {
           </div>
 
           <AdBannerLazy slotId="4434764790" format="auto" />
+
+          {/* Viator Tours Widget */}
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '3rem' }}>
+            <ViatorToursWidget ciudad="CDMX" zona="Ciudad de México" />
+          </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
             <a href="/mundial-2026/estadio-azteca/" style={{ textDecoration: 'none' }}>

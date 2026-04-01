@@ -1,6 +1,8 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 import LineSchema from '@/app/components/LineSchema'
+import AdSidebar from '@/app/components/AdSidebar'
+import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
 export function generateStaticParams() {
   return Object.keys(lineasDetalle).map((id) => ({ id }))
@@ -113,6 +115,8 @@ export default function LineaPage({ params }) {
             ))}
           </div>
 
+          <MarimbasCondesa compact={true} />
+
           <AdBannerLazyInArticle slot="1082410395" />
 
           {linea.ruta_1_dia && linea.ruta_1_dia.paradas.length > 0 && (
@@ -136,6 +140,8 @@ export default function LineaPage({ params }) {
           )}
         </div>
       </section>
+
+      <AdSidebar />
 
       <section style={{ padding: '3rem 2rem', backgroundColor: 'var(--metro-dark)', color: 'white', textAlign: 'center' }}>
         <div className="container">

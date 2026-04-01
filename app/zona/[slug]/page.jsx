@@ -3,6 +3,8 @@ import { estaciones } from '@/data/estaciones'
 import { lineasDetalle } from '@/data/lineas-detalle'
 import { rutasPopulares } from '@/data/rutas-populares'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import ViatorToursWidget from '@/app/components/ViatorToursWidget'
+import BookingWidget from '@/app/components/BookingWidget'
 
 export function generateStaticParams() {
   return zonas.map((z) => ({ slug: z.slug }))
@@ -190,6 +192,16 @@ export default function ZonaPage({ params }) {
 
       {/* Ad 2 */}
       <AdBannerLazyInArticle slot="1082410395" />
+
+      {/* AFFILIATE WIDGETS */}
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--metro-gray)' }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <ViatorToursWidget ciudad="CDMX" zona={zona.nombre} />
+          <div style={{ marginTop: '2rem' }}>
+            <BookingWidget ciudad="CDMX" />
+          </div>
+        </div>
+      </section>
 
       {/* TIPS PARA TURISTAS */}
       {zona.tips_turistas && zona.tips_turistas.length > 0 && (

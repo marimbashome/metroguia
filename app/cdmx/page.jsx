@@ -10,9 +10,26 @@ import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export function generateMetadata() {
   return {
-    title: 'Transporte CDMX — 7 sistemas: Metro, Mexicable, Cablebús, Tren Ligero | MetroGuia',
+    title: 'Transporte CDMX — 7 sistemas: Metro, Metrobús, Cablebús, Tren Ligero | MetroGuia',
     description: 'Guía de 7 sistemas de transporte en CDMX: Metro (12 líneas), Tren Ligero, Mexicable, Cablebús, Trolebús, Tren Suburbano y Metrobús. Rutas al Estadio Azteca. Mundial FIFA 2026.',
     keywords: 'Metro CDMX, Mexicable, Cablebús, Tren Ligero, Tren Suburbano, Trolebús, Metrobús, transporte, movilidad, turismo, Mundial 2026',
+    alternates: {
+      canonical: 'https://metroguia.mx/cdmx/',
+    },
+    openGraph: {
+      title: 'Transporte CDMX — 7 Sistemas de Transporte Público',
+      description: 'Metro, Metrobús, Cablebús, Tren Ligero, Mexicable, Trolebús y Tren Suburbano. 436 estaciones, 40 líneas. Rutas al Estadio Azteca para FIFA 2026.',
+      url: 'https://metroguia.mx/cdmx/',
+      type: 'website',
+      siteName: 'MetroGuia.mx',
+      images: [{ url: 'https://metroguia.mx/og-image.png', width: 1200, height: 630, alt: 'Transporte público CDMX — MetroGuia.mx' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Transporte CDMX — 7 Sistemas, 436 Estaciones',
+      description: 'Metro, Metrobús, Cablebús, Tren Ligero y más. Rutas al Estadio Azteca para FIFA 2026.',
+      images: ['https://metroguia.mx/og-image.png'],
+    },
   }
 }
 

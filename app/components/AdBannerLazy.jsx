@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
+export default function AdBannerLazy({ slot, adSlot, slotId, format = 'auto', style = {} }) {
+  // Support all prop name variants used across the codebase
+  const resolvedSlot = slot || adSlot || slotId;
   const containerRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -69,7 +71,7 @@ export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
           className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-5779958677522085"
-          data-ad-slot={slot}
+          data-ad-slot={resolvedSlot}
           data-ad-format={format}
           data-full-width-responsive="true"
         />
@@ -93,7 +95,9 @@ export default function AdBannerLazy({ slot, format = 'auto', style = {} }) {
   );
 }
 
-export function AdBannerLazyInArticle({ slot, style = {} }) {
+export function AdBannerLazyInArticle({ slot, adSlot, slotId, style = {} }) {
+  // Support all prop name variants used across the codebase
+  const resolvedSlot = slot || adSlot || slotId;
   const containerRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -160,7 +164,7 @@ export function AdBannerLazyInArticle({ slot, style = {} }) {
           className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-5779958677522085"
-          data-ad-slot={slot}
+          data-ad-slot={resolvedSlot}
           data-ad-format="fluid"
           data-ad-layout="in-article"
         />

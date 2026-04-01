@@ -48,12 +48,30 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'MetroGuia.mx',
+    'url': 'https://metroguia.mx',
+    'logo': 'https://metroguia.mx/logo.png',
+    'description': 'Plataforma de movilidad urbana para turistas en México. Rutas en metro, tren ligero, metrobús y BRT.',
+    'sameAs': [],
+    'contactPoint': {
+      '@type': 'ContactPoint',
+      'contactType': 'customer support',
+      'url': 'https://metroguia.mx',
+      'availableLanguage': ['Spanish', 'English', 'Portuguese', 'French', 'German', 'Japanese', 'Korean']
+    }
+  }
+
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     'name': 'MetroGuia.mx',
     'url': 'https://metroguia.mx',
-    'description': 'Trip planner de transporte urbano en México',
+    'description': 'Trip planner de transporte urbano en México. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey.',
+    'inLanguage': ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'],
+    'publisher': { '@type': 'Organization', 'name': 'MetroGuia.mx' },
     'potentialAction': {
       '@type': 'SearchAction',
       'target': 'https://metroguia.mx/ruta/{search_term_string}',
@@ -66,7 +84,6 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta name="description" content="Trip planner de transporte urbano en México. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. Guía para el Mundial FIFA 2026." />
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -79,7 +96,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preload" as="image" href="/logo.png" fetchPriority="high" />
-        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="theme-color" content="#F5A623" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="apple-touch-icon" href="/logo.png" />
@@ -88,6 +106,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/yorkfx/icons-metro-df@master/files/css/ui-transport-mx.css"
           crossOrigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <script
           type="application/ld+json"

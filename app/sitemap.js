@@ -81,15 +81,15 @@ import { naturaleza } from '@/data/turismo/naturaleza';
 const BASE_URL = 'https://metroguia.mx';
 
 const LASTMOD = {
-  core: new Date('2025-02-15'),
-  cities: new Date('2025-02-10'),
-  turismo: new Date('2025-02-08'),
-  transport: new Date('2025-02-12'),
-  mundial: new Date('2025-02-01'),
-  i18n: new Date('2025-02-15'),
-  'routes-cdmx': new Date('2025-02-14'),
-  'routes-gdl': new Date('2025-02-14'),
-  'routes-other': new Date('2025-02-14'),
+  core: new Date('2026-04-01'),
+  cities: new Date('2026-04-01'),
+  turismo: new Date('2026-03-30'),
+  transport: new Date('2026-04-01'),
+  mundial: new Date('2026-04-01'),
+  i18n: new Date('2026-04-01'),
+  'routes-cdmx': new Date('2026-03-30'),
+  'routes-gdl': new Date('2026-03-30'),
+  'routes-other': new Date('2026-03-30'),
 };
 
 export async function generateSitemaps() {

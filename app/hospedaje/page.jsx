@@ -1,5 +1,7 @@
 import { hospedaje, marimbasListings, totalReviews, avgRating, precioDesde, maxHuespedes } from '@/data/hospedaje'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import BookingWidget from '@/app/components/BookingWidget';
+import ViatorToursWidget from '@/app/components/ViatorToursWidget';
 
 export function generateMetadata() {
   return {
@@ -477,6 +479,20 @@ export default function HospedajePage() {
                 La Condesa es consistentemente uno de los barrios más seguros de CDMX. Caminable 24/7, lleno de restaurantes, cafés y parques.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Affiliate Widgets — Tours & Alternative Booking */}
+      <section style={{ padding: '3rem 1rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '1.5rem',
+          }}>
+            <BookingWidget ciudad="CDMX" estacion="Chilpancingo" />
+            <ViatorToursWidget ciudad="CDMX" zona="La Condesa" />
           </div>
         </div>
       </section>

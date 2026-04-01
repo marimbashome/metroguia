@@ -7,8 +7,8 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 
 import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'MetroGuia.mx — Transporte público en 11 ciudades de México | Trip Planner + FIFA 2026',
-  description: 'Trip planner de transporte urbano en México. 786 estaciones, 77 líneas en 11 ciudades: CDMX, Guadalajara, Monterrey, Puebla, Mérida, León, Querétaro, Chihuahua, Tijuana, Toluca y Tren Maya. Guía Mundial FIFA 2026.',
+  title: 'MetroGuia.mx — Transporte público en 16 ciudades de México | Trip Planner + FIFA 2026',
+  description: 'Trip planner de transporte urbano en México. 800+ estaciones, 80+ líneas en 16 ciudades: CDMX, Guadalajara, Monterrey, Puebla, Mérida, León, Querétaro y más. Guía Mundial FIFA 2026.',
   alternates: {
     canonical: 'https://metroguia.mx/',
     languages: {
@@ -21,6 +21,26 @@ export const metadata = {
       'ko': 'https://metroguia.mx/ko/',
       'x-default': 'https://metroguia.mx/',
     },
+  },
+  openGraph: {
+    title: 'MetroGuia.mx — Trip Planner de Transporte Urbano en México',
+    description: 'Calcula rutas en metro, tren ligero y BRT en 16 ciudades de México. Guía completa para el Mundial FIFA 2026.',
+    url: 'https://metroguia.mx/',
+    type: 'website',
+    siteName: 'MetroGuia.mx',
+    locale: 'es_MX',
+    images: [{
+      url: 'https://metroguia.mx/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'MetroGuia.mx — Trip planner de transporte urbano en México',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MetroGuia.mx — Transporte Urbano en 16 Ciudades',
+    description: 'Trip planner de metro, tren ligero y BRT. 800+ estaciones. Guía FIFA 2026.',
+    images: ['https://metroguia.mx/og-image.png'],
   },
 }
 

@@ -7,6 +7,7 @@ import { rutasPopulares, getRelatedRoutes } from '@/data/rutas-populares'
 import SearchBar from '@/app/components/SearchBar'
 import RouteResult from '@/app/components/RouteResult'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
 // Line color map
 const lineColors = {
@@ -269,6 +270,11 @@ export default function RutaClient({ slug }) {
         </div>
       )}
 
+      {/* Ad banner between header and route details */}
+      {ruta && ruta.encontrada && (
+        <AdBannerLazyInArticle slot="1082410395" />
+      )}
+
       {/* Error state */}
       {error && (
         <div className="alert alert-warning" style={{ marginBottom: '2rem' }}>
@@ -510,6 +516,11 @@ export default function RutaClient({ slug }) {
           ))}
         </div>
       )}
+
+      {/* Featured property */}
+      <div style={{ marginTop: '2rem' }}>
+        <MarimbasCondesa compact={true} />
+      </div>
     </div>
   )
 }

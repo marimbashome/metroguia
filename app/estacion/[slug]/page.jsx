@@ -6,6 +6,8 @@ import { grafo } from '@/data/grafo'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
 import NearbyStations from '@/app/components/NearbyStations'
+import BookingWidget from '@/app/components/BookingWidget'
+import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
 
@@ -508,6 +510,9 @@ export default function EstacionPage({ params }) {
           {/* Ad 1 — After intro */}
           <AdBanner slot="4434764790" format="auto" />
 
+          {/* Marimbas Condesa Widget — Tourist accommodation in Condesa area */}
+          <MarimbasCondesa />
+
           {/* LUGARES CERCANOS (POIs) */}
           {estacion.pois && estacion.pois.length > 0 && (
             <div style={{ marginBottom: '3rem' }}>
@@ -958,6 +963,11 @@ export default function EstacionPage({ params }) {
 
 
           <NearbyStations currentSlug={params.slug} lineasDetalle={lineasDetalle} grafo={grafo} />
+
+          {/* Booking Widget CTA */}
+          <div style={{ marginBottom: '3rem' }}>
+            <BookingWidget />
+          </div>
 
           {/* NAVIGATION SECTION */}
           <div style={{
