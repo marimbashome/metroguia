@@ -19,13 +19,15 @@ export const lineasDetalle = {
       { slug: "cuauhtemoc", nombre: "Cuauhtémoc" },
       { slug: "balderas", nombre: "Balderas" },
       { slug: "salto-del-agua", nombre: "Salto del Agua" },
+      { slug: "isabel-la-catolica", nombre: "Isabel la Católica" },
       { slug: "pino-suarez", nombre: "Pino Suárez" },
       { slug: "merced", nombre: "Merced" },
       { slug: "candelaria", nombre: "Candelaria" },
       { slug: "san-lazaro", nombre: "San Lázaro" },
-      { slug: "morelos", nombre: "Morelos" },
-      { slug: "santa-anita", nombre: "Santa Anita" },
-      { slug: "penon-viejo", nombre: "Peñón Viejo" },
+      { slug: "moctezuma", nombre: "Moctezuma" },
+      { slug: "balbuena", nombre: "Balbuena" },
+      { slug: "boulevard-puerto-aereo", nombre: "Boulevard Puerto Aéreo" },
+      { slug: "gomez-farias", nombre: "Gómez Farías" },
       { slug: "zaragoza", nombre: "Zaragoza" },
       { slug: "pantitlan", nombre: "Pantitlán" }
     ],
@@ -48,7 +50,7 @@ export const lineasDetalle = {
     colorNombre: "Azul",
     inicio: "Cuatro Caminos",
     fin: "Tasqueña",
-    total: 24,
+    total: 26,
     zonas: ["Naucalpan", "Azcapotzalco", "Cuauhtémoc", "Benito Juárez", "Iztapalapa"],
     descripcion: "La Línea 2 conecta el noroeste con el sur. Pasa por el Centro Histórico, Bellas Artes y es la ruta principal para llegar al Estadio Azteca via transferencia en Tasqueña al Tren Ligero.",
     estaciones_turisticas: ["zocalo", "bellas-artes", "allende"],
@@ -72,10 +74,12 @@ export const lineasDetalle = {
       { slug: "san-antonio-abad", nombre: "San Antonio Abad" },
       { slug: "chabacano", nombre: "Chabacano" },
       { slug: "la-viga", nombre: "Viga" },
+      { slug: "viaducto", nombre: "Viaducto" },
       { slug: "xola", nombre: "Xola" },
       { slug: "villa-de-cortes", nombre: "Villa de Cortés" },
       { slug: "nativitas", nombre: "Nativitas" },
       { slug: "portales", nombre: "Portales" },
+      { slug: "general-anaya", nombre: "General Anaya" },
       { slug: "tasquena", nombre: "Tasqueña" }
     ],
     ruta_1_dia: {
@@ -87,7 +91,7 @@ export const lineasDetalle = {
       ]
     },
     seo_title: "Línea 2 Metro CDMX — Azul, Centro Histórico y Azteca | MetroGuia",
-    meta_description: "Línea 2 Azul del Metro CDMX: 24 estaciones de Cuatro Caminos a Tasqueña. La ruta para llegar al Estadio Azteca en el Mundial 2026.",
+    meta_description: "Línea 2 Azul del Metro CDMX: 26 estaciones de Cuatro Caminos a Tasqueña. La ruta para llegar al Estadio Azteca en el Mundial 2026.",
     h1: "Línea 2 Metro CDMX — Guía completa"
   },
 
@@ -176,8 +180,8 @@ export const lineasDetalle = {
     color: "#FFCD00",
     colorNombre: "Amarillo",
     inicio: "Pantitlán",
-    fin: "La Raza",
-    total: 12,
+    fin: "Politécnico",
+    total: 14,
     zonas: ["Iztacalco", "Venustiano Carranza", "Gustavo A. Madero", "Cuauhtémoc"],
     descripcion: "La Línea 5 es la ruta más importante para turistas que llegan en avión: conecta directamente con el Aeropuerto Internacional Benito Juárez (AICM) via Terminal Aérea. El metro más económico desde el aeropuerto al centro de la ciudad.",
     estaciones_turisticas: ["terminal-aerea", "oceania", "pantitlan"],
@@ -193,7 +197,9 @@ export const lineasDetalle = {
       { slug: "misterios", nombre: "Misterios" },
       { slug: "valle-gomez", nombre: "Valle Gómez" },
       { slug: "martin-carrera", nombre: "Martín Carrera" },
-      { slug: "la-raza", nombre: "La Raza" }
+      { slug: "la-raza", nombre: "La Raza" },
+      { slug: "autobuses-del-norte", nombre: "Autobuses del Norte" },
+      { slug: "politecnico", nombre: "Politécnico" }
     ],
     ruta_1_dia: {
       titulo: "Del Aeropuerto al Centro: la ruta del turista",
@@ -204,7 +210,7 @@ export const lineasDetalle = {
       ]
     },
     seo_title: "Línea 5 Metro CDMX — Aeropuerto AICM, Terminal Aérea | MetroGuia",
-    meta_description: "Línea 5 Amarilla del Metro CDMX: cómo llegar al aeropuerto AICM en metro. Terminal Aérea, 12 estaciones, $5 MXN desde el centro.",
+    meta_description: "Línea 5 Amarilla del Metro CDMX: cómo llegar al aeropuerto AICM en metro. Terminal Aérea, 14 estaciones, $5 MXN desde el centro.",
     h1: "Línea 5 Metro CDMX — La ruta del aeropuerto"
   },
 
@@ -290,7 +296,7 @@ export const lineasDetalle = {
     colorNombre: "Verde oscuro",
     inicio: "Garibaldi/Lagunilla",
     fin: "Constitución de 1917",
-    total: 19,
+    total: 20,
     zonas: ["Cuauhtémoc", "Iztacalco", "Iztapalapa"],
     descripcion: "La Línea 8 une el corazón cultural de CDMX con el oriente de la ciudad. Parte de la mítica Plaza Garibaldi y el Palacio de Bellas Artes, y llega hasta el Cerro de la Estrella — sitio arqueológico prehispánico donde los aztecas encendían el Fuego Nuevo cada 52 años.",
     estaciones_turisticas: ["garibaldi", "bellas-artes", "cerro-de-la-estrella"],
@@ -312,6 +318,7 @@ export const lineasDetalle = {
       { slug: "atlalilco", nombre: "Atlalilco" },
       { slug: "iztapalapa", nombre: "Iztapalapa" },
       { slug: "cerro-de-la-estrella", nombre: "Cerro de la Estrella" },
+      { slug: "minas", nombre: "Minas" },
       { slug: "uam-i", nombre: "U.A.M.-I" },
       { slug: "constitucion-de-1917", nombre: "Constitución de 1917" }
     ],
@@ -371,7 +378,7 @@ export const lineasDetalle = {
     colorNombre: "Morado",
     inicio: "Pantitlán",
     fin: "La Paz",
-    total: 10,
+    total: 11,
     zonas: ["Iztacalco", "Iztapalapa", "Estado de México"],
     descripcion: "La Línea A es un tren eléctrico de tecnología francesa que es la única línea del metro CDMX que cruza hacia el Estado de México. Conecta el gran hub de Pantitlán con el municipio de La Paz, atravesando colonias populares del oriente metropolitano.",
     estaciones_turisticas: ["pantitlan", "guelatao"],
@@ -384,6 +391,7 @@ export const lineasDetalle = {
       { slug: "penon-viejo", nombre: "Peñón Viejo" },
       { slug: "acatitla", nombre: "Acatitla" },
       { slug: "santa-marta", nombre: "Santa Marta" },
+      { slug: "cabeza-de-juarez", nombre: "Cabeza de Juárez" },
       { slug: "los-reyes", nombre: "Los Reyes" },
       { slug: "la-paz", nombre: "La Paz" }
     ],
@@ -414,6 +422,7 @@ export const lineasDetalle = {
       { slug: "buenavista", nombre: "Buenavista" },
       { slug: "guerrero", nombre: "Guerrero" },
       { slug: "garibaldi-lagunilla", nombre: "Garibaldi/Lagunilla" },
+      { slug: "lagunilla", nombre: "Lagunilla" },
       { slug: "tepito", nombre: "Tepito" },
       { slug: "morelos", nombre: "Morelos" },
       { slug: "san-lazaro", nombre: "San Lázaro" },
