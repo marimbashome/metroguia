@@ -480,7 +480,14 @@ export default function EstacionMTY({ params }) {
               margin: '0',
               lineHeight: 1.8
             }}>
-              {estacion.accesibilidad}
+              {typeof estacion.accesibilidad === 'string'
+                ? estacion.accesibilidad
+                : [
+                    estacion.accesibilidad.elevador && 'Elevador disponible',
+                    estacion.accesibilidad.rampa && 'Rampa de acceso',
+                    estacion.accesibilidad.piso_tactil && 'Piso táctil',
+                    estacion.accesibilidad.notas
+                  ].filter(Boolean).join('. ')}
             </p>
           </div>
         </section>
