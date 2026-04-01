@@ -79,12 +79,35 @@ export default function EstacionMTY({ params }) {
     ]
   };
 
+  const transitStationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TransitStation',
+    name: `Estación ${estacion.nombre}`,
+    description: estacion.meta_description || estacion.intro || `Estación ${estacion.nombre} del Metrorrey en Monterrey`,
+    url: `https://metroguia.mx/mty/estacion/${estacion.slug}/`,
+    isAccessibleForFree: true,
+    address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: estacion.municipio || 'Nuevo León', addressCountry: 'MX' },
+    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 25.6866, longitude: estacion.lng || -100.3161 },
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '05:00', closes: '00:00' },
+  };
+
+  const faqItems = [];
+  faqItems.push({ '@type': 'Question', name: `¿Cómo llego a la estación ${estacion.nombre} en Monterrey?`, acceptedAnswer: { '@type': 'Answer', text: `La estación ${estacion.nombre} pertenece a la Línea ${estacion.linea} del Metrorrey. Usa el planificador de MetroGuia.mx para la mejor ruta.` } });
+  if (estacion.pois && estacion.pois.length > 0) {
+    const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : `${p.nombre} (${p.tipo}, a ${p.distancia})`).join(', ');
+    faqItems.push({ '@type': 'Question', name: `¿Qué hay cerca de la estación ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Cerca encontrarás: ${poiList}.` } });
+  }
+  faqItems.push({ '@type': 'Question', name: `¿Cuál es el horario y costo?`, acceptedAnswer: { '@type': 'Answer', text: `El Metrorrey opera de 5:00 AM a 12:00 AM. Costo: $4.50 MXN con tarjeta Mi Pasaje.` } });
+  const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems };
+
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(transitStationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
       <section style={{
         background: `linear-gradient(135deg, ${colorLinea} 0%, ${estacion.linea === '1' ? '#F97316' : '#EC4899'} 100%)`,

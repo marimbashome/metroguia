@@ -3,6 +3,7 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import LineSchema from '@/app/components/LineSchema';
 
 export async function generateStaticParams() {
   return lineasGDL.map((linea) => ({
@@ -52,19 +53,9 @@ export default function LineaGDLPage({ params }) {
 
   const stationBasePath = isMacrobus ? '/gdl/macrobus/estacion' : '/gdl/estacion';
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'GDL', item: 'https://metroguia.mx/gdl/' },
-      { '@type': 'ListItem', position: 3, name: `Línea ${linea.id}`, item: `https://metroguia.mx/gdl/linea/${linea.id}/` },
-    ],
-  };
-
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <LineSchema linea={linea} ciudad="gdl" sistema="Tren Ligero" />
 
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>

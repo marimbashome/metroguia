@@ -4,6 +4,7 @@ import { estacionesMTY } from '@/data/mty/estaciones';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
+import LineSchema from '@/app/components/LineSchema';
 
 export async function generateStaticParams() {
   return lineasMTY.map(linea => ({
@@ -48,37 +49,9 @@ export default function LineaMTY({ params }) {
     estacionesMTY.find(e => e.slug === slug)
   ).filter(Boolean);
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'MetroGuia',
-        item: 'https://metroguia.mx'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'MTY',
-        item: 'https://metroguia.mx/mty/'
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: `Línea ${linea.id}`,
-        item: `https://metroguia.mx/mty/linea/${linea.id}/`
-      }
-    ]
-  };
-
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <LineSchema linea={linea} ciudad="mty" sistema="Metrorrey" />
       {/* HERO */}
       <section style={{
         background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.id === '1' ? '#F97316' : '#EC4899'} 100%)`,

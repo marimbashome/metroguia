@@ -80,6 +80,18 @@ import { naturaleza } from '@/data/turismo/naturaleza';
 
 const BASE_URL = 'https://metroguia.mx';
 
+const LASTMOD = {
+  core: new Date('2025-02-15'),
+  cities: new Date('2025-02-10'),
+  turismo: new Date('2025-02-08'),
+  transport: new Date('2025-02-12'),
+  mundial: new Date('2025-02-01'),
+  i18n: new Date('2025-02-15'),
+  'routes-cdmx': new Date('2025-02-14'),
+  'routes-gdl': new Date('2025-02-14'),
+  'routes-other': new Date('2025-02-14'),
+};
+
 export async function generateSitemaps() {
   return [
     { id: 0 },  // core
@@ -96,17 +108,17 @@ export async function generateSitemaps() {
 
 // --- Helpers ---
 
-function entry(path, changeFrequency, priority) {
+function entry(path, changeFrequency, priority, category) {
   return {
     url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
+    lastModified: category ? LASTMOD[category] : new Date(),
     changeFrequency,
     priority,
   };
 }
 
 // Entry with hreflang alternates for i18n pages
-function i18nEntry(basePath, changeFrequency, priority, lang) {
+function i18nEntry(basePath, changeFrequency, priority, category, lang) {
   const languages = ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'];
   const url = lang === 'es'
     ? `${BASE_URL}${basePath}`
@@ -114,7 +126,7 @@ function i18nEntry(basePath, changeFrequency, priority, lang) {
 
   return {
     url,
-    lastModified: new Date(),
+    lastModified: category ? LASTMOD[category] : new Date(),
     changeFrequency,
     priority,
     alternates: {
@@ -125,22 +137,24 @@ function i18nEntry(basePath, changeFrequency, priority, lang) {
   };
 }
 
-function mapEstaciones(list, ciudad) {
+function mapEstaciones(list, ciudad, category) {
   return (list || []).map((e) =>
     entry(
       ciudad ? `/${ciudad}/estacion/${e.slug}/` : `/estacion/${e.slug}/`,
       'monthly',
-      0.8
+      0.8,
+      category
     )
   );
 }
 
-function mapLineas(list, ciudad) {
+function mapLineas(list, ciudad, category) {
   return (list || []).map((l) =>
     entry(
       ciudad ? `/${ciudad}/linea/${l.id}/` : `/linea/${l.id}/`,
       'monthly',
-      0.9
+      0.9,
+      category
     )
   );
 }
@@ -149,76 +163,76 @@ function mapLineas(list, ciudad) {
 
 function getCoreUrls() {
   return [
-    entry('/', 'weekly', 1.0),
-    entry('/lineas/', 'monthly', 0.9),
-    entry('/rutas/', 'monthly', 0.8),
-    entry('/guides/', 'monthly', 0.9),
-    entry('/guides/airport-to-metro/', 'monthly', 0.9),
-    entry('/guides/visitor-guide/', 'monthly', 0.9),
-    entry('/hospedaje/', 'monthly', 0.8),
-    entry('/explorar/', 'weekly', 0.8),
-    entry('/zona/', 'monthly', 0.8),
-    entry('/ruta/calc/', 'weekly', 0.8),
-    entry('/privacy-policy/', 'yearly', 0.3),
+    entry('/', 'weekly', 1.0, 'core'),
+    entry('/lineas/', 'monthly', 0.9, 'core'),
+    entry('/rutas/', 'monthly', 0.8, 'core'),
+    entry('/guides/', 'monthly', 0.9, 'core'),
+    entry('/guides/airport-to-metro/', 'monthly', 0.9, 'core'),
+    entry('/guides/visitor-guide/', 'monthly', 0.9, 'core'),
+    entry('/hospedaje/', 'monthly', 0.8, 'core'),
+    entry('/explorar/', 'weekly', 0.8, 'core'),
+    entry('/zona/', 'monthly', 0.8, 'core'),
+    entry('/ruta/calc/', 'weekly', 0.8, 'core'),
+    entry('/privacy-policy/', 'yearly', 0.3, 'core'),
     // City hub pages
     ...['cdmx','gdl','mty','puebla','merida','leon','chihuahua','tijuana',
         'toluca','queretaro','tren-maya','oaxaca','morelia','veracruz',
-        'campeche','villahermosa'].map(c => entry(`/${c}/`, 'weekly', 0.9)),
+        'campeche','villahermosa'].map(c => entry(`/${c}/`, 'weekly', 0.9, 'core')),
     // Zonas
-    ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8)),
+    ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
   ];
 }
 
 function getCitiesUrls() {
   return [
     // CDMX stations + lines
-    ...mapEstaciones(estaciones, null),
-    ...Object.values(lineasDetalle || {}).map((l) => entry(`/linea/${l.id}/`, 'monthly', 0.9)),
+    ...mapEstaciones(estaciones, null, 'cities'),
+    ...Object.values(lineasDetalle || {}).map((l) => entry(`/linea/${l.id}/`, 'monthly', 0.9, 'cities')),
     // GDL
-    ...mapEstaciones(estacionesGDL, 'gdl'),
-    ...mapLineas(lineasGDL, 'gdl'),
+    ...mapEstaciones(estacionesGDL, 'gdl', 'cities'),
+    ...mapLineas(lineasGDL, 'gdl', 'cities'),
     // MTY
-    ...mapEstaciones(estacionesMTY, 'mty'),
-    ...mapLineas(lineasMTY, 'mty'),
+    ...mapEstaciones(estacionesMTY, 'mty', 'cities'),
+    ...mapLineas(lineasMTY, 'mty', 'cities'),
     // Puebla
-    ...mapEstaciones(estacionesPuebla, 'puebla'),
-    ...mapLineas(lineasPuebla, 'puebla'),
+    ...mapEstaciones(estacionesPuebla, 'puebla', 'cities'),
+    ...mapLineas(lineasPuebla, 'puebla', 'cities'),
     // Mérida
-    ...mapEstaciones(estacionesMerida, 'merida'),
-    ...mapLineas(lineasMerida, 'merida'),
+    ...mapEstaciones(estacionesMerida, 'merida', 'cities'),
+    ...mapLineas(lineasMerida, 'merida', 'cities'),
     // León
-    ...mapEstaciones(estacionesLeon, 'leon'),
-    ...mapLineas(lineasLeon, 'leon'),
+    ...mapEstaciones(estacionesLeon, 'leon', 'cities'),
+    ...mapLineas(lineasLeon, 'leon', 'cities'),
     // Chihuahua
-    ...mapEstaciones(estacionesChihuahua, 'chihuahua'),
-    ...mapLineas(lineasChihuahua, 'chihuahua'),
+    ...mapEstaciones(estacionesChihuahua, 'chihuahua', 'cities'),
+    ...mapLineas(lineasChihuahua, 'chihuahua', 'cities'),
     // Tijuana
-    ...mapEstaciones(estacionesTijuana, 'tijuana'),
-    ...mapLineas(lineasTijuana, 'tijuana'),
+    ...mapEstaciones(estacionesTijuana, 'tijuana', 'cities'),
+    ...mapLineas(lineasTijuana, 'tijuana', 'cities'),
     // Querétaro
-    ...mapEstaciones(estacionesQueretaro, 'queretaro'),
-    ...mapLineas(lineasQueretaro, 'queretaro'),
+    ...mapEstaciones(estacionesQueretaro, 'queretaro', 'cities'),
+    ...mapLineas(lineasQueretaro, 'queretaro', 'cities'),
     // Toluca
-    ...mapEstaciones(estacionesToluca, 'toluca'),
-    ...mapLineas(lineasToluca, 'toluca'),
+    ...mapEstaciones(estacionesToluca, 'toluca', 'cities'),
+    ...mapLineas(lineasToluca, 'toluca', 'cities'),
     // Tren Maya
-    ...mapEstaciones(estacionesTrenMaya, 'tren-maya'),
-    ...mapLineas(lineasTrenMaya, 'tren-maya'),
+    ...mapEstaciones(estacionesTrenMaya, 'tren-maya', 'cities'),
+    ...mapLineas(lineasTrenMaya, 'tren-maya', 'cities'),
     // Oaxaca
-    ...mapEstaciones(estacionesOaxaca, 'oaxaca'),
-    ...mapLineas(lineasOaxaca, 'oaxaca'),
+    ...mapEstaciones(estacionesOaxaca, 'oaxaca', 'cities'),
+    ...mapLineas(lineasOaxaca, 'oaxaca', 'cities'),
     // Morelia
-    ...mapEstaciones(estacionesMorelia, 'morelia'),
-    ...mapLineas(lineasMorelia, 'morelia'),
+    ...mapEstaciones(estacionesMorelia, 'morelia', 'cities'),
+    ...mapLineas(lineasMorelia, 'morelia', 'cities'),
     // Veracruz
-    ...mapEstaciones(estacionesVeracruz, 'veracruz'),
-    ...mapLineas(lineasVeracruz, 'veracruz'),
+    ...mapEstaciones(estacionesVeracruz, 'veracruz', 'cities'),
+    ...mapLineas(lineasVeracruz, 'veracruz', 'cities'),
     // Campeche
-    ...mapEstaciones(estacionesCampeche, 'campeche'),
-    ...mapLineas(lineasCampeche, 'campeche'),
+    ...mapEstaciones(estacionesCampeche, 'campeche', 'cities'),
+    ...mapLineas(lineasCampeche, 'campeche', 'cities'),
     // Villahermosa
-    ...mapEstaciones(estacionesVillahermosa, 'villahermosa'),
-    ...mapLineas(lineasVillahermosa, 'villahermosa'),
+    ...mapEstaciones(estacionesVillahermosa, 'villahermosa', 'cities'),
+    ...mapLineas(lineasVillahermosa, 'villahermosa', 'cities'),
   ];
 }
 
@@ -234,11 +248,11 @@ function getTurismoUrls() {
     { data: naturaleza, slug: 'naturaleza' },
   ];
 
-  const urls = [entry('/turismo/', 'weekly', 0.9)];
+  const urls = [entry('/turismo/', 'weekly', 0.9, 'turismo')];
   for (const section of sections) {
-    urls.push(entry(`/turismo/${section.slug}/`, 'weekly', 0.85));
+    urls.push(entry(`/turismo/${section.slug}/`, 'weekly', 0.85, 'turismo'));
     for (const item of (section.data || [])) {
-      urls.push(entry(`/turismo/${section.slug}/${item.slug}/`, 'monthly', 0.7));
+      urls.push(entry(`/turismo/${section.slug}/${item.slug}/`, 'monthly', 0.7, 'turismo'));
     }
   }
   return urls;
@@ -247,67 +261,67 @@ function getTurismoUrls() {
 function getTransportUrls() {
   return [
     // Trolebús
-    entry('/cdmx/trolebus/', 'weekly', 0.8),
-    ...Object.keys(trolebusData.lineas).map(id => entry(`/cdmx/trolebus/linea/${id}/`, 'monthly', 0.7)),
-    ...(trolebusData.estaciones || []).map(e => entry(`/cdmx/trolebus/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/trolebus/', 'weekly', 0.8, 'transport'),
+    ...Object.keys(trolebusData.lineas).map(id => entry(`/cdmx/trolebus/linea/${id}/`, 'monthly', 0.7, 'transport')),
+    ...(trolebusData.estaciones || []).map(e => entry(`/cdmx/trolebus/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Mexicable
-    entry('/cdmx/mexicable/', 'weekly', 0.8),
-    ...Object.keys(mexicableLineas).map(id => entry(`/cdmx/mexicable/linea/${id}/`, 'monthly', 0.7)),
-    ...mexicableEstaciones.map(e => entry(`/cdmx/mexicable/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/mexicable/', 'weekly', 0.8, 'transport'),
+    ...Object.keys(mexicableLineas).map(id => entry(`/cdmx/mexicable/linea/${id}/`, 'monthly', 0.7, 'transport')),
+    ...mexicableEstaciones.map(e => entry(`/cdmx/mexicable/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Metrobús
-    entry('/cdmx/metrobus/', 'weekly', 0.8),
-    ...Object.keys(metrobusLineas).map(id => entry(`/cdmx/metrobus/linea/${id}/`, 'monthly', 0.7)),
-    ...metrobusEstaciones.map(e => entry(`/cdmx/metrobus/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/metrobus/', 'weekly', 0.8, 'transport'),
+    ...Object.keys(metrobusLineas).map(id => entry(`/cdmx/metrobus/linea/${id}/`, 'monthly', 0.7, 'transport')),
+    ...metrobusEstaciones.map(e => entry(`/cdmx/metrobus/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Cablebús
-    entry('/cdmx/cablebus/', 'weekly', 0.8),
-    ...Object.keys(cablebusLineas).map(id => entry(`/cdmx/cablebus/linea/${id}/`, 'monthly', 0.7)),
-    ...cablebusEstaciones.map(e => entry(`/cdmx/cablebus/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/cablebus/', 'weekly', 0.8, 'transport'),
+    ...Object.keys(cablebusLineas).map(id => entry(`/cdmx/cablebus/linea/${id}/`, 'monthly', 0.7, 'transport')),
+    ...cablebusEstaciones.map(e => entry(`/cdmx/cablebus/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Tren Ligero
-    entry('/cdmx/tren-ligero/', 'weekly', 0.8),
-    ...(trenLigeroData.estaciones || []).map(e => entry(`/cdmx/tren-ligero/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/tren-ligero/', 'weekly', 0.8, 'transport'),
+    ...(trenLigeroData.estaciones || []).map(e => entry(`/cdmx/tren-ligero/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Tren Suburbano
-    entry('/cdmx/tren-suburbano/', 'weekly', 0.8),
-    ...Object.keys(trenSuburbanoData.lineas).map(id => entry(`/cdmx/tren-suburbano/linea/${id}/`, 'monthly', 0.7)),
-    ...(trenSuburbanoData.estaciones || []).map(e => entry(`/cdmx/tren-suburbano/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/cdmx/tren-suburbano/', 'weekly', 0.8, 'transport'),
+    ...Object.keys(trenSuburbanoData.lineas).map(id => entry(`/cdmx/tren-suburbano/linea/${id}/`, 'monthly', 0.7, 'transport')),
+    ...(trenSuburbanoData.estaciones || []).map(e => entry(`/cdmx/tren-suburbano/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
     // Aeropuertos
-    entry('/aeropuertos/', 'monthly', 0.8),
-    ...(aeropuertos || []).map(a => entry(`/aeropuertos/${a.slug}/`, 'monthly', 0.7)),
+    entry('/aeropuertos/', 'monthly', 0.8, 'transport'),
+    ...(aeropuertos || []).map(a => entry(`/aeropuertos/${a.slug}/`, 'monthly', 0.7, 'transport')),
     // Terminales
-    entry('/terminales/', 'monthly', 0.8),
-    ...(terminales || []).map(t => entry(`/terminales/${t.slug}/`, 'monthly', 0.7)),
+    entry('/terminales/', 'monthly', 0.8, 'transport'),
+    ...(terminales || []).map(t => entry(`/terminales/${t.slug}/`, 'monthly', 0.7, 'transport')),
     // Ferries
-    entry('/ferries/', 'monthly', 0.7),
-    ...(ferrys || []).map(f => entry(`/ferries/${f.slug}/`, 'monthly', 0.6)),
+    entry('/ferries/', 'monthly', 0.7, 'transport'),
+    ...(ferrys || []).map(f => entry(`/ferries/${f.slug}/`, 'monthly', 0.6, 'transport')),
     // Cruces fronterizos
-    entry('/frontera/', 'monthly', 0.7),
-    ...(crucesFronterizos || []).map(c => entry(`/frontera/${c.slug}/`, 'monthly', 0.6)),
+    entry('/frontera/', 'monthly', 0.7, 'transport'),
+    ...(crucesFronterizos || []).map(c => entry(`/frontera/${c.slug}/`, 'monthly', 0.6, 'transport')),
     // GDL Macrobús
-    entry('/gdl/macrobus/', 'weekly', 0.85),
-    entry('/gdl/macrobus/linea/MC/', 'monthly', 0.75),
-    entry('/gdl/macrobus/linea/MP/', 'monthly', 0.75),
+    entry('/gdl/macrobus/', 'weekly', 0.85, 'transport'),
+    entry('/gdl/macrobus/linea/MC/', 'monthly', 0.75, 'transport'),
+    entry('/gdl/macrobus/linea/MP/', 'monthly', 0.75, 'transport'),
     ...(estacionesGDL || []).filter(e => e.sistema === 'macrobus').map(e =>
-      entry(`/gdl/macrobus/estacion/${e.slug}/`, 'monthly', 0.7)
+      entry(`/gdl/macrobus/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')
     ),
     // MTY Ecovía
-    entry('/mty/ecovia/', 'weekly', 0.8),
-    ...(estacionesEcovia || []).map(e => entry(`/mty/ecovia/estacion/${e.slug}/`, 'monthly', 0.7)),
+    entry('/mty/ecovia/', 'weekly', 0.8, 'transport'),
+    ...(estacionesEcovia || []).map(e => entry(`/mty/ecovia/estacion/${e.slug}/`, 'monthly', 0.7, 'transport')),
   ];
 }
 
 function getMundialUrls() {
   const urls = [
-    entry('/mundial-2026/', 'weekly', 1.0),
-    entry('/mundial-2026/estadio-azteca/', 'monthly', 0.9),
-    entry('/mundial-2026/como-llegar-estadio-azteca/', 'monthly', 0.9),
-    entry('/mundial-2026/transporte-publico-cdmx/', 'monthly', 0.9),
-    entry('/gdl/mundial-2026/', 'monthly', 0.9),
-    entry('/mty/mundial-2026/', 'monthly', 0.9),
-    entry('/mundial-2026/partidos/', 'weekly', 0.9),
+    entry('/mundial-2026/', 'weekly', 1.0, 'mundial'),
+    entry('/mundial-2026/estadio-azteca/', 'monthly', 0.9, 'mundial'),
+    entry('/mundial-2026/como-llegar-estadio-azteca/', 'monthly', 0.9, 'mundial'),
+    entry('/mundial-2026/transporte-publico-cdmx/', 'monthly', 0.9, 'mundial'),
+    entry('/gdl/mundial-2026/', 'monthly', 0.9, 'mundial'),
+    entry('/mty/mundial-2026/', 'monthly', 0.9, 'mundial'),
+    entry('/mundial-2026/partidos/', 'weekly', 0.9, 'mundial'),
   ];
   // Individual match pages
   Object.entries(mundial2026.sedes).forEach(([cityKey, sede]) => {
     sede.partidos.forEach((partido) => {
-      urls.push(entry(`/mundial-2026/partidos/${cityKey}-${partido.fecha}/`, 'weekly', 0.9));
+      urls.push(entry(`/mundial-2026/partidos/${cityKey}-${partido.fecha}/`, 'weekly', 0.9, 'mundial'));
     });
   });
   return urls;
@@ -329,14 +343,14 @@ function getI18nUrls() {
 
   keyPages.forEach(({ path, freq, priority }) => {
     allLangs.forEach(lang => {
-      urls.push(i18nEntry(path, freq, priority, lang));
+      urls.push(i18nEntry(path, freq, priority, 'i18n', lang));
     });
   });
 
   // CDMX stations in all languages (155 × 6 = 930)
   languages.forEach(lang => {
     (estaciones || []).forEach(estacion => {
-      urls.push(entry(`/${lang}/cdmx/estacion/${estacion.slug}/`, 'monthly', 0.7));
+      urls.push(entry(`/${lang}/cdmx/estacion/${estacion.slug}/`, 'monthly', 0.7, 'i18n'));
     });
   });
 
@@ -344,14 +358,14 @@ function getI18nUrls() {
   const cdmxLineIds = Object.keys(lineasDetalle).slice(0, 12);
   languages.forEach(lang => {
     cdmxLineIds.forEach(lineId => {
-      urls.push(entry(`/${lang}/cdmx/linea/${lineId}/`, 'monthly', 0.7));
+      urls.push(entry(`/${lang}/cdmx/linea/${lineId}/`, 'monthly', 0.7, 'i18n'));
     });
   });
 
   // Top 500 routes in all languages (500 × 6 = 3,000)
   languages.forEach(lang => {
     rutasPopulares.slice(0, 500).forEach(ruta => {
-      urls.push(entry(`/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`, 'monthly', 0.65));
+      urls.push(entry(`/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`, 'monthly', 0.65, 'i18n'));
     });
   });
 
@@ -363,7 +377,8 @@ function getRoutesCdmxUrls() {
     entry(
       `/ruta/${slug}/`,
       'monthly',
-      slug.endsWith('-a-tasquena') || slug.endsWith('-a-tren-ligero-estadio-azteca') ? 0.85 : 0.7
+      slug.endsWith('-a-tasquena') || slug.endsWith('-a-tren-ligero-estadio-azteca') ? 0.85 : 0.7,
+      'routes-cdmx'
     )
   );
 }
@@ -373,7 +388,8 @@ function getRoutesGdlUrls() {
     entry(
       `/gdl/ruta/${slug}/`,
       'monthly',
-      slug.endsWith('-a-estadio-chivas') ? 0.85 : 0.65
+      slug.endsWith('-a-estadio-chivas') ? 0.85 : 0.65,
+      'routes-gdl'
     )
   );
 }
@@ -401,7 +417,7 @@ function getRoutesOtherUrls() {
     const routes = generateCityRoutes(cfg.city);
     for (const slug of routes) {
       const p = (cfg.boostSuffix && slug.endsWith(cfg.boostSuffix)) ? cfg.boostPriority : cfg.priority;
-      urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', p));
+      urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', p, 'routes-other'));
     }
   }
   return urls;

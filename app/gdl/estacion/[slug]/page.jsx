@@ -64,9 +64,32 @@ export default function EstacionGDLPage({ params }) {
     ],
   };
 
+  const transitStationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TransitStation',
+    name: `Estación ${estacion.nombre}`,
+    description: estacion.meta_description || estacion.intro || `Estación ${estacion.nombre} del sistema SITEUR en Guadalajara`,
+    url: `https://metroguia.mx/gdl/estacion/${estacion.slug}/`,
+    isAccessibleForFree: true,
+    address: { '@type': 'PostalAddress', addressLocality: 'Guadalajara', addressRegion: estacion.municipio || 'Jalisco', addressCountry: 'MX' },
+    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 20.6597, longitude: estacion.lng || -103.3496 },
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '05:00', closes: '23:00' },
+  };
+
+  const faqItems = [];
+  faqItems.push({ '@type': 'Question', name: `¿Cómo llego a la estación ${estacion.nombre} en Guadalajara?`, acceptedAnswer: { '@type': 'Answer', text: `La estación ${estacion.nombre} pertenece a la Línea ${estacion.linea} del sistema SITEUR en Guadalajara. Usa el planificador de rutas de MetroGuia.mx para obtener direcciones.` } });
+  if (estacion.pois && estacion.pois.length > 0) {
+    const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : `${p.nombre} (${p.tipo}, a ${p.distancia})`).join(', ');
+    faqItems.push({ '@type': 'Question', name: `¿Qué hay cerca de la estación ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Cerca encontrarás: ${poiList}.` } });
+  }
+  faqItems.push({ '@type': 'Question', name: `¿Cuál es el horario y costo?`, acceptedAnswer: { '@type': 'Answer', text: `El Tren Ligero de Guadalajara opera de 5:00 AM a 11:00 PM. Costo: $9.50 MXN con tarjeta Mi Movilidad.` } });
+  const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems };
+
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(transitStationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${colorLinea} 0%, ${colorLinea}cc 100%)`, color: '#fff', padding: '60px 24px' }}>

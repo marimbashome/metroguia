@@ -66,8 +66,8 @@ export default function EstacionPage({ params }) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
-    name: `Metro ${estacion.nombre} CDMX`,
+    '@type': 'TransitStation',
+    name: `Estación ${estacion.nombre}`,
     description: estacion.meta_description,
     url: `https://metroguia.mx/estacion/${estacion.slug}/`,
     isAccessibleForFree: true,
@@ -83,6 +83,17 @@ export default function EstacionPage({ params }) {
       name: `Línea ${linea} del Metro CDMX`,
       url: `https://metroguia.mx/linea/${linea}/`,
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: estacion.lat || 19.4326,
+      longitude: estacion.lng || -99.1332,
+    },
+    openingHoursSpecification: [
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '05:00', closes: '00:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '06:00', closes: '00:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '07:00', closes: '00:00' },
+    ],
+    hasMap: `https://metroguia.mx/linea/${linea}/`,
   }
 
   const breadcrumbSchema = {

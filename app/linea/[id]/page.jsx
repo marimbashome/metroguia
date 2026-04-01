@@ -1,5 +1,6 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import LineSchema from '@/app/components/LineSchema'
 
 export function generateStaticParams() {
   return Object.keys(lineasDetalle).map((id) => ({ id }))
@@ -49,61 +50,11 @@ export default function LineaPage({ params }) {
     </div>
   )
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
-    name: linea.h1,
-    description: linea.meta_description,
-    url: `https://metroguia.mx/linea/${linea.id}/`,
-    isAccessibleForFree: true,
-    publicAccess: true,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Ciudad de México',
-      addressCountry: 'MX',
-    },
-    amenityFeature: linea.estaciones.map((est) => ({
-      '@type': 'LocationFeatureSpecification',
-      name: est.nombre,
-      value: true,
-    })),
-  }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'MetroGuia',
-        item: 'https://metroguia.mx'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'CDMX',
-        item: 'https://metroguia.mx/cdmx/'
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: `Línea ${linea.id}`,
-        item: `https://metroguia.mx/linea/${linea.id}/`
-      }
-    ]
-  }
 
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <LineSchema linea={linea} ciudad="cdmx" sistema="Metro" />
 
       <section className="hero" style={{ backgroundColor: linea.color }}>
         <div className="container">
