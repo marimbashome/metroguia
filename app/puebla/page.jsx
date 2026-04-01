@@ -332,7 +332,7 @@ export default function PueblaPage() {
           </div>
           <div>
             <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#8B5CF6', marginBottom: '10px' }}>🏨 Hospedaje</h3>
-            <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Centro Histórico ($500–1,500 MXN/noche): zócalo, catedral, talavera a pie. Cholula ($400–1,200 MXN): pirámide y volcanes. RUTA línea 1 conecta centro con Angelópolis en 25 min. Desde CAPU, taxi $120 MXN al centro.</p></p>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Centro Histórico ($500–1,500 MXN/noche): zócalo, catedral, talavera a pie. Cholula ($400–1,200 MXN): pirámide y volcanes. RUTA línea 1 conecta centro con Angelópolis en 25 min. Desde CAPU, taxi $120 MXN al centro.</p>
           </div>
         </div>
       </section>

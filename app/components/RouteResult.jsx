@@ -1,240 +1,262 @@
 'use client'
 
+// ============================================================================
+// STATIC STYLE CONSTANTS (module-level)
+// ============================================================================
+
+const baseContainerStyle = {
+  padding: '18px',
+  border: '1px solid var(--border)',
+  borderRadius: '8px',
+  transition: 'opacity 0.2s',
+}
+
+const headerRowStyle = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+  marginBottom: '16px',
+  gap: '12px',
+}
+
+const summaryStyle = {
+  display: 'flex',
+  gap: '20px',
+  flex: 1,
+  flexWrap: 'wrap',
+}
+
+const summaryItemStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+}
+
+const summaryLabelStyle = {
+  fontSize: '11px',
+  color: 'var(--text-muted)',
+  fontWeight: '600',
+  textTransform: 'uppercase',
+  letterSpacing: '0.5px',
+}
+
+const summaryValueStyle = {
+  fontSize: '20px',
+  fontWeight: '700',
+  color: 'var(--text)',
+}
+
+const baseBadgeStyle = {
+  padding: '6px 12px',
+  color: '#FFFFFF',
+  fontSize: '11px',
+  fontWeight: '600',
+  borderRadius: '4px',
+  textTransform: 'uppercase',
+  letterSpacing: '0.5px',
+}
+
+const recommendedBadgeStyle = {
+  ...baseBadgeStyle,
+  backgroundColor: 'var(--primary)',
+}
+
+const alternativeBadgeStyle = {
+  ...baseBadgeStyle,
+  backgroundColor: 'var(--text-muted)',
+}
+
+const routeStripContainerStyle = {
+  marginBottom: '20px',
+  paddingBottom: '20px',
+  borderBottom: '1px solid var(--border)',
+}
+
+const stripLabelStyle = {
+  fontSize: '11px',
+  color: 'var(--text-muted)',
+  fontWeight: '600',
+  marginBottom: '12px',
+  textTransform: 'uppercase',
+  display: 'block',
+}
+
+const stripStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  overflowX: 'auto',
+  paddingBottom: '8px',
+}
+
+const lineBadgeStyle = {
+  padding: '6px 12px',
+  borderRadius: '4px',
+  fontSize: '12px',
+  fontWeight: '600',
+  color: '#FFFFFF',
+  whiteSpace: 'nowrap',
+  flexShrink: 0,
+}
+
+const dotConnectorStyle = {
+  width: '4px',
+  height: '4px',
+  borderRadius: '50%',
+  backgroundColor: 'var(--border-light)',
+  flexShrink: 0,
+}
+
+const stepsContainerStyle = {
+  marginBottom: '16px',
+}
+
+const stepLabelStyle = {
+  fontSize: '11px',
+  color: 'var(--text-muted)',
+  fontWeight: '600',
+  marginBottom: '12px',
+  textTransform: 'uppercase',
+  display: 'block',
+}
+
+const baseStepStyle = {
+  display: 'flex',
+  gap: '12px',
+  marginBottom: '12px',
+  paddingBottom: '12px',
+  borderBottom: '1px solid var(--border)',
+}
+
+const stepStyleLast = {
+  display: 'flex',
+  gap: '12px',
+  marginBottom: 0,
+  paddingBottom: 0,
+  borderBottom: 'none',
+}
+
+const stepIconStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '32px',
+  height: '32px',
+  borderRadius: '50%',
+  backgroundColor: 'var(--surface-active)',
+  flexShrink: 0,
+  fontSize: '14px',
+  color: 'var(--text)',
+}
+
+const stepContentStyle = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+}
+
+const stationNameStyle = {
+  fontSize: '14px',
+  fontWeight: '600',
+  color: 'var(--text)',
+}
+
+const actionTextStyle = {
+  fontSize: '12px',
+  color: 'var(--text-muted)',
+}
+
+const lineBadgeSmallStyle = {
+  display: 'inline-block',
+  padding: '3px 8px',
+  borderRadius: '3px',
+  fontSize: '10px',
+  fontWeight: '600',
+  color: '#FFFFFF',
+  marginRight: '6px',
+}
+
+const alertStyle = {
+  padding: '12px 14px',
+  backgroundColor: 'rgba(220, 38, 38, 0.06)',
+  border: '1px solid rgba(220, 38, 38, 0.2)',
+  borderRadius: '6px',
+  color: 'var(--danger)',
+  fontSize: '13px',
+  marginTop: '16px',
+  display: 'flex',
+  gap: '8px',
+}
+
+const alertIconStyle = {
+  fontSize: '14px',
+  flexShrink: 0,
+  marginTop: '1px',
+}
+
+// ============================================================================
+// HELPER FUNCTIONS (module-level)
+// ============================================================================
+
+const getLineColor = (linea) => {
+  const lineColorMap = {
+    '1': '#E41C38',
+    '2': '#00A64E',
+    '3': '#FFB91B',
+    '4': '#003DA5',
+    '5': '#FFD700',
+    '6': '#E74C3C',
+    '7': '#F39C12',
+    '8': '#27AE60',
+    '9': '#8E44AD',
+    '10': '#2980B9',
+    '11': '#D35400',
+    '12': '#C0392B',
+    'A': '#00A64E',
+    'B': '#003DA5',
+    'TL': '#E74C3C',
+  }
+  return lineColorMap[linea] || '#5A5A6A'
+}
+
+const getActionIcon = (action) => {
+  const iconMap = {
+    subir: '↑',
+    bajar: '↓',
+    transbordo: '→',
+    caminata: '🚶',
+  }
+  return iconMap[action] || '●'
+}
+
+const formatTime = (minutes) => {
+  if (minutes < 60) {
+    return `${minutes} min`
+  }
+  const hours = Math.floor(minutes / 60)
+  const mins = minutes % 60
+  return mins > 0 ? `${hours}h ${mins}m` : `${hours}h`
+}
+
+// ============================================================================
+// COMPONENT
+// ============================================================================
+
 export default function RouteResult({ ruta, isAlternative = false }) {
   if (!ruta) {
     return null
   }
 
+  // Container style: depends on isAlternative prop
   const containerStyle = {
-    padding: '18px',
+    ...baseContainerStyle,
     backgroundColor: isAlternative ? 'var(--surface-hover)' : 'var(--surface)',
-    border: '1px solid var(--border)',
-    borderRadius: '8px',
     opacity: isAlternative ? 0.85 : 1,
-    transition: 'opacity 0.2s',
   }
 
-  const headerRowStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginBottom: '16px',
-    gap: '12px',
-  }
-
-  const summaryStyle = {
-    display: 'flex',
-    gap: '20px',
-    flex: 1,
-    flexWrap: 'wrap',
-  }
-
-  const summaryItemStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '4px',
-  }
-
-  const summaryLabelStyle = {
-    fontSize: '11px',
-    color: 'var(--text-muted)',
-    fontWeight: '600',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-  }
-
-  const summaryValueStyle = {
-    fontSize: '20px',
-    fontWeight: '700',
-    color: 'var(--text)',
-  }
-
-  const badgeStyle = {
-    padding: '6px 12px',
-    backgroundColor: 'var(--primary)',
-    color: '#FFFFFF',
-    fontSize: '11px',
-    fontWeight: '600',
-    borderRadius: '4px',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-  }
-
-  const alternativeBadgeStyle = {
-    ...badgeStyle,
-    backgroundColor: 'var(--text-muted)',
-  }
-
-  const routeStripContainerStyle = {
-    marginBottom: '20px',
-    paddingBottom: '20px',
-    borderBottom: '1px solid var(--border)',
-  }
-
-  const stripLabelStyle = {
-    fontSize: '11px',
-    color: 'var(--text-muted)',
-    fontWeight: '600',
-    marginBottom: '12px',
-    textTransform: 'uppercase',
-    display: 'block',
-  }
-
-  const stripStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    overflowX: 'auto',
-    paddingBottom: '8px',
-  }
-
-  const lineBadgeStyle = {
-    padding: '6px 12px',
-    borderRadius: '4px',
-    fontSize: '12px',
-    fontWeight: '600',
-    color: '#FFFFFF',
-    whiteSpace: 'nowrap',
-    flexShrink: 0,
-  }
-
-  const dotConnectorStyle = {
-    width: '4px',
-    height: '4px',
-    borderRadius: '50%',
-    backgroundColor: 'var(--border-light)',
-    flexShrink: 0,
-  }
-
-  const stepsContainerStyle = {
-    marginBottom: '16px',
-  }
-
-  const stepLabelStyle = {
-    fontSize: '11px',
-    color: 'var(--text-muted)',
-    fontWeight: '600',
-    marginBottom: '12px',
-    textTransform: 'uppercase',
-    display: 'block',
-  }
-
-  const stepStyle = {
-    display: 'flex',
-    gap: '12px',
-    marginBottom: '12px',
-    paddingBottom: '12px',
-    borderBottom: '1px solid var(--border)',
-  }
-
-  const stepStyle_last = {
-    ...stepStyle,
-    borderBottom: 'none',
-    marginBottom: 0,
-    paddingBottom: 0,
-  }
-
-  const stepIconStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '32px',
-    height: '32px',
-    borderRadius: '50%',
-    backgroundColor: 'var(--surface-active)',
-    flexShrink: 0,
-    fontSize: '14px',
-    color: 'var(--text)',
-  }
-
-  const stepContentStyle = {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '4px',
-  }
-
-  const stationNameStyle = {
-    fontSize: '14px',
-    fontWeight: '600',
-    color: 'var(--text)',
-  }
-
-  const actionTextStyle = {
-    fontSize: '12px',
-    color: 'var(--text-muted)',
-  }
-
-  const lineBadgeSmallStyle = {
-    display: 'inline-block',
-    padding: '3px 8px',
-    borderRadius: '3px',
-    fontSize: '10px',
-    fontWeight: '600',
-    color: '#FFFFFF',
-    marginRight: '6px',
-  }
-
-  const alertStyle = {
-    padding: '12px 14px',
-    backgroundColor: 'rgba(220, 38, 38, 0.06)',
-    border: '1px solid rgba(220, 38, 38, 0.2)',
-    borderRadius: '6px',
-    color: 'var(--danger)',
-    fontSize: '13px',
-    marginTop: '16px',
-    display: 'flex',
-    gap: '8px',
-  }
-
-  const alertIconStyle = {
-    fontSize: '14px',
-    flexShrink: 0,
-    marginTop: '1px',
-  }
-
-  // Helper function to get line color
-  const getLineColor = (linea) => {
-    const lineColorMap = {
-      '1': '#E41C38',
-      '2': '#00A64E',
-      '3': '#FFB91B',
-      '4': '#003DA5',
-      '5': '#FFD700',
-      '6': '#E74C3C',
-      '7': '#F39C12',
-      '8': '#27AE60',
-      '9': '#8E44AD',
-      '10': '#2980B9',
-      '11': '#D35400',
-      '12': '#C0392B',
-      'A': '#00A64E',
-      'B': '#003DA5',
-      'TL': '#E74C3C',
-    }
-    return lineColorMap[linea] || '#5A5A6A'
-  }
-
-  // Helper function to get action icon
-  const getActionIcon = (action) => {
-    const iconMap = {
-      subir: '↑',
-      bajar: '↓',
-      transbordo: '→',
-      caminata: '🚶',
-    }
-    return iconMap[action] || '●'
-  }
-
-  // Format time display
-  const formatTime = (minutes) => {
-    if (minutes < 60) {
-      return `${minutes} min`
-    }
-    const hours = Math.floor(minutes / 60)
-    const mins = minutes % 60
-    return mins > 0 ? `${hours}h ${mins}m` : `${hours}h`
-  }
+  // Badge style: depends on isAlternative prop
+  const badgeStyle = isAlternative ? alternativeBadgeStyle : recommendedBadgeStyle
 
   // Build line badges for route strip
   const uniqueLineas = ruta.lineas ? [...new Set(ruta.lineas)] : []
@@ -263,9 +285,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
             </span>
           </div>
         </div>
-        <div
-          style={isAlternative ? alternativeBadgeStyle : badgeStyle}
-        >
+        <div style={badgeStyle}>
           {isAlternative ? 'ALTERNATIVA' : 'RECOMENDADA'}
         </div>
       </div>
@@ -299,7 +319,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
           {ruta.pasos.map((paso, idx) => {
             const isLast = idx === ruta.pasos.length - 1
             return (
-              <div key={idx} style={isLast ? stepStyle_last : stepStyle}>
+              <div key={idx} style={isLast ? stepStyleLast : baseStepStyle}>
                 <div style={stepIconStyle}>
                   {getActionIcon(paso.accion)}
                 </div>

@@ -13,6 +13,139 @@ import koT from '@/translations/ko.json'
 
 const allT = { es: esT, en: enT, pt: ptT, fr: frT, de: deT, ja: jaT, ko: koT }
 
+// Static styles - moved outside component to prevent recreation on every render
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '16px',
+  padding: '20px',
+  backgroundColor: 'var(--surface)',
+  borderRadius: '12px',
+  border: '1px solid var(--border)',
+  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)',
+}
+
+const inputRowStyle = {
+  display: 'flex',
+  gap: '12px',
+  alignItems: 'flex-end',
+  flexWrap: 'wrap',
+}
+
+const inputGroupStyle = {
+  flex: 1,
+  minWidth: '200px',
+  position: 'relative',
+}
+
+const labelStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  marginBottom: '6px',
+  fontSize: '12px',
+  fontWeight: '600',
+  color: 'var(--text-muted)',
+  textTransform: 'uppercase',
+}
+
+const dotStyle = {
+  fontSize: '16px',
+  lineHeight: '1',
+}
+
+const inputStyle = {
+  width: '100%',
+  padding: '12px 14px',
+  backgroundColor: 'var(--bg)',
+  border: '1px solid var(--border)',
+  borderRadius: '8px',
+  color: 'var(--text)',
+  fontSize: '14px',
+  fontFamily: 'inherit',
+  transition: 'border-color 0.2s, box-shadow 0.2s',
+  outline: 'none',
+}
+
+const dropdownStyle = {
+  position: 'absolute',
+  top: '100%',
+  left: 0,
+  right: 0,
+  marginTop: '4px',
+  backgroundColor: 'var(--bg)',
+  border: '1px solid var(--border)',
+  borderRadius: '8px',
+  zIndex: 1000,
+  maxHeight: '200px',
+  overflowY: 'auto',
+  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
+}
+
+const dropdownItemStyle = {
+  padding: '12px 14px',
+  color: 'var(--text)',
+  cursor: 'pointer',
+  borderBottom: '1px solid var(--border)',
+  fontSize: '14px',
+  transition: 'background-color 0.15s',
+  minHeight: '44px',
+  display: 'flex',
+  alignItems: 'center',
+}
+
+const swapButtonStyle = {
+  padding: '10px 14px',
+  minHeight: '44px',
+  minWidth: '44px',
+  backgroundColor: 'transparent',
+  border: '1px solid var(--border)',
+  borderRadius: '8px',
+  color: 'var(--primary)',
+  cursor: 'pointer',
+  fontSize: '18px',
+  transition: 'border-color 0.2s',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+}
+
+const quickActionsStyle = {
+  display: 'flex',
+  gap: '8px',
+  flexWrap: 'wrap',
+}
+
+const pillStyle = {
+  padding: '8px 14px',
+  backgroundColor: 'var(--bg)',
+  border: '1px solid var(--border)',
+  borderRadius: '20px',
+  color: 'var(--text)',
+  cursor: 'pointer',
+  fontSize: '12px',
+  transition: 'all 0.2s',
+  whiteSpace: 'nowrap',
+}
+
+const submitButtonStyle = {
+  padding: '12px 24px',
+  backgroundColor: 'var(--primary)',
+  border: 'none',
+  borderRadius: '8px',
+  color: '#FFFFFF',
+  fontSize: '14px',
+  fontWeight: '600',
+  cursor: 'pointer',
+  transition: 'all 0.2s',
+}
+
+const submitButtonDisabledStyle = {
+  ...submitButtonStyle,
+  opacity: 0.4,
+  cursor: 'not-allowed',
+}
+
 export default function SearchBar({
   ciudad = 'cdmx',
   defaultDestino = '',
@@ -147,174 +280,26 @@ export default function SearchBar({
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const containerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '16px',
-    padding: '20px',
-    backgroundColor: 'var(--surface)',
-    borderRadius: '12px',
-    border: '1px solid var(--border)',
-    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)',
-  }
-
-  const inputRowStyle = {
-    display: 'flex',
-    gap: '12px',
-    alignItems: 'flex-end',
-    flexWrap: 'wrap',
-  }
-
-  const inputGroupStyle = {
-    flex: 1,
-    minWidth: '200px',
-    position: 'relative',
-  }
-
-  const labelStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    marginBottom: '6px',
-    fontSize: '12px',
-    fontWeight: '600',
-    color: 'var(--text-muted)',
-    textTransform: 'uppercase',
-  }
-
-  const dotStyle = {
-    fontSize: '16px',
-    lineHeight: '1',
-  }
-
-  const inputStyle = {
-    width: '100%',
-    padding: '12px 14px',
-    backgroundColor: 'var(--bg)',
-    border: '1px solid var(--border)',
-    borderRadius: '8px',
-    color: 'var(--text)',
-    fontSize: '14px',
-    fontFamily: 'inherit',
-    transition: 'border-color 0.2s, box-shadow 0.2s',
-    outline: 'none',
-  }
-
-  const inputStyleFocus = {
-    width: '100%',
-    padding: '12px 14px',
-    backgroundColor: 'var(--bg)',
-    borderRadius: '8px',
-    color: 'var(--text)',
-    fontSize: '14px',
-    fontFamily: 'inherit',
-    transition: 'border-color 0.2s, box-shadow 0.2s',
-    outline: 'none',
-    border: '1px solid var(--primary)',
-    boxShadow: '0 0 0 3px var(--primary-glow)',
-  }
-
-  const dropdownStyle = {
-    position: 'absolute',
-    top: '100%',
-    left: 0,
-    right: 0,
-    marginTop: '4px',
-    backgroundColor: 'var(--bg)',
-    border: '1px solid var(--border)',
-    borderRadius: '8px',
-    zIndex: 1000,
-    maxHeight: '200px',
-    overflowY: 'auto',
-    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
-  }
-
-  const dropdownItemStyle = {
-    padding: '12px 14px',
-    color: 'var(--text)',
-    cursor: 'pointer',
-    borderBottom: '1px solid var(--border)',
-    fontSize: '14px',
-    transition: 'background-color 0.15s',
-    minHeight: '44px',
-    display: 'flex',
-    alignItems: 'center',
-  }
-
-  const dropdownItemHoverStyle = {
-    ...dropdownItemStyle,
-    backgroundColor: 'var(--surface)',
-    minHeight: '44px',
-    display: 'flex',
-    alignItems: 'center',
-  }
-
-  const swapButtonStyle = {
-    padding: '10px 14px',
-    minHeight: '44px',
-    minWidth: '44px',
-    backgroundColor: 'transparent',
-    border: '1px solid var(--border)',
-    borderRadius: '8px',
-    color: 'var(--primary)',
-    cursor: 'pointer',
-    fontSize: '18px',
-    transition: 'border-color 0.2s',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-
-  const quickActionsStyle = {
-    display: 'flex',
-    gap: '8px',
-    flexWrap: 'wrap',
-  }
-
-  const pillStyle = {
-    padding: '8px 14px',
-    backgroundColor: 'var(--bg)',
-    border: '1px solid var(--border)',
-    borderRadius: '20px',
-    color: 'var(--text)',
-    cursor: 'pointer',
-    fontSize: '12px',
-    transition: 'all 0.2s',
-    whiteSpace: 'nowrap',
-  }
-
-  const pillHoverStyle = {
-    ...pillStyle,
-    borderColor: 'var(--primary)',
-    color: 'var(--primary)',
-    backgroundColor: 'var(--primary-glow)',
-  }
-
-  const submitButtonStyle = {
-    padding: '12px 24px',
-    backgroundColor: 'var(--primary)',
-    border: 'none',
-    borderRadius: '8px',
-    color: '#FFFFFF',
-    fontSize: '14px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    transition: 'all 0.2s',
-  }
-
-  const submitButtonDisabledStyle = {
-    ...submitButtonStyle,
-    opacity: 0.4,
-    cursor: 'not-allowed',
-  }
-
-  const [origenFocused, setOrigenFocused] = useState(false)
-  const [destinoFocused, setDestinoFocused] = useState(false)
-  const [hoveredPill, setHoveredPill] = useState(null)
-  const [hoveredItem, setHoveredItem] = useState(null)
-
   return (
     <form onSubmit={handleSubmit} style={containerStyle}>
+      <style>{`
+        #searchbar-origen-input:focus,
+        #searchbar-destino-input:focus {
+          border-color: var(--primary);
+          box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+
+        .searchbar-dropdown-item:hover {
+          background-color: var(--surface);
+        }
+
+        .searchbar-quick-action:hover {
+          border-color: var(--primary);
+          color: var(--primary);
+          background-color: var(--primary-glow);
+        }
+      `}</style>
+
       <div style={inputRowStyle}>
         {/* Origen */}
         <div style={inputGroupStyle} ref={origenRef}>
@@ -323,30 +308,24 @@ export default function SearchBar({
             {t.origin}
           </label>
           <input
+            id="searchbar-origen-input"
             type="text"
             placeholder={t.originPlaceholder}
             value={origen}
             onChange={handleOrigenChange}
             onFocus={() => {
-              setOrigenFocused(true)
               if (origen.length > 0) setShowOrigenDropdown(true)
             }}
-            onBlur={() => setOrigenFocused(false)}
-            style={origenFocused ? inputStyleFocus : inputStyle}
+            style={inputStyle}
           />
           {showOrigenDropdown && origenSuggestions.length > 0 && (
             <div style={dropdownStyle}>
               {origenSuggestions.map((estacion, idx) => (
                 <div
                   key={idx}
-                  onMouseEnter={() => setHoveredItem(`origen-${idx}`)}
-                  onMouseLeave={() => setHoveredItem(null)}
+                  className="searchbar-dropdown-item"
                   onClick={() => selectOrigen(estacion)}
-                  style={
-                    hoveredItem === `origen-${idx}`
-                      ? dropdownItemHoverStyle
-                      : dropdownItemStyle
-                  }
+                  style={dropdownItemStyle}
                 >
                   {estacion.nombre || estacion}{estacion.ciudad && estacion.ciudad !== 'cdmx' ? ` (${estacion.ciudad.toUpperCase()})` : ''}
                 </div>
@@ -362,30 +341,24 @@ export default function SearchBar({
             {t.destination}
           </label>
           <input
+            id="searchbar-destino-input"
             type="text"
             placeholder={t.destinationPlaceholder}
             value={destino}
             onChange={handleDestinoChange}
             onFocus={() => {
-              setDestinoFocused(true)
               if (destino.length > 0) setShowDestinoDropdown(true)
             }}
-            onBlur={() => setDestinoFocused(false)}
-            style={destinoFocused ? inputStyleFocus : inputStyle}
+            style={inputStyle}
           />
           {showDestinoDropdown && destinoSuggestions.length > 0 && (
             <div style={dropdownStyle}>
               {destinoSuggestions.map((estacion, idx) => (
                 <div
                   key={idx}
-                  onMouseEnter={() => setHoveredItem(`destino-${idx}`)}
-                  onMouseLeave={() => setHoveredItem(null)}
+                  className="searchbar-dropdown-item"
                   onClick={() => selectDestino(estacion)}
-                  style={
-                    hoveredItem === `destino-${idx}`
-                      ? dropdownItemHoverStyle
-                      : dropdownItemStyle
-                  }
+                  style={dropdownItemStyle}
                 >
                   {estacion.nombre || estacion}{estacion.ciudad && estacion.ciudad !== 'cdmx' ? ` (${estacion.ciudad.toUpperCase()})` : ''}
                 </div>
@@ -411,10 +384,9 @@ export default function SearchBar({
           <button
             key={idx}
             type="button"
+            className="searchbar-quick-action"
             onClick={() => handleQuickAction(action.value)}
-            onMouseEnter={() => setHoveredPill(idx)}
-            onMouseLeave={() => setHoveredPill(null)}
-            style={hoveredPill === idx ? pillHoverStyle : pillStyle}
+            style={pillStyle}
           >
             {action.label}
           </button>

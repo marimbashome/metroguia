@@ -1,5 +1,4 @@
 import { crucesFronterizos } from '@/data/cruces-fronterizos';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export const dynamicParams = false;
