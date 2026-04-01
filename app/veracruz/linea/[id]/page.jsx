@@ -43,6 +43,8 @@ export default function LineaVeracruzPage({ params }) {
     );
   }
 
+  const lineaNombre = linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.id}`;
+
   const estacionesLinea = estacionesVeracruz.filter((e) => 
     Array.isArray(e.linea) ? e.linea.includes(linea.id) : e.linea === linea.id
   );
@@ -167,7 +169,7 @@ export default function LineaVeracruzPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: linea.nombre,
+        name: lineaNombre,
         item: `https://metroguia.mx/veracruz/linea/${linea.id}/`
       }
     ]

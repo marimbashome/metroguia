@@ -10,12 +10,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const estacion = estacionesVillahermosa.find((e) => e.slug === params.slug);
   if (!estacion) return { title: 'Estación no encontrada' };
+  const seoTitle = estacion.seo_title || `Estación ${estacion.nombre} — Línea ${Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea} | MetroGuia`;
+  const metaDesc = estacion.meta_description || estacion.descripcion_turistica || `Guía de Estación ${estacion.nombre}`;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
-      title: estacion.seo_title,
-      description: estacion.meta_description,
+      title: seoTitle,
+      description: metaDesc,
       url: `https://metroguia.mx/villahermosa/estacion/${estacion.slug}`,
       type: 'website',
     },
@@ -86,21 +88,29 @@ export default function EstacionVillahermosaPage({ params }) {
           </ul>
         </div>
 
-        {(estacion.pois || []).length > 0 && (
-          <div style={sectionStyles}>
-            <AdBannerLazyInArticle adSlot="1082410395" />
-            <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
-            <div style={gridStyles}>
-              {(estacion.pois || []).map((poi, idx) => (
-                <div key={idx} style={poiStyles}>
-                  <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }}>{poi.nombre}</h3>
-                  <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '5px' }}>{poi.tipo}</p>
-                  <p style={{ fontSize: '13px', color: '#374151', fontWeight: '500' }}>{poi.distancia}</p>
-                </div>
-              ))}
+        {(() => {
+          const pois = Array.isArray(estacion.pois) ? estacion.pois :
+                       Array.isArray(estacion.lugares_cercanos) ? estacion.lugares_cercanos.map(l => ({
+                         nombre: typeof l === 'string' ? l : l.nombre,
+                         tipo: typeof l === 'object' ? (l.tipo || 'Punto de interés') : 'Punto de interés',
+                         distancia: typeof l === 'object' ? (l.distancia || '') : ''
+                       })) : [];
+          return pois.length > 0 && (
+            <div style={sectionStyles}>
+              <AdBannerLazyInArticle adSlot="1082410395" />
+              <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
+              <div style={gridStyles}>
+                {pois.map((poi, idx) => (
+                  <div key={idx} style={poiStyles}>
+                    <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }}>{poi.nombre}</h3>
+                    <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '5px' }}>{poi.tipo}</p>
+                    <p style={{ fontSize: '13px', color: '#374151', fontWeight: '500' }}>{poi.distancia}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
           <div style={sectionStyles}>
@@ -116,18 +126,21 @@ export default function EstacionVillahermosaPage({ params }) {
           </div>
         )}
 
-        {(estacion.transferencias || []).length > 0 && (
-          <div style={sectionStyles}>
-            <h2 style={sectionTitleStyles}>Transferencias Disponibles</h2>
-            <div style={gridStyles}>
-              {(estacion.transferencias || []).map((trans, idx) => (
-                <div key={idx} style={cardStyles}>
-                  <p style={{ fontSize: '14px', color: '#374151' }}>{typeof trans === 'string' ? trans : trans.nombre || JSON.stringify(trans)}</p>
-                </div>
-              ))}
+        {(() => {
+          const transferencias = Array.isArray(estacion.transferencias) ? estacion.transferencias : [];
+          return transferencias.length > 0 && (
+            <div style={sectionStyles}>
+              <h2 style={sectionTitleStyles}>Transferencias Disponibles</h2>
+              <div style={gridStyles}>
+                {transferencias.map((trans, idx) => (
+                  <div key={idx} style={cardStyles}>
+                    <p style={{ fontSize: '14px', color: '#374151' }}>{typeof trans === 'string' ? trans : (trans.nombre || trans.linea || JSON.stringify(trans))}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         <div style={sectionStyles}>
           <h2 style={sectionTitleStyles}>Relevancia para el Mundial 2026</h2>

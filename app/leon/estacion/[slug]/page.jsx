@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const estacion = estacionesLeon.find(e => e.slug === params.slug);
-  
+
   if (!estacion) {
     return {
       title: 'Estación no encontrada',
@@ -18,9 +18,11 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const seoTitle = estacion.seo_title || `Estación ${estacion.nombre} — Corredor ${Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea} | MetroGuia`;
+  const metaDesc = estacion.meta_description || estacion.descripcion_turistica || `Guía de Estación ${estacion.nombre}`;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
       title: estacion.seo_title,
       description: estacion.meta_description,
@@ -191,29 +193,37 @@ export default function EstacionLeonPage({ params }) {
         </div>
 
         {/* POIS */}
-        {estacion.pois && estacion.pois.length > 0 && (
-          <div style={{ marginTop: '40px' }}>
-            <AdBannerLazyInArticle adSlot="1082410395" />
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
-              📍 Atracciones cercanas
-            </h2>
-            <div>
-              {estacion.pois.map((poi, idx) => (
-                <div key={idx} style={poiItemStyles}>
-                  <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: '#10B981', marginBottom: '5px' }}>
-                    {poi.nombre}
-                  </h4>
-                  <p style={{ fontSize: '14px', color: '#6b7280', marginBottom: '5px' }}>
-                    <strong>Tipo:</strong> {poi.tipo}
-                  </p>
-                  <p style={{ fontSize: '14px', color: '#6b7280' }}>
-                    <strong>Distancia:</strong> {poi.distancia}
-                  </p>
-                </div>
-              ))}
+        {(() => {
+          const pois = Array.isArray(estacion.pois) ? estacion.pois :
+                       Array.isArray(estacion.lugares_cercanos) ? estacion.lugares_cercanos.map(l => ({
+                         nombre: typeof l === 'string' ? l : l.nombre,
+                         tipo: typeof l === 'object' ? (l.tipo || 'Punto de interés') : 'Punto de interés',
+                         distancia: typeof l === 'object' ? (l.distancia || '') : ''
+                       })) : [];
+          return pois.length > 0 && (
+            <div style={{ marginTop: '40px' }}>
+              <AdBannerLazyInArticle adSlot="1082410395" />
+              <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
+                📍 Atracciones cercanas
+              </h2>
+              <div>
+                {pois.map((poi, idx) => (
+                  <div key={idx} style={poiItemStyles}>
+                    <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: '#10B981', marginBottom: '5px' }}>
+                      {poi.nombre}
+                    </h4>
+                    <p style={{ fontSize: '14px', color: '#6b7280', marginBottom: '5px' }}>
+                      <strong>Tipo:</strong> {poi.tipo}
+                    </p>
+                    <p style={{ fontSize: '14px', color: '#6b7280' }}>
+                      <strong>Distancia:</strong> {poi.distancia}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* WORLDWIDE RELEVANCE */}
         {estacion.mundial_relevancia && (

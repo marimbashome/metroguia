@@ -12,9 +12,11 @@ export async function generateMetadata({ params }) {
   if (!estacion) {
     return { title: 'Parada no encontrada' };
   }
+  const seoTitle = estacion.seo_title || `Parada ${estacion.nombre} — Línea ${Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea} | MetroGuia`;
+  const metaDesc = estacion.meta_description || estacion.descripcion_turistica || `Guía de Parada ${estacion.nombre}`;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
       title: estacion.seo_title,
       description: estacion.meta_description,
@@ -43,8 +45,9 @@ export default function EstacionChihuahuaPage({ params }) {
     );
   }
 
-  const colorLinea = estacion.linea === '1' ? '#D97706' : '#92400E';
-  const linea = lineasChihuahua.find((l) => l.id === estacion.linea);
+  const lineaId = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
+  const colorLinea = lineaId === '1' ? '#D97706' : '#92400E';
+  const linea = lineasChihuahua.find((l) => l.id === lineaId);
 
   const containerStyles = {
     maxWidth: '1000px',
@@ -198,26 +201,34 @@ export default function EstacionChihuahuaPage({ params }) {
           </ul>
         </div>
 
-        {(estacion.pois || []).length > 0 && (
-          <div style={sectionStyles}>
-            <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
-            <div style={gridStyles}>
-              {(estacion.pois || []).map((poi, idx) => (
-                <div key={idx} style={poiStyles}>
-                  <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }}>
-                    {poi.nombre}
-                  </h3>
-                  <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '5px' }}>
-                    {poi.tipo}
-                  </p>
-                  <p style={{ fontSize: '13px', color: '#374151', fontWeight: '500' }}>
-                    {poi.distancia}
-                  </p>
-                </div>
-              ))}
+        {(() => {
+          const pois = Array.isArray(estacion.pois) ? estacion.pois :
+                       Array.isArray(estacion.lugares_cercanos) ? estacion.lugares_cercanos.map(l => ({
+                         nombre: typeof l === 'string' ? l : l.nombre,
+                         tipo: typeof l === 'object' ? (l.tipo || 'Punto de interés') : 'Punto de interés',
+                         distancia: typeof l === 'object' ? (l.distancia || '') : ''
+                       })) : [];
+          return pois.length > 0 && (
+            <div style={sectionStyles}>
+              <h2 style={sectionTitleStyles}>Lugares de Interés Cercanos</h2>
+              <div style={gridStyles}>
+                {pois.map((poi, idx) => (
+                  <div key={idx} style={poiStyles}>
+                    <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }}>
+                      {poi.nombre}
+                    </h3>
+                    <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '5px' }}>
+                      {poi.tipo}
+                    </p>
+                    <p style={{ fontSize: '13px', color: '#374151', fontWeight: '500' }}>
+                      {poi.distancia}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {(Array.isArray(estacion.tips) ? estacion.tips : []).length > 0 && (
           <div style={sectionStyles}>
@@ -253,7 +264,7 @@ export default function EstacionChihuahuaPage({ params }) {
           </Link>
           {linea && (
             <Link href={`/chihuahua/linea/${linea.id}`} style={buttonStyles}>
-              Ver {linea.id === '1' ? 'Chepe Express' : 'Línea Urbana'}
+              Ver {lineaId === '1' ? 'Chepe Express' : 'Línea Urbana'}
             </Link>
           )}
         </div>

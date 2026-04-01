@@ -563,7 +563,7 @@ export default function ExplorarContent({ ciudades, zonasDestacadas, estacionesT
                       fontSize: '0.75rem',
                       margin: 0,
                     }}>
-                      {linea.nombre}
+                      {linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.numero}`}
                     </p>
                   </div>
                 </div>

@@ -43,6 +43,8 @@ export default function LineaOaxacaPage({ params }) {
     );
   }
 
+  const lineaNombre = linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.id}`;
+
   const estacionesLinea = estacionesOaxaca.filter((e) => e.linea === linea.id);
 
   const containerStyles = {
@@ -165,7 +167,7 @@ export default function LineaOaxacaPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: linea.nombre,
+        name: lineaNombre,
         item: `https://metroguia.mx/oaxaca/linea/${linea.id}/`
       }
     ]

@@ -50,6 +50,8 @@ export default function LineaQueretaroPage({ params }) {
     );
   }
 
+  const lineaNombre = linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.id}`;
+
   const estacionesLinea = estacionesQueretaro.filter(e => 
     linea.estaciones.includes(e.slug)
   );
@@ -140,7 +142,7 @@ export default function LineaQueretaroPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: linea.nombre,
+        name: lineaNombre,
         item: `https://metroguia.mx/queretaro/linea/${linea.id}/`
       }
     ]

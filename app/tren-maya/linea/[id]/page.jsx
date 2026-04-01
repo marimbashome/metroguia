@@ -43,6 +43,8 @@ export default function LineaTrenMayaPage({ params }) {
     );
   }
 
+  const lineaNombre = linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.id}`;
+
   const estacionesLinea = estacionesTrenMaya.filter((e) => e.linea === linea.id);
 
   const containerStyles = {
@@ -165,7 +167,7 @@ export default function LineaTrenMayaPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: linea.nombre,
+        name: lineaNombre,
         item: `https://metroguia.mx/tren-maya/linea/${linea.id}/`
       }
     ]

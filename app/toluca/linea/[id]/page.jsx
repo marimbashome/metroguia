@@ -50,6 +50,8 @@ export default function LineaTolucaPage({ params }) {
     );
   }
 
+  const lineaNombre = linea.nombre || linea.h1 || linea.colorNombre || `Línea ${linea.id}`;
+
   const estacionesLinea = estacionesToluca.filter(e => 
     linea.estaciones.includes(e.slug)
   );
@@ -140,7 +142,7 @@ export default function LineaTolucaPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: linea.nombre,
+        name: lineaNombre,
         item: `https://metroguia.mx/toluca/linea/${linea.id}/`
       }
     ]

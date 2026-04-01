@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const estacion = estacionesQueretaro.find(e => e.slug === params.slug);
-  
+
   if (!estacion) {
     return {
       title: 'Estación no encontrada',
@@ -18,9 +18,11 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const seoTitle = estacion.seo_title || `Estación ${estacion.nombre} — Corredor ${Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea} | MetroGuia`;
+  const metaDesc = estacion.meta_description || estacion.descripcion_turistica || `Guía de Estación ${estacion.nombre}`;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
       title: estacion.seo_title,
       description: estacion.meta_description,
@@ -167,12 +169,9 @@ export default function EstacionQueretaroPage({ params }) {
           </p>
         </div>
 
-        <AdBannerLazy slot="4434764790" format="auto" />
+        <AdBannerLazy adSlot="4434764790" format="auto" />
 
         {/* TIPS */}
-        <AdBannerLazy slot="4434764790" format="auto" />
-
-
         <div style={tipsBoxStyles}>
           <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#B45309', marginBottom: '12px' }}>
             💡 Tips para tu visita
@@ -194,31 +193,39 @@ export default function EstacionQueretaroPage({ params }) {
           </p>
         </div>
 
-        <AdBannerLazyInArticle slot="1082410395" />
+        <AdBannerLazyInArticle adSlot="1082410395" />
 
         {/* POIS */}
-        {estacion.pois && estacion.pois.length > 0 && (
-          <div style={{ marginTop: '40px' }}>
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
-              📍 Atracciones cercanas
-            </h2>
-            <div>
-              {estacion.pois.map((poi, idx) => (
-                <div key={idx} style={poiItemStyles}>
-                  <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: colorLinea, marginBottom: '5px' }}>
-                    {poi.nombre}
-                  </h4>
-                  <p style={{ fontSize: '14px', color: '#6b7280', marginBottom: '5px' }}>
-                    <strong>Tipo:</strong> {poi.tipo}
-                  </p>
-                  <p style={{ fontSize: '14px', color: '#6b7280' }}>
-                    <strong>Distancia:</strong> {poi.distancia}
-                  </p>
-                </div>
-              ))}
+        {(() => {
+          const pois = Array.isArray(estacion.pois) ? estacion.pois :
+                       Array.isArray(estacion.lugares_cercanos) ? estacion.lugares_cercanos.map(l => ({
+                         nombre: typeof l === 'string' ? l : l.nombre,
+                         tipo: typeof l === 'object' ? (l.tipo || 'Punto de interés') : 'Punto de interés',
+                         distancia: typeof l === 'object' ? (l.distancia || '') : ''
+                       })) : [];
+          return pois.length > 0 && (
+            <div style={{ marginTop: '40px' }}>
+              <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
+                📍 Atracciones cercanas
+              </h2>
+              <div>
+                {pois.map((poi, idx) => (
+                  <div key={idx} style={poiItemStyles}>
+                    <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: colorLinea, marginBottom: '5px' }}>
+                      {poi.nombre}
+                    </h4>
+                    <p style={{ fontSize: '14px', color: '#6b7280', marginBottom: '5px' }}>
+                      <strong>Tipo:</strong> {poi.tipo}
+                    </p>
+                    <p style={{ fontSize: '14px', color: '#6b7280' }}>
+                      <strong>Distancia:</strong> {poi.distancia}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* MUNDIAL RELEVANCIA */}
         {estacion.mundial_relevancia && (
@@ -233,25 +240,28 @@ export default function EstacionQueretaroPage({ params }) {
         )}
 
         {/* TRANSFERENCIAS */}
-        {estacion.transferencias && estacion.transferencias.length > 0 && (
-          <div style={{ marginTop: '40px' }}>
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
-              🔄 Transferencias disponibles
-            </h2>
-            <div style={gridStyles}>
-              {estacion.transferencias.map((trans, idx) => (
-                <div key={idx} style={cardStyles}>
-                  <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: '#1f2937', marginBottom: '5px' }}>
-                    {trans.nombre}
-                  </h4>
-                  <p style={{ fontSize: '13px', color: '#6b7280' }}>
-                    {trans.tipo}
-                  </p>
-                </div>
-              ))}
+        {(() => {
+          const transferencias = Array.isArray(estacion.transferencias) ? estacion.transferencias : [];
+          return transferencias.length > 0 && (
+            <div style={{ marginTop: '40px' }}>
+              <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937', marginBottom: '20px' }}>
+                🔄 Transferencias disponibles
+              </h2>
+              <div style={gridStyles}>
+                {transferencias.map((trans, idx) => (
+                  <div key={idx} style={cardStyles}>
+                    <h4 style={{ fontSize: '15px', fontWeight: 'bold', color: '#1f2937', marginBottom: '5px' }}>
+                      {typeof trans === 'string' ? trans : (trans.nombre || trans.linea || 'Transferencia')}
+                    </h4>
+                    <p style={{ fontSize: '13px', color: '#6b7280' }}>
+                      {typeof trans === 'object' ? (trans.tipo || '') : 'Transporte'}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* NAVIGATION */}
         <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid #e5e7eb' }}>
