@@ -692,9 +692,9 @@ export default function LandingPage() {
           textAlign: 'center',
         }}>
           {[
-            { val: '275+', label: 'Estaciones guiadas' },
-            { val: '17', label: 'Líneas de transporte' },
-            { val: '3', label: 'Ciudades activas' },
+            { val: '786+', label: 'Estaciones cubiertas' },
+            { val: '77', label: 'Líneas de transporte' },
+            { val: '16', label: 'Ciudades y sistemas' },
             { val: '13', label: 'Partidos FIFA en México' },
           ].map((s) => (
             <div key={s.label}>
@@ -721,7 +721,7 @@ export default function LandingPage() {
       <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem' }}>
         <AffiliateMundial />
       </div>
-      {/* ── Turismo ── */}
+      {/* ── Turismo — 8 Programas SECTUR ── */}
       <section style={{
         padding: '2.5rem 1rem',
         borderTop: '1px solid var(--border)',
@@ -732,7 +732,7 @@ export default function LandingPage() {
             <div>
               <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>Turismo en México</h2>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                177 Pueblos Mágicos, zonas arqueológicas y más — conectados al transporte público
+                8 programas SECTUR — 177 Pueblos Mágicos, zonas arqueológicas, playas y más
               </p>
             </div>
             <a href="/turismo/" style={{
@@ -742,49 +742,100 @@ export default function LandingPage() {
               textDecoration: 'none',
             }}>Ver todo →</a>
           </div>
-          <div className="grid-3">
-            <a href="/turismo/pueblos-magicos/" style={{
-              display: 'block',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundColor: 'var(--bg)',
-              border: '1px solid var(--border)',
-              borderTop: '4px solid #E91E8C',
-              borderRadius: '8px',
-              padding: '1.25rem',
-            }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🏘️</div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>177 Pueblos Mágicos</h3>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Pueblos con encanto colonial, tradiciones vivas y paisajes únicos en 31 estados.</p>
-            </a>
-            <a href="/turismo/zonas-arqueologicas/" style={{
-              display: 'block',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundColor: 'var(--bg)',
-              border: '1px solid var(--border)',
-              borderTop: '4px solid #D97706',
-              borderRadius: '8px',
-              padding: '1.25rem',
-            }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🏛️</div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>Zonas Arqueológicas</h3>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Ciudades prehispánicas mayas, aztecas y zapotecas. De Teotihuacán a Chichén Itzá.</p>
-            </a>
-            <a href="/mundial-2026/" style={{
-              display: 'block',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundColor: 'var(--bg)',
-              border: '1px solid var(--border)',
-              borderTop: '4px solid var(--primary)',
-              borderRadius: '8px',
-              padding: '1.25rem',
-            }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>⚽</div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>Mundial FIFA 2026</h3>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Guía de transporte a los estadios en CDMX, Guadalajara y Monterrey.</p>
-            </a>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '0.75rem',
+          }}>
+            {[
+              { emoji: '🏘️', title: '177 Pueblos Mágicos', desc: 'Pueblos con encanto colonial y tradiciones vivas en 31 estados.', href: '/turismo/pueblos-magicos/', color: '#E91E8C' },
+              { emoji: '🏛️', title: 'Zonas Arqueológicas', desc: 'De Teotihuacán a Chichén Itzá — ciudades prehispánicas.', href: '/turismo/zonas-arqueologicas/', color: '#D97706' },
+              { emoji: '🌊', title: 'Playas', desc: 'Cancún, Riviera Maya, Huatulco y los mejores destinos de playa.', href: '/turismo/playas/', color: '#0EA5E9' },
+              { emoji: '🏙️', title: 'Barrios Mágicos', desc: 'Coyoacán, Roma, Tlalpan — barrios con identidad y cultura.', href: '/turismo/barrios-magicos/', color: '#8B5CF6' },
+              { emoji: '🍽️', title: 'Rutas Gastronómicas', desc: 'Mole, tequila, mezcal y la gastronomía patrimonio de la humanidad.', href: '/turismo/rutas-gastronomicas/', color: '#10B981' },
+              { emoji: '🌿', title: 'Naturaleza', desc: 'Sian Ka\'an, Cañón del Sumidero, biósfera y ecoturismo.', href: '/turismo/naturaleza/', color: '#22C55E' },
+              { emoji: '🏛️', title: 'Ciudades Patrimonio', desc: 'Oaxaca, San Cristóbal, Guanajuato — patrimonio de la humanidad.', href: '/turismo/ciudades-patrimonio/', color: '#6366F1' },
+              { emoji: '⭐', title: 'Destinos Prioritarios', desc: 'Los 20 destinos prioritarios de SECTUR para el turismo internacional.', href: '/turismo/destinos-prioritarios/', color: '#F59E0B' },
+            ].map((item) => (
+              <a key={item.href} href={item.href} style={{
+                display: 'block',
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundColor: 'var(--bg)',
+                border: '1px solid var(--border)',
+                borderTop: `3px solid ${item.color}`,
+                borderRadius: '8px',
+                padding: '1rem',
+                transition: 'border-color 0.2s',
+              }}>
+                <div style={{ fontSize: '1.5rem', marginBottom: '0.375rem' }}>{item.emoji}</div>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '0.25rem', color: 'var(--text)' }}>{item.title}</h3>
+                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>{item.desc}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FIFA 2026 CTA ── */}
+      <section style={{
+        padding: '2.5rem 1rem',
+        borderTop: '1px solid var(--border)',
+        background: 'linear-gradient(135deg, rgba(245,166,35,0.08) 0%, rgba(245,166,35,0.02) 100%)',
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '1.5rem',
+          }}>
+            <div>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.25rem 0.75rem',
+                borderRadius: 'var(--radius-full)',
+                backgroundColor: 'var(--primary-glow)',
+                border: '1px solid var(--primary-border)',
+                fontSize: '0.7rem',
+                fontWeight: 700,
+                color: 'var(--primary)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                marginBottom: '0.75rem',
+              }}>⚽ Mundial FIFA 2026</div>
+              <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+                Cómo llegar a los estadios en transporte público
+              </h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', maxWidth: '480px' }}>
+                13 partidos en CDMX, GDL y MTY — guías completas de rutas de metro, tiempo estimado y costo.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+              {[
+                { ciudad: 'CDMX', estadio: 'Estadio Azteca', href: '/mundial-2026/', color: '#F5A623' },
+                { ciudad: 'GDL', estadio: 'Estadio Akron', href: '/gdl/mundial-2026/', color: '#06B6D4' },
+                { ciudad: 'MTY', estadio: 'Estadio BBVA', href: '/mty/mundial-2026/', color: '#EC4899' },
+              ].map((s) => (
+                <a key={s.ciudad} href={s.href} style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  padding: '0.875rem 1.25rem',
+                  borderRadius: 'var(--radius)',
+                  backgroundColor: 'var(--surface)',
+                  border: `1px solid ${s.color}30`,
+                  textDecoration: 'none',
+                  minWidth: '100px',
+                }}>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 700, color: s.color, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{s.ciudad}</span>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text)', fontWeight: 600, marginTop: '0.125rem' }}>{s.estadio}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
