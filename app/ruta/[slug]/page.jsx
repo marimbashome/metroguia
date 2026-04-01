@@ -43,8 +43,8 @@ export function generateMetadata({ params }) {
 
   if (!isValidRouteSlug(slug)) {
     return {
-      title: 'Ruta en Metro CDMX — Cómo llegar | MetroGuia.mx',
-      description: 'Planificador de rutas en el Metro de Ciudad de México. Encuentra tu ruta, transbordos, tiempo estimado y costo del transporte público.',
+      title: 'Planifica tu Ruta en Metro CDMX — Transbordos y Horarios | MetroGuia',
+      description: 'Planificador de rutas en el Metro de Ciudad de México. Encuentra la mejor ruta, transbordos, tiempo y costo ($6 MXN). Ideal para turistas y locales.',
     }
   }
 
@@ -52,15 +52,19 @@ export function generateMetadata({ params }) {
   const origen = getStationName(parts[0])
   const destino = getStationName(parts.slice(1).join('-a-'))
 
-  const title = `Cómo llegar de ${origen} a ${destino} en metro | MetroGuia.mx`
-  const description = `Ruta en metro de ${origen} a ${destino} en CDMX. Transbordos, tiempo estimado, líneas de metro, costo y alternativas. Planificador de transporte en tiempo real.`
+  const title = `${origen} a ${destino} en Metro CDMX — Ruta, Transbordos y Tiempo | MetroGuia`
+  const description = `Cómo llegar de ${origen} a ${destino} en el Metro de Ciudad de México. Líneas, transbordos, tiempo estimado y costo ($6 MXN). Planifica tu viaje ahora.`
 
   return {
     title,
     description,
     openGraph: {
-      title: `${origen} → ${destino} en Metro`,
-      description: `Cómo llegar en transporte público de CDMX.`,
+      title: `${origen} → ${destino} en Metro CDMX`,
+      description: `Ruta paso a paso de ${origen} a ${destino} en metro. Transbordos, tiempo y costo.`,
+      url: `https://metroguia.mx/ruta/${slug}/`,
+      siteName: 'MetroGuia',
+      locale: 'es_MX',
+      type: 'website',
     },
     alternates: {
       canonical: `https://metroguia.mx/ruta/${slug}/`,

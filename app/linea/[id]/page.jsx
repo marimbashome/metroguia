@@ -7,38 +7,36 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }) {
   const linea = lineasDetalle[params.id]
-  if (!linea) return { title: 'Línea no encontrada' }
+  if (!linea) return { title: 'Línea no encontrada | MetroGuia' }
 
-  // Enhanced metadata for Línea B with station count, terminals, and key destinations
-  let title = linea.seo_title
-  let description = linea.meta_description
+  // SEO-optimized title: "Línea X del Metro CDMX — Estaciones, Mapa y Horarios | MetroGuia"
+  const colorLabel = linea.colorNombre ? ` (${linea.colorNombre})` : ''
+  const title = `Línea ${linea.id}${colorLabel} del Metro CDMX — Estaciones, Mapa y Horarios | MetroGuia`
 
-  if (params.id === 'B') {
-    title = `Línea B Metro CDMX - ${linea.total} estaciones de ${linea.inicio} a ${linea.fin} | Guía turística`
+  // Dynamic meta description: unique per line, ~155 chars, with key destinations
+  const turisticas = linea.estaciones_turisticas && linea.estaciones_turisticas.length > 0
+    ? linea.estaciones_turisticas.map(slug => {
+        const st = linea.estaciones.find(e => e.slug === slug)
+        return st ? st.nombre : slug
+      }).join(', ')
+    : ''
 
-    // Build description with key destinations and tourist highlights
-    const keyDestinations = linea.estaciones_turisticas && linea.estaciones_turisticas.length > 0
-      ? `Estaciones destacadas: ${linea.estaciones_turisticas.map(slug => {
-          const station = linea.estaciones.find(e => e.slug === slug)
-          return station ? station.nombre : slug
-        }).join(', ')}. `
-      : ''
-
-    const routeInfo = `Ruta completa de ${linea.inicio} (terminal) hasta ${linea.fin} (terminal). Conecta barrios culturales con zonas residenciales. `
-
-    description = `${linea.descripcion} ${keyDestinations}${routeInfo}Guía completa con ${linea.total} estaciones, transbordos, horarios y tips de viaje.`
-  }
+  const destinosText = turisticas ? ` Paradas clave: ${turisticas}.` : ''
+  const description = `Línea ${linea.id}${colorLabel} del Metro CDMX: ${linea.total} estaciones de ${linea.inicio} a ${linea.fin}.${destinosText} Planifica tu ruta, consulta transbordos y horarios.`
 
   return {
     title,
     description,
     openGraph: {
-      title,
+      title: `Línea ${linea.id} del Metro CDMX — ${linea.inicio} a ${linea.fin}`,
       description,
       url: `https://metroguia.mx/linea/${linea.id}/`,
       siteName: 'MetroGuia',
       locale: 'es_MX',
       type: 'website',
+    },
+    alternates: {
+      canonical: `https://metroguia.mx/linea/${linea.id}/`,
     },
   }
 }

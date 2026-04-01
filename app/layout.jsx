@@ -8,9 +8,9 @@ import AutoLangRedirect from '@/app/components/AutoLangRedirect'
 import NetworkStatus from '@/app/components/NetworkStatus'
 
 export const metadata = {
-  title: 'MetroGuia.mx — Planifica tu ruta en metro, tren ligero y BRT en México',
-  description: 'Trip planner de transporte urbano en México. Calcula rutas en metro, tren ligero y BRT para CDMX, Guadalajara y Monterrey. Guía para el Mundial FIFA 2026.',
-  keywords: 'metro CDMX, transporte público México, trip planner metro, mundial 2026, estaciones metro',
+  title: 'MetroGuia.mx — Rutas en Metro, Tren Ligero y BRT en CDMX, GDL y MTY',
+  description: 'Planifica tu ruta en metro, tren ligero y BRT en Ciudad de México, Guadalajara y Monterrey. Transbordos, horarios, costos y guía para el Mundial FIFA 2026.',
+  keywords: 'metro CDMX, transporte público México, trip planner metro, mundial 2026, estaciones metro, metrobus, tren ligero',
   metadataBase: new URL('https://metroguia.mx'),
   alternates: {
     canonical: '/',
