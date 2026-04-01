@@ -1,8 +1,9 @@
 // =============================================================
 // MetroGuia.mx — data/rutas-populares.js
-// Rutas curadas para SEO: ~4,700+ combos de estaciones (hub strategy + Tier 2)
-// Enfoque: turismo + FIFA 2026 (Estadio Azteca vía Tren Ligero)
+// Rutas curadas para SEO: ~4,880+ combos de estaciones (hub strategy + Tier 2)
+// Enfoque: turismo + FIFA 2026 (Estadio Azteca, Akron, BBVA)
 // Generated: 2026-03-29 (Updated with Tier 2 routes)
+// Updated: 2026-04-01 (Expanded GDL FIFA + MTY FIFA routes — all lines → estadios)
 // =============================================================
 
 export const rutasPopulares = [
@@ -4785,16 +4786,24 @@ export const rutasPopulares = [
   // GDL — Rutas populares Guadalajara (20 curated)
   // FIFA 2026, turismo, aeropuerto, destinos clave
   // ============================================
-  // FIFA 2026 — Estadio Akron
+  // FIFA 2026 — Estadio Akron (todas las líneas principales)
   { origen: "guadalajara-centro", destino: "estadio-chivas-mp", titulo: "Centro a Estadio Akron (FIFA 2026)", ciudad: "gdl" },
   { origen: "arcos-de-zapopan", destino: "estadio-chivas-mp", titulo: "Zapopan a Estadio Akron (FIFA 2026)", ciudad: "gdl" },
   { origen: "central-de-autobuses", destino: "estadio-chivas-mp", titulo: "Central de Autobuses a Estadio Akron", ciudad: "gdl" },
   { origen: "gdl-juarez", destino: "estadio-chivas-mp", titulo: "Juárez a Estadio Akron en tren", ciudad: "gdl" },
   { origen: "tlaquepaque-centro", destino: "estadio-chivas-mp", titulo: "Tlaquepaque a Estadio Akron", ciudad: "gdl" },
   { origen: "periferico-sur", destino: "estadio-chivas-mp", titulo: "Periférico Sur a Estadio Akron", ciudad: "gdl" },
+  { origen: "barranca-huentitan-mp", destino: "estadio-chivas-mp", titulo: "Aeropuerto GDL a Estadio Akron (FIFA 2026)", ciudad: "gdl" },
+  { origen: "gdl-auditorio", destino: "estadio-chivas-mp", titulo: "Auditorio (L1 Norte) a Estadio Akron", ciudad: "gdl" },
+  { origen: "tetlan", destino: "estadio-chivas-mp", titulo: "Tetlán (L2) a Estadio Akron", ciudad: "gdl" },
+  { origen: "oblatos", destino: "estadio-chivas-mp", titulo: "Oblatos (L2) a Estadio Akron", ciudad: "gdl" },
+  { origen: "zapopan-centro", destino: "estadio-chivas-mp", titulo: "Zapopan Centro (L3) a Estadio Akron", ciudad: "gdl" },
+  { origen: "las-juntas", destino: "estadio-chivas-mp", titulo: "Las Juntas (L4) a Estadio Akron", ciudad: "gdl" },
+  { origen: "patria", destino: "estadio-chivas-mp", titulo: "Patria a Estadio Akron", ciudad: "gdl" },
   // Aeropuerto GDL (via Macro Periférico Barranca → conectar)
   { origen: "barranca-huentitan-mp", destino: "guadalajara-centro", titulo: "Aeropuerto GDL a Centro", ciudad: "gdl" },
   { origen: "guadalajara-centro", destino: "barranca-huentitan-mp", titulo: "Centro a zona Aeropuerto GDL", ciudad: "gdl" },
+  { origen: "barranca-huentitan-mp", destino: "arcos-de-zapopan", titulo: "Aeropuerto GDL a Zapopan (zona hotelera)", ciudad: "gdl" },
   // Tlaquepaque-Zapopan
   { origen: "arcos-de-zapopan", destino: "tlaquepaque-centro", titulo: "Zapopan a Tlaquepaque Pueblo Mágico", ciudad: "gdl" },
   { origen: "tlaquepaque-centro", destino: "arcos-de-zapopan", titulo: "Tlaquepaque a Zapopan Basílica", ciudad: "gdl" },
@@ -4831,6 +4840,7 @@ export const rutasPopulares = [
   // ============================================
   // MTY — Metrorrey + Ecovía combos, FIFA 2026
   // ============================================
+  // Rutas generales
   { origen: "mty-cuauhtemoc", destino: "parque-fundidora", titulo: "Cuauhtémoc a Parque Fundidora", ciudad: "mty" },
   { origen: "mty-cuauhtemoc", destino: "mty-universidad", titulo: "Cuauhtémoc a Universidad UANL", ciudad: "mty" },
   { origen: "general-i-zaragoza", destino: "sendero", titulo: "Zaragoza a Sendero por L2", ciudad: "mty" },
@@ -4846,6 +4856,20 @@ export const rutasPopulares = [
   { origen: "regina-ecovia", destino: "mty-cuauhtemoc", titulo: "Regina a Cuauhtémoc (Ecovía→Metro)", ciudad: "mty" },
   { origen: "ruiz-cortines-ecovia", destino: "parque-fundidora", titulo: "Ruiz Cortines a Fundidora (Ecovía→Metro)", ciudad: "mty" },
   { origen: "san-nicolas", destino: "general-i-zaragoza-l3", titulo: "San Nicolás a Zaragoza (L3)", ciudad: "mty" },
+  // FIFA 2026 — Estadio BBVA (Exposición, L1)
+  { origen: "mty-cuauhtemoc", destino: "exposicion", titulo: "Centro MTY a Estadio BBVA (FIFA 2026)", ciudad: "mty" },
+  { origen: "sendero", destino: "exposicion", titulo: "Sendero a Estadio BBVA (FIFA 2026)", ciudad: "mty" },
+  { origen: "general-i-zaragoza", destino: "exposicion", titulo: "Zaragoza a Estadio BBVA (L2→L1)", ciudad: "mty" },
+  { origen: "mty-universidad", destino: "exposicion", titulo: "Universidad a Estadio BBVA (L2→L1)", ciudad: "mty" },
+  { origen: "hospital", destino: "exposicion", titulo: "Hospital a Estadio BBVA en L1", ciudad: "mty" },
+  { origen: "felix-u-gomez", destino: "exposicion", titulo: "Félix U. Gómez a Estadio BBVA", ciudad: "mty" },
+  { origen: "santa-lucia", destino: "exposicion", titulo: "Santa Lucía (L3) a Estadio BBVA", ciudad: "mty" },
+  { origen: "san-nicolas", destino: "exposicion", titulo: "San Nicolás a Estadio BBVA (L3→L1)", ciudad: "mty" },
+  { origen: "hospital-metropolitano", destino: "exposicion", titulo: "Hospital Metropolitano a Estadio BBVA", ciudad: "mty" },
+  { origen: "mitras-ecovia", destino: "exposicion", titulo: "Ecovía Mitras a Estadio BBVA", ciudad: "mty" },
+  { origen: "regina-ecovia", destino: "exposicion", titulo: "Ecovía Regina a Estadio BBVA", ciudad: "mty" },
+  { origen: "parque-fundidora", destino: "exposicion", titulo: "Parque Fundidora a Estadio BBVA", ciudad: "mty" },
+  { origen: "padre-mier", destino: "exposicion", titulo: "Macroplaza (Padre Mier) a Estadio BBVA", ciudad: "mty" },
 
   // ============================================
   // PUEBLA — BRT RUTA
