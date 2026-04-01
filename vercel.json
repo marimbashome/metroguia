@@ -1,6 +1,36 @@
 {
   "redirects": [
     {
+      "source": "/lineas/:id/",
+      "destination": "/linea/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/estacion/taxquena/",
+      "destination": "/estacion/tasquena/",
+      "permanent": true
+    },
+    {
+      "source": "/estacion/u-a-m-i/",
+      "destination": "/estacion/uam-i/",
+      "permanent": true
+    },
+    {
+      "source": "/estacion/etiopia-plaza-de-la-transparencia/",
+      "destination": "/estacion/etiopia/",
+      "permanent": true
+    },
+    {
+      "source": "/estacion/viveros-derechos-humanos/",
+      "destination": "/estacion/viveros/",
+      "permanent": true
+    },
+    {
+      "source": "/estacion/viga/",
+      "destination": "/estacion/la-viga/",
+      "permanent": true
+    },
+    {
       "has": [{ "type": "host", "value": "cdmx.metroguia.mx" }],
       "source": "/",
       "destination": "https://metroguia.mx/cdmx/",

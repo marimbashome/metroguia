@@ -55,36 +55,47 @@ export default function RutaClient({ slug }) {
   const [rutaAlt, setRutaAlt] = useState(null)
   const [origenNombre, setOrigenNombre] = useState('')
   const [destinoNombre, setDestinoNombre] = useState('')
+  const [origenSlug, setOrigenSlug] = useState(null)
+  const [destinoSlug, setDestinoSlug] = useState(null)
   const [error, setError] = useState(null)
   const [schemaJson, setSchemaJson] = useState(null)
 
+  // Helper function to get station name
+  const getStationName = (stationSlug) => {
+    if (!stationSlug || !grafo[stationSlug]) return stationSlug
+    return grafo[stationSlug].nombre
+  }
+
   useEffect(() => {
     const { origen, destino } = parseSlug(slug)
-    const origenSlug = matchStation(origen)
-    const destinoSlug = matchStation(destino)
+    const origenSlugMatch = matchStation(origen)
+    const destinoSlugMatch = matchStation(destino)
 
-    if (origenSlug && grafo[origenSlug]) {
-      setOrigenNombre(grafo[origenSlug].nombre)
+    setOrigenSlug(origenSlugMatch)
+    setDestinoSlug(destinoSlugMatch)
+
+    if (origenSlugMatch && grafo[origenSlugMatch]) {
+      setOrigenNombre(grafo[origenSlugMatch].nombre)
     }
-    if (destinoSlug && grafo[destinoSlug]) {
-      setDestinoNombre(grafo[destinoSlug].nombre)
+    if (destinoSlugMatch && grafo[destinoSlugMatch]) {
+      setDestinoNombre(grafo[destinoSlugMatch].nombre)
     }
 
-    if (!origenSlug || !destinoSlug) {
+    if (!origenSlugMatch || !destinoSlugMatch) {
       setError('No se encontraron las estaciones. Intenta buscar de nuevo.')
       return
     }
 
-    const resultado = findRoute(origenSlug, destinoSlug)
+    const resultado = findRoute(origenSlugMatch, destinoSlugMatch)
     setRuta(resultado)
 
-    const alt = findAlternativeRoute(origenSlug, destinoSlug)
+    const alt = findAlternativeRoute(origenSlugMatch, destinoSlugMatch)
     if (alt && alt.encontrada) {
       setRutaAlt(alt)
     }
 
     // Generate Schema.org JSON-LD
-    if (origenSlug && destinoSlug && resultado && resultado.encontrada) {
+    if (origenSlugMatch && destinoSlugMatch && resultado && resultado.encontrada) {
       const itineraryItems = resultado.pasos.map((paso, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -97,8 +108,8 @@ export default function RutaClient({ slug }) {
       const tripSchema = {
         '@context': 'https://schema.org',
         '@type': 'Trip',
-        'name': `Ruta de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre}`,
-        'description': `Cómo llegar de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre} en metro`,
+        'name': `Ruta de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre}`,
+        'description': `Cómo llegar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} en metro`,
         'itinerary': {
           '@type': 'ItemList',
           'itemListElement': itineraryItems
@@ -129,7 +140,7 @@ export default function RutaClient({ slug }) {
           {
             '@type': 'ListItem',
             'position': 3,
-            'name': `${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre}`,
+            'name': `${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre}`,
             'item': `https://metroguia.mx/ruta/${slug}`
           }
         ]
@@ -148,8 +159,8 @@ export default function RutaClient({ slug }) {
       const howtoSchema = {
         '@context': 'https://schema.org',
         '@type': 'HowTo',
-        'name': `Cómo llegar de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre} en Metro CDMX`,
-        'description': `Guía paso a paso para viajar de ${grafo[origenSlug].nombre} a ${grafo[destinoSlug].nombre} usando el Metro de Ciudad de México.`,
+        'name': `Cómo llegar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} en Metro CDMX`,
+        'description': `Guía paso a paso para viajar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} usando el Metro de Ciudad de México.`,
         'totalTime': `PT${estimatedMinutes}M`,
         'estimatedCost': {
           '@type': 'MonetaryAmount',
@@ -277,6 +288,42 @@ export default function RutaClient({ slug }) {
       {/* Ad banner after route */}
       {ruta && ruta.encontrada && (
         <AdBannerLazy slot="4434764790" />
+      )}
+
+      {/* Station links */}
+      {origenSlug && destinoSlug && (
+        <div style={{ 
+          display: 'flex', 
+          gap: '1rem', 
+          justifyContent: 'center', 
+          margin: '2rem 0',
+          flexWrap: 'wrap'
+        }}>
+          <a href={`/estacion/${origenSlug}/`} style={{
+            padding: '0.75rem 1.5rem',
+            backgroundColor: 'var(--surface, #14141F)',
+            border: '1px solid var(--primary, #F5A623)',
+            borderRadius: '8px',
+            color: 'var(--primary, #F5A623)',
+            textDecoration: 'none',
+            fontSize: '0.9rem',
+            transition: 'all 0.2s ease'
+          }}>
+            📍 Estación {getStationName(origenSlug)}
+          </a>
+          <a href={`/estacion/${destinoSlug}/`} style={{
+            padding: '0.75rem 1.5rem',
+            backgroundColor: 'var(--surface, #14141F)',
+            border: '1px solid var(--primary, #F5A623)',
+            borderRadius: '8px',
+            color: 'var(--primary, #F5A623)',
+            textDecoration: 'none',
+            fontSize: '0.9rem',
+            transition: 'all 0.2s ease'
+          }}>
+            📍 Estación {getStationName(destinoSlug)}
+          </a>
+        </div>
       )}
 
       {/* Alternative route */}

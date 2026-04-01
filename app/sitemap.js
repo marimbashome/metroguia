@@ -157,6 +157,8 @@ function getCoreUrls() {
     entry('/guides/visitor-guide/', 'monthly', 0.9),
     entry('/hospedaje/', 'monthly', 0.8),
     entry('/explorar/', 'weekly', 0.8),
+    entry('/zona/', 'monthly', 0.8),
+    entry('/ruta/calc/', 'weekly', 0.8),
     entry('/privacy-policy/', 'yearly', 0.3),
     // City hub pages
     ...['cdmx','gdl','mty','puebla','merida','leon','chihuahua','tijuana',
@@ -273,6 +275,12 @@ function getTransportUrls() {
     // Terminales
     entry('/terminales/', 'monthly', 0.8),
     ...(terminales || []).map(t => entry(`/terminales/${t.slug}/`, 'monthly', 0.7)),
+    // Ferries
+    entry('/ferries/', 'monthly', 0.7),
+    ...(ferrys || []).map(f => entry(`/ferries/${f.slug}/`, 'monthly', 0.6)),
+    // Cruces fronterizos
+    entry('/frontera/', 'monthly', 0.7),
+    ...(crucesFronterizos || []).map(c => entry(`/frontera/${c.slug}/`, 'monthly', 0.6)),
     // GDL Macrobús
     entry('/gdl/macrobus/', 'weekly', 0.85),
     entry('/gdl/macrobus/linea/MC/', 'monthly', 0.75),

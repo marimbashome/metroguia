@@ -1,10 +1,14 @@
 import { estaciones } from '@/data/estaciones'
 import { hospedaje } from '@/data/hospedaje'
 import { rutasPopulares } from '@/data/rutas-populares'
+import { lineasDetalle } from '@/data/lineas-detalle'
+import { grafo } from '@/data/grafo'
 import SearchBar from '@/app/components/SearchBar'
 import AdBanner, { AdBannerInArticle } from '@/app/components/AdBanner'
+import NearbyStations from '@/app/components/NearbyStations'
 
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
+
 export function generateStaticParams() {
   return estaciones.map((e) => ({ slug: e.slug }))
 }
@@ -940,6 +944,9 @@ export default function EstacionPage({ params }) {
               </div>
             ) : null
           })()}
+
+
+          <NearbyStations currentSlug={params.slug} lineasDetalle={lineasDetalle} grafo={grafo} />
 
           {/* NAVIGATION SECTION */}
           <div style={{
