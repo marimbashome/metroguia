@@ -499,8 +499,7 @@ export default function EstacionMTYLangPage({ params }) {
                   cursor: 'pointer',
                   transition: 'opacity 0.2s',
                 }}
-                onMouseEnter={(e) => e.target.style.opacity = '0.9'}
-                onMouseLeave={(e) => e.target.style.opacity = '1'}
+
               >
                 {t(translations, 'navigation.viewLine', 'View Full Line')}
               </button>
@@ -519,8 +518,7 @@ export default function EstacionMTYLangPage({ params }) {
                   cursor: 'pointer',
                   transition: 'background-color 0.2s',
                 }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--border)'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--surface)'}
+
               >
                 {t(translations, 'navigation.backToMty', 'Back to Monterrey')}
               </button>
