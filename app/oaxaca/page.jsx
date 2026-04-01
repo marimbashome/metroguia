@@ -310,8 +310,9 @@ export default function OaxacaPage() {
             <p style={{ fontSize: '14px', color: '#374151' }}>Octubre a mayo. Clima ideal. Evita temporada de lluvias (junio-septiembre). Semana Santa es muy concurrida.</p>
           </div>
           <div>
-            <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#DC2626', marginBottom: '10px' }}>Hospedaje</h3>
-            <p style={{ fontSize: '14px', color: '#374151' }}>Opciones en Centro Histórico cercanas a todas las atracciones. Desde budget hostels hasta hoteles boutique.</p>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#DC2626', marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ fontSize: '14px', color: '#374151' }}>Centro Histórico ($600–1,800 MXN/noche): camina a todo. Jalatlaco: barrio bohemio con Airbnbs con patio. Reforma: más económico ($400–900 MXN). Desde el aeropuerto, colectivo 45 min o taxi $250 MXN al centro.</p>
           </div>
           <div>
             <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#DC2626', marginBottom: '10px' }}>Moneda y Bancos</h3>

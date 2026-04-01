@@ -379,6 +379,10 @@ export default function LeonPage() {
             <p style={{ fontSize: '14px', color: '#374151' }}>En Zona Piel, negocia precios. Los vendedores esperan que lo hagas. Compara tiendas.</p>
           </div>
         </div>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#10B981', marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Zona Piel/Centro ($500–1,500 MXN/noche): camina a tiendas de piel y zócalo. Poliforum ($800–2,500 MXN): cerca de expo, hoteles de cadena. Optibus SIT conecta centro con zona hotelera. Desde Central de Autobuses, taxi $80 MXN al centro.</p>
+          </div>
       </section>
 
       {/* CTA FINAL */}

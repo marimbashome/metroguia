@@ -791,115 +791,353 @@ export default function CDMXPage() {
         borderBottom: '1px solid var(--border)',
       }}>
         <div className="container">
+          <h2 style={{
+            marginBottom: '0.5rem',
+            color: 'var(--text)',
+            fontSize: '1.8rem',
+            fontWeight: 700,
+          }}>
+            🏨 Dónde hospedarse en CDMX
+          </h2>
+          <p style={{
+            fontSize: '0.95rem',
+            color: 'var(--text-muted)',
+            marginBottom: '2.5rem',
+            lineHeight: '1.6',
+          }}>
+            Encuentra el alojamiento perfecto según tu presupuesto, intereses y acceso al Metro.
+          </p>
+
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '2rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '1.5rem',
+            marginBottom: '3rem',
           }}>
-            <div>
+            {/* Centro Histórico */}
+            <div className="card" style={{ padding: '1.5rem' }}>
               <h3 style={{
-                marginBottom: '1rem',
+                marginBottom: '0.75rem',
                 color: 'var(--text)',
+                fontSize: '1.1rem',
+                fontWeight: 600,
               }}>
-                Planifica tu hospedaje en CDMX
+                Centro Histórico
               </h3>
-              <p style={{
-                fontSize: '0.95rem',
-                color: 'var(--text-muted)',
-                marginBottom: '1.5rem',
-                lineHeight: '1.6',
+              <div style={{
+                fontSize: '0.85rem',
+                color: 'var(--primary)',
+                fontWeight: 600,
+                marginBottom: '0.5rem',
               }}>
-                Busca hoteles cerca de las principales estaciones del Metro. Acceso fácil a museos, mercados y entretenimiento.
-              </p>
-              <a
-                href="https://www.booking.com/searchresults.es.html?ss=Ciudad+de+M%C3%A9xico"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-                style={{ display: 'inline-block' }}
-              >
-                Explorar hospedajes →
-              </a>
+                $800–2,500 MXN/noche
+              </div>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text-muted)',
+                marginBottom: '0.75rem',
+                lineHeight: '1.5',
+              }}>
+                <strong style={{ color: 'var(--text)' }}>Metro:</strong> Zócalo (L2), Bellas Artes (L2/L8)<br />
+                <strong style={{ color: 'var(--text)' }}>Atmósfera:</strong> Ideal para cultura y gastronomía. Hoteles coloniales, hostels y boutique.
+              </div>
             </div>
+
+            {/* La Condesa / Roma */}
+            <div className="card" style={{ padding: '1.5rem' }}>
+              <h3 style={{
+                marginBottom: '0.75rem',
+                color: 'var(--text)',
+                fontSize: '1.1rem',
+                fontWeight: 600,
+              }}>
+                La Condesa / Roma
+              </h3>
+              <div style={{
+                fontSize: '0.85rem',
+                color: 'var(--primary)',
+                fontWeight: 600,
+                marginBottom: '0.5rem',
+              }}>
+                $1,200–3,500 MXN/noche
+              </div>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text-muted)',
+                marginBottom: '0.75rem',
+                lineHeight: '1.5',
+              }}>
+                <strong style={{ color: 'var(--text)' }}>Metro:</strong> Chapultepec (L1), Sevilla (L1)<br />
+                <strong style={{ color: 'var(--text)' }}>Atmósfera:</strong> Cafés, parques y vida nocturna. Departamentos Airbnb populares.
+              </div>
+            </div>
+
+            {/* Polanco */}
+            <div className="card" style={{ padding: '1.5rem' }}>
+              <h3 style={{
+                marginBottom: '0.75rem',
+                color: 'var(--text)',
+                fontSize: '1.1rem',
+                fontWeight: 600,
+              }}>
+                Polanco
+              </h3>
+              <div style={{
+                fontSize: '0.85rem',
+                color: 'var(--primary)',
+                fontWeight: 600,
+                marginBottom: '0.5rem',
+              }}>
+                $2,500–8,000 MXN/noche
+              </div>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text-muted)',
+                marginBottom: '0.75rem',
+                lineHeight: '1.5',
+              }}>
+                <strong style={{ color: 'var(--text)' }}>Metro:</strong> Polanco (L7)<br />
+                <strong style={{ color: 'var(--text)' }}>Atmósfera:</strong> Lujo, museos (Soumaya, Jumex), restaurantes fine dining. Cadenas internacionales.
+              </div>
+            </div>
+
+            {/* Coyoacán */}
+            <div className="card" style={{ padding: '1.5rem' }}>
+              <h3 style={{
+                marginBottom: '0.75rem',
+                color: 'var(--text)',
+                fontSize: '1.1rem',
+                fontWeight: 600,
+              }}>
+                Coyoacán
+              </h3>
+              <div style={{
+                fontSize: '0.85rem',
+                color: 'var(--primary)',
+                fontWeight: 600,
+                marginBottom: '0.5rem',
+              }}>
+                $700–2,000 MXN/noche
+              </div>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text-muted)',
+                marginBottom: '0.75rem',
+                lineHeight: '1.5',
+              }}>
+                <strong style={{ color: 'var(--text)' }}>Metro:</strong> Coyoacán (L3), Viveros (L3)<br />
+                <strong style={{ color: 'var(--text)' }}>Atmósfera:</strong> Bohemio, Frida Kahlo, mercados. Más tranquilo y auténtico.
+              </div>
+            </div>
+
+            {/* Zona Rosa / Juárez */}
+            <div className="card" style={{ padding: '1.5rem' }}>
+              <h3 style={{
+                marginBottom: '0.75rem',
+                color: 'var(--text)',
+                fontSize: '1.1rem',
+                fontWeight: 600,
+              }}>
+                Zona Rosa / Juárez
+              </h3>
+              <div style={{
+                fontSize: '0.85rem',
+                color: 'var(--primary)',
+                fontWeight: 600,
+                marginBottom: '0.5rem',
+              }}>
+                $900–2,800 MXN/noche
+              </div>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text-muted)',
+                marginBottom: '0.75rem',
+                lineHeight: '1.5',
+              }}>
+                <strong style={{ color: 'var(--text)' }}>Metro:</strong> Insurgentes (L1)<br />
+                <strong style={{ color: 'var(--text)' }}>Atmósfera:</strong> Vida nocturna, diversidad, céntrico. Buena conexión Metrobús L1.
+              </div>
+            </div>
+          </div>
+
+          {/* Transport Tip Box */}
+          <div style={{
+            background: 'rgba(233, 30, 140, 0.08)',
+            border: '1px solid rgba(233, 30, 140, 0.3)',
+            borderRadius: '8px',
+            padding: '1.5rem',
+            marginBottom: '3rem',
+          }}>
+            <div style={{
+              fontSize: '0.9rem',
+              color: 'var(--text)',
+              lineHeight: '1.6',
+            }}>
+              <strong style={{ color: 'rgba(233, 30, 140, 1)' }}>💡 Tip de Transporte:</strong> Con la tarjeta de Movilidad Integrada ($5 MXN recargable) puedes usar Metro ($5), Metrobús ($6), Trolebús y Cablebús. Desde cualquier zona hotelera llegas al centro en máximo 30 minutos.
+            </div>
+          </div>
+
+          {/* FIFA 2026 World Cup Section */}
+          <div style={{
+            borderTop: '2px solid var(--border)',
+            paddingTop: '3rem',
+          }}>
+            <h2 style={{
+              marginBottom: '0.5rem',
+              color: 'var(--text)',
+              fontSize: '1.8rem',
+              fontWeight: 700,
+            }}>
+              ⚽ Hospedaje para el Mundial FIFA 2026
+            </h2>
+            <p style={{
+              fontSize: '0.95rem',
+              color: 'var(--text-muted)',
+              marginBottom: '2.5rem',
+              lineHeight: '1.6',
+            }}>
+              El Estadio Azteca será sede de 5 partidos del Mundial 2026, incluyendo la inauguración el 11 de junio. Reserva con anticipación: los precios suben 3-5x durante semanas de partido.
+            </p>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '1rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '1.5rem',
+              marginBottom: '2rem',
             }}>
-              <div className="card">
+              {/* Coyoacán (World Cup) */}
+              <div className="card" style={{ padding: '1.5rem' }}>
+                <h3 style={{
+                  marginBottom: '0.75rem',
+                  color: 'var(--text)',
+                  fontSize: '1.1rem',
+                  fontWeight: 600,
+                }}>
+                  Coyoacán
+                </h3>
                 <div style={{
-                  fontSize: '0.75rem',
+                  fontSize: '0.85rem',
                   color: 'var(--primary)',
                   fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
                   marginBottom: '0.5rem',
                 }}>
-                  Popular
+                  15 min en Metro
                 </div>
                 <div style={{
-                  fontSize: '0.875rem',
+                  fontSize: '0.9rem',
                   color: 'var(--text-muted)',
+                  lineHeight: '1.5',
                 }}>
-                  <strong style={{ color: 'var(--text)' }}>Centro Histórico</strong> — Zócalo, Bellas Artes, Templo Mayor
+                  Ruta: L3 → Taxqueña + L12. Zona segura, bares y restaurantes. Precios moderados.
                 </div>
               </div>
-              <div className="card">
+
+              {/* La Condesa/Roma (World Cup) */}
+              <div className="card" style={{ padding: '1.5rem' }}>
+                <h3 style={{
+                  marginBottom: '0.75rem',
+                  color: 'var(--text)',
+                  fontSize: '1.1rem',
+                  fontWeight: 600,
+                }}>
+                  La Condesa/Roma
+                </h3>
                 <div style={{
-                  fontSize: '0.75rem',
+                  fontSize: '0.85rem',
                   color: 'var(--primary)',
                   fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
                   marginBottom: '0.5rem',
                 }}>
-                  Bohemio
+                  25 min en Metro
                 </div>
                 <div style={{
-                  fontSize: '0.875rem',
+                  fontSize: '0.9rem',
                   color: 'var(--text-muted)',
+                  lineHeight: '1.5',
                 }}>
-                  <strong style={{ color: 'var(--text)' }}>Coyoacán</strong> — Frida Kahlo, casas coloniales
+                  Ruta: L1 → L2 → L12 o Metrobús L1. La zona más popular para turistas internacionales.
                 </div>
               </div>
-              <div className="card">
+
+              {/* Centro Histórico (World Cup) */}
+              <div className="card" style={{ padding: '1.5rem' }}>
+                <h3 style={{
+                  marginBottom: '0.75rem',
+                  color: 'var(--text)',
+                  fontSize: '1.1rem',
+                  fontWeight: 600,
+                }}>
+                  Centro Histórico
+                </h3>
                 <div style={{
-                  fontSize: '0.75rem',
+                  fontSize: '0.85rem',
                   color: 'var(--primary)',
                   fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
                   marginBottom: '0.5rem',
                 }}>
-                  Cultural
+                  30 min en Metro
                 </div>
                 <div style={{
-                  fontSize: '0.875rem',
+                  fontSize: '0.9rem',
                   color: 'var(--text-muted)',
+                  lineHeight: '1.5',
                 }}>
-                  <strong style={{ color: 'var(--text)' }}>Chapultepec</strong> — Museos, Castillo, parque
+                  Ruta: L2 → L12. Precio accesible, caminable, ambiente mexicano auténtico.
                 </div>
               </div>
-              <div className="card">
+
+              {/* Toluca (World Cup) */}
+              <div className="card" style={{ padding: '1.5rem' }}>
+                <h3 style={{
+                  marginBottom: '0.75rem',
+                  color: 'var(--text)',
+                  fontSize: '1.1rem',
+                  fontWeight: 600,
+                }}>
+                  Toluca
+                </h3>
                 <div style={{
-                  fontSize: '0.75rem',
+                  fontSize: '0.85rem',
                   color: 'var(--primary)',
                   fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
                   marginBottom: '0.5rem',
                 }}>
-                  Moderno
+                  65 min en Tren Interurbano
                 </div>
                 <div style={{
-                  fontSize: '0.875rem',
+                  fontSize: '0.9rem',
                   color: 'var(--text-muted)',
+                  lineHeight: '1.5',
                 }}>
-                  <strong style={{ color: 'var(--text)' }}>Polanco</strong> — Tiendas, restaurantes, lujo
+                  Hospedaje 40-60% más barato. Ideal si reservas tarde.
                 </div>
               </div>
             </div>
+
+            {/* Warning Box */}
+            <div style={{
+              background: 'rgba(233, 30, 140, 0.08)',
+              border: '1px solid rgba(233, 30, 140, 0.3)',
+              borderRadius: '8px',
+              padding: '1.5rem',
+              marginBottom: '2rem',
+            }}>
+              <div style={{
+                fontSize: '0.9rem',
+                color: 'var(--text)',
+                lineHeight: '1.6',
+              }}>
+                <strong style={{ color: 'rgba(233, 30, 140, 1)' }}>⚠️ Reserva con anticipación:</strong> Los precios suben 3-5x durante semanas de partido. Las zonas con acceso directo al Metro Línea 12 (que llega al Estadio Azteca) son las más convenientes.
+              </div>
+            </div>
+
+            <a
+              href="/hospedaje/"
+              className="btn-primary"
+              style={{ display: 'inline-block' }}
+            >
+              Ver más opciones de hospedaje →
+            </a>
           </div>
         </div>
       </section>

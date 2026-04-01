@@ -666,6 +666,293 @@ export default function MTYPage() {
         <AffiliateMundial ciudad="MTY" />
       </div>
 
+
+      {/* Section 1: Dónde Hospedarse en Monterrey */}
+      <section style={{ backgroundColor: 'var(--surface)', padding: '64px 1rem', marginBottom: '0' }}>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '16px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            🏨 Dónde Hospedarse en Monterrey
+          </h2>
+          <p
+            style={{
+              fontSize: '1.125rem',
+              textAlign: 'center',
+              marginBottom: '48px',
+              color: 'var(--text-muted)',
+              fontWeight: '400',
+              maxWidth: '700px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Desde el Barrio Antiguo hasta zonas residenciales — opciones para todos los presupuestos y estilos de viaje.
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+              marginBottom: '40px',
+            }}
+          >
+            {[
+              {
+                nombre: 'Barrio Antiguo',
+                precio: '$800–2,500 MXN/noche',
+                metro: 'Metro: Zaragoza (L1)',
+                desc: 'Vida nocturna, bares, restaurantes. La zona más vibrante del centro.',
+              },
+              {
+                nombre: 'Centro / Macroplaza',
+                precio: '$600–2,000 MXN/noche',
+                metro: 'Metro: Padre Mier (L2), Zaragoza (L1)',
+                desc: 'MARCO, Catedral, Palacio de Gobierno. Hoteles de negocios y hostels.',
+              },
+              {
+                nombre: 'Fundidora / Parque Fundidora',
+                precio: '$1,200–3,500 MXN/noche',
+                metro: 'Metro: Parque Fundidora (L1)',
+                desc: 'Parque emblemático, museos, arena, eventos. Zona moderna.',
+              },
+              {
+                nombre: 'San Pedro Garza García',
+                precio: '$2,500–7,000 MXN/noche',
+                metro: 'Sin metro directo, taxi 15 min',
+                desc: 'Zona de lujo, Valle Oriente, restaurantes premium. Cadenas internacionales.',
+              },
+              {
+                nombre: 'Cumbres / Valle',
+                precio: '$500–1,500 MXN/noche',
+                metro: 'Zona residencial',
+                desc: 'Más económica. Uber al centro 20 min. Ideal para familias.',
+              },
+            ].map((zona, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'var(--surface-hover)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  borderTop: '3px solid #EC4899',
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: 'var(--text)',
+                  }}
+                >
+                  {zona.nombre}
+                </h3>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    margin: '0 0 8px 0',
+                    color: '#EC4899',
+                  }}
+                >
+                  {zona.precio}
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text-muted)',
+                    margin: '0 0 12px 0',
+                    fontWeight: '500',
+                  }}
+                >
+                  {zona.metro}
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text)',
+                    margin: '0',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  {zona.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div
+            style={{
+              backgroundColor: '#EC4899',
+              borderRadius: '10px',
+              padding: '32px',
+              color: '#FFFFFF',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1rem',
+                fontWeight: '600',
+                margin: '0 0 16px 0',
+                color: '#FFFFFF',
+              }}
+            >
+              💡 Tip de Transporte
+            </p>
+            <p
+              style={{
+                fontSize: '0.95rem',
+                margin: '0',
+                lineHeight: '1.6',
+                color: '#FFFFFF',
+              }}
+            >
+              El Metrorrey cuesta $4.50 MXN (tarjeta FERIA). Línea 1 conecta Cuauhtémoc–Exposición (norte-sur), Línea 2 cruza este-oeste. Ecovía BRT complementa con ruta Apodaca-Hospital. Desde Barrio Antiguo llegas a cualquier punto turístico en 20 min.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2: Hospedaje para el Mundial FIFA 2026 */}
+      <section style={{ backgroundColor: 'var(--background)', padding: '64px 1rem', marginBottom: '2rem' }}>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '16px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            ⚽ Hospedaje para el Mundial FIFA 2026
+          </h2>
+          <p
+            style={{
+              fontSize: '1.125rem',
+              textAlign: 'center',
+              marginBottom: '48px',
+              color: 'var(--text-muted)',
+              fontWeight: '400',
+              maxWidth: '700px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            El Estadio BBVA Bancomer será sede de partidos del Mundial 2026. Capacidad: 53,500. Ubicado en Guadalupe, al este de Monterrey.
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+              marginBottom: '40px',
+            }}
+          >
+            {[
+              {
+                nombre: 'Centro / Barrio Antiguo',
+                tiempo: '25 min en Metro L1 → taxi/Uber',
+                desc: 'La zona más práctica con vida nocturna para celebrar.',
+              },
+              {
+                nombre: 'Fundidora',
+                tiempo: '20 min en taxi/Uber',
+                desc: 'Moderna, con opciones de hotel de cadena. Cerca de Paseo Santa Lucía.',
+              },
+              {
+                nombre: 'Guadalupe (cerca del estadio)',
+                tiempo: '10 min taxi',
+                desc: 'Hoteles económicos. Menos ambiente turístico pero conveniente para ir y volver.',
+              },
+            ].map((zona, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'var(--surface)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  borderLeft: '3px solid #EC4899',
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: 'var(--text)',
+                  }}
+                >
+                  {zona.nombre}
+                </h3>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    margin: '0 0 12px 0',
+                    color: '#EC4899',
+                  }}
+                >
+                  ⏱️ {zona.tiempo}
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text)',
+                    margin: '0',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  {zona.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div
+            style={{
+              backgroundColor: 'rgba(236, 72, 153, 0.1)',
+              border: '2px solid #EC4899',
+              borderRadius: '10px',
+              padding: '32px',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1rem',
+                fontWeight: '700',
+                margin: '0 0 16px 0',
+                color: '#EC4899',
+              }}
+            >
+              ⚠️ Advertencia Importante
+            </p>
+            <p
+              style={{
+                fontSize: '0.95rem',
+                margin: '0',
+                lineHeight: '1.6',
+                color: 'var(--text)',
+              }}
+            >
+              El Estadio BBVA no tiene estación de metro directa. La mejor estrategia es hospedarte en zona con metro (Barrio Antiguo, Fundidora) y usar Uber/taxi al estadio. Reserva transporte de regreso con anticipación — el surge pricing post-partido es alto.
+            </p>
+          </div>
+        </div>
+      </section>
       <AdBannerLazy slot="4434764790" format="auto" />
     </main>
   );

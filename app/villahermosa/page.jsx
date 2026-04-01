@@ -184,6 +184,12 @@ export default function VillahermosaPage() {
             <Link href="/oaxaca" style={{ textDecoration: 'none', color: '#DC2626', fontWeight: '500', fontSize: '14px' }}>Oaxaca</Link>
             <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
           </div>
+          <div style={{ backgroundColor: 'var(--primary)', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ color: '#ffffff', marginTop: 0, marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ color: '#ffffff', margin: '8px 0', fontSize: '14px' }}>
+              <strong>Zona Luz:</strong> $400–1,200 MXN/noche, centro peatonal con La Venta y río Grijalva. <strong>Tabasco 2000:</strong> $800–2,000 MXN, zona moderna con malls y hoteles de cadena. Colectivos conectan ambas zonas en 15 min. Desde aeropuerto, taxi $200 MXN.
+            </p>
+          </div>
         </div>
       </section>
     </main>

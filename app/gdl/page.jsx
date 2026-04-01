@@ -697,6 +697,324 @@ export default function GDLPage() {
           </div>
         </div>
       </section>
+
+      {/* HOSPEDAJE SECTION */}
+      <section
+        style={{
+          backgroundColor: 'var(--surface)',
+          padding: '80px 24px',
+        }}
+      >
+        <div className="container">
+          {/* Dónde Hospedarse */}
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '12px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            🏨 Dónde Hospedarse en Guadalajara
+          </h2>
+          <p
+            style={{
+              textAlign: 'center',
+              color: 'var(--text-muted)',
+              fontSize: '1rem',
+              marginBottom: '48px',
+              maxWidth: '800px',
+              margin: '0 auto 48px',
+            }}
+          >
+            Desde el Centro Histórico hasta Zapopan: opciones para cada presupuesto
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+              marginBottom: '60px',
+            }}
+          >
+            {[
+              {
+                zona: 'Centro Histórico',
+                precio: '$600–2,000 MXN/noche',
+                transporte: 'Tren Ligero: Juárez (L1/L2)',
+                atracciones: 'Catedral, Mercado San Juan de Dios, Teatro Degollado',
+                alojamiento: 'Hostels y hoteles coloniales',
+              },
+              {
+                zona: 'Zona Chapultepec / Americana',
+                precio: '$1,000–3,000 MXN/noche',
+                transporte: 'Sin tren directo, Uber/taxi 10 min al centro',
+                atracciones: 'Av. Chapultepec con bares, cafés artesanales, galerías',
+                alojamiento: 'Airbnbs populares',
+              },
+              {
+                zona: 'Zapopan',
+                precio: '$800–2,500 MXN/noche',
+                transporte: 'Tren Ligero L3: Arcos de Zapopan',
+                atracciones: 'Basílica, plazas, zona residencial moderna',
+                alojamiento: 'Más tranquilo',
+              },
+              {
+                zona: 'Providencia / Andares',
+                precio: '$2,000–6,000 MXN/noche',
+                transporte: 'Sin tren directo pero buenas vías',
+                atracciones: 'Zona de lujo, shopping centers, restaurantes fine dining',
+                alojamiento: 'Premium',
+              },
+              {
+                zona: 'Tlaquepaque',
+                precio: '$500–1,500 MXN/noche',
+                transporte: 'Accesible en taxi/Uber desde Tren Ligero',
+                atracciones: 'Pueblo artesanal, galerías, mariachi',
+                alojamiento: 'Boutique y casas tradicionales',
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: 'var(--gdl)',
+                  }}
+                >
+                  {item.zona}
+                </h3>
+                <p
+                  style={{
+                    fontSize: '1rem',
+                    fontWeight: '600',
+                    color: 'var(--text)',
+                    margin: '0 0 16px 0',
+                  }}
+                >
+                  {item.precio}
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div>
+                    <p
+                      style={{
+                        fontSize: '0.85rem',
+                        color: 'var(--text-muted)',
+                        fontWeight: '500',
+                        margin: '0 0 4px 0',
+                      }}
+                    >
+                      Transporte
+                    </p>
+                    <p
+                      style={{
+                        fontSize: '0.95rem',
+                        color: 'var(--text)',
+                        margin: '0',
+                      }}
+                    >
+                      {item.transporte}
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      style={{
+                        fontSize: '0.85rem',
+                        color: 'var(--text-muted)',
+                        fontWeight: '500',
+                        margin: '0 0 4px 0',
+                      }}
+                    >
+                      Atracciones
+                    </p>
+                    <p
+                      style={{
+                        fontSize: '0.95rem',
+                        color: 'var(--text)',
+                        margin: '0',
+                      }}
+                    >
+                      {item.atracciones}
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      style={{
+                        fontSize: '0.85rem',
+                        color: 'var(--text-muted)',
+                        fontWeight: '500',
+                        margin: '0 0 4px 0',
+                      }}
+                    >
+                      Alojamiento
+                    </p>
+                    <p
+                      style={{
+                        fontSize: '0.95rem',
+                        color: 'var(--text)',
+                        margin: '0',
+                      }}
+                    >
+                      {item.alojamiento}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Transport Tip */}
+          <div
+            style={{
+              backgroundColor: 'var(--bg)',
+              border: '2px solid var(--gdl)',
+              borderRadius: '10px',
+              padding: '24px',
+              marginBottom: '60px',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1rem',
+                color: 'var(--text)',
+                margin: '0',
+                lineHeight: '1.8',
+              }}
+            >
+              <strong style={{ color: 'var(--gdl)' }}>Tip:</strong> El Tren Ligero cuesta $9.50 MXN y conecta Centro–Zapopan–Periférico. Para Estadio Akron, toma L3 hasta Estadio Chivas. Mi Macro Periférico cubre la otra mitad de la ciudad por $12 MXN.
+            </p>
+          </div>
+
+          {/* Mundial FIFA 2026 Section */}
+          <h2
+            style={{
+              fontSize: '2rem',
+              fontWeight: '800',
+              marginBottom: '12px',
+              textAlign: 'center',
+              color: 'var(--text)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            ⚽ Hospedaje para el Mundial FIFA 2026
+          </h2>
+          <p
+            style={{
+              textAlign: 'center',
+              color: 'var(--text-muted)',
+              fontSize: '1rem',
+              marginBottom: '24px',
+              maxWidth: '800px',
+              margin: '0 auto 24px',
+            }}
+          >
+            El Estadio Akron será sede de partidos del Mundial 2026. Capacidad: 49,850.
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '24px',
+              marginBottom: '40px',
+            }}
+          >
+            {[
+              {
+                zona: 'Zapopan Centro',
+                tiempo: '20 min en Tren Ligero L3',
+                detalles: 'Directa al estadio. Zona segura, opciones variadas de precio.',
+              },
+              {
+                zona: 'Centro Histórico',
+                tiempo: '30 min en Tren Ligero L1→L3',
+                detalles: 'Más opciones gastronómicas y vida nocturna.',
+              },
+              {
+                zona: 'Chapultepec / Americana',
+                tiempo: '25 min en Uber/taxi',
+                detalles: 'La zona más vibrante para nightlife post-partido.',
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '10px',
+                  padding: '24px',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '700',
+                    margin: '0 0 8px 0',
+                    color: 'var(--gdl)',
+                  }}
+                >
+                  {item.zona}
+                </h3>
+                <p
+                  style={{
+                    fontSize: '1rem',
+                    fontWeight: '600',
+                    color: 'var(--text)',
+                    margin: '0 0 12px 0',
+                  }}
+                >
+                  {item.tiempo}
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.95rem',
+                    color: 'var(--text-muted)',
+                    margin: '0',
+                    lineHeight: '1.6',
+                  }}
+                >
+                  {item.detalles}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Warning Section */}
+          <div
+            style={{
+              backgroundColor: 'var(--bg)',
+              border: '2px solid var(--gdl)',
+              borderRadius: '10px',
+              padding: '24px',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1rem',
+                color: 'var(--text)',
+                margin: '0',
+                lineHeight: '1.8',
+              }}
+            >
+              <strong style={{ color: 'var(--gdl)' }}>⚠️ Reserva temprano.</strong> El Estadio Akron tiene acceso directo por Tren Ligero Línea 3 (estación Estadio Chivas). Evita depender de taxis/Uber post-partido — el tráfico es brutal.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

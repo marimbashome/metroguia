@@ -449,6 +449,10 @@ export default function QueretatoPage() {
             </div>
           </div>
         </div>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: 'var(--primary)', marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Centro Histórico ($600–2,000 MXN/noche): andadores peatonales, plazas, acueducto. Juriquilla ($800–2,500 MXN): zona moderna con viñedos cerca. Q-BUS conecta centro con Juriquilla en 40 min. Desde TAQ (terminal), taxi $100 MXN al centro.</p>
+          </div>
       </section>
     </main>
   );

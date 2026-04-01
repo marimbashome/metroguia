@@ -261,6 +261,12 @@ export default function CampechePage() {
             <Link href="/cdmx" style={{ textDecoration: 'none', color: '#E91E8C', fontWeight: '500', fontSize: '14px' }}>Metro CDMX</Link>
             <Link href="/villahermosa" style={{ textDecoration: 'none', color: '#F59E0B', fontWeight: '500', fontSize: '14px' }}>Villahermosa</Link>
           </div>
+          <div style={{ backgroundColor: 'var(--primary)', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ color: '#ffffff', marginTop: 0, marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ color: '#ffffff', margin: '8px 0', fontSize: '14px' }}>
+              <strong>Centro Amurallado (UNESCO):</strong> $600–1,500 MXN/noche, colonial y boutique. <strong>Malecón:</strong> $700–1,800 MXN, vistas al mar. Terminal ADO: 5 km, taxi $150 MXN. Tren Maya: conexión a Palenque y Mérida.
+            </p>
+          </div>
         </div>
       </section>
     </main>

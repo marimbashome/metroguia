@@ -404,6 +404,12 @@ export default function ChihuahuaPage() {
             <Link href="/merida" style={{ textDecoration: 'none', color: '#F59E0B', fontWeight: '500', fontSize: '14px' }}>SIT Mérida</Link>
             <Link href="/queretaro" style={{ textDecoration: 'none', color: '#EF4444', fontWeight: '500', fontSize: '14px' }}>Q-BUS Querétaro</Link>
           </div>
+          <div style={{ backgroundColor: 'var(--primary)', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ color: '#ffffff', marginTop: 0, marginBottom: '10px' }}>🏨 Hospedaje en Ruta</h3>
+            <p style={{ color: '#ffffff', margin: '8px 0', fontSize: '14px' }}>
+              <strong>Chihuahua ciudad:</strong> $500–1,500 MXN/noche, centro histórico. <strong>Creel:</strong> cabañas y hostels $300–800 MXN, montaña. <strong>Batopilas:</strong> posadas rústicas $250–600 MXN, cañón. Reserva con anticipación en temporada alta.
+            </p>
+          </div>
         </div>
       </section>
     </main>

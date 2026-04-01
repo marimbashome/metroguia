@@ -326,6 +326,10 @@ export default function MeridaPage() {
             <p style={{ fontSize: '14px', color: '#374151' }}>Español es principal. Muchas personas hablan inglés en zonas turísticas. Descarga app de traducción.</p>
           </div>
         </div>
+          <div>
+            <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: '#F59E0B', marginBottom: '10px' }}>🏨 Hospedaje</h3>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>Centro Histórico ($500–1,800 MXN/noche): casas coloniales convertidas en hoteles, caminable. Paseo Montejo ($1,000–3,000 MXN): mansiones, embajadas, vida nocturna. Santa Ana/Santiago: barrios artísticos con Airbnbs encantadores. Taxis al aeropuerto $180 MXN, 20 min.</p>
+          </div>
       </section>
 
       {/* CTA FINAL */}
