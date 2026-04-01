@@ -30,6 +30,20 @@
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
+      "name": "Guadalajara SITEUR",
+      "short_name": "GDL",
+      "description": "Tren Ligero y Macrobús de Guadalajara",
+      "url": "/gdl/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "Monterrey Metrorrey",
+      "short_name": "MTY",
+      "description": "Metrorrey y Ecovía de Monterrey",
+      "url": "/mty/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
       "name": "Mundial 2026",
       "short_name": "FIFA",
       "description": "Guía de transporte para el Mundial",

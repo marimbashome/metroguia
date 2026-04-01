@@ -1,23 +1,24 @@
 /**
- * MetroGuia.mx Service Worker v6
- * Version: v6-20260329
- * 
+ * MetroGuia.mx Service Worker v7
+ * Version: v7-20260401
+ *
  * Architecture:
  * - Separate cache buckets for static assets, pages, fonts, and images
- * - Precaching of core routes and assets
+ * - Precaching of core routes and assets (including GDL/MTY sub-hubs)
+ * - Multi-city dynamic route detection (bare + city-prefixed paths)
+ * - City-aware offline fallback (falls back to city hub when possible)
  * - Multiple caching strategies: cache-first, network-first, stale-while-revalidate
  * - LRU eviction with trimCache utility
- * - Offline fallback routing
  * - Message handlers for cache control and version management
  */
 
-const SW_VERSION = 'v6-20260329';
+const SW_VERSION = 'v7-20260401';
 
 // Cache bucket names
-const CACHE_STATIC = 'mg-static-v6';
-const CACHE_PAGES = 'mg-pages-v6';
-const CACHE_FONTS = 'mg-fonts-v6';
-const CACHE_IMAGES = 'mg-images-v6';
+const CACHE_STATIC = 'mg-static-v7';
+const CACHE_PAGES = 'mg-pages-v7';
+const CACHE_FONTS = 'mg-fonts-v7';
+const CACHE_IMAGES = 'mg-images-v7';
 
 const ALL_CACHES = [CACHE_STATIC, CACHE_PAGES, CACHE_FONTS, CACHE_IMAGES];
 
@@ -43,10 +44,22 @@ const PRECACHE_URLS = [
   '/tren-maya/',
   '/ruta/calc/',
   '/explorar/',
+  // GDL sub-hubs
+  '/gdl/mundial-2026/',
+  '/gdl/macrobus/',
+  // MTY sub-hubs
+  '/mty/mundial-2026/',
+  '/mty/ecovia/',
   '/manifest.json',
   '/logo.png',
   '/og-image.png'
 ];
+
+/**
+ * Multi-city route prefixes for dynamic route detection
+ * Order matters: check city-prefixed routes before bare routes
+ */
+const CITY_PREFIXES = ['cdmx', 'gdl', 'mty', 'puebla', 'merida', 'leon', 'chihuahua', 'tijuana', 'toluca', 'queretaro', 'tren-maya'];
 
 // ============================================================================
 // UTILITY FUNCTIONS
@@ -76,28 +89,56 @@ async function trimCache(cacheName, maxItems) {
 
 /**
  * Check if URL matches a dynamic route pattern
+ * Handles both bare routes (/estacion/) and city-prefixed routes (/gdl/estacion/)
  * @param {string} url - URL to check
- * @returns {string|null} - Route type or null
+ * @returns {{type: string, city: string|null}|null} - Route info or null
  */
 function getDynamicRouteType(url) {
   const pathname = new URL(url).pathname;
-  if (pathname.startsWith('/estacion/')) return 'estacion';
-  if (pathname.startsWith('/ruta/')) return 'ruta';
-  if (pathname.startsWith('/linea/')) return 'linea';
+  const dynamicSegments = ['estacion', 'ruta', 'linea'];
+
+  // Check city-prefixed routes first: /gdl/estacion/..., /mty/ruta/..., etc.
+  for (const city of CITY_PREFIXES) {
+    for (const segment of dynamicSegments) {
+      if (pathname.startsWith(`/${city}/${segment}/`)) {
+        return { type: segment, city };
+      }
+    }
+  }
+
+  // Check bare routes: /estacion/..., /ruta/..., /linea/...
+  for (const segment of dynamicSegments) {
+    if (pathname.startsWith(`/${segment}/`)) {
+      return { type: segment, city: null };
+    }
+  }
+
   return null;
 }
 
 /**
  * Get appropriate offline fallback for a route
+ * Falls back to the city hub if available, then /offline/, then /
  * @param {string} url - Original URL
  * @returns {string} - Fallback URL
  */
 function getOfflineFallback(url) {
-  const routeType = getDynamicRouteType(url);
-  if (routeType) {
+  const routeInfo = getDynamicRouteType(url);
+  if (routeInfo) {
+    // Try city hub first (e.g. /gdl/) so user stays in city context
+    if (routeInfo.city) {
+      return `/${routeInfo.city}/`;
+    }
     return '/offline/';
   }
-  return '/';
+  // Check if URL is under a city path even if not a dynamic route
+  const pathname = new URL(url).pathname;
+  for (const city of CITY_PREFIXES) {
+    if (pathname.startsWith(`/${city}/`)) {
+      return `/${city}/`;
+    }
+  }
+  return '/offline/';
 }
 
 /**
@@ -173,8 +214,8 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
-          // Delete caches that don't start with 'mg-' or don't end with '-v6'
-          if (!cacheName.startsWith('mg-') || !cacheName.endsWith('-v6')) {
+          // Delete caches that don't start with 'mg-' or don't end with '-v7'
+          if (!cacheName.startsWith('mg-') || !cacheName.endsWith('-v7')) {
             console.log(`[SW] Deleting old cache: ${cacheName}`);
             return caches.delete(cacheName);
           }
