@@ -1,239 +1,248 @@
 export const estacionesMorelia = [
   {
-    slug: "plaza-morelos-morelia",
+    id: 1,
     nombre: "Plaza Morelos",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Centro Histórico",
-    h1: "Plaza Morelos - Centro Cultural de Morelia",
-    intro: "La estación de partida del Teleférico de Morelia, ubicada en la icónica Plaza Morelos, corazón del centro histórico. Punto de acceso a la Catedral Metropolitana y al patrimonio colonial español.",
-    mejor_horario: "7:00 AM - 8:00 PM",
-    pois: [
+    ubicacion: "Centro histórico de Morelia",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Corazón político y cultural de Morelia, centro administrativo de Michoacán. Plaza principal rodeada de arquitectura colonial de piedra rosada, punto de partida para explorar la UNESCO Patrimonio de la Humanidad y la catedral metropolitana.",
+    lugares_cercanos: [
       {
         nombre: "Catedral Metropolitana",
         tipo: "Monumento Histórico",
-        distancia: "A pie, 100m"
+        distancia: "0.1 km",
+        descripcion: "Catedral de piedra rosada del siglo XVII, máximo símbolo arquitectónico de Morelia"
       },
       {
         nombre: "Palacio de Gobierno",
-        tipo: "Edificio Colonial",
-        distancia: "A pie, 150m"
+        tipo: "Edificio Histórico",
+        distancia: "0.15 km",
+        descripcion: "Sede del gobierno estatal con murales históricos y valor arquitectónico"
+      },
+      {
+        nombre: "Museo Regional Michoacano",
+        tipo: "Museo",
+        distancia: "0.2 km",
+        descripcion: "Colección de arte colonial y prehispánico de Michoacán"
       },
       {
         nombre: "Colegio de San Nicolás",
-        tipo: "Sitio Patrimonial",
-        distancia: "A pie, 200m"
+        tipo: "Monumento",
+        distancia: "0.3 km",
+        descripcion: "Institución educativa colonial, uno de los edificios históricos más antiguos"
       }
     ],
-    tips: [
-      "Llega al menos 30 minutos antes para disfrutar de la plaza y aclimatarte",
-      "Compra tu boleto en la estación base, disponible efectivo y tarjeta",
-      "Descarga la app del Teleférico para información en tiempo real",
-      "La mejor luz para fotografiar es entre las 7-9 AM"
-    ],
-    transferencias: [
-      "Terminal de Autobuses Central (500m caminando)",
-      "Sistema de Transporte Urbano de Morelia - Estación Centro"
-    ],
-    mundial_relevancia: "Sede de encuentros turísticos para grupos y aficionados que visitan Morelia durante el Mundial 2026. Acceso directo a la riqueza colonial mexicana.",
-    seo_title: "Plaza Morelos, Morelia - Estación Base del Teleférico | MetroGuia",
-    meta_description: "Plaza Morelos en Morelia. Estación base del Teleférico de Morelia. Centro histórico UNESCO, catedral metropolitana y patrimonio colonial español."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Centro comercial y administrativo con servicios disponibles durante horas operativas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Estación totalmente accesible con rampas y ascensores"
+    }
   },
   {
-    slug: "cerro-garnica-morelia",
+    id: 2,
     nombre: "Cerro Garnica",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Naturaleza y Mirador",
-    h1: "Cerro Garnica - Mirador de Morelia",
-    intro: "Estación intermedia del Teleférico con vistas panorámicas espectaculares de Morelia. Punto ideal para apreciar la expansión arquitectónica de la ciudad y sus alrededores.",
-    mejor_horario: "7:30 AM - 7:30 PM",
-    pois: [
+    ubicacion: "Zona elevada norte",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Mirador estratégico con vistas panorámicas de Morelia, la catedral y el valle de Guayangareo. Punto de observación natural ideal para fotografía y apreciación del entorno urbano y natural de la capital michoacana.",
+    lugares_cercanos: [
       {
-        nombre: "Mirador Panorámico",
-        tipo: "Observatorio Natural",
-        distancia: "En la estación"
+        nombre: "Mirador Cerro Garnica",
+        tipo: "Mirador",
+        distancia: "0.3 km",
+        descripcion: "Punto elevado con vistas 360 grados de Morelia"
       },
       {
-        nombre: "Senderos de Senderismo",
-        tipo: "Actividad Outdoor",
-        distancia: "Desde la estación"
+        nombre: "Convento de las Rosas",
+        tipo: "Monumento",
+        distancia: "0.8 km",
+        descripcion: "Convento colonial con jardines históricos"
       },
       {
-        nombre: "Zona de Picnic",
-        tipo: "Área de Descanso",
-        distancia: "Adyacente a la estación"
+        nombre: "Parque Natural",
+        tipo: "Área Verde",
+        distancia: "0.5 km",
+        descripcion: "Vegetación natural de la región con senderos para caminata"
       }
     ],
-    tips: [
-      "Trae binoculares para observar la ciudad en detalle",
-      "Lleva protector solar y agua, el sol es intenso en altura",
-      "Los mejores atardeceres son entre las 5-6 PM",
-      "Hay cafetería con snacks y bebidas en la estación"
-    ],
-    transferencias: [
-      "Acceso a senderos montañosos del Cerro Garnica"
-    ],
-    mundial_relevancia: "Mirador estratégico para grupos turísticos que desean ver Morelia desde perspectiva panorámica. Zona de descanso y fotografía para la experiencia del Mundial.",
-    seo_title: "Cerro Garnica, Morelia - Mirador del Teleférico | MetroGuia",
-    meta_description: "Cerro Garnica en Morelia. Estación mirador del Teleférico. Vistas panorámicas de la ciudad colonial, senderos naturales y zonas de picnic."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Mirador accesible durante horas diurnas, recomendado al atardecer"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: false,
+      notas: "Acceso mediante rampas, pero requiere caminata moderada"
+    }
   },
   {
-    slug: "zona-residencial-morelia",
-    nombre: "Zona Residencial Morelia",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Residencial y Comercial",
-    h1: "Zona Residencial - Acceso a Barrios de Morelia",
-    intro: "Estación que conecta con los barrios residenciales modernos de Morelia, ofreciendo acceso a comercios, servicios y la vida cotidiana moreliana fuera del centro histórico.",
-    mejor_horario: "6:00 AM - 9:00 PM",
-    pois: [
+    id: 3,
+    nombre: "Zona Residencial",
+    ubicacion: "Norte de Morelia",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Conexión a zonas residenciales modernas de Morelia con acceso a tiendas, servicios y áreas recreativas. Punto de integración entre transporte de masa y vida cotidiana contemporánea de la ciudad.",
+    lugares_cercanos: [
       {
-        nombre: "Paseo de la República",
-        tipo: "Centro Comercial",
-        distancia: "800m caminando"
+        nombre: "Centro Comercial",
+        tipo: "Comercio",
+        distancia: "0.4 km",
+        descripcion: "Tiendas y servicios modernos para compras y entretenimiento"
       },
       {
-        nombre: "Plaza de Armas",
-        tipo: "Espacio Público",
-        distancia: "600m caminando"
+        nombre: "Parque Infantil",
+        tipo: "Área Recreativa",
+        distancia: "0.2 km",
+        descripcion: "Espacios verdes y juegos para familias"
       },
       {
-        nombre: "Restaurants Típicos",
-        tipo: "Gastronomía Local",
-        distancia: "500m caminando"
+        nombre: "Clínica de Servicios",
+        tipo: "Salud",
+        distancia: "0.3 km",
+        descripcion: "Centro médico con servicios de urgencia y consulta"
       }
     ],
-    tips: [
-      "Explora los restaurants del barrio para comer auténtico",
-      "La zona es segura pero mantente alerta después de las 8 PM",
-      "Hay transporte público local hacia otros barrios",
-      "Visita los pequeños mercados de artesanías locales"
-    ],
-    transferencias: [
-      "Transporte local a otros barrios de Morelia",
-      "Acceso a servicios comerciales y residenciales"
-    ],
-    mundial_relevancia: "Alojamiento y servicios para grupos no turísticos. Experiencia auténtica de la vida cotidiana moreliana durante el Mundial.",
-    seo_title: "Zona Residencial, Morelia - Estación Teleférico | MetroGuia",
-    meta_description: "Zona Residencial de Morelia. Estación del Teleférico con acceso a barrios, comercios y vida local auténtica de Morelia."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios comerciales abiertos hasta 21:00 en promedio"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Infraestructura moderna con estándares completos de accesibilidad"
+    }
   },
   {
-    slug: "santuario-cibernético-morelia",
+    id: 4,
     nombre: "Santuario Cibernético",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Educación y Tecnología",
-    h1: "Santuario Cibernético - Hub Tecnológico de Michoacán",
-    intro: "Estación moderna que conecta con el Santuario Cibernético, centro de innovación y educación digital de Morelia. Refleja la cara contemporánea de la ciudad.",
-    mejor_horario: "8:00 AM - 7:00 PM",
-    pois: [
+    ubicacion: "Zona de innovación",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Acceso a centro de innovación tecnológica y cibernética en Morelia. Centro de desarrollo económico con oficinas, espacios de trabajo colaborativo e instituciones dedicadas a tecnología e innovación digital.",
+    lugares_cercanos: [
       {
         nombre: "Santuario Cibernético",
         tipo: "Centro Tecnológico",
-        distancia: "200m caminando"
+        distancia: "0.2 km",
+        descripcion: "Hub de innovación con startups y centros de investigación"
       },
       {
-        nombre: "Biblioteca Digital",
-        tipo: "Centro de Conocimiento",
-        distancia: "150m caminando"
+        nombre: "Espacios de Coworking",
+        tipo: "Oficinas",
+        distancia: "0.3 km",
+        descripcion: "Espacios compartidos para emprendedores y profesionales"
       },
       {
-        nombre: "Zona Start-ups",
-        tipo: "Espacio Innovación",
-        distancia: "300m caminando"
+        nombre: "Cafetería Tecnológica",
+        tipo: "Gastronomía",
+        distancia: "0.15 km",
+        descripcion: "Café moderno para reuniones y trabajo colaborativo"
       }
     ],
-    tips: [
-      "Visita exposiciones tecnológicas y de innovación",
-      "Acceso Wi-Fi gratuito en toda la zona",
-      "Los eventos digitales ocurren regularmente",
-      "Ideal para grupos interesados en tecnología"
-    ],
-    transferencias: [
-      "Conexión a zona educativa y tecnológica de Morelia"
-    ],
-    mundial_relevancia: "Centro de operaciones digital para el Mundial. Acceso a transmisiones en vivo, análisis de datos del torneo y experiencias digitales interactivas.",
-    seo_title: "Santuario Cibernético, Morelia - Estación Tecnológica | MetroGuia",
-    meta_description: "Santuario Cibernético en Morelia. Estación del Teleférico en centro de innovación tecnológica y educación digital de Michoacán."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Centro abierto con horarios extendidos para profesionales"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Instalación moderna con accesibilidad total"
+    }
   },
   {
-    slug: "parque-enrique-ramirez-morelia",
+    id: 5,
     nombre: "Parque Enrique Ramírez",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Parque y Recreación",
-    h1: "Parque Enrique Ramírez - Naturaleza Urbana",
-    intro: "Estación final del Teleférico en una zona de parques amplios y espacios verdes. Punto de acceso a la naturaleza dentro de Morelia, ideal para familias y viajeros activos.",
-    mejor_horario: "6:00 AM - 8:00 PM",
-    pois: [
+    ubicacion: "Zona verde sur",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Acceso a importante parque urbano de Morelia con áreas verdes, áreas recreativas y equipamiento público. Espacio de esparcimiento y conexión con la naturaleza en el contexto urbano moreliense.",
+    lugares_cercanos: [
       {
         nombre: "Parque Enrique Ramírez",
-        tipo: "Parque Urbano",
-        distancia: "En la estación"
+        tipo: "Parque Público",
+        distancia: "0.2 km",
+        descripcion: "Área verde con juegos infantiles y zonas de descanso"
       },
       {
-        nombre: "Pistas de Ciclismo",
-        tipo: "Actividad Deportiva",
-        distancia: "Adyacente a la estación"
-      },
-      {
-        nombre: "Áreas de Juego Familiar",
+        nombre: "Pistas de Patinaje",
         tipo: "Recreación",
-        distancia: "En el parque"
+        distancia: "0.3 km",
+        descripcion: "Instalaciones para patinaje y deportes urbanos"
+      },
+      {
+        nombre: "Servicios de Alimentación",
+        tipo: "Gastronomía",
+        distancia: "0.25 km",
+        descripcion: "Puestos de comida y cafeterías dentro del parque"
       }
     ],
-    tips: [
-      "Trae bicicleta o renta una en la estación",
-      "Los fines de semana hay actividades familiares",
-      "El parque es seguro durante el día",
-      "Hay restaurantes y cafeterías en los alrededores"
-    ],
-    transferencias: [
-      "Sistema de ciclovías conectado a Morelia",
-      "Transporte local a otras áreas verdes"
-    ],
-    mundial_relevancia: "Zona de entretenimiento y descanso para familias de aficionados. Actividades recreativas seguras durante el Mundial.",
-    seo_title: "Parque Enrique Ramírez, Morelia - Estación Terminal Teleférico | MetroGuia",
-    meta_description: "Parque Enrique Ramírez en Morelia. Estación terminal del Teleférico. Parque urbano, ciclovías y recreación familiar al aire libre."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Parque con iluminación nocturna, seguridad disponible"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Senderos y áreas principales accesibles, baños públicos disponibles"
+    }
   },
   {
-    slug: "acueducto-morelia",
-    nombre: "Acueducto de Morelia",
-    linea: "1",
-    municipio: "Morelia",
-    tipo_zona: "Patrimonio Histórico",
-    h1: "Acueducto de Morelia - Ingenio Colonial",
-    intro: "Estación cercana al icónico Acueducto de Morelia, obra maestra de la ingeniería colonial español. Construcción del siglo XVII que abastecía agua a la ciudad.",
-    mejor_horario: "7:00 AM - 7:00 PM",
-    pois: [
+    id: 6,
+    nombre: "Acueducto",
+    ubicacion: "Patrimonio histórico",
+    linea: "BRT Morelia",
+    descripcion_turistica: "Acceso al icónico Acueducto de Morelia, obra maestra de ingeniería hidráulica colonial. Estructura de 253 arcos de piedra rosada que representa uno de los símbolos arquitectónicos más emblemáticos de Morelia.",
+    lugares_cercanos: [
       {
         nombre: "Acueducto de Morelia",
-        tipo: "Monumento Histórico",
-        distancia: "100m caminando"
+        tipo: "Monumento",
+        distancia: "0.3 km",
+        descripcion: "Obra colonial del siglo XVIII con 253 arcos de piedra"
       },
       {
-        nombre: "Plazuela del Acueducto",
-        tipo: "Espacio Público Histórico",
-        distancia: "150m caminando"
+        nombre: "Calzada del Acueducto",
+        tipo: "Paseo Histórico",
+        distancia: "0.2 km",
+        descripcion: "Avenida arbolada bajo los arcos del acueducto"
       },
       {
-        nombre: "Tiendas de Artesanías",
-        tipo: "Comercio Local",
-        distancia: "200m caminando"
+        nombre: "Mercado de Artesanías",
+        tipo: "Comercio",
+        distancia: "0.4 km",
+        descripcion: "Venta de artesanías y productos locales michoacanos"
       }
     ],
-    tips: [
-      "El acueducto es más fotografiable al atardecer",
-      "Visita temprano para evitar aglomeraciones de turistas",
-      "Hay tiendas locales con souvenirs auténticos",
-      "Cerca hay restaurantes con comida michoacana"
-    ],
-    transferencias: [
-      "Acceso a zona histórica y comercial de Morelia"
-    ],
-    mundial_relevancia: "Patrimonio UNESCO que representa ingeniería mesoamericana. Atracción principal para comprender la historia de Morelia durante el Mundial.",
-    seo_title: "Acueducto de Morelia - Estación Teleférico | MetroGuia",
-    meta_description: "Acueducto de Morelia. Estación del Teleférico junto al monumento histórico de ingeniería colonial español del siglo XVII."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Paseo disponible durante horas diurnas y nocturnas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: false,
+      notas: "Calzada accesible parcialmente, adoquines históricos"
+    }
   }
 ];

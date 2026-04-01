@@ -3,10 +3,10 @@
 /**
  * MetroGuia.mx — generate-pages.js
  * 
- * Script para enriquecer estaciones de las 3 ciudades (CDMX, GDL, MTY) con Claude API.
+ * Script para enriquecer estaciones de 16 ciudades con Claude API.
  * 
  * Features:
- * - Soporta múltiples ciudades: CDMX, Guadalajara (GDL), Monterrey (MTY)
+ * - Soporta 16 ciudades: CDMX, GDL, MTY, Puebla, Mérida, León, Tren Maya, Querétaro, Chihuahua, Tijuana, Toluca, Campeche, Morelia, Oaxaca, Veracruz, Villahermosa
  * - Rate limiting: max 10 requests/min (6 seg entre requests)
  * - Resume: salta estaciones que ya tienen descripción (resume en interrupciones)
  * - Enriquece con: descripción, tips, lugares cercanos, horarios, accesibilidad
@@ -44,6 +44,84 @@ const CITIES = {
     name: 'Monterrey',
     dataFile: 'data/mty/estaciones.js',
     exportName: 'estacionesMTY',
+    field: 'municipio',
+  },
+  puebla: {
+    name: 'Puebla',
+    dataFile: 'data/puebla/estaciones.js',
+    exportName: 'estacionesPuebla',
+    field: 'municipio',
+  },
+  merida: {
+    name: 'Mérida',
+    dataFile: 'data/merida/estaciones.js',
+    exportName: 'estacionesMerida',
+    field: 'municipio',
+  },
+  leon: {
+    name: 'León',
+    dataFile: 'data/leon/estaciones.js',
+    exportName: 'estacionesLeon',
+    field: 'municipio',
+  },
+  'tren-maya': {
+    name: 'Tren Maya',
+    dataFile: 'data/tren-maya/estaciones.js',
+    exportName: 'estacionesTrenMaya',
+    field: 'municipio',
+  },
+  queretaro: {
+    name: 'Querétaro',
+    dataFile: 'data/queretaro/estaciones.js',
+    exportName: 'estacionesQueretaro',
+    field: 'municipio',
+  },
+  chihuahua: {
+    name: 'Chihuahua',
+    dataFile: 'data/chihuahua/estaciones.js',
+    exportName: 'estacionesChihuahua',
+    field: 'municipio',
+  },
+  tijuana: {
+    name: 'Tijuana',
+    dataFile: 'data/tijuana/estaciones.js',
+    exportName: 'estacionesTijuana',
+    field: 'municipio',
+  },
+  toluca: {
+    name: 'Toluca',
+    dataFile: 'data/toluca/estaciones.js',
+    exportName: 'estacionesToluca',
+    field: 'municipio',
+  },
+  campeche: {
+    name: 'Campeche',
+    dataFile: 'data/campeche/estaciones.js',
+    exportName: 'estacionesCampeche',
+    field: 'municipio',
+  },
+  morelia: {
+    name: 'Morelia',
+    dataFile: 'data/morelia/estaciones.js',
+    exportName: 'estacionesMorelia',
+    field: 'municipio',
+  },
+  oaxaca: {
+    name: 'Oaxaca',
+    dataFile: 'data/oaxaca/estaciones.js',
+    exportName: 'estacionesOaxaca',
+    field: 'municipio',
+  },
+  veracruz: {
+    name: 'Veracruz',
+    dataFile: 'data/veracruz/estaciones.js',
+    exportName: 'estacionesVeracruz',
+    field: 'municipio',
+  },
+  villahermosa: {
+    name: 'Villahermosa',
+    dataFile: 'data/villahermosa/estaciones.js',
+    exportName: 'estacionesVillahermosa',
     field: 'municipio',
   },
 };
@@ -89,7 +167,7 @@ function generatePrompt(estacion, city) {
 ESTACIÓN:
 - Nombre: ${estacion.nombre}
 - Ciudad: ${city.name}
-- Línea: ${estacion.linea}
+- Línea: ${estacion.lineas ? estacion.lineas.join(', ') : (Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea)}
 - Zona: ${estacion.tipo_zona}
 - ${city.field}: ${estacion[city.field]}
 - POIs actuales: ${estacion.pois?.map(p => p.nombre).join(', ') || 'ninguno'}

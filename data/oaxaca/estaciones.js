@@ -1,243 +1,501 @@
 export const estacionesOaxaca = [
   {
-    slug: "aeropuerto-oaxaca",
-    nombre: "Aeropuerto Xoxocotlán",
-    linea: "1",
-    municipio: "Santa Cruz Xoxocotlán",
-    tipo_zona: "transporte",
-    pois: [
-      { nombre: "Aeropuerto Internacional Xoxocotlán", tipo: "transporte", distancia: "2 min caminando" },
-      { nombre: "Estacionamiento", tipo: "servicio", distancia: "5 min" }
+    id: 1,
+    nombre: "Aeropuerto",
+    ubicacion: "Entrada a Oaxaca",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Puerta de entrada a Oaxaca con conexión directa al aeropuerto internacional. Punto de partida para viajeros hacia la capital oaxaqueña, centro cultural y gastronómico de México.",
+    lugares_cercanos: [
+      {
+        nombre: "Terminal Aérea",
+        tipo: "Transporte",
+        distancia: "0.2 km",
+        descripcion: "Aeropuerto internacional Xoxocotlán con vuelos nacionales e internacionales"
+      },
+      {
+        nombre: "Rental de Autos",
+        tipo: "Servicios",
+        distancia: "0.3 km",
+        descripcion: "Empresas de renta de vehículos para exploración de Oaxaca"
+      },
+      {
+        nombre: "Hotel Gateway",
+        tipo: "Hospedaje",
+        distancia: "0.5 km",
+        descripcion: "Alojamiento cercano al aeropuerto para conexiones rápidas"
+      }
     ],
-    transferencias: [],
-    seo_title: "Aeropuerto Xoxocotlán (OAX) Oaxaca — Puerta de entrada a Oaxaca | MetroGuia",
-    meta_description: "Aeropuerto Xoxocotlán de Oaxaca. Acceso a colectivos hacia el centro histórico. Punto de entrada a la capital oaxaqueña.",
-    h1: "Aeropuerto Xoxocotlán — Circuito Turístico Oaxaca",
-    intro: "Principal puerta de entrada a Oaxaca. Punto de partida para explorar la capital cultural de México con sus mercados, artesanías y patrimonio prehispánico.",
-    tips: ["Colectivos directos al centro (45 min)", "Taxis autorizados disponibles", "Información turística en la terminal", "Cambio de divisas", "Acceso a WiFi gratuito"],
-    mejor_horario: "Llegadas en la mañana para máximo tiempo de exploración",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles 24 horas para viajeros"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal moderna con accesibilidad completa"
+    }
   },
   {
-    slug: "centro-historico-oax",
-    nombre: "Centro Histórico (Zócalo)",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "historico-turistico",
-    pois: [
-      { nombre: "Zócalo de Oaxaca", tipo: "plaza", distancia: "1 min caminando" },
-      { nombre: "Catedral Metropolitana", tipo: "monumento", distancia: "3 min" },
-      { nombre: "Palacio de Gobierno", tipo: "monumento", distancia: "2 min" },
-      { nombre: "Tiendas de artesanías", tipo: "comercio", distancia: "2 min" }
+    id: 2,
+    nombre: "Centro Histórico",
+    ubicacion: "Corazón cultural de Oaxaca",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Patrimonio de la Humanidad UNESCO, corazón cultural y gastronómico de Oaxaca. Centro del arte, tradición y modernidad donde convergen mercados históricos, galerías, templos coloniales y la cocina oaxaqueña de clase mundial.",
+    lugares_cercanos: [
+      {
+        nombre: "Zócalo de Oaxaca",
+        tipo: "Plaza Principal",
+        distancia: "0.2 km",
+        descripcion: "Plaza central con kiosko histórico, punto de encuentro cultural"
+      },
+      {
+        nombre: "Catedral Metropolitana",
+        tipo: "Templo",
+        distancia: "0.15 km",
+        descripcion: "Iglesia colonial del siglo XVI, ejemplo de arquitectura religiosa"
+      },
+      {
+        nombre: "Mercado Benito Juárez",
+        tipo: "Mercado",
+        distancia: "0.3 km",
+        descripcion: "Mercado tradicional con alimentos, artesanías y textiles oaxaqueños"
+      },
+      {
+        nombre: "Galerías de Arte",
+        tipo: "Arte",
+        distancia: "0.4 km",
+        descripcion: "Espacios dedicados al arte contemporáneo e indígena oaxaqueño"
+      }
     ],
-    transferencias: [],
-    seo_title: "Centro Histórico Oaxaca (Zócalo) — Patrimonio UNESCO | MetroGuia",
-    meta_description: "Centro Histórico de Oaxaca. Zócalo, Catedral y Palacio de Gobierno. Patrimonio de la Humanidad en el corazón de Oaxaca.",
-    h1: "Centro Histórico (Zócalo) — Circuito Turístico Oaxaca",
-    intro: "Corazón pulsante de Oaxaca, Patrimonio de la Humanidad. Centro de la vida cultural con la majestuosa Catedral Metropolitana, plazas coloniales y tiendas de artesanías.",
-    tips: ["UNESCO Patrimonio de la Humanidad", "Catedral Metropolitana imprescindible", "Zócalo para pasear y disfrutar la atmósfera", "Gastronomía oaxaqueña en calles cercanas", "Mejor en atardecer para fotos"],
-    mejor_horario: "Atardecer para luz dorada",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Centro comercial y cultural con actividad constante"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Calles con adoquines, acceso mediante rampas a principales sitios"
+    }
   },
   {
-    slug: "santo-domingo-oax",
-    nombre: "Templo de Santo Domingo",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "cultural",
-    pois: [
-      { nombre: "Templo de Santo Domingo de Guzmán", tipo: "monumento", distancia: "1 min caminando" },
-      { nombre: "Museo Textil", tipo: "museo", distancia: "5 min" },
-      { nombre: "Museos Oaxaca", tipo: "cultura", distancia: "3 min" }
+    id: 3,
+    nombre: "Santo Domingo",
+    ubicacion: "Templo y museo",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a la Basílica de Santo Domingo, joya arquitectónica del barroco colonial oaxaqueño. Museo con arte religioso, textiles indígenas y colecciones de la tradición oaxaqueña, acompañado de jardín etnobotánico.",
+    lugares_cercanos: [
+      {
+        nombre: "Basílica de Santo Domingo",
+        tipo: "Templo Histórico",
+        distancia: "0.1 km",
+        descripcion: "Iglesia barroca del siglo XVI con decoración interior excepcional"
+      },
+      {
+        nombre: "Museo de las Culturas",
+        tipo: "Museo",
+        distancia: "0.15 km",
+        descripcion: "Colecciones de arte indígena, textiles y arqueología oaxaqueña"
+      },
+      {
+        nombre: "Jardín Etnobotánico",
+        tipo: "Jardín",
+        distancia: "0.25 km",
+        descripcion: "Plantas tradicionales de Oaxaca con propósitos medicinales y culturales"
+      },
+      {
+        nombre: "Galerías Artesanales",
+        tipo: "Comercio",
+        distancia: "0.3 km",
+        descripcion: "Venta directa de artesanías de cooperativas indígenas"
+      }
     ],
-    transferencias: [],
-    seo_title: "Templo de Santo Domingo Oaxaca — Joya del Barroco Mexicano | MetroGuia",
-    meta_description: "Templo de Santo Domingo en Oaxaca. Iglesia barroca declarada patrimonio, con interior dorado y arquitectura colonial única.",
-    h1: "Templo de Santo Domingo — Circuito Turístico Oaxaca",
-    intro: "Considerada la iglesia más hermosa de México. Obra maestra del barroco colonial con interior dorado, retablos decorados y arquitectura impresionante.",
-    tips: ["Mejor iglesia de México según muchos", "Interior completamente dorado", "Fotografía excepcional", "Visitas con guía disponibles", "Respeta el silencio dentro del templo"],
-    mejor_horario: "Mañana para luz natural",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Basílica abierta 7:00-20:00, museo 10:00-18:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampas de acceso a templo y museo"
+    }
   },
   {
-    slug: "monte-alban",
+    id: 4,
     nombre: "Monte Albán",
-    linea: "1",
-    municipio: "Santa Catarina Minas",
-    tipo_zona: "arqueologico",
-    pois: [
-      { nombre: "Zona Arqueológica Monte Albán", tipo: "arqueologia", distancia: "10 min caminando" },
-      { nombre: "Museo Arqueológico", tipo: "museo", distancia: "5 min" },
-      { nombre: "Vistas panorámicas", tipo: "paisaje", distancia: "15 min" }
+    ubicacion: "Zona arqueológica",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a la gran capital zapoteca de Monte Albán, Patrimonio de la Humanidad. Complejo arqueológico monumental con pirámides, palacios y plazas que dominan el valle oaxaqueño desde hace 2500 años.",
+    lugares_cercanos: [
+      {
+        nombre: "Zona Arqueológica Monte Albán",
+        tipo: "Sitio Prehispánico",
+        distancia: "0.5 km",
+        descripcion: "Complejo arqueológico zapoteca con estructuras ceremoniales principales"
+      },
+      {
+        nombre: "Museo de Sitio",
+        tipo: "Museo",
+        distancia: "0.3 km",
+        descripcion: "Artefactos y explicación de la historia de Monte Albán"
+      },
+      {
+        nombre: "Mirador Panorámico",
+        tipo: "Mirador",
+        distancia: "0.4 km",
+        descripcion: "Vistas de valle de Oaxaca desde la altura de Monte Albán"
+      }
     ],
-    transferencias: [],
-    seo_title: "Monte Albán Oaxaca — Sitio UNESCO Patrimonio Zapoteca | MetroGuia",
-    meta_description: "Zona arqueológica Monte Albán en Oaxaca. Capital zapoteca de 2,500 años, Patrimonio UNESCO con plazas y pirámides prehispánicas.",
-    h1: "Monte Albán — Circuito Turístico Oaxaca",
-    intro: "Espectacular sitio arqueológico a 9 km del centro. Capital zapoteca de 2,500 años con pirámides, plazas y vistas panorámicas de los valles de Oaxaca.",
-    tips: ["UNESCO Patrimonio de la Humanidad", "Vistas panorámicas espectaculares", "Lleva agua y protector solar", "Visitas guiadas disponibles", "Museo in situ bien presentado", "Mejor explorar en 2-3 horas"],
-    mejor_horario: "Mañana temprano o atardecer",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Zona arqueológica abierta 8:00-17:00 diariamente"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Senderos con rampas principales, baños accesibles en museo"
+    }
   },
   {
-    slug: "mitla-oax",
+    id: 5,
     nombre: "Mitla",
-    linea: "1",
-    municipio: "San Pablo Villa de Mitla",
-    tipo_zona: "arqueologico",
-    pois: [
-      { nombre: "Zona Arqueológica Mitla", tipo: "arqueologia", distancia: "5 min caminando" },
-      { nombre: "Iglesia Colonial", tipo: "monumento", distancia: "2 min" },
-      { nombre: "Mercado artesanal", tipo: "comercio", distancia: "3 min" }
+    ubicacion: "Zona arqueológica este",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a Mitla, segundo sitio arqueológico más importante de Oaxaca. Centro ceremonial zapoteca conocido por su arquitectura decorativa única con patrones geométricos de mosaicos de piedra.",
+    lugares_cercanos: [
+      {
+        nombre: "Zona Arqueológica de Mitla",
+        tipo: "Sitio Prehispánico",
+        distancia: "0.3 km",
+        descripcion: "Complejo con estructura del palacio y patios decorados con mosaicos"
+      },
+      {
+        nombre: "Capilla Colonial",
+        tipo: "Templo",
+        distancia: "0.2 km",
+        descripcion: "Capilla española construida sobre estructura prehispánica"
+      },
+      {
+        nombre: "Tienda de Artesanías",
+        tipo: "Comercio",
+        distancia: "0.25 km",
+        descripcion: "Venta de textiles y huipiles tradicionales de Mitla"
+      }
     ],
-    transferencias: [],
-    seo_title: "Mitla Oaxaca — Arquitectura Zapoteca Prehispánica | MetroGuia",
-    meta_description: "Sitio arqueológico Mitla en Oaxaca. Arquitectura zapoteca única con mosaicos geométricos prehispánicos, 40 km del centro.",
-    h1: "Mitla — Circuito Turístico Oaxaca",
-    intro: "Fascinante sitio arqueológico a 40 km del centro. Famoso por su arquitectura única con mosaicos geométricos prehispánicos, considerados los más refinados del México antiguo.",
-    tips: ["Mosaicos geométricos únicos", "Arquitectura zapoteca refinada", "Iglesia colonial superpuesta", "Mercado artesanal en la plaza", "Menos concurrido que Monte Albán", "Combina con Hierve el Agua"],
-    mejor_horario: "Mañana para exploración completa",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Zona arqueológica abierta 8:00-17:00"
+    },
+    accesibilidad: {
+      silla_ruedas: false,
+      ascensores: false,
+      rampas: false,
+      banos_accesibles: true,
+      notas: "Estructuras antiguas sin rampas, baños disponibles"
+    }
   },
   {
-    slug: "hierve-el-agua",
+    id: 6,
     nombre: "Hierve el Agua",
-    linea: "1",
-    municipio: "San Lorenzo Albarradas",
-    tipo_zona: "natural",
-    pois: [
-      { nombre: "Cascadas Petrificadas Hierve el Agua", tipo: "naturaleza", distancia: "10 min caminando" },
-      { nombre: "Piscinas naturales", tipo: "recreacion", distancia: "5 min" },
-      { nombre: "Vistas panorámicas", tipo: "paisaje", distancia: "15 min" }
+    ubicacion: "Formaciones naturales",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a las cascadas fosilizadas de Hierve el Agua, espectáculo natural único en Oaxaca. Formaciones minerales blancas que caen por la montaña, con piscinas naturales de agua termal."
+,
+    lugares_cercanos: [
+      {
+        nombre: "Cascadas de Hierve el Agua",
+        tipo: "Formación Natural",
+        distancia: "0.4 km",
+        descripcion: "Cascadas petrificadas de agua con minerales de travertino"
+      },
+      {
+        nombre: "Piscinas Termales",
+        tipo: "Baño Natural",
+        distancia: "0.5 km",
+        descripcion: "Piscinas de agua mineral con propiedades terapéuticas"
+      },
+      {
+        nombre: "Mirador de la Sierra",
+        tipo: "Mirador",
+        distancia: "0.3 km",
+        descripcion: "Vista panorámica de las cascadas y sierra de Oaxaca"
+      }
     ],
-    transferencias: [],
-    seo_title: "Hierve el Agua Oaxaca — Cascadas Petrificadas Naturales | MetroGuia",
-    meta_description: "Hierve el Agua en Oaxaca. Cascadas petrificadas únicas, piscinas naturales con agua mineral y vistas de los valles de Oaxaca.",
-    h1: "Hierve el Agua — Circuito Turístico Oaxaca",
-    intro: "Espectáculo natural único. Cascadas petrificadas de agua mineral con piscinas naturales rodeadas de vistas panorámicas de los valles de Oaxaca.",
-    tips: ["Cascadas petrificadas únicas en el mundo", "Piscinas naturales con agua mineral", "Lleva traje de baño", "Agua fresca pero refrescante", "Vistas panorámicas impresionantes", "Ideal para fotos"],
-    mejor_horario: "Mediodía para piscinas",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Acceso a piscinas disponible 8:00-17:00"
+    },
+    accesibilidad: {
+      silla_ruedas: false,
+      ascensores: false,
+      rampas: false,
+      banos_accesibles: true,
+      notas: "Terreno natural con escaleras, baños disponibles"
+    }
   },
   {
-    slug: "mercado-benito-juarez",
+    id: 7,
     nombre: "Mercado Benito Juárez",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "comercial",
-    pois: [
-      { nombre: "Mercado Benito Juárez", tipo: "mercado", distancia: "1 min caminando" },
-      { nombre: "Mole oaxaqueño", tipo: "alimento", distancia: "2 min" },
-      { nombre: "Artesanías y textiles", tipo: "comercio", distancia: "3 min" }
+    ubicacion: "Centro histórico comercial",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso directo al icónico mercado tradicional de Oaxaca, emblema de la vida cotidiana oaxaqueña. Mercado histórico con miles de vendedores de productos locales, alimentos, textiles, artesanías y especias.",
+    lugares_cercanos: [
+      {
+        nombre: "Mercado Benito Juárez",
+        tipo: "Mercado Tradicional",
+        distancia: "0.1 km",
+        descripcion: "Mercado grande con productos frescos, textiles y artesanías"
+      },
+      {
+        nombre: "Puestos de Comida",
+        tipo: "Gastronomía",
+        distancia: "0.15 km",
+        descripcion: "Comida tradicional oaxaqueña, mole y especialidades locales"
+      },
+      {
+        nombre: "Tiendas de Textiles",
+        tipo: "Comercio",
+        distancia: "0.2 km",
+        descripcion: "Venta de huipiles, rebozos y textiles indígenas"
+      }
     ],
-    transferencias: [],
-    seo_title: "Mercado Benito Juárez Oaxaca — Mole y Artesanías Tradicionales | MetroGuia",
-    meta_description: "Mercado Benito Juárez de Oaxaca. Corazón comercial con mole oaxaqueño, mezcal, artesanías textiles y productos locales.",
-    h1: "Mercado Benito Juárez — Circuito Turístico Oaxaca",
-    intro: "Corazón comercial de Oaxaca. Mercado tradicional lleno de colores, aromas y sabores con mole oaxaqueño, mezcal, artesanías y productos locales auténticos.",
-    tips: ["Mole oaxaqueño imprescindible", "Artesanías y textiles de calidad", "Mezcal y productos locales", "Compras de souvenirs", "Ambiente auténtico y vibrante"],
-    mejor_horario: "Mañana para menos aglomeración",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Mercado operativo desde 6:00 hasta 20:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampas de acceso principal, pasillos para circulación"
+    }
   },
   {
-    slug: "mercado-20-noviembre-oax",
+    id: 8,
     nombre: "Mercado 20 de Noviembre",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "gastronomico",
-    pois: [
-      { nombre: "Mercado 20 de Noviembre", tipo: "mercado", distancia: "1 min caminando" },
-      { nombre: "Pasillo de Humo", tipo: "alimento", distancia: "3 min" },
-      { nombre: "Comida típica oaxaqueña", tipo: "alimento", distancia: "2 min" }
+    ubicacion: "Centro comercial tradicional",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a mercado tradicional especializado en alimentos y productos frescos. Centro de abastos donde convergen vendedores de comida tradicional oaxaqueña, ingredientes locales y especialidades gastronómicas.",
+    lugares_cercanos: [
+      {
+        nombre: "Mercado 20 de Noviembre",
+        tipo: "Mercado de Alimentos",
+        distancia: "0.15 km",
+        descripcion: "Mercado con frutas, vegetales, carnes y productos frescos"
+      },
+      {
+        nombre: "Comedores Tradicionales",
+        tipo: "Gastronomía",
+        distancia: "0.2 km",
+        descripcion: "Restaurantes caseros con cocina oaxaqueña auténtica"
+      },
+      {
+        nombre: "Vendedores de Mole",
+        tipo: "Gastronomía",
+        distancia: "0.25 km",
+        descripcion: "Productores y vendedores de mole negro, rojo y amarillo"
+      }
     ],
-    transferencias: [],
-    seo_title: "Mercado 20 de Noviembre Oaxaca — Pasillo de Humo Gastronomía | MetroGuia",
-    meta_description: "Mercado 20 de Noviembre en Oaxaca. Famoso por el Pasillo de Humo, carnes asadas y gastronomía típica oaxaqueña.",
-    h1: "Mercado 20 de Noviembre — Circuito Turístico Oaxaca",
-    intro: "Legendario mercado gastronómico. Famoso por el icónico Pasillo de Humo (fila de restaurantes con humo de carnes asadas) donde probar comida típica oaxaqueña.",
-    tips: ["Pasillo de Humo imprescindible", "Carnes asadas auténticas", "Ambiente local y vibrante", "Precios muy accesibles", "Mejor al mediodía"],
-    mejor_horario: "Mediodía para comer",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Mercado abierto desde 6:00 hasta 19:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: false,
+      notas: "Acceso con rampa, pasillos amplios entre puestos"
+    }
   },
   {
-    slug: "andador-macedonio",
-    nombre: "Andador Macedonio Alcalá",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "cultural-comercial",
-    pois: [
-      { nombre: "Andador Macedonio Alcalá", tipo: "comercio", distancia: "1 min caminando" },
-      { nombre: "Tiendas de artesanías", tipo: "comercio", distancia: "2 min" },
-      { nombre: "Galerías de arte", tipo: "cultura", distancia: "3 min" },
-      { nombre: "Cafés y heladerías", tipo: "alimento", distancia: "2 min" }
+    id: 9,
+    nombre: "Andador Macedonio",
+    ubicacion: "Paseo peatonal histórico",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso al paseo peatonal histórico de Oaxaca, calle exclusiva para peatones entre el zócalo y Santo Domingo. Zona con galerías, tiendas, cafés y atractivos turísticos en ambiente de preservación histórica.",
+    lugares_cercanos: [
+      {
+        nombre: "Andador Macedonio Alcalá",
+        tipo: "Paseo Peatonal",
+        distancia: "0.1 km",
+        descripcion: "Calle histórica peatonal con galerías de arte y tiendas"
+      },
+      {
+        nombre: "Galerías de Arte Contemporáneo",
+        tipo: "Arte",
+        distancia: "0.2 km",
+        descripcion: "Espacios dedicados a artistas oaxaqueños e internacionales"
+      },
+      {
+        nombre: "Cafeterías Históricas",
+        tipo: "Gastronomía",
+        distancia: "0.15 km",
+        descripcion: "Cafés tradicionales con arquitectura colonial"
+      },
+      {
+        nombre: "Tiendas de Artesanías",
+        tipo: "Comercio",
+        distancia: "0.25 km",
+        descripcion: "Venta de artesanías de alta calidad oaxaqueña"
+      }
     ],
-    transferencias: [],
-    seo_title: "Andador Macedonio Alcalá Oaxaca — Calle Peatonal Artesanías | MetroGuia",
-    meta_description: "Andador Macedonio Alcalá en Oaxaca. Calle peatonal con tiendas de artesanías, galerías de arte, cafés y ambiente bohemio.",
-    h1: "Andador Macedonio Alcalá — Circuito Turístico Oaxaca",
-    intro: "Pintoresco andador peatonal conectando el Centro Histórico. Lleno de tiendas de artesanías, galerías de arte, cafés bohemios y atmósfera cultural.",
-    tips: ["Tiendas de artesanías de calidad", "Galerías de arte local", "Cafés artísticos", "Ideal para pasear y comprar", "Ambiente relajado y cultural"],
-    mejor_horario: "Tarde para exploración relajada",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Paseo disponible con seguridad nocturna"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Paseo totalmente peatonal y accesible"
+    }
   },
   {
-    slug: "terminal-ado-oaxaca",
-    nombre: "Terminal ADO Oaxaca",
-    linea: "1",
-    municipio: "Oaxaca de Juárez",
-    tipo_zona: "transporte",
-    pois: [
-      { nombre: "Terminal ADO", tipo: "transporte", distancia: "2 min caminando" },
-      { nombre: "Autobuses a ciudades vecinas", tipo: "transporte", distancia: "1 min" },
-      { nombre: "Servicios de comida", tipo: "alimento", distancia: "5 min" }
+    id: 10,
+    nombre: "Terminal ADO",
+    ubicacion: "Central de autobuses",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Terminal de autobuses ADO, principal punto de llegada y salida de transporte foráneo. Conexión a ciudades vecinas y regiones de México, importante nodo de transporte en Oaxaca.",
+    lugares_cercanos: [
+      {
+        nombre: "Terminal ADO",
+        tipo: "Transporte",
+        distancia: "0.1 km",
+        descripcion: "Central de autobuses con conexiones a todo México"
+      },
+      {
+        nombre: "Servicios de Terminal",
+        tipo: "Comercio",
+        distancia: "0.15 km",
+        descripcion: "Tiendas, restaurantes y servicios en terminal"
+      },
+      {
+        nombre: "Hotel Terminal",
+        tipo: "Hospedaje",
+        distancia: "0.3 km",
+        descripcion: "Alojamiento cerca de terminal para viajeros"
+      }
     ],
-    transferencias: [],
-    seo_title: "Terminal ADO Oaxaca — Conexiones a Puebla, Veracruz | MetroGuia",
-    meta_description: "Terminal ADO de Oaxaca. Acceso a autobuses directos a Puebla, Veracruz y otras ciudades de México.",
-    h1: "Terminal ADO Oaxaca — Circuito Turístico Oaxaca",
-    intro: "Principal terminal de autobuses de Oaxaca. Conexiones a destinos nacionales incluyendo Puebla, Veracruz y otros puntos importantes.",
-    tips: ["Autobuses a ciudades principales", "Servicios sanitarios 24 horas", "Taquillas y puestos de comida", "Información turística disponible"],
-    mejor_horario: "Cualquier hora para reservas",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles 24 horas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal moderna con accesibilidad completa"
+    }
   },
   {
-    slug: "mezcal-route",
-    nombre: "Ruta del Mezcal (Santiago Matatlán)",
-    linea: "1",
-    municipio: "Santiago Matatlán",
-    tipo_zona: "gastronomico",
-    pois: [
-      { nombre: "Destilerías de mezcal", tipo: "industria", distancia: "5 min caminando" },
-      { nombre: "Tiendas de mezcal", tipo: "comercio", distancia: "3 min" },
-      { nombre: "Museos del mezcal", tipo: "museo", distancia: "4 min" }
+    id: 11,
+    nombre: "Ruta del Mezcal",
+    ubicacion: "Zona productora de mezcal",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso a destinos de la ruta mezcalera de Oaxaca, principales regiones productoras. Centro de producción y degustación del mezcal, espíritu destilado tradicional oaxaqueño con denominación de origen.",
+    lugares_cercanos: [
+      {
+        nombre: "Mezcalerías Tradicionales",
+        tipo: "Comercio",
+        distancia: "0.5 km",
+        descripcion: "Espacios de venta y degustación de mezcal artesanal"
+      },
+      {
+        nombre: "Fábricas de Mezcal",
+        tipo: "Producción",
+        distancia: "1.0 km",
+        descripcion: "Visitas a espacios donde se produce mezcal tradicional"
+      },
+      {
+        nombre: "Museo del Mezcal",
+        tipo: "Museo",
+        distancia: "0.8 km",
+        descripcion: "Historia y cultura del mezcal oaxaqueño"
+      }
     ],
-    transferencias: [],
-    seo_title: "Ruta del Mezcal Santiago Matatlán — Capital Mundial Mezcal | MetroGuia",
-    meta_description: "Ruta del Mezcal en Santiago Matatlán, Oaxaca. Capital mundial del mezcal con destilerías, degustaciones y tiendas especializadas.",
-    h1: "Ruta del Mezcal — Circuito Turístico Oaxaca",
-    intro: "Capital mundial del mezcal. Pueblo mágico dedicado a la destilación y comercialización del mezcal tradicional oaxaqueño con destilerías, tiendas y museos.",
-    tips: ["Visitas a destilerías", "Degustaciones de mezcal", "Tiendas especializadas", "Museos del mezcal", "Souvenir perfecto"],
-    mejor_horario: "Mañana para tours de destilerías",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Visitas disponibles 10:00-18:00 en mezcalerías"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Acceso a principales mezcalerías mediante rampas"
+    }
   },
   {
-    slug: "tule-oaxaca",
-    nombre: "El Tule (Árbol del Tule)",
-    linea: "1",
-    municipio: "Santa Catarina Ixtepeji",
-    tipo_zona: "natural",
-    pois: [
-      { nombre: "Árbol del Tule", tipo: "naturaleza", distancia: "2 min caminando" },
-      { nombre: "Iglesia colonial", tipo: "monumento", distancia: "5 min" },
-      { nombre: "Tiendas de artesanías", tipo: "comercio", distancia: "3 min" }
+    id: 12,
+    nombre: "El Tule",
+    ubicacion: "Árbol monumental",
+    linea: "BRT Oaxaca",
+    descripcion_turistica: "Acceso al Árbol del Tule, uno de los árboles más grandes del mundo por diámetro del tronco. Monumento natural milenario de Oaxaca con circunferencia de 58 metros, declarado patrimonio ambiental.",
+    lugares_cercanos: [
+      {
+        nombre: "Árbol del Tule",
+        tipo: "Monumento Natural",
+        distancia: "0.2 km",
+        descripcion: "Ahuehuete monumental con más de 2000 años de edad"
+      },
+      {
+        nombre: "Templo Adyacente",
+        tipo: "Templo",
+        distancia: "0.15 km",
+        descripcion: "Iglesia colonial al lado del árbol histórico"
+      },
+      {
+        nombre: "Tienda de Recuerdos",
+        tipo: "Comercio",
+        distancia: "0.25 km",
+        descripcion: "Venta de artesanías y souvenirs del Tule"
+      }
     ],
-    transferencias: [],
-    seo_title: "Árbol del Tule Oaxaca — Árbol Más Ancho del Mundo | MetroGuia",
-    meta_description: "Árbol del Tule en Oaxaca. Árbol más ancho del mundo (2,000+ años), declarado patrimonio natural único de México.",
-    h1: "El Tule (Árbol del Tule) — Circuito Turístico Oaxaca",
-    intro: "Espectáculo natural. El árbol más ancho del mundo con más de 2,000 años de edad. Maravilla botánica declarada patrimonio natural.",
-    tips: ["Árbol más ancho del mundo", "2,000+ años de edad", "Fotografía espectacular", "Iglesia colonial cercana", "Tiendas de artesanías locales"],
-    mejor_horario: "Mañana para fotos con luz natural",
-    mundial_relevancia: "Sin relevancia directa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Árbol y zona disponible durante horas diurnas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampa de acceso circular al árbol, baños disponibles"
+    }
   }
 ];

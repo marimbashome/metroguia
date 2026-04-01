@@ -1,241 +1,408 @@
 export const estacionesVillahermosa = [
   {
-    slug: "terminal-primera-clase",
+    id: 1,
     nombre: "Terminal Primera Clase",
-    linea: ["1", "TM"],
-    municipio: "Centro",
-    tipo_zona: "Terminal de Autobuses",
-    pois: [
-      { nombre: "Central de Abastos", tipo: "Mercado", distancia: "500m" },
-      { nombre: "Parque Estatal Agua Blanca", tipo: "Parque", distancia: "1.2km" }
+    ubicacion: "Central de transporte",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Terminal de autobuses de primera clase en Villahermosa, punto principal de llegada y salida hacia ciudades de Tabasco y conexiones nacionales. Nodo de transporte moderno con servicios completos.",
+    lugares_cercanos: [
+      {
+        nombre: "Terminal Primera Clase",
+        tipo: "Transporte",
+        distancia: "0.1 km",
+        descripcion: "Central de autobuses con conexiones a destinos principales"
+      },
+      {
+        nombre: "Servicios de Terminal",
+        tipo: "Comercio",
+        distancia: "0.15 km",
+        descripcion: "Tiendas, restaurantes y servicios en la terminal"
+      },
+      {
+        nombre: "Información Turística",
+        tipo: "Servicios",
+        distancia: "0.2 km",
+        descripcion: "Centro de información para viajeros"
+      }
     ],
-    transferencias: ["Tren Maya a Palenque", "Autobús a Tuxtla Gutiérrez"],
-    seo_title: "Terminal Primera Clase Villahermosa | MetroGuia",
-    meta_description: "Terminal Primera Clase de Villahermosa. Principal terminal de autobuses con conexión a Tren Maya.",
-    h1: "Terminal Primera Clase",
-    intro: "Principal terminal de autobuses de Villahermosa con conexiones a nivel nacional y acceso directo al Tren Maya hacia Palenque y la Riviera Maya.",
-    tips: [
-      "Servicios de alimentación y tiendas disponibles 24 horas",
-      "Transporte de taxis y Ubers al salir de la terminal",
-      "Conexión directa con estaciones del Tren Maya"
-    ],
-    mejor_horario: "7:00 AM a 6:00 PM (menor flujo después de las 5 PM)",
-    mundial_relevancia: "Terminal estratégica para turistas que viajan a Palenque durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles 24 horas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal moderna con accesibilidad completa"
+    }
   },
   {
-    slug: "centro-historico",
+    id: 2,
     nombre: "Centro Histórico",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Comercial y Turística",
-    pois: [
-      { nombre: "Catedral Metropolitana", tipo: "Iglesia", distancia: "200m" },
-      { nombre: "Museo de Antropología de Tabasco", tipo: "Museo", distancia: "600m" },
-      { nombre: "Plaza de Armas", tipo: "Plaza Pública", distancia: "300m" }
+    ubicacion: "Corazón de Villahermosa",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Centro cultural y administrativo de Villahermosa, zona de patrimonio con plaza central, museos y galerías. Corazón de la capital tabasqueña con mezcla de historia y modernidad.",
+    lugares_cercanos: [
+      {
+        nombre: "Parque La Venta",
+        tipo: "Museo Arqueológico",
+        distancia: "0.3 km",
+        descripcion: "Parque-museo con réplicas de monumentos olmecas en aire libre"
+      },
+      {
+        nombre: "Museo de Antropología",
+        tipo: "Museo",
+        distancia: "0.4 km",
+        descripcion: "Colección de artefactos prehispánicos e historia tabasqueña"
+      },
+      {
+        nombre: "Teatro de la Ciudad",
+        tipo: "Cultura",
+        distancia: "0.2 km",
+        descripcion: "Presentaciones teatrales y artísticas"
+      },
+      {
+        nombre: "Catedral Metropolitana",
+        tipo: "Templo",
+        distancia: "0.15 km",
+        descripcion: "Iglesia principal de Villahermosa"
+      }
     ],
-    transferencias: ["Microbús a Parque Estatal Agua Blanca"],
-    seo_title: "Centro Histórico Villahermosa | MetroGuia",
-    meta_description: "Centro Histórico de Villahermosa. Corazón cultural con catedral, museos y plazas coloniales.",
-    h1: "Centro Histórico",
-    intro: "Corazón cultural de Villahermosa. Aquí encontrarás la Catedral Metropolitana, el Museo de Antropología, y plazas históricas rodeadas de arquitectura colonial y galerías de arte.",
-    tips: [
-      "Visita museos entre 9:00 AM y 5:00 PM",
-      "Los martes hay exposiciones especiales en galerías locales",
-      "Zona peatonal ideal para caminar y explorar tiendas de artesanías"
-    ],
-    mejor_horario: "9:00 AM a 2:00 PM (menos aglomeración que por las tardes)",
-    mundial_relevancia: "Centro cultural imprescindible para turistas que visitan Palenque durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Museos abiertos 9:00-18:00, teatros con programación variable"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Centro con rampas de acceso a principales sitios"
+    }
   },
   {
-    slug: "agua-blanca",
-    nombre: "Parque Estatal Agua Blanca",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Naturaleza y Recreación",
-    pois: [
-      { nombre: "Lagunas de Agua Blanca", tipo: "Parque Natural", distancia: "500m" },
-      { nombre: "Senderos Ecoturísticos", tipo: "Senderismo", distancia: "1km" },
-      { nombre: "Restaurante Orquídea Negra", tipo: "Restaurante", distancia: "800m" }
+    id: 3,
+    nombre: "Agua Blanca",
+    ubicacion: "Zona residencial",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso a zona residencial de Agua Blanca, área de desarrollo urbano contemporáneo con servicios comerciales. Barrio con tiendas, restaurantes y servicios para residentes y visitantes.",
+    lugares_cercanos: [
+      {
+        nombre: "Centro Comercial Agua Blanca",
+        tipo: "Comercio",
+        distancia: "0.3 km",
+        descripcion: "Tiendas y servicios modernos de la zona residencial"
+      },
+      {
+        nombre: "Parque Urbano",
+        tipo: "Parque",
+        distancia: "0.2 km",
+        descripcion: "Área verde con equipamiento deportivo y recreativo"
+      },
+      {
+        nombre: "Restaurantes y Cafés",
+        tipo: "Gastronomía",
+        distancia: "0.25 km",
+        descripcion: "Ofertas de comida diversa para toda la familia"
+      }
     ],
-    transferencias: ["Conexión con línea 1 hacia Centro"],
-    seo_title: "Parque Estatal Agua Blanca Villahermosa | MetroGuia",
-    meta_description: "Parque Estatal Agua Blanca. Naturaleza y lagunas en Villahermosa con senderos ecoturísticos.",
-    h1: "Parque Estatal Agua Blanca",
-    intro: "Pulmón verde de Villahermosa. Lagunas cristalinas, senderos ecoturísticos y vegetación nativa. Ideal para fotografía de naturaleza, avistamiento de aves y actividades al aire libre.",
-    tips: [
-      "Lleva repelente de insectos para los senderos",
-      "Mejor momento para avistamiento de aves: amanecer",
-      "Hay guías locales disponibles para recorridos especializados"
-    ],
-    mejor_horario: "6:00 AM a 10:00 AM (clima más fresco y mayor actividad de fauna)",
-    mundial_relevancia: "Espacio natural para descansar entre viajes a Palenque durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios comerciales abiertos hasta 21:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Zona moderna con infraestructura accesible"
+    }
   },
   {
-    slug: "villahermosa-2000",
-    nombre: "Centro Comercial Villahermosa 2000",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Comercial",
-    pois: [
-      { nombre: "Cine VIP", tipo: "Entretenimiento", distancia: "100m" },
-      { nombre: "Tiendas Departamentales", tipo: "Comercio", distancia: "200m" },
-      { nombre: "Restaurante Pericos", tipo: "Restaurante", distancia: "150m" }
+    id: 4,
+    nombre: "Villahermosa 2000",
+    ubicacion: "Complejo comercial moderno",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso a centro comercial y de servicios Villahermosa 2000, complejo moderno con tiendas, oficinas y servicios. Punto de encuentro comercial y de entretenimiento en la ciudad.",
+    lugares_cercanos: [
+      {
+        nombre: "Centro Comercial Villahermosa 2000",
+        tipo: "Centro Comercial",
+        distancia: "0.2 km",
+        descripcion: "Tiendas departamentales y servicios comerciales"
+      },
+      {
+        nombre: "Cines",
+        tipo: "Entretenimiento",
+        distancia: "0.15 km",
+        descripcion: "Salas cinematográficas con estrenos nacionales e internacionales"
+      },
+      {
+        nombre: "Restaurantes Diversos",
+        tipo: "Gastronomía",
+        distancia: "0.2 km",
+        descripcion: "Variedad de opciones gastronómicas"
+      }
     ],
-    transferencias: ["Conexión con transporte local"],
-    seo_title: "Centro Comercial Villahermosa 2000 | MetroGuia",
-    meta_description: "Centro Comercial Villahermosa 2000. Compras, entretenimiento y gastronomía en Villahermosa.",
-    h1: "Centro Comercial Villahermosa 2000",
-    intro: "Principal centro comercial de Villahermosa con cines, tiendas departamentales, restaurantes y cafeterías. Punto de encuentro para compras y ocio.",
-    tips: [
-      "Promociones especiales los jueves y fines de semana",
-      "Estacionamiento gratuito para clientes",
-      "Servicio de comida rápida y restaurantes a todos los precios"
-    ],
-    mejor_horario: "12:00 PM a 6:00 PM (mayor variedad de negocios abiertos)",
-    mundial_relevancia: "Centro de entretenimiento para descansar durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Centro abierto hasta 22:00 en promedio"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Centro moderno con accesibilidad completa"
+    }
   },
   {
-    slug: "yumka",
-    nombre: "Parque-Museo Yumká",
-    linea: "1",
-    municipio: "Macuspana",
-    tipo_zona: "Naturaleza y Turismo",
-    pois: [
-      { nombre: "Zoológico Yumká", tipo: "Parque Zoológico", distancia: "500m" },
-      { nombre: "Laguna de Animales", tipo: "Atracción Natural", distancia: "1.5km" },
-      { nombre: "Zona de Reptiles", tipo: "Exhibición", distancia: "2km" }
+    id: 5,
+    nombre: "Yumká",
+    ubicacion: "Parque ecológico",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso a Yumká, parque de flora y fauna tabasqueña con ecosistemas naturales. Centro de conservación y educación ambiental que preserva la biodiversidad de la región selvatica.",
+    lugares_cercanos: [
+      {
+        nombre: "Parque Yumká",
+        tipo: "Parque Ecológico",
+        distancia: "0.3 km",
+        descripcion: "Reserva natural con flora y fauna de Tabasco"
+      },
+      {
+        nombre: "Senderos Ecológicos",
+        tipo: "Ruta Natural",
+        distancia: "0.5 km",
+        descripcion: "Caminos para observación de wildlife y naturaleza"
+      },
+      {
+        nombre: "Centro de Visitantes",
+        tipo: "Museo",
+        distancia: "0.2 km",
+        descripcion: "Información sobre ecosistemas y conservación"
+      }
     ],
-    transferencias: ["Autobús a Parque Museo Yumká"],
-    seo_title: "Parque-Museo Yumká Villahermosa | MetroGuia",
-    meta_description: "Parque-Museo Yumká. Zoológico y naturaleza en Villahermosa con fauna tabasqueña.",
-    h1: "Parque-Museo Yumká",
-    intro: "Parque zoológico y museo natural dedicado a la fauna de Tabasco. Hogar de jaguares, cocodrilos, tapires y cientos de especies nativas. Experiencia inmersiva en la naturaleza tabasqueña.",
-    tips: [
-      "Llega temprano para evitar aglomeración y calor",
-      "Tours guiados disponibles en español",
-      "Trae cámara de fotos para capturar a los jaguares"
-    ],
-    mejor_horario: "8:00 AM a 11:00 AM (clima fresco y animales más activos)",
-    mundial_relevancia: "Atracción única para familias visitando Palenque durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Parque abierto 9:00-17:00 diariamente"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Senderos con rampas principales, baños en centro de visitantes"
+    }
   },
   {
-    slug: "puxcatan",
+    id: 6,
     nombre: "Puxcatán",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Comercial y Gastronómica",
-    pois: [
-      { nombre: "Mercado Puxcatán", tipo: "Mercado", distancia: "100m" },
-      { nombre: "Restaurante Chanquete's", tipo: "Restaurante de Mariscos", distancia: "200m" },
-      { nombre: "Tienda de Artesanías Locales", tipo: "Tienda", distancia: "150m" }
+    ubicacion: "Zona de haciendas históricas",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso a zona de Puxcatán, área histórica con haciendas y patrimonio agrícola tabasqueño. Centro de herencia cultural relacionada con la producción de cacao y agricultura colonial.",
+    lugares_cercanos: [
+      {
+        nombre: "Haciendas Coloniales",
+        tipo: "Patrimonio",
+        distancia: "0.5 km",
+        descripcion: "Construcciones históricas de época colonial y porfiriana"
+      },
+      {
+        nombre: "Plantaciones de Cacao",
+        tipo: "Agricultura",
+        distancia: "0.8 km",
+        descripcion: "Cultivos tradicionales de cacao tabasqueño"
+      },
+      {
+        nombre: "Senderos Rurales",
+        tipo: "Ruta Natural",
+        distancia: "0.6 km",
+        descripcion: "Caminos por paisaje agrícola histórico"
+      }
     ],
-    transferencias: ["Microbús a zonas residenciales"],
-    seo_title: "Puxcatán Villahermosa | MetroGuia",
-    meta_description: "Puxcatán. Zona comercial y gastronómica de Villahermosa con mercado y restaurantes locales.",
-    h1: "Puxcatán",
-    intro: "Barrio tradicional y vibrante. Mercado local con productos frescos, restaurantes de comida tabasqueña auténtica y tiendas de artesanías. Experiencia cultural genuina.",
-    tips: [
-      "Prueba la mojarra frita, especialidad local",
-      "El mercado es más activo por las mañanas",
-      "Hay tiendas de artesanías con precios accesibles"
-    ],
-    mejor_horario: "7:00 AM a 1:00 PM (mercado en su máxima actividad)",
-    mundial_relevancia: "Experiencia auténtica de cultura tabasqueña durante parada en Villahermosa"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Visitas disponibles durante horas diurnas"
+    },
+    accesibilidad: {
+      silla_ruedas: false,
+      ascensores: false,
+      rampas: false,
+      banos_accesibles: false,
+      notas: "Zona rural con terreno natural, acceso limitado"
+    }
   },
   {
-    slug: "paseo-tabasco",
+    id: 7,
     nombre: "Paseo Tabasco",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Comercial y de Entretenimiento",
-    pois: [
-      { nombre: "Restaurantes Contemporáneos", tipo: "Gastronomía", distancia: "200m" },
-      { nombre: "Tiendas de Lujo", tipo: "Comercio", distancia: "150m" },
-      { nombre: "Área de Cafeterías", tipo: "Bebidas y Café", distancia: "100m" }
+    ubicacion: "Avenida principal",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso al Paseo Tabasco, avenida principal de Villahermosa con tiendas, restaurantes y vida comercial de la ciudad. Eje comercial y turístico de Villahermosa con servicios diversos.",
+    lugares_cercanos: [
+      {
+        nombre: "Tiendas Comerciales",
+        tipo: "Comercio",
+        distancia: "0.3 km",
+        descripcion: "Variedad de tiendas a lo largo de la avenida"
+      },
+      {
+        nombre: "Restaurantes y Bares",
+        tipo: "Gastronomía",
+        distancia: "0.25 km",
+        descripcion: "Opciones gastronómicas diversas y tradicionales"
+      },
+      {
+        nombre: "Galerías y Museos",
+        tipo: "Cultura",
+        distancia: "0.4 km",
+        descripcion: "Espacios de arte y cultura en la avenida"
+      }
     ],
-    transferencias: ["Taxis y Ubers disponibles"],
-    seo_title: "Paseo Tabasco Villahermosa | MetroGuia",
-    meta_description: "Paseo Tabasco. Zona comercial moderna con restaurantes y tiendas en Villahermosa.",
-    h1: "Paseo Tabasco",
-    intro: "Zona moderna y contemporánea de Villahermosa. Restaurantes de calidad, tiendas de lujo y cafeterías. Ideal para compras y gastronomía de nivel.",
-    tips: [
-      "Restaurantes ofrecen cocina fusión e internacional",
-      "Descuentos especiales en tiendas los jueves",
-      "Ambiente ideal para cenas especiales"
-    ],
-    mejor_horario: "5:00 PM a 10:00 PM (ambiente nocturno y cenas)",
-    mundial_relevancia: "Entretenimiento de nivel para turistas de selecciones durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Comercios operativos hasta 21:00 en promedio"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Avenida principal con aceras amplias y accesibilidad"
+    }
   },
   {
-    slug: "museo-antropologia",
-    nombre: "Museo Regional de Antropología",
-    linea: "1",
-    municipio: "Centro",
-    tipo_zona: "Cultural",
-    pois: [
-      { nombre: "Salas de Arqueología", tipo: "Museo", distancia: "100m" },
-      { nombre: "Exposiciones Temporales", tipo: "Arte", distancia: "200m" },
-      { nombre: "Cafetería del Museo", tipo: "Café", distancia: "150m" }
+    id: 8,
+    nombre: "Museo de Antropología",
+    ubicacion: "Centro cultural principal",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Acceso al Museo de Antropología e Historia de Tabasco, principal institución cultural de la entidad. Colecciones de arte prehispánico olmeca, maya y exposiciones de historia tabasqueña.",
+    lugares_cercanos: [
+      {
+        nombre: "Museo Regional",
+        tipo: "Museo",
+        distancia: "0.2 km",
+        descripcion: "Colecciones de arqueología e historia de Tabasco"
+      },
+      {
+        nombre: "Auditorios Culturales",
+        tipo: "Cultura",
+        distancia: "0.15 km",
+        descripcion: "Salas para conferencias y presentaciones"
+      },
+      {
+        nombre: "Tienda del Museo",
+        tipo: "Comercio",
+        distancia: "0.1 km",
+        descripcion: "Venta de libros y reproducciones de arte"
+      }
     ],
-    transferencias: ["Transporte local cerca del museo"],
-    seo_title: "Museo Regional de Antropología Villahermosa | MetroGuia",
-    meta_description: "Museo Regional de Antropología. Arqueología y cultura maya en Villahermosa.",
-    h1: "Museo Regional de Antropología",
-    intro: "Museo dedicado a la arqueología maya y cultura prehispánica de Tabasco. Salas con cerámica, figurillas y artefactos ancestrales. Exposiciones temporales regularmente actualizadas.",
-    tips: [
-      "Duración recomendada: 2-3 horas para visita completa",
-      "Audioguías disponibles en inglés y español",
-      "Tienda de souvenir con réplicas de piezas arqueológicas"
-    ],
-    mejor_horario: "9:00 AM a 12:00 PM (menos visitantes, mejor para fotografía)",
-    mundial_relevancia: "Museo imprescindible para entender la conexión con Palenque durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Museo abierto 9:00-18:00 cerrado lunes"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Museo con accesibilidad completa y ascensores"
+    }
   },
   {
-    slug: "tren-maya-palenque",
-    nombre: "Estación Tren Maya Palenque",
-    linea: "TM",
-    municipio: "Palenque",
-    tipo_zona: "Terminal de Tren",
-    pois: [
-      { nombre: "Zona Arqueológica Palenque", tipo: "Sitio Arqueológico UNESCO", distancia: "8km" },
-      { nombre: "Cascadas de Agua Azul", tipo: "Atracción Natural", distancia: "40km" },
-      { nombre: "Misol-Há", tipo: "Cascada", distancia: "25km" }
+    id: 9,
+    nombre: "Tren Maya Palenque",
+    ubicacion: "Conexión Tren Maya",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Estación de conexión con Tren Maya hacia Palenque. Acceso a transporte regional que conecta Villahermosa con la zona arqueológica maya de Palenque y destinos de la Riviera Maya.",
+    lugares_cercanos: [
+      {
+        nombre: "Estación Tren Maya",
+        tipo: "Transporte",
+        distancia: "0.2 km",
+        descripcion: "Terminal del Tren Maya con conexiones regionales"
+      },
+      {
+        nombre: "Centro de Información",
+        tipo: "Servicios",
+        distancia: "0.15 km",
+        descripcion: "Información sobre rutas y destinos del Tren Maya"
+      },
+      {
+        nombre: "Comercios y Restaurantes",
+        tipo: "Servicios",
+        distancia: "0.25 km",
+        descripcion: "Tiendas y servicios de alimentación en terminal"
+      }
     ],
-    transferencias: ["Taxis y tours a zona arqueológica", "Conexión a Campeche vía Tren Maya"],
-    seo_title: "Estación Tren Maya Palenque | MetroGuia",
-    meta_description: "Estación Tren Maya Palenque. Acceso a la zona arqueológica UNESCO más importante de México.",
-    h1: "Estación Tren Maya Palenque",
-    intro: "Puerta de entrada al sitio arqueológico de Palenque, patrimonio mundial UNESCO. Estación del Tren Maya con acceso a una de las zonas mayas más espectaculares de México.",
-    tips: [
-      "Reserva tours de la zona arqueológica con anticipación",
-      "Lleva protección solar y agua para visitas de campo",
-      "Mejor visita a ruinas: 6:00 AM a 9:00 AM"
-    ],
-    mejor_horario: "6:00 AM (salidas tempranas hacia zona arqueológica)",
-    mundial_relevancia: "Destino principal para turistas internacionales durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Tren Maya opera con horarios específicos, consultar en terminal"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal moderna con accesibilidad completa"
+    }
   },
   {
-    slug: "tren-maya-conexion-cancun",
+    id: 10,
     nombre: "Tren Maya Conexión Riviera",
-    linea: "TM",
-    municipio: "Palenque",
-    tipo_zona: "Terminal de Tren",
-    pois: [
-      { nombre: "Conexión a Cancún", tipo: "Terminal Tren", distancia: "7 horas" },
-      { nombre: "Playa del Carmen", tipo: "Destino Turístico", distancia: "7.5 horas" },
-      { nombre: "Tulum", tipo: "Zona Arqueológica", distancia: "5 horas" }
+    ubicacion: "Terminal regional",
+    linea: "BRT Villahermosa",
+    descripcion_turistica: "Estación de conexión con Tren Maya hacia la Riviera Maya. Puerta de acceso a destinos turísticos principales del Caribe mexicano incluyendo Playa del Carmen, Cozumel y zona hotelera.",
+    lugares_cercanos: [
+      {
+        nombre: "Terminal Tren Maya Riviera",
+        tipo: "Transporte",
+        distancia: "0.2 km",
+        descripcion: "Estación con conexiones a destinos caribeños"
+      },
+      {
+        nombre: "Centro Turístico",
+        tipo: "Información",
+        distancia: "0.15 km",
+        descripcion: "Información sobre destinos de la Riviera Maya"
+      },
+      {
+        nombre: "Servicios de Terminal",
+        tipo: "Comercio",
+        distancia: "0.2 km",
+        descripcion: "Tiendas y restaurantes para viajeros"
+      }
     ],
-    transferencias: ["Tren directo a Cancún", "Transbordo a Playa del Carmen"],
-    seo_title: "Tren Maya Riviera Palenque | MetroGuia",
-    meta_description: "Tren Maya Riviera. Conexión a Cancún, Playa del Carmen y Tulum desde Palenque.",
-    h1: "Tren Maya Conexión Riviera",
-    intro: "Conexión directa del Tren Maya desde Palenque hacia la Riviera Maya. Acceso a Cancún, Playa del Carmen y Tulum. Ideal para turistas que desean combinar arqueología maya con playas.",
-    tips: [
-      "Compra boletos con 48 horas de anticipación",
-      "Trayecto Palenque-Cancún: aproximadamente 7 horas",
-      "Ofrece comidas y bebidas a bordo"
-    ],
-    mejor_horario: "7:00 AM (salidas matutinas hacia Riviera Maya)",
-    mundial_relevancia: "Conexión estratégica para turistas de otros países durante el Mundial 2026"
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles 24 horas, Tren Maya con horarios específicos"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal de última generación con accesibilidad total"
+    }
   }
 ];

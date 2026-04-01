@@ -1,276 +1,488 @@
 export const estacionesVeracruz = [
   {
-    slug: "puerto-bello",
+    id: 1,
     nombre: "Puerto Bello",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Puerto Histórico",
-    pois: [
-      { nombre: "Castillo de San Juan de Ulúa", tipo: "Fuerte Histórico", distancia: "500m" },
-      { nombre: "Malecón de Veracruz", tipo: "Paseo Turístico", distancia: "200m" }
+    ubicacion: "Zona portuaria",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a zona portuaria histórica de Veracruz, principal puerto mexicano del Golfo. Centro de confluencia entre historia colonial, modernidad comercial y belleza del Golfo de México.",
+    lugares_cercanos: [
+      {
+        nombre: "Puerto de Veracruz",
+        tipo: "Instalación Portuaria",
+        distancia: "0.3 km",
+        descripcion: "Puerto comercial internacional con movimiento de barcos histórico"
+      },
+      {
+        nombre: "Acuario de Veracruz",
+        tipo: "Museo",
+        distancia: "0.5 km",
+        descripcion: "Acuario moderno con exhibiciones de fauna marina del Golfo"
+      },
+      {
+        nombre: "Malecón Portuario",
+        tipo: "Paseo",
+        distancia: "0.2 km",
+        descripcion: "Paseo frente al puerto con vista de barcos y mar"
+      }
     ],
-    transferencias: ["Autobús 1 a Centro Histórico", "Taxi colectivo a Playa"],
-    seo_title: "Puerto Bello - Estación Veracruz | MetroGuia",
-    meta_description: "Estación Puerto Bello en Veracruz. Acceso al Castillo de San Juan de Ulúa y Malecón histórico.",
-    h1: "Puerto Bello — Veracruz",
-    intro: "Principal puerto histórico de Veracruz con acceso directo al icónico Castillo de San Juan de Ulúa y al Malecón más visitado de México.",
-    tips: [
-      "Visita el Castillo por la mañana cuando hay menos turistas",
-      "El Malecón es perfecto para paseos al atardecer con vistas del Golfo de México",
-      "Compra artesanías locales en los puestos cercanos"
-    ],
-    mejor_horario: "7:00 AM a 6:00 PM",
-    mundial_relevancia: "Será centro de recepción de turistas internacionales durante el Mundial 2026, con museos de historia portuaria y eventos culturales."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Puerto operativo 24 horas, paseos públicos disponibles"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Instalaciones modernas con accesibilidad completa"
+    }
   },
   {
-    slug: "centro-historico",
+    id: 2,
     nombre: "Centro Histórico",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Centro Urbano",
-    pois: [
-      { nombre: "Parroquia Metropolitana", tipo: "Iglesia Histórica", distancia: "150m" },
-      { nombre: "Zócalo de Veracruz", tipo: "Plaza Pública", distancia: "300m" },
-      { nombre: "Museo Naval", tipo: "Museo", distancia: "400m" }
+    ubicacion: "Casco colonial veracruzano",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Corazón colonial de Veracruz con cuatro siglos de historia portuaria. Zona de patrimonio con zócalo, fortificaciones españolas y arquitectura que mezcla influencias del Caribe, España y México.",
+    lugares_cercanos: [
+      {
+        nombre: "Zócalo de Veracruz",
+        tipo: "Plaza Principal",
+        distancia: "0.2 km",
+        descripcion: "Plaza central con portales históricos y vida social veracruzana"
+      },
+      {
+        nombre: "Catedral Metropolitana",
+        tipo: "Templo",
+        distancia: "0.15 km",
+        descripcion: "Iglesia colonial del siglo XVI, símbolo religioso de Veracruz"
+      },
+      {
+        nombre: "Orquesta Sinfónica",
+        tipo: "Cultura",
+        distancia: "0.3 km",
+        descripcion: "Presentaciones musicales en salones históricos"
+      },
+      {
+        nombre: "Galerías de Arte",
+        tipo: "Arte",
+        distancia: "0.25 km",
+        descripcion: "Espacios dedicados al arte contemporáneo veracruzano"
+      }
     ],
-    transferencias: ["Autobús 2 a Playa", "Autobús 3 a Loma de Lara"],
-    seo_title: "Centro Histórico - Estación Veracruz | MetroGuia",
-    meta_description: "Centro Histórico de Veracruz. Iglesia Metropolitana, Zócalo y Museo Naval.",
-    h1: "Centro Histórico — Veracruz",
-    intro: "Corazón colonial de Veracruz con arquitectura de los siglos XVI-XVIII, plazas vibrantes y museos que cuentan la historia portuaria.",
-    tips: [
-      "La Parroquia Metropolitana ofrece vistas panorámicas desde su campanario",
-      "El Zócalo es ideal para cenar con vista al mar",
-      "Visita el Museo Naval para entender la importancia estratégica del puerto"
-    ],
-    mejor_horario: "8:00 AM a 7:00 PM",
-    mundial_relevancia: "Centro de eventos culturales y hospedaje durante el Mundial. Muchos turistas visitarán iglesias y plazas históricas."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Centro comercial y cultural con actividad constante"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Calles coloniales con adoquines, rampas en sitios principales"
+    }
   },
   {
-    slug: "baluarte-san-carlos",
+    id: 3,
     nombre: "Baluarte San Carlos",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Zona Cultural",
-    pois: [
-      { nombre: "Baluarte de San Carlos", tipo: "Fuerte Histórico", distancia: "100m" },
-      { nombre: "Mercado de las Flores", tipo: "Mercado", distancia: "250m" }
+    ubicacion: "Fortificación histórica",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Fortaleza colonial del siglo XVII, baluarte defensivo histórico de Veracruz. Museo y estructura conservada que representa la importancia estratégica portuaria durante conquista y colonización.",
+    lugares_cercanos: [
+      {
+        nombre: "Baluarte de San Carlos",
+        tipo: "Fortaleza",
+        distancia: "0.2 km",
+        descripcion: "Fuerte colonial con estructura defensiva preservada"
+      },
+      {
+        nombre: "Museo de Fortificaciones",
+        tipo: "Museo",
+        distancia: "0.15 km",
+        descripcion: "Exhibiciones sobre historia militar y fortificaciones coloniales"
+      },
+      {
+        nombre: "Paseo de las Murallas",
+        tipo: "Ruta Histórica",
+        distancia: "0.3 km",
+        descripcion: "Recorrido por sistema defensivo colonial restaurado"
+      }
     ],
-    transferencias: ["Autobús 1 a Puerto", "Autobús 4 a Playa Hornos"],
-    seo_title: "Baluarte San Carlos - Estación Veracruz | MetroGuia",
-    meta_description: "Baluarte San Carlos en Veracruz. Fortín histórico y Mercado de las Flores.",
-    h1: "Baluarte San Carlos — Veracruz",
-    intro: "Fortificación del siglo XVII que protegía la ciudad, ahora convertida en monumento con vistas al golfo y acceso al tradicional mercado floral.",
-    tips: [
-      "El Baluarte ofrece excelentes vistas fotográficas del atardecer",
-      "El Mercado de las Flores es perfecto para llevar recuerdos florales",
-      "La zona tiene vendedores de comida típica veracruzana"
-    ],
-    mejor_horario: "9:00 AM a 6:00 PM",
-    mundial_relevancia: "Sitio de interés histórico-cultural para turistas internacionales interesados en fortificaciones coloniales."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Museo abierto 10:00-18:00, fortaleza accesible durante horas luz"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampas de acceso a áreas principales del baluarte"
+    }
   },
   {
-    slug: "playa-hornos",
+    id: 4,
     nombre: "Playa Hornos",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Playa Turística",
-    pois: [
-      { nombre: "Playa Hornos", tipo: "Playa Pública", distancia: "50m" },
-      { nombre: "Aquarium de Veracruz", tipo: "Acuario", distancia: "800m" }
+    ubicacion: "Zona de playa",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a playas urbanas de Veracruz, costas históricas con arena y mar del Golfo. Centro de recreación acuática y descanso en ambiente portuario con vista a barcos.",
+    lugares_cercanos: [
+      {
+        nombre: "Playa Hornos",
+        tipo: "Playa",
+        distancia: "0.2 km",
+        descripcion: "Playa en el centro de Veracruz con servicios"
+      },
+      {
+        nombre: "Restaurantes de Mariscos",
+        tipo: "Gastronomía",
+        distancia: "0.3 km",
+        descripcion: "Especialidades de mariscos frescos y cocina veracruzana"
+      },
+      {
+        nombre: "Bares y Cantinas Históricas",
+        tipo: "Entretenimiento",
+        distancia: "0.25 km",
+        descripcion: "Establecimientos tradicionales con música y ambiente local"
+      }
     ],
-    transferencias: ["Autobús 2 a Centro", "Autobús 5 a Mocambo"],
-    seo_title: "Playa Hornos - Estación Veracruz | MetroGuia",
-    meta_description: "Playa Hornos en Veracruz. Playa de arena clara con acceso al famoso Acuario.",
-    h1: "Playa Hornos — Veracruz",
-    intro: "Extensa playa con arena clara frente al Golfo de México, punto de partida para visitar el afamado Acuario de Veracruz.",
-    tips: [
-      "Trae protector solar, la exposición al sol es intensa",
-      "Nada solo en áreas vigiladas por salvavidas",
-      "El Acuario es mejor visitarlo por la tarde cuando hay menos multitud"
-    ],
-    mejor_horario: "8:00 AM a 7:00 PM",
-    mundial_relevancia: "Principal playa urbana de Veracruz para turistas. Ofrecerá eventos deportivos y entretenimiento acuático durante el Mundial."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Playas accesibles durante horas diurnas y nocturnas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampa de acceso a playa, baños públicos accesibles"
+    }
   },
   {
-    slug: "acuario",
+    id: 5,
     nombre: "Acuario",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Atracción Turística",
-    pois: [
-      { nombre: "Acuarium de Veracruz", tipo: "Acuario", distancia: "200m" },
-      { nombre: "Playa Mocambo", tipo: "Playa", distancia: "1km" }
+    ubicacion: "Centro turístico",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso al Acuario de Veracruz, atracción turística principal de la ciudad. Centro de educación marina con exhibiciones de fauna del Golfo de México y del Caribe en tanques interactivos.",
+    lugares_cercanos: [
+      {
+        nombre: "Acuario de Veracruz",
+        tipo: "Museo",
+        distancia: "0.1 km",
+        descripcion: "Acuario con exhibiciones de tiburones, mantas y fauna marina"
+      },
+      {
+        nombre: "Tienda de Recuerdos",
+        tipo: "Comercio",
+        distancia: "0.15 km",
+        descripcion: "Tienda de souvenirs y artículos del acuario"
+      },
+      {
+        nombre: "Restaurante Acuario",
+        tipo: "Gastronomía",
+        distancia: "0.2 km",
+        descripcion: "Restaurante con vistas al océano dentro del acuario"
+      }
     ],
-    transferencias: ["Autobús 1 a Playa Hornos", "Autobús 6 a Loma de Lara"],
-    seo_title: "Acuario - Estación Veracruz | MetroGuia",
-    meta_description: "Acuarium de Veracruz. Uno de los acuarios más grandes de América Latina.",
-    h1: "Acuario — Veracruz",
-    intro: "Uno de los acuarios más grandes de América Latina con miles de especies marinas del Golfo de México y otras regiones.",
-    tips: [
-      "Compra boletos en línea para evitar filas",
-      "Dedica al menos 3 horas para recorrer el acuario completo",
-      "Los tiburones se alimentan los jueves a las 3 PM"
-    ],
-    mejor_horario: "10:00 AM a 6:00 PM",
-    mundial_relevancia: "Atracción familiar clave para turistas internacionales con niños. Entrada a museo océanico educativo."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Acuario abierto 9:00-18:00 diariamente"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Instalación moderna con accesibilidad total"
+    }
   },
   {
-    slug: "playa-mocambo",
+    id: 6,
     nombre: "Playa Mocambo",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Playa Turística",
-    pois: [
-      { nombre: "Playa Mocambo", tipo: "Playa", distancia: "100m" },
-      { nombre: "Restaurantes Frente al Mar", tipo: "Restaurante", distancia: "200m" }
+    ubicacion: "Zona costera sur",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a playa de Mocambo, balneario histórico veracruzano con extensas arenas. Zona residencial y de playa con hoteles, restaurantes y servicios completos de playa.",
+    lugares_cercanos: [
+      {
+        nombre: "Playa Mocambo",
+        tipo: "Playa",
+        distancia: "0.3 km",
+        descripcion: "Playa extensa con arena fina y servicios de playa"
+      },
+      {
+        nombre: "Hotel Mocambo",
+        tipo: "Hospedaje",
+        distancia: "0.2 km",
+        descripcion: "Hotel histórico con arquitectura vintage veracruzana"
+      },
+      {
+        nombre: "Restaurantes de Playa",
+        tipo: "Gastronomía",
+        distancia: "0.25 km",
+        descripcion: "Comedores con mariscos frescos frente a la playa"
+      }
     ],
-    transferencias: ["Autobús 1 a Acuario", "Autobús 7 a Boca del Río"],
-    seo_title: "Playa Mocambo - Estación Veracruz | MetroGuia",
-    meta_description: "Playa Mocambo en Veracruz. Playa exclusiva con resorts de lujo frente al mar.",
-    h1: "Playa Mocambo — Veracruz",
-    intro: "Elegante zona costera con resorts de lujo, restaurantes frente al mar y arena blanca, ideal para descanso y gastronomía marina.",
-    tips: [
-      "Los restaurantes frente al mar ofrecen ceviches y pescado fresco",
-      "La playa tiene menos olas y es más tranquila que Hornos",
-      "Reserva mesa en restaurantes desde la tarde para cenar con vista al atardecer"
-    ],
-    mejor_horario: "10:00 AM a 9:00 PM",
-    mundial_relevancia: "Zona hotelera premium para turistas internacionales de alto presupuesto durante el Mundial 2026."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Playas y servicios operativos durante el día"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Rampa de acceso a playa, servicios sanitarios disponibles"
+    }
   },
   {
-    slug: "boca-del-rio",
+    id: 7,
     nombre: "Boca del Río",
-    linea: "1",
-    municipio: "Boca del Río",
-    tipo_zona: "Zona Turística",
-    pois: [
-      { nombre: "Boulevard Xico Tlamanalco", tipo: "Paseo Comercial", distancia: "300m" },
-      { nombre: "Marina Veracruz", tipo: "Marina", distancia: "500m" }
+    ubicacion: "Desembocadura del río",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a zona de Boca del Río, desarrollo turístico moderno en desembocadura del Río Papaloapan. Centro de gastronomía de mariscos, paseos acuáticos y desarrollo residencial frente al mar.",
+    lugares_cercanos: [
+      {
+        nombre: "Paseo Boca del Río",
+        tipo: "Paseo Turístico",
+        distancia: "0.3 km",
+        descripcion: "Avenida costera con tiendas, bares y restaurantes"
+      },
+      {
+        nombre: "Restaurantes de Mariscos",
+        tipo: "Gastronomía",
+        distancia: "0.2 km",
+        descripcion: "Restaurantes especializados en cocina marina veracruzana"
+      },
+      {
+        nombre: "Marina Turística",
+        tipo: "Servicios",
+        distancia: "0.25 km",
+        descripcion: "Paseos en barco y agua taxís por el río y bahía"
+      }
     ],
-    transferencias: ["Autobús 1 a Playa Mocambo", "Autobús 8 a Mandinga"],
-    seo_title: "Boca del Río - Estación Veracruz | MetroGuia",
-    meta_description: "Boca del Río. Centro turístico moderno con tiendas, restaurantes y vida nocturna.",
-    h1: "Boca del Río — Veracruz",
-    intro: "Moderna zona costera con tiendas, restaurantes de clase mundial, vida nocturna vibrante y puerto deportivo con yates privados.",
-    tips: [
-      "El Boulevard tiene tiendas internacionales y locales de lujo",
-      "Prueba los restaurantes de mariscos frescos",
-      "La Marina es punto de salida para tours en barco al Fuerte de San Juan"
-    ],
-    mejor_horario: "10:00 AM a 11:00 PM",
-    mundial_relevancia: "Centro de entretenimiento gastronómico y comercial para visitantes del Mundial con establecimientos de categoría internacional."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles hasta 22:00 en promedio"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Desarrollo moderno con estándares completos de accesibilidad"
+    }
   },
   {
-    slug: "mandinga",
+    id: 8,
     nombre: "Mandinga",
-    linea: "1",
-    municipio: "Boca del Río",
-    tipo_zona: "Zona Costera",
-    pois: [
-      { nombre: "Playa Mandinga", tipo: "Playa", distancia: "200m" },
-      { nombre: "Arrecife Blanquilla", tipo: "Snorkel", distancia: "3km en barco" }
+    ubicacion: "Pueblo costero",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a Mandinga, pueblo costero tradicional cerca de Veracruz. Comunidad de pescadores con ambiente auténtico, restaurantes de mariscos y playa con carácter local.",
+    lugares_cercanos: [
+      {
+        nombre: "Playa de Mandinga",
+        tipo: "Playa",
+        distancia: "0.2 km",
+        descripcion: "Playa de pescadores con arena y vista del Golfo"
+      },
+      {
+        nombre: "Restaurantes de Pescado Fresco",
+        tipo: "Gastronomía",
+        distancia: "0.15 km",
+        descripcion: "Comedores con pescado capturado localmente"
+      },
+      {
+        nombre: "Mercado de Pescado",
+        tipo: "Comercio",
+        distancia: "0.2 km",
+        descripcion: "Venta de mariscos y pescados frescos de la zona"
+      }
     ],
-    transferencias: ["Autobús 1 a Boca del Río", "Bote a arrecifes"],
-    seo_title: "Mandinga - Estación Veracruz | MetroGuia",
-    meta_description: "Mandinga. Playa tranquila punto de partida para buceo y snorkel en arrecifes.",
-    h1: "Mandinga — Veracruz",
-    intro: "Tranquila comunidad costera especializada en tours de buceo y snorkel en los arrecifes coralinos del Golfo de México.",
-    tips: [
-      "Contrata tours de snorkel con operadores certificados",
-      "Lleva tu propio equipo de buceo o renta en la playa",
-      "Los arrecifes tienen mejor visibilidad en verano"
-    ],
-    mejor_horario: "8:00 AM a 5:00 PM",
-    mundial_relevancia: "Actividades acuáticas especializadas para turistas aventureros durante el Mundial."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Mercado activo desde 6:00, restaurantes hasta 20:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: false,
+      banos_accesibles: true,
+      notas: "Pueblo con calles no totalmente accesibles, baños disponibles"
+    }
   },
   {
-    slug: "loma-de-lara",
+    id: 9,
     nombre: "Loma de Lara",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Zona Residencial",
-    pois: [
-      { nombre: "Parque Loma de Lara", tipo: "Parque", distancia: "100m" }
+    ubicacion: "Zona residencial elevada",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a zona residencial de Loma de Lara, área elevada con vistas de Veracruz y puerto. Zona de desarrollo urbano contemporáneo con comercios y servicios modernos.",
+    lugares_cercanos: [
+      {
+        nombre: "Mirador Loma de Lara",
+        tipo: "Mirador",
+        distancia: "0.4 km",
+        descripcion: "Punto elevado con vistas de puerto y ciudad"
+      },
+      {
+        nombre: "Centro Comercial",
+        tipo: "Comercio",
+        distancia: "0.3 km",
+        descripcion: "Tiendas y servicios de zona residencial"
+      },
+      {
+        nombre: "Parque Recreativo",
+        tipo: "Parque",
+        distancia: "0.2 km",
+        descripcion: "Área verde con juegos y áreas de descanso"
+      }
     ],
-    transferencias: ["Autobús 1 a Centro", "Autobús 9 a Puerto"],
-    seo_title: "Loma de Lara - Estación Veracruz | MetroGuia",
-    meta_description: "Loma de Lara. Barrio residencial con parque verde y vistas de la ciudad.",
-    h1: "Loma de Lara — Veracruz",
-    intro: "Barrio residencial elevado con amplio parque y vistas panorámicas de Veracruz, ideal para descanso y paseos locales.",
-    tips: [
-      "El parque es perfecto para correr o hacer ejercicio matutino",
-      "Las vistas desde la loma son excelentes para fotografía al atardecer",
-      "Hay vendedores de comida local típica alrededor del parque"
-    ],
-    mejor_horario: "6:00 AM a 8:00 PM",
-    mundial_relevancia: "Punto de descanso y recreación para turistas que buscan alejarse del bullicio del centro."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Comercios operativos hasta 21:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Zona moderna con infraestructura accesible"
+    }
   },
   {
-    slug: "museo-antropologia",
+    id: 10,
     nombre: "Museo de Antropología",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Zona Cultural",
-    pois: [
-      { nombre: "Museo de Antropología de Xalapa", tipo: "Museo", distancia: "1km" }
+    ubicacion: "Centro cultural",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso al Museo de Antropología de Xalapa, uno de los museos más importantes de México. Colecciones de arte prehispánico, especialmente cabezas colosales olmecas y cultura veracruzana antigua.",
+    lugares_cercanos: [
+      {
+        nombre: "Museo de Antropología de Xalapa",
+        tipo: "Museo",
+        distancia: "0.5 km",
+        descripcion: "Museo con colecciones de arte olmeca y mesoamericano"
+      },
+      {
+        nombre: "Parque Museo",
+        tipo: "Parque",
+        distancia: "0.3 km",
+        descripcion: "Jardines con esculturas y espacios abiertos del museo"
+      },
+      {
+        nombre: "Tienda del Museo",
+        tipo: "Comercio",
+        distancia: "0.2 km",
+        descripcion: "Tienda de libros y reproducciones de arte prehispánico"
+      }
     ],
-    transferencias: ["Autobús 1 a Loma de Lara", "Autobús 10 a La Caleta"],
-    seo_title: "Museo de Antropología - Estación Veracruz | MetroGuia",
-    meta_description: "Museo de Antropología. Artefactos olmecas y mayas de importancia mundial.",
-    h1: "Museo de Antropología — Veracruz",
-    intro: "Museo de clase mundial con colecciones de civilizaciones olmecas, mayas y totonacas, incluyendo la famosa Cabeza Olmeca.",
-    tips: [
-      "Contrata un guía para entender mejor las civilizaciones prehispánicas",
-      "La colección olmeca es la más importante del mundo",
-      "Permite 2-3 horas para visita completa"
-    ],
-    mejor_horario: "9:00 AM a 6:00 PM",
-    mundial_relevancia: "Museo de importancia mundial para turistas interesados en arqueología mesoamericana."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Museo abierto 9:00-17:00 cerrado lunes"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Museo con accesibilidad completa y ascensores"
+    }
   },
   {
-    slug: "la-caleta",
+    id: 11,
     nombre: "La Caleta",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Barrio Tradicional",
-    pois: [
-      { nombre: "Faro de Veracruz", tipo: "Hito Histórico", distancia: "300m" },
-      { nombre: "Mercado de Mariscos", tipo: "Mercado", distancia: "200m" }
+    ubicacion: "Caleta histórica",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Acceso a La Caleta, caleta de pescadores histórica de Veracruz. Sitio tradicional de marinería con restaurantes de mariscos, venta de pescado fresco y ambiente de puerto de trabajo.",
+    lugares_cercanos: [
+      {
+        nombre: "Caleta de Pescadores",
+        tipo: "Puerto Tradicional",
+        distancia: "0.1 km",
+        descripcion: "Embarcadero de pesca con barcas de trabajo tradicional"
+      },
+      {
+        nombre: "Restaurantes de Pescado",
+        tipo: "Gastronomía",
+        distancia: "0.15 km",
+        descripcion: "Comedores frente a la caleta con pescado fresco"
+      },
+      {
+        nombre: "Venta de Captura del Día",
+        tipo: "Comercio",
+        distancia: "0.2 km",
+        descripcion: "Venta directa de pescado recién capturado"
+      }
     ],
-    transferencias: ["Autobús 1 a Museo", "Autobús 11 a Puerto Bello"],
-    seo_title: "La Caleta - Estación Veracruz | MetroGuia",
-    meta_description: "La Caleta. Barrio pesquero tradicional con faro histórico y mercado de mariscos.",
-    h1: "La Caleta — Veracruz",
-    intro: "Tradicional barrio pesquero veracruzano con su icónico faro blanco y rojo, mercado de mariscos frescos y vida cotidiana auténtica.",
-    tips: [
-      "Compra mariscos frescos directamente del mercado",
-      "El faro es símbolo de Veracruz, perfecto para fotos",
-      "Prueba huachinango a la veracruzana en restaurantes locales"
-    ],
-    mejor_horario: "9:00 AM a 7:00 PM",
-    mundial_relevancia: "Experiencia auténtica de Veracruz tradicional para turistas que buscan cultura local genuina."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Caleta activa desde madrugada, restaurantes hasta 20:00"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: false,
+      rampas: true,
+      banos_accesibles: false,
+      notas: "Acceso mediante rampas, pero área con tráfico de trabajo"
+    }
   },
   {
-    slug: "terminal-autobuses",
+    id: 12,
     nombre: "Terminal de Autobuses",
-    linea: "1",
-    municipio: "Veracruz",
-    tipo_zona: "Hub de Transporte",
-    pois: [
-      { nombre: "Central de Autobuses", tipo: "Terminal", distancia: "50m" }
+    ubicacion: "Central de transporte",
+    linea: "BRT Veracruz",
+    descripcion_turistica: "Terminal foránea de Veracruz, punto de llegada y salida de transporte a ciudades vecinas y regiones del país. Nodo importante de conectividad del sistema de transporte veracruzano.",
+    lugares_cercanos: [
+      {
+        nombre: "Terminal de Autobuses",
+        tipo: "Transporte",
+        distancia: "0.1 km",
+        descripcion: "Central con autobuses a destinos nacionales"
+      },
+      {
+        nombre: "Servicios de Terminal",
+        tipo: "Comercio",
+        distancia: "0.15 km",
+        descripcion: "Tiendas, restaurantes y servicios en terminal"
+      },
+      {
+        nombre: "Hotel Terminal",
+        tipo: "Hospedaje",
+        distancia: "0.2 km",
+        descripcion: "Alojamiento para viajeros en tránsito"
+      }
     ],
-    transferencias: ["Conexiones a todo Veracruz", "Autobús 12 a Puerto Bello"],
-    seo_title: "Terminal de Autobuses - Estación Veracruz | MetroGuia",
-    meta_description: "Terminal de Autobuses de Veracruz. Hub de transporte interurbano.",
-    h1: "Terminal de Autobuses — Veracruz",
-    intro: "Principal terminal de autobuses de Veracruz, punto de conexión con ciudades cercanas como Xalapa, Córdoba y otras regiones del Golfo.",
-    tips: [
-      "Compra boletos con anticipación en temporada alta",
-      "La terminal tiene servicios básicos: restaurantes, cajeros, sanitarios",
-      "Hay taxis organizados para ir al centro"
-    ],
-    mejor_horario: "6:00 AM a 10:00 PM",
-    mundial_relevancia: "Entrada principal para turistas que llegan por tierra desde otras ciudades durante el Mundial 2026."
+    horarios: {
+      lunes_viernes: "05:00 - 23:00",
+      sabado: "05:00 - 23:00",
+      domingo: "06:00 - 22:00",
+      notas: "Servicios disponibles 24 horas"
+    },
+    accesibilidad: {
+      silla_ruedas: true,
+      ascensores: true,
+      rampas: true,
+      banos_accesibles: true,
+      notas: "Terminal moderna con accesibilidad completa"
+    }
   }
 ];
