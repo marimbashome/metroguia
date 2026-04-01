@@ -11,10 +11,13 @@ export const dynamicParams = true
 // Cache pages forever (they don't change — metro map is static)
 export const revalidate = false
 
-// Pre-build the 4,742 most popular routes at build time.
-// The remaining ~19,400 routes are generated on first request (ISR).
+// Pre-build only the top ~200 high-value routes at build time (FIFA + airport + hubs).
+// The remaining ~4,680 curated routes + all other combos are generated on first request (ISR).
+// This keeps the Vercel Hobby build under the 45-minute limit.
+const MAX_STATIC_ROUTES = 200
+
 export function generateStaticParams() {
-  return rutasPopulares.map(r => ({
+  return rutasPopulares.slice(0, MAX_STATIC_ROUTES).map(r => ({
     slug: `${r.origen}-a-${r.destino}`,
   }))
 }
