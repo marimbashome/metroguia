@@ -3,12 +3,19 @@ import { lineasDetalle } from '@/data/lineas-detalle';
 import { rutasPopulares, parseRutaSlug, buildRutaSlug, findRuta, getRelatedRoutes } from '@/data/rutas-populares';
 import { buildGraph, buildEstacionesMap, findRoute, formatSegments, estimateTime, COSTO_METRO } from '@/lib/rutas';
 
-/**
- * generateStaticParams: Solo genera las ~60 rutas curadas
- * Evita generar los 18,000 posibles combos
- */
+// ISR: allow any curated route slug, not just pre-built ones
+export const dynamicParams = true
+
+// Cache pages forever (metro map is static)
+export const revalidate = false
+
+// Pre-build only top 50 routes at build time.
+// The remaining ~4,830 curated routes are generated on first request (ISR).
+// This keeps the Vercel Hobby build under the 45-minute limit.
+const MAX_STATIC_ROUTES = 50
+
 export function generateStaticParams() {
-  return rutasPopulares.map(ruta => ({
+  return rutasPopulares.slice(0, MAX_STATIC_ROUTES).map(ruta => ({
     ruta: buildRutaSlug(ruta.origen, ruta.destino)
   }));
 }
