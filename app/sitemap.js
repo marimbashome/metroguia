@@ -105,6 +105,26 @@ function entry(path, changeFrequency, priority) {
   };
 }
 
+// Entry with hreflang alternates for i18n pages
+function i18nEntry(basePath, changeFrequency, priority, lang) {
+  const languages = ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'];
+  const url = lang === 'es'
+    ? `${BASE_URL}${basePath}`
+    : `${BASE_URL}/${lang}${basePath}`;
+
+  return {
+    url,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: Object.fromEntries(
+        languages.map(l => [l, l === 'es' ? `${BASE_URL}${basePath}` : `${BASE_URL}/${l}${basePath}`])
+      ),
+    },
+  };
+}
+
 function mapEstaciones(list, ciudad) {
   return (list || []).map((e) =>
     entry(
@@ -287,21 +307,22 @@ function getMundialUrls() {
 
 function getI18nUrls() {
   const languages = ['en', 'pt', 'fr', 'de', 'ja', 'ko'];
+  const allLangs = ['es', ...languages];
   const urls = [];
 
-  // Home in all languages
-  languages.forEach(lang => {
-    urls.push(entry(`/${lang}/`, 'weekly', 0.95));
-  });
+  // Key pages with full hreflang alternates
+  const keyPages = [
+    { path: '/', freq: 'weekly', priority: 0.95 },
+    { path: '/cdmx/', freq: 'weekly', priority: 0.9 },
+    { path: '/gdl/', freq: 'weekly', priority: 0.9 },
+    { path: '/mty/', freq: 'weekly', priority: 0.9 },
+    { path: '/mundial-2026/', freq: 'monthly', priority: 0.85 },
+  ];
 
-  // CDMX hub in all languages
-  languages.forEach(lang => {
-    urls.push(entry(`/${lang}/cdmx/`, 'weekly', 0.9));
-  });
-
-  // FIFA 2026 hub in all languages
-  languages.forEach(lang => {
-    urls.push(entry(`/${lang}/mundial-2026/`, 'monthly', 0.85));
+  keyPages.forEach(({ path, freq, priority }) => {
+    allLangs.forEach(lang => {
+      urls.push(i18nEntry(path, freq, priority, lang));
+    });
   });
 
   // CDMX stations in all languages (155 × 6 = 930)

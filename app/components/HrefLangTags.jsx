@@ -18,9 +18,15 @@ export default function HrefLangTags() {
     const currentLang = segments[0] && ['en', 'pt', 'fr', 'de', 'ja', 'ko'].includes(segments[0])
       ? segments[0]
       : 'es'
-    const basePath = currentLang === 'es'
-      ? pathname
-      : '/' + segments.slice(1).join('/')
+    // Strip language prefix to get the base content path
+    let basePath
+    if (currentLang !== 'es') {
+      basePath = '/' + segments.slice(1).join('/')
+    } else if (pathname.startsWith('/es/') || pathname === '/es') {
+      basePath = pathname.replace(/^\/es/, '') || '/'
+    } else {
+      basePath = pathname
+    }
 
     // Add hreflang for each language
     LANGUAGES.forEach(lang => {
