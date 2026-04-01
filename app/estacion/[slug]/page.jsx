@@ -13,8 +13,11 @@ export function generateMetadata({ params }) {
   const estacion = estaciones.find((e) => e.slug === params.slug)
   if (!estacion) return { title: 'Estación no encontrada | MetroGuia' }
 
+  // Derive primary line from lineas array (data uses plural "lineas")
+  const linea = lineas?.[0] || linea || '?'
+
   // SEO-optimized title: "Estación {Nombre} — Línea {X} Metro CDMX | MetroGuia"
-  const title = `Estación ${estacion.nombre} — Línea ${estacion.linea} Metro CDMX | MetroGuia`
+  const title = `Estación ${estacion.nombre} — Línea ${linea} Metro CDMX | MetroGuia`
 
   // Dynamic meta description: unique per station, ~155 chars, transfers + POIs + alcaldía
   const transbordos = estacion.transferencias && estacion.transferencias.length > 0
@@ -27,13 +30,13 @@ export function generateMetadata({ params }) {
 
   const alcaldiaText = estacion.alcaldia ? `Ubicada en ${estacion.alcaldia}. ` : ''
 
-  const description = `Estación ${estacion.nombre} de la Línea ${estacion.linea} del Metro CDMX. ${transbordos}${pois}${alcaldiaText}Horarios, accesibilidad y cómo llegar.`
+  const description = `Estación ${estacion.nombre} de la Línea ${linea} del Metro CDMX. ${transbordos}${pois}${alcaldiaText}Horarios, accesibilidad y cómo llegar.`
 
   return {
     title,
     description,
     openGraph: {
-      title: `Metro ${estacion.nombre} — Línea ${estacion.linea} CDMX`,
+      title: `Metro ${estacion.nombre} — Línea ${linea} CDMX`,
       description,
       url: `https://metroguia.mx/estacion/${estacion.slug}/`,
       siteName: 'MetroGuia',
@@ -54,6 +57,9 @@ export default function EstacionPage({ params }) {
     </div>
   )
 
+  // Derive primary line from lineas array (data uses plural "lineas")
+  const linea = lineas?.[0] || linea || '?'
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
@@ -70,8 +76,8 @@ export default function EstacionPage({ params }) {
     },
     containedInPlace: {
       '@type': 'CivicStructure',
-      name: `Línea ${estacion.linea} del Metro CDMX`,
-      url: `https://metroguia.mx/linea/${estacion.linea}/`,
+      name: `Línea ${linea} del Metro CDMX`,
+      url: `https://metroguia.mx/linea/${linea}/`,
     },
   }
 
@@ -94,8 +100,8 @@ export default function EstacionPage({ params }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: `Línea ${estacion.linea}`,
-        item: `https://metroguia.mx/linea/${estacion.linea}/`
+        name: `Línea ${linea}`,
+        item: `https://metroguia.mx/linea/${linea}/`
       },
       {
         '@type': 'ListItem',
@@ -115,7 +121,7 @@ export default function EstacionPage({ params }) {
     name: `¿Cómo llego a la estación ${estacion.nombre}?`,
     acceptedAnswer: {
       '@type': 'Answer',
-      text: `La estación ${estacion.nombre} está ubicada en la Alcaldía ${estacion.alcaldia} y pertenece a la Línea ${estacion.linea} del Metro CDMX. Puedes acceder desde las principales estaciones conectadas a través de sus transferencias.${estacion.transferencias && estacion.transferencias.length > 0 ? ` Las líneas de transferencia disponibles son: Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}. ` : ''} Consulta el mapa del metro o usa nuestro planificador de rutas para obtener direcciones específicas.`
+      text: `La estación ${estacion.nombre} está ubicada en la Alcaldía ${estacion.alcaldia} y pertenece a la Línea ${linea} del Metro CDMX. Puedes acceder desde las principales estaciones conectadas a través de sus transferencias.${estacion.transferencias && estacion.transferencias.length > 0 ? ` Las líneas de transferencia disponibles son: Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}. ` : ''} Consulta el mapa del metro o usa nuestro planificador de rutas para obtener direcciones específicas.`
     }
   })
 
@@ -138,7 +144,7 @@ export default function EstacionPage({ params }) {
     name: `¿Cuál es el horario de la estación ${estacion.nombre}?`,
     acceptedAnswer: {
       '@type': 'Answer',
-      text: `El Metro CDMX opera de lunes a viernes de 5:00 AM a 12:00 AM (medianoche), sábados de 6:00 AM a 12:00 AM, y domingos y festivos de 7:00 AM a 12:00 AM. La estación ${estacion.nombre} (Línea ${estacion.linea}) sigue estos horarios estándar. Para un mejor viaje, consulta nuestra sección "Mejor horario para visitar" que ofrece recomendaciones específicas para evitar horas pico.`
+      text: `El Metro CDMX opera de lunes a viernes de 5:00 AM a 12:00 AM (medianoche), sábados de 6:00 AM a 12:00 AM, y domingos y festivos de 7:00 AM a 12:00 AM. La estación ${estacion.nombre} (Línea ${linea}) sigue estos horarios estándar. Para un mejor viaje, consulta nuestra sección "Mejor horario para visitar" que ofrece recomendaciones específicas para evitar horas pico.`
     }
   })
 
@@ -164,7 +170,7 @@ export default function EstacionPage({ params }) {
       name: `¿Qué líneas pasan por la estación ${estacion.nombre}?`,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `La estación ${estacion.nombre} es una parada principal de la Línea ${estacion.linea} del Metro CDMX. Además, esta estación cuenta con transferencias directas a las Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}, lo que la convierte en un punto de conexión importante en la red del Metro. Esto permite acceso rápido a múltiples destinos en la ciudad.`
+        text: `La estación ${estacion.nombre} es una parada principal de la Línea ${linea} del Metro CDMX. Además, esta estación cuenta con transferencias directas a las Línea${estacion.transferencias.length > 1 ? 's' : ''} ${estacion.transferencias.join(', ')}, lo que la convierte en un punto de conexión importante en la red del Metro. Esto permite acceso rápido a múltiples destinos en la ciudad.`
       }
     })
   }
@@ -236,7 +242,7 @@ export default function EstacionPage({ params }) {
           }}>
             <a href="/cdmx/" style={{ color: 'var(--primary)' }}>CDMX</a>
             <span>/</span>
-            <a href={`/linea/${estacion.linea}/`} style={{ color: 'var(--primary)' }}>Línea {estacion.linea}</a>
+            <a href={`/linea/${linea}/`} style={{ color: 'var(--primary)' }}>Línea {linea}</a>
             <span>/</span>
             <span style={{ color: 'var(--text)' }}>{estacion.nombre}</span>
           </div>
@@ -246,7 +252,7 @@ export default function EstacionPage({ params }) {
       {/* ── HERO SECTION ── */}
       <section style={{
         background: heroGradient,
-        borderBottom: `2px solid var(${lineaClasses[estacion.linea]})`,
+        borderBottom: `2px solid var(${lineaClasses[linea]})`,
         padding: '3rem 1.25rem 2.5rem',
       }}>
         <div className="container" style={{ maxWidth: '1000px' }}>
@@ -265,14 +271,14 @@ export default function EstacionPage({ params }) {
               width: '3.5rem',
               height: '3.5rem',
               borderRadius: '50%',
-              backgroundColor: `var(${lineaClasses[estacion.linea]})`,
-              color: estacion.linea === '5' ? '#000' : 'white',
+              backgroundColor: `var(${lineaClasses[linea]})`,
+              color: linea === '5' ? '#000' : 'white',
               fontWeight: 800,
               fontSize: '1.25rem',
               flexShrink: 0,
               boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
             }}>
-              {estacion.linea}
+              {linea}
             </div>
 
             {/* Station info */}
@@ -294,7 +300,7 @@ export default function EstacionPage({ params }) {
                 flexWrap: 'wrap',
                 marginBottom: '0.5rem',
               }}>
-                <span className="badge badge-primary">Línea {estacion.linea}</span>
+                <span className="badge badge-primary">Línea {linea}</span>
                 {estacion.tipo_zona && (
                   <span className="badge" style={{
                     backgroundColor: 'var(--surface-hover)',
@@ -363,9 +369,9 @@ export default function EstacionPage({ params }) {
               <div style={{
                 fontSize: '1.5rem',
                 fontWeight: 800,
-                color: `var(${lineaClasses[estacion.linea]})`,
+                color: `var(${lineaClasses[linea]})`,
               }}>
-                {estacion.linea}
+                {linea}
               </div>
               <div style={{
                 fontSize: '0.75rem',
@@ -619,7 +625,7 @@ export default function EstacionPage({ params }) {
             <div className="card" style={{
               padding: '1.5rem',
               backgroundColor: 'var(--surface)',
-              borderLeft: `4px solid var(${lineaClasses[estacion.linea]})`,
+              borderLeft: `4px solid var(${lineaClasses[linea]})`,
             }}>
               <p style={{
                 fontSize: '0.95rem',
@@ -943,7 +949,7 @@ export default function EstacionPage({ params }) {
             marginBottom: '1rem',
           }}>
             <a
-              href={`/linea/${estacion.linea}/`}
+              href={`/linea/${linea}/`}
               className="btn-primary"
               style={{
                 display: 'flex',
@@ -954,7 +960,7 @@ export default function EstacionPage({ params }) {
                 textDecoration: 'none',
               }}
             >
-              Ver Línea {estacion.linea} completa →
+              Ver Línea {linea} completa →
             </a>
             <a
               href="/lineas/"

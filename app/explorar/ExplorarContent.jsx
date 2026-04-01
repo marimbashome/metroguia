@@ -635,7 +635,7 @@ export default function ExplorarContent({ ciudades, zonasDestacadas, estacionesT
                     fontSize: '0.85rem',
                     marginBottom: '1rem',
                   }}>
-                    Línea {estacion.linea}
+                    Línea {estacion.lineas?.[0] || estacion.linea}
                   </p>
                 </a>
                 <div style={{
