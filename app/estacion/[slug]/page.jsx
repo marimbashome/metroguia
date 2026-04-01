@@ -14,7 +14,7 @@ export function generateMetadata({ params }) {
   if (!estacion) return { title: 'Estación no encontrada | MetroGuia' }
 
   // Derive primary line from lineas array (data uses plural "lineas")
-  const linea = lineas?.[0] || linea || '?'
+  const linea = estacion.lineas?.[0] || estacion.linea || '?'
 
   // SEO-optimized title: "Estación {Nombre} — Línea {X} Metro CDMX | MetroGuia"
   const title = `Estación ${estacion.nombre} — Línea ${linea} Metro CDMX | MetroGuia`
@@ -58,7 +58,7 @@ export default function EstacionPage({ params }) {
   )
 
   // Derive primary line from lineas array (data uses plural "lineas")
-  const linea = lineas?.[0] || linea || '?'
+  const linea = estacion.lineas?.[0] || estacion.linea || '?'
 
   const jsonLd = {
     '@context': 'https://schema.org',
