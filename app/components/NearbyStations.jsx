@@ -26,14 +26,17 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
   // Get all stations on the same line for "También te puede interesar"
   const allStationsOnLine = lineDetail.estaciones.map((s) => s.slug)
   const immediateNeighbors = sameLineAdj.map((adj) => adj.slug)
-  
-  // Filter stations that are NOT immediate neighbors, randomize and take 3-4
+
+  // Deterministic selection: pick evenly spaced stations (no Math.random for SSR)
   const otherStations = allStationsOnLine.filter(
     (s) => s !== currentSlug && !immediateNeighbors.includes(s)
   )
-  const suggestedStations = otherStations
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 4)
+  const step = Math.max(1, Math.floor(otherStations.length / 4))
+  const suggestedStations = otherStations.length <= 4
+    ? otherStations
+    : [0, step, step * 2, step * 3]
+        .map((i) => otherStations[Math.min(i, otherStations.length - 1)])
+        .filter((v, i, a) => a.indexOf(v) === i)
 
   return (
     <section
@@ -44,6 +47,22 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
         borderBottom: '1px solid #2a2a3e',
       }}
     >
+      <style>{`
+        .nearby-card {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem 1.25rem;
+          background-color: #1a1a2e;
+          border-radius: 0.5rem;
+          text-decoration: none;
+          transition: background-color 0.2s ease;
+          cursor: pointer;
+        }
+        .nearby-card:hover {
+          background-color: #252538;
+        }
+      `}</style>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* SAME LINE STATIONS */}
         {sameLineAdj.length > 0 && (
@@ -73,24 +92,8 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
                   <a
                     key={adj.slug}
                     href={`/estacion/${adj.slug}/`}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '1rem',
-                      padding: '1rem 1.25rem',
-                      backgroundColor: '#1a1a2e',
-                      borderLeft: `4px solid ${lineColor}`,
-                      borderRadius: '0.5rem',
-                      textDecoration: 'none',
-                      transition: 'background-color 0.2s ease',
-                      cursor: 'pointer',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#252538'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#1a1a2e'
-                    }}
+                    className="nearby-card"
+                    style={{ borderLeft: `4px solid ${lineColor}` }}
                   >
                     <div
                       style={{
@@ -145,7 +148,6 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
               }}
             >
               {transferAdj.map((adj) => {
-                // Find the line of this transfer station
                 const transferStationData = grafo[adj.slug]
                 const transferLines = transferStationData?.lineas || []
                 const transferLineColors = transferLines
@@ -156,24 +158,8 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
                   <a
                     key={adj.slug}
                     href={`/estacion/${adj.slug}/`}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '1rem',
-                      padding: '1rem 1.25rem',
-                      backgroundColor: '#1a1a2e',
-                      borderLeft: `4px solid #F5A623`,
-                      borderRadius: '0.5rem',
-                      textDecoration: 'none',
-                      transition: 'background-color 0.2s ease',
-                      cursor: 'pointer',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#252538'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#1a1a2e'
-                    }}
+                    className="nearby-card"
+                    style={{ borderLeft: `4px solid #F5A623` }}
                   >
                     <div
                       style={{
@@ -243,24 +229,8 @@ export default function NearbyStations({ currentSlug, lineasDetalle, grafo }) {
                   <a
                     key={slug}
                     href={`/estacion/${slug}/`}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '1rem',
-                      padding: '1rem 1.25rem',
-                      backgroundColor: '#1a1a2e',
-                      borderLeft: `4px solid ${lineColor}`,
-                      borderRadius: '0.5rem',
-                      textDecoration: 'none',
-                      transition: 'background-color 0.2s ease',
-                      cursor: 'pointer',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#252538'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#1a1a2e'
-                    }}
+                    className="nearby-card"
+                    style={{ borderLeft: `4px solid ${lineColor}` }}
                   >
                     <div
                       style={{

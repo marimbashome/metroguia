@@ -10778,4 +10778,318 @@ export const estaciones = [
       "12"
     ]
   }
-];
+,
+  {
+    "slug": "acatitla",
+    "nombre": "Acatitla",
+    "alcaldia": "Iztacalco",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Acatitla CDMX — Línea A | MetroGuia",
+    "meta_description": "Estación Acatitla de la Línea A del Metro CDMX. Acceso a Iztacalco hacia Estado de México.",
+    "h1": "Metro Acatitla: guía turística",
+    "intro": "Acatitla es una estación de la Línea A del Metro de Ciudad de México, conectando la capital con el Estado de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "A"
+    ]
+  },
+  {
+    "slug": "santa-marta",
+    "nombre": "Santa Marta",
+    "alcaldia": "Iztapalapa",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Santa Marta CDMX — Línea A | MetroGuia",
+    "meta_description": "Estación Santa Marta de la Línea A del Metro CDMX. Acceso a Iztapalapa hacia Estado de México.",
+    "h1": "Metro Santa Marta: guía turística",
+    "intro": "Santa Marta es una estación de la Línea A del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "A"
+    ]
+  },
+  {
+    "slug": "los-reyes",
+    "nombre": "Los Reyes",
+    "alcaldia": "Iztapalapa",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Los Reyes CDMX — Línea A | MetroGuia",
+    "meta_description": "Estación Los Reyes de la Línea A del Metro CDMX. Acceso a Iztapalapa hacia Estado de México.",
+    "h1": "Metro Los Reyes: guía turística",
+    "intro": "Los Reyes es una estación de la Línea A del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "A"
+    ]
+  },
+  {
+    "slug": "coyuya",
+    "nombre": "Coyuya",
+    "alcaldia": "Iztacalco",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Coyuya CDMX — Línea 8 | MetroGuia",
+    "meta_description": "Estación Coyuya de la Línea 8 del Metro CDMX. Acceso a Iztacalco.",
+    "h1": "Metro Coyuya: guía turística",
+    "intro": "Coyuya es una estación de la Línea 8 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "8"
+    ]
+  },
+  {
+    "slug": "doctores",
+    "nombre": "Doctores",
+    "alcaldia": "Cuauhtémoc",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Doctores CDMX — Línea 8 | MetroGuia",
+    "meta_description": "Estación Doctores de la Línea 8 del Metro CDMX. Acceso a Cuauhtémoc.",
+    "h1": "Metro Doctores: guía turística",
+    "intro": "Doctores es una estación de la Línea 8 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "8"
+    ]
+  },
+  {
+    "slug": "obrera",
+    "nombre": "Obrera",
+    "alcaldia": "Cuauhtémoc",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Obrera CDMX — Línea 8 | MetroGuia",
+    "meta_description": "Estación Obrera de la Línea 8 del Metro CDMX. Acceso a Cuauhtémoc.",
+    "h1": "Metro Obrera: guía turística",
+    "intro": "Obrera es una estación de la Línea 8 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "8"
+    ]
+  },
+  {
+    "slug": "iztacalco",
+    "nombre": "Iztacalco",
+    "alcaldia": "Iztacalco",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Iztacalco CDMX — Línea 8 | MetroGuia",
+    "meta_description": "Estación Iztacalco de la Línea 8 del Metro CDMX. Acceso a Iztacalco.",
+    "h1": "Metro Iztacalco: guía turística",
+    "intro": "Iztacalco es una estación de la Línea 8 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "8"
+    ]
+  },
+  {
+    "slug": "el-rosario",
+    "nombre": "El Rosario",
+    "alcaldia": "Azcapotzalco",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [
+      "6",
+      "7"
+    ],
+    "seo_title": "Metro El Rosario CDMX — Líneas 6 y 7 | MetroGuia",
+    "meta_description": "Estación El Rosario de las Líneas 6 y 7 del Metro CDMX. Acceso a Azcapotzalco.",
+    "h1": "Metro El Rosario: hub de transferencia",
+    "intro": "El Rosario es una estación de transferencia de las Líneas 6 y 7 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de transferencia de las Líneas 6 y 7 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "6",
+      "7"
+    ]
+  },
+  {
+    "slug": "instituto-del-petroleo",
+    "nombre": "Instituto del Petróleo",
+    "alcaldia": "Azcapotzalco",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Instituto del Petróleo CDMX — Línea 6 | MetroGuia",
+    "meta_description": "Estación Instituto del Petróleo de la Línea 6 del Metro CDMX. Acceso a Azcapotzalco.",
+    "h1": "Metro Instituto del Petróleo: guía turística",
+    "intro": "Instituto del Petróleo es una estación de la Línea 6 del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea 6 del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "6"
+    ]
+  },
+  {
+    "slug": "ecatepec",
+    "nombre": "Ecatepec",
+    "alcaldia": "Ecatepec, Estado de México",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Ecatepec CDMX — Línea B | MetroGuia",
+    "meta_description": "Estación Ecatepec de la Línea B del Metro CDMX. Acceso a Ecatepec, Estado de México.",
+    "h1": "Metro Ecatepec: guía turística",
+    "intro": "Ecatepec es una estación de la Línea B del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea B del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "B"
+    ]
+  },
+  {
+    "slug": "plaza-aragon",
+    "nombre": "Plaza Aragón",
+    "alcaldia": "Ecatepec, Estado de México",
+    "tipo_zona": "urbana",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Metro Plaza Aragón CDMX — Línea B | MetroGuia",
+    "meta_description": "Estación Plaza Aragón de la Línea B del Metro CDMX. Acceso a Ecatepec, Estado de México.",
+    "h1": "Metro Plaza Aragón: guía turística",
+    "intro": "Plaza Aragón es una estación de la Línea B del Metro de Ciudad de México.",
+    "tips": [],
+    "descripcion_turistica": "Estación de la Línea B del Metro CDMX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso estándar."
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:00",
+      "notas": "Lunes a viernes. Sábados cierra 01:00. Domingos y festivos 00:00."
+    },
+    "lineas": [
+      "B"
+    ]
+  }
+]
+;
