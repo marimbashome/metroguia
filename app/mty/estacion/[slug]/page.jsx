@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import AffiliateMundial from '@/app/components/AffiliateMundial';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 
@@ -32,7 +34,7 @@ export default function EstacionMTY({ params }) {
   if (!estacion) {
     return (
       <main style={{ padding: '40px 20px', textAlign: 'center' }}>
-        <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: '32px', fontWeight: 700 }}>
+        <h1 style={{ fontSize: '32px', fontWeight: 700 }}>
           Estación no encontrada
         </h1>
         <Link href="/mty" style={{ color: '#F97316', textDecoration: 'underline' }}>
@@ -78,7 +80,7 @@ export default function EstacionMTY({ params }) {
   };
 
   return (
-    <main style={{ backgroundColor: '#fff', color: '#1a1a1a' }}>
+    <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -109,7 +111,6 @@ export default function EstacionMTY({ params }) {
               Línea {estacion.linea} {colorNombreLinea}
             </span>
             <span style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               fontWeight: 500
             }}>
@@ -117,7 +118,6 @@ export default function EstacionMTY({ params }) {
             </span>
           </div>
           <h1 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '48px',
             fontWeight: 800,
             margin: '0 0 20px 0',
@@ -126,7 +126,6 @@ export default function EstacionMTY({ params }) {
             {estacion.h1}
           </h1>
           <p style={{
-            fontFamily: 'DM Sans, sans-serif',
             fontSize: '18px',
             fontWeight: 400,
             margin: '0',
@@ -154,16 +153,15 @@ export default function EstacionMTY({ params }) {
           marginBottom: '50px'
         }}>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid ${colorLinea}`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '14px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase',
               letterSpacing: '0.5px'
@@ -171,7 +169,6 @@ export default function EstacionMTY({ params }) {
               Línea
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '24px',
               fontWeight: 700,
               margin: '0',
@@ -181,16 +178,15 @@ export default function EstacionMTY({ params }) {
             </p>
           </div>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid #EC4899`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '14px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase',
               letterSpacing: '0.5px'
@@ -198,27 +194,25 @@ export default function EstacionMTY({ params }) {
               Tipo de Zona
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '16px',
               fontWeight: 500,
               margin: '0',
-              color: '#1a1a1a',
+              color: 'var(--text)',
               textTransform: 'capitalize'
             }}>
               {(estacion.tipo_zona || '').replace('-', ' ')}
             </p>
           </div>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid #06b6d4`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '14px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase',
               letterSpacing: '0.5px'
@@ -226,11 +220,10 @@ export default function EstacionMTY({ params }) {
               Horario
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               fontWeight: 400,
               margin: '0',
-              color: '#1a1a1a'
+              color: 'var(--text)'
             }}>
               {estacion.mejor_horario}
             </p>
@@ -239,25 +232,23 @@ export default function EstacionMTY({ params }) {
 
         {(estacion.transferencias || []).length > 0 && (
           <div style={{
-            background: '#FEF3C7',
+            backgroundColor: 'var(--surface)',
             border: '2px solid #F97316',
             borderRadius: '8px',
             padding: '20px',
             marginBottom: '50px'
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '16px',
               fontWeight: 700,
-              color: '#92400e',
+              color: 'var(--accent)',
               margin: '0 0 10px 0'
             }}>
               ⚡ Transferencias Disponibles
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
-              color: '#78350f',
+              color: 'var(--text-muted)',
               margin: '0'
             }}>
               Conecta con Línea {(estacion.transferencias || []).join(', ')} en esta estación
@@ -269,7 +260,7 @@ export default function EstacionMTY({ params }) {
       {/* PUNTOS DE INTERÉS */}
       {(estacion.pois || []).length > 0 && (
         <section style={{
-          background: '#f9fafb',
+          backgroundColor: 'var(--surface)',
           padding: '50px 20px'
         }}>
           <div style={{
@@ -277,7 +268,6 @@ export default function EstacionMTY({ params }) {
             margin: '0 auto'
           }}>
             <h2 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '32px',
               fontWeight: 700,
               margin: '0 0 30px 0'
@@ -295,26 +285,24 @@ export default function EstacionMTY({ params }) {
                 const poiDist = typeof poi === 'string' ? null : poi.distancia;
                 return (
                   <div key={idx} style={{
-                    background: '#fff',
+                    backgroundColor: 'var(--surface-hover)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
                     borderTop: `4px solid ${colorLinea}`
                   }}>
                     <h3 style={{
-                      fontFamily: 'Syne, sans-serif',
                       fontSize: '18px',
                       fontWeight: 700,
                       margin: '0 0 8px 0',
-                      color: '#1a1a1a'
+                      color: 'var(--text)'
                     }}>
                       {poiName}
                     </h3>
                     {poiTipo && (
                       <p style={{
-                        fontFamily: 'DM Sans, sans-serif',
                         fontSize: '14px',
-                        color: '#666',
+                        color: 'var(--text-muted)',
                         margin: '0 0 8px 0',
                         textTransform: 'capitalize'
                       }}>
@@ -323,9 +311,8 @@ export default function EstacionMTY({ params }) {
                     )}
                     {poiDist && (
                       <p style={{
-                        fontFamily: 'DM Sans, sans-serif',
                         fontSize: '13px',
-                        color: '#999',
+                        color: 'var(--text-dim)',
                         margin: '0'
                       }}>
                         ⏱️ {poiDist}
@@ -347,7 +334,6 @@ export default function EstacionMTY({ params }) {
           padding: '0 20px'
         }}>
           <h2 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '32px',
             fontWeight: 700,
             margin: '0 0 30px 0'
@@ -361,15 +347,14 @@ export default function EstacionMTY({ params }) {
           }}>
             {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
               <li key={idx} style={{
-                background: '#fff',
+                backgroundColor: 'var(--surface)',
                 border: `2px solid ${colorLinea}`,
                 borderRadius: '8px',
                 padding: '20px',
                 marginBottom: '15px',
-                fontFamily: 'DM Sans, sans-serif',
                 fontSize: '16px',
                 fontWeight: 400,
-                color: '#1a1a1a',
+                color: 'var(--text)',
                 lineHeight: 1.6
               }}>
                 ✓ {tip}
@@ -379,10 +364,204 @@ export default function EstacionMTY({ params }) {
         </section>
       )}
 
+      {/* HORARIOS Y COSTO */}
+      {estacion.horarios && (
+        <section style={{
+          maxWidth: '1200px',
+          margin: '50px auto',
+          padding: '0 20px'
+        }}>
+          <h2 style={{
+            fontSize: '32px',
+            fontWeight: 700,
+            margin: '0 0 30px 0'
+          }}>
+            🕐 Horarios y Costo
+          </h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '20px'
+          }}>
+            <div style={{
+              backgroundColor: 'var(--surface)',
+              padding: '20px',
+              borderRadius: '8px',
+              borderLeft: `4px solid ${colorLinea}`
+            }}>
+              <h3 style={{
+                fontSize: '16px',
+                fontWeight: 700,
+                color: 'var(--text-muted)',
+                margin: '0 0 12px 0',
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px'
+              }}>
+                Horario de Operación
+              </h3>
+              <p style={{
+                fontSize: '16px',
+                fontWeight: 600,
+                color: 'var(--text)',
+                margin: '0 0 8px 0'
+              }}>
+                {estacion.horarios.apertura} - {estacion.horarios.cierre}
+              </p>
+              {estacion.horarios.notas && (
+                <p style={{
+                  fontSize: '13px',
+                  color: 'var(--text-dim)',
+                  margin: '0',
+                  fontStyle: 'italic'
+                }}>
+                  {estacion.horarios.notas}
+                </p>
+              )}
+            </div>
+            <div style={{
+              backgroundColor: 'var(--surface)',
+              padding: '20px',
+              borderRadius: '8px',
+              borderLeft: `4px solid #EC4899`
+            }}>
+              <h3 style={{
+                fontSize: '16px',
+                fontWeight: 700,
+                color: 'var(--text-muted)',
+                margin: '0 0 12px 0',
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px'
+              }}>
+                Tarifa de Acceso
+              </h3>
+              <p style={{
+                fontSize: '14px',
+                color: 'var(--text)',
+                margin: '0 0 6px 0'
+              }}>
+                💳 $6.40 MXN (FERIA/Metro)
+              </p>
+              <p style={{
+                fontSize: '14px',
+                color: 'var(--text)',
+                margin: '0'
+              }}>
+                🚌 $12 MXN (Ecovía)
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ACCESIBILIDAD */}
+      {estacion.accesibilidad && (
+        <section style={{
+          maxWidth: '1200px',
+          margin: '50px auto',
+          padding: '0 20px'
+        }}>
+          <h2 style={{
+            fontSize: '32px',
+            fontWeight: 700,
+            margin: '0 0 30px 0'
+          }}>
+            ♿ Accesibilidad
+          </h2>
+          <div style={{
+            backgroundColor: 'var(--surface)',
+            padding: '30px',
+            borderRadius: '8px',
+            borderLeft: `4px solid #06b6d4`
+          }}>
+            <p style={{
+              fontSize: '16px',
+              fontWeight: 400,
+              color: 'var(--text)',
+              margin: '0',
+              lineHeight: 1.8
+            }}>
+              {estacion.accesibilidad}
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* LUGARES CERCANOS */}
+      {estacion.lugares_cercanos && estacion.lugares_cercanos.length > 0 && (
+        <section style={{
+          backgroundColor: 'var(--surface)',
+          padding: '50px 20px'
+        }}>
+          <div style={{
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}>
+            <h2 style={{
+              fontSize: '32px',
+              fontWeight: 700,
+              margin: '0 0 30px 0'
+            }}>
+              🌍 Lugares Cercanos
+            </h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '20px'
+            }}>
+              {estacion.lugares_cercanos.map((lugar, idx) => (
+                <div key={idx} style={{
+                  backgroundColor: 'var(--surface-hover)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  borderTop: `4px solid ${colorLinea}`
+                }}>
+                  <h3 style={{
+                    fontSize: '18px',
+                    fontWeight: 700,
+                    margin: '0 0 8px 0',
+                    color: 'var(--text)'
+                  }}>
+                    {typeof lugar === 'string' ? lugar : lugar.nombre}
+                  </h3>
+                  {typeof lugar !== 'string' && lugar.categoria && (
+                    <p style={{
+                      fontSize: '14px',
+                      color: 'var(--text-muted)',
+                      margin: '0 0 8px 0',
+                      textTransform: 'capitalize'
+                    }}>
+                      📍 {lugar.categoria}
+                    </p>
+                  )}
+                  {typeof lugar !== 'string' && lugar.descripcion && (
+                    <p style={{
+                      fontSize: '13px',
+                      color: 'var(--text-dim)',
+                      margin: '0'
+                    }}>
+                      {lugar.descripcion}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* AFFILIATE TRANSPORT CARD */}
+      <section style={{
+        maxWidth: '1200px',
+        margin: '50px auto',
+        padding: '0 20px'
+      }}>
+        <AffiliateTransportCard estacion={estacion} linea={linea} />
+      </section>
+
       {/* MUNDIAL RELEVANCIA */}
       {estacion.mundial_relevancia && (
         <section style={{
-          background: estacion.mundial_relevancia.includes('Sin relevancia') ? '#f3f4f6' : '#FEF3C7',
+          backgroundColor: estacion.mundial_relevancia.includes('Sin relevancia') ? 'var(--surface)' : 'var(--surface)',
           padding: '40px 20px',
           marginTop: '50px'
         }}>
@@ -391,18 +570,16 @@ export default function EstacionMTY({ params }) {
             margin: '0 auto'
           }}>
             <h2 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '28px',
               fontWeight: 700,
               margin: '0 0 20px 0',
-              color: estacion.mundial_relevancia.includes('Sin relevancia') ? '#666' : '#92400e'
+              color: 'var(--text)'
             }}>
               🏟️ Información para el Mundial 2026
             </h2>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '16px',
-              color: estacion.mundial_relevancia.includes('Sin relevancia') ? '#666' : '#78350f',
+              color: 'var(--text)',
               margin: '0',
               lineHeight: 1.8
             }}>
@@ -412,12 +589,23 @@ export default function EstacionMTY({ params }) {
         </section>
       )}
 
+      {/* AFFILIATE MUNDIAL */}
+      {estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('Sin relevancia') && (
+        <section style={{
+          maxWidth: '1200px',
+          margin: '50px auto',
+          padding: '0 20px'
+        }}>
+          <AffiliateMundial estacion={estacion} />
+        </section>
+      )}
+
       {/* Ad 2 — Banner antes de navegacion */}
       <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* NAVEGACIÓN */}
       <section style={{
-        background: '#f9fafb',
+        backgroundColor: 'var(--surface)',
         padding: '40px 20px',
         marginTop: '50px'
       }}>
@@ -426,7 +614,6 @@ export default function EstacionMTY({ params }) {
           margin: '0 auto'
         }}>
           <h3 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '20px',
             fontWeight: 700,
             margin: '0 0 20px 0'
@@ -440,12 +627,12 @@ export default function EstacionMTY({ params }) {
           }}>
             <Link href="/mty" style={{
               display: 'block',
-              background: '#fff',
-              border: '2px solid #e5e7eb',
+              backgroundColor: 'var(--surface)',
+              border: '2px solid var(--border)',
               padding: '15px',
               borderRadius: '6px',
               textDecoration: 'none',
-              color: '#1a1a1a',
+              color: 'var(--text)',
               fontWeight: 600,
               textAlign: 'center',
               transition: 'all 0.3s'

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export async function generateStaticParams() {
   return lineasMTY.map(linea => ({
@@ -32,7 +34,7 @@ export default function LineaMTY({ params }) {
   if (!linea) {
     return (
       <main style={{ padding: '40px 20px', textAlign: 'center' }}>
-        <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: '32px', fontWeight: 700 }}>
+        <h1 style={{ fontSize: '32px', fontWeight: 700 }}>
           Línea no encontrada
         </h1>
         <Link href="/mty" style={{ color: '#F97316', textDecoration: 'underline' }}>
@@ -69,10 +71,10 @@ export default function LineaMTY({ params }) {
         item: `https://metroguia.mx/mty/linea/${linea.id}/`
       }
     ]
-  }
+  };
 
   return (
-    <main style={{ backgroundColor: '#fff', color: '#1a1a1a' }}>
+    <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -118,7 +120,6 @@ export default function LineaMTY({ params }) {
             </div>
           </div>
           <h1 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '48px',
             fontWeight: 800,
             margin: '0 0 15px 0',
@@ -127,7 +128,6 @@ export default function LineaMTY({ params }) {
             {linea.h1}
           </h1>
           <p style={{
-            fontFamily: 'DM Sans, sans-serif',
             fontSize: '18px',
             fontWeight: 400,
             margin: '0',
@@ -152,23 +152,21 @@ export default function LineaMTY({ params }) {
           gap: '20px'
         }}>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid ${linea.color}`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '13px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase'
             }}>
               Estaciones
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '28px',
               fontWeight: 700,
               margin: '0',
@@ -178,53 +176,49 @@ export default function LineaMTY({ params }) {
             </p>
           </div>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid #EC4899`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '13px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase'
             }}>
               Inicio
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '16px',
               fontWeight: 600,
               margin: '0',
-              color: '#1a1a1a'
+              color: 'var(--text)'
             }}>
               {linea.inicio}
             </p>
           </div>
           <div style={{
-            background: '#f3f4f6',
+            backgroundColor: 'var(--surface)',
             padding: '20px',
             borderRadius: '8px',
             borderLeft: `4px solid #06b6d4`
           }}>
             <h3 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '13px',
               fontWeight: 700,
-              color: '#666',
+              color: 'var(--text-muted)',
               margin: '0 0 8px 0',
               textTransform: 'uppercase'
             }}>
               Fin
             </h3>
             <p style={{
-              fontFamily: 'DM Sans, sans-serif',
               fontSize: '16px',
               fontWeight: 600,
               margin: '0',
-              color: '#1a1a1a'
+              color: 'var(--text)'
             }}>
               {linea.fin}
             </p>
@@ -237,7 +231,7 @@ export default function LineaMTY({ params }) {
       {/* RUTA DE 1 DÍA */}
       {linea.ruta_1_dia && (
         <section style={{
-          background: '#f9fafb',
+          backgroundColor: 'var(--surface)',
           padding: '50px 20px'
         }}>
           <div style={{
@@ -245,7 +239,6 @@ export default function LineaMTY({ params }) {
             margin: '0 auto'
           }}>
             <h2 style={{
-              fontFamily: 'Syne, sans-serif',
               fontSize: '32px',
               fontWeight: 700,
               margin: '0 0 30px 0'
@@ -261,7 +254,7 @@ export default function LineaMTY({ params }) {
                 const estacion = estacionesMTY.find(e => e.slug === parada.estacion);
                 return (
                   <div key={idx} style={{
-                    background: '#fff',
+                    backgroundColor: 'var(--surface-hover)',
                     borderRadius: '8px',
                     overflow: 'hidden',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
@@ -293,11 +286,10 @@ export default function LineaMTY({ params }) {
                       padding: '20px'
                     }}>
                       <p style={{
-                        fontFamily: 'DM Sans, sans-serif',
                         fontSize: '15px',
                         lineHeight: 1.6,
                         margin: '0',
-                        color: '#1a1a1a'
+                        color: 'var(--text)'
                       }}>
                         {parada.actividad}
                       </p>
@@ -317,7 +309,6 @@ export default function LineaMTY({ params }) {
         padding: '0 20px'
       }}>
         <h2 style={{
-          fontFamily: 'Syne, sans-serif',
           fontSize: '32px',
           fontWeight: 700,
           margin: '0 0 30px 0'
@@ -334,8 +325,8 @@ export default function LineaMTY({ params }) {
               textDecoration: 'none'
             }}>
               <div style={{
-                background: '#fff',
-                border: `2px solid ${linea.color}`,
+                backgroundColor: 'var(--surface)',
+                border: `1px solid var(--border)`,
                 borderRadius: '8px',
                 padding: '15px',
                 cursor: 'pointer',
@@ -364,11 +355,10 @@ export default function LineaMTY({ params }) {
                   minWidth: 0
                 }}>
                   <h4 style={{
-                    fontFamily: 'Syne, sans-serif',
                     fontSize: '14px',
                     fontWeight: 700,
                     margin: '0 0 2px 0',
-                    color: '#1a1a1a',
+                    color: 'var(--text)',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     whiteSpace: 'nowrap'
@@ -376,9 +366,8 @@ export default function LineaMTY({ params }) {
                     {estacion.nombre}
                   </h4>
                   <p style={{
-                    fontFamily: 'DM Sans, sans-serif',
                     fontSize: '12px',
-                    color: '#999',
+                    color: 'var(--text-dim)',
                     margin: '0',
                     textTransform: 'capitalize'
                   }}>
@@ -400,9 +389,155 @@ export default function LineaMTY({ params }) {
         <AdBannerLazyInArticle slot="4434764790" />
       </section>
 
+      {/* HORARIOS Y TARIFA */}
+      <section style={{
+        maxWidth: '1200px',
+        margin: '50px auto',
+        padding: '0 20px'
+      }}>
+        <div style={{
+          backgroundColor: 'var(--surface)',
+          border: `1px solid var(--border)`,
+          borderRadius: '8px',
+          padding: '30px',
+          borderLeft: `4px solid ${linea.color}`
+        }}>
+          <h3 style={{
+            fontSize: '20px',
+            fontWeight: 700,
+            margin: '0 0 20px 0',
+            color: 'var(--text)'
+          }}>
+            ⏰ Horarios y Tarifa
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '20px'
+          }}>
+            <div>
+              <p style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                color: 'var(--text-muted)',
+                margin: '0 0 8px 0',
+                textTransform: 'uppercase'
+              }}>
+                Lunes - Sábado
+              </p>
+              <p style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: linea.color,
+                margin: '0'
+              }}>
+                5:00 - 00:00
+              </p>
+            </div>
+            <div>
+              <p style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                color: 'var(--text-muted)',
+                margin: '0 0 8px 0',
+                textTransform: 'uppercase'
+              }}>
+                Domingo
+              </p>
+              <p style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: linea.color,
+                margin: '0'
+              }}>
+                6:30 - 00:00
+              </p>
+            </div>
+            <div>
+              <p style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                color: 'var(--text-muted)',
+                margin: '0 0 8px 0',
+                textTransform: 'uppercase'
+              }}>
+                Tarjeta FERIA
+              </p>
+              <p style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: linea.color,
+                margin: '0'
+              }}>
+                $6.40 MXN
+              </p>
+            </div>
+            <div>
+              <p style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                color: 'var(--text-muted)',
+                margin: '0 0 8px 0',
+                textTransform: 'uppercase'
+              }}>
+                Frecuencia (Horas Pico)
+              </p>
+              <p style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: linea.color,
+                margin: '0'
+              }}>
+                3-5 min
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FIFA 2026 INFO */}
+      <section style={{
+        maxWidth: '1200px',
+        margin: '30px auto',
+        padding: '0 20px'
+      }}>
+        <div style={{
+          backgroundColor: 'var(--surface)',
+          border: `1px solid var(--border)`,
+          borderRadius: '8px',
+          padding: '30px',
+          borderLeft: `4px solid #EC4899`
+        }}>
+          <h3 style={{
+            fontSize: '20px',
+            fontWeight: 700,
+            margin: '0 0 15px 0',
+            color: 'var(--text)'
+          }}>
+            🏟️ Partidos FIFA 2026 en Monterrey
+          </h3>
+          <p style={{
+            fontSize: '15px',
+            lineHeight: 1.6,
+            margin: '0 0 15px 0',
+            color: 'var(--text)'
+          }}>
+            Se jugarán <strong>14 partidos</strong> en el Estadio BBVA los días <strong>14, 20, 24 y 29 de junio de 2026</strong>.
+          </p>
+          <p style={{
+            fontSize: '15px',
+            lineHeight: 1.6,
+            margin: '0',
+            color: 'var(--text)'
+          }}>
+            Desde la Estación Exposición (L1) al Estadio: <strong>~22 minutos caminando</strong>. Acceso seguro y directo para aficionados.
+          </p>
+        </div>
+      </section>
+
       {/* MUNICIPIOS */}
       <section style={{
-        background: '#f9fafb',
+        backgroundColor: 'var(--surface)',
         padding: '40px 20px',
         marginTop: '50px'
       }}>
@@ -411,7 +546,6 @@ export default function LineaMTY({ params }) {
           margin: '0 auto'
         }}>
           <h3 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '20px',
             fontWeight: 700,
             margin: '0 0 20px 0'
@@ -425,13 +559,13 @@ export default function LineaMTY({ params }) {
           }}>
             {linea.municipios.map((municipio, idx) => (
               <div key={idx} style={{
-                background: '#fff',
+                backgroundColor: 'var(--surface-hover)',
                 padding: '15px',
                 borderRadius: '6px',
-                border: `2px solid ${linea.color}`,
+                border: `1px solid var(--border)`,
                 textAlign: 'center',
                 fontWeight: 600,
-                color: '#1a1a1a'
+                color: 'var(--text)'
               }}>
                 📍 {municipio}
               </div>
@@ -453,7 +587,6 @@ export default function LineaMTY({ params }) {
           margin: '0 auto'
         }}>
           <h2 style={{
-            fontFamily: 'Syne, sans-serif',
             fontSize: '28px',
             fontWeight: 700,
             margin: '0 0 15px 0'
@@ -461,7 +594,6 @@ export default function LineaMTY({ params }) {
             🏟️ Acceso al Estadio BBVA
           </h2>
           <p style={{
-            fontFamily: 'DM Sans, sans-serif',
             fontSize: '16px',
             margin: '0 0 25px 0',
             lineHeight: 1.6
@@ -496,12 +628,12 @@ export default function LineaMTY({ params }) {
         }}>
           <Link href="/mty" style={{
             display: 'block',
-            background: '#f3f4f6',
-            border: '2px solid #e5e7eb',
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--border)',
             padding: '15px',
             borderRadius: '6px',
             textDecoration: 'none',
-            color: '#1a1a1a',
+            color: 'var(--text)',
             fontWeight: 600,
             textAlign: 'center',
             transition: 'all 0.3s'

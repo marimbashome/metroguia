@@ -1,5 +1,6 @@
 import { estacionesEcovia } from '@/data/mty/ecovia';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
@@ -38,9 +39,10 @@ export default function EstacionEcoviaPage({ params }) {
     return (
       <main style={{ padding: '80px 24px', textAlign: 'center' }}>
         <h1 style={{ fontSize: '32px', color: '#ef4444' }}>Estación no encontrada</h1>
-        <Link href="/mty/ecovia">
-          <button
+        <Link href="/mty/ecovia" style={{ textDecoration: 'none' }}>
+          <span
             style={{
+              display: 'inline-block',
               marginTop: '24px',
               padding: '12px 24px',
               backgroundColor: '#10B981',
@@ -48,13 +50,12 @@ export default function EstacionEcoviaPage({ params }) {
               border: 'none',
               borderRadius: '4px',
               fontSize: '16px',
-              fontFamily: 'Syne, sans-serif',
               fontWeight: '700',
               cursor: 'pointer',
             }}
           >
             Volver a Ecovía
-          </button>
+          </span>
         </Link>
       </main>
     );
@@ -95,7 +96,7 @@ export default function EstacionEcoviaPage({ params }) {
   };
 
   return (
-    <main style={{ backgroundColor: '#ffffff' }}>
+    <main style={{ backgroundColor: 'var(--bg)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -120,7 +121,6 @@ export default function EstacionEcoviaPage({ params }) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '28px',
-                fontFamily: 'Syne, sans-serif',
                 fontWeight: '700',
               }}
             >
@@ -131,7 +131,6 @@ export default function EstacionEcoviaPage({ params }) {
           <h1
             style={{
               fontSize: '48px',
-              fontFamily: 'Syne, sans-serif',
               fontWeight: '800',
               margin: '0 0 16px 0',
               lineHeight: '1.2',
@@ -142,7 +141,6 @@ export default function EstacionEcoviaPage({ params }) {
           <p
             style={{
               fontSize: '18px',
-              fontFamily: 'DM Sans, sans-serif',
               margin: '0 0 8px 0',
               opacity: '0.95',
             }}
@@ -152,7 +150,6 @@ export default function EstacionEcoviaPage({ params }) {
           <p
             style={{
               fontSize: '14px',
-              fontFamily: 'DM Sans, sans-serif',
               margin: '0',
               opacity: '0.85',
             }}
@@ -176,10 +173,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h2
                   style={{
                     fontSize: '32px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     marginBottom: '24px',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                     borderBottom: `3px solid ${colorLinea}`,
                     paddingBottom: '12px',
                   }}
@@ -190,8 +186,7 @@ export default function EstacionEcoviaPage({ params }) {
                   style={{
                     fontSize: '16px',
                     lineHeight: '1.6',
-                    color: '#4b5563',
-                    fontFamily: 'DM Sans, sans-serif',
+                    color: 'var(--text-muted)',
                   }}
                 >
                   {estacion.descripcion_turistica}
@@ -205,10 +200,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h2
                   style={{
                     fontSize: '32px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     marginBottom: '24px',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                     borderBottom: `3px solid ${colorLinea}`,
                     paddingBottom: '12px',
                   }}
@@ -221,7 +215,7 @@ export default function EstacionEcoviaPage({ params }) {
                       key={idx}
                       style={{
                         padding: '16px',
-                        backgroundColor: '#f9fafb',
+                        backgroundColor: 'var(--surface)',
                         borderLeft: `4px solid ${colorLinea}`,
                         borderRadius: '4px',
                       }}
@@ -229,10 +223,9 @@ export default function EstacionEcoviaPage({ params }) {
                       <h3
                         style={{
                           fontSize: '16px',
-                          fontFamily: 'Syne, sans-serif',
                           fontWeight: '700',
                           margin: '0 0 4px 0',
-                          color: '#1f2937',
+                          color: 'var(--text)',
                         }}
                       >
                         {poi.nombre}
@@ -240,9 +233,8 @@ export default function EstacionEcoviaPage({ params }) {
                       <p
                         style={{
                           fontSize: '13px',
-                          color: '#6b7280',
+                          color: 'var(--text-muted)',
                           margin: '0',
-                          fontFamily: 'DM Sans, sans-serif',
                         }}
                       >
                         {poi.tipo} • {poi.distancia}
@@ -259,10 +251,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h2
                   style={{
                     fontSize: '32px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     marginBottom: '24px',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                     borderBottom: `3px solid ${colorLinea}`,
                     paddingBottom: '12px',
                   }}
@@ -283,12 +274,11 @@ export default function EstacionEcoviaPage({ params }) {
                       key={idx}
                       style={{
                         padding: '12px 16px',
-                        backgroundColor: '#f0fdf4',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
                         borderLeft: `4px solid #22c55e`,
                         borderRadius: '4px',
                         fontSize: '14px',
-                        color: '#15803d',
-                        fontFamily: 'DM Sans, sans-serif',
+                        color: '#10B981',
                       }}
                     >
                       ✓ {tip}
@@ -304,10 +294,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h2
                   style={{
                     fontSize: '32px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     marginBottom: '24px',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                     borderBottom: `3px solid ${colorLinea}`,
                     paddingBottom: '12px',
                   }}
@@ -328,12 +317,11 @@ export default function EstacionEcoviaPage({ params }) {
                       key={idx}
                       style={{
                         padding: '12px 16px',
-                        backgroundColor: '#f3f4f6',
+                        backgroundColor: 'var(--surface)',
                         borderLeft: `4px solid ${colorLinea}`,
                         borderRadius: '4px',
                         fontSize: '14px',
-                        color: '#1f2937',
-                        fontFamily: 'DM Sans, sans-serif',
+                        color: 'var(--text)',
                       }}
                     >
                       📍 {typeof lugar === 'string' ? lugar : lugar.nombre}{typeof lugar === 'object' && lugar.descripcion && <span style={{ display: 'block', fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>{lugar.descripcion}</span>}
@@ -349,7 +337,7 @@ export default function EstacionEcoviaPage({ params }) {
             {/* INFORMACIÓN RÁPIDA */}
             <div
               style={{
-                backgroundColor: '#f3f4f6',
+                backgroundColor: 'var(--surface)',
                 padding: '24px',
                 borderRadius: '8px',
                 marginBottom: '32px',
@@ -359,17 +347,16 @@ export default function EstacionEcoviaPage({ params }) {
               <h3
                 style={{
                   fontSize: '18px',
-                  fontFamily: 'Syne, sans-serif',
                   fontWeight: '700',
                   margin: '0 0 16px 0',
-                  color: '#1f2937',
+                  color: 'var(--text)',
                 }}
               >
                 Información Rápida
               </h3>
               <div style={{ display: 'grid', gap: '12px' }}>
                 <div>
-                  <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                  <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                     Línea
                   </p>
                   <p
@@ -378,38 +365,55 @@ export default function EstacionEcoviaPage({ params }) {
                       fontWeight: '700',
                       margin: '0',
                       color: colorLinea,
-                      fontFamily: 'Syne, sans-serif',
                     }}
                   >
                     {nombreLinea}
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                  <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                     Municipio
                   </p>
-                  <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
+                  <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                     {estacion.municipio}
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                  <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                     Tipo de Zona
                   </p>
-                  <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
+                  <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                     {(estacion.tipo_zona || '').replace('-', ' / ')}
                   </p>
                 </div>
                 {estacion.mejor_horario && (
                   <div>
-                    <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                    <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                       Mejor Horario
                     </p>
-                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
+                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                       {estacion.mejor_horario}
                     </p>
                   </div>
                 )}
+                <div style={{ marginTop: '8px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
+                  <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
+                    Tarifa
+                  </p>
+                  <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
+                    $12 MXN tarjeta FERIA
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
+                    Horarios
+                  </p>
+                  <p style={{ fontSize: '14px', margin: '0', color: 'var(--text)' }}>
+                    L-V 4:00-00:00<br />
+                    Sáb 5:00-23:30<br />
+                    Dom 5:30-23:00
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -417,7 +421,7 @@ export default function EstacionEcoviaPage({ params }) {
             {estacion.horarios && (
               <div
                 style={{
-                  backgroundColor: '#f3f4f6',
+                  backgroundColor: 'var(--surface)',
                   padding: '24px',
                   borderRadius: '8px',
                   marginBottom: '32px',
@@ -427,37 +431,36 @@ export default function EstacionEcoviaPage({ params }) {
                 <h3
                   style={{
                     fontSize: '18px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     margin: '0 0 16px 0',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                   }}
                 >
                   Horarios
                 </h3>
                 <div style={{ display: 'grid', gap: '12px' }}>
                   <div>
-                    <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                    <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                       Apertura
                     </p>
-                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
+                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                       {estacion.horarios.apertura}
                     </p>
                   </div>
                   <div>
-                    <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                    <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                       Cierre
                     </p>
-                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', fontFamily: 'Syne, sans-serif', color: '#1f2937' }}>
+                    <p style={{ fontSize: '16px', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                       {estacion.horarios.cierre}
                     </p>
                   </div>
                   {estacion.horarios.notas && (
                     <div>
-                      <p style={{ fontSize: '12px', color: '#6b7280', margin: '0 0 4px 0', fontFamily: 'DM Sans, sans-serif' }}>
+                      <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>
                         Notas
                       </p>
-                      <p style={{ fontSize: '14px', margin: '0', fontFamily: 'DM Sans, sans-serif', color: '#4b5563' }}>
+                      <p style={{ fontSize: '14px', margin: '0', color: 'var(--text-muted)' }}>
                         {estacion.horarios.notas}
                       </p>
                     </div>
@@ -470,7 +473,7 @@ export default function EstacionEcoviaPage({ params }) {
             {estacion.accesibilidad && (
               <div
                 style={{
-                  backgroundColor: '#f3f4f6',
+                  backgroundColor: 'var(--surface)',
                   padding: '24px',
                   borderRadius: '8px',
                   marginBottom: '32px',
@@ -480,10 +483,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h3
                   style={{
                     fontSize: '18px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     margin: '0 0 16px 0',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                   }}
                 >
                   Accesibilidad
@@ -492,23 +494,23 @@ export default function EstacionEcoviaPage({ params }) {
                   {estacion.accesibilidad.elevador && (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <span style={{ color: '#10B981', fontWeight: '700' }}>✓</span>
-                      <span style={{ fontSize: '14px', color: '#1f2937', fontFamily: 'DM Sans, sans-serif' }}>Elevador</span>
+                      <span style={{ fontSize: '14px', color: 'var(--text)' }}>Elevador</span>
                     </div>
                   )}
                   {estacion.accesibilidad.rampa && (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <span style={{ color: '#10B981', fontWeight: '700' }}>✓</span>
-                      <span style={{ fontSize: '14px', color: '#1f2937', fontFamily: 'DM Sans, sans-serif' }}>Rampa</span>
+                      <span style={{ fontSize: '14px', color: 'var(--text)' }}>Rampa</span>
                     </div>
                   )}
                   {estacion.accesibilidad.piso_tactil && (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <span style={{ color: '#10B981', fontWeight: '700' }}>✓</span>
-                      <span style={{ fontSize: '14px', color: '#1f2937', fontFamily: 'DM Sans, sans-serif' }}>Piso Táctil</span>
+                      <span style={{ fontSize: '14px', color: 'var(--text)' }}>Piso Táctil</span>
                     </div>
                   )}
                   {estacion.accesibilidad.notas && (
-                    <p style={{ fontSize: '12px', color: '#6b7280', margin: '8px 0 0 0', fontFamily: 'DM Sans, sans-serif' }}>
+                    <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '8px 0 0 0' }}>
                       {estacion.accesibilidad.notas}
                     </p>
                   )}
@@ -520,7 +522,7 @@ export default function EstacionEcoviaPage({ params }) {
             {estacion.transferencias && estacion.transferencias.length > 0 && (
               <div
                 style={{
-                  backgroundColor: '#f3f4f6',
+                  backgroundColor: 'var(--surface)',
                   padding: '24px',
                   borderRadius: '8px',
                   marginBottom: '32px',
@@ -530,10 +532,9 @@ export default function EstacionEcoviaPage({ params }) {
                 <h3
                   style={{
                     fontSize: '18px',
-                    fontFamily: 'Syne, sans-serif',
                     fontWeight: '700',
                     margin: '0 0 16px 0',
-                    color: '#1f2937',
+                    color: 'var(--text)',
                   }}
                 >
                   Conexiones
@@ -544,17 +545,16 @@ export default function EstacionEcoviaPage({ params }) {
                       key={idx}
                       style={{
                         padding: '8px 12px',
-                        backgroundColor: '#dbeafe',
+                        backgroundColor: 'rgba(59, 130, 246, 0.15)',
                         borderRadius: '4px',
                         fontSize: '14px',
-                        color: '#1e40af',
-                        fontFamily: 'DM Sans, sans-serif',
+                        color: '#60A5FA',
                         fontWeight: '600',
                       }}
                     >
                       → {typeof transf === 'string' ? transf : `${transf.tipo || transf.linea} → ${transf.estacion}`}
                       {typeof transf === 'object' && transf.tiempo_medio && (
-                        <span style={{ display: 'block', fontSize: '12px', color: '#3b82f6', fontWeight: 400, marginTop: '2px' }}>
+                        <span style={{ display: 'block', fontSize: '12px', color: '#60A5FA', fontWeight: 400, marginTop: '2px' }}>
                           ⏱ {transf.tiempo_medio}
                         </span>
                       )}
@@ -565,9 +565,10 @@ export default function EstacionEcoviaPage({ params }) {
             )}
 
             {/* NAVEGACIÓN A HUB */}
-            <Link href="/mty/ecovia">
-              <button
+            <Link href="/mty/ecovia" style={{ textDecoration: 'none' }}>
+              <span
                 style={{
+                  display: 'block',
                   width: '100%',
                   padding: '16px',
                   backgroundColor: colorLinea,
@@ -575,13 +576,14 @@ export default function EstacionEcoviaPage({ params }) {
                   border: 'none',
                   borderRadius: '4px',
                   fontSize: '16px',
-                  fontFamily: 'Syne, sans-serif',
                   fontWeight: '700',
                   cursor: 'pointer',
+                  textAlign: 'center',
+                  boxSizing: 'border-box',
                 }}
               >
                 Volver a Ecovía
-              </button>
+              </span>
             </Link>
           </div>
         </div>
@@ -590,10 +592,13 @@ export default function EstacionEcoviaPage({ params }) {
       {/* Ad 2 — Banner antes del CTA */}
       <AdBannerLazy slot="4434764790" format="auto" />
 
+      {/* AFFILIATE TRANSPORT CARD */}
+      <AffiliateTransportCard />
+
       {/* CTA HOSPEDAJE */}
       <section
         style={{
-          backgroundColor: '#f3f4f6',
+          backgroundColor: 'var(--surface)',
           padding: '64px 24px',
           marginTop: '80px',
           textAlign: 'center',
@@ -602,10 +607,9 @@ export default function EstacionEcoviaPage({ params }) {
         <h2
           style={{
             fontSize: '32px',
-            fontFamily: 'Syne, sans-serif',
             fontWeight: '700',
             margin: '0 0 16px 0',
-            color: '#1f2937',
+            color: 'var(--text)',
           }}
         >
           Hospedaje en Monterrey
@@ -613,9 +617,8 @@ export default function EstacionEcoviaPage({ params }) {
         <p
           style={{
             fontSize: '16px',
-            color: '#6b7280',
+            color: 'var(--text-muted)',
             margin: '0 0 24px 0',
-            fontFamily: 'DM Sans, sans-serif',
             maxWidth: '600px',
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -623,22 +626,22 @@ export default function EstacionEcoviaPage({ params }) {
         >
           Encuentra opciones de alojamiento cerca de esta estación y otros puntos turísticos de Monterrey.
         </p>
-        <Link href="/hospedaje">
-          <button
+        <Link href="/hospedaje" style={{ textDecoration: 'none' }}>
+          <span
             style={{
+              display: 'inline-block',
               padding: '14px 32px',
               backgroundColor: '#10B981',
               color: '#ffffff',
               border: 'none',
               borderRadius: '4px',
               fontSize: '16px',
-              fontFamily: 'Syne, sans-serif',
               fontWeight: '700',
               cursor: 'pointer',
             }}
           >
             Explorar Hospedaje
-          </button>
+          </span>
         </Link>
       </section>
     </main>
