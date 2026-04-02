@@ -1,630 +1,335 @@
-'use client'
-
-import { useState } from 'react'
-import Link from 'next/link'
-import { mundial2026 } from '@/data/mundial'
+import { mundial2026 } from '@/data/mundial';
 
 export const metadata = {
-  title: 'Calendario FIFA 2026 México | Partidos en CDMX, Guadalajara y Monterrey',
-  description: 'Calendario completo de los 13 partidos de la Copa Mundial 2026 en México. Fechas, horarios, estadios y cómo llegar a cada partido.',
-  keywords: 'calendario mundial 2026 méxico, fechas partidos mundial 2026 cdmx guadalajara monterrey, copa mundial 2026 méxico sedes, partidos fútbol 2026',
+  title: 'Calendario FIFA 2026 México — Todos los Partidos por Fecha | MetroGuia',
+  description: 'Calendario completo de los 13 partidos del Mundial FIFA 2026 en México. Fechas, horarios, estadios y cómo llegar en transporte público a CDMX, Guadalajara y Monterrey.',
+  keywords: 'calendario mundial 2026 méxico, fechas partidos mundial 2026, cdmx guadalajara monterrey, copa mundial 2026 sedes',
   openGraph: {
     title: 'Calendario FIFA 2026 en México',
-    description: '13 partidos en 3 ciudades: Ciudad de México, Guadalajara y Monterrey',
+    description: '13 partidos en 3 ciudades: Ciudad de México, Guadalajara y Monterrey. Junio a julio 2026.',
     type: 'website',
   },
   alternates: {
     canonical: 'https://www.metroguia.mx/mundial-2026/calendario/',
   },
+};
+
+function formatDate(dateStr) {
+  const date = new Date(dateStr + 'T00:00:00');
+  return date.toLocaleDateString('es-MX', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).replace(/^\w/, c => c.toUpperCase());
 }
 
-export default function CalendarioMundial2026() {
-  const [selectedPhase, setSelectedPhase] = useState('Todos')
+function getCityColor(ciudadKey) {
+  const colors = { cdmx: '#E91E8C', gdl: '#06B6D4', mty: '#EC4899' };
+  return colors[ciudadKey] || '#00D4FF';
+}
 
-  // Build chronological calendar
-  const allMatches = []
-  Object.entries(mundial2026.sedes).forEach(([ciudadKey, sedeData]) => {
-    sedeData.partidos.forEach((partido) => {
+function getCityEmoji(ciudadKey) {
+  const emojis = { cdmx: '🏛️', gdl: '🌺', mty: '🏔️' };
+  return emojis[ciudadKey] || '⚽';
+}
+
+function getRouteHref(ciudadKey, slugRuta) {
+  if (ciudadKey === 'cdmx') return `/mundial-2026/${slugRuta}/`;
+  return `/${ciudadKey}/mundial-2026/${slugRuta}/`;
+}
+
+export default function CalendarioPage() {
+  const { sedes } = mundial2026;
+
+  // Build all matches with city info
+  const allMatches = [];
+  Object.entries(sedes).forEach(([ciudadKey, sede]) => {
+    sede.partidos.forEach((partido) => {
       allMatches.push({
         ...partido,
-        ciudad: sedeData.ciudad,
+        ciudad: sede.ciudad,
         ciudadKey,
-        estadio: sedeData.estadio,
-        slug_ruta: sedeData.slug_ruta,
-      })
-    })
-  })
+        estadio: sede.estadio,
+        capacidad: sede.capacidad,
+        slug_ruta: sede.slug_ruta,
+      });
+    });
+  });
 
   // Sort by date
-  allMatches.sort((a, b) => new Date(a.fecha) - new Date(b.fecha))
+  allMatches.sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
 
   // Group by date
-  const matchesByDate = {}
+  const matchesByDate = {};
   allMatches.forEach((match) => {
-    if (!matchesByDate[match.fecha]) {
-      matchesByDate[match.fecha] = []
-    }
-    matchesByDate[match.fecha].push(match)
-  })
-
-  const dates = Object.keys(matchesByDate).sort()
-
-  // Filter by phase
-  const filteredDates = selectedPhase === 'Todos'
-    ? dates
-    : dates.filter(fecha => {
-        const matchesForDate = matchesByDate[fecha]
-        return matchesForDate.some(m => m.fase === selectedPhase)
-      })
-
-  // City colors
-  const cityColors = {
-    'Ciudad de México': '#E91E8C',
-    'Guadalajara': '#06B6D4',
-    'Monterrey': '#EC4899',
-  }
-
-  const cityEmojis = {
-    'Ciudad de México': '🏛️',
-    'Guadalajara': '🌺',
-    'Monterrey': '🏔️',
-  }
+    if (!matchesByDate[match.fecha]) matchesByDate[match.fecha] = [];
+    matchesByDate[match.fecha].push(match);
+  });
+  const sortedDates = Object.keys(matchesByDate).sort();
 
   // Phase stats
-  const phaseStats = {
-    'Fase de Grupos': { dates: '11-26 jun', count: 11 },
-    'Octavos de Final': { dates: '30 jun', count: 1 },
-    'Cuartos de Final': { dates: '5 jul', count: 1 },
-  }
+  const phases = [
+    { name: 'Fase de Grupos', emoji: '🏆', dates: '11 – 26 junio', count: allMatches.filter(m => m.fase === 'Fase de Grupos').length },
+    { name: 'Octavos de Final', emoji: '⚔️', dates: '30 junio', count: allMatches.filter(m => m.fase === 'Octavos de Final').length },
+    { name: 'Cuartos de Final', emoji: '🔥', dates: '5 julio', count: allMatches.filter(m => m.fase === 'Cuartos de Final').length },
+  ];
 
-  // Stadium comparison
-  const stadiums = [
-    { ciudad: 'Ciudad de México', estadio: 'Estadio Azteca', capacidad: '87,523', transitTime: '45 min', transitCost: '$15 MXN' },
-    { ciudad: 'Guadalajara', estadio: 'Estadio Akron', capacidad: '49,850', transitTime: '40 min', transitCost: '$10 MXN' },
-    { ciudad: 'Monterrey', estadio: 'Estadio BBVA', capacidad: '53,500', transitTime: '35 min', transitCost: '$8 MXN' },
-  ]
+  // Stadium data
+  const stadiums = Object.entries(sedes).map(([key, sede]) => ({
+    ciudadKey: key,
+    ciudad: sede.ciudad,
+    estadio: sede.estadio,
+    capacidad: sede.capacidad.toLocaleString('es-MX'),
+    tiempo: sede.ruta_desde_centro.tiempo,
+    costo: sede.ruta_desde_centro.costo,
+    slug_ruta: sede.slug_ruta,
+    partidos: sede.partidos.length,
+  }));
+
+  // JSON-LD schemas
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.metroguia.mx/' },
+      { '@type': 'ListItem', position: 2, name: 'Mundial 2026', item: 'https://www.metroguia.mx/mundial-2026/' },
+      { '@type': 'ListItem', position: 3, name: 'Calendario', item: 'https://www.metroguia.mx/mundial-2026/calendario/' },
+    ],
+  };
+
+  const eventsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EventSeries',
+    name: 'FIFA World Cup 2026 — Partidos en México',
+    description: 'Los 13 partidos del Mundial FIFA 2026 celebrados en México',
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    event: allMatches.map((m) => ({
+      '@type': 'SportsEvent',
+      name: `${m.fase} — ${m.equipos}`,
+      description: m.descripcion,
+      startDate: m.fecha,
+      location: {
+        '@type': 'Place',
+        name: m.estadio,
+        address: { '@type': 'PostalAddress', addressLocality: m.ciudad, addressCountry: 'MX' },
+      },
+      eventStatus: 'https://schema.org/EventScheduled',
+      sport: 'Soccer',
+    })),
+  };
 
   return (
-    <div style={{ '--cdmx': '#E91E8C', '--gdl': '#06B6D4', '--mty': '#EC4899', '--gray-50': '#f9fafb', '--gray-100': '#f3f4f6', '--gray-200': '#e5e7eb', '--gray-300': '#d1d5db', '--gray-400': '#9ca3af', '--gray-600': '#4b5563', '--gray-800': '#1f2937', '--gray-900': '#111827' }}>
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Inicio',
-                item: 'https://www.metroguia.mx/',
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'Mundial 2026',
-                item: 'https://www.metroguia.mx/mundial-2026/',
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
-                name: 'Calendario',
-                item: 'https://www.metroguia.mx/mundial-2026/calendario/',
-              },
-            ],
-          }),
-        }}
-      />
+    <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsSchema) }} />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'EventSeries',
-            name: 'FIFA World Cup 2026 México',
-            description: 'Todos los 13 partidos de la Copa Mundial 2026 en México',
-            event: allMatches.map((match) => ({
-              '@type': 'SportsEvent',
-              name: match.equipos,
-              description: match.descripcion,
-              startDate: match.fecha + 'T00:00:00',
-              endDate: match.fecha + 'T23:59:59',
-              location: {
-                '@type': 'Place',
-                name: match.estadio,
-                address: {
-                  '@type': 'PostalAddress',
-                  addressLocality: match.ciudad,
-                  addressCountry: 'MX',
-                },
-              },
-              sport: 'Soccer',
-            })),
-            organizer: {
-              '@type': 'Organization',
-              name: 'FIFA',
-              url: 'https://www.fifa.com',
-            },
-          }),
-        }}
-      />
-
-      {/* Hero Section */}
+      {/* Hero */}
       <section style={{
-        backgroundColor: 'var(--gray-900)',
-        color: 'white',
-        padding: '60px 20px',
+        background: 'linear-gradient(135deg, #0A0A0F 0%, #1a1a2e 50%, #16213e 100%)',
+        padding: '4rem 1.25rem',
         textAlign: 'center',
+        borderBottom: '3px solid #00D4FF',
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h1 style={{
-            fontSize: '48px',
-            fontWeight: '700',
-            marginBottom: '12px',
-            lineHeight: '1.2',
-          }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <p style={{ fontSize: '3rem', margin: '0 0 1rem 0' }}>📅</p>
+          <h1 style={{ color: '#00D4FF', fontSize: '2.5rem', fontWeight: '700', margin: '0 0 0.75rem 0' }}>
             Calendario FIFA 2026 en México
           </h1>
-          <p style={{
-            fontSize: '24px',
-            color: 'var(--gray-300)',
-            marginBottom: '8px',
-          }}>
-            13 partidos en 3 ciudades
+          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.2rem', margin: '0 0 0.5rem 0' }}>
+            {mundial2026.total_partidos_mexico} partidos en 3 ciudades
           </p>
-          <p style={{
-            fontSize: '14px',
-            color: 'var(--gray-400)',
-          }}>
-            11 de junio - 5 de julio 2026
+          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', margin: '0' }}>
+            11 de junio — 5 de julio 2026
           </p>
         </div>
       </section>
 
-      {/* Phase Stats */}
-      <section style={{
-        padding: '40px 20px',
-        backgroundColor: 'var(--gray-50)',
-        borderBottom: '1px solid var(--gray-200)',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: '22px',
-            fontWeight: '600',
-            marginBottom: '30px',
-            color: 'var(--gray-900)',
-          }}>
-            Desglose por Fase
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '20px',
-          }}>
-            {Object.entries(phaseStats).map(([phase, stats]) => (
-              <div
-                key={phase}
-                onClick={() => setSelectedPhase(phase)}
-                style={{
-                  backgroundColor: 'white',
-                  border: selectedPhase === phase ? '2px solid var(--cdmx)' : '1px solid var(--gray-200)',
-                  borderRadius: '8px',
-                  padding: '20px',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                  boxShadow: selectedPhase === phase ? '0 4px 12px rgba(233, 30, 140, 0.2)' : 'none',
-                }}
-              >
-                <h3 style={{
-                  fontSize: '16px',
-                  fontWeight: '600',
-                  color: 'var(--gray-900)',
-                  marginBottom: '8px',
-                }}>
-                  {phase}
-                </h3>
-                <p style={{
-                  fontSize: '28px',
-                  fontWeight: '700',
-                  color: 'var(--cdmx)',
-                  marginBottom: '8px',
-                }}>
-                  {stats.count} partidos
-                </p>
-                <p style={{
-                  fontSize: '13px',
-                  color: 'var(--gray-600)',
-                }}>
-                  {stats.dates}
-                </p>
+      {/* Phase Breakdown */}
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ color: '#00D4FF', fontSize: '1.5rem', marginBottom: '2rem' }}>Desglose por Fase</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+            {phases.map((phase) => (
+              <div key={phase.name} style={{
+                backgroundColor: 'var(--surface)',
+                border: '1px solid var(--border)',
+                borderRadius: '0.5rem',
+                padding: '1.5rem',
+                textAlign: 'center',
+              }}>
+                <p style={{ fontSize: '2rem', margin: '0 0 0.5rem 0' }}>{phase.emoji}</p>
+                <h3 style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.1rem', margin: '0 0 0.5rem 0' }}>{phase.name}</h3>
+                <p style={{ color: '#00D4FF', fontSize: '1.5rem', fontWeight: '700', margin: '0 0 0.25rem 0' }}>{phase.count} {phase.count === 1 ? 'partido' : 'partidos'}</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0' }}>{phase.dates}</p>
               </div>
             ))}
           </div>
-          <div style={{ marginTop: '20px', textAlign: 'center' }}>
-            <button
-              onClick={() => setSelectedPhase('Todos')}
-              style={{
-                backgroundColor: selectedPhase === 'Todos' ? 'var(--cdmx)' : 'transparent',
-                color: selectedPhase === 'Todos' ? 'white' : 'var(--cdmx)',
-                border: '2px solid var(--cdmx)',
-                padding: '10px 20px',
-                borderRadius: '4px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                fontSize: '14px',
-                transition: 'all 0.3s ease',
-              }}
-            >
-              Ver todos los partidos
-            </button>
-          </div>
         </div>
       </section>
 
-      {/* Timeline - Partidos por Fecha */}
-      <section style={{
-        padding: '60px 20px',
-        backgroundColor: 'white',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: '28px',
-            fontWeight: '700',
-            marginBottom: '40px',
-            color: 'var(--gray-900)',
-          }}>
-            Cronograma de Partidos
-          </h2>
+      {/* Timeline by Date */}
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ color: '#00D4FF', fontSize: '1.5rem', marginBottom: '2.5rem' }}>Cronograma de Partidos</h2>
 
-          <div style={{ position: 'relative' }}>
-            {filteredDates.map((fecha, dateIndex) => {
-              const matchesForDate = matchesByDate[fecha]
-              const dateObj = new Date(fecha + 'T00:00:00')
-              const formattedDate = dateObj.toLocaleDateString('es-MX', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })
-
-              return (
-                <div key={fecha} style={{ marginBottom: '60px' }}>
-                  {/* Date Header with Timeline Line */}
-                  <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '30px' }}>
-                    {/* Timeline Dot */}
-                    <div style={{
-                      width: '40px',
-                      height: '40px',
-                      backgroundColor: 'var(--cdmx)',
-                      borderRadius: '50%',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: 'white',
-                      fontWeight: '700',
-                      fontSize: '14px',
-                      flexShrink: 0,
-                      marginRight: '20px',
-                    }}>
-                      {dateIndex + 1}
-                    </div>
-
-                    {/* Date Content */}
-                    <div style={{ flex: 1 }}>
-                      <h3 style={{
-                        fontSize: '22px',
-                        fontWeight: '700',
-                        color: 'var(--gray-900)',
-                        textTransform: 'capitalize',
-                        marginBottom: '20px',
-                      }}>
-                        {formattedDate}
-                      </h3>
-
-                      {/* Match Cards for this Date */}
-                      <div style={{
-                        display: 'grid',
-                        gap: '16px',
-                      }}>
-                        {matchesForDate.map((match, idx) => {
-                          const cityColor = cityColors[match.ciudad]
-                          const cityEmoji = cityEmojis[match.ciudad]
-
-                          return (
-                            <div
-                              key={idx}
-                              style={{
-                                backgroundColor: 'white',
-                                border: `2px solid ${cityColor}`,
-                                borderRadius: '8px',
-                                padding: '20px',
-                                transition: 'all 0.3s ease',
-                                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
-                                ':hover': {
-                                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12)',
-                                },
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.12)'
-                                e.currentTarget.style.transform = 'translateY(-2px)'
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.05)'
-                                e.currentTarget.style.transform = 'translateY(0)'
-                              }}
-                            >
-                              {/* Match Header - City & Stadium */}
-                              <div style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'flex-start',
-                                marginBottom: '16px',
-                                paddingBottom: '12px',
-                                borderBottom: `1px solid ${cityColor}33`,
-                              }}>
-                                <div>
-                                  <p style={{
-                                    fontSize: '14px',
-                                    fontWeight: '600',
-                                    color: cityColor,
-                                    marginBottom: '4px',
-                                  }}>
-                                    {cityEmoji} {match.ciudad}
-                                  </p>
-                                  <h4 style={{
-                                    fontSize: '16px',
-                                    fontWeight: '700',
-                                    color: 'var(--gray-900)',
-                                  }}>
-                                    {match.estadio}
-                                  </h4>
-                                </div>
-                                <span style={{
-                                  backgroundColor: cityColor + '15',
-                                  color: cityColor,
-                                  padding: '6px 12px',
-                                  borderRadius: '4px',
-                                  fontSize: '12px',
-                                  fontWeight: '600',
-                                  whiteSpace: 'nowrap',
-                                }}>
-                                  {match.fase.replace('Fase de Grupos', 'Grupos')}
-                                </span>
-                              </div>
-
-                              {/* Teams */}
-                              <div style={{
-                                backgroundColor: 'var(--gray-50)',
-                                padding: '16px',
-                                borderRadius: '6px',
-                                marginBottom: '16px',
-                                textAlign: 'center',
-                              }}>
-                                <p style={{
-                                  fontSize: '16px',
-                                  fontWeight: '700',
-                                  color: 'var(--gray-900)',
-                                }}>
-                                  {match.equipos}
-                                </p>
-                                <p style={{
-                                  fontSize: '13px',
-                                  color: 'var(--gray-600)',
-                                  marginTop: '6px',
-                                }}>
-                                  Hora: {match.hora}
-                                </p>
-                              </div>
-
-                              {/* Description */}
-                              <p style={{
-                                fontSize: '13px',
-                                color: 'var(--gray-600)',
-                                lineHeight: '1.6',
-                                marginBottom: '16px',
-                                fontStyle: 'italic',
-                              }}>
-                                {match.descripcion}
-                              </p>
-
-                              {/* Action Links */}
-                              <div style={{
-                                display: 'flex',
-                                gap: '12px',
-                                flexWrap: 'wrap',
-                              }}>
-                                <Link
-                                  href={`/mundial-2026/partidos/#partido-${match.jornada}`}
-                                  style={{
-                                    flex: 1,
-                                    minWidth: '200px',
-                                    display: 'inline-block',
-                                    backgroundColor: cityColor,
-                                    color: 'white',
-                                    padding: '10px 16px',
-                                    borderRadius: '4px',
-                                    fontSize: '13px',
-                                    fontWeight: '600',
-                                    textDecoration: 'none',
-                                    textAlign: 'center',
-                                    transition: 'all 0.3s ease',
-                                  }}
-                                  onMouseEnter={(e) => {
-                                    e.target.style.opacity = '0.9'
-                                  }}
-                                  onMouseLeave={(e) => {
-                                    e.target.style.opacity = '1'
-                                  }}
-                                >
-                                  Ver detalles del partido
-                                </Link>
-                                <Link
-                                  href={`/${match.ciudadKey}/mundial-2026/${match.slug_ruta}/`}
-                                  style={{
-                                    flex: 1,
-                                    minWidth: '200px',
-                                    display: 'inline-block',
-                                    backgroundColor: 'transparent',
-                                    color: cityColor,
-                                    border: `2px solid ${cityColor}`,
-                                    padding: '8px 16px',
-                                    borderRadius: '4px',
-                                    fontSize: '13px',
-                                    fontWeight: '600',
-                                    textDecoration: 'none',
-                                    textAlign: 'center',
-                                    transition: 'all 0.3s ease',
-                                  }}
-                                  onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = cityColor + '10'
-                                  }}
-                                  onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = 'transparent'
-                                  }}
-                                >
-                                  Cómo llegar
-                                </Link>
-                              </div>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </div>
+          {sortedDates.map((fecha, dateIdx) => {
+            const matches = matchesByDate[fecha];
+            return (
+              <div key={fecha} style={{ marginBottom: '3rem' }}>
+                {/* Date heading */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
+                  <div style={{
+                    width: '40px', height: '40px', borderRadius: '50%',
+                    backgroundColor: '#00D4FF', color: '#0A0A0F',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontWeight: '700', fontSize: '0.9rem', flexShrink: 0,
+                  }}>
+                    {dateIdx + 1}
+                  </div>
+                  <div>
+                    <h3 style={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.25rem', margin: '0', textTransform: 'capitalize' }}>
+                      {formatDate(fecha)}
+                    </h3>
+                    <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0.25rem 0 0 0' }}>
+                      {matches.length} {matches.length === 1 ? 'partido' : 'partidos'}
+                    </p>
                   </div>
                 </div>
-              )
-            })}
-          </div>
+
+                {/* Match cards */}
+                <div style={{ display: 'grid', gap: '1rem', paddingLeft: '56px' }}>
+                  {matches.map((match, idx) => {
+                    const color = getCityColor(match.ciudadKey);
+                    const emoji = getCityEmoji(match.ciudadKey);
+                    const routeHref = getRouteHref(match.ciudadKey, match.slug_ruta);
+
+                    return (
+                      <div key={idx} style={{
+                        backgroundColor: 'var(--surface)',
+                        border: `1px solid ${color}40`,
+                        borderLeft: `4px solid ${color}`,
+                        borderRadius: '0.5rem',
+                        padding: '1.5rem',
+                      }}>
+                        {/* Header */}
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                          <div>
+                            <p style={{ color, fontSize: '0.85rem', fontWeight: '600', margin: '0 0 0.25rem 0' }}>
+                              {emoji} {match.ciudad}
+                            </p>
+                            <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1rem', fontWeight: '600', margin: '0' }}>
+                              {match.estadio}
+                            </p>
+                          </div>
+                          <span style={{
+                            backgroundColor: `${color}20`,
+                            color,
+                            padding: '0.25rem 0.75rem',
+                            borderRadius: '0.25rem',
+                            fontSize: '0.8rem',
+                            fontWeight: '600',
+                            whiteSpace: 'nowrap',
+                          }}>
+                            {match.fase}
+                          </span>
+                        </div>
+
+                        {/* Teams */}
+                        <div style={{
+                          backgroundColor: 'rgba(255,255,255,0.03)',
+                          padding: '1rem',
+                          borderRadius: '0.35rem',
+                          textAlign: 'center',
+                          marginBottom: '1rem',
+                        }}>
+                          <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: '700', fontSize: '1.05rem', margin: '0' }}>
+                            {match.equipos}
+                          </p>
+                          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0.25rem 0 0 0' }}>
+                            {match.hora === 'TBD' ? 'Hora por confirmarse' : match.hora}
+                          </p>
+                        </div>
+
+                        {/* Description */}
+                        {match.descripcion && (
+                          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', fontStyle: 'italic', margin: '0 0 1rem 0' }}>
+                            {match.descripcion}
+                          </p>
+                        )}
+
+                        {/* Links */}
+                        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                          <a href={`/mundial-2026/partidos/${match.ciudadKey}-${match.fecha}/`} style={{
+                            display: 'inline-block',
+                            backgroundColor: color,
+                            color: 'white',
+                            padding: '0.5rem 1rem',
+                            borderRadius: '0.25rem',
+                            fontSize: '0.85rem',
+                            fontWeight: '600',
+                            textDecoration: 'none',
+                          }}>
+                            Ver detalles
+                          </a>
+                          <a href={routeHref} style={{
+                            display: 'inline-block',
+                            backgroundColor: 'transparent',
+                            color,
+                            border: `1px solid ${color}`,
+                            padding: '0.5rem 1rem',
+                            borderRadius: '0.25rem',
+                            fontSize: '0.85rem',
+                            fontWeight: '600',
+                            textDecoration: 'none',
+                          }}>
+                            Cómo llegar
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
-      {/* Stadium Comparison Table */}
-      <section style={{
-        padding: '60px 20px',
-        backgroundColor: 'var(--gray-50)',
-        borderTop: '1px solid var(--gray-200)',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: '28px',
-            fontWeight: '700',
-            marginBottom: '30px',
-            color: 'var(--gray-900)',
-          }}>
-            Comparativa de Estadios
-          </h2>
-
-          <div style={{
-            overflowX: 'auto',
-            borderRadius: '8px',
-            border: '1px solid var(--gray-200)',
-          }}>
-            <table style={{
-              width: '100%',
-              borderCollapse: 'collapse',
-              backgroundColor: 'white',
-            }}>
+      {/* Stadium Comparison */}
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ color: '#00D4FF', fontSize: '1.5rem', marginBottom: '2rem' }}>Comparación de Estadios</h2>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
-                <tr style={{
-                  backgroundColor: 'var(--gray-900)',
-                  color: 'white',
-                }}>
-                  <th style={{
-                    padding: '16px',
-                    textAlign: 'left',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    borderBottom: '2px solid var(--gray-200)',
-                  }}>
-                    Ciudad
-                  </th>
-                  <th style={{
-                    padding: '16px',
-                    textAlign: 'left',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    borderBottom: '2px solid var(--gray-200)',
-                  }}>
-                    Estadio
-                  </th>
-                  <th style={{
-                    padding: '16px',
-                    textAlign: 'left',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    borderBottom: '2px solid var(--gray-200)',
-                  }}>
-                    Capacidad
-                  </th>
-                  <th style={{
-                    padding: '16px',
-                    textAlign: 'left',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    borderBottom: '2px solid var(--gray-200)',
-                  }}>
-                    Tiempo Transporte
-                  </th>
-                  <th style={{
-                    padding: '16px',
-                    textAlign: 'left',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    borderBottom: '2px solid var(--gray-200)',
-                  }}>
-                    Costo Transporte
-                  </th>
+                <tr style={{ borderBottom: '2px solid var(--border)' }}>
+                  {['Ciudad', 'Estadio', 'Capacidad', 'Tiempo transporte', 'Costo', 'Partidos'].map((h) => (
+                    <th key={h} style={{
+                      padding: '1rem 0.75rem',
+                      textAlign: 'left',
+                      color: 'rgba(255,255,255,0.6)',
+                      fontSize: '0.8rem',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      fontWeight: '600',
+                    }}>
+                      {h}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {stadiums.map((stadium, idx) => (
-                  <tr
-                    key={idx}
-                    style={{
-                      backgroundColor: idx % 2 === 0 ? 'white' : 'var(--gray-50)',
-                      borderBottom: '1px solid var(--gray-200)',
-                    }}
-                  >
-                    <td style={{
-                      padding: '16px',
-                      fontSize: '14px',
-                      fontWeight: '500',
-                      color: 'var(--gray-900)',
-                    }}>
-                      {stadium.ciudad}
+                {stadiums.map((s) => (
+                  <tr key={s.ciudadKey} style={{ borderBottom: '1px solid var(--border)' }}>
+                    <td style={{ padding: '1rem 0.75rem', color: getCityColor(s.ciudadKey), fontWeight: '600', fontSize: '0.95rem' }}>
+                      {getCityEmoji(s.ciudadKey)} {s.ciudad}
                     </td>
-                    <td style={{
-                      padding: '16px',
-                      fontSize: '14px',
-                      fontWeight: '600',
-                      color: 'var(--gray-900)',
-                    }}>
-                      {stadium.estadio}
-                    </td>
-                    <td style={{
-                      padding: '16px',
-                      fontSize: '14px',
-                      color: 'var(--gray-700)',
-                    }}>
-                      {stadium.capacidad}
-                    </td>
-                    <td style={{
-                      padding: '16px',
-                      fontSize: '14px',
-                      color: 'var(--gray-700)',
-                    }}>
-                      {stadium.transitTime}
-                    </td>
-                    <td style={{
-                      padding: '16px',
-                      fontSize: '14px',
-                      color: 'var(--gray-700)',
-                      fontWeight: '600',
-                    }}>
-                      {stadium.transitCost}
-                    </td>
+                    <td style={{ padding: '1rem 0.75rem', color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem' }}>{s.estadio}</td>
+                    <td style={{ padding: '1rem 0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>{s.capacidad}</td>
+                    <td style={{ padding: '1rem 0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>~{s.tiempo} min</td>
+                    <td style={{ padding: '1rem 0.75rem', color: '#00D4FF', fontWeight: '600', fontSize: '0.95rem' }}>${s.costo} MXN</td>
+                    <td style={{ padding: '1rem 0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>{s.partidos}</td>
                   </tr>
                 ))}
               </tbody>
@@ -633,253 +338,92 @@ export default function CalendarioMundial2026() {
         </div>
       </section>
 
-      {/* Quick Links to Each City */}
-      <section style={{
-        padding: '60px 20px',
-        backgroundColor: 'white',
-        borderTop: '1px solid var(--gray-200)',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: '28px',
-            fontWeight: '700',
-            marginBottom: '30px',
-            color: 'var(--gray-900)',
-          }}>
-            Acceso Rápido por Ciudad
-          </h2>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '24px',
-          }}>
-            {/* CDMX */}
-            <div style={{
-              backgroundColor: 'var(--gray-50)',
-              border: '2px solid var(--cdmx)',
-              borderRadius: '8px',
-              padding: '24px',
-            }}>
-              <h3 style={{
-                fontSize: '18px',
-                fontWeight: '700',
-                color: 'var(--gray-900)',
-                marginBottom: '12px',
-              }}>
-                🏛️ Ciudad de México
-              </h3>
-              <p style={{
-                fontSize: '13px',
-                color: 'var(--gray-600)',
-                marginBottom: '16px',
-                lineHeight: '1.6',
-              }}>
-                Estadio Azteca | 5 partidos | 87,523 personas
-              </p>
-              <Link
-                href="/mundial-2026/como-llegar-estadio-azteca/"
-                style={{
-                  display: 'inline-block',
-                  backgroundColor: 'var(--cdmx)',
-                  color: 'white',
-                  padding: '10px 16px',
-                  borderRadius: '4px',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease',
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.opacity = '0.9'
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.opacity = '1'
-                }}
-              >
-                Ruta al Azteca
-              </Link>
-            </div>
-
-            {/* GDL */}
-            <div style={{
-              backgroundColor: 'var(--gray-50)',
-              border: '2px solid var(--gdl)',
-              borderRadius: '8px',
-              padding: '24px',
-            }}>
-              <h3 style={{
-                fontSize: '18px',
-                fontWeight: '700',
-                color: 'var(--gray-900)',
-                marginBottom: '12px',
-              }}>
-                🌺 Guadalajara
-              </h3>
-              <p style={{
-                fontSize: '13px',
-                color: 'var(--gray-600)',
-                marginBottom: '16px',
-                lineHeight: '1.6',
-              }}>
-                Estadio Akron | 4 partidos | 49,850 personas
-              </p>
-              <Link
-                href="/gdl/mundial-2026/como-llegar-estadio-akron/"
-                style={{
-                  display: 'inline-block',
-                  backgroundColor: 'var(--gdl)',
-                  color: 'white',
-                  padding: '10px 16px',
-                  borderRadius: '4px',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease',
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.opacity = '0.9'
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.opacity = '1'
-                }}
-              >
-                Ruta al Akron
-              </Link>
-            </div>
-
-            {/* MTY */}
-            <div style={{
-              backgroundColor: 'var(--gray-50)',
-              border: '2px solid var(--mty)',
-              borderRadius: '8px',
-              padding: '24px',
-            }}>
-              <h3 style={{
-                fontSize: '18px',
-                fontWeight: '700',
-                color: 'var(--gray-900)',
-                marginBottom: '12px',
-              }}>
-                🏔️ Monterrey
-              </h3>
-              <p style={{
-                fontSize: '13px',
-                color: 'var(--gray-600)',
-                marginBottom: '16px',
-                lineHeight: '1.6',
-              }}>
-                Estadio BBVA | 4 partidos | 53,500 personas
-              </p>
-              <Link
-                href="/mty/mundial-2026/como-llegar-estadio-bbva/"
-                style={{
-                  display: 'inline-block',
-                  backgroundColor: 'var(--mty)',
-                  color: 'white',
-                  padding: '10px 16px',
-                  borderRadius: '4px',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease',
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.opacity = '0.9'
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.opacity = '1'
-                }}
-              >
-                Ruta al BBVA
-              </Link>
-            </div>
+      {/* Quick Links */}
+      <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ color: '#00D4FF', fontSize: '1.5rem', marginBottom: '2rem' }}>Rutas rápidas a cada estadio</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {stadiums.map((s) => {
+              const color = getCityColor(s.ciudadKey);
+              const href = getRouteHref(s.ciudadKey, s.slug_ruta);
+              return (
+                <a key={s.ciudadKey} href={href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <div style={{
+                    backgroundColor: 'var(--surface)',
+                    border: `2px solid ${color}40`,
+                    borderRadius: '0.5rem',
+                    padding: '1.5rem',
+                    transition: 'all 0.3s',
+                  }} className="hover-lift">
+                    <p style={{ fontSize: '1.5rem', margin: '0 0 0.5rem 0' }}>{getCityEmoji(s.ciudadKey)}</p>
+                    <h3 style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.1rem', margin: '0 0 0.5rem 0' }}>{s.ciudad}</h3>
+                    <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', margin: '0 0 0.75rem 0' }}>
+                      {s.estadio} • {s.partidos} partidos • {s.capacidad}
+                    </p>
+                    <div style={{ display: 'flex', gap: '1rem' }}>
+                      <span style={{ color: '#00D4FF', fontSize: '0.85rem', fontWeight: '600' }}>~{s.tiempo} min</span>
+                      <span style={{ color: '#00D4FF', fontSize: '0.85rem', fontWeight: '600' }}>${s.costo} MXN</span>
+                    </div>
+                    <p style={{ color, fontSize: '0.85rem', fontWeight: '600', margin: '1rem 0 0 0' }}>
+                      Ver ruta al estadio →
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* CTA - PWA Download */}
+      {/* CTA */}
       <section style={{
-        padding: '60px 20px',
-        backgroundColor: 'var(--gray-900)',
-        color: 'white',
+        padding: '3rem 1.25rem',
+        backgroundColor: 'rgba(0, 212, 255, 0.05)',
+        borderTop: '1px solid rgba(0, 212, 255, 0.2)',
         textAlign: 'center',
-        borderTop: '1px solid var(--gray-800)',
       }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: '28px',
-            fontWeight: '700',
-            marginBottom: '16px',
-          }}>
-            Descarga MetroGuia
-          </h2>
-          <p style={{
-            fontSize: '16px',
-            color: 'var(--gray-300)',
-            marginBottom: '24px',
-            lineHeight: '1.6',
-          }}>
-            Instala MetroGuia como app en tu teléfono para acceder a todas las rutas sin conexión a internet. Perfecto para los días de partido.
+        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ fontSize: '1.5rem', margin: '0 0 0.5rem 0' }}>📱</p>
+          <h2 style={{ color: '#00D4FF', fontSize: '1.3rem', margin: '0 0 0.75rem 0' }}>Descarga MetroGuia como app</h2>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem', margin: '0 0 1.5rem 0' }}>
+            Instala MetroGuia en tu teléfono para tener rutas a los estadios disponibles sin conexión. Perfecto para días de partido.
           </p>
-          <div style={{
-            display: 'flex',
-            gap: '12px',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-          }}>
-            <button
-              onClick={() => {
-                if (window.deferredPrompt) {
-                  window.deferredPrompt.prompt()
-                }
-              }}
-              style={{
-                backgroundColor: 'var(--cdmx)',
-                color: 'white',
-                border: 'none',
-                padding: '12px 24px',
-                borderRadius: '4px',
-                fontSize: '14px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.opacity = '0.9'
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.opacity = '1'
-              }}
-            >
-              📱 Descargar App
-            </button>
-            <Link
-              href="/mundial-2026/"
-              style={{
-                backgroundColor: 'transparent',
-                color: 'white',
-                border: '2px solid white',
-                padding: '10px 24px',
-                borderRadius: '4px',
-                fontSize: '14px',
-                fontWeight: '600',
-                textDecoration: 'none',
-                display: 'inline-block',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent'
-              }}
-            >
-              Volver a Mundial
-            </Link>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="/mundial-2026/" style={{
+              display: 'inline-block',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'rgba(0, 212, 255, 0.1)',
+              border: '1px solid #00D4FF',
+              color: '#00D4FF',
+              borderRadius: '0.35rem',
+              textDecoration: 'none',
+              fontWeight: '600',
+              fontSize: '0.9rem',
+            }}>
+              Volver al hub Mundial 2026
+            </a>
+            <a href="/mundial-2026/partidos/" style={{
+              display: 'inline-block',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: '#00D4FF',
+              color: '#0A0A0F',
+              borderRadius: '0.35rem',
+              textDecoration: 'none',
+              fontWeight: '600',
+              fontSize: '0.9rem',
+            }}>
+              Ver todos los partidos
+            </a>
           </div>
         </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section style={{ padding: '1.5rem 1.25rem', textAlign: 'center' }}>
+        <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', margin: '0' }}>
+          Las fechas y horarios pueden cambiar. Verifica en fifa.com antes de tu viaje.
+        </p>
       </section>
     </div>
-  )
+  );
 }

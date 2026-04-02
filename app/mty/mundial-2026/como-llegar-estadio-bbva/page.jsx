@@ -1,4 +1,4 @@
-'use client';
+
 
 import { mundial2026 } from '@/data/mundial';
 

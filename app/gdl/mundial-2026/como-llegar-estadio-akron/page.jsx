@@ -1,4 +1,4 @@
-'use client';
+
 
 import { mundial2026 } from '@/data/mundial';
 
@@ -755,18 +755,14 @@ export default function ComoLlegarEstadioDelta() {
           </p>
           <div style={styles.ctaButtons}>
             <a
-              href="/gdl/mundial-2026/partidos/"
+              href="/mundial-2026/partidos/"
               style={styles.ctaButton}
-              onMouseEnter={e => e.target.style.opacity = '0.9'}
-              onMouseLeave={e => e.target.style.opacity = '1'}
             >
               Ver todos los partidos
             </a>
             <a
               href="/gdl/mundial-2026/"
               style={{ ...styles.ctaButton, ...styles.ctaButtonAlt }}
-              onMouseEnter={e => e.target.style.opacity = '0.9'}
-              onMouseLeave={e => e.target.style.opacity = '1'}
             >
               Volver a Mundial 2026
             </a>
