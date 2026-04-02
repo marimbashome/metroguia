@@ -133,11 +133,11 @@ export const lineasKansasCity = [
     id: "bus-47",
     color: "#A4AC86",
     colorNombre: "Verde",
-    inicio": "Downtown KC",
+    inicio: "Downtown KC",
     fin: "Arrowhead Stadium",
     total: 0,
     municipios: ["Kansas City"],
-    descripcion": "Ruta 47 de RideKC bus local (KCATA). Conecta downtown con zona de Arrowhead. Servicio regular de transporte público pre-FIFA.",
+    descripcion: "Ruta 47 de RideKC bus local (KCATA). Conecta downtown con zona de Arrowhead. Servicio regular de transporte público pre-FIFA.",
     sistema: "bus-local",
     estaciones_turisticas: ["kc-union-station", "kc-power-light"],
     estaciones: [
