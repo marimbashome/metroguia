@@ -1,102 +1,20 @@
-
-import { mundial2026 } from '@/data/mundial'
-
 export const metadata = {
-  title: 'Cómo llegar al Estadio Azteca en Metro — Ruta paso a paso | MetroGuia',
-  description: 'Guía completa para llegar al Estadio Azteca durante el Mundial 2026. Ruta Metro L2 + Tren Ligero, horarios, costos, alternativas y tips de seguridad.',
-  keywords: ['como llegar estadio azteca en metro', 'ruta metro estadio azteca mundial 2026', 'transporte estadio azteca', 'mundial fifa 2026 cdmx'],
+  title: 'Cómo llegar al Estadio Azteca en Metro para FIFA 2026 — Guía completa | MetroGuia',
+  description: 'Guía paso a paso para llegar al Estadio Azteca en metro durante el Mundial 2026. Rutas, horarios, precios, consejos de seguridad y timing.',
+  keywords: 'estadio azteca, como llegar, metro cdmx, mundial 2026, fifa, transporte público',
   openGraph: {
-    title: 'Cómo llegar al Estadio Azteca en Metro para el Mundial 2026',
-    description: 'Ruta paso a paso: Metro L2 → Tasqueña → Tren Ligero → Estadio Azteca. 45-60 minutos, $15 MXN total.',
+    title: 'Cómo llegar al Estadio Azteca en Metro',
+    description: 'Guía completa de transporte para el Estadio Azteca en el Mundial 2026',
+    type: 'article',
     url: 'https://metroguia.mx/mundial-2026/como-llegar-estadio-azteca/',
-    siteName: 'MetroGuia',
   },
 }
 
-function StepIcon({ tipo }) {
-  const icons = {
-    'metro': '🚇',
-    'transbordo': '🔄',
-    'caminata': '🚶',
-    'compra': '🎟️',
-    'tren-ligero': '🚃',
-    'llegada': '📍'
-  }
-  return icons[tipo] || '→'
-}
-
-function RouteCard({ step, index }) {
-  const baseStyle = {
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '1.5rem',
-    padding: '1.5rem',
-    backgroundColor: 'var(--surface)',
-    border: '1px solid var(--border)',
-    borderRadius: 'var(--radius)',
-    marginBottom: '1rem'
-  }
-
-  return (
-    <div style={baseStyle}>
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '0.5rem'
-      }}>
-        <div style={{
-          width: '3rem',
-          height: '3rem',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: 'var(--primary)',
-          borderRadius: '50%',
-          color: '#000',
-          fontWeight: 700,
-          fontSize: '1.25rem',
-          flexShrink: 0
-        }}>
-          {StepIcon({ tipo: step.tipo })}
-        </div>
-        {index < 6 && (
-          <div style={{
-            width: '2px',
-            height: '2rem',
-            backgroundColor: 'var(--primary)',
-            opacity: 0.4
-          }} />
-        )}
-      </div>
-      <div style={{ flex: 1 }}>
-        <p style={{
-          fontSize: '0.8rem',
-          color: 'var(--text-muted)',
-          margin: '0 0 0.5rem 0',
-          textTransform: 'uppercase',
-          letterSpacing: '0.05em',
-          fontWeight: 600
-        }}>
-          Paso {index + 1}
-          {step.linea && ` • Línea ${step.linea}`}
-          {step.tiempo > 0 && ` • ${step.tiempo} min`}
-        </p>
-        <p style={{ color: 'var(--text)', margin: '0', lineHeight: '1.6', fontWeight: 500 }}>
-          {step.instruccion}
-        </p>
-      </div>
-    </div>
-  )
+export function generateStaticParams() {
+  return []
 }
 
 export default function ComoLlegarAztecaPage() {
-  const sede = mundial2026.sedes.cdmx
-  const ruta = sede.ruta_desde_centro
-  const totalTiempo = ruta.pasos.reduce((sum, p) => sum + p.tiempo, 0)
-  const noPasos = ruta.pasos.filter(p => p.tipo !== 'transbordo').length
-
-  // JSON-LD schemas
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -122,49 +40,42 @@ export default function ComoLlegarAztecaPage() {
     ]
   }
 
-  const howToSchema = {
+  const eventSchema = {
     '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: 'Cómo llegar al Estadio Azteca en Metro',
-    description: 'Guía paso a paso para llegar al Estadio Azteca durante el Mundial FIFA 2026',
-    step: ruta.pasos.map((p, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: p.instruccion,
-      text: p.instruccion,
-      duration: `PT${p.tiempo}M`
-    }))
-  }
-
-  const placeSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Place',
-    name: 'Estadio Azteca',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: sede.direccion.split(',')[0],
-      addressLocality: 'Ciudad de México',
-      addressRegion: 'Ciudad de México',
-      postalCode: '04650',
-      addressCountry: 'MX'
+    '@type': 'SportsEvent',
+    name: 'FIFA World Cup 2026 — Estadio Azteca',
+    description: 'Partidos de la Copa Mundial FIFA 2026 en el Estadio Azteca de Ciudad de México',
+    location: {
+      '@type': 'Place',
+      name: 'Estadio Azteca',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Calzada de Tlalpan 3665',
+        addressLocality: 'Ciudad de México',
+        addressRegion: 'Ciudad de México',
+        postalCode: '14020',
+        addressCountry: 'MX'
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 19.302500,
+        longitude: -99.145833
+      }
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: sede.coordenadas.lat,
-      longitude: sede.coordenadas.lng
-    },
-    capacity: sede.capacidad
+    organizer: {
+      '@type': 'Organization',
+      name: 'FIFA'
+    }
   }
 
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
 
       {/* Hero */}
       <section style={{
-        background: 'linear-gradient(135deg, #1a472a 0%, rgba(0, 212, 255, 0.1) 100%)',
+        background: 'linear-gradient(135deg, #1a472a 0%, rgba(233, 30, 140, 0.1) 100%)',
         padding: '5rem 1.5rem 4rem',
         borderBottom: '1px solid var(--border)',
       }}>
@@ -180,17 +91,17 @@ export default function ComoLlegarAztecaPage() {
             <a href="/mundial-2026/" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Mundial 2026</a>
             {' '} → Estadio Azteca
           </p>
-          <h1 style={{ marginBottom: '1rem', fontSize: '2.75rem', lineHeight: '1.1', fontWeight: 700 }}>
-            🏟️ Cómo llegar al Estadio Azteca en Metro
+          <h1 style={{ marginBottom: '1rem', fontSize: '2.5rem', lineHeight: '1.2' }}>
+            Cómo llegar al Estadio Azteca en Metro
           </h1>
           <p style={{
             fontSize: '1.125rem',
-            color: 'rgba(255,255,255,0.8)',
+            color: 'var(--text-muted)',
             lineHeight: '1.6',
             marginBottom: '1.5rem',
             maxWidth: '700px',
           }}>
-            Guía paso a paso desde cualquier punto de la CDMX. Ruta, horarios, precios y tips para días de partido.
+            Guía paso a paso para llegar desde cualquier punto de la CDMX durante el Mundial FIFA 2026. Incluye rutas, horarios, precios y consejos.
           </p>
 
           {/* Quick Stats */}
@@ -201,270 +112,322 @@ export default function ComoLlegarAztecaPage() {
             marginTop: '2rem',
           }}>
             <div>
-              <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tiempo total</p>
-              <p style={{ color: '#fff', fontWeight: 700, fontSize: '1.5rem' }}>{totalTiempo} min</p>
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Ubicación</p>
+              <p style={{ color: 'var(--text)', fontWeight: 600, fontSize: '1rem' }}>Calzada de Tlalpan 3665</p>
             </div>
             <div>
-              <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Costo</p>
-              <p style={{ color: '#fff', fontWeight: 700, fontSize: '1.5rem' }}>${ruta.costo} MXN</p>
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Acceso</p>
+              <p style={{ color: 'var(--text)', fontWeight: 600, fontSize: '1rem' }}>Metro Línea 2 + Tren Ligero</p>
             </div>
             <div>
-              <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Pasos</p>
-              <p style={{ color: '#fff', fontWeight: 700, fontSize: '1.5rem' }}>{noPasos}</p>
-            </div>
-            <div>
-              <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Capacidad</p>
-              <p style={{ color: '#fff', fontWeight: 700, fontSize: '1.5rem' }}>{(sede.capacidad / 1000).toFixed(0)}k</p>
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tiempo total</p>
+              <p style={{ color: 'var(--text)', fontWeight: 600, fontSize: '1rem' }}>60-90 minutos desde el Centro</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Route Summary Card */}
-      <section style={{ padding: '3rem 1.5rem' }}>
+      {/* Main Content */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <div style={{
-            backgroundColor: 'rgba(0, 212, 255, 0.08)',
-            border: '2px solid var(--primary)',
-            borderRadius: 'var(--radius-lg)',
-            padding: '2rem',
-            marginBottom: '3rem'
-          }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem' }}>
-              <div>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontWeight: 600 }}>Ruta completa</p>
-                <p style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem', margin: 0 }}>
-                  {ruta.descripcion}
-                </p>
-              </div>
-              <div>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontWeight: 600 }}>Origen</p>
-                <p style={{ color: 'var(--text)', fontWeight: 600, margin: 0 }}>Zócalo o cualquier estación L2</p>
-              </div>
-              <div>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: '0 0 0.5rem 0', textTransform: 'uppercase', fontWeight: 600 }}>Transferencias</p>
-                <p style={{ color: 'var(--text)', fontWeight: 600, margin: 0 }}>1 (Metro → Tren Ligero)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <h2 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Instrucciones paso a paso</h2>
 
-      {/* Step-by-step timeline */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
-        <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2.5rem', fontSize: '2rem', fontWeight: 700 }}>Ruta paso a paso</h2>
-          {ruta.pasos.map((paso, idx) => (
-            <RouteCard key={idx} step={paso} index={idx} />
+          {[
+            {
+              paso: 1,
+              titulo: 'Localiza la estación más cercana de la Línea 2',
+              desc: 'La Línea 2 (azul) recorre todo el Centro. Estaciones principales: Zócalo, Bellas Artes, Allende, San Juan de Letrán, Chabacano.',
+              detalles: [
+                'Si estás en el Centro: camina a Zócalo (Plaza Mayor)',
+                'Si estás en Polanco: ve a Auditorio o Constituyentes',
+                'Si estás en Chapultepec: ve a Chapultepec o Juárez'
+              ]
+            },
+            {
+              paso: 2,
+              titulo: 'Compra un boleto o recarga tu tarjeta Metro',
+              desc: 'Costo: $8 MXN por viaje. Opción recomendada: compra una Tarjeta de Transporte recargable y reutilízala durante tu viaje.',
+              detalles: [
+                'Tarjeta de Transporte: $20 MXN (incluye $1 de saldo)',
+                'Válida en Metro, Metrobús y Tren Ligero',
+                'Durará para todo tu viaje al Estadio y de regreso'
+              ]
+            },
+            {
+              paso: 3,
+              titulo: 'Sube el tren en dirección SUR (Tasqueña)',
+              desc: 'Busca los letreros que dicen "TASQUEÑA" o "SUR". El tren azul tiene dos direcciones; te asegurarás de ir hacia el sur.',
+              detalles: [
+                'Tiempo desde Centro Histórico: 20-25 minutos',
+                'En días de partido: espera aglomeración',
+                'Viaja en horas pico (mañana): 7:00-10:00 AM'
+              ]
+            },
+            {
+              paso: 4,
+              titulo: 'Desciende en la estación TASQUEÑA (terminus sur)',
+              desc: 'Tasqueña es la última estación. Prácticamente todos los pasajeros bajarán aquí en días de partido.',
+              detalles: [
+                'Sigue a la multitud',
+                'Guarda tu mochila cerca del cuerpo',
+                'Busca carteles del Tren Ligero (color naranja)'
+              ]
+            },
+            {
+              paso: 5,
+              titulo: 'IMPORTANTE: Compra un boleto separado para el Tren Ligero',
+              desc: 'Tu tarjeta Metro NO funciona en el Tren Ligero. Debes comprar un boleto adicional (~$10 MXN).',
+              detalles: [
+                'Busca la taquilla del Tren Ligero en la estación',
+                'Di: "Un boleto para Estadio Azteca"',
+                'Guarda el comprobante para la salida'
+              ],
+              warn: true
+            },
+            {
+              paso: 6,
+              titulo: 'Sube al Tren Ligero rumbo al Estadio Azteca',
+              desc: 'El Tren Ligero es un monorraíl moderno. Va directo desde Tasqueña al Estadio Azteca.',
+              detalles: [
+                'Tiempo: 10-15 minutos',
+                'Ventanas con vista a la ciudad',
+                'Muy concurrido en días de partido'
+              ]
+            },
+            {
+              paso: 7,
+              titulo: 'Arriba al Estadio Azteca',
+              desc: 'Final de la línea. Sigue la multitud hacia las taquillas de entrada.',
+              detalles: [
+                'Tiempo total desde Centro: 1 hora (sin congestión)',
+                'Tiempo con congestión: 1.5 horas',
+                'Llega 2-3 horas antes del partido'
+              ]
+            }
+          ].map(({ paso, titulo, desc, detalles, warn }) => (
+            <div key={paso} style={{
+              backgroundColor: warn ? 'rgba(255, 193, 7, 0.1)' : 'rgba(0, 212, 255, 0.05)',
+              borderLeft: `5px solid ${warn ? '#ff9800' : 'var(--primary)'}`,
+              padding: '2rem',
+              borderRadius: 'var(--radius)',
+              marginBottom: '1.5rem',
+            }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', marginBottom: '0.75rem' }}>
+                <div style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '2.5rem',
+                  height: '2.5rem',
+                  backgroundColor: warn ? '#ff9800' : 'var(--primary)',
+                  color: '#fff',
+                  fontWeight: 700,
+                  borderRadius: 'var(--radius)',
+                  fontSize: '1.25rem',
+                  flexShrink: 0,
+                }}>
+                  {paso}
+                </div>
+                <h3 style={{ margin: '0', color: 'var(--text)', fontSize: '1.25rem' }}>{titulo}</h3>
+              </div>
+              <p style={{ marginBottom: '1rem', color: 'var(--text)', lineHeight: '1.6' }}>{desc}</p>
+              {detalles && (
+                <ul style={{ margin: '0', paddingLeft: '1.5rem', color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '0.95rem' }}>
+                  {detalles.map((d, i) => <li key={i}>{d}</li>)}
+                </ul>
+              )}
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Warning box */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
+      {/* Mapa Visualización */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <div style={{
-            backgroundColor: 'rgba(255, 152, 0, 0.12)',
-            border: '2px solid #ff9800',
-            borderRadius: 'var(--radius-lg)',
-            padding: '2rem',
-            marginBottom: '3rem'
-          }}>
-            <h3 style={{ margin: '0 0 1rem 0', color: '#ff9800', fontSize: '1.25rem' }}>⚠️ Advertencia importante</h3>
-            {ruta.alertas.map((alerta, i) => (
-              <p key={i} style={{ color: 'var(--text)', margin: '0.5rem 0', lineHeight: '1.6' }}>
-                • {alerta}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ASCII Route Map */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
-        <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2rem', fontSize: '2rem', fontWeight: 700 }}>Visualización de la ruta</h2>
+          <h2 style={{ marginBottom: '2rem' }}>Visualización de la ruta</h2>
           <div style={{
             backgroundColor: 'var(--surface)',
             padding: '2rem',
             borderRadius: 'var(--radius)',
             fontFamily: 'monospace',
-            fontSize: '0.9rem',
+            fontSize: '0.95rem',
             overflow: 'auto',
             border: '1px solid var(--border)',
-            lineHeight: '1.8'
+            lineHeight: '2'
           }}>
-            {`Tu ubicación (Zócalo, Polanco, Chapultepec, etc.)
+{`Tu ubicación (Centro Histórico, Polanco, Chapultepec, etc.)
                     ↓
           LÍNEA 2 DEL METRO (Azul)
       Dirección: SUR (TASQUEÑA)
-          25 minutos
+          20-25 minutos
                     ↓
           ESTACIÓN TASQUEÑA
-    [⚠️  COMPRA BOLETO TREN LIGERO AQUÍ]
-          Boleto: $10 MXN
+    [⚠️  Compra boleto Tren Ligero aquí]
+          Boleto: ~$10 MXN
                     ↓
            TREN LIGERO (Naranja)
       Ruta: Tasqueña → Estadio Azteca
           10-15 minutos
                     ↓
         ESTACIÓN ESTADIO AZTECA 🏟️
-          ¡Bienvenido al Mundial 2026!
-                    ↓
-          Camina 5 min al estadio`}
+          ¡Bienvenido al Mundial 2026!`}
           </div>
         </div>
       </section>
 
-      {/* Alternative Routes */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
+      {/* Horarios y Frecuencia */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2.5rem', fontSize: '2rem', fontWeight: 700 }}>Rutas alternativas</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-            {sede.rutas_alternativas.map((ruta, idx) => (
-              <div key={idx} style={{
-                backgroundColor: 'var(--surface)',
-                border: '1px solid var(--border)',
+          <h2 style={{ marginBottom: '2rem' }}>Horarios y frecuencia</h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
+            {[
+              { servicio: 'Metro Línea 2', apertura: '5:00 AM', cierre: '00:00 (medianoche)', frecuencia: 'Cada 2-3 min (horas pico)', detalles: 'Lunes-Domingo' },
+              { servicio: 'Tren Ligero', apertura: '5:30 AM', cierre: '00:30 AM', frecuencia: 'Cada 8-10 min', detalles: 'Diario' }
+            ].map((s, i) => (
+              <div key={i} style={{
+                backgroundColor: 'var(--surface-hover)',
+                padding: '1.5rem',
                 borderRadius: 'var(--radius)',
-                padding: '1.5rem'
+                border: '1px solid var(--border)',
               }}>
-                <h4 style={{ color: 'var(--primary)', margin: '0 0 0.75rem 0', fontSize: '1.05rem', fontWeight: 600 }}>
-                  {ruta.nombre}
+                <h4 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>{s.servicio}</h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.95rem' }}>
+                  <div>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', margin: '0 0 0.25rem 0', textTransform: 'uppercase' }}>Horario</p>
+                    <p style={{ color: 'var(--text)', fontWeight: 600, margin: 0 }}>{s.apertura} - {s.cierre}</p>
+                  </div>
+                  <div>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', margin: '0 0 0.25rem 0', textTransform: 'uppercase' }}>Frecuencia</p>
+                    <p style={{ color: 'var(--text)', fontWeight: 600, margin: 0 }}>{s.frecuencia}</p>
+                  </div>
+                  <div>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', margin: '0 0 0.25rem 0', textTransform: 'uppercase' }}>Días</p>
+                    <p style={{ color: 'var(--text)', fontWeight: 600, margin: 0 }}>{s.detalles}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{
+            backgroundColor: 'rgba(255, 193, 7, 0.1)',
+            border: '1px solid #ff9800',
+            borderRadius: 'var(--radius)',
+            padding: '1.5rem',
+            marginTop: '2rem'
+          }}>
+            <p style={{ margin: '0', color: 'var(--text)', lineHeight: '1.6' }}>
+              <strong>⏰ Timing crítico para partidos:</strong> Llega 2-3 horas antes del inicio. Las puertas abren 3 horas previas. En días de partido, la congestión es significativa desde 3 horas antes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Costos */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <h2 style={{ marginBottom: '2rem' }}>Costos y presupuesto</h2>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '1.5rem',
+          }}>
+            {[
+              { concepto: 'Tarjeta de Transporte', precio: '$20 MXN', desc: 'Costo inicial (válida todo tu viaje)' },
+              { concepto: 'Metro: ida al Estadio', precio: '$8 MXN', desc: 'Cargado en tarjeta' },
+              { concepto: 'Tren Ligero: ida', precio: '$10 MXN', desc: 'Boleto separado (no funciona tarjeta Metro)' },
+              { concepto: 'Metro: regreso', precio: '$8 MXN', desc: 'Cargado en tarjeta' },
+              { concepto: 'Tren Ligero: regreso', precio: '$10 MXN', desc: 'Boleto separado' },
+              { concepto: 'TOTAL (ida y vuelta)', precio: '$56 MXN', desc: '~USD $3.50 por persona' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                backgroundColor: 'var(--surface)',
+                padding: '1.25rem',
+                borderRadius: 'var(--radius)',
+                border: '1px solid var(--border)',
+              }}>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem 0', textTransform: 'uppercase' }}>
+                  {item.concepto}
+                </p>
+                <p style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '1.25rem', margin: '0.5rem 0' }}>
+                  {item.precio}
+                </p>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', margin: 0 }}>
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Consejos de Seguridad */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <h2 style={{ marginBottom: '2rem' }}>Consejos de seguridad y comodidad</h2>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '1.5rem',
+          }}>
+            {[
+              { emoji: '🎫', titulo: 'Compra entrada con anticipación', desc: 'Obtén tu boleto para el partido en FIFA.com semanas antes. Evita colas el día del evento.' },
+              { emoji: '💰', titulo: 'Lleva dinero en efectivo', desc: 'Las maquinas ATM en la estación Tasqueña y alrededores tendrán largas colas. Retira antes.' },
+              { emoji: '🎒', titulo: 'Mochila pequeña permitida', desc: 'Una mochila pequeña es permitida. Revisión de bolsas es obligatoria. Lleva lo mínimo.' },
+              { emoji: '🚫', titulo: 'Prohibidos', desc: 'NO llevar: botellas de vidrio, latas de cerveza, cámaras profesionales, armas, cinturones con metal.' },
+              { emoji: '📱', titulo: 'Batería del teléfono', desc: 'Carga tu teléfono. Necesitarás GPS, tickets digitales y comunicación con amigos.' },
+              { emoji: '👥', titulo: 'Viaja en grupo', desc: 'Después del partido, las estaciones están abarrotadas. Es más seguro viajar acompañado.' },
+              { emoji: '⏰', titulo: 'Espera post-partido', desc: 'Después del evento, espera 30-45 minutos antes de salir. Verás de nuevo la multitud fuerte.' },
+              { emoji: '🚕', titulo: 'Alternativa: Uber', desc: 'Si la congestión es extrema, Uber desde el Estadio a tu hotel puede ser más rápido (~400 MXN).' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                backgroundColor: 'var(--surface-hover)',
+                padding: '1.5rem',
+                borderRadius: 'var(--radius)',
+                border: '1px solid var(--border)',
+              }}>
+                <h4 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--text)' }}>{item.emoji}</h4>
+                <h5 style={{ color: 'var(--primary)', marginBottom: '0.5rem', fontSize: '0.95rem', fontWeight: 600 }}>{item.titulo}</h5>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0, lineHeight: '1.5' }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Alrededor del Estadio */}
+      <section style={{ padding: '4rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <h2 style={{ marginBottom: '2rem' }}>Alrededor del Estadio Azteca</h2>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '1.5rem',
+          }}>
+            {[
+              { nombre: 'Comida', desc: 'Vendedores de tacos, elotes, refrescos fuera. Dentro del estadio: hamburguesas y nachos. Dinero en efectivo.' },
+              { nombre: 'Baños', desc: '⚠️ Baños públicos muy concurridos. Úsalos ANTES de la congestión. Hay baños en el segundo piso.' },
+              { nombre: 'Servicios médicos', desc: 'Hay paramedicos en la entrada. Para emergencias: llama 911 desde tu celular.' },
+              { nombre: 'Área de estacionamiento', desc: 'Lotes disponibles en Tlalpan (caro: $150-200 MXN). Mejor: Metro + Tren Ligero (más barato y seguro).' },
+              { nombre: 'WiFi', desc: 'No hay WiFi gratis. Compra datos móviles para recargar transporte o coordinar salida.' },
+              { nombre: 'Objetos perdidos', desc: 'Oficina de Información en Puerta 1. Revisa 24h después si pierdes algo.' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                backgroundColor: 'var(--surface)',
+                padding: '1.5rem',
+                borderRadius: 'var(--radius)',
+                border: '1px solid var(--border)',
+              }}>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '0.75rem', fontSize: '1rem', fontWeight: 600 }}>
+                  {item.nombre}
                 </h4>
-                <p style={{ color: 'var(--text)', margin: '0.75rem 0', lineHeight: '1.5', fontSize: '0.95rem' }}>
-                  {ruta.descripcion}
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0, lineHeight: '1.5' }}>
+                  {item.desc}
                 </p>
-                <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem', fontSize: '0.9rem' }}>
-                  <div>
-                    <p style={{ color: 'var(--text-muted)', margin: '0 0 0.25rem 0', fontSize: '0.75rem', textTransform: 'uppercase' }}>Tiempo</p>
-                    <p style={{ color: 'var(--text)', margin: 0, fontWeight: 600 }}>{ruta.tiempo} min</p>
-                  </div>
-                  <div>
-                    <p style={{ color: 'var(--text-muted)', margin: '0 0 0.25rem 0', fontSize: '0.75rem', textTransform: 'uppercase' }}>Costo</p>
-                    <p style={{ color: 'var(--text)', margin: 0, fontWeight: 600 }}>${ruta.costo} MXN</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* POIs */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
-        <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2.5rem', fontSize: '2rem', fontWeight: 700 }}>Servicios cerca del estadio</h2>
-          
-          <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 600 }}>Restaurantes y comida</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
-              {sede.pois.restaurantes.map((r, i) => (
-                <div key={i} style={{
-                  backgroundColor: 'var(--surface)',
-                  padding: '1rem',
-                  borderRadius: 'var(--radius)',
-                  border: '1px solid var(--border)'
-                }}>
-                  <p style={{ color: 'var(--text)', fontWeight: 600, margin: '0 0 0.25rem 0' }}>{r.nombre}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: '0.25rem 0' }}>📍 {r.distancia}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>{r.tipo} • {r.precio}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 600 }}>Servicios</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
-              {sede.pois.servicios.map((s, i) => (
-                <div key={i} style={{
-                  backgroundColor: 'var(--surface)',
-                  padding: '1rem',
-                  borderRadius: 'var(--radius)',
-                  border: '1px solid var(--border)'
-                }}>
-                  <p style={{ color: 'var(--text)', fontWeight: 600, margin: '0 0 0.25rem 0' }}>{s.nombre}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: '0.25rem 0' }}>📍 {s.distancia}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>{s.tipo}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 600 }}>Hospedaje</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
-              {sede.pois.hospedaje.map((h, i) => (
-                <div key={i} style={{
-                  backgroundColor: 'var(--surface)',
-                  padding: '1rem',
-                  borderRadius: 'var(--radius)',
-                  border: '1px solid var(--border)'
-                }}>
-                  <p style={{ color: 'var(--text)', fontWeight: 600, margin: '0 0 0.25rem 0' }}>{h.nombre}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: '0.25rem 0' }}>{h.tipo}</p>
-                  <p style={{ color: 'var(--primary)', fontSize: '0.9rem', fontWeight: 600, margin: 0 }}>{h.rango_precio}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tips section */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)' }}>
-        <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2.5rem', fontSize: '2rem', fontWeight: 700 }}>Tips para días de partido</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
-            {sede.tips.map((tip, i) => (
-              <div key={i} style={{
-                backgroundColor: 'var(--surface)',
-                border: '1px solid var(--border)',
-                borderRadius: 'var(--radius)',
-                padding: '1.5rem',
-                borderLeft: '4px solid var(--primary)'
-              }}>
-                <p style={{ color: 'var(--text)', margin: 0, lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  {tip}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming matches */}
-      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'var(--surface-hover)' }}>
-        <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ marginBottom: '2.5rem', fontSize: '2rem', fontWeight: 700 }}>Partidos en el Estadio Azteca</h2>
-          <div style={{ display: 'grid', gap: '1rem' }}>
-            {sede.partidos.map((p, i) => (
-              <div key={i} style={{
-                backgroundColor: 'var(--surface)',
-                border: '1px solid var(--border)',
-                borderRadius: 'var(--radius)',
-                padding: '1.5rem',
-                display: 'grid',
-                gridTemplateColumns: 'auto 1fr',
-                gap: '1.5rem',
-                alignItems: 'center'
-              }}>
-                <div style={{ textAlign: 'center' }}>
-                  <p style={{ color: 'var(--primary)', fontSize: '0.75rem', margin: '0 0 0.25rem 0', textTransform: 'uppercase', fontWeight: 600 }}>
-                    {new Date(p.fecha).toLocaleDateString('es-MX', { month: 'short', day: 'numeric' })}
-                  </p>
-                  <p style={{ color: 'var(--text)', fontWeight: 700, fontSize: '1.25rem', margin: 0 }}>
-                    {new Date(p.fecha).toLocaleDateString('es-MX', { weekday: 'short' })}
-                  </p>
-                </div>
-                <div>
-                  <p style={{ color: 'var(--text)', fontWeight: 600, margin: '0 0 0.5rem 0' }}>
-                    {p.equipos} • {p.fase}
-                  </p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0, lineHeight: '1.5' }}>
-                    {p.descripcion}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
@@ -474,7 +437,7 @@ export default function ComoLlegarAztecaPage() {
       {/* CTA */}
       <section style={{ padding: '4rem 1.5rem' }}>
         <div className="container" style={{ maxWidth: '900px', textAlign: 'center' }}>
-          <h2 style={{ marginBottom: '1rem', fontSize: '2rem', fontWeight: 700 }}>¿Listo para el Mundial?</h2>
+          <h2 style={{ marginBottom: '1rem' }}>¿Listos para el Mundial?</h2>
           <p style={{
             color: 'var(--text-muted)',
             marginBottom: '2rem',
@@ -483,7 +446,7 @@ export default function ComoLlegarAztecaPage() {
             maxWidth: '600px',
             margin: '0 auto 2rem'
           }}>
-            Revisa el calendario completo de partidos y explora las otras sedes mexicanas del Mundial 2026.
+            Explora las otras sedes mexicanas del Mundial 2026 y planifica tu viaje completo.
           </p>
 
           <div style={{
@@ -492,7 +455,7 @@ export default function ComoLlegarAztecaPage() {
             justifyContent: 'center',
             flexWrap: 'wrap',
           }}>
-            <a href="/mundial-2026/partidos/" style={{
+            <a href="/mundial-2026/" style={{
               display: 'inline-block',
               padding: '0.875rem 2rem',
               backgroundColor: 'var(--primary)',
@@ -502,9 +465,9 @@ export default function ComoLlegarAztecaPage() {
               textDecoration: 'none',
               fontSize: '0.95rem',
             }}>
-              Ver calendario de partidos →
+              ← Volver a Mundial 2026
             </a>
-            <a href="/mundial-2026/" style={{
+            <a href="/mundial-2026/transporte-publico-cdmx/" style={{
               display: 'inline-block',
               padding: '0.875rem 2rem',
               backgroundColor: 'var(--surface-hover)',
@@ -515,7 +478,7 @@ export default function ComoLlegarAztecaPage() {
               fontSize: '0.95rem',
               border: '1px solid var(--border)',
             }}>
-              ← Volver al hub Mundial 2026
+              Transporte público CDMX →
             </a>
           </div>
         </div>
