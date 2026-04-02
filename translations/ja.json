@@ -345,5 +345,57 @@
     "busConnection": "バス接続",
     "taxiTime": "タクシーで中心地まで",
     "viewTransitOptions": "交通オプションを表示"
+  },
+  "nyc": {
+    "title": "ニューヨーク地下鉄ガイド",
+    "subtitle": "MTA 24路線 · 472駅 · 全5区",
+    "heroDesc": "MTAの完全な地下鉄ガイドでニューヨークをナビゲート。タイムズスクエア、グランド・セントラル、ウォール街。2026年FIFAワールドカップ決勝開催地。",
+    "planRoute": "ニューヨークでルートを計画",
+    "planRouteDesc": "MTA駅間の最適なルートを計算",
+    "stations": "駅",
+    "operativeLines": "路線",
+    "kilometers": "ネットワーク長",
+    "featuredStations": "おすすめの駅",
+    "worldCupTitle": "2026年FIFAワールドカップ決勝",
+    "worldCupDesc": "メットライフスタジアムでの決勝戦。急行ルートとドア・ツー・ドア情報。"
+  },
+  "los-angeles": {
+    "title": "ロサンゼルスメトロガイド",
+    "subtitle": "メトロレール · 21路線 · 106駅",
+    "heroDesc": "メトロシステムでロサンゼルスを探索。ダウンタウンLA、ハリウッド、サンタモニカ、ロングビーチを接続。エンターテイメント・ハブ・ガイド。",
+    "planRoute": "ロサンゼルスでルートを計画",
+    "planRouteDesc": "LA メトロ駅間の最適なルートを計算",
+    "stations": "駅",
+    "operativeLines": "路線",
+    "kilometers": "ネットワーク長",
+    "featuredStations": "おすすめの駅",
+    "worldCupTitle": "2026年ワールドカップ会場",
+    "worldCupDesc": "SoFiスタジアムでのマッチ。ロサンゼルスのワールドカップ会場への交通ガイド。"
+  },
+  "toronto": {
+    "title": "TTCトロント交通システム",
+    "subtitle": "地下鉄 + 路面電車 + バス · 4路線 · 78駅",
+    "heroDesc": "TTC地下鉄システムでトロントを探索。ダウンタウン、エンターテイメント地区、ディスティラリー地区。プラスGOトランジット地域サービス。",
+    "planRoute": "トロントでルートを計画",
+    "planRouteDesc": "TTC駅間の最適なルートを計算",
+    "stations": "駅",
+    "operativeLines": "路線",
+    "kilometers": "ネットワーク長",
+    "featuredStations": "おすすめの駅",
+    "worldCupTitle": "カナダの2026年ワールドカップ",
+    "worldCupDesc": "トロントでのマッチ。カナダのワールドカップ開催都市への交通ガイド。"
+  },
+  "vancouver": {
+    "title": "トランスリンク・バンクーバーガイド",
+    "subtitle": "スカイトレイン · カナダライン · 79駅",
+    "heroDesc": "スカイトレインとカナダラインでバンクーバーをナビゲート。ダウンタウン、バーナビー、リッチモンド。太平洋玄関交通。",
+    "planRoute": "バンクーバーでルートを計画",
+    "planRouteDesc": "スカイトレイン駅間の最適なルートを計算",
+    "stations": "駅",
+    "operativeLines": "路線",
+    "kilometers": "ネットワーク長",
+    "featuredStations": "おすすめの駅",
+    "worldCupTitle": "カナダの2026年ワールドカップ",
+    "worldCupDesc": "バンクーバーでのマッチ。カナダのワールドカップ開催都市への交通ガイド。"
   }
 }

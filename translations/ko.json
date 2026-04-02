@@ -345,5 +345,57 @@
     "busConnection": "버스 연결",
     "taxiTime": "중심부까지 택시 시간",
     "viewTransitOptions": "교통 옵션 보기"
+  },
+  "nyc": {
+    "title": "뉴욕 지하철 가이드",
+    "subtitle": "MTA 24개 노선 · 472개 역 · 5개 자치구",
+    "heroDesc": "MTA 지하철 가이드로 뉴욕을 네비게이션하세요. 타임스 스퀘어, 그랜드 센트럴, 월 스트리트. 2026년 FIFA 월드컵 결승전 개최지.",
+    "planRoute": "뉴욕에서 경로 계획",
+    "planRouteDesc": "MTA 역 간의 최적 경로 계산",
+    "stations": "역",
+    "operativeLines": "노선",
+    "kilometers": "네트워크 길이",
+    "featuredStations": "추천 역",
+    "worldCupTitle": "2026년 FIFA 월드컵 결승전",
+    "worldCupDesc": "메트라이프 스타디움에서의 결승전. 특급 경로 및 터미널 간 정보."
+  },
+  "los-angeles": {
+    "title": "로스앤젤레스 지하철 가이드",
+    "subtitle": "메트로레일 · 21개 노선 · 106개 역",
+    "heroDesc": "메트로 시스템으로 로스앤젤레스를 탐험하세요. 다운타운 LA, 할리우드, 산타모니카, 롱비치를 연결. 엔터테인먼트 허브 가이드.",
+    "planRoute": "로스앤젤레스에서 경로 계획",
+    "planRouteDesc": "LA 메트로 역 간의 최적 경로 계산",
+    "stations": "역",
+    "operativeLines": "노선",
+    "kilometers": "네트워크 길이",
+    "featuredStations": "추천 역",
+    "worldCupTitle": "2026년 월드컵 개최지",
+    "worldCupDesc": "SoFi 스타디움에서의 경기. 로스앤젤레스 월드컵 개최지 교통 가이드."
+  },
+  "toronto": {
+    "title": "TTC 토론토 교통 시스템",
+    "subtitle": "지하철 + 가도전차 + 버스 · 4개 노선 · 78개 역",
+    "heroDesc": "TTC 지하철 시스템으로 토론토를 탐험하세요. 다운타운, 엔터테인먼트 지구, 디스틸러리 지구. GO 트랜짓 광역 서비스.",
+    "planRoute": "토론토에서 경로 계획",
+    "planRouteDesc": "TTC 역 간의 최적 경로 계산",
+    "stations": "역",
+    "operativeLines": "노선",
+    "kilometers": "네트워크 길이",
+    "featuredStations": "추천 역",
+    "worldCupTitle": "캐나다 2026년 월드컵",
+    "worldCupDesc": "토론토에서의 경기. 캐나다 월드컵 개최 도시 교통 가이드."
+  },
+  "vancouver": {
+    "title": "트랜스링크 밴쿠버 가이드",
+    "subtitle": "스카이트레인 · 캐나다 라인 · 79개 역",
+    "heroDesc": "스카이트레인과 캐나다 라인으로 밴쿠버를 네비게이션하세요. 다운타운, 버나비, 리치몬드. 태평양 관문 교통.",
+    "planRoute": "밴쿠버에서 경로 계획",
+    "planRouteDesc": "스카이트레인 역 간의 최적 경로 계산",
+    "stations": "역",
+    "operativeLines": "노선",
+    "kilometers": "네트워크 길이",
+    "featuredStations": "추천 역",
+    "worldCupTitle": "캐나다 2026년 월드컵",
+    "worldCupDesc": "밴쿠버에서의 경기. 캐나다 월드컵 개최 도시 교통 가이드."
   }
 }

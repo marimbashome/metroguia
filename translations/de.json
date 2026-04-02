@@ -345,5 +345,57 @@
     "busConnection": "Busverbindung",
     "taxiTime": "Taxizeit zur Innenstadt",
     "viewTransitOptions": "Verkehrsoptionen anzeigen"
+  },
+  "nyc": {
+    "title": "New York U-Bahn-Führer",
+    "subtitle": "MTA 24 Linien · 472 Stationen · Alle 5 Stadtteile",
+    "heroDesc": "Navigieren Sie durch New York mit dem umfassenden MTA-U-Bahn-Führer. Times Square, Grand Central, Wall Street. Gastgeber des FIFA-Weltmeisterschaftsfinales 2026.",
+    "planRoute": "Planen Sie Ihre Route in New York",
+    "planRouteDesc": "Berechnen Sie die beste Route zwischen MTA-Stationen",
+    "stations": "Stationen",
+    "operativeLines": "Linien",
+    "kilometers": "Netzlänge",
+    "featuredStations": "Ausgewählte Stationen",
+    "worldCupTitle": "Finale der FIFA-Weltmeisterschaft 2026 in New York",
+    "worldCupDesc": "Finalspiel im MetLife Stadium. Express-Routen und Tür-zu-Tür-Informationen."
+  },
+  "los-angeles": {
+    "title": "Los Angeles U-Bahn-Führer",
+    "subtitle": "Metro Rail · 21 Linien · 106 Stationen",
+    "heroDesc": "Erkunden Sie Los Angeles mit dem Metro-System. Verbindet Downtown LA, Hollywood, Santa Monica, Long Beach. Unterhaltungs-Hub-Führer.",
+    "planRoute": "Planen Sie Ihre Route in Los Angeles",
+    "planRouteDesc": "Berechnen Sie die beste Route zwischen LA-Metro-Stationen",
+    "stations": "Stationen",
+    "operativeLines": "Linien",
+    "kilometers": "Netzlänge",
+    "featuredStations": "Ausgewählte Stationen",
+    "worldCupTitle": "Austragungsorte der Weltmeisterschaft 2026",
+    "worldCupDesc": "Matches im SoFi Stadium. Verkehrsleitfaden für die Austragungsorte der Weltmeisterschaft in Los Angeles."
+  },
+  "toronto": {
+    "title": "TTC Toronto Verkehrssystem",
+    "subtitle": "U-Bahn + Straßenbahn + Bus · 4 Linien · 78 Stationen",
+    "heroDesc": "Erkunden Sie Toronto mit dem TTC-U-Bahn-System. Innenstadt, Entertainment District, Distillery District. Plus GO Transit Regional.",
+    "planRoute": "Planen Sie Ihre Route in Toronto",
+    "planRouteDesc": "Berechnen Sie die beste Route zwischen TTC-Stationen",
+    "stations": "Stationen",
+    "operativeLines": "Linien",
+    "kilometers": "Netzlänge",
+    "featuredStations": "Ausgewählte Stationen",
+    "worldCupTitle": "Weltmeisterschaft 2026 in Kanada",
+    "worldCupDesc": "Matches in Toronto. Verkehrsleitfaden für kanadische Gastgeberstadt der Weltmeisterschaft."
+  },
+  "vancouver": {
+    "title": "TransLink Vancouver Führer",
+    "subtitle": "SkyTrain · Canada Line · 79 Stationen",
+    "heroDesc": "Navigieren Sie durch Vancouver mit SkyTrain und Canada Line zum Flughafen. Innenstadt, Burnaby, Richmond. Verkehr des Pazifiktors.",
+    "planRoute": "Planen Sie Ihre Route in Vancouver",
+    "planRouteDesc": "Berechnen Sie die beste Route zwischen SkyTrain-Stationen",
+    "stations": "Stationen",
+    "operativeLines": "Linien",
+    "kilometers": "Netzlänge",
+    "featuredStations": "Ausgewählte Stationen",
+    "worldCupTitle": "Weltmeisterschaft 2026 in Kanada",
+    "worldCupDesc": "Matches in Vancouver. Verkehrsleitfaden für kanadische Gastgeberstadt der Weltmeisterschaft."
   }
 }

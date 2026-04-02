@@ -1,0 +1,121 @@
+{
+  "nyc": {
+    "name": "New York City",
+    "url": "https://new.mta.info/developers",
+    "feed_url": "https://transitfeeds.com/p/new-york-mta/722/latest/download",
+    "agency": "MTA New York City Transit",
+    "country": "US",
+    "system": "Subway & Bus",
+    "notes": "Requires API key from datamine.mta.info for real-time data"
+  },
+  "los-angeles": {
+    "name": "Los Angeles",
+    "url": "https://www.metro.net/",
+    "feed_url": "https://transitfeeds.com/p/la-metro/71/latest/download",
+    "agency": "LA Metro",
+    "country": "US",
+    "system": "Rail & Bus"
+  },
+  "chicago": {
+    "name": "Chicago",
+    "url": "https://www.transitchicago.com/",
+    "feed_url": "https://transitfeeds.com/p/chicago-cta/165/latest/download",
+    "agency": "Chicago Transit Authority (CTA)",
+    "country": "US",
+    "system": "El & Bus"
+  },
+  "boston": {
+    "name": "Boston",
+    "url": "https://www.mbta.com/developers/gtfs",
+    "feed_url": "https://cdn.mbta.com/MBTA_GTFS.zip",
+    "agency": "MBTA (Massachusetts Bay Transportation Authority)",
+    "country": "US",
+    "system": "Subway & Bus",
+    "notes": "Updated multiple times per month"
+  },
+  "washington-dc": {
+    "name": "Washington DC",
+    "url": "https://www.wmata.com/initiatives/plans/Better-Bus/better-bus-gtfs.cfm",
+    "feed_url": "https://transitfeeds.com/p/wmata/75/latest/download",
+    "agency": "WMATA (Washington Metropolitan Area Transit Authority)",
+    "country": "US",
+    "system": "Metro (Rail & Bus)",
+    "notes": "API key required from developer.wmata.com"
+  },
+  "denver": {
+    "name": "Denver",
+    "url": "https://www.rtd-denver.com/",
+    "feed_url": "https://www.rtd-denver.com/documents-and-data/open-data/google-transit.zip",
+    "agency": "RTD (Regional Transportation District)",
+    "country": "US",
+    "system": "Light Rail & Bus"
+  },
+  "philadelphia": {
+    "name": "Philadelphia",
+    "url": "https://www3.septa.org/developer/",
+    "feed_url": "https://www3.septa.org/developer/",
+    "agency": "SEPTA (Southeastern Pennsylvania Transportation Authority)",
+    "country": "US",
+    "system": "Rail & Bus",
+    "notes": "Download available at developer portal"
+  },
+  "houston": {
+    "name": "Houston",
+    "url": "https://www.ridemetro.org/",
+    "feed_url": "https://transitfeeds.com/p/houston-metro/75/latest/download",
+    "agency": "Houston Metro (Metropolitan Transit Authority of Harris County)",
+    "country": "US",
+    "system": "Light Rail & Bus"
+  },
+  "seattle": {
+    "name": "Seattle",
+    "url": "https://www.soundtransit.org/",
+    "feed_url": "https://www.soundtransit.org/GTFS-KCM/google_transit.zip",
+    "agency": "Sound Transit & King County Metro",
+    "country": "US",
+    "system": "Light Rail & Bus"
+  },
+  "atlanta": {
+    "name": "Atlanta",
+    "url": "https://www.itsmarta.com/",
+    "feed_url": "https://transitfeeds.com/p/marta/58/latest/download",
+    "agency": "MARTA (Metropolitan Atlanta Rapid Transit Authority)",
+    "country": "US",
+    "system": "Rail & Bus"
+  },
+  "miami": {
+    "name": "Miami",
+    "url": "https://www.miamidade.gov/transit/",
+    "feed_url": "https://transitfeeds.com/p/miami-dade-transit/75/latest/download",
+    "agency": "Miami-Dade Transit",
+    "country": "US",
+    "system": "Metrorail & Bus"
+  },
+  "toronto": {
+    "name": "Toronto",
+    "url": "https://www.ttc.ca/",
+    "feed_url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7795b45e-e65a-4465-81fc-c36b9dfff169/resource/cfb6b2b8-6191-41e3-bda1-b175c51148cb/download/TTC%20Routes%20and%20Schedules%20Data.zip",
+    "agency": "Toronto Transit Commission (TTC)",
+    "country": "Canada",
+    "system": "Subway & Bus",
+    "notes": "Open data portal feed"
+  },
+  "vancouver": {
+    "name": "Vancouver",
+    "url": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data",
+    "feed_url": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data",
+    "agency": "TransLink (Metro Vancouver)",
+    "country": "Canada",
+    "system": "SkyTrain, SeaBus & Bus",
+    "notes": "GTFS data available on developer portal"
+  },
+  "montreal": {
+    "name": "Montreal",
+    "url": "https://www.stm.info/en/about/developers",
+    "feed_url": "https://www.stm.info/en/about/developers",
+    "agency": "STM (Société de transport de Montréal)",
+    "country": "Canada",
+    "system": "Métro & Bus",
+    "notes": "Registration required at https://www.stm.info/en/about/developers"
+  }
+}

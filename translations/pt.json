@@ -345,5 +345,57 @@
     "busConnection": "Conexão de ônibus",
     "taxiTime": "Tempo de táxi até o centro",
     "viewTransitOptions": "Ver opções de transporte"
+  },
+  "nyc": {
+    "title": "Guia do Metrô de Nova York",
+    "subtitle": "MTA 24 Linhas · 472 Estações · Todos os 5 Distritos",
+    "heroDesc": "Navegue em Nova York com o guia completo do Metrô MTA. Times Square, Grand Central, Wall Street. Sede da final da Copa do Mundo FIFA 2026.",
+    "planRoute": "Planeje sua Rota em Nova York",
+    "planRouteDesc": "Calcule a melhor rota entre estações do MTA",
+    "stations": "Estações",
+    "operativeLines": "Linhas",
+    "kilometers": "Comprimento da Rede",
+    "featuredStations": "Estações Destacadas",
+    "worldCupTitle": "Final da Copa do Mundo FIFA 2026 em Nova York",
+    "worldCupDesc": "Partida final no MetLife Stadium. Rotas expressas e informações porta a porta."
+  },
+  "los-angeles": {
+    "title": "Guia do Metrô de Los Angeles",
+    "subtitle": "Metro Rail · 21 Linhas · 106 Estações",
+    "heroDesc": "Explore Los Angeles com o sistema Metro. Conecta Downtown LA, Hollywood, Santa Monica, Long Beach. Guia do centro de entretenimento.",
+    "planRoute": "Planeje sua Rota em Los Angeles",
+    "planRouteDesc": "Calcule a melhor rota entre estações do Metro LA",
+    "stations": "Estações",
+    "operativeLines": "Linhas",
+    "kilometers": "Comprimento da Rede",
+    "featuredStations": "Estações Destacadas",
+    "worldCupTitle": "Sedes da Copa do Mundo 2026",
+    "worldCupDesc": "Partidas no SoFi Stadium. Guia de transporte para as sedes da Copa do Mundo em Los Angeles."
+  },
+  "toronto": {
+    "title": "Sistema de Trânsito TTC Toronto",
+    "subtitle": "Subway + Streetcar + Ônibus · 4 Linhas · 78 Estações",
+    "heroDesc": "Explore Toronto com o sistema TTC Subway. Downtown, Entertainment District, Distillery District. Mais GO Transit regional.",
+    "planRoute": "Planeje sua Rota em Toronto",
+    "planRouteDesc": "Calcule a melhor rota entre estações do TTC",
+    "stations": "Estações",
+    "operativeLines": "Linhas",
+    "kilometers": "Comprimento da Rede",
+    "featuredStations": "Estações Destacadas",
+    "worldCupTitle": "Copa do Mundo 2026 no Canadá",
+    "worldCupDesc": "Partidas em Toronto. Guia de transporte para cidade-sede canadense da Copa do Mundo."
+  },
+  "vancouver": {
+    "title": "Guia de TransLink Vancouver",
+    "subtitle": "SkyTrain · Canada Line · 79 Estações",
+    "heroDesc": "Navegue em Vancouver com SkyTrain e Canada Line até o aeroporto. Downtown, Burnaby, Richmond. Trânsito da porta do Pacífico.",
+    "planRoute": "Planeje sua Rota em Vancouver",
+    "planRouteDesc": "Calcule a melhor rota entre estações do SkyTrain",
+    "stations": "Estações",
+    "operativeLines": "Linhas",
+    "kilometers": "Comprimento da Rede",
+    "featuredStations": "Estações Destacadas",
+    "worldCupTitle": "Copa do Mundo 2026 no Canadá",
+    "worldCupDesc": "Partidas em Vancouver. Guia de transporte para cidade-sede canadense da Copa do Mundo."
   }
 }

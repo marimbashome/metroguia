@@ -345,5 +345,57 @@
     "busConnection": "Bus connection",
     "taxiTime": "Taxi time to center",
     "viewTransitOptions": "View transit options"
+  },
+  "nyc": {
+    "title": "NYC Subway & Transit Guide",
+    "subtitle": "MTA 24 Lines · 472 Stations · All 5 Boroughs",
+    "heroDesc": "Navigate New York City with the comprehensive MTA Subway guide. Times Square, Grand Central, Wall Street. Host city for FIFA World Cup 2026 Final.",
+    "planRoute": "Plan your Route in New York",
+    "planRouteDesc": "Calculate the best route between MTA stations",
+    "stations": "Stations",
+    "operativeLines": "Lines",
+    "kilometers": "Network Length",
+    "featuredStations": "Featured Stations",
+    "worldCupTitle": "FIFA World Cup 2026 Final in New York",
+    "worldCupDesc": "Final match at MetLife Stadium. Express routes and gate-to-gate transit information."
+  },
+  "los-angeles": {
+    "title": "LA Metro & Transit Guide",
+    "subtitle": "Metro Rail · 21 Lines · 106 Stations",
+    "heroDesc": "Explore Los Angeles with the Metro system. Connect downtown LA, Hollywood, Santa Monica, Long Beach. Entertainment hub guide.",
+    "planRoute": "Plan your Route in Los Angeles",
+    "planRouteDesc": "Calculate the best route between LA Metro stations",
+    "stations": "Stations",
+    "operativeLines": "Lines",
+    "kilometers": "Network Length",
+    "featuredStations": "Featured Stations",
+    "worldCupTitle": "World Cup 2026 Venues",
+    "worldCupDesc": "Matches at SoFi Stadium. Transit guide for Los Angeles match venues."
+  },
+  "toronto": {
+    "title": "TTC Toronto Transit",
+    "subtitle": "Subway + Streetcar + Bus · 4 Lines · 78 Stations",
+    "heroDesc": "Explore Toronto with the TTC Subway system. Downtown, Entertainment District, Distillery District. Plus GO Transit regional service.",
+    "planRoute": "Plan your Route in Toronto",
+    "planRouteDesc": "Calculate the best route between TTC stations",
+    "stations": "Stations",
+    "operativeLines": "Lines",
+    "kilometers": "Network Length",
+    "featuredStations": "Featured Stations",
+    "worldCupTitle": "World Cup 2026 in Canada",
+    "worldCupDesc": "Matches in Toronto. Transit guide for Canadian World Cup host city."
+  },
+  "vancouver": {
+    "title": "TransLink Vancouver",
+    "subtitle": "SkyTrain · Canada Line · 79 Stations",
+    "heroDesc": "Navigate Vancouver with SkyTrain rapid transit and Canada Line to the airport. Downtown, Burnaby, Richmond. Pacific gateway transit.",
+    "planRoute": "Plan your Route in Vancouver",
+    "planRouteDesc": "Calculate the best route between SkyTrain stations",
+    "stations": "Stations",
+    "operativeLines": "Lines",
+    "kilometers": "Network Length",
+    "featuredStations": "Featured Stations",
+    "worldCupTitle": "World Cup 2026 in Canada",
+    "worldCupDesc": "Matches in Vancouver. Transit guide for Canadian World Cup host city."
   }
 }

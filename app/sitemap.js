@@ -54,6 +54,36 @@ import { crucesFronterizos } from '@/data/cruces-fronterizos';
 // MTY Ecovía
 import { estacionesEcovia } from '@/data/mty/ecovia';
 
+// Import station data for US/CA cities
+import { estacionesNYC } from '@/data/nyc/estaciones';
+import { estacionesLA } from '@/data/los-angeles/estaciones';
+import { estacionesHOU } from '@/data/houston/estaciones';
+import { estacionesAtlanta } from '@/data/atlanta/estaciones';
+import { estacionesPhiladelphia } from '@/data/philadelphia/estaciones';
+import { estacionesSeattle } from '@/data/seattle/estaciones';
+import { estacionesSF } from '@/data/san-francisco/estaciones';
+import { estacionesBoston } from '@/data/boston/estaciones';
+import { estacionesMiami } from '@/data/miami/estaciones';
+import { estacionesDallas } from '@/data/dallas/estaciones';
+import { estacionesKansasCity } from '@/data/kansas-city/estaciones';
+import { estacionesToronto } from '@/data/toronto/estaciones';
+import { estacionesVancouver } from '@/data/vancouver/estaciones';
+
+// Import line data for US/CA cities
+import { lineasNYC } from '@/data/nyc/lineas-detalle';
+import { lineasLA } from '@/data/los-angeles/lineas-detalle';
+import { lineasHOU } from '@/data/houston/lineas-detalle';
+import { lineasAtlanta } from '@/data/atlanta/lineas-detalle';
+import { lineasPhiladelphia } from '@/data/philadelphia/lineas-detalle';
+import { lineasSeattle } from '@/data/seattle/lineas-detalle';
+import { lineasSF } from '@/data/san-francisco/lineas-detalle';
+import { lineasBoston } from '@/data/boston/lineas-detalle';
+import { lineasMiami } from '@/data/miami/lineas-detalle';
+import { lineasDallas } from '@/data/dallas/lineas-detalle';
+import { lineasKansasCity } from '@/data/kansas-city/lineas-detalle';
+import { lineasToronto } from '@/data/toronto/lineas-detalle';
+import { lineasVancouver } from '@/data/vancouver/lineas-detalle';
+
 // Turismo data
 import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
 import { zonasArqueologicas } from '@/data/turismo/zonas-arqueologicas';
@@ -65,31 +95,33 @@ import { destinosPrioritarios } from '@/data/turismo/destinos-prioritarios';
 import { naturaleza } from '@/data/turismo/naturaleza';
 
 // ============================================================================
-// Sitemap Index — splits 54K+ URLs into child sitemaps under 50K each
+// Sitemap Index — splits 80K+ URLs into child sitemaps under 50K each
 // ============================================================================
-// ID 0: core        — home, guides, hubs, zonas, privacy (~40 URLs)
-// ID 1: cities      — stations + lines for all 16 cities (~670 URLs)
+// ID 0: core        — home, guides, hubs, zonas, privacy (~55 URLs)
+// ID 1: cities      — stations + lines for all 29 cities (~1,200 URLs)
 // ID 2: turismo     — 8 SECTUR programs + detail pages (~541 URLs)
 // ID 3: transport   — CDMX aux transit, aeropuertos, terminales, ecovía, macrobús (~374 URLs)
 // ID 4: mundial     — FIFA 2026 hub + matches + city pages (~20 URLs)
 // ID 5: i18n        — 6 languages × key pages (~4,020 URLs)
 // ID 6: routes-cdmx — CDMX route pages (~24,180 URLs)
 // ID 7: routes-gdl  — GDL route pages (~15,500 URLs)
-// ID 8: routes-other— MTY + 13 other cities route pages (~9,300 URLs)
+// ID 8: routes-mx   — MTY + 14 MX cities route pages (~9,300 URLs)
+// ID 9: routes-usca — 13 US/CA cities route pages (~8,500 URLs)
 // ============================================================================
 
 const BASE_URL = 'https://metroguia.mx';
 
 const LASTMOD = {
-  core: new Date('2026-04-01'),
-  cities: new Date('2026-04-01'),
+  core: new Date('2026-04-02'),
+  cities: new Date('2026-04-02'),
   turismo: new Date('2026-03-30'),
   transport: new Date('2026-04-01'),
   mundial: new Date('2026-04-01'),
-  i18n: new Date('2026-04-01'),
+  i18n: new Date('2026-04-02'),
   'routes-cdmx': new Date('2026-03-30'),
   'routes-gdl': new Date('2026-03-30'),
-  'routes-other': new Date('2026-03-30'),
+  'routes-mx': new Date('2026-03-30'),
+  'routes-usca': new Date('2026-04-02'),
 };
 
 export async function generateSitemaps() {
@@ -102,7 +134,8 @@ export async function generateSitemaps() {
     { id: 5 },  // i18n
     { id: 6 },  // routes-cdmx
     { id: 7 },  // routes-gdl
-    { id: 8 },  // routes-other
+    { id: 8 },  // routes-mx
+    { id: 9 },  // routes-usca
   ];
 }
 
@@ -157,6 +190,29 @@ function mapLineas(list, ciudad, category) {
   );
 }
 
+// US/CA helper: use "station" and "line" instead of "estacion"/"linea"
+function mapEstacionesUSCA(list, ciudad, category) {
+  return (list || []).map((e) =>
+    entry(
+      `/${ciudad}/station/${e.slug}/`,
+      'monthly',
+      0.8,
+      category
+    )
+  );
+}
+
+function mapLineasUSCA(list, ciudad, category) {
+  return (list || []).map((l) =>
+    entry(
+      `/${ciudad}/line/${l.id}/`,
+      'monthly',
+      0.9,
+      category
+    )
+  );
+}
+
 // --- Child sitemap generators ---
 
 function getCoreUrls() {
@@ -172,17 +228,21 @@ function getCoreUrls() {
     entry('/zona/', 'monthly', 0.8, 'core'),
     entry('/ruta/calc/', 'weekly', 0.8, 'core'),
     entry('/privacy-policy/', 'yearly', 0.3, 'core'),
-    // City hub pages
+    // Mexico city hub pages
     ...['cdmx','gdl','mty','puebla','merida','leon','chihuahua','tijuana',
         'toluca','queretaro','tren-maya','oaxaca','morelia','veracruz',
         'campeche','villahermosa'].map(c => entry(`/${c}/`, 'weekly', 0.9, 'core')),
+    // US/CA city hub pages
+    ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
+        'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'].map(c => 
+        entry(`/${c}/`, 'weekly', 0.85, 'core')),
     // Zonas
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
   ];
 }
 
 function getCitiesUrls() {
-  return [
+  const urls = [
     // CDMX stations + lines
     ...mapEstaciones(estaciones, null, 'cities'),
     ...Object.values(lineasDetalle || {}).map((l) => entry(`/linea/${l.id}/`, 'monthly', 0.9, 'cities')),
@@ -231,7 +291,47 @@ function getCitiesUrls() {
     // Villahermosa
     ...mapEstaciones(estacionesVillahermosa, 'villahermosa', 'cities'),
     ...mapLineas(lineasVillahermosa, 'villahermosa', 'cities'),
+    // NYC
+    ...mapEstacionesUSCA(estacionesNYC, 'nyc', 'cities'),
+    ...mapLineasUSCA(lineasNYC, 'nyc', 'cities'),
+    // Los Angeles
+    ...mapEstacionesUSCA(estacionesLA, 'los-angeles', 'cities'),
+    ...mapLineasUSCA(lineasLA, 'los-angeles', 'cities'),
+    // Houston
+    ...mapEstacionesUSCA(estacionesHOU, 'houston', 'cities'),
+    ...mapLineasUSCA(lineasHOU, 'houston', 'cities'),
+    // Atlanta
+    ...mapEstacionesUSCA(estacionesAtlanta, 'atlanta', 'cities'),
+    ...mapLineasUSCA(lineasAtlanta, 'atlanta', 'cities'),
+    // Philadelphia
+    ...mapEstacionesUSCA(estacionesPhiladelphia, 'philadelphia', 'cities'),
+    ...mapLineasUSCA(lineasPhiladelphia, 'philadelphia', 'cities'),
+    // Seattle
+    ...mapEstacionesUSCA(estacionesSeattle, 'seattle', 'cities'),
+    ...mapLineasUSCA(lineasSeattle, 'seattle', 'cities'),
+    // San Francisco
+    ...mapEstacionesUSCA(estacionesSF, 'san-francisco', 'cities'),
+    ...mapLineasUSCA(lineasSF, 'san-francisco', 'cities'),
+    // Boston
+    ...mapEstacionesUSCA(estacionesBoston, 'boston', 'cities'),
+    ...mapLineasUSCA(lineasBoston, 'boston', 'cities'),
+    // Miami
+    ...mapEstacionesUSCA(estacionesMiami, 'miami', 'cities'),
+    ...mapLineasUSCA(lineasMiami, 'miami', 'cities'),
+    // Dallas
+    ...mapEstacionesUSCA(estacionesDallas, 'dallas', 'cities'),
+    ...mapLineasUSCA(lineasDallas, 'dallas', 'cities'),
+    // Kansas City
+    ...mapEstacionesUSCA(estacionesKansasCity, 'kansas-city', 'cities'),
+    ...mapLineasUSCA(lineasKansasCity, 'kansas-city', 'cities'),
+    // Toronto
+    ...mapEstacionesUSCA(estacionesToronto, 'toronto', 'cities'),
+    ...mapLineasUSCA(lineasToronto, 'toronto', 'cities'),
+    // Vancouver
+    ...mapEstacionesUSCA(estacionesVancouver, 'vancouver', 'cities'),
+    ...mapLineasUSCA(lineasVancouver, 'vancouver', 'cities'),
   ];
+  return urls;
 }
 
 function getTurismoUrls() {
@@ -360,6 +460,14 @@ function getI18nUrls() {
     });
   });
 
+  // US/CA cities: Spanish alternates for hub pages
+  // e.g., /es/nyc/, /es/los-angeles/, etc.
+  const usCanadaCities = ['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
+                          'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'];
+  usCanadaCities.forEach(city => {
+    urls.push(entry(`/es/${city}/`, 'weekly', 0.8, 'i18n'));
+  });
+
   // Routes are dynamicParams: true (on-demand ISR), do NOT include in sitemap
   // This prevents duplicate detection since these are served on-demand, not canonical URLs
   // Spanish routes are in routes-cdmx/gdl/other sitemaps with canonical URLs
@@ -389,7 +497,7 @@ function getRoutesGdlUrls() {
   );
 }
 
-function getRoutesOtherUrls() {
+function getRoutesMxUrls() {
   const cityConfigs = [
     { city: 'mty', prefix: '/mty/ruta/', priority: 0.65, boostSuffix: '-a-exposicion', boostPriority: 0.85 },
     { city: 'puebla', prefix: '/puebla/ruta/', priority: 0.6 },
@@ -412,7 +520,41 @@ function getRoutesOtherUrls() {
     const routes = generateCityRoutes(cfg.city);
     for (const slug of routes) {
       const p = (cfg.boostSuffix && slug.endsWith(cfg.boostSuffix)) ? cfg.boostPriority : cfg.priority;
-      urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', p, 'routes-other'));
+      urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', p, 'routes-mx'));
+    }
+  }
+  return urls;
+}
+
+function getRoutesUSCAUrls() {
+  const cityConfigs = [
+    { city: 'nyc', prefix: '/nyc/route/', priority: 0.65 },
+    { city: 'los-angeles', prefix: '/los-angeles/route/', priority: 0.6 },
+    { city: 'houston', prefix: '/houston/route/', priority: 0.6 },
+    { city: 'atlanta', prefix: '/atlanta/route/', priority: 0.6 },
+    { city: 'philadelphia', prefix: '/philadelphia/route/', priority: 0.6 },
+    { city: 'seattle', prefix: '/seattle/route/', priority: 0.6 },
+    { city: 'san-francisco', prefix: '/san-francisco/route/', priority: 0.6 },
+    { city: 'boston', prefix: '/boston/route/', priority: 0.6 },
+    { city: 'miami', prefix: '/miami/route/', priority: 0.6 },
+    { city: 'dallas', prefix: '/dallas/route/', priority: 0.55 },
+    { city: 'kansas-city', prefix: '/kansas-city/route/', priority: 0.55 },
+    { city: 'toronto', prefix: '/toronto/route/', priority: 0.6 },
+    { city: 'vancouver', prefix: '/vancouver/route/', priority: 0.6 },
+  ];
+
+  const urls = [];
+  for (const cfg of cityConfigs) {
+    // Use try-catch defensively: if generateCityRoutes doesn't support US/CA cities yet,
+    // gracefully skip them
+    try {
+      const routes = generateCityRoutes(cfg.city);
+      for (const slug of routes) {
+        urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', cfg.priority, 'routes-usca'));
+      }
+    } catch (err) {
+      // City routes not yet available, skip gracefully
+      console.warn(`Routes not available for ${cfg.city}`);
     }
   }
   return urls;
@@ -430,7 +572,8 @@ export default async function sitemap({ id }) {
     case 5: return getI18nUrls();
     case 6: return getRoutesCdmxUrls();
     case 7: return getRoutesGdlUrls();
-    case 8: return getRoutesOtherUrls();
+    case 8: return getRoutesMxUrls();
+    case 9: return getRoutesUSCAUrls();
     default: return [];
   }
 }
