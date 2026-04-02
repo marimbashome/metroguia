@@ -1,5 +1,5 @@
-import { lineasLA } from '@/data/los-angeles/lineas-detalle';
-import { estacionesLA } from '@/data/los-angeles/estaciones';
+import { lineasLosAngeles } from '@/data/los-angeles/lineas-detalle';
+import { estacionesLosAngeles } from '@/data/los-angeles/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -22,7 +22,7 @@ export const metadata = {
   },
 };
 
-const estacionesDestacadas = estacionesLA.filter(e =>
+const estacionesDestacadas = estacionesLosAngeles.filter(e =>
   ['la-union-station', 'la-hollywood-highland', 'la-7th-metro-center', 'la-civic-center', 'la-downtown-long-beach'].includes(e.slug)
 );
 
@@ -325,7 +325,7 @@ export default function LAPage() {
               gap: '24px',
             }}
           >
-            {lineasLA.map((linea) => (
+            {lineasLosAngeles.map((linea) => (
               <Link href={`/los-angeles/line/${linea.id}`} key={linea.id}>
                 <div
                   style={{

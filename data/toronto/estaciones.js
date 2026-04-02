@@ -1,4 +1,4 @@
-export const estacionesToronto = [
+export const estacionesTORONTO = [
   // ============================================
   // LINE 1 YONGE-UNIVERSITY (38 stations)
   // ============================================

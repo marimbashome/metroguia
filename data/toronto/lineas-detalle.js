@@ -1,4 +1,4 @@
-export const lineasToronto = [
+export const lineasTORONTO = [
   {
     id: "1",
     color: "#FFCC00",

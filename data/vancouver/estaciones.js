@@ -1,4 +1,4 @@
-export const estacionesVancouver = [
+export const estacionesVANCOUVER = [
   // ============================================
   // EXPO LINE (20 stations - WATERFRONT to KING GEORGE)
   // ============================================
