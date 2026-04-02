@@ -32,7 +32,7 @@ export default function LevisStadiumPage() {
 
   const heroSubStyle = {
     fontSize: '20px',
-    opacity: 0.9',
+    opacity: 0.9,
   };
 
   const sectionStyle = {
