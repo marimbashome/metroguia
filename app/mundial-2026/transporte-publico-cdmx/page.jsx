@@ -1,3 +1,6 @@
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { blogLinks } from '@/data/blog-links'
+
 export const metadata = {
   title: 'Guía de Transporte Público CDMX para FIFA 2026 — Metro, Metrobús, Tren Ligero | MetroGuia',
   description: 'Guía completa de transporte público en Ciudad de México para visitantes del Mundial 2026. Metro, Metrobús, BRT, Tren Ligero, Cercanías y consejos.',
@@ -491,6 +494,8 @@ export default function TransportePublicoCDMXPage() {
               ← Volver a Mundial 2026
             </a>
           </div>
+
+          <BlogGuiasWidget guides={blogLinks.mundial} context="Transporte Público CDMX" />
         </div>
       </section>
     </div>

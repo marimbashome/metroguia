@@ -1,3 +1,6 @@
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { blogLinks } from '@/data/blog-links'
+
 export const metadata = {
   title: 'Cómo llegar al Estadio Azteca en Metro para FIFA 2026 — Guía completa | MetroGuia',
   description: 'Guía paso a paso para llegar al Estadio Azteca en metro durante el Mundial 2026. Rutas, horarios, precios, consejos de seguridad y timing.',
@@ -499,6 +502,8 @@ export default function ComoLlegarAztecaPage() {
               Transporte público CDMX →
             </a>
           </div>
+
+          <BlogGuiasWidget guides={blogLinks.mundial} context="Estadio Azteca" />
         </div>
       </section>
     </div>

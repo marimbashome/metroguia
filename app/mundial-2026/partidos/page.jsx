@@ -1,4 +1,6 @@
 import { mundial2026 } from '@/data/mundial';
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { blogLinks } from '@/data/blog-links'
 
 export const metadata = {
   title: 'Calendario Completo de Partidos — Mundial 2026 | MetroGuia',
@@ -241,6 +243,12 @@ export default function PartidosPage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '3rem 1.25rem' }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <BlogGuiasWidget guides={blogLinks.mundial} context="Partidos FIFA 2026" />
         </div>
       </section>
 

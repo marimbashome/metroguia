@@ -2,6 +2,8 @@ import { hospedaje, marimbasListings, totalReviews, avgRating, precioDesde, maxH
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import BookingWidget from '@/app/components/BookingWidget';
 import ViatorToursWidget from '@/app/components/ViatorToursWidget';
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget';
+import { blogLinks } from '@/data/blog-links';
 
 export function generateMetadata() {
   return {
@@ -494,6 +496,26 @@ export default function HospedajePage() {
             <BookingWidget ciudad="CDMX" estacion="Chilpancingo" />
             <ViatorToursWidget ciudad="CDMX" zona="La Condesa" />
           </div>
+        </div>
+      </section>
+
+      {/* Blog Guides — Destination guides for 3 host cities */}
+      <section style={{ padding: '3rem 1rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <h2 style={{ marginBottom: '0.5rem', textAlign: 'center', fontSize: '1.5rem' }}>
+            Guías de destino
+          </h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '0.9rem', textAlign: 'center' }}>
+            Conoce las ciudades sede antes de tu viaje
+          </p>
+          <BlogGuiasWidget
+            guides={[
+              ...blogLinks.mundial.filter(g => ['cdmx', 'guadalajara-jalisco', 'monterrey'].includes(g.slug)),
+              { slug: 'seguridad-en-mexico', titulo: 'Seguridad en México', categoria: 'Práctico' },
+              { slug: 'que-empacar-mexico', titulo: 'Qué Empacar para México', categoria: 'Práctico' },
+            ].slice(0, 3)}
+            context="Ciudades Sede FIFA 2026"
+          />
         </div>
       </section>
 

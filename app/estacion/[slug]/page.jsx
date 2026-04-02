@@ -10,6 +10,8 @@ import BookingWidget from '@/app/components/BookingWidget'
 import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard'
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { getGuidesForStation } from '@/data/blog-links'
 
 export function generateStaticParams() {
   return estaciones.map((e) => ({ slug: e.slug }))
@@ -512,6 +514,12 @@ export default function EstacionPage({ params }) {
 
           {/* Marimbas Condesa Widget — Tourist accommodation in Condesa area */}
           <MarimbasCondesa />
+
+          {/* Blog Guides — Contextual cross-links to marimbashome.com/blog */}
+          {(() => {
+            const blogGuides = getGuidesForStation(estacion.slug)
+            return blogGuides.length > 0 ? <BlogGuiasWidget guides={blogGuides} context={estacion.nombre} /> : null
+          })()}
 
           {/* LUGARES CERCANOS (POIs) */}
           {estacion.pois && estacion.pois.length > 0 && (

@@ -5,6 +5,8 @@ import AffiliateHospedaje from '@/app/components/AffiliateHospedaje'
 import BookingWidget from '@/app/components/BookingWidget'
 import ViatorToursWidget from '@/app/components/ViatorToursWidget'
 import MarimbasCondesa from '@/app/components/MarimbasCondesa'
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { blogLinks } from '@/data/blog-links'
 
 function Countdown() {
   const today = new Date();
@@ -99,6 +101,9 @@ export default function MundialPageContent() {
         </section>
 
         <AffiliateHospedaje />
+
+        {/* Blog Guides — Travel guides for World Cup visitors */}
+        <BlogGuiasWidget guides={blogLinks.mundial} context="Mundial FIFA 2026" />
       </div>
     </>
   );

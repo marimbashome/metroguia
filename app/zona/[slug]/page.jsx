@@ -5,6 +5,8 @@ import { rutasPopulares } from '@/data/rutas-populares'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 import ViatorToursWidget from '@/app/components/ViatorToursWidget'
 import BookingWidget from '@/app/components/BookingWidget'
+import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import { getGuidesForZone } from '@/data/blog-links'
 
 export function generateStaticParams() {
   return zonas.map((z) => ({ slug: z.slug }))
@@ -192,6 +194,18 @@ export default function ZonaPage({ params }) {
 
       {/* Ad 2 */}
       <AdBannerLazyInArticle slot="1082410395" />
+
+      {/* Blog Guides — Contextual cross-links to marimbashome.com/blog */}
+      {(() => {
+        const blogGuides = getGuidesForZone(zona.slug)
+        return blogGuides.length > 0 ? (
+          <section style={{ padding: '3rem 1.25rem' }}>
+            <div className="container" style={{ maxWidth: '800px' }}>
+              <BlogGuiasWidget guides={blogGuides} context={zona.nombre} />
+            </div>
+          </section>
+        ) : null
+      })()}
 
       {/* AFFILIATE WIDGETS */}
       <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--metro-gray)' }}>
