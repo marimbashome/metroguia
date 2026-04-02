@@ -334,6 +334,6 @@ export const hospedaje = [
 // Helpers para la página de conversión
 export const marimbasListings = hospedaje.filter(h => h.es_marimbas)
 export const totalReviews = marimbasListings.reduce((sum, h) => sum + (h.reviews || 0), 0)
-export const avgRating = (marimbasListings.reduce((sum, h) => sum + (h.rating || 0), 0) / marimbasListings.length).toFixed(1)
+export const avgRating = marimbasListings.length > 0 ? String((marimbasListings.reduce((sum, h) => sum + (Number(h.rating) || 0), 0) / marimbasListings.length).toFixed(1)) : '0.0'
 export const precioDesde = Math.min(...marimbasListings.map(h => h.precio_noche))
 export const maxHuespedes = Math.max(...marimbasListings.map(h => h.huespedes))

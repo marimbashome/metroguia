@@ -111,10 +111,10 @@ export default function ZonaArqueologicaDetail({ params }) {
                 <p style={{ fontSize: '1rem', color: 'var(--text)' }}>{zona.region}</p>
               </div>
             )}
-            {zona.coordenadas && (
+            {zona.coordenadas && typeof zona.coordenadas.lat === 'number' && typeof zona.coordenadas.lng === 'number' && (
               <div>
                 <p style={{ fontSize: '0.875rem', color: 'var(--text-dim)' }}>Coordenadas</p>
-                <p style={{ fontSize: '1rem', color: 'var(--text)' }}>{zona.coordenadas.lat.toFixed(4)}, {zona.coordenadas.lng.toFixed(4)}</p>
+                <p style={{ fontSize: '1rem', color: 'var(--text)' }}>{Number(zona.coordenadas.lat).toFixed(4)}, {Number(zona.coordenadas.lng).toFixed(4)}</p>
               </div>
             )}
           </div>

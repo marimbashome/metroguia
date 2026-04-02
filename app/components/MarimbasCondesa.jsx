@@ -154,7 +154,7 @@ export default function MarimbasCondesa({ compact = false }) {
           borderRadius: 'var(--radius)',
           fontSize: '0.8rem',
         }}>
-          <span style={{ fontWeight: 700, color: 'var(--primary)' }}>★ {avgRating.toFixed(1)}</span>
+          <span style={{ fontWeight: 700, color: 'var(--primary)' }}>★ {typeof avgRating === 'number' ? avgRating.toFixed(1) : avgRating}</span>
           <span style={{ color: 'var(--text-dim)', marginLeft: '0.3rem' }}>({totalReviews} reseñas)</span>
         </div>
         <div style={{

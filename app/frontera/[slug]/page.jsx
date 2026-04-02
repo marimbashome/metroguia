@@ -227,7 +227,7 @@ export default function FronteraCrucePage({ params }) {
                   Ubicación
                 </p>
                 <p style={{ fontSize: '0.95rem' }}>
-                  {cruce.lat && cruce.lng ? `${cruce.lat.toFixed(4)}°, ${cruce.lng.toFixed(4)}°` : 'N/A'}
+                  {typeof cruce.lat === 'number' && typeof cruce.lng === 'number' ? `${Number(cruce.lat).toFixed(4)}°, ${Number(cruce.lng).toFixed(4)}°` : 'N/A'}
                 </p>
               </div>
 
