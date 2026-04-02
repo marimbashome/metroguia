@@ -120,7 +120,7 @@ export default function HoustonPage() {
                   {linea.total} stations
                 </p>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  {linea.region.slice(0, 3).map((region, idx) => (
+                  {linea.municipios.slice(0, 3).map((region, idx) => (
                     <span key={idx} style={{ padding: '2px 8px', backgroundColor: `${linea.color}20`, color: linea.color, borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: '600' }}>
                       {region}
                     </span>

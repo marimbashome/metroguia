@@ -1,4 +1,4 @@
-export const grafoPHL = {
+export const grafoPhiladelphia = {
   "nodes": [
     // BSL - Broad Street Line (22 nodes)
     { "id": "philly-fern-rock", "label": "Fern Rock", "sistema": "SEPTA Rapid Transit", "linea": "bsl", "municipio": "Philadelphia", "tipo": "northern_terminus", "index": 0 },

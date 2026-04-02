@@ -67,7 +67,7 @@ export default function LineLA({ params }) {
             {linea.inicio} → {linea.fin}
           </p>
           <p style={{ fontSize: '1rem', margin: '0', opacity: '0.9' }}>
-            {linea.total} stations · {linea.region.join(', ')}
+            {linea.total} stations · {linea.municipios.join(', ')}
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function LineLA({ params }) {
             {linea.descripcion}
           </p>
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {linea.region.map((region, idx) => (
+            {linea.municipios.map((region, idx) => (
               <span key={idx} style={{ padding: '4px 12px', backgroundColor: `${linea.color}15`, color: linea.color, borderRadius: 'var(--radius-full)', fontSize: '0.85rem', fontWeight: '600' }}>
                 {region}
               </span>
