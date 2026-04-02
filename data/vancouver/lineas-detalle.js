@@ -142,3 +142,5 @@ export const lineasVANCOUVER = [
     }
   }
 ];
+
+export { lineasVANCOUVER as lineasVancouver };

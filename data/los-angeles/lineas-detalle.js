@@ -380,3 +380,5 @@ export const lineasLosAngeles = [
     h1: "Línea K — Rosa/Crenshaw | Metro Los Angeles"
   },
 ];
+
+export { lineasLosAngeles as lineasLA };

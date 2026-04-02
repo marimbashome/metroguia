@@ -3737,3 +3737,5 @@ export const estacionesLosAngeles = [
   lugares_cercanos: []
 }
 ]
+
+export { estacionesLosAngeles as estacionesLA };

@@ -527,3 +527,5 @@ export const estacionesVANCOUVER = [
     "moneda": "CAD"
   }
 ];
+
+export { estacionesVANCOUVER as estacionesVancouver };

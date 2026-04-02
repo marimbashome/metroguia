@@ -157,3 +157,5 @@ export const lineasTORONTO = [
     }
   }
 ];
+
+export { lineasTORONTO as lineasToronto };

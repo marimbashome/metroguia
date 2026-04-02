@@ -792,3 +792,5 @@ export const estacionesTORONTO = [
     "moneda": "CAD"
   }
 ];
+
+export { estacionesTORONTO as estacionesToronto };
