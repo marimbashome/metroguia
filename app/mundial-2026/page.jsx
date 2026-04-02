@@ -1,15 +1,15 @@
 import MundialPageContent from './MundialPageClient'
 
 export const metadata = {
-  title: 'Mundial FIFA 2026 México — Transporte a Estadios | MetroGuia',
-  description: 'Guía completa de transporte para el Mundial FIFA 2026 en México. Cómo llegar al Estadio Azteca, Akron y BBVA en metro y transporte público. 13 partidos, 3 ciudades.',
-  keywords: 'mundial 2026, estadio azteca, metro cdmx, como llegar, fifa, estadio akron, estadio bbva',
+  title: 'FIFA World Cup 2026 — Transit Guide to All 16 Stadiums | MetroGuia',
+  description: 'Complete transit guide to all 16 FIFA World Cup 2026 stadiums in USA, Mexico & Canada. Step-by-step directions by metro, rail & bus to MetLife, SoFi, Azteca and more.',
+  keywords: 'world cup 2026, fifa 2026 stadiums, transit guide, metlife stadium, sofi stadium, estadio azteca, how to get there, public transit',
   alternates: {
     canonical: 'https://metroguia.mx/mundial-2026/',
   },
   openGraph: {
-    title: 'Mundial FIFA 2026 México — Guía de Transporte Público',
-    description: 'Cómo llegar a los 13 partidos del Mundial en CDMX, Guadalajara y Monterrey. Rutas en metro, horarios y tips.',
+    title: 'FIFA World Cup 2026 — Transit Guide to All 16 Stadiums',
+    description: 'How to get to every FIFA 2026 stadium by public transit. 16 venues across USA, Mexico & Canada with step-by-step directions.',
     url: 'https://metroguia.mx/mundial-2026/',
     type: 'website',
     siteName: 'MetroGuia.mx',
