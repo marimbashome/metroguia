@@ -1,4 +1,4 @@
-export const lineasLosAngeles = [
+export const lineasLA = [
   {
     id: "A",
     color: "#0066CC",
@@ -381,4 +381,4 @@ export const lineasLosAngeles = [
   },
 ];
 
-export { lineasLosAngeles as lineasLA };
+export { lineasLA as lineasLosAngeles };

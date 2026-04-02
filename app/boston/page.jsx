@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesBoston.filter(e =>
-  ['boston-downtown', 'boston-central', 'boston-park', 'boston-gillette', 'boston-airport'].includes(e.slug)
+  ['boston-park-street', 'boston-harvard', 'boston-aquarium', 'boston-fenway', 'boston-foxboro', 'boston-airport', 'boston-copley', 'boston-north-station'].includes(e.slug)
 );
 
 export default function BostonPage() {
@@ -69,7 +69,7 @@ export default function BostonPage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            Red Line · Green Line · Blue Line · Orange Line · 100+ Stations
+            Red · Orange · Blue · Green (B/C/D/E) · Silver · Mattapan · Commuter Rail
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -102,7 +102,7 @@ export default function BostonPage() {
         }}>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#C1121F', margin: '0 0 8px 0' }}>
-              100+
+              159
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Total Stations
@@ -110,18 +110,18 @@ export default function BostonPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#C1121F', margin: '0 0 8px 0' }}>
-              4
+              11
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Subway Lines
+              Transit Lines
             </p>
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#C1121F', margin: '0 0 8px 0' }}>
-              24/7
+              $2.40
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Red Line Service
+              CharlieCard Fare
             </p>
           </div>
         </div>
@@ -283,12 +283,6 @@ export default function BostonPage() {
                   border: '1px solid var(--border)',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.12)';
-                  e.currentTarget.style.borderColor = '#C1121F';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = 'var(--border)';
                 }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#C1121F' }}>
                     {estacion.nombre}
@@ -334,10 +328,6 @@ export default function BostonPage() {
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <div style={{
@@ -356,7 +346,7 @@ export default function BostonPage() {
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.sistema}
+                        {linea.id} Line
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
                         {linea.total} stations

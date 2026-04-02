@@ -1,5 +1,5 @@
-import { lineasLosAngeles } from '@/data/los-angeles/lineas-detalle';
-import { estacionesLosAngeles } from '@/data/los-angeles/estaciones';
+import { lineasLA as lineasLosAngeles } from '@/data/los-angeles/lineas-detalle';
+import { estacionesLA as estacionesLosAngeles } from '@/data/los-angeles/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';

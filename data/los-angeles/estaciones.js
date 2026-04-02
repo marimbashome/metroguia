@@ -1,4 +1,4 @@
-export const estacionesLosAngeles = [
+export const estacionesLA = [
 {
   slug: "la-pomona-north",
   nombre: "Pomona North",
@@ -3738,4 +3738,4 @@ export const estacionesLosAngeles = [
 }
 ]
 
-export { estacionesLosAngeles as estacionesLA };
+export { estacionesLA as estacionesLosAngeles };

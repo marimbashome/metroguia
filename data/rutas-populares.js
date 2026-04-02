@@ -4960,14 +4960,18 @@ export const rutasPopulares = [
   { origen: "14th-street-penn", destino: "nyc-23rd-street", titulo: "14th Street Penn to 23rd Street (Midtown)", connector: "to" },
 
   // Los Angeles — Union Station, Downtown, Hollywood, LAX
-  { origen: "la-union-station", destino: "la-lax-metro-transit-center", titulo: "Union Station to LAX Airport Terminal", connector: "to" },
-  { origen: "la-7th-st-metro-center", destino: "la-santa-monica", titulo: "Downtown LA to Santa Monica Beach", connector: "to" },
-  { origen: "la-civic-center", destino: "la-hollywood-highland", titulo: "Civic Center to Hollywood & Highland", connector: "to" },
-  { origen: "la-universal-city", destino: "la-hollywood-bowel", titulo: "Universal City to Hollywood Bowl", connector: "to" },
-  { origen: "la-north-hollywood", destino: "la-downtown-long-beach", titulo: "North Hollywood to Long Beach (Red to Blue Line)", connector: "to" },
-  { origen: "la-wilshire-western", destino: "la-expo-west-la", titulo: "Wilshire to Exposition Park (Museums)", connector: "to" },
-  { origen: "la-norwalk", destino: "la-civic-center", titulo: "Norwalk to Downtown (Gold Line)", connector: "to" },
-  { origen: "la-willowbrook", destino: "la-lax-metro-transit-center", titulo: "Willowbrook to LAX (Green Line)", connector: "to" },
+  { origen: "la-lax-metro-transit-center", destino: "la-hollywood-highland", titulo: "LAX to Hollywood/Highland (Airport to Entertainment)", connector: "to" },
+  { origen: "la-union-station", destino: "la-santa-monica", titulo: "Union Station to Downtown Santa Monica (Transit Hub to Beach)", connector: "to" },
+  { origen: "la-7th-st-metro-center", destino: "la-downtown-long-beach", titulo: "Downtown LA to Downtown Long Beach (Urban Explorer)", connector: "to" },
+  { origen: "la-hollywood-highland", destino: "la-universal-city", titulo: "Hollywood/Highland to Universal City (Entertainment District)", connector: "to" },
+  { origen: "la-lax-metro-transit-center", destino: "la-union-station", titulo: "LAX to Union Station (Airport to Transit Hub)", connector: "to" },
+  { origen: "la-wilshire-western", destino: "la-7th-st-metro-center", titulo: "Koreatown to Downtown LA (Wilshire to Metro Center)", connector: "to" },
+  { origen: "la-santa-monica", destino: "la-hollywood-highland", titulo: "Santa Monica to Hollywood (Beach to Entertainment)", connector: "to" },
+  { origen: "la-union-station", destino: "la-pasadena-memorial-park", titulo: "Union Station to Pasadena/Memorial Park (Historic Heritage)", connector: "to" },
+  { origen: "la-crenshaw-expo", destino: "la-7th-st-metro-center", titulo: "Downtown Inglewood to Downtown LA (SoFi to Urban Core)", connector: "to" },
+  { origen: "la-expo-park-usc", destino: "la-santa-monica", titulo: "Expo Park/USC to Downtown Santa Monica (Culture to Coast)", connector: "to" },
+  { origen: "la-north-hollywood", destino: "la-downtown-long-beach", titulo: "North Hollywood to Long Beach (Valley to Port City)", connector: "to" },
+  { origen: "la-lax-metro-transit-center", destino: "la-downtown-long-beach", titulo: "LAX to Long Beach (Airport to Waterfront)", connector: "to" },
 
   // Houston — Downtown, Medical Center, NRG Stadium, Hermann Park
   { origen: "houston-downtown-transit-center", destino: "houston-nrg-park", titulo: "Downtown to NRG Stadium (Astros, Texans)", connector: "to" },
@@ -4990,14 +4994,6 @@ export const rutasPopulares = [
   { origen: "atlanta-lakewood-fort-mcpherson", destino: "atlanta-east-point", titulo: "Lakewood to East Point", connector: "to" },
 
   // Philadelphia — Center City, Market East, University City, NRG
-  { origen: "philly-city-hall", destino: "philly-nrg-station", titulo: "City Hall to NRG Station", connector: "to" },
-  { origen: "philly-fern-rock", destino: "philly-69th-transit-center", titulo: "Fern Rock to 69th Street Transit Center", connector: "to" },
-  { origen: "philly-race-vine", destino: "philly-cecil-b-moore", titulo: "Race-Vine to Cecil B Moore Station", connector: "to" },
-  { origen: "philly-walnut-locust", destino: "philly-lombard-south", titulo: "Walnut-Locust to Lombard-South", connector: "to" },
-  { origen: "philly-girard", destino: "philly-fairmount", titulo: "Girard to Fairmount Park", connector: "to" },
-  { origen: "philly-allegheny", destino: "philly-spring-garden", titulo: "Allegheny to Spring Garden", connector: "to" },
-  { origen: "philly-logan", destino: "philly-hunting-park", titulo: "Logan to Hunting Park", connector: "to" },
-  { origen: "philly-ellsworth-federal", destino: "philly-snyder", titulo: "Ellsworth-Federal to Snyder", connector: "to" },
 
   // Seattle — Sea-Tac Airport, Downtown, Capitol Hill, University
   { origen: "seattle-seatac-airport", destino: "seattle-westlake", titulo: "Sea-Tac Airport to Westlake (Downtown)", connector: "to" },
@@ -5079,6 +5075,51 @@ export const rutasPopulares = [
   { origen: "vancouver-richmond-brighouse", destino: "vancouver-waterfront", titulo: "Richmond-Brighouse to Waterfront (Canada Line)", connector: "to" },
   { origen: "vancouver-granville", destino: "vancouver-burrard", titulo: "Granville to Burrard (Downtown Loop)", connector: "to" },
 
+
+  // === PHILADELPHIA SEPTA ROUTES ===
+  { origen: "philly-airport-terminal-ef", destino: "philly-suburban-station", titulo: "Airport to Center City Philadelphia", connector: "to" },
+  { origen: "philly-airport-terminal-ef", destino: "philly-30th-street", titulo: "Airport to 30th Street Station", connector: "to" },
+  { origen: "philly-airport-terminal-ef", destino: "philly-market-east", titulo: "Airport to Market East (Jefferson Station)", connector: "to" },
+  { origen: "philly-30th-street", destino: "philly-5th-street", titulo: "30th Street Station to Old City", connector: "to" },
+  { origen: "philly-30th-street", destino: "philly-city-hall", titulo: "30th Street Station to City Hall", connector: "to" },
+  { origen: "philly-30th-street", destino: "philly-nrg-station", titulo: "30th Street Station to Sports Complex (Lincoln Financial Field)", connector: "to" },
+  { origen: "philly-40th-street", destino: "philly-5th-street", titulo: "University City to Independence Hall", connector: "to" },
+  { origen: "philly-34th-street", destino: "philly-city-hall", titulo: "UPenn to City Hall", connector: "to" },
+  { origen: "philly-city-hall", destino: "philly-nrg-station", titulo: "City Hall to Lincoln Financial Field (Eagles/FIFA)", connector: "to" },
+  { origen: "philly-city-hall", destino: "philly-5th-street", titulo: "City Hall to Liberty Bell & Independence Hall", connector: "to" },
+  { origen: "philly-fairmount", destino: "philly-5th-street", titulo: "Art Museum to Independence Hall", connector: "to" },
+  { origen: "philly-fairmount", destino: "philly-city-hall", titulo: "Philadelphia Museum of Art to City Hall", connector: "to" },
+  { origen: "philly-5th-street", destino: "philly-nrg-station", titulo: "Independence Hall to Sports Complex", connector: "to" },
+  { origen: "philly-2nd-street", destino: "philly-nrg-station", titulo: "Old City to Lincoln Financial Field", connector: "to" },
+  { origen: "philly-suburban-station", destino: "philly-nrg-station", titulo: "Suburban Station to Sports Complex", connector: "to" },
+  { origen: "philly-11th-street", destino: "philly-fairmount", titulo: "Reading Terminal Market to Art Museum", connector: "to" },
+  { origen: "philly-walnut-locust", destino: "philly-nrg-station", titulo: "Rittenhouse Square to Sports Complex", connector: "to" },
+  { origen: "philly-lindenwold", destino: "philly-city-hall", titulo: "Lindenwold (NJ) to Center City", connector: "to" },
+  { origen: "philly-haddonfield", destino: "philly-5th-street", titulo: "Haddonfield to Independence Hall via PATCO", connector: "to" },
+  { origen: "philly-norristown", destino: "philly-city-hall", titulo: "Norristown to Center City", connector: "to" },
+  { origen: "philly-manayunk", destino: "philly-suburban-station", titulo: "Manayunk to Center City", connector: "to" },
+  { origen: "philly-fairmount", destino: "philly-30th-street", titulo: "Philadelphia Zoo area to 30th Street", connector: "to" },
+  // NYC MTA Subway
+  { origen: "nyc-howard-beach-jfk-airport", destino: "nyc-times-sq-42-st", titulo: "JFK Airport a Times Square (NYC)" },
+  { origen: "nyc-jackson-hts-roosevelt-av", destino: "nyc-times-sq-42-st", titulo: "LaGuardia zona a Midtown (NYC)" },
+  { origen: "nyc-34-st-penn-station", destino: "nyc-world-trade-center", titulo: "Penn Station a World Trade Center (NYC)" },
+  { origen: "nyc-grand-central-42-st", destino: "nyc-brooklyn-bridge-city-hall", titulo: "Grand Central a Brooklyn Bridge (NYC)" },
+  { origen: "nyc-times-sq-42-st", destino: "nyc-coney-island-stillwell-av", titulo: "Times Square a Coney Island (NYC)" },
+  { origen: "nyc-125-st", destino: "nyc-wall-st", titulo: "Harlem a Wall Street (NYC)" },
+  { origen: "nyc-161-st-yankee-stadium", destino: "nyc-times-sq-42-st", titulo: "Yankee Stadium a Times Square (NYC)" },
+  { origen: "nyc-flushing-main-st", destino: "nyc-times-sq-42-st", titulo: "Flushing a Times Square (NYC)" },
+  { origen: "nyc-34-st-penn-station", destino: "nyc-secaucus-junction", titulo: "Penn Station a MetLife Stadium FIFA 2026 (NYC)" },
+  { origen: "nyc-times-sq-42-st", destino: "nyc-atlantic-av-barclays-ctr", titulo: "Times Square a Barclays Center (NYC)" },
+  { origen: "nyc-grand-central-42-st", destino: "nyc-flushing-main-st", titulo: "Grand Central a Flushing Chinatown (NYC)" },
+  { origen: "nyc-14-st-union-sq", destino: "nyc-brooklyn-bridge-city-hall", titulo: "Union Square a Brooklyn Bridge (NYC)" },
+  { origen: "nyc-59-st-columbus-circle", destino: "nyc-125-st", titulo: "Central Park a Harlem (NYC)" },
+  { origen: "nyc-times-sq-42-st", destino: "nyc-south-ferry", titulo: "Times Square a Staten Island Ferry (NYC)" },
+  { origen: "nyc-34-st-penn-station", destino: "nyc-grand-central-42-st", titulo: "Penn Station a Grand Central (NYC)" },
+  { origen: "nyc-times-sq-42-st", destino: "nyc-world-trade-center", titulo: "Times Square a 9/11 Memorial (NYC)" },
+  { origen: "nyc-bedford-av", destino: "nyc-times-sq-42-st", titulo: "Williamsburg a Times Square (NYC)" },
+  { origen: "nyc-times-sq-42-st", destino: "nyc-mets-willets-point", titulo: "Times Square a Citi Field Mets (NYC)" },
+  { origen: "nyc-howard-beach-jfk-airport", destino: "nyc-34-st-penn-station", titulo: "JFK Airport a Penn Station (NYC)" },
+  { origen: "nyc-astoria-ditmars-blvd", destino: "nyc-coney-island-stillwell-av", titulo: "Astoria a Coney Island (NYC)" },
 ];
 
 

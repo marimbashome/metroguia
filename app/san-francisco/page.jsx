@@ -7,9 +7,9 @@ import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {
-  title: 'San Francisco Bay Area BART VTA Guide — Multi-System Transit | MetroGuia',
-  description: 'San Francisco BART (Bay Area Rapid Transit) & VTA Caltrain guide. 50+ BART stations, light rail, commuter rail to Levi\'s Stadium for FIFA 2026. Clipper Card. Complete transit guide.',
-  keywords: 'BART, San Francisco transit, VTA Caltrain, Levi\'s Stadium, FIFA 2026, Clipper Card, Bay Area',
+  title: 'San Francisco Bay Area Transit Guide — BART, Muni, Caltrain, Cable Cars | MetroGuia',
+  description: 'Complete San Francisco transit guide: 50 BART stations, Muni Metro, Caltrain to Silicon Valley, iconic Cable Cars. 117 stations, 17 lines, 4 systems. Trip planner & Clipper Card info.',
+  keywords: 'BART, San Francisco transit, Muni Metro, Caltrain, Cable Cars, Levi\'s Stadium, FIFA 2026, Clipper Card, Bay Area, Silicon Valley',
   openGraph: {
     title: 'San Francisco BART & Bay Area Transit',
     description: 'Discover Bay Area\'s integrated transit system: BART, Caltrain, VTA. Direct access to Levi\'s Stadium.',
@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesSF.filter(e =>
-  ['sf-embarcadero', 'sf-civic-center', 'sf-powell', 'sf-levis', 'sf-airport'].includes(e.slug)
+  ['bart-embarcadero', 'bart-powell', 'bart-civic-center', 'bart-sfo-airport', 'sf-muni-chinatown', 'cable-powell-market', 'caltrain-palo-alto'].includes(e.slug)
 );
 
 export default function SanFranciscoPage() {
@@ -69,7 +69,7 @@ export default function SanFranciscoPage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            BART · VTA · Caltrain · 80+ Stations
+            BART · Muni Metro · Caltrain · Cable Cars · 117 Stations
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -102,7 +102,7 @@ export default function SanFranciscoPage() {
         }}>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#003C7F', margin: '0 0 8px 0' }}>
-              80+
+              117
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Total Stations
@@ -110,7 +110,7 @@ export default function SanFranciscoPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#003C7F', margin: '0 0 8px 0' }}>
-              3
+              4
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Systems
@@ -118,10 +118,10 @@ export default function SanFranciscoPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#003C7F', margin: '0 0 8px 0' }}>
-              24/7
+              17
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              24 Hour BART
+              Lines
             </p>
           </div>
         </div>
@@ -283,18 +283,12 @@ export default function SanFranciscoPage() {
                   border: '1px solid var(--border)',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.12)';
-                  e.currentTarget.style.borderColor = '#003C7F';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = 'var(--border)';
                 }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#003C7F' }}>
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    {estacion.linea}
+                    {estacion.sistema.toUpperCase()} · {estacion.linea}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
                     {estacion.intro}
@@ -334,10 +328,6 @@ export default function SanFranciscoPage() {
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <div style={{
@@ -356,7 +346,7 @@ export default function SanFranciscoPage() {
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.sistema}
+                        {linea.id} — {linea.sistema.toUpperCase()}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
                         {linea.total} stations

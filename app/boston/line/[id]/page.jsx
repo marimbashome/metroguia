@@ -45,7 +45,7 @@ export default function LineBostonPage({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesBoston.filter((e) => e.linea === linea.id);
+  const estacionesLinea = (linea.estaciones || []).map(slug => estacionesBoston.find(e => e.slug === slug)).filter(Boolean);
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
@@ -154,12 +154,6 @@ export default function LineBostonPage({ params }) {
                   border: '1px solid var(--border)',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                  e.currentTarget.style.borderColor = linea.color;
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = 'var(--border)';
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
                     <span style={{ fontSize: '0.8rem', backgroundColor: linea.color, color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: '700' }}>

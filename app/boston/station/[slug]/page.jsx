@@ -4,7 +4,7 @@ import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = { 'RED': '#C1121F', 'GREEN': '#00A651', 'BLUE': '#003DA5', 'ORANGE': '#FF8200' };
+const LINE_COLORS = { 'Red': '#DA291C', 'Orange': '#ED8B00', 'Blue': '#003DA5', 'Green': '#00843D', 'Green-B': '#00843D', 'Green-C': '#00843D', 'Green-D': '#00843D', 'Green-E': '#00843D', 'Silver': '#7C878E', 'Mattapan': '#DA291C', 'Commuter-Rail': '#80276C' };
 
 export async function generateStaticParams() {
   return estacionesBoston.map((estacion) => ({
