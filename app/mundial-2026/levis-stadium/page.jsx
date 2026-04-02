@@ -1,5 +1,3 @@
-'use client';
-
 import BlogGuiasWidget from '@/app/components/BlogGuiasWidget';
 import { blogLinks } from '@/data/blog-links';
 
