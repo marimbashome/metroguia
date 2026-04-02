@@ -1,7 +1,7 @@
 import { rutasPopulares } from '@/data/rutas-populares'
 import { STATION_DISPLAY_NAMES, cdmxStations } from '@/data/rutas-engine'
-import { findRoute } from '@/lib/pathfinder'
-import { grafo } from '@/data/grafo'
+import { findRoute, getGrafo, detectCiudad, getCurrency } from '@/lib/pathfinder'
+import { getCityConfig } from '@/data/cities-config'
 import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from './RutaClient'
 
@@ -17,96 +17,110 @@ export const revalidate = false
 const MAX_STATIC_ROUTES = 200
 
 export function generateStaticParams() {
-  return rutasPopulares.slice(0, MAX_STATIC_ROUTES).map(r => ({
-    slug: `${r.origen}-a-${r.destino}`,
-  }))
+  return rutasPopulares.slice(0, MAX_STATIC_ROUTES).map(r => {
+    const connector = r.connector || 'a'
+    return { slug: `${r.origen}-${connector}-${r.destino}` }
+  })
 }
 
-// Validate that a slug contains real CDMX stations
-function isValidRouteSlug(slug) {
-  if (!slug) return false
+function parseRouteSlug(slug) {
+  if (!slug) return null
+  const toIdx = slug.indexOf('-to-')
+  if (toIdx > 0) {
+    return { origen: slug.substring(0, toIdx), destino: slug.substring(toIdx + 4), connector: 'to' }
+  }
   const parts = slug.split('-a-')
-  if (parts.length < 2) return false
-  const origen = parts[0]
-  const destino = parts.slice(1).join('-a-')
+  if (parts.length >= 2) {
+    return { origen: parts[0], destino: parts.slice(1).join('-a-'), connector: 'a' }
+  }
+  return null
+}
+
+function isValidRouteSlug(slug) {
+  const parsed = parseRouteSlug(slug)
+  if (!parsed) return false
+  const { origen, destino } = parsed
+  if (origen === destino) return false
   const stationSet = new Set(cdmxStations)
-  return stationSet.has(origen) && stationSet.has(destino) && origen !== destino
+  if (stationSet.has(origen) && stationSet.has(destino)) return true
+  const grafo_all = getGrafo()
+  return !!(grafo_all[origen] && grafo_all[destino])
 }
 
 function getStationName(slug) {
   return STATION_DISPLAY_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
 
-// SEO metadata per route — works for ALL 24,180 combinations
 export function generateMetadata({ params }) {
   const { slug } = params
-
-  if (!isValidRouteSlug(slug)) {
+  const parsed = parseRouteSlug(slug)
+  if (!parsed || !isValidRouteSlug(slug)) {
     return {
-      title: 'Planifica tu Ruta en Metro CDMX — Transbordos y Horarios | MetroGuia',
-      description: 'Planificador de rutas en el Metro de Ciudad de México. Encuentra la mejor ruta, transbordos, tiempo y costo ($6 MXN). Ideal para turistas y locales.',
+      title: 'Plan Your Transit Route — Transfers & Schedules | MetroGuia',
+      description: 'Transit route planner for cities across Mexico, the US, and Canada. Find the best route, transfers, travel time, and fare.',
     }
   }
-
-  const parts = slug.split('-a-')
-  const origen = getStationName(parts[0])
-  const destino = getStationName(parts.slice(1).join('-a-'))
-
-  const title = `${origen} a ${destino} en Metro CDMX — Ruta, Transbordos y Tiempo | MetroGuia`
-  const description = `Cómo llegar de ${origen} a ${destino} en el Metro de Ciudad de México. Líneas, transbordos, tiempo estimado y costo ($6 MXN). Planifica tu viaje ahora.`
-
+  const { origen, destino } = parsed
+  const origenName = getStationName(origen)
+  const destinoName = getStationName(destino)
+  const ciudad = detectCiudad(origen)
+  const cityConfig = ciudad ? getCityConfig(ciudad) : null
+  const cityName = cityConfig?.name || 'Metro'
+  const isEnglish = cityConfig?.country === 'US' || cityConfig?.country === 'CA'
+  const title = isEnglish
+    ? `${origenName} to ${destinoName} — ${cityName} Transit Route | MetroGuia`
+    : `${origenName} a ${destinoName} en Metro ${cityName} — Ruta, Transbordos y Tiempo | MetroGuia`
+  const description = isEnglish
+    ? `How to get from ${origenName} to ${destinoName} on ${cityName} transit. Lines, transfers, estimated time, and fare. Plan your trip now.`
+    : `Cómo llegar de ${origenName} a ${destinoName} en el Metro de ${cityName}. Líneas, transbordos, tiempo estimado y costo. Planifica tu viaje ahora.`
   return {
     title,
     description,
     openGraph: {
-      title: `${origen} → ${destino} en Metro CDMX`,
-      description: `Ruta paso a paso de ${origen} a ${destino} en metro. Transbordos, tiempo y costo.`,
+      title: `${origenName} → ${destinoName} — ${cityName}`,
+      description: isEnglish
+        ? `Step-by-step route from ${origenName} to ${destinoName}. Transfers, time, and fare.`
+        : `Ruta paso a paso de ${origenName} a ${destinoName} en metro. Transbordos, tiempo y costo.`,
       url: `https://metroguia.mx/ruta/${slug}/`,
       siteName: 'MetroGuia',
-      locale: 'es_MX',
+      locale: isEnglish ? 'en_US' : 'es_MX',
       type: 'website',
     },
-    alternates: {
-      canonical: `https://metroguia.mx/ruta/${slug}/`,
-    },
+    alternates: { canonical: `https://metroguia.mx/ruta/${slug}/` },
   }
 }
 
 export default function RutaPage({ params }) {
   const { slug } = params
-
-  // Parse slug and validate
-  const parts = slug.split('-a-')
-  const origen = parts[0]
-  const destino = parts.slice(1).join('-a-')
-
-  // Calculate route server-side for schema generation
+  const parsed = parseRouteSlug(slug)
+  const origen = parsed?.origen || ''
+  const destino = parsed?.destino || ''
   let rutaSchema = null
   if (isValidRouteSlug(slug)) {
-    const resultado = findRoute(origen, destino)
+    const ciudad = detectCiudad(origen)
+    const resultado = findRoute(origen, destino, ciudad)
     if (resultado && resultado.encontrada) {
-      const origenNombre = grafo[origen]?.nombre || getStationName(origen)
-      const destinoNombre = grafo[destino]?.nombre || getStationName(destino)
-      const tiempoEstimado = Math.round(resultado.pasos.length * 2 + 3)
-
+      const grafoActivo = getGrafo(ciudad)
+      const origenNombre = grafoActivo[origen]?.nombre || getStationName(origen)
+      const destinoNombre = grafoActivo[destino]?.nombre || getStationName(destino)
+      const tiempoEstimado = resultado.tiempo_total || Math.round(resultado.pasos.length * 2 + 3)
+      const cityConfig = ciudad ? getCityConfig(ciudad) : null
       rutaSchema = {
         origen: origenNombre,
         destino: destinoNombre,
         pasos: resultado.pasos,
         tiempoTotal: tiempoEstimado,
-        costoTotal: '6',
+        costoTotal: String(resultado.costo || '6'),
         transbordos: resultado.transbordos || 0,
         lineas_usadas: resultado.lineas_usadas || [],
-        slug
+        slug,
+        city: cityConfig?.name || 'CDMX',
       }
     }
   }
-
   return (
     <>
-      {rutaSchema && (
-        <RouteSchema {...rutaSchema} />
-      )}
+      {rutaSchema && <RouteSchema {...rutaSchema} />}
       <RutaClient slug={params.slug} />
     </>
   )

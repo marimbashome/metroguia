@@ -316,7 +316,8 @@ export default function BuscadorRutas({ asPage = false }) {
   };
 
   const rutasAzteca     = rutasPopulares.filter((r) => r.destino === 'tasquena');
-  const rutasTuristicas = rutasPopulares.filter((r) => r.destino !== 'tasquena').slice(0, 12);
+  const rutasTuristicas = rutasPopulares.filter((r) => r.destino !== 'tasquena' && !r.connector).slice(0, 12);
+  const rutasUSCA       = rutasPopulares.filter((r) => r.connector === 'to');
 
   // ── Widget de búsqueda (compartido) ──────────────────────────
   const searchWidget = (
@@ -413,6 +414,27 @@ export default function BuscadorRutas({ asPage = false }) {
           );
         })}
       </div>
+
+      {/* US & Canada Cities */}
+      {rutasUSCA.length > 0 && (
+        <>
+          <div style={{ ...s.popularHeader, marginTop: '2.5rem' }}>
+            <h3 style={s.popularTitle}>🌎 Transit Routes — US & Canada</h3>
+            <p style={s.popularSub}>Plan your trip across 13 cities with metro, subway & rail</p>
+          </div>
+          <div style={s.routeGrid}>
+            {rutasUSCA.slice(0, 24).map((ruta) => (
+              <a
+                key={`${ruta.origen}_${ruta.destino}`}
+                href={`/ruta/${ruta.origen}-to-${ruta.destino}/`}
+                style={{ ...s.routeCard, textDecoration: 'none', color: 'inherit' }}
+              >
+                <span style={s.routeCardFrom}>{ruta.titulo}</span>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 

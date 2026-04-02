@@ -4945,6 +4945,140 @@ export const rutasPopulares = [
   { origen: "palenque", destino: "escarcega", titulo: "Palenque a Escárcega en Tren Maya", ciudad: "tren-maya" },
   { origen: "merida-oriente", destino: "uxmal", titulo: "Mérida a Uxmal en Tren Maya", ciudad: "tren-maya" },
 
+  // =============================================================
+  // US & CANADA — Popular tourist and transit routes (13 cities)
+  // =============================================================
+
+  // NYC — Times Square, Penn Station, Grand Central, Wall Street, Brooklyn
+  { origen: "nyc-times-square-42nd-street", destino: "whitehall-terminal", titulo: "Times Square to Battery Park (Financial District)", connector: "to" },
+  { origen: "42nd-street-port-authority", destino: "fulton-street-complex", titulo: "Port Authority to Wall Street Complex", connector: "to" },
+  { origen: "nyc-penn-station", destino: "nyc-grand-central", titulo: "Penn Station to Grand Central Terminal", connector: "to" },
+  { origen: "union-square", destino: "brooklyn-ny-4-5-6", titulo: "Union Square to Brooklyn Bridge (DUMBO)", connector: "to" },
+  { origen: "canal-street-1", destino: "christopher-street", titulo: "Chinatown to Greenwich Village", connector: "to" },
+  { origen: "nyc-wall-street", destino: "bowling-green", titulo: "Wall Street to Bowling Green Station", connector: "to" },
+  { origen: "23rd-street-lex", destino: "34th-street-hudson", titulo: "East 23rd to Chelsea (Hudson Hub)", connector: "to" },
+  { origen: "14th-street-penn", destino: "nyc-23rd-street", titulo: "14th Street Penn to 23rd Street (Midtown)", connector: "to" },
+
+  // Los Angeles — Union Station, Downtown, Hollywood, LAX
+  { origen: "la-union-station", destino: "la-lax-metro-transit-center", titulo: "Union Station to LAX Airport Terminal", connector: "to" },
+  { origen: "la-7th-st-metro-center", destino: "la-santa-monica", titulo: "Downtown LA to Santa Monica Beach", connector: "to" },
+  { origen: "la-civic-center", destino: "la-hollywood-highland", titulo: "Civic Center to Hollywood & Highland", connector: "to" },
+  { origen: "la-universal-city", destino: "la-hollywood-bowel", titulo: "Universal City to Hollywood Bowl", connector: "to" },
+  { origen: "la-north-hollywood", destino: "la-downtown-long-beach", titulo: "North Hollywood to Long Beach (Red to Blue Line)", connector: "to" },
+  { origen: "la-wilshire-western", destino: "la-expo-west-la", titulo: "Wilshire to Exposition Park (Museums)", connector: "to" },
+  { origen: "la-norwalk", destino: "la-civic-center", titulo: "Norwalk to Downtown (Gold Line)", connector: "to" },
+  { origen: "la-willowbrook", destino: "la-lax-metro-transit-center", titulo: "Willowbrook to LAX (Green Line)", connector: "to" },
+
+  // Houston — Downtown, Medical Center, NRG Stadium, Hermann Park
+  { origen: "houston-downtown-transit-center", destino: "houston-nrg-park", titulo: "Downtown to NRG Stadium (Astros, Texans)", connector: "to" },
+  { origen: "houston-northline-transit-center", destino: "houston-bbva-stadium", titulo: "Northline to BBVA Stadium (MLS)", connector: "to" },
+  { origen: "houston-uh-downtown", destino: "houston-museum-district", titulo: "UH Downtown to Museum District", connector: "to" },
+  { origen: "houston-texas-medical-center", destino: "houston-herman-park", titulo: "Medical Center to Hermann Park Zoo", connector: "to" },
+  { origen: "houston-theater-district", destino: "houston-downtown-transit-center", titulo: "Theater District (Downtown)", connector: "to" },
+  { origen: "houston-palm-center", destino: "houston-fannin-south", titulo: "Downtown Tunnels (Palm Center)", connector: "to" },
+  { origen: "houston-magnolia-park-transit-center", destino: "houston-nrg-park", titulo: "Magnolia Park to NRG Park (Red Line)", connector: "to" },
+  { origen: "houston-museum-district", destino: "houston-herman-park", titulo: "Museum of Fine Arts to Hermann Park", connector: "to" },
+
+  // Atlanta — Hartsfield-Jackson Airport, Downtown, Midtown, Buckhead
+  { origen: "atlanta-airport", destino: "atlanta-five-points", titulo: "Hartsfield-Jackson to Five Points Downtown", connector: "to" },
+  { origen: "atlanta-north-springs", destino: "atlanta-buckhead", titulo: "North Springs to Buckhead (Luxury Shopping)", connector: "to" },
+  { origen: "atlanta-midtown", destino: "atlanta-arts-center", titulo: "Midtown to Atlanta Arts Center", connector: "to" },
+  { origen: "atlanta-west-end", destino: "atlanta-civic-center", titulo: "West End to Civic Center", connector: "to" },
+  { origen: "atlanta-peachtree-center", destino: "atlanta-lindbergh", titulo: "Peachtree Center to Lindbergh (Downtown)", connector: "to" },
+  { origen: "atlanta-dunwoody", destino: "atlanta-medical-center", titulo: "Dunwoody to Medical Center", connector: "to" },
+  { origen: "atlanta-sandy-springs", destino: "atlanta-north-avenue", titulo: "Sandy Springs to North Avenue", connector: "to" },
+  { origen: "atlanta-lakewood-fort-mcpherson", destino: "atlanta-east-point", titulo: "Lakewood to East Point", connector: "to" },
+
+  // Philadelphia — Center City, Market East, University City, NRG
+  { origen: "philly-city-hall", destino: "philly-nrg-station", titulo: "City Hall to NRG Station", connector: "to" },
+  { origen: "philly-fern-rock", destino: "philly-69th-transit-center", titulo: "Fern Rock to 69th Street Transit Center", connector: "to" },
+  { origen: "philly-race-vine", destino: "philly-cecil-b-moore", titulo: "Race-Vine to Cecil B Moore Station", connector: "to" },
+  { origen: "philly-walnut-locust", destino: "philly-lombard-south", titulo: "Walnut-Locust to Lombard-South", connector: "to" },
+  { origen: "philly-girard", destino: "philly-fairmount", titulo: "Girard to Fairmount Park", connector: "to" },
+  { origen: "philly-allegheny", destino: "philly-spring-garden", titulo: "Allegheny to Spring Garden", connector: "to" },
+  { origen: "philly-logan", destino: "philly-hunting-park", titulo: "Logan to Hunting Park", connector: "to" },
+  { origen: "philly-ellsworth-federal", destino: "philly-snyder", titulo: "Ellsworth-Federal to Snyder", connector: "to" },
+
+  // Seattle — Sea-Tac Airport, Downtown, Capitol Hill, University
+  { origen: "seattle-seatac-airport", destino: "seattle-westlake", titulo: "Sea-Tac Airport to Westlake (Downtown)", connector: "to" },
+  { origen: "seattle-capitol-hill", destino: "seattle-university-of-washington", titulo: "Capitol Hill to University of Washington", connector: "to" },
+  { origen: "seattle-international-district", destino: "seattle-stadion", titulo: "International District to Lumen Field (Seahawks, Sounders)", connector: "to" },
+  { origen: "seattle-pioneer-square", destino: "seattle-beacon-hill", titulo: "Pioneer Square to Beacon Hill", connector: "to" },
+  { origen: "seattle-rainier-square", destino: "seattle-columbia-city", titulo: "Rainier Square to Columbia City", connector: "to" },
+  { origen: "seattle-roosevelt", destino: "seattle-northgate", titulo: "Roosevelt to Northgate", connector: "to" },
+  { origen: "seattle-mountlake-terrace", destino: "seattle-shoreline", titulo: "Mountlake Terrace to Shoreline", connector: "to" },
+  { origen: "seattle-angle-lake", destino: "seattle-kent", titulo: "Angle Lake to Kent", connector: "to" },
+
+  // San Francisco — SFO Airport, Downtown, Mission, Bay Area
+  { origen: "sf-sfo-airport", destino: "sf-embarcadero", titulo: "SFO Airport to Embarcadero (Waterfront)", connector: "to" },
+  { origen: "sf-civic-center", destino: "sf-16th-st-mission", titulo: "Civic Center to Mission District", connector: "to" },
+  { origen: "sf-powell", destino: "sf-montgomery", titulo: "Powell to Montgomery (Financial District)", connector: "to" },
+  { origen: "sf-24th-st-mission", destino: "sf-macarthur", titulo: "24th Street Mission to MacArthur", connector: "to" },
+  { origen: "sf-macarthur", destino: "sf-oakland-city-center", titulo: "MacArthur to Oakland City Center", connector: "to" },
+  { origen: "sf-berryessa", destino: "sf-milpitas", titulo: "Berryessa to Milpitas (VTA)", connector: "to" },
+  { origen: "sf-mountain-view", destino: "sf-great-america-vta", titulo: "Mountain View to Great America Park", connector: "to" },
+  { origen: "sf-civic-center", destino: "sf-powell", titulo: "Civic Center to Union Square", connector: "to" },
+
+  // Boston — Back Bay, Downtown, South Station, Harvard
+  { origen: "boston-south-station", destino: "boston-government-center", titulo: "South Station to Government Center", connector: "to" },
+  { origen: "boston-back-bay", destino: "boston-downtown-crossing", titulo: "Back Bay to Downtown Crossing", connector: "to" },
+  { origen: "boston-park-street", destino: "boston-harvard", titulo: "Park Street to Harvard Square", connector: "to" },
+  { origen: "boston-mit-kendall", destino: "boston-alewife", titulo: "MIT/Kendall to Alewife (Red Line)", connector: "to" },
+  { origen: "boston-government-center", destino: "boston-park-street", titulo: "Government Center to Boston Common", connector: "to" },
+  { origen: "boston-south-station", destino: "boston-foxboro", titulo: "South Station to Foxborough (Patriots/Revolution Stadium)", connector: "to" },
+  { origen: "boston-downtown-crossing", destino: "boston-back-bay", titulo: "Downtown Crossing to Copley/Back Bay", connector: "to" },
+  { origen: "boston-harvard", destino: "boston-mit-kendall", titulo: "Harvard Square to MIT", connector: "to" },
+
+  // Miami — Airport, Brickell, Downtown, Metromover
+  { origen: "miami-miami-airport", destino: "miami-brickell", titulo: "Miami Airport to Brickell Financial District", connector: "to" },
+  { origen: "miami-metromover-omni", destino: "miami-government-center", titulo: "Metromover Omni to Government Center", connector: "to" },
+  { origen: "miami-coconut-grove", destino: "miami-university", titulo: "Coconut Grove to University of Miami (Coral Gables)", connector: "to" },
+  { origen: "miami-civic-center", destino: "miami-metromover-museum-park", titulo: "Civic Center to Museum Park (Metromover)", connector: "to" },
+  { origen: "miami-dadeland-north", destino: "miami-dadeland-south", titulo: "Dadeland North to Dadeland South", connector: "to" },
+  { origen: "miami-government-center", destino: "miami-brickell", titulo: "Government Center to Brickell", connector: "to" },
+  { origen: "miami-metromover-brickell", destino: "miami-civic-center", titulo: "Metromover Brickell Station Loop", connector: "to" },
+  { origen: "miami-miami-airport", destino: "miami-government-center", titulo: "Airport to Downtown (Mover-Rail)", connector: "to" },
+
+  // Dallas — Union Station, Downtown, Arts District, Fair Park
+  { origen: "dallas-union-station", destino: "downtown-dallas", titulo: "Union Station to Downtown Dallas", connector: "to" },
+  { origen: "dallas-cityplace-uptown", destino: "pearl-arts-district", titulo: "CityPlace Uptown to Pearl District (Arts)", connector: "to" },
+  { origen: "mckinney", destino: "valley-view", titulo: "McKinney to Valley View", connector: "to" },
+  { origen: "east-12th", destino: "oak-cliff", titulo: "East 12th to Oak Cliff", connector: "to" },
+  { origen: "vitruvian-park", destino: "addison", titulo: "Vitruvian Park to Addison", connector: "to" },
+  { origen: "dallas-union-station", destino: "pearl-arts-district", titulo: "Union Station to Dallas Arts District", connector: "to" },
+  { origen: "dallas-parker-road", destino: "dalworthington-gardens", titulo: "Parker Road to DalWorthington Gardens", connector: "to" },
+  { origen: "12th-corinth", destino: "continental", titulo: "12th-Corinth to Continental", connector: "to" },
+
+  // Kansas City — Union Station, Crown Center, Crossroads, Power & Light
+  { origen: "kc-union-station", destino: "kc-crown-center", titulo: "Union Station to Crown Center", connector: "to" },
+  { origen: "kc-power-light", destino: "kc-crossroads", titulo: "Power & Light District to Crossroads Arts", connector: "to" },
+  { origen: "kc-kauffman-center", destino: "kc-cpkc-stadium", titulo: "Kauffman Center for the Performing Arts", connector: "to" },
+  { origen: "kc-union-station", destino: "kc-arrowhead-stadium", titulo: "Union Station to Arrowhead Stadium (Chiefs, Royals)", connector: "to" },
+  { origen: "kc-river-market", destino: "kc-city-market", titulo: "River Market to City Market", connector: "to" },
+  { origen: "kc-umkc", destino: "kc-southmoreland", titulo: "UMKC to South Moreland", connector: "to" },
+  { origen: "kc-westport", destino: "kc-armour", titulo: "Westport to Armour/Midtown", connector: "to" },
+  { origen: "kc-union-hill", destino: "kc-5th-broadway", titulo: "Union Hill to 5th & Broadway", connector: "to" },
+
+  // Toronto — Union Station, Bloor-Yonge, Spadina, GO Transit
+  { origen: "toronto-union-station", destino: "toronto-bloor-yonge", titulo: "Union Station to Bloor-Yonge (Subway Hub)", connector: "to" },
+  { origen: "toronto-union-go-transit", destino: "toronto-exhibition-go", titulo: "Union GO Transit to Exhibition (GO Train)", connector: "to" },
+  { origen: "toronto-st-george", destino: "toronto-spadina", titulo: "St. George to Spadina (Downtown)", connector: "to" },
+  { origen: "toronto-queen", destino: "toronto-king", titulo: "Queen to King Station (Financial District)", connector: "to" },
+  { origen: "toronto-bloor-danforth", destino: "toronto-main-street-l2", titulo: "Bloor-Danforth to Main Street (Line 2)", connector: "to" },
+  { origen: "toronto-vaughan-mc", destino: "toronto-finch", titulo: "Vaughan Metropolitan Centre to Finch", connector: "to" },
+  { origen: "toronto-high-park", destino: "toronto-bathurst-l2", titulo: "High Park to Bathurst", connector: "to" },
+  { origen: "toronto-dundas", destino: "toronto-don-mills", titulo: "Dundas to Don Mills Station", connector: "to" },
+
+  // Vancouver — SkyTrain, SeaBus, Canada Line Connections
+  { origen: "vancouver-waterfront", destino: "vancouver-granville", titulo: "Waterfront to Granville (Downtown)", connector: "to" },
+  { origen: "vancouver-yvr-airport", destino: "vancouver-waterfront", titulo: "YVR Airport to Waterfront Station", connector: "to" },
+  { origen: "vancouver-burrard", destino: "vancouver-metrotown", titulo: "Burrard to Metrotown", connector: "to" },
+  { origen: "vancouver-stadium-chinatown", destino: "vancouver-commercial-broadway", titulo: "Stadium-Chinatown to Commercial-Broadway", connector: "to" },
+  { origen: "vancouver-main-street-science-world", destino: "vancouver-king-george", titulo: "Main Street (Science World) to King George", connector: "to" },
+  { origen: "vancouver-vcc-clark", destino: "vancouver-lafarge-lake-douglas", titulo: "VCC-Clark to LaFarge Lake-Douglas", connector: "to" },
+  { origen: "vancouver-richmond-brighouse", destino: "vancouver-waterfront", titulo: "Richmond-Brighouse to Waterfront (Canada Line)", connector: "to" },
+  { origen: "vancouver-granville", destino: "vancouver-burrard", titulo: "Granville to Burrard (Downtown Loop)", connector: "to" },
+
 ];
 
 
