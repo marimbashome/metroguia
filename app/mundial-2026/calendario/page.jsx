@@ -98,6 +98,12 @@ export default function CalendarioPage() {
     ],
   };
 
+  const getEndDate = (dateStr) => {
+    const date = new Date(dateStr + 'T02:00:00Z');
+    date.setHours(date.getHours() + 3);
+    return date.toISOString().split('T')[0];
+  };
+
   const eventsSchema = {
     '@context': 'https://schema.org',
     '@type': 'EventSeries',
@@ -105,16 +111,42 @@ export default function CalendarioPage() {
     description: 'Los 13 partidos del Mundial FIFA 2026 celebrados en México',
     organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
     event: allMatches.map((m) => ({
+      '@context': 'https://schema.org',
       '@type': 'SportsEvent',
       name: `${m.fase} — ${m.equipos}`,
       description: m.descripcion,
       startDate: m.fecha,
+      endDate: getEndDate(m.fecha),
+      image: 'https://www.metroguia.mx/og-mundial-2026.png',
       location: {
         '@type': 'Place',
         name: m.estadio,
         address: { '@type': 'PostalAddress', addressLocality: m.ciudad, addressCountry: 'MX' },
       },
       eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      performer: [
+        {
+          '@type': 'Organization',
+          name: m.equipos.split(' vs ')[0]?.trim() || 'TBD'
+        },
+        {
+          '@type': 'Organization',
+          name: m.equipos.split(' vs ')[1]?.trim() || 'TBD'
+        }
+      ],
+      organizer: {
+        '@type': 'Organization',
+        name: 'FIFA',
+        url: 'https://www.fifa.com'
+      },
+      offers: {
+        '@type': 'Offer',
+        url: 'https://www.fifa.com/tickets',
+        priceCurrency: 'MXN',
+        availability: 'https://schema.org/PreOrder',
+        validFrom: m.fecha
+      },
       sport: 'Soccer',
     })),
   };

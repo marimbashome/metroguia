@@ -79,33 +79,55 @@ export default function MatchPage({ params }) {
   const color = getColorByCity(cityKey);
   const ruta = sede.ruta_desde_centro;
 
+  // Calculate endDate (match duration approximately 2.5-3 hours)
+  const getEndDate = (dateStr) => {
+    const date = new Date(dateStr + "T02:00:00Z");
+    date.setHours(date.getHours() + 3);
+    return date.toISOString().split("T")[0];
+  };
+
   // JSON-LD SportsEvent schema
   const sportsEvent = {
-    '@context': 'https://schema.org',
-    '@type': 'SportsEvent',
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
     name: `${partido.fase} — ${partido.equipos}`,
     description: `Partido de la ${partido.fase} del Mundial FIFA 2026 en el ${sede.estadio}`,
     startDate: fecha,
+    endDate: getEndDate(fecha),
+    image: "https://www.metroguia.mx/og-mundial-2026.png",
     location: {
-      '@type': 'Place',
+      "@type": "Place",
       name: sede.estadio,
       address: {
-        '@type': 'PostalAddress',
+        "@type": "PostalAddress",
+        streetAddress: sede.direccion,
         addressLocality: titleCity,
-        addressCountry: 'MX'
+        addressCountry: "MX"
       }
     },
-    eventStatus: 'https://schema.org/EventScheduled',
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    performer: [
+      {
+        "@type": "Organization",
+        name: partido.equipos.split(" vs ")[0]?.trim() || "TBD"
+      },
+      {
+        "@type": "Organization",
+        name: partido.equipos.split(" vs ")[1]?.trim() || "TBD"
+      }
+    ],
     organizer: {
-      '@type': 'Organization',
-      name: 'FIFA'
+      "@type": "Organization",
+      name: "FIFA",
+      url: "https://www.fifa.com"
     },
     offers: {
-      '@type': 'Offer',
-      url: 'https://www.fifa.com',
-      priceCurrency: 'MXN',
-      availability: 'https://schema.org/PreOrder'
+      "@type": "Offer",
+      url: "https://www.fifa.com/tickets",
+      priceCurrency: "MXN",
+      availability: "https://schema.org/PreOrder",
+      validFrom: fecha
     }
   };
 

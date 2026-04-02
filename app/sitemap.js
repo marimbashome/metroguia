@@ -117,9 +117,11 @@ function entry(path, changeFrequency, priority, category) {
   };
 }
 
-// Entry with hreflang alternates for i18n pages
+// Entry without hreflang alternates in sitemap (use HTML metadata instead)
+// NOTE: hreflang in sitemap can cause duplicate detection. Instead, use:
+// - HTML metadata (Next.js alternates.languages in buildMetadata)
+// - HrefLangTags.jsx for client-side injection
 function i18nEntry(basePath, changeFrequency, priority, category, lang) {
-  const languages = ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'];
   const url = lang === 'es'
     ? `${BASE_URL}${basePath}`
     : `${BASE_URL}/${lang}${basePath}`;
@@ -129,11 +131,7 @@ function i18nEntry(basePath, changeFrequency, priority, category, lang) {
     lastModified: category ? LASTMOD[category] : new Date(),
     changeFrequency,
     priority,
-    alternates: {
-      languages: Object.fromEntries(
-        languages.map(l => [l, l === 'es' ? `${BASE_URL}${basePath}` : `${BASE_URL}/${l}${basePath}`])
-      ),
-    },
+    // NO alternates in sitemap — use HTML metadata instead
   };
 }
 
@@ -332,7 +330,8 @@ function getI18nUrls() {
   const allLangs = ['es', ...languages];
   const urls = [];
 
-  // Key pages with full hreflang alternates
+  // Key pages with full hreflang alternates (Spanish + other languages)
+  // NOTE: These have alternates in sitemap which enables Google to see all variants
   const keyPages = [
     { path: '/', freq: 'weekly', priority: 0.95 },
     { path: '/cdmx/', freq: 'weekly', priority: 0.9 },
@@ -347,27 +346,23 @@ function getI18nUrls() {
     });
   });
 
-  // CDMX stations in all languages (155 × 6 = 930)
+  // CDMX stations in all languages — all 155 now pre-built via generateStaticParams
   languages.forEach(lang => {
     (estaciones || []).forEach(estacion => {
       urls.push(entry(`/${lang}/cdmx/estacion/${estacion.slug}/`, 'monthly', 0.7, 'i18n'));
     });
   });
 
-  // CDMX lines in all languages (12 × 6 = 72)
-  const cdmxLineIds = Object.keys(lineasDetalle).slice(0, 12);
+  // CDMX lines in all languages — all lines now pre-built via generateStaticParams
   languages.forEach(lang => {
-    cdmxLineIds.forEach(lineId => {
-      urls.push(entry(`/${lang}/cdmx/linea/${lineId}/`, 'monthly', 0.7, 'i18n'));
+    Object.keys(lineasDetalle).forEach(id => {
+      urls.push(entry(`/${lang}/cdmx/linea/${id}/`, 'monthly', 0.7, 'i18n'));
     });
   });
 
-  // Top 500 routes in all languages (500 × 6 = 3,000)
-  languages.forEach(lang => {
-    rutasPopulares.slice(0, 500).forEach(ruta => {
-      urls.push(entry(`/${lang}/ruta/${ruta.origen}-a-${ruta.destino}/`, 'monthly', 0.65, 'i18n'));
-    });
-  });
+  // Routes are dynamicParams: true (on-demand ISR), do NOT include in sitemap
+  // This prevents duplicate detection since these are served on-demand, not canonical URLs
+  // Spanish routes are in routes-cdmx/gdl/other sitemaps with canonical URLs
 
   return urls;
 }

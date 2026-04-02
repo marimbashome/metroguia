@@ -45,26 +45,44 @@ export default function ComoLlegarAztecaPage() {
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio Azteca',
     description: 'Partidos de la Copa Mundial FIFA 2026 en el Estadio Azteca de Ciudad de México',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
+    startDate: '2026-06-11',
+    endDate: '2026-07-05',
     location: {
       '@type': 'Place',
       name: 'Estadio Azteca',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Calzada de Tlalpan 3665',
+        streetAddress: 'Calzada de Tlalpan 3465',
         addressLocality: 'Ciudad de México',
         addressRegion: 'Ciudad de México',
-        postalCode: '14020',
+        postalCode: '04650',
         addressCountry: 'MX'
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 19.302500,
-        longitude: -99.145833
+        latitude: 19.302900,
+        longitude: -99.150500
       }
     },
+    performer: [
+      {
+        '@type': 'Organization',
+        name: 'FIFA',
+        url: 'https://www.fifa.com'
+      }
+    ],
     organizer: {
       '@type': 'Organization',
-      name: 'FIFA'
+      name: 'FIFA',
+      url: 'https://www.fifa.com'
+    },
+    offers: {
+      '@type': 'Offer',
+      url: 'https://www.fifa.com/tickets',
+      priceCurrency: 'MXN',
+      availability: 'https://schema.org/PreOrder',
+      validFrom: '2026-06-11'
     }
   }
 

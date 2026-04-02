@@ -5,7 +5,7 @@ import { LANGUAGES, buildMetadata, t } from '@/lib/i18n'
 export function generateStaticParams() {
   const params = []
   LANGUAGES.filter(l => l !== 'es').forEach(lang => {
-    estaciones.slice(0, 20).forEach(estacion => {
+    estaciones.forEach(estacion => {
       params.push({ lang, slug: estacion.slug })
     })
   })
@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const translations = require(`@/translations/${params.lang}.json`)
   const estacion = estaciones.find(e => e.slug === params.slug)
-  
+
   if (!estacion) {
     return {
       title: 'Estación no encontrada — MetroGuia'
@@ -23,13 +23,12 @@ export async function generateMetadata({ params }) {
   }
 
   const lang = params.lang
-  return {
+  return buildMetadata({
+    lang,
     title: `${estacion.nombre} — MetroGuia.mx`,
     description: estacion.descripcion || `Estación de transporte en CDMX`,
-    alternates: {
-      canonical: `https://metroguia.mx/${lang}/cdmx/estacion/${params.slug}/`,
-    }
-  }
+    path: `/cdmx/estacion/${params.slug}/`,
+  })
 }
 
 export default function EstacionPageLang({ params }) {

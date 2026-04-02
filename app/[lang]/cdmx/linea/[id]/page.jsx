@@ -1,12 +1,12 @@
 import { lineasDetalle } from '@/data/lineas-detalle'
 import { estaciones } from '@/data/estaciones'
 import AdBannerLazy from '@/app/components/AdBannerLazy'
-import { LANGUAGES, t } from '@/lib/i18n'
+import { LANGUAGES, t, buildMetadata } from '@/lib/i18n'
 
 export function generateStaticParams() {
   const params = []
   LANGUAGES.filter(l => l !== 'es').forEach(lang => {
-    Object.keys(lineasDetalle).slice(0, 12).forEach(id => {
+    Object.keys(lineasDetalle).forEach(id => {
       params.push({ lang, id })
     })
   })
@@ -14,9 +14,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`)
   const linea = lineasDetalle[params.id]
-  
+
   if (!linea) {
     return {
       title: 'Línea no encontrada — MetroGuia'
@@ -24,13 +23,12 @@ export async function generateMetadata({ params }) {
   }
 
   const lang = params.lang
-  return {
+  return buildMetadata({
+    lang,
     title: `${linea.nombre} — MetroGuia.mx`,
     description: `Estaciones y detalles de la Línea ${linea.numero}`,
-    alternates: {
-      canonical: `https://metroguia.mx/${lang}/cdmx/linea/${params.id}/`,
-    }
-  }
+    path: `/cdmx/linea/${params.id}/`,
+  })
 }
 
 export default function LineaPageLang({ params }) {

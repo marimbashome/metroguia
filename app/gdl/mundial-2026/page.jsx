@@ -19,7 +19,9 @@ const eventosGDL = [
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (11 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026 en Guadalajara',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-11',
+    endDate: '2026-06-11',
     location: {
       '@type': 'Place',
       name: 'Estadio Akron',
@@ -28,7 +30,20 @@ const eventosGDL = [
     },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [
+      {
+        '@type': 'Organization',
+        name: 'FIFA'
+      }
+    ],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: {
+      '@type': 'Offer',
+      url: 'https://www.fifa.com/tickets',
+      priceCurrency: 'MXN',
+      availability: 'https://schema.org/PreOrder',
+      validFrom: '2026-06-11'
+    }
   },
   {
     '@context': 'https://schema.org',
@@ -50,7 +65,9 @@ const eventosGDL = [
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (23 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-23',
+    endDate: '2026-06-23',
     location: {
       '@type': 'Place',
       name: 'Estadio Akron',
@@ -58,14 +75,18 @@ const eventosGDL = [
     },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-23' }
   },
   {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio Akron Guadalajara (26 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-26',
+    endDate: '2026-06-26',
     location: {
       '@type': 'Place',
       name: 'Estadio Akron',
@@ -73,7 +94,9 @@ const eventosGDL = [
     },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-26' }
   }
 ];
 

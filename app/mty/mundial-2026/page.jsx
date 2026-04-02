@@ -20,7 +20,9 @@ const eventosMTY = [
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (14 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026 en Monterrey',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-14',
+    endDate: '2026-06-14',
     location: {
       '@type': 'Place',
       name: 'Estadio BBVA Bancomer',
@@ -29,40 +31,54 @@ const eventosMTY = [
     },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-14' }
   },
   {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (20 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-20',
+    endDate: '2026-06-20',
     location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-20' }
   },
   {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (24 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-24',
+    endDate: '2026-06-24',
     location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-24' }
   },
   {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: 'FIFA World Cup 2026 — Estadio BBVA Monterrey (29 junio)',
     description: 'Partido de la Fase de Grupos del Mundial FIFA 2026',
+    image: 'https://www.metroguia.mx/og-mundial-2026.png',
     startDate: '2026-06-29',
+    endDate: '2026-06-29',
     location: { '@type': 'Place', name: 'Estadio BBVA Bancomer', address: { '@type': 'PostalAddress', addressLocality: 'Monterrey', addressRegion: 'Nuevo León', addressCountry: 'MX' } },
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    organizer: { '@type': 'Organization', name: 'FIFA' }
+    performer: [{ '@type': 'Organization', name: 'FIFA' }],
+    organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' },
+    offers: { '@type': 'Offer', url: 'https://www.fifa.com/tickets', priceCurrency: 'MXN', availability: 'https://schema.org/PreOrder', validFrom: '2026-06-29' }
   }
 ];
 
