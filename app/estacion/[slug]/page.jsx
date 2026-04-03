@@ -735,7 +735,7 @@ export default function EstacionPage({ params }) {
           </div>
 
           {/* MUNDIAL 2026 */}
-          {estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('Sin relevancia') && (
+          {estacion.mundial_relevancia && !String(estacion.mundial_relevancia || '').includes('Sin relevancia') && (
             <div style={{ marginBottom: '3rem' }}>
               <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>
                 🌍 Relevancia para el Mundial 2026

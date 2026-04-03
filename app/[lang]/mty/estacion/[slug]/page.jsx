@@ -110,7 +110,7 @@ export default function EstacionMTYLangPage({ params }) {
   };
 
   // Check if mundial relevante
-  const isMundialRelevante = estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('Sin relevancia');
+  const isMundialRelevante = estacion.mundial_relevancia && !String(estacion.mundial_relevancia || '').includes('Sin relevancia');
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', minHeight: '100vh' }}>

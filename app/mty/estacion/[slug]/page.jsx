@@ -591,7 +591,7 @@ export default function EstacionMTY({ params }) {
       {/* MUNDIAL RELEVANCIA */}
       {estacion.mundial_relevancia && (
         <section style={{
-          backgroundColor: estacion.mundial_relevancia.includes('Sin relevancia') ? 'var(--surface)' : 'var(--surface)',
+          backgroundColor: String(estacion.mundial_relevancia || '').includes('Sin relevancia') ? 'var(--surface)' : 'var(--surface)',
           padding: '40px 20px',
           marginTop: '50px'
         }}>
@@ -620,7 +620,7 @@ export default function EstacionMTY({ params }) {
       )}
 
       {/* AFFILIATE MUNDIAL */}
-      {estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('Sin relevancia') && (
+      {estacion.mundial_relevancia && !String(estacion.mundial_relevancia || '').includes('Sin relevancia') && (
         <section style={{
           maxWidth: '1200px',
           margin: '50px auto',

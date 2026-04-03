@@ -179,7 +179,7 @@ export default function StationLAPage({ params }) {
               </div>
             )}
 
-            {estacion.mundial_relevancia && !estacion.mundial_relevancia.includes('No relevance') && (
+            {estacion.mundial_relevancia && !String(estacion.mundial_relevancia || '').includes('No relevance') && (
               <div style={{ padding: '28px', backgroundColor: 'var(--surface)', borderLeft: '4px solid var(--warning)', borderRadius: 'var(--radius)', marginBottom: '48px' }}>
                 <h2 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '12px', color: 'var(--warning)' }}>
                   FIFA World Cup 2026
