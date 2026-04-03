@@ -112,11 +112,11 @@ export default function ZonePage({ params }) {
   // Normalize fields — some zones use city/country, others use state
   const cityName = zona.city || zona.state || 'Unknown'
   const countryName = zona.country === 'US' ? 'USA' : (zona.country || 'USA')
-  const stations = zona.stations || []
-  const transitSystems = zona.transit_systems || []
-  const transitLines = zona.transit_lines || []
-  const pois = zona.pois || []
-  const tipsForVisitors = zona.tips_for_visitors || []
+  const stations = Array.isArray(zona.stations) ? zona.stations : (zona.stations ? [zona.stations] : [])
+  const transitSystems = Array.isArray(zona.transit_systems) ? zona.transit_systems : (zona.transit_systems ? [zona.transit_systems] : [])
+  const transitLines = Array.isArray(zona.transit_lines) ? zona.transit_lines : (zona.transit_lines ? [zona.transit_lines] : [])
+  const pois = Array.isArray(zona.pois) ? zona.pois : (zona.pois ? [zona.pois] : [])
+  const tipsForVisitors = Array.isArray(zona.tips_for_visitors) ? zona.tips_for_visitors : (zona.tips_for_visitors ? [zona.tips_for_visitors] : [])
 
   const jsonLd = {
     '@context': 'https://schema.org',
