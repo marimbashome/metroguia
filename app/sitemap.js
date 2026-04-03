@@ -84,6 +84,9 @@ import { lineasKansasCity } from '@/data/kansas-city/lineas-detalle';
 import { lineasToronto } from '@/data/toronto/lineas-detalle';
 import { lineasVancouver } from '@/data/vancouver/lineas-detalle';
 
+// US/CA zone (neighborhood) data
+import { zonasUSCA } from '@/data/zonas-us-ca';
+
 // Turismo data
 import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
 import { zonasArqueologicas } from '@/data/turismo/zonas-arqueologicas';
@@ -236,8 +239,11 @@ function getCoreUrls() {
     ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
         'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'].map(c => 
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
-    // Zonas
+    // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
+    // Zone (US/CA neighborhoods)
+    entry('/zone/', 'weekly', 0.85, 'core'),
+    ...(zonasUSCA || []).map((z) => entry(`/zone/${z.slug}/`, 'monthly', 0.8, 'core')),
   ];
 }
 
@@ -466,6 +472,13 @@ function getI18nUrls() {
                           'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'];
   usCanadaCities.forEach(city => {
     urls.push(entry(`/es/${city}/`, 'weekly', 0.8, 'i18n'));
+  });
+
+  // US/CA zone pages: Spanish alternates
+  // e.g., /es/zone/, /es/zone/midtown-manhattan/
+  urls.push(entry('/es/zone/', 'weekly', 0.8, 'i18n'));
+  (zonasUSCA || []).forEach(z => {
+    urls.push(entry(`/es/zone/${z.slug}/`, 'monthly', 0.7, 'i18n'));
   });
 
   // Routes are dynamicParams: true (on-demand ISR), do NOT include in sitemap
