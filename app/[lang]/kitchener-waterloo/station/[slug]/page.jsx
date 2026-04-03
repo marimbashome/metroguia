@@ -59,8 +59,8 @@ export default function StationKitchenerWaterlooPageLang({ params }) {
   };
 
   const desc = estacion.descripcion_turistica || estacion.descripcion || estacion.intro || '';
-  const lugaresArr = estacion.lugares_cercanos || [];
-  const tipsArr = estacion.tips || [];
+  const lugaresArr = Array.isArray(estacion.lugares_cercanos) ? estacion.lugares_cercanos : (estacion.lugares_cercanos ? [estacion.lugares_cercanos] : []);
+  const tipsArr = Array.isArray(estacion.tips) ? estacion.tips : (estacion.tips ? [estacion.tips] : []);
   const borough = estacion.borough || estacion.municipio || estacion.zona || 'Ontario';
 
   return (

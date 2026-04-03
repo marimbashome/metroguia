@@ -145,7 +145,7 @@ export default function EstacionGDLPageLang({ params }) {
             )}
 
             {/* POIs */}
-            {(estacion.pois || []).length > 0 && (
+            {((Array.isArray(estacion.pois) ? estacion.pois : [])).length > 0 && (
               <div style={{ marginBottom: '48px' }}>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '20px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
                   {t(translations, 'station.nearbyPlaces', 'Nearby Places')}
