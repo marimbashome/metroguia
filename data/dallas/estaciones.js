@@ -1,1524 +1,3018 @@
 export const estacionesDallas = [
-  // MAJOR TOURIST STATIONS (DETAILED)
   {
-    slug: "union-station",
-    nombre: "Union Station",
-    linea: "TRE",
-    sistema: "Trinity Railway Express",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Dallas Union Station (Historic Building)", tipo: "landmark", descripcion: "Restored 1916 Beaux-Arts station, major transit hub" },
-      { nombre: "Dallas World Aquarium", tipo: "attraction", descripcion: "World-class aquarium 2 blocks away" },
-      { nombre: "The Sixth Floor Museum", tipo: "museum", descripcion: "JFK assassination history museum" }
+    "slug": "dallas-parker-road",
+    "nombre": "Parker Road",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Plano",
+    "municipio": "Plano",
+    "tipo_zona": "transporte-central",
+    "pois": [
+      {
+        "nombre": "Parker Road Park & Ride",
+        "tipo": "transporte",
+        "distancia": "Integrado"
+      }
     ],
-    transferencias: ["Red Line (DART)", "Blue Line (DART)", "Dallas Streetcar"],
-    seo_title: "Union Station Dallas - Historic TRE & DART Hub",
-    meta_description: "Union Station is Dallas' primary transit hub connecting Trinity Railway Express, DART Light Rail, and the Dallas Streetcar. Historic 1916 Beaux-Arts architecture.",
-    h1: "Union Station: Dallas' Premier Transit Hub",
-    intro: "Union Station is the historic heart of Dallas transit. Opened in 1916, this beautifully restored Beaux-Arts station serves as the primary connection point for TRE to Arlington, DART Light Rail lines, and the Dallas Streetcar. It's the gateway to downtown Dallas.",
-    descripcion_turistica: "Union Station is not just a transit hub—it's a Dallas landmark. The building's restored architecture rivals that of major historical stations in New York and Chicago. From here, catch TRE to Arlington and AT&T Stadium for FIFA 2026 World Cup matches, or explore downtown's museums and attractions.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Complete ADA compliance, multiple elevator options"
+    "transferencias": [],
+    "seo_title": "Parker Road — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Parker Road es la terminal norte del sistema DART, sirviendo a Plano con amplio estacionamiento Park & Ride.",
+    "h1": "Parker Road — Red/Orange | Dallas",
+    "intro": "Parker Road es la terminal norte del sistema DART, sirviendo a Plano con amplio estacionamiento Park & Ride.",
+    "tips": [
+      "Terminal norte — todos los trenes van al sur",
+      "Park & Ride gratuito",
+      "GoPass Tap: USD 2.50"
+    ],
+    "mundial_relevancia": "Conexión norte para turistas FIFA alojados en Plano. Red Line directo a Union Station (45 min).",
+    "descripcion_turistica": "Punto de acceso norte al sistema DART con Park & Ride gratuito.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "30 min peak, 60 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-downtown-plano",
+    "nombre": "Downtown Plano",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Plano",
+    "municipio": "Plano",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Historic Downtown Plano",
+        "tipo": "comercial-turistico",
+        "distancia": "2 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Downtown Plano — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Downtown Plano es el corazón histórico de Plano con restaurantes artesanales y cervecerías craft.",
+    "h1": "Downtown Plano — Red/Orange | Dallas",
+    "intro": "Downtown Plano es el corazón histórico de Plano con restaurantes artesanales y cervecerías craft.",
+    "tips": [
+      "Restaurantes y cervecerías craft",
+      "Distrito histórico walkable"
+    ],
+    "mundial_relevancia": "Zona de hospedaje alternativa para FIFA.",
+    "descripcion_turistica": "Zona gastronómica y artesanal de Plano.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Arrive 30 minutes early for TRE to ensure connection to Arlington for matches",
-      "The station has restaurants and shops—plan time to explore before departing",
-      "Use Union Station as your base for exploring downtown Dallas museums"
-    ],
-    mundial_relevancia: "FIFA 2026 PRIMARY HUB. TRE connects directly to CentrePort/DFW station, the closest rail connection to AT&T Stadium (18km). Union Station is where international fans will gather for connections to Arlington.",
-    coords: { lat: 32.7788, lng: -96.8080 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "pearl-arts-district",
-    nombre: "Pearl/Arts District",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "arts_culture",
-    pois: [
-      { nombre: "Dallas Arts District", tipo: "cultural", descripcion: "19-block cultural district with museums, galleries, theaters" },
-      { nombre: "Dallas Museum of Art", tipo: "museum", descripcion: "World-class art museum with 24,000+ works" },
-      { nombre: "Nasher Sculpture Center", tipo: "museum", descripcion: "Contemporary art and sculpture in a modern building" }
+    "slug": "dallas-12th-street",
+    "nombre": "12th Street",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Plano",
+    "municipio": "Plano",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Plano residential",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line full length", "Streetcar connections"],
-    seo_title: "Pearl Arts District Station Dallas - Arts & Culture Hub",
-    meta_description: "Pearl/Arts District DART station in the heart of Dallas' premier cultural district. Museums, galleries, theaters, and restaurants.",
-    h1: "Pearl/Arts District: Dallas' Cultural Heart",
-    intro: "The Pearl/Arts District station puts you in the center of Dallas' thriving cultural scene. This vibrant neighborhood is home to world-class museums, contemporary galleries, live theaters, and award-winning restaurants.",
-    descripcion_turistica: "This is where Dallas' creative energy comes alive. The Dallas Arts District is one of the largest contiguous urban arts districts in the U.S., spanning 19 blocks. Museums like the DMA and Nasher are must-sees, and the neighborhood is packed with galleries, cafes, and street art.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Fully accessible with multiple entry points"
+    "transferencias": [],
+    "seo_title": "12th Street — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "12th Street es una estación en Plano con conexión a Silver Line.",
+    "h1": "12th Street — Red/Orange | Dallas",
+    "intro": "12th Street es una estación en Plano con conexión a Silver Line.",
+    "tips": [
+      "Conexión Silver Line"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación residencial en Plano.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "15 min peak, 30 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-cityline-bush",
+    "nombre": "CityLine/Bush",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Richardson",
+    "municipio": "Richardson",
+    "tipo_zona": "comercial-residencial",
+    "pois": [
+      {
+        "nombre": "CityLine development",
+        "tipo": "comercial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "CityLine/Bush — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "CityLine/Bush es un desarrollo mixto moderno en Richardson con oficinas y restaurantes.",
+    "h1": "CityLine/Bush — Red/Orange | Dallas",
+    "intro": "CityLine/Bush es un desarrollo mixto moderno en Richardson con oficinas y restaurantes.",
+    "tips": [
+      "Hub corporativo con restaurantes",
+      "Silver Line transfer"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Desarrollo urbano moderno con restaurantes.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Plan 3-4 hours minimum for museum visits in the district",
-      "First Thursday each month features gallery openings and street events",
-      "Park your luggage at nearby hotels if doing a cultural day trip"
-    ],
-    mundial_relevancia: "Cultural gathering point for FIFA 2026 visitors seeking Dallas' arts scene between match days",
-    coords: { lat: 32.7876, lng: -96.8017 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "deep-ellum",
-    nombre: "Deep Ellum",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "entertainment",
-    pois: [
-      { nombre: "Deep Ellum Historic District", tipo: "district", descripcion: "Historic neighborhood with street art, live music venues" },
-      { nombre: "Live Music Venues (multiple)", tipo: "entertainment", descripcion: "Blues, rock, hip-hop clubs and concert halls" },
-      { nombre: "Street Art & Murals", tipo: "art", descripcion: "Ever-changing murals and graffiti art" }
+    "slug": "dallas-galatyn-park",
+    "nombre": "Galatyn Park",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Richardson",
+    "municipio": "Richardson",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Eisemann Center for Performing Arts",
+        "tipo": "cultural",
+        "distancia": "3 min caminando"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Deep Ellum Station Dallas - Live Music & Street Art",
-    meta_description: "Deep Ellum DART station: gateway to Dallas' legendary live music scene, street art, and vibrant nightlife in a historic neighborhood.",
-    h1: "Deep Ellum: Dallas' Live Music & Street Art Capital",
-    intro: "Deep Ellum is where Dallas' creative soul lives. This historically significant neighborhood is legendary for live music, ever-changing street art, eclectic shops, and restaurants that reflect Dallas' cultural diversity.",
-    descripcion_turistica: "Deep Ellum has been Dallas' artistic and musical epicenter since the 1800s. Today it's a bohemian enclave with dozens of live music venues, galleries, street murals, vintage shops, and food trucks. It's essential Dallas.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Full accessibility for the station; neighborhood has some historic buildings"
+    "transferencias": [],
+    "seo_title": "Galatyn Park — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Galatyn Park sirve al distrito de entretenimiento de Richardson con el Eisemann Center.",
+    "h1": "Galatyn Park — Red/Orange | Dallas",
+    "intro": "Galatyn Park sirve al distrito de entretenimiento de Richardson con el Eisemann Center.",
+    "tips": [
+      "Eisemann Center — teatro y música",
+      "Hoteles cercanos"
+    ],
+    "mundial_relevancia": "Hoteles cercanos para turistas FIFA.",
+    "descripcion_turistica": "Centro de artes escénicas y desarrollo moderno.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "15 min peak, 30 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-arapaho-center",
+    "nombre": "Arapaho Center",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Richardson",
+    "municipio": "Richardson",
+    "tipo_zona": "comercial-residencial",
+    "pois": [
+      {
+        "nombre": "Richardson commercial district",
+        "tipo": "comercial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Arapaho Center — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Arapaho Center es una estación comercial en Richardson.",
+    "h1": "Arapaho Center — Red/Orange | Dallas",
+    "intro": "Arapaho Center es una estación comercial en Richardson.",
+    "tips": [
+      "Park & Ride disponible"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Zona comercial de Richardson.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Visit after dark for the full Deep Ellum experience—live music and street life thrive at night",
-      "The street art changes constantly; take a walking tour to get the best stories",
-      "Respect the artists and venues; this is a working creative community, not a museum"
-    ],
-    mundial_relevancia: "FIFA 2026 nightlife hub for international visitors seeking authentic Dallas live music and cultural scene",
-    coords: { lat: 32.7821, lng: -96.7639 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "victory-station",
-    nombre: "Victory Station",
-    linea: "TRE",
-    sistema: "Trinity Railway Express",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "AT&T Discovery District", tipo: "entertainment", descripcion: "Shopping, dining, and entertainment complex" },
-      { nombre: "Victory Park Neighborhoods", tipo: "district", descripcion: "High-end residential and mixed-use development" },
-      { nombre: "Restaurants & Bars (multiple)", tipo: "dining", descripcion: "Upscale dining venues and rooftop bars" }
+    "slug": "dallas-spring-valley",
+    "nombre": "Spring Valley",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Spring Valley area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["TRE", "potential future DART connection"],
-    seo_title: "Victory Station Dallas - TRE to Arlington & DFW",
-    meta_description: "Victory Station is a key TRE stop in Dallas with access to AT&T Discovery District shopping and dining, with connections to Arlington transit.",
-    h1: "Victory Station: Modern Dallas Transit Hub",
-    intro: "Victory Station is a modern transit hub serving Dallas' booming Victory Park mixed-use district. It's a key stop on the Trinity Railway Express with excellent shopping, dining, and entertainment options.",
-    descripcion_turistica: "Victory Station serves the upscale Victory Park neighborhood, home to the AT&T Discovery District. This is where modern Dallas meets shopping and fine dining, making it a convenient stop for both transit and urban exploration.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Modern station with complete ADA compliance"
+    "transferencias": [],
+    "seo_title": "Spring Valley — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Spring Valley es una estación residencial en el norte de Dallas.",
+    "h1": "Spring Valley — Red/Orange | Dallas",
+    "intro": "Spring Valley es una estación residencial en el norte de Dallas.",
+    "tips": [
+      "Park & Ride"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Barrio residencial norte.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "30 min"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-lbj-central",
+    "nombre": "LBJ/Central",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "transporte-central",
+    "pois": [
+      {
+        "nombre": "LBJ Freeway interchange",
+        "tipo": "transporte",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "LBJ/Central — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "LBJ/Central es un nodo de transporte importante. Terminal fuera de horario pico de Orange Line.",
+    "h1": "LBJ/Central — Red/Orange | Dallas",
+    "intro": "LBJ/Central es un nodo de transporte importante. Terminal fuera de horario pico de Orange Line.",
+    "tips": [
+      "Terminal fuera de pico Orange Line",
+      "Park & Ride grande"
+    ],
+    "mundial_relevancia": "Nodo de conexión. Orange Line a DFW Airport.",
+    "descripcion_turistica": "Nodo de transporte con acceso a zonas comerciales.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Use Victory Station for convenient shopping and dining before heading to Arlington",
-      "The station is modern and clean—good place to grab coffee before your TRE ride",
-      "AT&T Discovery District has free events and live entertainment"
-    ],
-    mundial_relevancia: "Secondary TRE hub for FIFA 2026 visitors heading to AT&T Stadium",
-    coords: { lat: 32.7759, lng: -96.8131 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "west-end",
-    nombre: "West End",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "entertainment",
-    pois: [
-      { nombre: "The West End Historic District", tipo: "historic", descripcion: "Preserved historic buildings with shops, galleries, restaurants" },
-      { nombre: "Dallas World Aquarium", tipo: "attraction", descripcion: "Nearby major attraction" },
-      { nombre: "Reunion Tower", tipo: "landmark", descripcion: "Iconic Dallas landmark with observation deck" }
+    "slug": "dallas-forest-lane",
+    "nombre": "Forest Lane",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Forest Lane area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line", "Dallas Streetcar"],
-    seo_title: "West End Station Dallas - Historic District & Attractions",
-    meta_description: "West End DART station in Dallas' charming historic district with preserved 19th-century architecture, shops, galleries, and dining.",
-    h1: "West End: Dallas' Historic District",
-    intro: "West End is where Dallas' history comes alive. This beautifully preserved historic district features 19th-century brick architecture, upscale dining, galleries, shops, and is adjacent to major attractions like Reunion Tower.",
-    descripcion_turistica: "The West End is Dallas' connection to its frontier past. Red-brick warehouses have been converted into trendy restaurants, boutiques, and galleries. It's a perfect blend of history and contemporary urban life.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Station is fully accessible; historic buildings vary in accessibility"
+    "transferencias": [],
+    "seo_title": "Forest Lane — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Forest Lane es una estación residencial en el norte de Dallas.",
+    "h1": "Forest Lane — Red/Orange | Dallas",
+    "intro": "Forest Lane es una estación residencial en el norte de Dallas.",
+    "tips": [
+      "Conexión buses locales"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "15 min peak, 30 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-walnut-hill",
+    "nombre": "Walnut Hill",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Walnut Hill neighborhood",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Walnut Hill — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Walnut Hill es una estación en el norte de Dallas.",
+    "h1": "Walnut Hill — Red/Orange | Dallas",
+    "intro": "Walnut Hill es una estación en el norte de Dallas.",
+    "tips": [
+      "Park & Ride disponible"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Zona residencial norte.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Combine your West End visit with nearby Reunion Tower observation deck for views",
-      "The area is ideal for evening dining and drinks with a view of downtown",
-      "Take a walking tour to learn the stories behind the historic architecture"
-    ],
-    mundial_relevancia: "FIFA 2026 cultural and dining destination for international visitors",
-    coords: { lat: 32.7748, lng: -96.8081 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "dfw-airport",
-    nombre: "DFW Airport",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Irving/Fort Worth",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW International Airport Terminal Stations", tipo: "airport", descripcion: "Direct station connections to all terminals" },
-      { nombre: "Hyatt Hotel (on-site)", tipo: "lodging", descripcion: "On-site hotel with direct rail access" },
-      { nombre: "Car Rental Centers", tipo: "services", descripcion: "Easy ground transportation access" }
+    "slug": "dallas-park-lane",
+    "nombre": "Park Lane",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-residencial",
+    "pois": [
+      {
+        "nombre": "NorthPark Center",
+        "tipo": "comercial",
+        "distancia": "10 min caminando"
+      }
     ],
-    transferencias: ["Orange Line DART", "TRE connection via Downtown Plano"],
-    seo_title: "DFW Airport Station Dallas - International Gateway",
-    meta_description: "DFW Airport DART Orange Line station provides direct access to all terminals. The primary entry point for international visitors to Dallas-Fort Worth.",
-    h1: "DFW Airport: Your Dallas Gateway",
-    intro: "DFW Airport station is the first impression Dallas makes. This modern, efficient station connects directly to all airport terminals via the Orange Line, making ground transportation seamless for 70+ million annual passengers.",
-    descripcion_turistica: "As the second-busiest airport in the U.S., DFW is a gateway to Texas. The modern light rail system connects directly to terminals, making it one of the most convenient airport transit systems in America.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Complete ADA compliance throughout terminal stations"
+    "transferencias": [],
+    "seo_title": "Park Lane — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Park Lane da acceso a NorthPark Center, uno de los centros comerciales más grandes de Texas.",
+    "h1": "Park Lane — Red/Orange | Dallas",
+    "intro": "Park Lane da acceso a NorthPark Center, uno de los centros comerciales más grandes de Texas.",
+    "tips": [
+      "NorthPark Center — 10 min caminando",
+      "Bus shuttle al mall"
+    ],
+    "mundial_relevancia": "Shopping para turistas FIFA.",
+    "descripcion_turistica": "Acceso a NorthPark Center, mall premium.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "03:30",
-      cierre: "01:30",
-      tren_frecuencia: "5-10 min peak, 15 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-lovers-lane",
+    "nombre": "Lovers Lane",
+    "linea": "Red/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-residencial",
+    "pois": [
+      {
+        "nombre": "Highland Park Village",
+        "tipo": "comercial",
+        "distancia": "10 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Lovers Lane — Red/Orange DART | Dallas Transit Guide",
+    "meta_description": "Lovers Lane sirve al exclusivo barrio de Highland Park/University Park.",
+    "h1": "Lovers Lane — Red/Orange | Dallas",
+    "intro": "Lovers Lane sirve al exclusivo barrio de Highland Park/University Park.",
+    "tips": [
+      "Cerca de Highland Park Village",
+      "Restaurantes upscale"
+    ],
+    "mundial_relevancia": "Zona de hospedaje premium para FIFA.",
+    "descripcion_turistica": "Acceso a los barrios más exclusivos de Dallas.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "DFW Airport Orange Line runs 24/5; check schedules for early morning/late night arrivals",
-      "Consider the light rail as your primary ground transportation—it's faster and cheaper than taxi/Uber",
-      "Download the DART app before arriving for real-time updates and trip planning"
-    ],
-    mundial_relevancia: "FIFA 2026 PRIMARY INTERNATIONAL ENTRY POINT. Most visitors will arrive here. Orange Line connects to downtown Dallas and beyond for onward travel to Arlington.",
-    coords: { lat: 32.8975, lng: -97.0381 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "fair-park",
-    nombre: "Fair Park",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "cultural",
-    pois: [
-      { nombre: "Fair Park Museums (6 total)", tipo: "museum", descripcion: "Natural history, science, children's museums and more" },
-      { nombre: "Cotton Bowl Stadium", tipo: "sports", descripcion: "Historic football stadium and event venue" },
-      { nombre: "Fair Park Grounds", tipo: "park", descripcion: "Historic 1936 Art Deco park with gardens" }
+    "slug": "dallas-smu-mockingbird",
+    "nombre": "SMU/Mockingbird",
+    "linea": "Red/Blue/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "universitario",
+    "pois": [
+      {
+        "nombre": "Southern Methodist University",
+        "tipo": "universidad",
+        "distancia": "5 min caminando"
+      },
+      {
+        "nombre": "Angelika Film Center",
+        "tipo": "entretenimiento",
+        "distancia": "2 min caminando"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Fair Park Station Dallas - Museums & Historic Park",
-    meta_description: "Fair Park DART station provides access to Dallas' 1936 Art Deco park featuring 6 museums, historic Cotton Bowl Stadium, and the annual State Fair of Texas.",
-    h1: "Fair Park: Dallas' Museum & Cultural Destination",
-    intro: "Fair Park is Dallas' cultural powerhouse. This historic 1936 Art Deco park hosts six museums, the iconic Cotton Bowl Stadium, and every fall, the legendary State Fair of Texas. It's a must-visit for culture and history.",
-    descripcion_turistica: "Fair Park is where Dallas celebrates its heritage. The park's Art Deco architecture is stunning, and the museums cover everything from natural history to aviation to children's learning. Fall visitors shouldn't miss the State Fair of Texas.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Station accessible; museums vary—call ahead for specific needs"
+    "transferencias": [],
+    "seo_title": "SMU/Mockingbird — Red/Blue/Orange DART | Dallas Transit Guide",
+    "meta_description": "SMU/Mockingbird sirve a la universidad SMU y al popular Mockingbird Station con tiendas y restaurantes.",
+    "h1": "SMU/Mockingbird — Red/Blue/Orange | Dallas",
+    "intro": "SMU/Mockingbird sirve a la universidad SMU y al popular Mockingbird Station con tiendas y restaurantes.",
+    "tips": [
+      "Mockingbird Station — restaurantes integrados",
+      "Angelika Film Center",
+      "Transfer Red/Blue/Orange"
+    ],
+    "mundial_relevancia": "Zona universitaria con hoteles.",
+    "descripcion_turistica": "Hub cultural con SMU, cine Angelika y Mockingbird Station.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "15 min peak, 30 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-cityplace-uptown",
+    "nombre": "Cityplace/Uptown",
+    "linea": "Red/Blue/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Uptown Dallas",
+        "tipo": "comercial-turistico",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Klyde Warren Park",
+        "tipo": "parque",
+        "distancia": "5 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Cityplace/Uptown — Red/Blue/Orange DART | Dallas Transit Guide",
+    "meta_description": "Cityplace/Uptown es la única estación subterránea de DART, en el corazón de Uptown Dallas.",
+    "h1": "Cityplace/Uptown — Red/Blue/Orange | Dallas",
+    "intro": "Cityplace/Uptown es la única estación subterránea de DART, en el corazón de Uptown Dallas.",
+    "tips": [
+      "Única estación subterránea DART",
+      "Klyde Warren Park — 5 min",
+      "M-Line Trolley gratuito"
+    ],
+    "mundial_relevancia": "Zona prime de hospedaje FIFA.",
+    "descripcion_turistica": "Uptown es el barrio más vibrante de Dallas con restaurantes, bares y Klyde Warren Park.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Plan a full day for Fair Park—there's easily 6+ hours of activities",
-      "Many museums have free or discounted hours; check schedules",
-      "Visit in fall (late September-October) for the State Fair of Texas—iconic Dallas experience"
-    ],
-    mundial_relevancia: "FIFA 2026 cultural experience for international visitors interested in Dallas history and American heritage",
-    coords: { lat: 32.7623, lng: -96.7637 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "centreport-dfw",
-    nombre: "CentrePort/DFW",
-    linea: "TRE",
-    sistema: "Trinity Railway Express",
-    ciudad: "Irving",
-    municipio: "Irving",
-    tipo_zona: "business",
-    pois: [
-      { nombre: "CentrePort Master-Planned Community", tipo: "commercial", descripcion: "Office, retail, and hotel complex" },
-      { nombre: "DFW Airport Connections", tipo: "airport", descripcion: "Secondary gateway with car rental and hotel shuttles" },
-      { nombre: "Las Colinas Area", tipo: "district", descripcion: "Major business and residential district" }
+    "slug": "dallas-pearl-arts-district",
+    "nombre": "Pearl/Arts District",
+    "linea": "Red/Blue/Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "Dallas Museum of Art",
+        "tipo": "museo",
+        "distancia": "3 min caminando"
+      },
+      {
+        "nombre": "Nasher Sculpture Center",
+        "tipo": "museo",
+        "distancia": "5 min caminando"
+      }
     ],
-    transferencias: ["TRE to Dallas and Arlington", "DFW Airport systems"],
-    seo_title: "CentrePort/DFW Station Dallas - Business & Airport Gateway",
-    meta_description: "CentrePort/DFW TRE station serves the Irving business district and provides connections to DFW Airport, Las Colinas, and Arlington via Trinity Railway Express.",
-    h1: "CentrePort/DFW: Dallas Business District Transit",
-    intro: "CentrePort/DFW is a key business transit hub serving Irving's corporate community. The station provides connections to the DFW Airport area, Las Colinas business district, and direct TRE service to Dallas and Arlington.",
-    descripcion_turistica: "While primarily a business district, CentrePort offers hotel accommodations and dining options. It's a convenient connection point for travelers heading to/from DFW Airport with business in the Irving area.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Modern station with full ADA compliance"
+    "transferencias": [],
+    "seo_title": "Pearl/Arts District — Red/Blue/Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Pearl/Arts District es el epicentro cultural de Dallas — tercer distrito de artes más grande de EE.UU.",
+    "h1": "Pearl/Arts District — Red/Blue/Green/Orange | Dallas",
+    "intro": "Pearl/Arts District es el epicentro cultural de Dallas — tercer distrito de artes más grande de EE.UU.",
+    "tips": [
+      "DMA — entrada gratuita",
+      "Nasher Sculpture Center",
+      "19 museos a 10 min",
+      "Transfer 4 líneas"
+    ],
+    "mundial_relevancia": "IMPRESCINDIBLE para turistas FIFA. Distrito cultural de clase mundial.",
+    "descripcion_turistica": "Dallas Arts District: DMA, Nasher, Perot Museum, Winspear Opera House — todo caminable.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "30 min"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-st-paul",
+    "nombre": "St. Paul",
+    "linea": "Red/Blue/Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Thanks-Giving Square",
+        "tipo": "cultural",
+        "distancia": "3 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "St. Paul — Red/Blue/Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "St. Paul es una estación céntrica con conexión al M-Line Trolley gratuito.",
+    "h1": "St. Paul — Red/Blue/Green/Orange | Dallas",
+    "intro": "St. Paul es una estación céntrica con conexión al M-Line Trolley gratuito.",
+    "tips": [
+      "M-Line Trolley gratuito",
+      "Thanks-Giving Square",
+      "Transfer 4 líneas"
+    ],
+    "mundial_relevancia": "Estación central para turistas FIFA.",
+    "descripcion_turistica": "Downtown Dallas con Thanks-Giving Square y M-Line Trolley.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "CentrePort is ideal for business travelers connecting from DFW Airport",
-      "Use CentrePort to access the Las Colinas business district hotels and restaurants",
-      "Close to some of DFW Airport's hotels—convenient for early connections"
-    ],
-    mundial_relevancia: "FIFA 2026 CLOSEST RAIL CONNECTION TO AT&T STADIUM IN ARLINGTON. CentrePort is ~18km from stadium; TRE continues to downtown Arlington for final connections.",
-    coords: { lat: 32.8968, lng: -97.2183 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "downtown-plano",
-    nombre: "Downtown Plano",
-    linea: "DART Red Line / TRE",
-    sistema: "DART Light Rail & Trinity Railway Express",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Plano Downtown Square", tipo: "historic", descripcion: "Historic downtown with shops, galleries, restaurants" },
-      { nombre: "Plano Museum of Art", tipo: "museum", descripcion: "Contemporary art museum in the historic district" },
-      { nombre: "Restaurants & Breweries", tipo: "dining", descripcion: "Trendy dining and craft beer scene" }
+    "slug": "dallas-akard",
+    "nombre": "Akard",
+    "linea": "Red/Blue/Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Reunion Tower",
+        "tipo": "atraccion",
+        "distancia": "8 min caminando"
+      }
     ],
-    transferencias: ["Red Line DART", "TRE connection point to Dallas/Arlington"],
-    seo_title: "Downtown Plano Station - Suburban Dallas Arts & Culture",
-    meta_description: "Downtown Plano DART/TRE station serves Plano's revitalized historic downtown with galleries, museums, restaurants, and easy connections to Dallas and Arlington.",
-    h1: "Downtown Plano: Suburban Dallas Arts & Dining",
-    intro: "Downtown Plano is a charming suburban destination within the Dallas metroplex. The historic downtown has been revitalized with galleries, restaurants, breweries, and cultural venues. DART and TRE service makes it easily accessible from Dallas.",
-    descripcion_turistica: "Plano's downtown is a hidden gem—trendy without being overwhelming, with good local restaurants, art galleries, and a genuine community feel. It's a nice complement to bigger Dallas attractions.",
-    accesibilidad: {
-      ascensores: true,
-      rampas: true,
-      banos_adaptados: true,
-      nivel_acceso: "full",
-      detalles: "Station fully accessible; historic buildings have varying accessibility"
+    "transferencias": [],
+    "seo_title": "Akard — Red/Blue/Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Akard es la estación más céntrica de Dallas, rodeada de hoteles.",
+    "h1": "Akard — Red/Blue/Green/Orange | Dallas",
+    "intro": "Akard es la estación más céntrica de Dallas, rodeada de hoteles.",
+    "tips": [
+      "Reunion Tower — mirador panorámico",
+      "Hoteles downtown",
+      "Transfer 4 líneas"
+    ],
+    "mundial_relevancia": "Centro de hospedaje FIFA.",
+    "descripcion_turistica": "Corazón de downtown con Reunion Tower y hoteles.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    horarios: {
-      apertura: "05:00",
-      cierre: "00:30",
-      tren_frecuencia: "20 min peak, 30 min off-peak"
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-west-end",
+    "nombre": "West End",
+    "linea": "Red/Blue/Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "The Sixth Floor Museum",
+        "tipo": "museo",
+        "distancia": "5 min caminando"
+      },
+      {
+        "nombre": "Dealey Plaza",
+        "tipo": "historico",
+        "distancia": "5 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "West End — Red/Blue/Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "West End es la puerta al histórico West End District — Sixth Floor Museum y Dealey Plaza.",
+    "h1": "West End — Red/Blue/Green/Orange | Dallas",
+    "intro": "West End es la puerta al histórico West End District — Sixth Floor Museum y Dealey Plaza.",
+    "tips": [
+      "Sixth Floor Museum — JFK",
+      "Dealey Plaza",
+      "Restaurantes y bares",
+      "Transfer 4 líneas"
+    ],
+    "mundial_relevancia": "OBLIGATORIO para turistas FIFA.",
+    "descripcion_turistica": "Distrito histórico con museo JFK, Dealey Plaza, restaurantes y vida nocturna.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
     },
-    tips: [
-      "Downtown Plano is less crowded than Dallas—great for a quieter experience",
-      "Visit on weekends for farmers markets and outdoor events",
-      "Use this as a connection point for TRE service to Arlington/CentrePort"
-    ],
-    mundial_relevancia: "FIFA 2026 connection hub for TRE service to Arlington and alternative downtown Dallas experience",
-    coords: { lat: 33.0198, lng: -96.6989 }
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
-  // COMPACT STATION ENTRIES (REMAINING 70 STATIONS)
-
   {
-    slug: "oak-lawn",
-    nombre: "Oak Lawn",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Turtle Creek Park", tipo: "park", descripcion: "Scenic urban park" },
-      { nombre: "Oak Lawn Shops", tipo: "shopping", descripcion: "Retail and dining" }
+    "slug": "dallas-union-station",
+    "nombre": "Union Station",
+    "linea": "Red/Blue/TRE/Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "transporte-central",
+    "pois": [
+      {
+        "nombre": "Amtrak Station",
+        "tipo": "transporte",
+        "distancia": "Mismo edificio"
+      },
+      {
+        "nombre": "Downtown Dallas",
+        "tipo": "comercial",
+        "distancia": "2 min caminando"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Oak Lawn Station Dallas - Red Line",
-    meta_description: "Oak Lawn DART Red Line station serves Dallas' upscale Oak Lawn neighborhood.",
-    h1: "Oak Lawn Station",
-    intro: "Oak Lawn is an upscale residential neighborhood on the DART Red Line.",
-    descripcion_turistica: "Oak Lawn offers a more peaceful alternative to downtown Dallas with parks and shopping.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Good stop for escaping downtown crowds", "Turtle Creek Park is worth exploring"],
-    mundial_relevancia: "Residential area for FIFA 2026 visitors seeking quieter lodging",
-    coords: { lat: 32.8069, lng: -96.8009 }
+    "transferencias": [],
+    "seo_title": "Union Station — Red/Blue/TRE/Streetcar DART | Dallas Transit Guide",
+    "meta_description": "Union Station es el principal hub de transporte de Dallas — DART, TRE, Streetcar y Amtrak desde su edificio de 1916.",
+    "h1": "Union Station — Red/Blue/TRE/Streetcar | Dallas",
+    "intro": "Union Station es el principal hub de transporte de Dallas — DART, TRE, Streetcar y Amtrak desde su edificio de 1916.",
+    "tips": [
+      "Hub FIFA — TRE a CentrePort",
+      "Streetcar gratuito a Bishop Arts",
+      "Amtrak Texas Eagle",
+      "Edificio de 1916"
+    ],
+    "mundial_relevancia": "CRUCIAL para FIFA 2026. TRE a CentrePort para buses a AT&T Stadium (~1.5h total).",
+    "descripcion_turistica": "Estación histórica Beaux-Arts. Hub multimodal con TRE a CentrePort para shuttles FIFA.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "st-paul",
-    nombre: "St. Paul",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Established neighborhood" },
-      { nombre: "Local Shops", tipo: "commercial", descripcion: "Community retail" }
+    "slug": "dallas-convention-center",
+    "nombre": "Convention Center",
+    "linea": "Red/Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-turistico",
+    "pois": [
+      {
+        "nombre": "Kay Bailey Hutchison CC",
+        "tipo": "eventos",
+        "distancia": "3 min caminando"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "St. Paul Station Dallas - Red Line",
-    meta_description: "St. Paul DART Red Line station in central Dallas.",
-    h1: "St. Paul Station",
-    intro: "St. Paul is a well-established Dallas neighborhood served by the Red Line.",
-    descripcion_turistica: "Residential neighborhood with local amenities.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Good residential connection point"],
-    mundial_relevancia: "Residential transit stop",
-    coords: { lat: 32.8199, lng: -96.7974 }
+    "transferencias": [],
+    "seo_title": "Convention Center — Red/Blue DART | Dallas Transit Guide",
+    "meta_description": "Convention Center sirve al Kay Bailey Hutchison Convention Center (puede estar cerrada por renovaciones).",
+    "h1": "Convention Center — Red/Blue | Dallas",
+    "intro": "Convention Center sirve al Kay Bailey Hutchison Convention Center (puede estar cerrada por renovaciones).",
+    "tips": [
+      "Verificar si abierta — renovaciones en curso",
+      "Union Station a 3 min"
+    ],
+    "mundial_relevancia": "Zona de eventos FIFA.",
+    "descripcion_turistica": "Acceso al centro de convenciones.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "Mockingbird",
-    nombre: "Mockingbird",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "SMU Area", tipo: "education", descripcion: "Southern Methodist University proximity" },
-      { nombre: "Residential Streets", tipo: "neighborhood", descripcion: "Tree-lined residential streets" }
+    "slug": "dallas-cedars",
+    "nombre": "Cedars",
+    "linea": "Red/Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "comercial-residencial",
+    "pois": [
+      {
+        "nombre": "Cedars neighborhood",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Mockingbird Station Dallas - Red Line",
-    meta_description: "Mockingbird DART Red Line station near Southern Methodist University.",
-    h1: "Mockingbird Station",
-    intro: "Mockingbird serves the SMU area and surrounding residential neighborhoods.",
-    descripcion_turistica: "Tree-lined neighborhood with university character.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Close to SMU campus", "Peaceful residential area"],
-    mundial_relevancia: "University area residential connection",
-    coords: { lat: 32.8358, lng: -96.7859 }
+    "transferencias": [],
+    "seo_title": "Cedars — Red/Blue DART | Dallas Transit Guide",
+    "meta_description": "Cedars es un barrio emergente al sur del centro con galerías y restaurantes.",
+    "h1": "Cedars — Red/Blue | Dallas",
+    "intro": "Cedars es un barrio emergente al sur del centro con galerías y restaurantes.",
+    "tips": [
+      "South Side on Lamar",
+      "Galerías de arte"
+    ],
+    "mundial_relevancia": "Hospedaje económico cerca de downtown.",
+    "descripcion_turistica": "Barrio artístico emergente.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "southern-Methodist-university",
-    nombre: "Southern Methodist University",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "education",
-    pois: [
-      { nombre: "SMU Campus", tipo: "education", descripcion: "University campus" },
-      { nombre: "Student Area Shops", tipo: "commercial", descripcion: "Campus retail" }
+    "slug": "dallas-8th-corinth",
+    "nombre": "8th & Corinth",
+    "linea": "Red/Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Oak Cliff gateway",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "SMU Station Dallas - Southern Methodist University",
-    meta_description: "Southern Methodist University DART Red Line station on SMU campus.",
-    h1: "SMU Station",
-    intro: "SMU station serves students and visitors to Southern Methodist University.",
-    descripcion_turistica: "University campus access via DART Red Line.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Easy campus access for students", "Quiet weekends"],
-    mundial_relevancia: "University transit connection",
-    coords: { lat: 32.8435, lng: -96.7833 }
+    "transferencias": [],
+    "seo_title": "8th & Corinth — Red/Blue DART | Dallas Transit Guide",
+    "meta_description": "8th & Corinth es donde Red y Blue Line se separan hacia el sur.",
+    "h1": "8th & Corinth — Red/Blue | Dallas",
+    "intro": "8th & Corinth es donde Red y Blue Line se separan hacia el sur.",
+    "tips": [
+      "Red y Blue se separan aquí",
+      "Gateway a Oak Cliff"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Punto de bifurcación Red/Blue Line.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "highland-park",
-    nombre: "Highland Park",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Highland Park",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Highland Park Village", tipo: "shopping", descripcion: "Upscale shopping district" },
-      { nombre: "Residential Neighborhoods", tipo: "neighborhood", descripcion: "Affluent neighborhood" }
+    "slug": "dallas-dallas-zoo",
+    "nombre": "Dallas Zoo",
+    "linea": "Red",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "Dallas Zoo",
+        "tipo": "atraccion",
+        "distancia": "3 min caminando"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Highland Park Station Dallas - Upscale Shopping",
-    meta_description: "Highland Park DART Red Line station serves upscale Highland Park Village shopping district.",
-    h1: "Highland Park Station",
-    intro: "Highland Park serves one of Dallas' most upscale neighborhoods.",
-    descripcion_turistica: "Highland Park Village is a premier shopping destination in Dallas.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Access to upscale shopping", "Tree-lined neighborhoods"],
-    mundial_relevancia: "Shopping and upscale lodging area for FIFA 2026 visitors",
-    coords: { lat: 32.8519, lng: -96.7923 }
+    "transferencias": [],
+    "seo_title": "Dallas Zoo — Red DART | Dallas Transit Guide",
+    "meta_description": "Dallas Zoo station da acceso directo al zoológico más grande de Texas.",
+    "h1": "Dallas Zoo — Red | Dallas",
+    "intro": "Dallas Zoo station da acceso directo al zoológico más grande de Texas.",
+    "tips": [
+      "Dallas Zoo — 106 acres",
+      "Parada familiar obligatoria",
+      "Desde downtown: 12 min"
+    ],
+    "mundial_relevancia": "Atracción familiar para turistas FIFA.",
+    "descripcion_turistica": "Dallas Zoo: 2,000+ animales en 106 acres.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "university-park",
-    nombre: "University Park",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "University Park",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "University Park", tipo: "municipality", descripcion: "Residential community" },
-      { nombre: "Parks", tipo: "recreation", descripcion: "Green spaces" }
+    "slug": "dallas-tyler-vernon",
+    "nombre": "Tyler/Vernon",
+    "linea": "Red",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Tyler/Vernon area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "University Park Station Dallas",
-    meta_description: "University Park DART Red Line station in residential community.",
-    h1: "University Park Station",
-    intro: "University Park is a quiet residential community north of Dallas.",
-    descripcion_turistica: "Peaceful residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Quiet neighborhoods", "Residential feel"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.8603, lng: -96.7954 }
+    "transferencias": [],
+    "seo_title": "Tyler/Vernon — Red DART | Dallas Transit Guide",
+    "meta_description": "Tyler/Vernon es una estación del sistema de transporte de Dallas.",
+    "h1": "Tyler/Vernon — Red | Dallas",
+    "intro": "Tyler/Vernon es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Red"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "bush-turnpike",
-    nombre: "Bush Turnpike",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Commercial Area", tipo: "commercial", descripcion: "Office and retail" }
+    "slug": "dallas-hampton",
+    "nombre": "Hampton",
+    "linea": "Red",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Hampton area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Bush Turnpike Station Dallas",
-    meta_description: "Bush Turnpike DART Red Line station in commercial area.",
-    h1: "Bush Turnpike Station",
-    intro: "Bush Turnpike serves the north Dallas commercial district.",
-    descripcion_turistica: "Commercial transit connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Useful for business travel"],
-    mundial_relevancia: "Business district transit",
-    coords: { lat: 32.8762, lng: -96.7892 }
+    "transferencias": [],
+    "seo_title": "Hampton — Red DART | Dallas Transit Guide",
+    "meta_description": "Hampton es una estación del sistema de transporte de Dallas.",
+    "h1": "Hampton — Red | Dallas",
+    "intro": "Hampton es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Red"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "northpark",
-    nombre: "Northpark",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "shopping",
-    pois: [
-      { nombre: "Northpark Center", tipo: "shopping", descripcion: "Major shopping mall" }
+    "slug": "dallas-westmoreland",
+    "nombre": "Westmoreland",
+    "linea": "Red",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Westmoreland area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Northpark Station Dallas - Shopping",
-    meta_description: "Northpark DART Red Line station at Northpark Center shopping mall.",
-    h1: "Northpark Station",
-    intro: "Northpark serves the Northpark Center shopping mall.",
-    descripcion_turistica: "Major shopping destination.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Access to major shopping mall"],
-    mundial_relevancia: "Shopping destination for FIFA 2026 visitors",
-    coords: { lat: 32.8921, lng: -96.7934 }
+    "transferencias": [],
+    "seo_title": "Westmoreland — Red DART | Dallas Transit Guide",
+    "meta_description": "Westmoreland es una estación del sistema de transporte de Dallas.",
+    "h1": "Westmoreland — Red | Dallas",
+    "intro": "Westmoreland es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Red"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "coit",
-    nombre: "Coit",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "North Dallas neighborhood" }
+    "slug": "dallas-downtown-rowlett",
+    "nombre": "Downtown Rowlett",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Rowlett",
+    "municipio": "Rowlett",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Downtown Rowlett area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Coit Station Dallas",
-    meta_description: "Coit DART Red Line station in north Dallas.",
-    h1: "Coit Station",
-    intro: "Coit is a residential station in north Dallas.",
-    descripcion_turistica: "Residential transit connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Convenient for north Dallas residents"],
-    mundial_relevancia: "North Dallas residential area",
-    coords: { lat: 32.9048, lng: -96.8043 }
+    "transferencias": [],
+    "seo_title": "Downtown Rowlett — Blue DART | Dallas Transit Guide",
+    "meta_description": "Downtown Rowlett es una estación del sistema de transporte de Dallas.",
+    "h1": "Downtown Rowlett — Blue | Dallas",
+    "intro": "Downtown Rowlett es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "cityplace",
-    nombre: "CityPlace",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "CityPlace Complex", tipo: "commercial", descripcion: "Office and retail complex" }
+    "slug": "dallas-downtown-garland",
+    "nombre": "Downtown Garland",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Garland",
+    "municipio": "Garland",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Downtown Garland area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "CityPlace Station Dallas",
-    meta_description: "CityPlace DART Red Line station in north Dallas business district.",
-    h1: "CityPlace Station",
-    intro: "CityPlace serves north Dallas' business district.",
-    descripcion_turistica: "Business and commercial hub.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Business district connection"],
-    mundial_relevancia: "Business transit hub",
-    coords: { lat: 32.9188, lng: -96.8274 }
+    "transferencias": [],
+    "seo_title": "Downtown Garland — Blue DART | Dallas Transit Guide",
+    "meta_description": "Downtown Garland es una estación del sistema de transporte de Dallas.",
+    "h1": "Downtown Garland — Blue | Dallas",
+    "intro": "Downtown Garland es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "mccart",
-    nombre: "McCart",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "North Dallas area" }
+    "slug": "dallas-forest-jupiter",
+    "nombre": "Forest/Jupiter",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Garland",
+    "municipio": "Garland",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Forest/Jupiter area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "McCart Station Dallas",
-    meta_description: "McCart DART Red Line station in north Dallas.",
-    h1: "McCart Station",
-    intro: "McCart is a residential stop on the Red Line north of Dallas.",
-    descripcion_turistica: "Residential area connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Residential transit"],
-    mundial_relevancia: "North Dallas area",
-    coords: { lat: 32.9334, lng: -96.8406 }
+    "transferencias": [],
+    "seo_title": "Forest/Jupiter — Blue DART | Dallas Transit Guide",
+    "meta_description": "Forest/Jupiter es una estación del sistema de transporte de Dallas.",
+    "h1": "Forest/Jupiter — Blue | Dallas",
+    "intro": "Forest/Jupiter es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "dfw-airport-north",
-    nombre: "DFW Airport North",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Irving",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Airport", tipo: "airport", descripcion: "Airport terminals" }
+    "slug": "dallas-lbj-skillman",
+    "nombre": "LBJ/Skillman",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "LBJ/Skillman area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line", "Frequent flyer connections"],
-    seo_title: "DFW Airport North Station",
-    meta_description: "DFW Airport North DART Orange Line station.",
-    h1: "DFW Airport North",
-    intro: "DFW Airport North is an airport connection on the Orange Line.",
-    descripcion_turistica: "Airport transit access.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Early morning/late night flights"],
-    mundial_relevancia: "FIFA 2026 airport access",
-    coords: { lat: 32.8897, lng: -97.0423 }
+    "transferencias": [],
+    "seo_title": "LBJ/Skillman — Blue DART | Dallas Transit Guide",
+    "meta_description": "LBJ/Skillman es una estación del sistema de transporte de Dallas.",
+    "h1": "LBJ/Skillman — Blue | Dallas",
+    "intro": "LBJ/Skillman es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "terminal-a",
-    nombre: "Terminal A",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Irving",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Terminal A", tipo: "airport", descripcion: "Passenger terminal" }
+    "slug": "dallas-lake-highlands",
+    "nombre": "Lake Highlands",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Lake Highlands area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line", "Terminal connections"],
-    seo_title: "Terminal A Station DFW Airport",
-    meta_description: "Terminal A DART Orange Line station at DFW Airport.",
-    h1: "Terminal A",
-    intro: "Terminal A is an airport terminal station on the Orange Line.",
-    descripcion_turistica: "Airport terminal connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Direct terminal access"],
-    mundial_relevancia: "FIFA 2026 airport terminal access",
-    coords: { lat: 32.8985, lng: -97.0301 }
+    "transferencias": [],
+    "seo_title": "Lake Highlands — Blue DART | Dallas Transit Guide",
+    "meta_description": "Lake Highlands es una estación del sistema de transporte de Dallas.",
+    "h1": "Lake Highlands — Blue | Dallas",
+    "intro": "Lake Highlands es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "terminal-b",
-    nombre: "Terminal B",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Irving",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Terminal B", tipo: "airport", descripcion: "Passenger terminal" }
+    "slug": "dallas-white-rock",
+    "nombre": "White Rock",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "White Rock area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Terminal B Station DFW Airport",
-    meta_description: "Terminal B DART Orange Line station at DFW Airport.",
-    h1: "Terminal B",
-    intro: "Terminal B serves DFW passengers on the Orange Line.",
-    descripcion_turistica: "Terminal connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Terminal access"],
-    mundial_relevancia: "Airport access",
-    coords: { lat: 32.9085, lng: -97.0286 }
+    "transferencias": [],
+    "seo_title": "White Rock — Blue DART | Dallas Transit Guide",
+    "meta_description": "White Rock es una estación del sistema de transporte de Dallas.",
+    "h1": "White Rock — Blue | Dallas",
+    "intro": "White Rock es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "terminal-c",
-    nombre: "Terminal C",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Fort Worth",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Terminal C", tipo: "airport", descripcion: "Passenger terminal" }
+    "slug": "dallas-morrell",
+    "nombre": "Morrell",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Morrell area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Terminal C Station DFW Airport",
-    meta_description: "Terminal C DART Orange Line station at DFW Airport.",
-    h1: "Terminal C",
-    intro: "Terminal C is a DFW passenger terminal on the Orange Line.",
-    descripcion_turistica: "Terminal connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Terminal access"],
-    mundial_relevancia: "Airport connection",
-    coords: { lat: 32.9175, lng: -97.0244 }
+    "transferencias": [],
+    "seo_title": "Morrell — Blue DART | Dallas Transit Guide",
+    "meta_description": "Morrell es una estación del sistema de transporte de Dallas.",
+    "h1": "Morrell — Blue | Dallas",
+    "intro": "Morrell es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "terminal-d",
-    nombre: "Terminal D",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Fort Worth",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Terminal D", tipo: "airport", descripcion: "Passenger terminal" }
+    "slug": "dallas-illinois",
+    "nombre": "Illinois",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Illinois area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Terminal D Station DFW Airport",
-    meta_description: "Terminal D DART Orange Line station at DFW Airport.",
-    h1: "Terminal D",
-    intro: "Terminal D serves DFW passengers on the Orange Line.",
-    descripcion_turistica: "Terminal connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Terminal access"],
-    mundial_relevancia: "Airport access",
-    coords: { lat: 32.9257, lng: -97.0191 }
+    "transferencias": [],
+    "seo_title": "Illinois — Blue DART | Dallas Transit Guide",
+    "meta_description": "Illinois es una estación del sistema de transporte de Dallas.",
+    "h1": "Illinois — Blue | Dallas",
+    "intro": "Illinois es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "terminal-e",
-    nombre: "Terminal E",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas-Fort Worth",
-    municipio: "Fort Worth",
-    tipo_zona: "airport",
-    pois: [
-      { nombre: "DFW Terminal E", tipo: "airport", descripcion: "Passenger terminal" }
+    "slug": "dallas-kiest",
+    "nombre": "Kiest",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Kiest area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Terminal E Station DFW Airport",
-    meta_description: "Terminal E DART Orange Line station at DFW Airport.",
-    h1: "Terminal E",
-    intro: "Terminal E is a DFW terminal station on the Orange Line.",
-    descripcion_turistica: "Terminal connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "03:30", cierre: "01:30", tren_frecuencia: "10 min" },
-    tips: ["Terminal access"],
-    mundial_relevancia: "Airport connection",
-    coords: { lat: 32.9301, lng: -97.0132 }
+    "transferencias": [],
+    "seo_title": "Kiest — Blue DART | Dallas Transit Guide",
+    "meta_description": "Kiest es una estación del sistema de transporte de Dallas.",
+    "h1": "Kiest — Blue | Dallas",
+    "intro": "Kiest es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "las-colinas",
-    nombre: "Las Colinas",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Irving",
-    municipio: "Irving",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Las Colinas Business District", tipo: "commercial", descripcion: "Corporate offices" }
+    "slug": "dallas-va-medical-center",
+    "nombre": "VA Medical Center",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "VA Medical Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Las Colinas Station Dallas",
-    meta_description: "Las Colinas DART Orange Line station in Irving business district.",
-    h1: "Las Colinas Station",
-    intro: "Las Colinas serves Irving's major business district.",
-    descripcion_turistica: "Business district connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Business travel hub"],
-    mundial_relevancia: "Business district",
-    coords: { lat: 32.8989, lng: -97.1794 }
+    "transferencias": [],
+    "seo_title": "VA Medical Center — Blue DART | Dallas Transit Guide",
+    "meta_description": "VA Medical Center es una estación del sistema de transporte de Dallas.",
+    "h1": "VA Medical Center — Blue | Dallas",
+    "intro": "VA Medical Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "irving-convention-center",
-    nombre: "Irving Convention Center",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Irving",
-    municipio: "Irving",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Irving Convention Center", tipo: "convention", descripcion: "Event venue" }
+    "slug": "dallas-ledbetter",
+    "nombre": "Ledbetter",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Ledbetter area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Irving Convention Center Station",
-    meta_description: "Irving Convention Center DART Orange Line station.",
-    h1: "Irving Convention Center",
-    intro: "Irving Convention Center serves events and conventions.",
-    descripcion_turistica: "Event venue connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Convention access"],
-    mundial_relevancia: "Event venue connection",
-    coords: { lat: 32.8143, lng: -97.1985 }
+    "transferencias": [],
+    "seo_title": "Ledbetter — Blue DART | Dallas Transit Guide",
+    "meta_description": "Ledbetter es una estación del sistema de transporte de Dallas.",
+    "h1": "Ledbetter — Blue | Dallas",
+    "intro": "Ledbetter es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "irving-downtown",
-    nombre: "Irving Downtown",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Irving",
-    municipio: "Irving",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Irving Downtown", tipo: "downtown", descripcion: "Downtown district" }
+    "slug": "dallas-camp-wisdom",
+    "nombre": "Camp Wisdom",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Camp Wisdom area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Irving Downtown Station",
-    meta_description: "Irving Downtown DART Orange Line station.",
-    h1: "Irving Downtown",
-    intro: "Irving Downtown serves the downtown Irving district.",
-    descripcion_turistica: "Downtown connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Downtown Irving access"],
-    mundial_relevancia: "Irving downtown area",
-    coords: { lat: 32.8170, lng: -97.2067 }
+    "transferencias": [],
+    "seo_title": "Camp Wisdom — Blue DART | Dallas Transit Guide",
+    "meta_description": "Camp Wisdom es una estación del sistema de transporte de Dallas.",
+    "h1": "Camp Wisdom — Blue | Dallas",
+    "intro": "Camp Wisdom es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "cowboys-stadium-arlington",
-    nombre: "Cowboys Stadium (Arlington)",
-    linea: "TRE",
-    sistema: "Trinity Railway Express",
-    ciudad: "Arlington",
-    municipio: "Arlington",
-    tipo_zona: "sports",
-    pois: [
-      { nombre: "AT&T Stadium", tipo: "sports", descripcion: "Cowboys & sports events" }
+    "slug": "dallas-unt-dallas",
+    "nombre": "UNT Dallas",
+    "linea": "Blue",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "UNT Dallas area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["TRE"],
-    seo_title: "Cowboys Stadium (AT&T Stadium) Station Arlington",
-    meta_description: "AT&T Stadium TRE station in Arlington for Dallas Cowboys and sports events.",
-    h1: "AT&T Stadium Station",
-    intro: "AT&T Stadium station serves the iconic Dallas Cowboys facility.",
-    descripcion_turistica: "Sports venue connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "30 min" },
-    tips: ["Sports event access", "TRE to Dallas"],
-    mundial_relevancia: "FIFA 2026 WORLD CUP MATCHES at AT&T Stadium",
-    coords: { lat: 32.7473, lng: -97.0936 }
+    "transferencias": [],
+    "seo_title": "UNT Dallas — Blue DART | Dallas Transit Guide",
+    "meta_description": "UNT Dallas es una estación del sistema de transporte de Dallas.",
+    "h1": "UNT Dallas — Blue | Dallas",
+    "intro": "UNT Dallas es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Blue"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "downtown-arlington",
-    nombre: "Downtown Arlington",
-    linea: "TRE",
-    sistema: "Trinity Railway Express",
-    ciudad: "Arlington",
-    municipio: "Arlington",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Arlington Downtown", tipo: "downtown", descripcion: "Downtown district" }
+    "slug": "dallas-buckner",
+    "nombre": "Buckner",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Buckner area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["TRE"],
-    seo_title: "Downtown Arlington Station",
-    meta_description: "Downtown Arlington TRE station.",
-    h1: "Downtown Arlington",
-    intro: "Downtown Arlington is served by TRE for downtown connections.",
-    descripcion_turistica: "Downtown area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "30 min" },
-    tips: ["Arlington downtown access"],
-    mundial_relevancia: "FIFA 2026 Arlington area",
-    coords: { lat: 32.7353, lng: -97.1050 }
+    "transferencias": [],
+    "seo_title": "Buckner — Green DART | Dallas Transit Guide",
+    "meta_description": "Buckner es una estación del sistema de transporte de Dallas.",
+    "h1": "Buckner — Green | Dallas",
+    "intro": "Buckner es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "medical-city",
-    nombre: "Medical City",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "healthcare",
-    pois: [
-      { nombre: "Medical City Hospital Complex", tipo: "healthcare", descripcion: "Hospital facility" }
+    "slug": "dallas-lake-june",
+    "nombre": "Lake June",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Lake June area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Medical City Station Dallas",
-    meta_description: "Medical City DART Red Line station at Medical City hospital.",
-    h1: "Medical City Station",
-    intro: "Medical City serves the major medical facility.",
-    descripcion_turistica: "Healthcare facility connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min peak" },
-    tips: ["Hospital access", "24-hour facility"],
-    mundial_relevancia: "Emergency medical access for FIFA 2026 visitors",
-    coords: { lat: 32.8046, lng: -96.8538 }
+    "transferencias": [],
+    "seo_title": "Lake June — Green DART | Dallas Transit Guide",
+    "meta_description": "Lake June es una estación del sistema de transporte de Dallas.",
+    "h1": "Lake June — Green | Dallas",
+    "intro": "Lake June es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "white-rock",
-    nombre: "White Rock",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "White Rock Lake", tipo: "park", descripcion: "Large urban lake and park" }
+    "slug": "dallas-lawnview",
+    "nombre": "Lawnview",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Lawnview area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "White Rock Station Dallas - Lake & Parks",
-    meta_description: "White Rock DART Blue Line station near White Rock Lake park.",
-    h1: "White Rock Station",
-    intro: "White Rock serves the scenic White Rock Lake area.",
-    descripcion_turistica: "Lake and recreational area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Lake recreation", "Scenic area"],
-    mundial_relevancia: "Parks and recreation for FIFA 2026 visitors",
-    coords: { lat: 32.8328, lng: -96.7204 }
+    "transferencias": [],
+    "seo_title": "Lawnview — Green DART | Dallas Transit Guide",
+    "meta_description": "Lawnview es una estación del sistema de transporte de Dallas.",
+    "h1": "Lawnview — Green | Dallas",
+    "intro": "Lawnview es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "east-white-rock",
-    nombre: "East White Rock",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "East White Rock Area", tipo: "neighborhood", descripcion: "Residential area near lake" }
+    "slug": "dallas-hatcher",
+    "nombre": "Hatcher",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Hatcher area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "East White Rock Station Dallas",
-    meta_description: "East White Rock DART Blue Line station.",
-    h1: "East White Rock Station",
-    intro: "East White Rock is a residential station on the Blue Line.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.8422, lng: -96.6963 }
+    "transferencias": [],
+    "seo_title": "Hatcher — Green DART | Dallas Transit Guide",
+    "meta_description": "Hatcher es una estación del sistema de transporte de Dallas.",
+    "h1": "Hatcher — Green | Dallas",
+    "intro": "Hatcher es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "lawnview",
-    nombre: "Lawnview",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-mlk-jr",
+    "nombre": "MLK Jr.",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "MLK Jr. area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "Lawnview Station Dallas",
-    meta_description: "Lawnview DART Blue Line station.",
-    h1: "Lawnview Station",
-    intro: "Lawnview is a residential station on the Blue Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential area"],
-    mundial_relevancia: "Residential transit",
-    coords: { lat: 32.8508, lng: -96.6693 }
+    "transferencias": [],
+    "seo_title": "MLK Jr. — Green DART | Dallas Transit Guide",
+    "meta_description": "MLK Jr. es una estación del sistema de transporte de Dallas.",
+    "h1": "MLK Jr. — Green | Dallas",
+    "intro": "MLK Jr. es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "lake-june",
-    nombre: "Lake June",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-fair-park",
+    "nombre": "Fair Park",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "Fair Park / State Fair",
+        "tipo": "atraccion",
+        "distancia": "3 min caminando"
+      },
+      {
+        "nombre": "Cotton Bowl",
+        "tipo": "deportes",
+        "distancia": "5 min caminando"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "Lake June Station Dallas",
-    meta_description: "Lake June DART Blue Line station.",
-    h1: "Lake June Station",
-    intro: "Lake June is a residential station on the Blue Line.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.8587, lng: -96.6435 }
+    "transferencias": [],
+    "seo_title": "Fair Park — Green DART | Dallas Transit Guide",
+    "meta_description": "Fair Park es el hogar de la State Fair of Texas y el Cotton Bowl — 277 acres con museos y jardines Art Deco.",
+    "h1": "Fair Park — Green | Dallas",
+    "intro": "Fair Park es el hogar de la State Fair of Texas y el Cotton Bowl — 277 acres con museos y jardines Art Deco.",
+    "tips": [
+      "State Fair of Texas — sep/oct",
+      "Cotton Bowl",
+      "Arquitectura Art Deco 1936",
+      "Múltiples museos"
+    ],
+    "mundial_relevancia": "Posible sede FIFA Fan Zone.",
+    "descripcion_turistica": "Complejo de 277 acres: State Fair, Cotton Bowl, museos Art Deco de 1936.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "valleyview",
-    nombre: "Valleyview",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-baylor-university-medical",
+    "nombre": "Baylor University Medical Center",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Baylor University Medical Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "Valleyview Station Dallas",
-    meta_description: "Valleyview DART Blue Line station.",
-    h1: "Valleyview Station",
-    intro: "Valleyview is a residential stop on the Blue Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential area"],
-    mundial_relevancia: "Residential transit",
-    coords: { lat: 32.8667, lng: -96.6165 }
+    "transferencias": [],
+    "seo_title": "Baylor University Medical Center — Green DART | Dallas Transit Guide",
+    "meta_description": "Baylor University Medical Center es una estación del sistema de transporte de Dallas.",
+    "h1": "Baylor University Medical Center — Green | Dallas",
+    "intro": "Baylor University Medical Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "pleasant-grove",
-    nombre: "Pleasant Grove",
-    linea: "Blue Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-deep-ellum",
+    "nombre": "Deep Ellum",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "Deep Ellum Entertainment District",
+        "tipo": "entretenimiento",
+        "distancia": "2 min caminando"
+      },
+      {
+        "nombre": "Live music venues",
+        "tipo": "entretenimiento",
+        "distancia": "Todo el barrio"
+      }
     ],
-    transferencias: ["Blue Line"],
-    seo_title: "Pleasant Grove Station Dallas",
-    meta_description: "Pleasant Grove DART Blue Line station.",
-    h1: "Pleasant Grove Station",
-    intro: "Pleasant Grove is a residential station on the Blue Line.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.8751, lng: -96.5897 }
+    "transferencias": [],
+    "seo_title": "Deep Ellum — Green DART | Dallas Transit Guide",
+    "meta_description": "Deep Ellum es el barrio más vibrante de Dallas — música en vivo, street art y gastronomía.",
+    "h1": "Deep Ellum — Green | Dallas",
+    "intro": "Deep Ellum es el barrio más vibrante de Dallas — música en vivo, street art y gastronomía.",
+    "tips": [
+      "Murales y street art",
+      "30+ venues de música en vivo",
+      "Cervecerías craft",
+      "Mejor jueves-sábado noche"
+    ],
+    "mundial_relevancia": "IMPRESCINDIBLE para turistas FIFA. Nightlife y cultura.",
+    "descripcion_turistica": "Legendario distrito de entretenimiento con 30+ venues de música, murales y cervecerías craft.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "downtowner",
-    nombre: "Downtowner",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Downtown Area", tipo: "downtown", descripcion: "Downtown district" }
+    "slug": "dallas-victory",
+    "nombre": "Victory",
+    "linea": "Green/Orange/TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "deportes-entretenimiento",
+    "pois": [
+      {
+        "nombre": "American Airlines Center",
+        "tipo": "deportes",
+        "distancia": "3 min caminando"
+      }
     ],
-    transferencias: ["Green Line", "Downtown connections"],
-    seo_title: "Downtowner Station Dallas",
-    meta_description: "Downtowner DART Green Line station in downtown Dallas.",
-    h1: "Downtowner Station",
-    intro: "Downtowner is a downtown station on the Green Line.",
-    descripcion_turistica: "Downtown connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Downtown access"],
-    mundial_relevancia: "Downtown area",
-    coords: { lat: 32.7724, lng: -96.7848 }
+    "transferencias": [],
+    "seo_title": "Victory — Green/Orange/TRE DART | Dallas Transit Guide",
+    "meta_description": "Victory sirve al American Airlines Center (Mavericks/Stars) con conexión TRE a Fort Worth.",
+    "h1": "Victory — Green/Orange/TRE | Dallas",
+    "intro": "Victory sirve al American Airlines Center (Mavericks/Stars) con conexión TRE a Fort Worth.",
+    "tips": [
+      "American Airlines Center — NBA/NHL",
+      "TRE a Fort Worth",
+      "Victory Park restaurantes"
+    ],
+    "mundial_relevancia": "Hub entretenimiento. TRE a CentrePort para FIFA.",
+    "descripcion_turistica": "Arena NBA/NHL con Victory Park premium.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "westmoreland",
-    nombre: "Westmoreland",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-market-center",
+    "nombre": "Market Center",
+    "linea": "Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Market Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Green Line"],
-    seo_title: "Westmoreland Station Dallas",
-    meta_description: "Westmoreland DART Green Line station.",
-    h1: "Westmoreland Station",
-    intro: "Westmoreland is a residential station on the Green Line.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.7589, lng: -96.8078 }
+    "transferencias": [],
+    "seo_title": "Market Center — Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Market Center es una estación del sistema de transporte de Dallas.",
+    "h1": "Market Center — Green/Orange | Dallas",
+    "intro": "Market Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green/Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "nearest",
-    nombre: "Nearest",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-southwestern-medical",
+    "nombre": "Southwestern Medical District/Parkland",
+    "linea": "Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Southwestern Medical District/Parkland area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Green Line"],
-    seo_title: "Nearest Station Dallas",
-    meta_description: "Nearest DART Green Line station.",
-    h1: "Nearest Station",
-    intro: "Nearest is a residential stop on the Green Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential area"],
-    mundial_relevancia: "Residential transit",
-    coords: { lat: 32.7461, lng: -96.8233 }
+    "transferencias": [],
+    "seo_title": "Southwestern Medical District/Parkland — Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Southwestern Medical District/Parkland es una estación del sistema de transporte de Dallas.",
+    "h1": "Southwestern Medical District/Parkland — Green/Orange | Dallas",
+    "intro": "Southwestern Medical District/Parkland es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green/Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "illinois-avenue",
-    nombre: "Illinois Avenue",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-inwood-love-field",
+    "nombre": "Inwood/Love Field",
+    "linea": "Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "aeropuerto",
+    "pois": [
+      {
+        "nombre": "Dallas Love Field Airport",
+        "tipo": "aeropuerto",
+        "distancia": "10 min bus shuttle"
+      }
     ],
-    transferencias: ["Green Line"],
-    seo_title: "Illinois Avenue Station Dallas",
-    meta_description: "Illinois Avenue DART Green Line station.",
-    h1: "Illinois Avenue Station",
-    intro: "Illinois Avenue is a residential station on the Green Line.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.7334, lng: -96.8329 }
+    "transferencias": [],
+    "seo_title": "Inwood/Love Field — Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Inwood/Love Field da acceso a Dallas Love Field Airport (hub Southwest Airlines) vía bus shuttle.",
+    "h1": "Inwood/Love Field — Green/Orange | Dallas",
+    "intro": "Inwood/Love Field da acceso a Dallas Love Field Airport (hub Southwest Airlines) vía bus shuttle.",
+    "tips": [
+      "Love Field — hub Southwest",
+      "Bus DART 524 a terminales",
+      "Green y Orange Lines"
+    ],
+    "mundial_relevancia": "Aeropuerto secundario para turistas FIFA.",
+    "descripcion_turistica": "Conexión a Love Field Airport (Southwest Airlines). Bus DART 524 a terminales.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "madison-street",
-    nombre: "Madison Street",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Downtown Area", tipo: "downtown", descripcion: "Downtown district" }
+    "slug": "dallas-burbank",
+    "nombre": "Burbank",
+    "linea": "Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Burbank area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Green Line"],
-    seo_title: "Madison Street Station Dallas",
-    meta_description: "Madison Street DART Green Line station.",
-    h1: "Madison Street Station",
-    intro: "Madison Street serves downtown Dallas on the Green Line.",
-    descripcion_turistica: "Downtown connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Downtown access"],
-    mundial_relevancia: "Downtown area",
-    coords: { lat: 32.7204, lng: -96.8463 }
+    "transferencias": [],
+    "seo_title": "Burbank — Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Burbank es una estación del sistema de transporte de Dallas.",
+    "h1": "Burbank — Green/Orange | Dallas",
+    "intro": "Burbank es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green/Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "convention-center",
-    nombre: "Convention Center",
-    linea: "Green Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "convention",
-    pois: [
-      { nombre: "Dallas Convention Center", tipo: "convention", descripcion: "Event and convention venue" }
+    "slug": "dallas-bachman",
+    "nombre": "Bachman",
+    "linea": "Green/Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Bachman area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Green Line"],
-    seo_title: "Convention Center Station Dallas",
-    meta_description: "Convention Center DART Green Line station at Dallas Convention Center.",
-    h1: "Convention Center Station",
-    intro: "Convention Center serves Dallas' major convention facility.",
-    descripcion_turistica: "Convention venue connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Convention access", "Major event venue"],
-    mundial_relevancia: "Convention center for FIFA 2026 events",
-    coords: { lat: 32.7605, lng: -96.7699 }
+    "transferencias": [],
+    "seo_title": "Bachman — Green/Orange DART | Dallas Transit Guide",
+    "meta_description": "Bachman es una estación del sistema de transporte de Dallas.",
+    "h1": "Bachman — Green/Orange | Dallas",
+    "intro": "Bachman es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green/Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "oak-cliff",
-    nombre: "Oak Cliff",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Oak Cliff District", tipo: "neighborhood", descripcion: "Historic residential area" }
+    "slug": "dallas-walnut-hill-denton",
+    "nombre": "Walnut Hill/Denton",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Walnut Hill/Denton area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Oak Cliff Station Dallas",
-    meta_description: "Oak Cliff DART Orange Line station in historic Oak Cliff neighborhood.",
-    h1: "Oak Cliff Station",
-    intro: "Oak Cliff is a historic residential neighborhood on the Orange Line.",
-    descripcion_turistica: "Historic neighborhood area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Historic neighborhood", "Local shops and restaurants"],
-    mundial_relevancia: "Residential area for FIFA 2026 visitors",
-    coords: { lat: 32.7692, lng: -96.8020 }
+    "transferencias": [],
+    "seo_title": "Walnut Hill/Denton — Green DART | Dallas Transit Guide",
+    "meta_description": "Walnut Hill/Denton es una estación del sistema de transporte de Dallas.",
+    "h1": "Walnut Hill/Denton — Green | Dallas",
+    "intro": "Walnut Hill/Denton es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "kiest-park",
-    nombre: "Kiest Park",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Kiest Park", tipo: "park", descripcion: "Public park" }
+    "slug": "dallas-royal-lane",
+    "nombre": "Royal Lane",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Royal Lane area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Kiest Park Station Dallas",
-    meta_description: "Kiest Park DART Orange Line station.",
-    h1: "Kiest Park Station",
-    intro: "Kiest Park is a residential station on the Orange Line.",
-    descripcion_turistica: "Park area residential.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Park access", "Residential area"],
-    mundial_relevancia: "Parks and recreation",
-    coords: { lat: 32.7405, lng: -96.8193 }
+    "transferencias": [],
+    "seo_title": "Royal Lane — Green DART | Dallas Transit Guide",
+    "meta_description": "Royal Lane es una estación del sistema de transporte de Dallas.",
+    "h1": "Royal Lane — Green | Dallas",
+    "intro": "Royal Lane es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "hatcher-street",
-    nombre: "Hatcher Street",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-farmers-branch",
+    "nombre": "Farmers Branch",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Farmers Branch",
+    "municipio": "Farmers Branch",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Farmers Branch area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Hatcher Street Station Dallas",
-    meta_description: "Hatcher Street DART Orange Line station.",
-    h1: "Hatcher Street Station",
-    intro: "Hatcher Street is a residential station on the Orange Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential access"],
-    mundial_relevancia: "Residential area",
-    coords: { lat: 32.7221, lng: -96.8290 }
+    "transferencias": [],
+    "seo_title": "Farmers Branch — Green DART | Dallas Transit Guide",
+    "meta_description": "Farmers Branch es una estación del sistema de transporte de Dallas.",
+    "h1": "Farmers Branch — Green | Dallas",
+    "intro": "Farmers Branch es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "penn-street",
-    nombre: "Penn Street",
-    linea: "Orange Line",
-    sistema: "DART Light Rail",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-downtown-carrollton",
+    "nombre": "Downtown Carrollton",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Carrollton",
+    "municipio": "Carrollton",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Downtown Carrollton area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Orange Line"],
-    seo_title: "Penn Street Station Dallas",
-    meta_description: "Penn Street DART Orange Line station.",
-    h1: "Penn Street Station",
-    intro: "Penn Street is a residential stop on the Orange Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "15 min" },
-    tips: ["Residential area"],
-    mundial_relevancia: "Residential transit",
-    coords: { lat: 32.7048, lng: -96.8412 }
+    "transferencias": [],
+    "seo_title": "Downtown Carrollton — Green DART | Dallas Transit Guide",
+    "meta_description": "Downtown Carrollton es una estación del sistema de transporte de Dallas.",
+    "h1": "Downtown Carrollton — Green | Dallas",
+    "intro": "Downtown Carrollton es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "dallas-streetcar-victory",
-    nombre: "Dallas Streetcar - Victory",
-    linea: "Dallas Streetcar",
-    sistema: "Dallas Streetcar",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Victory Park", tipo: "entertainment", descripcion: "Mixed-use district" }
+    "slug": "dallas-trinity-mills",
+    "nombre": "Trinity Mills",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Carrollton",
+    "municipio": "Carrollton",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Trinity Mills area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Streetcar", "TRE", "Red Line"],
-    seo_title: "Dallas Streetcar Victory Stop",
-    meta_description: "Dallas Streetcar Victory Park stop with entertainment and dining.",
-    h1: "Dallas Streetcar - Victory",
-    intro: "Dallas Streetcar Victory stop connects to Victory Park entertainment district.",
-    descripcion_turistica: "Streetcar connection to trendy Victory Park.",
-    accesibilidad: { ascensores: false, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "06:00", cierre: "23:00", tren_frecuencia: "12 min" },
-    tips: ["Streetcar provides scenic downtown route"],
-    mundial_relevancia: "Downtown transportation",
-    coords: { lat: 32.7765, lng: -96.8125 }
+    "transferencias": [],
+    "seo_title": "Trinity Mills — Green DART | Dallas Transit Guide",
+    "meta_description": "Trinity Mills es una estación del sistema de transporte de Dallas.",
+    "h1": "Trinity Mills — Green | Dallas",
+    "intro": "Trinity Mills es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "dallas-streetcar-main-street",
-    nombre: "Dallas Streetcar - Main Street",
-    linea: "Dallas Streetcar",
-    sistema: "Dallas Streetcar",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "Main Street District", tipo: "district", descripcion: "Historic downtown street" }
+    "slug": "dallas-north-carrollton-frankford",
+    "nombre": "North Carrollton/Frankford",
+    "linea": "Green",
+    "sistema": "dart-light-rail",
+    "ciudad": "Carrollton",
+    "municipio": "Carrollton",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "North Carrollton/Frankford area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Streetcar", "Red Line", "Blue Line"],
-    seo_title: "Dallas Streetcar Main Street",
-    meta_description: "Dallas Streetcar Main Street stop in downtown Dallas.",
-    h1: "Dallas Streetcar - Main Street",
-    intro: "Dallas Streetcar Main Street stop serves downtown.",
-    descripcion_turistica: "Historic downtown street.",
-    accesibilidad: { ascensores: false, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "06:00", cierre: "23:00", tren_frecuencia: "12 min" },
-    tips: ["Downtown exploration via streetcar"],
-    mundial_relevancia: "Downtown transit",
-    coords: { lat: 32.7794, lng: -96.8047 }
+    "transferencias": [],
+    "seo_title": "North Carrollton/Frankford — Green DART | Dallas Transit Guide",
+    "meta_description": "North Carrollton/Frankford es una estación del sistema de transporte de Dallas.",
+    "h1": "North Carrollton/Frankford — Green | Dallas",
+    "intro": "North Carrollton/Frankford es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Green"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "dallas-streetcar-st-paul",
-    nombre: "Dallas Streetcar - St. Paul",
-    linea: "Dallas Streetcar",
-    sistema: "Dallas Streetcar",
-    ciudad: "Dallas",
-    municipio: "Dallas",
-    tipo_zona: "downtown",
-    pois: [
-      { nombre: "St. Paul District", tipo: "district", descripcion: "Arts and downtown area" }
+    "slug": "dallas-university-of-dallas",
+    "nombre": "University of Dallas",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "University of Dallas area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Streetcar", "Red Line"],
-    seo_title: "Dallas Streetcar St. Paul",
-    meta_description: "Dallas Streetcar St. Paul stop.",
-    h1: "Dallas Streetcar - St. Paul",
-    intro: "Dallas Streetcar St. Paul stop in downtown.",
-    descripcion_turistica: "Downtown area.",
-    accesibilidad: { ascensores: false, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "06:00", cierre: "23:00", tren_frecuencia: "12 min" },
-    tips: ["Streetcar connections"],
-    mundial_relevancia: "Downtown transportation",
-    coords: { lat: 32.7868, lng: -96.7990 }
+    "transferencias": [],
+    "seo_title": "University of Dallas — Orange DART | Dallas Transit Guide",
+    "meta_description": "University of Dallas es una estación del sistema de transporte de Dallas.",
+    "h1": "University of Dallas — Orange | Dallas",
+    "intro": "University of Dallas es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "plano-red-line-parker",
-    nombre: "Parker Road",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Plano neighborhood" }
+    "slug": "dallas-las-colinas-urban-center",
+    "nombre": "Las Colinas Urban Center",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Las Colinas Urban Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Parker Road Station Plano",
-    meta_description: "Parker Road DART Red Line station in Plano.",
-    h1: "Parker Road Station",
-    intro: "Parker Road is a residential station in Plano on the Red Line.",
-    descripcion_turistica: "Plano residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["Plano area access"],
-    mundial_relevancia: "Suburban Dallas area",
-    coords: { lat: 33.0063, lng: -96.7125 }
+    "transferencias": [],
+    "seo_title": "Las Colinas Urban Center — Orange DART | Dallas Transit Guide",
+    "meta_description": "Las Colinas Urban Center es una estación del sistema de transporte de Dallas.",
+    "h1": "Las Colinas Urban Center — Orange | Dallas",
+    "intro": "Las Colinas Urban Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "texas-station",
-    nombre: "Texas Station",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Commercial Area", tipo: "commercial", descripcion: "Office and retail" }
+    "slug": "dallas-irving-convention-center",
+    "nombre": "Irving Convention Center",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Irving Convention Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Texas Station Plano",
-    meta_description: "Texas Station DART Red Line in Plano commercial area.",
-    h1: "Texas Station",
-    intro: "Texas Station serves Plano's commercial district.",
-    descripcion_turistica: "Commercial connection.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["Commercial area access"],
-    mundial_relevancia: "Plano business area",
-    coords: { lat: 33.0268, lng: -96.6874 }
+    "transferencias": [],
+    "seo_title": "Irving Convention Center — Orange DART | Dallas Transit Guide",
+    "meta_description": "Irving Convention Center es una estación del sistema de transporte de Dallas.",
+    "h1": "Irving Convention Center — Orange | Dallas",
+    "intro": "Irving Convention Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "spring-creek",
-    nombre: "Spring Creek",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "Neighborhood" }
+    "slug": "dallas-hidden-ridge",
+    "nombre": "Hidden Ridge",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Hidden Ridge area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Spring Creek Station Plano",
-    meta_description: "Spring Creek DART Red Line station in Plano.",
-    h1: "Spring Creek Station",
-    intro: "Spring Creek is a residential station in Plano.",
-    descripcion_turistica: "Residential area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["Plano residential access"],
-    mundial_relevancia: "Suburban area",
-    coords: { lat: 33.0364, lng: -96.6738 }
+    "transferencias": [],
+    "seo_title": "Hidden Ridge — Orange DART | Dallas Transit Guide",
+    "meta_description": "Hidden Ridge es una estación del sistema de transporte de Dallas.",
+    "h1": "Hidden Ridge — Orange | Dallas",
+    "intro": "Hidden Ridge es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "financial-district",
-    nombre: "Financial District",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Corporate Area", tipo: "commercial", descripcion: "Business headquarters" }
+    "slug": "dallas-dallas-college-north-lake",
+    "nombre": "Dallas College North Lake Campus",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Dallas College North Lake Campus area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Financial District Station Plano",
-    meta_description: "Financial District DART Red Line station in Plano business hub.",
-    h1: "Financial District Station",
-    intro: "Financial District serves Plano's corporate headquarters.",
-    descripcion_turistica: "Major business district.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["Corporate office access"],
-    mundial_relevancia: "Business district",
-    coords: { lat: 33.0462, lng: -96.6533 }
+    "transferencias": [],
+    "seo_title": "Dallas College North Lake Campus — Orange DART | Dallas Transit Guide",
+    "meta_description": "Dallas College North Lake Campus es una estación del sistema de transporte de Dallas.",
+    "h1": "Dallas College North Lake Campus — Orange | Dallas",
+    "intro": "Dallas College North Lake Campus es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "legacy-drive",
-    nombre: "Legacy Drive",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "commercial",
-    pois: [
-      { nombre: "Legacy Commercial Area", tipo: "commercial", descripcion: "Office complex" }
+    "slug": "dallas-belt-line",
+    "nombre": "Belt Line",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Belt Line area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "Legacy Drive Station Plano",
-    meta_description: "Legacy Drive DART Red Line station in Plano.",
-    h1: "Legacy Drive Station",
-    intro: "Legacy Drive serves Plano's commercial development.",
-    descripcion_turistica: "Commercial area.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["Business district access"],
-    mundial_relevancia: "Plano business area",
-    coords: { lat: 33.0547, lng: -96.6295 }
+    "transferencias": [],
+    "seo_title": "Belt Line — Orange DART | Dallas Transit Guide",
+    "meta_description": "Belt Line es una estación del sistema de transporte de Dallas.",
+    "h1": "Belt Line — Orange | Dallas",
+    "intro": "Belt Line es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Orange"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   },
-
   {
-    slug: "east-plano",
-    nombre: "East Plano",
-    linea: "Red Line",
-    sistema: "DART Light Rail",
-    ciudad: "Plano",
-    municipio: "Plano",
-    tipo_zona: "residential",
-    pois: [
-      { nombre: "Residential Area", tipo: "neighborhood", descripcion: "East Plano neighborhood" }
+    "slug": "dallas-dfw-airport-terminal-a",
+    "nombre": "DFW Airport Terminal A",
+    "linea": "Orange",
+    "sistema": "dart-light-rail",
+    "ciudad": "DFW Airport",
+    "municipio": "DFW Airport",
+    "tipo_zona": "aeropuerto",
+    "pois": [
+      {
+        "nombre": "DFW International Airport",
+        "tipo": "aeropuerto",
+        "distancia": "Terminal integrada"
+      }
     ],
-    transferencias: ["Red Line"],
-    seo_title: "East Plano Station",
-    meta_description: "East Plano DART Red Line residential station.",
-    h1: "East Plano Station",
-    intro: "East Plano is a residential endpoint on the Red Line.",
-    descripcion_turistica: "Residential neighborhood.",
-    accesibilidad: { ascensores: true, rampas: true, banos_adaptados: true, nivel_acceso: "full" },
-    horarios: { apertura: "05:00", cierre: "00:30", tren_frecuencia: "20 min" },
-    tips: ["End-of-line Plano station"],
-    mundial_relevancia: "Plano residential area",
-    coords: { lat: 33.0627, lng: -96.6047 }
+    "transferencias": [],
+    "seo_title": "DFW Airport Terminal A — Orange DART | Dallas Transit Guide",
+    "meta_description": "DFW Airport Terminal A es la puerta de entrada internacional a Dallas vía DART Orange Line.",
+    "h1": "DFW Airport Terminal A — Orange | Dallas",
+    "intro": "DFW Airport Terminal A es la puerta de entrada internacional a Dallas vía DART Orange Line.",
+    "tips": [
+      "Terminal A integrada con DART",
+      "Skylink gratuito entre terminales",
+      "Orange Line directo a downtown (45 min)",
+      "GoPass: USD 2.50"
+    ],
+    "mundial_relevancia": "PUERTA DE ENTRADA FIFA 2026. Tren directo a downtown Dallas.",
+    "descripcion_turistica": "Aeropuerto internacional DFW — 4to más ocupado del mundo. Skylink conecta terminales. TEXRail en Terminal B.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-tre-medical-market-center",
+    "nombre": "Medical/Market Center",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Medical/Market Center area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Medical/Market Center — TRE DART | Dallas Transit Guide",
+    "meta_description": "Medical/Market Center es una estación del sistema de transporte de Dallas.",
+    "h1": "Medical/Market Center — TRE | Dallas",
+    "intro": "Medical/Market Center es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-downtown-irving-heritage",
+    "nombre": "Downtown Irving/Heritage Crossing",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Downtown Irving/Heritage Crossing area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Downtown Irving/Heritage Crossing — TRE DART | Dallas Transit Guide",
+    "meta_description": "Downtown Irving/Heritage Crossing es una estación del sistema de transporte de Dallas.",
+    "h1": "Downtown Irving/Heritage Crossing — TRE | Dallas",
+    "intro": "Downtown Irving/Heritage Crossing es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-west-irving",
+    "nombre": "West Irving",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Irving",
+    "municipio": "Irving",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "West Irving area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "West Irving — TRE DART | Dallas Transit Guide",
+    "meta_description": "West Irving es una estación del sistema de transporte de Dallas.",
+    "h1": "West Irving — TRE | Dallas",
+    "intro": "West Irving es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-centreport-dfw",
+    "nombre": "CentrePort/DFW Airport",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Fort Worth",
+    "municipio": "Fort Worth",
+    "tipo_zona": "transporte-central",
+    "pois": [
+      {
+        "nombre": "AT&T Stadium shuttle zone",
+        "tipo": "deportes",
+        "distancia": "Bus charter FIFA"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "CentrePort/DFW Airport — TRE DART | Dallas Transit Guide",
+    "meta_description": "CentrePort/DFW es la estación TRE más cercana a AT&T Stadium — punto clave para FIFA 2026.",
+    "h1": "CentrePort/DFW Airport — TRE | Dallas",
+    "intro": "CentrePort/DFW es la estación TRE más cercana a AT&T Stadium — punto clave para FIFA 2026.",
+    "tips": [
+      "ESTACIÓN FIFA CLAVE — buses a AT&T Stadium",
+      "TRE Link shuttle a DFW",
+      "Rideshare a AT&T ~20 min, USD 15-25"
+    ],
+    "mundial_relevancia": "CRUCIAL para FIFA 2026. Buses charter directos a AT&T Stadium.",
+    "descripcion_turistica": "Hub estratégico. Buses charter FIFA a AT&T Stadium. Shuttle a DFW Airport.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-bell-station",
+    "nombre": "Bell Station",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Hurst",
+    "municipio": "Hurst",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Bell Station area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Bell Station — TRE DART | Dallas Transit Guide",
+    "meta_description": "Bell Station es una estación del sistema de transporte de Dallas.",
+    "h1": "Bell Station — TRE | Dallas",
+    "intro": "Bell Station es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-trinity-lakes",
+    "nombre": "Trinity Lakes",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Fort Worth",
+    "municipio": "Fort Worth",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Trinity Lakes area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Trinity Lakes — TRE DART | Dallas Transit Guide",
+    "meta_description": "Trinity Lakes es una estación del sistema de transporte de Dallas.",
+    "h1": "Trinity Lakes — TRE | Dallas",
+    "intro": "Trinity Lakes es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-fort-worth-central-station",
+    "nombre": "Fort Worth Central Station",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Fort Worth",
+    "municipio": "Fort Worth",
+    "tipo_zona": "transporte-central",
+    "pois": [
+      {
+        "nombre": "Sundance Square",
+        "tipo": "comercial-turistico",
+        "distancia": "5 min caminando"
+      },
+      {
+        "nombre": "TEXRail connection",
+        "tipo": "transporte",
+        "distancia": "Misma estación"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Fort Worth Central Station — TRE DART | Dallas Transit Guide",
+    "meta_description": "Fort Worth Central Station es el hub de Fort Worth — TRE, TEXRail, Sundance Square y Stockyards.",
+    "h1": "Fort Worth Central Station — TRE | Dallas",
+    "intro": "Fort Worth Central Station es el hub de Fort Worth — TRE, TEXRail, Sundance Square y Stockyards.",
+    "tips": [
+      "Sundance Square — 5 min",
+      "Stockyards — bus 15 min",
+      "TEXRail a DFW Airport",
+      "TRE a Dallas"
+    ],
+    "mundial_relevancia": "Hub Fort Worth para turistas FIFA.",
+    "descripcion_turistica": "Hub Fort Worth: Sundance Square, Stockyards, Cultural District.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-tp-station",
+    "nombre": "T&P Station",
+    "linea": "TRE",
+    "sistema": "dart-light-rail",
+    "ciudad": "Fort Worth",
+    "municipio": "Fort Worth",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "T&P Station area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "T&P Station — TRE DART | Dallas Transit Guide",
+    "meta_description": "T&P Station es una estación del sistema de transporte de Dallas.",
+    "h1": "T&P Station — TRE | Dallas",
+    "intro": "T&P Station es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación TRE"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-greenbriar",
+    "nombre": "Greenbriar",
+    "linea": "Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Greenbriar area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Greenbriar — Streetcar DART | Dallas Transit Guide",
+    "meta_description": "Greenbriar es una estación del sistema de transporte de Dallas.",
+    "h1": "Greenbriar — Streetcar | Dallas",
+    "intro": "Greenbriar es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Streetcar"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-oakenwald",
+    "nombre": "Oakenwald",
+    "linea": "Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Oakenwald area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Oakenwald — Streetcar DART | Dallas Transit Guide",
+    "meta_description": "Oakenwald es una estación del sistema de transporte de Dallas.",
+    "h1": "Oakenwald — Streetcar | Dallas",
+    "intro": "Oakenwald es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Streetcar"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-beckley",
+    "nombre": "Beckley",
+    "linea": "Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "Beckley area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Beckley — Streetcar DART | Dallas Transit Guide",
+    "meta_description": "Beckley es una estación del sistema de transporte de Dallas.",
+    "h1": "Beckley — Streetcar | Dallas",
+    "intro": "Beckley es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Streetcar"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-6th-street",
+    "nombre": "6th Street",
+    "linea": "Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "residencial",
+    "pois": [
+      {
+        "nombre": "6th Street area",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "6th Street — Streetcar DART | Dallas Transit Guide",
+    "meta_description": "6th Street es una estación del sistema de transporte de Dallas.",
+    "h1": "6th Street — Streetcar | Dallas",
+    "intro": "6th Street es una estación del sistema de transporte de Dallas.",
+    "tips": [
+      "Estación Streetcar"
+    ],
+    "mundial_relevancia": "Sin relevancia directa FIFA.",
+    "descripcion_turistica": "Estación del sistema DART.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
+  },
+  {
+    "slug": "dallas-bishop-arts",
+    "nombre": "Bishop Arts",
+    "linea": "Streetcar",
+    "sistema": "dart-light-rail",
+    "ciudad": "Dallas",
+    "municipio": "Dallas",
+    "tipo_zona": "cultural-turistico",
+    "pois": [
+      {
+        "nombre": "Bishop Arts District",
+        "tipo": "cultural-turistico",
+        "distancia": "1 min caminando"
+      }
+    ],
+    "transferencias": [],
+    "seo_title": "Bishop Arts — Streetcar DART | Dallas Transit Guide",
+    "meta_description": "Bishop Arts es la terminal del Dallas Streetcar — barrio bohemio con galerías, vintage y restaurantes.",
+    "h1": "Bishop Arts — Streetcar | Dallas",
+    "intro": "Bishop Arts es la terminal del Dallas Streetcar — barrio bohemio con galerías, vintage y restaurantes.",
+    "tips": [
+      "Barrio bohemio imprescindible",
+      "Streetcar GRATUITO desde Union Station",
+      "Galerías y murales",
+      "Mejor de día/tarde"
+    ],
+    "mundial_relevancia": "RECOMENDADO para turistas FIFA. Experiencia cultural auténtica.",
+    "descripcion_turistica": "Barrio más auténtico de Dallas: galerías, murales, tiendas vintage, cervecerías.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación accesible ADA"
+    },
+    "horarios": {
+      "apertura": "05:00 AM",
+      "cierre": "00:30 AM",
+      "frecuencia": "15 min pico, 30 min fuera de pico"
+    }
   }
 ];
 
-export const estacionesDAL = estacionesDallas;
+export { estacionesDallas as estacionesDAL };

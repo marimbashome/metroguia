@@ -5080,15 +5080,32 @@ export const rutasPopulares = [
   { origen: "kc-westport", destino: "kc-armour", titulo: "Westport to Armour/Midtown", connector: "to" },
   { origen: "kc-union-hill", destino: "kc-5th-broadway", titulo: "Union Hill to 5th & Broadway", connector: "to" },
 
-  // Toronto — Union Station, Bloor-Yonge, Spadina, GO Transit
+  // Toronto — TTC Subway (Lines 1, 2, 4) + UP Express + GO Transit (82 stations)
+  // Airport connections
+  { origen: "toronto-pearson-airport", destino: "toronto-union-station", titulo: "Pearson Airport to Union Station (UP Express, 25 min)", connector: "to" },
+  { origen: "toronto-pearson-airport", destino: "toronto-bloor-yonge", titulo: "Pearson Airport to Bloor-Yonge (UP Express + Subway)", connector: "to" },
+  { origen: "toronto-pearson-airport", destino: "toronto-dundas", titulo: "Pearson Airport to Eaton Centre (UP Express + Subway)", connector: "to" },
+  // Key tourist routes
+  { origen: "toronto-union-station", destino: "toronto-dundas", titulo: "CN Tower to Eaton Centre (Subway Line 1)", connector: "to" },
+  { origen: "toronto-bloor-yonge", destino: "toronto-broadview", titulo: "Yorkville to Greektown / Distillery District (Line 2)", connector: "to" },
+  { origen: "toronto-union-station", destino: "toronto-kennedy", titulo: "Union Station to Scarborough (Line 1 + Line 2)", connector: "to" },
+  { origen: "toronto-spadina-l2", destino: "toronto-high-park", titulo: "Kensington Market to High Park (Line 2)", connector: "to" },
+  { origen: "toronto-museum", destino: "toronto-st-patrick", titulo: "Royal Ontario Museum to Art Gallery of Ontario", connector: "to" },
+  // Downtown core
   { origen: "toronto-union-station", destino: "toronto-bloor-yonge", titulo: "Union Station to Bloor-Yonge (Subway Hub)", connector: "to" },
-  { origen: "toronto-union-go-transit", destino: "toronto-exhibition-go", titulo: "Union GO Transit to Exhibition (GO Train)", connector: "to" },
-  { origen: "toronto-st-george", destino: "toronto-spadina", titulo: "St. George to Spadina (Downtown)", connector: "to" },
-  { origen: "toronto-queen", destino: "toronto-king", titulo: "Queen to King Station (Financial District)", connector: "to" },
-  { origen: "toronto-bloor-danforth", destino: "toronto-main-street-l2", titulo: "Bloor-Danforth to Main Street (Line 2)", connector: "to" },
-  { origen: "toronto-vaughan-mc", destino: "toronto-finch", titulo: "Vaughan Metropolitan Centre to Finch", connector: "to" },
-  { origen: "toronto-high-park", destino: "toronto-bathurst-l2", titulo: "High Park to Bathurst", connector: "to" },
-  { origen: "toronto-dundas", destino: "toronto-don-mills", titulo: "Dundas to Don Mills Station", connector: "to" },
+  { origen: "toronto-queen", destino: "toronto-king", titulo: "Queen Street to Financial District (Line 1)", connector: "to" },
+  { origen: "toronto-dundas", destino: "toronto-queen", titulo: "Eaton Centre to Queen Street West", connector: "to" },
+  { origen: "toronto-st-george", destino: "toronto-museum", titulo: "University of Toronto to ROM (Line 1)", connector: "to" },
+  // Cross-system transfers
+  { origen: "toronto-union-station", destino: "toronto-exhibition-go", titulo: "Union Station to Exhibition Place / BMO Field (GO Transit)", connector: "to" },
+  { origen: "toronto-union-station", destino: "toronto-oakville-go", titulo: "Union Station to Oakville (GO Lakeshore West)", connector: "to" },
+  { origen: "toronto-dundas-west", destino: "toronto-pearson-airport", titulo: "Dundas West to Pearson Airport (UP Express)", connector: "to" },
+  // Suburban & regional
+  { origen: "toronto-vaughan-mc", destino: "toronto-finch", titulo: "Vaughan Metropolitan Centre to Finch (Line 1)", connector: "to" },
+  { origen: "toronto-kipling", destino: "toronto-kennedy", titulo: "Kipling to Kennedy (Line 2 end-to-end)", connector: "to" },
+  { origen: "toronto-sheppard-yonge", destino: "toronto-don-mills", titulo: "Sheppard-Yonge to Don Mills (Line 4)", connector: "to" },
+  { origen: "toronto-union-station", destino: "toronto-oshawa-go", titulo: "Union Station to Oshawa (GO Lakeshore East)", connector: "to" },
+  { origen: "toronto-high-park", destino: "toronto-ossington", titulo: "High Park to Ossington Strip (nightlife)", connector: "to" },
 
   // Vancouver — SkyTrain (Expo, Millennium, Canada Lines), SeaBus, West Coast Express
   // Airport & Downtown
