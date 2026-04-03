@@ -283,12 +283,6 @@ export default function SeattlePage() {
                   border: '1px solid var(--border)',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.12)';
-                  e.currentTarget.style.borderColor = '#0066CC';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = 'var(--border)';
                 }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#0066CC' }}>
                     {estacion.nombre}
@@ -334,10 +328,6 @@ export default function SeattlePage() {
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                }} onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                }} onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <div style={{
