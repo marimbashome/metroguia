@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasDallas } from '@/data/dallas/lineas-detalle';
 import { estacionesDallas } from '@/data/dallas/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesDallas.filter(e =>
 );
 
 export default function DallasPage() {
+  const cityConfig = CITIES_CONFIG.dallas;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

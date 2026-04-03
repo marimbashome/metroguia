@@ -526,5 +526,441 @@ export const estacionesKansasCity = [
       "cierre": "Según horarios de partidos",
       "frecuencia": "Cada 20 min (ConnectKC26 Stadium Direct)"
     }
+  },
+  {
+    "slug": "kc-southmoreland",
+    "nombre": "Southmoreland (43rd & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "cultural-residencial",
+    "pois": [
+      {
+        "nombre": "Nelson-Atkins Museum of Art",
+        "tipo": "cultural",
+        "distancia": "5 min caminando"
+      },
+      {
+        "nombre": "Kemper Museum of Contemporary Art",
+        "tipo": "cultural",
+        "distancia": "3 min caminando"
+      },
+      {
+        "nombre": "Southmoreland Park",
+        "tipo": "parque",
+        "distancia": "2 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "UMKC", "tiempo": "4 min" },
+      { "linea": "Main", "destino": "Westport", "tiempo": "3 min" }
+    ],
+    "seo_title": "Southmoreland Station — Nelson-Atkins Museum | Kansas City",
+    "meta_description": "Southmoreland, estación KC Streetcar junto al Nelson-Atkins Museum of Art. Zona cultural y residencial. GRATIS.",
+    "h1": "Southmoreland — Zona de Museos | Kansas City",
+    "intro": "Southmoreland es la parada cultural de KC Streetcar, a pasos del icónico Nelson-Atkins Museum of Art y el Kemper Museum of Contemporary Art.",
+    "tips": [
+      "Nelson-Atkins Museum: entrada GRATIS, colección de clase mundial",
+      "Kemper Museum también gratuito",
+      "Southmoreland Park ideal para descansar entre museos",
+      "Barrio residencial tranquilo con arquitectura histórica"
+    ],
+    "mundial_relevancia": "Zona cultural. Museos de clase mundial accesibles gratis por KC Streetcar.",
+    "descripcion_turistica": "Southmoreland es el corazón del distrito de museos de Kansas City, hogar del Nelson-Atkins y el Kemper Museum.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle, accesible"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-armour",
+    "nombre": "Armour (35th & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "residencial-comercial",
+    "pois": [
+      {
+        "nombre": "Armour Boulevard Historic District",
+        "tipo": "historico",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Midtown KC",
+        "tipo": "comercial",
+        "distancia": "2 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "Westport", "tiempo": "2 min" },
+      { "linea": "Main", "destino": "Union Hill", "tiempo": "2 min" }
+    ],
+    "seo_title": "Armour Station — Midtown Kansas City",
+    "meta_description": "Armour, estación KC Streetcar en Midtown KC. Distrito histórico con arquitectura de principios de siglo XX. GRATIS.",
+    "h1": "Armour — Midtown Histórico | Kansas City",
+    "intro": "Armour Boulevard es una de las avenidas históricas más emblemáticas de Kansas City, con mansiones de principios del siglo XX.",
+    "tips": [
+      "Arquitectura histórica de mansiones y apartamentos",
+      "Midtown KC con restaurantes locales",
+      "Conexión rápida a Westport y Union Station",
+      "Zona residencial tranquila"
+    ],
+    "mundial_relevancia": "Parada intermedia en ruta Main Line. Zona residencial con opciones de hospedaje.",
+    "descripcion_turistica": "Armour Boulevard es un bulevar histórico de Kansas City con arquitectura residencial elegante del siglo XX.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-union-hill",
+    "nombre": "Union Hill (31st & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "residencial-medico",
+    "pois": [
+      {
+        "nombre": "Union Hill Neighborhood",
+        "tipo": "residencial",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Children's Mercy Hospital",
+        "tipo": "medico",
+        "distancia": "5 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "Armour", "tiempo": "2 min" },
+      { "linea": "Main", "destino": "Union Station", "tiempo": "3 min" }
+    ],
+    "seo_title": "Union Hill Station — Barrio residencial Kansas City",
+    "meta_description": "Union Hill, estación KC Streetcar. Barrio residencial a minutos de Union Station y Crown Center. GRATIS.",
+    "h1": "Union Hill — Barrio Residencial | Kansas City",
+    "intro": "Union Hill es un barrio residencial con fácil acceso a Union Station y Crown Center vía KC Streetcar.",
+    "tips": [
+      "Barrio residencial tranquilo",
+      "A 3 minutos de Union Station",
+      "Cerca de Children's Mercy Hospital",
+      "Opciones de hospedaje económicas"
+    ],
+    "mundial_relevancia": "Parada residencial. A 3 min de Union Station, hub de FIFA shuttles.",
+    "descripcion_turistica": "Union Hill es un barrio residencial histórico de Kansas City con vistas panorámicas del downtown.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-kauffman-center",
+    "nombre": "Kauffman Center (16th & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "cultural-entretenimiento",
+    "pois": [
+      {
+        "nombre": "Kauffman Center for the Performing Arts",
+        "tipo": "cultural",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Sprint Center / T-Mobile Center",
+        "tipo": "deportes-entretenimiento",
+        "distancia": "3 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "Crossroads", "tiempo": "2 min" },
+      { "linea": "Main", "destino": "Power & Light", "tiempo": "2 min" }
+    ],
+    "seo_title": "Kauffman Center Station — Performing Arts Kansas City",
+    "meta_description": "Kauffman Center, estación KC Streetcar junto al centro de artes escénicas. Ópera, sinfonía, ballet. GRATIS.",
+    "h1": "Kauffman Center — Artes Escénicas | Kansas City",
+    "intro": "El Kauffman Center for the Performing Arts es uno de los recintos culturales más espectaculares de USA, diseñado por Moshe Safdie.",
+    "tips": [
+      "Arquitectura icónica de Moshe Safdie",
+      "Kansas City Symphony y KC Ballet",
+      "T-Mobile Center para conciertos y deportes a 3 min",
+      "Vistas panorámicas del downtown desde la plaza"
+    ],
+    "mundial_relevancia": "Zona cultural de downtown. Posible sede de eventos culturales FIFA 2026.",
+    "descripcion_turistica": "El Kauffman Center es un ícono arquitectónico de Kansas City, hogar de la sinfonía, ópera y ballet.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle, accesible"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-city-market",
+    "nombre": "City Market (8th & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "comercial-historico",
+    "pois": [
+      {
+        "nombre": "Kansas City City Market",
+        "tipo": "mercado",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Arabia Steamboat Museum",
+        "tipo": "cultural-historico",
+        "distancia": "2 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "Crown Center", "tiempo": "1 min" },
+      { "linea": "Main", "destino": "River Market", "tiempo": "1 min" }
+    ],
+    "seo_title": "City Market Station — Mercado histórico Kansas City",
+    "meta_description": "City Market, estación KC Streetcar. Mercado desde 1857 con productos locales, restaurantes y Arabia Steamboat Museum. GRATIS.",
+    "h1": "City Market — Mercado Histórico | Kansas City",
+    "intro": "City Market opera desde 1857 como el mercado público más antiguo del Medio Oeste americano.",
+    "tips": [
+      "Mercado público más antiguo del Medio Oeste (desde 1857)",
+      "Arabia Steamboat Museum — tesoro hundido del río Missouri",
+      "Productos frescos, comida internacional",
+      "Sábados y domingos con más actividad"
+    ],
+    "mundial_relevancia": "Zona turística gastronómica. Ideal para visitantes FIFA entre partidos.",
+    "descripcion_turistica": "City Market es el corazón gastronómico de Kansas City, un mercado histórico con productos locales y el fascinante Arabia Steamboat Museum.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-union-hill-north",
+    "nombre": "Union Hill North (5th & Main)",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "gobierno-negocios",
+    "pois": [
+      {
+        "nombre": "Jackson County Courthouse",
+        "tipo": "gobierno",
+        "distancia": "2 min caminando"
+      },
+      {
+        "nombre": "Downtown Business District",
+        "tipo": "negocios",
+        "distancia": "Adyacente"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "River Market", "tiempo": "1 min" },
+      { "linea": "Main", "destino": "5th & Broadway", "tiempo": "1 min" }
+    ],
+    "seo_title": "Union Hill North Station — Downtown Kansas City",
+    "meta_description": "Union Hill North, estación KC Streetcar en downtown KC. Zona de gobierno y negocios. GRATIS.",
+    "h1": "Union Hill North — Downtown | Kansas City",
+    "intro": "Union Hill North conecta el corazón del distrito de negocios y gobierno de Kansas City.",
+    "tips": [
+      "Centro de negocios de KC",
+      "Jackson County Courthouse",
+      "Conexión rápida a River Market y 5th & Broadway",
+      "Zona segura con actividad diurna"
+    ],
+    "mundial_relevancia": "Parada downtown. Zona de negocios y servicios para visitantes.",
+    "descripcion_turistica": "Union Hill North es el centro administrativo y de negocios de Kansas City.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-5th-broadway",
+    "nombre": "5th & Broadway",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "gobierno-historico",
+    "pois": [
+      {
+        "nombre": "City Hall Kansas City",
+        "tipo": "gobierno",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Liberty Memorial / National WWI Museum",
+        "tipo": "cultural-historico",
+        "distancia": "8 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "Union Hill North", "tiempo": "1 min" },
+      { "linea": "Main", "destino": "Historic River Boulevard", "tiempo": "1 min" }
+    ],
+    "seo_title": "5th & Broadway Station — City Hall Kansas City",
+    "meta_description": "5th & Broadway, estación KC Streetcar junto a City Hall. Acceso a Liberty Memorial y National WWI Museum. GRATIS.",
+    "h1": "5th & Broadway — Centro Cívico | Kansas City",
+    "intro": "5th & Broadway es la parada del centro cívico de Kansas City, con acceso a City Hall y al National WWI Museum.",
+    "tips": [
+      "City Hall de Kansas City a 1 minuto",
+      "Liberty Memorial y National WWI Museum a 8 min caminando",
+      "Zona de gobierno y servicios",
+      "Arquitectura art deco de los edificios municipales"
+    ],
+    "mundial_relevancia": "Centro cívico. Liberty Memorial visible desde toda la ciudad.",
+    "descripcion_turistica": "5th & Broadway es el corazón cívico de Kansas City, con City Hall y acceso al impresionante National WWI Museum.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-historic-rbv",
+    "nombre": "Historic River Boulevard",
+    "linea": "Main",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "historico-residencial",
+    "pois": [
+      {
+        "nombre": "River Boulevard Historic District",
+        "tipo": "historico",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Quality Hill Neighborhood",
+        "tipo": "residencial",
+        "distancia": "3 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Main", "destino": "5th & Broadway", "tiempo": "1 min" }
+    ],
+    "seo_title": "Historic River Boulevard Station — Kansas City",
+    "meta_description": "Historic River Boulevard, terminal norte de KC Streetcar Main Line. Barrio histórico Quality Hill. GRATIS.",
+    "h1": "Historic River Boulevard — Terminal Norte | Kansas City",
+    "intro": "Historic River Boulevard es una de las paradas norteñas de Main Line, accediendo al barrio histórico de Quality Hill.",
+    "tips": [
+      "Quality Hill: barrio residencial exclusivo",
+      "Vistas del río Missouri",
+      "Arquitectura histórica victoriana",
+      "Parada tranquila, menos concurrida"
+    ],
+    "mundial_relevancia": "Parada residencial norte. Opciones de hospedaje tranquilo.",
+    "descripcion_turistica": "Historic River Boulevard da acceso al elegante barrio de Quality Hill con arquitectura victoriana y vistas del río Missouri.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Parada a nivel de calle"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 10 min"
+    }
+  },
+  {
+    "slug": "kc-riverfront-central",
+    "nombre": "Riverfront Central",
+    "linea": "Riverfront",
+    "sistema": "kc-streetcar",
+    "ciudad": "Kansas City",
+    "municipio": "Kansas City",
+    "tipo_zona": "recreacion-desarrollo",
+    "pois": [
+      {
+        "nombre": "Berkley Riverfront Park",
+        "tipo": "parque-recreacion",
+        "distancia": "Adyacente"
+      },
+      {
+        "nombre": "Missouri River Waterfront",
+        "tipo": "natural",
+        "distancia": "1 min caminando"
+      }
+    ],
+    "transferencias": [
+      { "linea": "Riverfront", "destino": "River Market", "tiempo": "5 min" },
+      { "linea": "Riverfront", "destino": "CPKC Stadium", "tiempo": "5 min" }
+    ],
+    "seo_title": "Riverfront Central Station — Berkley Riverfront Kansas City",
+    "meta_description": "Riverfront Central, estación KC Streetcar Riverfront Extension. Acceso a Berkley Riverfront Park y CPKC Stadium. Abre mayo 2026. GRATIS.",
+    "h1": "Riverfront Central — Extensión Riverfront | Kansas City",
+    "intro": "Riverfront Central es la parada intermedia de la extensión Riverfront del KC Streetcar, abriendo en mayo 2026 para FIFA 2026.",
+    "tips": [
+      "Extensión Riverfront abre mayo 2026",
+      "Berkley Riverfront Park con senderos y vistas del río",
+      "Parada intermedia entre River Market y CPKC Stadium",
+      "Zona en desarrollo con nuevos restaurantes y comercios"
+    ],
+    "mundial_relevancia": "NUEVA parada FIFA 2026. Riverfront Extension abre mayo 2026. Conexión River Market ↔ CPKC Stadium.",
+    "descripcion_turistica": "Riverfront Central es parte de la nueva extensión del KC Streetcar, conectando el río Missouri con CPKC Stadium.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Estación nueva, completamente accesible"
+    },
+    "horarios": {
+      "apertura": "05:30 AM",
+      "cierre": "23:30 PM",
+      "frecuencia": "Cada 15 min (extensión Riverfront)"
+    }
   }
 ];

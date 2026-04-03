@@ -1,5 +1,6 @@
 import { lineasLA as lineasLosAngeles } from '@/data/los-angeles/lineas-detalle';
 import { estacionesLA as estacionesLosAngeles } from '@/data/los-angeles/estaciones';
+import { CITIES_CONFIG } from '@/data/cities-config';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesLosAngeles.filter(e =>
 );
 
 export default function LAPage() {
+  const cityConfig = CITIES_CONFIG['los-angeles'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

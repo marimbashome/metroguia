@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasMiami } from '@/data/miami/lineas-detalle';
 import { estacionesMiami } from '@/data/miami/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesMiami.filter(e =>
 );
 
 export default function MiamiPage() {
+  const cityConfig = CITIES_CONFIG.miami;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasKansasCity } from '@/data/kansas-city/lineas-detalle';
 import { estacionesKansasCity } from '@/data/kansas-city/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesKansasCity.filter(e =>
 );
 
 export default function KansasCityPage() {
+  const cityConfig = CITIES_CONFIG['kansas-city'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

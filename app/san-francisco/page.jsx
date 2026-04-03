@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasSF } from '@/data/san-francisco/lineas-detalle';
 import { estacionesSF } from '@/data/san-francisco/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesSF.filter(e =>
 );
 
 export default function SanFranciscoPage() {
+  const cityConfig = CITIES_CONFIG['san-francisco'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

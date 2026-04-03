@@ -4983,15 +4983,19 @@ export const rutasPopulares = [
   { origen: "houston-magnolia-park-transit-center", destino: "houston-nrg-park", titulo: "Magnolia Park to NRG Park (Red Line)", connector: "to" },
   { origen: "houston-museum-district", destino: "houston-herman-park", titulo: "Museum of Fine Arts to Hermann Park", connector: "to" },
 
-  // Atlanta — Hartsfield-Jackson Airport, Downtown, Midtown, Buckhead
-  { origen: "atlanta-airport", destino: "atlanta-five-points", titulo: "Hartsfield-Jackson to Five Points Downtown", connector: "to" },
-  { origen: "atlanta-north-springs", destino: "atlanta-buckhead", titulo: "North Springs to Buckhead (Luxury Shopping)", connector: "to" },
-  { origen: "atlanta-midtown", destino: "atlanta-arts-center", titulo: "Midtown to Atlanta Arts Center", connector: "to" },
-  { origen: "atlanta-west-end", destino: "atlanta-civic-center", titulo: "West End to Civic Center", connector: "to" },
-  { origen: "atlanta-peachtree-center", destino: "atlanta-lindbergh", titulo: "Peachtree Center to Lindbergh (Downtown)", connector: "to" },
-  { origen: "atlanta-dunwoody", destino: "atlanta-medical-center", titulo: "Dunwoody to Medical Center", connector: "to" },
-  { origen: "atlanta-sandy-springs", destino: "atlanta-north-avenue", titulo: "Sandy Springs to North Avenue", connector: "to" },
-  { origen: "atlanta-lakewood-fort-mcpherson", destino: "atlanta-east-point", titulo: "Lakewood to East Point", connector: "to" },
+// Atlanta — Hartsfield-Jackson Airport, Downtown, Midtown, Buckhead, Mercedes-Benz Stadium (FIFA 2026)
+  { origen: "atlanta-airport", destino: "atlanta-five-points", titulo: "Hartsfield-Jackson Airport to Five Points Downtown (Main Tourist Route)", connector: "to" },
+  { origen: "atlanta-airport", destino: "atlanta-vine-city", titulo: "Airport to Vine City (Mercedes-Benz Stadium - FIFA Venue)", connector: "to" },
+  { origen: "atlanta-buckhead", destino: "atlanta-five-points", titulo: "Buckhead to Five Points (Shopping to Downtown)", connector: "to" },
+  { origen: "atlanta-five-points", destino: "atlanta-king-memorial", titulo: "Five Points to King Memorial (MLK Historic Site)", connector: "to" },
+  { origen: "atlanta-midtown", destino: "atlanta-arts-center", titulo: "Midtown to Arts Center (Cultural Corridor)", connector: "to" },
+  { origen: "atlanta-north-springs", destino: "atlanta-airport", titulo: "North Springs to Airport (Full Red Line End-to-End)", connector: "to" },
+  { origen: "atlanta-doraville", destino: "atlanta-five-points", titulo: "Doraville to Five Points (Gold Line to Downtown)", connector: "to" },
+  { origen: "atlanta-five-points", destino: "atlanta-vine-city", titulo: "Five Points to Vine City (Downtown to Mercedes-Benz Stadium)", connector: "to" },
+  { origen: "atlanta-decatur", destino: "atlanta-five-points", titulo: "Decatur to Five Points (East Atlanta to Downtown)", connector: "to" },
+  { origen: "atlanta-lindbergh", destino: "atlanta-buckhead", titulo: "Lindbergh to Buckhead (Midtown Shopping District)", connector: "to" },
+  { origen: "atlanta-five-points", destino: "atlanta-georgia-state", titulo: "Five Points to Georgia State (GSU Campus)", connector: "to" },
+  { origen: "atlanta-indian-creek", destino: "atlanta-five-points", titulo: "Indian Creek to Five Points (Blue Line East to Downtown)", connector: "to" },
 
   // Philadelphia — Center City, Market East, University City, NRG
 
@@ -5161,6 +5165,24 @@ export const rutasPopulares = [
   { origen: "nyc-times-sq-42-st", destino: "nyc-mets-willets-point", titulo: "Times Square a Citi Field Mets (NYC)" },
   { origen: "nyc-howard-beach-jfk-airport", destino: "nyc-34-st-penn-station", titulo: "JFK Airport a Penn Station (NYC)" },
   { origen: "nyc-astoria-ditmars-blvd", destino: "nyc-coney-island-stillwell-av", titulo: "Astoria a Coney Island (NYC)" },
+
+  // Portland — TriMet MAX + Streetcar
+  { origen: "portland-gateway-transit-center", destino: "portland-pioneer-courthouse", titulo: "PDX Airport Area to Downtown Portland", connector: "to" },
+  { origen: "portland-pioneer-courthouse", destino: "portland-providence-park", titulo: "Pioneer Square to Providence Park (Timbers)", connector: "to" },
+  { origen: "portland-streetcar-pearl-district", destino: "portland-streetcar-psu", titulo: "Pearl District to PSU (Streetcar)", connector: "to" },
+  { origen: "portland-pioneer-courthouse", destino: "portland-washington-park", titulo: "Downtown to Washington Park (Zoo, Trails)", connector: "to" },
+  { origen: "portland-old-town-chinatown", destino: "portland-lloyd-center", titulo: "Old Town to Lloyd Center (Shopping)", connector: "to" },
+  { origen: "portland-rose-quarter-transit-center", destino: "portland-expo-center", titulo: "Rose Quarter to Expo Center (Yellow Line)", connector: "to" },
+  { origen: "portland-pioneer-courthouse", destino: "portland-clackamas-town-center", titulo: "Downtown to Clackamas (Green Line)", connector: "to" },
+  { origen: "portland-streetcar-ns-omsi", destino: "portland-pioneer-courthouse", titulo: "OMSI to Pioneer Courthouse (Streetcar)", connector: "to" },
+
+  // Sacramento — SacRT Light Rail
+  { origen: "sacramento-sacramento-valley-station", destino: "sacramento-cathedral-square-13th", titulo: "Sacramento Valley Station to Capitol (Downtown)", connector: "to" },
+  { origen: "sacramento-watt-i80", destino: "sacramento-cosumnes-river-college", titulo: "Watt/I-80 to Cosumnes River College (Blue Line Full)", connector: "to" },
+  { origen: "sacramento-sacramento-valley-station", destino: "sacramento-historic-folsom", titulo: "Downtown to Historic Folsom (Gold Line)", connector: "to" },
+  { origen: "sacramento-16th-st", destino: "sacramento-29th-st", titulo: "Capitol to Midtown Sacramento", connector: "to" },
+  { origen: "sacramento-university-65th", destino: "sacramento-cathedral-square-13th", titulo: "Sac State to Capitol (Blue Line)", connector: "to" },
+  { origen: "sacramento-township-9", destino: "sacramento-sacramento-valley-station", titulo: "Township 9 to Old Sacramento (Green Line)", connector: "to" },
 ];
 
 

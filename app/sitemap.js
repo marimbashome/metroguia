@@ -68,6 +68,8 @@ import { estacionesDallas } from '@/data/dallas/estaciones';
 import { estacionesKansasCity } from '@/data/kansas-city/estaciones';
 import { estacionesToronto } from '@/data/toronto/estaciones';
 import { estacionesVancouver } from '@/data/vancouver/estaciones';
+import { estacionesPortland } from '@/data/portland/estaciones';
+import { estacionesSacramento } from '@/data/sacramento/estaciones';
 
 // Import line data for US/CA cities
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
@@ -83,6 +85,8 @@ import { lineasDallas } from '@/data/dallas/lineas-detalle';
 import { lineasKansasCity } from '@/data/kansas-city/lineas-detalle';
 import { lineasToronto } from '@/data/toronto/lineas-detalle';
 import { lineasVancouver } from '@/data/vancouver/lineas-detalle';
+import { lineasPortland } from '@/data/portland/lineas-detalle';
+import { lineasSacramento } from '@/data/sacramento/lineas-detalle';
 
 // US/CA zone (neighborhood) data
 import { zonasUSCA } from '@/data/zonas-us-ca';
@@ -237,7 +241,8 @@ function getCoreUrls() {
         'campeche','villahermosa'].map(c => entry(`/${c}/`, 'weekly', 0.9, 'core')),
     // US/CA city hub pages
     ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
-        'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'].map(c => 
+        'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver',
+        'portland','sacramento'].map(c =>
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
     // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
@@ -336,6 +341,12 @@ function getCitiesUrls() {
     // Vancouver
     ...mapEstacionesUSCA(estacionesVancouver, 'vancouver', 'cities'),
     ...mapLineasUSCA(lineasVancouver, 'vancouver', 'cities'),
+    // Portland
+    ...mapEstacionesUSCA(estacionesPortland, 'portland', 'cities'),
+    ...mapLineasUSCA(lineasPortland, 'portland', 'cities'),
+    // Sacramento
+    ...mapEstacionesUSCA(estacionesSacramento, 'sacramento', 'cities'),
+    ...mapLineasUSCA(lineasSacramento, 'sacramento', 'cities'),
   ];
   return urls;
 }
@@ -421,6 +432,10 @@ function getMundialUrls() {
     entry('/gdl/mundial-2026/', 'monthly', 0.9, 'mundial'),
     entry('/mty/mundial-2026/', 'monthly', 0.9, 'mundial'),
     entry('/mundial-2026/partidos/', 'weekly', 0.9, 'mundial'),
+    // USA/Canada city mundial-2026 pages
+    ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
+        'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'].map(c =>
+        entry(`/${c}/mundial-2026/`, 'monthly', 0.9, 'mundial')),
   ];
   // Individual match pages
   Object.entries(mundial2026.sedes).forEach(([cityKey, sede]) => {
@@ -472,6 +487,43 @@ function getI18nUrls() {
                           'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'];
   usCanadaCities.forEach(city => {
     urls.push(entry(`/es/${city}/`, 'weekly', 0.8, 'i18n'));
+  });
+
+  // US/CA 8 new cities: Spanish i18n for stations and lines
+  // Add Spanish alternates for station and line detail pages
+  const newUSCACities = ['houston','atlanta','philadelphia','seattle','san-francisco','boston','miami','dallas','kansas-city'];
+  const estStations = {
+    houston: estacionesHOU,
+    atlanta: estacionesAtlanta,
+    philadelphia: estacionesPhiladelphia,
+    seattle: estacionesSeattle,
+    'san-francisco': estacionesSF,
+    boston: estacionesBoston,
+    miami: estacionesMiami,
+    dallas: estacionesDallas,
+    'kansas-city': estacionesKansasCity,
+  };
+  const estLines = {
+    houston: lineasHOU,
+    atlanta: lineasAtlanta,
+    philadelphia: lineasPhiladelphia,
+    seattle: lineasSeattle,
+    'san-francisco': lineasSF,
+    boston: lineasBoston,
+    miami: lineasMiami,
+    dallas: lineasDallas,
+    'kansas-city': lineasKansasCity,
+  };
+
+  newUSCACities.forEach(city => {
+    // Spanish station pages
+    (estStations[city] || []).forEach(estacion => {
+      urls.push(entry(`/es/${city}/station/${estacion.slug}/`, 'monthly', 0.7, 'i18n'));
+    });
+    // Spanish line pages
+    (estLines[city] || []).forEach(linea => {
+      urls.push(entry(`/es/${city}/line/${linea.id}/`, 'monthly', 0.7, 'i18n'));
+    });
   });
 
   // US/CA zone pages: Spanish alternates

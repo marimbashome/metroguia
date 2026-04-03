@@ -1,5 +1,6 @@
 import { estacionesAtlanta } from '@/data/atlanta/estaciones';
 import { lineasAtlanta } from '@/data/atlanta/lineas-detalle';
+import { CITIES_CONFIG } from '@/data/cities-config';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
@@ -17,6 +18,7 @@ export const metadata = {
 };
 
 export default function AtlantaPage() {
+  const cityConfig = CITIES_CONFIG.atlanta;
   const lineasOrdenadas = lineasAtlanta.sort((a, b) => a.colorNombre.localeCompare(b.colorNombre));
 
   return (
@@ -85,14 +87,44 @@ export default function AtlantaPage() {
       <section style={{ maxWidth: '1200px', margin: '60px auto', padding: '0 24px' }}>
         <div style={{ backgroundColor: 'linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%)', backgroundImage: 'linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%)', borderRadius: 'var(--radius)', padding: '40px 24px', color: '#fff' }}>
           <h2 style={{ fontSize: '1.75rem', fontWeight: '800', margin: '0 0 16px 0' }}>
-            FIFA 2026 in Atlanta
+            ⚽ FIFA 2026: {cityConfig.stadium}
           </h2>
-          <p style={{ fontSize: '1rem', margin: '0 0 20px 0', opacity: '0.95', maxWidth: '600px', lineHeight: '1.6' }}>
-            Atlanta will host group stage matches at Mercedes-Benz Stadium during the 2026 FIFA World Cup. Use MARTA to reach the venue easily from downtown.
-          </p>
-          <p style={{ fontSize: '0.9rem', color: '#FFD700', fontWeight: '700', margin: '0' }}>
-            Mercedes-Benz Stadium: Downtown Atlanta via Georgia Dome/Philips Arena stations
-          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', marginTop: '24px' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px' }}>
+              <p style={{ fontSize: '0.8rem', color: '#FFD700', textTransform: 'uppercase', fontWeight: '700', margin: '0 0 8px 0', letterSpacing: '0.05em' }}>
+                Stadium
+              </p>
+              <p style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0', color: '#fff' }}>
+                {cityConfig.stadium}
+              </p>
+              <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)', margin: '4px 0 0 0' }}>
+                Capacity: {cityConfig.stadiumCapacity?.toLocaleString() || 'TBA'}
+              </p>
+            </div>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px' }}>
+              <p style={{ fontSize: '0.8rem', color: '#FFD700', textTransform: 'uppercase', fontWeight: '700', margin: '0 0 8px 0', letterSpacing: '0.05em' }}>
+                Round
+              </p>
+              <p style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0', color: '#fff' }}>
+                {cityConfig.fifaRound}
+              </p>
+            </div>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px' }}>
+              <p style={{ fontSize: '0.8rem', color: '#FFD700', textTransform: 'uppercase', fontWeight: '700', margin: '0 0 8px 0', letterSpacing: '0.05em' }}>
+                Transit
+              </p>
+              <p style={{ fontSize: '0.9rem', margin: '0', color: '#fff' }}>
+                {cityConfig.transitToStadium}
+              </p>
+            </div>
+          </div>
+          <div style={{ marginTop: '24px' }}>
+            <Link href={`/atlanta/mundial-2026/`} style={{ textDecoration: 'none' }}>
+              <span style={{ display: 'inline-block', backgroundColor: '#FFD700', color: '#1a472a', padding: '12px 24px', borderRadius: '6px', fontWeight: '700', fontSize: '0.9rem', cursor: 'pointer' }}>
+                View Atlanta FIFA 2026 Guide →
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 

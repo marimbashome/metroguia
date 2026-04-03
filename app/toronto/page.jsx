@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasTORONTO } from '@/data/toronto/lineas-detalle';
 import { estacionesTORONTO } from '@/data/toronto/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesTORONTO.filter(e =>
 );
 
 export default function TorontoPage() {
+  const cityConfig = CITIES_CONFIG.toronto;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

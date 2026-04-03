@@ -1,5 +1,6 @@
 import { lineasPhiladelphia } from '@/data/philadelphia/lineas-detalle';
 import { estacionesPhiladelphia } from '@/data/philadelphia/estaciones';
+import { CITIES_CONFIG } from '@/data/cities-config';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesPhiladelphia.filter(e =>
 );
 
 export default function PhiladelphiaPage() {
+  const cityConfig = CITIES_CONFIG.philadelphia;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

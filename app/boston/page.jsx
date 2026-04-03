@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasBoston } from '@/data/boston/lineas-detalle';
 import { estacionesBoston } from '@/data/boston/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesBoston.filter(e =>
 );
 
 export default function BostonPage() {
+  const cityConfig = CITIES_CONFIG.boston;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

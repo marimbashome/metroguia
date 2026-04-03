@@ -1,5 +1,6 @@
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
 import { estacionesNYC } from '@/data/nyc/estaciones';
+import { CITIES_CONFIG } from '@/data/cities-config';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesNYC.filter(e =>
 );
 
 export default function NYCPage() {
+  const cityConfig = CITIES_CONFIG.nyc;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -207,13 +209,13 @@ export default function NYCPage() {
               letterSpacing: '-0.01em',
             }}
           >
-            ⚽ FIFA World Cup 2026 Final Host
+            ⚽ FIFA 2026: {cityConfig.stadium}
           </h2>
           <p
             style={{
               fontSize: '1.125rem',
               textAlign: 'center',
-              marginBottom: '48px',
+              marginBottom: '24px',
               color: 'var(--text-muted)',
               fontWeight: '400',
               maxWidth: '600px',
@@ -221,7 +223,7 @@ export default function NYCPage() {
               marginRight: 'auto',
             }}
           >
-            USA is the final host nation. MetroGuia guides you to every stadium and terminal.
+            USA is the final host nation. NYC hosting multiple matches at MetLife Stadium.
           </p>
 
           <div
@@ -233,50 +235,54 @@ export default function NYCPage() {
               marginBottom: '32px',
             }}
           >
-            <h3
-              style={{
-                fontSize: '1.5rem',
-                fontWeight: '700',
-                margin: '0 0 24px 0',
-                textAlign: 'center',
-                color: 'var(--text)',
-              }}
-            >
-              NYC Hosting Multiple Matches
-            </h3>
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                gap: '16px',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '24px',
               }}
             >
               <div
                 style={{
                   backgroundColor: 'var(--bg)',
-                  padding: '16px',
-                  borderRadius: '6px',
-                  borderLeft: '3px solid #EE352E',
-                  textAlign: 'center',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid #EE352E',
                 }}
               >
-                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Group Stage</p>
-                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>MetLife Stadium</p>
-                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>East Rutherford, NJ</p>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 8px 0', fontWeight: '600', letterSpacing: '0.05em' }}>Stadium</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>{cityConfig.stadium}</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>Capacity: {cityConfig.stadiumCapacity?.toLocaleString()}</p>
               </div>
               <div
                 style={{
                   backgroundColor: 'var(--bg)',
-                  padding: '16px',
-                  borderRadius: '6px',
-                  borderLeft: '3px solid #EE352E',
-                  textAlign: 'center',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid #EE352E',
                 }}
               >
-                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Multiple Matches</p>
-                <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>4 Matches Min</p>
-                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>Via MTA Subway</p>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 8px 0', fontWeight: '600', letterSpacing: '0.05em' }}>Round</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>{cityConfig.fifaRound}</p>
               </div>
+              <div
+                style={{
+                  backgroundColor: 'var(--bg)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid #EE352E',
+                }}
+              >
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 8px 0', fontWeight: '600', letterSpacing: '0.05em' }}>Transit</p>
+                <p style={{ fontSize: '0.9rem', margin: '0', color: 'var(--text)' }}>{cityConfig.transitToStadium}</p>
+              </div>
+            </div>
+            <div style={{ marginTop: '24px' }}>
+              <Link href={`/nyc/mundial-2026/`} style={{ textDecoration: 'none' }}>
+                <span style={{ display: 'inline-block', backgroundColor: '#EE352E', color: '#fff', padding: '12px 24px', borderRadius: '6px', fontWeight: '700', fontSize: '0.9rem', cursor: 'pointer' }}>
+                  View NYC FIFA 2026 Guide →
+                </span>
+              </Link>
             </div>
           </div>
 

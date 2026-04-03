@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasVANCOUVER } from '@/data/vancouver/lineas-detalle';
 import { estacionesVANCOUVER } from '@/data/vancouver/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesVANCOUVER.filter(e =>
 );
 
 export default function VancouverPage() {
+  const cityConfig = CITIES_CONFIG.vancouver;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

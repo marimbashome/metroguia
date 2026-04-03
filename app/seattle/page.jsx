@@ -1,3 +1,4 @@
+import { CITIES_CONFIG } from '@/data/cities-config';
 import { lineasSeattle } from '@/data/seattle/lineas-detalle';
 import { estacionesSeattle } from '@/data/seattle/estaciones';
 import Link from 'next/link';
@@ -27,6 +28,7 @@ const estacionesDestacadas = estacionesSeattle.filter(e =>
 );
 
 export default function SeattlePage() {
+  const cityConfig = CITIES_CONFIG.seattle;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

@@ -2177,5 +2177,153 @@ export const zonasUSCA = [
     seo_title: "North Shore Mountains Vancouver — Hiking & Skiing",
     meta_description: "Vancouver North Shore. Mountains, hiking, skiing, scenic views. Vancouver outdoors guide.",
     h1: "North Shore Mountains Vancouver: Outdoor Recreation"
+  },
+
+  // ===== PORTLAND =====
+  {
+    slug: "pearl-district-portland",
+    name: "Pearl District",
+    city: "Portland",
+    country: "USA",
+    description: "Portland's trendiest neighborhood, converted from old warehouses into art galleries, boutiques, restaurants, and breweries. Home to Powell's City of Books, the world's largest independent bookstore.",
+    stations: ["portland-nw-11th-johnson", "portland-nw-lovejoy-21st"],
+    main_station: "portland-nw-11th-johnson",
+    transit_systems: ["Portland Streetcar"],
+    transit_lines: ["a-loop", "b-loop", "ns-line"],
+    type: "urban",
+    pois: [
+      { name: "Powell's City of Books", type: "cultural", distance: "3 min walking" },
+      { name: "Jamison Square", type: "park", distance: "2 min walking" },
+      { name: "Lan Su Chinese Garden", type: "garden", distance: "5 min walking" },
+      { name: "Portland Saturday Market", type: "market", distance: "7 min walking" }
+    ],
+    tips_for_visitors: [
+      "Powell's Books is free to browse and takes hours to explore",
+      "Great brewery density — 10 Barrel, Deschutes, and BridgePort are walkable",
+      "First Thursday art walks are free monthly gallery events",
+      "Streetcar A-Loop connects the Pearl to downtown and South Waterfront"
+    ],
+    fifa_2026_relevance: null,
+    coordinates: { lat: 45.5285, lng: -122.6812 },
+    seo_title: "Pearl District Portland — Transit & Neighborhood Guide | MetroGuia",
+    meta_description: "How to get to Portland's Pearl District by Streetcar and MAX. Powell's Books, breweries, galleries. Portland transit guide.",
+    h1: "Pearl District Portland: Breweries, Books & Art"
+  },
+  {
+    slug: "downtown-portland",
+    name: "Downtown Portland",
+    city: "Portland",
+    country: "USA",
+    description: "The heart of Portland centered around Pioneer Courthouse Square. Shopping, dining, cultural venues, and the transit hub where all MAX lines converge.",
+    stations: ["portland-pioneer-courthouse", "portland-library", "portland-pioneer-place"],
+    main_station: "portland-pioneer-courthouse",
+    transit_systems: ["TriMet MAX", "Portland Streetcar"],
+    transit_lines: ["blue", "red", "green", "yellow", "orange"],
+    type: "urban",
+    pois: [
+      { name: "Pioneer Courthouse Square", type: "landmark", distance: "Adjacent" },
+      { name: "Portland Art Museum", type: "museum", distance: "3 min walking" },
+      { name: "Director Park", type: "park", distance: "2 min walking" },
+      { name: "Arlene Schnitzer Concert Hall", type: "entertainment", distance: "4 min walking" }
+    ],
+    tips_for_visitors: [
+      "Pioneer Courthouse Square is called 'Portland's living room' — great people-watching",
+      "All MAX lines stop here, making it the easiest transfer point",
+      "Food carts are everywhere — try Alder Street food cart pod",
+      "The Portland Art Museum has free admission on first Thursdays"
+    ],
+    fifa_2026_relevance: null,
+    coordinates: { lat: 45.5189, lng: -122.6793 },
+    seo_title: "Downtown Portland — Transit Hub & Guide | MetroGuia",
+    meta_description: "Downtown Portland transit guide. Pioneer Courthouse Square, all MAX lines, shopping and dining. Portland visitor guide.",
+    h1: "Downtown Portland: Transit Hub & City Center"
+  },
+  {
+    slug: "hawthorne-portland",
+    name: "Hawthorne District",
+    city: "Portland",
+    country: "USA",
+    description: "Portland's bohemian heart on the east side. Vintage shops, independent bookstores, eclectic restaurants, and the iconic Bagdad Theater. A walkable strip with strong local character.",
+    stations: ["portland-omsi-se-water"],
+    main_station: "portland-omsi-se-water",
+    transit_systems: ["TriMet MAX"],
+    transit_lines: ["orange"],
+    type: "urban",
+    pois: [
+      { name: "Bagdad Theater & Pub", type: "entertainment", distance: "10 min walking" },
+      { name: "OMSI (Oregon Museum of Science)", type: "museum", distance: "5 min walking" },
+      { name: "Hawthorne Bridge", type: "landmark", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Walk east on Hawthorne Blvd from OMSI for vintage shops and cafés",
+      "Bagdad Theater serves beer and pizza during movies",
+      "OMSI is excellent for families — plan at least 3 hours",
+      "Orange Line from downtown gets you to OMSI in 5 minutes"
+    ],
+    fifa_2026_relevance: null,
+    coordinates: { lat: 45.5120, lng: -122.6577 },
+    seo_title: "Hawthorne District Portland — Transit Guide | MetroGuia",
+    meta_description: "How to get to Portland's Hawthorne District by MAX Orange Line. OMSI, vintage shops, Bagdad Theater. Portland neighborhood guide.",
+    h1: "Hawthorne District Portland: Bohemian East Side"
+  },
+
+  // ===== SACRAMENTO =====
+  {
+    slug: "old-sacramento",
+    name: "Old Sacramento",
+    city: "Sacramento",
+    country: "USA",
+    description: "Historic waterfront district along the Sacramento River with wooden sidewalks, Gold Rush-era buildings, museums, and riverboat cruises. The California State Railroad Museum anchors this walkable, family-friendly area.",
+    stations: ["sacramento-sacramento-valley"],
+    main_station: "sacramento-sacramento-valley",
+    transit_systems: ["SacRT Light Rail"],
+    transit_lines: ["gold", "green"],
+    type: "historic",
+    pois: [
+      { name: "California State Railroad Museum", type: "museum", distance: "5 min walking" },
+      { name: "Sacramento River waterfront", type: "nature", distance: "3 min walking" },
+      { name: "Old Sacramento Schoolhouse Museum", type: "museum", distance: "4 min walking" },
+      { name: "Delta King riverboat", type: "landmark", distance: "6 min walking" }
+    ],
+    tips_for_visitors: [
+      "Sacramento Valley Station (Gold/Green lines) is the closest SacRT stop",
+      "Railroad Museum is a must-see — allow 2-3 hours",
+      "Free walking tours on weekends during summer",
+      "Waterfront restaurants have excellent river views at sunset"
+    ],
+    fifa_2026_relevance: null,
+    coordinates: { lat: 38.5834, lng: -121.5046 },
+    seo_title: "Old Sacramento — Light Rail Transit Guide | MetroGuia",
+    meta_description: "How to get to Old Sacramento by SacRT Light Rail. Railroad Museum, Gold Rush history, river waterfront. Sacramento transit guide.",
+    h1: "Old Sacramento: Gold Rush History by Light Rail"
+  },
+  {
+    slug: "midtown-sacramento",
+    name: "Midtown Sacramento",
+    city: "Sacramento",
+    country: "USA",
+    description: "Sacramento's cultural and nightlife district between the Capitol and East Sacramento. Tree-lined streets with art galleries, craft breweries, farm-to-fork restaurants, and a vibrant Second Saturday art walk.",
+    stations: ["sacramento-16th-st", "sacramento-23rd-st", "sacramento-29th-st"],
+    main_station: "sacramento-16th-st",
+    transit_systems: ["SacRT Light Rail"],
+    transit_lines: ["blue"],
+    type: "urban",
+    pois: [
+      { name: "Crocker Art Museum", type: "museum", distance: "8 min walking" },
+      { name: "Capitol Mall", type: "landmark", distance: "5 min walking" },
+      { name: "Handle District restaurants", type: "dining", distance: "3 min walking" },
+      { name: "Sacramento Convention Center", type: "venue", distance: "4 min walking" }
+    ],
+    tips_for_visitors: [
+      "16th St station puts you right at the edge of Midtown",
+      "Second Saturday art walk (monthly) is free and very popular",
+      "Sacramento is the 'Farm-to-Fork Capital' — restaurants here showcase that",
+      "Tree canopy makes walking pleasant even in summer heat"
+    ],
+    fifa_2026_relevance: null,
+    coordinates: { lat: 38.5762, lng: -121.4826 },
+    seo_title: "Midtown Sacramento — Light Rail Guide | MetroGuia",
+    meta_description: "How to get to Midtown Sacramento by SacRT Blue Line. Farm-to-fork dining, art galleries, nightlife. Sacramento transit guide.",
+    h1: "Midtown Sacramento: Culture & Farm-to-Fork Dining"
   }
 ]
