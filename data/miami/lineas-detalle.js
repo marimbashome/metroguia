@@ -5,31 +5,31 @@ export const lineasMiami = [
     colorNombre: "Verde",
     inicio: "Palmetto",
     fin: "Dadeland South",
-    total: 23,
+    total: 22,
     municipios: ["Miami", "Kendall"],
-    descripcion: "La Línea Verde es la línea más larga del Miami Metrorail. Conecta Palmetto en el norte con Dadeland South en el sur. 23 estaciones atravesando North Miami, Downtown Miami, Brickell, y South Miami. Pasa por Government Center, Brickell, Coconut Grove, y Dadeland.",
+    descripcion: "La Línea Verde es la línea más larga del Miami Metrorail. Conecta Palmetto en el norte con Dadeland South en el sur. 22 estaciones atravesando North Miami, Downtown Miami, Brickell, y South Miami. Pasa por Government Center, Brickell, Coconut Grove, y Dadeland.",
     estaciones_turisticas: ["miami-government-center", "miami-brickell", "miami-coconut-grove", "miami-dadeland-north"],
     estaciones: [
-      "palmetto",
-      "okeechobee",
-      "hialeah",
-      "tri-rail",
-      "northside",
-      "mlk-plaza",
-      "brownsville",
-      "earlington-heights",
-      "allapattah",
-      "santa-clara",
+      "miami-palmetto",
+      "miami-okeechobee",
+      "miami-hialeah",
+      "miami-tri-rail-transfer",
+      "miami-northside",
+      "miami-mlk-plaza",
+      "miami-brownsville",
+      "miami-earlington-heights",
+      "miami-allapattah",
+      "miami-santa-clara",
       "miami-civic-center",
-      "culmer",
-      "historic-overtown",
+      "miami-culmer",
+      "miami-historic-overtown",
       "miami-government-center",
       "miami-brickell",
-      "vizcaya",
+      "miami-vizcaya",
       "miami-coconut-grove",
-      "douglas-road",
+      "miami-douglas-road",
       "miami-university",
-      "south-miami",
+      "miami-south-miami",
       "miami-dadeland-north",
       "miami-dadeland-south"
     ],
@@ -72,19 +72,19 @@ export const lineasMiami = [
     estaciones_turisticas: ["miami-miami-airport", "miami-government-center", "miami-brickell", "miami-dadeland-south"],
     estaciones: [
       "miami-miami-airport",
-      "earlington-heights",
-      "allapattah",
-      "santa-clara",
+      "miami-earlington-heights",
+      "miami-allapattah",
+      "miami-santa-clara",
       "miami-civic-center",
-      "culmer",
-      "historic-overtown",
+      "miami-culmer",
+      "miami-historic-overtown",
       "miami-government-center",
       "miami-brickell",
-      "vizcaya",
+      "miami-vizcaya",
       "miami-coconut-grove",
-      "douglas-road",
+      "miami-douglas-road",
       "miami-university",
-      "south-miami",
+      "miami-south-miami",
       "miami-dadeland-north",
       "miami-dadeland-south"
     ],
@@ -117,14 +117,15 @@ export const lineasMiami = [
     colorNombre: "Rojo",
     inicio: "Omni",
     fin: "Omni",
-    total: 3,
+    total: 4,
     municipios: ["Miami"],
-    descripcion: "Circuito Omni del Miami Metromover. Servicio COMPLETAMENTE GRATIS. 3 estaciones en el circuito: Omni, Government Center, Adrienne Arsht Center. Viajes cortos y rápidos entre North Miami y Downtown.",
+    descripcion: "Circuito Omni del Miami Metromover. Servicio COMPLETAMENTE GRATIS. 4 estaciones en el circuito: Omni, School Board, Adrienne Arsht Center, y Government Center. Viajes cortos y rápidos entre North Miami y Downtown.",
     estaciones_turisticas: ["miami-metromover-omni"],
     estaciones: [
       "miami-metromover-omni",
-      "miami-government-center",
-      "adrienne-arsht"
+      "miami-metromover-school-board",
+      "miami-metromover-adrienne-arsht",
+      "miami-government-center"
     ],
     ruta_1_dia: {
       titulo: "Ruta de 1 día por Omni Loop: GRATIS Metromover",
@@ -138,7 +139,7 @@ export const lineasMiami = [
           actividad: "Circuito completo y transbordo a Metrorail (11:30 AM)"
         },
         {
-          estacion: "adrienne-arsht",
+          estacion: "miami-metromover-adrienne-arsht",
           actividad: "Adrienne Arsht Center artes (2:00 PM)"
         }
       ],
@@ -149,19 +150,22 @@ export const lineasMiami = [
     id: "Inner-Loop",
     color: "#0066FF",
     colorNombre: "Azul",
-    inicio: "Financial District",
-    fin: "Financial District",
-    total: 6,
+    inicio: "Freedom Tower",
+    fin: "Brickell",
+    total: 9,
     municipios: ["Miami"],
-    descripcion: "Circuito Inner Loop del Miami Metromover. Servicio COMPLETAMENTE GRATIS. Conecta Financial District, Brickell, Museum Park, Adrienne Arsht Center, y Freedom Tower. 6 estaciones en circuito. Transporte rápido entre Downtown Miami.",
+    descripcion: "Circuito Inner Loop del Miami Metromover. Servicio COMPLETAMENTE GRATIS. Conecta Freedom Tower, Adrienne Arsht Center, Government Center, College/Bayside, Bayfront Park, Knight Center, Financial District, Museum Park, y Brickell. 9 estaciones en circuito. Transporte rápido entre Downtown Miami.",
     estaciones_turisticas: ["miami-metromover-brickell", "miami-metromover-museum-park"],
     estaciones: [
-      "financial-district",
-      "miami-metromover-brickell",
+      "miami-metromover-freedom-tower",
+      "miami-metromover-adrienne-arsht",
+      "miami-government-center",
+      "miami-metromover-college-bayside",
+      "miami-metromover-bayfront-park",
+      "miami-metromover-knight-center",
+      "miami-metromover-financial-district",
       "miami-metromover-museum-park",
-      "adrienne-arsht",
-      "freedom-tower",
-      "financial-district"
+      "miami-metromover-brickell"
     ],
     ruta_1_dia: {
       titulo: "Ruta de 1 día por Inner Loop: Downtown GRATIS",
@@ -175,11 +179,11 @@ export const lineasMiami = [
           actividad: "Museum Park y Vizcaya (12:00 PM)"
         },
         {
-          estacion: "adrienne-arsht",
+          estacion: "miami-metromover-adrienne-arsht",
           actividad: "Adrienne Arsht Center (2:00 PM)"
         },
         {
-          estacion: "freedom-tower",
+          estacion: "miami-metromover-freedom-tower",
           actividad: "Freedom Tower cultural (3:00 PM)"
         }
       ],
@@ -197,10 +201,10 @@ export const lineasMiami = [
     descripcion: "Circuito Brickell Loop del Miami Metromover. Servicio COMPLETAMENTE GRATIS. 4 estaciones dedicadas a Brickell Financial District. Viajes rápidos entre bancos, oficinas, y restaurantes de Brickell Avenue.",
     estaciones_turisticas: ["miami-metromover-brickell"],
     estaciones: [
-      "financial-district",
-      "miami-metromover-brickell",
-      "college-north",
-      "financial-district"
+      "miami-metromover-financial-district",
+      "miami-metromover-brickell-city-centre",
+      "miami-metromover-fifth-street",
+      "miami-metromover-brickell"
     ],
     ruta_1_dia: {
       titulo: "Ruta de 1 día por Brickell Loop: Financial District GRATIS",
@@ -210,15 +214,95 @@ export const lineasMiami = [
           actividad: "Brickell Avenue Financial District (9:00 AM)"
         },
         {
-          estacion: "financial-district",
+          estacion: "miami-metromover-financial-district",
           actividad: "Mary Brickell Village (10:00 AM)"
         },
         {
-          estacion: "college-north",
+          estacion: "miami-metromover-brickell-city-centre",
           actividad: "Restaurantes y bares de Brickell (12:00 PM)"
         }
       ],
       notas: "Brickell Loop es GRATIS. Perfecto para explorar el Financial District sin costo."
+    }
+  },
+  {
+    id: "Tri-Rail",
+    color: "#006B3F",
+    colorNombre: "Verde Oscuro",
+    inicio: "Miami Airport",
+    fin: "West Palm Beach",
+    total: 6,
+    municipios: ["Miami", "Hollywood", "Fort Lauderdale", "Boca Raton", "Delray Beach", "West Palm Beach"],
+    descripcion: "Tri-Rail es el tren de cercanías del sur de Florida. Conecta Miami International Airport con West Palm Beach, pasando por Hollywood, Fort Lauderdale, Boca Raton y Delray Beach. Tarifa $2.50-$8.75 USD según distancia. Frecuencia cada 20-60 minutos.",
+    estaciones_turisticas: ["miami-tri-rail-mia", "miami-tri-rail-fort-lauderdale", "miami-tri-rail-west-palm-beach"],
+    estaciones: [
+      "miami-tri-rail-mia",
+      "miami-tri-rail-hollywood",
+      "miami-tri-rail-fort-lauderdale",
+      "miami-tri-rail-boca-raton",
+      "miami-tri-rail-delray-beach",
+      "miami-tri-rail-west-palm-beach"
+    ],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día por Tri-Rail: Miami a Fort Lauderdale",
+      paradas: [
+        {
+          estacion: "miami-tri-rail-mia",
+          actividad: "Salida desde Miami Airport (8:00 AM)"
+        },
+        {
+          estacion: "miami-tri-rail-hollywood",
+          actividad: "Hollywood Beach paseo (10:00 AM)"
+        },
+        {
+          estacion: "miami-tri-rail-fort-lauderdale",
+          actividad: "Las Olas Blvd y riverwalk (12:00 PM)"
+        },
+        {
+          estacion: "miami-tri-rail-boca-raton",
+          actividad: "Mizner Park shopping (3:00 PM)"
+        }
+      ],
+      notas: "Tri-Rail es ideal para explorar South Florida fuera de Miami. Tarifa económica por zonas."
+    }
+  },
+  {
+    id: "Brightline",
+    color: "#FFD100",
+    colorNombre: "Amarillo Brightline",
+    inicio: "Miami",
+    fin: "Orlando",
+    total: 4,
+    municipios: ["Miami", "Fort Lauderdale", "West Palm Beach", "Orlando"],
+    descripcion: "Brightline (Virgin Trains USA) es el tren de alta velocidad privado de Florida. Conecta MiamiCentral con Orlando International Airport en ~3.5 horas, con paradas en Fort Lauderdale y West Palm Beach. Velocidad hasta 200 km/h. Tarifa $20-$79 USD. Servicio premium con WiFi, enchufes y snack bar.",
+    estaciones_turisticas: ["brightline-miami", "brightline-fort-lauderdale", "brightline-orlando"],
+    estaciones: [
+      "brightline-miami",
+      "brightline-fort-lauderdale",
+      "brightline-west-palm-beach",
+      "brightline-orlando"
+    ],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día por Brightline: Miami a Orlando",
+      paradas: [
+        {
+          estacion: "brightline-miami",
+          actividad: "Salida desde MiamiCentral downtown (7:00 AM)"
+        },
+        {
+          estacion: "brightline-fort-lauderdale",
+          actividad: "Fort Lauderdale Beach (9:00 AM — parada opcional)"
+        },
+        {
+          estacion: "brightline-west-palm-beach",
+          actividad: "Worth Avenue y Norton Museum (11:00 AM — parada opcional)"
+        },
+        {
+          estacion: "brightline-orlando",
+          actividad: "Orlando/Disney connection (12:30 PM)"
+        }
+      ],
+      notas: "Brightline es la forma más rápida de viajar entre Miami y Orlando sin auto. Reservar con anticipación para mejores precios. WiFi y enchufes en todos los asientos."
     }
   }
 ];

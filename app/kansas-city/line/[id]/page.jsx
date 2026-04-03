@@ -13,8 +13,8 @@ export async function generateMetadata({ params }) {
     return { title: 'Line not found', description: 'The requested line does not exist.' };
   }
   return {
-    title: linea.seo_title || `${linea.nombre} — Kansas City Streetcar`,
-    description: linea.meta_description || `${linea.nombre} guide for Kansas City Streetcar.`,
+    title: linea.seo_title || `${linea.colorNombre} — Kansas City Streetcar`,
+    description: linea.meta_description || `${linea.colorNombre} guide for Kansas City Streetcar.`,
     openGraph: {
       title: linea.seo_title,
       description: linea.meta_description,
@@ -52,7 +52,7 @@ export default function LineaKCPage({ params }) {
             </span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
-            {linea.nombre}
+            {linea.colorNombre}
           </h1>
           <p style={{ fontSize: '1.25rem', margin: '0 0 16px 0', opacity: '0.95' }}>
             {linea.inicio} → {linea.fin}
@@ -91,7 +91,7 @@ export default function LineaKCPage({ params }) {
             About This Line
           </h2>
           <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0 0 16px 0', lineHeight: '1.8' }}>
-            {linea.descripcion || `The ${linea.nombre} is a key part of Kansas City's modern streetcar system, serving the Midtown and Downtown areas.`}
+            {linea.descripcion || `The ${linea.colorNombre} is a key part of Kansas City's modern streetcar system, serving the Midtown and Downtown areas.`}
           </p>
         </div>
 

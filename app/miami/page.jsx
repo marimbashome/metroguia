@@ -308,7 +308,7 @@ export default function MiamiPage() {
                       </span>
                       <div>
                         <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
-                          Line {linea.id} — {linea.nombre}
+                          Line {linea.id} — {linea.colorNombre}
                         </h3>
                       </div>
                     </div>

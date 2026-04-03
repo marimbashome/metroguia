@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 export default function AtlantaPage() {
-  const lineasOrdenadas = lineasAtlanta.sort((a, b) => a.nombre.localeCompare(b.nombre));
+  const lineasOrdenadas = lineasAtlanta.sort((a, b) => a.colorNombre.localeCompare(b.colorNombre));
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
@@ -110,7 +110,7 @@ export default function AtlantaPage() {
                     {linea.id.charAt(0)}
                   </span>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: '800', margin: '0', color: 'var(--text)' }}>
-                    {linea.nombre}
+                    {linea.colorNombre}
                   </h3>
                 </div>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: '0 0 12px 0', fontWeight: '500' }}>

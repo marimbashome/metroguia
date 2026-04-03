@@ -61,7 +61,7 @@ export default function LineLA({ params }) {
             </span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
-            {linea.nombre}
+            {linea.colorNombre}
           </h1>
           <p style={{ fontSize: '1.25rem', margin: '0 0 16px 0', opacity: '0.95' }}>
             {linea.inicio} → {linea.fin}

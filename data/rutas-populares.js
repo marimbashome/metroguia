@@ -5025,15 +5025,36 @@ export const rutasPopulares = [
   { origen: "boston-downtown-crossing", destino: "boston-back-bay", titulo: "Downtown Crossing to Copley/Back Bay", connector: "to" },
   { origen: "boston-harvard", destino: "boston-mit-kendall", titulo: "Harvard Square to MIT", connector: "to" },
 
-  // Miami — Airport, Brickell, Downtown, Metromover
+  // Miami — Metrorail, Metromover, Tri-Rail, Brightline
+  // Metrorail core routes
   { origen: "miami-miami-airport", destino: "miami-brickell", titulo: "Miami Airport to Brickell Financial District", connector: "to" },
-  { origen: "miami-metromover-omni", destino: "miami-government-center", titulo: "Metromover Omni to Government Center", connector: "to" },
-  { origen: "miami-coconut-grove", destino: "miami-university", titulo: "Coconut Grove to University of Miami (Coral Gables)", connector: "to" },
-  { origen: "miami-civic-center", destino: "miami-metromover-museum-park", titulo: "Civic Center to Museum Park (Metromover)", connector: "to" },
-  { origen: "miami-dadeland-north", destino: "miami-dadeland-south", titulo: "Dadeland North to Dadeland South", connector: "to" },
+  { origen: "miami-miami-airport", destino: "miami-government-center", titulo: "Airport to Downtown Miami (Metrorail)", connector: "to" },
+  { origen: "miami-miami-airport", destino: "miami-dadeland-south", titulo: "Airport to Dadeland South (Orange Line)", connector: "to" },
   { origen: "miami-government-center", destino: "miami-brickell", titulo: "Government Center to Brickell", connector: "to" },
-  { origen: "miami-metromover-brickell", destino: "miami-civic-center", titulo: "Metromover Brickell Station Loop", connector: "to" },
-  { origen: "miami-miami-airport", destino: "miami-government-center", titulo: "Airport to Downtown (Mover-Rail)", connector: "to" },
+  { origen: "miami-palmetto", destino: "miami-dadeland-south", titulo: "Palmetto to Dadeland South (Full Green Line)", connector: "to" },
+  { origen: "miami-hialeah", destino: "miami-government-center", titulo: "Hialeah to Downtown Miami", connector: "to" },
+  { origen: "miami-coconut-grove", destino: "miami-university", titulo: "Coconut Grove to University of Miami (Coral Gables)", connector: "to" },
+  { origen: "miami-dadeland-north", destino: "miami-government-center", titulo: "Dadeland Mall to Downtown Miami", connector: "to" },
+  { origen: "miami-vizcaya", destino: "miami-government-center", titulo: "Vizcaya Museum to Downtown Miami", connector: "to" },
+  // Metromover (FREE) routes
+  { origen: "miami-metromover-omni", destino: "miami-government-center", titulo: "Metromover Omni to Government Center (FREE)", connector: "to" },
+  { origen: "miami-metromover-bayfront-park", destino: "miami-metromover-brickell", titulo: "Bayfront Park to Brickell (FREE Metromover)", connector: "to" },
+  { origen: "miami-metromover-freedom-tower", destino: "miami-metromover-museum-park", titulo: "Freedom Tower to Museum Park (FREE)", connector: "to" },
+  { origen: "miami-civic-center", destino: "miami-metromover-museum-park", titulo: "Civic Center to Museum Park (Metromover)", connector: "to" },
+  { origen: "miami-metromover-brickell-city-centre", destino: "miami-metromover-bayfront-park", titulo: "Brickell City Centre to Bayside Marketplace (FREE)", connector: "to" },
+  // Tri-Rail commuter routes
+  { origen: "miami-tri-rail-mia", destino: "miami-tri-rail-fort-lauderdale", titulo: "Miami to Fort Lauderdale (Tri-Rail)", connector: "to" },
+  { origen: "miami-tri-rail-mia", destino: "miami-tri-rail-west-palm-beach", titulo: "Miami to West Palm Beach (Tri-Rail)", connector: "to" },
+  { origen: "miami-tri-rail-fort-lauderdale", destino: "miami-tri-rail-boca-raton", titulo: "Fort Lauderdale to Boca Raton (Tri-Rail)", connector: "to" },
+  { origen: "miami-tri-rail-hollywood", destino: "miami-tri-rail-fort-lauderdale", titulo: "Hollywood to Fort Lauderdale (Tri-Rail)", connector: "to" },
+  // Brightline high-speed routes
+  { origen: "brightline-miami", destino: "brightline-fort-lauderdale", titulo: "Miami to Fort Lauderdale (Brightline Express)", connector: "to" },
+  { origen: "brightline-miami", destino: "brightline-orlando", titulo: "Miami to Orlando (Brightline High-Speed)", connector: "to" },
+  { origen: "brightline-fort-lauderdale", destino: "brightline-west-palm-beach", titulo: "Fort Lauderdale to West Palm Beach (Brightline)", connector: "to" },
+  { origen: "brightline-miami", destino: "brightline-west-palm-beach", titulo: "Miami to West Palm Beach (Brightline)", connector: "to" },
+  // Cross-system transfers
+  { origen: "miami-miami-airport", destino: "brightline-miami", titulo: "MIA Airport to MiamiCentral (Brightline)", connector: "to" },
+  { origen: "miami-tri-rail-mia", destino: "miami-miami-airport", titulo: "Tri-Rail Airport to Metrorail Airport", connector: "to" },
 
   // Dallas — Union Station, Downtown, Arts District, Fair Park
   { origen: "dallas-union-station", destino: "downtown-dallas", titulo: "Union Station to Downtown Dallas", connector: "to" },
@@ -5065,15 +5086,35 @@ export const rutasPopulares = [
   { origen: "toronto-high-park", destino: "toronto-bathurst-l2", titulo: "High Park to Bathurst", connector: "to" },
   { origen: "toronto-dundas", destino: "toronto-don-mills", titulo: "Dundas to Don Mills Station", connector: "to" },
 
-  // Vancouver — SkyTrain, SeaBus, Canada Line Connections
+  // Vancouver — SkyTrain (Expo, Millennium, Canada Lines), SeaBus, West Coast Express
+  // Airport & Downtown
+  { origen: "vancouver-yvr-airport", destino: "vancouver-waterfront", titulo: "YVR Airport to Downtown Vancouver (Waterfront)", connector: "to" },
+  { origen: "vancouver-yvr-airport", destino: "vancouver-vancouver-city-centre", titulo: "YVR Airport to Vancouver City Centre", connector: "to" },
+  { origen: "vancouver-yvr-airport", destino: "vancouver-stadium-chinatown", titulo: "YVR Airport to BC Place (Stadium-Chinatown)", connector: "to" },
+  // Downtown core
   { origen: "vancouver-waterfront", destino: "vancouver-granville", titulo: "Waterfront to Granville (Downtown)", connector: "to" },
-  { origen: "vancouver-yvr-airport", destino: "vancouver-waterfront", titulo: "YVR Airport to Waterfront Station", connector: "to" },
-  { origen: "vancouver-burrard", destino: "vancouver-metrotown", titulo: "Burrard to Metrotown", connector: "to" },
+  { origen: "vancouver-granville", destino: "vancouver-stadium-chinatown", titulo: "Granville to Stadium-Chinatown (BC Place)", connector: "to" },
+  { origen: "vancouver-waterfront", destino: "vancouver-lonsdale-quay", titulo: "Waterfront to Lonsdale Quay (SeaBus)", connector: "to" },
+  // Tourist routes (requested)
+  { origen: "vancouver-waterfront", destino: "vancouver-yaletown-roundhouse", titulo: "Waterfront to Yaletown-Roundhouse", connector: "to" },
+  { origen: "vancouver-metrotown", destino: "vancouver-waterfront", titulo: "Metrotown to Waterfront (Downtown)", connector: "to" },
+  { origen: "vancouver-olympic-village", destino: "vancouver-main-street-science-world", titulo: "Olympic Village to Science World", connector: "to" },
+  // Cross-system
+  { origen: "vancouver-burrard", destino: "vancouver-metrotown", titulo: "Burrard to Metrotown (Metropolis Mall)", connector: "to" },
   { origen: "vancouver-stadium-chinatown", destino: "vancouver-commercial-broadway", titulo: "Stadium-Chinatown to Commercial-Broadway", connector: "to" },
-  { origen: "vancouver-main-street-science-world", destino: "vancouver-king-george", titulo: "Main Street (Science World) to King George", connector: "to" },
-  { origen: "vancouver-vcc-clark", destino: "vancouver-lafarge-lake-douglas", titulo: "VCC-Clark to LaFarge Lake-Douglas", connector: "to" },
+  { origen: "vancouver-main-street-science-world", destino: "vancouver-king-george", titulo: "Main Street (Science World) to King George (Surrey)", connector: "to" },
+  { origen: "vancouver-vcc-clark", destino: "vancouver-lafarge-lake-douglas", titulo: "VCC-Clark to Lafarge Lake-Douglas (Millennium Line)", connector: "to" },
   { origen: "vancouver-richmond-brighouse", destino: "vancouver-waterfront", titulo: "Richmond-Brighouse to Waterfront (Canada Line)", connector: "to" },
-  { origen: "vancouver-granville", destino: "vancouver-burrard", titulo: "Granville to Burrard (Downtown Loop)", connector: "to" },
+  // Millennium Line highlights
+  { origen: "vancouver-commercial-broadway", destino: "vancouver-brentwood-town-centre", titulo: "Commercial-Broadway to Brentwood Town Centre", connector: "to" },
+  { origen: "vancouver-commercial-broadway", destino: "vancouver-moody-centre", titulo: "Commercial-Broadway to Moody Centre (Breweries)", connector: "to" },
+  { origen: "vancouver-lougheed-town-centre", destino: "vancouver-coquitlam-central", titulo: "Lougheed to Coquitlam Central", connector: "to" },
+  // Canada Line Richmond
+  { origen: "vancouver-aberdeen", destino: "vancouver-vancouver-city-centre", titulo: "Aberdeen (Richmond) to Vancouver City Centre", connector: "to" },
+  { origen: "vancouver-bridgeport", destino: "vancouver-yvr-airport", titulo: "Bridgeport to YVR Airport", connector: "to" },
+  // Surrey
+  { origen: "vancouver-surrey-central", destino: "vancouver-waterfront", titulo: "Surrey Central to Waterfront (Downtown)", connector: "to" },
+  { origen: "vancouver-king-george", destino: "vancouver-stadium-chinatown", titulo: "King George to BC Place (Stadium-Chinatown)", connector: "to" },
 
 
   // === PHILADELPHIA SEPTA ROUTES ===

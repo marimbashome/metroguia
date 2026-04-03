@@ -1,628 +1,923 @@
 /**
  * Grafo de transporte público de Dallas (DFW) para MetroGuia.mx
- * Sistema DART: Red Line (20 est) + Blue Line (18 est) + Green Line (18 est) + Orange Line (16 est) + TRE (6 est)
- *
- * 54 nodos totales (incluyendo conexiones TRE)
- * Red: 20 estaciones | Blue: 18 estaciones | Green: 18 estaciones | Orange: 16 estaciones
- * Trinity Railway Express (TRE): 6 paradas principales
- *
- * Estructura de nodo:
- * {
- *   ciudad: 'dallas',
- *   nombre: string,
- *   lineas: string[],
- *   adyacentes: [{ slug, tiempo (minutos), linea, tipo ('dart-light-rail' | 'tre' | 'transbordo') }]
- * }
+ * 
+ * Sistema de transporte integrado:
+ * - RED LINE: 26 estaciones (norte a sur, Plano → Westmoreland)
+ * - BLUE LINE: 23 estaciones (Rowlett/Garland → UNT Dallas)
+ * - GREEN LINE: 24 estaciones (Buckner → North Carrollton/Frankford)
+ * - ORANGE LINE: 31 estaciones (compartidas Red/Green + Irving → DFW)
+ * - TRE: 10 estaciones (Union Station → T&P Station, Fort Worth)
+ * - DALLAS STREETCAR: 6 paradas (Union Station → Bishop Arts)
+ * 
+ * Total de nodos únicos: 94
+ * Total de conexiones: ~180+ aristas bidireccionales
+ * 
+ * Convenciones:
+ * - Tiempo DART: 2-3 min entre estaciones
+ * - Tiempo TRE: 5-12 min entre estaciones
+ * - Tiempo Streetcar: 3-4 min entre paradas
+ * - Transbordos en misma estación: tiempo 0, tipo 'transbordo'
  */
 
 export const grafoDallas = {
-  // ============================================
-  // RED LINE (Roja) - 20 estaciones
-  // ============================================
+  // ============================================================================
+  // RED LINE (26 stations, Parker Road → Westmoreland)
+  // ============================================================================
+
   'dallas-parker-road': {
-    ciudad: 'dallas',
+    ciudad: 'Plano',
     nombre: 'Parker Road',
-    lineas: ['red', 'orange'],
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'dalworthington-gardens', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'arlington-center', tiempo: 3, linea: 'orange', tipo: 'transbordo' },
-    ]
+      { slug: 'dallas-downtown-plano', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-downtown-plano', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'dalworthington-gardens': {
-    ciudad: 'dallas',
-    nombre: 'Dalworthington Gardens',
-    lineas: ['red'],
+
+  'dallas-downtown-plano': {
+    ciudad: 'Plano',
+    nombre: 'Downtown Plano',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'dallas-parker-road', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'vitruvian-park', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-parker-road', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-parker-road', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-12th-street', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-12th-street', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'vitruvian-park': {
-    ciudad: 'dallas',
-    nombre: 'Vitruvian Park',
-    lineas: ['red'],
+
+  'dallas-12th-street': {
+    ciudad: 'Plano',
+    nombre: '12th Street',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'dalworthington-gardens', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'addison', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-downtown-plano', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-downtown-plano', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityline-bush', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityline-bush', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'addison': {
-    ciudad: 'dallas',
-    nombre: 'Addison',
-    lineas: ['red'],
+
+  'dallas-cityline-bush': {
+    ciudad: 'Richardson',
+    nombre: 'CityLine/Bush',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'vitruvian-park', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'valley-view', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-12th-street', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-12th-street', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-galatyn-park', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-galatyn-park', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'valley-view': {
-    ciudad: 'dallas',
-    nombre: 'Valley View',
-    lineas: ['red'],
+
+  'dallas-galatyn-park': {
+    ciudad: 'Richardson',
+    nombre: 'Galatyn Park',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'addison', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'dallas-cityplace-uptown', tiempo: 4, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-cityline-bush', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityline-bush', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-arapaho-center', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-arapaho-center', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'dallas-cityplace-uptown': {
-    ciudad: 'dallas',
-    nombre: 'Cityplace/Uptown',
-    lineas: ['red', 'green'],
+
+  'dallas-arapaho-center': {
+    ciudad: 'Richardson',
+    nombre: 'Arapaho Center',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'valley-view', tiempo: 4, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'mckinney', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'gowan', tiempo: 5, linea: 'green', tipo: 'transbordo' },
-    ]
+      { slug: 'dallas-galatyn-park', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-galatyn-park', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-spring-valley', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-spring-valley', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'mckinney': {
-    ciudad: 'dallas',
-    nombre: 'McKinney',
-    lineas: ['red'],
+
+  'dallas-spring-valley': {
+    ciudad: 'Dallas',
+    nombre: 'Spring Valley',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'pearl-arts-district', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-arapaho-center', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-arapaho-center', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lbj-central', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lbj-central', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'pearl-arts-district': {
-    ciudad: 'dallas',
-    nombre: 'Pearl/Arts District',
-    lineas: ['red', 'blue'],
+
+  'dallas-lbj-central': {
+    ciudad: 'Dallas',
+    nombre: 'LBJ/Central',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'mckinney', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'downtown-dallas', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'st-paul', tiempo: 2, linea: 'blue', tipo: 'transbordo' },
-    ]
+      { slug: 'dallas-spring-valley', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-spring-valley', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-forest-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-forest-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'downtown-dallas': {
-    ciudad: 'dallas',
-    nombre: 'Downtown Dallas',
-    lineas: ['red', 'blue'],
-    adyacentes: [
-      { slug: 'pearl-arts-district', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'dallas-union-station', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'akard', tiempo: 2, linea: 'blue', tipo: 'transbordo' },
-    ]
-  },
-  'dallas-union-station': {
-    ciudad: 'dallas',
-    nombre: 'Union Station',
-    lineas: ['red', 'blue', 'tre'],
-    adyacentes: [
-      { slug: 'downtown-dallas', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'east-12th', tiempo: 4, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'dallas-west-end', tiempo: 3, linea: 'blue', tipo: 'transbordo' },
-      { slug: 'ebj-union-station', tiempo: 0, linea: 'tre', tipo: 'transbordo' },
-      { slug: 'centreport-dfw', tiempo: 30, linea: 'tre', tipo: 'tre' },
-    ]
-  },
-  'east-12th': {
-    ciudad: 'dallas',
-    nombre: 'East 12th',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'dallas-union-station', tiempo: 4, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'oak-cliff', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'oak-cliff': {
-    ciudad: 'dallas',
-    nombre: 'Oak Cliff',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'east-12th', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: '12th-corinth', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  '12th-corinth': {
-    ciudad: 'dallas',
-    nombre: '12th Corinth',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'oak-cliff', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'continental', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'continental': {
-    ciudad: 'dallas',
-    nombre: 'Continental',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: '12th-corinth', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'marsalis', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'marsalis': {
-    ciudad: 'dallas',
-    nombre: 'Marsalis',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'continental', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'buckner', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'buckner': {
-    ciudad: 'dallas',
-    nombre: 'Buckner',
-    lineas: ['red', 'green'],
-    adyacentes: [
-      { slug: 'marsalis', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'forest-lane', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'lake-june', tiempo: 2, linea: 'green', tipo: 'transbordo' },
-    ]
-  },
-  'forest-lane': {
-    ciudad: 'dallas',
+
+  'dallas-forest-lane': {
+    ciudad: 'Dallas',
     nombre: 'Forest Lane',
-    lineas: ['red'],
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'buckner', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'lake-june', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'lake-june': {
-    ciudad: 'dallas',
-    nombre: 'Lake June',
-    lineas: ['red', 'green'],
-    adyacentes: [
-      { slug: 'forest-lane', tiempo: 3, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'westmoreland-station', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'buckner', tiempo: 2, linea: 'green', tipo: 'transbordo' },
-    ]
-  },
-  'westmoreland-station': {
-    ciudad: 'dallas',
-    nombre: 'Westmoreland Station',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'lake-june', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-      { slug: 'westmoreland', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
-  },
-  'westmoreland': {
-    ciudad: 'dallas',
-    nombre: 'Westmoreland',
-    lineas: ['red'],
-    adyacentes: [
-      { slug: 'westmoreland-station', tiempo: 2, linea: 'red', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-lbj-central', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lbj-central', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-walnut-hill', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-walnut-hill', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
 
-  // ============================================
-  // BLUE LINE (Azul) - 18 estaciones
-  // ============================================
-  'downtown-rowlett': {
-    ciudad: 'dallas',
-    nombre: 'Downtown Rowlett',
-    lineas: ['blue'],
+  'dallas-walnut-hill': {
+    ciudad: 'Dallas',
+    nombre: 'Walnut Hill',
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'rowlett-lakepoint', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'rowlett-lakepoint': {
-    ciudad: 'dallas',
-    nombre: 'Rowlett Lakepoint',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'downtown-rowlett', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'rowlett-lake', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'rowlett-lake': {
-    ciudad: 'dallas',
-    nombre: 'Rowlett Lake',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'rowlett-lakepoint', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'eastfield-college', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'eastfield-college': {
-    ciudad: 'dallas',
-    nombre: 'Eastfield College',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'rowlett-lake', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'lakewood', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'lakewood': {
-    ciudad: 'dallas',
-    nombre: 'Lakewood',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'eastfield-college', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'white-rock', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'white-rock': {
-    ciudad: 'dallas',
-    nombre: 'White Rock',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'lakewood', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'deep-ellum', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'deep-ellum': {
-    ciudad: 'dallas',
-    nombre: 'Deep Ellum',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'white-rock', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'fair-park', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'fair-park': {
-    ciudad: 'dallas',
-    nombre: 'Fair Park',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'deep-ellum', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'pearl-arts-district', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'st-paul': {
-    ciudad: 'dallas',
-    nombre: 'St. Paul',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'pearl-arts-district', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'akard', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'akard': {
-    ciudad: 'dallas',
-    nombre: 'Akard',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'st-paul', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'dallas-west-end', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'dallas-west-end': {
-    ciudad: 'dallas',
-    nombre: 'West End',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'akard', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'ebj-union-station', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'ebj-union-station': {
-    ciudad: 'dallas',
-    nombre: 'EBJ Union Station',
-    lineas: ['blue', 'tre'],
-    adyacentes: [
-      { slug: 'dallas-west-end', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'high-school', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'dallas-union-station', tiempo: 0, linea: 'tre', tipo: 'transbordo' },
-    ]
-  },
-  'high-school': {
-    ciudad: 'dallas',
-    nombre: 'High School',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'ebj-union-station', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'plaza', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'plaza': {
-    ciudad: 'dallas',
-    nombre: 'Plaza',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'high-school', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'unt-dallas', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'unt-dallas': {
-    ciudad: 'dallas',
-    nombre: 'UNT Dallas',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'plaza', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'market-center', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'market-center': {
-    ciudad: 'dallas',
-    nombre: 'Market Center',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'unt-dallas', tiempo: 3, linea: 'blue', tipo: 'dart-light-rail' },
-      { slug: 'lamar-street', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
-  },
-  'lamar-street': {
-    ciudad: 'dallas',
-    nombre: 'Lamar Street',
-    lineas: ['blue'],
-    adyacentes: [
-      { slug: 'market-center', tiempo: 2, linea: 'blue', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-forest-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-forest-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-park-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-park-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
 
-  // ============================================
-  // GREEN LINE (Verde) - 18 estaciones
-  // ============================================
-  'north-carrollton-frankford': {
-    ciudad: 'dallas',
-    nombre: 'North Carrollton/Frankford',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'frankford', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'frankford': {
-    ciudad: 'dallas',
-    nombre: 'Frankford',
-    lineas: ['green', 'red'],
-    adyacentes: [
-      { slug: 'north-carrollton-frankford', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'forest-lane', tiempo: 3, linea: 'red', tipo: 'transbordo' },
-      { slug: 'farmers-branch', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'farmers-branch': {
-    ciudad: 'dallas',
-    nombre: 'Farmers Branch',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'frankford', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'carrollton', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'carrollton': {
-    ciudad: 'dallas',
-    nombre: 'Carrollton',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'farmers-branch', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'downtown-carrollton', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'downtown-carrollton': {
-    ciudad: 'dallas',
-    nombre: 'Downtown Carrollton',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'carrollton', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'inwood', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'inwood': {
-    ciudad: 'dallas',
-    nombre: 'Inwood',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'downtown-carrollton', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'bachman', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'bachman': {
-    ciudad: 'dallas',
-    nombre: 'Bachman',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'inwood', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'park-lane', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'park-lane': {
-    ciudad: 'dallas',
+  'dallas-park-lane': {
+    ciudad: 'Dallas',
     nombre: 'Park Lane',
-    lineas: ['green'],
+    lineas: ['Red', 'Orange'],
     adyacentes: [
-      { slug: 'bachman', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'ledbetter', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-walnut-hill', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-walnut-hill', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lovers-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lovers-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
-  'ledbetter': {
-    ciudad: 'dallas',
+
+  'dallas-lovers-lane': {
+    ciudad: 'Dallas',
+    nombre: 'Lovers Lane',
+    lineas: ['Red', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-park-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-park-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-smu-mockingbird', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-smu-mockingbird', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // Shared stations (Red, Blue, Orange)
+  'dallas-smu-mockingbird': {
+    ciudad: 'Dallas',
+    nombre: 'SMU/Mockingbird',
+    lineas: ['Red', 'Blue', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-lovers-lane', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lovers-lane', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-white-rock', tiempo: 3, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      // Transbordo con Blue
+      { slug: 'dallas-white-rock', tiempo: 0, linea: 'Blue', tipo: 'transbordo' },
+    ],
+  },
+
+  'dallas-cityplace-uptown': {
+    ciudad: 'Dallas',
+    nombre: 'Cityplace/Uptown',
+    lineas: ['Red', 'Blue', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-smu-mockingbird', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-smu-mockingbird', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-smu-mockingbird', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // Shared stations (all lines: Red, Blue, Green, Orange)
+  'dallas-pearl-arts-district': {
+    ciudad: 'Dallas',
+    nombre: 'Pearl/Arts District',
+    lineas: ['Red', 'Blue', 'Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cityplace-uptown', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-deep-ellum', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-st-paul': {
+    ciudad: 'Dallas',
+    nombre: 'St. Paul',
+    lineas: ['Red', 'Blue', 'Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-akard': {
+    ciudad: 'Dallas',
+    nombre: 'Akard',
+    lineas: ['Red', 'Blue', 'Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-st-paul', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-west-end': {
+    ciudad: 'Dallas',
+    nombre: 'West End',
+    lineas: ['Red', 'Blue', 'Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-union-station', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-union-station', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-union-station', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-akard', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-victory', tiempo: 3, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // Shared stations (Red, Blue, TRE, Streetcar)
+  'dallas-union-station': {
+    ciudad: 'Dallas',
+    nombre: 'Union Station',
+    lineas: ['Red', 'Blue', 'TRE', 'Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-convention-center', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-convention-center', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-victory', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-greenbriar', tiempo: 3, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
+
+  'dallas-convention-center': {
+    ciudad: 'Dallas',
+    nombre: 'Convention Center',
+    lineas: ['Red', 'Blue'],
+    adyacentes: [
+      { slug: 'dallas-union-station', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cedars', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-union-station', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cedars', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-cedars': {
+    ciudad: 'Dallas',
+    nombre: 'Cedars',
+    lineas: ['Red', 'Blue'],
+    adyacentes: [
+      { slug: 'dallas-convention-center', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-8th-corinth', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-convention-center', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-8th-corinth', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-8th-corinth': {
+    ciudad: 'Dallas',
+    nombre: '8th & Corinth',
+    lineas: ['Red', 'Blue'],
+    adyacentes: [
+      { slug: 'dallas-cedars', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-dallas-zoo', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-cedars', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-morrell', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-dallas-zoo': {
+    ciudad: 'Dallas',
+    nombre: 'Dallas Zoo',
+    lineas: ['Red'],
+    adyacentes: [
+      { slug: 'dallas-8th-corinth', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-tyler-vernon', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-tyler-vernon': {
+    ciudad: 'Dallas',
+    nombre: 'Tyler/Vernon',
+    lineas: ['Red'],
+    adyacentes: [
+      { slug: 'dallas-dallas-zoo', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-hampton', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-hampton': {
+    ciudad: 'Dallas',
+    nombre: 'Hampton',
+    lineas: ['Red'],
+    adyacentes: [
+      { slug: 'dallas-tyler-vernon', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+      { slug: 'dallas-westmoreland', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-westmoreland': {
+    ciudad: 'Dallas',
+    nombre: 'Westmoreland',
+    lineas: ['Red'],
+    adyacentes: [
+      { slug: 'dallas-hampton', tiempo: 2, linea: 'Red', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // ============================================================================
+  // BLUE LINE (23 stations, Downtown Rowlett → UNT Dallas)
+  // ============================================================================
+
+  'dallas-downtown-rowlett': {
+    ciudad: 'Rowlett',
+    nombre: 'Downtown Rowlett',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-downtown-garland', tiempo: 3, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-downtown-garland': {
+    ciudad: 'Garland',
+    nombre: 'Downtown Garland',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-downtown-rowlett', tiempo: 3, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-forest-jupiter', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-forest-jupiter': {
+    ciudad: 'Garland',
+    nombre: 'Forest/Jupiter',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-downtown-garland', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lbj-skillman', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-lbj-skillman': {
+    ciudad: 'Dallas',
+    nombre: 'LBJ/Skillman',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-forest-jupiter', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lake-highlands', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-lake-highlands': {
+    ciudad: 'Dallas',
+    nombre: 'Lake Highlands',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-lbj-skillman', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-white-rock', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-white-rock': {
+    ciudad: 'Dallas',
+    nombre: 'White Rock',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-lake-highlands', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-smu-mockingbird', tiempo: 3, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-morrell': {
+    ciudad: 'Dallas',
+    nombre: 'Morrell',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-8th-corinth', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-illinois', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-illinois': {
+    ciudad: 'Dallas',
+    nombre: 'Illinois',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-morrell', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-kiest', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-kiest': {
+    ciudad: 'Dallas',
+    nombre: 'Kiest',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-illinois', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-va-medical-center', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-va-medical-center': {
+    ciudad: 'Dallas',
+    nombre: 'VA Medical Center',
+    lineas: ['Blue'],
+    adyacentes: [
+      { slug: 'dallas-kiest', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-ledbetter', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-ledbetter': {
+    ciudad: 'Dallas',
     nombre: 'Ledbetter',
-    lineas: ['green'],
+    lineas: ['Blue'],
     adyacentes: [
-      { slug: 'park-lane', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'dallas-cityplace-uptown', tiempo: 5, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'gowan': {
-    ciudad: 'dallas',
-    nombre: 'Gowan',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'dallas-cityplace-uptown', tiempo: 5, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'abrams', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'abrams': {
-    ciudad: 'dallas',
-    nombre: 'Abrams',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'gowan', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'pleasant-grove', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'pleasant-grove': {
-    ciudad: 'dallas',
-    nombre: 'Pleasant Grove',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'abrams', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'south-hines', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-    ]
-  },
-  'south-hines': {
-    ciudad: 'dallas',
-    nombre: 'South Hines',
-    lineas: ['green'],
-    adyacentes: [
-      { slug: 'pleasant-grove', tiempo: 3, linea: 'green', tipo: 'dart-light-rail' },
-      { slug: 'buckner', tiempo: 2, linea: 'green', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-va-medical-center', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-camp-wisdom', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
   },
 
-  // ============================================
-  // ORANGE LINE (Naranja) - 16 estaciones
-  // ============================================
-  'dallas-dfw-airport': {
-    ciudad: 'dallas',
-    nombre: 'DFW Airport',
-    lineas: ['orange'],
+  'dallas-camp-wisdom': {
+    ciudad: 'Dallas',
+    nombre: 'Camp Wisdom',
+    lineas: ['Blue'],
     adyacentes: [
-      { slug: 'dfw-airport-terminal-c', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-ledbetter', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+      { slug: 'dallas-unt-dallas', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
   },
-  'dfw-airport-terminal-c': {
-    ciudad: 'dallas',
-    nombre: 'DFW Airport Terminal C',
-    lineas: ['orange'],
+
+  'dallas-unt-dallas': {
+    ciudad: 'Dallas',
+    nombre: 'UNT Dallas',
+    lineas: ['Blue'],
     adyacentes: [
-      { slug: 'dallas-dfw-airport', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'dfw-airport-terminal-e', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-camp-wisdom', tiempo: 2, linea: 'Blue', tipo: 'dart-light-rail' },
+    ],
   },
-  'dfw-airport-terminal-e': {
-    ciudad: 'dallas',
-    nombre: 'DFW Airport Terminal E',
-    lineas: ['orange'],
+
+  // ============================================================================
+  // GREEN LINE (24 stations, Buckner → North Carrollton/Frankford)
+  // ============================================================================
+
+  'dallas-buckner': {
+    ciudad: 'Dallas',
+    nombre: 'Buckner',
+    lineas: ['Green'],
     adyacentes: [
-      { slug: 'dfw-airport-terminal-c', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-convention-center', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-lake-june', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
   },
-  'irving-convention-center': {
-    ciudad: 'dallas',
+
+  'dallas-lake-june': {
+    ciudad: 'Dallas',
+    nombre: 'Lake June',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-buckner', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-lawnview', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-lawnview': {
+    ciudad: 'Dallas',
+    nombre: 'Lawnview',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-lake-june', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-hatcher', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-hatcher': {
+    ciudad: 'Dallas',
+    nombre: 'Hatcher',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-lawnview', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-mlk-jr', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-mlk-jr': {
+    ciudad: 'Dallas',
+    nombre: 'MLK Jr.',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-hatcher', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-fair-park', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-fair-park': {
+    ciudad: 'Dallas',
+    nombre: 'Fair Park',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-mlk-jr', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-baylor-university-medical', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-baylor-university-medical': {
+    ciudad: 'Dallas',
+    nombre: 'Baylor University Medical Center',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-fair-park', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-deep-ellum', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-deep-ellum': {
+    ciudad: 'Dallas',
+    nombre: 'Deep Ellum',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-baylor-university-medical', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-pearl-arts-district', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // Green continues from pearl-arts-district (shared)
+  // After west-end, Green goes to victory (while Orange also goes to victory but then to Market Center)
+
+  'dallas-victory': {
+    ciudad: 'Dallas',
+    nombre: 'Victory',
+    lineas: ['Green', 'Orange', 'TRE'],
+    adyacentes: [
+      { slug: 'dallas-west-end', tiempo: 3, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-market-center', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-west-end', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-market-center', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-union-station', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-tre-medical-market-center', tiempo: 2, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-market-center': {
+    ciudad: 'Dallas',
+    nombre: 'Market Center',
+    lineas: ['Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-victory', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-southwestern-medical', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-victory', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-southwestern-medical', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-southwestern-medical': {
+    ciudad: 'Dallas',
+    nombre: 'Southwestern Medical District/Parkland',
+    lineas: ['Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-market-center', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-inwood-love-field', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-market-center', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-inwood-love-field', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-inwood-love-field': {
+    ciudad: 'Dallas',
+    nombre: 'Inwood/Love Field',
+    lineas: ['Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-southwestern-medical', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-burbank', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-southwestern-medical', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-burbank', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-burbank': {
+    ciudad: 'Dallas',
+    nombre: 'Burbank',
+    lineas: ['Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-inwood-love-field', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-bachman', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-inwood-love-field', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-bachman', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-bachman': {
+    ciudad: 'Dallas',
+    nombre: 'Bachman',
+    lineas: ['Green', 'Orange'],
+    adyacentes: [
+      { slug: 'dallas-burbank', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-walnut-hill-denton', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-burbank', tiempo: 2, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-university-of-dallas', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // After Bachman, Green and Orange split:
+  // Green goes to Walnut Hill/Denton → Royal Lane → ... → North Carrollton/Frankford
+  // Orange goes to University of Dallas → ... → DFW Airport Terminal A
+
+  'dallas-walnut-hill-denton': {
+    ciudad: 'Dallas',
+    nombre: 'Walnut Hill/Denton',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-bachman', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-royal-lane', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-royal-lane': {
+    ciudad: 'Dallas',
+    nombre: 'Royal Lane',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-walnut-hill-denton', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-farmers-branch', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-farmers-branch': {
+    ciudad: 'Farmers Branch',
+    nombre: 'Farmers Branch',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-royal-lane', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-downtown-carrollton', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-downtown-carrollton': {
+    ciudad: 'Carrollton',
+    nombre: 'Downtown Carrollton',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-farmers-branch', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-trinity-mills', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-trinity-mills': {
+    ciudad: 'Carrollton',
+    nombre: 'Trinity Mills',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-downtown-carrollton', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+      { slug: 'dallas-north-carrollton-frankford', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-north-carrollton-frankford': {
+    ciudad: 'Carrollton',
+    nombre: 'North Carrollton/Frankford',
+    lineas: ['Green'],
+    adyacentes: [
+      { slug: 'dallas-trinity-mills', tiempo: 2, linea: 'Green', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // ============================================================================
+  // ORANGE LINE (31 stations)
+  // Shares Red from Parker Road → Lovers Lane (12 stations)
+  // Shares downtown from Pearl/Arts District → West End with Red, Blue, Green
+  // Shares Victory → Bachman with Green
+  // Then unique Irving segment: University of Dallas → DFW Airport Terminal A
+  // ============================================================================
+
+  'dallas-university-of-dallas': {
+    ciudad: 'Irving',
+    nombre: 'University of Dallas',
+    lineas: ['Orange'],
+    adyacentes: [
+      { slug: 'dallas-bachman', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-las-colinas-urban-center', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-las-colinas-urban-center': {
+    ciudad: 'Irving',
+    nombre: 'Las Colinas Urban Center',
+    lineas: ['Orange'],
+    adyacentes: [
+      { slug: 'dallas-university-of-dallas', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-irving-convention-center', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-irving-convention-center': {
+    ciudad: 'Irving',
     nombre: 'Irving Convention Center',
-    lineas: ['orange'],
+    lineas: ['Orange'],
     adyacentes: [
-      { slug: 'dfw-airport-terminal-e', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-beltline', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'irving-beltline': {
-    ciudad: 'dallas',
-    nombre: 'Irving Beltline',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'irving-convention-center', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'beltline', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'beltline': {
-    ciudad: 'dallas',
-    nombre: 'Beltline',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'irving-beltline', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'coppell', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'coppell': {
-    ciudad: 'dallas',
-    nombre: 'Coppell',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'beltline', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'las-colinas', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'las-colinas': {
-    ciudad: 'dallas',
-    nombre: 'Las Colinas',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'coppell', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-mall', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'irving-mall': {
-    ciudad: 'dallas',
-    nombre: 'Irving Mall',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'las-colinas', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'centreport-dfw', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'centreport-dfw': {
-    ciudad: 'dallas',
-    nombre: 'CentrePort/DFW',
-    lineas: ['orange', 'tre'],
-    adyacentes: [
-      { slug: 'irving-mall', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-downtown', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'dallas-union-station', tiempo: 30, linea: 'tre', tipo: 'tre' },
-    ]
-  },
-  'irving-downtown': {
-    ciudad: 'dallas',
-    nombre: 'Irving Downtown',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'centreport-dfw', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-heritage', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'irving-heritage': {
-    ciudad: 'dallas',
-    nombre: 'Irving Heritage',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'irving-downtown', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'irving-walnut-hill', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'irving-walnut-hill': {
-    ciudad: 'dallas',
-    nombre: 'Irving Walnut Hill',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'irving-heritage', tiempo: 2, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'arlington-center', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
-  },
-  'arlington-center': {
-    ciudad: 'dallas',
-    nombre: 'Arlington Center',
-    lineas: ['orange'],
-    adyacentes: [
-      { slug: 'irving-walnut-hill', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-      { slug: 'dallas-parker-road', tiempo: 3, linea: 'orange', tipo: 'dart-light-rail' },
-    ]
+      { slug: 'dallas-las-colinas-urban-center', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-hidden-ridge', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
   },
 
-  // ============================================
-  // TRINITY RAILWAY EXPRESS (TRE) - 6 paradas
-  // ============================================
-  'fort-worth-central-station': {
-    ciudad: 'dallas',
-    nombre: 'Fort Worth Central Station',
-    lineas: ['tre'],
+  'dallas-hidden-ridge': {
+    ciudad: 'Irving',
+    nombre: 'Hidden Ridge',
+    lineas: ['Orange'],
     adyacentes: [
-      { slug: 'centreport-dfw', tiempo: 30, linea: 'tre', tipo: 'tre' },
-    ]
-  }
+      { slug: 'dallas-irving-convention-center', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-dallas-college-north-lake', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-dallas-college-north-lake': {
+    ciudad: 'Irving',
+    nombre: 'Dallas College North Lake Campus',
+    lineas: ['Orange'],
+    adyacentes: [
+      { slug: 'dallas-hidden-ridge', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-belt-line', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-belt-line': {
+    ciudad: 'Irving',
+    nombre: 'Belt Line',
+    lineas: ['Orange'],
+    adyacentes: [
+      { slug: 'dallas-dallas-college-north-lake', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+      { slug: 'dallas-dfw-airport-terminal-a', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  'dallas-dfw-airport-terminal-a': {
+    ciudad: 'DFW',
+    nombre: 'DFW Airport Terminal A',
+    lineas: ['Orange'],
+    adyacentes: [
+      { slug: 'dallas-belt-line', tiempo: 3, linea: 'Orange', tipo: 'dart-light-rail' },
+    ],
+  },
+
+  // ============================================================================
+  // TRE (Texas Regional Express, 10 stations)
+  // Union Station → Victory → Medical/Market Center → DFW/Fort Worth area
+  // ============================================================================
+
+  'dallas-tre-medical-market-center': {
+    ciudad: 'Dallas',
+    nombre: 'Medical/Market Center',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-victory', tiempo: 2, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-downtown-irving-heritage', tiempo: 7, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-downtown-irving-heritage': {
+    ciudad: 'Irving',
+    nombre: 'Downtown Irving/Heritage Crossing',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-tre-medical-market-center', tiempo: 7, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-west-irving', tiempo: 5, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-west-irving': {
+    ciudad: 'Irving',
+    nombre: 'West Irving',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-downtown-irving-heritage', tiempo: 5, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-centreport-dfw', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-centreport-dfw': {
+    ciudad: 'Fort Worth',
+    nombre: 'CentrePort/DFW Airport',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-west-irving', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-bell-station', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-bell-station': {
+    ciudad: 'Hurst',
+    nombre: 'Bell Station',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-centreport-dfw', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-trinity-lakes', tiempo: 10, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-trinity-lakes': {
+    ciudad: 'Fort Worth',
+    nombre: 'Trinity Lakes',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-bell-station', tiempo: 10, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-fort-worth-central-station', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-fort-worth-central-station': {
+    ciudad: 'Fort Worth',
+    nombre: 'Fort Worth Central Station',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-trinity-lakes', tiempo: 8, linea: 'TRE', tipo: 'tre' },
+      { slug: 'dallas-tp-station', tiempo: 5, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  'dallas-tp-station': {
+    ciudad: 'Fort Worth',
+    nombre: 'T&P Station',
+    lineas: ['TRE'],
+    adyacentes: [
+      { slug: 'dallas-fort-worth-central-station', tiempo: 5, linea: 'TRE', tipo: 'tre' },
+    ],
+  },
+
+  // ============================================================================
+  // DALLAS STREETCAR (6 stops, Union Station → Bishop Arts)
+  // ============================================================================
+
+  'dallas-greenbriar': {
+    ciudad: 'Dallas',
+    nombre: 'Greenbriar',
+    lineas: ['Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-union-station', tiempo: 3, linea: 'Streetcar', tipo: 'streetcar' },
+      { slug: 'dallas-oakenwald', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
+
+  'dallas-oakenwald': {
+    ciudad: 'Dallas',
+    nombre: 'Oakenwald',
+    lineas: ['Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-greenbriar', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+      { slug: 'dallas-beckley', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
+
+  'dallas-beckley': {
+    ciudad: 'Dallas',
+    nombre: 'Beckley',
+    lineas: ['Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-oakenwald', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+      { slug: 'dallas-6th-street', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
+
+  'dallas-6th-street': {
+    ciudad: 'Dallas',
+    nombre: '6th Street',
+    lineas: ['Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-beckley', tiempo: 4, linea: 'Streetcar', tipo: 'streetcar' },
+      { slug: 'dallas-bishop-arts', tiempo: 3, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
+
+  'dallas-bishop-arts': {
+    ciudad: 'Dallas',
+    nombre: 'Bishop Arts',
+    lineas: ['Streetcar'],
+    adyacentes: [
+      { slug: 'dallas-6th-street', tiempo: 3, linea: 'Streetcar', tipo: 'streetcar' },
+    ],
+  },
 };

@@ -1,7 +1,5 @@
 export const estacionesVANCOUVER = [
-  // ============================================
-  // EXPO LINE (20 stations - WATERFRONT to KING GEORGE)
-  // ============================================
+  // ========== EXPO LINE (20 stations) ==========
   {
     "slug": "vancouver-waterfront",
     "nombre": "Waterfront",
@@ -10,48 +8,21 @@ export const estacionesVANCOUVER = [
     "ciudad": "Vancouver",
     "tipo_zona": "transporte-turistico",
     "pois": [
-      {
-        "nombre": "Waterfront Station Hub",
-        "tipo": "transporte",
-        "distancia": "En la estación"
-      },
-      {
-        "nombre": "SeaBus Terminal",
-        "tipo": "transporte",
-        "distancia": "En la estación"
-      },
-      {
-        "nombre": "Canada Place",
-        "tipo": "turistico",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Canada Place", "tipo": "turistico", "distancia": "2 min caminando"},
+      {"nombre": "SeaBus Terminal", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "West Coast Express", "tipo": "transporte", "distancia": "En la estación"}
     ],
-    "transferencias": ["vancouver-canada-line"],
-    "seo_title": "Estación Waterfront SkyTrain Vancouver — Hub multimodal | MetroGuia",
-    "meta_description": "Waterfront Station. Terminal principal de Vancouver. Acceso a SeaBus y transporte regional.",
-    "h1": "Estación Waterfront — Expo Line | Vancouver",
-    "intro": "Estación Waterfront de SkyTrain Vancouver, terminal principal multimodal.",
-    "tips": [
-      "Terminal de Expo Line",
-      "Conexión con Expo y Canada Lines",
-      "SeaBus Terminal en la estación",
-      "Acceso a Canada Place",
-      "Hub turístico principal"
-    ],
-    "mejor_horario": "Todo el día",
-    "mundial_relevancia": "Hub multimodal de Vancouver",
-    "descripcion_turistica": "Waterfront es el corazón del transporte de Vancouver. Estación principal que conecta SkyTrain, SeaBus y servicios regionales. Acceso directo a Canada Place y zona de turismo.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Estación completamente accesible con múltiples elevadores."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": ["vancouver-canada-line", "vancouver-seabus", "vancouver-commercial-broadway"],
+    "seo_title": "Estación Waterfront SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Hub multimodal principal. Acceso a Canada Place, SeaBus Terminal, West Coast Express.",
+    "h1": "Estación Waterfront — Expo | Vancouver",
+    "intro": "Hub multimodal de Vancouver. Conexión entre Expo, Canada Line, SeaBus y WCE.",
+    "tips": ["Terminal multimodal principal", "SeaBus a North Shore (Lonsdale Quay)", "Canada Place a 2 min", "Completamente accesible"],
+    "mejor_horario": "10:00 - 18:00",
+    "mundial_relevancia": "Hub de transporte internacional",
+    "descripcion_turistica": "Corazón del transporte de Vancouver. Conecta SkyTrain, SeaBus, ferrocarril regional y servicios de cruceros.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible. Múltiples elevadores."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -60,37 +31,22 @@ export const estacionesVANCOUVER = [
     "linea": "Expo",
     "sistema": "skytrain",
     "ciudad": "Vancouver",
-    "tipo_zona": "comercial",
+    "tipo_zona": "negocios-cultural",
     "pois": [
-      {
-        "nombre": "Burrard Street Comercio",
-        "tipo": "compras",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Vancouver Art Gallery", "tipo": "cultural", "distancia": "5 min caminando"},
+      {"nombre": "Burrard Street", "tipo": "comercial", "distancia": "En la estación"}
     ],
     "transferencias": [],
     "seo_title": "Estación Burrard SkyTrain Vancouver | MetroGuia",
-    "meta_description": "Estación Burrard (Expo Line). Zona comercial central.",
-    "h1": "Estación Burrard — Expo Line | Vancouver",
-    "intro": "Estación Burrard de Expo Line.",
-    "tips": [
-      "Burrard Street comercio",
-      "Centro de Vancouver"
-    ],
-    "mejor_horario": "Tarde",
-    "mundial_relevancia": "Comercio central",
-    "descripcion_turistica": "Burrard es estación en zona comercial central de Vancouver.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "meta_description": "Acceso al distrito financiero y Vancouver Art Gallery.",
+    "h1": "Estación Burrard — Expo | Vancouver",
+    "intro": "Puerta al distrito financiero y cultural de Vancouver.",
+    "tips": ["Vancouver Art Gallery a 5 min", "Centro financiero cercano", "Restaurants y cafés en Burrard Street"],
+    "mejor_horario": "09:00 - 17:00",
+    "mundial_relevancia": "Centro financiero y cultural",
+    "descripcion_turistica": "Acceso al corazón cultural de Vancouver. Cercano a galerías, museos y vida gastronómica.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -99,37 +55,22 @@ export const estacionesVANCOUVER = [
     "linea": "Expo",
     "sistema": "skytrain",
     "ciudad": "Vancouver",
-    "tipo_zona": "comercial-entretenimiento",
+    "tipo_zona": "entretenimiento",
     "pois": [
-      {
-        "nombre": "Granville Street Entertainment",
-        "tipo": "entretenimiento",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Granville Street", "tipo": "entretenimiento", "distancia": "En la estación"},
+      {"nombre": "Nightclubs y bares", "tipo": "entretenimiento", "distancia": "2 min caminando"}
     ],
     "transferencias": [],
     "seo_title": "Estación Granville SkyTrain Vancouver | MetroGuia",
-    "meta_description": "Estación Granville (Expo Line). Entretenimiento y comercio.",
-    "h1": "Estación Granville — Expo Line | Vancouver",
-    "intro": "Estación Granville de Expo Line.",
-    "tips": [
-      "Granville Street (vida nocturna)",
-      "Entretenimiento"
-    ],
-    "mejor_horario": "Noche",
-    "mundial_relevancia": "Entretenimiento",
-    "descripcion_turistica": "Granville es estación en zona de entretenimiento y vida nocturna.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "meta_description": "Centro de entretenimiento nocturno. Acceso a clubs, bares y tiendas en Granville Street.",
+    "h1": "Estación Granville — Expo | Vancouver",
+    "intro": "Epicentro del entretenimiento de Vancouver. Granville Street es famosa por vida nocturna.",
+    "tips": ["Granville Street nightlife", "Tiendas y cines", "Vida nocturna del viernes y sábado"],
+    "mejor_horario": "18:00 - 23:00",
+    "mundial_relevancia": "Entretenimiento urbano",
+    "descripcion_turistica": "Distrito de entretenimiento vibrante con clubs nocturnos, bares, tiendas y restaurantes.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -140,47 +81,21 @@ export const estacionesVANCOUVER = [
     "ciudad": "Vancouver",
     "tipo_zona": "deportes-cultural",
     "pois": [
-      {
-        "nombre": "BC Place Stadium",
-        "tipo": "deportes",
-        "distancia": "1 min caminando"
-      },
-      {
-        "nombre": "Rogers Arena (Vancouver Canucks)",
-        "tipo": "deportes",
-        "distancia": "3 min caminando"
-      },
-      {
-        "nombre": "Chinatown Vancouver",
-        "tipo": "cultural",
-        "distancia": "5 min caminando"
-      }
+      {"nombre": "BC Place Stadium", "tipo": "deportes", "distancia": "2 min caminando"},
+      {"nombre": "Rogers Arena", "tipo": "deportes", "distancia": "3 min caminando"},
+      {"nombre": "Chinatown", "tipo": "cultural", "distancia": "5 min caminando"}
     ],
     "transferencias": [],
-    "seo_title": "Estación Stadium-Chinatown SkyTrain Vancouver — BC Place | MetroGuia",
-    "meta_description": "Stadium-Chinatown. Acceso a BC Place, Rogers Arena y Chinatown.",
-    "h1": "Estación Stadium-Chinatown — Expo Line | Vancouver",
-    "intro": "Estación Stadium-Chinatown de Expo Line, centro deportivo y cultural.",
-    "tips": [
-      "BC Place Stadium a 1 min",
-      "Rogers Arena (Vancouver Canucks) a 3 min",
-      "Chinatown a 5 min caminando",
-      "Eventos deportivos principales"
-    ],
-    "mejor_horario": "Días de evento/partido",
-    "mundial_relevancia": "Centro deportivo",
-    "descripcion_turistica": "Stadium-Chinatown es estación de Expo Line con acceso directo a BC Place Stadium (eventos), Rogers Arena (Vancouver Canucks NHL) y Chinatown.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "seo_title": "Estación Stadium-Chinatown SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Acceso a estadios deportivos y barrio histórico de Chinatown.",
+    "h1": "Estación Stadium-Chinatown — Expo | Vancouver",
+    "intro": "Conexión a BC Place Stadium, Rogers Arena y el histórico barrio de Chinatown.",
+    "tips": ["BC Place Stadium para eventos", "Rogers Arena (NHL Vancouver Canucks)", "Chinatown a 5 min para comida y cultura"],
+    "mejor_horario": "10:00 - 22:00",
+    "mundial_relevancia": "Estadios y barrio histórico",
+    "descripcion_turistica": "Acceso a estadios principales y vibrante comunidad cultural de Chinatown.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -191,41 +106,20 @@ export const estacionesVANCOUVER = [
     "ciudad": "Vancouver",
     "tipo_zona": "cultural-educativo",
     "pois": [
-      {
-        "nombre": "Science World",
-        "tipo": "educativo",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Pacific Central Station",
-        "tipo": "transporte",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Science World", "tipo": "cultural", "distancia": "2 min caminando"},
+      {"nombre": "Pacific Central Station", "tipo": "transporte", "distancia": "3 min caminando"}
     ],
     "transferencias": [],
     "seo_title": "Estación Main Street-Science World SkyTrain Vancouver | MetroGuia",
-    "meta_description": "Main Street-Science World. Acceso a Science World y transporte interurbano.",
-    "h1": "Estación Main Street-Science World — Expo Line | Vancouver",
-    "intro": "Estación Main Street-Science World de Expo Line.",
-    "tips": [
-      "Science World a 2 min",
-      "Pacific Central Station (buses)",
-      "Zona educativa"
-    ],
-    "mejor_horario": "Día",
-    "mundial_relevancia": "Centro educativo",
-    "descripcion_turistica": "Main Street-Science World es estación con acceso a Science World (museo interactivo) y Pacific Central Station (buses interurbanos).",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "meta_description": "Acceso a Science World, Pacific Central Station y Main Street.",
+    "h1": "Estación Main Street-Science World — Expo | Vancouver",
+    "intro": "Puerta a Science World, museo interactivo de ciencia, y Pacific Central Station.",
+    "tips": ["Science World museo para familias", "Pacific Central Station para Greyhound", "Main Street tiendas y restaurantes"],
+    "mejor_horario": "10:00 - 17:00",
+    "mundial_relevancia": "Museo y educación",
+    "descripcion_turistica": "Acceso a principal museo interactivo de ciencias de Vancouver y estación central de autobuses.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -234,44 +128,115 @@ export const estacionesVANCOUVER = [
     "linea": "Expo/Millennium",
     "sistema": "skytrain",
     "ciudad": "Vancouver",
-    "tipo_zona": "comercial",
+    "tipo_zona": "transferencia-comercial",
     "pois": [
-      {
-        "nombre": "Commercial Drive Comercio",
-        "tipo": "compras",
-        "distancia": "2 min caminando"
-      },
-      {
-        "nombre": "Broadway Street",
-        "tipo": "comercio",
-        "distancia": "1 min caminando"
-      }
+      {"nombre": "Commercial Drive", "tipo": "comercial", "distancia": "En la estación"},
+      {"nombre": "Restaurants y cafés", "tipo": "gastronomia", "distancia": "2 min caminando"}
     ],
-    "transferencias": ["vancouver-millennium-line"],
+    "transferencias": ["vancouver-expo-line", "vancouver-millennium-line"],
     "seo_title": "Estación Commercial-Broadway SkyTrain Vancouver | MetroGuia",
-    "meta_description": "Commercial-Broadway. Transbordo Expo/Millennium. Zona comercial vibrante.",
+    "meta_description": "Hub de transferencia entre Expo y Millennium Lines. Commercial Drive multicultural.",
     "h1": "Estación Commercial-Broadway — Expo/Millennium | Vancouver",
-    "intro": "Estación Commercial-Broadway, punto de transbordo entre líneas.",
-    "tips": [
-      "Transbordo entre Expo y Millennium Lines",
-      "Commercial Drive local",
-      "Broadway shopping",
-      "Centro multicultural"
+    "intro": "Principal hub de transferencia entre Expo y Millennium Lines.",
+    "tips": ["Transferencia Expo-Millennium", "Commercial Drive multicultural", "Tiendas y vida local"],
+    "mejor_horario": "08:00 - 22:00",
+    "mundial_relevancia": "Hub de transferencia",
+    "descripcion_turistica": "Punto central de transferencia y acceso a barrio multicultural Commercial Drive.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-nanaimo",
+    "nombre": "Nanaimo",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Nanaimo neighborhood", "tipo": "residencial", "distancia": "En la estación"}
     ],
-    "mejor_horario": "Tarde",
-    "mundial_relevancia": "Centro comercial multicultural",
-    "descripcion_turistica": "Commercial-Broadway es estación de transbordo (fue dos estaciones separadas, unificadas en 2009). Acceso a Commercial Drive (tiendas locales) y Broadway Street.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": [],
+    "seo_title": "Estación Nanaimo SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Acceso a barrio residencial de East Vancouver.",
+    "h1": "Estación Nanaimo — Expo | Vancouver",
+    "intro": "Entrada a barrio residencial de East Vancouver.",
+    "tips": ["Barrio residencial tranquilo", "Acceso a negocios locales"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Acceso a barrio residencial auténtico de Vancouver.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-29th-avenue",
+    "nombre": "29th Avenue",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "29th Avenue", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación 29th Avenue SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio residencial en East Vancouver.",
+    "h1": "Estación 29th Avenue — Expo | Vancouver",
+    "intro": "Acceso a barrio residencial de East Vancouver.",
+    "tips": ["Barrio tranquilo", "Escuelas y parques locales"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo de East Vancouver.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-joyce-collingwood",
+    "nombre": "Joyce-Collingwood",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "comercial-multicultural",
+    "pois": [
+      {"nombre": "Joyce Street comercial", "tipo": "comercial", "distancia": "En la estación"},
+      {"nombre": "Tiendas y restaurants", "tipo": "comercial", "distancia": "2 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Joyce-Collingwood SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio multicultural con comercios y tiendas.",
+    "h1": "Estación Joyce-Collingwood — Expo | Vancouver",
+    "intro": "Barrio multicultural con vida comercial y gastronómica.",
+    "tips": ["Barrio multicultural", "Tiendas y restaurants variados", "Comunidad vibrante"],
+    "mejor_horario": "09:00 - 20:00",
+    "mundial_relevancia": "Multicultural",
+    "descripcion_turistica": "Barrio multicultural vibrante con comercios y restaurants variados.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-patterson",
+    "nombre": "Patterson",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial-parques",
+    "pois": [
+      {"nombre": "Central Park", "tipo": "parque", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Patterson SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Barrio residencial con acceso a Central Park.",
+    "h1": "Estación Patterson — Expo | Burnaby",
+    "intro": "Entrada a barrio residencial de Burnaby con parques cercanos.",
+    "tips": ["Central Park a 5 min", "Barrio residencial tranquilo"],
+    "mejor_horario": "09:00 - 17:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo con acceso a parques.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -280,44 +245,212 @@ export const estacionesVANCOUVER = [
     "linea": "Expo",
     "sistema": "skytrain",
     "ciudad": "Burnaby",
-    "tipo_zona": "comercial-urbano",
+    "tipo_zona": "comercial-shopping",
     "pois": [
-      {
-        "nombre": "Metropolis at Metrotown",
-        "tipo": "compras",
-        "distancia": "1 min caminando"
-      },
-      {
-        "nombre": "Burnaby Central Library",
-        "tipo": "cultural",
-        "distancia": "5 min caminando"
-      }
+      {"nombre": "Metropolis at Metrotown", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "BC's largest mall", "tipo": "shopping", "distancia": "En la estación"}
     ],
     "transferencias": [],
     "seo_title": "Estación Metrotown SkyTrain Burnaby | MetroGuia",
-    "meta_description": "Metrotown. Centro comercial y urbano de Burnaby.",
-    "h1": "Estación Metrotown — Expo Line | Burnaby",
-    "intro": "Estación Metrotown de Expo Line, centro de Burnaby.",
-    "tips": [
-      "Metropolis shopping center",
-      "Central Library cercana",
-      "Centro urbano de Burnaby",
-      "Comunidad desarrollada"
+    "meta_description": "Metropolis at Metrotown, el centro comercial más grande de BC.",
+    "h1": "Estación Metrotown — Expo | Burnaby",
+    "intro": "Acceso directo a Metropolis, el centro comercial más grande de Columbia Británica.",
+    "tips": ["Metropolis mall más grande de BC", "Centro comercial con +200 tiendas", "Restaurants y entretenimiento"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Centro comercial regional",
+    "descripcion_turistica": "Metropolis at Metrotown es el principal destino de shopping de BC.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-royal-oak",
+    "nombre": "Royal Oak",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Royal Oak neighborhood", "tipo": "residencial", "distancia": "En la estación"}
     ],
-    "mejor_horario": "Tarde",
-    "mundial_relevancia": "Centro urbano regional",
-    "descripcion_turistica": "Metrotown es estación en el corazón del centro de Burnaby. Acceso a Metropolis at Metrotown (centro comercial) y Burnaby Central Library.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": [],
+    "seo_title": "Estación Royal Oak SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Barrio residencial de Burnaby.",
+    "h1": "Estación Royal Oak — Expo | Burnaby",
+    "intro": "Barrio residencial de Burnaby.",
+    "tips": ["Barrio residencial tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-edmonds",
+    "nombre": "Edmonds",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial-naturaleza",
+    "pois": [
+      {"nombre": "Edmonds community", "tipo": "residencial", "distancia": "En la estación"},
+      {"nombre": "Byrne Creek trails", "tipo": "naturaleza", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Edmonds SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Comunidad de Edmonds con acceso a senderos de Byrne Creek.",
+    "h1": "Estación Edmonds — Expo | Burnaby",
+    "intro": "Comunidad de Edmonds con acceso a naturaleza.",
+    "tips": ["Byrne Creek trails a 5 min", "Barrio residencial"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial con naturaleza",
+    "descripcion_turistica": "Comunidad tranquila con acceso a senderos naturales.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-22nd-street",
+    "nombre": "22nd Street",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "New Westminster",
+    "tipo_zona": "residencial-riverfront",
+    "pois": [
+      {"nombre": "22nd Street neighborhood", "tipo": "residencial", "distancia": "En la estación"},
+      {"nombre": "Riverfront access", "tipo": "naturaleza", "distancia": "10 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación 22nd Street SkyTrain New Westminster | MetroGuia",
+    "meta_description": "Barrio residencial con acceso a riverfront.",
+    "h1": "Estación 22nd Street — Expo | New Westminster",
+    "intro": "Barrio residencial con acceso a orilla del río.",
+    "tips": ["Riverfront a 10 min", "Barrio residencial"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo con acceso a orilla del río.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-new-westminster",
+    "nombre": "New Westminster",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "New Westminster",
+    "tipo_zona": "centro-historico",
+    "pois": [
+      {"nombre": "Downtown histórico", "tipo": "cultural", "distancia": "5 min caminando"},
+      {"nombre": "Columbia Street", "tipo": "comercial", "distancia": "5 min caminando"},
+      {"nombre": "River Market", "tipo": "comercial", "distancia": "10 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación New Westminster SkyTrain | MetroGuia",
+    "meta_description": "Centro histórico de New Westminster con Columbia Street y River Market.",
+    "h1": "Estación New Westminster — Expo | New Westminster",
+    "intro": "Puerta al centro histórico de New Westminster.",
+    "tips": ["Downtown histórico", "Columbia Street comercial", "River Market a 10 min"],
+    "mejor_horario": "09:00 - 20:00",
+    "mundial_relevancia": "Centro histórico",
+    "descripcion_turistica": "Centro histórico de Nueva Westminster con arquitectura y comercio local.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-columbia",
+    "nombre": "Columbia",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "New Westminster",
+    "tipo_zona": "transferencia-commercial",
+    "pois": [
+      {"nombre": "Columbia Street", "tipo": "comercial", "distancia": "En la estación"},
+      {"nombre": "New Westminster Quay", "tipo": "comercial", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Columbia SkyTrain New Westminster | MetroGuia",
+    "meta_description": "Estación de transferencia con acceso a New Westminster Quay.",
+    "h1": "Estación Columbia — Expo | New Westminster",
+    "intro": "Estación de transferencia cerca de New Westminster Quay.",
+    "tips": ["New Westminster Quay a 5 min", "Transferencias locales"],
+    "mejor_horario": "08:00 - 19:00",
+    "mundial_relevancia": "Transferencia",
+    "descripcion_turistica": "Punto de conexión con New Westminster Quay.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-scott-road",
+    "nombre": "Scott Road",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Surrey",
+    "tipo_zona": "transporte-hub",
+    "pois": [
+      {"nombre": "Bus exchange", "tipo": "transporte", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Scott Road SkyTrain Surrey | MetroGuia",
+    "meta_description": "Hub de transporte con intercambio de autobuses.",
+    "h1": "Estación Scott Road — Expo | Surrey",
+    "intro": "Hub de transporte principal.",
+    "tips": ["Bus exchange importante", "Transferencias de autobús"],
+    "mejor_horario": "06:00 - 22:00",
+    "mundial_relevancia": "Hub de transporte",
+    "descripcion_turistica": "Hub de transporte con intercambio de autobuses.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-gateway",
+    "nombre": "Gateway",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Surrey",
+    "tipo_zona": "entretenimiento",
+    "pois": [
+      {"nombre": "Gateway Theatre", "tipo": "entretenimiento", "distancia": "2 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Gateway SkyTrain Surrey | MetroGuia",
+    "meta_description": "Acceso a Gateway Theatre.",
+    "h1": "Estación Gateway — Expo | Surrey",
+    "intro": "Acceso a Gateway Theatre.",
+    "tips": ["Gateway Theatre cercano"],
+    "mejor_horario": "17:00 - 22:00",
+    "mundial_relevancia": "Entretenimiento",
+    "descripcion_turistica": "Acceso a teatro y entretenimiento.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-surrey-central",
+    "nombre": "Surrey Central",
+    "linea": "Expo",
+    "sistema": "skytrain",
+    "ciudad": "Surrey",
+    "tipo_zona": "centro-comercial",
+    "pois": [
+      {"nombre": "Surrey Civic Plaza", "tipo": "civico", "distancia": "2 min caminando"},
+      {"nombre": "Central City Shopping Centre", "tipo": "shopping", "distancia": "2 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Surrey Central SkyTrain | MetroGuia",
+    "meta_description": "Centro de Surrey con plaza cívica y shopping.",
+    "h1": "Estación Surrey Central — Expo | Surrey",
+    "intro": "Centro comercial y cívico de Surrey.",
+    "tips": ["Central City Shopping Centre", "Surrey Civic Plaza"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Centro comercial",
+    "descripcion_turistica": "Centro comercial y cívico de Surrey.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -326,43 +459,26 @@ export const estacionesVANCOUVER = [
     "linea": "Expo",
     "sistema": "skytrain",
     "ciudad": "Surrey",
-    "tipo_zona": "transporte-suburbano",
+    "tipo_zona": "terminal-transporte",
     "pois": [
-      {
-        "nombre": "King George Station Hub",
-        "tipo": "transporte",
-        "distancia": "En la estación"
-      }
+      {"nombre": "Terminal station", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "Bus exchange", "tipo": "transporte", "distancia": "En la estación"}
     ],
     "transferencias": [],
     "seo_title": "Estación King George SkyTrain Surrey | MetroGuia",
-    "meta_description": "King George. Terminal sur de Expo Line en Surrey.",
-    "h1": "Estación King George — Expo Line | Surrey",
-    "intro": "Terminal sur de Expo Line en Surrey.",
-    "tips": [
-      "Terminal sur de Expo Line",
-      "Zona suburbana de Surrey"
-    ],
-    "mejor_horario": "Mañana/tarde",
-    "mundial_relevancia": "Acceso sur regional",
-    "descripcion_turistica": "King George es terminal sur de Expo Line en Surrey.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "meta_description": "Terminal de Expo Line con intercambio de autobuses.",
+    "h1": "Estación King George — Expo | Surrey",
+    "intro": "Terminal de Expo Line.",
+    "tips": ["Terminal Expo Line", "Bus exchange importante"],
+    "mejor_horario": "06:00 - 23:00",
+    "mundial_relevancia": "Terminal regional",
+    "descripcion_turistica": "Terminal de Expo Line con servicios de autobús.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
 
-  // ============================================
-  // MILLENNIUM LINE (17 stations - VCC-CLARK to LAFARGE LAKE-DOUGLAS)
-  // ============================================
+  // ========== MILLENNIUM LINE (16 stations, Commercial-Broadway counted in Expo above) ==========
   {
     "slug": "vancouver-vcc-clark",
     "nombre": "VCC-Clark",
@@ -371,36 +487,345 @@ export const estacionesVANCOUVER = [
     "ciudad": "Vancouver",
     "tipo_zona": "educativo",
     "pois": [
-      {
-        "nombre": "Vancouver Community College",
-        "tipo": "educativo",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Vancouver Community College", "tipo": "educativo", "distancia": "2 min caminando"}
     ],
     "transferencias": [],
     "seo_title": "Estación VCC-Clark SkyTrain Vancouver | MetroGuia",
-    "meta_description": "VCC-Clark. Terminal oeste de Millennium Line. Acceso a Vancouver Community College.",
-    "h1": "Estación VCC-Clark — Millennium Line | Vancouver",
-    "intro": "Terminal oeste de Millennium Line.",
-    "tips": [
-      "Terminal oeste de Millennium Line",
-      "Vancouver Community College",
-      "Zona educativa"
+    "meta_description": "Acceso a Vancouver Community College.",
+    "h1": "Estación VCC-Clark — Millennium | Vancouver",
+    "intro": "Acceso a Vancouver Community College.",
+    "tips": ["VCC campus cercano"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Educativo",
+    "descripcion_turistica": "Acceso a colegio comunitario.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-renfrew",
+    "nombre": "Renfrew",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Renfrew neighborhood", "tipo": "residencial", "distancia": "En la estación"}
     ],
-    "mejor_horario": "Día",
-    "mundial_relevancia": "Centro educativo",
-    "descripcion_turistica": "VCC-Clark es terminal oeste de Millennium Line con acceso a Vancouver Community College.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": [],
+    "seo_title": "Estación Renfrew SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio residencial Renfrew-Collingwood.",
+    "h1": "Estación Renfrew — Millennium | Vancouver",
+    "intro": "Barrio residencial Renfrew-Collingwood.",
+    "tips": ["Barrio residencial tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-rupert",
+    "nombre": "Rupert",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial-parques",
+    "pois": [
+      {"nombre": "Rupert Park", "tipo": "parque", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Rupert SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio residencial con Rupert Park.",
+    "h1": "Estación Rupert — Millennium | Vancouver",
+    "intro": "Barrio residencial con parque cercano.",
+    "tips": ["Rupert Park a 5 min"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-gilmore",
+    "nombre": "Gilmore",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Gilmore neighborhood", "tipo": "residencial", "distancia": "En la estación"},
+      {"nombre": "Near Brentwood", "tipo": "residencial", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Gilmore SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Barrio residencial cerca de Brentwood.",
+    "h1": "Estación Gilmore — Millennium | Burnaby",
+    "intro": "Barrio residencial cerca de Brentwood.",
+    "tips": ["Cerca de Brentwood"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-brentwood-town-centre",
+    "nombre": "Brentwood Town Centre",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "shopping-comercial",
+    "pois": [
+      {"nombre": "The Amazing Brentwood", "tipo": "shopping", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Brentwood Town Centre SkyTrain | MetroGuia",
+    "meta_description": "Centro comercial The Amazing Brentwood.",
+    "h1": "Estación Brentwood Town Centre — Millennium | Burnaby",
+    "intro": "Acceso a The Amazing Brentwood mall.",
+    "tips": ["The Amazing Brentwood mall"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Centro comercial",
+    "descripcion_turistica": "Centro comercial principal de Burnaby.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-holdom",
+    "nombre": "Holdom",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Holdom neighborhood", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Holdom SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Barrio residencial de Burnaby.",
+    "h1": "Estación Holdom — Millennium | Burnaby",
+    "intro": "Barrio residencial de Burnaby.",
+    "tips": ["Barrio tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-sperling-burnaby-lake",
+    "nombre": "Sperling-Burnaby Lake",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "naturaleza-parques",
+    "pois": [
+      {"nombre": "Burnaby Lake Regional Park", "tipo": "parque", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Sperling-Burnaby Lake SkyTrain | MetroGuia",
+    "meta_description": "Acceso a Burnaby Lake Regional Park.",
+    "h1": "Estación Sperling-Burnaby Lake — Millennium | Burnaby",
+    "intro": "Acceso a parque regional Burnaby Lake.",
+    "tips": ["Burnaby Lake Regional Park a 5 min", "Naturaleza y senderismo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Naturaleza",
+    "descripcion_turistica": "Acceso a parque regional.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-lake-city-way",
+    "nombre": "Lake City Way",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Lake City Way neighborhood", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Lake City Way SkyTrain Burnaby | MetroGuia",
+    "meta_description": "Barrio residencial.",
+    "h1": "Estación Lake City Way — Millennium | Burnaby",
+    "intro": "Barrio residencial.",
+    "tips": ["Barrio tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-production-way-university",
+    "nombre": "Production Way-University",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "educativo",
+    "pois": [
+      {"nombre": "SFU campus", "tipo": "educativo", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Production Way-University SkyTrain | MetroGuia",
+    "meta_description": "Acceso a campus SFU.",
+    "h1": "Estación Production Way-University — Millennium | Burnaby",
+    "intro": "Acceso a campus Simon Fraser University.",
+    "tips": ["SFU campus a 5 min"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Educativo",
+    "descripcion_turistica": "Acceso a universidad.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-lougheed-town-centre",
+    "nombre": "Lougheed Town Centre",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Burnaby",
+    "tipo_zona": "shopping-transporte",
+    "pois": [
+      {"nombre": "Lougheed Town Centre", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Bus exchange", "tipo": "transporte", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Lougheed Town Centre SkyTrain | MetroGuia",
+    "meta_description": "Centro comercial Lougheed con hub de autobuses.",
+    "h1": "Estación Lougheed Town Centre — Millennium | Burnaby",
+    "intro": "Centro comercial Lougheed con hub de transporte.",
+    "tips": ["Lougheed Town Centre mall", "Bus exchange importante"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Centro comercial",
+    "descripcion_turistica": "Centro comercial con servicios de transporte.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-burquitlam",
+    "nombre": "Burquitlam",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Coquitlam",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Burquitlam neighborhood", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Burquitlam SkyTrain Coquitlam | MetroGuia",
+    "meta_description": "Barrio residencial de Coquitlam.",
+    "h1": "Estación Burquitlam — Millennium | Coquitlam",
+    "intro": "Barrio residencial de Coquitlam.",
+    "tips": ["Barrio tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-moody-centre",
+    "nombre": "Moody Centre",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Port Moody",
+    "tipo_zona": "naturaleza-cultural",
+    "pois": [
+      {"nombre": "Rocky Point Park", "tipo": "parque", "distancia": "5 min caminando"},
+      {"nombre": "Brewers Row craft breweries", "tipo": "gastronomia", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Moody Centre SkyTrain Port Moody | MetroGuia",
+    "meta_description": "Acceso a Rocky Point Park y cervecerías artesanales.",
+    "h1": "Estación Moody Centre — Millennium | Port Moody",
+    "intro": "Acceso a parque y cervecerías artesanales.",
+    "tips": ["Rocky Point Park a 5 min", "Brewers Row cervecerías", "Vistas a Burrard Inlet"],
+    "mejor_horario": "10:00 - 18:00",
+    "mundial_relevancia": "Naturaleza y cervecerías",
+    "descripcion_turistica": "Acceso a parque y cultura cervecera.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-inlet-centre",
+    "nombre": "Inlet Centre",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Port Moody",
+    "tipo_zona": "waterfront",
+    "pois": [
+      {"nombre": "Burrard Inlet waterfront", "tipo": "naturaleza", "distancia": "2 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Inlet Centre SkyTrain Port Moody | MetroGuia",
+    "meta_description": "Vistas a Burrard Inlet.",
+    "h1": "Estación Inlet Centre — Millennium | Port Moody",
+    "intro": "Vistas a Burrard Inlet.",
+    "tips": ["Vistas a Burrard Inlet"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Waterfront",
+    "descripcion_turistica": "Vistas al agua.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-coquitlam-central",
+    "nombre": "Coquitlam Central",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Coquitlam",
+    "tipo_zona": "centro-transporte",
+    "pois": [
+      {"nombre": "West Coast Express transfer", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "Bus exchange", "tipo": "transporte", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Coquitlam Central SkyTrain | MetroGuia",
+    "meta_description": "Transferencia a West Coast Express y hub de autobuses.",
+    "h1": "Estación Coquitlam Central — Millennium | Coquitlam",
+    "intro": "Centro con conexión a West Coast Express.",
+    "tips": ["West Coast Express transfer", "Bus exchange"],
+    "mejor_horario": "06:00 - 22:00",
+    "mundial_relevancia": "Hub de transporte",
+    "descripcion_turistica": "Punto de conexión multimodal.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-lincoln",
+    "nombre": "Lincoln",
+    "linea": "Millennium",
+    "sistema": "skytrain",
+    "ciudad": "Coquitlam",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Lincoln neighborhood", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Lincoln SkyTrain Coquitlam | MetroGuia",
+    "meta_description": "Barrio residencial.",
+    "h1": "Estación Lincoln — Millennium | Coquitlam",
+    "intro": "Barrio residencial.",
+    "tips": ["Barrio tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -409,81 +834,362 @@ export const estacionesVANCOUVER = [
     "linea": "Millennium",
     "sistema": "skytrain",
     "ciudad": "Coquitlam",
-    "tipo_zona": "transporte-suburbano",
+    "tipo_zona": "centro-civico",
     "pois": [
-      {
-        "nombre": "Lafarge Lake-Douglas Terminal",
-        "tipo": "transporte",
-        "distancia": "En la estación"
-      }
+      {"nombre": "Lafarge Lake", "tipo": "naturaleza", "distancia": "2 min caminando"},
+      {"nombre": "Town Centre Park", "tipo": "parque", "distancia": "2 min caminando"},
+      {"nombre": "Coquitlam City Hall", "tipo": "civico", "distancia": "2 min caminando"}
     ],
     "transferencias": [],
-    "seo_title": "Estación Lafarge Lake-Douglas SkyTrain Coquitlam | MetroGuia",
-    "meta_description": "Lafarge Lake-Douglas. Terminal este de Millennium Line.",
-    "h1": "Estación Lafarge Lake-Douglas — Millennium Line | Coquitlam",
-    "intro": "Terminal este de Millennium Line.",
-    "tips": [
-      "Terminal este de Millennium Line",
-      "Zona suburbana Coquitlam"
-    ],
-    "mejor_horario": "Mañana/tarde",
-    "mundial_relevancia": "Acceso este regional",
-    "descripcion_turistica": "Lafarge Lake-Douglas es terminal este de Millennium Line en Coquitlam.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "seo_title": "Estación Lafarge Lake-Douglas SkyTrain | MetroGuia",
+    "meta_description": "Centro cívico de Coquitlam con lago y parque.",
+    "h1": "Estación Lafarge Lake-Douglas — Millennium | Coquitlam",
+    "intro": "Centro cívico de Coquitlam con lago y parques.",
+    "tips": ["Lafarge Lake a 2 min", "Town Centre Park", "City Hall"],
+    "mejor_horario": "09:00 - 18:00",
+    "mundial_relevancia": "Centro cívico",
+    "descripcion_turistica": "Centro cívico con naturaleza.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
 
-  // ============================================
-  // CANADA LINE (16 stations - WATERFRONT to YVR/RICHMOND)
-  // ============================================
+  // ========== CANADA LINE (15 stations, Waterfront counted in Expo above) ==========
+  {
+    "slug": "vancouver-vancouver-city-centre",
+    "nombre": "Vancouver City Centre",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "centro-comercial",
+    "pois": [
+      {"nombre": "Pacific Centre mall", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Nordstrom", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Downtown core", "tipo": "comercial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Vancouver City Centre SkyTrain | MetroGuia",
+    "meta_description": "Centro de compras con Pacific Centre y Nordstrom.",
+    "h1": "Estación Vancouver City Centre — Canada | Vancouver",
+    "intro": "Centro de compras y negocios del downtown.",
+    "tips": ["Pacific Centre mall", "Nordstrom", "Downtown core"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Centro comercial downtown",
+    "descripcion_turistica": "Centro de compras principal con tiendas de lujo.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-yaletown-roundhouse",
+    "nombre": "Yaletown-Roundhouse",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "gastronomia-cultural",
+    "pois": [
+      {"nombre": "Yaletown restaurants", "tipo": "gastronomia", "distancia": "2 min caminando"},
+      {"nombre": "False Creek", "tipo": "naturaleza", "distancia": "2 min caminando"},
+      {"nombre": "Roundhouse Community Centre", "tipo": "cultural", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Yaletown-Roundhouse SkyTrain | MetroGuia",
+    "meta_description": "Barrio de restaurants, False Creek y Roundhouse.",
+    "h1": "Estación Yaletown-Roundhouse — Canada | Vancouver",
+    "intro": "Acceso a barrio gastronómico de Yaletown.",
+    "tips": ["Yaletown restaurants", "False Creek seawall", "Roundhouse Community Centre"],
+    "mejor_horario": "18:00 - 23:00",
+    "mundial_relevancia": "Gastronomía y entretenimiento",
+    "descripcion_turistica": "Barrio vibrante con restaurants y vida nocturna.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-olympic-village",
+    "nombre": "Olympic Village",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "cultural-gastronomia",
+    "pois": [
+      {"nombre": "2010 Olympics legacy", "tipo": "cultural", "distancia": "En la estación"},
+      {"nombre": "Craft breweries", "tipo": "gastronomia", "distancia": "5 min caminando"},
+      {"nombre": "False Creek seawall", "tipo": "naturaleza", "distancia": "2 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Olympic Village SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Legado de Olimpiadas 2010 con cervecerías artesanales.",
+    "h1": "Estación Olympic Village — Canada | Vancouver",
+    "intro": "Legado de Olimpiadas 2010 con cervecerías y seawall.",
+    "tips": ["2010 Olympics legacy", "Craft breweries", "False Creek seawall"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Cultural y gastronomía",
+    "descripcion_turistica": "Barrio olímpico con cervecerías y seawall.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-broadway-city-hall",
+    "nombre": "Broadway-City Hall",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "civico-comercial",
+    "pois": [
+      {"nombre": "Vancouver City Hall", "tipo": "civico", "distancia": "2 min caminando"},
+      {"nombre": "Broadway corridor", "tipo": "comercial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Broadway-City Hall SkyTrain | MetroGuia",
+    "meta_description": "Acceso a Vancouver City Hall y Broadway.",
+    "h1": "Estación Broadway-City Hall — Canada | Vancouver",
+    "intro": "Acceso a City Hall y Broadway corridor.",
+    "tips": ["Vancouver City Hall", "Broadway corridor tiendas y restaurants"],
+    "mejor_horario": "09:00 - 18:00",
+    "mundial_relevancia": "Civico",
+    "descripcion_turistica": "Centro cívico con vida comercial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-king-edward",
+    "nombre": "King Edward",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial-parques",
+    "pois": [
+      {"nombre": "Residencial", "tipo": "residencial", "distancia": "En la estación"},
+      {"nombre": "Queen Elizabeth Park", "tipo": "parque", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación King Edward SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio residencial cerca de Queen Elizabeth Park.",
+    "h1": "Estación King Edward — Canada | Vancouver",
+    "intro": "Barrio residencial cerca de Queen Elizabeth Park.",
+    "tips": ["Queen Elizabeth Park a 5 min"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial tranquilo.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-oakridge-41st-avenue",
+    "nombre": "Oakridge-41st Avenue",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "shopping-residencial",
+    "pois": [
+      {"nombre": "Oakridge Centre", "tipo": "shopping", "distancia": "2 min caminando"},
+      {"nombre": "Residencial", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Oakridge-41st Avenue SkyTrain | MetroGuia",
+    "meta_description": "Oakridge Centre en redevelopment y barrio residencial.",
+    "h1": "Estación Oakridge-41st Avenue — Canada | Vancouver",
+    "intro": "Oakridge Centre en redevelopment con barrio residencial.",
+    "tips": ["Oakridge Centre redevelopment"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Shopping",
+    "descripcion_turistica": "Centro de shopping en desarrollo.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-langara-49th-avenue",
+    "nombre": "Langara-49th Avenue",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "educativo-deportes",
+    "pois": [
+      {"nombre": "Langara College", "tipo": "educativo", "distancia": "2 min caminando"},
+      {"nombre": "Langara Golf Course", "tipo": "deportes", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Langara-49th Avenue SkyTrain | MetroGuia",
+    "meta_description": "Acceso a Langara College y golf course.",
+    "h1": "Estación Langara-49th Avenue — Canada | Vancouver",
+    "intro": "Acceso a Langara College y golf course.",
+    "tips": ["Langara College a 2 min", "Langara Golf Course a 5 min"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Educativo",
+    "descripcion_turistica": "Acceso a colegio y golf.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-marine-drive",
+    "nombre": "Marine Drive",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Vancouver",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "South Vancouver residencial", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Marine Drive SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Barrio residencial South Vancouver.",
+    "h1": "Estación Marine Drive — Canada | Vancouver",
+    "intro": "Barrio residencial South Vancouver.",
+    "tips": ["Barrio tranquilo"],
+    "mejor_horario": "08:00 - 18:00",
+    "mundial_relevancia": "Residencial",
+    "descripcion_turistica": "Barrio residencial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-bridgeport",
+    "nombre": "Bridgeport",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Richmond",
+    "tipo_zona": "comercial-branch",
+    "pois": [
+      {"nombre": "Branch point", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "McArthurGlen Outlet Mall", "tipo": "shopping", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Bridgeport SkyTrain Richmond | MetroGuia",
+    "meta_description": "Punto de bifurcación hacia YVR y Richmond. McArthurGlen Outlet Mall.",
+    "h1": "Estación Bridgeport — Canada | Richmond",
+    "intro": "Punto de bifurcación hacia YVR y Richmond con outlet mall.",
+    "tips": ["Branch point YVR/Richmond", "McArthurGlen Outlet Mall a 5 min"],
+    "mejor_horario": "09:00 - 20:00",
+    "mundial_relevancia": "Hub de transporte y shopping",
+    "descripcion_turistica": "Punto de bifurcación con shopping outlets.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-templeton",
+    "nombre": "Templeton",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Richmond",
+    "tipo_zona": "aeropuerto",
+    "pois": [
+      {"nombre": "Templeton área", "tipo": "residencial", "distancia": "En la estación"},
+      {"nombre": "Near airport", "tipo": "transporte", "distancia": "5 min"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Templeton SkyTrain Richmond | MetroGuia",
+    "meta_description": "Estación cercana al aeropuerto.",
+    "h1": "Estación Templeton — Canada | Richmond",
+    "intro": "Estación cercana al aeropuerto.",
+    "tips": ["Cercano al aeropuerto"],
+    "mejor_horario": "06:00 - 22:00",
+    "mundial_relevancia": "Acceso aeropuerto",
+    "descripcion_turistica": "Acceso al aeropuerto.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-sea-island-centre",
+    "nombre": "Sea Island Centre",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Richmond",
+    "tipo_zona": "aeropuerto",
+    "pois": [
+      {"nombre": "Airport campus", "tipo": "transporte", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Sea Island Centre SkyTrain Richmond | MetroGuia",
+    "meta_description": "Campus del aeropuerto.",
+    "h1": "Estación Sea Island Centre — Canada | Richmond",
+    "intro": "Campus del aeropuerto.",
+    "tips": ["Airport campus"],
+    "mejor_horario": "06:00 - 22:00",
+    "mundial_relevancia": "Acceso aeropuerto",
+    "descripcion_turistica": "Campus del aeropuerto.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
   {
     "slug": "vancouver-yvr-airport",
     "nombre": "YVR-Airport",
     "linea": "Canada",
     "sistema": "skytrain",
     "ciudad": "Richmond",
-    "tipo_zona": "transporte-aeropuerto",
+    "tipo_zona": "aeropuerto-terminal",
     "pois": [
-      {
-        "nombre": "Vancouver International Airport",
-        "tipo": "aeropuerto",
-        "distancia": "5 min caminando"
-      }
+      {"nombre": "Vancouver International Airport", "tipo": "transporte", "distancia": "En la estación"}
     ],
     "transferencias": [],
-    "seo_title": "Estación YVR-Airport SkyTrain Vancouver — Aeropuerto | MetroGuia",
-    "meta_description": "YVR-Airport. Terminal de aeropuerto de Vancouver (Canadá Line).",
-    "h1": "Estación YVR-Airport — Canada Line | Vancouver",
-    "intro": "Estación YVR-Airport, conexión directa con Aeropuerto Internacional de Vancouver.",
-    "tips": [
-      "Acceso directo a YVR Airport",
-      "Conexión rápida al aeropuerto (5 min)",
-      "Terminal moderna y eficiente"
+    "seo_title": "Estación YVR-Airport SkyTrain Vancouver | MetroGuia",
+    "meta_description": "Terminal del Aeropuerto Internacional de Vancouver.",
+    "h1": "Estación YVR-Airport — Canada | Richmond",
+    "intro": "Terminal del Aeropuerto Internacional de Vancouver.",
+    "tips": ["Airport terminal", "Conexión Internacional"],
+    "mejor_horario": "06:00 - 23:00",
+    "mundial_relevancia": "Aeropuerto Internacional",
+    "descripcion_turistica": "Terminal principal del aeropuerto de Vancouver.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-aberdeen",
+    "nombre": "Aberdeen",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Richmond",
+    "tipo_zona": "shopping-cultural",
+    "pois": [
+      {"nombre": "Aberdeen Centre", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Asian mall", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Restaurants", "tipo": "gastronomia", "distancia": "En la estación"}
     ],
-    "mejor_horario": "Según vuelos",
-    "mundial_relevancia": "Aeropuerto principal",
-    "descripcion_turistica": "YVR-Airport es estación Canada Line con acceso directo al Aeropuerto Internacional de Vancouver, a solo 5 minutos caminando.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa. Diseñada para pasajeros con equipaje."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": [],
+    "seo_title": "Estación Aberdeen SkyTrain Richmond | MetroGuia",
+    "meta_description": "Aberdeen Centre, mall asiático con restaurants.",
+    "h1": "Estación Aberdeen — Canada | Richmond",
+    "intro": "Aberdeen Centre con tiendas asiáticas y restaurants.",
+    "tips": ["Aberdeen Centre Asian mall", "Restaurants variados"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Shopping asiático",
+    "descripcion_turistica": "Centro comercial asiático.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-lansdowne",
+    "nombre": "Lansdowne",
+    "linea": "Canada",
+    "sistema": "skytrain",
+    "ciudad": "Richmond",
+    "tipo_zona": "shopping-cultural",
+    "pois": [
+      {"nombre": "Lansdowne Centre", "tipo": "shopping", "distancia": "En la estación"},
+      {"nombre": "Richmond Night Market", "tipo": "cultural", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Lansdowne SkyTrain Richmond | MetroGuia",
+    "meta_description": "Lansdowne Centre y Richmond Night Market.",
+    "h1": "Estación Lansdowne — Canada | Richmond",
+    "intro": "Lansdowne Centre y Richmond Night Market.",
+    "tips": ["Lansdowne Centre", "Richmond Night Market (verano) a 5 min"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Shopping y cultural",
+    "descripcion_turistica": "Centro comercial con mercado nocturno.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
     "moneda": "CAD"
   },
   {
@@ -492,38 +1198,194 @@ export const estacionesVANCOUVER = [
     "linea": "Canada",
     "sistema": "skytrain",
     "ciudad": "Richmond",
-    "tipo_zona": "comercial-suburbano",
+    "tipo_zona": "terminal-shopping",
     "pois": [
-      {
-        "nombre": "Richmond Centre Shopping",
-        "tipo": "compras",
-        "distancia": "2 min caminando"
-      }
+      {"nombre": "Terminal station", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "Richmond Centre", "tipo": "shopping", "distancia": "En la estación"}
     ],
     "transferencias": [],
     "seo_title": "Estación Richmond-Brighouse SkyTrain | MetroGuia",
-    "meta_description": "Richmond-Brighouse. Terminal de Richmond. Centro comercial.",
-    "h1": "Estación Richmond-Brighouse — Canada Line | Richmond",
-    "intro": "Terminal Richmond de Canada Line.",
-    "tips": [
-      "Terminal de Richmond",
-      "Richmond Centre Shopping",
-      "Zona suburbana"
+    "meta_description": "Terminal de Canada Line con Richmond Centre.",
+    "h1": "Estación Richmond-Brighouse — Canada | Richmond",
+    "intro": "Terminal de Canada Line con Richmond Centre.",
+    "tips": ["Terminal Canada Line", "Richmond Centre mall"],
+    "mejor_horario": "10:00 - 20:00",
+    "mundial_relevancia": "Terminal y shopping",
+    "descripcion_turistica": "Terminal con centro comercial.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:00 - 01:30", "sabado": "05:00 - 02:00", "domingo": "06:00 - 01:30"},
+    "moneda": "CAD"
+  },
+
+  // ========== SEABUS (1 unique station) ==========
+  {
+    "slug": "vancouver-lonsdale-quay",
+    "nombre": "Lonsdale Quay",
+    "linea": "SeaBus",
+    "sistema": "seabus",
+    "ciudad": "North Vancouver",
+    "tipo_zona": "waterfront-mercado",
+    "pois": [
+      {"nombre": "Lonsdale Quay Market", "tipo": "comercial", "distancia": "En la estación"},
+      {"nombre": "North Shore waterfront", "tipo": "naturaleza", "distancia": "En la estación"},
+      {"nombre": "Bus connections to Grouse Mountain", "tipo": "transporte", "distancia": "5 min caminando"},
+      {"nombre": "Capilano", "tipo": "naturaleza", "distancia": "15 min"}
     ],
-    "mejor_horario": "Tarde",
-    "mundial_relevancia": "Centro Richmond",
-    "descripcion_turistica": "Richmond-Brighouse es terminal Richmond de Canada Line con acceso a Richmond Centre Shopping.",
-    "accesibilidad": {
-      "elevador": true,
-      "rampa": true,
-      "piso_tactil": true,
-      "notas": "Accesibilidad completa."
-    },
-    "horarios": {
-      "lunes_viernes": "05:00 - 01:30",
-      "sabado": "05:00 - 02:00",
-      "domingo": "06:00 - 01:30"
-    },
+    "transferencias": [],
+    "seo_title": "Estación Lonsdale Quay SeaBus | MetroGuia",
+    "meta_description": "Lonsdale Quay Market y waterfront de North Shore.",
+    "h1": "Estación Lonsdale Quay — SeaBus | North Vancouver",
+    "intro": "Mercado de Lonsdale Quay en waterfront de North Shore.",
+    "tips": ["Lonsdale Quay Market", "North Shore waterfront", "Bus a Grouse Mountain", "Capilano Suspension Bridge"],
+    "mejor_horario": "10:00 - 18:00",
+    "mundial_relevancia": "Mercado y naturaleza",
+    "descripcion_turistica": "Mercado y punto de partida a atracciones de North Shore.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "06:00 - 00:30", "sabado": "06:00 - 00:30", "domingo": "08:00 - 23:00"},
+    "moneda": "CAD"
+  },
+
+  // ========== WEST COAST EXPRESS (6 unique stations, Waterfront and Coquitlam Central counted above) ==========
+  {
+    "slug": "vancouver-port-moody-wce",
+    "nombre": "Port Moody WCE",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Port Moody",
+    "tipo_zona": "ferrocarril-estacion",
+    "pois": [
+      {"nombre": "Adjacent to Moody Centre SkyTrain", "tipo": "transporte", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Port Moody WCE | MetroGuia",
+    "meta_description": "Estación de West Coast Express adyacente a SkyTrain.",
+    "h1": "Estación Port Moody WCE — West Coast Express | Port Moody",
+    "intro": "Estación WCE adyacente a Moody Centre SkyTrain.",
+    "tips": ["Transferencia fácil a Moody Centre"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Ferrocarril regional",
+    "descripcion_turistica": "Estación de ferrocarril regional.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-port-coquitlam",
+    "nombre": "Port Coquitlam",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Port Coquitlam",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Port Coquitlam community", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Port Coquitlam WCE | MetroGuia",
+    "meta_description": "Comunidad residencial Port Coquitlam.",
+    "h1": "Estación Port Coquitlam — West Coast Express | Port Coquitlam",
+    "intro": "Comunidad residencial Port Coquitlam.",
+    "tips": ["Comunidad tranquila"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Ferrocarril regional",
+    "descripcion_turistica": "Estación de ferrocarril regional.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-pitt-meadows",
+    "nombre": "Pitt Meadows",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Pitt Meadows",
+    "tipo_zona": "rural-naturaleza",
+    "pois": [
+      {"nombre": "Granjas", "tipo": "naturaleza", "distancia": "En la estación"},
+      {"nombre": "Pitt River", "tipo": "naturaleza", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Pitt Meadows WCE | MetroGuia",
+    "meta_description": "Área rural de Pitt Meadows con ríos.",
+    "h1": "Estación Pitt Meadows — West Coast Express | Pitt Meadows",
+    "intro": "Área rural de Pitt Meadows.",
+    "tips": ["Área rural", "Pitt River"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Ferrocarril regional",
+    "descripcion_turistica": "Estación de ferrocarril regional en área rural.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-maple-meadows",
+    "nombre": "Maple Meadows",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Maple Ridge",
+    "tipo_zona": "residencial",
+    "pois": [
+      {"nombre": "Maple Ridge community", "tipo": "residencial", "distancia": "En la estación"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Maple Meadows WCE | MetroGuia",
+    "meta_description": "Comunidad residencial Maple Ridge.",
+    "h1": "Estación Maple Meadows — West Coast Express | Maple Ridge",
+    "intro": "Comunidad residencial Maple Ridge.",
+    "tips": ["Comunidad tranquila"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Ferrocarril regional",
+    "descripcion_turistica": "Estación de ferrocarril regional.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-port-haney",
+    "nombre": "Port Haney",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Maple Ridge",
+    "tipo_zona": "historico",
+    "pois": [
+      {"nombre": "Heritage area", "tipo": "cultural", "distancia": "En la estación"},
+      {"nombre": "Downtown Maple Ridge", "tipo": "comercial", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Port Haney WCE | MetroGuia",
+    "meta_description": "Área histórica de downtown Maple Ridge.",
+    "h1": "Estación Port Haney — West Coast Express | Maple Ridge",
+    "intro": "Área histórica de downtown Maple Ridge.",
+    "tips": ["Heritage area", "Downtown Maple Ridge"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Ferrocarril regional y historia",
+    "descripcion_turistica": "Estación con patrimonio histórico.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
+    "moneda": "CAD"
+  },
+  {
+    "slug": "vancouver-mission-city",
+    "nombre": "Mission City",
+    "linea": "WCE",
+    "sistema": "commuter-rail",
+    "ciudad": "Mission",
+    "tipo_zona": "terminal-heritage",
+    "pois": [
+      {"nombre": "Terminal station", "tipo": "transporte", "distancia": "En la estación"},
+      {"nombre": "Mission heritage railway", "tipo": "cultural", "distancia": "5 min caminando"},
+      {"nombre": "Fraser River", "tipo": "naturaleza", "distancia": "5 min caminando"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Mission City WCE | MetroGuia",
+    "meta_description": "Terminal de West Coast Express con patrimonio ferroviario.",
+    "h1": "Estación Mission City — West Coast Express | Mission",
+    "intro": "Terminal de West Coast Express con patrimonio ferroviario.",
+    "tips": ["Terminal WCE", "Mission heritage railway", "Fraser River"],
+    "mejor_horario": "06:00 - 18:30",
+    "mundial_relevancia": "Terminal regional y heritage",
+    "descripcion_turistica": "Terminal con patrimonio ferroviario.",
+    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Completamente accesible."},
+    "horarios": {"lunes_viernes": "05:30 - 09:00, 15:30 - 18:30", "sabado": "No opera", "domingo": "No opera"},
     "moneda": "CAD"
   }
 ];

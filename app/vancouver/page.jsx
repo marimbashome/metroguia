@@ -224,7 +224,7 @@ export default function VancouverPage() {
                       </span>
                       <div>
                         <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
-                          {linea.nombre}
+                          {linea.colorNombre}
                         </h3>
                       </div>
                     </div>

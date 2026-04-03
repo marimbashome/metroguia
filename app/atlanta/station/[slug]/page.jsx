@@ -72,7 +72,7 @@ export default function StationAtlanta({ params }) {
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {lineasEstacion.map((linea) => (
               <span key={linea.id} style={{ padding: '6px 14px', backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: 'var(--radius-full)', fontSize: '0.9rem', fontWeight: '700' }}>
-                {linea.nombre}
+                {linea.colorNombre}
               </span>
             ))}
           </div>
@@ -215,7 +215,7 @@ export default function StationAtlanta({ params }) {
                   <Link href={`/atlanta/line/${linea.id}`} key={linea.id}>
                     <div style={{ padding: '12px', backgroundColor: 'var(--surface)', border: `1px solid ${LINE_COLORS[linea.id.toLowerCase()] || '#FDBF00'}`, borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.2s ease' }}>
                       <p style={{ fontSize: '0.9rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
-                        {linea.nombre}
+                        {linea.colorNombre}
                       </p>
                     </div>
                   </Link>

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: linea.seo_title || `Line ${linea.id} — ${linea.nombre}`,
+    title: linea.seo_title || `Line ${linea.id} — ${linea.colorNombre}`,
     description: linea.meta_description || `Line ${linea.id} guide for Miami Metrorail and Metromover transit.`,
     openGraph: {
       title: linea.seo_title,
@@ -58,7 +58,7 @@ export default function LineaMiamiPage({ params }) {
             </span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
-            Line {linea.id} — {linea.nombre}
+            Line {linea.id} — {linea.colorNombre}
           </h1>
           <p style={{ fontSize: '1.25rem', margin: '0 0 16px 0', opacity: '0.95' }}>
             {linea.inicio} → {linea.fin}
