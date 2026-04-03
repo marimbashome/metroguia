@@ -1,4 +1,5 @@
 import { aeropuertos } from '@/data/aeropuertos'
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Aeropuertos de México — Cómo llegar al centro en transporte público | MetroGuia',
@@ -89,6 +90,8 @@ export default function AeropuertosPage() {
           ))}
         </div>
       </section>
+
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* Regions */}
       {Object.entries(regiones).filter(([, airports]) => airports.length > 0).map(([region, airports]) => (

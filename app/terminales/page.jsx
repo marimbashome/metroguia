@@ -1,4 +1,5 @@
 import { terminales } from '@/data/terminales'
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Terminales de Autobuses de México — Cómo llegar en transporte público | MetroGuia',
@@ -68,6 +69,8 @@ export default function TerminalesPage() {
           ))}
         </div>
       </section>
+
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* Group by city */}
       {Object.entries(ciudades).map(([ciudad, terms]) => (

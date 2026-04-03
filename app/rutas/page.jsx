@@ -1,4 +1,5 @@
 import BuscadorRutas from '@/app/components/BuscadorRutas';
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Calcular ruta en metro CDMX — Planificador MetroGuia.mx',
@@ -16,5 +17,10 @@ export const metadata = {
 };
 
 export default function RutasPage() {
-  return <BuscadorRutas asPage={true} />;
+  return (
+    <>
+      <BuscadorRutas asPage={true} />
+      <AdBannerLazy slot="4434764790" format="auto" />
+    </>
+  );
 }

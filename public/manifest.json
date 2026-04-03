@@ -20,79 +20,79 @@
       "short_name": "Route",
       "description": "Calculate a transit route",
       "url": "/ruta/calc/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "FIFA World Cup 2026",
       "short_name": "FIFA",
       "description": "Transit guide for FIFA 2026 host cities",
       "url": "/mundial-2026/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "NYC Subway",
       "short_name": "NYC",
       "description": "MTA Subway guide for New York City",
       "url": "/nyc/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "CDMX Metro",
       "short_name": "CDMX",
       "description": "Metro de la Ciudad de México",
       "url": "/cdmx/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "LA Metro",
       "short_name": "LA",
       "description": "Metro & light rail guide for Los Angeles",
       "url": "/los-angeles/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "Chicago L",
       "short_name": "CHI",
       "description": "CTA L train guide for Chicago",
       "url": "/chicago/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "Toronto TTC",
       "short_name": "TOR",
       "description": "TTC Subway guide for Toronto",
       "url": "/toronto/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
       "name": "DC Metro",
       "short_name": "DC",
       "description": "WMATA Metrorail guide for Washington DC",
       "url": "/washington-dc/",
-      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+      "icons": [{"src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png"}]
     }
   ],
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/logo.png",
+      "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/logo.png",
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/logo.png",
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

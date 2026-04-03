@@ -6,6 +6,7 @@ import { barriosMagicos } from '@/data/turismo/barrios-magicos'
 import { rutasGastronomicas } from '@/data/turismo/rutas-gastronomicas'
 import { destinosPrioritarios } from '@/data/turismo/destinos-prioritarios'
 import { naturaleza } from '@/data/turismo/naturaleza'
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Turismo en México — 8 programas turísticos completos | MetroGuia',
@@ -166,6 +167,8 @@ export default function TurismoHubPage() {
           </div>
         </div>
       </section>
+
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* GRID DE PROGRAMAS */}
       <section style={{ padding: '3rem 1.25rem' }}>

@@ -1,4 +1,5 @@
 import { ferrys } from '@/data/ferrys'
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Ferries y Transbordadores de México — Rutas marítimas, horarios y precios | MetroGuia',
@@ -85,6 +86,8 @@ export default function FerriesPage() {
           ))}
         </div>
       </section>
+
+      <AdBannerLazy slot="4434764790" format="auto" />
 
       {/* Regions */}
       {Object.entries(regiones).filter(([, ferries]) => ferries.length > 0).map(([region, ferries]) => (

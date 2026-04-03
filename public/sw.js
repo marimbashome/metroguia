@@ -1,6 +1,6 @@
 /**
- * MetroGuia.mx Service Worker v7
- * Version: v7-20260401
+ * MetroGuia.mx Service Worker v8
+ * Version: v8-20260403
  *
  * Architecture:
  * - Separate cache buckets for static assets, pages, fonts, and images
@@ -39,6 +39,11 @@ const PRECACHE_URLS = [
   '/toluca/',
   '/queretaro/',
   '/tren-maya/',
+  '/oaxaca/',
+  '/morelia/',
+  '/veracruz/',
+  '/campeche/',
+  '/villahermosa/',
   // US — FIFA 2026 host cities (highest priority)
   '/nyc/',
   '/los-angeles/',
@@ -284,8 +289,8 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
-          // Delete caches that don't start with 'mg-' or don't end with '-v7'
-          if (!cacheName.startsWith('mg-') || !cacheName.endsWith('-v7')) {
+          // Delete caches that don't start with 'mg-' or aren't current version (v8)
+          if (!cacheName.startsWith('mg-') || !ALL_CACHES.includes(cacheName)) {
             console.log(`[SW] Deleting old cache: ${cacheName}`);
             return caches.delete(cacheName);
           }

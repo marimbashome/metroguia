@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import AffiliateBookingCard from '@/app/components/AffiliateBookingCard';
 import { LANGUAGES, buildMetadata, t, getDefaultLangForCity } from '@/lib/i18n';
 
 export function generateStaticParams() {
@@ -122,6 +123,9 @@ export default function DenverPageLang({ params }) {
         <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem', marginBottom: '2rem' }}>
             <AffiliateTransportCard ciudad="Denver" estacion={null} fechas={null} />
+          <div style={{ maxWidth: '1000px', margin: 'auto', padding: '2rem 1rem 0 1rem' }}>
+            <AffiliateBookingCard citySlug="denver" />
+          </div>
           </div>
           <h2 style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '48px', textAlign: 'center', color: 'var(--text)', letterSpacing: '-0.01em' }}>
             {t(translations, 'denver.featuredStations', t(translations, 'city.featuredStations', 'Featured Stations'))}

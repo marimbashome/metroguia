@@ -3,6 +3,7 @@ import { estaciones } from '@/data/estaciones'
 import { rutasPopulares } from '@/data/rutas-populares'
 import { lineasDetalle } from '@/data/lineas-detalle'
 import ExplorarContent from './ExplorarContent'
+import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 export const metadata = {
   title: 'Explorar México — 11 ciudades, 786 estaciones, 77 líneas | MetroGuia',
@@ -110,14 +111,17 @@ export default function ExplorarPage() {
   }
 
   return (
-    <ExplorarContent
-      ciudades={ciudadesExplorar}
-      zonasDestacadas={zonasDestacadas}
-      estacionesTuristicas={estacionesTuristicas}
-      rutasDestacadas={rutasDestacadas}
-      lineasArray={lineasArray}
-      breadcrumbSchema={breadcrumbSchema}
-      explorarSchema={explorarSchema}
-    />
+    <>
+      <AdBannerLazy slot="4434764790" format="auto" />
+      <ExplorarContent
+        ciudades={ciudadesExplorar}
+        zonasDestacadas={zonasDestacadas}
+        estacionesTuristicas={estacionesTuristicas}
+        rutasDestacadas={rutasDestacadas}
+        lineasArray={lineasArray}
+        breadcrumbSchema={breadcrumbSchema}
+        explorarSchema={explorarSchema}
+      />
+    </>
   )
 }

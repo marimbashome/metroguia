@@ -1,6 +1,114 @@
 'use client';
 
-export default function AffiliateTransportCard({ ciudad = 'CDMX' }) {
+export default function AffiliateTransportCard({ ciudad, icon, titulo, descripcion, precio, enlace, donde, tip }) {
+  // Mode 1: Dynamic props (US/CA pages pass these directly)
+  if (titulo) {
+    return (
+      <a
+        href={enlace || '#'}
+        target={enlace && enlace.startsWith('http') ? '_blank' : undefined}
+        rel={enlace && enlace.startsWith('http') ? 'noopener noreferrer' : undefined}
+        style={{
+          display: 'block',
+          textDecoration: 'none',
+          color: 'inherit',
+        }}
+      >
+        <div style={{
+          backgroundColor: 'var(--surface)',
+          border: '1px solid var(--border)',
+          borderRadius: 'var(--radius-lg)',
+          padding: '1.5rem',
+          margin: '0.75rem 0',
+          borderLeft: '4px solid var(--info)',
+          transition: 'border-color 0.2s, transform 0.2s',
+          cursor: enlace ? 'pointer' : 'default',
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            marginBottom: descripcion ? '0.75rem' : 0,
+          }}>
+            <div style={{
+              width: '2.5rem',
+              height: '2.5rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'rgba(59, 130, 246, 0.1)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '1.25rem',
+              flexShrink: 0,
+            }}>
+              {icon || '💳'}
+            </div>
+            <div style={{ flex: 1 }}>
+              <h3 style={{
+                fontSize: '1rem',
+                fontWeight: 700,
+                color: 'var(--text)',
+                margin: 0,
+              }}>
+                {titulo}
+              </h3>
+              {precio && (
+                <span style={{
+                  fontSize: '0.8rem',
+                  color: 'var(--primary)',
+                  fontWeight: 600,
+                }}>
+                  {precio}
+                </span>
+              )}
+            </div>
+            {enlace && enlace.startsWith('http') && (
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>↗</span>
+            )}
+          </div>
+          
+          {descripcion && (
+            <p style={{
+              fontSize: '0.85rem',
+              color: 'var(--text-muted)',
+              margin: 0,
+              lineHeight: 1.5,
+            }}>
+              {descripcion}
+            </p>
+          )}
+          
+          {donde && (
+            <p style={{
+              fontSize: '0.8rem',
+              color: 'var(--text-dim)',
+              margin: '0.5rem 0 0',
+              lineHeight: 1.4,
+            }}>
+              📍 {donde}
+            </p>
+          )}
+          
+          {tip && (
+            <div style={{
+              marginTop: '0.75rem',
+              padding: '0.5rem 0.75rem',
+              borderRadius: 'var(--radius)',
+              backgroundColor: 'rgba(245, 166, 35, 0.06)',
+              border: '1px solid var(--primary-border)',
+              fontSize: '0.8rem',
+              color: 'var(--warning)',
+              lineHeight: 1.4,
+            }}>
+              💡 {tip}
+            </div>
+          )}
+        </div>
+      </a>
+    );
+  }
+  
+  // Mode 2: Ciudad lookup (MX cities — legacy)
   const cards = {
     CDMX: {
       nombre: 'Tarjeta de Movilidad Integrada',
