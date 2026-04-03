@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'boston.title', 'MBTA Boston & Transit Guide') + ' — MetroGuia',
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 
 export default function BostonPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesBOS.filter(e =>
     ['boston-downtown-crossing', 'boston-park-street', 'boston-central-square', 'boston-south-station'].includes(e.slug)

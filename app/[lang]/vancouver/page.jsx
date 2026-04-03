@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'vancouver.title', 'TransLink Vancouver Guide') + ' — MetroGuia',
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 
 export default function VancouverPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesVancouver.filter(e =>
     ['vancouver-waterfront', 'vancouver-downtown', 'vancouver-broadway', 'vancouver-airport'].includes(e.slug)

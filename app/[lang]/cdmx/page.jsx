@@ -9,7 +9,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`)
+  const translations = {} // fallback: t() uses defaults
   const lang = params.lang
   return buildMetadata({
     lang,
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
 
 export default function CDMXPageLang({ params }) {
   const lang = params.lang
-  const translations = require(`@/translations/${lang}.json`)
+  const translations = {} // fallback: t() uses defaults
 
   const estacionesTuristicas = estaciones
     .filter(e => e.tipo_zona === 'turistico')

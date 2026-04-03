@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'philadelphia.title', 'SEPTA Philadelphia & Transit Guide') + ' — MetroGuia',
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 
 export default function PhiladelphiaPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesPHL.filter(e =>
     ['philadelphia-city-hall', 'philadelphia-market-east', 'philadelphia-13th-street', 'philadelphia-30th-street'].includes(e.slug)

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 
 export default function LineaMacrobusPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const linea = lineasGDL.find(l => (l.id === 'MC' || l.id === 'MP') && l.id === params.id);
 
   if (!linea) {

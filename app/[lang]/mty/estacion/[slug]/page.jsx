@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const lineLabel = t(translations, 'line.title', 'Line {id}').replace('{id}', estacion.linea);
 
   return buildMetadata({
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
 export default function EstacionMTYLangPage({ params }) {
   const { lang, slug } = params;
   const estacion = estacionesMTY.find((e) => e.slug === slug);
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   if (!estacion) {
     return (

@@ -80,7 +80,7 @@ export async function generateMetadata({ params }) {
 
 export default function RutaPageLang({ params }) {
   const lang = params.lang
-  const translations = require(`@/translations/${lang}.json`)
+  const translations = {} // fallback: t() uses defaults
   const parsed = parseSlug(params.slug)
 
   if (!parsed) {

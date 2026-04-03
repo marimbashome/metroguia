@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 
 export default function StationMississaugaPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const estacion = estacionesMississauga.find(e => e.slug === params.slug);
 
   if (!estacion) {

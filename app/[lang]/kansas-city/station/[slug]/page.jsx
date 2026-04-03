@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 
 export default function StationKansasCityPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const estacion = estacionesKansasCity.find(e => e.slug === params.slug);
 
   if (!estacion) {

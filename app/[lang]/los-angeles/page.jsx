@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'los-angeles.title', 'LA Metro & Transit Guide') + ' — MetroGuia',
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 
 export default function LosAngelesPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesLosAngeles.filter(e =>
     ['la-union-station', 'la-hollywood', 'la-downtown-santa-monica', 'la-long-beach'].includes(e.slug)

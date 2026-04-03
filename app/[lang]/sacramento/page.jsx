@@ -12,7 +12,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'sacramento.title', 'Sacramento Transit Guide') + ' — MetroGuia',
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 
 export default function SacramentoPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estaciones = estacionesSacramento;
   const lineas = lineasSacramento;

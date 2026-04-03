@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'san-francisco.title', 'BART San Francisco & Transit Guide') + ' — MetroGuia',
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 
 export default function SanFranciscoPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesSFO.filter(e =>
     ['sfo-civic-center', 'sfo-powell-street', 'sfo-embarcadero', 'sfo-airport'].includes(e.slug)

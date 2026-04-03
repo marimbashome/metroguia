@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
 
 export default function LineBaltimorePageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const linea = lineasDetalleBaltimore.find(l => l.id === params.id);
 
   if (!linea) {

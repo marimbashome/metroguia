@@ -12,7 +12,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'gdl.title', 'SITEUR Guadalajara') + ' — MetroGuia',
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 
 export default function GDLPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadas = estacionesGDL.filter(e =>
     ['gdl-juarez', 'arcos-de-zapopan', 'estadio-chivas', 'plaza-universidad', 'san-juan-de-dios', 'estadio-chivas-mp'].includes(e.slug)

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 
 export default function StationPhiladelphiaPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const estacion = estacionesPhiladelphia.find(e => e.slug === params.slug);
 
   if (!estacion) {

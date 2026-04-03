@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   const linea = lineasMTY.find(l => l.id === params.id);
   if (!linea) return { title: 'Línea no encontrada — MetroGuia' };
 
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   const lineTitle = t(translations, 'line.title', 'Línea').replace('{id}', linea.id);
 
   return buildMetadata({
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
 export default function LineaDetailPage({ params }) {
   const lang = params.lang;
   const linea = lineasMTY.find(l => l.id === params.id);
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   if (!linea) {
     return (

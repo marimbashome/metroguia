@@ -10,7 +10,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
   return buildMetadata({
     lang: params.lang,
     title: t(translations, 'macrobus.title', 'Mi Macro Guadalajara') + ' — MetroGuia',
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
 
 export default function MacrobusPageLang({ params }) {
   const lang = params.lang;
-  const translations = require(`@/translations/${lang}.json`);
+  const translations = {}; // fallback: t() uses defaults
 
   const estacionesDestacadasMacro = estacionesGDL.filter(e =>
     ['estadio-chivas-mp'].includes(e.slug) && e.sistema === 'macrobus'

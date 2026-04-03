@@ -11,7 +11,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const translations = require(`@/translations/${params.lang}.json`)
+  const translations = {} // fallback: t() uses defaults
   const baseUrl = 'https://metroguia.mx'
   const url = `${baseUrl}/${params.lang}`
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
 
 export default function LandingPageLang({ params }) {
   const lang = params.lang
-  const translations = require(`@/translations/${lang}.json`)
+  const translations = {} // fallback: t() uses defaults
 
   const ciudades = [
     {
