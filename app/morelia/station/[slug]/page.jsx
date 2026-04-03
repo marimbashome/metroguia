@@ -29,10 +29,10 @@ export default function StationMoreliaPage({ params }) {
   const estacion = estacionesMorelia.find((e) => e.slug === params.slug);
   if (!estacion) {
     return (
-      <main style={ padding: '40px 20px', textAlign: 'center' }>
+      <main style={{ padding: '40px 20px', textAlign: 'center'}} >
         <h1>Station not found</h1>
-        <p style={ marginTop: '20px' }>
-          <Link href="/morelia" style={ color: '#059669', textDecoration: 'underline' }>Back to Morelia</Link>
+        <p style={{ marginTop: '20px'}} >
+          <Link href="/morelia" style={{ color: '#059669', textDecoration: 'underline'}} >Back to Morelia</Link>
         </p>
       </main>
     );
@@ -66,23 +66,23 @@ export default function StationMoreliaPage({ params }) {
   };
 
   return (
-    <main style={ backgroundColor: '#ffffff' }>
-      <script type="application/ld+json" dangerouslySetInnerHTML={ __html: JSON.stringify(breadcrumbSchema) } />
+    <main style={{ backgroundColor: '#ffffff'}} >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section style={heroStyles}>
         <div style={containerStyles}>
-          <p style={ fontSize: '14px', marginBottom: '10px', opacity: '0.9' }>
+          <p style={{ fontSize: '14px', marginBottom: '10px', opacity: '0.9'}} >
             Line {lineaId} • {estacion.municipio || 'Morelia'}
           </p>
-          <h1 style={ fontSize: '42px', fontWeight: 'bold', marginBottom: '10px' }>{estacion.h1 || estacion.nombre}</h1>
-          <p style={ fontSize: '16px', opacity: '0.95', maxWidth: '700px', margin: '0 auto' }>{estacion.intro || estacion.descripcion_turistica || ''}</p>
+          <h1 style={{ fontSize: '42px', fontWeight: 'bold', marginBottom: '10px'}} >{estacion.h1 || estacion.nombre}</h1>
+          <p style={{ fontSize: '16px', opacity: '0.95', maxWidth: '700px', margin: '0 auto'}} >{estacion.intro || estacion.descripcion_turistica || ''}</p>
         </div>
       </section>
 
-      <section style={ ...containerStyles, paddingTop: '40px', paddingBottom: '40px' }>
+      <section style={{ ...containerStyles, paddingTop: '40px', paddingBottom: '40px'}} >
         <AdBannerLazy adSlot="4434764790" format="auto" />
         <div style={sidebarStyles}>
-          <h2 style={ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937' }>Quick Info</h2>
-          <ul style={ fontSize: '14px', color: '#374151', lineHeight: '1.8', paddingLeft: '20px' }>
+          <h2 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937'}} >Quick Info</h2>
+          <ul style={{ fontSize: '14px', color: '#374151', lineHeight: '1.8', paddingLeft: '20px'}} >
             {estacion.municipio && <li><strong>Municipality:</strong> {estacion.municipio}</li>}
             <li><strong>Line:</strong> {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea}</li>
             {estacion.tipo_zona && <li><strong>Zone type:</strong> {estacion.tipo_zona}</li>}
@@ -104,9 +104,9 @@ export default function StationMoreliaPage({ params }) {
               <div style={gridStyles}>
                 {pois.map((poi, idx) => (
                   <div key={idx} style={poiStyles}>
-                    <h3 style={ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px' }>{poi.nombre}</h3>
-                    <p style={ fontSize: '13px', color: '#6b7280', marginBottom: '5px' }>{poi.tipo}</p>
-                    <p style={ fontSize: '13px', color: '#374151', fontWeight: '500' }>{poi.distancia}</p>
+                    <h3 style={{ fontSize: '16px', fontWeight: 'bold', color: colorLinea, marginBottom: '8px'}} >{poi.nombre}</h3>
+                    <p style={{ fontSize: '13px', color: '#6b7280', marginBottom: '5px'}} >{poi.tipo}</p>
+                    <p style={{ fontSize: '13px', color: '#374151', fontWeight: '500'}} >{poi.distancia}</p>
                   </div>
                 ))}
               </div>
@@ -121,7 +121,7 @@ export default function StationMoreliaPage({ params }) {
               {(Array.isArray(estacion.tips) ? estacion.tips : []).map((tip, idx) => (
                 <div key={idx} style={tipStyles}>
                   <div style={tipNumberStyles}>{idx + 1}</div>
-                  <p style={ fontSize: '15px', color: '#374151', lineHeight: '1.6', margin: 0 }>{tip}</p>
+                  <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.6', margin: 0}} >{tip}</p>
                 </div>
               ))}
             </div>
@@ -136,7 +136,7 @@ export default function StationMoreliaPage({ params }) {
               <div style={gridStyles}>
                 {transferencias.map((trans, idx) => (
                   <div key={idx} style={cardStyles}>
-                    <p style={ fontSize: '14px', color: '#374151' }>{typeof trans === 'string' ? trans : (trans.nombre || trans.linea || JSON.stringify(trans))}</p>
+                    <p style={{ fontSize: '14px', color: '#374151'}} >{typeof trans === 'string' ? trans : (trans.nombre || trans.linea || JSON.stringify(trans))}</p>
                   </div>
                 ))}
               </div>
@@ -148,14 +148,14 @@ export default function StationMoreliaPage({ params }) {
           <div style={sectionStyles}>
             <h2 style={sectionTitleStyles}>FIFA World Cup 2026 Relevance</h2>
             <div style={cardStyles}>
-              <p style={ fontSize: '15px', color: '#374151', lineHeight: '1.6' }>{estacion.mundial_relevancia}</p>
+              <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.6'}} >{estacion.mundial_relevancia}</p>
             </div>
           </div>
         )}
       </section>
 
-      <section style={ ...containerStyles, paddingTop: '40px', paddingBottom: '40px', textAlign: 'center' }>
-        <div style={ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }>
+      <section style={{ ...containerStyles, paddingTop: '40px', paddingBottom: '40px', textAlign: 'center'}} >
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap'}} >
           <Link href="/morelia" style={buttonStyles}>Back to Morelia</Link>
           {linea && <Link href={`/morelia/line/${linea.id}`} style={buttonStyles}>View Line {linea.id}</Link>}
         </div>
