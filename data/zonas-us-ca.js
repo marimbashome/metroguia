@@ -128,8 +128,7 @@ export const zonasUSCA = [
     seo_title: "Toronto Transit to Queen West — Cultural Guide | MetroGuia",
     meta_description: "TTC subway to Queen West Toronto. Art Gallery, Kensington Market, shops and galleries. Toronto guide.",
     h1: "Toronto Transit to Queen West: Cultural Neighborhood"
-  }
-  ,
+  },
   {
     slug: "upper-west-side",
     name: "Upper West Side",
@@ -262,8 +261,6 @@ export const zonasUSCA = [
     meta_description: "NYC subway to Astoria. Greek restaurants, Socrates Park, international food. Queens guide.",
     h1: "Subway to Astoria: Queens' International Gem"
   },
-
-  ,
   {
     slug: "santa-monica-pier",
     name: "Santa Monica & Pier",
@@ -562,8 +559,6 @@ export const zonasUSCA = [
     meta_description: "Houston Metro to Chinatown. Dim sum, Asian markets, authentic restaurants. Houston guide.",
     h1: "Houston Transit to Chinatown: Authentic Asian Houston"
   },
-
-  ,
   {
     slug: "atlanta-mercedes-benz",
     name: "Atlanta Mercedes-Benz Stadium & Downtown",

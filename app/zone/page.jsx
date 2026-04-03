@@ -44,7 +44,7 @@ export default function ZonesPage() {
   }
 
   const zonesByCity = {}
-  zonasUSCA.forEach(zone => {
+  zonasUSCA.filter(Boolean).forEach(zone => {
     if (!zonesByCity[zone.city]) zonesByCity[zone.city] = []
     zonesByCity[zone.city].push(zone)
   })

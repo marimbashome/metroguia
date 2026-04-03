@@ -25,11 +25,11 @@ function getTransitColor(system) {
 }
 
 export function generateStaticParams() {
-  return zonasUSCA.map((z) => ({ slug: z.slug }))
+  return zonasUSCA.filter((z) => z && z.slug).map((z) => ({ slug: z.slug }))
 }
 
 export function generateMetadata({ params }) {
-  const zona = zonasUSCA.find((z) => z.slug === params.slug)
+  const zona = zonasUSCA.find((z) => z && z.slug === params.slug)
   if (!zona) return { title: 'Zone not found' }
   return {
     title: zona.seo_title,
@@ -46,7 +46,7 @@ export function generateMetadata({ params }) {
 }
 
 export default function ZonePage({ params }) {
-  const zona = zonasUSCA.find((z) => z.slug === params.slug)
+  const zona = zonasUSCA.find((z) => z && z.slug === params.slug)
   if (!zona) return (
     <div style={{ padding: '4rem 2rem', textAlign: 'center' }}>
       <h1>Zone not found</h1>
