@@ -3607,5 +3607,149 @@ export const grafoNYC = {
       { slug: 'nyc-westchester-sq-e-tremont-av', tiempo: 2, linea: '6', tipo: 'subway' },
       { slug: 'nyc-castle-hill-av', tiempo: 2, linea: '6', tipo: 'subway' }
     ]
-  }
+  },
+  'nyc-110-st-malcolm-x-plaza': {
+    ciudad: 'nyc',
+    nombre: '110 St-Malcolm X Plaza',
+    lineas: ["2", "3"],
+    adyacentes: []
+  },
+  'nyc-168-st-washington-hts': {
+    ciudad: 'nyc',
+    nombre: '168 St-Washington Hts',
+    lineas: ["1"],
+    adyacentes: []
+  },
+  'nyc-42-st-bryant-pk': {
+    ciudad: 'nyc',
+    nombre: '42 St-Bryant Pk',
+    lineas: ["B", "D", "F", "M"],
+    adyacentes: []
+  },
+  'nyc-5-av': {
+    ciudad: 'nyc',
+    nombre: '5 Av',
+    lineas: ["7"],
+    adyacentes: []
+  },
+  'nyc-5-av53-st': {
+    ciudad: 'nyc',
+    nombre: '5 Av/53 St',
+    lineas: ["E", "F"],
+    adyacentes: []
+  },
+  'nyc-5-av59-st': {
+    ciudad: 'nyc',
+    nombre: '5 Av/59 St',
+    lineas: ["N", "R", "W"],
+    adyacentes: []
+  },
+  'nyc-9-av': {
+    ciudad: 'nyc',
+    nombre: '9 Av',
+    lineas: ["D"],
+    adyacentes: []
+  },
+  'nyc-aqueduct-n-conduit-av': {
+    ciudad: 'nyc',
+    nombre: 'Aqueduct-N Conduit Av',
+    lineas: ["A"],
+    adyacentes: []
+  },
+  'nyc-arthur-kill': {
+    ciudad: 'nyc',
+    nombre: 'Arthur Kill',
+    lineas: ["SIR"],
+    adyacentes: []
+  },
+  'nyc-bedford-park-blvd-lehman-college': {
+    ciudad: 'nyc',
+    nombre: 'Bedford Park Blvd-Lehman College',
+    lineas: ["4"],
+    adyacentes: []
+  },
+  'nyc-beverley-rd': {
+    ciudad: 'nyc',
+    nombre: 'Beverley Rd',
+    lineas: ["Q"],
+    adyacentes: []
+  },
+  'nyc-christopher-st-stonewall': {
+    ciudad: 'nyc',
+    nombre: 'Christopher St-Stonewall',
+    lineas: ["1"],
+    adyacentes: []
+  },
+  'nyc-court-sq-23-st': {
+    ciudad: 'nyc',
+    nombre: 'Court Sq-23 St',
+    lineas: ["E", "F"],
+    adyacentes: []
+  },
+  'nyc-crown-hts-utica-av': {
+    ciudad: 'nyc',
+    nombre: 'Crown Hts-Utica Av',
+    lineas: ["3", "4"],
+    adyacentes: []
+  },
+  'nyc-e-143-st-st-marys-st': {
+    ciudad: 'nyc',
+    nombre: 'E 143 St-St Mary\'s St',
+    lineas: ["6"],
+    adyacentes: []
+  },
+  'nyc-jamaica-center-parsonsarcher': {
+    ciudad: 'nyc',
+    nombre: 'Jamaica Center-Parsons/Archer',
+    lineas: ["E", "J", "Z"],
+    adyacentes: []
+  },
+  'nyc-lexington-av53-st': {
+    ciudad: 'nyc',
+    nombre: 'Lexington Av/53 St',
+    lineas: ["E", "F"],
+    adyacentes: []
+  },
+  'nyc-lexington-av59-st': {
+    ciudad: 'nyc',
+    nombre: 'Lexington Av/59 St',
+    lineas: ["N", "R", "W"],
+    adyacentes: []
+  },
+  'nyc-lexington-av63-st': {
+    ciudad: 'nyc',
+    nombre: 'Lexington Av/63 St',
+    lineas: ["M", "Q"],
+    adyacentes: []
+  },
+  'nyc-park-pl': {
+    ciudad: 'nyc',
+    nombre: 'Park Pl',
+    lineas: ["S"],
+    adyacentes: []
+  },
+  'nyc-parkside-av': {
+    ciudad: 'nyc',
+    nombre: 'Parkside Av',
+    lineas: ["Q"],
+    adyacentes: []
+  },
+  'nyc-w-4-st-wash-sq': {
+    ciudad: 'nyc',
+    nombre: 'W 4 St-Wash Sq',
+    lineas: ["A", "B", "C", "D", "E", "F", "M"],
+    adyacentes: []
+  },
+  'nyc-w-8-st-ny-aquarium': {
+    ciudad: 'nyc',
+    nombre: 'W 8 St-NY Aquarium',
+    lineas: ["F", "Q"],
+    adyacentes: []
+  },
+  'nyc-wtc-cortlandt': {
+    ciudad: 'nyc',
+    nombre: 'WTC Cortlandt',
+    lineas: ["1"],
+    adyacentes: []
+  },
 };

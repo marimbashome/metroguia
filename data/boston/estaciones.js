@@ -1378,69 +1378,6 @@ export const estacionesBoston = [
   horarios: { apertura: "5:00 AM", cierre: "12:45 AM", frecuencia_peak: "3-4 min", frecuencia_off_peak: "6-10 min" }
 },
 {
-  slug: "boston-aquarium",
-  nombre: "Aquarium",
-  linea: "Blue",
-  sistema: "mbta",
-  municipio: "Boston",
-  tipo_zona: "transporte-atraccion",
-  pois: [
-    { nombre: "New England Aquarium", tipo: "museos", distancia: "1 min caminando" },
-    { nombre: "Rose Kennedy Greenway", tipo: "parques", distancia: "2 min caminando" },
-    { nombre: "Boston Harbor", tipo: "puntos-vista", distancia: "1 min caminando" }
-  ],
-  transferencias: [
-    { nombre: "Haymarket", linea: "Orange", slug: "boston-haymarket" }
-  ],
-  seo_title: "Aquarium Station MBTA Boston — Blue Line to New England Aquarium | MetroGuia",
-  meta_description: "Aquarium MBTA station. Blue Line direct access to New England Aquarium in downtown Boston.",
-  h1: "Aquarium Station — Blue Line | Boston",
-  intro: "Aquarium is a Blue Line station in downtown Boston providing direct access to the New England Aquarium.",
-  tips: [
-    "Direct aquarium access",
-    "Harbor views",
-    "Rose Kennedy Greenway nearby",
-    "Tourist destination"
-  ],
-  mejor_horario: "Midday for attractions",
-  mundial_relevancia: "Major aquarium attraction",
-  descripcion_turistica: "Aquarium station provides direct Blue Line access to the New England Aquarium, a world-class marine facility with thousands of animals and interactive exhibits.",
-  accesibilidad: { elevador: true, rampa: true, piso_tactil: true, notas: "Fully accessible. Aquarium has full accessibility." },
-  horarios: { apertura: "5:00 AM", cierre: "12:45 AM", frecuencia_peak: "3-4 min", frecuencia_off_peak: "6-10 min" }
-},
-{
-  slug: "boston-government-center",
-  nombre: "Government Center",
-  linea: "Blue",
-  sistema: "mbta",
-  municipio: "Boston",
-  tipo_zona: "transporte-general",
-  pois: [
-    { nombre: "Government Center", tipo: "gobierno", distancia: "1 min caminando" },
-    { nombre: "Faneuil Hall", tipo: "atracciones", distancia: "3 min caminando" },
-    { nombre: "Quincy Market", tipo: "comercio", distancia: "3 min caminando" }
-  ],
-  transferencias: [
-    { nombre: "Government Center", linea: "Green", slug: "boston-government-center-green" },
-    { nombre: "State", linea: "Orange", slug: "boston-state" }
-  ],
-  seo_title: "Government Center Station MBTA Boston — Blue Line | MetroGuia",
-  meta_description: "Government Center MBTA station. Blue Line stop downtown Boston at Faneuil Hall.",
-  h1: "Government Center Station — Blue Line | Boston",
-  intro: "Government Center is a major Blue Line station in downtown Boston providing access to Faneuil Hall and Quincy Market.",
-  tips: [
-    "Near Faneuil Hall",
-    "Quincy Market access",
-    "Major transfer hub",
-    "Tourist destination"
-  ],
-  mejor_horario: "Lunch or late afternoon",
-  mundial_relevancia: "Historic government and market district",
-  descripcion_turistica: "Government Center serves historic downtown Boston with easy access to Faneuil Hall, Quincy Market, and government buildings.",
-  accesibilidad: { elevador: true, rampa: true, piso_tactil: true, notas: "Fully accessible." },
-  horarios: { apertura: "5:00 AM", cierre: "12:45 AM", frecuencia_peak: "3-4 min", frecuencia_off_peak: "6-10 min" }
-},
-{
   slug: "boston-bowdoin",
   nombre: "Bowdoin",
   linea: "Blue",

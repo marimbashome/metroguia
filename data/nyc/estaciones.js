@@ -13463,5 +13463,1124 @@ export const estacionesNYC = [
       "notas": "MTA Subway operativo 24 horas."
     },
     "lugares_cercanos": []
+  },
+    {
+    "slug": "nyc-110-st-malcolm-x-plaza",
+    "nombre": "110 St-Malcolm X Plaza",
+    "linea": "2,3",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 110 St-Malcolm X Plaza NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 110 St-Malcolm X Plaza del MTA Subway NYC. Línea(s) 2,3. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 110 St-Malcolm X Plaza | NYC Subway",
+    "intro": "Estación 110 St-Malcolm X Plaza del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) 2,3.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 110 St-Malcolm X Plaza del MTA Subway en Manhattan, servida por la(s) línea(s) 2,3. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-168-st-washington-hts",
+    "nombre": "168 St-Washington Hts",
+    "linea": "1",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 168 St-Washington Hts NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 168 St-Washington Hts del MTA Subway NYC. Línea(s) 1. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 168 St-Washington Hts | NYC Subway",
+    "intro": "Estación 168 St-Washington Hts del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) 1.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 168 St-Washington Hts del MTA Subway en Manhattan, servida por la(s) línea(s) 1. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-42-st-bryant-pk",
+    "nombre": "42 St-Bryant Pk",
+    "linea": "B,D,F,M",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 42 St-Bryant Pk NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 42 St-Bryant Pk del MTA Subway NYC. Línea(s) B,D,F,M. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 42 St-Bryant Pk | NYC Subway",
+    "intro": "Estación 42 St-Bryant Pk del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) B,D,F,M.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 42 St-Bryant Pk del MTA Subway en Manhattan, servida por la(s) línea(s) B,D,F,M. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-5-av",
+    "nombre": "5 Av",
+    "linea": "7",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 5 Av NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 5 Av del MTA Subway NYC. Línea(s) 7. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 5 Av | NYC Subway",
+    "intro": "Estación 5 Av del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) 7.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 5 Av del MTA Subway en Manhattan, servida por la(s) línea(s) 7. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-5-av53-st",
+    "nombre": "5 Av/53 St",
+    "linea": "E,F",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 5 Av/53 St NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 5 Av/53 St del MTA Subway NYC. Línea(s) E,F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 5 Av/53 St | NYC Subway",
+    "intro": "Estación 5 Av/53 St del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) E,F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 5 Av/53 St del MTA Subway en Manhattan, servida por la(s) línea(s) E,F. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-5-av59-st",
+    "nombre": "5 Av/59 St",
+    "linea": "N,R,W",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 5 Av/59 St NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación 5 Av/59 St del MTA Subway NYC. Línea(s) N,R,W. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 5 Av/59 St | NYC Subway",
+    "intro": "Estación 5 Av/59 St del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) N,R,W.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación 5 Av/59 St del MTA Subway en Manhattan, servida por la(s) línea(s) N,R,W. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-9-av",
+    "nombre": "9 Av",
+    "linea": "D",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación 9 Av NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación 9 Av del MTA Subway NYC. Línea(s) D. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación 9 Av | NYC Subway",
+    "intro": "Estación 9 Av del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) D.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación 9 Av del MTA Subway en Brooklyn, servida por la(s) línea(s) D. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-aqueduct-n-conduit-av",
+    "nombre": "Aqueduct-N Conduit Av",
+    "linea": "A",
+    "sistema": "subway",
+    "borough": "Queens",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Aqueduct-N Conduit Av NYC Subway — Queens | MetroGuia",
+    "meta_description": "Estación Aqueduct-N Conduit Av del MTA Subway NYC. Línea(s) A. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Aqueduct-N Conduit Av | NYC Subway",
+    "intro": "Estación Aqueduct-N Conduit Av del sistema MTA Subway de Nueva York, ubicada en Queens. Línea(s) A.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Queens — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Queens",
+    "descripcion_turistica": "Estación Aqueduct-N Conduit Av del MTA Subway en Queens, servida por la(s) línea(s) A. Acceso a la zona de Queens circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-arthur-kill",
+    "nombre": "Arthur Kill",
+    "linea": "SIR",
+    "sistema": "sir",
+    "borough": "Staten Island",
+    "tipo_zona": "residencial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Arthur Kill NYC Subway — Staten Island | MetroGuia",
+    "meta_description": "Estación Arthur Kill del MTA Subway NYC. Línea(s) SIR. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Arthur Kill | NYC Subway",
+    "intro": "Estación Arthur Kill del sistema MTA Subway de Nueva York, ubicada en Staten Island. Línea(s) SIR.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Staten Island — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Staten Island",
+    "descripcion_turistica": "Estación Arthur Kill del MTA Subway en Staten Island, servida por la(s) línea(s) SIR. Acceso a la zona de Staten Island circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-h",
+    "nombre": "Avenue H",
+    "linea": "Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue H NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue H del MTA Subway NYC. Línea(s) Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue H | NYC Subway",
+    "intro": "Estación Avenue H del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue H del MTA Subway en Brooklyn, servida por la(s) línea(s) Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-i",
+    "nombre": "Avenue I",
+    "linea": "F",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue I NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue I del MTA Subway NYC. Línea(s) F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue I | NYC Subway",
+    "intro": "Estación Avenue I del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue I del MTA Subway en Brooklyn, servida por la(s) línea(s) F. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-j",
+    "nombre": "Avenue J",
+    "linea": "Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue J NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue J del MTA Subway NYC. Línea(s) Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue J | NYC Subway",
+    "intro": "Estación Avenue J del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue J del MTA Subway en Brooklyn, servida por la(s) línea(s) Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-m",
+    "nombre": "Avenue M",
+    "linea": "Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue M NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue M del MTA Subway NYC. Línea(s) Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue M | NYC Subway",
+    "intro": "Estación Avenue M del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue M del MTA Subway en Brooklyn, servida por la(s) línea(s) Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-n",
+    "nombre": "Avenue N",
+    "linea": "F",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue N NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue N del MTA Subway NYC. Línea(s) F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue N | NYC Subway",
+    "intro": "Estación Avenue N del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue N del MTA Subway en Brooklyn, servida por la(s) línea(s) F. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-p",
+    "nombre": "Avenue P",
+    "linea": "F",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue P NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue P del MTA Subway NYC. Línea(s) F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue P | NYC Subway",
+    "intro": "Estación Avenue P del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue P del MTA Subway en Brooklyn, servida por la(s) línea(s) F. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-u",
+    "nombre": "Avenue U",
+    "linea": "F,N,Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue U NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue U del MTA Subway NYC. Línea(s) F,N,Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue U | NYC Subway",
+    "intro": "Estación Avenue U del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F,N,Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue U del MTA Subway en Brooklyn, servida por la(s) línea(s) F,N,Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-avenue-x",
+    "nombre": "Avenue X",
+    "linea": "F",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Avenue X NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Avenue X del MTA Subway NYC. Línea(s) F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Avenue X | NYC Subway",
+    "intro": "Estación Avenue X del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Avenue X del MTA Subway en Brooklyn, servida por la(s) línea(s) F. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-bedford-park-blvd-lehman-college",
+    "nombre": "Bedford Park Blvd-Lehman College",
+    "linea": "4",
+    "sistema": "subway",
+    "borough": "Bronx",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Bedford Park Blvd-Lehman College NYC Subway — Bronx | MetroGuia",
+    "meta_description": "Estación Bedford Park Blvd-Lehman College del MTA Subway NYC. Línea(s) 4. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Bedford Park Blvd-Lehman College | NYC Subway",
+    "intro": "Estación Bedford Park Blvd-Lehman College del sistema MTA Subway de Nueva York, ubicada en Bronx. Línea(s) 4.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Bronx — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Bronx",
+    "descripcion_turistica": "Estación Bedford Park Blvd-Lehman College del MTA Subway en Bronx, servida por la(s) línea(s) 4. Acceso a la zona de Bronx circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-beverley-rd",
+    "nombre": "Beverley Rd",
+    "linea": "Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "residencial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Beverley Rd NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Beverley Rd del MTA Subway NYC. Línea(s) Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Beverley Rd | NYC Subway",
+    "intro": "Estación Beverley Rd del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Beverley Rd del MTA Subway en Brooklyn, servida por la(s) línea(s) Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-christopher-st-stonewall",
+    "nombre": "Christopher St-Stonewall",
+    "linea": "1",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Christopher St-Stonewall NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación Christopher St-Stonewall del MTA Subway NYC. Línea(s) 1. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Christopher St-Stonewall | NYC Subway",
+    "intro": "Estación Christopher St-Stonewall del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) 1.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación Christopher St-Stonewall del MTA Subway en Manhattan, servida por la(s) línea(s) 1. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-court-sq-23-st",
+    "nombre": "Court Sq-23 St",
+    "linea": "E,F",
+    "sistema": "subway",
+    "borough": "Queens",
+    "tipo_zona": "transporte",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Court Sq-23 St NYC Subway — Queens | MetroGuia",
+    "meta_description": "Estación Court Sq-23 St del MTA Subway NYC. Línea(s) E,F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Court Sq-23 St | NYC Subway",
+    "intro": "Estación Court Sq-23 St del sistema MTA Subway de Nueva York, ubicada en Queens. Línea(s) E,F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Queens — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Queens",
+    "descripcion_turistica": "Estación Court Sq-23 St del MTA Subway en Queens, servida por la(s) línea(s) E,F. Acceso a la zona de Queens circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-crown-hts-utica-av",
+    "nombre": "Crown Hts-Utica Av",
+    "linea": "3,4",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Crown Hts-Utica Av NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Crown Hts-Utica Av del MTA Subway NYC. Línea(s) 3,4. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Crown Hts-Utica Av | NYC Subway",
+    "intro": "Estación Crown Hts-Utica Av del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) 3,4.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Crown Hts-Utica Av del MTA Subway en Brooklyn, servida por la(s) línea(s) 3,4. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-e-143-st-st-marys-st",
+    "nombre": "E 143 St-St Mary's St",
+    "linea": "6",
+    "sistema": "subway",
+    "borough": "Bronx",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación E 143 St-St Mary's St NYC Subway — Bronx | MetroGuia",
+    "meta_description": "Estación E 143 St-St Mary's St del MTA Subway NYC. Línea(s) 6. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación E 143 St-St Mary's St | NYC Subway",
+    "intro": "Estación E 143 St-St Mary's St del sistema MTA Subway de Nueva York, ubicada en Bronx. Línea(s) 6.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Bronx — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Bronx",
+    "descripcion_turistica": "Estación E 143 St-St Mary's St del MTA Subway en Bronx, servida por la(s) línea(s) 6. Acceso a la zona de Bronx circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-jamaica-center-parsonsarcher",
+    "nombre": "Jamaica Center-Parsons/Archer",
+    "linea": "E,J,Z",
+    "sistema": "subway",
+    "borough": "Queens",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Jamaica Center-Parsons/Archer NYC Subway — Queens | MetroGuia",
+    "meta_description": "Estación Jamaica Center-Parsons/Archer del MTA Subway NYC. Línea(s) E,J,Z. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Jamaica Center-Parsons/Archer | NYC Subway",
+    "intro": "Estación Jamaica Center-Parsons/Archer del sistema MTA Subway de Nueva York, ubicada en Queens. Línea(s) E,J,Z.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Queens — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Queens",
+    "descripcion_turistica": "Estación Jamaica Center-Parsons/Archer del MTA Subway en Queens, servida por la(s) línea(s) E,J,Z. Acceso a la zona de Queens circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-lexington-av53-st",
+    "nombre": "Lexington Av/53 St",
+    "linea": "E,F",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Lexington Av/53 St NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación Lexington Av/53 St del MTA Subway NYC. Línea(s) E,F. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Lexington Av/53 St | NYC Subway",
+    "intro": "Estación Lexington Av/53 St del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) E,F.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación Lexington Av/53 St del MTA Subway en Manhattan, servida por la(s) línea(s) E,F. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-lexington-av59-st",
+    "nombre": "Lexington Av/59 St",
+    "linea": "N,R,W",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Lexington Av/59 St NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación Lexington Av/59 St del MTA Subway NYC. Línea(s) N,R,W. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Lexington Av/59 St | NYC Subway",
+    "intro": "Estación Lexington Av/59 St del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) N,R,W.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación Lexington Av/59 St del MTA Subway en Manhattan, servida por la(s) línea(s) N,R,W. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-lexington-av63-st",
+    "nombre": "Lexington Av/63 St",
+    "linea": "M,Q",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Lexington Av/63 St NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación Lexington Av/63 St del MTA Subway NYC. Línea(s) M,Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Lexington Av/63 St | NYC Subway",
+    "intro": "Estación Lexington Av/63 St del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) M,Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación Lexington Av/63 St del MTA Subway en Manhattan, servida por la(s) línea(s) M,Q. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-park-pl",
+    "nombre": "Park Pl",
+    "linea": "S",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Park Pl NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Park Pl del MTA Subway NYC. Línea(s) S. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Park Pl | NYC Subway",
+    "intro": "Estación Park Pl del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) S.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Park Pl del MTA Subway en Brooklyn, servida por la(s) línea(s) S. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-parkside-av",
+    "nombre": "Parkside Av",
+    "linea": "Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Parkside Av NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación Parkside Av del MTA Subway NYC. Línea(s) Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación Parkside Av | NYC Subway",
+    "intro": "Estación Parkside Av del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación Parkside Av del MTA Subway en Brooklyn, servida por la(s) línea(s) Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-w-4-st-wash-sq",
+    "nombre": "W 4 St-Wash Sq",
+    "linea": "A,B,C,D,E,F,M",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "comercial",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación W 4 St-Wash Sq NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación W 4 St-Wash Sq del MTA Subway NYC. Línea(s) A,B,C,D,E,F,M. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación W 4 St-Wash Sq | NYC Subway",
+    "intro": "Estación W 4 St-Wash Sq del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) A,B,C,D,E,F,M.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación W 4 St-Wash Sq del MTA Subway en Manhattan, servida por la(s) línea(s) A,B,C,D,E,F,M. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-w-8-st-ny-aquarium",
+    "nombre": "W 8 St-NY Aquarium",
+    "linea": "F,Q",
+    "sistema": "subway",
+    "borough": "Brooklyn",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación W 8 St-NY Aquarium NYC Subway — Brooklyn | MetroGuia",
+    "meta_description": "Estación W 8 St-NY Aquarium del MTA Subway NYC. Línea(s) F,Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación W 8 St-NY Aquarium | NYC Subway",
+    "intro": "Estación W 8 St-NY Aquarium del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea(s) F,Q.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Brooklyn — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
+    "descripcion_turistica": "Estación W 8 St-NY Aquarium del MTA Subway en Brooklyn, servida por la(s) línea(s) F,Q. Acceso a la zona de Brooklyn circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
+  },
+
+    {
+    "slug": "nyc-wtc-cortlandt",
+    "nombre": "WTC Cortlandt",
+    "linea": "1",
+    "sistema": "subway",
+    "borough": "Manhattan",
+    "tipo_zona": "turistico",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación WTC Cortlandt NYC Subway — Manhattan | MetroGuia",
+    "meta_description": "Estación WTC Cortlandt del MTA Subway NYC. Línea(s) 1. Guía turística, horarios, accesibilidad y lugares cercanos.",
+    "h1": "Estación WTC Cortlandt | NYC Subway",
+    "intro": "Estación WTC Cortlandt del sistema MTA Subway de Nueva York, ubicada en Manhattan. Línea(s) 1.",
+    "tips": [
+      "Pago con OMNY ($2.90 USD) o MetroCard",
+      "Sistema operativo 24 horas, 7 días",
+      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+    ],
+    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mundial_relevancia": "Estación del sistema MTA en Manhattan",
+    "descripcion_turistica": "Estación WTC Cortlandt del MTA Subway en Manhattan, servida por la(s) línea(s) 1. Acceso a la zona de Manhattan circundante.",
+    "accesibilidad": {
+      "elevador": false,
+      "rampa": true,
+      "piso_tactil": false,
+      "notas": "Accesibilidad limitada. Verificar en mta.info."
+    },
+    "horarios": {
+      "apertura": "00:00",
+      "cierre": "23:59",
+      "notas": "MTA Subway operativo 24 horas."
+    },
+    "lugares_cercanos": []
   }
 ];

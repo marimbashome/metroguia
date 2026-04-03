@@ -3735,6 +3735,380 @@ export const estacionesLA = [
     notas: "Horarios pueden variar según línea y día de la semana."
   },
   lugares_cercanos: []
+},
+{
+  slug: "la-imperial-wilmington",
+  nombre: "Imperial/Wilmington",
+  linea: "C",
+  sistema: "metro-rail",
+  municipio: "Compton",
+  tipo_zona: "suburbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Imperial/Wilmington Metro Los Angeles — Estación Línea C | MetroGuia",
+  meta_description: "Estación Imperial/Wilmington - Línea C Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Imperial/Wilmington — Línea C | Los Angeles Metro",
+  intro: "La estación Imperial/Wilmington es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Compton.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Imperial/Wilmington del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-manchester",
+  nombre: "Manchester",
+  linea: "K",
+  sistema: "metro-rail",
+  municipio: "Inglewood",
+  tipo_zona: "suburbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Manchester Metro Los Angeles — Estación Línea K | MetroGuia",
+  meta_description: "Estación Manchester - Línea K Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Manchester — Línea K | Los Angeles Metro",
+  intro: "La estación Manchester es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Inglewood.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Manchester del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-central",
+  nombre: "Central",
+  linea: "C",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Central Metro Los Angeles — Estación Línea C | MetroGuia",
+  meta_description: "Estación Central - Línea C Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Central — Línea C | Los Angeles Metro",
+  intro: "La estación Central es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Central del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-bell",
+  nombre: "Bell",
+  linea: "A",
+  sistema: "metro-rail",
+  municipio: "Bell",
+  tipo_zona: "suburbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Bell Metro Los Angeles — Estación Línea A | MetroGuia",
+  meta_description: "Estación Bell - Línea A Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Bell — Línea A | Los Angeles Metro",
+  intro: "La estación Bell es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Bell.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Bell del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-whittier-blvd",
+  nombre: "Whittier Blvd",
+  linea: "A",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Whittier Blvd Metro Los Angeles — Estación Línea A | MetroGuia",
+  meta_description: "Estación Whittier Blvd - Línea A Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Whittier Blvd — Línea A | Los Angeles Metro",
+  intro: "La estación Whittier Blvd es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Whittier Blvd del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-mid-city",
+  nombre: "Mid City",
+  linea: "B",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Mid City Metro Los Angeles — Estación Línea B | MetroGuia",
+  meta_description: "Estación Mid City - Línea B Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Mid City — Línea B | Los Angeles Metro",
+  intro: "La estación Mid City es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Mid City del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-convention-center",
+  nombre: "Convention Center",
+  linea: "A",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Convention Center Metro Los Angeles — Estación Línea A | MetroGuia",
+  meta_description: "Estación Convention Center - Línea A Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Convention Center — Línea A | Los Angeles Metro",
+  intro: "La estación Convention Center es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Convention Center del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-flower-street",
+  nombre: "Flower Street",
+  linea: "B",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Flower Street Metro Los Angeles — Estación Línea B | MetroGuia",
+  meta_description: "Estación Flower Street - Línea B Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Flower Street — Línea B | Los Angeles Metro",
+  intro: "La estación Flower Street es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Flower Street del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-bellflower",
+  nombre: "Bellflower",
+  linea: "K",
+  sistema: "metro-rail",
+  municipio: "Bellflower",
+  tipo_zona: "suburbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Bellflower Metro Los Angeles — Estación Línea K | MetroGuia",
+  meta_description: "Estación Bellflower - Línea K Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Bellflower — Línea K | Los Angeles Metro",
+  intro: "La estación Bellflower es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Bellflower.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Bellflower del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-cerritos",
+  nombre: "Cerritos",
+  linea: "K",
+  sistema: "metro-rail",
+  municipio: "Cerritos",
+  tipo_zona: "suburbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Cerritos Metro Los Angeles — Estación Línea K | MetroGuia",
+  meta_description: "Estación Cerritos - Línea K Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Cerritos — Línea K | Los Angeles Metro",
+  intro: "La estación Cerritos es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Cerritos.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Cerritos del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-expo-la-cienega",
+  nombre: "Expo/La Cienega",
+  linea: "E",
+  sistema: "metro-rail",
+  municipio: "Los Angeles",
+  tipo_zona: "centro-urbano",
+  pois: [],
+  transferencias: [],
+  seo_title: "Expo/La Cienega Metro Los Angeles — Estación Línea E | MetroGuia",
+  meta_description: "Estación Expo/La Cienega - Línea E Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
+  h1: "Expo/La Cienega — Línea E | Los Angeles Metro",
+  intro: "La estación Expo/La Cienega es un punto estratégico del sistema Metro de Los Angeles, en el centro urbano de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:30 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
+  descripcion_turistica: "Estación Expo/La Cienega del Metro de Los Angeles.",
+  accesibilidad: {
+    elevador: true,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación completamente accesible según normativas ADA."
+  },
+  horarios: {
+    apertura: "04:30",
+    cierre: "01:00",
+    notas: "Horarios pueden variar según línea y día de la semana."
+  },
+  lugares_cercanos: []
 }
 ]
 

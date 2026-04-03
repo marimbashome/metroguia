@@ -780,4 +780,59 @@ export const grafoToronto = {
       { slug: 'toronto-brampton-go', tiempo: 40, linea: 'GO-Milton', tipo: 'go-transit' },
     ]
   },
+
+  'agincourt': {
+    ciudad: 'toronto',
+    nombre: 'Agincourt',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  },
+  'bloomington': {
+    ciudad: 'toronto',
+    nombre: 'Bloomington',
+    lineas: ['GO-Richmond Hill'],
+    adyacentes: []
+  },
+  'gormley': {
+    ciudad: 'toronto',
+    nombre: 'Gormley',
+    lineas: ['GO-Richmond Hill'],
+    adyacentes: []
+  },
+  'markham': {
+    ciudad: 'toronto',
+    nombre: 'Markham',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  },
+  'milliken': {
+    ciudad: 'toronto',
+    nombre: 'Milliken',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  },
+  'old-elm': {
+    ciudad: 'toronto',
+    nombre: 'Old Elm',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  },
+  'richmond-hill': {
+    ciudad: 'toronto',
+    nombre: 'Richmond Hill',
+    lineas: ['GO-Richmond Hill'],
+    adyacentes: []
+  },
+  'stouffville': {
+    ciudad: 'toronto',
+    nombre: 'Stouffville',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  },
+  'unionville': {
+    ciudad: 'toronto',
+    nombre: 'Unionville',
+    lineas: ['GO-Stouffville'],
+    adyacentes: []
+  }
 };

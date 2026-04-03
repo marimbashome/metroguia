@@ -6215,6 +6215,791 @@ export const estacionesPhiladelphia = [
       "sabado": "06:00-00:30",
       "domingo": "06:00-00:30"
     }
+  },
+  {
+    "slug": "philly-49th-street-media",
+    "nombre": "49th Street Media",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Philadelphia",
+    "tipo_zona": "urban",
+    "latitud": 39.93842,
+    "longitud": -75.23485,
+    "pois": [
+      {"nombre": "49th Street", "distancia": 0.1, "tipo": "transporte"},
+      {"nombre": "Media Line Station", "distancia": 0.0, "tipo": "transporte"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación 49th Street Media - SEPTA Philadelphia",
+    "meta_description": "49th Street Media en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación 49th Street Media",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.42,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-angora",
+    "nombre": "Angora",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Philadelphia",
+    "tipo_zona": "urban",
+    "latitud": 39.93201,
+    "longitud": -75.23956,
+    "pois": [
+      {"nombre": "Angora Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Southwest Philadelphia", "distancia": 0.3, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Angora - SEPTA Philadelphia",
+    "meta_description": "Angora en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Angora",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.41,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-morton",
+    "nombre": "Morton",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Morton",
+    "tipo_zona": "suburban",
+    "latitud": 39.92547,
+    "longitud": -75.24289,
+    "pois": [
+      {"nombre": "Morton Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Morton Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Morton - SEPTA Philadelphia",
+    "meta_description": "Morton en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Morton",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.40,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-primos",
+    "nombre": "Primos",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Primos",
+    "tipo_zona": "suburban",
+    "latitud": 39.91893,
+    "longitud": -75.24662,
+    "pois": [
+      {"nombre": "Primos Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Primos Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Primos - SEPTA Philadelphia",
+    "meta_description": "Primos en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Primos",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.39,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-clifton-aldan",
+    "nombre": "Clifton-Aldan",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Clifton Heights",
+    "tipo_zona": "suburban",
+    "latitud": 39.91239,
+    "longitud": -75.25035,
+    "pois": [
+      {"nombre": "Clifton-Aldan Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Clifton Heights Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Clifton-Aldan - SEPTA Philadelphia",
+    "meta_description": "Clifton-Aldan en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Clifton-Aldan",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.38,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-fernwood-yeadon",
+    "nombre": "Fernwood-Yeadon",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Yeadon",
+    "tipo_zona": "suburban",
+    "latitud": 39.90585,
+    "longitud": -75.25408,
+    "pois": [
+      {"nombre": "Fernwood-Yeadon Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Yeadon Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Fernwood-Yeadon - SEPTA Philadelphia",
+    "meta_description": "Fernwood-Yeadon en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Fernwood-Yeadon",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.37,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-lansdowne",
+    "nombre": "Lansdowne",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Lansdowne",
+    "tipo_zona": "suburban",
+    "latitud": 39.89931,
+    "longitud": -75.25781,
+    "pois": [
+      {"nombre": "Lansdowne Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Lansdowne Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Lansdowne - SEPTA Philadelphia",
+    "meta_description": "Lansdowne en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Lansdowne",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.36,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-swarthmore",
+    "nombre": "Swarthmore",
+    "linea": "regional_media_wawa",
+    "sistema": "Regional Rail",
+    "municipio": "Swarthmore",
+    "tipo_zona": "suburban",
+    "latitud": 39.89277,
+    "longitud": -75.26154,
+    "pois": [
+      {"nombre": "Swarthmore Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Swarthmore College", "distancia": 0.3, "tipo": "educacion"},
+      {"nombre": "Swarthmore Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Swarthmore - SEPTA Philadelphia",
+    "meta_description": "Swarthmore en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Swarthmore",
+    "intro": "Estación Regional Rail en la línea Media-Wawa.",
+    "tips": ["Estación de parada regular con servicio SEPTA", "Acceso a Swarthmore College"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.42,
+    "descripcion_turistica": "Estación Regional Rail en la línea Media-Wawa, cerca de Swarthmore College.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-curtis-park",
+    "nombre": "Curtis Park",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Chester",
+    "tipo_zona": "suburban",
+    "latitud": 39.84287,
+    "longitud": -75.36523,
+    "pois": [
+      {"nombre": "Curtis Park Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Chester Pennsylvania", "distancia": 0.5, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Curtis Park - SEPTA Philadelphia",
+    "meta_description": "Curtis Park en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Curtis Park",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.35,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-darby",
+    "nombre": "Darby",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Darby",
+    "tipo_zona": "suburban",
+    "latitud": 39.87532,
+    "longitud": -75.30649,
+    "pois": [
+      {"nombre": "Darby Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Darby Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Darby - SEPTA Philadelphia",
+    "meta_description": "Darby en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Darby",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.38,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-folcroft",
+    "nombre": "Folcroft",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Folcroft",
+    "tipo_zona": "suburban",
+    "latitud": 39.87894,
+    "longitud": -75.31302,
+    "pois": [
+      {"nombre": "Folcroft Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Folcroft Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Folcroft - SEPTA Philadelphia",
+    "meta_description": "Folcroft en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Folcroft",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.36,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-norwood",
+    "nombre": "Norwood",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Norwood",
+    "tipo_zona": "suburban",
+    "latitud": 39.88256,
+    "longitud": -75.31955,
+    "pois": [
+      {"nombre": "Norwood Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Norwood Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Norwood - SEPTA Philadelphia",
+    "meta_description": "Norwood en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Norwood",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.37,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-glenolden",
+    "nombre": "Glenolden",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Glenolden",
+    "tipo_zona": "suburban",
+    "latitud": 39.88618,
+    "longitud": -75.32608,
+    "pois": [
+      {"nombre": "Glenolden Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Glenolden Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Glenolden - SEPTA Philadelphia",
+    "meta_description": "Glenolden en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Glenolden",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.35,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-sharon-hill",
+    "nombre": "Sharon Hill",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Sharon Hill",
+    "tipo_zona": "suburban",
+    "latitud": 39.88980,
+    "longitud": -75.33261,
+    "pois": [
+      {"nombre": "Sharon Hill Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Sharon Hill Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Sharon Hill - SEPTA Philadelphia",
+    "meta_description": "Sharon Hill en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Sharon Hill",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.34,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-prospect-park",
+    "nombre": "Prospect Park",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Prospect Park",
+    "tipo_zona": "suburban",
+    "latitud": 39.89342,
+    "longitud": -75.33914,
+    "pois": [
+      {"nombre": "Prospect Park Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Prospect Park Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Prospect Park - SEPTA Philadelphia",
+    "meta_description": "Prospect Park en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Prospect Park",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.35,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-ridley-park",
+    "nombre": "Ridley Park",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Ridley Park",
+    "tipo_zona": "suburban",
+    "latitud": 39.89704,
+    "longitud": -75.34567,
+    "pois": [
+      {"nombre": "Ridley Park Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Ridley Park Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Ridley Park - SEPTA Philadelphia",
+    "meta_description": "Ridley Park en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Ridley Park",
+    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.34,
+    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-chester-transit-center",
+    "nombre": "Chester Transit Center",
+    "linea": "regional_wilmington_newark",
+    "sistema": "Regional Rail",
+    "municipio": "Chester",
+    "tipo_zona": "urban",
+    "latitud": 39.84851,
+    "longitud": -75.35789,
+    "pois": [
+      {"nombre": "Chester Transit Center", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Downtown Chester", "distancia": 0.3, "tipo": "comercial"},
+      {"nombre": "Chester Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": ["mfl", "patco"],
+    "seo_title": "Estación Chester Transit Center - SEPTA Philadelphia",
+    "meta_description": "Chester Transit Center en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Chester Transit Center",
+    "intro": "Centro de transporte Regional Rail con conexiones a PATCO.",
+    "tips": ["Centro de tránsito importante", "Conexiones a PATCO"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.48,
+    "descripcion_turistica": "Centro de transporte Regional Rail con conexiones a PATCO en Chester.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-north-philadelphia-regional",
+    "nombre": "North Philadelphia Regional",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Philadelphia",
+    "tipo_zona": "urban",
+    "latitud": 39.98237,
+    "longitud": -75.14532,
+    "pois": [
+      {"nombre": "North Philadelphia Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "North Philadelphia", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": ["mfl"],
+    "seo_title": "Estación North Philadelphia Regional - SEPTA Philadelphia",
+    "meta_description": "North Philadelphia Regional en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación North Philadelphia Regional",
+    "intro": "Estación Regional Rail en la línea Trenton con conexiones a MFL.",
+    "tips": ["Conexiones a Market-Frankford Line", "Centro de tránsito importante"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.52,
+    "descripcion_turistica": "Estación Regional Rail en la línea Trenton con conexiones a MFL.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-bridesburg",
+    "nombre": "Bridesburg",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Philadelphia",
+    "tipo_zona": "urban",
+    "latitud": 40.01425,
+    "longitud": -75.12348,
+    "pois": [
+      {"nombre": "Bridesburg Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Bridesburg Philadelphia", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Bridesburg - SEPTA Philadelphia",
+    "meta_description": "Bridesburg en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Bridesburg",
+    "intro": "Estación Regional Rail en la línea Trenton.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.40,
+    "descripcion_turistica": "Estación Regional Rail en la línea Trenton.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-tacony",
+    "nombre": "Tacony",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Philadelphia",
+    "tipo_zona": "urban",
+    "latitud": 40.03613,
+    "longitud": -75.11265,
+    "pois": [
+      {"nombre": "Tacony Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Tacony Philadelphia", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Tacony - SEPTA Philadelphia",
+    "meta_description": "Tacony en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Tacony",
+    "intro": "Estación Regional Rail en la línea Trenton.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.39,
+    "descripcion_turistica": "Estación Regional Rail en la línea Trenton.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-bristol",
+    "nombre": "Bristol",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Bristol",
+    "tipo_zona": "suburban",
+    "latitud": 40.10573,
+    "longitud": -74.85321,
+    "pois": [
+      {"nombre": "Bristol Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Bristol Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Bristol - SEPTA Philadelphia",
+    "meta_description": "Bristol en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Bristol",
+    "intro": "Estación Regional Rail en la línea Trenton.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.38,
+    "descripcion_turistica": "Estación Regional Rail en la línea Trenton.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-levittown",
+    "nombre": "Levittown",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Levittown",
+    "tipo_zona": "suburban",
+    "latitud": 40.15321,
+    "longitud": -74.82156,
+    "pois": [
+      {"nombre": "Levittown Station", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Levittown Pennsylvania", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": [],
+    "seo_title": "Estación Levittown - SEPTA Philadelphia",
+    "meta_description": "Levittown en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Levittown",
+    "intro": "Estación Regional Rail en la línea Trenton.",
+    "tips": ["Estación de parada regular con servicio SEPTA"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.37,
+    "descripcion_turistica": "Estación Regional Rail en la línea Trenton.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
+  },
+  {
+    "slug": "philly-trenton-transit-center",
+    "nombre": "Trenton Transit Center",
+    "linea": "regional_trenton",
+    "sistema": "Regional Rail",
+    "municipio": "Trenton",
+    "tipo_zona": "urban",
+    "latitud": 40.22156,
+    "longitud": -74.76043,
+    "pois": [
+      {"nombre": "Trenton Transit Center", "distancia": 0.0, "tipo": "transporte"},
+      {"nombre": "Downtown Trenton", "distancia": 0.3, "tipo": "comercial"},
+      {"nombre": "Trenton New Jersey", "distancia": 0.2, "tipo": "residencial"}
+    ],
+    "transferencias": ["nj_transit"],
+    "seo_title": "Estación Trenton Transit Center - SEPTA Philadelphia",
+    "meta_description": "Trenton Transit Center en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
+    "h1": "Estación Trenton Transit Center",
+    "intro": "Centro de transporte Regional Rail con conexiones a NJ Transit.",
+    "tips": ["Centro de tránsito importante", "Conexiones a NJ Transit"],
+    "mejor_horario": "07:00-22:00",
+    "mundial_relevancia": 0.55,
+    "descripcion_turistica": "Centro de transporte Regional Rail con conexiones a NJ Transit en Trenton.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "SEPTA stations incluyen acceso para personas con movilidad reducida"
+    },
+    "horarios": {
+      "lunes_viernes": "05:30-00:30",
+      "sabado": "06:00-00:30",
+      "domingo": "06:00-00:30"
+    }
   }
 ];
 

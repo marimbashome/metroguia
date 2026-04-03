@@ -2798,6 +2798,312 @@ export const estacionesTORONTO = [
     },
     "moneda": "CAD",
     "tarifa_turista": "$3.35 CAD (PRESTO)"
+  },
+  {
+    "slug": "agincourt",
+    "nombre": "Agincourt",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Agincourt - GO Transit Stouffville Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Agincourt en la línea Stouffville de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Agincourt - GO Transit",
+    "intro": "Agincourt es una estación de GO Transit ubicada en la línea Stouffville, sirviendo el área suburbana de Toronto. Proporciona acceso rápido al centro de Toronto y conexiones con el sistema de transporte local.",
+    "tips": [
+      "Estación con servicios modernos y accesibilidad completa",
+      "Conecta directamente con el centro de Toronto en 30-40 minutos",
+      "Ideal para explorar las áreas residenciales del este de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) recommended for comfortable travel",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Agincourt proporciona acceso conveniente a las comunidades suburbanas del este de Toronto. La estación cuenta con instalaciones modernas, áreas de espera cómodas y servicios de información en tiempo real para pasajeros.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "milliken",
+    "nombre": "Milliken",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Milliken - GO Transit Stouffville Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Milliken en la línea Stouffville de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Milliken - GO Transit",
+    "intro": "Milliken es una estación de GO Transit en la línea Stouffville, conectando las comunidades suburbanas del este de Toronto. Ofrece servicio rápido y confiable hacia el centro de la ciudad.",
+    "tips": [
+      "Estación con plataformas cubiertas y áreas de espera cómodas",
+      "Acceso directo a comercios locales y residencias",
+      "Viaje de 35-45 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak hours (10 AM-3 PM) for easier boarding",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Milliken ofrece una puerta de entrada a las comunidades residenciales del este de Toronto. Con instalaciones modernas y servicios de información actualizados, la estación es un punto de partida ideal para explorar el área.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "unionville",
+    "nombre": "Unionville",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Unionville - GO Transit Stouffville Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Unionville en la línea Stouffville de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Unionville - GO Transit",
+    "intro": "Unionville es una estación de GO Transit ubicada en la línea Stouffville. Sirve a una comunidad residencial próspera y ofrece conexiones rápidas al centro de Toronto.",
+    "tips": [
+      "Acceso a servicios bancarios, tiendas y restaurantes locales",
+      "Estación bien mantenida con instalaciones modernas",
+      "Aproximadamente 40-50 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) for shorter wait times",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Unionville proporciona acceso a una comunidad dinámica con servicios comerciales y residenciales. La estación cuenta con instalaciones completas y es un punto de partida conveniente para explorar el área suburbana.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "markham",
+    "nombre": "Markham",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Markham - GO Transit Stouffville Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Markham en la línea Stouffville de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Markham - GO Transit",
+    "intro": "Markham es una estación de GO Transit en la línea Stouffville, sirviendo a la ciudad de Markham. Proporciona conexiones eficientes entre Markham y el centro de Toronto.",
+    "tips": [
+      "Centro de transporte para la ciudad de Markham",
+      "Instalaciones modernas con parqueo disponible",
+      "Viaje de 40-50 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) for comfort",
+    "mundial_relevancia": "Regional commuter hub",
+    "descripcion_turistica": "Markham es un centro de transporte importante que conecta la ciudad de Markham con Toronto. La estación ofrece servicios completos, áreas de espera cómodas y fácil acceso a comercios locales.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "stouffville",
+    "nombre": "Stouffville",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Stouffville - GO Transit Terminal | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Stouffville, terminal de la línea Stouffville de GO Transit. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Stouffville - Terminal GO Transit",
+    "intro": "Stouffville es la estación terminal de la línea Stouffville de GO Transit. Ubicada en el corazón de la comunidad de Stouffville, proporciona el punto de partida para viajes al centro de Toronto.",
+    "tips": [
+      "Terminal de la línea Stouffville con servicios completos",
+      "Centro de información y venta de boletos disponible",
+      "Viaje de 50-60 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Morning and evening rush hours for frequent service",
+    "mundial_relevancia": "Regional transit terminal",
+    "descripcion_turistica": "Stouffville es una estación terminal que ofrece acceso a una comunidad residencial próspera. Con instalaciones modernas, áreas de espera amplias y servicios de información completos, es el punto ideal para comenzar un viaje a Toronto.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "old-elm",
+    "nombre": "Old Elm",
+    "linea": "GO-Stouffville",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Old Elm - GO Transit Stouffville Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Old Elm en la línea Stouffville de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Old Elm - GO Transit",
+    "intro": "Old Elm es una estación de GO Transit ubicada en la línea Stouffville. Sirve a la comunidad residencial de Old Elm y ofrece conexiones rápidas hacia el centro de Toronto.",
+    "tips": [
+      "Estación en área residencial tranquila",
+      "Acceso a parques y espacios verdes locales",
+      "Aproximadamente 30-40 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) for quieter travel",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Old Elm proporciona acceso a una comunidad residencial tranquila con acceso a parques y espacios verdes. La estación ofrece instalaciones bien mantenidas y es ideal para explorar las áreas residenciales del norte de Toronto.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "richmond-hill",
+    "nombre": "Richmond Hill",
+    "linea": "GO-Richmond Hill",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Richmond Hill - GO Transit Terminal | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Richmond Hill, terminal de la línea Richmond Hill de GO Transit. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Richmond Hill - Terminal GO Transit",
+    "intro": "Richmond Hill es la estación terminal de la línea Richmond Hill de GO Transit. Ubicada en el centro de Richmond Hill, ofrece conexiones directas al centro de Toronto.",
+    "tips": [
+      "Terminal de la línea Richmond Hill con servicios completos",
+      "Centro comercial local y servicios disponibles",
+      "Viaje de 40-50 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Peak hours (7-9 AM, 4-6 PM) for frequent service",
+    "mundial_relevancia": "Regional transit terminal",
+    "descripcion_turistica": "Richmond Hill es una estación terminal moderna que sirve como punto de entrada a la ciudad de Richmond Hill. Con instalaciones completas, estacionamiento y servicios de información, es ideal para explorar el área.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "gormley",
+    "nombre": "Gormley",
+    "linea": "GO-Richmond Hill",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Gormley - GO Transit Richmond Hill Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Gormley en la línea Richmond Hill de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Gormley - GO Transit",
+    "intro": "Gormley es una estación de GO Transit en la línea Richmond Hill. Sirve a la comunidad de Gormley y proporciona acceso rápido al centro de Toronto.",
+    "tips": [
+      "Estación en comunidad residencial",
+      "Instalaciones modernas con áreas de espera cómodas",
+      "Viaje de 35-45 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) for comfortable travel",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Gormley proporciona acceso a una comunidad residencial con fácil conexión a Toronto. La estación ofrece servicios modernos y es un punto de partida ideal para viajeros que exploran el área suburbana.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
+  },
+  {
+    "slug": "bloomington",
+    "nombre": "Bloomington",
+    "linea": "GO-Richmond Hill",
+    "sistema": "GO Transit",
+    "ciudad": "Toronto",
+    "tipo_zona": "suburban_station",
+    "pois": [],
+    "transferencias": [],
+    "seo_title": "Estación Bloomington - GO Transit Richmond Hill Line | MetroGuia Toronto",
+    "meta_description": "Información sobre la estación Bloomington en la línea Richmond Hill de GO Transit, Toronto. Horarios, tarifas y accesibilidad.",
+    "h1": "Estación Bloomington - GO Transit",
+    "intro": "Bloomington es una estación de GO Transit ubicada en la línea Richmond Hill. Ofrece acceso a la comunidad de Bloomington y conexiones directas al centro de Toronto.",
+    "tips": [
+      "Estación con servicios modernos y accesibilidad completa",
+      "Área residencial tranquila cerca de espacios verdes",
+      "Aproximadamente 30-40 minutos al centro de Toronto"
+    ],
+    "mejor_horario": "Off-peak (10 AM-3 PM) for easier access",
+    "mundial_relevancia": "Regional commuter station",
+    "descripcion_turistica": "Bloomington proporciona acceso a una comunidad residencial tranquila. La estación cuenta con instalaciones completas, áreas de espera cómodas y servicios de información para viajeros.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampas": true,
+      "piso_tactil": true
+    },
+    "horarios": {
+      "apertura": "05:00",
+      "cierre": "00:30",
+      "frecuencia": "15-30 min"
+    },
+    "moneda": "CAD",
+    "tarifa_turista": "$4.05 CAD (PRESTO)"
   }
 ];
 
