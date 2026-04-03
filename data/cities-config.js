@@ -366,7 +366,7 @@ export const CITIES_CONFIG = {
     state: 'Minnesota',
     currency: 'USD',
     defaultLang: 'en',
-    systems: ['metro-transit'],
+    systems: ['metro-transit', 'northstar-commuter-rail'],
     fifa2026: false,
     coordinates: { lat: 44.9778, lng: -93.2650 },
     timezone: 'America/Chicago',
@@ -392,7 +392,7 @@ export const CITIES_CONFIG = {
     state: 'Maryland',
     currency: 'USD',
     defaultLang: 'en',
-    systems: ['mta-maryland'],
+    systems: ['metro-subway', 'light-rail', 'marc-train'],
     fifa2026: false,
     coordinates: { lat: 39.2904, lng: -76.6122 },
     timezone: 'America/New_York',
@@ -477,6 +477,66 @@ export const CITIES_CONFIG = {
     transitToStadium: 'SkyTrain Expo/Millennium → Stadium-Chinatown Station (direct, 0 min walk)',
     coordinates: { lat: 49.2827, lng: -123.1207 },
     timezone: 'America/Vancouver',
+  },
+  montreal: {
+    slug: 'montreal', name: 'Montreal', nameES: 'Montreal', country: 'CA', state: 'Quebec',
+    currency: 'CAD', defaultLang: 'en', systems: ['stm-metro'], fifa2026: false,
+    coordinates: { lat: 45.5017, lng: -73.5673 }, timezone: 'America/Toronto',
+  },
+  calgary: {
+    slug: 'calgary', name: 'Calgary', nameES: 'Calgary', country: 'CA', state: 'Alberta',
+    currency: 'CAD', defaultLang: 'en', systems: ['ctrain'], fifa2026: false,
+    coordinates: { lat: 51.0447, lng: -114.0719 }, timezone: 'America/Edmonton',
+  },
+  edmonton: {
+    slug: 'edmonton', name: 'Edmonton', nameES: 'Edmonton', country: 'CA', state: 'Alberta',
+    currency: 'CAD', defaultLang: 'en', systems: ['edmonton-lrt'], fifa2026: false,
+    coordinates: { lat: 53.5461, lng: -113.4938 }, timezone: 'America/Edmonton',
+  },
+  ottawa: {
+    slug: 'ottawa', name: 'Ottawa', nameES: 'Ottawa', country: 'CA', state: 'Ontario',
+    currency: 'CAD', defaultLang: 'en', systems: ['o-train'], fifa2026: false,
+    coordinates: { lat: 45.4215, lng: -75.6972 }, timezone: 'America/Toronto',
+  },
+  detroit: {
+    slug: 'detroit', name: 'Detroit', nameES: 'Detroit', country: 'US', state: 'Michigan',
+    currency: 'USD', defaultLang: 'en', systems: ['qline', 'people-mover'], fifa2026: false,
+    coordinates: { lat: 42.3314, lng: -83.0458 }, timezone: 'America/Detroit',
+  },
+  cleveland: {
+    slug: 'cleveland', name: 'Cleveland', nameES: 'Cleveland', country: 'US', state: 'Ohio',
+    currency: 'USD', defaultLang: 'en', systems: ['rta'], fifa2026: false,
+    coordinates: { lat: 41.4993, lng: -81.6944 }, timezone: 'America/New_York',
+  },
+  'las-vegas': {
+    slug: 'las-vegas', name: 'Las Vegas', nameES: 'Las Vegas', country: 'US', state: 'Nevada',
+    currency: 'USD', defaultLang: 'en', systems: ['lv-monorail'], fifa2026: false,
+    coordinates: { lat: 36.1699, lng: -115.1398 }, timezone: 'America/Los_Angeles',
+  },
+  'san-jose': {
+    slug: 'san-jose', name: 'San Jose', nameES: 'San José', country: 'US', state: 'California',
+    currency: 'USD', defaultLang: 'en', systems: ['vta'], fifa2026: false,
+    coordinates: { lat: 37.3382, lng: -121.8863 }, timezone: 'America/Los_Angeles',
+  },
+  'new-orleans': {
+    slug: 'new-orleans', name: 'New Orleans', nameES: 'Nueva Orleans', country: 'US', state: 'Louisiana',
+    currency: 'USD', defaultLang: 'en', systems: ['rta-streetcar'], fifa2026: false,
+    coordinates: { lat: 29.9511, lng: -90.0715 }, timezone: 'America/Chicago',
+  },
+  buffalo: {
+    slug: 'buffalo', name: 'Buffalo', nameES: 'Buffalo', country: 'US', state: 'New York',
+    currency: 'USD', defaultLang: 'en', systems: ['nfta'], fifa2026: false,
+    coordinates: { lat: 42.8864, lng: -78.8784 }, timezone: 'America/New_York',
+  },
+  honolulu: {
+    slug: 'honolulu', name: 'Honolulu', nameES: 'Honolulú', country: 'US', state: 'Hawaii',
+    currency: 'USD', defaultLang: 'en', systems: ['skyline'], fifa2026: false,
+    coordinates: { lat: 21.3069, lng: -157.8583 }, timezone: 'Pacific/Honolulu',
+  },
+  norfolk: {
+    slug: 'norfolk', name: 'Norfolk', nameES: 'Norfolk', country: 'US', state: 'Virginia',
+    currency: 'USD', defaultLang: 'en', systems: ['tide'], fifa2026: false,
+    coordinates: { lat: 36.8508, lng: -76.2859 }, timezone: 'America/New_York',
   },
 };
 

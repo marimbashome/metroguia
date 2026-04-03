@@ -3,7 +3,7 @@ import { lineasDetalleMinneapolis } from '@/data/minneapolis/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import Link from 'next/link';
 
-const LINE_COLORS = { 'BLUE': '#0053A0', 'GREEN': '#00A94F' };
+const LINE_COLORS = { 'BLUE': '#0053A0', 'GREEN': '#00A94F', 'NORTHSTAR': '#FFD100' };
 
 export async function generateStaticParams() {
   return estacionesMinneapolis.map((estacion) => ({

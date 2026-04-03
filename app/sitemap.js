@@ -81,6 +81,18 @@ import { estacionesBaltimore } from '@/data/baltimore/estaciones';
 import { estacionesCharlotte } from '@/data/charlotte/estaciones';
 import { estacionesPhoenix } from '@/data/phoenix/estaciones';
 import { estacionesStLouis } from '@/data/st-louis/estaciones';
+import { estacionesMontreal } from '@/data/montreal/estaciones';
+import { estacionesCalgary } from '@/data/calgary/estaciones';
+import { estacionesEdmonton } from '@/data/edmonton/estaciones';
+import { estacionesOttawa } from '@/data/ottawa/estaciones';
+import { estacionesDetroit } from '@/data/detroit/estaciones';
+import { estacionesCleveland } from '@/data/cleveland/estaciones';
+import { estacionesLasVegas } from '@/data/las-vegas/estaciones';
+import { estacionesSanJose } from '@/data/san-jose/estaciones';
+import { estacionesNewOrleans } from '@/data/new-orleans/estaciones';
+import { estacionesBuffalo } from '@/data/buffalo/estaciones';
+import { estacionesHonolulu } from '@/data/honolulu/estaciones';
+import { estacionesNorfolk } from '@/data/norfolk/estaciones';
 
 // Import line data for US/CA cities
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
@@ -109,6 +121,18 @@ import { lineasDetalleBaltimore } from '@/data/baltimore/lineas-detalle';
 import { lineasDetalleCharlotte } from '@/data/charlotte/lineas-detalle';
 import { lineasPhoenix } from '@/data/phoenix/lineas-detalle';
 import { lineasStLouis } from '@/data/st-louis/lineas-detalle';
+import { lineasMontreal } from '@/data/montreal/lineas-detalle';
+import { lineasCalgary } from '@/data/calgary/lineas-detalle';
+import { lineasEdmonton } from '@/data/edmonton/lineas-detalle';
+import { lineasOttawa } from '@/data/ottawa/lineas-detalle';
+import { lineasDetroit } from '@/data/detroit/lineas-detalle';
+import { lineasCleveland } from '@/data/cleveland/lineas-detalle';
+import { lineasLasVegas } from '@/data/las-vegas/lineas-detalle';
+import { lineasSanJose } from '@/data/san-jose/lineas-detalle';
+import { lineasNewOrleans } from '@/data/new-orleans/lineas-detalle';
+import { lineasBuffalo } from '@/data/buffalo/lineas-detalle';
+import { lineasHonolulu } from '@/data/honolulu/lineas-detalle';
+import { lineasNorfolk } from '@/data/norfolk/lineas-detalle';
 
 // US/CA zone (neighborhood) data
 import { zonasUSCA } from '@/data/zonas-us-ca';
@@ -265,7 +289,9 @@ function getCoreUrls() {
     ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
         'san-francisco','boston','miami','dallas','kansas-city','denver','salt-lake-city',
         'washington-dc','chicago','san-diego','minneapolis','pittsburgh','baltimore',
-        'charlotte','phoenix','st-louis','toronto','vancouver','portland','sacramento'].map(c =>
+        'charlotte','phoenix','st-louis','toronto','vancouver','portland','sacramento',
+        'montreal','calgary','edmonton','ottawa',
+        'detroit','cleveland','las-vegas','san-jose','new-orleans','buffalo','honolulu','norfolk'].map(c =>
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
     // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
@@ -403,6 +429,42 @@ function getCitiesUrls() {
     // St. Louis
     ...mapEstacionesUSCA(estacionesStLouis, 'st-louis', 'cities'),
     ...mapLineasUSCA(lineasStLouis, 'st-louis', 'cities'),
+    // Montreal
+    ...mapEstacionesUSCA(estacionesMontreal, 'montreal', 'cities'),
+    ...mapLineasUSCA(lineasMontreal, 'montreal', 'cities'),
+    // Calgary
+    ...mapEstacionesUSCA(estacionesCalgary, 'calgary', 'cities'),
+    ...mapLineasUSCA(lineasCalgary, 'calgary', 'cities'),
+    // Edmonton
+    ...mapEstacionesUSCA(estacionesEdmonton, 'edmonton', 'cities'),
+    ...mapLineasUSCA(lineasEdmonton, 'edmonton', 'cities'),
+    // Ottawa
+    ...mapEstacionesUSCA(estacionesOttawa, 'ottawa', 'cities'),
+    ...mapLineasUSCA(lineasOttawa, 'ottawa', 'cities'),
+    // Detroit
+    ...mapEstacionesUSCA(estacionesDetroit, 'detroit', 'cities'),
+    ...mapLineasUSCA(lineasDetroit, 'detroit', 'cities'),
+    // Cleveland
+    ...mapEstacionesUSCA(estacionesCleveland, 'cleveland', 'cities'),
+    ...mapLineasUSCA(lineasCleveland, 'cleveland', 'cities'),
+    // Las Vegas
+    ...mapEstacionesUSCA(estacionesLasVegas, 'las-vegas', 'cities'),
+    ...mapLineasUSCA(lineasLasVegas, 'las-vegas', 'cities'),
+    // San Jose
+    ...mapEstacionesUSCA(estacionesSanJose, 'san-jose', 'cities'),
+    ...mapLineasUSCA(lineasSanJose, 'san-jose', 'cities'),
+    // New Orleans
+    ...mapEstacionesUSCA(estacionesNewOrleans, 'new-orleans', 'cities'),
+    ...mapLineasUSCA(lineasNewOrleans, 'new-orleans', 'cities'),
+    // Buffalo
+    ...mapEstacionesUSCA(estacionesBuffalo, 'buffalo', 'cities'),
+    ...mapLineasUSCA(lineasBuffalo, 'buffalo', 'cities'),
+    // Honolulu
+    ...mapEstacionesUSCA(estacionesHonolulu, 'honolulu', 'cities'),
+    ...mapLineasUSCA(lineasHonolulu, 'honolulu', 'cities'),
+    // Norfolk
+    ...mapEstacionesUSCA(estacionesNorfolk, 'norfolk', 'cities'),
+    ...mapLineasUSCA(lineasNorfolk, 'norfolk', 'cities'),
   ];
   return urls;
 }
@@ -662,6 +724,18 @@ function getRoutesUSCAUrls() {
     { city: 'kansas-city', prefix: '/kansas-city/route/', priority: 0.55 },
     { city: 'toronto', prefix: '/toronto/route/', priority: 0.6 },
     { city: 'vancouver', prefix: '/vancouver/route/', priority: 0.6 },
+    { city: 'montreal', prefix: '/montreal/route/', priority: 0.6 },
+    { city: 'calgary', prefix: '/calgary/route/', priority: 0.55 },
+    { city: 'edmonton', prefix: '/edmonton/route/', priority: 0.55 },
+    { city: 'ottawa', prefix: '/ottawa/route/', priority: 0.55 },
+    { city: 'detroit', prefix: '/detroit/route/', priority: 0.55 },
+    { city: 'cleveland', prefix: '/cleveland/route/', priority: 0.55 },
+    { city: 'las-vegas', prefix: '/las-vegas/route/', priority: 0.55 },
+    { city: 'san-jose', prefix: '/san-jose/route/', priority: 0.55 },
+    { city: 'new-orleans', prefix: '/new-orleans/route/', priority: 0.55 },
+    { city: 'buffalo', prefix: '/buffalo/route/', priority: 0.5 },
+    { city: 'honolulu', prefix: '/honolulu/route/', priority: 0.55 },
+    { city: 'norfolk', prefix: '/norfolk/route/', priority: 0.5 },
   ];
 
   const urls = [];

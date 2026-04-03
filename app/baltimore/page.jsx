@@ -8,11 +8,11 @@ import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
   title: 'MTA Maryland Metro — Baltimore Transit | MetroGuia',
-  description: 'MTA Maryland Metro guide: 2 lines, 47 stations in Baltimore. Subway and Light Rail lines serving downtown, BWI Airport, and neighborhoods. Complete transit guide with fares and schedules.',
-  keywords: 'MTA Maryland, Baltimore Metro, Light Rail, Subway, Baltimore transit, Maryland',
+  description: 'MTA Maryland Metro guide: Complete Baltimore transit system including Subway, Light Rail, and MARC trains. Multiple lines serving downtown, BWI Airport, and regional destinations. Complete transit guide with fares and schedules.',
+  keywords: 'MTA Maryland, Baltimore Metro, Light Rail, MARC trains, Subway, Baltimore transit, Maryland regional',
   openGraph: {
     title: 'MTA Maryland Metro — Baltimore Express Transit',
-    description: 'Discover Baltimore MTA Maryland Metro. Fast transit across Subway and Light Rail lines connecting downtown, BWI Airport, and neighborhoods.',
+    description: 'Discover Baltimore MTA Maryland Metro. Fast transit across Subway, Light Rail, and MARC lines connecting downtown, BWI Airport, and regional destinations.',
     url: 'https://metroguia.mx/baltimore',
     type: 'website',
   },
@@ -23,8 +23,8 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesBaltimore.filter(e =>
-  ['bal-downtown', 'bal-bwi-airport', 'bal-national-aquarium', 'bal-federal-hill', 'bal-penn-station'].includes(e.slug)
-);
+  ['baltimore-charles-center', 'baltimore-bwi-airport', 'baltimore-cultural-center', 'baltimore-hopkins-hospital', 'baltimore-hunt-valley'].includes(e.slug)
+).slice(0, 5);
 
 export default function BaltimorePagePage() {
   const cityConfig = CITIES_CONFIG.baltimore;
@@ -70,7 +70,7 @@ export default function BaltimorePagePage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            Rapid Transit · 2 Lines · 47 Stations
+            Integrated Transit · 3 Systems · {estacionesBaltimore.length} Stations
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -81,7 +81,7 @@ export default function BaltimorePagePage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            Baltimore's integrated Metro system with Subway and Light Rail lines connecting downtown, BWI Airport, and neighborhoods throughout the region.
+            Baltimore's integrated Metro system with Subway, Light Rail, and MARC commuter trains connecting downtown, BWI Airport, and neighborhoods throughout the region.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function BaltimorePagePage() {
         }}>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#00529B', margin: '0 0 8px 0' }}>
-              47
+              {estacionesBaltimore.length}
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Stations
@@ -111,10 +111,10 @@ export default function BaltimorePagePage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#00529B', margin: '0 0 8px 0' }}>
-              2
+              {lineasDetalleBaltimore.length}
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Active Lines
+              Transit Lines
             </p>
           </div>
           <div>

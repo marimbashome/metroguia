@@ -3,7 +3,17 @@ import { lineasDetalleBaltimore } from '@/data/baltimore/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import Link from 'next/link';
 
-const LINE_COLORS = { 'SUBWAY': '#00529B', 'LIGHTRAIL': '#FFB81C' };
+const LINE_COLORS = {
+  'subway': '#00529B',
+  'lightrail': '#FFB81C',
+  'metro-subway': '#00529B',
+  'light-rail': '#FFB81C',
+  'light-rail-main': '#D4352B',
+  'light-rail-branch': '#D4352B',
+  'marc-penn': '#0066CC',
+  'marc-camden': '#009933',
+  'marc-brunswick': '#FF9900'
+};
 
 export async function generateStaticParams() {
   return estacionesBaltimore.map((estacion) => ({
@@ -49,13 +59,19 @@ export default function StationBaltimorePagePage({ params }) {
   const lineaId = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
   const colorLinea = LINE_COLORS[lineaId] || '#00529B';
 
+  const lineaName = lineasDetalleBaltimore.find(l =>
+    l.id === lineaId ||
+    (Array.isArray(estacion.linea) && estacion.linea.includes(l.id))
+  );
+  const displayLineName = lineaName ? lineaName.nombre : `Line ${lineaId}`;
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
       { '@type': 'ListItem', position: 2, name: 'Baltimore', item: 'https://metroguia.mx/baltimore/' },
-      { '@type': 'ListItem', position: 3, name: `Line ${lineaId}`, item: `https://metroguia.mx/baltimore/line/${lineaId}/` },
+      { '@type': 'ListItem', position: 3, name: displayLineName, item: `https://metroguia.mx/baltimore/line/${lineaId}/` },
       { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/baltimore/station/${estacion.slug}` },
     ],
   };
