@@ -4,7 +4,7 @@ import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = { 'Expo': '#007399', 'Millennium': '#9F7602', 'Canada': '#00B5AD' };
+const LINE_COLORS = { 'Expo': '#1A5BA4', 'Millennium': '#FFD520', 'Canada': '#00B5AD', 'SeaBus': '#50C878', 'WCE': '#8B2293', 'Expo/Millennium': '#1A5BA4' };
 
 export async function generateStaticParams() {
   return estacionesVANCOUVER.map((estacion) => ({ slug: estacion.slug }));
