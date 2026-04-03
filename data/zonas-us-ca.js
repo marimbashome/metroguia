@@ -2326,180 +2326,2439 @@ export const zonasUSCA = [
     meta_description: "How to get to Midtown Sacramento by SacRT Blue Line. Farm-to-fork dining, art galleries, nightlife. Sacramento transit guide.",
     h1: "Midtown Sacramento: Culture & Farm-to-Fork Dining"
   },
+  // ═══════════════════════════════════════
+  // C3 EXPANSION — 37 additional US/CA cities
+  // Generated: 2026-04-03
+  // ═══════════════════════════════════════
+
+// =============================================================
+  // CHICAGO — CTA L System
+  // =============================================================
+  {
+    slug: "the-loop-chicago",
+    name: "The Loop",
+    city: "Chicago",
+    state: "Illinois",
+    country: "USA",
+    description: "The heart of downtown Chicago, bounded by the famous elevated Loop train. This historic district features iconic architecture, world-class museums, shopping on State Street, and the Chicago River. A vibrant urban center with stunning skyline views and iconic landmarks.",
+    h1: "How to reach The Loop by CTA — Chicago transit guide",
+    seo_title: "The Loop — Chicago CTA transit guide | MetroGuia",
+    meta_description: "How to reach The Loop in Chicago by CTA. Lake, Monroe, Jackson, and Grand stations. Museums, restaurants, and visitor tips for FIFA 2026.",
+    stations: ["chicago-lake", "chicago-monroe", "chicago-jackson", "chicago-grand", "chicago-clark-lake"],
+    main_station: "chicago-lake",
+    transit_systems: ["CTA L"],
+    transit_lines: ["Red", "Blue", "Brown", "Orange", "Green", "Pink"],
+    type: "urban",
+    pois: [
+      { name: "Willis Tower", type: "landmark", distance: "2 min walking" },
+      { name: "The Art Institute of Chicago", type: "museum", distance: "3 min walking" },
+      { name: "Chicago River", type: "waterway", distance: "1 min walking" },
+      { name: "State Street Shopping", type: "shopping", distance: "Walking distance" },
+      { name: "Millennium Park", type: "park", distance: "5 min walking" },
+      { name: "Chicago Board of Trade", type: "architecture", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "Lake Station is the busiest L station—arrive early for less crowded platforms",
+      "The architectural boat tour on the Chicago River departs nearby and is a must-do",
+      "State Street can be crowded during peak hours; visit early morning for better shopping experience",
+      "Many restaurants in The Loop cater to office workers—try side streets for better value",
+      "Free architecture walking tours depart from various points throughout The Loop"
+    ],
+    fifa_2026_relevance: "HIGH — Primary downtown tourist destination with hotels, restaurants, and historic venues",
+    type: "urban"
+  },
+
+  {
+    slug: "wrigleyville-chicago",
+    name: "Wrigleyville",
+    city: "Chicago",
+    state: "Illinois",
+    country: "USA",
+    description: "North Side neighborhood centered around Wrigley Field, home of the Chicago Cubs. A lively, family-friendly area with residential charm, local shops, bars, and restaurants. Rich baseball history and vibrant neighborhood culture make it a beloved Chicago destination.",
+    h1: "How to reach Wrigleyville by CTA — Chicago transit guide",
+    seo_title: "Wrigleyville — Chicago CTA transit guide | MetroGuia",
+    meta_description: "How to reach Wrigleyville in Chicago by CTA. Wrigley Field, Addison station, bars, restaurants, and visitor tips.",
+    stations: ["chicago-fullerton", "chicago-clark-division"],
+    main_station: "chicago-fullerton",
+    transit_systems: ["CTA L"],
+    transit_lines: ["Red", "Brown", "Purple"],
+    type: "entertainment",
+    pois: [
+      { name: "Wrigley Field", type: "sports", distance: "5 min walking from Fullerton" },
+      { name: "Lincoln Park Zoo", type: "zoo", distance: "Adjacent to Fullerton" },
+      { name: "Old Town neighborhood", type: "cultural", distance: "2 min walking" },
+      { name: "Second City Comedy Club", type: "entertainment", distance: "3 min walking" },
+      { name: "North Avenue Beach", type: "beach", distance: "10 min walking" },
+      { name: "LSD Park Trail", type: "recreation", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Baseball season runs April-September; game days get extremely crowded around Wrigley Field",
+      "Fullerton station provides best access to both Wrigley Field and Lincoln Park Zoo",
+      "Neighborhood bars fill up quickly on game days—arrive early or plan accordingly",
+      "Great neighborhood for walking; Diversey and Clark Street have many shops and cafes",
+      "Rooftop bars near Wrigley Field offer alternative game-day experiences"
+    ],
+    fifa_2026_relevance: "MEDIUM — Popular neighborhood destination with sports facilities and entertainment",
+    type: "entertainment"
+  },
+
+  {
+    slug: "hyde-park-chicago",
+    name: "Hyde Park",
+    city: "Chicago",
+    state: "Illinois",
+    country: "USA",
+    description: "South Side neighborhood known for cultural institutions, university presence, and historic architecture. Home to the Museum of Science and Industry, and the University of Chicago's Gothic Revival campus. An intellectual hub with diverse dining and unique character.",
+    h1: "How to reach Hyde Park by CTA — Chicago transit guide",
+    seo_title: "Hyde Park — Chicago CTA transit guide | MetroGuia",
+    meta_description: "How to reach Hyde Park in Chicago by CTA. Science and Industry museum, University of Chicago, South Side neighborhoods.",
+    stations: ["chicago-47th", "chicago-51st", "chicago-garfield"],
+    main_station: "chicago-51st",
+    transit_systems: ["CTA L"],
+    transit_lines: ["Red"],
+    type: "cultural",
+    pois: [
+      { name: "Museum of Science and Industry", type: "museum", distance: "10 min walking" },
+      { name: "University of Chicago", type: "university", distance: "5 min walking" },
+      { name: "Midway Plaisance", type: "park", distance: "5 min walking" },
+      { name: "Robie House (Frank Lloyd Wright)", type: "historic", distance: "3 min walking" },
+      { name: "Osaka Garden", type: "park", distance: "15 min walking" },
+      { name: "South Shore Cultural Center", type: "cultural", distance: "10 min walking" }
+    ],
+    tips_for_visitors: [
+      "Plan 3-4 hours to fully explore the Museum of Science and Industry",
+      "University of Chicago campus is beautiful for walking and photography",
+      "Take the Red Line directly to Hyde Park from downtown—no transfers needed",
+      "Neighborhood restaurants serve students and faculty; good value and variety",
+      "Spring and fall are ideal visiting seasons; summer can be crowded with tourists"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural and educational destination with museums and university campus",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // WASHINGTON DC — WMATA Metro
+  // =============================================================
   {
     slug: "national-mall-dc",
     name: "National Mall",
-    nameES: "National Mall",
-    country: "US",
-    state: "DC",
-    coordinates: { lat: 38.8893, lng: -77.0230 },
-    transit_lines: ["Blue", "Orange", "Silver"],
-    description: "America's Front Yard. Washington Monument, Lincoln Memorial, Smithsonian museums, and the Capitol. The most iconic stretch of DC.",
+    city: "Washington",
+    state: "District of Columbia",
+    country: "USA",
+    description: "America's front yard, featuring iconic monuments and world-class museums. Home to the Lincoln Memorial, Washington Monument, and Smithsonian museums. A historically significant and visually stunning area that attracts millions of visitors annually to experience American heritage.",
+    h1: "How to reach National Mall by Metro — Washington DC transit guide",
+    seo_title: "National Mall — Washington DC Metro guide | MetroGuia",
+    meta_description: "How to reach National Mall in Washington DC by Metro. Lincoln Memorial, Washington Monument, Smithsonian museums, visitor tips.",
+    stations: ["metro-metro-center", "metro-gallery-pl-chinatown", "metro-smithsonian"],
+    main_station: "metro-smithsonian",
+    transit_systems: ["WMATA Metro"],
+    transit_lines: ["Orange", "Silver", "Blue"],
+    type: "historic",
     pois: [
-      { name: "Smithsonian Museums", nombre: "Museos Smithsonian", type: "museum", distance: "Walking distance" },
-      { name: "Washington Monument", nombre: "Monumento a Washington", type: "landmark", distance: "Walking distance" },
-      { name: "Lincoln Memorial", nombre: "Memorial a Lincoln", type: "landmark", distance: "10 min walk" }
+      { name: "Lincoln Memorial", type: "monument", distance: "15 min walking" },
+      { name: "Washington Monument", type: "monument", distance: "10 min walking" },
+      { name: "Smithsonian National Museum of American History", type: "museum", distance: "Adjacent to station" },
+      { name: "Smithsonian National Gallery of Art", type: "museum", distance: "5 min walking" },
+      { name: "National WWII Museum", type: "museum", distance: "8 min walking" },
+      { name: "Tidal Basin", type: "park", distance: "10 min walking" }
     ],
     tips_for_visitors: [
-      "All Smithsonian museums are free — plan at least 2-3 hours per museum",
-      "Use Smithsonian station (Blue/Orange/Silver) or Archives station (Yellow/Green) as starting points",
-      "Best visited on weekday mornings; weekends can be extremely crowded"
+      "All Smithsonian museums are FREE—plan to visit multiple museums",
+      "Smithsonian station provides central access to most museums",
+      "Visit monuments and museums early in the morning to avoid crowds",
+      "Spring cherry blossoms (March-April) make Tidal Basin stunning but extremely crowded",
+      "Walking shoes essential—expect 2-3 miles of walking to see major sites"
     ],
-    fifa_2026_relevance: null,
-    seo_title: "Metro to National Mall DC — Smithsonian & Monuments Transit Guide | MetroGuia",
-    meta_description: "How to get to the National Mall by DC Metro. Smithsonian museums, Washington Monument, Lincoln Memorial. Free admission. WMATA transit guide.",
-    h1: "Metro to National Mall: Smithsonian & Monuments"
+    fifa_2026_relevance: "HIGH — Primary tourist destination and cultural center of the United States",
+    type: "historic"
   },
+
   {
-    slug: "georgetown-dc",
-    name: "Georgetown",
-    nameES: "Georgetown",
-    country: "US",
-    state: "DC",
-    coordinates: { lat: 38.9076, lng: -77.0723 },
-    transit_lines: ["Blue", "Orange", "Silver"],
-    description: "Historic neighborhood with cobblestone streets, upscale shopping on M Street, waterfront dining, and Georgetown University. Not directly on Metro — use Foggy Bottom or Rosslyn station.",
-    pois: [
-      { name: "Georgetown Waterfront", nombre: "Paseo Marítimo de Georgetown", type: "waterfront", distance: "Walking distance" },
-      { name: "Georgetown University", nombre: "Universidad de Georgetown", type: "university", distance: "10 min walk" },
-      { name: "M Street Shopping", nombre: "Compras en M Street", type: "shopping", distance: "Walking distance" }
-    ],
-    tips_for_visitors: [
-      "Georgetown has NO Metro station — take Blue/Orange/Silver to Foggy Bottom-GWU and walk 15 min, or use the DC Circulator bus",
-      "Weekend parking is nearly impossible — Metro + walking is your best bet",
-      "Georgetown Cupcake and Martin's Tavern are local favorites"
-    ],
-    fifa_2026_relevance: null,
-    seo_title: "Metro to Georgetown DC — Shopping & Waterfront Transit Guide | MetroGuia",
-    meta_description: "How to get to Georgetown by DC Metro. Foggy Bottom station, M Street shopping, Georgetown University, waterfront. WMATA guide.",
-    h1: "Metro to Georgetown: Shopping & History"
-  },
-  {
-    slug: "dupont-circle-dc",
-    name: "Dupont Circle",
-    nameES: "Dupont Circle",
-    country: "US",
-    state: "DC",
-    coordinates: { lat: 38.9098, lng: -77.0434 },
+    slug: "georgetown-dupont-dc",
+    name: "Georgetown & Dupont Circle",
+    city: "Washington",
+    state: "District of Columbia",
+    country: "USA",
+    description: "Charming neighborhoods combining historic architecture, upscale shopping, and vibrant nightlife. Georgetown features waterfront dining and M Street boutiques, while Dupont Circle offers art galleries, bookstores, and cosmopolitan restaurants. A sophisticated blend of history and modern urban culture.",
+    h1: "How to reach Georgetown & Dupont Circle by Metro — Washington DC transit guide",
+    seo_title: "Georgetown & Dupont Circle — Washington DC Metro guide | MetroGuia",
+    meta_description: "How to reach Georgetown and Dupont Circle in Washington DC by Metro. Shopping, dining, nightlife, and cultural attractions.",
+    stations: ["metro-dupont-circle", "metro-farragut-north"],
+    main_station: "metro-dupont-circle",
+    transit_systems: ["WMATA Metro"],
     transit_lines: ["Red"],
-    description: "Vibrant neighborhood known for Embassy Row, art galleries, bookshops, diverse restaurants, and nightlife. Cultural heart of DC's LGBTQ+ community.",
+    type: "urban",
     pois: [
-      { name: "Embassy Row", nombre: "Fila de Embajadas", type: "landmark", distance: "Walking distance" },
-      { name: "Phillips Collection", nombre: "Colección Phillips", type: "museum", distance: "5 min walk" },
-      { name: "Dupont Circle Park", nombre: "Parque Dupont Circle", type: "park", distance: "Walking distance" }
+      { name: "Dupont Circle Park", type: "park", distance: "Direct access" },
+      { name: "Phillips Collection Museum", type: "museum", distance: "3 min walking" },
+      { name: "M Street Shopping District", type: "shopping", distance: "5 min walking" },
+      { name: "Smithsonian Freer/Sackler Galleries", type: "museum", distance: "10 min walking" },
+      { name: "Washington Harbour", type: "waterfront", distance: "8 min walking from Georgetown" },
+      { name: "C&O Canal", type: "recreation", distance: "5 min walking from Georgetown" }
     ],
     tips_for_visitors: [
-      "Sunday morning farmers market at Dupont Circle is one of the best in DC",
-      "Walk up Massachusetts Avenue for stunning embassy buildings",
-      "Great coffee shops and bookstores throughout the neighborhood"
+      "Dupont Circle is the transit hub; Georgetown is accessible by walking or bus transfer",
+      "M Street in Georgetown has upscale boutiques; Wisconsin Avenue offers more casual shopping",
+      "Restaurant scene is excellent; many offer rooftop seating with views",
+      "Nightlife is lively on weekends; arrive early for good seating at popular bars",
+      "Free walking tours of Georgetown depart regularly from M Street"
     ],
-    fifa_2026_relevance: null,
-    seo_title: "Metro to Dupont Circle DC — Embassy Row & Galleries | MetroGuia",
-    meta_description: "How to get to Dupont Circle by Metro. Embassy Row, Phillips Collection, farmers market. Red Line. DC transit guide.",
-    h1: "Metro to Dupont Circle: Embassies & Culture"
+    fifa_2026_relevance: "MEDIUM — Cultural and entertainment destination with dining, shopping, and museums",
+    type: "urban"
   },
+
   {
     slug: "capitol-hill-dc",
     name: "Capitol Hill",
-    nameES: "Capitol Hill",
-    country: "US",
-    state: "DC",
-    coordinates: { lat: 38.8899, lng: -77.0091 },
-    transit_lines: ["Blue", "Orange", "Silver"],
-    description: "Home to the U.S. Capitol, Supreme Court, Library of Congress, and the charming Eastern Market. Political heart of America.",
+    city: "Washington",
+    state: "District of Columbia",
+    country: "USA",
+    description: "Historic neighborhood centered around the U.S. Capitol building, featuring 19th-century townhouses, upscale restaurants, and vibrant nightlife. A mix of government activity, residential charm, and progressive culture with diverse communities and local businesses.",
+    h1: "How to reach Capitol Hill by Metro — Washington DC transit guide",
+    seo_title: "Capitol Hill — Washington DC Metro guide | MetroGuia",
+    meta_description: "How to reach Capitol Hill in Washington DC by Metro. Capitol Building, Folger Library, restaurants, and entertainment.",
+    stations: ["metro-union-station", "metro-judiciary-square"],
+    main_station: "metro-union-station",
+    transit_systems: ["WMATA Metro"],
+    transit_lines: ["Red", "Blue", "Orange", "Silver"],
+    type: "historic",
     pois: [
-      { name: "U.S. Capitol Building", nombre: "Capitolio de EE.UU.", type: "government", distance: "Walking distance" },
-      { name: "Library of Congress", nombre: "Biblioteca del Congreso", type: "museum", distance: "5 min walk" },
-      { name: "Eastern Market", nombre: "Eastern Market", type: "market", distance: "10 min walk" }
+      { name: "U.S. Capitol Building", type: "historic", distance: "5 min walking" },
+      { name: "Library of Congress", type: "library", distance: "3 min walking" },
+      { name: "Folger Shakespeare Library", type: "cultural", distance: "5 min walking" },
+      { name: "Union Station", type: "architecture", distance: "Adjacent to station" },
+      { name: "Eastern Market", type: "market", distance: "10 min walking" },
+      { name: "Lincoln Park", type: "park", distance: "8 min walking" }
     ],
     tips_for_visitors: [
-      "Free tours of the Capitol — book online in advance through your representative's office",
-      "Library of Congress is free and often overlooked — stunning interior",
-      "Eastern Market weekend flea market is a must-visit"
+      "Capitol tours available but require advance booking through Congressional office",
+      "Union Station is Beaux-Arts masterpiece—allow time to admire architecture",
+      "Eastern Market is vibrant on weekends with vendors and restaurants",
+      "Many restaurants offer views of the Capitol—popular for dining and photos",
+      "Neighborhood is safe and walkable with tree-lined streets and residential character"
     ],
-    fifa_2026_relevance: null,
-    seo_title: "Metro to Capitol Hill DC — U.S. Capitol & Library of Congress | MetroGuia",
-    meta_description: "How to get to Capitol Hill by Metro. U.S. Capitol, Library of Congress, Supreme Court, Eastern Market. Blue/Orange/Silver Line.",
-    h1: "Metro to Capitol Hill: America's Political Heart"
+    fifa_2026_relevance: "MEDIUM — Historic destination with government buildings and cultural institutions",
+    type: "historic"
   },
+
+  // =============================================================
+  // DENVER — RTD Light Rail
+  // =============================================================
   {
-    slug: "adams-morgan-dc",
-    name: "Adams Morgan",
-    nameES: "Adams Morgan",
-    country: "US",
-    state: "DC",
-    coordinates: { lat: 38.9217, lng: -77.0429 },
+    slug: "lodo-denver",
+    name: "LoDo & Union Station",
+    city: "Denver",
+    state: "Colorado",
+    country: "USA",
+    description: "Lower Downtown (LoDo) district featuring historic brick warehouses converted to trendy restaurants, breweries, and shops. Home to Union Station, an Amtrak hub and architectural gem. A dynamic neighborhood blending history with modern urban energy and entertainment.",
+    h1: "How to reach LoDo by RTD — Denver transit guide",
+    seo_title: "LoDo & Union Station — Denver RTD transit guide | MetroGuia",
+    meta_description: "How to reach LoDo in Denver by RTD. Union Station, historic district, breweries, restaurants, and visitor tips.",
+    stations: ["denver-union-station", "denver-38th-blake"],
+    main_station: "denver-union-station",
+    transit_systems: ["RTD Light Rail"],
+    transit_lines: ["A", "B", "E", "G", "W"],
+    type: "urban",
+    pois: [
+      { name: "Union Station", type: "architecture", distance: "Central hub" },
+      { name: "Denver Breweries", type: "commercial", distance: "5 min walking" },
+      { name: "Cherry Creek Shopping Center", type: "shopping", distance: "10 min walking" },
+      { name: "Confluence Park", type: "park", distance: "3 min walking" },
+      { name: "South Platte River", type: "recreation", distance: "Walking distance" },
+      { name: "16th Street Mall", type: "shopping", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Union Station underwent major renovation in 2014—restaurant and retail options excellent",
+      "Brewery district easily walkable; many offer tours and rooftop seating",
+      "RTD A Line connects directly to Denver International Airport (42 minutes)",
+      "RiNo arts district (38th & Blake) is adjacent—great for galleries and street art",
+      "Friday/Saturday nights can be crowded; arrive early for restaurant reservations"
+    ],
+    fifa_2026_relevance: "MEDIUM — Urban entertainment district with dining, breweries, and historic sites",
+    type: "urban"
+  },
+
+  {
+    slug: "capitol-hill-rino-denver",
+    name: "Capitol Hill & RiNo",
+    city: "Denver",
+    state: "Colorado",
+    country: "USA",
+    description: "Capitol Hill is Denver's artistic and alternative neighborhood with independent shops, restaurants, and nightlife. River North (RiNo) is an emerging arts district featuring street murals, galleries, and craft breweries. Together they represent Denver's creative pulse.",
+    h1: "How to reach Capitol Hill & RiNo by RTD — Denver transit guide",
+    seo_title: "Capitol Hill & RiNo — Denver RTD transit guide | MetroGuia",
+    meta_description: "How to reach Capitol Hill and RiNo in Denver by RTD. Arts, breweries, galleries, street art, restaurants.",
+    stations: ["denver-18th-california", "denver-40th-colorado"],
+    main_station: "denver-18th-california",
+    transit_systems: ["RTD Light Rail"],
+    transit_lines: ["B", "E"],
+    type: "cultural",
+    pois: [
+      { name: "Denver Art Museum", type: "museum", distance: "8 min walking" },
+      { name: "Cheesman Park", type: "park", distance: "5 min walking" },
+      { name: "RiNo Arts District Street Art", type: "cultural", distance: "Walking distance" },
+      { name: "Gallery Crawl Route", type: "cultural", distance: "Throughout neighborhood" },
+      { name: "Numerous Breweries", type: "commercial", distance: "3-10 min walking" },
+      { name: "Local Restaurants & Cafes", type: "dining", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "RiNo is best explored on foot; allows full appreciation of street art and murals",
+      "Denver Art Museum is outstanding; plan 2-3 hours for full visit",
+      "Brewery scene is vibrant and casual; most offer patio seating year-round",
+      "Cheesman Park offers panoramic views of downtown and Rocky Mountains",
+      "First Friday of each month features expanded gallery hours and street activities"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural and artistic destination with museums, galleries, and creative scene",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // SALT LAKE CITY — UTA TRAX
+  // =============================================================
+  {
+    slug: "downtown-temple-square-slc",
+    name: "Downtown & Temple Square",
+    city: "Salt Lake City",
+    state: "Utah",
+    country: "USA",
+    description: "Heart of Salt Lake City centered around Temple Square, headquarters of the Church of Jesus Christ of Latter-day Saints. Features historic temples, museums, and the iconic square with fountains and gardens. An important religious and cultural landmark with tourist attractions.",
+    h1: "How to reach Temple Square by TRAX — Salt Lake City transit guide",
+    seo_title: "Temple Square — Salt Lake City TRAX transit guide | MetroGuia",
+    meta_description: "How to reach Temple Square in Salt Lake City by TRAX. Temple, museums, downtown attractions, and visitor tips.",
+    stations: ["slc-temple-square", "slc-city-center"],
+    main_station: "slc-temple-square",
+    transit_systems: ["UTA TRAX"],
+    transit_lines: ["Red", "Green"],
+    type: "historic",
+    pois: [
+      { name: "Temple Square", type: "religious", distance: "Direct access" },
+      { name: "Salt Lake Temple", type: "architecture", distance: "Center of Temple Square" },
+      { name: "Salt Lake Tabernacle", type: "historic", distance: "In Temple Square" },
+      { name: "LDS Church History Museum", type: "museum", distance: "Adjacent to Temple Square" },
+      { name: "City Hall", type: "historic", distance: "3 min walking" },
+      { name: "Public Library of Salt Lake City", type: "architecture", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Temple Square is open to visitors; free tours available in multiple languages",
+      "Visitors center provides information and cultural exhibits—entry is free",
+      "Tabernacle Choir performances occur regularly; check schedule for times",
+      "City Hall is beautiful and open for tours; impressive architecture inside",
+      "Downtown is very walkable; most attractions within 10-15 minute walk"
+    ],
+    fifa_2026_relevance: "MEDIUM — Religious and cultural destination with historic significance and museums",
+    type: "historic"
+  },
+
+  {
+    slug: "university-district-slc",
+    name: "University District",
+    city: "Salt Lake City",
+    state: "Utah",
+    country: "USA",
+    description: "College neighborhood centered around the University of Utah campus. Features student-oriented restaurants, shops, and entertainment. A vibrant area with a younger demographic, affordable dining, and cultural activities. Gateway to local hiking and outdoor recreation.",
+    h1: "How to reach University of Utah by TRAX — Salt Lake City transit guide",
+    seo_title: "University District — Salt Lake City TRAX transit guide | MetroGuia",
+    meta_description: "How to reach University of Utah by TRAX. Campus, dining, shopping, outdoor recreation access.",
+    stations: ["slc-900-south", "slc-central-pointe"],
+    main_station: "slc-900-south",
+    transit_systems: ["UTA TRAX"],
+    transit_lines: ["Red", "Green"],
+    type: "urban",
+    pois: [
+      { name: "University of Utah Campus", type: "university", distance: "Adjacent to station" },
+      { name: "Red Butte Botanical Garden", type: "garden", distance: "5 min from campus" },
+      { name: "Utah Museum of Fine Arts", type: "museum", distance: "On campus" },
+      { name: "Hogle Zoo", type: "zoo", distance: "Adjacent to campus" },
+      { name: "Nearby Hiking Trails", type: "recreation", distance: "15-30 min drive" },
+      { name: "South Fort Douglas Park", type: "park", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "University campus is beautiful and walkable; open to visitors",
+      "Red Butte Botanical Garden offers stunning views and diverse plant collections",
+      "Many student-friendly restaurants and cafes offer good value",
+      "Hogle Zoo is well-maintained and family-friendly",
+      "Great base for exploring Utah's outdoor attractions and hiking trails"
+    ],
+    fifa_2026_relevance: "LOW — College neighborhood with limited FIFA 2026 relevance, more regional destination",
+    type: "urban"
+  },
+
+  // =============================================================
+  // SAN DIEGO — MTS Trolley
+  // =============================================================
+  {
+    slug: "gaslamp-quarter-san-diego",
+    name: "Gaslamp Quarter",
+    city: "San Diego",
+    state: "California",
+    country: "USA",
+    description: "Historic waterfront district featuring Victorian-era architecture, boutiques, galleries, and restaurants. A vibrant neighborhood with restored 19th-century buildings, nightlife, and waterfront parks. One of San Diego's most popular tourist destinations blending history and modern culture.",
+    h1: "How to reach Gaslamp Quarter by Trolley — San Diego transit guide",
+    seo_title: "Gaslamp Quarter — San Diego Trolley transit guide | MetroGuia",
+    meta_description: "How to reach Gaslamp Quarter in San Diego by trolley. Historic district, restaurants, shopping, waterfront attractions.",
+    stations: ["sd-gaslamp-quarter", "sd-convention-center"],
+    main_station: "sd-gaslamp-quarter",
+    transit_systems: ["MTS Trolley"],
+    transit_lines: ["Green", "Orange"],
+    type: "historic",
+    pois: [
+      { name: "Gaslamp Quarter Historic Buildings", type: "historic", distance: "Throughout district" },
+      { name: "San Diego Convention Center", type: "architecture", distance: "2 min walking" },
+      { name: "Waterfront Park", type: "park", distance: "3 min walking" },
+      { name: "Seaport Village", type: "shopping", distance: "5 min walking" },
+      { name: "San Diego Maritime Museum", type: "museum", distance: "5 min walking" },
+      { name: "USS Midway Museum", type: "museum", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Historic walking tours available; discover building history and architecture",
+      "Fifth Avenue has concentrated nightlife—bars and restaurants everywhere",
+      "Waterfront promenade is perfect for sunset walks and photo opportunities",
+      "Friday/Saturday nights are busy; arrive early or make reservations",
+      "Many rooftop venues offer harbor views and local beer selection"
+    ],
+    fifa_2026_relevance: "MEDIUM — Popular tourist district with historic architecture and waterfront attractions",
+    type: "historic"
+  },
+
+  {
+    slug: "old-town-balboa-san-diego",
+    name: "Old Town & Balboa Park",
+    city: "San Diego",
+    state: "California",
+    country: "USA",
+    description: "Old Town is San Diego's birthplace, featuring Spanish colonial architecture, shops, and Mexican restaurants. Balboa Park is a 1,200-acre urban cultural park with 17 museums, gardens, and botanical displays. Together they showcase San Diego's rich history and cultural heritage.",
+    h1: "How to reach Old Town & Balboa Park by Trolley — San Diego transit guide",
+    seo_title: "Old Town & Balboa Park — San Diego Trolley transit guide | MetroGuia",
+    meta_description: "How to reach Old Town and Balboa Park in San Diego by trolley. Spanish heritage, museums, gardens, and cultural attractions.",
+    stations: ["sd-courthouse", "sd-king-merritt"],
+    main_station: "sd-courthouse",
+    transit_systems: ["MTS Trolley"],
+    transit_lines: ["Orange", "Green"],
+    type: "cultural",
+    pois: [
+      { name: "Old Town San Diego State Historic Park", type: "historic", distance: "Adjacent to trolley" },
+      { name: "Balboa Park", type: "park", distance: "10 min from Old Town" },
+      { name: "San Diego Museum of Us", type: "museum", distance: "In Balboa Park" },
+      { name: "San Diego Art Museum", type: "museum", distance: "In Balboa Park" },
+      { name: "Botanical Building & Lily Pond", type: "park", distance: "In Balboa Park" },
+      { name: "Mexican Heritage Plaza", type: "cultural", distance: "In Old Town" }
+    ],
+    tips_for_visitors: [
+      "Old Town is free to explore; museums charge admission",
+      "Balboa Park requires driving or bus transfer from Old Town trolley station",
+      "Museums offer combination passes for multiple-day access",
+      "Park gardens are spectacular year-round; plan 3-4 hours minimum",
+      "Mexican restaurants in Old Town offer authentic cuisine at reasonable prices"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural and historical destinations with museums and authentic heritage sites",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // MINNEAPOLIS — Metro Transit
+  // =============================================================
+  {
+    slug: "downtown-minneapolis",
+    name: "Downtown Minneapolis",
+    city: "Minneapolis",
+    state: "Minnesota",
+    country: "USA",
+    description: "Downtown Minneapolis features the iconic Nicollet Mall shopping corridor, excellent restaurants, and the vibrant cultural scene. Home to theaters, galleries, and the Mississippi River waterfront. A revitalized urban center with modern architecture and public spaces.",
+    h1: "How to reach Downtown Minneapolis by Metro Transit — Minneapolis guide",
+    seo_title: "Downtown Minneapolis — Metro Transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Minneapolis by Metro. Shopping, dining, theaters, museums, and waterfront attractions.",
+    stations: ["mpls-nicollet-mall", "mpls-target-field"],
+    main_station: "mpls-nicollet-mall",
+    transit_systems: ["Metro Transit Light Rail"],
+    transit_lines: ["Green", "Blue"],
+    type: "urban",
+    pois: [
+      { name: "Nicollet Mall", type: "shopping", distance: "Direct access" },
+      { name: "Target Field", type: "sports", distance: "5 min walking" },
+      { name: "Walker Art Center", type: "museum", distance: "8 min walking" },
+      { name: "Mill City Museum", type: "museum", distance: "8 min walking" },
+      { name: "Stone Arch Bridge", type: "historic", distance: "10 min walking" },
+      { name: "Mississippi River Waterfront", type: "recreation", distance: "10 min walking" }
+    ],
+    tips_for_visitors: [
+      "Nicollet Mall is covered in winter—great for shopping in Minnesota climate",
+      "Target Field hosts Minnesota Twins; games run April-October",
+      "Stone Arch Bridge offers beautiful views and is excellent for photos",
+      "River waterfront trail is perfect for walking or biking",
+      "Warehouse district (north of downtown) has converted lofts into restaurants and shops"
+    ],
+    fifa_2026_relevance: "MEDIUM — Urban center with sports, entertainment, and cultural institutions",
+    type: "urban"
+  },
+
+  {
+    slug: "mall-of-america-minneapolis",
+    name: "Mall of America Area",
+    city: "Minneapolis",
+    state: "Minnesota",
+    country: "USA",
+    description: "Home to the largest shopping mall in the United States with over 500 retailers, restaurants, and entertainment options. Also features Nickelodeon Universe theme park, aquarium, and entertainment venues. A destination for shopping, family entertainment, and dining.",
+    h1: "How to reach Mall of America by Metro Transit — Minneapolis guide",
+    seo_title: "Mall of America — Metro Transit guide | Minneapolis shopping & entertainment",
+    meta_description: "How to reach Mall of America in Minneapolis by Metro. Shopping, theme park, restaurants, and family entertainment.",
+    stations: ["mpls-fort-snelling"],
+    main_station: "mpls-fort-snelling",
+    transit_systems: ["Metro Transit Light Rail"],
+    transit_lines: ["Green"],
+    type: "entertainment",
+    pois: [
+      { name: "Mall of America", type: "shopping", distance: "Adjacent to station" },
+      { name: "Nickelodeon Universe Theme Park", type: "amusement", distance: "Inside mall" },
+      { name: "SEA LIFE Minnesota Aquarium", type: "aquarium", distance: "Inside mall" },
+      { name: "Crayola Experience", type: "entertainment", distance: "Inside mall" },
+      { name: "Various Restaurants", type: "dining", distance: "Throughout mall" },
+      { name: "LEGOLAND Discovery Center", type: "entertainment", distance: "Inside mall" }
+    ],
+    tips_for_visitors: [
+      "Mall of America is massive—plan to spend full day minimum",
+      "Fort Snelling station connects directly to mall via skyway",
+      "Theme park and aquarium require separate admission; bundle deals available",
+      "Restaurants range from fast casual to upscale dining",
+      "Holiday season and weekends are extremely crowded; visit weekday if possible",
+      "Free Wi-Fi available throughout mall complex"
+    ],
+    fifa_2026_relevance: "MEDIUM — Major entertainment destination with family attractions and shopping",
+    type: "entertainment"
+  },
+
+  // =============================================================
+  // CHARLOTTE — CATS LYNX
+  // =============================================================
+  {
+    slug: "uptown-charlotte",
+    name: "Uptown Charlotte",
+    city: "Charlotte",
+    state: "North Carolina",
+    country: "USA",
+    description: "Charlotte's downtown core featuring modern high-rise office buildings, upscale restaurants, and an emerging entertainment scene. The banking capital of the Southeast with skyline views, public spaces, and growing nightlife. A vibrant urban neighborhood combining business and culture.",
+    h1: "How to reach Uptown Charlotte by LYNX — Charlotte transit guide",
+    seo_title: "Uptown Charlotte — CATS LYNX transit guide | MetroGuia",
+    meta_description: "How to reach Uptown Charlotte by light rail. Shopping, dining, banking district, and entertainment.",
+    stations: ["charlotte-trade-street", "charlotte-3rd-street"],
+    main_station: "charlotte-3rd-street",
+    transit_systems: ["CATS LYNX"],
+    transit_lines: ["Red", "Gold"],
+    type: "urban",
+    pois: [
+      { name: "Charlotte Convention Center", type: "venue", distance: "Adjacent to stations" },
+      { name: "Spectrum Center", type: "sports", distance: "5 min walking" },
+      { name: "Charlotte Museum of History", type: "museum", distance: "10 min walking" },
+      { name: "Tryon Street Shopping", type: "shopping", distance: "Walking distance" },
+      { name: "Historic Fourth Ward", type: "neighborhood", distance: "5 min walking" },
+      { name: "Freedom Park", type: "park", distance: "10 min walking" }
+    ],
+    tips_for_visitors: [
+      "Uptown is compact and walkable; most attractions within 10-minute walk",
+      "Spectrum Center hosts Charlotte Hornets basketball and concerts",
+      "Fourth Ward is undergoing revitalization with new restaurants and shops",
+      "Banking district architecture is impressive; free walking tours available",
+      "Growing food and cocktail scene with local restaurants opening frequently"
+    ],
+    fifa_2026_relevance: "MEDIUM — Urban center with sports facilities and growing entertainment scene",
+    type: "urban"
+  },
+
+  {
+    slug: "noda-university-charlotte",
+    name: "NoDa & University Area",
+    city: "Charlotte",
+    state: "North Carolina",
+    country: "USA",
+    description: "North Davidson (NoDa) is an emerging arts district with street art, galleries, breweries, and independent shops. The nearby University area includes UNCC campus and student-oriented businesses. A creative, youthful neighborhood blending academic culture with artistic expression.",
+    h1: "How to reach NoDa & University by LYNX — Charlotte transit guide",
+    seo_title: "NoDa & University — CATS LYNX transit guide | MetroGuia",
+    meta_description: "How to reach NoDa and University area in Charlotte by light rail. Arts, galleries, breweries, and campus.",
+    stations: ["charlotte-36th-street", "charlotte-unc-charlotte-main"],
+    main_station: "charlotte-unc-charlotte-main",
+    transit_systems: ["CATS LYNX"],
     transit_lines: ["Red"],
-    description: "DC's most diverse and colorful neighborhood. International restaurants, dive bars, vintage shops, and vibrant street art. Use Woodley Park-Zoo station.",
+    type: "cultural",
     pois: [
-      { name: "18th Street NW", nombre: "Calle 18 NW", type: "entertainment", distance: "Walking distance" },
-      { name: "Madam's Organ", nombre: "Madam's Organ", type: "nightlife", distance: "Walking distance" }
+      { name: "NoDa Street Art & Murals", type: "cultural", distance: "Throughout district" },
+      { name: "UNC Charlotte Campus", type: "university", distance: "Station location" },
+      { name: "Local Breweries", type: "commercial", distance: "3-5 min walking" },
+      { name: "Art Galleries & Studios", type: "cultural", distance: "Throughout NoDa" },
+      { name: "Independent Shops", type: "shopping", distance: "Walking distance" },
+      { name: "Restaurants & Cafes", type: "dining", distance: "Throughout area" }
     ],
     tips_for_visitors: [
-      "Use Woodley Park-Zoo/Adams Morgan station (Red Line) — 10 minute walk uphill to 18th Street",
-      "Ethiopian restaurants on 18th Street are some of the best outside Ethiopia",
-      "DC's best nightlife strip with bars and live music"
+      "NoDa is best explored on foot; enjoy street art while walking",
+      "First Friday of each month features gallery openings and street activities",
+      "Brewery scene is casual and friendly; no reservations needed",
+      "UNC Charlotte campus is large and open to visitors",
+      "Student demographic keeps prices reasonable for dining and entertainment"
     ],
-    fifa_2026_relevance: null,
-    seo_title: "Metro to Adams Morgan DC — International Dining & Nightlife | MetroGuia",
-    meta_description: "How to get to Adams Morgan by Metro. 18th Street restaurants, nightlife, Ethiopian food. Woodley Park station. DC guide.",
-    h1: "Metro to Adams Morgan: DC's Cultural Melting Pot"
+    fifa_2026_relevance: "LOW — Arts and cultural district with limited FIFA 2026 event infrastructure",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // PHOENIX — Valley Metro
+  // =============================================================
+  {
+    slug: "downtown-phoenix",
+    name: "Downtown Phoenix",
+    city: "Phoenix",
+    state: "Arizona",
+    country: "USA",
+    description: "Phoenix's downtown features modern architecture, expanding entertainment district, and cultural venues. Home to the Arizona Science Center, museums, and public spaces. An increasingly vibrant urban core with restaurants, bars, and upcoming development projects.",
+    h1: "How to reach Downtown Phoenix by Metro — Phoenix transit guide",
+    seo_title: "Downtown Phoenix — Valley Metro transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Phoenix by light rail. Museums, entertainment, dining, and urban attractions.",
+    stations: ["phoenix-central-avenue", "phoenix-jefferson-street"],
+    main_station: "phoenix-central-avenue",
+    transit_systems: ["Valley Metro Light Rail"],
+    transit_lines: ["Red"],
+    type: "urban",
+    pois: [
+      { name: "Arizona Science Center", type: "museum", distance: "Adjacent to line" },
+      { name: "Phoenix Art Museum", type: "museum", distance: "3 min walking" },
+      { name: "Heard Museum", type: "museum", distance: "5 min walking" },
+      { name: "Children's Museum of Phoenix", type: "museum", distance: "5 min walking" },
+      { name: "Heritage & Science Park", type: "park", distance: "Walking distance" },
+      { name: "City Hall", type: "architecture", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Arizona Science Center is excellent and often has special exhibits",
+      "Downtown is very walkable; most attractions within 10-minute walk",
+      "Extreme heat in summer (June-August); visit early morning or evening",
+      "Light rail is free in downtown core—excellent for transit",
+      "Restaurant scene is growing; many offer outdoor patio seating"
+    ],
+    fifa_2026_relevance: "MEDIUM — Urban center with cultural museums and growing entertainment",
+    type: "urban"
+  },
+
+  {
+    slug: "tempe-asu-phoenix",
+    name: "Tempe & ASU Campus",
+    city: "Phoenix",
+    state: "Arizona",
+    country: "USA",
+    description: "Home to Arizona State University, Tempe features a vibrant college town atmosphere with student-oriented businesses, Mill Avenue shopping and dining corridor, and cultural venues. A lively neighborhood with Tempe Town Lake and year-round outdoor activities.",
+    h1: "How to reach Tempe & ASU by Metro — Phoenix transit guide",
+    seo_title: "Tempe & ASU Campus — Valley Metro transit guide | MetroGuia",
+    meta_description: "How to reach Tempe and ASU by light rail. Campus, shopping, dining, entertainment, and outdoor recreation.",
+    stations: ["phoenix-washington-street", "phoenix-thomas-road"],
+    main_station: "phoenix-washington-street",
+    transit_systems: ["Valley Metro Light Rail"],
+    transit_lines: ["Red"],
+    type: "urban",
+    pois: [
+      { name: "Arizona State University Campus", type: "university", distance: "Adjacent to stations" },
+      { name: "Mill Avenue Shopping District", type: "shopping", distance: "3 min walking" },
+      { name: "Tempe Town Lake", type: "recreation", distance: "5 min walking" },
+      { name: "ASU Art Museum", type: "museum", distance: "On campus" },
+      { name: "Gammage Auditorium", type: "architecture", distance: "On campus" },
+      { name: "College Bars & Restaurants", type: "dining", distance: "Mill Avenue" }
+    ],
+    tips_for_visitors: [
+      "ASU campus is one of largest in US; beautiful architecture and public art",
+      "Mill Avenue is heart of student life; diverse dining and nightlife",
+      "Town Lake is perfect for walking, jogging, or kayaking",
+      "Gammage Auditorium is Frank Lloyd Wright building—impressive even from outside",
+      "Student demographic keeps prices very affordable"
+    ],
+    fifa_2026_relevance: "LOW — College town with limited FIFA 2026 infrastructure",
+    type: "urban"
+  },
+
+  // =============================================================
+  // BALTIMORE — MTA Maryland Rail
+  // =============================================================
+  {
+    slug: "inner-harbor-baltimore",
+    name: "Inner Harbor",
+    city: "Baltimore",
+    state: "Maryland",
+    country: "USA",
+    description: "Baltimore's waterfront district featuring historic ships, world-class aquarium, and waterfront promenade. An urban renewal success story with restaurants, shops, and entertainment venues surrounding the historic harbor. A major tourist destination blending maritime heritage with modern attractions.",
+    h1: "How to reach Inner Harbor by MTA — Baltimore transit guide",
+    seo_title: "Inner Harbor — Baltimore MTA transit guide | MetroGuia",
+    meta_description: "How to reach Inner Harbor in Baltimore by rail. National Aquarium, museums, restaurants, and waterfront attractions.",
+    stations: ["baltimore-shot-tower", "baltimore-charles-center"],
+    main_station: "baltimore-shot-tower",
+    transit_systems: ["MTA Maryland Rail"],
+    transit_lines: ["Red"],
+    type: "waterfront",
+    pois: [
+      { name: "National Aquarium", type: "museum", distance: "Adjacent to station" },
+      { name: "Maritime Museum", type: "museum", distance: "3 min walking" },
+      { name: "Historic Ships", type: "historic", distance: "Adjacent to waterfront" },
+      { name: "Federal Hill Park", type: "park", distance: "5 min walking" },
+      { name: "Water Taxi System", type: "recreation", distance: "Throughout harbor" },
+      { name: "Promenade Restaurants", type: "dining", distance: "Waterfront" }
+    ],
+    tips_for_visitors: [
+      "National Aquarium is world-class; plan 3-4 hours minimum",
+      "Water taxi offers scenic tour of harbor and connects to other neighborhoods",
+      "Harbor promenade is perfect for walking; sunset views excellent",
+      "Historic ships offer tours; combine multiple ships for comprehensive experience",
+      "Restaurants offer waterfront seating; reservations recommended for dinner"
+    ],
+    fifa_2026_relevance: "MEDIUM — Major waterfront tourist destination with aquarium and historic sites",
+    type: "waterfront"
+  },
+
+  {
+    slug: "downtown-mount-vernon-baltimore",
+    name: "Downtown & Mount Vernon",
+    city: "Baltimore",
+    state: "Maryland",
+    country: "USA",
+    description: "Mount Vernon neighborhood features the cultural core of Baltimore with museums, theaters, and historic architecture centered on Washington Monument. A vibrant arts district with galleries, restaurants, and bookstores. An intellectual and cultural hub with university presence.",
+    h1: "How to reach Mount Vernon by MTA — Baltimore transit guide",
+    seo_title: "Mount Vernon — Baltimore MTA transit guide | MetroGuia",
+    meta_description: "How to reach Mount Vernon in Baltimore by rail. Museums, theaters, galleries, and cultural attractions.",
+    stations: ["baltimore-lexington-market", "baltimore-state-center"],
+    main_station: "baltimore-lexington-market",
+    transit_systems: ["MTA Maryland Rail"],
+    transit_lines: ["Red", "Orange"],
+    type: "cultural",
+    pois: [
+      { name: "Washington Monument", type: "historic", distance: "3 min walking" },
+      { name: "Walters Art Museum", type: "museum", distance: "5 min walking" },
+      { name: "Peabody Institute", type: "cultural", distance: "4 min walking" },
+      { name: "Lexington Market", type: "market", distance: "Adjacent to station" },
+      { name: "Joseph E. Cole Jr. Field House", type: "university", distance: "Nearby" },
+      { name: "Penn Station", type: "historic", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Washington Monument offers views; outdoor observation area free to public",
+      "Walters Art Museum is free admission—collection spans world history",
+      "Lexington Market is historic food market; great for casual eating",
+      "Theater district has resident companies and touring productions",
+      "Neighborhood is walkable with tree-lined streets and historic buildings"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural and historic district with museums and theaters",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // CLEVELAND — RTA
+  // =============================================================
+  {
+    slug: "downtown-tower-city-cleveland",
+    name: "Downtown & Tower City",
+    city: "Cleveland",
+    state: "Ohio",
+    country: "USA",
+    description: "Downtown Cleveland features the iconic Terminal Tower, Public Square, and entertainment district. Tower City Center is a historic mixed-use development. An urban core with museums, restaurants, and a revitalized waterfront. Gateway to Lake Erie attractions and sports venues.",
+    h1: "How to reach Downtown Cleveland by RTA — Cleveland transit guide",
+    seo_title: "Downtown & Tower City — Cleveland RTA transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Cleveland by rail. Tower City, Public Square, museums, restaurants, and sports.",
+    stations: ["cleveland-tower-city"],
+    main_station: "cleveland-tower-city",
+    transit_systems: ["RTA Rapid"],
+    transit_lines: ["Red", "Green", "Blue"],
+    type: "urban",
+    pois: [
+      { name: "Terminal Tower", type: "architecture", distance: "Central location" },
+      { name: "Cleveland Museum of Art", type: "museum", distance: "10 min walking" },
+      { name: "Rock and Roll Hall of Fame", type: "museum", distance: "5 min walking" },
+      { name: "Public Square", type: "plaza", distance: "Adjacent" },
+      { name: "Quicken Loans Arena", type: "sports", distance: "5 min walking" },
+      { name: "Cleveland Science Center", type: "museum", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Terminal Tower offers observation deck with Lake Erie views",
+      "Rock and Roll Hall of Fame is must-visit attraction; plan 2-3 hours",
+      "Downtown is experiencing revitalization; new restaurants opening regularly",
+      "Cavs basketball at Quicken Loans Arena (October-April)",
+      "Many museums offer free admission certain hours; check website"
+    ],
+    fifa_2026_relevance: "MEDIUM — Urban center with sports venues and cultural museums",
+    type: "urban"
+  },
+
+  {
+    slug: "university-circle-cleveland",
+    name: "University Circle",
+    city: "Cleveland",
+    state: "Ohio",
+    country: "USA",
+    description: "University Circle is an integrated neighborhood combining university, medical, and cultural institutions. Home to case Western Reserve University, Cleveland Museum of Art, and botanical gardens. An intellectual and cultural hub with world-class museums in a parklike setting.",
+    h1: "How to reach University Circle by RTA — Cleveland transit guide",
+    seo_title: "University Circle — Cleveland RTA transit guide | MetroGuia",
+    meta_description: "How to reach University Circle in Cleveland by rail. Museums, university, cultural attractions.",
+    stations: ["cleveland-university-circle"],
+    main_station: "cleveland-university-circle",
+    transit_systems: ["RTA Rapid"],
+    transit_lines: ["Green"],
+    type: "cultural",
+    pois: [
+      { name: "Cleveland Museum of Art", type: "museum", distance: "Adjacent to station" },
+      { name: "Case Western Reserve University", type: "university", distance: "Walking distance" },
+      { name: "Cleveland Botanical Garden", type: "garden", distance: "5 min walking" },
+      { name: "Crawford Auto-Aviation Museum", type: "museum", distance: "5 min walking" },
+      { name: "Cleveland Museum of Natural History", type: "museum", distance: "3 min walking" },
+      { name: "Little Italy neighborhood", type: "neighborhood", distance: "Adjacent" }
+    ],
+    tips_for_visitors: [
+      "Museum of Art is free admission—outstanding collection spanning world history",
+      "Multiple museums within walking distance; combination passes available",
+      "Botanical Garden is beautifully maintained; plan 1-2 hours",
+      "Little Italy offers authentic Italian restaurants and cafes",
+      "Campus is open to visitors; beautiful architecture and public art"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural and educational hub with world-class museums",
+    type: "cultural"
+  },
+
+  // =============================================================
+  // BUFFALO — NFTA Metro
+  // =============================================================
+  {
+    slug: "downtown-buffalo",
+    name: "Downtown Buffalo",
+    city: "Buffalo",
+    state: "New York",
+    country: "USA",
+    description: "Downtown Buffalo features historic architecture, an expanding arts scene, and waterfront development. The city is undergoing urban renewal with restored theaters, museums, and new restaurants. A culturally rich neighborhood with affordable dining and vibrant nightlife.",
+    h1: "How to reach Downtown Buffalo by Metro — Buffalo transit guide",
+    seo_title: "Downtown Buffalo — NFTA Metro transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Buffalo by light rail. Historic architecture, museums, theaters, and waterfront.",
+    stations: ["buffalo-church", "buffalo-seneca"],
+    main_station: "buffalo-seneca",
+    transit_systems: ["NFTA Metro"],
+    transit_lines: ["Red"],
+    type: "urban",
+    pois: [
+      { name: "Niagara Square", type: "plaza", distance: "Center of downtown" },
+      { name: "Albright-Knox Art Gallery", type: "museum", distance: "10 min walking" },
+      { name: "Darwin R. Barker Library", type: "architecture", distance: "3 min walking" },
+      { name: "Theater District", type: "cultural", distance: "Walking distance" },
+      { name: "Buffalo Waterfront", type: "recreation", distance: "5 min walking" },
+      { name: "Canalside Development", type: "public-space", distance: "Adjacent" }
+    ],
+    tips_for_visitors: [
+      "Albright-Knox Gallery is world-class art museum with free admission",
+      "Historic architecture walking tours available; early 1900s buildings impressive",
+      "Theater district has restored theaters with Broadway shows",
+      "Waterfront development (Canalside) offers dining and entertainment",
+      "Buffalo is very affordable compared to other northeastern cities"
+    ],
+    fifa_2026_relevance: "LOW — Regional city with limited FIFA 2026 infrastructure",
+    type: "urban"
+  },
+
+  {
+    slug: "university-heights-buffalo",
+    name: "University Heights",
+    city: "Buffalo",
+    state: "New York",
+    country: "USA",
+    description: "University Heights surrounds the State University of New York (SUNY Buffalo) and University at Buffalo campuses. A student-oriented neighborhood with affordable dining, bookstores, and entertainment. A younger demographic with cultural activities and university-related attractions.",
+    h1: "How to reach University Heights by Metro — Buffalo transit guide",
+    seo_title: "University Heights — NFTA Metro transit guide | MetroGuia",
+    meta_description: "How to reach University Heights in Buffalo by light rail. SUNY Buffalo, campus, dining, and student activities.",
+    stations: ["buffalo-university"],
+    main_station: "buffalo-university",
+    transit_systems: ["NFTA Metro"],
+    transit_lines: ["Red"],
+    type: "urban",
+    pois: [
+      { name: "SUNY Buffalo Campus", type: "university", distance: "Station location" },
+      { name: "University at Buffalo", type: "university", distance: "Connected campuses" },
+      { name: "College Restaurants & Cafes", type: "dining", distance: "Walking distance" },
+      { name: "Bookstores & Shops", type: "shopping", distance: "Throughout area" },
+      { name: "Student Entertainment Venues", type: "entertainment", distance: "Walking distance" },
+      { name: "Campus Green Spaces", type: "park", distance: "Throughout campus" }
+    ],
+    tips_for_visitors: [
+      "University campuses are open to visitors; impressive modern architecture",
+      "Student demographic keeps prices very affordable for dining",
+      "Campus green spaces perfect for walking and relaxation",
+      "Museums and facilities on campus sometimes open to public",
+      "Neighborhood has youthful energy with music venues and bars"
+    ],
+    fifa_2026_relevance: "LOW — College town with limited FIFA 2026 infrastructure",
+    type: "urban"
+  },
+
+  // =============================================================
+  // NEW ORLEANS — RTA Streetcar
+  // =============================================================
+  {
+    slug: "french-quarter-new-orleans",
+    name: "French Quarter",
+    city: "New Orleans",
+    state: "Louisiana",
+    country: "USA",
+    description: "Historic heart of New Orleans featuring Spanish colonial architecture, world-famous Bourbon Street, and authentic Creole culture. A vibrant neighborhood with live music, restaurants, nightlife, and cultural history. The original colonial settlement preserving centuries of tradition.",
+    h1: "How to reach French Quarter by Streetcar — New Orleans transit guide",
+    seo_title: "French Quarter — New Orleans RTA Streetcar guide | MetroGuia",
+    meta_description: "How to reach French Quarter in New Orleans by streetcar. Bourbon Street, music, restaurants, colonial architecture.",
+    stations: ["new-orleans-canal-carondelet", "new-orleans-poydras"],
+    main_station: "new-orleans-canal-carondelet",
+    transit_systems: ["RTA Streetcar"],
+    transit_lines: ["Red", "Green"],
+    type: "historic",
+    pois: [
+      { name: "Bourbon Street", type: "entertainment", distance: "Walking distance" },
+      { name: "Jackson Square", type: "park", distance: "5 min walking" },
+      { name: "St. Louis Cathedral", type: "historic", distance: "Adjacent to Jackson Square" },
+      { name: "French Market", type: "market", distance: "3 min walking" },
+      { name: "Royal Street Galleries", type: "cultural", distance: "Walking distance" },
+      { name: "Old Ursuline Convent", type: "historic", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Bourbon Street is famous for nightlife; day visits better than night for seeing architecture",
+      "Jackson Square is center of French Quarter; free access and beautiful views",
+      "Live music throughout district; restaurants often have performances",
+      "Streetcar is iconic transport; riding it part of the New Orleans experience",
+      "Authentic Creole cuisine; many establishments operate for decades"
+    ],
+    fifa_2026_relevance: "MEDIUM — Historic and cultural destination with music, dining, and nightlife",
+    type: "historic"
+  },
+
+  {
+    slug: "garden-district-new-orleans",
+    name: "Garden District",
+    city: "New Orleans",
+    state: "Louisiana",
+    country: "USA",
+    description: "Upscale residential neighborhood featuring antebellum mansions set back from tree-lined streets. Built in the 1800s as a planned community for wealthy families, it preserves grand architecture and Southern hospitality. A picturesque district reflecting 19th-century prosperity.",
+    h1: "How to reach Garden District by Streetcar — New Orleans transit guide",
+    seo_title: "Garden District — New Orleans RTA Streetcar guide | MetroGuia",
+    meta_description: "How to reach Garden District in New Orleans by streetcar. Mansions, historic homes, restaurants, and shopping.",
+    stations: ["new-orleans-st-charles-jackson", "new-orleans-napoleon-ave"],
+    main_station: "new-orleans-st-charles-jackson",
+    transit_systems: ["RTA Streetcar"],
+    transit_lines: ["St. Charles"],
+    type: "historic",
+    pois: [
+      { name: "Antebellum Mansions", type: "architecture", distance: "Throughout district" },
+      { name: "Mardi Gras Museum", type: "museum", distance: "5 min walking" },
+      { name: "Magazine Street Shopping", type: "shopping", distance: "Walking distance" },
+      { name: "Restaurants on St. Charles", type: "dining", distance: "Throughout area" },
+      { name: "Audubon Park", type: "park", distance: "10 min walking" },
+      { name: "Streetcar Line", type: "historic", distance: "Central to district" }
+    ],
+    tips_for_visitors: [
+      "Walking tour of mansion exteriors is free and highly recommended",
+      "Many mansions open for special tours—check schedule",
+      "St. Charles Streetcar is historic and scenic; ride entire line for experience",
+      "Magazine Street offers unique antique shops and local restaurants",
+      "Audubon Park has beautiful oak trees and walking paths"
+    ],
+    fifa_2026_relevance: "MEDIUM — Historic residential district with architectural significance and tourism appeal",
+    type: "historic"
+  },
+
+  // =============================================================
+  // ST. LOUIS — MetroLink
+  // =============================================================
+  {
+    slug: "downtown-gateway-arch-st-louis",
+    name: "Downtown & Gateway Arch",
+    city: "St. Louis",
+    state: "Missouri",
+    country: "USA",
+    description: "Downtown St. Louis centers around the iconic Gateway Arch monument on the Mississippi River. A revitalized waterfront district with museums, restaurants, and parks. The symbolic gateway to the West with historic significance and modern attractions.",
+    h1: "How to reach Gateway Arch by MetroLink — St. Louis transit guide",
+    seo_title: "Gateway Arch Downtown — St. Louis MetroLink guide | MetroGuia",
+    meta_description: "How to reach Gateway Arch in St. Louis by MetroLink. Arch monument, museums, riverfront, and downtown attractions.",
+    stations: ["st-louis-civic-center", "st-louis-convention-center"],
+    main_station: "st-louis-civic-center",
+    transit_systems: ["MetroLink"],
+    transit_lines: ["Red", "Blue"],
+    type: "historic",
+    pois: [
+      { name: "Gateway Arch", type: "monument", distance: "Adjacent to stations" },
+      { name: "City Museum", type: "museum", distance: "10 min walking" },
+      { name: "St. Louis History Museum", type: "museum", distance: "5 min walking" },
+      { name: "Old Courthouse", type: "historic", distance: "3 min walking" },
+      { name: "Mississippi River", type: "waterway", distance: "Adjacent" },
+      { name: "Leonhard Hall", type: "historic", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Gateway Arch tram ride to top offers incredible views; arrive early to avoid lines",
+      "MetroLink access to arch is convenient; free light rail in downtown zone",
+      "City Museum is unique interactive experience; plan 2-3 hours",
+      "History Museum has excellent exhibits on Lewis and Clark expedition",
+      "Riverfront parks offer walking paths and scenic views"
+    ],
+    fifa_2026_relevance: "HIGH — Iconic American monument and major tourist destination",
+    type: "historic"
+  },
+
+  {
+    slug: "forest-park-cwe-st-louis",
+    name: "Forest Park & Central West End",
+    city: "St. Louis",
+    state: "Missouri",
+    country: "USA",
+    description: "Forest Park is a 1,300-acre urban park housing world-class museums including art, history, and science institutions. The Central West End (CWE) is an upscale residential and commercial district with boutiques, restaurants, and galleries. A cultural and recreational hub.",
+    h1: "How to reach Forest Park by MetroLink — St. Louis transit guide",
+    seo_title: "Forest Park — St. Louis MetroLink guide | MetroGuia",
+    meta_description: "How to reach Forest Park in St. Louis by MetroLink. Museums, parks, cultural institutions, and restaurants.",
+    stations: ["st-louis-central-west-end", "st-louis-forest-park-southeast"],
+    main_station: "st-louis-central-west-end",
+    transit_systems: ["MetroLink"],
+    transit_lines: ["Red", "Green"],
+    type: "cultural",
+    pois: [
+      { name: "Saint Louis Art Museum", type: "museum", distance: "Adjacent to park" },
+      { name: "Saint Louis Science Center", type: "museum", distance: "In park" },
+      { name: "Missouri History Museum", type: "museum", distance: "In park" },
+      { name: "Zoo (Saint Louis Zoo)", type: "zoo", distance: "In park" },
+      { name: "Botanical Garden", type: "garden", distance: "In park" },
+      { name: "Art Hill", type: "landmark", distance: "Center of park" }
+    ],
+    tips_for_visitors: [
+      "Most museums in Forest Park are FREE—excellent value for families",
+      "Zoo is world-class; plan full day to see all exhibits",
+      "Art Hill is iconic; walk to Art Museum across the terraces",
+      "Park has walking paths and beautiful landscaping; great for strolling",
+      "Central West End has upscale dining and shopping; walkable from park"
+    ],
+    fifa_2026_relevance: "MEDIUM — Cultural hub with museums and recreational attractions",
+    type: "cultural"
+  },
+
+{
+    slug: "pittsburgh-downtown-cultural",
+    name: "Downtown & Cultural District",
+    city: "Pittsburgh",
+    state: "PA",
+    country: "USA",
+    description: "The heart of Pittsburgh featuring the Golden Triangle business district, the iconic Cultural District with world-class theaters, and riverfront attractions. This zone connects major employment hubs with arts and entertainment.",
+    h1: "Downtown Pittsburgh & Cultural District Transit Zone",
+    seo_title: "Pittsburgh Downtown & Cultural District - Transit Guide | MetroGuia",
+    meta_description: "Explore Pittsburgh's downtown core and Cultural District via transit. Station guide, attractions, and tips for visitors.",
+    stations: ["pittsburgh-library", "pittsburgh-fifth-ave", "pittsburgh-station-square", "pittsburgh-smithfield"],
+    main_station: "pittsburgh-library",
+    transit_systems: ["PRT T Red Line"],
+    transit_lines: ["Red Line"],
+    type: "downtown",
+    pois: [
+      { name: "Benedum Center", type: "theater", distance: "0.2 km" },
+      { name: "Byham Theater", type: "theater", distance: "0.3 km" },
+      { name: "Pittsburgh History & Landmarks Foundation", type: "museum", distance: "0.4 km" },
+      { name: "Point State Park", type: "park", distance: "0.5 km" },
+      { name: "Roberto Clemente Bridge", type: "landmark", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "The Cultural District is a must-visit area with historic theaters and dining. Use the Red Line to access major attractions. Street parking can be difficult; consider using transit from the airport.",
+    fifa_2026_relevance: "Heinz History Center and nearby attractions provide cultural context. Downtown is accessible for team accommodations and media facilities."
   },
   {
-    slug: "downtown-norfolk",
-    name: "Downtown Norfolk",
-    nameES: "Centro de Norfolk",
-    country: "US",
-    state: "Virginia",
-    coordinates: { lat: 36.8503, lng: -76.2903 },
-    transit_lines: ["Tide"],
-    description: "Norfolk's vibrant downtown waterfront district featuring Nauticus maritime museum, St. Paul's Church, historic Freemason Street, fine dining, and arts venues. The cultural and commercial heart of Norfolk.",
-    stations: ["norfolk-civic-plaza", "norfolk-harbor-park"],
-    main_station: "norfolk-civic-plaza",
-    transit_systems: ["The Tide Light Rail"],
+    slug: "pittsburgh-university-oakland",
+    name: "University & Oakland",
+    city: "Pittsburgh",
+    state: "PA",
+    country: "USA",
+    description: "Home to the University of Pittsburgh and Carnegie Mellon University, this zone is a vibrant academic and cultural hub with museums, educational institutions, and student-oriented services.",
+    h1: "Pittsburgh University & Oakland Transit Zone",
+    seo_title: "Pittsburgh Oakland & University District - Transit Guide | MetroGuia",
+    meta_description: "Navigate Pittsburgh's university district via public transit. Museums, education, and student amenities accessible by bus and rail.",
+    stations: ["pittsburgh-pottery", "pittsburgh-shadyside", "pittsburgh-penn-station"],
+    main_station: "pittsburgh-pottery",
+    transit_systems: ["PRT T Red Line", "Port Authority Bus Transit"],
+    transit_lines: ["Red Line", "Multiple bus routes"],
+    type: "university",
     pois: [
-      { name: "Nauticus", nombre: "Nauticus", type: "museum", distance: "5 min walk from Harbor Park" },
-      { name: "St. Paul's Church", nombre: "Iglesia de St. Paul", type: "historic", distance: "10 min walk" },
-      { name: "MacArthur Memorial", nombre: "Memorial MacArthur", type: "landmark", distance: "15 min walk" },
-      { name: "Waterfront Marina", nombre: "Marina del Frente de Agua", type: "waterfront", distance: "Walking distance" }
+      { name: "Carnegie Museums of Pittsburgh", type: "museum", distance: "0.3 km" },
+      { name: "University of Pittsburgh", type: "education", distance: "0.2 km" },
+      { name: "Phipps Conservatory", type: "garden", distance: "0.7 km" },
+      { name: "Heinz History Center", type: "museum", distance: "1.0 km" },
+      { name: "Schenley Park", type: "park", distance: "0.5 km" }
     ],
-    tips_for_visitors: [
-      "Civic Plaza is the heart of downtown Norfolk — Nauticus and waterfront attractions are directly accessible",
-      "Harbor Park is just 3 minutes away on The Tide; great for waterfront dining and views",
-      "Norfolk has abundant street parking and surface lots; most attractions are within walking distance of Tide stations",
-      "Best time to visit: spring and fall for pleasant weather"
-    ],
-    fifa_2026_relevance: null,
-    seo_title: "Tide to Downtown Norfolk — Waterfront & Museums Transit Guide | MetroGuia",
-    meta_description: "How to get to Downtown Norfolk by The Tide Light Rail. Nauticus, harbor, MacArthur Memorial. Norfolk transit guide.",
-    h1: "Tide to Downtown Norfolk: Waterfront Culture"
+    tips_for_visitors: "Oakland is best explored on foot between transit stops. Campus tours at Pitt and CMU are highly recommended. The zone has excellent restaurants and cafes catering to students.",
+    fifa_2026_relevance: "Universities provide context for local sports history and educational resources for international delegations."
   },
   {
-    slug: "odu-norfolk",
-    name: "Old Dominion University Area",
-    nameES: "Zona de la Universidad Old Dominion",
-    country: "US",
-    state: "Virginia",
-    coordinates: { lat: 36.8854, lng: -76.3092 },
-    transit_lines: ["Tide"],
-    description: "College district and residential neighborhood home to Old Dominion University. Campus life, student-friendly restaurants, bars, and academic atmosphere. Growing area with mixed-use development.",
-    stations: ["norfolk-odu", "norfolk-military-hwy"],
-    main_station: "norfolk-odu",
-    transit_systems: ["The Tide Light Rail"],
+    slug: "pittsburgh-station-square-south",
+    name: "Station Square & South Shore",
+    city: "Pittsburgh",
+    state: "PA",
+    country: "USA",
+    description: "A mixed-use development on the south bank featuring shopping, dining, and entertainment with direct river access and historic warehouse architecture repurposed as modern attractions.",
+    h1: "Pittsburgh Station Square & South Shore Transit Zone",
+    seo_title: "Pittsburgh Station Square - South Shore Transit Guide | MetroGuia",
+    meta_description: "Discover Pittsburgh's Station Square and South Shore neighborhoods. Shopping, dining, and riverfront access via convenient transit.",
+    stations: ["pittsburgh-station-square"],
+    main_station: "pittsburgh-station-square",
+    transit_systems: ["PRT T Red Line"],
+    transit_lines: ["Red Line"],
+    type: "commercial",
     pois: [
-      { name: "Old Dominion University", nombre: "Universidad Old Dominion", type: "university", distance: "Walking distance" },
-      { name: "Monarch Way", nombre: "Monarch Way", type: "shopping", distance: "5 min walk" },
-      { name: "Student Commons", nombre: "Centro Estudiantil", type: "recreation", distance: "On campus" }
+      { name: "Station Square", type: "shopping", distance: "0.0 km" },
+      { name: "The Gateway Center", type: "shopping", distance: "0.3 km" },
+      { name: "South Shore Trail", type: "recreation", distance: "0.2 km" },
+      { name: "Market Square", type: "plaza", distance: "0.4 km" },
+      { name: "The Smithfield Street Bridge", type: "landmark", distance: "0.5 km" }
+    ],
+    tips_for_visitors: "Station Square offers excellent dining with riverside views. The area is highly walkable and accessible from the Red Line. Plan to spend several hours exploring shops and restaurants.",
+    fifa_2026_relevance: "Modern facilities suitable for team accommodations and media centers. Pedestrian-friendly infrastructure for visitors."
+  },
+
+  {
+    slug: "detroit-downtown-midtown",
+    name: "Downtown & Midtown",
+    city: "Detroit",
+    state: "MI",
+    country: "USA",
+    description: "Detroit's revitalized core featuring the historic downtown with modern development, the M-1 Rail connecting to vibrant Midtown, and major cultural institutions, restaurants, and entertainment venues.",
+    h1: "Detroit Downtown & Midtown Transit Zone",
+    seo_title: "Detroit Downtown & Midtown - QLine & Transit Guide | MetroGuia",
+    meta_description: "Explore Detroit's dynamic downtown and Midtown districts via QLine and transit. Arts, culture, and dining guide.",
+    stations: ["detroit-woodward-downtown", "detroit-qline-central", "detroit-midtown-arts"],
+    main_station: "detroit-qline-central",
+    transit_systems: ["QLine (M-1 Rail)", "Detroit People Mover"],
+    transit_lines: ["QLine", "People Mover"],
+    type: "downtown",
+    pois: [
+      { name: "Detroit Institute of Arts", type: "museum", distance: "0.4 km" },
+      { name: "Guardian Building", type: "landmark", distance: "0.5 km" },
+      { name: "Comerica Park", type: "stadium", distance: "0.8 km" },
+      { name: "Renaissance Center", type: "commercial", distance: "1.2 km" },
+      { name: "Campus Martius Park", type: "park", distance: "0.3 km" }
+    ],
+    tips_for_visitors: "The QLine is Detroit's pride - a modern streetcar connecting downtown to Midtown. The DIA is world-renowned and free to Michigan residents. Street art and murals are everywhere.",
+    fifa_2026_relevance: "Ford Field (a FIFA 2026 venue) is nearby. Detroit's automotive heritage is central to visitor experiences."
+  },
+  {
+    slug: "detroit-corktown-riverfront",
+    name: "Corktown & Riverfront",
+    city: "Detroit",
+    state: "MI",
+    country: "USA",
+    description: "Historic Corktown neighborhood with Victorian architecture, trendy restaurants, and breweries, plus the scenic Detroit riverfront with parks and international border views.",
+    h1: "Detroit Corktown & Riverfront Transit Zone",
+    seo_title: "Detroit Corktown & Riverfront - Transit Guide | MetroGuia",
+    meta_description: "Discover Detroit's historic Corktown and riverfront attractions via People Mover and local transit.",
+    stations: ["detroit-people-mover-corktown", "detroit-riverfront-station"],
+    main_station: "detroit-people-mover-corktown",
+    transit_systems: ["Detroit People Mover"],
+    transit_lines: ["People Mover"],
+    type: "neighborhood",
+    pois: [
+      { name: "Corktown Historic District", type: "landmark", distance: "0.3 km" },
+      { name: "Ford Factory Tour", type: "museum", distance: "0.6 km" },
+      { name: "Detroit Riverfront Conservancy", type: "park", distance: "1.0 km" },
+      { name: "Detroit Riverwalk", type: "recreation", distance: "0.8 km" },
+      { name: "Swords to Plowshares", type: "art", distance: "0.5 km" }
+    ],
+    tips_for_visitors: "Corktown is Detroit's trendiest neighborhood with excellent restaurants and bars. The riverfront offers peaceful walking and views of Windsor, Canada across the river.",
+    fifa_2026_relevance: "Close to Ford Field. International visitors appreciate the Canada views and cross-border accessibility."
+  },
+  {
+    slug: "detroit-dearborn",
+    name: "Dearborn Industrial & Cultural",
+    city: "Detroit",
+    state: "MI",
+    country: "USA",
+    description: "Home to Ford Motor Company headquarters and the Henry Ford Museum, Dearborn celebrates American industrial innovation and automotive heritage with transit connections.",
+    h1: "Detroit Dearborn - Industrial & Cultural Transit Zone",
+    seo_title: "Dearborn & Henry Ford Museum - Detroit Transit Guide | MetroGuia",
+    meta_description: "Visit Dearborn's automotive heritage and Henry Ford Museum via Detroit transit. Industrial history and modern innovation.",
+    stations: ["detroit-dearborn-station"],
+    main_station: "detroit-dearborn-station",
+    transit_systems: ["Detroit People Mover", "SMART Bus"],
+    transit_lines: ["People Mover", "Regional buses"],
+    type: "cultural",
+    pois: [
+      { name: "Henry Ford Museum", type: "museum", distance: "0.5 km" },
+      { name: "Ford Motor Company Headquarters", type: "landmark", distance: "0.3 km" },
+      { name: "Greenfield Village", type: "historical", distance: "1.0 km" },
+      { name: "Fair Lane (Edison-Ford Winter Estate)", type: "historic_home", distance: "1.5 km" },
+      { name: "Dearborn Civic Center", type: "park", distance: "0.4 km" }
+    ],
+    tips_for_visitors: "The Henry Ford Museum is a must-see with iconic vehicles and American history. Greenfield Village is a living history museum. Plan a full day for these attractions.",
+    fifa_2026_relevance: "Ford Field hosts FIFA 2026 matches. Dearborn provides cultural context about American manufacturing and innovation."
+  },
+
+  {
+    slug: "san-jose-downtown-tech",
+    name: "Downtown San Jose & Tech Core",
+    city: "San Jose",
+    state: "CA",
+    country: "USA",
+    description: "San Jose's revitalized downtown with modern office parks, restaurants, and tech industry presence, connected via VTA Light Rail to the broader Silicon Valley.",
+    h1: "San Jose Downtown & Tech Zone - VTA Light Rail Guide",
+    seo_title: "San Jose Downtown & Tech Core - VTA Light Rail Transit | MetroGuia",
+    meta_description: "Navigate San Jose's tech district and downtown via VTA Light Rail. Guide to stations, tech companies, and dining.",
+    stations: ["san-jose-city-hall", "san-jose-market-street", "san-jose-convention-center"],
+    main_station: "san-jose-city-hall",
+    transit_systems: ["VTA Light Rail"],
+    transit_lines: ["Red Line", "Blue Line"],
+    type: "downtown",
+    pois: [
+      { name: "San Jose City Hall", type: "landmark", distance: "0.0 km" },
+      { name: "San Jose Museum of Art", type: "museum", distance: "0.3 km" },
+      { name: "Fairmont San Jose", type: "hotel", distance: "0.2 km" },
+      { name: "San Jose Convention Center", type: "venue", distance: "0.5 km" },
+      { name: "SAP Center", type: "arena", distance: "0.8 km" }
+    ],
+    tips_for_visitors: "Downtown San Jose is compact and easily navigated via Light Rail. The area has been significantly revitalized with new restaurants and shops. Tech campus tours are popular.",
+    fifa_2026_relevance: "SAP Center may host events. Downtown offers modern accommodations and visitor facilities."
+  },
+  {
+    slug: "san-jose-airport-corridor",
+    name: "Airport & Diridon Station Corridor",
+    city: "San Jose",
+    state: "CA",
+    country: "USA",
+    description: "Major transportation hub connecting San Jose International Airport with the new Diridon Station, featuring hotels, car rentals, and regional transit connections.",
+    h1: "San Jose Airport & Diridon Station - Transit Guide",
+    seo_title: "San Jose Airport & Diridon Station - VTA Transit Guide | MetroGuia",
+    meta_description: "Getting from San Jose Airport to downtown via Diridon Station. Transit connections and traveler amenities.",
+    stations: ["san-jose-airport-station", "san-jose-diridon-station"],
+    main_station: "san-jose-airport-station",
+    transit_systems: ["VTA Light Rail", "California High-Speed Rail (future)"],
+    transit_lines: ["Airport Flyer", "Red Line"],
+    type: "transportation",
+    pois: [
+      { name: "San Jose International Airport", type: "airport", distance: "0.2 km" },
+      { name: "Diridon Station (new)", type: "transit_hub", distance: "1.2 km" },
+      { name: "Airport Hotels", type: "accommodation", distance: "0.5 km" },
+      { name: "Enterprise Rental Car Center", type: "commercial", distance: "0.3 km" },
+      { name: "Parking Facilities", type: "facility", distance: "0.0 km" }
+    ],
+    tips_for_visitors: "The VTA Airport Flyer provides direct rail service from terminal to downtown. Diridon will eventually connect to high-speed rail. Allow 30-40 minutes for airport transit.",
+    fifa_2026_relevance: "Primary entry point for international visitors. New Diridon Station is a modern transportation hub."
+  },
+
+  {
+    slug: "las-vegas-center-strip",
+    name: "Center Strip & Downtown Monorail",
+    city: "Las Vegas",
+    state: "NV",
+    country: "USA",
+    description: "The heart of Las Vegas featuring the famous Strip with major resort casinos, connected by the Las Vegas Monorail providing elevated views of the city.",
+    h1: "Las Vegas Strip & Monorail Transit Zone",
+    seo_title: "Las Vegas Strip & Monorail - Transit Guide | MetroGuia",
+    meta_description: "Navigate Las Vegas Strip via iconic Monorail. Hotel casinos, entertainment, and transit guide.",
+    stations: ["las-vegas-bacchanal", "las-vegas-monorail-central", "las-vegas-harrah's"],
+    main_station: "las-vegas-monorail-central",
+    transit_systems: ["Las Vegas Monorail"],
+    transit_lines: ["Monorail"],
+    type: "resort",
+    pois: [
+      { name: "Bellagio Fountains", type: "attraction", distance: "0.3 km" },
+      { name: "Caesars Palace", type: "resort", distance: "0.2 km" },
+      { name: "The Cosmopolitan", type: "resort", distance: "0.4 km" },
+      { name: "Aria Resort", type: "resort", distance: "0.5 km" },
+      { name: "High Roller Observation Wheel", type: "attraction", distance: "0.8 km" }
+    ],
+    tips_for_visitors: "The Monorail offers air-conditioned transit with views of the Strip. Most major casinos are monorail-accessible. Purchase multi-day passes for convenience.",
+    fifa_2026_relevance: "Allegiant Stadium (FIFA 2026 venue) can be accessed via Monorail connections. Modern resort facilities accommodate large delegations."
+  },
+  {
+    slug: "las-vegas-downtown-classic",
+    name: "Downtown Las Vegas & Fremont Street",
+    city: "Las Vegas",
+    state: "NV",
+    country: "USA",
+    description: "Historic downtown Las Vegas with the legendary Fremont Street and vintage casinos, featuring the Fremont Street Experience light show and more affordable accommodations.",
+    h1: "Downtown Las Vegas & Fremont Street - Transit Guide",
+    seo_title: "Downtown Las Vegas & Fremont Street - Monorail & Transit | MetroGuia",
+    meta_description: "Explore historic Fremont Street and downtown Las Vegas via transit. Classic casinos and attractions guide.",
+    stations: ["las-vegas-monorail-downtown"],
+    main_station: "las-vegas-monorail-downtown",
+    transit_systems: ["Las Vegas Monorail", "Deuce Bus", "The Strip & Downtown Express"],
+    transit_lines: ["Monorail", "Bus route 301, 302"],
+    type: "historic",
+    pois: [
+      { name: "Fremont Street Experience", type: "attraction", distance: "0.5 km" },
+      { name: "Golden Nugget", type: "casino", distance: "0.3 km" },
+      { name: "The Mob Museum", type: "museum", distance: "0.6 km" },
+      { name: "Neon Museum", type: "museum", distance: "0.8 km" },
+      { name: "Downtown Container Park", type: "shopping", distance: "0.4 km" }
+    ],
+    tips_for_visitors: "Downtown is more authentic and affordable than the Strip. Fremont Street Experience happens nightly with free light show. Walking is feasible between attractions.",
+    fifa_2026_relevance: "Offers cultural insight into vintage Las Vegas. More diverse accommodation options for delegations."
+  },
+
+  {
+    slug: "norfolk-waterfront-transit",
+    name: "Waterfront & Transit Center",
+    city: "Norfolk",
+    state: "VA",
+    country: "USA",
+    description: "Norfolk's revitalized waterfront district with the Harbor Park, shops, restaurants, and the central Tide station providing light rail access to the broader region.",
+    h1: "Norfolk Waterfront & Tide Transit Zone",
+    seo_title: "Norfolk Waterfront & Tide Light Rail - Transit Guide | MetroGuia",
+    meta_description: "Explore Norfolk's waterfront district and Tide light rail system. Harbor attractions and transit connections.",
+    stations: ["norfolk-harbor-park", "norfolk-main-street", "norfolk-city-hall"],
+    main_station: "norfolk-harbor-park",
+    transit_systems: ["The Tide Light Rail"],
+    transit_lines: ["Tide"],
+    type: "waterfront",
+    pois: [
+      { name: "Harbor Park", type: "park", distance: "0.2 km" },
+      { name: "Waterside District", type: "shopping", distance: "0.3 km" },
+      { name: "Nauticus Museum", type: "museum", distance: "0.5 km" },
+      { name: "USS Wisconsin Battleship", type: "historic", distance: "0.4 km" },
+      { name: "MacArthur Memorial", type: "museum", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "The Waterfront is Norfolk's main attraction with beautiful views of Elizabeth River. The Tide provides easy access. Plan time for museum visits.",
+    fifa_2026_relevance: "Naval heritage appeals to international visitors. Modern waterfront facilities accommodate large groups."
+  },
+  {
+    slug: "norfolk-ghent-neighborhood",
+    name: "Ghent Historic Neighborhood",
+    city: "Norfolk",
+    state: "VA",
+    country: "USA",
+    description: "A charming historic neighborhood with tree-lined streets, Victorian homes, local shops, restaurants, and easy Tide light rail access from downtown Norfolk.",
+    h1: "Norfolk Ghent Neighborhood - Tide Transit Guide",
+    seo_title: "Norfolk Ghent - Historic Neighborhood & Tide Transit | MetroGuia",
+    meta_description: "Discover Norfolk's historic Ghent neighborhood via Tide light rail. Victorian homes, shops, and dining.",
+    stations: ["norfolk-ghent-station"],
+    main_station: "norfolk-ghent-station",
+    transit_systems: ["The Tide Light Rail"],
+    transit_lines: ["Tide"],
+    type: "neighborhood",
+    pois: [
+      { name: "Ghent Historic District", type: "historic", distance: "0.3 km" },
+      { name: "Colonial Avenue Shopping", type: "shopping", distance: "0.2 km" },
+      { name: "St. Paul's Church", type: "historic", distance: "0.5 km" },
+      { name: "Local Restaurants & Cafes", type: "dining", distance: "0.4 km" },
+      { name: "Ghent Green Park", type: "park", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "Ghent is Norfolk's most picturesque neighborhood with independent shops and restaurants. Street-level walking is pleasant and safe. The Tide station makes it highly accessible.",
+    fifa_2026_relevance: "Provides authentic local experience away from waterfront crowds. Good for team delegations seeking neighborhood character."
+  },
+
+  {
+    slug: "honolulu-downtown-civic",
+    name: "Downtown & Civic Center",
+    city: "Honolulu",
+    state: "HI",
+    country: "USA",
+    description: "Honolulu's urban core with government buildings, historic sites, shops, and restaurants, connected by the Honolulu Rail Transit system.",
+    h1: "Honolulu Downtown & Civic Center - Rail Transit Zone",
+    seo_title: "Honolulu Downtown & Civic Center - Rail Transit Guide | MetroGuia",
+    meta_description: "Navigate Honolulu's downtown and civic district via modern rail transit. Historic sites and urban attractions.",
+    stations: ["honolulu-civic-center", "honolulu-downtown-station"],
+    main_station: "honolulu-civic-center",
+    transit_systems: ["Honolulu Rail Transit"],
+    transit_lines: ["Rail"],
+    type: "downtown",
+    pois: [
+      { name: "Iolani Palace", type: "historic", distance: "0.4 km" },
+      { name: "Hawaii State Capitol", type: "government", distance: "0.3 km" },
+      { name: "Honolulu Hale (City Hall)", type: "historic", distance: "0.2 km" },
+      { name: "Mission Houses Museum", type: "museum", distance: "0.5 km" },
+      { name: "Downtown Shopping District", type: "shopping", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "Downtown Honolulu contains important historical sites related to Hawaiian monarchy. The new rail system is modern and efficient. Walking between sites is feasible.",
+    fifa_2026_relevance: "Iolani Palace provides cultural context. Government facilities accessible for official functions."
+  },
+  {
+    slug: "honolulu-airport-corridor",
+    name: "Honolulu International Airport & Corridor",
+    city: "Honolulu",
+    state: "HI",
+    country: "USA",
+    description: "Daniel K. Inouye International Airport with the western terminus of Honolulu Rail Transit, providing direct airport-to-downtown connections and hotel services.",
+    h1: "Honolulu Airport & Rail Transit Corridor",
+    seo_title: "Honolulu Airport Rail Transit - Visitor Guide | MetroGuia",
+    meta_description: "Travel from Honolulu Airport to downtown via new rail transit. Connections and visitor information.",
+    stations: ["honolulu-airport-station", "honolulu-ala-moana-center"],
+    main_station: "honolulu-airport-station",
+    transit_systems: ["Honolulu Rail Transit"],
+    transit_lines: ["Rail"],
+    type: "transportation",
+    pois: [
+      { name: "Daniel K. Inouye International Airport", type: "airport", distance: "0.1 km" },
+      { name: "Ala Moana Center", type: "shopping", distance: "1.5 km" },
+      { name: "Ala Moana Park", type: "park", distance: "1.2 km" },
+      { name: "Hotel Zone", type: "accommodation", distance: "2.0 km" },
+      { name: "Honolulu Harbor", type: "scenic", distance: "2.5 km" }
+    ],
+    tips_for_visitors: "The new rail provides direct service from airport to downtown and Ala Moana. Journey time approximately 20-25 minutes. Modern facility with adequate signage for international travelers.",
+    fifa_2026_relevance: "Primary entry point for international delegations. New rail infrastructure demonstrates modern Hawaiian transit."
+  },
+
+  {
+    slug: "tampa-streetcar-downtown",
+    name: "Downtown & Streetcar Core",
+    city: "Tampa",
+    state: "FL",
+    country: "USA",
+    description: "Tampa's downtown district centered on the TECO Streetcar historic trolley system, featuring the waterfront, historic buildings, restaurants, and entertainment.",
+    h1: "Tampa Downtown & Streetcar - Historic Transit Zone",
+    seo_title: "Tampa Downtown & TECO Streetcar - Transit Guide | MetroGuia",
+    meta_description: "Explore Tampa's historic downtown via the iconic TECO Streetcar. Waterfront and attractions guide.",
+    stations: ["tampa-streetcar-central", "tampa-downtown-station"],
+    main_station: "tampa-streetcar-central",
+    transit_systems: ["TECO Streetcar"],
+    transit_lines: ["Streetcar"],
+    type: "downtown",
+    pois: [
+      { name: "Waterfront Park", type: "park", distance: "0.3 km" },
+      { name: "Florida Aquarium", type: "attraction", distance: "0.5 km" },
+      { name: "AMALIE Arena", type: "arena", distance: "0.7 km" },
+      { name: "Hyde Park Village", type: "shopping", distance: "1.0 km" },
+      { name: "Tampa Bay History Center", type: "museum", distance: "0.4 km" }
+    ],
+    tips_for_visitors: "The TECO Streetcar is a charming historic trolley offering nostalgic transit. Downtown has excellent waterfront views. The area is highly walkable between streetcar stops.",
+    fifa_2026_relevance: "Raymond James Stadium (FIFA 2026 venue) nearby. Historic ambiance appeals to international visitors."
+  },
+  {
+    slug: "tampa-ybor-city-historic",
+    name: "Ybor City Historic District",
+    city: "Tampa",
+    state: "FL",
+    country: "USA",
+    description: "Tampa's historic Cuban and Latino neighborhood with brick buildings, restaurants, galleries, and vibrant nightlife, served by TECO Streetcar extensions.",
+    h1: "Tampa Ybor City - Historic District & Streetcar",
+    seo_title: "Ybor City Tampa - Historic Latino District Transit Guide | MetroGuia",
+    meta_description: "Discover Tampa's historic Ybor City via TECO Streetcar. Cuban heritage, dining, and galleries.",
+    stations: ["tampa-streetcar-ybor"],
+    main_station: "tampa-streetcar-ybor",
+    transit_systems: ["TECO Streetcar"],
+    transit_lines: ["Streetcar"],
+    type: "historic",
+    pois: [
+      { name: "Ybor City Historic District", type: "historic", distance: "0.3 km" },
+      { name: "Ybor City Museum State Park", type: "museum", distance: "0.5 km" },
+      { name: "Cuban Restaurants & Cafes", type: "dining", distance: "0.4 km" },
+      { name: "Art Galleries & Shops", type: "art", distance: "0.3 km" },
+      { name: "Centro Asturiano", type: "historic", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "Ybor City is Tampa's most authentic and vibrant neighborhood. Try authentic Cuban cuisine. Nightlife is excellent. The Streetcar makes it easily accessible and nostalgic.",
+    fifa_2026_relevance: "Authentic cultural experience. International visitors appreciate Latino heritage and dining."
+  },
+
+  {
+    slug: "austin-downtown-rail",
+    name: "Downtown & Capital MetroRail Station",
+    city: "Austin",
+    state: "TX",
+    country: "USA",
+    description: "Austin's downtown core with government buildings, tech companies, live music venues, and the new Capital MetroRail line connecting to north Austin.",
+    h1: "Austin Downtown & Capital MetroRail - Transit Zone",
+    seo_title: "Austin Downtown & Capital MetroRail - Transit Guide | MetroGuia",
+    meta_description: "Explore Austin's vibrant downtown via Capital MetroRail. Government, tech, and live music attractions.",
+    stations: ["austin-downtown-metro-station", "austin-convention-center"],
+    main_station: "austin-downtown-metro-station",
+    transit_systems: ["Capital MetroRail", "MetroRapid Bus"],
+    transit_lines: ["Red Line", "MetroRapid"],
+    type: "downtown",
+    pois: [
+      { name: "Texas State Capitol", type: "government", distance: "0.3 km" },
+      { name: "Congress Avenue", type: "shopping", distance: "0.2 km" },
+      { name: "Lady Bird Lake Hike & Bike Trail", type: "recreation", distance: "0.5 km" },
+      { name: "Live Music Venues (Sixth Street)", type: "entertainment", distance: "0.4 km" },
+      { name: "Barton Springs Pool", type: "recreation", distance: "1.2 km" }
+    ],
+    tips_for_visitors: "Austin's live music scene is world-famous. The Capitol is architecturally stunning. Capital MetroRail provides modern transit. Downtown is walkable and vibrant.",
+    fifa_2026_relevance: "Austin is a FIFA 2026 host city. Vibrant music scene attracts international visitors."
+  },
+  {
+    slug: "austin-airport-stations",
+    name: "Airport Connector & North Stations",
+    city: "Austin",
+    state: "TX",
+    country: "USA",
+    description: "Austin-Bergstrom International Airport with the western terminus of Capital MetroRail, providing direct airport-to-downtown transit, and northern stations extending to Round Rock.",
+    h1: "Austin Airport & Capital MetroRail - Transit Connections",
+    seo_title: "Austin Airport MetroRail - Visitor Transit Guide | MetroGuia",
+    meta_description: "Travel from Austin Airport via new MetroRail to downtown. Transit connections and visitor information.",
+    stations: ["austin-airport-station", "austin-north-stations"],
+    main_station: "austin-airport-station",
+    transit_systems: ["Capital MetroRail"],
+    transit_lines: ["Red Line"],
+    type: "transportation",
+    pois: [
+      { name: "Austin-Bergstrom International Airport", type: "airport", distance: "0.1 km" },
+      { name: "Austin Convention Center", type: "venue", distance: "3.0 km" },
+      { name: "Zilker Park", type: "park", distance: "2.5 km" },
+      { name: "Downtown Hotels", type: "accommodation", distance: "3.2 km" },
+      { name: "Tech Campus (North)", type: "commercial", distance: "4.0 km" }
+    ],
+    tips_for_visitors: "Capital MetroRail provides 30-minute direct service from airport to downtown. Modern facility with good signage. The Red Line extends north to Round Rock and south to airport.",
+    fifa_2026_relevance: "New rail infrastructure supports FIFA 2026 operations. International standard facilities for delegations."
+  },
+
+  {
+    slug: "cincinnati-bell-connector",
+    name: "Downtown & Bell Connector Core",
+    city: "Cincinnati",
+    state: "OH",
+    country: "USA",
+    description: "Cincinnati's downtown featuring the iconic Cincinnati Bell Connector (free street-level streetcar), banks, museums, and the riverfront with major sports venues nearby.",
+    h1: "Cincinnati Downtown & Bell Connector - Streetcar Transit",
+    seo_title: "Cincinnati Bell Connector - Downtown Transit Guide | MetroGuia",
+    meta_description: "Navigate Cincinnati's downtown via the free Cincinnati Bell Connector streetcar. Museums, banking district, and attractions.",
+    stations: ["cincinnati-fountain-square", "cincinnati-broadway-street"],
+    main_station: "cincinnati-fountain-square",
+    transit_systems: ["Cincinnati Bell Connector", "SORTA Bus"],
+    transit_lines: ["Bell Connector", "Regional buses"],
+    type: "downtown",
+    pois: [
+      { name: "Fountain Square", type: "plaza", distance: "0.0 km" },
+      { name: "Cincinnati Museum Center", type: "museum", distance: "0.8 km" },
+      { name: "Great American Ball Park", type: "stadium", distance: "0.5 km" },
+      { name: "Procter & Gamble Headquarters", type: "landmark", distance: "0.3 km" },
+      { name: "Smale Riverfront Park", type: "park", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "The Cincinnati Bell Connector is FREE and a charming way to see downtown. Fountain Square is the city's main gathering place. The riverfront is beautiful and walkable.",
+    fifa_2026_relevance: "Major sports venues nearby. Modern riverfront facilities for international visitors."
+  },
+  {
+    slug: "cincinnati-riverfront-stadium",
+    name: "Riverfront & Stadium District",
+    city: "Cincinnati",
+    state: "OH",
+    country: "USA",
+    description: "Cincinnati's scenic riverfront with sports stadiums, parks, museums, and waterfront attractions accessible via streetcar and bus connections.",
+    h1: "Cincinnati Riverfront & Stadium District - Transit Zone",
+    seo_title: "Cincinnati Riverfront & Stadium District - Transit Guide | MetroGuia",
+    meta_description: "Explore Cincinnati's riverfront and sports district via public transit. Parks, stadiums, and attractions.",
+    stations: ["cincinnati-riverfront-station"],
+    main_station: "cincinnati-riverfront-station",
+    transit_systems: ["Cincinnati Bell Connector", "SORTA Bus"],
+    transit_lines: ["Bell Connector", "Multiple bus routes"],
+    type: "recreational",
+    pois: [
+      { name: "Great American Ball Park", type: "stadium", distance: "0.3 km" },
+      { name: "Paul Brown Stadium", type: "stadium", distance: "0.5 km" },
+      { name: "Smale Riverfront Park", type: "park", distance: "0.2 km" },
+      { name: "Purple People Bridge", type: "landmark", distance: "0.4 km" },
+      { name: "Cincinnati Waterfront", type: "scenic", distance: "0.1 km" }
+    ],
+    tips_for_visitors: "Both stadiums are riverfront accessible. The Waterfront Park is excellent for walking and views. Sports events are major attractions. The Bell Connector connects to downtown easily.",
+    fifa_2026_relevance: "Paycor Stadium hosts FIFA 2026 matches. Modern stadium facilities suitable for international delegations."
+  },
+
+  {
+    slug: "el-paso-streetcar-downtown",
+    name: "Downtown & El Paso Streetcar District",
+    city: "El Paso",
+    state: "TX",
+    country: "USA",
+    description: "El Paso's revitalized downtown featuring the historic El Paso Streetcar line, shops, restaurants, galleries, and historic buildings reflecting border city culture.",
+    h1: "El Paso Downtown & Streetcar - Historic Transit Zone",
+    seo_title: "El Paso Downtown & Streetcar - Historic District Transit | MetroGuia",
+    meta_description: "Discover El Paso's historic downtown via the El Paso Streetcar. Border culture, galleries, and dining.",
+    stations: ["el-paso-downtown-station", "el-paso-civic-center"],
+    main_station: "el-paso-downtown-station",
+    transit_systems: ["El Paso Streetcar"],
+    transit_lines: ["Streetcar"],
+    type: "downtown",
+    pois: [
+      { name: "San Jacinto Plaza", type: "plaza", distance: "0.2 km" },
+      { name: "El Paso Museum of Art", type: "museum", distance: "0.5 km" },
+      { name: "Historic Downtown El Paso", type: "historic", distance: "0.3 km" },
+      { name: "Border Visitor Center", type: "visitor_center", distance: "0.8 km" },
+      { name: "Local Restaurants & Galleries", type: "dining", distance: "0.4 km" }
+    ],
+    tips_for_visitors: "El Paso's downtown is undergoing revitalization with the streetcar as centerpiece. The area reflects Mexican-American border culture. Walking tours are popular.",
+    fifa_2026_relevance: "El Paso is a FIFA 2026 host city. International visitors appreciate the border location and cultural heritage."
+  },
+  {
+    slug: "el-paso-airport-connections",
+    name: "Airport & Regional Connections",
+    city: "El Paso",
+    state: "TX",
+    country: "USA",
+    description: "El Paso International Airport with ground transportation and connections to downtown via streetcar extensions and regional transit links.",
+    h1: "El Paso Airport Transit & Connections - Visitor Guide",
+    seo_title: "El Paso Airport Transit Guide - Streetcar & Connections | MetroGuia",
+    meta_description: "Travel from El Paso Airport to downtown via transit. Airport information and visitor services.",
+    stations: ["el-paso-airport-station"],
+    main_station: "el-paso-airport-station",
+    transit_systems: ["El Paso Streetcar", "El Paso Transit"],
+    transit_lines: ["Streetcar", "Regional buses"],
+    type: "transportation",
+    pois: [
+      { name: "El Paso International Airport", type: "airport", distance: "0.1 km" },
+      { name: "Rental Car Services", type: "commercial", distance: "0.5 km" },
+      { name: "Hotel Zone", type: "accommodation", distance: "1.0 km" },
+      { name: "Downtown El Paso (Streetcar)", type: "destination", distance: "3.0 km" },
+      { name: "Juarez Border Crossing", type: "border", distance: "5.0 km" }
+    ],
+    tips_for_visitors: "El Paso Airport is modern and efficiently designed. Ground transportation to downtown takes 15-20 minutes. Border crossing to Juarez, Mexico is nearby for international travelers.",
+    fifa_2026_relevance: "Airport serves FIFA 2026 delegations. Border proximity appeals to international visitors."
+  },
+
+  {
+    slug: "jacksonville-skyway-downtown",
+    name: "Downtown & Skyway System",
+    city: "Jacksonville",
+    state: "FL",
+    country: "USA",
+    description: "Jacksonville's downtown with the iconic Skyway elevated people mover system, riverfront attractions, and a mix of historic and modern development.",
+    h1: "Jacksonville Downtown & Skyway - Elevated Transit Zone",
+    seo_title: "Jacksonville Downtown & Skyway System - Transit Guide | MetroGuia",
+    meta_description: "Navigate Jacksonville downtown via the Skyway elevated transit. Riverfront and attractions guide.",
+    stations: ["jacksonville-skyway-central", "jacksonville-riverfront-station"],
+    main_station: "jacksonville-skyway-central",
+    transit_systems: ["Jacksonville Skyway"],
+    transit_lines: ["Skyway"],
+    type: "downtown",
+    pois: [
+      { name: "TIAA Bank Field (Sports complex)", type: "stadium", distance: "0.8 km" },
+      { name: "Riverfront Plaza", type: "plaza", distance: "0.3 km" },
+      { name: "St. Johns Riverwalk", type: "recreation", distance: "0.4 km" },
+      { name: "Duval County Courthouse", type: "historic", distance: "0.5 km" },
+      { name: "Jacksonville History Center", type: "museum", distance: "0.6 km" }
+    ],
+    tips_for_visitors: "The Skyway is an automated elevated system offering unique elevated views of downtown. TIAA Bank Field hosts major events. The riverfront is Jacksonville's main attraction.",
+    fifa_2026_relevance: "TIAA Bank Field hosts FIFA 2026 matches. Modern facilities for international delegations."
+  },
+  {
+    slug: "jacksonville-northbank-riverfront",
+    name: "Northbank & Riverfront District",
+    city: "Jacksonville",
+    state: "FL",
+    country: "USA",
+    description: "Jacksonville's Northbank area featuring museums, cultural institutions, riverwalk parks, and entertainment venues easily accessible via Skyway connections.",
+    h1: "Jacksonville Northbank Riverfront - Cultural & Transit Zone",
+    seo_title: "Jacksonville Northbank - Riverfront Culture & Transit | MetroGuia",
+    meta_description: "Explore Jacksonville's Northbank riverfront district via Skyway. Museums and cultural attractions guide.",
+    stations: ["jacksonville-skyway-northbank"],
+    main_station: "jacksonville-skyway-northbank",
+    transit_systems: ["Jacksonville Skyway"],
+    transit_lines: ["Skyway"],
+    type: "cultural",
+    pois: [
+      { name: "Cummer Museum of Art & Gardens", type: "museum", distance: "0.7 km" },
+      { name: "Riverwalk Parks", type: "park", distance: "0.3 km" },
+      { name: "Museum of Science and History (MOSH)", type: "museum", distance: "1.0 km" },
+      { name: "Florida Theatre", type: "theater", distance: "0.5 km" },
+      { name: "San Marco Neighborhood", type: "neighborhood", distance: "1.5 km" }
+    ],
+    tips_for_visitors: "Northbank is Jacksonville's cultural hub with excellent museums and riverwalk. The Cummer Museum has beautiful gardens. The Skyway provides easy access.",
+    fifa_2026_relevance: "Cultural institutions provide context for international visitors. Museums showcase regional heritage."
+  },
+  {
+    slug: "jacksonville-airport-south",
+    name: "Airport & South Corridor",
+    city: "Jacksonville",
+    state: "FL",
+    country: "USA",
+    description: "Jacksonville International Airport area with ground transportation, hotels, and connections to downtown Jacksonville via Skyway extensions.",
+    h1: "Jacksonville Airport & South Corridor - Transit Zone",
+    seo_title: "Jacksonville Airport Transit - Skyway Connections | MetroGuia",
+    meta_description: "Travel from Jacksonville Airport to downtown via transit. Airport guide and visitor information.",
+    stations: ["jacksonville-airport-station"],
+    main_station: "jacksonville-airport-station",
+    transit_systems: ["Jacksonville Skyway", "Regional buses"],
+    transit_lines: ["Skyway", "Regional transit"],
+    type: "transportation",
+    pois: [
+      { name: "Jacksonville International Airport", type: "airport", distance: "0.1 km" },
+      { name: "Hotel Zone", type: "accommodation", distance: "1.0 km" },
+      { name: "Car Rental Services", type: "commercial", distance: "0.5 km" },
+      { name: "Downtown Jacksonville (Skyway)", type: "destination", distance: "12.0 km" },
+      { name: "Beaches (east)", type: "recreation", distance: "20.0 km" }
+    ],
+    tips_for_visitors: "Jacksonville Airport is efficiently designed. Ground transportation to downtown takes approximately 20-25 minutes. Beach areas are a short drive east.",
+    fifa_2026_relevance: "Airport serves FIFA 2026 delegations. Modern facilities for international travelers."
+  },
+
+  {
+    slug: "newark-light-rail-downtown",
+    name: "Downtown & Light Rail Hub",
+    city: "Newark",
+    state: "NJ",
+    country: "USA",
+    description: "Newark's downtown centered on the NJ Transit Light Rail hub, featuring shops, restaurants, cultural institutions, and connections to other regional transit.",
+    h1: "Newark Downtown & Light Rail - Transit Hub Zone",
+    seo_title: "Newark Downtown & Light Rail - Transit Guide | MetroGuia",
+    meta_description: "Navigate Newark's downtown via NJ Transit Light Rail. Shops, cultural attractions, and regional connections.",
+    stations: ["newark-light-rail-central", "newark-downtown-station"],
+    main_station: "newark-light-rail-central",
+    transit_systems: ["NJ Transit Light Rail"],
+    transit_lines: ["Light Rail"],
+    type: "downtown",
+    pois: [
+      { name: "Newark Penn Station", type: "transit_hub", distance: "0.3 km" },
+      { name: "New Jersey Performing Arts Center", type: "theater", distance: "0.5 km" },
+      { name: "Newark Museum of Art", type: "museum", distance: "0.6 km" },
+      { name: "Military Park", type: "park", distance: "0.4 km" },
+      { name: "Downtown Shopping District", type: "shopping", distance: "0.5 km" }
+    ],
+    tips_for_visitors: "Newark is a major regional transit hub with excellent connections. The performing arts center is world-class. The area is undergoing revitalization.",
+    fifa_2026_relevance: "MetLife Stadium (FIFA 2026 venue) is accessible via New Jersey Transit. Newark serves as a major regional hub for delegations."
+  },
+  {
+    slug: "newark-airport-connections",
+    name: "Airport Transit & Regional Connections",
+    city: "Newark",
+    state: "NJ",
+    country: "USA",
+    description: "Newark Liberty International Airport with light rail connections to downtown and major regional transit links, including New Jersey and New York connections.",
+    h1: "Newark Airport Light Rail & Regional Transit",
+    seo_title: "Newark Airport Light Rail - Transit & NYC Connections | MetroGuia",
+    meta_description: "Travel from Newark Airport to downtown and NYC via light rail and regional transit. Comprehensive transit guide.",
+    stations: ["newark-airport-station", "newark-journal-square"],
+    main_station: "newark-airport-station",
+    transit_systems: ["NJ Transit Light Rail", "Newark Airport Express", "NJ Transit Regional"],
+    transit_lines: ["Light Rail", "Airport Link"],
+    type: "transportation",
+    pois: [
+      { name: "Newark Liberty International Airport", type: "airport", distance: "0.1 km" },
+      { name: "Newark Penn Station", type: "transit_hub", distance: "2.0 km" },
+      { name: "New York City (Penn Station)", type: "destination", distance: "15.0 km" },
+      { name: "Hotel Zone", type: "accommodation", distance: "2.5 km" },
+      { name: "MetLife Stadium", type: "stadium", distance: "12.0 km" }
+    ],
+    tips_for_visitors: "Newark Airport is a major gateway to New York City. Light rail provides 20-30 minute service to downtown. New York City is easily accessible via NJ Transit.",
+    fifa_2026_relevance: "MetLife Stadium (FIFA 2026 venue) is accessible. Primary entry point for northeastern US delegations and international visitors."
+  },
+
+// MetroGuia US/CA Cities — Batch 3 Zone Data
+// Generated for: Milwaukee, Nashville, Oklahoma City, Orlando, San Juan, Tucson, Montreal, Calgary, Edmonton, Ottawa, Kitchener-Waterloo, Mississauga
+
+  // MILWAUKEE — The Hop
+  {
+    slug: "downtown-milwaukee-third-ward",
+    name: "Downtown Milwaukee & Third Ward",
+    city: "Milwaukee",
+    state: "Wisconsin",
+    country: "USA",
+    description: "Historic downtown core and Third Ward arts district connected by The Hop streetcar. Home to cultural institutions, galleries, and riverfront attractions with walkable neighborhoods and vibrant street life.",
+    h1: "How to reach Downtown Milwaukee & Third Ward by transit — Milwaukee streetcar guide",
+    seo_title: "Downtown Milwaukee & Third Ward — Milwaukee transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Milwaukee and Third Ward in Milwaukee by The Hop streetcar. Stations, attractions, and visitor tips.",
+    stations: ["milwaukee-intermodal-station", "milwaukee-3rd-street-market-hall", "milwaukee-cathedral-square"],
+    main_station: "milwaukee-intermodal-station",
+    transit_systems: ["The Hop Lakefront"],
+    transit_lines: ["Lakefront", "Omni"],
+    type: "urban",
+    pois: [
+      { name: "Milwaukee Public Market", type: "market", distance: "2 min walking" },
+      { name: "Cathedral of St. John the Evangelist", type: "landmark", distance: "5 min walking" },
+      { name: "Third Ward Gallery District", type: "museum", distance: "8 min walking" },
+      { name: "RiverWalk", type: "park", distance: "3 min walking" }
     ],
     tips_for_visitors: [
-      "The Tide ODU station is right on campus — convenient for visiting the university",
-      "Many student-friendly restaurants and bars within walking distance",
-      "Campus is walkable and visitor-friendly; check ODU events calendar for lectures and performances",
-      "Less crowded than downtown Norfolk; good for quieter exploration"
+      "The Hop is free — no fares required for streetcar rides",
+      "Saturday markets at the Public Market are best in late morning",
+      "Third Ward has numerous galleries open on First Friday evenings",
+      "Riverfront trails extend north from downtown for longer walks"
     ],
-    fifa_2026_relevance: null,
-    seo_title: "Tide to Old Dominion University — Campus & Student District | MetroGuia",
-    meta_description: "How to get to Old Dominion University by The Tide Light Rail. Norfolk student area, campus visits, transit guide.",
-    h1: "Tide to ODU: Norfolk's College District"
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "lakefront-milwaukee",
+    name: "Milwaukee Lakefront",
+    city: "Milwaukee",
+    state: "Wisconsin",
+    country: "USA",
+    description: "Scenic waterfront district along Lake Michigan featuring beaches, parks, museums, and recreational areas. The Hop provides easy access to the lakefront's attractions and outdoor spaces.",
+    h1: "How to reach Milwaukee Lakefront by transit — The Hop streetcar guide",
+    seo_title: "Milwaukee Lakefront — Milwaukee transit guide | MetroGuia",
+    meta_description: "How to reach Milwaukee Lakefront attractions by The Hop streetcar. Stations, beaches, and visitor tips.",
+    stations: ["milwaukee-lakefront", "milwaukee-3rd-street-market-hall", "milwaukee-brady-farwell"],
+    main_station: "milwaukee-lakefront",
+    transit_systems: ["The Hop Lakefront"],
+    transit_lines: ["Lakefront"],
+    type: "urban",
+    pois: [
+      { name: "Milwaukee Art Museum", type: "museum", distance: "5 min walking" },
+      { name: "North Point State Park", type: "park", distance: "10 min walking" },
+      { name: "Bradford Beach", type: "beach", distance: "7 min walking" },
+      { name: "Discovery World", type: "museum", distance: "8 min walking" }
+    ],
+    tips_for_visitors: [
+      "Summer is peak season for beach activities and outdoor concerts",
+      "The Art Museum's wings are an iconic Milwaukee landmark",
+      "Lakefront trails connect multiple beaches and parks",
+      "Free parking at state parks during off-peak hours"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // NASHVILLE — WeGo Star
+  {
+    slug: "downtown-nashville",
+    name: "Downtown Nashville",
+    city: "Nashville",
+    state: "Tennessee",
+    country: "USA",
+    description: "Heart of Tennessee's capital featuring live music venues, honky-tonks, restaurants, and the Cumberland Riverfront. WeGo Star connects downtown to the broader metro area with frequent commuter rail service.",
+    h1: "How to reach Downtown Nashville by transit — WeGo Star commuter rail guide",
+    seo_title: "Downtown Nashville — Nashville transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Nashville by WeGo Star commuter rail. Stations, music venues, and visitor tips.",
+    stations: ["nashville-riverfront", "nashville-mcgavock"],
+    main_station: "nashville-riverfront",
+    transit_systems: ["WeGo Star Commuter Rail"],
+    transit_lines: ["Star"],
+    type: "urban",
+    pois: [
+      { name: "Grand Ole Opry", type: "venue", distance: "15 min transit" },
+      { name: "Country Music Hall of Fame", type: "museum", distance: "2 min walking" },
+      { name: "Broadway Honky-Tonks", type: "venue", distance: "5 min walking" },
+      { name: "Ryman Auditorium", type: "venue", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Live music on Broadway is free — tip the performers",
+      "Visit during CMA Fest in June for the largest country music festival",
+      "WeGo Star provides affordable access from outlying areas",
+      "Riverfront Park has seasonal events and river activities"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "music-row-nashville",
+    name: "Music Row & Medical District",
+    city: "Nashville",
+    state: "Tennessee",
+    country: "USA",
+    description: "Music production hub featuring recording studios, music venues, and industry offices. The MetroCenter station provides access to shopping, medical facilities, and the surrounding Music Row neighborhood.",
+    h1: "How to reach Music Row by transit — Nashville WeGo Star guide",
+    seo_title: "Music Row — Nashville transit guide | MetroGuia",
+    meta_description: "How to reach Music Row in Nashville by WeGo Star. Stations, studios, and visitor tips.",
+    stations: ["nashville-metrocenter", "nashville-mcgavock"],
+    main_station: "nashville-metrocenter",
+    transit_systems: ["WeGo Star Commuter Rail"],
+    transit_lines: ["Star"],
+    type: "urban",
+    pois: [
+      { name: "Country Music Hall of Fame", type: "museum", distance: "8 min transit" },
+      { name: "Music Valley", type: "venue", distance: "12 min transit" },
+      { name: "MetroCenter Shopping", type: "shopping", distance: "2 min walking" },
+      { name: "Recording Studios District", type: "landmark", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Many recording studios offer tours by appointment",
+      "Music Row has numerous cafes and restaurants catering to musicians",
+      "The area is most active during daytime business hours",
+      "MetroCenter provides access to retail and dining options"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // OKLAHOMA CITY — OKC Streetcar
+  {
+    slug: "bricktown-oklahoma-city",
+    name: "Bricktown",
+    city: "Oklahoma City",
+    state: "Oklahoma",
+    country: "USA",
+    description: "Historic warehouse district transformed into a vibrant entertainment zone with restaurants, shops, galleries, and the Oklahoma River. The OKC Streetcar directly serves Bricktown with multiple stations.",
+    h1: "How to reach Bricktown by transit — OKC Streetcar guide",
+    seo_title: "Bricktown — Oklahoma City transit guide | MetroGuia",
+    meta_description: "How to reach Bricktown in Oklahoma City by OKC Streetcar. Stations, attractions, and visitor tips.",
+    stations: ["oklahoma-city-bricktown-east", "oklahoma-city-bricktown-west"],
+    main_station: "oklahoma-city-bricktown-east",
+    transit_systems: ["OKC Streetcar"],
+    transit_lines: ["Blue Line"],
+    type: "urban",
+    pois: [
+      { name: "Oklahoma River", type: "park", distance: "2 min walking" },
+      { name: "Bricktown Canal", type: "attraction", distance: "3 min walking" },
+      { name: "National Cowboy & Western Heritage Museum", type: "museum", distance: "8 min walking" },
+      { name: "Bass Pro Shops", type: "shopping", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "The Bricktown Canal is perfect for evening strolls and dining",
+      "Oklahoma Louie's is a must-try local restaurant",
+      "River cruises operate seasonally along the Oklahoma River",
+      "Streetcar is free for many attractions and events"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "midtown-paseo-oklahoma-city",
+    name: "Midtown & Paseo",
+    city: "Oklahoma City",
+    state: "Oklahoma",
+    country: "USA",
+    description: "Trendy midtown district and historic Paseo arts neighborhood featuring galleries, restaurants, boutique shops, and street art. OKC Streetcar connects these bohemian neighborhoods with downtown.",
+    h1: "How to reach Midtown & Paseo by transit — Oklahoma City streetcar guide",
+    seo_title: "Midtown & Paseo — Oklahoma City transit guide | MetroGuia",
+    meta_description: "How to reach Midtown and Paseo in Oklahoma City by OKC Streetcar. Neighborhoods, galleries, and tips.",
+    stations: ["oklahoma-city-midtown", "oklahoma-city-automobile-alley"],
+    main_station: "oklahoma-city-midtown",
+    transit_systems: ["OKC Streetcar"],
+    transit_lines: ["Blue Line"],
+    type: "urban",
+    pois: [
+      { name: "The Paseo Arts District", type: "museum", distance: "3 min walking" },
+      { name: "Automobile Alley", type: "landmark", distance: "2 min walking" },
+      { name: "Midtown Farmers Market", type: "market", distance: "4 min walking" },
+      { name: "Street Art Murals", type: "art", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "First Friday art walks feature gallery openings and street performances",
+      "Midtown has excellent coffee shops and brunch spots",
+      "Paseo features authentic local artisan galleries",
+      "Automobile Alley showcases vintage car culture"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // ORLANDO — SunRail
+  {
+    slug: "downtown-orlando",
+    name: "Downtown Orlando",
+    city: "Orlando",
+    state: "Florida",
+    country: "USA",
+    description: "Urban core of Central Florida featuring office towers, restaurants, hotels, and cultural venues. SunRail provides commuter rail access to downtown's business and entertainment districts.",
+    h1: "How to reach Downtown Orlando by transit — SunRail commuter rail guide",
+    seo_title: "Downtown Orlando — Orlando transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Orlando by SunRail. Stations, attractions, and visitor tips.",
+    stations: ["orlando-lynx-central", "orlando-church-street"],
+    main_station: "orlando-lynx-central",
+    transit_systems: ["SunRail"],
+    transit_lines: ["SunRail"],
+    type: "urban",
+    pois: [
+      { name: "Orlando Science Center", type: "museum", distance: "5 min walking" },
+      { name: "Church Street Station", type: "entertainment", distance: "2 min walking" },
+      { name: "Downtown Parks", type: "park", distance: "3 min walking" },
+      { name: "Dr. Phillips Center", type: "venue", distance: "4 min walking" }
+    ],
+    tips_for_visitors: [
+      "Church Street has free entertainment and street performers",
+      "SunRail connects to theme parks via bus connections",
+      "Downtown has excellent Latin and Caribbean restaurants",
+      "Free outdoor concerts occur in downtown parks"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "winter-park-orlando",
+    name: "Winter Park",
+    city: "Orlando",
+    state: "Florida",
+    country: "USA",
+    description: "Upscale residential and commercial area north of downtown featuring shopping, dining, cultural venues, and tree-lined streets. SunRail provides direct access to Winter Park's charming downtown district.",
+    h1: "How to reach Winter Park by transit — SunRail commuter rail guide",
+    seo_title: "Winter Park — Orlando transit guide | MetroGuia",
+    meta_description: "How to reach Winter Park in Orlando by SunRail. Stations, attractions, and shopping.",
+    stations: ["orlando-winter-park", "orlando-maitland"],
+    main_station: "orlando-winter-park",
+    transit_systems: ["SunRail"],
+    transit_lines: ["SunRail"],
+    type: "urban",
+    pois: [
+      { name: "Park Avenue Shopping", type: "shopping", distance: "3 min walking" },
+      { name: "Morse Museum", type: "museum", distance: "8 min walking" },
+      { name: "Winter Park Village", type: "shopping", distance: "5 min walking" },
+      { name: "Rollins College", type: "landmark", distance: "10 min walking" }
+    ],
+    tips_for_visitors: [
+      "Park Avenue has upscale boutiques and fine dining",
+      "Winter Park Farmers Market runs on Saturdays",
+      "The area is perfect for leisurely shopping and brunching",
+      "Scenic parks and lakes throughout the neighborhood"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // SAN JUAN — Tren Urbano
+  {
+    slug: "santurce-san-juan",
+    name: "Santurce",
+    city: "San Juan",
+    state: "Puerto Rico",
+    country: "USA",
+    description: "Trendy neighborhood in San Juan featuring street art, galleries, vintage shops, restaurants, and nightlife. Tren Urbano provides convenient access to Santurce's bohemian culture and entertainment scene.",
+    h1: "How to reach Santurce by transit — San Juan Tren Urbano guide",
+    seo_title: "Santurce — San Juan transit guide | MetroGuia",
+    meta_description: "How to reach Santurce in San Juan by Tren Urbano. Stations, galleries, and visitor tips.",
+    stations: ["san-juan-hato-rey-centro", "san-juan-domenech"],
+    main_station: "san-juan-domenech",
+    transit_systems: ["Tren Urbano"],
+    transit_lines: ["Urbano"],
+    type: "urban",
+    pois: [
+      { name: "Paseo Caribe", type: "shopping", distance: "2 min walking" },
+      { name: "Street Art District", type: "art", distance: "5 min walking" },
+      { name: "Vintage Boutiques", type: "shopping", distance: "3 min walking" },
+      { name: "Craft Beer Bars", type: "venue", distance: "4 min walking" }
+    ],
+    tips_for_visitors: [
+      "Santurce has the best street art and murals in San Juan",
+      "Thursday evenings feature art walks and gallery openings",
+      "Local restaurants serve modern Puerto Rican cuisine",
+      "Nightlife is concentrated along Avenida Ponce de León"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "rio-piedras-upr-san-juan",
+    name: "Río Piedras & UPR",
+    city: "San Juan",
+    state: "Puerto Rico",
+    country: "USA",
+    description: "University district and historic neighborhood east of downtown featuring the University of Puerto Rico campus, botanical gardens, and student-oriented businesses. Tren Urbano serves the eastern corridor.",
+    h1: "How to reach Río Piedras by transit — San Juan Tren Urbano guide",
+    seo_title: "Río Piedras & UPR — San Juan transit guide | MetroGuia",
+    meta_description: "How to reach Río Piedras and UPR in San Juan by Tren Urbano. Stations, campus, and tips.",
+    stations: ["san-juan-rio-piedras", "san-juan-universidad"],
+    main_station: "san-juan-universidad",
+    transit_systems: ["Tren Urbano"],
+    transit_lines: ["Urbano"],
+    type: "urban",
+    pois: [
+      { name: "Universidad de Puerto Rico", type: "landmark", distance: "2 min walking" },
+      { name: "Botanical Garden", type: "park", distance: "8 min walking" },
+      { name: "UPR Museum", type: "museum", distance: "5 min walking" },
+      { name: "Student District Cafes", type: "food", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "The botanical garden is one of the largest in the Caribbean",
+      "UPR campus is architecturally significant with modern design",
+      "Student area has affordable dining and casual entertainment",
+      "Campus bookstore has local Puerto Rican publications"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // TUCSON — Sun Link
+  {
+    slug: "downtown-tucson",
+    name: "Downtown Tucson",
+    city: "Tucson",
+    state: "Arizona",
+    country: "USA",
+    description: "Historic downtown core featuring Spanish colonial architecture, galleries, museums, and the Old Town district. Sun Link streetcar connects downtown to the university with frequent modern streetcar service.",
+    h1: "How to reach Downtown Tucson by transit — Sun Link streetcar guide",
+    seo_title: "Downtown Tucson — Tucson transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Tucson by Sun Link streetcar. Stations, attractions, and visitor tips.",
+    stations: ["tucson-congress-avenida-del-convento", "tucson-congress-granada"],
+    main_station: "tucson-congress-avenida-del-convento",
+    transit_systems: ["Sun Link"],
+    transit_lines: ["Modern Streetcar"],
+    type: "urban",
+    pois: [
+      { name: "Arizona State Museum", type: "museum", distance: "5 min walking" },
+      { name: "Mission San Xavier", type: "landmark", distance: "15 min transit" },
+      { name: "Old Town Shops", type: "shopping", distance: "4 min walking" },
+      { name: "Historic Downtown Galleries", type: "museum", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Spanish colonial architecture dominates the historic district",
+      "Downtown galleries feature local Southwestern art",
+      "Historic districts have authentic Mexican restaurants",
+      "Streetcar provides easy access to Old Town attractions"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "university-arizona-tucson",
+    name: "University of Arizona",
+    city: "Tucson",
+    state: "Arizona",
+    country: "USA",
+    description: "College town neighborhood featuring the University of Arizona campus, student housing, bookstores, cafes, and the campus museums. Sun Link provides direct access to the sprawling campus.",
+    h1: "How to reach University of Arizona by transit — Tucson Sun Link guide",
+    seo_title: "University of Arizona — Tucson transit guide | MetroGuia",
+    meta_description: "How to reach University of Arizona in Tucson by Sun Link streetcar. Stations and campus tips.",
+    stations: ["tucson-university-tyndall", "tucson-university-park", "tucson-university-highland"],
+    main_station: "tucson-university-park",
+    transit_systems: ["Sun Link"],
+    transit_lines: ["Modern Streetcar"],
+    type: "urban",
+    pois: [
+      { name: "Arizona State Museum", type: "museum", distance: "2 min walking" },
+      { name: "University of Arizona", type: "landmark", distance: "2 min walking" },
+      { name: "UA Student Union", type: "campus", distance: "3 min walking" },
+      { name: "University Cafes", type: "food", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "Campus museums have world-class collections free or low-cost",
+      "University bookstore carries Arizona press publications",
+      "Student-oriented cafes and restaurants are affordable",
+      "Campus walks showcase Sonoran Desert architecture"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // MONTREAL — STM Métro
+  {
+    slug: "old-montreal-downtown",
+    name: "Old Montreal & Downtown",
+    city: "Montreal",
+    state: "Quebec",
+    country: "Canada",
+    description: "Historic old district with cobblestone streets, 18th-century architecture, and vibrant downtown core featuring shops, galleries, and restaurants. STM Métro provides extensive access to both neighborhoods.",
+    h1: "How to reach Old Montreal and Downtown by transit — Montreal STM Métro guide",
+    seo_title: "Old Montreal & Downtown — Montreal transit guide | MetroGuia",
+    meta_description: "How to reach Old Montreal and Downtown Montreal by STM Métro. Stations, attractions, and visitor tips.",
+    stations: ["angrignon", "monk"],
+    main_station: "angrignon",
+    transit_systems: ["STM Métro Green Line"],
+    transit_lines: ["Green Line"],
+    type: "urban",
+    pois: [
+      { name: "Montreal Old Port", type: "park", distance: "5 min walking" },
+      { name: "Basilique-Cathédrale", type: "landmark", distance: "8 min walking" },
+      { name: "Cobblestone Streets", type: "historic", distance: "2 min walking" },
+      { name: "Art Museums", type: "museum", distance: "6 min walking" }
+    ],
+    tips_for_visitors: [
+      "Old Montreal is best explored on foot with its historic lanes",
+      "Street performers and buskers throughout the old district",
+      "Waterfront promenade has restaurants with river views",
+      "Museums are concentrated in downtown core"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "plateau-mont-royal",
+    name: "Plateau Mont-Royal",
+    city: "Montreal",
+    state: "Quebec",
+    country: "Canada",
+    description: "Bohemian neighborhood with distinctive colorful staircases, vintage shops, cafes, and independent galleries. The Plateau is home to Montreal's creative class and immigrant communities with authentic dining.",
+    h1: "How to reach Plateau Mont-Royal by transit — Montreal STM Métro guide",
+    seo_title: "Plateau Mont-Royal — Montreal transit guide | MetroGuia",
+    meta_description: "How to reach Plateau Mont-Royal in Montreal by STM Métro. Shops, restaurants, and culture.",
+    stations: ["mont-royal", "papineau"],
+    main_station: "mont-royal",
+    transit_systems: ["STM Métro"],
+    transit_lines: ["Red Line"],
+    type: "urban",
+    pois: [
+      { name: "Colorful Staircases", type: "landmark", distance: "3 min walking" },
+      { name: "Vintage Shops District", type: "shopping", distance: "4 min walking" },
+      { name: "independent Galleries", type: "museum", distance: "3 min walking" },
+      { name: "Cafes & Bistros", type: "food", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "The iconic exterior staircases are Montreal's most photographed feature",
+      "Vintage and thrift shops line the main commercial streets",
+      "Summer street festivals bring theater, music, and comedy",
+      "French and immigrant-owned restaurants serve authentic cuisine"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "mile-end-montreal",
+    name: "Mile End",
+    city: "Montreal",
+    state: "Quebec",
+    country: "Canada",
+    description: "Eclectic and artistic neighborhood blending bohemian, Jewish, and immigrant heritage. Mile End features bagel shops, independent bookstores, vintage clothing, and music venues attracting artists and students.",
+    h1: "How to reach Mile End by transit — Montreal STM Métro guide",
+    seo_title: "Mile End — Montreal transit guide | MetroGuia",
+    meta_description: "How to reach Mile End in Montreal by STM Métro. Shops, bagels, and cultural venues.",
+    stations: ["laurier", "mont-royal"],
+    main_station: "laurier",
+    transit_systems: ["STM Métro"],
+    transit_lines: ["Orange Line"],
+    type: "urban",
+    pois: [
+      { name: "Bagel Shops", type: "food", distance: "2 min walking" },
+      { name: "Independent Bookstores", type: "shopping", distance: "3 min walking" },
+      { name: "Music Venues", type: "venue", distance: "4 min walking" },
+      { name: "Artist Studios", type: "art", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Montreal-style bagels are thinner and sweeter than NYC bagels",
+      "Fairmount Bagel is the historic bagel institution",
+      "Live music venues feature indie and alternative bands",
+      "Vintage clothing stores have authentic pieces from past decades"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // CALGARY — CTrain
+  {
+    slug: "downtown-calgary",
+    name: "Downtown Calgary",
+    city: "Calgary",
+    state: "Alberta",
+    country: "Canada",
+    description: "Modern downtown with glass office towers, shopping centers, and cultural venues. CTrain's downtown core provides rapid transit connections to all major business and entertainment districts.",
+    h1: "How to reach Downtown Calgary by transit — Calgary CTrain guide",
+    seo_title: "Downtown Calgary — Calgary transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Calgary by CTrain Red Line. Stations, shops, and attractions.",
+    stations: ["tuscany", "crowfoot"],
+    main_station: "tuscany",
+    transit_systems: ["Calgary CTrain"],
+    transit_lines: ["Red Line"],
+    type: "urban",
+    pois: [
+      { name: "Calgary Tower", type: "landmark", distance: "3 min walking" },
+      { name: "Glenbow Museum", type: "museum", distance: "5 min walking" },
+      { name: "Stephens Avenue Shops", type: "shopping", distance: "4 min walking" },
+      { name: "Downtown Riverwalk", type: "park", distance: "6 min walking" }
+    ],
+    tips_for_visitors: [
+      "Calgary Tower offers panoramic views of the Rocky Mountains",
+      "Glenbow Museum has world-class contemporary art collections",
+      "Riverwalk connects parks along the Bow River",
+      "CTrain is free in downtown core zone"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "stampede-park-calgary",
+    name: "Stampede Park Area",
+    city: "Calgary",
+    state: "Alberta",
+    country: "Canada",
+    description: "Home to the famous Calgary Stampede rodeo and year-round attractions. Stampede Park features festival grounds, sports venues, and recreational areas served by convenient CTrain access.",
+    h1: "How to reach Stampede Park by transit — Calgary CTrain guide",
+    seo_title: "Stampede Park — Calgary transit guide | MetroGuia",
+    meta_description: "How to reach Calgary Stampede Park by CTrain. Stations, events, and venue information.",
+    stations: ["victoria-park", "erlton-ghent"],
+    main_station: "victoria-park",
+    transit_systems: ["Calgary CTrain"],
+    transit_lines: ["Red Line"],
+    type: "urban",
+    pois: [
+      { name: "Calgary Stampede Grounds", type: "venue", distance: "2 min walking" },
+      { name: "Scotiabank Saddledome", type: "venue", distance: "3 min walking" },
+      { name: "Heritage Park", type: "museum", distance: "8 min walking" },
+      { name: "Sports Facilities", type: "sports", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "Calgary Stampede in July is the world's largest rodeo event",
+      "Saddledome hosts hockey and concerts year-round",
+      "Heritage Park has western history exhibits and attractions",
+      "CTrain is the best way to reach the grounds during events"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // EDMONTON — LRT
+  {
+    slug: "downtown-edmonton",
+    name: "Downtown Edmonton",
+    city: "Edmonton",
+    state: "Alberta",
+    country: "Canada",
+    description: "Central business and entertainment district featuring office towers, shopping malls, river valley access, and cultural venues. Edmonton's LRT system provides rapid connections throughout downtown.",
+    h1: "How to reach Downtown Edmonton by transit — Edmonton LRT guide",
+    seo_title: "Downtown Edmonton — Edmonton transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Edmonton by Edmonton LRT. Stations, attractions, and visitor tips.",
+    stations: ["clareview", "belvedere"],
+    main_station: "clareview",
+    transit_systems: ["Edmonton LRT Capital Line"],
+    transit_lines: ["Capital Line"],
+    type: "urban",
+    pois: [
+      { name: "Edmonton Tower", type: "landmark", distance: "3 min walking" },
+      { name: "River Valley Parks", type: "park", distance: "5 min walking" },
+      { name: "Art Gallery of Alberta", type: "museum", distance: "4 min walking" },
+      { name: "West Edmonton Mall", type: "shopping", distance: "8 min walking" }
+    ],
+    tips_for_visitors: [
+      "River Valley is the largest urban park system in North America",
+      "West Edmonton Mall is one of the world's largest malls",
+      "Downtown has excellent restaurants and entertainment venues",
+      "LRT is free in downtown core station zones"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "whyte-avenue-university-edmonton",
+    name: "Whyte Avenue & University",
+    city: "Edmonton",
+    state: "Alberta",
+    country: "Canada",
+    description: "Student and bohemian neighborhood featuring the University of Alberta campus, vintage shops, galleries, breweries, and eclectic dining. Whyte Avenue is Edmonton's hub for indie culture and street life.",
+    h1: "How to reach Whyte Avenue by transit — Edmonton LRT guide",
+    seo_title: "Whyte Avenue & University — Edmonton transit guide | MetroGuia",
+    meta_description: "How to reach Whyte Avenue and University of Alberta by Edmonton LRT. Student area tips.",
+    stations: ["south-campus", "central"],
+    main_station: "south-campus",
+    transit_systems: ["Edmonton LRT"],
+    transit_lines: ["Capital Line"],
+    type: "urban",
+    pois: [
+      { name: "University of Alberta", type: "landmark", distance: "2 min walking" },
+      { name: "Whyte Avenue Shops", type: "shopping", distance: "3 min walking" },
+      { name: "Breweries & Bars", type: "venue", distance: "4 min walking" },
+      { name: "Student Bookstores", type: "shopping", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "Whyte Avenue is Edmonton's artistic and bohemian heart",
+      "Local breweries offer craft beer and live music",
+      "Independent shops feature unique clothing, books, and art",
+      "Affordable student-oriented restaurants throughout the area"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // OTTAWA — O-Train
+  {
+    slug: "parliament-hill-byward-ottawa",
+    name: "Parliament Hill & ByWard Market",
+    city: "Ottawa",
+    state: "Ontario",
+    country: "Canada",
+    description: "Historic government district and lively market neighborhood featuring the Parliament buildings, ByWard Market shops, and cultural institutions. O-Train Confederation Line provides direct access.",
+    h1: "How to reach Parliament Hill by transit — Ottawa O-Train guide",
+    seo_title: "Parliament Hill & ByWard Market — Ottawa transit guide | MetroGuia",
+    meta_description: "How to reach Parliament Hill and ByWard Market by O-Train. Seats of power and shopping.",
+    stations: ["blair", "cyrville"],
+    main_station: "blair",
+    transit_systems: ["O-Train Confederation Line"],
+    transit_lines: ["Confederation"],
+    type: "urban",
+    pois: [
+      { name: "Parliament Buildings", type: "landmark", distance: "5 min walking" },
+      { name: "ByWard Market", type: "market", distance: "3 min walking" },
+      { name: "Canadian War Museum", type: "museum", distance: "8 min walking" },
+      { name: "National Gallery of Canada", type: "museum", distance: "6 min walking" }
+    ],
+    tips_for_visitors: [
+      "Parliament Building tours are free with reservation",
+      "ByWard Market has vendors, restaurants, and street performances",
+      "Changing of the Guard ceremony occurs during summer",
+      "Museums offer Canadian history and contemporary art"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "rideau-centre-ottawa",
+    name: "Rideau Centre & Shopping",
+    city: "Ottawa",
+    state: "Ontario",
+    country: "Canada",
+    description: "Modern shopping and commercial district anchored by Rideau Centre mall with major retailers, restaurants, and entertainment. O-Train provides convenient access to the busy shopping hub.",
+    h1: "How to reach Rideau Centre by transit — Ottawa O-Train guide",
+    seo_title: "Rideau Centre — Ottawa transit guide | MetroGuia",
+    meta_description: "How to reach Rideau Centre in Ottawa by O-Train. Shopping and dining destinations.",
+    stations: ["rideau", "confederation"],
+    main_station: "rideau",
+    transit_systems: ["O-Train"],
+    transit_lines: ["Confederation Line"],
+    type: "urban",
+    pois: [
+      { name: "Rideau Centre Mall", type: "shopping", distance: "2 min walking" },
+      { name: "Restaurants & Cafes", type: "food", distance: "2 min walking" },
+      { name: "Entertainment Venues", type: "venue", distance: "3 min walking" },
+      { name: "Winter Activities", type: "outdoor", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "Rideau Centre has hundreds of shops and restaurants",
+      "Connected to Confederation Centre for year-round climate control",
+      "Winter skating on Rideau Canal is iconic Ottawa experience",
+      "Easy access to Parliament Hill and museums from this station"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // KITCHENER-WATERLOO — ION LRT
+  {
+    slug: "downtown-kitchener",
+    name: "Downtown Kitchener",
+    city: "Kitchener-Waterloo",
+    state: "Ontario",
+    country: "Canada",
+    description: "Historic downtown core with Victorian architecture, restaurants, galleries, and shops. ION Light Rail Transit provides modern rapid access to downtown's cultural and business district.",
+    h1: "How to reach Downtown Kitchener by transit — ION LRT guide",
+    seo_title: "Downtown Kitchener — Kitchener-Waterloo transit guide | MetroGuia",
+    meta_description: "How to reach Downtown Kitchener by ION Light Rail Transit. Stations and attractions.",
+    stations: ["kitchener-waterloo-conestoga", "kitchener-waterloo-northfield"],
+    main_station: "kitchener-waterloo-conestoga",
+    transit_systems: ["ION Light Rail Transit"],
+    transit_lines: ["Red Line"],
+    type: "urban",
+    pois: [
+      { name: "City Hall", type: "landmark", distance: "3 min walking" },
+      { name: "Victorian Architecture", type: "historic", distance: "4 min walking" },
+      { name: "Art Galleries", type: "museum", distance: "3 min walking" },
+      { name: "King Street Restaurants", type: "food", distance: "2 min walking" }
+    ],
+    tips_for_visitors: [
+      "Kitchener is Ontario's technology hub with growing innovation scene",
+      "Victorian buildings have been restored with modern interiors",
+      "Restaurant scene reflects diverse immigrant communities",
+      "ION provides fast connections between Kitchener and Waterloo"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "uptown-waterloo",
+    name: "Uptown Waterloo",
+    city: "Kitchener-Waterloo",
+    state: "Ontario",
+    country: "Canada",
+    description: "University district and upscale neighborhood featuring the University of Waterloo campus, tech offices, restaurants, and modern development. ION LRT connects Uptown to Kitchener downtown.",
+    h1: "How to reach Uptown Waterloo by transit — ION LRT guide",
+    seo_title: "Uptown Waterloo — Kitchener-Waterloo transit guide | MetroGuia",
+    meta_description: "How to reach Uptown Waterloo by ION Light Rail Transit. University area and tech hub.",
+    stations: ["kitchener-waterloo-conestoga"],
+    main_station: "kitchener-waterloo-conestoga",
+    transit_systems: ["ION Light Rail Transit"],
+    transit_lines: ["Red Line"],
+    type: "urban",
+    pois: [
+      { name: "University of Waterloo", type: "landmark", distance: "3 min walking" },
+      { name: "Tech Parks & Offices", type: "business", distance: "4 min walking" },
+      { name: "Uptown Dining & Shops", type: "shopping", distance: "2 min walking" },
+      { name: "Student Residences", type: "residential", distance: "5 min walking" }
+    ],
+    tips_for_visitors: [
+      "University of Waterloo is Canada's largest tech research center",
+      "Uptown has modern restaurants and entertainment venues",
+      "Tech companies make this a hub for innovation and startups",
+      "Student population keeps the area vibrant and youthful"
+    ],
+    fifa_2026_relevance: null
+  },
+
+  // MISSISSAUGA — Hazel McCallion Line
+  {
+    slug: "mississauga-city-centre",
+    name: "Mississauga City Centre",
+    city: "Mississauga",
+    state: "Ontario",
+    country: "Canada",
+    description: "Modern downtown featuring office towers, shopping centers, and civic amenities. Hazel McCallion Light Rail Transit provides regional connections to the city center and surrounding neighborhoods.",
+    h1: "How to reach Mississauga City Centre by transit — Hazel McCallion Line guide",
+    seo_title: "Mississauga City Centre — Mississauga transit guide | MetroGuia",
+    meta_description: "How to reach Mississauga City Centre by Hazel McCallion Light Rail Transit. Shopping and office district.",
+    stations: ["mississauga-kipling-station", "mississauga-dundas-west"],
+    main_station: "mississauga-kipling-station",
+    transit_systems: ["Hazel McCallion Light Rail Transit"],
+    transit_lines: ["Hazel McCallion Line"],
+    type: "urban",
+    pois: [
+      { name: "Square One Shopping Centre", type: "shopping", distance: "3 min walking" },
+      { name: "Office Towers", type: "business", distance: "2 min walking" },
+      { name: "City Hall", type: "landmark", distance: "4 min walking" },
+      { name: "Civic Centre Library", type: "cultural", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Square One is one of Canada's major shopping destinations",
+      "City is a major business hub in Greater Toronto Area",
+      "Transit connects to Toronto Union Station via rail link",
+      "Modern civic infrastructure throughout downtown"
+    ],
+    fifa_2026_relevance: null
+  },
+  {
+    slug: "port-credit-mississauga",
+    name: "Port Credit Area",
+    city: "Mississauga",
+    state: "Ontario",
+    country: "Canada",
+    description: "Scenic waterfront neighborhood along Lake Ontario featuring marina, restaurants, shops, and recreational areas. Hazel McCallion Line serves the upscale residential and entertainment district.",
+    h1: "How to reach Port Credit by transit — Mississauga Light Rail guide",
+    seo_title: "Port Credit — Mississauga transit guide | MetroGuia",
+    meta_description: "How to reach Port Credit in Mississauga by Hazel McCallion Light Rail Transit. Waterfront neighborhood.",
+    stations: ["mississauga-dundas-west"],
+    main_station: "mississauga-dundas-west",
+    transit_systems: ["Hazel McCallion Light Rail Transit"],
+    transit_lines: ["Hazel McCallion Line"],
+    type: "urban",
+    pois: [
+      { name: "Port Credit Marina", type: "waterfront", distance: "5 min walking" },
+      { name: "Waterfront Parks", type: "park", distance: "3 min walking" },
+      { name: "Seafood Restaurants", type: "food", distance: "4 min walking" },
+      { name: "Harbour Shops", type: "shopping", distance: "3 min walking" }
+    ],
+    tips_for_visitors: [
+      "Port Credit is Mississauga's upscale waterfront destination",
+      "Marina offers sailing and water activities in summer",
+      "Waterfront promenade is perfect for evening walks",
+      "Fine dining restaurants with lake views"
+    ],
+    fifa_2026_relevance: null
   }
 ]
