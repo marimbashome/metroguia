@@ -93,6 +93,20 @@ import { estacionesNewOrleans } from '@/data/new-orleans/estaciones';
 import { estacionesBuffalo } from '@/data/buffalo/estaciones';
 import { estacionesHonolulu } from '@/data/honolulu/estaciones';
 import { estacionesNorfolk } from '@/data/norfolk/estaciones';
+import { estacionesJacksonville } from '@/data/jacksonville/estaciones';
+import { estacionesAustin } from '@/data/austin/estaciones';
+import { estacionesCincinnati } from '@/data/cincinnati/estaciones';
+import { estacionesElPaso } from '@/data/el-paso/estaciones';
+import { estacionesOrlando } from '@/data/orlando/estaciones';
+import { estacionesSanJuan } from '@/data/san-juan/estaciones';
+import { estacionesTampa } from '@/data/tampa/estaciones';
+import { estacionesTucson } from '@/data/tucson/estaciones';
+import { estacionesOklahomaCity } from '@/data/oklahoma-city/estaciones';
+import { estacionesNashville } from '@/data/nashville/estaciones';
+import { estacionesMilwaukee } from '@/data/milwaukee/estaciones';
+import { estacionesNewark } from '@/data/newark/estaciones';
+import { estacionesKitchenerWaterloo } from '@/data/kitchener-waterloo/estaciones';
+import { estacionesMississauga } from '@/data/mississauga/estaciones';
 
 // Import line data for US/CA cities
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
@@ -133,6 +147,20 @@ import { lineasNewOrleans } from '@/data/new-orleans/lineas-detalle';
 import { lineasBuffalo } from '@/data/buffalo/lineas-detalle';
 import { lineasHonolulu } from '@/data/honolulu/lineas-detalle';
 import { lineasNorfolk } from '@/data/norfolk/lineas-detalle';
+import { lineasJacksonville } from '@/data/jacksonville/lineas-detalle';
+import { lineasAustin } from '@/data/austin/lineas-detalle';
+import { lineasCincinnati } from '@/data/cincinnati/lineas-detalle';
+import { lineasElPaso } from '@/data/el-paso/lineas-detalle';
+import { lineasOrlando } from '@/data/orlando/lineas-detalle';
+import { lineasSanJuan } from '@/data/san-juan/lineas-detalle';
+import { lineasTampa } from '@/data/tampa/lineas-detalle';
+import { lineasTucson } from '@/data/tucson/lineas-detalle';
+import { lineasOklahomaCity } from '@/data/oklahoma-city/lineas-detalle';
+import { lineasNashville } from '@/data/nashville/lineas-detalle';
+import { lineasMilwaukee } from '@/data/milwaukee/lineas-detalle';
+import { lineasNewark } from '@/data/newark/lineas-detalle';
+import { lineasKitchenerWaterloo } from '@/data/kitchener-waterloo/lineas-detalle';
+import { lineasMississauga } from '@/data/mississauga/lineas-detalle';
 
 // US/CA zone (neighborhood) data
 import { zonasUSCA } from '@/data/zonas-us-ca';
@@ -291,7 +319,9 @@ function getCoreUrls() {
         'washington-dc','chicago','san-diego','minneapolis','pittsburgh','baltimore',
         'charlotte','phoenix','st-louis','toronto','vancouver','portland','sacramento',
         'montreal','calgary','edmonton','ottawa',
-        'detroit','cleveland','las-vegas','san-jose','new-orleans','buffalo','honolulu','norfolk'].map(c =>
+        'detroit','cleveland','las-vegas','san-jose','new-orleans','buffalo','honolulu','norfolk',
+        'jacksonville','austin','cincinnati','el-paso','orlando','san-juan','tampa','tucson',
+        'oklahoma-city','nashville','milwaukee','newark','kitchener-waterloo','mississauga'].map(c =>
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
     // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
@@ -465,6 +495,48 @@ function getCitiesUrls() {
     // Norfolk
     ...mapEstacionesUSCA(estacionesNorfolk, 'norfolk', 'cities'),
     ...mapLineasUSCA(lineasNorfolk, 'norfolk', 'cities'),
+    // Jacksonville
+    ...mapEstacionesUSCA(estacionesJacksonville, 'jacksonville', 'cities'),
+    ...mapLineasUSCA(lineasJacksonville, 'jacksonville', 'cities'),
+    // Austin
+    ...mapEstacionesUSCA(estacionesAustin, 'austin', 'cities'),
+    ...mapLineasUSCA(lineasAustin, 'austin', 'cities'),
+    // Cincinnati
+    ...mapEstacionesUSCA(estacionesCincinnati, 'cincinnati', 'cities'),
+    ...mapLineasUSCA(lineasCincinnati, 'cincinnati', 'cities'),
+    // El Paso
+    ...mapEstacionesUSCA(estacionesElPaso, 'el-paso', 'cities'),
+    ...mapLineasUSCA(lineasElPaso, 'el-paso', 'cities'),
+    // Orlando
+    ...mapEstacionesUSCA(estacionesOrlando, 'orlando', 'cities'),
+    ...mapLineasUSCA(lineasOrlando, 'orlando', 'cities'),
+    // San Juan
+    ...mapEstacionesUSCA(estacionesSanJuan, 'san-juan', 'cities'),
+    ...mapLineasUSCA(lineasSanJuan, 'san-juan', 'cities'),
+    // Tampa
+    ...mapEstacionesUSCA(estacionesTampa, 'tampa', 'cities'),
+    ...mapLineasUSCA(lineasTampa, 'tampa', 'cities'),
+    // Tucson
+    ...mapEstacionesUSCA(estacionesTucson, 'tucson', 'cities'),
+    ...mapLineasUSCA(lineasTucson, 'tucson', 'cities'),
+    // Oklahoma City
+    ...mapEstacionesUSCA(estacionesOklahomaCity, 'oklahoma-city', 'cities'),
+    ...mapLineasUSCA(lineasOklahomaCity, 'oklahoma-city', 'cities'),
+    // Nashville
+    ...mapEstacionesUSCA(estacionesNashville, 'nashville', 'cities'),
+    ...mapLineasUSCA(lineasNashville, 'nashville', 'cities'),
+    // Milwaukee
+    ...mapEstacionesUSCA(estacionesMilwaukee, 'milwaukee', 'cities'),
+    ...mapLineasUSCA(lineasMilwaukee, 'milwaukee', 'cities'),
+    // Newark
+    ...mapEstacionesUSCA(estacionesNewark, 'newark', 'cities'),
+    ...mapLineasUSCA(lineasNewark, 'newark', 'cities'),
+    // Kitchener-Waterloo
+    ...mapEstacionesUSCA(estacionesKitchenerWaterloo, 'kitchener-waterloo', 'cities'),
+    ...mapLineasUSCA(lineasKitchenerWaterloo, 'kitchener-waterloo', 'cities'),
+    // Mississauga
+    ...mapEstacionesUSCA(estacionesMississauga, 'mississauga', 'cities'),
+    ...mapLineasUSCA(lineasMississauga, 'mississauga', 'cities'),
   ];
   return urls;
 }
