@@ -316,13 +316,18 @@ export default function WashingtonDCPage() {
           </h2>
 
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasDetalleDC.map((linea, idx) => (
-              <Link href={`/washington-dc/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
+            {lineasDetalleDC.map((linea, idx) => {
+              const lineId = linea.id || linea.slug || 'unknown';
+              const lineName = linea.colorNombre || linea.nombre || lineId;
+              const stationCount = linea.total || linea.numeroEstaciones || 0;
+              const startStation = linea.inicio || (linea.estacionesTerminales && linea.estacionesTerminales[0]) || '';
+              const endStation = linea.fin || (linea.estacionesTerminales && linea.estacionesTerminales[1]) || '';
+              return (
+              <Link href={`/washington-dc/line/${lineId}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '24px',
                   backgroundColor: 'var(--surface)',
                   borderRadius: 'var(--radius)',
-                  borderLeft: `5px solid ${linea.color}`,
                   border: `1px solid var(--border)`,
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
@@ -341,20 +346,21 @@ export default function WashingtonDCPage() {
                       fontSize: '1.5rem',
                       fontWeight: '700',
                     }}>
-                      {linea.id[0]}
+                      {lineId[0].toUpperCase()}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.colorNombre} Line
+                        {lineName}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations · {linea.inicio} to {linea.fin}
+                        {stationCount} stations · {startStation} to {endStation}
                       </p>
                     </div>
                   </div>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
