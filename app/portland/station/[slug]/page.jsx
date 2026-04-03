@@ -148,8 +148,6 @@ export default function StationPortlandPage({ params }) {
                     cursor: 'pointer',
                     transition: 'all 0.3s ease',
                   }}
-                  onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
-                  onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
                   >
                     {linea === 'a-loop' ? 'A-Loop' : linea === 'b-loop' ? 'B-Loop' : linea === 'ns-line' ? 'NS-Line' : lineData?.colorNombre || linea.toUpperCase()}
                   </button>

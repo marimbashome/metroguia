@@ -164,14 +164,6 @@ export default function PortlandPage() {
                 transition: 'all 0.3s ease',
                 height: '100%',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#0054A4';
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,84,164,0.15)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'var(--border)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
               >
                 <div style={{ marginBottom: '12px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                   {estacion.linea.slice(0, 3).map((linea) => {
@@ -237,12 +229,6 @@ export default function PortlandPage() {
                 border: `2px solid ${linea.color}`,
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = `0 4px 12px ${linea.color}40`;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = 'none';
               }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px', gap: '12px' }}>
