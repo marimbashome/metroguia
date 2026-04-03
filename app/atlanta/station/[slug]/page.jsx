@@ -106,7 +106,7 @@ export default function StationAtlanta({ params }) {
                 <ul style={{ listStyle: 'none', padding: '0', margin: '0' }}>
                   {estacion.pois.map((poi, idx) => (
                     <li key={idx} style={{ padding: '12px 0', borderBottom: '1px solid var(--border)', fontSize: '0.95rem', color: 'var(--text)' }}>
-                      <span style={{ fontWeight: '600', color: colorPrincipal }}>•</span> {poi}
+                      <span style={{ fontWeight: '600', color: colorPrincipal }}>•</span> {typeof poi === 'object' ? poi.nombre : poi}
                     </li>
                   ))}
                 </ul>
@@ -127,7 +127,7 @@ export default function StationAtlanta({ params }) {
                     <ul style={{ listStyle: 'none', padding: '0 0 0 16px', margin: '0' }}>
                       {Array.isArray(lugares) && lugares.map((lugar, idx) => (
                         <li key={idx} style={{ fontSize: '0.9rem', color: 'var(--text)', paddingBottom: '4px' }}>
-                          {lugar}
+                          {typeof lugar === 'object' ? lugar.nombre : lugar}
                         </li>
                       ))}
                     </ul>
@@ -171,7 +171,7 @@ export default function StationAtlanta({ params }) {
                   Accessibility
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0' }}>
-                  {estacion.accesibilidad}
+                  {typeof estacion.accesibilidad === 'object' ? (estacion.accesibilidad.notas || 'Accessible') : estacion.accesibilidad}
                 </p>
               </div>
             )}
