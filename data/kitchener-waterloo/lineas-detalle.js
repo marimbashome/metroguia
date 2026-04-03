@@ -1,51 +1,68 @@
 export const lineasKitchenerWaterloo = [
   {
-    slug: "ion-red",
-    nombre: "ION Red Line",
-    color: "#EE3124",
-    tipo: "Light Rail Transit",
-    ciudad: "Kitchener-Waterloo",
-    pais: "Canada",
-    total_estaciones: 19,
-    tarifa: 3.25,
-    moneda: "CAD",
-    frecuencia: 8,
-    horario_inicio: "06:00",
-    horario_fin: "23:30",
-    horario_sabado_inicio: "06:00",
-    horario_sabado_fin: "23:30",
-    horario_domingo_inicio: "07:00",
-    horario_domingo_fin: "22:30",
-    pagina_oficial: "https://www.regionofwaterloo.ca/ION",
-    operador: "Region of Waterloo Transit",
-    estaciones_turisticas: [
-      "Conestoga Station",
-      "Cambridge Centre",
-      "Kitchener Market Hall",
-      "Victoria Park Station",
-      "University of Waterloo",
-      "Ainslie Street Terminal"
+    "id": "ion",
+    "color": "#EE3124",
+    "colorNombre": "Ion Red",
+    "inicio": "Conestoga",
+    "fin": "Ainslie Street Terminal",
+    "total": 19,
+    "municipios": ["Kitchener-Waterloo"],
+    "descripcion": "ION Red Line is a modern light rail transit system connecting Kitchener and Waterloo with high-capacity rapid transit. Offers key connections to educational institutions, shopping centers, and cultural points of interest across the region.",
+    "estaciones_turisticas": [
+      "kitchener-waterloo-conestoga",
+      "kitchener-waterloo-university-of-waterloo",
+      "kitchener-waterloo-waterloo-public-square",
+      "kitchener-waterloo-victoria-park"
     ],
-    ruta_1_dia: {
-      descripcion: "Recorrido completo ION Red Line - Conestoga a Ainslie Street",
-      horario_salida: "09:00",
-      duracion_minutos: 40,
-      paradas: [
-        "Conestoga Station",
-        "Conestoga Mall Station",
-        "Ottawa Station",
-        "Fischer-Hallman Station",
-        "Chandler Station",
-        "Kitchener Station",
-        "King Centre",
-        "Kitchener Market Hall",
-        "Victoria Park Station",
-        "University of Waterloo",
-        "Columbia Station",
-        "Ainslie Street Terminal"
+    "estaciones": [
+      "kitchener-waterloo-conestoga",
+      "kitchener-waterloo-northfield",
+      "kitchener-waterloo-research-and-technology",
+      "kitchener-waterloo-university-of-waterloo",
+      "kitchener-waterloo-laurier-waterloo-park",
+      "kitchener-waterloo-waterloo-public-square",
+      "kitchener-waterloo-allen",
+      "kitchener-waterloo-grand-river-hospital",
+      "kitchener-waterloo-central-station",
+      "kitchener-waterloo-victoria-park",
+      "kitchener-waterloo-kitchener-city-hall",
+      "kitchener-waterloo-borden",
+      "kitchener-waterloo-mill",
+      "kitchener-waterloo-block-line",
+      "kitchener-waterloo-fairway",
+      "kitchener-waterloo-sportsworld",
+      "kitchener-waterloo-preston",
+      "kitchener-waterloo-pinebush",
+      "kitchener-waterloo-ainslie-street-terminal"
+    ],
+    "ruta_1_dia": {
+      "titulo": "ION Red Line: Complete Transit Tour",
+      "paradas": [
+        {
+          "estacion": "kitchener-waterloo-conestoga",
+          "duracion": "1 hora",
+          "actividades": "Start at northern terminus, explore Conestoga Mall area"
+        },
+        {
+          "estacion": "kitchener-waterloo-waterloo-public-square",
+          "duracion": "1.5 horas",
+          "actividades": "Downtown Waterloo exploration and shopping"
+        },
+        {
+          "estacion": "kitchener-waterloo-central-station",
+          "duracion": "1.5 horas",
+          "actividades": "Downtown Kitchener hub and cultural district"
+        },
+        {
+          "estacion": "kitchener-waterloo-ainslie-street-terminal",
+          "duracion": "1 hora",
+          "actividades": "End at southern terminus, Cambridge area"
+        }
       ]
     },
-    descripcion: "La línea ION Red es un moderno sistema de tránsito rápido que conecta Kitchener y Waterloo con transporte de alta capacidad. Ofrece conexiones clave a instituciones educativas, centros comerciales y puntos de interés cultural.",
-    notas: "Servicio de luz roja de clase mundial con estaciones accesibles y modernas"
+    "tarifa": "$3.25 CAD",
+    "frecuencia": "8 min",
+    "sistema": "ION Light Rail Transit",
+    "ciudad": "kitchener-waterloo"
   }
 ];

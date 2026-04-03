@@ -4,7 +4,7 @@ import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = {"rapid":"#003f87"};
+const LINE_COLORS = {"star":"#4B2E83"};
 
 export async function generateStaticParams() {
   return estacionesNashville.map((estacion) => ({
@@ -36,7 +36,7 @@ export default function StationNashvillePage({ params }) {
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Station not found</h1>
         <Link href="/nashville">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#003f87', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#4B2E83', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
             Back to Nashville
           </button>
         </Link>
@@ -45,7 +45,7 @@ export default function StationNashvillePage({ params }) {
   }
 
   const lineaArray = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
-  const colorLinea = LINE_COLORS[lineaArray[0]] || '#003f87';
+  const colorLinea = LINE_COLORS[lineaArray[0]] || '#4B2E83';
   const lineaId = lineaArray[0];
 
   const breadcrumbSchema = {

@@ -4,7 +4,7 @@ import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = {"rapid":"#00AA44"};
+const LINE_COLORS = {"hazel-mccallion":"#F15A22"};
 
 export async function generateStaticParams() {
   return estacionesMississauga.map((estacion) => ({
@@ -36,7 +36,7 @@ export default function StationMississaugaPage({ params }) {
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Station not found</h1>
         <Link href="/mississauga">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#00AA44', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#F15A22', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
             Back to Mississauga
           </button>
         </Link>
@@ -45,7 +45,7 @@ export default function StationMississaugaPage({ params }) {
   }
 
   const lineaArray = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
-  const colorLinea = LINE_COLORS[lineaArray[0]] || '#00AA44';
+  const colorLinea = LINE_COLORS[lineaArray[0]] || '#F15A22';
   const lineaId = lineaArray[0];
 
   const breadcrumbSchema = {
