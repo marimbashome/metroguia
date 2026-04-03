@@ -46,7 +46,7 @@ export default function LineHouston({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesHOU.filter((e) => e.linea.includes(linea.id));
+  const estacionesLinea = estacionesHOU.filter((e) => Array.isArray(e.linea) ? e.linea.includes(linea.id) : e.linea === linea.id);
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>

@@ -46,7 +46,7 @@ export default function LineLA({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesLA.filter((e) => e.linea.includes(linea.id));
+  const estacionesLinea = estacionesLA.filter((e) => Array.isArray(e.linea) ? e.linea.includes(linea.id) : e.linea === linea.id);
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>

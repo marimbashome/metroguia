@@ -52,7 +52,8 @@ export default function StationHouston({ params }) {
     );
   }
 
-  const lineasEstacion = estacion.linea.map((lineId) => lineasHOU.find((l) => l.id === lineId)).filter(Boolean);
+  const lineaArr = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
+  const lineasEstacion = lineaArr.map((lineId) => lineasHOU.find((l) => l.id === lineId)).filter(Boolean);
   const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[lineasEstacion[0].id.toLowerCase()] || '#FF6600' : '#FF6600';
 
   return (

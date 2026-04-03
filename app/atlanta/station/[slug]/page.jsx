@@ -53,7 +53,8 @@ export default function StationAtlanta({ params }) {
     );
   }
 
-  const lineasEstacion = estacion.linea.map((lineId) => lineasAtlanta.find((l) => l.id === lineId)).filter(Boolean);
+  const lineaArr = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
+  const lineasEstacion = lineaArr.map((lineId) => lineasAtlanta.find((l) => l.id === lineId)).filter(Boolean);
   const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[lineasEstacion[0].id.toLowerCase()] || '#FDBF00' : '#FDBF00';
 
   return (
