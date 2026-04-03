@@ -1,18 +1,17 @@
-import { CITIES_CONFIG } from '@/data/cities-config';
-import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
 import { estacionesChicago } from '@/data/chicago/estaciones';
+import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
-  title: 'CTA L Train Guide — Chicago Rail Transit | MetroGuia',
-  description: 'CTA L Train guide: 139 stations, 8 lines in Chicago metro. Red/Blue lines 24h service. CTA Ventra card. Complete trip planner, schedule & fares.',
-  keywords: 'CTA, L Train, Chicago transit, Ventra card, Chicago Loop, O\'Hare',
+  title: 'CTA L Train Guide — Chicago Rapid Transit | MetroGuia',
+  description: 'CTA L Train guide: 8 lines, 139 stations across Chicago metro. Complete trip planner, system map, fares, schedules & Ventra Card information.',
+  keywords: 'CTA, L Train, Chicago transit, rapid transit, Ventra Card, Illinois',
   openGraph: {
-    title: 'CTA L Train — Chicago Express Transit',
-    description: 'Discover Chicago\'s L Train system. Direct access to O\'Hare Airport, downtown Loop, and citywide connections.',
+    title: 'CTA L Train — Chicago Rapid Transit',
+    description: 'Discover Chicago\'s L Train system. 8 lines, 139 stations, 24-hour Red and Blue lines.',
     url: 'https://metroguia.mx/chicago',
     type: 'website',
   },
@@ -23,11 +22,21 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesChicago.filter(e =>
-  ['chi-ohare', 'chi-loop', 'chi-midway', 'chi-wrigley', 'chi-lake'].includes(e.slug)
+  ['chicago-ohare', 'chicago-clark-lake', 'chicago-jackson', 'chicago-fullerton', 'chicago-midway'].includes(e.slug)
 );
 
+const LINE_COLORS = {
+  'red': '#C60C30',
+  'blue': '#00A1DE',
+  'brown': '#62361B',
+  'green': '#009B3A',
+  'orange': '#F9461C',
+  'pink': '#E27EA6',
+  'purple': '#522398',
+  'yellow': '#F9E300',
+};
+
 export default function ChicagoPage() {
-  const cityConfig = CITIES_CONFIG.chicago;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -43,7 +52,7 @@ export default function ChicagoPage() {
 
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #00A1DE 0%, #0079B5 100%)',
+        background: 'linear-gradient(135deg, #00A1DE 0%, #0088BB 100%)',
         color: '#FFFFFF',
         padding: '80px 24px',
         textAlign: 'center',
@@ -58,7 +67,7 @@ export default function ChicagoPage() {
             lineHeight: '1.2',
             letterSpacing: '-0.02em',
           }}>
-            CTA L Train
+            CTA L
           </h1>
           <p style={{
             fontSize: '1.5rem',
@@ -81,7 +90,7 @@ export default function ChicagoPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            Chicago's extensive elevated rapid transit network. Direct access to O'Hare and Midway airports, downtown Loop, and neighborhoods across the city. Red and Blue lines run 24 hours.
+            Chicago's comprehensive elevated and subway network connecting downtown to O'Hare and Midway airports. 24-hour Red and Blue lines.
           </p>
         </div>
       </section>
@@ -114,15 +123,15 @@ export default function ChicagoPage() {
               8
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Active Lines
+              Lines
             </p>
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#00A1DE', margin: '0 0 8px 0' }}>
-              24h
+              3–8 min
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Red & Blue Lines
+              Peak Frequency
             </p>
           </div>
         </div>
@@ -150,7 +159,7 @@ export default function ChicagoPage() {
             marginBottom: '24px',
             color: 'var(--text-muted)',
           }}>
-            Calculate the best route between CTA L stations
+            Calculate the best route between L stations
           </p>
           <SearchBar ciudad="chicago" />
         </div>
@@ -158,59 +167,7 @@ export default function ChicagoPage() {
 
       <AdBannerLazy slot="4434764790" format="auto" />
 
-      {/* TRANSIT INFO */}
-      <section style={{
-        backgroundColor: 'var(--bg)',
-        padding: '80px 24px',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            fontWeight: '800',
-            margin: '0 0 16px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            Chicago Transportation
-          </h2>
-          <p style={{
-            fontSize: '1.125rem',
-            color: 'var(--text-muted)',
-            textAlign: 'center',
-            margin: '0 0 48px 0',
-            maxWidth: '700px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}>
-            The CTA L Train is Chicago's elevated rapid transit backbone, connecting O'Hare International Airport, downtown's historic Loop, and neighborhoods throughout the city.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                ✈️ Airport Access
-              </h3>
-              <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', lineHeight: '1.6' }}>
-                The Blue Line runs 24 hours to O'Hare. Red Line connects to Midway Airport south of downtown.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                🌃 The Loop & Downtown
-              </h3>
-              <ul style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                <li>Historic elevated core in downtown Chicago</li>
-                <li>All lines pass through or near the Loop</li>
-                <li>Access to museums, theaters, and attractions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PAYMENT & CARDS */}
+      {/* TRANSIT CARDS */}
       <section style={{
         backgroundColor: 'var(--bg)',
         padding: '80px 24px',
@@ -224,32 +181,32 @@ export default function ChicagoPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            💳 Ventra Card
+            🎫 Ventra Card & Payment
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
+              icon="🎫"
               titulo="Ventra Card"
-              descripcion="Reloadable card for all CTA and Pace transit. Works on L, buses, and regional rail."
-              precio="$5 (card) + passes"
+              descripcion="Reloadable card for CTA and Pace. Keep loaded for all rides."
+              precio="$5 + value"
               enlace="https://www.ventrachicago.com/"
             />
 
             <AffiliateTransportCard
               icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via Ventra app."
+              titulo="Ventra Mobile"
+              descripcion="Pay with smartphone for single rides or passes."
               precio="$2.50"
-              enlace="https://www.transitchicago.com/"
+              enlace="https://www.ventrachicago.com/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
-              titulo="1-Day Pass"
-              descripcion="Unlimited L and bus travel for 24 hours."
-              precio="$13"
-              enlace="https://www.transitchicago.com/"
+              icon="🎟️"
+              titulo="CTA Day Pass"
+              descripcion="Unlimited rides on all 8 lines for one day."
+              precio="$5/day"
+              enlace="https://www.ventrachicago.com/"
             />
           </div>
         </div>
@@ -287,10 +244,10 @@ export default function ChicagoPage() {
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line
+                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ').toUpperCase() : estacion.linea.toUpperCase()}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
-                    {estacion.intro}
+                    {estacion.descripcion}
                   </p>
                 </div>
               </Link>
@@ -322,7 +279,6 @@ export default function ChicagoPage() {
                   padding: '24px',
                   backgroundColor: 'var(--surface)',
                   borderRadius: 'var(--radius)',
-                  borderLeft: `5px solid ${linea.color}`,
                   border: `1px solid var(--border)`,
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
@@ -341,14 +297,14 @@ export default function ChicagoPage() {
                       fontSize: '1.5rem',
                       fontWeight: '700',
                     }}>
-                      {linea.id[0]}
+                      {linea.id[0].toUpperCase()}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.colorNombre} Line
+                        {linea.nombre}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations · {linea.inicio} to {linea.fin}
+                        {linea.estaciones} stations
                       </p>
                     </div>
                   </div>

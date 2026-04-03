@@ -4,11 +4,7 @@ import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = {
-  'BLUE': '#0064B4',
-  'ORANGE': '#F7931D',
-  'GREEN': '#00A94F'
-};
+const LINE_COLORS = { 'BLUE': '#0064B4', 'ORANGE': '#F7931D', 'GREEN': '#00A94F' };
 
 export async function generateStaticParams() {
   return estacionesSanDiego.map((estacion) => ({
@@ -51,8 +47,8 @@ export default function StationSanDiegoPage({ params }) {
     );
   }
 
-  const lineaId = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
-  const colorLinea = LINE_COLORS[lineaId] || '#0064B4';
+  const lineValue = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
+  const colorLinea = LINE_COLORS[lineValue] || '#0064B4';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -60,7 +56,7 @@ export default function StationSanDiegoPage({ params }) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
       { '@type': 'ListItem', position: 2, name: 'San Diego', item: 'https://metroguia.mx/san-diego/' },
-      { '@type': 'ListItem', position: 3, name: `${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line`, item: `https://metroguia.mx/san-diego/line/${lineaId}/` },
+      { '@type': 'ListItem', position: 3, name: `Line ${lineValue}`, item: `https://metroguia.mx/san-diego/line/${lineValue}/` },
       { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/san-diego/station/${estacion.slug}` },
     ],
   };
@@ -72,21 +68,19 @@ export default function StationSanDiegoPage({ params }) {
     description: estacion.meta_description || estacion.intro,
     url: `https://metroguia.mx/san-diego/station/${estacion.slug}/`,
     isAccessibleForFree: true,
-    address: { '@type': 'PostalAddress', addressLocality: 'San Diego', addressRegion: estacion.municipio || 'California', addressCountry: 'US' },
+    address: { '@type': 'PostalAddress', addressLocality: 'San Diego', addressRegion: 'California', addressCountry: 'US' },
     geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 32.7157, longitude: estacion.lng || -117.1611 },
-    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '05:00', closes: '00:00' },
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '04:30', closes: '00:30' },
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line(s). Use the MetroGuia trip planner for directions.` } });
+  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the Trolley ${lineValue} Line. Use the MetroGuia trip planner for directions.` } });
   if (estacion.pois && estacion.pois.length > 0) {
     const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
     faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });
   }
-  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `Trolley operates 5:00 AM to 12:00 AM. Fare: $2.50 with PRONTO Card.` } });
+  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `Trolley operates 4:30 AM to 12:30 AM. Fare: $2.50 per ride.` } });
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems };
-
-  const accesibilidadObject = estacion.accesibilidad && typeof estacion.accesibilidad === 'object' && !Array.isArray(estacion.accesibilidad);
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
@@ -99,9 +93,9 @@ export default function StationSanDiegoPage({ params }) {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ width: '48px', height: '48px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', fontWeight: '700' }}>
-              {lineaId[0]}
+              {lineValue[0]}
             </span>
-            <span style={{ fontSize: '1rem', fontWeight: '500' }}>{estacion.municipio || 'San Diego'}</span>
+            <span style={{ fontSize: '1rem', fontWeight: '500' }}>San Diego</span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
             {estacion.nombre}
@@ -165,7 +159,7 @@ export default function StationSanDiegoPage({ params }) {
               </div>
             )}
 
-            {accesibilidadObject && (
+            {typeof estacion.accesibilidad === 'object' && estacion.accesibilidad && (
               <div style={{ marginBottom: '48px' }}>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '20px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
                   Accessibility
@@ -202,21 +196,21 @@ export default function StationSanDiegoPage({ params }) {
               </h3>
               <div style={{ display: 'grid', gap: '12px' }}>
                 <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Lines</p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Line</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: colorLinea }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea}
+                    {lineValue} Line
                   </p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Hours</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    5:00 AM – 12:00 AM
+                    4:30 AM – 12:30 AM
                   </p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Frequency</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    5–15 minutes
+                    7–15 minutes
                   </p>
                 </div>
                 <div>
@@ -233,11 +227,11 @@ export default function StationSanDiegoPage({ params }) {
                 Payment
               </h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 12px 0', lineHeight: '1.5' }}>
-                Use PRONTO Card for fastest boarding or buy a single ticket online.
+                Use Pronto card for fastest boarding or buy a single ticket at vending machine.
               </p>
-              <Link href="https://www.sdmts.com/" target="_blank" style={{ textDecoration: 'none' }}>
+              <Link href="https://www.sdmts.com/fares-passes/pronto-card" target="_blank" style={{ textDecoration: 'none' }}>
                 <button style={{ width: '100%', padding: '12px', backgroundColor: colorLinea, color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.95rem', fontWeight: '700', cursor: 'pointer' }}>
-                  Get PRONTO Card
+                  Get Pronto Card
                 </button>
               </Link>
             </div>

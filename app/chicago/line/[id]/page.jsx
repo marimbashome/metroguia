@@ -18,12 +18,14 @@ export async function generateMetadata({ params }) {
       description: 'The requested line does not exist.',
     };
   }
+  const seoTitle = linea.seo_title || `${linea.nombre} — CTA L Chicago`;
+  const metaDesc = linea.meta_description || linea.descripcion;
   return {
-    title: linea.seo_title,
-    description: linea.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
-      title: linea.seo_title,
-      description: linea.meta_description,
+      title: seoTitle,
+      description: metaDesc,
       url: `https://metroguia.mx/chicago/line/${linea.id}`,
     },
   };
@@ -45,38 +47,49 @@ export default function LineChicagoPage({ params }) {
     );
   }
 
+  // Filter stations that serve this line
   const estacionesLinea = estacionesChicago.filter((e) => {
-    if (Array.isArray(e.linea)) {
-      return e.linea.includes(linea.id);
-    }
-    return e.linea === linea.id;
+    const lineasEst = Array.isArray(e.linea) ? e.linea : [e.linea];
+    return lineasEst.includes(linea.id);
   });
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Chicago', item: 'https://metroguia.mx/chicago/' },
+      { '@type': 'ListItem', position: 3, name: linea.nombre, item: `https://metroguia.mx/chicago/line/${linea.id}` },
+    ],
+  };
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800' }}>
-              {linea.id[0]}
+              {linea.id[0].toUpperCase()}
             </span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
-            {linea.colorNombre} Line
+            {linea.nombre}
           </h1>
           <p style={{ fontSize: '1.25rem', margin: '0 0 16px 0', opacity: '0.95' }}>
             {linea.inicio} → {linea.fin}
           </p>
           <p style={{ fontSize: '1rem', margin: '0', opacity: '0.9' }}>
-            {linea.total} stations
+            {estacionesLinea.length} stations
           </p>
         </div>
       </section>
 
       {/* CONTENT */}
       <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '60px 24px' }}>
-        {/* Cards */}
+        {/* Info Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '48px' }}>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Terminals</p>
@@ -84,15 +97,15 @@ export default function LineChicagoPage({ params }) {
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Stations</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>{linea.total}</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>{estacionesLinea.length}</p>
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Frequency</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>2–10 min</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>{linea.frecuencia}</p>
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Cost</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.50</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>{linea.tarifa}</p>
           </div>
         </div>
 
@@ -106,111 +119,63 @@ export default function LineChicagoPage({ params }) {
           </p>
         </div>
 
-        <AdBannerLazy slot="4434764790" />
+        <AdBannerLazy slot="4434764790" format="auto" />
 
-        {/* ONE-DAY ROUTE */}
-        {linea.ruta_1_dia && (
-          <div style={{ marginBottom: '60px', marginTop: '40px' }}>
-            <h2 style={{ fontSize: '1.75rem', fontWeight: '700', marginBottom: '32px', color: 'var(--text)', borderBottom: `3px solid ${linea.color}`, paddingBottom: '16px' }}>
-              {linea.ruta_1_dia.titulo}
-            </h2>
-            <div style={{ display: 'grid', gap: '24px' }}>
-              {linea.ruta_1_dia.paradas.map((parada, idx) => {
-                const estacion = estacionesLinea.find((e) => e.slug === parada.estacion);
-                return (
-                  <div key={idx} style={{ display: 'grid', gridTemplateColumns: '60px 1fr', gap: '24px', alignItems: 'start' }}>
-                    <div style={{ position: 'relative' }}>
-                      <div style={{ width: '60px', height: '60px', backgroundColor: linea.color, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>
-                        {idx + 1}
-                      </div>
-                      {idx < linea.ruta_1_dia.paradas.length - 1 && (
-                        <div style={{ position: 'absolute', left: '29px', top: '60px', width: '2px', height: '100px', backgroundColor: linea.color, opacity: '0.3' }} />
-                      )}
-                    </div>
-                    <div>
-                      <Link href={`/chicago/station/${parada.estacion}`}>
-                        <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: linea.color, cursor: 'pointer' }}>
-                          {estacion?.nombre || parada.estacion}
-                        </h3>
-                      </Link>
-                      <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
-                        {parada.actividad}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-        {/* ALL STATIONS */}
-        <div style={{ marginBottom: '60px', marginTop: '40px' }}>
-          <h2 style={{ fontSize: '1.75rem', fontWeight: '700', marginBottom: '32px', color: 'var(--text)', borderBottom: `3px solid ${linea.color}`, paddingBottom: '16px' }}>
-            All Stations
+        {/* STATIONS LIST */}
+        <div style={{ marginBottom: '60px' }}>
+          <h2 style={{ fontSize: '1.75rem', fontWeight: '700', margin: '0 0 32px 0', color: 'var(--text)' }}>
+            Stations on {linea.nombre}
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'grid', gap: '16px' }}>
             {estacionesLinea.map((estacion, idx) => (
               <Link href={`/chicago/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '20px',
                   backgroundColor: 'var(--surface)',
-                  borderRadius: 'var(--radius)',
+                  borderLeft: `4px solid ${linea.color}`,
+                  borderRadius: 'var(--radius-sm)',
                   border: '1px solid var(--border)',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
                 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
-                    <span style={{ fontSize: '0.8rem', backgroundColor: linea.color, color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: '700' }}>
-                      {idx + 1}
-                    </span>
-                  </div>
-                  <h3 style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
-                    {estacion.nombre}
+                  <h3 style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
+                    {idx + 1}. {estacion.nombre}
                   </h3>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0' }}>
+                    {estacion.descripcion}
+                  </p>
                 </div>
               </Link>
             ))}
           </div>
         </div>
-      </section>
 
-      {/* PAYMENT OPTIONS */}
-      <section style={{ backgroundColor: 'var(--bg)', padding: '80px 24px', borderTop: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2rem',
-            fontWeight: '800',
-            margin: '0 0 48px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            Payment & Passes
+        {/* PAYMENT */}
+        <div style={{ marginBottom: '60px' }}>
+          <h2 style={{ fontSize: '1.75rem', fontWeight: '700', margin: '0 0 32px 0', color: 'var(--text)', textAlign: 'center' }}>
+            Payment Options
           </h2>
-
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
+              icon="🎫"
               titulo="Ventra Card"
-              descripcion="Reloadable contactless card. Works on L, buses, and regional rail."
+              descripcion="Reloadable transit card for CTA and Pace buses."
               precio="$5 + value"
               enlace="https://www.ventrachicago.com/"
             />
-
+            <AffiliateTransportCard
+              icon="🎟️"
+              titulo="CTA Day Pass"
+              descripcion="Unlimited rides on all CTA lines for 24 hours."
+              precio="$5"
+              enlace="https://www.ventrachicago.com/"
+            />
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy tickets via Ventra app or online."
+              descripcion="Purchase single rides via Ventra app."
               precio="$2.50"
-              enlace="https://www.transitchicago.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="1-Day Pass"
-              descripcion="Unlimited L and bus travel for 24 hours."
-              precio="$13"
-              enlace="https://www.transitchicago.com/"
+              enlace="https://www.ventrachicago.com/"
             />
           </div>
         </div>

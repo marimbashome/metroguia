@@ -2325,5 +2325,124 @@ export const zonasUSCA = [
     seo_title: "Midtown Sacramento — Light Rail Guide | MetroGuia",
     meta_description: "How to get to Midtown Sacramento by SacRT Blue Line. Farm-to-fork dining, art galleries, nightlife. Sacramento transit guide.",
     h1: "Midtown Sacramento: Culture & Farm-to-Fork Dining"
+  },
+  {
+    slug: "national-mall-dc",
+    name: "National Mall",
+    nameES: "National Mall",
+    country: "US",
+    state: "DC",
+    coordinates: { lat: 38.8893, lng: -77.0230 },
+    transit_lines: ["Blue", "Orange", "Silver"],
+    description: "America's Front Yard. Washington Monument, Lincoln Memorial, Smithsonian museums, and the Capitol. The most iconic stretch of DC.",
+    pois: [
+      { name: "Smithsonian Museums", nombre: "Museos Smithsonian", type: "museum", distance: "Walking distance" },
+      { name: "Washington Monument", nombre: "Monumento a Washington", type: "landmark", distance: "Walking distance" },
+      { name: "Lincoln Memorial", nombre: "Memorial a Lincoln", type: "landmark", distance: "10 min walk" }
+    ],
+    tips_for_visitors: [
+      "All Smithsonian museums are free — plan at least 2-3 hours per museum",
+      "Use Smithsonian station (Blue/Orange/Silver) or Archives station (Yellow/Green) as starting points",
+      "Best visited on weekday mornings; weekends can be extremely crowded"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Metro to National Mall DC — Smithsonian & Monuments Transit Guide | MetroGuia",
+    meta_description: "How to get to the National Mall by DC Metro. Smithsonian museums, Washington Monument, Lincoln Memorial. Free admission. WMATA transit guide.",
+    h1: "Metro to National Mall: Smithsonian & Monuments"
+  },
+  {
+    slug: "georgetown-dc",
+    name: "Georgetown",
+    nameES: "Georgetown",
+    country: "US",
+    state: "DC",
+    coordinates: { lat: 38.9076, lng: -77.0723 },
+    transit_lines: ["Blue", "Orange", "Silver"],
+    description: "Historic neighborhood with cobblestone streets, upscale shopping on M Street, waterfront dining, and Georgetown University. Not directly on Metro — use Foggy Bottom or Rosslyn station.",
+    pois: [
+      { name: "Georgetown Waterfront", nombre: "Paseo Marítimo de Georgetown", type: "waterfront", distance: "Walking distance" },
+      { name: "Georgetown University", nombre: "Universidad de Georgetown", type: "university", distance: "10 min walk" },
+      { name: "M Street Shopping", nombre: "Compras en M Street", type: "shopping", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "Georgetown has NO Metro station — take Blue/Orange/Silver to Foggy Bottom-GWU and walk 15 min, or use the DC Circulator bus",
+      "Weekend parking is nearly impossible — Metro + walking is your best bet",
+      "Georgetown Cupcake and Martin's Tavern are local favorites"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Metro to Georgetown DC — Shopping & Waterfront Transit Guide | MetroGuia",
+    meta_description: "How to get to Georgetown by DC Metro. Foggy Bottom station, M Street shopping, Georgetown University, waterfront. WMATA guide.",
+    h1: "Metro to Georgetown: Shopping & History"
+  },
+  {
+    slug: "dupont-circle-dc",
+    name: "Dupont Circle",
+    nameES: "Dupont Circle",
+    country: "US",
+    state: "DC",
+    coordinates: { lat: 38.9098, lng: -77.0434 },
+    transit_lines: ["Red"],
+    description: "Vibrant neighborhood known for Embassy Row, art galleries, bookshops, diverse restaurants, and nightlife. Cultural heart of DC's LGBTQ+ community.",
+    pois: [
+      { name: "Embassy Row", nombre: "Fila de Embajadas", type: "landmark", distance: "Walking distance" },
+      { name: "Phillips Collection", nombre: "Colección Phillips", type: "museum", distance: "5 min walk" },
+      { name: "Dupont Circle Park", nombre: "Parque Dupont Circle", type: "park", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "Sunday morning farmers market at Dupont Circle is one of the best in DC",
+      "Walk up Massachusetts Avenue for stunning embassy buildings",
+      "Great coffee shops and bookstores throughout the neighborhood"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Metro to Dupont Circle DC — Embassy Row & Galleries | MetroGuia",
+    meta_description: "How to get to Dupont Circle by Metro. Embassy Row, Phillips Collection, farmers market. Red Line. DC transit guide.",
+    h1: "Metro to Dupont Circle: Embassies & Culture"
+  },
+  {
+    slug: "capitol-hill-dc",
+    name: "Capitol Hill",
+    nameES: "Capitol Hill",
+    country: "US",
+    state: "DC",
+    coordinates: { lat: 38.8899, lng: -77.0091 },
+    transit_lines: ["Blue", "Orange", "Silver"],
+    description: "Home to the U.S. Capitol, Supreme Court, Library of Congress, and the charming Eastern Market. Political heart of America.",
+    pois: [
+      { name: "U.S. Capitol Building", nombre: "Capitolio de EE.UU.", type: "government", distance: "Walking distance" },
+      { name: "Library of Congress", nombre: "Biblioteca del Congreso", type: "museum", distance: "5 min walk" },
+      { name: "Eastern Market", nombre: "Eastern Market", type: "market", distance: "10 min walk" }
+    ],
+    tips_for_visitors: [
+      "Free tours of the Capitol — book online in advance through your representative's office",
+      "Library of Congress is free and often overlooked — stunning interior",
+      "Eastern Market weekend flea market is a must-visit"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Metro to Capitol Hill DC — U.S. Capitol & Library of Congress | MetroGuia",
+    meta_description: "How to get to Capitol Hill by Metro. U.S. Capitol, Library of Congress, Supreme Court, Eastern Market. Blue/Orange/Silver Line.",
+    h1: "Metro to Capitol Hill: America's Political Heart"
+  },
+  {
+    slug: "adams-morgan-dc",
+    name: "Adams Morgan",
+    nameES: "Adams Morgan",
+    country: "US",
+    state: "DC",
+    coordinates: { lat: 38.9217, lng: -77.0429 },
+    transit_lines: ["Red"],
+    description: "DC's most diverse and colorful neighborhood. International restaurants, dive bars, vintage shops, and vibrant street art. Use Woodley Park-Zoo station.",
+    pois: [
+      { name: "18th Street NW", nombre: "Calle 18 NW", type: "entertainment", distance: "Walking distance" },
+      { name: "Madam's Organ", nombre: "Madam's Organ", type: "nightlife", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "Use Woodley Park-Zoo/Adams Morgan station (Red Line) — 10 minute walk uphill to 18th Street",
+      "Ethiopian restaurants on 18th Street are some of the best outside Ethiopia",
+      "DC's best nightlife strip with bars and live music"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Metro to Adams Morgan DC — International Dining & Nightlife | MetroGuia",
+    meta_description: "How to get to Adams Morgan by Metro. 18th Street restaurants, nightlife, Ethiopian food. Woodley Park station. DC guide.",
+    h1: "Metro to Adams Morgan: DC's Cultural Melting Pot"
   }
 ]

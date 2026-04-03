@@ -5,14 +5,14 @@ import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
 const LINE_COLORS = {
-  'RED': '#C60C30',
-  'BLUE': '#00A1DE',
-  'BROWN': '#62361B',
-  'GREEN': '#009B3A',
-  'ORANGE': '#F9461C',
-  'PINK': '#E27EA6',
-  'PURPLE': '#522398',
-  'YELLOW': '#F9E300'
+  'red': '#C60C30',
+  'blue': '#00A1DE',
+  'brown': '#62361B',
+  'green': '#009B3A',
+  'orange': '#F9461C',
+  'pink': '#E27EA6',
+  'purple': '#522398',
+  'yellow': '#F9E300',
 };
 
 export async function generateStaticParams() {
@@ -29,12 +29,14 @@ export async function generateMetadata({ params }) {
       description: 'The requested station does not exist.',
     };
   }
+  const seoTitle = estacion.seo_title || `${estacion.nombre} CTA L Station — Chicago Transit`;
+  const metaDesc = estacion.meta_description || estacion.descripcion;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: metaDesc,
     openGraph: {
-      title: estacion.seo_title,
-      description: estacion.meta_description,
+      title: seoTitle,
+      description: metaDesc,
       url: `https://metroguia.mx/chicago/station/${estacion.slug}`,
     },
   };
@@ -56,8 +58,8 @@ export default function StationChicagoPage({ params }) {
     );
   }
 
-  const lineaId = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
-  const colorLinea = LINE_COLORS[lineaId] || '#00A1DE';
+  const lineas = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
+  const colorPrimaria = LINE_COLORS[lineas[0]] || '#00A1DE';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -65,8 +67,7 @@ export default function StationChicagoPage({ params }) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
       { '@type': 'ListItem', position: 2, name: 'Chicago', item: 'https://metroguia.mx/chicago/' },
-      { '@type': 'ListItem', position: 3, name: `${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line`, item: `https://metroguia.mx/chicago/line/${lineaId}/` },
-      { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/chicago/station/${estacion.slug}` },
+      { '@type': 'ListItem', position: 3, name: estacion.nombre, item: `https://metroguia.mx/chicago/station/${estacion.slug}` },
     ],
   };
 
@@ -74,24 +75,27 @@ export default function StationChicagoPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'TransitStation',
     name: estacion.nombre,
-    description: estacion.meta_description || estacion.intro,
+    description: estacion.descripcion,
     url: `https://metroguia.mx/chicago/station/${estacion.slug}/`,
     isAccessibleForFree: true,
-    address: { '@type': 'PostalAddress', addressLocality: 'Chicago', addressRegion: estacion.municipio || 'Illinois', addressCountry: 'US' },
-    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 41.8781, longitude: estacion.lng || -87.6298 },
-    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '04:00', closes: '23:30' },
+    address: { '@type': 'PostalAddress', addressLocality: 'Chicago', addressRegion: 'Illinois', addressCountry: 'US' },
+    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat, longitude: estacion.lng },
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '04:00', closes: '01:30' },
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line(s). Use the MetroGuia trip planner for directions.` } });
-  if (estacion.pois && estacion.pois.length > 0) {
-    const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
-    faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });
+  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the CTA L lines: ${lineas.join(', ').toUpperCase()}. Use the MetroGuia trip planner for directions.` } });
+  if (estacion.lugares_cercanos && estacion.lugares_cercanos.length > 0) {
+    const lugarList = estacion.lugares_cercanos.slice(0, 5).join(', ');
+    faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby locations: ${lugarList}.` } });
   }
-  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `CTA L operates 4:00 AM to 11:30 PM on most lines (24h on Red and Blue). Fare: $2.50 with Ventra Card.` } });
+  if (estacion.conexiones && estacion.conexiones.length > 0) {
+    faqItems.push({ '@type': 'Question', name: `What transfers are available?`, acceptedAnswer: { '@type': 'Answer', text: `Connections: ${estacion.conexiones.join(', ')}.` } });
+  }
+  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `CTA L operates 4 AM to 1:30 AM (Red and Blue lines 24 hours). Fare: $2.50 with Ventra Card.` } });
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems };
 
-  const accesibilidadObject = estacion.accesibilidad && typeof estacion.accesibilidad === 'object' && !Array.isArray(estacion.accesibilidad);
+  const isAccessible = typeof estacion.accesibilidad === 'boolean' ? estacion.accesibilidad : (estacion.accesibilidad && typeof estacion.accesibilidad === 'object' ? estacion.accesibilidad.accessible : false);
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
@@ -100,19 +104,19 @@ export default function StationChicagoPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
-      <section style={{ background: `linear-gradient(135deg, ${colorLinea} 0%, ${colorLinea}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
+      <section style={{ background: `linear-gradient(135deg, ${colorPrimaria} 0%, ${colorPrimaria}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ width: '48px', height: '48px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', fontWeight: '700' }}>
-              {lineaId[0]}
+              {lineas[0][0].toUpperCase()}
             </span>
-            <span style={{ fontSize: '1rem', fontWeight: '500' }}>{estacion.municipio || 'Chicago'}</span>
+            <span style={{ fontSize: '1rem', fontWeight: '500' }}>Chicago, Illinois</span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
             {estacion.nombre}
           </h1>
           <p style={{ fontSize: '1.125rem', margin: '0', opacity: '0.95', maxWidth: '700px', lineHeight: '1.6' }}>
-            {estacion.intro}
+            {estacion.descripcion}
           </p>
         </div>
       </section>
@@ -124,30 +128,59 @@ export default function StationChicagoPage({ params }) {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '48px' }}>
           {/* LEFT */}
           <div>
-            {estacion.descripcion_turistica && (
-              <div style={{ marginBottom: '48px' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '16px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
-                  About This Station
-                </h2>
-                <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.8' }}>
-                  {estacion.descripcion_turistica}
-                </p>
+            {/* Lines served */}
+            <div style={{ marginBottom: '48px' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '16px', color: 'var(--text)', borderBottom: `3px solid ${colorPrimaria}`, paddingBottom: '12px' }}>
+                Lines Serving This Station
+              </h2>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                {lineas.map((lineId, idx) => {
+                  const lineColor = LINE_COLORS[lineId] || '#999';
+                  return (
+                    <Link href={`/chicago/line/${lineId}`} key={idx} style={{ textDecoration: 'none' }}>
+                      <button style={{
+                        padding: '8px 16px',
+                        backgroundColor: lineColor,
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '4px',
+                        fontWeight: '700',
+                        fontSize: '0.9rem',
+                        cursor: 'pointer',
+                        transition: 'opacity 0.3s',
+                      }}>
+                        {lineId.toUpperCase()} Line
+                      </button>
+                    </Link>
+                  );
+                })}
               </div>
-            )}
+            </div>
 
-            {(estacion.pois || []).length > 0 && (
+            {/* About */}
+            <div style={{ marginBottom: '48px' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '16px', color: 'var(--text)', borderBottom: `3px solid ${colorPrimaria}`, paddingBottom: '12px' }}>
+                About This Station
+              </h2>
+              <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.8' }}>
+                {estacion.descripcion}
+              </p>
+            </div>
+
+            {/* Nearby locations */}
+            {estacion.lugares_cercanos && estacion.lugares_cercanos.length > 0 && (
               <div style={{ marginBottom: '48px' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '24px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
-                  Nearby Attractions
+                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '24px', color: 'var(--text)', borderBottom: `3px solid ${colorPrimaria}`, paddingBottom: '12px' }}>
+                  Nearby Locations
                 </h2>
                 <div style={{ display: 'grid', gap: '12px' }}>
-                  {estacion.pois.map((poi, idx) => {
-                    const poiName = typeof poi === 'string' ? poi : poi.nombre;
-                    const poiDetail = typeof poi === 'string' ? null : `${poi.tipo} · ${poi.distancia}`;
+                  {estacion.lugares_cercanos.map((lugar, idx) => {
+                    const lugarName = typeof lugar === 'string' ? lugar : lugar.nombre;
+                    const lugarDetail = typeof lugar === 'string' ? null : `${lugar.tipo || ''} · ${lugar.distancia || ''}`;
                     return (
-                      <div key={idx} style={{ padding: '16px', backgroundColor: 'var(--surface)', borderLeft: `4px solid ${colorLinea}`, borderRadius: 'var(--radius-sm)' }}>
-                        <h3 style={{ fontSize: '1rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>{poiName}</h3>
-                        {poiDetail && <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: '0' }}>{poiDetail}</p>}
+                      <div key={idx} style={{ padding: '16px', backgroundColor: 'var(--surface)', borderLeft: `4px solid ${colorPrimaria}`, borderRadius: 'var(--radius-sm)' }}>
+                        <h3 style={{ fontSize: '1rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>{lugarName}</h3>
+                        {lugarDetail && <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: '0' }}>{lugarDetail}</p>}
                       </div>
                     );
                   })}
@@ -155,97 +188,54 @@ export default function StationChicagoPage({ params }) {
               </div>
             )}
 
-            {(Array.isArray(estacion.tips) && estacion.tips.length > 0) && (
+            {/* Connections */}
+            {estacion.conexiones && estacion.conexiones.length > 0 && (
               <div style={{ marginBottom: '48px' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '24px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
-                  Tips
+                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '16px', color: 'var(--text)', borderBottom: `3px solid ${colorPrimaria}`, paddingBottom: '12px' }}>
+                  Transit Connections
                 </h2>
-                <ul style={{ listStyle: 'none', padding: '0', margin: '0', display: 'grid', gap: '10px' }}>
-                  {estacion.tips.map((tip, idx) => (
-                    <li key={idx} style={{ padding: '12px 16px', backgroundColor: 'var(--surface)', borderLeft: '4px solid var(--success)', borderRadius: 'var(--radius-sm)', fontSize: '0.95rem', color: 'var(--text)' }}>
-                      {tip}
-                    </li>
+                <ul style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
+                  {estacion.conexiones.map((conn, idx) => (
+                    <li key={idx}>{conn}</li>
                   ))}
                 </ul>
-              </div>
-            )}
-
-            {accesibilidadObject && (
-              <div style={{ marginBottom: '48px' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '20px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
-                  Accessibility
-                </h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '12px' }}>
-                  <div style={{ padding: '12px', backgroundColor: estacion.accesibilidad.elevador ? 'rgba(22,163,74,0.1)' : 'var(--surface)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                    <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Elevator</p>
-                    <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: estacion.accesibilidad.elevador ? 'var(--success)' : 'var(--text-dim)' }}>
-                      {estacion.accesibilidad.elevador ? '✓' : '✗'}
-                    </p>
-                  </div>
-                  <div style={{ padding: '12px', backgroundColor: estacion.accesibilidad.rampa ? 'rgba(22,163,74,0.1)' : 'var(--surface)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                    <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Ramp</p>
-                    <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: estacion.accesibilidad.rampa ? 'var(--success)' : 'var(--text-dim)' }}>
-                      {estacion.accesibilidad.rampa ? '✓' : '✗'}
-                    </p>
-                  </div>
-                  <div style={{ padding: '12px', backgroundColor: estacion.accesibilidad.piso_tactil ? 'rgba(22,163,74,0.1)' : 'var(--surface)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                    <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>Tactile Path</p>
-                    <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: estacion.accesibilidad.piso_tactil ? 'var(--success)' : 'var(--text-dim)' }}>
-                      {estacion.accesibilidad.piso_tactil ? '✓' : '✗'}
-                    </p>
-                  </div>
-                </div>
               </div>
             )}
           </div>
 
           {/* RIGHT SIDEBAR */}
           <div>
-            <div style={{ backgroundColor: 'var(--surface)', padding: '24px', borderRadius: 'var(--radius)', marginBottom: '24px', borderTop: `4px solid ${colorLinea}` }}>
+            {/* Info card */}
+            <div style={{ backgroundColor: 'var(--surface)', padding: '24px', borderRadius: 'var(--radius)', marginBottom: '32px', borderLeft: `4px solid ${colorPrimaria}` }}>
               <h3 style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0 0 16px 0', color: 'var(--text)' }}>
                 Quick Info
               </h3>
-              <div style={{ display: 'grid', gap: '12px' }}>
+              <div style={{ display: 'grid', gap: '12px', fontSize: '0.9rem' }}>
                 <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Lines</p>
-                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: colorLinea }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea}
-                  </p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 4px 0', fontWeight: '600' }}>Fare</p>
+                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: colorPrimaria }}>$2.50 (Ventra Card)</p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Hours</p>
-                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    4:00 AM – 11:30 PM
-                  </p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 4px 0', fontWeight: '600' }}>Hours</p>
+                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>4 AM – 1:30 AM</p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Frequency</p>
-                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    2–10 minutes
-                  </p>
-                </div>
-                <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Fare</p>
-                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>
-                    $2.50
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', margin: '0 0 4px 0', fontWeight: '600' }}>Accessible</p>
+                  <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: isAccessible ? 'var(--success)' : 'var(--danger)' }}>
+                    {isAccessible ? 'Yes' : 'Contact CTA'}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div style={{ backgroundColor: 'var(--surface)', padding: '24px', borderRadius: 'var(--radius)', borderTop: `4px solid var(--warning)` }}>
-              <h3 style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0 0 16px 0', color: 'var(--text)' }}>
-                Payment
-              </h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 12px 0', lineHeight: '1.5' }}>
-                Use Ventra Card for fastest boarding or buy a single ticket online.
-              </p>
-              <Link href="https://www.ventrachicago.com/" target="_blank" style={{ textDecoration: 'none' }}>
-                <button style={{ width: '100%', padding: '12px', backgroundColor: colorLinea, color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.95rem', fontWeight: '700', cursor: 'pointer' }}>
-                  Get Ventra Card
-                </button>
-              </Link>
-            </div>
+            {/* Ventra card */}
+            <AffiliateTransportCard
+              icon="🎫"
+              titulo="Ventra Card"
+              descripcion="Pay-as-you-go or pass options."
+              precio="$2.50/ride"
+              enlace="https://www.ventrachicago.com/"
+            />
           </div>
         </div>
       </section>

@@ -5183,6 +5183,23 @@ export const rutasPopulares = [
   { origen: "sacramento-16th-st", destino: "sacramento-29th-st", titulo: "Capitol to Midtown Sacramento", connector: "to" },
   { origen: "sacramento-university-65th", destino: "sacramento-cathedral-square-13th", titulo: "Sac State to Capitol (Blue Line)", connector: "to" },
   { origen: "sacramento-township-9", destino: "sacramento-sacramento-valley-station", titulo: "Township 9 to Old Sacramento (Green Line)", connector: "to" },
+
+  // Washington DC — WMATA Metro
+  { origen: "metro-ronald-reagan-national-airport", destino: "metro-metro-center", titulo: "Reagan Airport to Downtown DC (WMATA)" },
+  { origen: "metro-dulles-airport", destino: "metro-metro-center", titulo: "Dulles Airport to Downtown DC (WMATA)" },
+  { origen: "metro-union-station", destino: "metro-smithsonian", titulo: "Union Station to National Mall (WMATA)" },
+  { origen: "metro-dupont-circle", destino: "metro-gallery-pl-chinatown", titulo: "Dupont Circle to Chinatown (WMATA)" },
+  { origen: "metro-arlington-cemetery", destino: "metro-smithsonian", titulo: "Arlington Cemetery to Smithsonian (WMATA)" },
+  { origen: "metro-pentagon", destino: "metro-metro-center", titulo: "Pentagon to Downtown DC (WMATA)" },
+  { origen: "metro-bethesda", destino: "metro-l-enfant-plaza", titulo: "Bethesda to National Mall (WMATA)" },
+  { origen: "metro-union-station", destino: "metro-navy-yard-ballpark", titulo: "Union Station to Navy Yard (WMATA)" },
+  { origen: "metro-ronald-reagan-national-airport", destino: "metro-smithsonian", titulo: "Reagan Airport to Smithsonian Museums (WMATA)" },
+  { origen: "metro-columbia-heights", destino: "metro-gallery-pl-chinatown", titulo: "Columbia Heights to Gallery Place (WMATA)" },
+  { origen: "metro-foggy-bottom-gwu", destino: "metro-capitol-south", titulo: "Foggy Bottom to Capitol Hill (WMATA)" },
+  { origen: "metro-rosslyn", destino: "metro-metro-center", titulo: "Rosslyn to Downtown DC (WMATA)" },
+  { origen: "metro-u-street", destino: "metro-waterfront", titulo: "U Street to The Wharf (WMATA)" },
+  { origen: "metro-metro-center", destino: "metro-navy-yard-ballpark", titulo: "Downtown to Nationals Park (WMATA)" },
+  { origen: "metro-king-street-old-town", destino: "metro-metro-center", titulo: "Old Town Alexandria to Downtown DC (WMATA)" },
 ];
 
 

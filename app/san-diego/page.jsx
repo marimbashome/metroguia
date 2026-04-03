@@ -7,12 +7,12 @@ import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
-  title: 'MTS Trolley Guide — San Diego Rail Transit | MetroGuia',
-  description: 'MTS Trolley guide: 55 stations, 3 lines in San Diego metro. Blue, Orange, and Green lines. PRONTO card. Complete trip planner, schedule & fares.',
-  keywords: 'MTS, San Diego Trolley, PRONTO card, San Diego transit, Blue Line, Orange Line, Green Line',
+  title: 'MTS Trolley Guide — San Diego Transit | MetroGuia',
+  description: 'MTS Trolley guide: 55 stations, 3 lines in San Diego. Blue, Orange, Green lines. Pronto Card. Complete trip planner, schedule & fares.',
+  keywords: 'MTS, Trolley, San Diego transit, Gaslamp Quarter, Downtown, Pronto card, California',
   openGraph: {
-    title: 'MTS Trolley — San Diego Transit',
-    description: 'Discover San Diego\'s trolley system. Direct access to downtown, airport, and neighborhoods.',
+    title: 'MTS Trolley — San Diego Express Transit',
+    description: 'Discover San Diego Trolley system. Direct access to Downtown, Gaslamp Quarter, and regional connections.',
     url: 'https://metroguia.mx/san-diego',
     type: 'website',
   },
@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const estacionesDestacadas = estacionesSanDiego.filter(e =>
-  ['sd-downtown', 'sd-gaslamp', 'sd-airport', 'sd-civic', 'sd-old-town'].includes(e.slug)
+  ['sd-gaslamp-quarter', 'sd-convention-center', 'sd-downtown-san-diego', 'sd-fashion-valley', 'sd-trolley-depot'].includes(e.slug)
 );
 
 export default function SanDiegoPage() {
@@ -43,7 +43,7 @@ export default function SanDiegoPage() {
 
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #0064B4 0%, #004A8D 100%)',
+        background: 'linear-gradient(135deg, #0064B4 0%, #004A8A 100%)',
         color: '#FFFFFF',
         padding: '80px 24px',
         textAlign: 'center',
@@ -81,7 +81,7 @@ export default function SanDiegoPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            San Diego's light rail system connecting downtown, Gaslamp Quarter, airport, and neighborhoods throughout the city and region.
+            San Diego's modern light rail connecting downtown to Gaslamp Quarter, Fashion Valley, and regional transit centers.
           </p>
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function SanDiegoPage() {
           </div>
           <div>
             <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0064B4', margin: '0 0 8px 0' }}>
-              5–15 min
+              7–15 min
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Frequency
@@ -150,7 +150,7 @@ export default function SanDiegoPage() {
             marginBottom: '24px',
             color: 'var(--text-muted)',
           }}>
-            Calculate the best route between MTS Trolley stations
+            Calculate the best route between Trolley stations
           </p>
           <SearchBar ciudad="san-diego" />
         </div>
@@ -158,59 +158,7 @@ export default function SanDiegoPage() {
 
       <AdBannerLazy slot="4434764790" format="auto" />
 
-      {/* TRANSIT INFO */}
-      <section style={{
-        backgroundColor: 'var(--bg)',
-        padding: '80px 24px',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            fontWeight: '800',
-            margin: '0 0 16px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            San Diego Transportation
-          </h2>
-          <p style={{
-            fontSize: '1.125rem',
-            color: 'var(--text-muted)',
-            textAlign: 'center',
-            margin: '0 0 48px 0',
-            maxWidth: '700px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}>
-            The MTS Trolley is San Diego's primary light rail system, providing convenient access to downtown attractions, historic neighborhoods, and regional destinations.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                Downtown & Gaslamp
-              </h3>
-              <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', lineHeight: '1.6' }}>
-                The Blue Line connects downtown San Diego to the historic Gaslamp Quarter and beyond.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                Three Modern Lines
-              </h3>
-              <ul style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                <li>Blue, Orange, and Green lines</li>
-                <li>Quick access to neighborhoods</li>
-                <li>Modern, clean transit experience</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PAYMENT & CARDS */}
+      {/* TRANSIT CARDS */}
       <section style={{
         backgroundColor: 'var(--bg)',
         padding: '80px 24px',
@@ -224,32 +172,32 @@ export default function SanDiegoPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            PRONTO Card
+            🎫 Pronto Card
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
-              titulo="PRONTO Card"
-              descripcion="Reloadable card for MTS Trolley and bus. Works throughout San Diego."
-              precio="$2 (card) + rides"
+              icon="🎫"
+              titulo="Pronto Card"
+              descripcion="Reloadable card for all San Diego transit. Works on Trolley, buses, and regional services."
+              precio="$2 (card) + value"
               enlace="https://www.sdmts.com/fares-passes/pronto-card"
             />
 
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy single rides via MTS app."
+              descripcion="Buy single rides or passes via MTS app."
               precio="$2.50"
               enlace="https://www.sdmts.com/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
+              icon="🚊"
               titulo="Day Pass"
-              descripcion="Unlimited trolley travel for 24 hours."
-              precio="$7.50"
-              enlace="https://www.sdmts.com/"
+              descripcion="Unlimited Trolley travel for 24 hours."
+              precio="$6"
+              enlace="https://www.sdmts.com/fares-passes"
             />
           </div>
         </div>
@@ -269,7 +217,7 @@ export default function SanDiegoPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Featured Stations
+            ⭐ Featured Stations
           </h2>
 
           <div style={{ display: 'grid', gap: '24px' }}>
@@ -287,7 +235,7 @@ export default function SanDiegoPage() {
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line
+                    Line {Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
                     {estacion.intro}
@@ -312,7 +260,7 @@ export default function SanDiegoPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            MTS Trolley Lines
+            Trolley Lines
           </h2>
 
           <div style={{ display: 'grid', gap: '20px' }}>
@@ -341,14 +289,14 @@ export default function SanDiegoPage() {
                       fontSize: '1.5rem',
                       fontWeight: '700',
                     }}>
-                      {linea.id[0]}
+                      {linea.id}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.colorNombre} Line
+                        {linea.inicio} → {linea.fin}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations · {linea.inicio} to {linea.fin}
+                        {linea.total} stations
                       </p>
                     </div>
                   </div>
