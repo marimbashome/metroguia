@@ -2,6 +2,7 @@ import { estacionesCampeche } from '@/data/campeche/estaciones';
 import { lineasCampeche } from '@/data/campeche/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesCampeche.map((estacion) => ({ slug: estacion.slug }));

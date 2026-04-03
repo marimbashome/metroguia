@@ -3,6 +3,7 @@ import { lineasSaltLakeCity } from '@/data/salt-lake-city/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 const LINE_COLORS = {
   'blue': '#0055A4',

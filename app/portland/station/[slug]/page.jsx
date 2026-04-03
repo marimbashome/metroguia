@@ -3,6 +3,7 @@ import { lineasPortland } from '@/data/portland/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 const LINE_COLORS = {
   'blue': '#0054A4',
@@ -56,7 +57,7 @@ export default function StationPortlandPage({ params }) {
     );
   }
 
-  const primaryLineColor = LINE_COLORS[estacion.linea[0]] || '#0054A4';
+  const primaryLineColor = getPrimaryLineColor(estacion.linea, LINE_COLORS);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -81,7 +82,7 @@ export default function StationPortlandPage({ params }) {
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${estacion.linea.join(', ')} line(s). Use the MetroGuia trip planner for directions.` } });
+  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${joinLinea(estacion.linea, ', ')} line(s). Use the MetroGuia trip planner for directions.` } });
   if (estacion.pois && estacion.pois.length > 0) {
     const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
     faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });
@@ -99,7 +100,7 @@ export default function StationPortlandPage({ params }) {
       <section style={{ background: `linear-gradient(135deg, ${primaryLineColor} 0%, ${primaryLineColor}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-            {estacion.linea.map((linea) => (
+            {normalizeLinea(estacion.linea).map((linea) => (
               <span key={linea} style={{
                 width: '48px',
                 height: '48px',
@@ -133,7 +134,7 @@ export default function StationPortlandPage({ params }) {
             Lines Served
           </h2>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            {estacion.linea.map((linea) => {
+            {normalizeLinea(estacion.linea).map((linea) => {
               const lineData = lineasPortland.find(l => l.id === linea);
               return (
                 <Link key={linea} href={`/portland/line/${linea}`}>

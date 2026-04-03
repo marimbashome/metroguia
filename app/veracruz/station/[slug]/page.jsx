@@ -2,6 +2,7 @@ import { estacionesVeracruz } from '@/data/veracruz/estaciones';
 import { lineasVeracruz } from '@/data/veracruz/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesVeracruz.map((estacion) => ({ slug: estacion.slug }));

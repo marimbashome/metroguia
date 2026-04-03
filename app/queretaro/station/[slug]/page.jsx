@@ -2,6 +2,7 @@ import { estacionesQueretaro } from '@/data/queretaro/estaciones';
 import { lineasQueretaro } from '@/data/queretaro/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesQueretaro.map((estacion) => ({ slug: estacion.slug }));

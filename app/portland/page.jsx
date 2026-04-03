@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
   title: 'TriMet MAX Light Rail & Portland Streetcar Guide — Portland Transit | MetroGuia',
@@ -166,7 +167,7 @@ export default function PortlandPage() {
               }}
               >
                 <div style={{ marginBottom: '12px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  {estacion.linea.slice(0, 3).map((linea) => {
+                  {sliceLinea(estacion.linea, 3).map((linea) => {
                     const colors = {
                       'blue': '#0054A4',
                       'red': '#D81526',

@@ -2,6 +2,7 @@ import { estacionesLeon } from '@/data/leon/estaciones';
 import { lineasLeon } from '@/data/leon/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesLeon.map((estacion) => ({ slug: estacion.slug }));

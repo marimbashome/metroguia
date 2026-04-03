@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import { sliceLinea } from '@/app/utils/linea-helpers';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {

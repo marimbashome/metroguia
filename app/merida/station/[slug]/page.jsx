@@ -2,6 +2,7 @@ import { estacionesMerida } from '@/data/merida/estaciones';
 import { lineasMerida } from '@/data/merida/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesMerida.map((estacion) => ({ slug: estacion.slug }));

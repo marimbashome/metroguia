@@ -2,6 +2,7 @@ import { estacionesVillahermosa } from '@/data/villahermosa/estaciones';
 import { lineasVillahermosa } from '@/data/villahermosa/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesVillahermosa.map((estacion) => ({ slug: estacion.slug }));

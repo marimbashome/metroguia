@@ -2,6 +2,7 @@ import { estacionesChihuahua } from '@/data/chihuahua/estaciones';
 import { lineasChihuahua } from '@/data/chihuahua/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesChihuahua.map((estacion) => ({ slug: estacion.slug }));

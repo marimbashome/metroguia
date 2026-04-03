@@ -2,6 +2,7 @@ import { estacionesMorelia } from '@/data/morelia/estaciones';
 import { lineasMorelia } from '@/data/morelia/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesMorelia.map((estacion) => ({ slug: estacion.slug }));

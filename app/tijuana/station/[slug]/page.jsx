@@ -2,6 +2,7 @@ import { estacionesTijuana } from '@/data/tijuana/estaciones';
 import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesTijuana.map((estacion) => ({ slug: estacion.slug }));

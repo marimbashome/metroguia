@@ -2,6 +2,7 @@ import { estacionesTrenMaya } from '@/data/tren-maya/estaciones';
 import { lineasTrenMaya } from '@/data/tren-maya/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
+import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
 export async function generateStaticParams() {
   return estacionesTrenMaya.map((estacion) => ({ slug: estacion.slug }));
