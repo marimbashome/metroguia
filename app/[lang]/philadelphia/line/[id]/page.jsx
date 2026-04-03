@@ -1,4 +1,4 @@
-import { bslDetalle } from '@/data/philadelphia/lineas-detalle';
+import { lineasPhiladelphia } from '@/data/philadelphia/lineas-detalle';
 import { estacionesPhiladelphia } from '@/data/philadelphia/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
@@ -9,7 +9,7 @@ export function generateStaticParams() {
   const defaultLang = getDefaultLangForCity('philadelphia');
   const params = [];
   LANGUAGES.filter(l => l !== defaultLang).forEach(lang => {
-    bslDetalle.forEach(linea => {
+    lineasPhiladelphia.forEach(linea => {
       params.push({ lang, id: linea.id });
     });
   });
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const linea = bslDetalle.find(l => l.id === params.id);
+  const linea = lineasPhiladelphia.find(l => l.id === params.id);
   if (!linea) return { title: 'Line not found — MetroGuia' };
   return buildMetadata({
     lang: params.lang,
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
 export default function LinePhiladelphiaPageLang({ params }) {
   const lang = params.lang;
   const translations = require(`@/translations/${lang}.json`);
-  const linea = bslDetalle.find(l => l.id === params.id);
+  const linea = lineasPhiladelphia.find(l => l.id === params.id);
 
   if (!linea) {
     return (
