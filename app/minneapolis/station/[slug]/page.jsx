@@ -1,26 +1,18 @@
-import { estacionesDC } from '@/data/washington-dc/estaciones';
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
+import { estacionesMinneapolis } from '@/data/minneapolis/estaciones';
+import { lineasDetalleMinneapolis } from '@/data/minneapolis/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
 
-const LINE_COLORS = {
-  'RED': '#BF0D3E',
-  'BLUE': '#009CDE',
-  'ORANGE': '#ED8B00',
-  'SILVER': '#A2A4A1',
-  'GREEN': '#00B140',
-  'YELLOW': '#FFD100'
-};
+const LINE_COLORS = { 'BLUE': '#0053A0', 'GREEN': '#00A94F' };
 
 export async function generateStaticParams() {
-  return estacionesDC.map((estacion) => ({
+  return estacionesMinneapolis.map((estacion) => ({
     slug: estacion.slug,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const estacion = estacionesDC.find((e) => e.slug === params.slug);
+  const estacion = estacionesMinneapolis.find((e) => e.slug === params.slug);
   if (!estacion) {
     return {
       title: 'Station not found',
@@ -33,21 +25,21 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: estacion.seo_title,
       description: estacion.meta_description,
-      url: `https://metroguia.mx/washington-dc/station/${estacion.slug}`,
+      url: `https://metroguia.mx/minneapolis/station/${estacion.slug}`,
     },
   };
 }
 
-export default function StationWashingtonDCPage({ params }) {
-  const estacion = estacionesDC.find((e) => e.slug === params.slug);
+export default function StationMinneapolisPage({ params }) {
+  const estacion = estacionesMinneapolis.find((e) => e.slug === params.slug);
 
   if (!estacion) {
     return (
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Station not found</h1>
-        <Link href="/washington-dc">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#004A99', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
-            Back to Washington DC
+        <Link href="/minneapolis">
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#0053A0', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+            Back to Minneapolis
           </button>
         </Link>
       </main>
@@ -55,16 +47,16 @@ export default function StationWashingtonDCPage({ params }) {
   }
 
   const lineaId = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
-  const colorLinea = LINE_COLORS[lineaId] || '#004A99';
+  const colorLinea = LINE_COLORS[lineaId] || '#0053A0';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Washington DC', item: 'https://metroguia.mx/washington-dc/' },
-      { '@type': 'ListItem', position: 3, name: `${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line`, item: `https://metroguia.mx/washington-dc/line/${lineaId}/` },
-      { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/washington-dc/station/${estacion.slug}` },
+      { '@type': 'ListItem', position: 2, name: 'Minneapolis', item: 'https://metroguia.mx/minneapolis/' },
+      { '@type': 'ListItem', position: 3, name: `Line ${lineaId}`, item: `https://metroguia.mx/minneapolis/line/${lineaId}/` },
+      { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/minneapolis/station/${estacion.slug}` },
     ],
   };
 
@@ -73,23 +65,23 @@ export default function StationWashingtonDCPage({ params }) {
     '@type': 'TransitStation',
     name: estacion.nombre,
     description: estacion.meta_description || estacion.intro,
-    url: `https://metroguia.mx/washington-dc/station/${estacion.slug}/`,
+    url: `https://metroguia.mx/minneapolis/station/${estacion.slug}/`,
     isAccessibleForFree: true,
-    address: { '@type': 'PostalAddress', addressLocality: 'Washington', addressRegion: estacion.municipio || 'DC', addressCountry: 'US' },
-    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 38.8951, longitude: estacion.lng || -77.0369 },
-    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '05:00', closes: '00:00' },
+    address: { '@type': 'PostalAddress', addressLocality: 'Minneapolis', addressRegion: estacion.municipio || 'Minnesota', addressCountry: 'US' },
+    geo: { '@type': 'GeoCoordinates', latitude: estacion.lat || 44.9778, longitude: estacion.lng || -93.2650 },
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '04:30', closes: '01:00' },
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line(s). Use the MetroGuia trip planner for directions.` } });
+  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the Metro Transit ${lineaId} Line. Use the MetroGuia trip planner for directions.` } });
   if (estacion.pois && estacion.pois.length > 0) {
     const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
     faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });
   }
-  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `Metro operates 5:00 AM to 12:00 AM. Fare: $2.25 with SmarTrip Card.` } });
+  faqItems.push({ '@type': 'Question', name: `What are the hours and fares?`, acceptedAnswer: { '@type': 'Answer', text: `Metro Transit Light Rail operates 4:30 AM to 1:00 AM. Fare: $2.00 with Go-To Card.` } });
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems };
 
-  const accesibilidadObject = estacion.accesibilidad && typeof estacion.accesibilidad === 'object' && !Array.isArray(estacion.accesibilidad);
+  const isAccesible = typeof estacion.accesibilidad === 'boolean' ? estacion.accesibilidad : (estacion.accesibilidad && typeof estacion.accesibilidad === 'object');
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
@@ -104,7 +96,7 @@ export default function StationWashingtonDCPage({ params }) {
             <span style={{ width: '48px', height: '48px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', fontWeight: '700' }}>
               {lineaId[0]}
             </span>
-            <span style={{ fontSize: '1rem', fontWeight: '500' }}>{estacion.municipio || 'Washington DC'}</span>
+            <span style={{ fontSize: '1rem', fontWeight: '500' }}>{estacion.municipio || 'Minneapolis'}</span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
             {estacion.nombre}
@@ -168,7 +160,7 @@ export default function StationWashingtonDCPage({ params }) {
               </div>
             )}
 
-            {accesibilidadObject && (
+            {isAccesible && typeof estacion.accesibilidad === 'object' && (
               <div style={{ marginBottom: '48px' }}>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '20px', color: 'var(--text)', borderBottom: `3px solid ${colorLinea}`, paddingBottom: '12px' }}>
                   Accessibility
@@ -205,27 +197,27 @@ export default function StationWashingtonDCPage({ params }) {
               </h3>
               <div style={{ display: 'grid', gap: '12px' }}>
                 <div>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Lines</p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Line</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: colorLinea }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea}
+                    {lineaId} Line
                   </p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Hours</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    5:00 AM – 12:00 AM
+                    4:30 AM – 1:00 AM
                   </p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Frequency</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0' }}>
-                    3–6 minutes
+                    5–10 minutes
                   </p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Fare</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>
-                    $2.25
+                    $2.00 USD
                   </p>
                 </div>
               </div>
@@ -236,11 +228,11 @@ export default function StationWashingtonDCPage({ params }) {
                 Payment
               </h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 12px 0', lineHeight: '1.5' }}>
-                Use SmarTrip Card for fastest boarding or buy a single ticket online.
+                Use Go-To Card for fastest boarding or buy a single ticket online.
               </p>
-              <Link href="https://www.wmata.com/" target="_blank" style={{ textDecoration: 'none' }}>
+              <Link href="https://www.metrotransit.org/" target="_blank" style={{ textDecoration: 'none' }}>
                 <button style={{ width: '100%', padding: '12px', backgroundColor: colorLinea, color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.95rem', fontWeight: '700', cursor: 'pointer' }}>
-                  Get SmarTrip Card
+                  Get Go-To Card
                 </button>
               </Link>
             </div>

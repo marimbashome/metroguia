@@ -1,17 +1,17 @@
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetalleBaltimore } from '@/data/baltimore/lineas-detalle';
+import { estacionesBaltimore } from '@/data/baltimore/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export async function generateStaticParams() {
-  return lineasDetalleDC.map((linea) => ({
+  return lineasDetalleBaltimore.map((linea) => ({
     id: linea.id,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+  const linea = lineasDetalleBaltimore.find((l) => l.id === params.id);
   if (!linea) {
     return {
       title: 'Line not found',
@@ -24,46 +24,44 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: linea.seo_title,
       description: linea.meta_description,
-      url: `https://metroguia.mx/washington-dc/line/${linea.id}`,
+      url: `https://metroguia.mx/baltimore/line/${linea.id}`,
     },
   };
 }
 
-export default function LineWashingtonDCPage({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+export default function LineBaltimorePage({ params }) {
+  const linea = lineasDetalleBaltimore.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Line not found</h1>
-        <Link href="/washington-dc">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#004A99', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
-            Back to Washington DC
+        <Link href="/baltimore">
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#00529B', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+            Back to Baltimore
           </button>
         </Link>
       </main>
     );
   }
 
-  const estacionesLinea = estacionesDC.filter((e) => {
-    if (Array.isArray(e.linea)) {
-      return e.linea.includes(linea.id);
-    }
-    return e.linea === linea.id;
+  const estacionesLinea = estacionesBaltimore.filter((e) => {
+    const lineaId = Array.isArray(e.linea) ? e.linea[0] : e.linea;
+    return lineaId === linea.id;
   });
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
       {/* HERO */}
-      <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
+      <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: linea.color === '#FFB81C' ? '#000' : '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800' }}>
+            <span style={{ width: '60px', height: '60px', backgroundColor: linea.color === '#FFB81C' ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800' }}>
               {linea.id[0]}
             </span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: '800', margin: '0 0 16px 0', lineHeight: '1.2' }}>
-            {linea.colorNombre} Line
+            {linea.id} Line — {linea.colorNombre}
           </h1>
           <p style={{ fontSize: '1.25rem', margin: '0 0 16px 0', opacity: '0.95' }}>
             {linea.inicio} → {linea.fin}
@@ -88,11 +86,11 @@ export default function LineWashingtonDCPage({ params }) {
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Frequency</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>3–6 min</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>5–10 min</p>
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Cost</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.25</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.00</p>
           </div>
         </div>
 
@@ -120,7 +118,7 @@ export default function LineWashingtonDCPage({ params }) {
                 return (
                   <div key={idx} style={{ display: 'grid', gridTemplateColumns: '60px 1fr', gap: '24px', alignItems: 'start' }}>
                     <div style={{ position: 'relative' }}>
-                      <div style={{ width: '60px', height: '60px', backgroundColor: linea.color, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>
+                      <div style={{ width: '60px', height: '60px', backgroundColor: linea.color, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: linea.color === '#FFB81C' ? '#000' : '#fff', fontSize: '1.5rem', fontWeight: '700' }}>
                         {idx + 1}
                       </div>
                       {idx < linea.ruta_1_dia.paradas.length - 1 && (
@@ -128,7 +126,7 @@ export default function LineWashingtonDCPage({ params }) {
                       )}
                     </div>
                     <div>
-                      <Link href={`/washington-dc/station/${parada.estacion}`}>
+                      <Link href={`/baltimore/station/${parada.estacion}`}>
                         <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: linea.color, cursor: 'pointer' }}>
                           {estacion?.nombre || parada.estacion}
                         </h3>
@@ -151,7 +149,7 @@ export default function LineWashingtonDCPage({ params }) {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {estacionesLinea.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/baltimore/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '20px',
                   backgroundColor: 'var(--surface)',
@@ -161,7 +159,7 @@ export default function LineWashingtonDCPage({ params }) {
                   transition: 'all 0.3s ease',
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
-                    <span style={{ fontSize: '0.8rem', backgroundColor: linea.color, color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: '700' }}>
+                    <span style={{ fontSize: '0.8rem', backgroundColor: linea.color, color: linea.color === '#FFB81C' ? '#000' : '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: '700' }}>
                       {idx + 1}
                     </span>
                   </div>
@@ -190,27 +188,27 @@ export default function LineWashingtonDCPage({ params }) {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
+              icon="🎫"
+              titulo="CharmCard"
+              descripcion="Reloadable contactless card. Works on Metro, buses, and local transit."
+              precio="$5 + value"
+              enlace="https://www.mta.maryland.gov/"
             />
 
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy tickets via WMATA app or online."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
+              descripcion="Buy tickets via MTA app or online."
+              precio="$2.00"
+              enlace="https://www.mta.maryland.gov/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
+              icon="🎟️"
               titulo="Day Pass"
               descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
+              precio="$8.50"
+              enlace="https://www.mta.maryland.gov/"
             />
           </div>
         </div>

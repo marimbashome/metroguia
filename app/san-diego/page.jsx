@@ -1,19 +1,19 @@
 import { CITIES_CONFIG } from '@/data/cities-config';
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetalleSanDiego } from '@/data/san-diego/lineas-detalle';
+import { estacionesSanDiego } from '@/data/san-diego/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
-  title: 'WMATA Metro Guide — Washington DC Rail Transit | MetroGuia',
-  description: 'WMATA Metro guide: 91 stations, 6 lines in Washington DC metro. Direct access to National Mall, museums, Pentagon. SmarTrip card. Complete trip planner, schedule & fares.',
-  keywords: 'WMATA, Metro, Washington DC transit, DC Metro, SmarTrip, National Mall, Pentagon',
+  title: 'MTS Trolley Guide — San Diego Rail Transit | MetroGuia',
+  description: 'MTS Trolley guide: 55 stations, 3 lines in San Diego metro. Blue, Orange, and Green lines. PRONTO card. Complete trip planner, schedule & fares.',
+  keywords: 'MTS, San Diego Trolley, PRONTO card, San Diego transit, Blue Line, Orange Line, Green Line',
   openGraph: {
-    title: 'WMATA Metro — Washington DC Transit',
-    description: 'Discover Washington DC\'s Metro system. Direct access to National Mall, Smithsonian museums, and Pentagon.',
-    url: 'https://metroguia.mx/washington-dc',
+    title: 'MTS Trolley — San Diego Transit',
+    description: 'Discover San Diego\'s trolley system. Direct access to downtown, airport, and neighborhoods.',
+    url: 'https://metroguia.mx/san-diego',
     type: 'website',
   },
   robots: {
@@ -22,18 +22,18 @@ export const metadata = {
   },
 };
 
-const estacionesDestacadas = estacionesDC.filter(e =>
-  ['dc-gallery', 'dc-smithsonian', 'dc-capitol', 'dc-pentagon', 'dc-union'].includes(e.slug)
+const estacionesDestacadas = estacionesSanDiego.filter(e =>
+  ['sd-downtown', 'sd-gaslamp', 'sd-airport', 'sd-civic', 'sd-old-town'].includes(e.slug)
 );
 
-export default function WashingtonDCPage() {
-  const cityConfig = CITIES_CONFIG['washington-dc'];
+export default function SanDiegoPage() {
+  const cityConfig = CITIES_CONFIG['san-diego'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Washington DC', item: 'https://metroguia.mx/washington-dc/' }
+      { '@type': 'ListItem', position: 2, name: 'San Diego', item: 'https://metroguia.mx/san-diego/' }
     ]
   }
 
@@ -43,7 +43,7 @@ export default function WashingtonDCPage() {
 
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #004A99 0%, #003366 100%)',
+        background: 'linear-gradient(135deg, #0064B4 0%, #004A8D 100%)',
         color: '#FFFFFF',
         padding: '80px 24px',
         textAlign: 'center',
@@ -58,7 +58,7 @@ export default function WashingtonDCPage() {
             lineHeight: '1.2',
             letterSpacing: '-0.02em',
           }}>
-            Washington Metro
+            MTS Trolley
           </h1>
           <p style={{
             fontSize: '1.5rem',
@@ -70,7 +70,7 @@ export default function WashingtonDCPage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            Rapid Transit · 6 Lines · 91 Stations
+            Light Rail · 3 Lines · 55 Stations
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -81,7 +81,7 @@ export default function WashingtonDCPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            Washington DC's comprehensive Metro system connecting the National Mall, Smithsonian museums, Capitol Hill, Pentagon, and the entire DC metro area.
+            San Diego's light rail system connecting downtown, Gaslamp Quarter, airport, and neighborhoods throughout the city and region.
           </p>
         </div>
       </section>
@@ -102,27 +102,27 @@ export default function WashingtonDCPage() {
           textAlign: 'center',
         }}>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              91
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0064B4', margin: '0 0 8px 0' }}>
+              55
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Stations
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              6
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0064B4', margin: '0 0 8px 0' }}>
+              3
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Active Lines
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              5 AM–12 AM
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0064B4', margin: '0 0 8px 0' }}>
+              5–15 min
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Daily Service
+              Frequency
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function WashingtonDCPage() {
             textAlign: 'center',
             color: 'var(--text)',
           }}>
-            Plan Your Route in Washington DC
+            Plan Your Route in San Diego
           </h2>
           <p style={{
             fontSize: '1rem',
@@ -150,9 +150,9 @@ export default function WashingtonDCPage() {
             marginBottom: '24px',
             color: 'var(--text-muted)',
           }}>
-            Calculate the best route between WMATA Metro stations
+            Calculate the best route between MTS Trolley stations
           </p>
-          <SearchBar ciudad="washington-dc" />
+          <SearchBar ciudad="san-diego" />
         </div>
       </section>
 
@@ -172,7 +172,7 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Washington DC Transportation
+            San Diego Transportation
           </h2>
           <p style={{
             fontSize: '1.125rem',
@@ -183,27 +183,27 @@ export default function WashingtonDCPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            The WMATA Metro is Washington DC's primary rapid transit system, providing convenient access to government offices, cultural institutions, and neighborhoods throughout the region.
+            The MTS Trolley is San Diego's primary light rail system, providing convenient access to downtown attractions, historic neighborhoods, and regional destinations.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
             <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
               <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                National Mall & Museums
+                Downtown & Gaslamp
               </h3>
               <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', lineHeight: '1.6' }}>
-                Gallery Place and Smithsonian stations provide direct access to major museums and the National Mall.
+                The Blue Line connects downtown San Diego to the historic Gaslamp Quarter and beyond.
               </p>
             </div>
 
             <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
               <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                Government & Culture
+                Three Modern Lines
               </h3>
               <ul style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                <li>Capitol Hill and Congressional stations</li>
-                <li>Pentagon and Defense connections</li>
-                <li>Comprehensive historical sites access</li>
+                <li>Blue, Orange, and Green lines</li>
+                <li>Quick access to neighborhoods</li>
+                <li>Modern, clean transit experience</li>
               </ul>
             </div>
           </div>
@@ -224,32 +224,32 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            SmarTrip Card
+            PRONTO Card
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
               icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for WMATA Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
+              titulo="PRONTO Card"
+              descripcion="Reloadable card for MTS Trolley and bus. Works throughout San Diego."
+              precio="$2 (card) + rides"
+              enlace="https://www.sdmts.com/fares-passes/pronto-card"
             />
 
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy single rides via WMATA app."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
+              descripcion="Buy single rides via MTS app."
+              precio="$2.50"
+              enlace="https://www.sdmts.com/"
             />
 
             <AffiliateTransportCard
               icon="🎫"
               titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
+              descripcion="Unlimited trolley travel for 24 hours."
+              precio="$7.50"
+              enlace="https://www.sdmts.com/"
             />
           </div>
         </div>
@@ -274,7 +274,7 @@ export default function WashingtonDCPage() {
 
           <div style={{ display: 'grid', gap: '24px' }}>
             {estacionesDestacadas.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/san-diego/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '28px',
                   backgroundColor: 'var(--surface)',
@@ -283,7 +283,7 @@ export default function WashingtonDCPage() {
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
                 }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#004A99' }}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#0064B4' }}>
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
@@ -312,12 +312,12 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Metro Lines
+            MTS Trolley Lines
           </h2>
 
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasDetalleDC.map((linea, idx) => (
-              <Link href={`/washington-dc/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
+            {lineasDetalleSanDiego.map((linea, idx) => (
+              <Link href={`/san-diego/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '24px',
                   backgroundColor: 'var(--surface)',

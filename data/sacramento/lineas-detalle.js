@@ -178,7 +178,7 @@ export const lineasSacramento = [
         }
       ]
     },
-    seo_title": "Línea Verde SacRT Light Rail — Township 9 a Historic Folsom, 12 estaciones | MetroGuia",
+    "seo_title": "Línea Verde SacRT Light Rail — Township 9 a Historic Folsom, 12 estaciones | MetroGuia",
     "meta_description": "Línea Verde del SacRT Light Rail: conecta norte de Sacramento con Folsom, 12 estaciones, cada 15 minutos.",
     "h1": "Línea Verde — SacRT Light Rail | Sacramento"
   }

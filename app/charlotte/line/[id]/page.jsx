@@ -1,17 +1,17 @@
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetalleCharlotte } from '@/data/charlotte/lineas-detalle';
+import { estacionesCharlotte } from '@/data/charlotte/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export async function generateStaticParams() {
-  return lineasDetalleDC.map((linea) => ({
+  return lineasDetalleCharlotte.map((linea) => ({
     id: linea.id,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+  const linea = lineasDetalleCharlotte.find((l) => l.id === params.id);
   if (!linea) {
     return {
       title: 'Line not found',
@@ -19,37 +19,35 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: linea.seo_title,
-    description: linea.meta_description,
+    title: `CATS LYNX ${linea.colorNombre} Line — Charlotte | MetroGuia`,
+    description: linea.descripcion.substring(0, 160),
     openGraph: {
-      title: linea.seo_title,
-      description: linea.meta_description,
-      url: `https://metroguia.mx/washington-dc/line/${linea.id}`,
+      title: `CATS LYNX ${linea.colorNombre} Line`,
+      description: linea.descripcion.substring(0, 160),
+      url: `https://metroguia.mx/charlotte/line/${linea.id}`,
     },
   };
 }
 
-export default function LineWashingtonDCPage({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+export default function LineCharlottePage({ params }) {
+  const linea = lineasDetalleCharlotte.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Line not found</h1>
-        <Link href="/washington-dc">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#004A99', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
-            Back to Washington DC
+        <Link href="/charlotte">
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#0055A4', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+            Back to Charlotte
           </button>
         </Link>
       </main>
     );
   }
 
-  const estacionesLinea = estacionesDC.filter((e) => {
-    if (Array.isArray(e.linea)) {
-      return e.linea.includes(linea.id);
-    }
-    return e.linea === linea.id;
+  const estacionesLinea = estacionesCharlotte.filter((e) => {
+    const eLinea = Array.isArray(e.linea) ? e.linea : [e.linea];
+    return eLinea.includes(linea.id);
   });
 
   return (
@@ -58,7 +56,7 @@ export default function LineWashingtonDCPage({ params }) {
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800' }}>
+            <span style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800', textTransform: 'uppercase' }}>
               {linea.id[0]}
             </span>
           </div>
@@ -88,11 +86,11 @@ export default function LineWashingtonDCPage({ params }) {
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Frequency</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>3–6 min</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>10–15 min</p>
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Cost</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.25</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.20</p>
           </div>
         </div>
 
@@ -128,7 +126,7 @@ export default function LineWashingtonDCPage({ params }) {
                       )}
                     </div>
                     <div>
-                      <Link href={`/washington-dc/station/${parada.estacion}`}>
+                      <Link href={`/charlotte/station/${parada.estacion}`}>
                         <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: linea.color, cursor: 'pointer' }}>
                           {estacion?.nombre || parada.estacion}
                         </h3>
@@ -151,7 +149,7 @@ export default function LineWashingtonDCPage({ params }) {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {estacionesLinea.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/charlotte/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '20px',
                   backgroundColor: 'var(--surface)',
@@ -190,27 +188,27 @@ export default function LineWashingtonDCPage({ params }) {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
+              icon="🎫"
+              titulo="One Ride"
+              descripcion="Single trip on LYNX Blue or Gold Line."
+              precio="$2.20"
+              enlace="https://www.catslynx.com/"
             />
 
             <AffiliateTransportCard
               icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via WMATA app or online."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
+              titulo="GoTriangle App"
+              descripcion="Mobile tickets and passes via smartphone."
+              precio="$2.20"
+              enlace="https://www.catslynx.com/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
+              icon="🎟️"
               titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
+              descripcion="Unlimited rides on all LYNX lines all day."
+              precio="$5.00"
+              enlace="https://www.catslynx.com/"
             />
           </div>
         </div>

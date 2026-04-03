@@ -1,19 +1,18 @@
-import { CITIES_CONFIG } from '@/data/cities-config';
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetalleCharlotte } from '@/data/charlotte/lineas-detalle';
+import { estacionesCharlotte } from '@/data/charlotte/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
-  title: 'WMATA Metro Guide — Washington DC Rail Transit | MetroGuia',
-  description: 'WMATA Metro guide: 91 stations, 6 lines in Washington DC metro. Direct access to National Mall, museums, Pentagon. SmarTrip card. Complete trip planner, schedule & fares.',
-  keywords: 'WMATA, Metro, Washington DC transit, DC Metro, SmarTrip, National Mall, Pentagon',
+  title: 'CATS LYNX Light Rail — Charlotte Transit | MetroGuia',
+  description: 'CATS LYNX Light Rail guide: 2 lines, 37+ stations in Charlotte metro. Blue and Gold Lines for downtown, North Davidson, and South End. Complete trip planner, schedule & fares.',
+  keywords: 'CATS LYNX, Light Rail, Charlotte transit, Blue Line, Gold Line, North Davidson, South End',
   openGraph: {
-    title: 'WMATA Metro — Washington DC Transit',
-    description: 'Discover Washington DC\'s Metro system. Direct access to National Mall, Smithsonian museums, and Pentagon.',
-    url: 'https://metroguia.mx/washington-dc',
+    title: 'CATS LYNX Light Rail — Charlotte Express Transit',
+    description: 'Discover Charlotte\'s LYNX Light Rail system. Blue Line north to south, Gold Line downtown streetcar.',
+    url: 'https://metroguia.mx/charlotte',
     type: 'website',
   },
   robots: {
@@ -22,18 +21,17 @@ export const metadata = {
   },
 };
 
-const estacionesDestacadas = estacionesDC.filter(e =>
-  ['dc-gallery', 'dc-smithsonian', 'dc-capitol', 'dc-pentagon', 'dc-union'].includes(e.slug)
+const estacionesDestacadas = estacionesCharlotte.filter(e =>
+  ['charlotte-north-davidson', 'charlotte-3rd-street', 'charlotte-bankhead', 'charlotte-convention-center'].includes(e.slug)
 );
 
-export default function WashingtonDCPage() {
-  const cityConfig = CITIES_CONFIG['washington-dc'];
+export default function CharlottePage() {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Washington DC', item: 'https://metroguia.mx/washington-dc/' }
+      { '@type': 'ListItem', position: 2, name: 'Charlotte', item: 'https://metroguia.mx/charlotte/' }
     ]
   }
 
@@ -43,7 +41,7 @@ export default function WashingtonDCPage() {
 
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #004A99 0%, #003366 100%)',
+        background: 'linear-gradient(135deg, #0055A4 0%, #003D7A 100%)',
         color: '#FFFFFF',
         padding: '80px 24px',
         textAlign: 'center',
@@ -58,7 +56,7 @@ export default function WashingtonDCPage() {
             lineHeight: '1.2',
             letterSpacing: '-0.02em',
           }}>
-            Washington Metro
+            CATS LYNX Light Rail
           </h1>
           <p style={{
             fontSize: '1.5rem',
@@ -70,7 +68,7 @@ export default function WashingtonDCPage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            Rapid Transit · 6 Lines · 91 Stations
+            Light Rail · 2 Lines · 37+ Stations
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -81,7 +79,7 @@ export default function WashingtonDCPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            Washington DC's comprehensive Metro system connecting the National Mall, Smithsonian museums, Capitol Hill, Pentagon, and the entire DC metro area.
+            Charlotte's modern light rail network connecting downtown to UNC Charlotte, North Davidson arts district, and vibrant South End neighborhoods.
           </p>
         </div>
       </section>
@@ -102,27 +100,27 @@ export default function WashingtonDCPage() {
           textAlign: 'center',
         }}>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              91
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0055A4', margin: '0 0 8px 0' }}>
+              37+
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Stations
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              6
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0055A4', margin: '0 0 8px 0' }}>
+              2
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Active Lines
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              5 AM–12 AM
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#0055A4', margin: '0 0 8px 0' }}>
+              10–15 min
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Daily Service
+              Frequency
             </p>
           </div>
         </div>
@@ -142,7 +140,7 @@ export default function WashingtonDCPage() {
             textAlign: 'center',
             color: 'var(--text)',
           }}>
-            Plan Your Route in Washington DC
+            Plan Your Route in Charlotte
           </h2>
           <p style={{
             fontSize: '1rem',
@@ -150,110 +148,13 @@ export default function WashingtonDCPage() {
             marginBottom: '24px',
             color: 'var(--text-muted)',
           }}>
-            Calculate the best route between WMATA Metro stations
+            Calculate the best route between LYNX stations
           </p>
-          <SearchBar ciudad="washington-dc" />
+          <SearchBar ciudad="charlotte" />
         </div>
       </section>
 
       <AdBannerLazy slot="4434764790" format="auto" />
-
-      {/* TRANSIT INFO */}
-      <section style={{
-        backgroundColor: 'var(--bg)',
-        padding: '80px 24px',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            fontWeight: '800',
-            margin: '0 0 16px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            Washington DC Transportation
-          </h2>
-          <p style={{
-            fontSize: '1.125rem',
-            color: 'var(--text-muted)',
-            textAlign: 'center',
-            margin: '0 0 48px 0',
-            maxWidth: '700px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}>
-            The WMATA Metro is Washington DC's primary rapid transit system, providing convenient access to government offices, cultural institutions, and neighborhoods throughout the region.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                National Mall & Museums
-              </h3>
-              <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', lineHeight: '1.6' }}>
-                Gallery Place and Smithsonian stations provide direct access to major museums and the National Mall.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                Government & Culture
-              </h3>
-              <ul style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                <li>Capitol Hill and Congressional stations</li>
-                <li>Pentagon and Defense connections</li>
-                <li>Comprehensive historical sites access</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PAYMENT & CARDS */}
-      <section style={{
-        backgroundColor: 'var(--bg)',
-        padding: '80px 24px',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2rem',
-            fontWeight: '800',
-            margin: '0 0 48px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            SmarTrip Card
-          </h2>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for WMATA Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides via WMATA app."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* FEATURED STATIONS */}
       <section style={{
@@ -269,12 +170,12 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Featured Stations
+            ⭐ Featured Stations
           </h2>
 
           <div style={{ display: 'grid', gap: '24px' }}>
             {estacionesDestacadas.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/charlotte/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '28px',
                   backgroundColor: 'var(--surface)',
@@ -283,11 +184,11 @@ export default function WashingtonDCPage() {
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
                 }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#004A99' }}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#0055A4' }}>
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line
+                    {Array.isArray(estacion.linea) ? `Lines ${estacion.linea.join(', ')}` : `Line ${estacion.linea}`}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
                     {estacion.intro}
@@ -295,6 +196,51 @@ export default function WashingtonDCPage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TRANSIT CARDS */}
+      <section style={{
+        backgroundColor: 'var(--bg)',
+        padding: '80px 24px',
+        borderBottom: '1px solid var(--border)',
+      }}>
+        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <h2 style={{
+            fontSize: '2rem',
+            fontWeight: '800',
+            margin: '0 0 48px 0',
+            color: 'var(--text)',
+            textAlign: 'center',
+          }}>
+            🎫 Payment & Passes
+          </h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            <AffiliateTransportCard
+              icon="🎫"
+              titulo="One Ride"
+              descripcion="Single trip on Blue or Gold Line."
+              precio="$2.20"
+              enlace="https://www.catslynx.com/"
+            />
+
+            <AffiliateTransportCard
+              icon="📱"
+              titulo="GoTriangle App"
+              descripcion="Mobile tickets and day passes via mobile app."
+              precio="$2.20"
+              enlace="https://www.catslynx.com/"
+            />
+
+            <AffiliateTransportCard
+              icon="🚊"
+              titulo="Day Pass"
+              descripcion="Unlimited rides on LYNX all day."
+              precio="$5.00"
+              enlace="https://www.catslynx.com/"
+            />
           </div>
         </div>
       </section>
@@ -312,12 +258,12 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Metro Lines
+            LYNX Lines
           </h2>
 
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasDetalleDC.map((linea, idx) => (
-              <Link href={`/washington-dc/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
+            {lineasDetalleCharlotte.map((linea, idx) => (
+              <Link href={`/charlotte/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '24px',
                   backgroundColor: 'var(--surface)',
@@ -340,15 +286,16 @@ export default function WashingtonDCPage() {
                       color: '#fff',
                       fontSize: '1.5rem',
                       fontWeight: '700',
+                      textTransform: 'uppercase',
                     }}>
                       {linea.id[0]}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.colorNombre} Line
+                        {linea.inicio} → {linea.fin}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations · {linea.inicio} to {linea.fin}
+                        {linea.total} stations
                       </p>
                     </div>
                   </div>

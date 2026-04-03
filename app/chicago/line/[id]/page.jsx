@@ -1,17 +1,17 @@
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
+import { estacionesChicago } from '@/data/chicago/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export async function generateStaticParams() {
-  return lineasDetalleDC.map((linea) => ({
+  return lineasDetalleChicago.map((linea) => ({
     id: linea.id,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+  const linea = lineasDetalleChicago.find((l) => l.id === params.id);
   if (!linea) {
     return {
       title: 'Line not found',
@@ -24,28 +24,28 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: linea.seo_title,
       description: linea.meta_description,
-      url: `https://metroguia.mx/washington-dc/line/${linea.id}`,
+      url: `https://metroguia.mx/chicago/line/${linea.id}`,
     },
   };
 }
 
-export default function LineWashingtonDCPage({ params }) {
-  const linea = lineasDetalleDC.find((l) => l.id === params.id);
+export default function LineChicagoPage({ params }) {
+  const linea = lineasDetalleChicago.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
       <main style={{ padding: '80px 24px', textAlign: 'center', backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         <h1 style={{ fontSize: '2rem', color: 'var(--danger)' }}>Line not found</h1>
-        <Link href="/washington-dc">
-          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#004A99', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
-            Back to Washington DC
+        <Link href="/chicago">
+          <button style={{ marginTop: '24px', padding: '12px 24px', backgroundColor: '#00A1DE', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '1rem', fontWeight: '700', cursor: 'pointer' }}>
+            Back to Chicago
           </button>
         </Link>
       </main>
     );
   }
 
-  const estacionesLinea = estacionesDC.filter((e) => {
+  const estacionesLinea = estacionesChicago.filter((e) => {
     if (Array.isArray(e.linea)) {
       return e.linea.includes(linea.id);
     }
@@ -88,11 +88,11 @@ export default function LineWashingtonDCPage({ params }) {
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Frequency</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>3–6 min</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0' }}>2–10 min</p>
           </div>
           <div style={{ padding: '20px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid var(--border)' }}>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', margin: '0 0 6px 0', fontWeight: 600, letterSpacing: '0.1em' }}>Cost</p>
-            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.25</p>
+            <p style={{ fontSize: '1.125rem', fontWeight: '700', margin: '0', color: 'var(--success)' }}>$2.50</p>
           </div>
         </div>
 
@@ -128,7 +128,7 @@ export default function LineWashingtonDCPage({ params }) {
                       )}
                     </div>
                     <div>
-                      <Link href={`/washington-dc/station/${parada.estacion}`}>
+                      <Link href={`/chicago/station/${parada.estacion}`}>
                         <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: linea.color, cursor: 'pointer' }}>
                           {estacion?.nombre || parada.estacion}
                         </h3>
@@ -151,7 +151,7 @@ export default function LineWashingtonDCPage({ params }) {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {estacionesLinea.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/chicago/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '20px',
                   backgroundColor: 'var(--surface)',
@@ -191,26 +191,26 @@ export default function LineWashingtonDCPage({ params }) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
               icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
+              titulo="Ventra Card"
+              descripcion="Reloadable contactless card. Works on L, buses, and regional rail."
+              precio="$5 + value"
+              enlace="https://www.ventrachicago.com/"
             />
 
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy tickets via WMATA app or online."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
+              descripcion="Buy tickets via Ventra app or online."
+              precio="$2.50"
+              enlace="https://www.transitchicago.com/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
+              icon="🎟️"
+              titulo="1-Day Pass"
+              descripcion="Unlimited L and bus travel for 24 hours."
+              precio="$13"
+              enlace="https://www.transitchicago.com/"
             />
           </div>
         </div>

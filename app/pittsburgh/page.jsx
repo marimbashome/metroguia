@@ -1,19 +1,19 @@
 import { CITIES_CONFIG } from '@/data/cities-config';
-import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
-import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { lineasDetallePittsburgh } from '@/data/pittsburgh/lineas-detalle';
+import { estacionesPittsburgh } from '@/data/pittsburgh/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export const metadata = {
-  title: 'WMATA Metro Guide — Washington DC Rail Transit | MetroGuia',
-  description: 'WMATA Metro guide: 91 stations, 6 lines in Washington DC metro. Direct access to National Mall, museums, Pentagon. SmarTrip card. Complete trip planner, schedule & fares.',
-  keywords: 'WMATA, Metro, Washington DC transit, DC Metro, SmarTrip, National Mall, Pentagon',
+  title: 'PRT T Light Rail — Pittsburgh Transit | MetroGuia',
+  description: 'Pittsburgh T Light Rail guide: 3 lines, 26 stations. Red, Blue, and Silver lines serving downtown Pittsburgh, Mount Washington, and beyond. Complete transit guide with fares and schedules.',
+  keywords: 'Pittsburgh T, Light Rail, PRT, Pittsburgh transit, Pennsylvania, metro system',
   openGraph: {
-    title: 'WMATA Metro — Washington DC Transit',
-    description: 'Discover Washington DC\'s Metro system. Direct access to National Mall, Smithsonian museums, and Pentagon.',
-    url: 'https://metroguia.mx/washington-dc',
+    title: 'PRT T Light Rail — Pittsburgh Express Transit',
+    description: 'Discover Pittsburgh T Light Rail. Fast transit across 3 lines connecting downtown, neighborhoods, and beyond.',
+    url: 'https://metroguia.mx/pittsburgh',
     type: 'website',
   },
   robots: {
@@ -22,18 +22,18 @@ export const metadata = {
   },
 };
 
-const estacionesDestacadas = estacionesDC.filter(e =>
-  ['dc-gallery', 'dc-smithsonian', 'dc-capitol', 'dc-pentagon', 'dc-union'].includes(e.slug)
+const estacionesDestacadas = estacionesPittsburgh.filter(e =>
+  ['pit-downtown', 'pit-mount-washington', 'pit-station-square', 'pit-shadyside', 'pit-south-hills'].includes(e.slug)
 );
 
-export default function WashingtonDCPage() {
-  const cityConfig = CITIES_CONFIG['washington-dc'];
+export default function PittsburghPage() {
+  const cityConfig = CITIES_CONFIG.pittsburgh;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Washington DC', item: 'https://metroguia.mx/washington-dc/' }
+      { '@type': 'ListItem', position: 2, name: 'Pittsburgh', item: 'https://metroguia.mx/pittsburgh/' }
     ]
   }
 
@@ -43,7 +43,7 @@ export default function WashingtonDCPage() {
 
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #004A99 0%, #003366 100%)',
+        background: 'linear-gradient(135deg, #DA291C 0%, #B01E13 100%)',
         color: '#FFFFFF',
         padding: '80px 24px',
         textAlign: 'center',
@@ -58,7 +58,7 @@ export default function WashingtonDCPage() {
             lineHeight: '1.2',
             letterSpacing: '-0.02em',
           }}>
-            Washington Metro
+            Pittsburgh T Light Rail
           </h1>
           <p style={{
             fontSize: '1.5rem',
@@ -70,7 +70,7 @@ export default function WashingtonDCPage() {
             opacity: '0.95',
             lineHeight: '1.4',
           }}>
-            Rapid Transit · 6 Lines · 91 Stations
+            Light Rail · 3 Lines · 26 Stations
           </p>
           <p style={{
             fontSize: '1.125rem',
@@ -81,7 +81,7 @@ export default function WashingtonDCPage() {
             marginLeft: 'auto',
             marginRight: 'auto',
           }}>
-            Washington DC's comprehensive Metro system connecting the National Mall, Smithsonian museums, Capitol Hill, Pentagon, and the entire DC metro area.
+            The Pittsburgh T connects downtown to neighborhoods, Mount Washington, and beyond. Fast, reliable light rail across three connecting lines.
           </p>
         </div>
       </section>
@@ -102,27 +102,27 @@ export default function WashingtonDCPage() {
           textAlign: 'center',
         }}>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              91
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#DA291C', margin: '0 0 8px 0' }}>
+              26
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Stations
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              6
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#DA291C', margin: '0 0 8px 0' }}>
+              3
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
               Active Lines
             </p>
           </div>
           <div>
-            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#004A99', margin: '0 0 8px 0' }}>
-              5 AM–12 AM
+            <p style={{ fontSize: '2.5rem', fontWeight: '800', color: '#DA291C', margin: '0 0 8px 0' }}>
+              5–10 min
             </p>
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', fontWeight: '500' }}>
-              Daily Service
+              Frequency
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function WashingtonDCPage() {
             textAlign: 'center',
             color: 'var(--text)',
           }}>
-            Plan Your Route in Washington DC
+            Plan Your Route in Pittsburgh
           </h2>
           <p style={{
             fontSize: '1rem',
@@ -150,67 +150,15 @@ export default function WashingtonDCPage() {
             marginBottom: '24px',
             color: 'var(--text-muted)',
           }}>
-            Calculate the best route between WMATA Metro stations
+            Calculate the best route between T stations
           </p>
-          <SearchBar ciudad="washington-dc" />
+          <SearchBar ciudad="pittsburgh" />
         </div>
       </section>
 
       <AdBannerLazy slot="4434764790" format="auto" />
 
-      {/* TRANSIT INFO */}
-      <section style={{
-        backgroundColor: 'var(--bg)',
-        padding: '80px 24px',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            fontWeight: '800',
-            margin: '0 0 16px 0',
-            color: 'var(--text)',
-            textAlign: 'center',
-          }}>
-            Washington DC Transportation
-          </h2>
-          <p style={{
-            fontSize: '1.125rem',
-            color: 'var(--text-muted)',
-            textAlign: 'center',
-            margin: '0 0 48px 0',
-            maxWidth: '700px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}>
-            The WMATA Metro is Washington DC's primary rapid transit system, providing convenient access to government offices, cultural institutions, and neighborhoods throughout the region.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '48px' }}>
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                National Mall & Museums
-              </h3>
-              <p style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', lineHeight: '1.6' }}>
-                Gallery Place and Smithsonian stations provide direct access to major museums and the National Mall.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--surface)', padding: '32px', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--warning)' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 12px 0', color: 'var(--text)' }}>
-                Government & Culture
-              </h3>
-              <ul style={{ fontSize: '1rem', color: 'var(--text-muted)', margin: '0', paddingLeft: '20px', lineHeight: '1.8' }}>
-                <li>Capitol Hill and Congressional stations</li>
-                <li>Pentagon and Defense connections</li>
-                <li>Comprehensive historical sites access</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PAYMENT & CARDS */}
+      {/* TRANSIT CARDS */}
       <section style={{
         backgroundColor: 'var(--bg)',
         padding: '80px 24px',
@@ -224,32 +172,32 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            SmarTrip Card
+            Payment & Cards
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             <AffiliateTransportCard
-              icon="💳"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for WMATA Metro and bus. Works throughout DC region."
-              precio="$10 (includes $5 value)"
-              enlace="https://www.wmata.com/service/fares/smartrip/"
+              icon="🎫"
+              titulo="T Card"
+              descripcion="Reloadable card for Pittsburgh T light rail and bus transit."
+              precio="$5 (card) + value"
+              enlace="https://www.portauthority.org/"
             />
 
             <AffiliateTransportCard
               icon="📱"
               titulo="Mobile Ticket"
-              descripcion="Buy single rides via WMATA app."
-              precio="$2.25"
-              enlace="https://www.wmata.com/"
+              descripcion="Buy single rides or passes via Port Authority app."
+              precio="$2.75"
+              enlace="https://www.portauthority.org/"
             />
 
             <AffiliateTransportCard
-              icon="🎫"
+              icon="🎟️"
               titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$9"
-              enlace="https://www.wmata.com/"
+              descripcion="Unlimited T light rail travel for 24 hours."
+              precio="$9.50"
+              enlace="https://www.portauthority.org/"
             />
           </div>
         </div>
@@ -269,12 +217,12 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Featured Stations
+            ⭐ Featured Stations
           </h2>
 
           <div style={{ display: 'grid', gap: '24px' }}>
             {estacionesDestacadas.map((estacion, idx) => (
-              <Link href={`/washington-dc/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+              <Link href={`/pittsburgh/station/${estacion.slug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '28px',
                   backgroundColor: 'var(--surface)',
@@ -283,11 +231,11 @@ export default function WashingtonDCPage() {
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
                 }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#004A99' }}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 8px 0', color: '#DA291C' }}>
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    {Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea} Line
+                    Line {Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
                     {estacion.intro}
@@ -312,18 +260,17 @@ export default function WashingtonDCPage() {
             color: 'var(--text)',
             textAlign: 'center',
           }}>
-            Metro Lines
+            T Lines
           </h2>
 
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasDetalleDC.map((linea, idx) => (
-              <Link href={`/washington-dc/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
+            {lineasDetallePittsburgh.map((linea, idx) => (
+              <Link href={`/pittsburgh/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
                   padding: '24px',
                   backgroundColor: 'var(--surface)',
                   borderRadius: 'var(--radius)',
-                  borderLeft: `5px solid ${linea.color}`,
-                  border: `1px solid var(--border)`,
+                  border: '1px solid var(--border)',
                   borderLeft: `5px solid ${linea.color}`,
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
@@ -341,14 +288,14 @@ export default function WashingtonDCPage() {
                       fontSize: '1.5rem',
                       fontWeight: '700',
                     }}>
-                      {linea.id[0]}
+                      {linea.id}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.colorNombre} Line
+                        {linea.inicio} → {linea.fin}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations · {linea.inicio} to {linea.fin}
+                        {linea.total} stations
                       </p>
                     </div>
                   </div>

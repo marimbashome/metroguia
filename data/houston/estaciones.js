@@ -1266,7 +1266,6 @@ export const estacionesHOU = [
         descripcion: "Estadio histórico legendario, primer domo retráctil del mundo."
       }
     ]
-  }
   },
 
   // ============================================
@@ -1729,6 +1728,10 @@ export const estacionesHOU = [
       {
         nombre: "Alley Theatre",
         tipo: "Teatro",
+        distancia: "300 metros",
+        descripcion: "Teatro de repertorio con más de 75 años de historia."
+      }
+    ]
   },
 
   // ============================================
