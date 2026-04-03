@@ -2444,5 +2444,62 @@ export const zonasUSCA = [
     seo_title: "Metro to Adams Morgan DC — International Dining & Nightlife | MetroGuia",
     meta_description: "How to get to Adams Morgan by Metro. 18th Street restaurants, nightlife, Ethiopian food. Woodley Park station. DC guide.",
     h1: "Metro to Adams Morgan: DC's Cultural Melting Pot"
+  },
+  {
+    slug: "downtown-norfolk",
+    name: "Downtown Norfolk",
+    nameES: "Centro de Norfolk",
+    country: "US",
+    state: "Virginia",
+    coordinates: { lat: 36.8503, lng: -76.2903 },
+    transit_lines: ["Tide"],
+    description: "Norfolk's vibrant downtown waterfront district featuring Nauticus maritime museum, St. Paul's Church, historic Freemason Street, fine dining, and arts venues. The cultural and commercial heart of Norfolk.",
+    stations: ["norfolk-civic-plaza", "norfolk-harbor-park"],
+    main_station: "norfolk-civic-plaza",
+    transit_systems: ["The Tide Light Rail"],
+    pois: [
+      { name: "Nauticus", nombre: "Nauticus", type: "museum", distance: "5 min walk from Harbor Park" },
+      { name: "St. Paul's Church", nombre: "Iglesia de St. Paul", type: "historic", distance: "10 min walk" },
+      { name: "MacArthur Memorial", nombre: "Memorial MacArthur", type: "landmark", distance: "15 min walk" },
+      { name: "Waterfront Marina", nombre: "Marina del Frente de Agua", type: "waterfront", distance: "Walking distance" }
+    ],
+    tips_for_visitors: [
+      "Civic Plaza is the heart of downtown Norfolk — Nauticus and waterfront attractions are directly accessible",
+      "Harbor Park is just 3 minutes away on The Tide; great for waterfront dining and views",
+      "Norfolk has abundant street parking and surface lots; most attractions are within walking distance of Tide stations",
+      "Best time to visit: spring and fall for pleasant weather"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Tide to Downtown Norfolk — Waterfront & Museums Transit Guide | MetroGuia",
+    meta_description: "How to get to Downtown Norfolk by The Tide Light Rail. Nauticus, harbor, MacArthur Memorial. Norfolk transit guide.",
+    h1: "Tide to Downtown Norfolk: Waterfront Culture"
+  },
+  {
+    slug: "odu-norfolk",
+    name: "Old Dominion University Area",
+    nameES: "Zona de la Universidad Old Dominion",
+    country: "US",
+    state: "Virginia",
+    coordinates: { lat: 36.8854, lng: -76.3092 },
+    transit_lines: ["Tide"],
+    description: "College district and residential neighborhood home to Old Dominion University. Campus life, student-friendly restaurants, bars, and academic atmosphere. Growing area with mixed-use development.",
+    stations: ["norfolk-odu", "norfolk-military-hwy"],
+    main_station: "norfolk-odu",
+    transit_systems: ["The Tide Light Rail"],
+    pois: [
+      { name: "Old Dominion University", nombre: "Universidad Old Dominion", type: "university", distance: "Walking distance" },
+      { name: "Monarch Way", nombre: "Monarch Way", type: "shopping", distance: "5 min walk" },
+      { name: "Student Commons", nombre: "Centro Estudiantil", type: "recreation", distance: "On campus" }
+    ],
+    tips_for_visitors: [
+      "The Tide ODU station is right on campus — convenient for visiting the university",
+      "Many student-friendly restaurants and bars within walking distance",
+      "Campus is walkable and visitor-friendly; check ODU events calendar for lectures and performances",
+      "Less crowded than downtown Norfolk; good for quieter exploration"
+    ],
+    fifa_2026_relevance: null,
+    seo_title: "Tide to Old Dominion University — Campus & Student District | MetroGuia",
+    meta_description: "How to get to Old Dominion University by The Tide Light Rail. Norfolk student area, campus visits, transit guide.",
+    h1: "Tide to ODU: Norfolk's College District"
   }
 ]
