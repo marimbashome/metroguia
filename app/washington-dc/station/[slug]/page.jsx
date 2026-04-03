@@ -47,7 +47,7 @@ export default function StationDCPage({ params }) {
     );
   }
 
-  const lineValue = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea;
+  const lineValue = Array.isArray(estacion.linea) ? estacion.linea[0] : String(estacion.linea).split(',')[0];
   const colorLinea = LINE_COLORS[lineValue] || '#BF0D3E';
 
   const breadcrumbSchema = {

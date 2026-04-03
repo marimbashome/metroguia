@@ -58,7 +58,7 @@ export default function StationChicagoPage({ params }) {
     );
   }
 
-  const lineas = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
+  const lineas = Array.isArray(estacion.linea) ? estacion.linea : String(estacion.linea).split(',');
   const colorPrimaria = LINE_COLORS[lineas[0]] || '#00A1DE';
 
   const breadcrumbSchema = {

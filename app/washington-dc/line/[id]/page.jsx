@@ -46,7 +46,7 @@ export default function LineDCPage({ params }) {
   }
 
   const estacionesLinea = estacionesDC.filter((e) => {
-    const eLinea = Array.isArray(e.linea) ? e.linea : [e.linea];
+    const eLinea = Array.isArray(e.linea) ? e.linea : String(e.linea).split(',');
     return eLinea.includes(linea.id);
   });
 

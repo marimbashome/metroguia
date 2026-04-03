@@ -49,7 +49,7 @@ export default function LineChicagoPage({ params }) {
 
   // Filter stations that serve this line
   const estacionesLinea = estacionesChicago.filter((e) => {
-    const lineasEst = Array.isArray(e.linea) ? e.linea : [e.linea];
+    const lineasEst = Array.isArray(e.linea) ? e.linea : String(e.linea).split(',');
     return lineasEst.includes(linea.id);
   });
 
