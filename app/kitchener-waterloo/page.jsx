@@ -18,8 +18,8 @@ export const metadata = {
   robots: { index: true, follow: true },
 };
 
-const estacionesDestacadas = estacionesKitchenerWaterloo.filter(e =>
-  ['kitchener-waterloo-central-station', 'kitchener-waterloo-uptown-waterloo', 'kitchener-waterloo-conestoga-mall', 'kitchener-waterloo-downtown-kitchener'].includes(e.slug)
+const estacionesDestacadas = (estacionesKitchenerWaterloo || []).filter(e =>
+  e && ['kitchener-waterloo-central-station', 'kitchener-waterloo-uptown-waterloo', 'kitchener-waterloo-conestoga-mall', 'kitchener-waterloo-downtown-kitchener', 'kitchener-waterloo-conestoga', 'kitchener-waterloo-waterloo-public-square', 'kitchener-waterloo-victoria-park'].includes(e.slug)
 );
 
 export default function KitchenerWaterlooPage() {
@@ -137,19 +137,19 @@ export default function KitchenerWaterlooPage() {
             Ion Lines
           </h2>
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasKitchenerWaterloo.map((linea, idx) => (
-              <Link href={`/kitchener-waterloo/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
-                <div style={{ padding: '24px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: `5px solid ${linea.color}`, border: '1px solid var(--border)', cursor: 'pointer', transition: 'all 0.3s ease' }}>
+            {(lineasKitchenerWaterloo || []).filter(Boolean).map((linea, idx) => (
+              <Link href={`/kitchener-waterloo/line/${linea.id || 'ion'}`} key={idx} style={{ textDecoration: 'none' }}>
+                <div style={{ padding: '24px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: `5px solid ${linea.color || '#0066CC'}`, border: '1px solid var(--border)', cursor: 'pointer', transition: 'all 0.3s ease' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                    <div style={{ width: '60px', height: '60px', backgroundColor: linea.color, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.5rem', fontWeight: '700', textTransform: 'uppercase' }}>
-                      {linea.id[0]}
+                    <div style={{ width: '60px', height: '60px', backgroundColor: linea.color || '#0066CC', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.5rem', fontWeight: '700', textTransform: 'uppercase' }}>
+                      {(linea.id || 'I')[0]}
                     </div>
                     <div>
                       <h3 style={{ fontSize: '1.25rem', fontWeight: '700', margin: '0 0 4px 0', color: 'var(--text)' }}>
-                        {linea.inicio} → {linea.fin}
+                        {linea.inicio || 'Start'} → {linea.fin || 'End'}
                       </h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '0' }}>
-                        {linea.total} stations
+                        {linea.total || 0} stations
                       </p>
                     </div>
                   </div>

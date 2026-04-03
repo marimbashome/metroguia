@@ -58,7 +58,7 @@ export default function LineKitchenerWaterlooPage({ params }) {
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
             <span style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '800', textTransform: 'uppercase' }}>
-              {linea.id[0]}
+              {(linea.id || 'I')[0]}
             </span>
             <div>
               <h1 style={{ fontSize: '2.5rem', fontWeight: '800', margin: '0 0 4px 0' }}>
