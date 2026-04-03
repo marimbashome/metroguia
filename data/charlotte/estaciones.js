@@ -2,20 +2,20 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-unc-charlotte-main',
     nombre: 'UNC Charlotte Main',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Universidad',
     pois: [
-      { nombre: 'UNC Charlotte Campus', distancia: '0.1 km', descripcion: 'Main university campus' },
-      { nombre: 'Student Center', distancia: '0.2 km', descripcion: 'Campus hub' }
+      { nombre: 'UNC Charlotte Campus', tipo: 'Universidad', distancia: '0.1 km', descripcion: 'Main university campus' },
+      { nombre: 'Student Center', tipo: 'Centro Estudiantil', distancia: '0.2 km', descripcion: 'Campus hub' }
     ],
     transferencias: [],
     seo_title: 'UNC Charlotte Main Station | Charlotte LYNX',
     meta_description: 'UNC Charlotte Main LYNX station - Access to UNC Charlotte campus and education district',
     h1: 'UNC Charlotte Main Station',
     intro: 'Gateway to UNC Charlotte campus',
-    tips: 'Peak hours 7-9 AM and 4-6 PM on weekdays',
+    tips: ['Peak hours 7-9 AM and 4-6 PM on weekdays', 'Student pass discounts available', 'Easy access to campus shuttle'],
     mejor_horario: '10 AM - 3 PM',
     mundial_relevancia: 'Educational hub',
     descripcion_turistica: 'Access to major university campus and student amenities',
@@ -25,19 +25,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-north-tryon',
     nombre: 'North Tryon',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Neighborhood Parks', distancia: '0.3 km', descripcion: 'Local recreation' }
+      { nombre: 'Neighborhood Parks', tipo: 'Parque', distancia: '0.3 km', descripcion: 'Local recreation' }
     ],
     transferencias: [],
     seo_title: 'North Tryon Station | Charlotte LYNX',
     meta_description: 'North Tryon LYNX station serving the northern Charlotte residential area',
     h1: 'North Tryon Station',
     intro: 'Northern residential access',
-    tips: 'Less crowded during midday hours',
+    tips: ['Less crowded during midday hours', 'Good access to local parks', 'Bike racks available'],
     mejor_horario: '11 AM - 2 PM',
     mundial_relevancia: 'Residential neighborhood',
     descripcion_turistica: 'Gateway to residential North Charlotte neighborhoods',
@@ -47,19 +47,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-36th-street',
     nombre: '36th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Comercial',
     pois: [
-      { nombre: 'Retail Shops', distancia: '0.2 km', descripcion: 'Local shopping' }
+      { nombre: 'Retail Shops', tipo: 'Centro Comercial', distancia: '0.2 km', descripcion: 'Local shopping' }
     ],
     transferencias: [],
     seo_title: '36th Street Station | Charlotte LYNX',
     meta_description: '36th Street LYNX station in Charlotte commercial district',
     h1: '36th Street Station',
     intro: 'Commercial corridor access',
-    tips: 'Busy during shopping hours',
+    tips: ['Busy during shopping hours', 'Multiple retail options nearby', 'Easy parking access'],
     mejor_horario: '10 AM - 4 PM',
     mundial_relevancia: 'Commercial district',
     descripcion_turistica: 'Shopping and commercial services in North Charlotte',
@@ -69,19 +69,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-subway',
     nombre: 'Subway',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Comercial',
     pois: [
-      { nombre: 'Local Businesses', distancia: '0.2 km', descripcion: 'Commercial area' }
+      { nombre: 'Local Businesses', tipo: 'Comercio', distancia: '0.2 km', descripcion: 'Commercial area' }
     ],
     transferencias: [],
     seo_title: 'Subway Station | Charlotte LYNX',
     meta_description: 'Subway LYNX station serving commercial Charlotte',
     h1: 'Subway Station',
     intro: 'Commercial district stop',
-    tips: 'Regular service throughout the day',
+    tips: ['Regular service throughout the day', 'Quick connection to businesses', 'Convenient shopping area'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Commercial',
     descripcion_turistica: 'Access to local businesses and shopping',
@@ -91,19 +91,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-25th-street',
     nombre: '25th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Mixto',
     pois: [
-      { nombre: 'Community Services', distancia: '0.3 km', descripcion: 'Local services' }
+      { nombre: 'Community Services', tipo: 'Servicios', distancia: '0.3 km', descripcion: 'Local services' }
     ],
     transferencias: [],
     seo_title: '25th Street Station | Charlotte LYNX',
     meta_description: '25th Street LYNX station in Charlotte',
     h1: '25th Street Station',
     intro: 'Mixed-use neighborhood access',
-    tips: 'Moderate crowding',
+    tips: ['Moderate crowding throughout day', 'Access to multiple services', 'Good pedestrian crossing'],
     mejor_horario: '10 AM - 3 PM',
     mundial_relevancia: 'Neighborhood',
     descripcion_turistica: 'Community access in Charlotte',
@@ -113,19 +113,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-16th-street',
     nombre: '16th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Residential Area', distancia: '0.2 km', descripcion: 'Neighborhood homes' }
+      { nombre: 'Residential Area', tipo: 'Vivienda', distancia: '0.2 km', descripcion: 'Neighborhood homes' }
     ],
     transferencias: [],
     seo_title: '16th Street Station | Charlotte LYNX',
     meta_description: '16th Street LYNX station serving residential Charlotte',
     h1: '16th Street Station',
     intro: 'Residential neighborhood station',
-    tips: 'Quieter during midday',
+    tips: ['Quieter during midday', 'Safe neighborhood access', 'Good for families'],
     mejor_horario: '11 AM - 2 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Access to residential neighborhoods',
@@ -135,19 +135,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-7th-street',
     nombre: '7th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Mixto',
     pois: [
-      { nombre: 'Arts District', distancia: '0.4 km', descripcion: 'Cultural venues' }
+      { nombre: 'Arts District', tipo: 'Artes y Cultura', distancia: '0.4 km', descripcion: 'Cultural venues' }
     ],
     transferencias: [],
     seo_title: '7th Street Station | Charlotte LYNX',
     meta_description: '7th Street LYNX station in Charlotte arts and cultural district',
     h1: '7th Street Station',
     intro: 'Arts and culture gateway',
-    tips: 'Popular evening destination',
+    tips: ['Popular evening destination', 'Great for cultural events', 'Multiple galleries nearby'],
     mejor_horario: '5 PM - 8 PM',
     mundial_relevancia: 'Arts district',
     descripcion_turistica: 'Gateway to Charlotte arts and cultural venues',
@@ -157,19 +157,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-trade-street',
     nombre: 'Trade Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Downtown Charlotte', distancia: '0.3 km', descripcion: 'Business district' }
+      { nombre: 'Downtown Charlotte', tipo: 'Centro Financiero', distancia: '0.3 km', descripcion: 'Business district' }
     ],
     transferencias: [],
     seo_title: 'Trade Street Station | Charlotte LYNX',
     meta_description: 'Trade Street LYNX station in downtown Charlotte',
     h1: 'Trade Street Station',
     intro: 'Downtown Charlotte access',
-    tips: 'Busy during business hours',
+    tips: ['Busy during business hours', 'Professional district', 'Central hub location'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Business district',
     descripcion_turistica: 'Access to downtown Charlotte business and financial district',
@@ -179,19 +179,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-stonewall',
     nombre: 'Stonewall',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'CBD', distancia: '0.2 km', descripcion: 'Central business district' }
+      { nombre: 'CBD', tipo: 'Centro Financiero', distancia: '0.2 km', descripcion: 'Central business district' }
     ],
-    transferencias: [{ estacion: 'charlotte-cvg-arena', linea: 'gold', tipo: 'ctrain' }],
+    transferencias: [{ estacion: 'charlotte-cvg-arena', linea: 'Gold', tipo: 'ctrain' }],
     seo_title: 'Stonewall Station | Charlotte LYNX',
     meta_description: 'Stonewall LYNX station with transfer to Gold Line',
     h1: 'Stonewall Station',
     intro: 'Downtown transfer hub',
-    tips: 'Connect to Gold Line here',
+    tips: ['Connect to Gold Line here', 'Major junction point', 'Frequent service'],
     mejor_horario: '9 AM - 6 PM',
     mundial_relevancia: 'Transit hub',
     descripcion_turistica: 'Downtown station with transfer options',
@@ -201,20 +201,20 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-cvg-arena',
     nombre: 'CVG Arena',
-    linea: ['blue', 'gold'],
+    linea: 'Blue, Gold',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Entretenimiento',
     pois: [
-      { nombre: 'Spectrum Center', distancia: '0.2 km', descripcion: 'Sports and entertainment venue' },
-      { nombre: 'Downtown Charlotte', distancia: '0.3 km', descripcion: 'Business and entertainment' }
+      { nombre: 'Spectrum Center', tipo: 'Entretenimiento', distancia: '0.2 km', descripcion: 'Sports and entertainment venue' },
+      { nombre: 'Downtown Charlotte', tipo: 'Centro Financiero', distancia: '0.3 km', descripcion: 'Business and entertainment' }
     ],
-    transferencias: [{ estacion: 'charlotte-stonewall', linea: 'blue', tipo: 'ctrain' }],
+    transferencias: [{ estacion: 'charlotte-stonewall', linea: 'Blue', tipo: 'ctrain' }],
     seo_title: 'CVG Arena Station | Charlotte LYNX',
     meta_description: 'CVG Arena LYNX station - Gateway to Spectrum Center and Charlotte sports events',
     h1: 'CVG Arena Station',
     intro: 'Sports and entertainment hub',
-    tips: 'High traffic on event days',
+    tips: ['High traffic on event days', 'Gateway to Spectrum Center', 'Multiple dining options'],
     mejor_horario: 'Event dependent',
     mundial_relevancia: 'Entertainment venue',
     descripcion_turistica: 'Access to Spectrum Center and downtown Charlotte entertainment',
@@ -224,19 +224,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-3rd-street',
     nombre: '3rd Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Government Center', distancia: '0.3 km', descripcion: 'City services' }
+      { nombre: 'Government Center', tipo: 'Gobierno', distancia: '0.3 km', descripcion: 'City services' }
     ],
     transferencias: [],
     seo_title: '3rd Street Station | Charlotte LYNX',
     meta_description: '3rd Street LYNX station in downtown Charlotte',
     h1: '3rd Street Station',
     intro: 'Downtown government area',
-    tips: 'Busy during business hours',
+    tips: ['Busy during business hours', 'Access to city services', 'Professional district'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Government district',
     descripcion_turistica: 'Access to Charlotte government and civic services',
@@ -246,19 +246,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-5th-street',
     nombre: '5th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Museums', distancia: '0.4 km', descripcion: 'Cultural attractions' }
+      { nombre: 'Museums', tipo: 'Museo', distancia: '0.4 km', descripcion: 'Cultural attractions' }
     ],
     transferencias: [],
     seo_title: '5th Street Station | Charlotte LYNX',
     meta_description: '5th Street LYNX station near Charlotte museums and cultural venues',
     h1: '5th Street Station',
     intro: 'Cultural attractions access',
-    tips: 'Popular on weekends',
+    tips: ['Popular on weekends', 'Museum access nearby', 'Cultural district gateway'],
     mejor_horario: '10 AM - 4 PM',
     mundial_relevancia: 'Cultural district',
     descripcion_turistica: 'Gateway to Charlotte museums and cultural institutions',
@@ -268,19 +268,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-9th-street',
     nombre: '9th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'South End District', distancia: '0.5 km', descripcion: 'Trendy neighborhood' }
+      { nombre: 'South End District', tipo: 'Barrio', distancia: '0.5 km', descripcion: 'Trendy neighborhood' }
     ],
     transferencias: [],
     seo_title: '9th Street Station | Charlotte LYNX',
     meta_description: '9th Street LYNX station serving South End Charlotte',
     h1: '9th Street Station',
     intro: 'South End neighborhood access',
-    tips: 'Popular evening and weekend destination',
+    tips: ['Popular evening and weekend destination', 'Trendy restaurants nearby', 'Shopping district access'],
     mejor_horario: '5 PM - 10 PM',
     mundial_relevancia: 'Trendy neighborhood',
     descripcion_turistica: 'Gateway to Charlotte South End district with restaurants and shops',
@@ -290,19 +290,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-10th-street',
     nombre: '10th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Shopping District', distancia: '0.3 km', descripcion: 'Retail stores' }
+      { nombre: 'Shopping District', tipo: 'Centro Comercial', distancia: '0.3 km', descripcion: 'Retail stores' }
     ],
     transferencias: [],
     seo_title: '10th Street Station | Charlotte LYNX',
     meta_description: '10th Street LYNX station in Charlotte South End',
     h1: '10th Street Station',
     intro: 'South End shopping and dining',
-    tips: 'Busy on weekends',
+    tips: ['Busy on weekends', 'Shopping and dining options', 'Lively entertainment scene'],
     mejor_horario: '11 AM - 9 PM',
     mundial_relevancia: 'Shopping district',
     descripcion_turistica: 'Access to South End shopping, dining, and entertainment',
@@ -312,19 +312,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-12th-street',
     nombre: '12th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Residential Area', distancia: '0.3 km', descripcion: 'Neighborhood homes' }
+      { nombre: 'Residential Area', tipo: 'Vivienda', distancia: '0.3 km', descripcion: 'Neighborhood homes' }
     ],
     transferencias: [],
     seo_title: '12th Street Station | Charlotte LYNX',
     meta_description: '12th Street LYNX station serving South End residential area',
     h1: '12th Street Station',
     intro: 'South End residential access',
-    tips: 'Less crowded midday',
+    tips: ['Less crowded midday', 'Residential neighborhood', 'Quiet area for living'],
     mejor_horario: '10 AM - 3 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Access to South End residential neighborhoods',
@@ -334,19 +334,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-15th-street',
     nombre: '15th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Parks and Recreation', distancia: '0.4 km', descripcion: 'Green spaces' }
+      { nombre: 'Parks and Recreation', tipo: 'Parque', distancia: '0.4 km', descripcion: 'Green spaces' }
     ],
     transferencias: [],
     seo_title: '15th Street Station | Charlotte LYNX',
     meta_description: '15th Street LYNX station in South End Charlotte',
     h1: '15th Street Station',
     intro: 'South End recreation access',
-    tips: 'Popular for park access',
+    tips: ['Popular for park access', 'Green spaces nearby', 'Outdoor recreation options'],
     mejor_horario: '9 AM - 6 PM',
     mundial_relevancia: 'Recreation',
     descripcion_turistica: 'Gateway to South End parks and green spaces',
@@ -356,19 +356,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-18th-street',
     nombre: '18th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Neighborhood Shops', distancia: '0.3 km', descripcion: 'Local stores' }
+      { nombre: 'Neighborhood Shops', tipo: 'Comercio', distancia: '0.3 km', descripcion: 'Local stores' }
     ],
     transferencias: [],
     seo_title: '18th Street Station | Charlotte LYNX',
     meta_description: '18th Street LYNX station in Charlotte South End',
     h1: '18th Street Station',
     intro: 'South End neighborhood stop',
-    tips: 'Moderate traffic',
+    tips: ['Moderate traffic', 'Local shopping access', 'Convenient neighborhood'],
     mejor_horario: '10 AM - 4 PM',
     mundial_relevancia: 'Neighborhood',
     descripcion_turistica: 'Access to South End shops and neighborhoods',
@@ -378,19 +378,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-21st-street',
     nombre: '21st Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Community Center', distancia: '0.4 km', descripcion: 'Recreation facilities' }
+      { nombre: 'Community Center', tipo: 'Recreación', distancia: '0.4 km', descripcion: 'Recreation facilities' }
     ],
     transferencias: [],
     seo_title: '21st Street Station | Charlotte LYNX',
     meta_description: '21st Street LYNX station serving South End Charlotte',
     h1: '21st Street Station',
     intro: 'South End community access',
-    tips: 'Steady traffic',
+    tips: ['Steady traffic', 'Community facilities nearby', 'Recreation options'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Community',
     descripcion_turistica: 'Access to South End community services and facilities',
@@ -400,19 +400,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-25th-street-south',
     nombre: '25th Street South',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Residential District', distancia: '0.3 km', descripcion: 'Neighborhood' }
+      { nombre: 'Residential District', tipo: 'Vivienda', distancia: '0.3 km', descripcion: 'Neighborhood' }
     ],
     transferencias: [],
     seo_title: '25th Street South Station | Charlotte LYNX',
     meta_description: '25th Street South LYNX station in Charlotte',
     h1: '25th Street South Station',
     intro: 'South Charlotte residential',
-    tips: 'Quieter than downtown stations',
+    tips: ['Quieter than downtown stations', 'Peaceful neighborhood', 'Good for families'],
     mejor_horario: '11 AM - 2 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Access to South Charlotte residential areas',
@@ -422,19 +422,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-28th-street',
     nombre: '28th Street',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Shops and Services', distancia: '0.3 km', descripcion: 'Local services' }
+      { nombre: 'Shops and Services', tipo: 'Servicios', distancia: '0.3 km', descripcion: 'Local services' }
     ],
     transferencias: [],
     seo_title: '28th Street Station | Charlotte LYNX',
     meta_description: '28th Street LYNX station in South Charlotte',
     h1: '28th Street Station',
     intro: 'South residential access',
-    tips: 'Moderate traffic',
+    tips: ['Moderate traffic', 'Local services available', 'Safe residential area'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Gateway to South Charlotte residential areas',
@@ -444,19 +444,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-tyvola',
     nombre: 'Tyvola',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Comercial',
     pois: [
-      { nombre: 'Shopping Center', distancia: '0.4 km', descripcion: 'Retail mall' }
+      { nombre: 'Shopping Center', tipo: 'Centro Comercial', distancia: '0.4 km', descripcion: 'Retail mall' }
     ],
     transferencias: [],
     seo_title: 'Tyvola Station | Charlotte LYNX',
     meta_description: 'Tyvola LYNX station near shopping and commercial Charlotte',
     h1: 'Tyvola Station',
     intro: 'Shopping center access',
-    tips: 'Popular shopping destination',
+    tips: ['Popular shopping destination', 'Multiple retail options', 'Easy access to mall'],
     mejor_horario: '10 AM - 6 PM',
     mundial_relevancia: 'Shopping',
     descripcion_turistica: 'Gateway to shopping centers and retail areas',
@@ -466,19 +466,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-bronx-avenue',
     nombre: 'Bronx Avenue',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Neighborhood', distancia: '0.2 km', descripcion: 'Residential area' }
+      { nombre: 'Neighborhood', tipo: 'Vivienda', distancia: '0.2 km', descripcion: 'Residential area' }
     ],
     transferencias: [],
     seo_title: 'Bronx Avenue Station | Charlotte LYNX',
     meta_description: 'Bronx Avenue LYNX station in Charlotte',
     h1: 'Bronx Avenue Station',
     intro: 'South residential stop',
-    tips: 'Less crowded',
+    tips: ['Less crowded', 'Quiet neighborhood', 'Safe residential area'],
     mejor_horario: '10 AM - 3 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Access to South Charlotte residential neighborhoods',
@@ -488,19 +488,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-i485-south-blvd',
     nombre: 'I-485/South Blvd',
-    linea: ['blue'],
+    linea: 'Blue',
     sistema: 'LYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Comercial',
     pois: [
-      { nombre: 'Retail and Services', distancia: '0.4 km', descripcion: 'Commercial area' }
+      { nombre: 'Retail and Services', tipo: 'Centro Comercial', distancia: '0.4 km', descripcion: 'Commercial area' }
     ],
     transferencias: [],
     seo_title: 'I-485/South Blvd Station | Charlotte LYNX',
     meta_description: 'I-485/South Blvd LYNX terminus station in Charlotte',
     h1: 'I-485/South Blvd Station',
     intro: 'Blue Line terminus',
-    tips: 'End of line station',
+    tips: ['End of line station', 'Southern terminus', 'Commercial access'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Commercial',
     descripcion_turistica: 'Southern terminus of LYNX Blue Line',
@@ -510,19 +510,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-rosa-parks-place',
     nombre: 'Rosa Parks Place',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Downtown Charlotte', distancia: '0.2 km', descripcion: 'Business district' }
+      { nombre: 'Downtown Charlotte', tipo: 'Centro Financiero', distancia: '0.2 km', descripcion: 'Business district' }
     ],
     transferencias: [],
     seo_title: 'Rosa Parks Place Station | Charlotte CityLYNX',
     meta_description: 'Rosa Parks Place CityLYNX Gold Line station in downtown Charlotte',
     h1: 'Rosa Parks Place Station',
     intro: 'Gold Line terminus downtown',
-    tips: 'Downtown starting point',
+    tips: ['Downtown starting point', 'Major transit hub', 'Business district access'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Downtown hub',
     descripcion_turistica: 'Northern terminus of LYNX Gold Line in downtown',
@@ -532,19 +532,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-mint-tryon',
     nombre: 'Mint/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Historic District', distancia: '0.3 km', descripcion: 'Heritage sites' }
+      { nombre: 'Historic District', tipo: 'Historia', distancia: '0.3 km', descripcion: 'Heritage sites' }
     ],
     transferencias: [],
     seo_title: 'Mint/Tryon Station | Charlotte CityLYNX',
     meta_description: 'Mint/Tryon CityLYNX Gold Line station near Charlotte historic sites',
     h1: 'Mint/Tryon Station',
     intro: 'Historic Charlotte access',
-    tips: 'Popular with heritage visitors',
+    tips: ['Popular with heritage visitors', 'Historic sites nearby', 'Cultural district'],
     mejor_horario: '10 AM - 4 PM',
     mundial_relevancia: 'Historic district',
     descripcion_turistica: 'Gateway to Charlotte Mint and historic downtown',
@@ -554,19 +554,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-7th-tryon',
     nombre: '7th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Arts District', distancia: '0.3 km', descripcion: 'Cultural venues' }
+      { nombre: 'Arts District', tipo: 'Artes y Cultura', distancia: '0.3 km', descripcion: 'Cultural venues' }
     ],
     transferencias: [],
     seo_title: '7th/Tryon Station | Charlotte CityLYNX',
     meta_description: '7th/Tryon CityLYNX Gold Line station near arts and culture',
     h1: '7th/Tryon Station',
     intro: 'Arts district access',
-    tips: 'Evening and weekend traffic',
+    tips: ['Evening and weekend traffic', 'Arts venues nearby', 'Cultural attractions'],
     mejor_horario: '5 PM - 9 PM',
     mundial_relevancia: 'Arts district',
     descripcion_turistica: 'Access to Charlotte arts and cultural venues',
@@ -576,19 +576,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-11th-tryon',
     nombre: '11th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Centro',
     pois: [
-      { nombre: 'Shopping District', distancia: '0.3 km', descripcion: 'Retail stores' }
+      { nombre: 'Shopping District', tipo: 'Centro Comercial', distancia: '0.3 km', descripcion: 'Retail stores' }
     ],
     transferencias: [],
     seo_title: '11th/Tryon Station | Charlotte CityLYNX',
     meta_description: '11th/Tryon CityLYNX Gold Line station in Charlotte',
     h1: '11th/Tryon Station',
     intro: 'Downtown shopping access',
-    tips: 'Busy daytime',
+    tips: ['Busy daytime', 'Shopping nearby', 'Commercial district'],
     mejor_horario: '9 AM - 6 PM',
     mundial_relevancia: 'Shopping',
     descripcion_turistica: 'Gateway to downtown Charlotte shopping',
@@ -598,19 +598,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-15th-tryon',
     nombre: '15th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Neighborhood', distancia: '0.3 km', descripcion: 'Residential area' }
+      { nombre: 'Neighborhood', tipo: 'Vivienda', distancia: '0.3 km', descripcion: 'Residential area' }
     ],
     transferencias: [],
     seo_title: '15th/Tryon Station | Charlotte CityLYNX',
     meta_description: '15th/Tryon CityLYNX Gold Line station',
     h1: '15th/Tryon Station',
     intro: 'Residential corridor access',
-    tips: 'Moderate traffic',
+    tips: ['Moderate traffic', 'Residential area', 'Safe neighborhood'],
     mejor_horario: '10 AM - 4 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Access to Charlotte residential corridors',
@@ -620,19 +620,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-20th-tryon',
     nombre: '20th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Neighborhood Services', distancia: '0.3 km', descripcion: 'Community services' }
+      { nombre: 'Neighborhood Services', tipo: 'Servicios', distancia: '0.3 km', descripcion: 'Community services' }
     ],
     transferencias: [],
     seo_title: '20th/Tryon Station | Charlotte CityLYNX',
     meta_description: '20th/Tryon CityLYNX Gold Line station',
     h1: '20th/Tryon Station',
     intro: 'North residential access',
-    tips: 'Quieter station',
+    tips: ['Quieter station', 'Community services', 'Safe area'],
     mejor_horario: '10 AM - 3 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'North residential Charlotte access',
@@ -642,19 +642,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-25th-tryon',
     nombre: '25th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Residential Area', distancia: '0.2 km', descripcion: 'Neighborhood' }
+      { nombre: 'Residential Area', tipo: 'Vivienda', distancia: '0.2 km', descripcion: 'Neighborhood' }
     ],
     transferencias: [],
     seo_title: '25th/Tryon Station | Charlotte CityLYNX',
     meta_description: '25th/Tryon CityLYNX Gold Line station',
     h1: '25th/Tryon Station',
     intro: 'North Charlotte residential',
-    tips: 'Light traffic',
+    tips: ['Light traffic', 'Peaceful neighborhood', 'Family-friendly'],
     mejor_horario: '11 AM - 2 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'North Charlotte neighborhoods',
@@ -664,19 +664,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-30th-tryon',
     nombre: '30th/Tryon',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Community Area', distancia: '0.3 km', descripcion: 'Local services' }
+      { nombre: 'Community Area', tipo: 'Comunidad', distancia: '0.3 km', descripcion: 'Local services' }
     ],
     transferencias: [],
     seo_title: '30th/Tryon Station | Charlotte CityLYNX',
     meta_description: '30th/Tryon CityLYNX Gold Line station',
     h1: '30th/Tryon Station',
     intro: 'North residential stop',
-    tips: 'Steady traffic',
+    tips: ['Steady traffic', 'Community services', 'Local area'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'North Charlotte community access',
@@ -686,19 +686,19 @@ export const estacionesCharlotte = [
   {
     slug: 'charlotte-sunnyside-avenue',
     nombre: 'Sunnyside Avenue',
-    linea: ['gold'],
+    linea: 'Gold',
     sistema: 'CityLYNX',
     municipio: 'Charlotte',
     tipo_zona: 'Residencial',
     pois: [
-      { nombre: 'Residential District', distancia: '0.3 km', descripcion: 'Neighborhoods' }
+      { nombre: 'Residential District', tipo: 'Vivienda', distancia: '0.3 km', descripcion: 'Neighborhoods' }
     ],
     transferencias: [],
     seo_title: 'Sunnyside Avenue Station | Charlotte CityLYNX',
     meta_description: 'Sunnyside Avenue CityLYNX Gold Line terminus station',
     h1: 'Sunnyside Avenue Station',
     intro: 'Gold Line terminus north',
-    tips: 'End of line terminus',
+    tips: ['End of line terminus', 'Northern terminus', 'Residential area'],
     mejor_horario: '9 AM - 5 PM',
     mundial_relevancia: 'Residential',
     descripcion_turistica: 'Northern terminus of LYNX Gold Line',
