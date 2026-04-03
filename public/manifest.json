@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "MetroGuia.mx — Transporte urbano en México",
+  "name": "MetroGuia — Transit Guide for Mexico, USA & Canada",
   "short_name": "MetroGuia",
-  "description": "Guía offline de metro, tren ligero y BRT para turistas en México. Trip planner con rutas de transporte urbano para CDMX, Guadalajara y Monterrey.",
+  "description": "Offline transit guide & trip planner for 60+ cities across Mexico, USA & Canada. Metro, subway, light rail & BRT routes. FIFA World Cup 2026 ready.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -16,10 +16,24 @@
   },
   "shortcuts": [
     {
-      "name": "Buscar ruta",
-      "short_name": "Ruta",
-      "description": "Calcula una ruta en metro",
+      "name": "Trip Planner",
+      "short_name": "Route",
+      "description": "Calculate a transit route",
       "url": "/ruta/calc/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "FIFA World Cup 2026",
+      "short_name": "FIFA",
+      "description": "Transit guide for FIFA 2026 host cities",
+      "url": "/mundial-2026/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "NYC Subway",
+      "short_name": "NYC",
+      "description": "MTA Subway guide for New York City",
+      "url": "/nyc/",
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
@@ -30,24 +44,31 @@
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
-      "name": "Guadalajara SITEUR",
-      "short_name": "GDL",
-      "description": "Tren Ligero y Macrobús de Guadalajara",
-      "url": "/gdl/",
+      "name": "LA Metro",
+      "short_name": "LA",
+      "description": "Metro & light rail guide for Los Angeles",
+      "url": "/los-angeles/",
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
-      "name": "Monterrey Metrorrey",
-      "short_name": "MTY",
-      "description": "Metrorrey y Ecovía de Monterrey",
-      "url": "/mty/",
+      "name": "Chicago L",
+      "short_name": "CHI",
+      "description": "CTA L train guide for Chicago",
+      "url": "/chicago/",
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     },
     {
-      "name": "Mundial 2026",
-      "short_name": "FIFA",
-      "description": "Guía de transporte para el Mundial",
-      "url": "/mundial-2026/",
+      "name": "Toronto TTC",
+      "short_name": "TOR",
+      "description": "TTC Subway guide for Toronto",
+      "url": "/toronto/",
+      "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
+    },
+    {
+      "name": "DC Metro",
+      "short_name": "DC",
+      "description": "WMATA Metrorail guide for Washington DC",
+      "url": "/washington-dc/",
       "icons": [{"src": "/logo.png", "sizes": "192x192", "type": "image/png"}]
     }
   ],

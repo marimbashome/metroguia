@@ -12,13 +12,13 @@
  * - Message handlers for cache control and version management
  */
 
-const SW_VERSION = 'v7-20260401';
+const SW_VERSION = 'v8-20260403';
 
 // Cache bucket names
-const CACHE_STATIC = 'mg-static-v7';
-const CACHE_PAGES = 'mg-pages-v7';
-const CACHE_FONTS = 'mg-fonts-v7';
-const CACHE_IMAGES = 'mg-images-v7';
+const CACHE_STATIC = 'mg-static-v8';
+const CACHE_PAGES = 'mg-pages-v8';
+const CACHE_FONTS = 'mg-fonts-v8';
+const CACHE_IMAGES = 'mg-images-v8';
 
 const ALL_CACHES = [CACHE_STATIC, CACHE_PAGES, CACHE_FONTS, CACHE_IMAGES];
 
@@ -27,13 +27,10 @@ const ALL_CACHES = [CACHE_STATIC, CACHE_PAGES, CACHE_FONTS, CACHE_IMAGES];
  */
 const PRECACHE_URLS = [
   '/',
+  // Mexico city hubs
   '/cdmx/',
   '/gdl/',
   '/mty/',
-  '/lineas/',
-  '/mundial-2026/',
-  '/hospedaje/',
-  '/offline/',
   '/puebla/',
   '/merida/',
   '/leon/',
@@ -42,14 +39,74 @@ const PRECACHE_URLS = [
   '/toluca/',
   '/queretaro/',
   '/tren-maya/',
+  // US — FIFA 2026 host cities (highest priority)
+  '/nyc/',
+  '/los-angeles/',
+  '/houston/',
+  '/dallas/',
+  '/san-francisco/',
+  '/seattle/',
+  '/philadelphia/',
+  '/boston/',
+  '/miami/',
+  '/atlanta/',
+  '/kansas-city/',
+  // US — Top metro systems
+  '/chicago/',
+  '/washington-dc/',
+  '/denver/',
+  '/portland/',
+  '/san-diego/',
+  '/minneapolis/',
+  '/phoenix/',
+  '/charlotte/',
+  '/pittsburgh/',
+  '/baltimore/',
+  '/st-louis/',
+  '/detroit/',
+  '/cleveland/',
+  '/las-vegas/',
+  '/san-jose/',
+  '/new-orleans/',
+  '/sacramento/',
+  '/salt-lake-city/',
+  '/buffalo/',
+  '/honolulu/',
+  '/norfolk/',
+  '/newark/',
+  '/austin/',
+  '/orlando/',
+  '/tampa/',
+  '/san-juan/',
+  '/jacksonville/',
+  '/cincinnati/',
+  '/el-paso/',
+  '/tucson/',
+  '/oklahoma-city/',
+  '/nashville/',
+  '/milwaukee/',
+  // Canada
+  '/toronto/',
+  '/vancouver/',
+  '/montreal/',
+  '/calgary/',
+  '/edmonton/',
+  '/ottawa/',
+  '/mississauga/',
+  '/kitchener-waterloo/',
+  // Core pages
+  '/lineas/',
+  '/mundial-2026/',
+  '/hospedaje/',
+  '/offline/',
   '/ruta/calc/',
   '/explorar/',
-  // GDL sub-hubs
+  // Sub-hubs
   '/gdl/mundial-2026/',
   '/gdl/macrobus/',
-  // MTY sub-hubs
   '/mty/mundial-2026/',
   '/mty/ecovia/',
+  // Assets
   '/manifest.json',
   '/logo.png',
   '/og-image.png'
@@ -59,7 +116,20 @@ const PRECACHE_URLS = [
  * Multi-city route prefixes for dynamic route detection
  * Order matters: check city-prefixed routes before bare routes
  */
-const CITY_PREFIXES = ['cdmx', 'gdl', 'mty', 'puebla', 'merida', 'leon', 'chihuahua', 'tijuana', 'toluca', 'queretaro', 'tren-maya'];
+const CITY_PREFIXES = [
+  // Mexico
+  'cdmx', 'gdl', 'mty', 'puebla', 'merida', 'leon', 'chihuahua', 'tijuana', 'toluca', 'queretaro', 'tren-maya',
+  'oaxaca', 'morelia', 'veracruz', 'campeche', 'villahermosa',
+  // US — FIFA 2026 hosts
+  'nyc', 'los-angeles', 'houston', 'dallas', 'san-francisco', 'seattle', 'philadelphia', 'boston', 'miami', 'atlanta', 'kansas-city',
+  // US — Major metros
+  'chicago', 'washington-dc', 'denver', 'portland', 'san-diego', 'minneapolis', 'phoenix', 'charlotte',
+  'pittsburgh', 'baltimore', 'st-louis', 'detroit', 'cleveland', 'las-vegas', 'san-jose', 'new-orleans',
+  'sacramento', 'salt-lake-city', 'buffalo', 'honolulu', 'norfolk', 'newark', 'austin', 'orlando',
+  'tampa', 'san-juan', 'jacksonville', 'cincinnati', 'el-paso', 'tucson', 'oklahoma-city', 'nashville', 'milwaukee',
+  // Canada
+  'toronto', 'vancouver', 'montreal', 'calgary', 'edmonton', 'ottawa', 'mississauga', 'kitchener-waterloo'
+];
 
 // ============================================================================
 // UTILITY FUNCTIONS
@@ -95,7 +165,7 @@ async function trimCache(cacheName, maxItems) {
  */
 function getDynamicRouteType(url) {
   const pathname = new URL(url).pathname;
-  const dynamicSegments = ['estacion', 'ruta', 'linea'];
+  const dynamicSegments = ['estacion', 'ruta', 'linea', 'station', 'line'];
 
   // Check city-prefixed routes first: /gdl/estacion/..., /mty/ruta/..., etc.
   for (const city of CITY_PREFIXES) {
