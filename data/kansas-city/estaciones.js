@@ -964,3 +964,4 @@ export const estacionesKansasCity = [
     }
   }
 ];
+export const estacionesKC = estacionesKansasCity;

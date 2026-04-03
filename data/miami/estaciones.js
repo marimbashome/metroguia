@@ -1918,3 +1918,5 @@ export const estacionesMiami = [
     }
   }
 ];
+
+export const estacionesMIA = estacionesMiami;

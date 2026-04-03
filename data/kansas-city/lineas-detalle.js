@@ -164,3 +164,4 @@ export const lineasKansasCity = [
     notas_mundial: "Ruta local alternativa. ConnectKC26 recomendado para FIFA 2026. Ruta 47 es opción presupuesto después del torneo."
   }
 ];
+export const lineasKC = lineasKansasCity;

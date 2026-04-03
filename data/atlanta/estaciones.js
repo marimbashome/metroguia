@@ -1169,3 +1169,5 @@ export const estacionesAtlanta = [
     "horarios": {"inicio": "05:00", "fin": "01:00"}
   }
 ];
+
+export const estacionesATL = estacionesAtlanta;

@@ -5802,3 +5802,5 @@ export const estacionesBoston = [
   }
 
 ];
+
+export const estacionesBOS = estacionesBoston;

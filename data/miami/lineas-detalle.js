@@ -306,3 +306,5 @@ export const lineasMiami = [
     }
   }
 ];
+
+export const lineasMIA = lineasMiami;

@@ -2223,3 +2223,5 @@ export const estacionesSF = [
     horarios: { apertura: "7:00 AM", cierre: "11:00 PM", frecuencia_peak: "10-15 min", frecuencia_off_peak: "15-20 min" }
   }
 ];
+
+export const estacionesSFO = estacionesSF;

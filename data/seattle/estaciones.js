@@ -2154,3 +2154,5 @@ export const estacionesSeattle = [
     "horarios": { "inicio": "06:00", "fin": "23:00" }
   }
 ];
+
+export const estacionesSEA = estacionesSeattle;

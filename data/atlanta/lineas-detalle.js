@@ -138,3 +138,5 @@ export const lineasAtlanta = [
     ]
   }
 ];
+
+export const lineasATL = lineasAtlanta;

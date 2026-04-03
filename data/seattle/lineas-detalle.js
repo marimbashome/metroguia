@@ -414,3 +414,5 @@ export const lineasSeattle = [
     h1: "First Hill Streetcar — Cardinal | Tranvía Seattle"
   }
 ]
+
+export const lineasSEA = lineasSeattle;

@@ -285,3 +285,5 @@ export const lineasBoston = [
     }
   }
 ];
+
+export const lineasBOS = lineasBoston;

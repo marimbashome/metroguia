@@ -6217,3 +6217,5 @@ export const estacionesPhiladelphia = [
     }
   }
 ];
+
+export const estacionesPHL = estacionesPhiladelphia;

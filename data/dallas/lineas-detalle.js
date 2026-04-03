@@ -346,3 +346,5 @@ export const lineasDallas = [
     notas_mundial: "Transporte cultural gratuito. Ideal para turistas que exploran Arts District y Bishop Arts. Conexión directa desde Union Station. Atmosférico y fotogénico para redes sociales."
   }
 ];
+
+export const lineasDAL = lineasDallas;

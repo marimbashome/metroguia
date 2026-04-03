@@ -482,3 +482,5 @@ export const lineasSF = [
     }
   }
 ];
+
+export const lineasSFO = lineasSF;

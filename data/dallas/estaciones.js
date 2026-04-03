@@ -1520,3 +1520,5 @@ export const estacionesDallas = [
     coords: { lat: 33.0627, lng: -96.6047 }
   }
 ];
+
+export const estacionesDAL = estacionesDallas;

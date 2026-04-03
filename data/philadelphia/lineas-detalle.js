@@ -647,3 +647,5 @@ export const lineasPhiladelphia = [
   trolleyDetalle,
   ...regionalRailLines
 ];
+
+export const lineasPHL = lineasPhiladelphia;
