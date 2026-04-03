@@ -671,4 +671,81 @@ export const grafoBaltimore = {
       { slug: 'baltimore-silver-spring', tiempo: 8, linea: 'marc-brunswick', tipo: 'marc' },
     ],
   },
+
+  // LIGHT RAIL — Penn Station branch & spur stations
+  'baltimore-penn-station-lr': {
+    ciudad: 'baltimore',
+    nombre: 'Penn Station (Light Rail)',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-north-avenue', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-mount-royal', tiempo: 2, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-penn-station-marc', tiempo: 5, linea: 'transfer', tipo: 'transfer' },
+    ],
+  },
+  'baltimore-timonium': {
+    ciudad: 'baltimore',
+    nombre: 'Timonium',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-lutherville', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-timonium-fairgrounds', tiempo: 2, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+  'baltimore-timonium-fairgrounds': {
+    ciudad: 'baltimore',
+    nombre: 'Timonium Fairgrounds',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-timonium', tiempo: 2, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-lutherville-north', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+  'baltimore-lutherville-north': {
+    ciudad: 'baltimore',
+    nombre: 'Lutherville North',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-timonium-fairgrounds', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-warren-road', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+  'baltimore-warren-road': {
+    ciudad: 'baltimore',
+    nombre: 'Warren Road',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-lutherville-north', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-mta-ride-quality', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+  'baltimore-mta-ride-quality': {
+    ciudad: 'baltimore',
+    nombre: 'MTA Ride Quality',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-warren-road', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-north-avenue-west', tiempo: 4, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+  'baltimore-north-avenue-west': {
+    ciudad: 'baltimore',
+    nombre: 'North Avenue West',
+    lineas: ['lightrail'],
+    adyacentes: [
+      { slug: 'baltimore-mta-ride-quality', tiempo: 4, linea: 'lightrail', tipo: 'lightrail' },
+      { slug: 'baltimore-north-avenue', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
+    ],
+  },
+
+  // MARC Camden — Camden Station node
+  'baltimore-camden-marc': {
+    ciudad: 'baltimore',
+    nombre: 'Baltimore Camden Station',
+    lineas: ['marc-camden'],
+    adyacentes: [
+      { slug: 'baltimore-st-denis', tiempo: 8, linea: 'marc-camden', tipo: 'marc' },
+      { slug: 'baltimore-camden-yards', tiempo: 5, linea: 'transfer', tipo: 'transfer' },
+    ],
+  },
 };
