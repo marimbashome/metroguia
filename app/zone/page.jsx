@@ -45,8 +45,9 @@ export default function ZonesPage() {
 
   const zonesByCity = {}
   zonasUSCA.filter(Boolean).forEach(zone => {
-    if (!zonesByCity[zone.city]) zonesByCity[zone.city] = []
-    zonesByCity[zone.city].push(zone)
+    const cityKey = zone.city || zone.state || 'Other'
+    if (!zonesByCity[cityKey]) zonesByCity[cityKey] = []
+    zonesByCity[cityKey].push(zone)
   })
 
   const cities = Object.keys(zonesByCity).sort()

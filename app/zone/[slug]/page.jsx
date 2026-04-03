@@ -54,19 +54,28 @@ export default function ZonePage({ params }) {
     </div>
   )
 
+  // Normalize fields — some zones use city/country, others use state
+  const cityName = zona.city || zona.state || 'Unknown'
+  const countryName = zona.country === 'US' ? 'USA' : (zona.country || 'USA')
+  const stations = zona.stations || []
+  const transitSystems = zona.transit_systems || []
+  const transitLines = zona.transit_lines || []
+  const pois = zona.pois || []
+  const tipsForVisitors = zona.tips_for_visitors || []
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': ['TouristAttraction', 'LocalBusiness'],
-    name: `${zona.name} - ${zona.city}, ${zona.country}`,
+    name: `${zona.name} - ${cityName}, ${countryName}`,
     description: zona.meta_description,
     url: `https://metroguia.mx/zone/${zona.slug}/`,
     isAccessibleForFree: true,
     publicAccess: true,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: zona.city,
-      addressRegion: zona.city,
-      addressCountry: zona.country,
+      addressLocality: cityName,
+      addressRegion: cityName,
+      addressCountry: countryName,
     },
     headline: `How to reach ${zona.name} by transit`,
   }
@@ -84,11 +93,11 @@ export default function ZonePage({ params }) {
           <h1>{zona.h1}</h1>
           <p style={{ fontSize: '1.125rem', marginBottom: '1rem' }}>{zona.name}</p>
           <p style={{ fontSize: '0.875rem', opacity: 0.7 }}>
-            {zona.city}, {zona.country}
+            {cityName}, {countryName}
           </p>
-          {zona.transit_systems.length > 0 && (
+          {transitSystems.length > 0 && (
             <p style={{ fontSize: '0.875rem', opacity: 0.8, marginTop: '0.75rem' }}>
-              Transit: {zona.transit_systems.join(', ')}
+              Transit: {transitSystems.join(', ')}
             </p>
           )}
         </div>
@@ -107,13 +116,13 @@ export default function ZonePage({ params }) {
       </section>
 
       {/* NEARBY STATIONS */}
-      {zona.stations.length > 0 && (
+      {stations.length > 0 && (
         <section style={{ padding: '3rem 1.25rem', backgroundColor: 'var(--metro-gray)' }}>
           <div className="container" style={{ maxWidth: '800px' }}>
             <h2 style={{ marginBottom: '2rem' }}>Nearby stations</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
-              {zona.stations.map((station, idx) => {
-                const systemColor = zona.transit_systems[0] ? getTransitColor(zona.transit_systems[0]) : '#666'
+              {stations.map((station, idx) => {
+                const systemColor = transitSystems[0] ? getTransitColor(transitSystems[0]) : '#666'
                 return (
                   <div key={idx} className="lugar-card" style={{ border: `2px solid ${systemColor}` }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
@@ -125,7 +134,7 @@ export default function ZonePage({ params }) {
                         fontWeight: 700,
                         fontSize: '0.875rem'
                       }}>
-                        {zona.transit_systems[0] || 'Transit'}
+                        {transitSystems[0] || 'Transit'}
                       </span>
                     </div>
                     <h3 style={{ fontSize: '1.125rem', marginBottom: '0.5rem' }}>
@@ -143,12 +152,12 @@ export default function ZonePage({ params }) {
       )}
 
       {/* WHAT TO SEE & DO - POIs */}
-      {zona.pois.length > 0 && (
+      {pois.length > 0 && (
         <section style={{ padding: '3rem 1.25rem' }}>
           <div className="container" style={{ maxWidth: '1000px' }}>
             <h2 style={{ marginBottom: '2rem', textAlign: 'center' }}>What to see & do</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-              {zona.pois.map((poi, idx) => (
+              {pois.map((poi, idx) => (
                 <div key={idx} className="lugar-card" style={{
                   backgroundColor: '#f8f9fa',
                   borderTop: '4px solid var(--metro-orange)',
@@ -175,25 +184,25 @@ export default function ZonePage({ params }) {
         <div className="container" style={{ maxWidth: '1200px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '2rem' }}>
             <div>
-              <h3 style={{ marginBottom: '1.5rem' }}>Book tours in {zona.city}</h3>
-              <ViatorToursWidget ciudad={zona.city} zona={zona.name} />
+              <h3 style={{ marginBottom: '1.5rem' }}>Book tours in {cityName}</h3>
+              <ViatorToursWidget ciudad={cityName} zona={zona.name} />
             </div>
             <div>
               <h3 style={{ marginBottom: '1.5rem' }}>Find accommodation</h3>
-              <BookingWidget ciudad={zona.city} />
+              <BookingWidget ciudad={cityName} />
             </div>
           </div>
         </div>
       </section>
 
       {/* TIPS FOR VISITORS */}
-      {zona.tips_for_visitors && zona.tips_for_visitors.length > 0 && (
+      {tipsForVisitors.length > 0 && (
         <section style={{ padding: '3rem 1.25rem' }}>
           <div className="container" style={{ maxWidth: '800px' }}>
             <h2 style={{ marginBottom: '1.5rem' }}>Tips for visitors</h2>
             <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--metro-orange)' }}>
               <ul style={{ listStyle: 'none', padding: 0 }}>
-                {zona.tips_for_visitors.map((tip, idx) => (
+                {tipsForVisitors.map((tip, idx) => (
                   <li key={idx} style={{ marginBottom: '1rem', paddingLeft: '2rem', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, color: 'var(--metro-orange)', fontWeight: 700 }}>✓</span>
                     {tip}
@@ -231,7 +240,7 @@ export default function ZonePage({ params }) {
       {/* CTA SECTION */}
       <section className="section-tips">
         <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-          <h2 style={{ marginBottom: '1.5rem' }}>Planning your visit to {zona.city}?</h2>
+          <h2 style={{ marginBottom: '1.5rem' }}>Planning your visit to {cityName}?</h2>
           <p style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>
             {zona.name} is a must-see destination during FIFA 2026
           </p>
@@ -252,16 +261,16 @@ export default function ZonePage({ params }) {
           <h3 style={{ marginBottom: '1.5rem' }}>Explore more neighborhoods</h3>
           <div className="btn-group" style={{ marginBottom: '2rem' }}>
             <a href="/zone/" className="cta-btn">
-              View all zones in {zona.city} →
+              View all zones in {cityName} →
             </a>
           </div>
 
-          {zona.transit_systems.length > 0 && (
+          {transitSystems.length > 0 && transitLines.length > 0 && (
             <>
               <h3 style={{ marginBottom: '1.5rem' }}>Transit lines in this zone</h3>
               <div className="btn-group">
-                {zona.transit_lines.slice(0, 4).map((line, idx) => {
-                  const systemColor = getTransitColor(zona.transit_systems[0])
+                {transitLines.slice(0, 4).map((line, idx) => {
+                  const systemColor = getTransitColor(transitSystems[0])
                   return (
                     <button key={idx} style={{
                       backgroundColor: systemColor,
@@ -272,7 +281,7 @@ export default function ZonePage({ params }) {
                       fontWeight: 600,
                       cursor: 'default'
                     }}>
-                      {zona.transit_systems[0]} — {line}
+                      {transitSystems[0]} — {line}
                     </button>
                   )
                 })}
