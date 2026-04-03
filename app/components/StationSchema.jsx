@@ -1,16 +1,18 @@
 export default function StationSchema({ station, city, sistema, slug, lines, accessibility, address }) {
+  const stationName = station || 'Station';
   // Determine station type based on sistema
-  const stationType = sistema && (sistema.includes('metro') || sistema.includes('Metro')) 
+  const stationType = sistema && (sistema.includes('metro') || sistema.includes('Metro'))
     ? 'TrainStation'
     : 'BusStation'
 
+  const stationSlug = slug || stationName.toLowerCase().replace(/\s+/g, '-');
   const schema = {
     '@context': 'https://schema.org',
     '@type': stationType,
-    name: station,
-    identifier: slug || station.toLowerCase().replace(/\s+/g, '-'),
-    description: `Estación ${station} de ${sistema || 'transporte público'} en ${city}`,
-    url: `https://metroguia.mx/estacion/${slug || station.toLowerCase().replace(/\s+/g, '-')}/`,
+    name: stationName,
+    identifier: stationSlug,
+    description: `Estación ${stationName} de ${sistema || 'transporte público'} en ${city || 'México'}`,
+    url: `https://metroguia.mx/estacion/${stationSlug}/`,
   }
 
   // Add geographic coordinates if available
@@ -86,19 +88,19 @@ export default function StationSchema({ station, city, sistema, slug, lines, acc
         '@type': 'ListItem',
         position: 2,
         name: city,
-        item: `https://metroguia.mx/${city.toLowerCase().replace(/\s+/g, '-')}/`
+        item: `https://metroguia.mx/${(city || 'mexico').toLowerCase().replace(/\s+/g, '-')}/`
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Estaciones',
-        item: `https://metroguia.mx/${city.toLowerCase().replace(/\s+/g, '-')}/estaciones/`
+        item: `https://metroguia.mx/${(city || 'mexico').toLowerCase().replace(/\s+/g, '-')}/estaciones/`
       },
       {
         '@type': 'ListItem',
         position: 4,
-        name: station,
-        item: `https://metroguia.mx/estacion/${slug || station.toLowerCase().replace(/\s+/g, '-')}/`
+        name: stationName,
+        item: `https://metroguia.mx/estacion/${stationSlug}/`
       }
     ]
   }
@@ -107,10 +109,10 @@ export default function StationSchema({ station, city, sistema, slug, lines, acc
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': `https://metroguia.mx/estacion/${slug || station.toLowerCase().replace(/\s+/g, '-')}/`,
-    name: `Estación ${station}`,
-    description: `Estación de transporte público ${station} ubicada en ${city}`,
-    url: `https://metroguia.mx/estacion/${slug || station.toLowerCase().replace(/\s+/g, '-')}/`,
+    '@id': `https://metroguia.mx/estacion/${stationSlug}/`,
+    name: `Estación ${stationName}`,
+    description: `Estación de transporte público ${stationName} ubicada en ${city || 'México'}`,
+    url: `https://metroguia.mx/estacion/${stationSlug}/`,
     areaServed: city,
     knowsAbout: 'Transporte público, Metro, Sistema de Transporte Colectivo',
     potentialAction: {

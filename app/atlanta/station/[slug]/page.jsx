@@ -55,11 +55,11 @@ export default function StationAtlanta({ params }) {
 
   const lineaArr = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
   const lineasEstacion = lineaArr.map((lineId) => lineasAtlanta.find((l) => l.id === lineId)).filter(Boolean);
-  const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[lineasEstacion[0].id.toLowerCase()] || '#FDBF00' : '#FDBF00';
+  const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[(lineasEstacion[0].id || '').toLowerCase()] || '#FDBF00' : '#FDBF00';
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
-      <StationSchema estacion={estacion} ciudad="atlanta" sistema="MARTA" />
+      <StationSchema station={estacion.nombre} city="Atlanta" sistema="MARTA" slug={estacion.slug} />
 
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: colorPrincipal === '#FFD960' ? '#000' : '#fff', padding: '60px 24px' }}>
@@ -214,7 +214,7 @@ export default function StationAtlanta({ params }) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {lineasEstacion.map((linea) => (
                   <Link href={`/atlanta/line/${linea.id}`} key={linea.id}>
-                    <div style={{ padding: '12px', backgroundColor: 'var(--surface)', border: `1px solid ${LINE_COLORS[linea.id.toLowerCase()] || '#FDBF00'}`, borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+                    <div style={{ padding: '12px', backgroundColor: 'var(--surface)', border: `1px solid ${LINE_COLORS[(linea.id || '').toLowerCase()] || '#FDBF00'}`, borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.2s ease' }}>
                       <p style={{ fontSize: '0.9rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                         {linea.colorNombre}
                       </p>

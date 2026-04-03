@@ -54,11 +54,11 @@ export default function StationHouston({ params }) {
 
   const lineaArr = Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea];
   const lineasEstacion = lineaArr.map((lineId) => lineasHOU.find((l) => l.id === lineId)).filter(Boolean);
-  const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[lineasEstacion[0].id.toLowerCase()] || '#FF6600' : '#FF6600';
+  const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[(lineasEstacion[0].id || '').toLowerCase()] || '#FF6600' : '#FF6600';
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
-      <StationSchema estacion={estacion} ciudad="houston" sistema="Metro Rail" />
+      <StationSchema station={estacion.nombre} city="Houston" sistema="Metro Rail" slug={estacion.slug} />
 
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
@@ -213,7 +213,7 @@ export default function StationHouston({ params }) {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {lineasEstacion.map((linea) => (
                   <Link href={`/houston/line/${linea.id}`} key={linea.id}>
-                    <div style={{ padding: '12px', backgroundColor: 'var(--surface)', border: `1px solid ${LINE_COLORS[linea.id.toLowerCase()] || '#FF6600'}`, borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+                    <div style={{ padding: '12px', backgroundColor: 'var(--surface)', border: `1px solid ${LINE_COLORS[(linea.id || '').toLowerCase()] || '#FF6600'}`, borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.2s ease' }}>
                       <p style={{ fontSize: '0.9rem', fontWeight: '700', margin: '0', color: 'var(--text)' }}>
                         {linea.colorNombre}
                       </p>
