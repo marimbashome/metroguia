@@ -1,5 +1,5 @@
-import { estacionesOklahomacity } from '@/data/oklahoma-city/estaciones';
-import { lineasOklahomacity } from '@/data/oklahoma-city/lineas-detalle';
+import { estacionesOklahomaCity } from '@/data/oklahoma-city/estaciones';
+import { lineasOklahomaCity } from '@/data/oklahoma-city/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
@@ -7,13 +7,13 @@ import Link from 'next/link';
 const LINE_COLORS = {"downtown":"#0072CE","bricktown":"#E35205"};
 
 export async function generateStaticParams() {
-  return estacionesOklahomacity.map((estacion) => ({
+  return estacionesOklahomaCity.map((estacion) => ({
     slug: estacion.slug,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const estacion = estacionesOklahomacity.find((e) => e.slug === params.slug);
+  const estacion = estacionesOklahomaCity.find((e) => e.slug === params.slug);
   if (!estacion) {
     return { title: 'Station not found', description: 'The requested station does not exist.' };
   }
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function StationOklahomaCityPage({ params }) {
-  const estacion = estacionesOklahomacity.find((e) => e.slug === params.slug);
+  const estacion = estacionesOklahomaCity.find((e) => e.slug === params.slug);
 
   if (!estacion) {
     return (

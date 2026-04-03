@@ -1,5 +1,5 @@
-import { lineasOklahomacity } from '@/data/oklahoma-city/lineas-detalle';
-import { estacionesOklahomacity } from '@/data/oklahoma-city/estaciones';
+import { lineasOklahomaCity } from '@/data/oklahoma-city/lineas-detalle';
+import { estacionesOklahomaCity } from '@/data/oklahoma-city/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
@@ -18,7 +18,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 };
 
-const estacionesDestacadas = estacionesOklahomacity.filter(e =>
+const estacionesDestacadas = estacionesOklahomaCity.filter(e =>
   ['oklahoma-city-bricktown-depot', 'oklahoma-city-crystal-bridge', 'oklahoma-city-civic-center', 'oklahoma-city-piedmont'].includes(e.slug)
 );
 
@@ -137,7 +137,7 @@ export default function OklahomaCityPage() {
             EMBARK Streetcar Lines
           </h2>
           <div style={{ display: 'grid', gap: '20px' }}>
-            {lineasOklahomacity.map((linea, idx) => (
+            {lineasOklahomaCity.map((linea, idx) => (
               <Link href={`/oklahoma-city/line/${linea.id}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{ padding: '24px', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: `5px solid ${linea.color}`, border: '1px solid var(--border)', cursor: 'pointer', transition: 'all 0.3s ease' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>

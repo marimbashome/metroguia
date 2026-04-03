@@ -17,12 +17,14 @@ export async function generateMetadata({ params }) {
   if (!estacion) {
     return { title: 'Station not found', description: 'The requested station does not exist.' };
   }
+  const seoTitle = estacion.seo_title || (estacion.seo && estacion.seo.title) || `${estacion.nombre} Station — Newark | MetroGuia`;
+  const seoDesc = estacion.meta_description || (estacion.seo && estacion.seo.meta_description) || `${estacion.nombre} station on NJ Transit Light Rail in Newark.`;
   return {
-    title: estacion.seo_title,
-    description: estacion.meta_description,
+    title: seoTitle,
+    description: seoDesc,
     openGraph: {
-      title: estacion.seo_title,
-      description: estacion.meta_description,
+      title: seoTitle,
+      description: seoDesc,
       url: `https://metroguia.mx/newark/station/${estacion.slug}`,
     },
   };

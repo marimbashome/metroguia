@@ -1,17 +1,17 @@
-import { lineasOklahomacity } from '@/data/oklahoma-city/lineas-detalle';
-import { estacionesOklahomacity } from '@/data/oklahoma-city/estaciones';
+import { lineasOklahomaCity } from '@/data/oklahoma-city/lineas-detalle';
+import { estacionesOklahomaCity } from '@/data/oklahoma-city/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
 export async function generateStaticParams() {
-  return lineasOklahomacity.map((linea) => ({
+  return lineasOklahomaCity.map((linea) => ({
     id: linea.id,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasOklahomacity.find((l) => l.id === params.id);
+  const linea = lineasOklahomaCity.find((l) => l.id === params.id);
   if (!linea) {
     return { title: 'Line not found', description: 'The requested line does not exist.' };
   }
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function LineOklahomaCityPage({ params }) {
-  const linea = lineasOklahomacity.find((l) => l.id === params.id);
+  const linea = lineasOklahomaCity.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
@@ -42,7 +42,7 @@ export default function LineOklahomaCityPage({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesOklahomacity.filter((e) => {
+  const estacionesLinea = estacionesOklahomaCity.filter((e) => {
     const eLinea = Array.isArray(e.linea) ? e.linea : [e.linea];
     return eLinea.includes(linea.id);
   });
