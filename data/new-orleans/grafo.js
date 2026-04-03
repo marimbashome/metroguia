@@ -95,7 +95,7 @@ export const grafoNewOrleans = {
     adyacentes: [
       { slug: 'new-orleans-tulane', tiempo: 3, linea: 'st-charles', tipo: 'rta-streetcar' },
       { slug: 'new-orleans-riverbend', tiempo: 3, linea: 'st-charles', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-canal-carrollton', tiempo: 5, linea: 'orleans', tipo: 'transbordo' }],
   },
   'new-orleans-riverbend': {
     ciudad: 'new-orleans',
@@ -138,7 +138,7 @@ export const grafoNewOrleans = {
     lineas: ["canal"],
     adyacentes: [
       { slug: 'new-orleans-canal-bourbon', tiempo: 3, linea: 'canal', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-canal-ferry', tiempo: 5, linea: 'orleans', tipo: 'transbordo' }],
   },
   'new-orleans-canal-bourbon': {
     ciudad: 'new-orleans',
@@ -174,7 +174,7 @@ export const grafoNewOrleans = {
     adyacentes: [
       { slug: 'new-orleans-canal-basin', tiempo: 3, linea: 'canal', tipo: 'rta-streetcar' },
       { slug: 'new-orleans-basin-st-louis', tiempo: 3, linea: 'canal', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-press', tiempo: 5, linea: 'press', tipo: 'transbordo' }],
   },
   'new-orleans-basin-st-louis': {
     ciudad: 'new-orleans',
@@ -192,7 +192,7 @@ export const grafoNewOrleans = {
     adyacentes: [
       { slug: 'new-orleans-basin-st-louis', tiempo: 3, linea: 'canal', tipo: 'rta-streetcar' },
       { slug: 'new-orleans-canal-jeff-davis', tiempo: 3, linea: 'canal', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-st-charles-carrollton', tiempo: 5, linea: 'orleans', tipo: 'transbordo' }],
   },
   'new-orleans-canal-jeff-davis': {
     ciudad: 'new-orleans',
@@ -244,7 +244,7 @@ export const grafoNewOrleans = {
     adyacentes: [
       { slug: 'new-orleans-jackson-brewery', tiempo: 3, linea: 'riverfront', tipo: 'rta-streetcar' },
       { slug: 'new-orleans-julia', tiempo: 3, linea: 'riverfront', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-harrahs', tiempo: 5, linea: 'harrahs', tipo: 'transbordo' }],
   },
   'new-orleans-julia': {
     ciudad: 'new-orleans',
@@ -305,7 +305,7 @@ export const grafoNewOrleans = {
     adyacentes: [
       { slug: 'new-orleans-st-claude', tiempo: 3, linea: 'rampart', tipo: 'rta-streetcar' },
       { slug: 'new-orleans-elysian-fields', tiempo: 3, linea: 'rampart', tipo: 'rta-streetcar' },
-    ],
+      { slug: 'new-orleans-canal-rampart', tiempo: 5, linea: 'orleans', tipo: 'transbordo' }],
   },
   'new-orleans-elysian-fields': {
     ciudad: 'new-orleans',

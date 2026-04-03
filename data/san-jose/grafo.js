@@ -32,7 +32,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-milpitas', tiempo: 3, linea: 'blue', tipo: 'vta' },
       { slug: 'san-jose-montague', tiempo: 3, linea: 'blue', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-great-america', tiempo: 5, linea: 'green', tipo: 'transbordo' }],
   },
   'san-jose-montague': {
     ciudad: 'san-jose',
@@ -59,7 +59,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-component', tiempo: 3, linea: 'blue', tipo: 'vta' },
       { slug: 'san-jose-metro-airport', tiempo: 3, linea: 'blue', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-middlefield', tiempo: 5, linea: 'orange', tipo: 'transbordo' }],
   },
   'san-jose-metro-airport': {
     ciudad: 'san-jose',
@@ -158,7 +158,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-virginia', tiempo: 3, linea: 'blue', tipo: 'vta' },
       { slug: 'san-jose-curtner', tiempo: 3, linea: 'blue', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-cropley', tiempo: 5, linea: 'orange', tipo: 'transbordo' }],
   },
   'san-jose-curtner': {
     ciudad: 'san-jose',
@@ -192,7 +192,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-old-ironsides', tiempo: 3, linea: 'green', tipo: 'vta' },
       { slug: 'san-jose-lick-mill', tiempo: 3, linea: 'green', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-great-mall', tiempo: 5, linea: 'blue', tipo: 'transbordo' }],
   },
   'san-jose-lick-mill': {
     ciudad: 'san-jose',
@@ -334,7 +334,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-whisman', tiempo: 3, linea: 'orange', tipo: 'vta' },
       { slug: 'san-jose-bayshore', tiempo: 3, linea: 'orange', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-karina', tiempo: 5, linea: 'blue', tipo: 'transbordo' }],
   },
   'san-jose-bayshore': {
     ciudad: 'san-jose',
@@ -397,7 +397,7 @@ export const grafoSanJose = {
     adyacentes: [
       { slug: 'san-jose-milpitas-o', tiempo: 3, linea: 'orange', tipo: 'vta' },
       { slug: 'san-jose-hostetter', tiempo: 3, linea: 'orange', tipo: 'vta' },
-    ],
+      { slug: 'san-jose-tamien', tiempo: 5, linea: 'blue', tipo: 'transbordo' }],
   },
   'san-jose-hostetter': {
     ciudad: 'san-jose',

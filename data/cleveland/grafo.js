@@ -64,10 +64,12 @@ export const grafoCleveland = {
   'cleveland-tower-city': {
     ciudad: 'cleveland',
     nombre: 'Tower City',
-    lineas: ["red"],
+    lineas: ["red", "blue", "green"],
     adyacentes: [
       { slug: 'cleveland-w-25th', tiempo: 3, linea: 'red', tipo: 'rta' },
       { slug: 'cleveland-e-34th', tiempo: 3, linea: 'red', tipo: 'rta' },
+      { slug: 'cleveland-tower-city-blue', tiempo: 5, linea: 'blue', tipo: 'transbordo' },
+      { slug: 'cleveland-tower-city-green', tiempo: 5, linea: 'green', tipo: 'transbordo' },
     ],
   },
   'cleveland-e-34th': {
@@ -165,6 +167,7 @@ export const grafoCleveland = {
     lineas: ["blue"],
     adyacentes: [
       { slug: 'cleveland-e-34th-blue', tiempo: 3, linea: 'blue', tipo: 'rta' },
+      { slug: 'cleveland-tower-city', tiempo: 5, linea: 'red', tipo: 'transbordo' },
     ],
   },
   'cleveland-e-34th-blue': {
@@ -253,6 +256,7 @@ export const grafoCleveland = {
     lineas: ["green"],
     adyacentes: [
       { slug: 'cleveland-e-34th-green', tiempo: 3, linea: 'green', tipo: 'rta' },
+      { slug: 'cleveland-tower-city', tiempo: 5, linea: 'red', tipo: 'transbordo' },
     ],
   },
   'cleveland-e-34th-green': {

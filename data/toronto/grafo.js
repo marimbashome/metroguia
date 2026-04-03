@@ -170,7 +170,7 @@ export const grafoToronto = {
   'toronto-union-station': {
     ciudad: 'toronto',
     nombre: 'Union Station',
-    lineas: ['1', 'UP', 'GO-Lakeshore', 'GO-Kitchener', 'GO-Barrie', 'GO-Milton'],
+    lineas: ['1', 'UP', 'GO-Lakeshore', 'GO-Kitchener', 'GO-Barrie', 'GO-Milton', 'GO-Richmond Hill', 'GO-Stouffville'],
     adyacentes: [
       { slug: 'toronto-king', tiempo: 1, linea: '1', tipo: 'ttc-subway' },
       { slug: 'toronto-st-andrew', tiempo: 1, linea: '1', tipo: 'ttc-subway' },
@@ -180,6 +180,8 @@ export const grafoToronto = {
       { slug: 'toronto-brampton-go', tiempo: 45, linea: 'GO-Kitchener', tipo: 'go-transit' },
       { slug: 'toronto-barrie-south-go', tiempo: 90, linea: 'GO-Barrie', tipo: 'go-transit' },
       { slug: 'toronto-mississauga-go', tiempo: 40, linea: 'GO-Milton', tipo: 'go-transit' },
+      { slug: 'richmond-hill', tiempo: 35, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+      { slug: 'stouffville', tiempo: 50, linea: 'GO-Stouffville', tipo: 'go-transit' },
     ]
   },
   'toronto-st-andrew': {
@@ -785,54 +787,79 @@ export const grafoToronto = {
     ciudad: 'toronto',
     nombre: 'Agincourt',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'stouffville', tiempo: 15, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   },
   'bloomington': {
     ciudad: 'toronto',
     nombre: 'Bloomington',
     lineas: ['GO-Richmond Hill'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'gormley', tiempo: 8, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+      { slug: 'richmond-hill', tiempo: 5, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+    ]
   },
   'gormley': {
     ciudad: 'toronto',
     nombre: 'Gormley',
     lineas: ['GO-Richmond Hill'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'bloomington', tiempo: 8, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+    ]
   },
   'markham': {
     ciudad: 'toronto',
     nombre: 'Markham',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'milliken', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+      { slug: 'stouffville', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   },
   'milliken': {
     ciudad: 'toronto',
     nombre: 'Milliken',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'old-elm', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+      { slug: 'markham', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   },
   'old-elm': {
     ciudad: 'toronto',
     nombre: 'Old Elm',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'milliken', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   },
   'richmond-hill': {
     ciudad: 'toronto',
     nombre: 'Richmond Hill',
     lineas: ['GO-Richmond Hill'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'bloomington', tiempo: 5, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+      { slug: 'toronto-union-station', tiempo: 35, linea: 'GO-Richmond Hill', tipo: 'go-transit' },
+    ]
   },
   'stouffville': {
     ciudad: 'toronto',
     nombre: 'Stouffville',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'markham', tiempo: 5, linea: 'GO-Stouffville', tipo: 'go-transit' },
+      { slug: 'unionville', tiempo: 3, linea: 'GO-Stouffville', tipo: 'go-transit' },
+      { slug: 'agincourt', tiempo: 15, linea: 'GO-Stouffville', tipo: 'go-transit' },
+      { slug: 'toronto-union-station', tiempo: 50, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   },
   'unionville': {
     ciudad: 'toronto',
     nombre: 'Unionville',
     lineas: ['GO-Stouffville'],
-    adyacentes: []
+    adyacentes: [
+      { slug: 'stouffville', tiempo: 3, linea: 'GO-Stouffville', tipo: 'go-transit' },
+    ]
   }
 };

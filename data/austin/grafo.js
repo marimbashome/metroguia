@@ -3,70 +3,70 @@ export const grafoAustin = {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-plaza-saltillo", linea: "red-line", tiempo: 2 }
+      { slug: "austin-plaza-saltillo", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-plaza-saltillo": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-downtown-austin", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-highland", linea: "red-line", tiempo: 2 }
+      { slug: "austin-downtown-austin", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-highland", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-highland": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-plaza-saltillo", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-crestview", linea: "red-line", tiempo: 2 }
+      { slug: "austin-plaza-saltillo", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-crestview", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-crestview": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-highland", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-kramer", linea: "red-line", tiempo: 2 }
+      { slug: "austin-highland", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-kramer", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-kramer": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-crestview", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-howard", linea: "red-line", tiempo: 2 }
+      { slug: "austin-crestview", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-howard", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-howard": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-kramer", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-lakeline", linea: "red-line", tiempo: 2 }
+      { slug: "austin-kramer", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-lakeline", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-lakeline": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-howard", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-leander", linea: "red-line", tiempo: 2 }
+      { slug: "austin-howard", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-leander", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-leander": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-lakeline", linea: "red-line", tiempo: 2 },
-      { estacion: "austin-mlk-jr", linea: "red-line", tiempo: 2 }
+      { slug: "austin-lakeline", linea: "red-line", tiempo: 2, tipo: 'linea' },
+      { slug: "austin-mlk-jr", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   },
   "austin-mlk-jr": {
     linea: ["red-line"],
     ciudad: "austin",
     adyacentes: [
-      { estacion: "austin-leander", linea: "red-line", tiempo: 2 }
+      { slug: "austin-leander", linea: "red-line", tiempo: 2, tipo: 'linea' }
     ]
   }
 };

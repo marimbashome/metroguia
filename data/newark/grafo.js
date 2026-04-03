@@ -3,167 +3,167 @@ export const grafoNewark = {
     linea: ["newark-light-rail", "hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-broad-street", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-grove-street", linea: "hudson-bergen-light-rail", tiempo: 3 }
+      { slug: "newark-broad-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-grove-street", linea: "hudson-bergen-light-rail", tiempo: 3, tipo: 'linea' }
     ]
   },
   "newark-broad-street": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-penn-station", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-market-street", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-penn-station", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-market-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-market-street": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-broad-street", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-washington-park", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-broad-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-washington-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-washington-park": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-market-street", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-lincoln-park", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-market-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-lincoln-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-lincoln-park": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-washington-park", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-forest", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-washington-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-forest", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-forest": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-lincoln-park", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-valley-street", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-lincoln-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-valley-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-valley-street": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-forest", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-convention-center", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-forest", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-convention-center", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-convention-center": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-valley-street", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-branch-brook-park", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-valley-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-branch-brook-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-branch-brook-park": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-convention-center", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-city-subway", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-convention-center", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-city-subway", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-city-subway": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-branch-brook-park", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-university-hospital", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-branch-brook-park", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-university-hospital", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-university-hospital": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-city-subway", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-grove-street", linea: "newark-light-rail", tiempo: 2 }
+      { slug: "newark-city-subway", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-grove-street", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-grove-street": {
     linea: ["newark-light-rail", "hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-university-hospital", linea: "newark-light-rail", tiempo: 2 },
-      { estacion: "newark-harrison", linea: "newark-light-rail", tiempo: 3 },
-      { estacion: "newark-jersey-avenue", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-university-hospital", linea: "newark-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-harrison", linea: "newark-light-rail", tiempo: 3, tipo: 'linea' },
+      { slug: "newark-jersey-avenue", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-harrison": {
     linea: ["newark-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-grove-street", linea: "newark-light-rail", tiempo: 3 }
+      { slug: "newark-grove-street", linea: "newark-light-rail", tiempo: 3, tipo: 'linea' }
     ]
   },
   "newark-jersey-avenue": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-grove-street", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-hoboken-terminal-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-grove-street", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-hoboken-terminal-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-hoboken-terminal-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-jersey-avenue", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-observer-highway-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-jersey-avenue", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-observer-highway-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-observer-highway-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-hoboken-terminal-station", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-33rd-street-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-hoboken-terminal-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-33rd-street-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-33rd-street-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-observer-highway-station", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-bergenline-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-observer-highway-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-bergenline-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-bergenline-avenue-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-33rd-street-station", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-tonnele-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-33rd-street-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-tonnele-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-tonnele-avenue-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-bergenline-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-palisades-park-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-bergenline-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-palisades-park-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-palisades-park-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-tonnele-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2 },
-      { estacion: "newark-secaucus-junction-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-tonnele-avenue-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' },
+      { slug: "newark-secaucus-junction-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   },
   "newark-secaucus-junction-station": {
     linea: ["hudson-bergen-light-rail"],
     ciudad: "newark",
     adyacentes: [
-      { estacion: "newark-palisades-park-station", linea: "hudson-bergen-light-rail", tiempo: 2 }
+      { slug: "newark-palisades-park-station", linea: "hudson-bergen-light-rail", tiempo: 2, tipo: 'linea' }
     ]
   }
 };

@@ -104,7 +104,7 @@ export const grafoOttawa = {
     adyacentes: [
       { slug: 'pimisi', tiempo: 3, linea: 'confederation', tipo: 'o-train' },
       { slug: 'tunneys-pasture', tiempo: 3, linea: 'confederation', tipo: 'o-train' },
-    ],
+      { slug: 'bayview-trillium', tiempo: 5, linea: 'trillium', tipo: 'transbordo' }],
   },
   'tunneys-pasture': {
     ciudad: 'ottawa',
@@ -120,7 +120,7 @@ export const grafoOttawa = {
     lineas: ["trillium"],
     adyacentes: [
       { slug: 'mooney-s-bay', tiempo: 3, linea: 'trillium', tipo: 'o-train' },
-    ],
+      { slug: 'bayview', tiempo: 5, linea: 'confederation', tipo: 'transbordo' }],
   },
   'mooney-s-bay': {
     ciudad: 'ottawa',

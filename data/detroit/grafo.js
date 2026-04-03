@@ -50,6 +50,7 @@ export const grafoDetroit = {
     adyacentes: [
       { slug: 'detroit-foxtown', tiempo: 3, linea: 'qline', tipo: 'qline' },
       { slug: 'detroit-grand-circus-park', tiempo: 3, linea: 'qline', tipo: 'qline' },
+      { slug: 'detroit-pm-broadway', tiempo: 5, linea: 'people-mover', tipo: 'transbordo' },
     ],
   },
   'detroit-grand-circus-park': {
@@ -147,6 +148,7 @@ export const grafoDetroit = {
     adyacentes: [
       { slug: 'detroit-pm-grand-circus', tiempo: 3, linea: 'people-mover', tipo: 'qline' },
       { slug: 'detroit-pm-cadillac', tiempo: 3, linea: 'people-mover', tipo: 'qline' },
+      { slug: 'detroit-broadway', tiempo: 5, linea: 'qline', tipo: 'transbordo' },
     ],
   },
   'detroit-pm-cadillac': {

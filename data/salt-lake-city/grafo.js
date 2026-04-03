@@ -98,7 +98,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-trolley-square', tiempo: 3, linea: 'blue', tipo: 'trax' },
       { slug: 'slc-central-pointe', tiempo: 3, linea: 'blue', tipo: 'trax' },
-    ]
+      { slug: 'slc-900-east', tiempo: 5, linea: 'red', tipo: 'transbordo' }]
   },
   'slc-central-pointe': {
     ciudad: 'salt-lake-city',
@@ -136,7 +136,8 @@ export const grafoSaltLakeCity = {
       { slug: 'slc-meadowbrook', tiempo: 4, linea: 'blue', tipo: 'trax' },
       { slug: 'slc-fashion-place-west', tiempo: 3, linea: 'blue', tipo: 'trax' },
       { slug: 'slc-south-jordan-fr', tiempo: 10, linea: 'frontrunner', tipo: 'frontrunner' },
-    ]
+      { slug: 'slc-murray-central-fr', tiempo: 5, linea: 'red', tipo: 'transbordo' },
+      { slug: 'slc-murray-north', tiempo: 5, linea: 'blue', tipo: 'transbordo' }]
   },
   'slc-fashion-place-west': {
     ciudad: 'salt-lake-city',
@@ -154,7 +155,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-fashion-place-west', tiempo: 2, linea: 'blue', tipo: 'trax' },
       { slug: 'slc-bingham-junction', tiempo: 3, linea: 'blue', tipo: 'trax' },
-    ]
+      { slug: 'slc-murray-central', tiempo: 5, linea: 'frontrunner', tipo: 'transbordo' }]
   },
   'slc-bingham-junction': {
     ciudad: 'salt-lake-city',
@@ -271,7 +272,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-stadium', tiempo: 3, linea: 'red', tipo: 'trax' },
       { slug: 'slc-500-east', tiempo: 2, linea: 'red', tipo: 'trax' },
-    ]
+      { slug: 'slc-900-south', tiempo: 5, linea: 'blue', tipo: 'transbordo' }]
   },
   'slc-500-east': {
     ciudad: 'salt-lake-city',
@@ -298,7 +299,7 @@ export const grafoSaltLakeCity = {
       { slug: 'slc-west-jordan', tiempo: 5, linea: 'red', tipo: 'trax' },
       { slug: 'slc-daybreak-parkway', tiempo: 5, linea: 'red', tipo: 'trax' },
       { slug: 'slc-draper-fr', tiempo: 8, linea: 'frontrunner', tipo: 'frontrunner' },
-    ]
+      { slug: 'slc-south-jordan-fr', tiempo: 5, linea: 'red', tipo: 'transbordo' }]
   },
   'slc-daybreak-parkway': {
     ciudad: 'salt-lake-city',
@@ -326,7 +327,7 @@ export const grafoSaltLakeCity = {
       { slug: 'slc-airport-terminal-1', tiempo: 8, linea: 'green', tipo: 'trax' },
       { slug: 'slc-jackson-euclid', tiempo: 4, linea: 'green', tipo: 'trax' },
       { slug: 'slc-salt-lake-central', tiempo: 3, linea: 'green', tipo: 'trax' },
-    ]
+      { slug: 'slc-north-temple', tiempo: 5, linea: 'green', tipo: 'transbordo' }]
   },
   'slc-jackson-euclid': {
     ciudad: 'salt-lake-city',
@@ -389,7 +390,7 @@ export const grafoSaltLakeCity = {
     lineas: ['s-line', 'blue'],
     adyacentes: [
       { slug: 'slc-south-temple-s', tiempo: 5, linea: 's-line', tipo: 'streetcar' },
-    ]
+      { slug: 'slc-central-pointe', tiempo: 5, linea: 's-line', tipo: 'transbordo' }]
   },
   'slc-south-temple-s': {
     ciudad: 'salt-lake-city',
@@ -461,7 +462,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-woods-cross', tiempo: 8, linea: 'frontrunner', tipo: 'frontrunner' },
       { slug: 'slc-murray-central-fr', tiempo: 10, linea: 'frontrunner', tipo: 'frontrunner' },
-    ]
+      { slug: 'slc-north-temple-bridge', tiempo: 5, linea: 'red', tipo: 'transbordo' }]
   },
   'slc-murray-central-fr': {
     ciudad: 'salt-lake-city',
@@ -470,7 +471,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-north-temple', tiempo: 10, linea: 'frontrunner', tipo: 'frontrunner' },
       { slug: 'slc-south-jordan-fr', tiempo: 10, linea: 'frontrunner', tipo: 'frontrunner' },
-    ]
+      { slug: 'slc-murray-central', tiempo: 5, linea: 'frontrunner', tipo: 'transbordo' }]
   },
   'slc-south-jordan-fr': {
     ciudad: 'salt-lake-city',
@@ -479,7 +480,7 @@ export const grafoSaltLakeCity = {
     adyacentes: [
       { slug: 'slc-murray-central-fr', tiempo: 10, linea: 'frontrunner', tipo: 'frontrunner' },
       { slug: 'slc-draper-fr', tiempo: 8, linea: 'frontrunner', tipo: 'frontrunner' },
-    ]
+      { slug: 'slc-south-jordan', tiempo: 5, linea: 'frontrunner', tipo: 'transbordo' }]
   },
   'slc-draper-fr': {
     ciudad: 'salt-lake-city',

@@ -7,159 +7,3507 @@
 // =============================================================
 
 export const grafoPhiladelphia = {
-  "philly-fern-rock": {"ciudad":"philadelphia","nombre":"Fern Rock","lineas":["bsl","bsl-regional"],"adyacentes":[{"slug":"philly-olney","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-north-broad-rr","tiempo":5,"linea":"bsl-regional","tipo":"transbordo"}]},
-  "philly-olney": {"ciudad":"philadelphia","nombre":"Olney","lineas":["bsl"],"adyacentes":[{"slug":"philly-fern-rock","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-logan","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-logan": {"ciudad":"philadelphia","nombre":"Logan","lineas":["bsl"],"adyacentes":[{"slug":"philly-olney","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-wyoming","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-wyoming": {"ciudad":"philadelphia","nombre":"Wyoming","lineas":["bsl"],"adyacentes":[{"slug":"philly-logan","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-hunting-park","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-hunting-park": {"ciudad":"philadelphia","nombre":"Hunting Park","lineas":["bsl"],"adyacentes":[{"slug":"philly-wyoming","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-erie","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-erie": {"ciudad":"philadelphia","nombre":"Erie","lineas":["bsl"],"adyacentes":[{"slug":"philly-hunting-park","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-north-philadelphia","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-north-philadelphia": {"ciudad":"philadelphia","nombre":"North Philadelphia","lineas":["bsl","bsl-regional"],"adyacentes":[{"slug":"philly-erie","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-susquehanna-dauphin","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-north-broad-rr","tiempo":5,"linea":"bsl-regional","tipo":"transbordo"}]},
-  "philly-susquehanna-dauphin": {"ciudad":"philadelphia","nombre":"Susquehanna-Dauphin","lineas":["bsl"],"adyacentes":[{"slug":"philly-north-philadelphia","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-cecil-b-moore","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-cecil-b-moore": {"ciudad":"philadelphia","nombre":"Cecil B. Moore","lineas":["bsl"],"adyacentes":[{"slug":"philly-susquehanna-dauphin","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-girard","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-girard": {"ciudad":"philadelphia","nombre":"Girard","lineas":["bsl"],"adyacentes":[{"slug":"philly-cecil-b-moore","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-fairmount","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-fairmount": {"ciudad":"philadelphia","nombre":"Fairmount","lineas":["bsl"],"adyacentes":[{"slug":"philly-girard","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-spring-garden","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-spring-garden": {"ciudad":"philadelphia","nombre":"Spring Garden","lineas":["bsl"],"adyacentes":[{"slug":"philly-fairmount","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-race-vine","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-race-vine": {"ciudad":"philadelphia","nombre":"Race-Vine","lineas":["bsl"],"adyacentes":[{"slug":"philly-spring-garden","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-city-hall","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-city-hall": {"ciudad":"philadelphia","nombre":"City Hall","lineas":["bsl","bsl-mfl","bsl-regional"],"adyacentes":[{"slug":"philly-race-vine","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-walnut-locust","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-15th-street","tiempo":3,"linea":"bsl-mfl","tipo":"transbordo"},{"slug":"philly-suburban-station","tiempo":4,"linea":"bsl-regional","tipo":"transbordo"}]},
-  "philly-walnut-locust": {"ciudad":"philadelphia","nombre":"Walnut-Locust","lineas":["bsl","bsl-patco"],"adyacentes":[{"slug":"philly-city-hall","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-lombard-south","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-patco-15th-16th","tiempo":5,"linea":"bsl-patco","tipo":"transbordo"}]},
-  "philly-lombard-south": {"ciudad":"philadelphia","nombre":"Lombard-South","lineas":["bsl"],"adyacentes":[{"slug":"philly-walnut-locust","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-ellsworth-federal","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-ellsworth-federal": {"ciudad":"philadelphia","nombre":"Ellsworth-Federal","lineas":["bsl"],"adyacentes":[{"slug":"philly-lombard-south","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-tasker-morris","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-tasker-morris": {"ciudad":"philadelphia","nombre":"Tasker-Morris","lineas":["bsl"],"adyacentes":[{"slug":"philly-ellsworth-federal","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-snyder","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-snyder": {"ciudad":"philadelphia","nombre":"Snyder","lineas":["bsl"],"adyacentes":[{"slug":"philly-tasker-morris","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-oregon","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-oregon": {"ciudad":"philadelphia","nombre":"Oregon","lineas":["bsl"],"adyacentes":[{"slug":"philly-snyder","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-att-station","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-att-station": {"ciudad":"philadelphia","nombre":"AT&T Station","lineas":["bsl"],"adyacentes":[{"slug":"philly-oregon","tiempo":2,"linea":"bsl","tipo":"linea"},{"slug":"philly-nrg-station","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-nrg-station": {"ciudad":"philadelphia","nombre":"NRG Station","lineas":["bsl"],"adyacentes":[{"slug":"philly-att-station","tiempo":2,"linea":"bsl","tipo":"linea"}]},
-  "philly-69th-street": {"ciudad":"philadelphia","nombre":"69th Street","lineas":["mfl","mfl-route100","mfl-trolley"],"adyacentes":[{"slug":"philly-millbourne","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-garrett-hill","tiempo":5,"linea":"mfl-route100","tipo":"transbordo"},{"slug":"philly-drexel-hill-junction","tiempo":5,"linea":"mfl-trolley","tipo":"transbordo"}]},
-  "philly-millbourne": {"ciudad":"philadelphia","nombre":"Millbourne","lineas":["mfl"],"adyacentes":[{"slug":"philly-69th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-63rd-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-63rd-street": {"ciudad":"philadelphia","nombre":"63rd Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-millbourne","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-60th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-60th-street": {"ciudad":"philadelphia","nombre":"60th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-63rd-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-56th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-56th-street": {"ciudad":"philadelphia","nombre":"56th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-60th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-52nd-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-52nd-street": {"ciudad":"philadelphia","nombre":"52nd Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-56th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-46th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-46th-street": {"ciudad":"philadelphia","nombre":"46th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-52nd-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-40th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-40th-street": {"ciudad":"philadelphia","nombre":"40th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-46th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-34th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-34th-street": {"ciudad":"philadelphia","nombre":"34th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-40th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-30th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-30th-street": {"ciudad":"philadelphia","nombre":"30th Street","lineas":["mfl","mfl-trolley","mfl-regional"],"adyacentes":[{"slug":"philly-34th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-22nd-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-trolley-30th","tiempo":3,"linea":"mfl-trolley","tipo":"transbordo"},{"slug":"philly-suburban-station","tiempo":5,"linea":"mfl-regional","tipo":"transbordo"}]},
-  "philly-22nd-street": {"ciudad":"philadelphia","nombre":"22nd Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-30th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-19th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-19th-street": {"ciudad":"philadelphia","nombre":"19th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-22nd-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-15th-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-15th-street": {"ciudad":"philadelphia","nombre":"15th Street","lineas":["mfl","mfl-bsl"],"adyacentes":[{"slug":"philly-19th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-13th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-city-hall","tiempo":3,"linea":"mfl-bsl","tipo":"transbordo"}]},
-  "philly-13th-street": {"ciudad":"philadelphia","nombre":"13th Street","lineas":["mfl","mfl-trolley"],"adyacentes":[{"slug":"philly-15th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-11th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-trolley-13th","tiempo":3,"linea":"mfl-trolley","tipo":"transbordo"}]},
-  "philly-11th-street": {"ciudad":"philadelphia","nombre":"11th Street","lineas":["mfl","mfl-regional"],"adyacentes":[{"slug":"philly-13th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-8th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-market-east","tiempo":3,"linea":"mfl-regional","tipo":"transbordo"}]},
-  "philly-8th-street": {"ciudad":"philadelphia","nombre":"8th Street","lineas":["mfl","mfl-patco"],"adyacentes":[{"slug":"philly-11th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-5th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-patco-8th-market","tiempo":3,"linea":"mfl-patco","tipo":"transbordo"}]},
-  "philly-5th-street": {"ciudad":"philadelphia","nombre":"5th Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-8th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-2nd-street","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-2nd-street": {"ciudad":"philadelphia","nombre":"2nd Street","lineas":["mfl"],"adyacentes":[{"slug":"philly-5th-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-spring-garden-mfl","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-spring-garden-mfl": {"ciudad":"philadelphia","nombre":"Spring Garden","lineas":["mfl"],"adyacentes":[{"slug":"philly-2nd-street","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-girard-mfl","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-girard-mfl": {"ciudad":"philadelphia","nombre":"Girard","lineas":["mfl"],"adyacentes":[{"slug":"philly-spring-garden-mfl","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-berks","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-berks": {"ciudad":"philadelphia","nombre":"Berks","lineas":["mfl"],"adyacentes":[{"slug":"philly-girard-mfl","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-york-dauphin","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-york-dauphin": {"ciudad":"philadelphia","nombre":"York-Dauphin","lineas":["mfl"],"adyacentes":[{"slug":"philly-berks","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-huntingdon","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-huntingdon": {"ciudad":"philadelphia","nombre":"Huntingdon","lineas":["mfl"],"adyacentes":[{"slug":"philly-york-dauphin","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-somerset","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-somerset": {"ciudad":"philadelphia","nombre":"Somerset","lineas":["mfl"],"adyacentes":[{"slug":"philly-huntingdon","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-allegheny","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-allegheny": {"ciudad":"philadelphia","nombre":"Allegheny","lineas":["mfl"],"adyacentes":[{"slug":"philly-somerset","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-tioga","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-tioga": {"ciudad":"philadelphia","nombre":"Tioga","lineas":["mfl"],"adyacentes":[{"slug":"philly-allegheny","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-church","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-church": {"ciudad":"philadelphia","nombre":"Church","lineas":["mfl"],"adyacentes":[{"slug":"philly-tioga","tiempo":2,"linea":"mfl","tipo":"linea"},{"slug":"philly-frankford","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-frankford": {"ciudad":"philadelphia","nombre":"Frankford","lineas":["mfl"],"adyacentes":[{"slug":"philly-church","tiempo":2,"linea":"mfl","tipo":"linea"}]},
-  "philly-patco-15th-16th": {"ciudad":"philadelphia","nombre":"15th-16th Street","lineas":["patco"],"adyacentes":[{"slug":"philly-patco-12th-13th","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-patco-12th-13th": {"ciudad":"philadelphia","nombre":"12th-13th Street","lineas":["patco"],"adyacentes":[{"slug":"philly-patco-15th-16th","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-patco-9th-10th","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-patco-9th-10th": {"ciudad":"philadelphia","nombre":"9th-10th Street","lineas":["patco"],"adyacentes":[{"slug":"philly-patco-12th-13th","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-patco-8th-market","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-patco-8th-market": {"ciudad":"philadelphia","nombre":"8th-Market Street","lineas":["patco","patco-mfl"],"adyacentes":[{"slug":"philly-patco-9th-10th","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-franklin-square","tiempo":3,"linea":"patco","tipo":"linea"},{"slug":"philly-8th-street","tiempo":3,"linea":"patco-mfl","tipo":"transbordo"}]},
-  "philly-franklin-square": {"ciudad":"philadelphia","nombre":"Franklin Square","lineas":["patco"],"adyacentes":[{"slug":"philly-patco-8th-market","tiempo":3,"linea":"patco","tipo":"linea"},{"slug":"philly-city-hall-camden","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-city-hall-camden": {"ciudad":"philadelphia","nombre":"City Hall Camden","lineas":["patco"],"adyacentes":[{"slug":"philly-franklin-square","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-broadway-camden","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-broadway-camden": {"ciudad":"philadelphia","nombre":"Broadway","lineas":["patco"],"adyacentes":[{"slug":"philly-city-hall-camden","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-ferry-avenue","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-ferry-avenue": {"ciudad":"philadelphia","nombre":"Ferry Avenue","lineas":["patco"],"adyacentes":[{"slug":"philly-broadway-camden","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-collingswood","tiempo":2,"linea":"patco","tipo":"linea"}]},
-  "philly-collingswood": {"ciudad":"philadelphia","nombre":"Collingswood","lineas":["patco"],"adyacentes":[{"slug":"philly-ferry-avenue","tiempo":2,"linea":"patco","tipo":"linea"},{"slug":"philly-westmont","tiempo":3,"linea":"patco","tipo":"linea"}]},
-  "philly-westmont": {"ciudad":"philadelphia","nombre":"Westmont","lineas":["patco"],"adyacentes":[{"slug":"philly-collingswood","tiempo":3,"linea":"patco","tipo":"linea"},{"slug":"philly-haddonfield","tiempo":3,"linea":"patco","tipo":"linea"}]},
-  "philly-haddonfield": {"ciudad":"philadelphia","nombre":"Haddonfield","lineas":["patco"],"adyacentes":[{"slug":"philly-westmont","tiempo":3,"linea":"patco","tipo":"linea"},{"slug":"philly-woodcrest","tiempo":3,"linea":"patco","tipo":"linea"}]},
-  "philly-woodcrest": {"ciudad":"philadelphia","nombre":"Woodcrest","lineas":["patco"],"adyacentes":[{"slug":"philly-haddonfield","tiempo":3,"linea":"patco","tipo":"linea"},{"slug":"philly-lindenwold","tiempo":3,"linea":"patco","tipo":"linea"}]},
-  "philly-lindenwold": {"ciudad":"philadelphia","nombre":"Lindenwold","lineas":["patco"],"adyacentes":[{"slug":"philly-woodcrest","tiempo":3,"linea":"patco","tipo":"linea"}]},
-  "philly-garrett-hill": {"ciudad":"philadelphia","nombre":"Garrett Hill","lineas":["route100","route100-mfl"],"adyacentes":[{"slug":"philly-roberts-road","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-69th-street","tiempo":5,"linea":"route100-mfl","tipo":"transbordo"}]},
-  "philly-roberts-road": {"ciudad":"philadelphia","nombre":"Roberts Road","lineas":["route100"],"adyacentes":[{"slug":"philly-garrett-hill","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-bryn-mawr-nhsl","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-bryn-mawr-nhsl": {"ciudad":"philadelphia","nombre":"Bryn Mawr","lineas":["route100"],"adyacentes":[{"slug":"philly-roberts-road","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-haverford-nhsl","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-haverford-nhsl": {"ciudad":"philadelphia","nombre":"Haverford","lineas":["route100"],"adyacentes":[{"slug":"philly-bryn-mawr-nhsl","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-ardmore-junction","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-ardmore-junction": {"ciudad":"philadelphia","nombre":"Ardmore Junction","lineas":["route100"],"adyacentes":[{"slug":"philly-haverford-nhsl","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-wynnewood-road","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-wynnewood-road": {"ciudad":"philadelphia","nombre":"Wynnewood Road","lineas":["route100"],"adyacentes":[{"slug":"philly-ardmore-junction","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-beechwood-brookline","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-beechwood-brookline": {"ciudad":"philadelphia","nombre":"Beechwood-Brookline","lineas":["route100"],"adyacentes":[{"slug":"philly-wynnewood-road","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-penfield","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-penfield": {"ciudad":"philadelphia","nombre":"Penfield","lineas":["route100"],"adyacentes":[{"slug":"philly-beechwood-brookline","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-township-line","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-township-line": {"ciudad":"philadelphia","nombre":"Township Line","lineas":["route100"],"adyacentes":[{"slug":"philly-penfield","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-parkview","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-parkview": {"ciudad":"philadelphia","nombre":"Parkview","lineas":["route100"],"adyacentes":[{"slug":"philly-township-line","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-stadium-villanova","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-stadium-villanova": {"ciudad":"philadelphia","nombre":"Stadium-Villanova","lineas":["route100"],"adyacentes":[{"slug":"philly-parkview","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-villanova","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-villanova": {"ciudad":"philadelphia","nombre":"Villanova","lineas":["route100"],"adyacentes":[{"slug":"philly-stadium-villanova","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-radnor","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-radnor": {"ciudad":"philadelphia","nombre":"Radnor","lineas":["route100"],"adyacentes":[{"slug":"philly-villanova","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-county-line","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-county-line": {"ciudad":"philadelphia","nombre":"County Line","lineas":["route100"],"adyacentes":[{"slug":"philly-radnor","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-eagle-road","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-eagle-road": {"ciudad":"philadelphia","nombre":"Eagle Road","lineas":["route100"],"adyacentes":[{"slug":"philly-county-line","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-gulph-mills","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-gulph-mills": {"ciudad":"philadelphia","nombre":"Gulph Mills","lineas":["route100"],"adyacentes":[{"slug":"philly-eagle-road","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-matsonford","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-matsonford": {"ciudad":"philadelphia","nombre":"Matsonford","lineas":["route100"],"adyacentes":[{"slug":"philly-gulph-mills","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-hughes-park","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-hughes-park": {"ciudad":"philadelphia","nombre":"Hughes Park","lineas":["route100"],"adyacentes":[{"slug":"philly-matsonford","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-dekalb-street","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-dekalb-street": {"ciudad":"philadelphia","nombre":"Dekalb Street","lineas":["route100"],"adyacentes":[{"slug":"philly-hughes-park","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-bridgeport","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-bridgeport": {"ciudad":"philadelphia","nombre":"Bridgeport","lineas":["route100"],"adyacentes":[{"slug":"philly-dekalb-street","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-norristown","tiempo":2,"linea":"route100","tipo":"linea"}]},
-  "philly-norristown": {"ciudad":"philadelphia","nombre":"Norristown","lineas":["route100","route100-regional"],"adyacentes":[{"slug":"philly-bridgeport","tiempo":2,"linea":"route100","tipo":"linea"},{"slug":"philly-norristown-rr","tiempo":5,"linea":"route100-regional","tipo":"transbordo"}]},
-  "philly-trolley-13th": {"ciudad":"philadelphia","nombre":"13th Street","lineas":["trolley","trolley-mfl"],"adyacentes":[{"slug":"philly-trolley-15th","tiempo":2,"linea":"trolley","tipo":"linea"},{"slug":"philly-13th-street","tiempo":3,"linea":"trolley-mfl","tipo":"transbordo"}]},
-  "philly-trolley-15th": {"ciudad":"philadelphia","nombre":"15th Street","lineas":["trolley"],"adyacentes":[{"slug":"philly-trolley-13th","tiempo":2,"linea":"trolley","tipo":"linea"},{"slug":"philly-trolley-19th","tiempo":3,"linea":"trolley","tipo":"linea"}]},
-  "philly-trolley-19th": {"ciudad":"philadelphia","nombre":"19th Street","lineas":["trolley"],"adyacentes":[{"slug":"philly-trolley-15th","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-trolley-22nd","tiempo":3,"linea":"trolley","tipo":"linea"}]},
-  "philly-trolley-22nd": {"ciudad":"philadelphia","nombre":"22nd Street","lineas":["trolley"],"adyacentes":[{"slug":"philly-trolley-19th","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-trolley-30th","tiempo":3,"linea":"trolley","tipo":"linea"}]},
-  "philly-trolley-30th": {"ciudad":"philadelphia","nombre":"30th Street","lineas":["trolley","trolley-mfl"],"adyacentes":[{"slug":"philly-trolley-22nd","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-trolley-33rd","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-30th-street","tiempo":3,"linea":"trolley-mfl","tipo":"transbordo"}]},
-  "philly-trolley-33rd": {"ciudad":"philadelphia","nombre":"33rd Street","lineas":["trolley"],"adyacentes":[{"slug":"philly-trolley-30th","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-36th-portal","tiempo":3,"linea":"trolley","tipo":"linea"}]},
-  "philly-36th-portal": {"ciudad":"philadelphia","nombre":"36th Street Portal","lineas":["trolley"],"adyacentes":[{"slug":"philly-trolley-33rd","tiempo":3,"linea":"trolley","tipo":"linea"},{"slug":"philly-40th-baltimore","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-40th-baltimore": {"ciudad":"philadelphia","nombre":"40th-Baltimore","lineas":["trolley"],"adyacentes":[{"slug":"philly-36th-portal","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-63rd-malvern","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-63rd-malvern": {"ciudad":"philadelphia","nombre":"63rd-Malvern","lineas":["trolley"],"adyacentes":[{"slug":"philly-40th-baltimore","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-darby-tc","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-darby-tc": {"ciudad":"philadelphia","nombre":"Darby TC","lineas":["trolley"],"adyacentes":[{"slug":"philly-63rd-malvern","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-yeadon-loop","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-yeadon-loop": {"ciudad":"philadelphia","nombre":"Yeadon Loop","lineas":["trolley"],"adyacentes":[{"slug":"philly-darby-tc","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-angora-loop","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-angora-loop": {"ciudad":"philadelphia","nombre":"Angora Loop","lineas":["trolley"],"adyacentes":[{"slug":"philly-yeadon-loop","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-eastwick-loop","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-eastwick-loop": {"ciudad":"philadelphia","nombre":"Eastwick Loop","lineas":["trolley"],"adyacentes":[{"slug":"philly-angora-loop","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-springfield-mall","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-springfield-mall": {"ciudad":"philadelphia","nombre":"Springfield Mall","lineas":["trolley"],"adyacentes":[{"slug":"philly-eastwick-loop","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-media-101","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-media-101": {"ciudad":"philadelphia","nombre":"Media","lineas":["trolley"],"adyacentes":[{"slug":"philly-springfield-mall","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-sharon-hill","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-sharon-hill": {"ciudad":"philadelphia","nombre":"Sharon Hill","lineas":["trolley"],"adyacentes":[{"slug":"philly-media-101","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-drexel-hill-junction","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-drexel-hill-junction": {"ciudad":"philadelphia","nombre":"Drexel Hill Junction","lineas":["trolley","trolley-mfl"],"adyacentes":[{"slug":"philly-sharon-hill","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-40th-woodland","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-69th-street","tiempo":5,"linea":"trolley-mfl","tipo":"transbordo"}]},
-  "philly-40th-woodland": {"ciudad":"philadelphia","nombre":"40th-Woodland","lineas":["trolley"],"adyacentes":[{"slug":"philly-drexel-hill-junction","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-49th-baltimore","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-49th-baltimore": {"ciudad":"philadelphia","nombre":"49th-Baltimore","lineas":["trolley"],"adyacentes":[{"slug":"philly-40th-woodland","tiempo":4,"linea":"trolley","tipo":"linea"},{"slug":"philly-girard-lancaster","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-girard-lancaster": {"ciudad":"philadelphia","nombre":"Girard-Lancaster","lineas":["trolley"],"adyacentes":[{"slug":"philly-49th-baltimore","tiempo":4,"linea":"trolley","tipo":"linea"}]},
-  "philly-suburban-station": {"ciudad":"philadelphia","nombre":"Suburban Station","lineas":["regional_airport","regional","regional-bsl","regional-mfl"],"adyacentes":[{"slug":"philly-market-east","tiempo":3,"linea":"regional","tipo":"linea"},{"slug":"philly-city-hall","tiempo":4,"linea":"regional-bsl","tipo":"transbordo"},{"slug":"philly-30th-street","tiempo":5,"linea":"regional-mfl","tipo":"transbordo"}]},
-  "philly-market-east": {"ciudad":"philadelphia","nombre":"Market East Station","lineas":["regional_airport","regional","regional-mfl"],"adyacentes":[{"slug":"philly-suburban-station","tiempo":3,"linea":"regional","tipo":"linea"},{"slug":"philly-temple-university","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-11th-street","tiempo":3,"linea":"regional-mfl","tipo":"transbordo"}]},
-  "philly-temple-university": {"ciudad":"philadelphia","nombre":"Temple University","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-market-east","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-north-broad-rr","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-north-broad-rr": {"ciudad":"philadelphia","nombre":"North Broad","lineas":["regional_airport","regional","regional-bsl"],"adyacentes":[{"slug":"philly-temple-university","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-chestnut-hill-east","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-fern-rock","tiempo":5,"linea":"regional-bsl","tipo":"transbordo"},{"slug":"philly-north-philadelphia","tiempo":5,"linea":"regional-bsl","tipo":"transbordo"}]},
-  "philly-airport-terminal-a": {"ciudad":"philadelphia","nombre":"Airport Terminal A","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-airport-terminal-b","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-eastwick-rr","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-airport-terminal-b": {"ciudad":"philadelphia","nombre":"Airport Terminal B","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-airport-terminal-a","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-airport-terminal-cd","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-airport-terminal-cd": {"ciudad":"philadelphia","nombre":"Airport Terminal C-D","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-airport-terminal-b","tiempo":3,"linea":"regional","tipo":"linea"},{"slug":"philly-airport-terminal-ef","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-airport-terminal-ef": {"ciudad":"philadelphia","nombre":"Airport Terminal E-F","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-airport-terminal-cd","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-eastwick-rr": {"ciudad":"philadelphia","nombre":"Eastwick","lineas":["regional_airport","regional"],"adyacentes":[{"slug":"philly-airport-terminal-a","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-ardmore-rr","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-ardmore-rr": {"ciudad":"philadelphia","nombre":"Ardmore","lineas":["regional_paoli_thorndale","regional"],"adyacentes":[{"slug":"philly-eastwick-rr","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-bryn-mawr-rr","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-bryn-mawr-rr": {"ciudad":"philadelphia","nombre":"Bryn Mawr","lineas":["regional_paoli_thorndale","regional"],"adyacentes":[{"slug":"philly-ardmore-rr","tiempo":3,"linea":"regional","tipo":"linea"},{"slug":"philly-paoli","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-paoli": {"ciudad":"philadelphia","nombre":"Paoli","lineas":["regional_paoli_thorndale","regional"],"adyacentes":[{"slug":"philly-bryn-mawr-rr","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-wayne","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-wayne": {"ciudad":"philadelphia","nombre":"Wayne","lineas":["regional_paoli_thorndale","regional"],"adyacentes":[{"slug":"philly-paoli","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-thorndale","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-chestnut-hill-west": {"ciudad":"philadelphia","nombre":"Chestnut Hill West","lineas":["regional_chestnut_hill_west","regional"],"adyacentes":[{"slug":"philly-wissahickon","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-chestnut-hill-east": {"ciudad":"philadelphia","nombre":"Chestnut Hill East","lineas":["regional_chestnut_hill_east","regional"],"adyacentes":[{"slug":"philly-north-broad-rr","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-jenkintown-wyncote","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-lansdale": {"ciudad":"philadelphia","nombre":"Lansdale","lineas":["regional_lansdale_doylestown","regional"],"adyacentes":[{"slug":"philly-doylestown","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-doylestown": {"ciudad":"philadelphia","nombre":"Doylestown","lineas":["regional_lansdale_doylestown","regional"],"adyacentes":[{"slug":"philly-lansdale","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-warminster","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-warminster": {"ciudad":"philadelphia","nombre":"Warminster","lineas":["regional_warminster","regional"],"adyacentes":[{"slug":"philly-doylestown","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-west-trenton","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-west-trenton": {"ciudad":"philadelphia","nombre":"West Trenton","lineas":["regional_west_trenton","regional"],"adyacentes":[{"slug":"philly-warminster","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-trenton","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-trenton": {"ciudad":"philadelphia","nombre":"Trenton","lineas":["regional_trenton","regional"],"adyacentes":[{"slug":"philly-west-trenton","tiempo":3,"linea":"regional","tipo":"linea"}]},
-  "philly-manayunk": {"ciudad":"philadelphia","nombre":"Manayunk","lineas":["regional_manayunk_norristown","regional"],"adyacentes":[{"slug":"philly-wissahickon","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-wissahickon": {"ciudad":"philadelphia","nombre":"Wissahickon","lineas":["regional_manayunk_norristown","regional"],"adyacentes":[{"slug":"philly-manayunk","tiempo":5,"linea":"regional","tipo":"linea"},{"slug":"philly-chestnut-hill-west","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-fox-chase": {"ciudad":"philadelphia","nombre":"Fox Chase","lineas":["regional_fox_chase","regional"],"adyacentes":[{"slug":"philly-cynwyd","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-cynwyd": {"ciudad":"philadelphia","nombre":"Cynwyd","lineas":["regional_cynwyd","regional"],"adyacentes":[{"slug":"philly-fox-chase","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-media-elwyn","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-media-elwyn": {"ciudad":"philadelphia","nombre":"Media-Elwyn","lineas":["regional_media_elwyn","regional"],"adyacentes":[{"slug":"philly-cynwyd","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-swarthmore","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-swarthmore": {"ciudad":"philadelphia","nombre":"Swarthmore","lineas":["regional_media_elwyn","regional"],"adyacentes":[{"slug":"philly-media-elwyn","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-jenkintown-wyncote": {"ciudad":"philadelphia","nombre":"Jenkintown-Wyncote","lineas":["regional_lansdale_doylestown","regional"],"adyacentes":[{"slug":"philly-chestnut-hill-east","tiempo":8,"linea":"regional","tipo":"linea"},{"slug":"philly-glenside","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-glenside": {"ciudad":"philadelphia","nombre":"Glenside","lineas":["regional_lansdale_doylestown","regional"],"adyacentes":[{"slug":"philly-jenkintown-wyncote","tiempo":5,"linea":"regional","tipo":"linea"}]},
-  "philly-norristown-rr": {"ciudad":"philadelphia","nombre":"Norristown","lineas":["regional_manayunk_norristown","regional-route100"],"adyacentes":[{"slug":"philly-norristown","tiempo":5,"linea":"regional-route100","tipo":"transbordo"}]},
-  "philly-thorndale": {"ciudad":"philadelphia","nombre":"Thorndale","lineas":["regional_paoli_thorndale","regional"],"adyacentes":[{"slug":"philly-wayne","tiempo":8,"linea":"regional","tipo":"linea"}]},
-  "philly-49th-street-media": {"ciudad":"philadelphia","nombre":"49th Street Media","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-angora": {"ciudad":"philadelphia","nombre":"Angora","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-bridesburg": {"ciudad":"philadelphia","nombre":"Bridesburg","lineas":["regional_trenton","regional"],"adyacentes":[]},
-  "philly-bristol": {"ciudad":"philadelphia","nombre":"Bristol","lineas":["regional_trenton","regional"],"adyacentes":[]},
-  "philly-chester-transit-center": {"ciudad":"philadelphia","nombre":"Chester Transit Center","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-clifton-aldan": {"ciudad":"philadelphia","nombre":"Clifton-Aldan","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-curtis-park": {"ciudad":"philadelphia","nombre":"Curtis Park","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-darby": {"ciudad":"philadelphia","nombre":"Darby","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-fernwood-yeadon": {"ciudad":"philadelphia","nombre":"Fernwood-Yeadon","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-folcroft": {"ciudad":"philadelphia","nombre":"Folcroft","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-glenolden": {"ciudad":"philadelphia","nombre":"Glenolden","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-lansdowne": {"ciudad":"philadelphia","nombre":"Lansdowne","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-levittown": {"ciudad":"philadelphia","nombre":"Levittown","lineas":["regional_trenton","regional"],"adyacentes":[]},
-  "philly-morton": {"ciudad":"philadelphia","nombre":"Morton","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-north-philadelphia-regional": {"ciudad":"philadelphia","nombre":"North Philadelphia Regional","lineas":["regional_trenton","regional"],"adyacentes":[]},
-  "philly-norwood": {"ciudad":"philadelphia","nombre":"Norwood","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-primos": {"ciudad":"philadelphia","nombre":"Primos","lineas":["regional_media_wawa","regional"],"adyacentes":[]},
-  "philly-prospect-park": {"ciudad":"philadelphia","nombre":"Prospect Park","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-ridley-park": {"ciudad":"philadelphia","nombre":"Ridley Park","lineas":["regional_wilmington_newark","regional"],"adyacentes":[]},
-  "philly-tacony": {"ciudad":"philadelphia","nombre":"Tacony","lineas":["regional_trenton","regional"],"adyacentes":[]},
-  "philly-trenton-transit-center": {"ciudad":"philadelphia","nombre":"Trenton Transit Center","lineas":["regional_trenton","regional"],"adyacentes":[]}
+  "philly-fern-rock": {
+    "ciudad": "philadelphia",
+    "nombre": "Fern Rock",
+    "lineas": [
+      "bsl",
+      "bsl-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-olney",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 5,
+        "linea": "bsl-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-olney": {
+    "ciudad": "philadelphia",
+    "nombre": "Olney",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-fern-rock",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-logan",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-logan": {
+    "ciudad": "philadelphia",
+    "nombre": "Logan",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-olney",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-wyoming",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-wyoming": {
+    "ciudad": "philadelphia",
+    "nombre": "Wyoming",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-logan",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-hunting-park",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-hunting-park": {
+    "ciudad": "philadelphia",
+    "nombre": "Hunting Park",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-wyoming",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-erie",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-erie": {
+    "ciudad": "philadelphia",
+    "nombre": "Erie",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-hunting-park",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-philadelphia",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-north-philadelphia": {
+    "ciudad": "philadelphia",
+    "nombre": "North Philadelphia",
+    "lineas": [
+      "bsl",
+      "bsl-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-erie",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-susquehanna-dauphin",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 5,
+        "linea": "bsl-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-susquehanna-dauphin": {
+    "ciudad": "philadelphia",
+    "nombre": "Susquehanna-Dauphin",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-north-philadelphia",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-cecil-b-moore",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-cecil-b-moore": {
+    "ciudad": "philadelphia",
+    "nombre": "Cecil B. Moore",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-susquehanna-dauphin",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-girard",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-girard": {
+    "ciudad": "philadelphia",
+    "nombre": "Girard",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-cecil-b-moore",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-fairmount",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-fairmount": {
+    "ciudad": "philadelphia",
+    "nombre": "Fairmount",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-girard",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-spring-garden",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-spring-garden": {
+    "ciudad": "philadelphia",
+    "nombre": "Spring Garden",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-fairmount",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-race-vine",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-race-vine": {
+    "ciudad": "philadelphia",
+    "nombre": "Race-Vine",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-spring-garden",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-city-hall",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-city-hall": {
+    "ciudad": "philadelphia",
+    "nombre": "City Hall",
+    "lineas": [
+      "bsl",
+      "bsl-mfl",
+      "bsl-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-race-vine",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-walnut-locust",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-15th-street",
+        "tiempo": 3,
+        "linea": "bsl-mfl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 4,
+        "linea": "bsl-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-walnut-locust": {
+    "ciudad": "philadelphia",
+    "nombre": "Walnut-Locust",
+    "lineas": [
+      "bsl",
+      "bsl-patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-city-hall",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-lombard-south",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-patco-15th-16th",
+        "tiempo": 5,
+        "linea": "bsl-patco",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-lombard-south": {
+    "ciudad": "philadelphia",
+    "nombre": "Lombard-South",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-walnut-locust",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-ellsworth-federal",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-ellsworth-federal": {
+    "ciudad": "philadelphia",
+    "nombre": "Ellsworth-Federal",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-lombard-south",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-tasker-morris",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-tasker-morris": {
+    "ciudad": "philadelphia",
+    "nombre": "Tasker-Morris",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-ellsworth-federal",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-snyder",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-snyder": {
+    "ciudad": "philadelphia",
+    "nombre": "Snyder",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-tasker-morris",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-oregon",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-oregon": {
+    "ciudad": "philadelphia",
+    "nombre": "Oregon",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-snyder",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-att-station",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-att-station": {
+    "ciudad": "philadelphia",
+    "nombre": "AT&T Station",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-oregon",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-nrg-station",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-nrg-station": {
+    "ciudad": "philadelphia",
+    "nombre": "NRG Station",
+    "lineas": [
+      "bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-att-station",
+        "tiempo": 2,
+        "linea": "bsl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-69th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "69th Street",
+    "lineas": [
+      "mfl",
+      "mfl-route100",
+      "mfl-trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-millbourne",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-garrett-hill",
+        "tiempo": 5,
+        "linea": "mfl-route100",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-drexel-hill-junction",
+        "tiempo": 5,
+        "linea": "mfl-trolley",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-angora",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-millbourne": {
+    "ciudad": "philadelphia",
+    "nombre": "Millbourne",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-69th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-63rd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-63rd-street": {
+    "ciudad": "philadelphia",
+    "nombre": "63rd Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-millbourne",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-60th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-60th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "60th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-63rd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-56th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-56th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "56th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-60th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-52nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-52nd-street": {
+    "ciudad": "philadelphia",
+    "nombre": "52nd Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-56th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-46th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-46th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "46th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-52nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-40th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-40th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "40th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-46th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-34th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-34th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "34th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-40th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-30th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-30th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "30th Street",
+    "lineas": [
+      "mfl",
+      "mfl-trolley",
+      "mfl-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-34th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-22nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-30th",
+        "tiempo": 3,
+        "linea": "mfl-trolley",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 5,
+        "linea": "mfl-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-22nd-street": {
+    "ciudad": "philadelphia",
+    "nombre": "22nd Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-30th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-19th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-19th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "19th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-22nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-15th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-15th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "15th Street",
+    "lineas": [
+      "mfl",
+      "mfl-bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-19th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-13th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-city-hall",
+        "tiempo": 3,
+        "linea": "mfl-bsl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-13th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "13th Street",
+    "lineas": [
+      "mfl",
+      "mfl-trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-15th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-11th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-13th",
+        "tiempo": 3,
+        "linea": "mfl-trolley",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-11th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "11th Street",
+    "lineas": [
+      "mfl",
+      "mfl-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-13th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-8th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-market-east",
+        "tiempo": 3,
+        "linea": "mfl-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-8th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "8th Street",
+    "lineas": [
+      "mfl",
+      "mfl-patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-11th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-5th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-patco-8th-market",
+        "tiempo": 3,
+        "linea": "mfl-patco",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-market-east",
+        "tiempo": 3,
+        "linea": "regional-hub",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-5th-street": {
+    "ciudad": "philadelphia",
+    "nombre": "5th Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-8th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-2nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-2nd-street": {
+    "ciudad": "philadelphia",
+    "nombre": "2nd Street",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-5th-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-spring-garden-mfl",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-spring-garden-mfl": {
+    "ciudad": "philadelphia",
+    "nombre": "Spring Garden",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-2nd-street",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-girard-mfl",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-girard-mfl": {
+    "ciudad": "philadelphia",
+    "nombre": "Girard",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-spring-garden-mfl",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-berks",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-berks": {
+    "ciudad": "philadelphia",
+    "nombre": "Berks",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-girard-mfl",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-york-dauphin",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-york-dauphin": {
+    "ciudad": "philadelphia",
+    "nombre": "York-Dauphin",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-berks",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-huntingdon",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-huntingdon": {
+    "ciudad": "philadelphia",
+    "nombre": "Huntingdon",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-york-dauphin",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-somerset",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-somerset": {
+    "ciudad": "philadelphia",
+    "nombre": "Somerset",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-huntingdon",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-allegheny",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-allegheny": {
+    "ciudad": "philadelphia",
+    "nombre": "Allegheny",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-somerset",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-tioga",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-tioga": {
+    "ciudad": "philadelphia",
+    "nombre": "Tioga",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-allegheny",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-church",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-church": {
+    "ciudad": "philadelphia",
+    "nombre": "Church",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-tioga",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-frankford",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-frankford": {
+    "ciudad": "philadelphia",
+    "nombre": "Frankford",
+    "lineas": [
+      "mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-church",
+        "tiempo": 2,
+        "linea": "mfl",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-patco-15th-16th": {
+    "ciudad": "philadelphia",
+    "nombre": "15th-16th Street",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-patco-12th-13th",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-patco-12th-13th": {
+    "ciudad": "philadelphia",
+    "nombre": "12th-13th Street",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-patco-15th-16th",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-patco-9th-10th",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-patco-9th-10th": {
+    "ciudad": "philadelphia",
+    "nombre": "9th-10th Street",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-patco-12th-13th",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-patco-8th-market",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-patco-8th-market": {
+    "ciudad": "philadelphia",
+    "nombre": "8th-Market Street",
+    "lineas": [
+      "patco",
+      "patco-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-patco-9th-10th",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-franklin-square",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-8th-street",
+        "tiempo": 3,
+        "linea": "patco-mfl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-franklin-square": {
+    "ciudad": "philadelphia",
+    "nombre": "Franklin Square",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-patco-8th-market",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-city-hall-camden",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-city-hall-camden": {
+    "ciudad": "philadelphia",
+    "nombre": "City Hall Camden",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-franklin-square",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-broadway-camden",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-broadway-camden": {
+    "ciudad": "philadelphia",
+    "nombre": "Broadway",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-city-hall-camden",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-ferry-avenue",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-ferry-avenue": {
+    "ciudad": "philadelphia",
+    "nombre": "Ferry Avenue",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-broadway-camden",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-collingswood",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-collingswood": {
+    "ciudad": "philadelphia",
+    "nombre": "Collingswood",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-ferry-avenue",
+        "tiempo": 2,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-westmont",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-westmont": {
+    "ciudad": "philadelphia",
+    "nombre": "Westmont",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-collingswood",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-haddonfield",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-haddonfield": {
+    "ciudad": "philadelphia",
+    "nombre": "Haddonfield",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-westmont",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-woodcrest",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-woodcrest": {
+    "ciudad": "philadelphia",
+    "nombre": "Woodcrest",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-haddonfield",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-lindenwold",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-lindenwold": {
+    "ciudad": "philadelphia",
+    "nombre": "Lindenwold",
+    "lineas": [
+      "patco"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-woodcrest",
+        "tiempo": 3,
+        "linea": "patco",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-garrett-hill": {
+    "ciudad": "philadelphia",
+    "nombre": "Garrett Hill",
+    "lineas": [
+      "route100",
+      "route100-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-roberts-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-69th-street",
+        "tiempo": 5,
+        "linea": "route100-mfl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-roberts-road": {
+    "ciudad": "philadelphia",
+    "nombre": "Roberts Road",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-garrett-hill",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-bryn-mawr-nhsl",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-bryn-mawr-nhsl": {
+    "ciudad": "philadelphia",
+    "nombre": "Bryn Mawr",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-roberts-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-haverford-nhsl",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-haverford-nhsl": {
+    "ciudad": "philadelphia",
+    "nombre": "Haverford",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-bryn-mawr-nhsl",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-ardmore-junction",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-ardmore-junction": {
+    "ciudad": "philadelphia",
+    "nombre": "Ardmore Junction",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-haverford-nhsl",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-wynnewood-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-wynnewood-road": {
+    "ciudad": "philadelphia",
+    "nombre": "Wynnewood Road",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-ardmore-junction",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-beechwood-brookline",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-beechwood-brookline": {
+    "ciudad": "philadelphia",
+    "nombre": "Beechwood-Brookline",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-wynnewood-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-penfield",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-penfield": {
+    "ciudad": "philadelphia",
+    "nombre": "Penfield",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-beechwood-brookline",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-township-line",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-township-line": {
+    "ciudad": "philadelphia",
+    "nombre": "Township Line",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-penfield",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-parkview",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-parkview": {
+    "ciudad": "philadelphia",
+    "nombre": "Parkview",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-township-line",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-stadium-villanova",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-stadium-villanova": {
+    "ciudad": "philadelphia",
+    "nombre": "Stadium-Villanova",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-parkview",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-villanova",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-villanova": {
+    "ciudad": "philadelphia",
+    "nombre": "Villanova",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-stadium-villanova",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-radnor",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-radnor": {
+    "ciudad": "philadelphia",
+    "nombre": "Radnor",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-villanova",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-county-line",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-county-line": {
+    "ciudad": "philadelphia",
+    "nombre": "County Line",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-radnor",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-eagle-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-eagle-road": {
+    "ciudad": "philadelphia",
+    "nombre": "Eagle Road",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-county-line",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-gulph-mills",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-gulph-mills": {
+    "ciudad": "philadelphia",
+    "nombre": "Gulph Mills",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-eagle-road",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-matsonford",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-matsonford": {
+    "ciudad": "philadelphia",
+    "nombre": "Matsonford",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-gulph-mills",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-hughes-park",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-hughes-park": {
+    "ciudad": "philadelphia",
+    "nombre": "Hughes Park",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-matsonford",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-dekalb-street",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-dekalb-street": {
+    "ciudad": "philadelphia",
+    "nombre": "Dekalb Street",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-hughes-park",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-bridgeport",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-bridgeport": {
+    "ciudad": "philadelphia",
+    "nombre": "Bridgeport",
+    "lineas": [
+      "route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-dekalb-street",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-norristown",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-norristown": {
+    "ciudad": "philadelphia",
+    "nombre": "Norristown",
+    "lineas": [
+      "route100",
+      "route100-regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-bridgeport",
+        "tiempo": 2,
+        "linea": "route100",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-norristown-rr",
+        "tiempo": 5,
+        "linea": "route100-regional",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-trolley-13th": {
+    "ciudad": "philadelphia",
+    "nombre": "13th Street",
+    "lineas": [
+      "trolley",
+      "trolley-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-15th",
+        "tiempo": 2,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-13th-street",
+        "tiempo": 3,
+        "linea": "trolley-mfl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-trolley-15th": {
+    "ciudad": "philadelphia",
+    "nombre": "15th Street",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-13th",
+        "tiempo": 2,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-19th",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-trolley-19th": {
+    "ciudad": "philadelphia",
+    "nombre": "19th Street",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-15th",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-22nd",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-trolley-22nd": {
+    "ciudad": "philadelphia",
+    "nombre": "22nd Street",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-19th",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-30th",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-trolley-30th": {
+    "ciudad": "philadelphia",
+    "nombre": "30th Street",
+    "lineas": [
+      "trolley",
+      "trolley-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-22nd",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trolley-33rd",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-30th-street",
+        "tiempo": 3,
+        "linea": "trolley-mfl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-trolley-33rd": {
+    "ciudad": "philadelphia",
+    "nombre": "33rd Street",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-30th",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-36th-portal",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-36th-portal": {
+    "ciudad": "philadelphia",
+    "nombre": "36th Street Portal",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-trolley-33rd",
+        "tiempo": 3,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-40th-baltimore",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-40th-baltimore": {
+    "ciudad": "philadelphia",
+    "nombre": "40th-Baltimore",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-36th-portal",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-63rd-malvern",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-63rd-malvern": {
+    "ciudad": "philadelphia",
+    "nombre": "63rd-Malvern",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-40th-baltimore",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-darby-tc",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-darby-tc": {
+    "ciudad": "philadelphia",
+    "nombre": "Darby TC",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-63rd-malvern",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-yeadon-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-yeadon-loop": {
+    "ciudad": "philadelphia",
+    "nombre": "Yeadon Loop",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-darby-tc",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-angora-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-angora-loop": {
+    "ciudad": "philadelphia",
+    "nombre": "Angora Loop",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-yeadon-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-eastwick-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-eastwick-loop": {
+    "ciudad": "philadelphia",
+    "nombre": "Eastwick Loop",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-angora-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-springfield-mall",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-springfield-mall": {
+    "ciudad": "philadelphia",
+    "nombre": "Springfield Mall",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-eastwick-loop",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-media-101",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-media-101": {
+    "ciudad": "philadelphia",
+    "nombre": "Media",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-springfield-mall",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-sharon-hill",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-sharon-hill": {
+    "ciudad": "philadelphia",
+    "nombre": "Sharon Hill",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-media-101",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-drexel-hill-junction",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-drexel-hill-junction": {
+    "ciudad": "philadelphia",
+    "nombre": "Drexel Hill Junction",
+    "lineas": [
+      "trolley",
+      "trolley-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-sharon-hill",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-40th-woodland",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-69th-street",
+        "tiempo": 5,
+        "linea": "trolley-mfl",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-40th-woodland": {
+    "ciudad": "philadelphia",
+    "nombre": "40th-Woodland",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-drexel-hill-junction",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-49th-baltimore",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-49th-baltimore": {
+    "ciudad": "philadelphia",
+    "nombre": "49th-Baltimore",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-40th-woodland",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-girard-lancaster",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-girard-lancaster": {
+    "ciudad": "philadelphia",
+    "nombre": "Girard-Lancaster",
+    "lineas": [
+      "trolley"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-49th-baltimore",
+        "tiempo": 4,
+        "linea": "trolley",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-suburban-station": {
+    "ciudad": "philadelphia",
+    "nombre": "Suburban Station",
+    "lineas": [
+      "regional_airport",
+      "regional",
+      "regional-bsl",
+      "regional-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-market-east",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-city-hall",
+        "tiempo": 4,
+        "linea": "regional-bsl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-30th-street",
+        "tiempo": 5,
+        "linea": "regional-mfl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-curtis-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-paoli",
+        "tiempo": 15,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-west-trenton",
+        "tiempo": 30,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-trenton",
+        "tiempo": 25,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-doylestown",
+        "tiempo": 40,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-cynwyd",
+        "tiempo": 12,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-market-east": {
+    "ciudad": "philadelphia",
+    "nombre": "Market East Station",
+    "lineas": [
+      "regional_airport",
+      "regional",
+      "regional-mfl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-temple-university",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-11th-street",
+        "tiempo": 3,
+        "linea": "regional-mfl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-eastwick-rr",
+        "tiempo": 6,
+        "linea": "airport_connection",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-8th-street",
+        "tiempo": 3,
+        "linea": "regional-hub",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-temple-university": {
+    "ciudad": "philadelphia",
+    "nombre": "Temple University",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-market-east",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-chestnut-hill-west",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-chestnut-hill-east",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-north-broad-rr": {
+    "ciudad": "philadelphia",
+    "nombre": "North Broad",
+    "lineas": [
+      "regional_airport",
+      "regional",
+      "regional-bsl"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-temple-university",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-chestnut-hill-east",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-fern-rock",
+        "tiempo": 5,
+        "linea": "regional-bsl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-north-philadelphia",
+        "tiempo": 5,
+        "linea": "regional-bsl",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-bridesburg",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-lansdale",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-warminster",
+        "tiempo": 25,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-fox-chase",
+        "tiempo": 18,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      },
+      {
+        "slug": "philly-manayunk",
+        "tiempo": 15,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-airport-terminal-a": {
+    "ciudad": "philadelphia",
+    "nombre": "Airport Terminal A",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-airport-terminal-b",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-eastwick-rr",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-airport-terminal-b": {
+    "ciudad": "philadelphia",
+    "nombre": "Airport Terminal B",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-airport-terminal-a",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-airport-terminal-cd",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-airport-terminal-cd": {
+    "ciudad": "philadelphia",
+    "nombre": "Airport Terminal C-D",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-airport-terminal-b",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-airport-terminal-ef",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-airport-terminal-ef": {
+    "ciudad": "philadelphia",
+    "nombre": "Airport Terminal E-F",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-airport-terminal-cd",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-eastwick-rr": {
+    "ciudad": "philadelphia",
+    "nombre": "Eastwick",
+    "lineas": [
+      "regional_airport",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-airport-terminal-a",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-ardmore-rr",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-market-east",
+        "tiempo": 6,
+        "linea": "airport_connection",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-ardmore-rr": {
+    "ciudad": "philadelphia",
+    "nombre": "Ardmore",
+    "lineas": [
+      "regional_paoli_thorndale",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-eastwick-rr",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-bryn-mawr-rr",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-bryn-mawr-rr": {
+    "ciudad": "philadelphia",
+    "nombre": "Bryn Mawr",
+    "lineas": [
+      "regional_paoli_thorndale",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-ardmore-rr",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-paoli",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-paoli": {
+    "ciudad": "philadelphia",
+    "nombre": "Paoli",
+    "lineas": [
+      "regional_paoli_thorndale",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-bryn-mawr-rr",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-wayne",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 15,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-wayne": {
+    "ciudad": "philadelphia",
+    "nombre": "Wayne",
+    "lineas": [
+      "regional_paoli_thorndale",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-paoli",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-thorndale",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-chestnut-hill-west": {
+    "ciudad": "philadelphia",
+    "nombre": "Chestnut Hill West",
+    "lineas": [
+      "regional_chestnut_hill_west",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-wissahickon",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-temple-university",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-chestnut-hill-east": {
+    "ciudad": "philadelphia",
+    "nombre": "Chestnut Hill East",
+    "lineas": [
+      "regional_chestnut_hill_east",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-jenkintown-wyncote",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-temple-university",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-lansdale": {
+    "ciudad": "philadelphia",
+    "nombre": "Lansdale",
+    "lineas": [
+      "regional_lansdale_doylestown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-doylestown",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 20,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-doylestown": {
+    "ciudad": "philadelphia",
+    "nombre": "Doylestown",
+    "lineas": [
+      "regional_lansdale_doylestown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-lansdale",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-warminster",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 40,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-warminster": {
+    "ciudad": "philadelphia",
+    "nombre": "Warminster",
+    "lineas": [
+      "regional_warminster",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-doylestown",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-west-trenton",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 25,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-west-trenton": {
+    "ciudad": "philadelphia",
+    "nombre": "West Trenton",
+    "lineas": [
+      "regional_west_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-warminster",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trenton",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 30,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-trenton": {
+    "ciudad": "philadelphia",
+    "nombre": "Trenton",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-west-trenton",
+        "tiempo": 3,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 25,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-manayunk": {
+    "ciudad": "philadelphia",
+    "nombre": "Manayunk",
+    "lineas": [
+      "regional_manayunk_norristown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-wissahickon",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 15,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-wissahickon": {
+    "ciudad": "philadelphia",
+    "nombre": "Wissahickon",
+    "lineas": [
+      "regional_manayunk_norristown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-manayunk",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-chestnut-hill-west",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-fox-chase": {
+    "ciudad": "philadelphia",
+    "nombre": "Fox Chase",
+    "lineas": [
+      "regional_fox_chase",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-cynwyd",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 18,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-cynwyd": {
+    "ciudad": "philadelphia",
+    "nombre": "Cynwyd",
+    "lineas": [
+      "regional_cynwyd",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-fox-chase",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-media-elwyn",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 12,
+        "linea": "regional-trunk",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-media-elwyn": {
+    "ciudad": "philadelphia",
+    "nombre": "Media-Elwyn",
+    "lineas": [
+      "regional_media_elwyn",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-cynwyd",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-swarthmore",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-swarthmore": {
+    "ciudad": "philadelphia",
+    "nombre": "Swarthmore",
+    "lineas": [
+      "regional_media_elwyn",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-media-elwyn",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-jenkintown-wyncote": {
+    "ciudad": "philadelphia",
+    "nombre": "Jenkintown-Wyncote",
+    "lineas": [
+      "regional_lansdale_doylestown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-chestnut-hill-east",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-glenside",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-glenside": {
+    "ciudad": "philadelphia",
+    "nombre": "Glenside",
+    "lineas": [
+      "regional_lansdale_doylestown",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-jenkintown-wyncote",
+        "tiempo": 5,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-norristown-rr": {
+    "ciudad": "philadelphia",
+    "nombre": "Norristown",
+    "lineas": [
+      "regional_manayunk_norristown",
+      "regional-route100"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-norristown",
+        "tiempo": 5,
+        "linea": "regional-route100",
+        "tipo": "transbordo"
+      }
+    ]
+  },
+  "philly-thorndale": {
+    "ciudad": "philadelphia",
+    "nombre": "Thorndale",
+    "lineas": [
+      "regional_paoli_thorndale",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-wayne",
+        "tiempo": 8,
+        "linea": "regional",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-49th-street-media": {
+    "ciudad": "philadelphia",
+    "nombre": "49th Street Media",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-fernwood-yeadon",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-angora": {
+    "ciudad": "philadelphia",
+    "nombre": "Angora",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-69th-street",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-morton",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-bridesburg": {
+    "ciudad": "philadelphia",
+    "nombre": "Bridesburg",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-north-broad-rr",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-tacony",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-bristol": {
+    "ciudad": "philadelphia",
+    "nombre": "Bristol",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-levittown",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-north-philadelphia-regional",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-chester-transit-center": {
+    "ciudad": "philadelphia",
+    "nombre": "Chester Transit Center",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-norwood",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-clifton-aldan": {
+    "ciudad": "philadelphia",
+    "nombre": "Clifton-Aldan",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-lansdowne",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-fernwood-yeadon",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-curtis-park": {
+    "ciudad": "philadelphia",
+    "nombre": "Curtis Park",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-suburban-station",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-darby",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-darby": {
+    "ciudad": "philadelphia",
+    "nombre": "Darby",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-curtis-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-folcroft",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-fernwood-yeadon": {
+    "ciudad": "philadelphia",
+    "nombre": "Fernwood-Yeadon",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-clifton-aldan",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-49th-street-media",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-folcroft": {
+    "ciudad": "philadelphia",
+    "nombre": "Folcroft",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-darby",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-prospect-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-glenolden": {
+    "ciudad": "philadelphia",
+    "nombre": "Glenolden",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-ridley-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-norwood",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-lansdowne": {
+    "ciudad": "philadelphia",
+    "nombre": "Lansdowne",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-primos",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-clifton-aldan",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-levittown": {
+    "ciudad": "philadelphia",
+    "nombre": "Levittown",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-tacony",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-bristol",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-morton": {
+    "ciudad": "philadelphia",
+    "nombre": "Morton",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-angora",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-primos",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-north-philadelphia-regional": {
+    "ciudad": "philadelphia",
+    "nombre": "North Philadelphia Regional",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-bristol",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-trenton-transit-center",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-norwood": {
+    "ciudad": "philadelphia",
+    "nombre": "Norwood",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-glenolden",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-chester-transit-center",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-primos": {
+    "ciudad": "philadelphia",
+    "nombre": "Primos",
+    "lineas": [
+      "regional_media_wawa",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-morton",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-lansdowne",
+        "tiempo": 2,
+        "linea": "regional_media_wawa",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-prospect-park": {
+    "ciudad": "philadelphia",
+    "nombre": "Prospect Park",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-folcroft",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-ridley-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-ridley-park": {
+    "ciudad": "philadelphia",
+    "nombre": "Ridley Park",
+    "lineas": [
+      "regional_wilmington_newark",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-prospect-park",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-glenolden",
+        "tiempo": 2,
+        "linea": "regional_wilmington_newark",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-tacony": {
+    "ciudad": "philadelphia",
+    "nombre": "Tacony",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-bridesburg",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      },
+      {
+        "slug": "philly-levittown",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  },
+  "philly-trenton-transit-center": {
+    "ciudad": "philadelphia",
+    "nombre": "Trenton Transit Center",
+    "lineas": [
+      "regional_trenton",
+      "regional"
+    ],
+    "adyacentes": [
+      {
+        "slug": "philly-north-philadelphia-regional",
+        "tiempo": 2,
+        "linea": "regional_trenton",
+        "tipo": "linea"
+      }
+    ]
+  }
 };

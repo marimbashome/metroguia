@@ -41,6 +41,7 @@ export const grafoEdmonton = {
     adyacentes: [
       { slug: 'stadium', tiempo: 3, linea: 'capital', tipo: 'edmonton-lrt' },
       { slug: 'central', tiempo: 3, linea: 'capital', tipo: 'edmonton-lrt' },
+      { slug: 'downtown-valley', tiempo: 5, linea: 'valley', tipo: 'transbordo' },
     ],
   },
   'central': {
@@ -228,6 +229,7 @@ export const grafoEdmonton = {
     adyacentes: [
       { slug: 'quarters', tiempo: 3, linea: 'valley', tipo: 'edmonton-lrt' },
       { slug: 'davies', tiempo: 3, linea: 'valley', tipo: 'edmonton-lrt' },
+      { slug: 'churchill', tiempo: 5, linea: 'capital', tipo: 'transbordo' },
     ],
   },
   'davies': {

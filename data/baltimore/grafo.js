@@ -70,7 +70,7 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-mondawmin', tiempo: 2, linea: 'subway', tipo: 'mta-subway' },
       { slug: 'baltimore-upton', tiempo: 2, linea: 'subway', tipo: 'mta-subway' },
-    ],
+      { slug: 'baltimore-penn-station', tiempo: 5, linea: 'marc-penn', tipo: 'transbordo' }],
   },
   'baltimore-upton': {
     ciudad: 'baltimore',
@@ -161,7 +161,7 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-pepper-road', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-falls-road', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
-    ],
+      { slug: 'baltimore-lutherville-north', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-falls-road': {
     ciudad: 'baltimore',
@@ -206,7 +206,8 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-woodberry', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-penn-station', tiempo: 3, linea: 'lightrail', tipo: 'mta-lightrail' },
-    ],
+      { slug: 'baltimore-north-linthicum', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' },
+      { slug: 'baltimore-north-avenue-west', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-penn-station': {
     ciudad: 'baltimore',
@@ -216,7 +217,8 @@ export const grafoBaltimore = {
       { slug: 'baltimore-north-avenue', tiempo: 3, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-mount-royal', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-penn-station-marc', tiempo: 4, linea: 'marc-penn', tipo: 'transfer' },
-    ],
+      { slug: 'baltimore-penn-north', tiempo: 5, linea: 'subway', tipo: 'transbordo' },
+      { slug: 'baltimore-penn-station-lr', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-mount-royal': {
     ciudad: 'baltimore',
@@ -271,7 +273,9 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-convention-center', tiempo: 3, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-hamburg-street', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
-    ],
+      { slug: 'baltimore-camden', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-brunswick', tiempo: 5, linea: 'marc-brunswick', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-marc', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' }],
   },
   'baltimore-hamburg-street': {
     ciudad: 'baltimore',
@@ -325,7 +329,7 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-nursery-road', tiempo: 3, linea: 'lightrail', tipo: 'mta-lightrail' },
       { slug: 'baltimore-linthicum', tiempo: 2, linea: 'lightrail', tipo: 'mta-lightrail' },
-    ],
+      { slug: 'baltimore-north-avenue', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-linthicum': {
     ciudad: 'baltimore',
@@ -417,7 +421,7 @@ export const grafoBaltimore = {
       { slug: 'baltimore-martin-airport', tiempo: 10, linea: 'marc-penn', tipo: 'marc' },
       { slug: 'baltimore-west-baltimore-marc', tiempo: 8, linea: 'marc-penn', tipo: 'marc' },
       { slug: 'baltimore-penn-station', tiempo: 4, linea: 'lightrail', tipo: 'transfer' },
-    ],
+      { slug: 'baltimore-penn-station-lr', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-west-baltimore-marc': {
     ciudad: 'baltimore',
@@ -480,7 +484,7 @@ export const grafoBaltimore = {
     lineas: ['marc-penn'],
     adyacentes: [
       { slug: 'baltimore-new-carrollton', tiempo: 10, linea: 'marc-penn', tipo: 'marc' },
-    ],
+      { slug: 'baltimore-washington-union-station-brunswick', tiempo: 5, linea: 'marc-brunswick', tipo: 'transbordo' }],
   },
 
   // MARC CAMDEN LINE STATIONS
@@ -490,7 +494,9 @@ export const grafoBaltimore = {
     lineas: ['marc-camden'],
     adyacentes: [
       { slug: 'baltimore-st-denis', tiempo: 5, linea: 'marc-camden', tipo: 'marc' },
-    ],
+      { slug: 'baltimore-camden-yards', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-brunswick', tiempo: 5, linea: 'marc-brunswick', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-marc', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' }],
   },
   'baltimore-st-denis': {
     ciudad: 'baltimore',
@@ -571,7 +577,9 @@ export const grafoBaltimore = {
     lineas: ['marc-brunswick'],
     adyacentes: [
       { slug: 'baltimore-dickerson', tiempo: 15, linea: 'marc-brunswick', tipo: 'marc' },
-    ],
+      { slug: 'baltimore-camden-yards', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' },
+      { slug: 'baltimore-camden', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-marc', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' }],
   },
   'baltimore-dickerson': {
     ciudad: 'baltimore',
@@ -669,7 +677,7 @@ export const grafoBaltimore = {
     lineas: ['marc-brunswick'],
     adyacentes: [
       { slug: 'baltimore-silver-spring', tiempo: 8, linea: 'marc-brunswick', tipo: 'marc' },
-    ],
+      { slug: 'baltimore-washington-union-station-penn', tiempo: 5, linea: 'marc-penn', tipo: 'transbordo' }],
   },
 
   // LIGHT RAIL — Penn Station branch & spur stations
@@ -681,7 +689,7 @@ export const grafoBaltimore = {
       { slug: 'baltimore-north-avenue', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
       { slug: 'baltimore-mount-royal', tiempo: 2, linea: 'lightrail', tipo: 'lightrail' },
       { slug: 'baltimore-penn-station-marc', tiempo: 5, linea: 'transfer', tipo: 'transfer' },
-    ],
+      { slug: 'baltimore-penn-station', tiempo: 5, linea: 'marc-penn', tipo: 'transbordo' }],
   },
   'baltimore-timonium': {
     ciudad: 'baltimore',
@@ -708,7 +716,7 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-timonium-fairgrounds', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
       { slug: 'baltimore-warren-road', tiempo: 3, linea: 'lightrail', tipo: 'lightrail' },
-    ],
+      { slug: 'baltimore-lutherville', tiempo: 5, linea: 'lightrail', tipo: 'transbordo' }],
   },
   'baltimore-warren-road': {
     ciudad: 'baltimore',
@@ -746,6 +754,7 @@ export const grafoBaltimore = {
     adyacentes: [
       { slug: 'baltimore-st-denis', tiempo: 8, linea: 'marc-camden', tipo: 'marc' },
       { slug: 'baltimore-camden-yards', tiempo: 5, linea: 'transfer', tipo: 'transfer' },
-    ],
+      { slug: 'baltimore-camden', tiempo: 5, linea: 'marc-camden', tipo: 'transbordo' },
+      { slug: 'baltimore-camden-brunswick', tiempo: 5, linea: 'marc-brunswick', tipo: 'transbordo' }],
   },
 };

@@ -68,7 +68,7 @@ export const grafoMontreal = {
     adyacentes: [
       { slug: 'charlevoix', tiempo: 3, linea: 'green', tipo: 'stm-metro' },
       { slug: 'atwater', tiempo: 3, linea: 'green', tipo: 'stm-metro' },
-    ],
+      { slug: 'lionel-groulx-orange', tiempo: 5, linea: 'orange', tipo: 'stm-metro' }],
   },
   'atwater': {
     ciudad: 'montreal',
@@ -131,7 +131,8 @@ export const grafoMontreal = {
     adyacentes: [
       { slug: 'saint-laurent', tiempo: 3, linea: 'green', tipo: 'stm-metro' },
       { slug: 'beaudry', tiempo: 3, linea: 'green', tipo: 'stm-metro' },
-    ],
+      { slug: 'berri-uqam-orange', tiempo: 5, linea: 'orange', tipo: 'stm-metro' },
+      { slug: 'berri-uqam-yellow', tiempo: 5, linea: 'yellow', tipo: 'stm-metro' }],
   },
   'beaudry': {
     ciudad: 'montreal',
@@ -399,7 +400,8 @@ export const grafoMontreal = {
     adyacentes: [
       { slug: 'sherbrooke', tiempo: 3, linea: 'orange', tipo: 'stm-metro' },
       { slug: 'champ-de-mars', tiempo: 3, linea: 'orange', tipo: 'stm-metro' },
-    ],
+      { slug: 'berri-uqam-green', tiempo: 5, linea: 'green', tipo: 'stm-metro' },
+      { slug: 'berri-uqam-yellow', tiempo: 5, linea: 'yellow', tipo: 'stm-metro' }],
   },
   'champ-de-mars': {
     ciudad: 'montreal',
@@ -462,7 +464,7 @@ export const grafoMontreal = {
     adyacentes: [
       { slug: 'georges-vanier', tiempo: 3, linea: 'orange', tipo: 'stm-metro' },
       { slug: 'place-saint-henri', tiempo: 3, linea: 'orange', tipo: 'stm-metro' },
-    ],
+      { slug: 'lionel-groulx-green', tiempo: 5, linea: 'green', tipo: 'stm-metro' }],
   },
   'place-saint-henri': {
     ciudad: 'montreal',
@@ -620,7 +622,8 @@ export const grafoMontreal = {
     lineas: ["yellow"],
     adyacentes: [
       { slug: 'jean-drapeau', tiempo: 3, linea: 'yellow', tipo: 'stm-metro' },
-    ],
+      { slug: 'berri-uqam-green', tiempo: 5, linea: 'green', tipo: 'stm-metro' },
+      { slug: 'berri-uqam-orange', tiempo: 5, linea: 'orange', tipo: 'stm-metro' }],
   },
   'jean-drapeau': {
     ciudad: 'montreal',

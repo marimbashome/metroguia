@@ -117,7 +117,7 @@ export const grafoAtlanta = {
     adyacentes: [
       { slug: 'atlanta-civic-center', tiempo: 2, linea: 'Red', tipo: 'marta-rail' },
       { slug: 'atlanta-five-points', tiempo: 2, linea: 'Red', tipo: 'marta-rail' },
-    ]
+      { slug: 'atlanta-dome-gwcc-phillips-cnn', tiempo: 5, linea: 'Green', tipo: 'transbordo' }]
   },
   'atlanta-five-points': {
     ciudad: 'atlanta',
@@ -147,7 +147,7 @@ export const grafoAtlanta = {
     adyacentes: [
       { slug: 'atlanta-garnett', tiempo: 2, linea: 'Red', tipo: 'marta-rail' },
       { slug: 'atlanta-oakland-city', tiempo: 2, linea: 'Red', tipo: 'marta-rail' },
-    ]
+      { slug: 'atlanta-west-lake', tiempo: 5, linea: 'Red', tipo: 'transbordo' }]
   },
   'atlanta-oakland-city': {
     ciudad: 'atlanta',
@@ -251,7 +251,7 @@ export const grafoAtlanta = {
     adyacentes: [
       { slug: 'atlanta-hamilton-holmes', tiempo: 3, linea: 'Blue', tipo: 'marta-rail' },
       { slug: 'atlanta-ashby', tiempo: 2, linea: 'Blue', tipo: 'marta-rail' },
-    ]
+      { slug: 'atlanta-west-end', tiempo: 5, linea: 'Red', tipo: 'transbordo' }]
   },
   'atlanta-ashby': {
     ciudad: 'atlanta',
@@ -281,7 +281,7 @@ export const grafoAtlanta = {
       { slug: 'atlanta-vine-city', tiempo: 2, linea: 'Blue', tipo: 'marta-rail' },
       { slug: 'atlanta-five-points', tiempo: 3, linea: 'Blue', tipo: 'marta-rail' },
       { slug: 'atlanta-five-points', tiempo: 3, linea: 'Green', tipo: 'transbordo' },
-    ]
+      { slug: 'atlanta-peachtree-center', tiempo: 5, linea: 'Red', tipo: 'transbordo' }]
   },
   'atlanta-georgia-state': {
     ciudad: 'atlanta',
@@ -291,7 +291,7 @@ export const grafoAtlanta = {
       { slug: 'atlanta-five-points', tiempo: 2, linea: 'Blue', tipo: 'marta-rail' },
       { slug: 'atlanta-king-memorial', tiempo: 2, linea: 'Blue', tipo: 'marta-rail' },
       { slug: 'atlanta-king-memorial', tiempo: 2, linea: 'Green', tipo: 'transbordo' },
-    ]
+      { slug: 'atlanta-bankhead', tiempo: 5, linea: 'Green', tipo: 'transbordo' }]
   },
   'atlanta-king-memorial': {
     ciudad: 'atlanta',
@@ -376,6 +376,6 @@ export const grafoAtlanta = {
     lineas: ['Green'],
     adyacentes: [
       { slug: 'atlanta-ashby', tiempo: 3, linea: 'Green', tipo: 'marta-rail' },
-    ]
+      { slug: 'atlanta-georgia-state', tiempo: 5, linea: 'Red', tipo: 'transbordo' }]
   },
 };

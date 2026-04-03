@@ -86,6 +86,7 @@ export const grafoCalgary = {
     adyacentes: [
       { slug: 'sunnyside', tiempo: 3, linea: 'red', tipo: 'ctrain' },
       { slug: 'erlton-stampede', tiempo: 3, linea: 'red', tipo: 'ctrain' },
+      { slug: 'ctrain-olympic-plaza', tiempo: 5, linea: 'blue', tipo: 'transbordo' },
     ],
   },
   'erlton-stampede': {
@@ -282,6 +283,7 @@ export const grafoCalgary = {
     adyacentes: [
       { slug: 'ctrain-3rd-street-sw', tiempo: 3, linea: 'blue', tipo: 'ctrain' },
       { slug: 'bridgeland-memorial', tiempo: 3, linea: 'blue', tipo: 'ctrain' },
+      { slug: 'calgary-city-hall', tiempo: 5, linea: 'red', tipo: 'transbordo' },
     ],
   },
   'bridgeland-memorial': {

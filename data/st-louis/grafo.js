@@ -14,7 +14,10 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-lambert-airport', tiempo: 4, linea: 'red-line', tipo: 'metrolink' },
       { slug: 'st-louis-north-hanley', tiempo: 4, linea: 'red-line', tipo: 'metrolink' },
-    ],
+      { slug: 'st-louis-rockford', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-delmar', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-skinker', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-bluebird', tiempo: 5, linea: 'blue-line', tipo: 'transbordo' }],
   },
   'st-louis-north-hanley': {
     ciudad: 'st-louis',
@@ -32,10 +35,13 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-north-hanley', tiempo: 3, linea: 'red-line', tipo: 'metrolink' },
       { slug: 'st-louis-brentwood', tiempo: 3, linea: 'red-line', tipo: 'metrolink' },
-    ],
+      { slug: 'st-louis-normandy', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-delmar', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-skinker', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-bluebird', tiempo: 5, linea: 'blue-line', tipo: 'transbordo' }],
   },
   'st-louis-brentwood': {
-    ciudad: 'brentwood',
+    ciudad: 'st-louis',
     nombre: 'Brentwood',
     lineas: ['red-line'],
     adyacentes: [
@@ -53,7 +59,7 @@ export const grafoStLouis = {
     ],
   },
   'st-louis-wellston': {
-    ciudad: 'wellston',
+    ciudad: 'st-louis',
     nombre: 'Wellston',
     lineas: ['red-line'],
     adyacentes: [
@@ -68,7 +74,9 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-wellston', tiempo: 4, linea: 'red-line', tipo: 'metrolink' },
       { slug: 'st-louis-skinker', tiempo: 3, linea: 'red-line', tipo: 'metrolink' },
-    ],
+      { slug: 'st-louis-normandy', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-rockford', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-bluebird', tiempo: 5, linea: 'blue-line', tipo: 'transbordo' }],
   },
   'st-louis-skinker': {
     ciudad: 'st-louis',
@@ -77,7 +85,9 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-delmar', tiempo: 3, linea: 'red-line', tipo: 'metrolink' },
       { slug: 'st-louis-forest-park-southeast', tiempo: 3, linea: 'red-line', tipo: 'metrolink' },
-    ],
+      { slug: 'st-louis-normandy', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-rockford', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-bluebird', tiempo: 5, linea: 'blue-line', tipo: 'transbordo' }],
   },
   'st-louis-forest-park-southeast': {
     ciudad: 'st-louis',
@@ -170,7 +180,7 @@ export const grafoStLouis = {
     ],
   },
   'st-louis-shrewsbury': {
-    ciudad: 'shrewsbury',
+    ciudad: 'st-louis',
     nombre: 'Shrewsbury',
     lineas: ['blue-line'],
     adyacentes: [
@@ -178,7 +188,7 @@ export const grafoStLouis = {
     ],
   },
   'st-louis-sunnybrook-hanley': {
-    ciudad: 'overland',
+    ciudad: 'st-louis',
     nombre: 'Sunnybrook Hanley',
     lineas: ['blue-line'],
     adyacentes: [
@@ -202,7 +212,10 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-forbes-hanley', tiempo: 3, linea: 'blue-line', tipo: 'metrolink' },
       { slug: 'st-louis-parking-garage', tiempo: 4, linea: 'blue-line', tipo: 'metrolink' },
-    ],
+      { slug: 'st-louis-normandy', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-rockford', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-delmar', tiempo: 5, linea: 'red-line', tipo: 'transbordo' },
+      { slug: 'st-louis-skinker', tiempo: 5, linea: 'red-line', tipo: 'transbordo' }],
   },
   'st-louis-parking-garage': {
     ciudad: 'st-louis',
@@ -229,10 +242,11 @@ export const grafoStLouis = {
     adyacentes: [
       { slug: 'st-louis-washington-park', tiempo: 3, linea: 'blue-line', tipo: 'metrolink' },
       { slug: 'st-louis-civic-center', tiempo: 2, linea: 'blue-line', tipo: 'metrolink' },
+      { slug: 'st-louis-fairview-heights', tiempo: 5, linea: 'blue-line', tipo: 'metrolink' },
     ],
   },
   'st-louis-fairview-heights': {
-    ciudad: 'fairview-heights',
+    ciudad: 'st-louis',
     nombre: 'Fairview Heights',
     lineas: ['blue-line'],
     adyacentes: [

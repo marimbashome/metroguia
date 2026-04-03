@@ -3,126 +3,126 @@ export const grafoOrlando = {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-sanford", linea: "sunrail", tiempo: 6 }
+      { slug: "orlando-sanford", linea: "sunrail", tiempo: 6, tipo: 'linea' }
     ]
   },
   "orlando-sanford": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-debary", linea: "sunrail", tiempo: 6 },
-      { estacion: "orlando-lake-mary", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-debary", linea: "sunrail", tiempo: 6, tipo: 'linea' },
+      { slug: "orlando-lake-mary", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-lake-mary": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-sanford", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-longwood", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-sanford", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-longwood", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-longwood": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-lake-mary", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-altamonte-springs", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-lake-mary", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-altamonte-springs", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-altamonte-springs": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-longwood", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-maitland", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-longwood", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-maitland", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-maitland": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-altamonte-springs", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-winter-park", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-altamonte-springs", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-winter-park", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-winter-park": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-maitland", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-adventhealth", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-maitland", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-adventhealth", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-adventhealth": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-winter-park", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-lynx-central", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-winter-park", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-lynx-central", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-lynx-central": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-adventhealth", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-church-street", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-adventhealth", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-church-street", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-church-street": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-lynx-central", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-orlando-health", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-lynx-central", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-orlando-health", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-orlando-health": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-church-street", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-sand-lake-road", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-church-street", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-sand-lake-road", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-sand-lake-road": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-orlando-health", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-meadow-woods", linea: "sunrail", tiempo: 5 }
+      { slug: "orlando-orlando-health", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-meadow-woods", linea: "sunrail", tiempo: 5, tipo: 'linea' }
     ]
   },
   "orlando-meadow-woods": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-sand-lake-road", linea: "sunrail", tiempo: 5 },
-      { estacion: "orlando-tupperware", linea: "sunrail", tiempo: 6 }
+      { slug: "orlando-sand-lake-road", linea: "sunrail", tiempo: 5, tipo: 'linea' },
+      { slug: "orlando-tupperware", linea: "sunrail", tiempo: 6, tipo: 'linea' }
     ]
   },
   "orlando-tupperware": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-meadow-woods", linea: "sunrail", tiempo: 6 },
-      { estacion: "orlando-kissimmee", linea: "sunrail", tiempo: 6 }
+      { slug: "orlando-meadow-woods", linea: "sunrail", tiempo: 6, tipo: 'linea' },
+      { slug: "orlando-kissimmee", linea: "sunrail", tiempo: 6, tipo: 'linea' }
     ]
   },
   "orlando-kissimmee": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-tupperware", linea: "sunrail", tiempo: 6 },
-      { estacion: "orlando-poinciana", linea: "sunrail", tiempo: 6 }
+      { slug: "orlando-tupperware", linea: "sunrail", tiempo: 6, tipo: 'linea' },
+      { slug: "orlando-poinciana", linea: "sunrail", tiempo: 6, tipo: 'linea' }
     ]
   },
   "orlando-poinciana": {
     linea: ["sunrail"],
     ciudad: "orlando",
     adyacentes: [
-      { estacion: "orlando-kissimmee", linea: "sunrail", tiempo: 6 }
+      { slug: "orlando-kissimmee", linea: "sunrail", tiempo: 6, tipo: 'linea' }
     ]
   }
 };

@@ -3,126 +3,126 @@ export const grafoSanJuan = {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-hato-rey-centro", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-hato-rey-centro", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-hato-rey-centro": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-sagrado-corazon", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-roosevelt", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-sagrado-corazon", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-roosevelt", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-roosevelt": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-hato-rey-centro", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-domenech", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-hato-rey-centro", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-domenech", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-domenech": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-roosevelt", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-rio-piedras", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-roosevelt", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-rio-piedras", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-rio-piedras": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-domenech", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-universidad", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-domenech", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-universidad", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-universidad": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-rio-piedras", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-pinero", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-rio-piedras", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-pinero", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-pinero": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-universidad", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-martinez-nadal", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-universidad", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-martinez-nadal", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-martinez-nadal": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-pinero", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-las-lomas", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-pinero", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-las-lomas", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-las-lomas": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-martinez-nadal", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-san-francisco", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-martinez-nadal", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-san-francisco", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-san-francisco": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-las-lomas", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-centro-medico", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-las-lomas", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-centro-medico", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-centro-medico": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-san-francisco", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-cupey", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-san-francisco", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-cupey", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-cupey": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-centro-medico", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-villa-nevarez", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-centro-medico", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-villa-nevarez", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-villa-nevarez": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-cupey", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-torrimar", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-cupey", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-torrimar", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-torrimar": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-villa-nevarez", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-jardines", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-villa-nevarez", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-jardines", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-jardines": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-torrimar", linea: "tren-urbano", tiempo: 2 },
-      { estacion: "san-juan-bayamon", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-torrimar", linea: "tren-urbano", tiempo: 2, tipo: 'linea' },
+      { slug: "san-juan-bayamon", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   },
   "san-juan-bayamon": {
     linea: ["tren-urbano"],
     ciudad: "san-juan",
     adyacentes: [
-      { estacion: "san-juan-jardines", linea: "tren-urbano", tiempo: 2 }
+      { slug: "san-juan-jardines", linea: "tren-urbano", tiempo: 2, tipo: 'linea' }
     ]
   }
 };
