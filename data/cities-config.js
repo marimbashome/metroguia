@@ -538,6 +538,76 @@ export const CITIES_CONFIG = {
     currency: 'USD', defaultLang: 'en', systems: ['tide'], fifa2026: false,
     coordinates: { lat: 36.8508, lng: -76.2859 }, timezone: 'America/New_York',
   },
+  jacksonville: {
+    slug: 'jacksonville', name: 'Jacksonville', nameES: 'Jacksonville', country: 'US', state: 'Florida',
+    currency: 'USD', defaultLang: 'en', systems: ['jta-skyway'], fifa2026: false,
+    coordinates: { lat: 30.3322, lng: -81.6557 }, timezone: 'America/New_York',
+  },
+  austin: {
+    slug: 'austin', name: 'Austin', nameES: 'Austin', country: 'US', state: 'Texas',
+    currency: 'USD', defaultLang: 'en', systems: ['capital-metrorail'], fifa2026: false,
+    coordinates: { lat: 30.2672, lng: -97.7431 }, timezone: 'America/Chicago',
+  },
+  orlando: {
+    slug: 'orlando', name: 'Orlando', nameES: 'Orlando', country: 'US', state: 'Florida',
+    currency: 'USD', defaultLang: 'en', systems: ['sunrail'], fifa2026: false,
+    coordinates: { lat: 28.5383, lng: -81.3792 }, timezone: 'America/New_York',
+  },
+  'san-juan': {
+    slug: 'san-juan', name: 'San Juan', nameES: 'San Juan', country: 'US', state: 'Puerto Rico',
+    currency: 'USD', defaultLang: 'es', systems: ['tren-urbano'], fifa2026: false,
+    coordinates: { lat: 18.4655, lng: -66.1057 }, timezone: 'America/Puerto_Rico',
+  },
+  milwaukee: {
+    slug: 'milwaukee', name: 'Milwaukee', nameES: 'Milwaukee', country: 'US', state: 'Wisconsin',
+    currency: 'USD', defaultLang: 'en', systems: ['the-hop'], fifa2026: false,
+    coordinates: { lat: 43.0389, lng: -87.9065 }, timezone: 'America/Chicago',
+  },
+  tucson: {
+    slug: 'tucson', name: 'Tucson', nameES: 'Tucson', country: 'US', state: 'Arizona',
+    currency: 'USD', defaultLang: 'en', systems: ['sun-link'], fifa2026: false,
+    coordinates: { lat: 32.2226, lng: -110.9747 }, timezone: 'America/Phoenix',
+  },
+  tampa: {
+    slug: 'tampa', name: 'Tampa', nameES: 'Tampa', country: 'US', state: 'Florida',
+    currency: 'USD', defaultLang: 'en', systems: ['teco-streetcar'], fifa2026: false,
+    coordinates: { lat: 27.9506, lng: -82.4572 }, timezone: 'America/New_York',
+  },
+  'oklahoma-city': {
+    slug: 'oklahoma-city', name: 'Oklahoma City', nameES: 'Oklahoma City', country: 'US', state: 'Oklahoma',
+    currency: 'USD', defaultLang: 'en', systems: ['okc-streetcar'], fifa2026: false,
+    coordinates: { lat: 35.4676, lng: -97.5164 }, timezone: 'America/Chicago',
+  },
+  'el-paso': {
+    slug: 'el-paso', name: 'El Paso', nameES: 'El Paso', country: 'US', state: 'Texas',
+    currency: 'USD', defaultLang: 'en', systems: ['el-paso-streetcar'], fifa2026: false,
+    coordinates: { lat: 31.7619, lng: -106.4850 }, timezone: 'America/Denver',
+  },
+  cincinnati: {
+    slug: 'cincinnati', name: 'Cincinnati', nameES: 'Cincinnati', country: 'US', state: 'Ohio',
+    currency: 'USD', defaultLang: 'en', systems: ['connector'], fifa2026: false,
+    coordinates: { lat: 39.1031, lng: -84.5120 }, timezone: 'America/New_York',
+  },
+  nashville: {
+    slug: 'nashville', name: 'Nashville', nameES: 'Nashville', country: 'US', state: 'Tennessee',
+    currency: 'USD', defaultLang: 'en', systems: ['wego-star'], fifa2026: false,
+    coordinates: { lat: 36.1627, lng: -86.7816 }, timezone: 'America/Chicago',
+  },
+  newark: {
+    slug: 'newark', name: 'Newark', nameES: 'Newark', country: 'US', state: 'New Jersey',
+    currency: 'USD', defaultLang: 'en', systems: ['newark-light-rail', 'hudson-bergen'], fifa2026: false,
+    coordinates: { lat: 40.7357, lng: -74.1724 }, timezone: 'America/New_York',
+  },
+  'kitchener-waterloo': {
+    slug: 'kitchener-waterloo', name: 'Kitchener-Waterloo', nameES: 'Kitchener-Waterloo', country: 'CA', state: 'Ontario',
+    currency: 'CAD', defaultLang: 'en', systems: ['ion'], fifa2026: false,
+    coordinates: { lat: 43.4516, lng: -80.4925 }, timezone: 'America/Toronto',
+  },
+  mississauga: {
+    slug: 'mississauga', name: 'Mississauga', nameES: 'Mississauga', country: 'CA', state: 'Ontario',
+    currency: 'CAD', defaultLang: 'en', systems: ['hazel-mccallion'], fifa2026: false,
+    coordinates: { lat: 43.5890, lng: -79.6441 }, timezone: 'America/Toronto',
+  },
 };
 
 /**
