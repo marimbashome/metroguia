@@ -70,6 +70,17 @@ import { estacionesToronto } from '@/data/toronto/estaciones';
 import { estacionesVancouver } from '@/data/vancouver/estaciones';
 import { estacionesPortland } from '@/data/portland/estaciones';
 import { estacionesSacramento } from '@/data/sacramento/estaciones';
+import { estacionesDenver } from '@/data/denver/estaciones';
+import { estacionesSaltLakeCity } from '@/data/salt-lake-city/estaciones';
+import { estacionesDC } from '@/data/washington-dc/estaciones';
+import { estacionesChicago } from '@/data/chicago/estaciones';
+import { estacionesSanDiego } from '@/data/san-diego/estaciones';
+import { estacionesMinneapolis } from '@/data/minneapolis/estaciones';
+import { estacionesPittsburgh } from '@/data/pittsburgh/estaciones';
+import { estacionesBaltimore } from '@/data/baltimore/estaciones';
+import { estacionesCharlotte } from '@/data/charlotte/estaciones';
+import { estacionesPhoenix } from '@/data/phoenix/estaciones';
+import { estacionesStLouis } from '@/data/st-louis/estaciones';
 
 // Import line data for US/CA cities
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
@@ -87,6 +98,17 @@ import { lineasToronto } from '@/data/toronto/lineas-detalle';
 import { lineasVancouver } from '@/data/vancouver/lineas-detalle';
 import { lineasPortland } from '@/data/portland/lineas-detalle';
 import { lineasSacramento } from '@/data/sacramento/lineas-detalle';
+import { lineasDenver } from '@/data/denver/lineas-detalle';
+import { lineasSaltLakeCity } from '@/data/salt-lake-city/lineas-detalle';
+import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
+import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
+import { lineasDetalleSanDiego } from '@/data/san-diego/lineas-detalle';
+import { lineasDetalleMinneapolis } from '@/data/minneapolis/lineas-detalle';
+import { lineasDetallePittsburgh } from '@/data/pittsburgh/lineas-detalle';
+import { lineasDetalleBaltimore } from '@/data/baltimore/lineas-detalle';
+import { lineasDetalleCharlotte } from '@/data/charlotte/lineas-detalle';
+import { lineasPhoenix } from '@/data/phoenix/lineas-detalle';
+import { lineasStLouis } from '@/data/st-louis/lineas-detalle';
 
 // US/CA zone (neighborhood) data
 import { zonasUSCA } from '@/data/zonas-us-ca';
@@ -241,8 +263,9 @@ function getCoreUrls() {
         'campeche','villahermosa'].map(c => entry(`/${c}/`, 'weekly', 0.9, 'core')),
     // US/CA city hub pages
     ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
-        'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver',
-        'portland','sacramento'].map(c =>
+        'san-francisco','boston','miami','dallas','kansas-city','denver','salt-lake-city',
+        'washington-dc','chicago','san-diego','minneapolis','pittsburgh','baltimore',
+        'charlotte','phoenix','st-louis','toronto','vancouver','portland','sacramento'].map(c =>
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
     // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
@@ -347,6 +370,39 @@ function getCitiesUrls() {
     // Sacramento
     ...mapEstacionesUSCA(estacionesSacramento, 'sacramento', 'cities'),
     ...mapLineasUSCA(lineasSacramento, 'sacramento', 'cities'),
+    // Denver
+    ...mapEstacionesUSCA(estacionesDenver, 'denver', 'cities'),
+    ...mapLineasUSCA(lineasDenver, 'denver', 'cities'),
+    // Salt Lake City
+    ...mapEstacionesUSCA(estacionesSaltLakeCity, 'salt-lake-city', 'cities'),
+    ...mapLineasUSCA(lineasSaltLakeCity, 'salt-lake-city', 'cities'),
+    // Washington DC
+    ...mapEstacionesUSCA(estacionesDC, 'washington-dc', 'cities'),
+    ...mapLineasUSCA(lineasDetalleDC, 'washington-dc', 'cities'),
+    // Chicago
+    ...mapEstacionesUSCA(estacionesChicago, 'chicago', 'cities'),
+    ...mapLineasUSCA(lineasDetalleChicago, 'chicago', 'cities'),
+    // San Diego
+    ...mapEstacionesUSCA(estacionesSanDiego, 'san-diego', 'cities'),
+    ...mapLineasUSCA(lineasDetalleSanDiego, 'san-diego', 'cities'),
+    // Minneapolis
+    ...mapEstacionesUSCA(estacionesMinneapolis, 'minneapolis', 'cities'),
+    ...mapLineasUSCA(lineasDetalleMinneapolis, 'minneapolis', 'cities'),
+    // Pittsburgh
+    ...mapEstacionesUSCA(estacionesPittsburgh, 'pittsburgh', 'cities'),
+    ...mapLineasUSCA(lineasDetallePittsburgh, 'pittsburgh', 'cities'),
+    // Baltimore
+    ...mapEstacionesUSCA(estacionesBaltimore, 'baltimore', 'cities'),
+    ...mapLineasUSCA(lineasDetalleBaltimore, 'baltimore', 'cities'),
+    // Charlotte
+    ...mapEstacionesUSCA(estacionesCharlotte, 'charlotte', 'cities'),
+    ...mapLineasUSCA(lineasDetalleCharlotte, 'charlotte', 'cities'),
+    // Phoenix
+    ...mapEstacionesUSCA(estacionesPhoenix, 'phoenix', 'cities'),
+    ...mapLineasUSCA(lineasPhoenix, 'phoenix', 'cities'),
+    // St. Louis
+    ...mapEstacionesUSCA(estacionesStLouis, 'st-louis', 'cities'),
+    ...mapLineasUSCA(lineasStLouis, 'st-louis', 'cities'),
   ];
   return urls;
 }
