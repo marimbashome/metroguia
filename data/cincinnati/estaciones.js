@@ -2,7 +2,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-findlay-market",
     "nombre": "Findlay Market",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "cultural",
@@ -38,7 +38,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-government-square",
     "nombre": "Government Square",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "transport",
@@ -74,7 +74,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-5th-walnut",
     "nombre": "5th & Walnut",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "commercial",
@@ -110,7 +110,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-fountain-square",
     "nombre": "Fountain Square",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "commercial",
@@ -146,7 +146,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-4th-race",
     "nombre": "4th & Race",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "tourist",
@@ -182,7 +182,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-the-banks",
     "nombre": "The Banks",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "tourist",
@@ -218,7 +218,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-freedom-way-rosa-parks",
     "nombre": "Freedom Way & Rosa Parks",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "cultural",
@@ -254,7 +254,7 @@ export const estacionesCincinnati = [
   {
     "slug": "cincinnati-duke-energy-convention-center",
     "nombre": "Duke Energy Convention Center",
-    "linea": "connector",
+    "linea": ["connector"],
     "sistema": "cincinnati-bell-connector-connector",
     "municipio": "Cincinnati",
     "tipo_zona": "commercial",

@@ -2,7 +2,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-university",
     "nombre": "University",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "university",
@@ -51,7 +51,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-lasalle",
     "nombre": "Lasalle",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "residential",
@@ -100,7 +100,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-amherst",
     "nombre": "Amherst",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "residential",
@@ -149,7 +149,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-allen-medical",
     "nombre": "Allen Medical",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "medical",
@@ -198,7 +198,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-humboldt-hospital",
     "nombre": "Humboldt Hospital",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "medical",
@@ -247,7 +247,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-delavan-canisius",
     "nombre": "Delavan Canisius",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "university",
@@ -296,7 +296,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-utica",
     "nombre": "Utica",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "commercial",
@@ -345,7 +345,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-summer-best",
     "nombre": "Summer Best",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "commercial",
@@ -394,7 +394,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-theater",
     "nombre": "Theater",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "cultural",
@@ -443,7 +443,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-fountain-plaza",
     "nombre": "Fountain Plaza",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "commercial",
@@ -492,7 +492,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-church",
     "nombre": "Church",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "cultural",
@@ -541,7 +541,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-seneca",
     "nombre": "Seneca",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "commercial",
@@ -590,7 +590,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-erie-canal-harbor",
     "nombre": "Erie Canal Harbor",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "tourist",
@@ -639,7 +639,7 @@ export const estacionesBuffalo = [
   {
     "slug": "buffalo-south-campus",
     "nombre": "South Campus",
-    "linea": "metro",
+    "linea": ["metro"],
     "sistema": "nfta-metro",
     "municipio": "Buffalo",
     "tipo_zona": "university",

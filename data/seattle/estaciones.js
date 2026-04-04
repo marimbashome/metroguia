@@ -3,7 +3,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-federal-way-downtown",
     "nombre": "Federal Way Downtown",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Federal Way",
     "tipo_zona": "downtown",
@@ -36,7 +36,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-star-lake",
     "nombre": "Star Lake",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "SeaTac",
     "tipo_zona": "suburban",
@@ -68,7 +68,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-kent-des-moines",
     "nombre": "Kent/Des Moines",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Kent",
     "tipo_zona": "suburban",
@@ -100,7 +100,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-angle-lake",
     "nombre": "Angle Lake",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "SeaTac",
     "tipo_zona": "suburban",
@@ -133,7 +133,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tukwila-international-blvd",
     "nombre": "Tukwila International Blvd",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Tukwila",
     "tipo_zona": "commercial",
@@ -166,7 +166,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-seatac-airport",
     "nombre": "SeaTac/Airport",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "SeaTac",
     "tipo_zona": "transportation-hub",
@@ -200,7 +200,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-rainier-beach",
     "nombre": "Rainier Beach",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential",
@@ -233,7 +233,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-othello",
     "nombre": "Othello",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential",
@@ -266,7 +266,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-columbia-city",
     "nombre": "Columbia City",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "commercial-residential",
@@ -301,7 +301,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-mount-baker",
     "nombre": "Mount Baker",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential",
@@ -334,7 +334,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-beacon-hill",
     "nombre": "Beacon Hill",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential",
@@ -367,7 +367,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sodo",
     "nombre": "SODO",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "commercial-entertainment",
@@ -402,7 +402,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-stadium",
     "nombre": "Stadium",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "sports-entertainment",
@@ -437,7 +437,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-international-district",
     "nombre": "International District/Chinatown",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "historic-cultural",
@@ -476,7 +476,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-pioneer-square",
     "nombre": "Pioneer Square",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "historic-downtown",
@@ -513,7 +513,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-symphony",
     "nombre": "Symphony/University St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "downtown-cultural",
@@ -550,7 +550,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-westlake",
     "nombre": "Westlake",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "downtown-commercial",
@@ -588,7 +588,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-capitol-hill",
     "nombre": "Capitol Hill",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "vibrant-neighborhood",
@@ -627,7 +627,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-u-district",
     "nombre": "U District",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "university-commercial",
@@ -666,7 +666,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-roosevelt",
     "nombre": "Roosevelt",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential-commercial",
@@ -701,7 +701,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-northgate",
     "nombre": "Northgate",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "commercial-residential",
@@ -736,7 +736,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-shoreline-south",
     "nombre": "Shoreline South/148th",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Shoreline",
     "tipo_zona": "suburban",
@@ -769,7 +769,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-shoreline-north",
     "nombre": "Shoreline North/185th",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Shoreline",
     "tipo_zona": "suburban",
@@ -802,7 +802,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-mountlake-terrace",
     "nombre": "Mountlake Terrace",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Mountlake Terrace",
     "tipo_zona": "suburban",
@@ -835,7 +835,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-lynnwood-city-center",
     "nombre": "Lynnwood City Center",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "link-light-rail",
     "municipio": "Lynnwood",
     "tipo_zona": "commercial-downtown",
@@ -873,7 +873,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-judkins-park",
     "nombre": "Judkins Park",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Seattle",
     "tipo_zona": "residential",
@@ -906,7 +906,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-mercer-island",
     "nombre": "Mercer Island",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Mercer Island",
     "tipo_zona": "residential-island",
@@ -941,7 +941,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-south-bellevue",
     "nombre": "South Bellevue",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Bellevue",
     "tipo_zona": "suburban",
@@ -974,7 +974,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-east-main",
     "nombre": "East Main",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Bellevue",
     "tipo_zona": "commercial",
@@ -1006,7 +1006,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-bellevue-downtown",
     "nombre": "Bellevue Downtown",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Bellevue",
     "tipo_zona": "downtown",
@@ -1045,7 +1045,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-wilburton",
     "nombre": "Wilburton",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Bellevue",
     "tipo_zona": "commercial-office",
@@ -1078,7 +1078,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-spring-district",
     "nombre": "Spring District",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Bellevue",
     "tipo_zona": "mixed-use",
@@ -1111,7 +1111,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-bel-red",
     "nombre": "Bel-Red",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Redmond",
     "tipo_zona": "commercial-tech",
@@ -1145,7 +1145,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-overlake-village",
     "nombre": "Overlake Village",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Redmond",
     "tipo_zona": "mixed-use",
@@ -1178,7 +1178,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-redmond-technology",
     "nombre": "Redmond Technology Station",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Redmond",
     "tipo_zona": "tech-headquarters",
@@ -1214,7 +1214,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-downtown-redmond",
     "nombre": "Downtown Redmond",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "link-light-rail",
     "municipio": "Redmond",
     "tipo_zona": "downtown",
@@ -1254,7 +1254,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-theater-district",
     "nombre": "Theater District",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "downtown",
@@ -1291,7 +1291,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-commerce-street",
     "nombre": "Commerce Street",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "downtown",
@@ -1324,7 +1324,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-south-25th",
     "nombre": "South 25th Street",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "commercial",
@@ -1356,7 +1356,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-dome",
     "nombre": "Tacoma Dome",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "sports-events",
@@ -1391,7 +1391,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-east-25th",
     "nombre": "East 25th Street/Hilltop",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "residential",
@@ -1424,7 +1424,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-tacoma-stadium-district",
     "nombre": "Stadium District",
-    "linea": "T",
+    "linea": ["T"],
     "sistema": "tacoma-link",
     "municipio": "Tacoma",
     "tipo_zona": "entertainment",
@@ -1459,7 +1459,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-king-street",
     "nombre": "King Street Station",
-    "linea": "Sounder",
+    "linea": ["Sounder"],
     "sistema": "sounder",
     "municipio": "Seattle",
     "tipo_zona": "historic-downtown",
@@ -1497,7 +1497,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-edmonds",
     "nombre": "Edmonds",
-    "linea": "Sounder-North",
+    "linea": ["Sounder-North"],
     "sistema": "sounder",
     "municipio": "Edmonds",
     "tipo_zona": "waterfront-downtown",
@@ -1535,7 +1535,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-mukilteo",
     "nombre": "Mukilteo",
-    "linea": "Sounder-North",
+    "linea": ["Sounder-North"],
     "sistema": "sounder",
     "municipio": "Mukilteo",
     "tipo_zona": "waterfront",
@@ -1571,7 +1571,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-everett",
     "nombre": "Everett",
-    "linea": "Sounder-North",
+    "linea": ["Sounder-North"],
     "sistema": "sounder",
     "municipio": "Everett",
     "tipo_zona": "industrial-waterfront",
@@ -1608,7 +1608,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-tukwila",
     "nombre": "Tukwila Sounder",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Tukwila",
     "tipo_zona": "commercial",
@@ -1640,7 +1640,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-kent",
     "nombre": "Kent Sounder",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Kent",
     "tipo_zona": "commercial",
@@ -1672,7 +1672,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-auburn",
     "nombre": "Auburn",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Auburn",
     "tipo_zona": "downtown",
@@ -1705,7 +1705,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-sumner",
     "nombre": "Sumner",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Sumner",
     "tipo_zona": "residential",
@@ -1738,7 +1738,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-puyallup",
     "nombre": "Puyallup",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Puyallup",
     "tipo_zona": "downtown",
@@ -1773,7 +1773,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-south-tacoma",
     "nombre": "South Tacoma",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Tacoma",
     "tipo_zona": "residential",
@@ -1806,7 +1806,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-sounder-lakewood",
     "nombre": "Lakewood",
-    "linea": "Sounder-South",
+    "linea": ["Sounder-South"],
     "sistema": "sounder",
     "municipio": "Lakewood",
     "tipo_zona": "suburban",
@@ -1843,7 +1843,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-seattle-center",
     "nombre": "Seattle Center",
-    "linea": "Monorail",
+    "linea": ["Monorail"],
     "sistema": "monorail",
     "municipio": "Seattle",
     "tipo_zona": "tourist-attractions",
@@ -1887,7 +1887,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-westlake-olive",
     "nombre": "Westlake & Olive",
-    "linea": "SLU-Streetcar",
+    "linea": ["SLU-Streetcar"],
     "sistema": "slu-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "downtown-commercial",
@@ -1920,7 +1920,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-terry-thomas",
     "nombre": "Terry Ave & Thomas St",
-    "linea": "SLU-Streetcar",
+    "linea": ["SLU-Streetcar"],
     "sistema": "slu-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "mixed-use",
@@ -1953,7 +1953,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-fairview-campus",
     "nombre": "Fairview & Campus Dr",
-    "linea": "SLU-Streetcar",
+    "linea": ["SLU-Streetcar"],
     "sistema": "slu-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "medical-campus",
@@ -1986,7 +1986,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-fred-hutchinson",
     "nombre": "Fred Hutchinson",
-    "linea": "SLU-Streetcar",
+    "linea": ["SLU-Streetcar"],
     "sistema": "slu-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "medical-research",
@@ -2021,7 +2021,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-first-hill-id",
     "nombre": "International District/Chinatown",
-    "linea": "First-Hill-Streetcar",
+    "linea": ["First-Hill-Streetcar"],
     "sistema": "first-hill-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "historic-cultural",
@@ -2056,7 +2056,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-first-hill-yesler",
     "nombre": "Yesler Way",
-    "linea": "First-Hill-Streetcar",
+    "linea": ["First-Hill-Streetcar"],
     "sistema": "first-hill-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "downtown-historic",
@@ -2089,7 +2089,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-first-hill-broadway",
     "nombre": "Broadway & Marion",
-    "linea": "First-Hill-Streetcar",
+    "linea": ["First-Hill-Streetcar"],
     "sistema": "first-hill-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "urban-commercial",
@@ -2121,7 +2121,7 @@ export const estacionesSeattle = [
   {
     "slug": "seattle-first-hill-capitol-hill",
     "nombre": "Capitol Hill",
-    "linea": "First-Hill-Streetcar",
+    "linea": ["First-Hill-Streetcar"],
     "sistema": "first-hill-streetcar",
     "municipio": "Seattle",
     "tipo_zona": "vibrant-neighborhood",

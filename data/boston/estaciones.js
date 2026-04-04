@@ -1409,7 +1409,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-medford-tufts",
   "nombre": "Medford/Tufts",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Medford",
   "tipo_zona": "educacion",
@@ -1448,7 +1448,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-ball-square",
   "nombre": "Ball Square",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Somerville",
   "tipo_zona": "residencial-comercial",
@@ -1487,7 +1487,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-magoun-square",
   "nombre": "Magoun Square",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Somerville",
   "tipo_zona": "residencial",
@@ -1526,7 +1526,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-gilman-square",
   "nombre": "Gilman Square",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Somerville",
   "tipo_zona": "residencial",
@@ -1565,7 +1565,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-east-somerville",
   "nombre": "East Somerville",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Somerville",
   "tipo_zona": "residencial-diversa",
@@ -1604,7 +1604,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-union-square",
   "nombre": "Union Square",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Somerville",
   "tipo_zona": "comercial-cultural",
@@ -1648,7 +1648,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-lechmere",
   "nombre": "Lechmere",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Cambridge",
   "tipo_zona": "comercial",
@@ -1687,7 +1687,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-science-park",
   "nombre": "Science Park",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural-educacion",
@@ -1731,7 +1731,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-boylston",
   "nombre": "Boylston",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural-comercial",
@@ -1775,7 +1775,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-arlington",
   "nombre": "Arlington",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural-parques",
@@ -1819,7 +1819,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-copley",
   "nombre": "Copley",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural-comercial",
@@ -1868,7 +1868,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-hynes-convention-center",
   "nombre": "Hynes Convention Center",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial-convenciones",
@@ -1912,7 +1912,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-kenmore",
   "nombre": "Kenmore",
-  "linea": "Green",
+  "linea": ["Green"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "deportes-educacion",
@@ -1961,7 +1961,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-blandford-street",
   "nombre": "Blandford Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -2000,7 +2000,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-bu-east",
   "nombre": "BU East",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -2039,7 +2039,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-bu-central",
   "nombre": "BU Central",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -2083,7 +2083,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-bu-west",
   "nombre": "BU West",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -2122,7 +2122,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-st-paul-street-b",
   "nombre": "St Paul Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2161,7 +2161,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-pleasant-street",
   "nombre": "Pleasant Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2200,7 +2200,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-babcock-street",
   "nombre": "Babcock Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2239,7 +2239,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-packards-corner",
   "nombre": "Packards Corner",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial-residencial",
@@ -2278,7 +2278,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-harvard-avenue",
   "nombre": "Harvard Avenue",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial",
@@ -2322,7 +2322,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-griggs-street",
   "nombre": "Griggs Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2361,7 +2361,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-allston-street",
   "nombre": "Allston Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2400,7 +2400,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-warren-street",
   "nombre": "Warren Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2439,7 +2439,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-washington-street-b",
   "nombre": "Washington Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial",
@@ -2478,7 +2478,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-sutherland-road",
   "nombre": "Sutherland Road",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2517,7 +2517,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-chiswick-road",
   "nombre": "Chiswick Road",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2556,7 +2556,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-chestnut-hill-avenue",
   "nombre": "Chestnut Hill Avenue",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2595,7 +2595,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-south-street",
   "nombre": "South Street",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2634,7 +2634,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-boston-college",
   "nombre": "Boston College",
-  "linea": "Green-B",
+  "linea": ["Green-B"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -2678,7 +2678,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-st-marys-street",
   "nombre": "St Mary's Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -2717,7 +2717,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-hawes-street",
   "nombre": "Hawes Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -2756,7 +2756,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-kent-street",
   "nombre": "Kent Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -2795,7 +2795,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-st-paul-street-c",
   "nombre": "St Paul Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -2834,7 +2834,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-coolidge-corner",
   "nombre": "Coolidge Corner",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "comercial-cultural",
@@ -2883,7 +2883,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-brandon-hall",
   "nombre": "Brandon Hall",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -2922,7 +2922,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-fairbanks-street",
   "nombre": "Fairbanks Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -2961,7 +2961,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-washington-square",
   "nombre": "Washington Square",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "comercial-residencial",
@@ -3000,7 +3000,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-tappan-street",
   "nombre": "Tappan Street",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -3039,7 +3039,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-dean-road",
   "nombre": "Dean Road",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -3078,7 +3078,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-englewood-avenue",
   "nombre": "Englewood Avenue",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -3117,7 +3117,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-cleveland-circle",
   "nombre": "Cleveland Circle",
-  "linea": "Green-C",
+  "linea": ["Green-C"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial-parques",
@@ -3161,7 +3161,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-fenway",
   "nombre": "Fenway",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "deportes-cultural",
@@ -3205,7 +3205,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-longwood",
   "nombre": "Longwood",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "medico-educacion",
@@ -3249,7 +3249,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-brookline-village",
   "nombre": "Brookline Village",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "comercial-residencial",
@@ -3293,7 +3293,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-brookline-hills",
   "nombre": "Brookline Hills",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -3332,7 +3332,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-beaconsfield",
   "nombre": "Beaconsfield",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "residencial",
@@ -3371,7 +3371,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-reservoir",
   "nombre": "Reservoir",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Brookline",
   "tipo_zona": "parques-transporte",
@@ -3410,7 +3410,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-chestnut-hill",
   "nombre": "Chestnut Hill",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "comercial",
@@ -3449,7 +3449,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-newton-centre",
   "nombre": "Newton Centre",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "comercial-residencial",
@@ -3488,7 +3488,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-newton-highlands",
   "nombre": "Newton Highlands",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "residencial",
@@ -3527,7 +3527,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-eliot",
   "nombre": "Eliot",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "residencial",
@@ -3566,7 +3566,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-waban",
   "nombre": "Waban",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "residencial",
@@ -3605,7 +3605,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-woodland",
   "nombre": "Woodland",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "transporte-suburbano",
@@ -3644,7 +3644,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-riverside",
   "nombre": "Riverside",
-  "linea": "Green-D",
+  "linea": ["Green-D"],
   "sistema": "mbta",
   "municipio": "Newton",
   "tipo_zona": "transporte-terminal",
@@ -3688,7 +3688,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-prudential",
   "nombre": "Prudential",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial",
@@ -3732,7 +3732,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-symphony",
   "nombre": "Symphony",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural",
@@ -3781,7 +3781,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-northeastern",
   "nombre": "Northeastern",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "educacion",
@@ -3820,7 +3820,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-museum-of-fine-arts",
   "nombre": "Museum of Fine Arts",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "cultural-museo",
@@ -3864,7 +3864,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-longwood-medical-area",
   "nombre": "Longwood Medical Area",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "medico",
@@ -3908,7 +3908,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-brigham-circle",
   "nombre": "Brigham Circle",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "medico",
@@ -3947,7 +3947,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-fenwood-road",
   "nombre": "Fenwood Road",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "medico-residencial",
@@ -3986,7 +3986,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-mission-park",
   "nombre": "Mission Park",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -4025,7 +4025,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-riverway",
   "nombre": "Riverway",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "parques",
@@ -4064,7 +4064,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-back-of-the-hill",
   "nombre": "Back of the Hill",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -4103,7 +4103,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-heath-street",
   "nombre": "Heath Street",
-  "linea": "Green-E",
+  "linea": ["Green-E"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial-medico",
@@ -4142,7 +4142,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-courthouse",
   "nombre": "Courthouse",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Boston",
   "tipo_zona": "institucional-comercial",
@@ -4186,7 +4186,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-world-trade-center",
   "nombre": "World Trade Center",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Boston",
   "tipo_zona": "convenciones-comercial",
@@ -4230,7 +4230,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-silver-line-way",
   "nombre": "Silver Line Way",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Boston",
   "tipo_zona": "comercial-innovacion",
@@ -4269,7 +4269,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-silver-airport",
   "nombre": "Airport (Silver Line)",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Boston",
   "tipo_zona": "transporte-aeropuerto",
@@ -4308,7 +4308,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-nubian",
   "nombre": "Nubian",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Boston",
   "tipo_zona": "comercial-comunitario",
@@ -4352,7 +4352,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-eastern-avenue",
   "nombre": "Eastern Avenue",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Chelsea",
   "tipo_zona": "residencial",
@@ -4391,7 +4391,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-box-district",
   "nombre": "Box District",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Chelsea",
   "tipo_zona": "residencial-comercial",
@@ -4430,7 +4430,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-bellingham-square",
   "nombre": "Bellingham Square",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Chelsea",
   "tipo_zona": "comercial",
@@ -4469,7 +4469,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-chelsea",
   "nombre": "Chelsea",
-  "linea": "Silver",
+  "linea": ["Silver"],
   "sistema": "silver-line",
   "municipio": "Chelsea",
   "tipo_zona": "transporte-terminal",
@@ -4508,7 +4508,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-cedar-grove",
   "nombre": "Cedar Grove",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -4547,7 +4547,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-butler",
   "nombre": "Butler",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "residencial",
@@ -4586,7 +4586,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-milton",
   "nombre": "Milton",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Milton",
   "tipo_zona": "residencial",
@@ -4625,7 +4625,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-central-avenue",
   "nombre": "Central Avenue",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Milton",
   "tipo_zona": "residencial",
@@ -4664,7 +4664,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-valley-road",
   "nombre": "Valley Road",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Milton",
   "tipo_zona": "residencial",
@@ -4703,7 +4703,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-capen-street",
   "nombre": "Capen Street",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Milton",
   "tipo_zona": "residencial",
@@ -4742,7 +4742,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-mattapan",
   "nombre": "Mattapan",
-  "linea": "Mattapan",
+  "linea": ["Mattapan"],
   "sistema": "mbta",
   "municipio": "Boston",
   "tipo_zona": "comercial-comunitario",
@@ -4781,7 +4781,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-salem",
   "nombre": "Salem",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Salem",
   "tipo_zona": "historico-turismo",
@@ -4830,7 +4830,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-gloucester",
   "nombre": "Gloucester",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Gloucester",
   "tipo_zona": "turismo-maritimo",
@@ -4874,7 +4874,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-rockport",
   "nombre": "Rockport",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Rockport",
   "tipo_zona": "turismo-artistico",
@@ -4918,7 +4918,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-lowell",
   "nombre": "Lowell",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Lowell",
   "tipo_zona": "historico-cultural",
@@ -4962,7 +4962,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-haverhill",
   "nombre": "Haverhill",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Haverhill",
   "tipo_zona": "residencial",
@@ -5001,7 +5001,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-newburyport",
   "nombre": "Newburyport",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Newburyport",
   "tipo_zona": "turismo-historico",
@@ -5045,7 +5045,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-wachusett",
   "nombre": "Wachusett",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Fitchburg",
   "tipo_zona": "recreacion",
@@ -5084,7 +5084,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-cr-back-bay",
   "nombre": "Back Bay (Commuter Rail)",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Boston",
   "tipo_zona": "comercial-transporte",
@@ -5123,7 +5123,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-framingham",
   "nombre": "Framingham",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Framingham",
   "tipo_zona": "comercial",
@@ -5162,7 +5162,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-worcester",
   "nombre": "Worcester",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Worcester",
   "tipo_zona": "urbano-cultural",
@@ -5206,7 +5206,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-natick",
   "nombre": "Natick",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Natick",
   "tipo_zona": "comercial",
@@ -5245,7 +5245,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-wellesley",
   "nombre": "Wellesley",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Wellesley",
   "tipo_zona": "educacion-residencial",
@@ -5289,7 +5289,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-providence",
   "nombre": "Providence",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Providence",
   "tipo_zona": "urbano-cultural",
@@ -5338,7 +5338,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-tf-green-airport",
   "nombre": "T.F. Green Airport",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Warwick",
   "tipo_zona": "transporte-aeropuerto",
@@ -5377,7 +5377,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-foxboro",
   "nombre": "Foxboro",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Foxborough",
   "tipo_zona": "deportes-eventos",
@@ -5421,7 +5421,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-brockton",
   "nombre": "Brockton",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Brockton",
   "tipo_zona": "urbano",
@@ -5460,7 +5460,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-middleborough",
   "nombre": "Middleborough",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Middleborough",
   "tipo_zona": "transporte-terminal",
@@ -5499,7 +5499,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-plymouth",
   "nombre": "Plymouth",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Plymouth",
   "tipo_zona": "historico-turismo",
@@ -5543,7 +5543,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-greenbush",
   "nombre": "Greenbush",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Scituate",
   "tipo_zona": "residencial-coastal",
@@ -5582,7 +5582,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-needham-heights",
   "nombre": "Needham Heights",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Needham",
   "tipo_zona": "residencial",
@@ -5621,7 +5621,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-forge-park",
   "nombre": "Forge Park",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Franklin",
   "tipo_zona": "transporte-terminal",
@@ -5660,7 +5660,7 @@ export const estacionesBoston = [
   {
   "slug": "boston-cr-porter",
   "nombre": "Porter (Commuter Rail)",
-  "linea": "Commuter-Rail",
+  "linea": ["Commuter-Rail"],
   "sistema": "commuter-rail",
   "municipio": "Cambridge",
   "tipo_zona": "transporte",
@@ -5700,7 +5700,7 @@ export const estacionesBoston = [
   {
     "slug": "boston-summit-avenue",
     "nombre": "Summit Avenue",
-    "linea": "Green-C",
+    "linea": ["Green-C"],
     "sistema": "mbta",
     "municipio": "Brookline",
     "tipo_zona": "residencial",
@@ -5720,7 +5720,7 @@ export const estacionesBoston = [
   {
     "slug": "boston-kingston",
     "nombre": "Kingston",
-    "linea": "Commuter-Rail",
+    "linea": ["Commuter-Rail"],
     "sistema": "commuter-rail",
     "municipio": "Kingston",
     "tipo_zona": "transporte",

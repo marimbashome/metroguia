@@ -2,7 +2,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-downtown-transfer-center",
     "nombre": "Downtown Transfer Center",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "transport",
@@ -50,7 +50,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-father-rahm",
     "nombre": "Oregon & Father Rahm",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "cultural",
@@ -98,7 +98,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-2nd",
     "nombre": "Oregon & 2nd",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "commercial",
@@ -146,7 +146,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-san-antonio",
     "nombre": "Oregon & San Antonio",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "mixed",
@@ -194,7 +194,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-stanton-mills",
     "nombre": "Stanton & Mills",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "cultural",
@@ -242,7 +242,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-stanton-franklin",
     "nombre": "Stanton & Franklin",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "commercial",
@@ -290,7 +290,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-mesa",
     "nombre": "Oregon & Mesa",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "residential",
@@ -338,7 +338,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-glory",
     "nombre": "Oregon & Glory",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "residential",
@@ -386,7 +386,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-oregon-baltimore",
     "nombre": "Oregon & Baltimore",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "mixed",
@@ -434,7 +434,7 @@ export const estacionesElPaso = [
   {
     "slug": "el-paso-paisano-santa-fe",
     "nombre": "Paisano & Santa Fe",
-    "linea": "streetcar",
+    "linea": ["streetcar"],
     "sistema": "el-paso-streetcar-streetcar",
     "municipio": "El Paso",
     "tipo_zona": "tourist",

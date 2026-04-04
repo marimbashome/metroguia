@@ -2,7 +2,7 @@ export const estacionesQueretaro = [
   {
     "slug": "terminal-5-febrero",
     "nombre": "Terminal 5 de Febrero",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "transporte",
     "pois": [
@@ -69,7 +69,7 @@ export const estacionesQueretaro = [
   {
     "slug": "centro-historico-qro",
     "nombre": "Centro Histórico",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-turistico",
     "pois": [
@@ -141,7 +141,7 @@ export const estacionesQueretaro = [
   {
     "slug": "jardin-zenea-qro",
     "nombre": "Jardín Zenea",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "plaza-historica",
     "pois": [
@@ -208,7 +208,7 @@ export const estacionesQueretaro = [
   {
     "slug": "santa-rosa-viterbo-qro",
     "nombre": "Santa Rosa de Viterbo",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "religioso",
     "pois": [
@@ -275,7 +275,7 @@ export const estacionesQueretaro = [
   {
     "slug": "uaq-campus-qro",
     "nombre": "Universidad Autónoma",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo",
     "pois": [
@@ -342,7 +342,7 @@ export const estacionesQueretaro = [
   {
     "slug": "estadio-corregidora-qro",
     "nombre": "Estadio La Corregidora",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "deportivo",
     "pois": [
@@ -409,7 +409,7 @@ export const estacionesQueretaro = [
   {
     "slug": "constituyentes-qro",
     "nombre": "Constituyentes",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -476,7 +476,7 @@ export const estacionesQueretaro = [
   {
     "slug": "alameda-qro",
     "nombre": "Alameda",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "parque",
     "pois": [
@@ -543,7 +543,7 @@ export const estacionesQueretaro = [
   {
     "slug": "cimatario-qro",
     "nombre": "Cerro de Cimatario",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "natural",
     "pois": [
@@ -610,7 +610,7 @@ export const estacionesQueretaro = [
   {
     "slug": "plaza-dorada-qro",
     "nombre": "Plaza Dorada",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -677,7 +677,7 @@ export const estacionesQueretaro = [
   {
     "slug": "hospital-general-qro",
     "nombre": "Hospital General",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "servicios",
     "pois": [
@@ -744,7 +744,7 @@ export const estacionesQueretaro = [
   {
     "slug": "campus-aeroespacial-qro",
     "nombre": "Campus Aeroespacial",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo-tecnologico",
     "pois": [
@@ -811,7 +811,7 @@ export const estacionesQueretaro = [
   {
     "slug": "tec-monterrey-qro",
     "nombre": "Tecnológico de Monterrey",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo",
     "pois": [
@@ -878,7 +878,7 @@ export const estacionesQueretaro = [
   {
     "slug": "juriquilla-qro",
     "nombre": "Juriquilla",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -945,7 +945,7 @@ export const estacionesQueretaro = [
   {
     "slug": "parque-industrial-qro",
     "nombre": "Parque Industrial",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "industrial",
     "pois": [
@@ -1012,7 +1012,7 @@ export const estacionesQueretaro = [
   {
     "slug": "acueducto-qro",
     "nombre": "Acueducto",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "monumento",
     "pois": [
@@ -1079,7 +1079,7 @@ export const estacionesQueretaro = [
   {
     "slug": "barrio-la-cruz-qro",
     "nombre": "Barrio La Cruz",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural",
     "pois": [
@@ -1151,7 +1151,7 @@ export const estacionesQueretaro = [
   {
     "slug": "teatro-republica",
     "nombre": "Teatro de la República",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural",
     "pois": [
@@ -1218,7 +1218,7 @@ export const estacionesQueretaro = [
   {
     "slug": "acueducto",
     "nombre": "Acueducto",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-arqueologico",
     "pois": [
@@ -1288,9 +1288,9 @@ export const estacionesQueretaro = [
     }
   },
   {
-    "slug": "panteón-queretanos",
+    "slug": "panteon-queretanos",
     "nombre": "Panteón de los Queretanos",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-cultural",
     "pois": [
@@ -1362,7 +1362,7 @@ export const estacionesQueretaro = [
   {
     "slug": "el-pueblito",
     "nombre": "El Pueblito",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -1434,7 +1434,7 @@ export const estacionesQueretaro = [
   {
     "slug": "estadio-corregidora",
     "nombre": "Estadio Corregidora",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "deportivo",
     "pois": [
@@ -1506,7 +1506,7 @@ export const estacionesQueretaro = [
   {
     "slug": "tecnologico",
     "nombre": "Tecnológico",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo",
     "pois": [
@@ -1578,7 +1578,7 @@ export const estacionesQueretaro = [
   {
     "slug": "constituyentes",
     "nombre": "Constituyentes",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -1650,7 +1650,7 @@ export const estacionesQueretaro = [
   {
     "slug": "juriquilla",
     "nombre": "Juriquilla",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -1722,7 +1722,7 @@ export const estacionesQueretaro = [
   {
     "slug": "la-canada",
     "nombre": "La Cañada",
-    "linea": "4",
+    "linea": ["4"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -1789,7 +1789,7 @@ export const estacionesQueretaro = [
   {
     "slug": "san-pedrito",
     "nombre": "San Pedrito",
-    "linea": "4",
+    "linea": ["4"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -1856,7 +1856,7 @@ export const estacionesQueretaro = [
   {
     "slug": "aromas",
     "nombre": "Aromas",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -1923,7 +1923,7 @@ export const estacionesQueretaro = [
   {
     "slug": "hospital-angeles",
     "nombre": "Hospital Angeles",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Querétaro",
     "tipo_zona": "servicios",
     "pois": [
@@ -1990,7 +1990,7 @@ export const estacionesQueretaro = [
   {
     "slug": "universidad-autonoma",
     "nombre": "Universidad Autónoma",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo",
     "pois": [
@@ -2057,7 +2057,7 @@ export const estacionesQueretaro = [
   {
     "slug": "constituyentes-l154",
     "nombre": "Constituyentes L154",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -2124,7 +2124,7 @@ export const estacionesQueretaro = [
   {
     "slug": "cimatario-l154",
     "nombre": "Cimatario L154",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "natural",
     "pois": [
@@ -2191,7 +2191,7 @@ export const estacionesQueretaro = [
   {
     "slug": "santa-barbara-qro",
     "nombre": "Santa Bárbara",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -2258,7 +2258,7 @@ export const estacionesQueretaro = [
   {
     "slug": "juriquilla-premium-qro",
     "nombre": "Juriquilla Premium",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial-lujo",
     "pois": [
@@ -2325,7 +2325,7 @@ export const estacionesQueretaro = [
   {
     "slug": "campus-bicentenario-qro",
     "nombre": "Campus Bicentenario",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "educativo",
     "pois": [
@@ -2392,7 +2392,7 @@ export const estacionesQueretaro = [
   {
     "slug": "carretera-tequisquiapan",
     "nombre": "Carretera Tequisquiapan",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "transitorio",
     "pois": [
@@ -2459,7 +2459,7 @@ export const estacionesQueretaro = [
   {
     "slug": "juriquilla-ampliacion-qro",
     "nombre": "Juriquilla Ampliación",
-    "linea": "L154",
+    "linea": ["L154"],
     "municipio": "Querétaro",
     "tipo_zona": "residencial",
     "pois": [
@@ -2526,7 +2526,7 @@ export const estacionesQueretaro = [
   {
     "slug": "periferico-norte-qro",
     "nombre": "Periférico Norte",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "transitorio",
     "pois": [
@@ -2593,7 +2593,7 @@ export const estacionesQueretaro = [
   {
     "slug": "santa-rosa-industria-qro",
     "nombre": "Santa Rosa Industria",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "industrial",
     "pois": [
@@ -2660,7 +2660,7 @@ export const estacionesQueretaro = [
   {
     "slug": "el-marques-acceso-qro",
     "nombre": "El Marqués Acceso",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "industrial",
     "pois": [
@@ -2727,7 +2727,7 @@ export const estacionesQueretaro = [
   {
     "slug": "parque-logistico-qro",
     "nombre": "Parque Logístico",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "logistico",
     "pois": [
@@ -2794,7 +2794,7 @@ export const estacionesQueretaro = [
   {
     "slug": "distribucion-qro",
     "nombre": "Distribución",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial",
     "pois": [
@@ -2861,7 +2861,7 @@ export const estacionesQueretaro = [
   {
     "slug": "fabrica-autos-qro",
     "nombre": "Fábrica Autos",
-    "linea": "L119",
+    "linea": ["L119"],
     "municipio": "Querétaro",
     "tipo_zona": "industrial",
     "pois": [
@@ -2928,7 +2928,7 @@ export const estacionesQueretaro = [
   {
     "slug": "plaza-independencia-qro",
     "nombre": "Plaza Independencia",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-turistico",
     "pois": [
@@ -2995,7 +2995,7 @@ export const estacionesQueretaro = [
   {
     "slug": "palacio-gobierno-qro",
     "nombre": "Palacio de Gobierno",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-politico",
     "pois": [
@@ -3062,7 +3062,7 @@ export const estacionesQueretaro = [
   {
     "slug": "museo-arte-qro",
     "nombre": "Museo de Arte",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural",
     "pois": [
@@ -3129,7 +3129,7 @@ export const estacionesQueretaro = [
   {
     "slug": "casa-corregidora-qro",
     "nombre": "Casa de la Corregidora",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-cultural",
     "pois": [
@@ -3196,7 +3196,7 @@ export const estacionesQueretaro = [
   {
     "slug": "plazuela-corregidora-qro",
     "nombre": "Plazuela Corregidora",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "plaza-historica",
     "pois": [
@@ -3263,7 +3263,7 @@ export const estacionesQueretaro = [
   {
     "slug": "templo-santa-rosa",
     "nombre": "Templo Santa Rosa",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "religioso",
     "pois": [
@@ -3330,7 +3330,7 @@ export const estacionesQueretaro = [
   {
     "slug": "convento-san-francisco-qro",
     "nombre": "Convento San Francisco",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "religioso",
     "pois": [
@@ -3397,7 +3397,7 @@ export const estacionesQueretaro = [
   {
     "slug": "mercado-escobedo-qro",
     "nombre": "Mercado Escobedo",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "comercial-tradicional",
     "pois": [
@@ -3464,7 +3464,7 @@ export const estacionesQueretaro = [
   {
     "slug": "iglesia-santiago-qro",
     "nombre": "Iglesia Santiago",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "religioso",
     "pois": [
@@ -3531,7 +3531,7 @@ export const estacionesQueretaro = [
   {
     "slug": "acueducto-centro-qro",
     "nombre": "Acueducto Centro",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "monumento",
     "pois": [
@@ -3598,7 +3598,7 @@ export const estacionesQueretaro = [
   {
     "slug": "fuerte-qro",
     "nombre": "Fuerte",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "historico-militar",
     "pois": [
@@ -3665,7 +3665,7 @@ export const estacionesQueretaro = [
   {
     "slug": "barrio-artista-qro",
     "nombre": "Barrio Artista",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural-artistico",
     "pois": [
@@ -3737,7 +3737,7 @@ export const estacionesQueretaro = [
   {
     "slug": "centro-convenciones-qro",
     "nombre": "Centro de Convenciones",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "eventos",
     "pois": [
@@ -3804,7 +3804,7 @@ export const estacionesQueretaro = [
   {
     "slug": "plaza-grande-centro-qro",
     "nombre": "Plaza Grande Centro",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "plaza-publica",
     "pois": [
@@ -3871,7 +3871,7 @@ export const estacionesQueretaro = [
   {
     "slug": "biblioteca-publica-qro",
     "nombre": "Biblioteca Pública",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural-educativo",
     "pois": [
@@ -3938,7 +3938,7 @@ export const estacionesQueretaro = [
   {
     "slug": "museo-historia-natural-qro",
     "nombre": "Museo Historia Natural",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural-cientifico",
     "pois": [
@@ -4005,7 +4005,7 @@ export const estacionesQueretaro = [
   {
     "slug": "teatro-republica-qro",
     "nombre": "Teatro República",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "cultural-teatral",
     "pois": [
@@ -4072,7 +4072,7 @@ export const estacionesQueretaro = [
   {
     "slug": "templo-santa-clara-qro",
     "nombre": "Templo Santa Clara",
-    "linea": "Eléctrico",
+    "linea": ["Eléctrico"],
     "municipio": "Querétaro",
     "tipo_zona": "religioso",
     "pois": [

@@ -2,7 +2,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-kipling-station",
     "nombre": "Kipling Station",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "transport",
@@ -43,7 +43,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-dundas-west",
     "nombre": "Dundas West",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -84,7 +84,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-burnhamthorpe",
     "nombre": "Burnhamthorpe",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "residential",
@@ -125,7 +125,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-city-centre",
     "nombre": "City Centre",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -167,7 +167,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-square-one",
     "nombre": "Square One",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -208,7 +208,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-rathburn",
     "nombre": "Rathburn",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "residential",
@@ -249,7 +249,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-bloor-street",
     "nombre": "Bloor Street",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -290,7 +290,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-cawthra",
     "nombre": "Cawthra",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -331,7 +331,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-hurontario-downtown",
     "nombre": "Hurontario Downtown",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -372,7 +372,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-lakeshore-road",
     "nombre": "Lakeshore Road",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "cultural",
@@ -413,7 +413,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-port-street",
     "nombre": "Port Street",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "cultural",
@@ -454,7 +454,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-dundas-eastbound",
     "nombre": "Dundas Eastbound",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -495,7 +495,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-eglinton-east",
     "nombre": "Eglinton East",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "residential",
@@ -536,7 +536,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-steeles-avenue",
     "nombre": "Steeles Avenue",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "transport",
@@ -577,7 +577,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-clark-boulevard",
     "nombre": "Clark Boulevard",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "commercial",
@@ -618,7 +618,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-mcmurchy-avenue",
     "nombre": "McMurchy Avenue",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "residential",
@@ -659,7 +659,7 @@ export const estacionesMississauga = [
   {
     "slug": "mississauga-terminal-station",
     "nombre": "Terminal Station",
-    "linea": "Hazel McCallion LRT",
+    "linea": ["Hazel McCallion LRT"],
     "sistema": "hazel-mccallion-lrt",
     "municipio": "Mississauga",
     "tipo_zona": "transport",

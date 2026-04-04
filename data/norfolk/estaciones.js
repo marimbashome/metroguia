@@ -2,7 +2,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-eastern-virginia-medical",
     "nombre": "Eastern Virginia Medical",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "medical",
@@ -51,7 +51,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-ft-norfolk",
     "nombre": "Ft Norfolk",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "tourist",
@@ -101,7 +101,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-harbor-park",
     "nombre": "Harbor Park",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "tourist",
@@ -152,7 +152,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-civic-plaza",
     "nombre": "Civic Plaza",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "commercial",
@@ -202,7 +202,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-macarthur-square",
     "nombre": "Macarthur Square",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "commercial",
@@ -252,7 +252,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-monticello",
     "nombre": "Monticello",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "residential",
@@ -302,7 +302,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-nsu",
     "nombre": "Nsu",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "university",
@@ -352,7 +352,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-ballentine-blvd",
     "nombre": "Ballentine Blvd",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "residential",
@@ -402,7 +402,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-military-hwy",
     "nombre": "Military Hwy",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "commercial",
@@ -452,7 +452,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-odu",
     "nombre": "Odu",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "university",
@@ -502,7 +502,7 @@ export const estacionesNorfolk = [
   {
     "slug": "norfolk-newtown-road",
     "nombre": "Newtown Road",
-    "linea": "tide",
+    "linea": ["tide"],
     "sistema": "tide-tide",
     "municipio": "Norfolk",
     "tipo_zona": "residential",

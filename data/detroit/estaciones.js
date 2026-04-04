@@ -2,7 +2,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-grand-blvd",
     "nombre": "Grand Blvd",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -43,7 +43,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-amsterdam",
     "nombre": "Amsterdam",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "residential",
@@ -83,7 +83,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-baltimore",
     "nombre": "Baltimore",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -123,7 +123,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-ferry",
     "nombre": "Ferry",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -164,7 +164,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-foxtown",
     "nombre": "Foxtown",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -205,7 +205,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-broadway",
     "nombre": "Broadway",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -245,7 +245,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-grand-circus-park",
     "nombre": "Grand Circus Park",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -286,7 +286,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-times-square",
     "nombre": "Times Square",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -326,7 +326,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-campus-martius",
     "nombre": "Campus Martius",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -367,7 +367,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-congress",
     "nombre": "Congress",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -407,7 +407,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-woodward",
     "nombre": "Woodward",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -447,7 +447,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-mlk",
     "nombre": "Martin Luther King Jr. Blvd",
-    "linea": "QLine",
+    "linea": ["QLine"],
     "sistema": "qline-streetcar",
     "municipio": "Detroit",
     "tipo_zona": "residential",
@@ -487,7 +487,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-times-square",
     "nombre": "Times Square (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -495,7 +495,7 @@ export const estacionesDetroit = [
       {"nombre": "Centro Comercial Downtown", "tipo": "retail", "distancia": "0.1 km"}
     ],
     "transferencias": [
-      {"linea": "QLine", "nombre": "Times Square", "conexion": "0.2 km"}
+      {"linea": ["QLine"], "nombre": "Times Square", "conexion": "0.2 km"}
     ],
     "seo_title": "Estación Times Square Detroit People Mover — Entretenimiento Urbano | MetroGuia",
     "meta_description": "Parada Times Square en People Mover. Acceso al shopping, entretenimiento y vida nocturna del downtown de Detroit.",
@@ -529,7 +529,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-michigan",
     "nombre": "Michigan (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -569,7 +569,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-cass",
     "nombre": "Cass (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -609,7 +609,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-grand-circus",
     "nombre": "Grand Circus (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -617,7 +617,7 @@ export const estacionesDetroit = [
       {"nombre": "Grand Circus Park", "tipo": "parks", "distancia": "0.3 km"}
     ],
     "transferencias": [
-      {"linea": "QLine", "nombre": "Grand Circus Park", "conexion": "0.3 km"}
+      {"linea": ["QLine"], "nombre": "Grand Circus Park", "conexion": "0.3 km"}
     ],
     "seo_title": "Estación Grand Circus Detroit People Mover — Parque Histórico | MetroGuia",
     "meta_description": "Parada Grand Circus en People Mover. Acceso al parque histórico más importante de Detroit con arquitectura neoclásica.",
@@ -651,7 +651,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-broadway",
     "nombre": "Broadway (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -691,7 +691,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-cadillac",
     "nombre": "Cadillac (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -731,7 +731,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-greektown",
     "nombre": "Greektown (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -771,7 +771,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-bricktown",
     "nombre": "Bricktown (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "residential",
@@ -811,7 +811,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-renaissance",
     "nombre": "Renaissance (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -852,7 +852,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-financial-district",
     "nombre": "Financial District (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "commercial",
@@ -892,7 +892,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-cobo",
     "nombre": "Cobo (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "cultural",
@@ -933,7 +933,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-joe-louis",
     "nombre": "Joe Louis Arena (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "sports",
@@ -974,7 +974,7 @@ export const estacionesDetroit = [
   {
     "slug": "detroit-pm-fort-cass",
     "nombre": "Fort Cass (People Mover)",
-    "linea": "People Mover",
+    "linea": ["People Mover"],
     "sistema": "detroit-people-mover",
     "municipio": "Detroit",
     "tipo_zona": "residential",

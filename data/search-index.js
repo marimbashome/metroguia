@@ -2439,7 +2439,7 @@ export const searchIndex = {
         "linea": "1"
       },
       {
-        "slug": "panteón-queretanos",
+        "slug": "panteon-queretanos",
         "nombre": "Panteón de los Queretanos",
         "linea": "1"
       },

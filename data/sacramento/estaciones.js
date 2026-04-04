@@ -2,7 +2,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-watt-i80",
     "nombre": "Watt/I-80",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -33,7 +33,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-watt-manlove",
     "nombre": "Watt/Manlove",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -63,7 +63,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-marconi-arcade",
     "nombre": "Marconi/Arcade",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -93,7 +93,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-swanston",
     "nombre": "Swanston",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -123,7 +123,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-arden-del-paso",
     "nombre": "Arden/Del Paso",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -153,7 +153,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-royal-oaks",
     "nombre": "Royal Oaks",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -183,7 +183,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-globe",
     "nombre": "Globe",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -213,7 +213,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-4th-ave-wayne-hultgren",
     "nombre": "4th Ave/Wayne Hultgren",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -243,7 +243,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-power-inn",
     "nombre": "Power Inn",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential-commercial",
@@ -273,7 +273,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-university-65th",
     "nombre": "University/65th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "commercial",
@@ -303,7 +303,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-59th-st",
     "nombre": "59th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -333,7 +333,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-48th-st",
     "nombre": "48th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -363,7 +363,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-39th-st",
     "nombre": "39th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -393,7 +393,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-29th-st",
     "nombre": "29th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -423,7 +423,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-23rd-st",
     "nombre": "23rd St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown-commercial",
@@ -453,7 +453,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-16th-st",
     "nombre": "16th St",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown-commercial",
@@ -483,7 +483,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-cathedral-square-13th",
     "nombre": "Cathedral Square/13th St",
-    "linea": "Blue, Gold, Green",
+    "linea": ["Blue, Gold, Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown-cultural",
@@ -521,7 +521,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-8th-o-capitol",
     "nombre": "8th & O/Capitol",
-    "linea": "Blue, Gold, Green",
+    "linea": ["Blue, Gold, Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown-cultural",
@@ -559,7 +559,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-7th-i-capitol",
     "nombre": "7th & I/Capitol",
-    "linea": "Blue, Gold, Green",
+    "linea": ["Blue, Gold, Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown-cultural",
@@ -590,7 +590,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-archives-plaza",
     "nombre": "Archives Plaza",
-    "linea": "Blue, Gold, Green",
+    "linea": ["Blue, Gold, Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown",
@@ -628,7 +628,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-st-rose-of-lima",
     "nombre": "St Rose of Lima Park",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown",
@@ -665,7 +665,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-meadowview",
     "nombre": "Meadowview",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -695,7 +695,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-center-pkwy",
     "nombre": "Center Pkwy",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -725,7 +725,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-cosumnes-river-college",
     "nombre": "Cosumnes River College",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "education",
@@ -763,7 +763,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-sacramento-valley-station",
     "nombre": "Sacramento Valley Station",
-    "linea": "Gold, Green",
+    "linea": ["Gold, Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "transportation",
@@ -801,7 +801,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-sunrise",
     "nombre": "Sunrise",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -831,7 +831,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-hazel",
     "nombre": "Hazel",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -861,7 +861,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-folsom",
     "nombre": "Folsom",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Folsom",
     "tipo_zona": "residential-commercial",
@@ -898,7 +898,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-historic-folsom",
     "nombre": "Historic Folsom",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Folsom",
     "tipo_zona": "downtown-cultural",
@@ -942,7 +942,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-iron-point",
     "nombre": "Iron Point",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Folsom",
     "tipo_zona": "residential",
@@ -972,7 +972,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-gold-strike",
     "nombre": "Gold Strike",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "sacrt-light-rail",
     "municipio": "Folsom",
     "tipo_zona": "residential",
@@ -1002,7 +1002,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-township-9",
     "nombre": "Township 9",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -1033,7 +1033,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-richards-blvd",
     "nombre": "Richards Blvd",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "residential",
@@ -1063,7 +1063,7 @@ export const estacionesSacramento = [
   {
     "slug": "sacramento-dos-rios",
     "nombre": "Dos Rios",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "sacrt-light-rail",
     "municipio": "Sacramento",
     "tipo_zona": "downtown",

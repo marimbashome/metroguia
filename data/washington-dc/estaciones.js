@@ -2,7 +2,7 @@ export const estacionesDC = [
   {
     "slug": "metro-shady-grove",
     "nombre": "Shady Grove",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Northern terminus in Montgomery County with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -42,7 +42,7 @@ export const estacionesDC = [
   {
     "slug": "metro-rockville",
     "nombre": "Rockville",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Downtown Rockville commercial center with shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -82,7 +82,7 @@ export const estacionesDC = [
   {
     "slug": "metro-twinbrook",
     "nombre": "Twinbrook",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Residential community in Montgomery County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -122,7 +122,7 @@ export const estacionesDC = [
   {
     "slug": "metro-north-bethesda",
     "nombre": "North Bethesda",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Mixed commercial and residential area in Bethesda",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -162,7 +162,7 @@ export const estacionesDC = [
   {
     "slug": "metro-grosvenor-strathmore",
     "nombre": "Grosvenor-Strathmore",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Upscale residential area with parks and green space",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -202,7 +202,7 @@ export const estacionesDC = [
   {
     "slug": "metro-medical-center",
     "nombre": "Medical Center",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Gateway to NIH research campus and medical facilities",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -242,7 +242,7 @@ export const estacionesDC = [
   {
     "slug": "metro-bethesda",
     "nombre": "Bethesda",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Major upscale shopping district with restaurants and galleries",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -287,7 +287,7 @@ export const estacionesDC = [
   {
     "slug": "metro-friendship-heights",
     "nombre": "Friendship Heights",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Luxury shopping destination on Wisconsin Avenue",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -332,7 +332,7 @@ export const estacionesDC = [
   {
     "slug": "metro-tenleytown-au",
     "nombre": "Tenleytown-AU",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Gateway to American University campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -377,7 +377,7 @@ export const estacionesDC = [
   {
     "slug": "metro-van-ness-udc",
     "nombre": "Van Ness-UDC",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "University area with UDC campus access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -417,7 +417,7 @@ export const estacionesDC = [
   {
     "slug": "metro-cleveland-park",
     "nombre": "Cleveland Park",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Historic upscale neighborhood with Victorian architecture",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -462,7 +462,7 @@ export const estacionesDC = [
   {
     "slug": "metro-woodley-park-zoo-adams-morgan",
     "nombre": "Woodley Park-Zoo/Adams Morgan",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Gateway to National Zoo and Adams Morgan nightlife district",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -507,7 +507,7 @@ export const estacionesDC = [
   {
     "slug": "metro-dupont-circle",
     "nombre": "Dupont Circle",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Iconic circle with art museums, galleries, restaurants and nightlife",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -552,7 +552,7 @@ export const estacionesDC = [
   {
     "slug": "metro-farragut-north",
     "nombre": "Farragut North",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Downtown business district near White House",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -597,7 +597,7 @@ export const estacionesDC = [
   {
     "slug": "metro-metro-center",
     "nombre": "Metro Center",
-    "linea": "red,blue,orange,silver",
+    "linea": ["red,blue,orange,silver"],
     "descripcion": "Major downtown hub connecting 4 Metro lines, center of DC transit",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -647,7 +647,7 @@ export const estacionesDC = [
   {
     "slug": "metro-gallery-pl-chinatown",
     "nombre": "Gallery Pl-Chinatown",
-    "linea": "red,yellow,green",
+    "linea": ["red,yellow,green"],
     "descripcion": "Cultural hub with sports, shopping and Chinatown dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -696,7 +696,7 @@ export const estacionesDC = [
   {
     "slug": "metro-judiciary-square",
     "nombre": "Judiciary Square",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Government and judicial center with museums",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -741,7 +741,7 @@ export const estacionesDC = [
   {
     "slug": "metro-union-station",
     "nombre": "Union Station",
-    "linea": "red,blue",
+    "linea": ["red,blue"],
     "descripcion": "Iconic Beaux-Arts 1908 landmark serving Amtrak, intercity buses, shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -794,7 +794,7 @@ export const estacionesDC = [
   {
     "slug": "metro-noma-gallaudet-u",
     "nombre": "NoMa-Gallaudet U",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Emerging neighborhood development near Gallaudet University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -839,7 +839,7 @@ export const estacionesDC = [
   {
     "slug": "metro-rhode-island-ave-brentwood",
     "nombre": "Rhode Island Ave-Brentwood",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Residential Brentwood neighborhood with local shops",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -879,7 +879,7 @@ export const estacionesDC = [
   {
     "slug": "metro-brookland-cua",
     "nombre": "Brookland-CUA",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Gateway to Catholic University campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -919,7 +919,7 @@ export const estacionesDC = [
   {
     "slug": "metro-fort-totten",
     "nombre": "Fort Totten",
-    "linea": "red,yellow,green",
+    "linea": ["red,yellow,green"],
     "descripcion": "3-line transfer hub with access to historic fort and parks",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -963,7 +963,7 @@ export const estacionesDC = [
   {
     "slug": "metro-takoma",
     "nombre": "Takoma",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Residential neighborhood with local shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1003,7 +1003,7 @@ export const estacionesDC = [
   {
     "slug": "metro-silver-spring",
     "nombre": "Silver Spring",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Major Montgomery County commercial center with shops and entertainment",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1048,7 +1048,7 @@ export const estacionesDC = [
   {
     "slug": "metro-forest-glen",
     "nombre": "Forest Glen",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Wooded residential area with suburban feel",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1088,7 +1088,7 @@ export const estacionesDC = [
   {
     "slug": "metro-wheaton",
     "nombre": "Wheaton",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Commercial shopping area in Montgomery County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1128,7 +1128,7 @@ export const estacionesDC = [
   {
     "slug": "metro-glenmont",
     "nombre": "Glenmont",
-    "linea": "red",
+    "linea": ["red"],
     "descripcion": "Southern Red Line terminus with park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1168,7 +1168,7 @@ export const estacionesDC = [
   {
     "slug": "metro-vienna-fairfax-gmu",
     "nombre": "Vienna/Fairfax-GMU",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Western terminus near George Mason University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1213,7 +1213,7 @@ export const estacionesDC = [
   {
     "slug": "metro-dunn-loring-merrifield",
     "nombre": "Dunn Loring-Merrifield",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Commercial hub in Fairfax County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1253,7 +1253,7 @@ export const estacionesDC = [
   {
     "slug": "metro-west-falls-church",
     "nombre": "West Falls Church",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Residential area in Falls Church",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1293,7 +1293,7 @@ export const estacionesDC = [
   {
     "slug": "metro-east-falls-church",
     "nombre": "East Falls Church",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Residential community near Falls Church",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1333,7 +1333,7 @@ export const estacionesDC = [
   {
     "slug": "metro-ballston-mu",
     "nombre": "Ballston-MU",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Major mixed-use development hub in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1378,7 +1378,7 @@ export const estacionesDC = [
   {
     "slug": "metro-virginia-square-gmu",
     "nombre": "Virginia Square-GMU",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Gateway to George Mason University Arlington campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1423,7 +1423,7 @@ export const estacionesDC = [
   {
     "slug": "metro-clarendon",
     "nombre": "Clarendon",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Vibrant dining and shopping district in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1468,7 +1468,7 @@ export const estacionesDC = [
   {
     "slug": "metro-court-house",
     "nombre": "Court House",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Government center and commercial hub in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1513,7 +1513,7 @@ export const estacionesDC = [
   {
     "slug": "metro-rosslyn",
     "nombre": "Rosslyn",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "High-rise commercial center with river views and Key Bridge crossing",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1558,7 +1558,7 @@ export const estacionesDC = [
   {
     "slug": "metro-foggy-bottom-gwu",
     "nombre": "Foggy Bottom-GWU",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Gateway to George Washington University and State Department",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1603,7 +1603,7 @@ export const estacionesDC = [
   {
     "slug": "metro-farragut-west",
     "nombre": "Farragut West",
-    "linea": "orange,blue,silver",
+    "linea": ["orange,blue,silver"],
     "descripcion": "Downtown area near State Department with multiple line connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1657,7 +1657,7 @@ export const estacionesDC = [
   {
     "slug": "metro-mcpherson-square",
     "nombre": "McPherson Square",
-    "linea": "orange,blue,silver",
+    "linea": ["orange,blue,silver"],
     "descripcion": "Downtown business district with park access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1711,7 +1711,7 @@ export const estacionesDC = [
   {
     "slug": "metro-federal-triangle",
     "nombre": "Federal Triangle",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Federal government office complex near National Mall",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1756,7 +1756,7 @@ export const estacionesDC = [
   {
     "slug": "metro-smithsonian",
     "nombre": "Smithsonian",
-    "linea": "orange,blue,silver",
+    "linea": ["orange,blue,silver"],
     "descripcion": "Direct access to world-class Smithsonian museums and National Mall",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1810,7 +1810,7 @@ export const estacionesDC = [
   {
     "slug": "metro-l-enfant-plaza",
     "nombre": "L'Enfant Plaza",
-    "linea": "orange,blue,silver,yellow,green",
+    "linea": ["orange,blue,silver,yellow,green"],
     "descripcion": "Major 5-line hub connecting to National Mall museums and waterfront areas",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1871,7 +1871,7 @@ export const estacionesDC = [
   {
     "slug": "metro-federal-center-sw",
     "nombre": "Federal Center SW",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Government offices and public space near Capitol",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1916,7 +1916,7 @@ export const estacionesDC = [
   {
     "slug": "metro-capitol-south",
     "nombre": "Capitol South",
-    "linea": "orange,blue,silver",
+    "linea": ["orange,blue,silver"],
     "descripcion": "Direct access to Capitol building and Congress with multiple connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1970,7 +1970,7 @@ export const estacionesDC = [
   {
     "slug": "metro-eastern-market",
     "nombre": "Eastern Market",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Historic market and weekend farmer venue in Capitol Hill",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2015,7 +2015,7 @@ export const estacionesDC = [
   {
     "slug": "metro-potomac-ave",
     "nombre": "Potomac Ave",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Residential area in Southeast DC near historic neighborhoods",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2055,7 +2055,7 @@ export const estacionesDC = [
   {
     "slug": "metro-stadium-armory",
     "nombre": "Stadium-Armory",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Sports and entertainment venue with Armory history",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2100,7 +2100,7 @@ export const estacionesDC = [
   {
     "slug": "metro-minnesota-ave",
     "nombre": "Minnesota Ave",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Residential area in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2140,7 +2140,7 @@ export const estacionesDC = [
   {
     "slug": "metro-deanwood",
     "nombre": "Deanwood",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Residential community in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2180,7 +2180,7 @@ export const estacionesDC = [
   {
     "slug": "metro-cheverly",
     "nombre": "Cheverly",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Suburban residential area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2220,7 +2220,7 @@ export const estacionesDC = [
   {
     "slug": "metro-landover",
     "nombre": "Landover",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Commercial hub in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2260,7 +2260,7 @@ export const estacionesDC = [
   {
     "slug": "metro-new-carrollton",
     "nombre": "New Carrollton",
-    "linea": "orange",
+    "linea": ["orange"],
     "descripcion": "Eastern terminus in Maryland with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2300,7 +2300,7 @@ export const estacionesDC = [
   {
     "slug": "metro-franconia-springfield",
     "nombre": "Franconia-Springfield",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Southern terminus in Springfield with large park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2345,7 +2345,7 @@ export const estacionesDC = [
   {
     "slug": "metro-van-dorn-street",
     "nombre": "Van Dorn Street",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area in southern Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2390,7 +2390,7 @@ export const estacionesDC = [
   {
     "slug": "metro-king-street-old-town",
     "nombre": "King Street-Old Town",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Historic Old Town Alexandria with waterfront, shops and fine dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2440,7 +2440,7 @@ export const estacionesDC = [
   {
     "slug": "metro-braddock-road",
     "nombre": "Braddock Road",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area near Old Town Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2485,7 +2485,7 @@ export const estacionesDC = [
   {
     "slug": "metro-ronald-reagan-national-airport",
     "nombre": "Ronald Reagan National Airport",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Direct airport access with terminals for regional travelers",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2530,7 +2530,7 @@ export const estacionesDC = [
   {
     "slug": "metro-crystal-city",
     "nombre": "Crystal City",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Major office and retail hub near National Airport",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2580,7 +2580,7 @@ export const estacionesDC = [
   {
     "slug": "metro-pentagon-city",
     "nombre": "Pentagon City",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Major shopping mall and commercial center in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2630,7 +2630,7 @@ export const estacionesDC = [
   {
     "slug": "metro-pentagon",
     "nombre": "Pentagon",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Transfer hub serving Pentagon offices and government complex",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2675,7 +2675,7 @@ export const estacionesDC = [
   {
     "slug": "metro-arlington-cemetery",
     "nombre": "Arlington Cemetery",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Gateway to Arlington National Cemetery and Memorial Bridge",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2725,7 +2725,7 @@ export const estacionesDC = [
   {
     "slug": "metro-benning-road",
     "nombre": "Benning Road",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2770,7 +2770,7 @@ export const estacionesDC = [
   {
     "slug": "metro-capitol-heights",
     "nombre": "Capitol Heights",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area in Maryland with local shopping",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2815,7 +2815,7 @@ export const estacionesDC = [
   {
     "slug": "metro-addison-road",
     "nombre": "Addison Road",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential community in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2855,7 +2855,7 @@ export const estacionesDC = [
   {
     "slug": "metro-morgan-boulevard",
     "nombre": "Morgan Boulevard",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Suburban residential area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2895,7 +2895,7 @@ export const estacionesDC = [
   {
     "slug": "metro-largo-town-center",
     "nombre": "Largo Town Center",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Eastern terminus in Largo with park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2945,7 +2945,7 @@ export const estacionesDC = [
   {
     "slug": "metro-naylor-road",
     "nombre": "Naylor Road",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area in Southeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2990,7 +2990,7 @@ export const estacionesDC = [
   {
     "slug": "metro-suitland",
     "nombre": "Suitland",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Gateway to Suitland area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3035,7 +3035,7 @@ export const estacionesDC = [
   {
     "slug": "metro-southern-avenue",
     "nombre": "Southern Avenue",
-    "linea": "blue",
+    "linea": ["blue"],
     "descripcion": "Residential area in Southern Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3075,7 +3075,7 @@ export const estacionesDC = [
   {
     "slug": "metro-huntington",
     "nombre": "Huntington",
-    "linea": "yellow",
+    "linea": ["yellow"],
     "descripcion": "Southern terminus in Alexandria with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3120,7 +3120,7 @@ export const estacionesDC = [
   {
     "slug": "metro-eisenhower-ave",
     "nombre": "Eisenhower Ave",
-    "linea": "yellow",
+    "linea": ["yellow"],
     "descripcion": "Commercial area in Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3165,7 +3165,7 @@ export const estacionesDC = [
   {
     "slug": "metro-archives-navy-memorial-penn-quarter",
     "nombre": "Archives-Navy Memorial-Penn Quarter",
-    "linea": "yellow,orange,blue,silver",
+    "linea": ["yellow,orange,blue,silver"],
     "descripcion": "Access to National Archives and Navy Memorial with 4-line connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3220,7 +3220,7 @@ export const estacionesDC = [
   {
     "slug": "metro-branch-ave",
     "nombre": "Branch Ave",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Northern terminus in Prince George's County with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3265,7 +3265,7 @@ export const estacionesDC = [
   {
     "slug": "metro-congress-heights",
     "nombre": "Congress Heights",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Residential area in Southeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3305,7 +3305,7 @@ export const estacionesDC = [
   {
     "slug": "metro-anacostia",
     "nombre": "Anacostia",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Historic Anacostia neighborhood with museums and river access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3355,7 +3355,7 @@ export const estacionesDC = [
   {
     "slug": "metro-navy-yard-ballpark",
     "nombre": "Navy Yard-Ballpark",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Gateway to Nationals ballpark and Navy Yard neighborhood",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3400,7 +3400,7 @@ export const estacionesDC = [
   {
     "slug": "metro-waterfront",
     "nombre": "Waterfront",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Southeast waterfront development with shopping and dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3450,7 +3450,7 @@ export const estacionesDC = [
   {
     "slug": "metro-mt-vernon-sq-7th-st-convention-center",
     "nombre": "Mt Vernon Sq/7th St-Convention Center",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Convention center and cultural district in downtown",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3500,7 +3500,7 @@ export const estacionesDC = [
   {
     "slug": "metro-shaw-howard-u",
     "nombre": "Shaw-Howard U",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Historic Shaw neighborhood near Howard University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3550,7 +3550,7 @@ export const estacionesDC = [
   {
     "slug": "metro-u-street-african-amer-civil-war-memorial-cardozo",
     "nombre": "U Street/African-Amer Civil War Memorial/Cardozo",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Historic U Street Corridor with cultural heritage and entertainment",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3600,7 +3600,7 @@ export const estacionesDC = [
   {
     "slug": "metro-columbia-heights",
     "nombre": "Columbia Heights",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Diverse neighborhood with shopping, dining and culture",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3650,7 +3650,7 @@ export const estacionesDC = [
   {
     "slug": "metro-georgia-ave-petworth",
     "nombre": "Georgia Ave-Petworth",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Commercial and residential area in North DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3695,7 +3695,7 @@ export const estacionesDC = [
   {
     "slug": "metro-west-hyattsville",
     "nombre": "West Hyattsville",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Residential area in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3735,7 +3735,7 @@ export const estacionesDC = [
   {
     "slug": "metro-prince-george-plaza",
     "nombre": "Prince George's Plaza",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Commercial center in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3780,7 +3780,7 @@ export const estacionesDC = [
   {
     "slug": "metro-college-park-u-of-md",
     "nombre": "College Park-U of MD",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Gateway to University of Maryland campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3825,7 +3825,7 @@ export const estacionesDC = [
   {
     "slug": "metro-greenbelt",
     "nombre": "Greenbelt",
-    "linea": "green",
+    "linea": ["green"],
     "descripcion": "Northern Green Line terminus with extensive park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3875,7 +3875,7 @@ export const estacionesDC = [
   {
     "slug": "metro-ashburn",
     "nombre": "Ashburn",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Western terminus in Loudoun County with large park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3920,7 +3920,7 @@ export const estacionesDC = [
   {
     "slug": "metro-loudoun-gateway",
     "nombre": "Loudoun Gateway",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Commercial hub in Loudoun County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3960,7 +3960,7 @@ export const estacionesDC = [
   {
     "slug": "metro-dulles-airport",
     "nombre": "Dulles Airport",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "International airport access serving Washington region",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4005,7 +4005,7 @@ export const estacionesDC = [
   {
     "slug": "metro-innovation-center",
     "nombre": "Innovation Center",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Technology and business park near Dulles",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4050,7 +4050,7 @@ export const estacionesDC = [
   {
     "slug": "metro-herndon",
     "nombre": "Herndon",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Downtown Herndon commercial area",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4095,7 +4095,7 @@ export const estacionesDC = [
   {
     "slug": "metro-reston-town-center",
     "nombre": "Reston Town Center",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Mixed-use urban center with offices, shopping and dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4145,7 +4145,7 @@ export const estacionesDC = [
   {
     "slug": "metro-wiehle-reston-east",
     "nombre": "Wiehle-Reston East",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Eastern Reston area with mixed-use development",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4190,7 +4190,7 @@ export const estacionesDC = [
   {
     "slug": "metro-spring-hill",
     "nombre": "Spring Hill",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Residential and commercial area in Sterling",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4230,7 +4230,7 @@ export const estacionesDC = [
   {
     "slug": "metro-greensboro",
     "nombre": "Greensboro",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Residential and commercial area in Loudoun County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4270,7 +4270,7 @@ export const estacionesDC = [
   {
     "slug": "metro-tysons",
     "nombre": "Tysons",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Major commercial hub with office towers and shopping",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4320,7 +4320,7 @@ export const estacionesDC = [
   {
     "slug": "metro-mclean",
     "nombre": "McLean",
-    "linea": "silver",
+    "linea": ["silver"],
     "descripcion": "Upscale residential and commercial area in Northern Virginia",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",

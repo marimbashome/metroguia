@@ -2,7 +2,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-19th-ave-montebello",
     "nombre": "19th Ave/Montebello",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -35,7 +35,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-24th-ave-thomas",
     "nombre": "24th Ave/Thomas",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -68,7 +68,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-32nd-ave-washington",
     "nombre": "32nd Ave/Washington",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -101,7 +101,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-40th-ave-washington",
     "nombre": "40th Ave/Washington",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -133,7 +133,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-48th-ave-washington",
     "nombre": "48th Ave/Washington",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -165,7 +165,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-56th-ave-washington",
     "nombre": "56th Ave/Washington",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -197,7 +197,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-central-avenue",
     "nombre": "Central Avenue",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
@@ -233,7 +233,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-metro-center-drive",
     "nombre": "Metro Center Drive",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
@@ -268,7 +268,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-jefferson-street",
     "nombre": "Jefferson Street",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "cultural",
@@ -303,7 +303,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-washington-street",
     "nombre": "Washington Street",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "downtown",
@@ -338,7 +338,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-camelback-road",
     "nombre": "Camelback Road",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
@@ -373,7 +373,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-highland-avenue",
     "nombre": "Highland Avenue",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -406,7 +406,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-thomas-road",
     "nombre": "Thomas Road",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
@@ -441,7 +441,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-bethany-home-road",
     "nombre": "Bethany Home Road",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -473,7 +473,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-arizona-avenue",
     "nombre": "Arizona Avenue",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -505,7 +505,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-maryland-avenue",
     "nombre": "Maryland Avenue",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -537,7 +537,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-dunlap-avenue",
     "nombre": "Dunlap Avenue",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
@@ -569,7 +569,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-city-coliseum",
     "nombre": "City Coliseum",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "sports",
@@ -605,7 +605,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-tempe-main-street",
     "nombre": "Tempe Main Street",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "downtown",
@@ -642,7 +642,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-tempe-university",
     "nombre": "Tempe University",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "university",
@@ -679,7 +679,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-tempe-tech",
     "nombre": "Tempe Tech",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "commercial",
@@ -716,7 +716,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-gilbert-signal-butte",
     "nombre": "Signal Butte",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Gilbert",
     "tipo_zona": "residential",
@@ -751,7 +751,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-gilbert-main-street",
     "nombre": "Gilbert Downtown",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Gilbert",
     "tipo_zona": "downtown",
@@ -788,7 +788,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-mesa-main-street",
     "nombre": "Mesa Main Street",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Mesa",
     "tipo_zona": "downtown",
@@ -825,7 +825,7 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-mesa-dr-main-st",
     "nombre": "Mesa Dr/Main St",
-    "linea": "light-rail",
+    "linea": ["light-rail"],
     "sistema": "valley-metro-rail",
     "municipio": "Mesa",
     "tipo_zona": "downtown",

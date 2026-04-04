@@ -2,7 +2,7 @@ export const estacionesOttawa = [
   {
     "slug": "blair",
     "nombre": "Blair",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -51,7 +51,7 @@ export const estacionesOttawa = [
   {
     "slug": "cyrville",
     "nombre": "Cyrville",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -100,7 +100,7 @@ export const estacionesOttawa = [
   {
     "slug": "st-laurent",
     "nombre": "St Laurent",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "commercial",
@@ -149,7 +149,7 @@ export const estacionesOttawa = [
   {
     "slug": "tremblay",
     "nombre": "Tremblay",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -198,7 +198,7 @@ export const estacionesOttawa = [
   {
     "slug": "hurdman",
     "nombre": "Hurdman",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "transport",
@@ -249,7 +249,7 @@ export const estacionesOttawa = [
   {
     "slug": "lees",
     "nombre": "Lees",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -298,7 +298,7 @@ export const estacionesOttawa = [
   {
     "slug": "uottawa",
     "nombre": "Uottawa",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "university",
@@ -352,7 +352,7 @@ export const estacionesOttawa = [
   {
     "slug": "rideau",
     "nombre": "Rideau",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "commercial,tourist",
@@ -406,7 +406,7 @@ export const estacionesOttawa = [
   {
     "slug": "parliament",
     "nombre": "Parliament",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "government,cultural",
@@ -460,7 +460,7 @@ export const estacionesOttawa = [
   {
     "slug": "lyon",
     "nombre": "Lyon",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "commercial",
@@ -509,7 +509,7 @@ export const estacionesOttawa = [
   {
     "slug": "pimisi",
     "nombre": "Pimisi",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "cultural",
@@ -563,7 +563,7 @@ export const estacionesOttawa = [
   {
     "slug": "bayview",
     "nombre": "Bayview",
-    "linea": "confederation,trillium",
+    "linea": ["confederation,trillium"],
     "sistema": "o-train-interline",
     "municipio": "Ottawa",
     "tipo_zona": "transport",
@@ -615,7 +615,7 @@ export const estacionesOttawa = [
   {
     "slug": "tunneys-pasture",
     "nombre": "Tunneys Pasture",
-    "linea": "confederation",
+    "linea": ["confederation"],
     "sistema": "o-train-confederation",
     "municipio": "Ottawa",
     "tipo_zona": "commercial",
@@ -664,7 +664,7 @@ export const estacionesOttawa = [
   {
     "slug": "bayview-trillium",
     "nombre": "Bayview Trillium",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "transport",
@@ -710,7 +710,7 @@ export const estacionesOttawa = [
   {
     "slug": "mooney-s-bay",
     "nombre": "Mooney S Bay",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "recreation",
@@ -764,7 +764,7 @@ export const estacionesOttawa = [
   {
     "slug": "greenboro",
     "nombre": "Greenboro",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -813,7 +813,7 @@ export const estacionesOttawa = [
   {
     "slug": "south-keys",
     "nombre": "South Keys",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "commercial",
@@ -862,7 +862,7 @@ export const estacionesOttawa = [
   {
     "slug": "confederation-heights",
     "nombre": "Confederation Heights",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -911,7 +911,7 @@ export const estacionesOttawa = [
   {
     "slug": "walkley",
     "nombre": "Walkley",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -960,7 +960,7 @@ export const estacionesOttawa = [
   {
     "slug": "pleasant-park",
     "nombre": "Pleasant Park",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "recreation",
@@ -1009,7 +1009,7 @@ export const estacionesOttawa = [
   {
     "slug": "carleton",
     "nombre": "Carleton",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "university",
@@ -1063,7 +1063,7 @@ export const estacionesOttawa = [
   {
     "slug": "carling",
     "nombre": "Carling",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "medical",
@@ -1117,7 +1117,7 @@ export const estacionesOttawa = [
   {
     "slug": "limebank",
     "nombre": "Limebank",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "residential",
@@ -1166,7 +1166,7 @@ export const estacionesOttawa = [
   {
     "slug": "bowesville",
     "nombre": "Bowesville",
-    "linea": "trillium",
+    "linea": ["trillium"],
     "sistema": "o-train-trillium",
     "municipio": "Ottawa",
     "tipo_zona": "residential",

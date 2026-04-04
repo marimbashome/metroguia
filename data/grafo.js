@@ -15460,7 +15460,7 @@ export const grafo = {
         "tipo": "linea"
       },
       {
-        "slug": "panteón-queretanos",
+        "slug": "panteon-queretanos",
         "tiempo": 12,
         "linea": "Q1",
         "tipo": "linea"
@@ -16359,7 +16359,7 @@ export const grafo = {
       }
     ]
   },
-  "panteón-queretanos": {
+  "panteon-queretanos": {
     "ciudad": "queretaro",
     "nombre": "Panteón de los Queretanos",
     "lineas": [],

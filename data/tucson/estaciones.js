@@ -2,7 +2,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-mercado-district",
     "nombre": "Mercado District",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "commercial",
@@ -51,7 +51,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-congress-avenida-del-convento",
     "nombre": "Congress/Avenida del Convento",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "cultural",
@@ -100,7 +100,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-congress-granada",
     "nombre": "Congress/Granada",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "cultural",
@@ -149,7 +149,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-stone-congress",
     "nombre": "Stone/Congress",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "commercial",
@@ -198,7 +198,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-broadway-stone",
     "nombre": "Broadway/Stone",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "mixed",
@@ -247,7 +247,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-university-tyndall",
     "nombre": "University/Tyndall",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "university",
@@ -296,7 +296,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-university-park",
     "nombre": "University/Park",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "university",
@@ -345,7 +345,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-university-highland",
     "nombre": "University/Highland",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "university",
@@ -394,7 +394,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-university-campbell",
     "nombre": "University/Campbell",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "medical",
@@ -443,7 +443,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-helen-park",
     "nombre": "Helen/Park",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "residential",
@@ -492,7 +492,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-speedway-park",
     "nombre": "Speedway/Park",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "residential",
@@ -541,7 +541,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-2nd-st-park",
     "nombre": "2nd St/Park",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "commercial",
@@ -590,7 +590,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-6th-st-park",
     "nombre": "6th St/Park",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "commercial",
@@ -639,7 +639,7 @@ export const estacionesTucson = [
   {
     "slug": "tucson-ronstadt-transit-center",
     "nombre": "Ronstadt Transit Center",
-    "linea": "sun-link-blue",
+    "linea": ["sun-link-blue"],
     "sistema": "sun-link-streetcar",
     "municipio": "Tucson",
     "tipo_zona": "transport",

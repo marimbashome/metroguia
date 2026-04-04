@@ -2,7 +2,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-union-station",
     "nombre": "Union Station",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -20,9 +20,9 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "River Market", "tiempo": "20 min" },
-      { "linea": "Main", "destino": "UMKC", "tiempo": "35 min" },
-      { "linea": "Riverfront", "destino": "CPKC Stadium", "tiempo": "15 min (abre mayo 2026)" }
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "20 min" },
+      { "linea": ["Main"], "destino": "UMKC", "tiempo": "35 min" },
+      { "linea": ["Riverfront"], "destino": "CPKC Stadium", "tiempo": "15 min (abre mayo 2026)" }
     ],
     "alternativas_estadio": [
       {
@@ -65,7 +65,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-power-light",
     "nombre": "Power & Light",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -83,8 +83,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "5 min" },
-      { "linea": "Main", "destino": "River Market", "tiempo": "10 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "5 min" },
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "10 min" }
     ],
     "alternativas_estadio": [
       {
@@ -121,7 +121,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-crown-center",
     "nombre": "Crown Center",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -139,8 +139,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "8 min" },
-      { "linea": "Main", "destino": "River Market", "tiempo": "8 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "8 min" },
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "8 min" }
     ],
     "alternativas_estadio": [
       {
@@ -177,7 +177,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-river-market",
     "nombre": "River Market",
-    "linea": "Main/Riverfront",
+    "linea": ["Main/Riverfront"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -195,9 +195,9 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "20 min" },
-      { "linea": "Main", "destino": "UMKC", "tiempo": "40 min" },
-      { "linea": "Riverfront", "destino": "CPKC Stadium", "tiempo": "10 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "20 min" },
+      { "linea": ["Main"], "destino": "UMKC", "tiempo": "40 min" },
+      { "linea": ["Riverfront"], "destino": "CPKC Stadium", "tiempo": "10 min" }
     ],
     "alternativas_estadio": [
       {
@@ -240,7 +240,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-crossroads",
     "nombre": "Crossroads",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -258,8 +258,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "12 min" },
-      { "linea": "Main", "destino": "UMKC", "tiempo": "22 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "12 min" },
+      { "linea": ["Main"], "destino": "UMKC", "tiempo": "22 min" }
     ],
     "alternativas_estadio": [
       {
@@ -296,7 +296,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-westport",
     "nombre": "Westport",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -314,8 +314,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "18 min" },
-      { "linea": "Main", "destino": "UMKC", "tiempo": "18 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "18 min" },
+      { "linea": ["Main"], "destino": "UMKC", "tiempo": "18 min" }
     ],
     "alternativas_estadio": [
       {
@@ -352,7 +352,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-umkc",
     "nombre": "UMKC (51st & Brookside)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -370,8 +370,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Station", "tiempo": "35 min" },
-      { "linea": "Main", "destino": "River Market", "tiempo": "40 min" }
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "35 min" },
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "40 min" }
     ],
     "alternativas_estadio": [
       {
@@ -407,7 +407,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-cpkc-stadium",
     "nombre": "CPKC Stadium (Riverfront)",
-    "linea": "Riverfront",
+    "linea": ["Riverfront"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -425,7 +425,7 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Riverfront", "destino": "River Market", "tiempo": "10 min" }
+      { "linea": ["Riverfront"], "destino": "River Market", "tiempo": "10 min" }
     ],
     "alternativas_estadio": [
       {
@@ -468,7 +468,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-arrowhead-stadium",
     "nombre": "Arrowhead Stadium (Kansas City Royals)",
-    "linea": "Bus ConnectKC26",
+    "linea": ["Bus ConnectKC26"],
     "sistema": "bus",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -486,8 +486,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "ConnectKC26", "destino": "Union Station", "tiempo": "20-30 min vía shuttle" },
-      { "linea": "ConnectKC26", "destino": "Fan Festival", "tiempo": "Variable según ubicación" }
+      { "linea": ["ConnectKC26"], "destino": "Union Station", "tiempo": "20-30 min vía shuttle" },
+      { "linea": ["ConnectKC26"], "destino": "Fan Festival", "tiempo": "Variable según ubicación" }
     ],
     "alternativas_estadio": [
       {
@@ -530,7 +530,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-southmoreland",
     "nombre": "Southmoreland (43rd & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -553,8 +553,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "UMKC", "tiempo": "4 min" },
-      { "linea": "Main", "destino": "Westport", "tiempo": "3 min" }
+      { "linea": ["Main"], "destino": "UMKC", "tiempo": "4 min" },
+      { "linea": ["Main"], "destino": "Westport", "tiempo": "3 min" }
     ],
     "seo_title": "Southmoreland Station — Nelson-Atkins Museum | Kansas City",
     "meta_description": "Southmoreland, estación KC Streetcar junto al Nelson-Atkins Museum of Art. Zona cultural y residencial. GRATIS.",
@@ -583,7 +583,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-armour",
     "nombre": "Armour (35th & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -601,8 +601,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Westport", "tiempo": "2 min" },
-      { "linea": "Main", "destino": "Union Hill", "tiempo": "2 min" }
+      { "linea": ["Main"], "destino": "Westport", "tiempo": "2 min" },
+      { "linea": ["Main"], "destino": "Union Hill", "tiempo": "2 min" }
     ],
     "seo_title": "Armour Station — Midtown Kansas City",
     "meta_description": "Armour, estación KC Streetcar en Midtown KC. Distrito histórico con arquitectura de principios de siglo XX. GRATIS.",
@@ -631,7 +631,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-union-hill",
     "nombre": "Union Hill (31st & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -649,8 +649,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Armour", "tiempo": "2 min" },
-      { "linea": "Main", "destino": "Union Station", "tiempo": "3 min" }
+      { "linea": ["Main"], "destino": "Armour", "tiempo": "2 min" },
+      { "linea": ["Main"], "destino": "Union Station", "tiempo": "3 min" }
     ],
     "seo_title": "Union Hill Station — Barrio residencial Kansas City",
     "meta_description": "Union Hill, estación KC Streetcar. Barrio residencial a minutos de Union Station y Crown Center. GRATIS.",
@@ -679,7 +679,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-kauffman-center",
     "nombre": "Kauffman Center (16th & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -697,8 +697,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Crossroads", "tiempo": "2 min" },
-      { "linea": "Main", "destino": "Power & Light", "tiempo": "2 min" }
+      { "linea": ["Main"], "destino": "Crossroads", "tiempo": "2 min" },
+      { "linea": ["Main"], "destino": "Power & Light", "tiempo": "2 min" }
     ],
     "seo_title": "Kauffman Center Station — Performing Arts Kansas City",
     "meta_description": "Kauffman Center, estación KC Streetcar junto al centro de artes escénicas. Ópera, sinfonía, ballet. GRATIS.",
@@ -727,7 +727,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-city-market",
     "nombre": "City Market (8th & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -745,8 +745,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Crown Center", "tiempo": "1 min" },
-      { "linea": "Main", "destino": "River Market", "tiempo": "1 min" }
+      { "linea": ["Main"], "destino": "Crown Center", "tiempo": "1 min" },
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "1 min" }
     ],
     "seo_title": "City Market Station — Mercado histórico Kansas City",
     "meta_description": "City Market, estación KC Streetcar. Mercado desde 1857 con productos locales, restaurantes y Arabia Steamboat Museum. GRATIS.",
@@ -775,7 +775,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-union-hill-north",
     "nombre": "Union Hill North (5th & Main)",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -793,8 +793,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "River Market", "tiempo": "1 min" },
-      { "linea": "Main", "destino": "5th & Broadway", "tiempo": "1 min" }
+      { "linea": ["Main"], "destino": "River Market", "tiempo": "1 min" },
+      { "linea": ["Main"], "destino": "5th & Broadway", "tiempo": "1 min" }
     ],
     "seo_title": "Union Hill North Station — Downtown Kansas City",
     "meta_description": "Union Hill North, estación KC Streetcar en downtown KC. Zona de gobierno y negocios. GRATIS.",
@@ -823,7 +823,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-5th-broadway",
     "nombre": "5th & Broadway",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -841,8 +841,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "Union Hill North", "tiempo": "1 min" },
-      { "linea": "Main", "destino": "Historic River Boulevard", "tiempo": "1 min" }
+      { "linea": ["Main"], "destino": "Union Hill North", "tiempo": "1 min" },
+      { "linea": ["Main"], "destino": "Historic River Boulevard", "tiempo": "1 min" }
     ],
     "seo_title": "5th & Broadway Station — City Hall Kansas City",
     "meta_description": "5th & Broadway, estación KC Streetcar junto a City Hall. Acceso a Liberty Memorial y National WWI Museum. GRATIS.",
@@ -871,7 +871,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-historic-rbv",
     "nombre": "Historic River Boulevard",
-    "linea": "Main",
+    "linea": ["Main"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -889,7 +889,7 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Main", "destino": "5th & Broadway", "tiempo": "1 min" }
+      { "linea": ["Main"], "destino": "5th & Broadway", "tiempo": "1 min" }
     ],
     "seo_title": "Historic River Boulevard Station — Kansas City",
     "meta_description": "Historic River Boulevard, terminal norte de KC Streetcar Main Line. Barrio histórico Quality Hill. GRATIS.",
@@ -918,7 +918,7 @@ export const estacionesKansasCity = [
   {
     "slug": "kc-riverfront-central",
     "nombre": "Riverfront Central",
-    "linea": "Riverfront",
+    "linea": ["Riverfront"],
     "sistema": "kc-streetcar",
     "ciudad": "Kansas City",
     "municipio": "Kansas City",
@@ -936,8 +936,8 @@ export const estacionesKansasCity = [
       }
     ],
     "transferencias": [
-      { "linea": "Riverfront", "destino": "River Market", "tiempo": "5 min" },
-      { "linea": "Riverfront", "destino": "CPKC Stadium", "tiempo": "5 min" }
+      { "linea": ["Riverfront"], "destino": "River Market", "tiempo": "5 min" },
+      { "linea": ["Riverfront"], "destino": "CPKC Stadium", "tiempo": "5 min" }
     ],
     "seo_title": "Riverfront Central Station — Berkley Riverfront Kansas City",
     "meta_description": "Riverfront Central, estación KC Streetcar Riverfront Extension. Acceso a Berkley Riverfront Park y CPKC Stadium. Abre mayo 2026. GRATIS.",

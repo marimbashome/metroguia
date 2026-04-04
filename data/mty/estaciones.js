@@ -2,7 +2,7 @@ export const estacionesMTY = [
   {
     "slug": "talleres",
     "nombre": "Talleres",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -64,7 +64,7 @@ export const estacionesMTY = [
   {
     "slug": "san-bernabe",
     "nombre": "San Bernabé",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -121,7 +121,7 @@ export const estacionesMTY = [
   {
     "slug": "unidad-modelo",
     "nombre": "Unidad Modelo",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -178,7 +178,7 @@ export const estacionesMTY = [
   {
     "slug": "aztlan",
     "nombre": "Aztlán",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -235,7 +235,7 @@ export const estacionesMTY = [
   {
     "slug": "penitenciaria",
     "nombre": "Penitenciaría",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -292,7 +292,7 @@ export const estacionesMTY = [
   {
     "slug": "alfonso-reyes",
     "nombre": "Alfonso Reyes",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -349,7 +349,7 @@ export const estacionesMTY = [
   {
     "slug": "mitras",
     "nombre": "Mitras",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -406,7 +406,7 @@ export const estacionesMTY = [
   {
     "slug": "simon-bolivar",
     "nombre": "Simón Bolívar",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -463,7 +463,7 @@ export const estacionesMTY = [
   {
     "slug": "hospital",
     "nombre": "Hospital",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "servicios",
     "pois": [
@@ -520,7 +520,7 @@ export const estacionesMTY = [
   {
     "slug": "edison",
     "nombre": "Edison",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -577,7 +577,7 @@ export const estacionesMTY = [
   {
     "slug": "central",
     "nombre": "Central",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -639,7 +639,7 @@ export const estacionesMTY = [
   {
     "slug": "mty-cuauhtemoc",
     "nombre": "Cuauhtémoc",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "historico",
     "pois": [
@@ -704,7 +704,7 @@ export const estacionesMTY = [
   {
     "slug": "del-golfo",
     "nombre": "Del Golfo",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -761,7 +761,7 @@ export const estacionesMTY = [
   {
     "slug": "felix-u-gomez",
     "nombre": "Félix U. Gómez",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -823,7 +823,7 @@ export const estacionesMTY = [
   {
     "slug": "parque-fundidora",
     "nombre": "Parque Fundidora",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -892,7 +892,7 @@ export const estacionesMTY = [
   {
     "slug": "y-griega",
     "nombre": "Y Griega",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -949,7 +949,7 @@ export const estacionesMTY = [
   {
     "slug": "eloy-cavazos",
     "nombre": "Eloy Cavazos",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -1006,7 +1006,7 @@ export const estacionesMTY = [
   {
     "slug": "lerdo-de-tejada",
     "nombre": "Lerdo de Tejada",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Guadalupe",
     "tipo_zona": "residencial",
     "pois": [
@@ -1063,7 +1063,7 @@ export const estacionesMTY = [
   {
     "slug": "exposicion",
     "nombre": "Exposición",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Guadalupe",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1132,7 +1132,7 @@ export const estacionesMTY = [
   {
     "slug": "sendero",
     "nombre": "Sendero",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -1190,7 +1190,7 @@ export const estacionesMTY = [
   {
     "slug": "tapia",
     "nombre": "Tapia",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1248,7 +1248,7 @@ export const estacionesMTY = [
   {
     "slug": "san-nicolas",
     "nombre": "San Nicolás",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "comercial",
     "pois": [
@@ -1306,7 +1306,7 @@ export const estacionesMTY = [
   {
     "slug": "anahuac",
     "nombre": "Anáhuac",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1364,7 +1364,7 @@ export const estacionesMTY = [
   {
     "slug": "mty-universidad",
     "nombre": "Universidad",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1428,7 +1428,7 @@ export const estacionesMTY = [
   {
     "slug": "ninos-heroes",
     "nombre": "Niños Héroes",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1486,7 +1486,7 @@ export const estacionesMTY = [
   {
     "slug": "regina",
     "nombre": "Regina",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "historico",
     "pois": [
@@ -1550,7 +1550,7 @@ export const estacionesMTY = [
   {
     "slug": "general-anaya",
     "nombre": "General Anaya",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1613,7 +1613,7 @@ export const estacionesMTY = [
   {
     "slug": "cuauhtemoc-l2",
     "nombre": "Cuauhtémoc",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1674,7 +1674,7 @@ export const estacionesMTY = [
   {
     "slug": "alameda",
     "nombre": "Alameda",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1737,7 +1737,7 @@ export const estacionesMTY = [
   {
     "slug": "fundadores",
     "nombre": "Fundadores",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1807,7 +1807,7 @@ export const estacionesMTY = [
   {
     "slug": "padre-mier",
     "nombre": "Padre Mier",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1870,7 +1870,7 @@ export const estacionesMTY = [
   {
     "slug": "general-i-zaragoza",
     "nombre": "General I. Zaragoza",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1929,7 +1929,7 @@ export const estacionesMTY = [
   , {
     "slug": "hospital-metropolitano",
     "nombre": "Hospital Metropolitano",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "salud",
     "pois": ["Hospital Metropolitano", "Zona médica", "Clínicas privadas"],
@@ -1977,7 +1977,7 @@ export const estacionesMTY = [
   {
     "slug": "los-angeles",
     "nombre": "Los Ángeles",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": ["Zona residencial Los Ángeles", "Parques vecinales", "Comercio local"],
@@ -2025,7 +2025,7 @@ export const estacionesMTY = [
   {
     "slug": "ruiz-cortines",
     "nombre": "Ruiz Cortines",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial-comercial",
     "pois": ["Av. Ruiz Cortines", "Zona comercial", "Servicios varios"],
@@ -2073,7 +2073,7 @@ export const estacionesMTY = [
   {
     "slug": "moderna",
     "nombre": "Colonia Moderna",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": ["Colonia Moderna", "Zona residencial", "Parques locales"],
@@ -2121,7 +2121,7 @@ export const estacionesMTY = [
   {
     "slug": "metalurgicos",
     "nombre": "Metalúrgicos",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "industrial",
     "pois": ["Zona industrial", "Plantas manufactureras", "Talleres"],
@@ -2169,7 +2169,7 @@ export const estacionesMTY = [
   {
     "slug": "felix-u-gomez-l3",
     "nombre": "Félix U. Gómez",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": ["Mercado", "Zona comercial", "Centro de abastos"],
@@ -2217,7 +2217,7 @@ export const estacionesMTY = [
   {
     "slug": "colonia-obrera",
     "nombre": "Colonia Obrera",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": ["Colonia Obrera", "Zona residencial", "Servicios locales"],
@@ -2265,7 +2265,7 @@ export const estacionesMTY = [
   {
     "slug": "santa-lucia",
     "nombre": "Santa Lucía",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "residencial-comercial",
     "pois": ["Santa Lucía", "Zona mixta", "Comercio y vivienda"],
@@ -2313,7 +2313,7 @@ export const estacionesMTY = [
   {
     "slug": "general-i-zaragoza-l3",
     "nombre": "General I. Zaragoza",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Monterrey",
     "tipo_zona": "transporte",
     "pois": ["Terminal de autobuses", "Zona comercial", "Centro de transportes"],

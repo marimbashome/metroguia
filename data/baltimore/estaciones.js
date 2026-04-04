@@ -2,7 +2,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-owings-mills",
     "nombre": "Owings Mills",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -47,7 +47,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-old-court",
     "nombre": "Old Court",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -90,7 +90,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-milford-mill",
     "nombre": "Milford Mill",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -133,7 +133,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-reisterstown-plaza",
     "nombre": "Reisterstown Plaza",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -178,7 +178,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-rogers-avenue",
     "nombre": "Rogers Avenue",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -221,7 +221,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-west-cold-spring",
     "nombre": "West Cold Spring",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -264,7 +264,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-mondawmin",
     "nombre": "Mondawmin",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -309,7 +309,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-penn-north",
     "nombre": "Penn North",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -354,7 +354,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-upton",
     "nombre": "Upton",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -397,7 +397,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-state-center",
     "nombre": "State Center",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -442,7 +442,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-lexington-market",
     "nombre": "Lexington Market",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -488,7 +488,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-charles-center",
     "nombre": "Charles Center",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -534,7 +534,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-shot-tower",
     "nombre": "Shot Tower",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -579,7 +579,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-johns-hopkins-hospital",
     "nombre": "Johns Hopkins Hospital",
-    "linea": "Subway",
+    "linea": ["Subway"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -625,7 +625,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-hunt-valley",
     "nombre": "Hunt Valley",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -670,7 +670,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-mccormick-road",
     "nombre": "McCormick Road",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -713,7 +713,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-pepper-road",
     "nombre": "Pepper Road",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -756,7 +756,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-lutherville",
     "nombre": "Lutherville",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -801,7 +801,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-falls-road",
     "nombre": "Falls Road",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -844,7 +844,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-mt-washington",
     "nombre": "Mt Washington",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -887,7 +887,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-cold-spring-lane",
     "nombre": "Cold Spring Lane",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -930,7 +930,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-woodberry",
     "nombre": "Woodberry",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -973,7 +973,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-north-avenue",
     "nombre": "North Avenue",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1018,7 +1018,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-penn-station-lr",
     "nombre": "Penn Station",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1066,7 +1066,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-mount-royal",
     "nombre": "Mount Royal",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1109,7 +1109,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-cultural-center",
     "nombre": "Cultural Center",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1154,7 +1154,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-centre-street",
     "nombre": "Centre Street",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1197,7 +1197,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-lexington-market-lr",
     "nombre": "Lexington Market",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1243,7 +1243,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-convention-center",
     "nombre": "Convention Center",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1289,7 +1289,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-camden-yards",
     "nombre": "Camden Yards",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -1340,7 +1340,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-hamburg-street",
     "nombre": "Hamburg Street",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1383,7 +1383,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-westport",
     "nombre": "Westport",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1428,7 +1428,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-cherry-hill",
     "nombre": "Cherry Hill",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1471,7 +1471,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-patapsco",
     "nombre": "Patapsco",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1514,7 +1514,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-nursery-road",
     "nombre": "Nursery Road",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1557,7 +1557,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-north-linthicum",
     "nombre": "North Linthicum",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1600,7 +1600,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-linthicum",
     "nombre": "Linthicum",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1645,7 +1645,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-ferndale",
     "nombre": "Ferndale",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1688,7 +1688,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-cromwell-glen-burnie",
     "nombre": "Cromwell/Glen Burnie",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1733,7 +1733,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-bwi-business-district",
     "nombre": "BWI Business District",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1778,7 +1778,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-bwi-airport",
     "nombre": "BWI Airport",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1826,7 +1826,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-timonium",
     "nombre": "Timonium",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1871,7 +1871,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-timonium-fairgrounds",
     "nombre": "Timonium Fairgrounds",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1916,7 +1916,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-lutherville-north",
     "nombre": "Lutherville North",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -1959,7 +1959,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-warren-road",
     "nombre": "Warren Road",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2002,7 +2002,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-mta-ride-quality",
     "nombre": "MTA Ride Quality",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2045,7 +2045,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-north-avenue-west",
     "nombre": "North Avenue West",
-    "linea": "Lightrail",
+    "linea": ["Lightrail"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -2090,7 +2090,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-perryville",
     "nombre": "Perryville",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2135,7 +2135,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-aberdeen",
     "nombre": "Aberdeen",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2180,7 +2180,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-edgewood",
     "nombre": "Edgewood",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2225,7 +2225,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-martin-airport",
     "nombre": "Martin Airport",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2270,7 +2270,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-penn-station-marc",
     "nombre": "Baltimore Penn Station",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -2324,7 +2324,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-west-baltimore-marc",
     "nombre": "West Baltimore",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2369,7 +2369,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-halethorpe",
     "nombre": "Halethorpe",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2414,7 +2414,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-bwi-airport-marc",
     "nombre": "BWI Airport",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2466,7 +2466,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-odenton",
     "nombre": "Odenton",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2511,7 +2511,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-bowie-state",
     "nombre": "Bowie State",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2557,7 +2557,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-new-carrollton",
     "nombre": "New Carrollton",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2603,7 +2603,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-washington-union-station-penn",
     "nombre": "Washington Union Station",
-    "linea": "Marc-penn",
+    "linea": ["Marc-penn"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2655,7 +2655,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-camden-marc",
     "nombre": "Baltimore Camden",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "commercial",
     "pois": [
@@ -2706,7 +2706,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-st-denis",
     "nombre": "St Denis",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2751,7 +2751,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-dorsey",
     "nombre": "Dorsey",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2796,7 +2796,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-jessup",
     "nombre": "Jessup",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2841,7 +2841,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-savage",
     "nombre": "Savage",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2886,7 +2886,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-laurel",
     "nombre": "Laurel",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2931,7 +2931,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-muirkirk",
     "nombre": "Muirkirk",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -2976,7 +2976,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-greenbelt",
     "nombre": "Greenbelt",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3027,7 +3027,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-college-park",
     "nombre": "College Park",
-    "linea": "Marc-camden",
+    "linea": ["Marc-camden"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3079,7 +3079,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-dickerson",
     "nombre": "Dickerson",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3124,7 +3124,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-barnesville",
     "nombre": "Barnesville",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3169,7 +3169,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-boyds",
     "nombre": "Boyds",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3214,7 +3214,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-germantown",
     "nombre": "Germantown",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3259,7 +3259,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-gaithersburg",
     "nombre": "Gaithersburg",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3309,7 +3309,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-washington-grove",
     "nombre": "Washington Grove",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3354,7 +3354,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-rockville",
     "nombre": "Rockville",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3405,7 +3405,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-garrett-park",
     "nombre": "Garrett Park",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3450,7 +3450,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-kensington",
     "nombre": "Kensington",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3495,7 +3495,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-silver-spring",
     "nombre": "Silver Spring",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [
@@ -3546,7 +3546,7 @@ export const estacionesBaltimore = [
   {
     "slug": "baltimore-washington-union-station-brunswick",
     "nombre": "Washington Union Station",
-    "linea": "Marc-brunswick",
+    "linea": ["Marc-brunswick"],
     "municipio": "Baltimore",
     "tipo_zona": "residential",
     "pois": [

@@ -2,7 +2,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-intermodal-station",
     "nombre": "Milwaukee Intermodal Station",
-    "linea": "lakefront, omni",
+    "linea": ["lakefront, omni"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "transport",
@@ -38,7 +38,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-3rd-street-market-hall",
     "nombre": "3rd Street Market Hall",
-    "linea": "lakefront",
+    "linea": ["lakefront"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "commercial",
@@ -74,7 +74,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-cathedral-square",
     "nombre": "Cathedral Square",
-    "linea": "lakefront",
+    "linea": ["lakefront"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "cultural",
@@ -110,7 +110,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-burns-commons",
     "nombre": "Burns Commons",
-    "linea": "lakefront",
+    "linea": ["lakefront"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "residential",
@@ -146,7 +146,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-brady-farwell",
     "nombre": "Brady & Farwell",
-    "linea": "lakefront",
+    "linea": ["lakefront"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "tourist",
@@ -182,7 +182,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-lakefront",
     "nombre": "Lakefront",
-    "linea": "lakefront",
+    "linea": ["lakefront"],
     "sistema": "the-hop-lakefront",
     "municipio": "Milwaukee",
     "tipo_zona": "tourist",
@@ -218,7 +218,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-vel-phillips",
     "nombre": "Vel R. Phillips & Wisconsin",
-    "linea": "omni",
+    "linea": ["omni"],
     "sistema": "the-hop-omni",
     "municipio": "Milwaukee",
     "tipo_zona": "transport",
@@ -254,7 +254,7 @@ export const estacionesMilwaukee = [
   {
     "slug": "milwaukee-4th-wisconsin",
     "nombre": "4th & Wisconsin",
-    "linea": "omni",
+    "linea": ["omni"],
     "sistema": "the-hop-omni",
     "municipio": "Milwaukee",
     "tipo_zona": "commercial",

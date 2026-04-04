@@ -2,7 +2,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-mgm-grand",
     "nombre": "MGM Grand",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "tourist",
@@ -38,7 +38,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-ballys-paris",
     "nombre": "Bally's/Paris",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "tourist",
@@ -74,7 +74,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-flamingo-caesars",
     "nombre": "Flamingo/Caesars",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "tourist",
@@ -110,7 +110,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-harrahs-linq",
     "nombre": "Harrah's/LINQ",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "tourist",
@@ -146,7 +146,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-convention-center",
     "nombre": "Convention Center",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "commercial",
@@ -182,7 +182,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-westgate",
     "nombre": "Westgate",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "commercial",
@@ -218,7 +218,7 @@ export const estacionesLasVegas = [
   {
     "slug": "las-vegas-sahara",
     "nombre": "SaHaRa",
-    "linea": "monorail",
+    "linea": ["monorail"],
     "sistema": "lv-monorail-monorail",
     "municipio": "Las Vegas",
     "tipo_zona": "tourist",

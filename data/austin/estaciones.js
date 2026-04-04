@@ -2,7 +2,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-downtown-austin",
     "nombre": "Downtown Austin",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "commercial",
@@ -50,7 +50,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-plaza-saltillo",
     "nombre": "Plaza Saltillo",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "cultural",
@@ -98,7 +98,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-highland",
     "nombre": "Highland",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "mixed",
@@ -146,7 +146,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-crestview",
     "nombre": "Crestview",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "residential",
@@ -194,7 +194,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-kramer",
     "nombre": "Kramer",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "commercial",
@@ -242,7 +242,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-howard",
     "nombre": "Howard",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "transport",
@@ -290,7 +290,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-lakeline",
     "nombre": "Lakeline",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "commercial",
@@ -338,7 +338,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-leander",
     "nombre": "Leander",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Leander",
     "tipo_zona": "residential",
@@ -386,7 +386,7 @@ export const estacionesAustin = [
   {
     "slug": "austin-mlk-jr",
     "nombre": "MLK Jr",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "capital-metrorail-red-line",
     "municipio": "Austin",
     "tipo_zona": "cultural",

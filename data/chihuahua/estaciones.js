@@ -2,7 +2,7 @@ export const estacionesChihuahua = [
   {
     "slug": "chihuahua-central",
     "nombre": "Estación Chihuahua Central",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [
@@ -74,7 +74,7 @@ export const estacionesChihuahua = [
   {
     "slug": "cuauhtemoc",
     "nombre": "Cuauhtémoc",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Cuauhtémoc",
     "tipo_zona": "rural-agricola",
     "pois": [
@@ -146,7 +146,7 @@ export const estacionesChihuahua = [
   {
     "slug": "creel",
     "nombre": "Creel",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Creel",
     "tipo_zona": "pueblo-magico-turistico",
     "pois": [
@@ -229,7 +229,7 @@ export const estacionesChihuahua = [
   {
     "slug": "divisadero",
     "nombre": "Divisadero",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Divisadero",
     "tipo_zona": "mirador-turistico",
     "pois": [
@@ -313,7 +313,7 @@ export const estacionesChihuahua = [
   {
     "slug": "posada-barrancas",
     "nombre": "Posada Barrancas",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Posada Barrancas",
     "tipo_zona": "hospedaje-mirador",
     "pois": [
@@ -390,7 +390,7 @@ export const estacionesChihuahua = [
   {
     "slug": "bahuichivo",
     "nombre": "Bahuichivo",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Bahuichivo",
     "tipo_zona": "pueblo-rural",
     "pois": [
@@ -461,7 +461,7 @@ export const estacionesChihuahua = [
   {
     "slug": "el-fuerte",
     "nombre": "El Fuerte",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "El Fuerte",
     "tipo_zona": "pueblo-colonial",
     "pois": [
@@ -544,7 +544,7 @@ export const estacionesChihuahua = [
   {
     "slug": "los-mochis",
     "nombre": "Los Mochis",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Los Mochis",
     "tipo_zona": "terminal",
     "pois": [
@@ -622,7 +622,7 @@ export const estacionesChihuahua = [
   {
     "slug": "centro-chihuahua",
     "nombre": "Centro Histórico",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-turistico",
     "pois": [
@@ -700,7 +700,7 @@ export const estacionesChihuahua = [
   {
     "slug": "palacio-gobierno",
     "nombre": "Palacio de Gobierno",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-administrativo",
     "pois": [
@@ -772,7 +772,7 @@ export const estacionesChihuahua = [
   {
     "slug": "catedral-chihuahua",
     "nombre": "Catedral Metropolitana",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "religioso-turistico",
     "pois": [
@@ -844,7 +844,7 @@ export const estacionesChihuahua = [
   {
     "slug": "zona-dorada-chi",
     "nombre": "Zona Dorada",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial-turistica",
     "pois": [
@@ -921,7 +921,7 @@ export const estacionesChihuahua = [
   {
     "slug": "uach",
     "nombre": "UACH (Universidad Autónoma de Chihuahua)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -993,7 +993,7 @@ export const estacionesChihuahua = [
   {
     "slug": "museo-quinta-gameros",
     "nombre": "Museo Quinta Gameros",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "museo-historico",
     "pois": [
@@ -1066,7 +1066,7 @@ export const estacionesChihuahua = [
   {
     "slug": "pancho-villa-museo",
     "nombre": "Museo de la Revolución (Hacienda de Villa)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-museo",
     "pois": [
@@ -1139,7 +1139,7 @@ export const estacionesChihuahua = [
   {
     "slug": "terminal-norte-bowi",
     "nombre": "Terminal Norte Bowí",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [
@@ -1211,7 +1211,7 @@ export const estacionesChihuahua = [
   {
     "slug": "periferico-norte",
     "nombre": "Periférico Norte",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial",
     "pois": [
@@ -1283,7 +1283,7 @@ export const estacionesChihuahua = [
   {
     "slug": "universidad-chihuahua",
     "nombre": "Universidad de Chihuahua",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -1355,7 +1355,7 @@ export const estacionesChihuahua = [
   {
     "slug": "tecnologico-chihuahua",
     "nombre": "Tecnológico de Chihuahua",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -1427,7 +1427,7 @@ export const estacionesChihuahua = [
   {
     "slug": "sacramento",
     "nombre": "Sacramento",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -1499,7 +1499,7 @@ export const estacionesChihuahua = [
   {
     "slug": "ninos-heroes-chi",
     "nombre": "Niños Héroes",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-residencial",
     "pois": [
@@ -1648,7 +1648,7 @@ export const estacionesChihuahua = [
   {
     "slug": "independencia-chi",
     "nombre": "Independencia",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -1720,7 +1720,7 @@ export const estacionesChihuahua = [
   {
     "slug": "americas-chi",
     "nombre": "Américas",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial",
     "pois": [
@@ -1792,7 +1792,7 @@ export const estacionesChihuahua = [
   {
     "slug": "altavista-chi",
     "nombre": "Altavista",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -1864,7 +1864,7 @@ export const estacionesChihuahua = [
   {
     "slug": "cantera-chi",
     "nombre": "Cantera",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "industrial-comercial",
     "pois": [
@@ -1936,7 +1936,7 @@ export const estacionesChihuahua = [
   {
     "slug": "campestre-chi",
     "nombre": "Campestre",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -2008,7 +2008,7 @@ export const estacionesChihuahua = [
   {
     "slug": "vialidad-sacramento",
     "nombre": "Vialidad Sacramento",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -2080,7 +2080,7 @@ export const estacionesChihuahua = [
   {
     "slug": "terminal-sur-bowi",
     "nombre": "Terminal Sur Bowí",
-    "linea": "3",
+    "linea": ["3"],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [

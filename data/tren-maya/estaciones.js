@@ -2,7 +2,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "palenque",
     "nombre": "Palenque",
-    "linea": "T1",
+    "linea": ["T1"],
     "municipio": "Palenque, Chiapas",
     "tipo_zona": "arqueologico-selva",
     "pois": [
@@ -86,7 +86,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "boca-del-cerro",
     "nombre": "Boca del Cerro",
-    "linea": "T1",
+    "linea": ["T1"],
     "municipio": "Tenosique, Tabasco",
     "tipo_zona": "puerto-transporte",
     "pois": [
@@ -163,7 +163,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "tenosique",
     "nombre": "Tenosique",
-    "linea": "T1",
+    "linea": ["T1"],
     "municipio": "Tenosique, Tabasco",
     "tipo_zona": "ciudad-fronteriza",
     "pois": [
@@ -240,7 +240,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "escarcega",
     "nombre": "Escárcega",
-    "linea": "T2",
+    "linea": ["T2"],
     "municipio": "Escárcega, Campeche",
     "tipo_zona": "ciudad-transporte",
     "pois": [
@@ -318,7 +318,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "candelaria",
     "nombre": "Candelaria",
-    "linea": "T2",
+    "linea": ["T2"],
     "municipio": "Candelaria, Campeche",
     "tipo_zona": "rural-transporte",
     "pois": [
@@ -390,7 +390,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "calkini",
     "nombre": "Calkiní",
-    "linea": "T2",
+    "linea": ["T2"],
     "municipio": "Calkiní, Campeche",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -467,7 +467,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "campeche-central",
     "nombre": "San Francisco de Campeche",
-    "linea": "T3",
+    "linea": ["T3"],
     "municipio": "San Francisco de Campeche, Campeche",
     "tipo_zona": "ciudad-patrimonio",
     "pois": [
@@ -550,7 +550,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "edzna",
     "nombre": "Edzná",
-    "linea": "T3",
+    "linea": ["T3"],
     "municipio": "Edzná, Campeche",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -628,7 +628,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "maxcanu",
     "nombre": "Maxcanú",
-    "linea": "T3",
+    "linea": ["T3"],
     "municipio": "Maxcanú, Yucatán",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -700,7 +700,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "merida-teya",
     "nombre": "Mérida (Teya)",
-    "linea": "T3",
+    "linea": ["T3"],
     "municipio": "Mérida, Yucatán",
     "tipo_zona": "ciudad-transporte",
     "pois": [
@@ -788,7 +788,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "tixkokob",
     "nombre": "Tixkokob",
-    "linea": "T4",
+    "linea": ["T4"],
     "municipio": "Tixkokob, Yucatán",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -860,7 +860,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "izamal",
     "nombre": "Izamal",
-    "linea": "T4",
+    "linea": ["T4"],
     "municipio": "Izamal, Yucatán",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -948,7 +948,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "chichen-itza",
     "nombre": "Chichén Itzá",
-    "linea": "T4",
+    "linea": ["T4"],
     "municipio": "Chichén Itzá, Yucatán",
     "tipo_zona": "arqueologico-maravilla",
     "pois": [
@@ -1036,7 +1036,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "valladolid",
     "nombre": "Valladolid",
-    "linea": "T4",
+    "linea": ["T4"],
     "municipio": "Valladolid, Yucatán",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -1124,7 +1124,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "nuevo-xcan",
     "nombre": "Nuevo Xcán",
-    "linea": "T5N",
+    "linea": ["T5N"],
     "municipio": "Nuevo Xcán, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1196,7 +1196,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "cancun-aeropuerto",
     "nombre": "Cancún (Aeropuerto)",
-    "linea": "T5N",
+    "linea": ["T5N"],
     "municipio": "Benito Juárez, Quintana Roo",
     "tipo_zona": "transporte-aereo",
     "pois": [
@@ -1273,7 +1273,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "cancun",
     "nombre": "Cancún",
-    "linea": "T5N",
+    "linea": ["T5N"],
     "municipio": "Benito Juárez, Quintana Roo",
     "tipo_zona": "transporte-turistico",
     "pois": [
@@ -1361,7 +1361,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "puerto-morelos",
     "nombre": "Puerto Morelos",
-    "linea": "T5N",
+    "linea": ["T5N"],
     "municipio": "Puerto Morelos, Quintana Roo",
     "tipo_zona": "playa-transporte",
     "pois": [
@@ -1443,7 +1443,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "playa-del-carmen",
     "nombre": "Playa del Carmen",
-    "linea": "T5S",
+    "linea": ["T5S"],
     "municipio": "Solidaridad, Quintana Roo",
     "tipo_zona": "playa-turistico",
     "pois": [
@@ -1531,7 +1531,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "xcaret",
     "nombre": "Xcaret",
-    "linea": "T5S",
+    "linea": ["T5S"],
     "municipio": "Solidaridad, Quintana Roo",
     "tipo_zona": "parque-tematico",
     "pois": [
@@ -1619,7 +1619,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "tulum-aeropuerto",
     "nombre": "Tulum (Aeropuerto)",
-    "linea": "T5S",
+    "linea": ["T5S"],
     "municipio": "Tulum, Quintana Roo",
     "tipo_zona": "transporte-aereo",
     "pois": [
@@ -1696,7 +1696,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "tulum",
     "nombre": "Tulum",
-    "linea": "T5S",
+    "linea": ["T5S"],
     "municipio": "Tulum, Quintana Roo",
     "tipo_zona": "arqueologico-playa",
     "pois": [
@@ -1784,7 +1784,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "felipe-carrillo-puerto",
     "nombre": "Felipe Carrillo Puerto",
-    "linea": "T6",
+    "linea": ["T6"],
     "municipio": "Felipe Carrillo Puerto, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1861,7 +1861,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "limones",
     "nombre": "Limones",
-    "linea": "T6",
+    "linea": ["T6"],
     "municipio": "Limones, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1933,7 +1933,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "nicolas-bravo",
     "nombre": "Nicolás Bravo",
-    "linea": "T6",
+    "linea": ["T6"],
     "municipio": "Nicolás Bravo, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -2005,7 +2005,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "bacalar",
     "nombre": "Bacalar",
-    "linea": "T6",
+    "linea": ["T6"],
     "municipio": "Bacalar, Quintana Roo",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -2093,7 +2093,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "chetumal",
     "nombre": "Chetumal",
-    "linea": "T7",
+    "linea": ["T7"],
     "municipio": "Chetumal, Quintana Roo",
     "tipo_zona": "ciudad-puerto",
     "pois": [
@@ -2181,7 +2181,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "agua-azul",
     "nombre": "Agua Azul",
-    "linea": "T7",
+    "linea": ["T7"],
     "municipio": "Ocosingo, Chiapas",
     "tipo_zona": "cascadas-naturales",
     "pois": [
@@ -2264,7 +2264,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "calakmul-balamku",
     "nombre": "Calakmul - Balamkú",
-    "linea": "T7",
+    "linea": ["T7"],
     "municipio": "Calakmul, Campeche",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -2347,7 +2347,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "uxmal",
     "nombre": "Uxmal",
-    "linea": "T7",
+    "linea": ["T7"],
     "municipio": "Uxmal, Yucatán",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -2430,7 +2430,7 @@ export const estacionesTrenMaya = [
   {
     "slug": "merida-oriente",
     "nombre": "Mérida Oriente",
-    "linea": "T7",
+    "linea": ["T7"],
     "municipio": "Mérida, Yucatán",
     "tipo_zona": "ciudad-transporte",
     "pois": [

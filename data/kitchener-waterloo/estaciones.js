@@ -2,7 +2,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-conestoga",
     "nombre": "Conestoga",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "transport",
@@ -30,7 +30,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-northfield",
     "nombre": "Northfield",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "residential",
@@ -58,7 +58,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-research-and-technology",
     "nombre": "Research and Technology",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "commercial",
@@ -86,7 +86,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-university-of-waterloo",
     "nombre": "University of Waterloo",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "university",
@@ -114,7 +114,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-laurier-waterloo-park",
     "nombre": "Laurier/Waterloo Park",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "university",
@@ -142,7 +142,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-waterloo-public-square",
     "nombre": "Waterloo Public Square",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "commercial",
@@ -170,7 +170,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-allen",
     "nombre": "Allen",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "residential",
@@ -198,7 +198,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-grand-river-hospital",
     "nombre": "Grand River Hospital",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "medical",
@@ -226,7 +226,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-central-station",
     "nombre": "Central Station",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "transport",
@@ -254,7 +254,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-victoria-park",
     "nombre": "Victoria Park",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "cultural",
@@ -282,7 +282,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-kitchener-city-hall",
     "nombre": "Kitchener City Hall",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "government",
@@ -310,7 +310,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-borden",
     "nombre": "Borden",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "residential",
@@ -338,7 +338,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-mill",
     "nombre": "Mill",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "commercial",
@@ -366,7 +366,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-block-line",
     "nombre": "Block Line",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "residential",
@@ -394,7 +394,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-sportsworld",
     "nombre": "Sportsworld",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "commercial",
@@ -422,7 +422,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-fairway",
     "nombre": "Fairway",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ION Light Rail Transit",
     "municipio": "Kitchener-Waterloo",
     "tipo_zona": "transport",
@@ -450,7 +450,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-preston",
     "nombre": "Preston",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ion-ion",
     "municipio": "Cambridge",
     "tipo_zona": "residential",
@@ -478,7 +478,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-pinebush",
     "nombre": "Pinebush",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ion-ion",
     "municipio": "Cambridge",
     "tipo_zona": "commercial",
@@ -506,7 +506,7 @@ export const estacionesKitchenerWaterloo = [
   {
     "slug": "kitchener-waterloo-ainslie-street-terminal",
     "nombre": "Ainslie Street Terminal",
-    "linea": "ion",
+    "linea": ["ion"],
     "sistema": "ion-ion",
     "municipio": "Cambridge",
     "tipo_zona": "transport",

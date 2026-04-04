@@ -2,7 +2,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-convention-center",
     "nombre": "Convention Center",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "commercial",
@@ -50,7 +50,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-sheridan-walker",
     "nombre": "Sheridan/Walker",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "commercial",
@@ -98,7 +98,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-bricktown-east",
     "nombre": "Bricktown East",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "tourist",
@@ -145,7 +145,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-bricktown-west",
     "nombre": "Bricktown West",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "tourist",
@@ -193,7 +193,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-automobile-alley",
     "nombre": "Automobile Alley",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "cultural",
@@ -241,7 +241,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-midtown",
     "nombre": "Midtown",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "mixed",
@@ -289,7 +289,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-st-anthony",
     "nombre": "St. Anthony",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "residential",
@@ -337,7 +337,7 @@ export const estacionesOklahomaCity = [
   {
     "slug": "oklahoma-city-santa-fe-station",
     "nombre": "Santa Fe Station",
-    "linea": "okc-streetcar-blue",
+    "linea": ["okc-streetcar-blue"],
     "sistema": "embark-oklahoma-city-streetcar",
     "municipio": "Oklahoma City",
     "tipo_zona": "cultural",

@@ -2,7 +2,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-1-av",
     "nombre": "1 Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -36,7 +36,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-103-st",
     "nombre": "103 St",
-    "linea": "1,C",
+    "linea": ["1,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -70,7 +70,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-103-st-corona-plaza",
     "nombre": "103 St-Corona Plaza",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -104,7 +104,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-104-st",
     "nombre": "104 St",
-    "linea": "A,J",
+    "linea": ["A,J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -138,7 +138,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-110-st",
     "nombre": "110 St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -172,7 +172,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-111-st",
     "nombre": "111 St",
-    "linea": "7,A,J",
+    "linea": ["7,A,J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -207,7 +207,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-116-st",
     "nombre": "116 St",
-    "linea": "2,3,6,B,C",
+    "linea": ["2,3,6,B,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -242,7 +242,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-116-st-columbia-university",
     "nombre": "116 St-Columbia University",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -276,7 +276,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-121-st",
     "nombre": "121 St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -310,7 +310,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-125-st",
     "nombre": "125 St",
-    "linea": "1,2,3,4,5,6,A,B,C,D",
+    "linea": ["1,2,3,4,5,6,A,B,C,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "historico-cultural",
@@ -358,7 +358,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-135-st",
     "nombre": "135 St",
-    "linea": "2,3,B,C",
+    "linea": ["2,3,B,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -393,7 +393,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-137-st-city-college",
     "nombre": "137 St-City College",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -427,7 +427,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-138-st-grand-concourse",
     "nombre": "138 St-Grand Concourse",
-    "linea": "4,5",
+    "linea": ["4,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -461,7 +461,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-14-st",
     "nombre": "14 St",
-    "linea": "1,2,3,A,C,E,F,M",
+    "linea": ["1,2,3,A,C,E,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -496,7 +496,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-14-st-union-sq",
     "nombre": "14 St-Union Sq",
-    "linea": "4,5,6,N,Q,R,W",
+    "linea": ["4,5,6,N,Q,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial-cultural",
@@ -555,7 +555,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-145-st",
     "nombre": "145 St",
-    "linea": "1,3,A,B,C,D",
+    "linea": ["1,3,A,B,C,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -590,7 +590,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-149-st-grand-concourse",
     "nombre": "149 St-Grand Concourse",
-    "linea": "2,4,5",
+    "linea": ["2,4,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -625,7 +625,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-15-st-prospect-park",
     "nombre": "15 St-Prospect Park",
-    "linea": "F,G",
+    "linea": ["F,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -659,7 +659,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-155-st",
     "nombre": "155 St",
-    "linea": "C,D",
+    "linea": ["C,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -693,7 +693,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-157-st",
     "nombre": "157 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -727,7 +727,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-161-st-yankee-stadium",
     "nombre": "161 St-Yankee Stadium",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "deportes",
@@ -774,7 +774,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-163-st-amsterdam-av",
     "nombre": "163 St-Amsterdam Av",
-    "linea": "C",
+    "linea": ["C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -808,7 +808,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-167-st",
     "nombre": "167 St",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -842,7 +842,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-168-st",
     "nombre": "168 St",
-    "linea": "1,A,C",
+    "linea": ["1,A,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -877,7 +877,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-169-st",
     "nombre": "169 St",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -911,7 +911,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-170-st",
     "nombre": "170 St",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -945,7 +945,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-174-st",
     "nombre": "174 St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -979,7 +979,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-174-175-sts",
     "nombre": "174-175 Sts",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1013,7 +1013,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-175-st",
     "nombre": "175 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1047,7 +1047,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-176-st",
     "nombre": "176 St",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1081,7 +1081,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-18-av",
     "nombre": "18 Av",
-    "linea": "D,F,N",
+    "linea": ["D,F,N"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -1116,7 +1116,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-18-st",
     "nombre": "18 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1150,7 +1150,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-181-st",
     "nombre": "181 St",
-    "linea": "1,A",
+    "linea": ["1,A"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1184,7 +1184,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-182-183-sts",
     "nombre": "182-183 Sts",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1218,7 +1218,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-183-st",
     "nombre": "183 St",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1252,7 +1252,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-190-st",
     "nombre": "190 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1286,7 +1286,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-191-st",
     "nombre": "191 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1320,7 +1320,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-2-av",
     "nombre": "2 Av",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1354,7 +1354,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-20-av",
     "nombre": "20 Av",
-    "linea": "D,N",
+    "linea": ["D,N"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -1388,7 +1388,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-207-st",
     "nombre": "207 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1422,7 +1422,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-21-st",
     "nombre": "21 St",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -1456,7 +1456,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-21-st-queensbridge",
     "nombre": "21 St-Queensbridge",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -1490,7 +1490,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-215-st",
     "nombre": "215 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1524,7 +1524,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-219-st",
     "nombre": "219 St",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1558,7 +1558,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-225-st",
     "nombre": "225 St",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1592,7 +1592,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-23-st",
     "nombre": "23 St",
-    "linea": "1,4,5,6,C,F,M,N,R,W",
+    "linea": ["1,4,5,6,C,F,M,N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1627,7 +1627,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-231-st",
     "nombre": "231 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1661,7 +1661,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-233-st",
     "nombre": "233 St",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1695,7 +1695,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-238-st",
     "nombre": "238 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1729,7 +1729,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-25-av",
     "nombre": "25 Av",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -1763,7 +1763,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-25-st",
     "nombre": "25 St",
-    "linea": "D,R",
+    "linea": ["D,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -1797,7 +1797,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-28-st",
     "nombre": "28 St",
-    "linea": "1,4,5,6,N,R,W",
+    "linea": ["1,4,5,6,N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1832,7 +1832,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-3-av",
     "nombre": "3 Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -1866,7 +1866,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-3-av-138-st",
     "nombre": "3 Av-138 St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1900,7 +1900,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-3-av-149-st",
     "nombre": "3 Av-149 St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -1934,7 +1934,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-30-av",
     "nombre": "30 Av",
-    "linea": "N,W",
+    "linea": ["N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -1968,7 +1968,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-33-st",
     "nombre": "33 St",
-    "linea": "4,5,6",
+    "linea": ["4,5,6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2003,7 +2003,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-33-st-rawson-st",
     "nombre": "33 St-Rawson St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2037,7 +2037,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-34-st-herald-sq",
     "nombre": "34 St-Herald Sq",
-    "linea": "B,D,F,M,N,Q,R,W",
+    "linea": ["B,D,F,M,N,Q,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2096,7 +2096,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-34-st-hudson-yards",
     "nombre": "34 St-Hudson Yards",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2130,7 +2130,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-34-st-penn-station",
     "nombre": "34 St-Penn Station",
-    "linea": "1,2,3,A,C,E",
+    "linea": ["1,2,3,A,C,E"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "transporte-comercio",
@@ -2189,7 +2189,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-36-av",
     "nombre": "36 Av",
-    "linea": "N,W",
+    "linea": ["N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2223,7 +2223,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-36-st",
     "nombre": "36 St",
-    "linea": "D,E,F,M,N,R",
+    "linea": ["D,E,F,M,N,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -2258,7 +2258,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-39-av-dutch-kills",
     "nombre": "39 Av-Dutch Kills",
-    "linea": "N,W",
+    "linea": ["N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2292,7 +2292,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-4-av-9-st",
     "nombre": "4 Av-9 St",
-    "linea": "F,G,R",
+    "linea": ["F,G,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -2327,7 +2327,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-40-st-lowery-st",
     "nombre": "40 St-Lowery St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2361,7 +2361,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-42-st-bryant-park",
     "nombre": "42 St-Bryant Park",
-    "linea": "B,D,F,M",
+    "linea": ["B,D,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2396,7 +2396,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-42-st-port-authority-bus-terminal",
     "nombre": "42 St-Port Authority Bus Terminal",
-    "linea": "A,C,E",
+    "linea": ["A,C,E"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2431,7 +2431,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-45-st",
     "nombre": "45 St",
-    "linea": "D,N,R",
+    "linea": ["D,N,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -2466,7 +2466,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-46-st",
     "nombre": "46 St",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2501,7 +2501,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-46-st-bliss-st",
     "nombre": "46 St-Bliss St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2535,7 +2535,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-47-50-sts-rockefeller-ctr",
     "nombre": "47-50 Sts-Rockefeller Ctr",
-    "linea": "B,D,F,M",
+    "linea": ["B,D,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico-comercial",
@@ -2588,7 +2588,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-49-st",
     "nombre": "49 St",
-    "linea": "N,Q,R,W",
+    "linea": ["N,Q,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2623,7 +2623,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-5-av-53-st",
     "nombre": "5 Av-53 St",
-    "linea": "E,M",
+    "linea": ["E,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2657,7 +2657,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-5-av-59-st",
     "nombre": "5 Av-59 St",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2692,7 +2692,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-5-av-bryant-park",
     "nombre": "5 Av-Bryant Park",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2726,7 +2726,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-50-st",
     "nombre": "50 St",
-    "linea": "1,C,D",
+    "linea": ["1,C,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2761,7 +2761,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-51-st",
     "nombre": "51 St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2795,7 +2795,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-52-st",
     "nombre": "52 St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -2829,7 +2829,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-53-st",
     "nombre": "53 St",
-    "linea": "N,R",
+    "linea": ["N,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -2863,7 +2863,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-55-st",
     "nombre": "55 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -2897,7 +2897,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-57-st",
     "nombre": "57 St",
-    "linea": "F,M",
+    "linea": ["F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2931,7 +2931,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-57-st-7-av",
     "nombre": "57 St-7 Av",
-    "linea": "N,Q,R,W",
+    "linea": ["N,Q,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -2966,7 +2966,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-59-st",
     "nombre": "59 St",
-    "linea": "4,5,6,N,R",
+    "linea": ["4,5,6,N,R"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3001,7 +3001,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-59-st-columbus-circle",
     "nombre": "59 St-Columbus Circle",
-    "linea": "1,A,B,C,D",
+    "linea": ["1,A,B,C,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "cultural-comercio",
@@ -3060,7 +3060,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-6-av",
     "nombre": "6 Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3094,7 +3094,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-61-st-woodside",
     "nombre": "61 St-Woodside",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3128,7 +3128,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-62-st",
     "nombre": "62 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -3162,7 +3162,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-63-dr-rego-park",
     "nombre": "63 Dr-Rego Park",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3197,7 +3197,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-65-st",
     "nombre": "65 St",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3232,7 +3232,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-66-st-lincoln-center",
     "nombre": "66 St-Lincoln Center",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3266,7 +3266,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-67-av",
     "nombre": "67 Av",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3301,7 +3301,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-68-st-hunter-college",
     "nombre": "68 St-Hunter College",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3335,7 +3335,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-69-st",
     "nombre": "69 St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3369,7 +3369,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-7-av",
     "nombre": "7 Av",
-    "linea": "B,D,F,G,Q",
+    "linea": ["B,D,F,G,Q"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3404,7 +3404,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-71-st",
     "nombre": "71 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -3438,7 +3438,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-72-st",
     "nombre": "72 St",
-    "linea": "1,2,3,B,C,Q",
+    "linea": ["1,2,3,B,C,Q"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3473,7 +3473,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-74-st-broadway",
     "nombre": "74 St-Broadway",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3507,7 +3507,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-75-av",
     "nombre": "75 Av",
-    "linea": "E,F",
+    "linea": ["E,F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3541,7 +3541,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-75-st-elderts-ln",
     "nombre": "75 St-Elderts Ln",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3575,7 +3575,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-77-st",
     "nombre": "77 St",
-    "linea": "6,R",
+    "linea": ["6,R"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3609,7 +3609,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-79-st",
     "nombre": "79 St",
-    "linea": "1,D",
+    "linea": ["1,D"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3643,7 +3643,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-8-av",
     "nombre": "8 Av",
-    "linea": "L,N",
+    "linea": ["L,N"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3677,7 +3677,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-8-st-nyu",
     "nombre": "8 St-NYU",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3712,7 +3712,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-80-st",
     "nombre": "80 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3746,7 +3746,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-81-st-museum-of-natural-history",
     "nombre": "81 St-Museum of Natural History",
-    "linea": "B,C",
+    "linea": ["B,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "cultural",
@@ -3798,7 +3798,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-82-st-jackson-hts",
     "nombre": "82 St-Jackson Hts",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3832,7 +3832,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-85-st-forest-pkwy",
     "nombre": "85 St-Forest Pkwy",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3866,7 +3866,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-86-st",
     "nombre": "86 St",
-    "linea": "1,4,5,6,C,N,Q,R",
+    "linea": ["1,4,5,6,C,N,Q,R"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -3901,7 +3901,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-88-st",
     "nombre": "88 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -3935,7 +3935,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-9-st",
     "nombre": "9 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -3969,7 +3969,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-90-st-elmhurst-av",
     "nombre": "90 St-Elmhurst Av",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4003,7 +4003,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-96-st",
     "nombre": "96 St",
-    "linea": "1,2,3,6,C,Q",
+    "linea": ["1,2,3,6,C,Q"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -4038,7 +4038,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-alabama-av",
     "nombre": "Alabama Av",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4072,7 +4072,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-allerton-av",
     "nombre": "Allerton Av",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -4106,7 +4106,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-annadale",
     "nombre": "Annadale",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -4140,7 +4140,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-aqueduct-racetrack",
     "nombre": "Aqueduct Racetrack",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4174,7 +4174,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-aqueduct-north-conduit-av",
     "nombre": "Aqueduct-North Conduit Av",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4208,7 +4208,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-astor-pl",
     "nombre": "Astor Pl",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -4242,7 +4242,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-astoria-blvd",
     "nombre": "Astoria Blvd",
-    "linea": "N,W",
+    "linea": ["N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4276,7 +4276,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-astoria-ditmars-blvd",
     "nombre": "Astoria-Ditmars Blvd",
-    "linea": "N,W",
+    "linea": ["N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4310,7 +4310,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-atlantic",
     "nombre": "Atlantic",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -4344,7 +4344,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-atlantic-av",
     "nombre": "Atlantic Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4378,7 +4378,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-atlantic-av-barclays-ctr",
     "nombre": "Atlantic Av-Barclays Ctr",
-    "linea": "2,3,5,B,D,N,Q,R",
+    "linea": ["2,3,5,B,D,N,Q,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercio-deportes",
@@ -4437,7 +4437,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-h",
     "nombre": "Av H",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4471,7 +4471,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-i",
     "nombre": "Av I",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4505,7 +4505,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-j",
     "nombre": "Av J",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4539,7 +4539,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-m",
     "nombre": "Av M",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4573,7 +4573,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-n",
     "nombre": "Av N",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4607,7 +4607,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-p",
     "nombre": "Av P",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4641,7 +4641,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-u",
     "nombre": "Av U",
-    "linea": "F,N,Q",
+    "linea": ["F,N,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4676,7 +4676,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-av-x",
     "nombre": "Av X",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4710,7 +4710,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bay-50-st",
     "nombre": "Bay 50 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4744,7 +4744,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bay-pkwy",
     "nombre": "Bay Pkwy",
-    "linea": "D,F,N",
+    "linea": ["D,F,N"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4779,7 +4779,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bay-ridge-av",
     "nombre": "Bay Ridge Av",
-    "linea": "R",
+    "linea": ["R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4813,7 +4813,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bay-ridge-95-st",
     "nombre": "Bay Ridge-95 St",
-    "linea": "R",
+    "linea": ["R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -4847,7 +4847,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bay-terrace",
     "nombre": "Bay Terrace",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -4881,7 +4881,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-baychester-av",
     "nombre": "Baychester Av",
-    "linea": "5",
+    "linea": ["5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -4915,7 +4915,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-105-st",
     "nombre": "Beach 105 St",
-    "linea": "S-Rockaway",
+    "linea": ["S-Rockaway"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4949,7 +4949,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-25-st",
     "nombre": "Beach 25 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -4983,7 +4983,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-36-st",
     "nombre": "Beach 36 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5017,7 +5017,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-44-st",
     "nombre": "Beach 44 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5051,7 +5051,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-60-st",
     "nombre": "Beach 60 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5085,7 +5085,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-67-st",
     "nombre": "Beach 67 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5119,7 +5119,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-90-st",
     "nombre": "Beach 90 St",
-    "linea": "A,S-Rockaway",
+    "linea": ["A,S-Rockaway"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5153,7 +5153,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beach-98-st",
     "nombre": "Beach 98 St",
-    "linea": "S-Rockaway",
+    "linea": ["S-Rockaway"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5187,7 +5187,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bedford-av",
     "nombre": "Bedford Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "cultural-entretenimiento",
@@ -5234,7 +5234,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bedford-park-blvd",
     "nombre": "Bedford Park Blvd",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -5268,7 +5268,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bedford-nostrand-avs",
     "nombre": "Bedford-Nostrand Avs",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5302,7 +5302,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bergen-st",
     "nombre": "Bergen St",
-    "linea": "2,3,F,G",
+    "linea": ["2,3,F,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5337,7 +5337,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-beverly-rd",
     "nombre": "Beverly Rd",
-    "linea": "2,5,B,Q",
+    "linea": ["2,5,B,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5372,7 +5372,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bleecker-st",
     "nombre": "Bleecker St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -5406,7 +5406,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-borough-hall",
     "nombre": "Borough Hall",
-    "linea": "2,3,5",
+    "linea": ["2,3,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5441,7 +5441,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-botanic-garden",
     "nombre": "Botanic Garden",
-    "linea": "S-Franklin",
+    "linea": ["S-Franklin"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5475,7 +5475,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bowery",
     "nombre": "Bowery",
-    "linea": "J,M",
+    "linea": ["J,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -5509,7 +5509,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bowling-green",
     "nombre": "Bowling Green",
-    "linea": "4,5",
+    "linea": ["4,5"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico-historico",
@@ -5567,7 +5567,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-briarwood",
     "nombre": "Briarwood",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5601,7 +5601,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-brighton-beach",
     "nombre": "Brighton Beach",
-    "linea": "B,Q",
+    "linea": ["B,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5635,7 +5635,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-broad-channel",
     "nombre": "Broad Channel",
-    "linea": "A,S-Rockaway",
+    "linea": ["A,S-Rockaway"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -5669,7 +5669,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-broad-st",
     "nombre": "Broad St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -5703,7 +5703,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-broadway",
     "nombre": "Broadway",
-    "linea": "G,N,W",
+    "linea": ["G,N,W"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5738,7 +5738,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-broadway-junction",
     "nombre": "Broadway Junction",
-    "linea": "A,C,J,L",
+    "linea": ["A,C,J,L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -5773,7 +5773,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-broadway-lafayette-st",
     "nombre": "Broadway-Lafayette St",
-    "linea": "B,D,F,M",
+    "linea": ["B,D,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -5808,7 +5808,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bronx-park-east",
     "nombre": "Bronx Park East",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -5842,7 +5842,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-brook-av",
     "nombre": "Brook Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -5876,7 +5876,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-brooklyn-bridge-city-hall",
     "nombre": "Brooklyn Bridge-City Hall",
-    "linea": "4,5,6",
+    "linea": ["4,5,6"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "historico-turistico",
@@ -5935,7 +5935,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-buhre-av",
     "nombre": "Buhre Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -5969,7 +5969,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-burke-av",
     "nombre": "Burke Av",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -6003,7 +6003,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-burnside-av",
     "nombre": "Burnside Av",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -6037,7 +6037,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-bushwick-av-aberdeen-st",
     "nombre": "Bushwick Av-Aberdeen St",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6071,7 +6071,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-canal-st",
     "nombre": "Canal St",
-    "linea": "1,6,A,C,E,J,M,N,Q,R,W",
+    "linea": ["1,6,A,C,E,J,M,N,Q,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial-cultural",
@@ -6130,7 +6130,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-canarsie-rockaway-pkwy",
     "nombre": "Canarsie-Rockaway Pkwy",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6164,7 +6164,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-carroll-st",
     "nombre": "Carroll St",
-    "linea": "F,G",
+    "linea": ["F,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6198,7 +6198,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-castle-hill-av",
     "nombre": "Castle Hill Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -6232,7 +6232,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cathedral-pkwy-110-st",
     "nombre": "Cathedral Pkwy-110 St",
-    "linea": "1,C",
+    "linea": ["1,C"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6266,7 +6266,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-central-av",
     "nombre": "Central Av",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6300,7 +6300,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-central-park-north-110-st",
     "nombre": "Central Park North-110 St",
-    "linea": "2,3,B",
+    "linea": ["2,3,B"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6335,7 +6335,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-chambers-st",
     "nombre": "Chambers St",
-    "linea": "1,2,3,A,C,J",
+    "linea": ["1,2,3,A,C,J"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6370,7 +6370,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-chauncey-st",
     "nombre": "Chauncey St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6404,7 +6404,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-christopher-st-sheridan-sq",
     "nombre": "Christopher St-Sheridan Sq",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6438,7 +6438,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-church-av",
     "nombre": "Church Av",
-    "linea": "2,5,B,F,G,Q",
+    "linea": ["2,5,B,F,G,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6473,7 +6473,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-city-hall",
     "nombre": "City Hall",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6508,7 +6508,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-clark-st",
     "nombre": "Clark St",
-    "linea": "2,3",
+    "linea": ["2,3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6542,7 +6542,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-classon-av",
     "nombre": "Classon Av",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6576,7 +6576,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cleveland-st",
     "nombre": "Cleveland St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6610,7 +6610,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-clifton",
     "nombre": "Clifton",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -6644,7 +6644,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-clinton-washington-avs",
     "nombre": "Clinton-Washington Avs",
-    "linea": "A,C,G",
+    "linea": ["A,C,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6679,7 +6679,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-coney-island-stillwell-av",
     "nombre": "Coney Island-Stillwell Av",
-    "linea": "B,D,F,N,Q",
+    "linea": ["B,D,F,N,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "playa-entretenimiento",
@@ -6738,7 +6738,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cortelyou-rd",
     "nombre": "Cortelyou Rd",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6772,7 +6772,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cortlandt-st",
     "nombre": "Cortlandt St",
-    "linea": "1,N,R,W",
+    "linea": ["1,N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -6807,7 +6807,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-court-sq",
     "nombre": "Court Sq",
-    "linea": "7,G",
+    "linea": ["7,G"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -6841,7 +6841,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-court-st",
     "nombre": "Court St",
-    "linea": "N,R",
+    "linea": ["N,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6875,7 +6875,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-crescent-st",
     "nombre": "Crescent St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6909,7 +6909,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-crown-heights-utica-av",
     "nombre": "Crown Heights-Utica Av",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -6943,7 +6943,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cypress-av",
     "nombre": "Cypress Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -6977,7 +6977,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-cypress-hills",
     "nombre": "Cypress Hills",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7011,7 +7011,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-dekalb-av",
     "nombre": "DeKalb Av",
-    "linea": "B,D,L,N,Q,R",
+    "linea": ["B,D,L,N,Q,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7046,7 +7046,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-delancey-st-essex-st",
     "nombre": "Delancey St-Essex St",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -7080,7 +7080,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-ditmas-av",
     "nombre": "Ditmas Av",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7114,7 +7114,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-dongan-hills",
     "nombre": "Dongan Hills",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -7148,7 +7148,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-dyckman-st",
     "nombre": "Dyckman St",
-    "linea": "1,A",
+    "linea": ["1,A"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -7182,7 +7182,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-e-143-st-st-mary-st",
     "nombre": "E 143 St-St Mary St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7216,7 +7216,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-e-149-st",
     "nombre": "E 149 St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7250,7 +7250,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-e-180-st",
     "nombre": "E 180 St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7284,7 +7284,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-east-105-st",
     "nombre": "East 105 St",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7318,7 +7318,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-east-broadway",
     "nombre": "East Broadway",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -7352,7 +7352,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-eastchester-dyre-av",
     "nombre": "Eastchester-Dyre Av",
-    "linea": "5",
+    "linea": ["5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7386,7 +7386,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-eastern-pkwy-brooklyn-museum",
     "nombre": "Eastern Pkwy-Brooklyn Museum",
-    "linea": "2,3",
+    "linea": ["2,3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "cultural",
@@ -7433,7 +7433,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-elder-av",
     "nombre": "Elder Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7467,7 +7467,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-elmhurst-av",
     "nombre": "Elmhurst Av",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -7502,7 +7502,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-eltingville",
     "nombre": "Eltingville",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -7536,7 +7536,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-essex-st",
     "nombre": "Essex St",
-    "linea": "J,M",
+    "linea": ["J,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -7570,7 +7570,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-euclid-av",
     "nombre": "Euclid Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7604,7 +7604,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-far-rockaway-mott-av",
     "nombre": "Far Rockaway-Mott Av",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -7638,7 +7638,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-flatbush-av-brooklyn-college",
     "nombre": "Flatbush Av-Brooklyn College",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7672,7 +7672,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-flushing-av",
     "nombre": "Flushing Av",
-    "linea": "G,J,M",
+    "linea": ["G,J,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7707,7 +7707,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-flushing-main-st",
     "nombre": "Flushing-Main St",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "comercial-cultural",
@@ -7765,7 +7765,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-fordham-rd",
     "nombre": "Fordham Rd",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -7799,7 +7799,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-forest-av",
     "nombre": "Forest Av",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -7833,7 +7833,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-forest-hills-71-av",
     "nombre": "Forest Hills-71 Av",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -7868,7 +7868,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-fort-hamilton-pkwy",
     "nombre": "Fort Hamilton Pkwy",
-    "linea": "F,G,N",
+    "linea": ["F,G,N"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7903,7 +7903,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-franklin-av",
     "nombre": "Franklin Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7937,7 +7937,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-franklin-av-medgar-evers-college",
     "nombre": "Franklin Av-Medgar Evers College",
-    "linea": "2,3,5,S-Franklin",
+    "linea": ["2,3,5,S-Franklin"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -7972,7 +7972,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-franklin-st",
     "nombre": "Franklin St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -8006,7 +8006,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-freeman-st",
     "nombre": "Freeman St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -8040,7 +8040,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-fresh-pond-rd",
     "nombre": "Fresh Pond Rd",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -8074,7 +8074,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-fulton-st",
     "nombre": "Fulton St",
-    "linea": "2,3,4,5,A,C,G,J",
+    "linea": ["2,3,4,5,A,C,G,J"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercio-historico",
@@ -8133,7 +8133,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-gates-av",
     "nombre": "Gates Av",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8167,7 +8167,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-graham-av",
     "nombre": "Graham Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8201,7 +8201,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grand-army-plaza",
     "nombre": "Grand Army Plaza",
-    "linea": "2,3",
+    "linea": ["2,3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8235,7 +8235,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grand-av-newtown",
     "nombre": "Grand Av-Newtown",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -8270,7 +8270,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grand-central-42-st",
     "nombre": "Grand Central-42 St",
-    "linea": "4,5,6,7,S",
+    "linea": ["4,5,6,7,S"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "transporte-cultural",
@@ -8329,7 +8329,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grand-st",
     "nombre": "Grand St",
-    "linea": "B,D,L",
+    "linea": ["B,D,L"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -8364,7 +8364,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grant-av",
     "nombre": "Grant Av",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8398,7 +8398,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grant-city",
     "nombre": "Grant City",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -8432,7 +8432,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-grasmere",
     "nombre": "Grasmere",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -8466,7 +8466,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-great-kills",
     "nombre": "Great Kills",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -8500,7 +8500,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-greenpoint-av",
     "nombre": "Greenpoint Av",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8534,7 +8534,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-gun-hill-rd",
     "nombre": "Gun Hill Rd",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -8568,7 +8568,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-halsey-st",
     "nombre": "Halsey St",
-    "linea": "J,L",
+    "linea": ["J,L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8602,7 +8602,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-harlem-148-st",
     "nombre": "Harlem-148 St",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -8636,7 +8636,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-hewes-st",
     "nombre": "Hewes St",
-    "linea": "J,M",
+    "linea": ["J,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8670,7 +8670,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-high-st",
     "nombre": "High St",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8704,7 +8704,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-houston-st",
     "nombre": "Houston St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -8738,7 +8738,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-howard-beach-jfk-airport",
     "nombre": "Howard Beach-JFK Airport",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "transporte",
@@ -8785,7 +8785,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-hoyt-st",
     "nombre": "Hoyt St",
-    "linea": "2,3",
+    "linea": ["2,3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8819,7 +8819,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-hoyt-schermerhorn-sts",
     "nombre": "Hoyt-Schermerhorn Sts",
-    "linea": "A,C,G",
+    "linea": ["A,C,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -8854,7 +8854,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-huguenot",
     "nombre": "Huguenot",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -8888,7 +8888,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-hunters-point-av",
     "nombre": "Hunters Point Av",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -8922,7 +8922,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-hunts-point-av",
     "nombre": "Hunts Point Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -8956,7 +8956,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-intervale-av",
     "nombre": "Intervale Av",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -8990,7 +8990,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-inwood-207-st",
     "nombre": "Inwood-207 St",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -9024,7 +9024,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jackson-av",
     "nombre": "Jackson Av",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -9058,7 +9058,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jackson-hts-roosevelt-av",
     "nombre": "Jackson Hts-Roosevelt Av",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "comercial-multicultural",
@@ -9106,7 +9106,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jamaica-center-parsons-archer",
     "nombre": "Jamaica Center-Parsons/Archer",
-    "linea": "E,J",
+    "linea": ["E,J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -9140,7 +9140,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jamaica-179-st",
     "nombre": "Jamaica-179 St",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -9174,7 +9174,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jamaica-van-wyck",
     "nombre": "Jamaica-Van Wyck",
-    "linea": "E",
+    "linea": ["E"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -9208,7 +9208,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jay-st-metrotech",
     "nombre": "Jay St-MetroTech",
-    "linea": "A,C,F,N,R",
+    "linea": ["A,C,F,N,R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial-universitario",
@@ -9261,7 +9261,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jefferson-av",
     "nombre": "Jefferson Av",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -9295,7 +9295,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-jefferson-st",
     "nombre": "Jefferson St",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9329,7 +9329,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-junction-blvd",
     "nombre": "Junction Blvd",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -9363,7 +9363,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-junius-st",
     "nombre": "Junius St",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9397,7 +9397,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kew-gardens-union-tpke",
     "nombre": "Kew Gardens-Union Tpke",
-    "linea": "E,F",
+    "linea": ["E,F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -9431,7 +9431,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kings-hwy",
     "nombre": "Kings Hwy",
-    "linea": "F,N,Q",
+    "linea": ["F,N,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9466,7 +9466,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kingsbridge-rd",
     "nombre": "Kingsbridge Rd",
-    "linea": "4,D",
+    "linea": ["4,D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -9500,7 +9500,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kingston-av",
     "nombre": "Kingston Av",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9534,7 +9534,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kingston-throop-avs",
     "nombre": "Kingston-Throop Avs",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9568,7 +9568,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-knickerbocker-av",
     "nombre": "Knickerbocker Av",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9602,7 +9602,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-kosciuszko-st",
     "nombre": "Kosciuszko St",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9636,7 +9636,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-lafayette-av",
     "nombre": "Lafayette Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9670,7 +9670,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-lexington-av-53-st",
     "nombre": "Lexington Av-53 St",
-    "linea": "E,M",
+    "linea": ["E,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -9704,7 +9704,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-lexington-av-59-st",
     "nombre": "Lexington Av-59 St",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -9739,7 +9739,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-lexington-av-63-st",
     "nombre": "Lexington Av-63 St",
-    "linea": "F,M,Q",
+    "linea": ["F,M,Q"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -9774,7 +9774,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-liberty-av",
     "nombre": "Liberty Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9808,7 +9808,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-livonia-av",
     "nombre": "Livonia Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9842,7 +9842,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-longwood-av",
     "nombre": "Longwood Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -9876,7 +9876,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-lorimer-st",
     "nombre": "Lorimer St",
-    "linea": "J,L,M",
+    "linea": ["J,L,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9911,7 +9911,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-marble-hill-225-st",
     "nombre": "Marble Hill-225 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -9945,7 +9945,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-marcy-av",
     "nombre": "Marcy Av",
-    "linea": "J,M",
+    "linea": ["J,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -9979,7 +9979,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-metropolitan-av",
     "nombre": "Metropolitan Av",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10013,7 +10013,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-mets-willets-point",
     "nombre": "Mets-Willets Point",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "deportes",
@@ -10071,7 +10071,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-middle-village-metropolitan-av",
     "nombre": "Middle Village-Metropolitan Av",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -10105,7 +10105,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-middletown-rd",
     "nombre": "Middletown Rd",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10139,7 +10139,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-montrose-av",
     "nombre": "Montrose Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10173,7 +10173,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-morgan-av",
     "nombre": "Morgan Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10207,7 +10207,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-morris-park",
     "nombre": "Morris Park",
-    "linea": "5",
+    "linea": ["5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10241,7 +10241,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-morrison-av-soundview",
     "nombre": "Morrison Av-Soundview",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10275,7 +10275,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-mosholu-pkwy",
     "nombre": "Mosholu Pkwy",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10309,7 +10309,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-mt-eden-av",
     "nombre": "Mt Eden Av",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10343,7 +10343,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-myrtle-av",
     "nombre": "Myrtle Av",
-    "linea": "J,M",
+    "linea": ["J,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10377,7 +10377,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-myrtle-willoughby-avs",
     "nombre": "Myrtle-Willoughby Avs",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10411,7 +10411,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-myrtle-wyckoff-avs",
     "nombre": "Myrtle-Wyckoff Avs",
-    "linea": "L,M",
+    "linea": ["L,M"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10445,7 +10445,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-nassau",
     "nombre": "Nassau",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -10479,7 +10479,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-nassau-av",
     "nombre": "Nassau Av",
-    "linea": "G",
+    "linea": ["G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10513,7 +10513,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-neck-rd",
     "nombre": "Neck Rd",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10547,7 +10547,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-neptune-av",
     "nombre": "Neptune Av",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10581,7 +10581,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-nereid-av",
     "nombre": "Nereid Av",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10615,7 +10615,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-nevins-st",
     "nombre": "Nevins St",
-    "linea": "2,3,5",
+    "linea": ["2,3,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10650,7 +10650,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-new-dorp",
     "nombre": "New Dorp",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -10684,7 +10684,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-new-lots-av",
     "nombre": "New Lots Av",
-    "linea": "3,L",
+    "linea": ["3,L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10718,7 +10718,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-new-utrecht-av",
     "nombre": "New Utrecht Av",
-    "linea": "N",
+    "linea": ["N"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10752,7 +10752,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-newkirk-av-little-haiti",
     "nombre": "Newkirk Av-Little Haiti",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10786,7 +10786,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-newkirk-plaza",
     "nombre": "Newkirk Plaza",
-    "linea": "B,Q",
+    "linea": ["B,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10820,7 +10820,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-northern-blvd",
     "nombre": "Northern Blvd",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -10855,7 +10855,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-norwood-av",
     "nombre": "Norwood Av",
-    "linea": "J",
+    "linea": ["J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10889,7 +10889,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-norwood-205-st",
     "nombre": "Norwood-205 St",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -10923,7 +10923,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-nostrand-av",
     "nombre": "Nostrand Av",
-    "linea": "3,A,C",
+    "linea": ["3,A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -10958,7 +10958,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-oakwood-heights",
     "nombre": "Oakwood Heights",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -10992,7 +10992,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-ocean-pkwy",
     "nombre": "Ocean Pkwy",
-    "linea": "B,Q",
+    "linea": ["B,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11026,7 +11026,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-old-town",
     "nombre": "Old Town",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -11060,7 +11060,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-ozone-park-lefferts-blvd",
     "nombre": "Ozone Park-Lefferts Blvd",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11094,7 +11094,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-park-place",
     "nombre": "Park Place",
-    "linea": "2,3,S-Franklin",
+    "linea": ["2,3,S-Franklin"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -11129,7 +11129,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-parkchester",
     "nombre": "Parkchester",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -11163,7 +11163,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-parsons-blvd",
     "nombre": "Parsons Blvd",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11197,7 +11197,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-pelham-bay-park",
     "nombre": "Pelham Bay Park",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -11231,7 +11231,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-pelham-pkwy",
     "nombre": "Pelham Pkwy",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -11265,7 +11265,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-pennsylvania-av",
     "nombre": "Pennsylvania Av",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11299,7 +11299,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-pleasant-plains",
     "nombre": "Pleasant Plains",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -11333,7 +11333,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-president-st-medgar-evers-college",
     "nombre": "President St-Medgar Evers College",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11367,7 +11367,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-prince-st",
     "nombre": "Prince St",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -11402,7 +11402,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-princes-bay",
     "nombre": "Princes Bay",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -11436,7 +11436,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-prospect-av",
     "nombre": "Prospect Av",
-    "linea": "2,5,D,R",
+    "linea": ["2,5,D,R"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -11471,7 +11471,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-prospect-park",
     "nombre": "Prospect Park",
-    "linea": "B,Q,S-Franklin",
+    "linea": ["B,Q,S-Franklin"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "parque-cultural",
@@ -11530,7 +11530,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-queens-plaza",
     "nombre": "Queens Plaza",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11565,7 +11565,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-queensboro-plaza",
     "nombre": "Queensboro Plaza",
-    "linea": "7,N,W",
+    "linea": ["7,N,W"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11600,7 +11600,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-ralph-av",
     "nombre": "Ralph Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11634,7 +11634,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-rector-st",
     "nombre": "Rector St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -11668,7 +11668,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-richmond-valley",
     "nombre": "Richmond Valley",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -11702,7 +11702,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-rockaway-av",
     "nombre": "Rockaway Av",
-    "linea": "3,A,C",
+    "linea": ["3,A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11737,7 +11737,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-rockaway-blvd",
     "nombre": "Rockaway Blvd",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11771,7 +11771,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-rockaway-park-beach-116-st",
     "nombre": "Rockaway Park-Beach 116 St",
-    "linea": "S-Rockaway",
+    "linea": ["S-Rockaway"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11805,7 +11805,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-roosevelt-island",
     "nombre": "Roosevelt Island",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -11839,7 +11839,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-saratoga-av",
     "nombre": "Saratoga Av",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11873,7 +11873,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-secaucus-junction",
     "nombre": "Secaucus Junction",
-    "linea": "NJT",
+    "linea": ["NJT"],
     "sistema": "regional-rail",
     "borough": "New Jersey",
     "tipo_zona": "transporte",
@@ -11918,7 +11918,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-seneca-av",
     "nombre": "Seneca Av",
-    "linea": "M",
+    "linea": ["M"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -11952,7 +11952,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sheepshead-bay",
     "nombre": "Sheepshead Bay",
-    "linea": "B,Q",
+    "linea": ["B,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -11986,7 +11986,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-shepherd-av",
     "nombre": "Shepherd Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12020,7 +12020,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-simpson-st",
     "nombre": "Simpson St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -12054,7 +12054,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-smith-9-sts",
     "nombre": "Smith-9 Sts",
-    "linea": "F,G",
+    "linea": ["F,G"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12088,7 +12088,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-south-ferry",
     "nombre": "South Ferry",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "transporte-turistico",
@@ -12140,7 +12140,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-spring-st",
     "nombre": "Spring St",
-    "linea": "6,A,C,E",
+    "linea": ["6,A,C,E"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -12175,7 +12175,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-st-george",
     "nombre": "St George",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "transporte-turistico",
@@ -12228,7 +12228,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-st-lawrence-av",
     "nombre": "St Lawrence Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -12262,7 +12262,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-stapleton",
     "nombre": "Stapleton",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -12296,7 +12296,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-steinway-st",
     "nombre": "Steinway St",
-    "linea": "E,F,M,R",
+    "linea": ["E,F,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -12331,7 +12331,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sterling-st",
     "nombre": "Sterling St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12365,7 +12365,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sutphin-blvd",
     "nombre": "Sutphin Blvd",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -12399,7 +12399,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sutphin-blvd-archer-av-jfk-airport",
     "nombre": "Sutphin Blvd-Archer Av-JFK Airport",
-    "linea": "E,J",
+    "linea": ["E,J"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "transporte",
@@ -12446,7 +12446,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sutter-av",
     "nombre": "Sutter Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12480,7 +12480,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-sutter-av-rutland-rd",
     "nombre": "Sutter Av-Rutland Rd",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12514,7 +12514,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-times-sq-42-st",
     "nombre": "Times Sq-42 St",
-    "linea": "1,2,3,7,N,Q,R,S,W",
+    "linea": ["1,2,3,7,N,Q,R,S,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial-entretenimiento",
@@ -12573,7 +12573,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-tompkinsville",
     "nombre": "Tompkinsville",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -12607,7 +12607,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-tottenville",
     "nombre": "Tottenville",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -12641,7 +12641,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-tremont-av",
     "nombre": "Tremont Av",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -12675,7 +12675,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-union-sq-14-st",
     "nombre": "Union Sq-14 St",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -12709,7 +12709,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-union-st",
     "nombre": "Union St",
-    "linea": "R",
+    "linea": ["R"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12743,7 +12743,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-utica-av",
     "nombre": "Utica Av",
-    "linea": "A,C",
+    "linea": ["A,C"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12777,7 +12777,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-van-cortlandt-park-242-st",
     "nombre": "Van Cortlandt Park-242 St",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -12811,7 +12811,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-van-siclen-av",
     "nombre": "Van Siclen Av",
-    "linea": "3,A,C,J",
+    "linea": ["3,A,C,J"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -12846,7 +12846,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-vernon-blvd-jackson-av",
     "nombre": "Vernon Blvd-Jackson Av",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -12880,7 +12880,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-w-4-st-washington-sq",
     "nombre": "W 4 St-Washington Sq",
-    "linea": "A,B,C,D,E,F,M",
+    "linea": ["A,B,C,D,E,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "cultural-universitario",
@@ -12939,7 +12939,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-wakefield-241-st",
     "nombre": "Wakefield-241 St",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -12973,7 +12973,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-wall-st",
     "nombre": "Wall St",
-    "linea": "2,3,4,5",
+    "linea": ["2,3,4,5"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "financiero-historico",
@@ -13032,7 +13032,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-west-8-st-ny-aquarium",
     "nombre": "West 8 St-NY Aquarium",
-    "linea": "B,F,Q",
+    "linea": ["B,F,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -13067,7 +13067,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-west-farms-sq-e-tremont-av",
     "nombre": "West Farms Sq-E Tremont Av",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -13101,7 +13101,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-westchester-sq-e-tremont-av",
     "nombre": "Westchester Sq-E Tremont Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -13135,7 +13135,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-whitehall-st-south-ferry",
     "nombre": "Whitehall St-South Ferry",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -13170,7 +13170,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-whitlock-av",
     "nombre": "Whitlock Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -13204,7 +13204,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-wilson-av",
     "nombre": "Wilson Av",
-    "linea": "L",
+    "linea": ["L"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -13238,7 +13238,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-winthrop-st",
     "nombre": "Winthrop St",
-    "linea": "2,5",
+    "linea": ["2,5"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -13272,7 +13272,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-woodhaven-blvd",
     "nombre": "Woodhaven Blvd",
-    "linea": "E,F,J,M,R",
+    "linea": ["E,F,J,M,R"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "residencial",
@@ -13307,7 +13307,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-woodlawn",
     "nombre": "Woodlawn",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -13341,7 +13341,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-world-trade-center",
     "nombre": "World Trade Center",
-    "linea": "E",
+    "linea": ["E"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "historico-memorial",
@@ -13399,7 +13399,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-york-st",
     "nombre": "York St",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -13433,7 +13433,7 @@ export const estacionesNYC = [
   {
     "slug": "nyc-zerega-av",
     "nombre": "Zerega Av",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "residencial",
@@ -13467,7 +13467,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-110-st-malcolm-x-plaza",
     "nombre": "110 St-Malcolm X Plaza",
-    "linea": "2,3",
+    "linea": ["2,3"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -13502,7 +13502,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-168-st-washington-hts",
     "nombre": "168 St-Washington Hts",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico",
@@ -13537,7 +13537,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-42-st-bryant-pk",
     "nombre": "42 St-Bryant Pk",
-    "linea": "B,D,F,M",
+    "linea": ["B,D,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico",
@@ -13572,7 +13572,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-5-av",
     "nombre": "5 Av",
-    "linea": "7",
+    "linea": ["7"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -13607,7 +13607,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-5-av53-st",
     "nombre": "5 Av/53 St",
-    "linea": "E,F",
+    "linea": ["E,F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -13642,7 +13642,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-5-av59-st",
     "nombre": "5 Av/59 St",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -13677,7 +13677,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-9-av",
     "nombre": "9 Av",
-    "linea": "D",
+    "linea": ["D"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13712,7 +13712,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-aqueduct-n-conduit-av",
     "nombre": "Aqueduct-N Conduit Av",
-    "linea": "A",
+    "linea": ["A"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "comercial",
@@ -13747,7 +13747,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-arthur-kill",
     "nombre": "Arthur Kill",
-    "linea": "SIR",
+    "linea": ["SIR"],
     "sistema": "sir",
     "borough": "Staten Island",
     "tipo_zona": "residencial",
@@ -13782,7 +13782,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-h",
     "nombre": "Avenue H",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13817,7 +13817,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-i",
     "nombre": "Avenue I",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13852,7 +13852,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-j",
     "nombre": "Avenue J",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13887,7 +13887,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-m",
     "nombre": "Avenue M",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13922,7 +13922,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-n",
     "nombre": "Avenue N",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13957,7 +13957,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-p",
     "nombre": "Avenue P",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -13992,7 +13992,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-u",
     "nombre": "Avenue U",
-    "linea": "F,N,Q",
+    "linea": ["F,N,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -14027,7 +14027,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-avenue-x",
     "nombre": "Avenue X",
-    "linea": "F",
+    "linea": ["F"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -14062,7 +14062,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-bedford-park-blvd-lehman-college",
     "nombre": "Bedford Park Blvd-Lehman College",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "turistico",
@@ -14097,7 +14097,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-beverley-rd",
     "nombre": "Beverley Rd",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "residencial",
@@ -14132,7 +14132,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-christopher-st-stonewall",
     "nombre": "Christopher St-Stonewall",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico",
@@ -14167,7 +14167,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-court-sq-23-st",
     "nombre": "Court Sq-23 St",
-    "linea": "E,F",
+    "linea": ["E,F"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "transporte",
@@ -14202,7 +14202,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-crown-hts-utica-av",
     "nombre": "Crown Hts-Utica Av",
-    "linea": "3,4",
+    "linea": ["3,4"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "turistico",
@@ -14237,7 +14237,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-e-143-st-st-marys-st",
     "nombre": "E 143 St-St Mary's St",
-    "linea": "6",
+    "linea": ["6"],
     "sistema": "subway",
     "borough": "Bronx",
     "tipo_zona": "comercial",
@@ -14272,7 +14272,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-jamaica-center-parsonsarcher",
     "nombre": "Jamaica Center-Parsons/Archer",
-    "linea": "E,J,Z",
+    "linea": ["E,J,Z"],
     "sistema": "subway",
     "borough": "Queens",
     "tipo_zona": "turistico",
@@ -14307,7 +14307,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-lexington-av53-st",
     "nombre": "Lexington Av/53 St",
-    "linea": "E,F",
+    "linea": ["E,F"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -14342,7 +14342,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-lexington-av59-st",
     "nombre": "Lexington Av/59 St",
-    "linea": "N,R,W",
+    "linea": ["N,R,W"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -14377,7 +14377,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-lexington-av63-st",
     "nombre": "Lexington Av/63 St",
-    "linea": "M,Q",
+    "linea": ["M,Q"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -14412,7 +14412,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-park-pl",
     "nombre": "Park Pl",
-    "linea": "S",
+    "linea": ["S"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -14447,7 +14447,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-parkside-av",
     "nombre": "Parkside Av",
-    "linea": "Q",
+    "linea": ["Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "comercial",
@@ -14482,7 +14482,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-w-4-st-wash-sq",
     "nombre": "W 4 St-Wash Sq",
-    "linea": "A,B,C,D,E,F,M",
+    "linea": ["A,B,C,D,E,F,M"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "comercial",
@@ -14517,7 +14517,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-w-8-st-ny-aquarium",
     "nombre": "W 8 St-NY Aquarium",
-    "linea": "F,Q",
+    "linea": ["F,Q"],
     "sistema": "subway",
     "borough": "Brooklyn",
     "tipo_zona": "turistico",
@@ -14552,7 +14552,7 @@ export const estacionesNYC = [
     {
     "slug": "nyc-wtc-cortlandt",
     "nombre": "WTC Cortlandt",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "subway",
     "borough": "Manhattan",
     "tipo_zona": "turistico",

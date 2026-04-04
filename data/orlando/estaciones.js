@@ -2,7 +2,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-debary",
     "nombre": "DeBary",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "DeBary",
     "tipo_zona": "transport",
@@ -33,7 +33,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-sanford",
     "nombre": "Sanford",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Sanford",
     "tipo_zona": "residential",
@@ -64,7 +64,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-lake-mary",
     "nombre": "Lake Mary",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Lake Mary",
     "tipo_zona": "commercial",
@@ -95,7 +95,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-longwood",
     "nombre": "Longwood",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Longwood",
     "tipo_zona": "residential",
@@ -126,7 +126,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-altamonte-springs",
     "nombre": "Altamonte Springs",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Altamonte Springs",
     "tipo_zona": "commercial",
@@ -157,7 +157,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-maitland",
     "nombre": "Maitland",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Maitland",
     "tipo_zona": "residential",
@@ -188,7 +188,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-winter-park",
     "nombre": "Winter Park",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Winter Park",
     "tipo_zona": "cultural",
@@ -220,7 +220,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-adventhealth",
     "nombre": "AdventHealth",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "medical",
@@ -251,7 +251,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-lynx-central",
     "nombre": "LYNX Central",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "transport",
@@ -282,7 +282,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-church-street",
     "nombre": "Church Street",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "commercial",
@@ -313,7 +313,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-orlando-health",
     "nombre": "Orlando Health/Amtrak",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "medical",
@@ -344,7 +344,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-sand-lake-road",
     "nombre": "Sand Lake Road",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "commercial",
@@ -375,7 +375,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-meadow-woods",
     "nombre": "Meadow Woods",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "residential",
@@ -406,7 +406,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-tupperware",
     "nombre": "Tupperware",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Orlando",
     "tipo_zona": "commercial",
@@ -436,7 +436,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-kissimmee",
     "nombre": "Kissimmee",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Kissimmee",
     "tipo_zona": "tourist",
@@ -467,7 +467,7 @@ export const estacionesOrlando = [
   {
     "slug": "orlando-poinciana",
     "nombre": "Poinciana",
-    "linea": "sunrail",
+    "linea": ["sunrail"],
     "sistema": "sunrail-sunrail",
     "municipio": "Kissimmee",
     "tipo_zona": "transport",

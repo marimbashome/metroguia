@@ -2,7 +2,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-north-springs",
     "nombre": "North Springs",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential",
@@ -28,7 +28,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-sandy-springs",
     "nombre": "Sandy Springs",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Sandy Springs",
     "tipo_zona": "residential",
@@ -54,7 +54,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-dunwoody",
     "nombre": "Dunwoody",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Dunwoody",
     "tipo_zona": "commercial-residential",
@@ -85,7 +85,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-medical-center",
     "nombre": "Medical Center",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "medical",
@@ -116,7 +116,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-lindbergh",
     "nombre": "Lindbergh Center",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-transportation",
@@ -130,7 +130,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-lindbergh",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -148,7 +148,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-north-avenue",
     "nombre": "North Avenue",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "cultural-commercial",
@@ -167,7 +167,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-north-avenue",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 2
       }
     ],
@@ -185,7 +185,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-garnett",
     "nombre": "Garnett",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "government-commercial",
@@ -199,7 +199,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-garnett",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 2
       }
     ],
@@ -217,7 +217,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-five-points",
     "nombre": "Five Points",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "downtown-hub",
@@ -231,17 +231,17 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-five-points",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       },
       {
         "slug": "atlanta-five-points",
-        "linea": "Blue",
+        "linea": ["Blue"],
         "tiempo": 3
       },
       {
         "slug": "atlanta-five-points",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 3
       }
     ],
@@ -259,7 +259,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-west-end",
     "nombre": "West End",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-residential",
@@ -278,7 +278,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-west-end",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -296,7 +296,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-oakland-city",
     "nombre": "Oakland City",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential",
@@ -310,7 +310,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-oakland-city",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -328,7 +328,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-lakewood-fort-mcpherson",
     "nombre": "Lakewood/Fort McPherson",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "recreational-commercial",
@@ -347,7 +347,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-lakewood-fort-mcpherson",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -365,7 +365,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-east-point",
     "nombre": "East Point",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "East Point",
     "tipo_zona": "commercial-residential",
@@ -379,7 +379,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-east-point",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -397,7 +397,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-college-park",
     "nombre": "College Park",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "College Park",
     "tipo_zona": "residential-transportation",
@@ -411,7 +411,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-college-park",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -429,7 +429,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-airport",
     "nombre": "Hartsfield-Jackson Airport",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "transportation",
@@ -443,7 +443,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-airport",
-        "linea": "Gold",
+        "linea": ["Gold"],
         "tiempo": 3
       }
     ],
@@ -461,7 +461,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-doraville",
     "nombre": "Doraville",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "marta-rail",
     "municipio": "Doraville",
     "tipo_zona": "commercial-cultural",
@@ -487,7 +487,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-chamblee",
     "nombre": "Chamblee",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "marta-rail",
     "municipio": "Chamblee",
     "tipo_zona": "commercial-cultural",
@@ -513,7 +513,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-brookhaven-oglethorpe",
     "nombre": "Brookhaven/Oglethorpe",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "marta-rail",
     "municipio": "Brookhaven",
     "tipo_zona": "educational-residential",
@@ -539,7 +539,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-buckhead",
     "nombre": "Buckhead",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-shopping",
@@ -570,7 +570,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-lenox",
     "nombre": "Lenox",
-    "linea": "Gold",
+    "linea": ["Gold"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-shopping",
@@ -601,7 +601,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-midtown",
     "nombre": "Midtown",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "cultural-nightlife",
@@ -627,7 +627,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-arts-center",
     "nombre": "Arts Center",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "cultural",
@@ -658,7 +658,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-peachtree-center",
     "nombre": "Peachtree Center",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial",
@@ -684,7 +684,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-civic-center",
     "nombre": "Civic Center",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "government",
@@ -704,7 +704,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-hamilton-holmes",
     "nombre": "Hamilton E. Holmes",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential-transportation",
@@ -730,7 +730,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-west-lake",
     "nombre": "West Lake",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential",
@@ -756,7 +756,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-vine-city",
     "nombre": "Vine City",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-sports",
@@ -770,7 +770,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-vine-city",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -788,7 +788,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-ashby",
     "nombre": "Ashby",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "educational-cultural",
@@ -812,7 +812,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-ashby",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -830,7 +830,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-georgia-state",
     "nombre": "Georgia State University",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "educational-downtown",
@@ -849,7 +849,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-georgia-state",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -867,7 +867,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-king-memorial",
     "nombre": "King Memorial",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "cultural-historical",
@@ -886,7 +886,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-king-memorial",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -904,7 +904,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-inman-park-reynoldstown",
     "nombre": "Inman Park/Reynoldstown",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential-recreational",
@@ -923,7 +923,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-inman-park-reynoldstown",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -941,7 +941,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-east-lake",
     "nombre": "East Lake",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "recreational-residential",
@@ -967,7 +967,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-decatur",
     "nombre": "Decatur",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Decatur",
     "tipo_zona": "commercial-cultural",
@@ -993,7 +993,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-avondale",
     "nombre": "Avondale",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Avondale Estates",
     "tipo_zona": "residential",
@@ -1019,7 +1019,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-kensington",
     "nombre": "Kensington",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential-transportation",
@@ -1045,7 +1045,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-indian-creek",
     "nombre": "Indian Creek",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential-transportation",
@@ -1071,7 +1071,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-dome-gwcc-phillips-cnn",
     "nombre": "Dome/GWCC/Phillips Arena/CNN Center",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "commercial-sports-entertainment",
@@ -1095,7 +1095,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-dome-gwcc-phillips-cnn",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -1113,7 +1113,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-edgewood-candler-park",
     "nombre": "Edgewood/Candler Park",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "recreational-residential",
@@ -1127,7 +1127,7 @@ export const estacionesAtlanta = [
     "transferencias": [
       {
         "slug": "atlanta-edgewood-candler-park",
-        "linea": "Green",
+        "linea": ["Green"],
         "tiempo": 2
       }
     ],
@@ -1145,7 +1145,7 @@ export const estacionesAtlanta = [
   {
     "slug": "atlanta-bankhead",
     "nombre": "Bankhead",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "marta-rail",
     "municipio": "Atlanta",
     "tipo_zona": "residential-transportation",

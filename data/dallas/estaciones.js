@@ -2,7 +2,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-parker-road",
     "nombre": "Parker Road",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Plano",
     "municipio": "Plano",
@@ -41,7 +41,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-downtown-plano",
     "nombre": "Downtown Plano",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Plano",
     "municipio": "Plano",
@@ -79,7 +79,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-12th-street",
     "nombre": "12th Street",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Plano",
     "municipio": "Plano",
@@ -116,7 +116,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-cityline-bush",
     "nombre": "CityLine/Bush",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Richardson",
     "municipio": "Richardson",
@@ -154,7 +154,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-galatyn-park",
     "nombre": "Galatyn Park",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Richardson",
     "municipio": "Richardson",
@@ -192,7 +192,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-arapaho-center",
     "nombre": "Arapaho Center",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Richardson",
     "municipio": "Richardson",
@@ -229,7 +229,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-spring-valley",
     "nombre": "Spring Valley",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -266,7 +266,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lbj-central",
     "nombre": "LBJ/Central",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -304,7 +304,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-forest-lane",
     "nombre": "Forest Lane",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -341,7 +341,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-walnut-hill",
     "nombre": "Walnut Hill",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -378,7 +378,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-park-lane",
     "nombre": "Park Lane",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -416,7 +416,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lovers-lane",
     "nombre": "Lovers Lane",
-    "linea": "Red/Orange",
+    "linea": ["Red/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -454,7 +454,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-smu-mockingbird",
     "nombre": "SMU/Mockingbird",
-    "linea": "Red/Blue/Orange",
+    "linea": ["Red/Blue/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -498,7 +498,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-cityplace-uptown",
     "nombre": "Cityplace/Uptown",
-    "linea": "Red/Blue/Orange",
+    "linea": ["Red/Blue/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -542,7 +542,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-pearl-arts-district",
     "nombre": "Pearl/Arts District",
-    "linea": "Red/Blue/Green/Orange",
+    "linea": ["Red/Blue/Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -587,7 +587,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-st-paul",
     "nombre": "St. Paul",
-    "linea": "Red/Blue/Green/Orange",
+    "linea": ["Red/Blue/Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -626,7 +626,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-akard",
     "nombre": "Akard",
-    "linea": "Red/Blue/Green/Orange",
+    "linea": ["Red/Blue/Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -665,7 +665,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-west-end",
     "nombre": "West End",
-    "linea": "Red/Blue/Green/Orange",
+    "linea": ["Red/Blue/Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -710,7 +710,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-union-station",
     "nombre": "Union Station",
-    "linea": "Red/Blue/TRE/Streetcar",
+    "linea": ["Red/Blue/TRE/Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -755,7 +755,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-convention-center",
     "nombre": "Convention Center",
-    "linea": "Red/Blue",
+    "linea": ["Red/Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -793,7 +793,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-cedars",
     "nombre": "Cedars",
-    "linea": "Red/Blue",
+    "linea": ["Red/Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -831,7 +831,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-8th-corinth",
     "nombre": "8th & Corinth",
-    "linea": "Red/Blue",
+    "linea": ["Red/Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -869,7 +869,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-dallas-zoo",
     "nombre": "Dallas Zoo",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -908,7 +908,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-tyler-vernon",
     "nombre": "Tyler/Vernon",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -945,7 +945,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-hampton",
     "nombre": "Hampton",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -982,7 +982,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-westmoreland",
     "nombre": "Westmoreland",
-    "linea": "Red",
+    "linea": ["Red"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1019,7 +1019,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-downtown-rowlett",
     "nombre": "Downtown Rowlett",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Rowlett",
     "municipio": "Rowlett",
@@ -1056,7 +1056,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-downtown-garland",
     "nombre": "Downtown Garland",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Garland",
     "municipio": "Garland",
@@ -1093,7 +1093,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-forest-jupiter",
     "nombre": "Forest/Jupiter",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Garland",
     "municipio": "Garland",
@@ -1130,7 +1130,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lbj-skillman",
     "nombre": "LBJ/Skillman",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1167,7 +1167,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lake-highlands",
     "nombre": "Lake Highlands",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1204,7 +1204,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-white-rock",
     "nombre": "White Rock",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1241,7 +1241,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-morrell",
     "nombre": "Morrell",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1278,7 +1278,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-illinois",
     "nombre": "Illinois",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1315,7 +1315,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-kiest",
     "nombre": "Kiest",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1352,7 +1352,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-va-medical-center",
     "nombre": "VA Medical Center",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1389,7 +1389,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-ledbetter",
     "nombre": "Ledbetter",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1426,7 +1426,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-camp-wisdom",
     "nombre": "Camp Wisdom",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1463,7 +1463,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-unt-dallas",
     "nombre": "UNT Dallas",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1500,7 +1500,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-buckner",
     "nombre": "Buckner",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1537,7 +1537,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lake-june",
     "nombre": "Lake June",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1574,7 +1574,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-lawnview",
     "nombre": "Lawnview",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1611,7 +1611,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-hatcher",
     "nombre": "Hatcher",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1648,7 +1648,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-mlk-jr",
     "nombre": "MLK Jr.",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1685,7 +1685,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-fair-park",
     "nombre": "Fair Park",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1730,7 +1730,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-baylor-university-medical",
     "nombre": "Baylor University Medical Center",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1767,7 +1767,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-deep-ellum",
     "nombre": "Deep Ellum",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1812,7 +1812,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-victory",
     "nombre": "Victory",
-    "linea": "Green/Orange/TRE",
+    "linea": ["Green/Orange/TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1851,7 +1851,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-market-center",
     "nombre": "Market Center",
-    "linea": "Green/Orange",
+    "linea": ["Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1888,7 +1888,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-southwestern-medical",
     "nombre": "Southwestern Medical District/Parkland",
-    "linea": "Green/Orange",
+    "linea": ["Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1925,7 +1925,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-inwood-love-field",
     "nombre": "Inwood/Love Field",
-    "linea": "Green/Orange",
+    "linea": ["Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -1964,7 +1964,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-burbank",
     "nombre": "Burbank",
-    "linea": "Green/Orange",
+    "linea": ["Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2001,7 +2001,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-bachman",
     "nombre": "Bachman",
-    "linea": "Green/Orange",
+    "linea": ["Green/Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2038,7 +2038,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-walnut-hill-denton",
     "nombre": "Walnut Hill/Denton",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2075,7 +2075,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-royal-lane",
     "nombre": "Royal Lane",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2112,7 +2112,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-farmers-branch",
     "nombre": "Farmers Branch",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Farmers Branch",
     "municipio": "Farmers Branch",
@@ -2149,7 +2149,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-downtown-carrollton",
     "nombre": "Downtown Carrollton",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Carrollton",
     "municipio": "Carrollton",
@@ -2186,7 +2186,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-trinity-mills",
     "nombre": "Trinity Mills",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Carrollton",
     "municipio": "Carrollton",
@@ -2223,7 +2223,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-north-carrollton-frankford",
     "nombre": "North Carrollton/Frankford",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "dart-light-rail",
     "ciudad": "Carrollton",
     "municipio": "Carrollton",
@@ -2260,7 +2260,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-university-of-dallas",
     "nombre": "University of Dallas",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2297,7 +2297,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-las-colinas-urban-center",
     "nombre": "Las Colinas Urban Center",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2334,7 +2334,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-irving-convention-center",
     "nombre": "Irving Convention Center",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2371,7 +2371,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-hidden-ridge",
     "nombre": "Hidden Ridge",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2408,7 +2408,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-dallas-college-north-lake",
     "nombre": "Dallas College North Lake Campus",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2445,7 +2445,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-belt-line",
     "nombre": "Belt Line",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2482,7 +2482,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-dfw-airport-terminal-a",
     "nombre": "DFW Airport Terminal A",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "dart-light-rail",
     "ciudad": "DFW Airport",
     "municipio": "DFW Airport",
@@ -2522,7 +2522,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-tre-medical-market-center",
     "nombre": "Medical/Market Center",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2559,7 +2559,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-downtown-irving-heritage",
     "nombre": "Downtown Irving/Heritage Crossing",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2596,7 +2596,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-west-irving",
     "nombre": "West Irving",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Irving",
     "municipio": "Irving",
@@ -2633,7 +2633,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-centreport-dfw",
     "nombre": "CentrePort/DFW Airport",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Fort Worth",
     "municipio": "Fort Worth",
@@ -2672,7 +2672,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-bell-station",
     "nombre": "Bell Station",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Hurst",
     "municipio": "Hurst",
@@ -2709,7 +2709,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-trinity-lakes",
     "nombre": "Trinity Lakes",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Fort Worth",
     "municipio": "Fort Worth",
@@ -2746,7 +2746,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-fort-worth-central-station",
     "nombre": "Fort Worth Central Station",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Fort Worth",
     "municipio": "Fort Worth",
@@ -2791,7 +2791,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-tp-station",
     "nombre": "T&P Station",
-    "linea": "TRE",
+    "linea": ["TRE"],
     "sistema": "dart-light-rail",
     "ciudad": "Fort Worth",
     "municipio": "Fort Worth",
@@ -2828,7 +2828,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-greenbriar",
     "nombre": "Greenbriar",
-    "linea": "Streetcar",
+    "linea": ["Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2865,7 +2865,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-oakenwald",
     "nombre": "Oakenwald",
-    "linea": "Streetcar",
+    "linea": ["Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2902,7 +2902,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-beckley",
     "nombre": "Beckley",
-    "linea": "Streetcar",
+    "linea": ["Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2939,7 +2939,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-6th-street",
     "nombre": "6th Street",
-    "linea": "Streetcar",
+    "linea": ["Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",
@@ -2976,7 +2976,7 @@ export const estacionesDallas = [
   {
     "slug": "dallas-bishop-arts",
     "nombre": "Bishop Arts",
-    "linea": "Streetcar",
+    "linea": ["Streetcar"],
     "sistema": "dart-light-rail",
     "ciudad": "Dallas",
     "municipio": "Dallas",

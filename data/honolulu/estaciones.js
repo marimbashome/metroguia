@@ -2,7 +2,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-east-kapolei",
     "nombre": "East Kapolei",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
@@ -40,7 +40,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-uh-west-oahu",
     "nombre": "UH West Oahu",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "university",
@@ -78,7 +78,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-ho-opili",
     "nombre": "Ho Opili",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
@@ -116,7 +116,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-west-loch",
     "nombre": "West Loch",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
@@ -154,7 +154,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-waipahu",
     "nombre": "Waipahu",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
@@ -192,7 +192,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-leeward-cc",
     "nombre": "Leeward Community College",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "university",
@@ -230,7 +230,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearl-highlands",
     "nombre": "Pearl Highlands",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
@@ -268,7 +268,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearlridge",
     "nombre": "Pearlridge",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
@@ -306,7 +306,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-aloha-stadium",
     "nombre": "Aloha Stadium",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "tourist",
@@ -344,7 +344,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearl-harbor",
     "nombre": "Pearl Harbor",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "cultural",
@@ -382,7 +382,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-daniel-inouye-airport",
     "nombre": "Daniel Inouye Airport",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "transport",
@@ -420,7 +420,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-lagoon-drive",
     "nombre": "Lagoon Drive",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "transport",
@@ -458,7 +458,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-middle-street",
     "nombre": "Middle Street",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
@@ -496,7 +496,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kalihi",
     "nombre": "Kalihi",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
@@ -534,7 +534,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kapalama",
     "nombre": "Kapalama",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
@@ -572,7 +572,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-iwilei",
     "nombre": "Iwilei",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
@@ -610,7 +610,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-chinatown",
     "nombre": "Chinatown",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "cultural",
@@ -648,7 +648,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-downtown",
     "nombre": "Downtown",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
@@ -686,7 +686,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-civic-center",
     "nombre": "Civic Center",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "government",
@@ -724,7 +724,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kakaako",
     "nombre": "Kakaako",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
@@ -762,7 +762,7 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-ala-moana",
     "nombre": "Ala Moana",
-    "linea": "skyline",
+    "linea": ["skyline"],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",

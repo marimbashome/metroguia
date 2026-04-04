@@ -2,7 +2,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-penn-station",
     "nombre": "Newark Penn Station",
-    "linea": "Newark Light Rail, Hudson-Bergen Light Rail",
+    "linea": ["Newark Light Rail, Hudson-Bergen Light Rail"],
     "sistema": "nj-transit-light-rail",
     "municipio": "Newark",
     "tipo_zona": "transport",
@@ -76,7 +76,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-broad-street-station",
     "nombre": "Broad Street Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "commercial",
@@ -148,7 +148,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-market-street-station",
     "nombre": "Market Street Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "cultural",
@@ -220,7 +220,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-washington-park-station",
     "nombre": "Washington Park Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "residential",
@@ -292,7 +292,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-lincoln-park-station",
     "nombre": "Lincoln Park Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "residential",
@@ -364,7 +364,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-forest-station",
     "nombre": "Forest Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "residential",
@@ -436,7 +436,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-valley-street-station",
     "nombre": "Valley Street Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "industrial",
@@ -508,7 +508,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-convention-center-station",
     "nombre": "Convention Center Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "commercial",
@@ -580,7 +580,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-branch-brook-park-station",
     "nombre": "Branch Brook Park Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "cultural",
@@ -652,7 +652,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-city-subway-station",
     "nombre": "City Subway Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "transport",
@@ -724,7 +724,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-university-hospital-station",
     "nombre": "University Hospital Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Newark",
     "tipo_zona": "medical",
@@ -796,7 +796,7 @@ export const estacionesNewark = [
   {
     "slug": "jersey-city-grove-street-station",
     "nombre": "Grove Street Station",
-    "linea": "Newark Light Rail, Hudson-Bergen Light Rail",
+    "linea": ["Newark Light Rail, Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Jersey City",
     "tipo_zona": "transport",
@@ -870,7 +870,7 @@ export const estacionesNewark = [
   {
     "slug": "harrison-harrison-station",
     "nombre": "Harrison Station",
-    "linea": "Newark Light Rail",
+    "linea": ["Newark Light Rail"],
     "sistema": "newark-light-rail",
     "municipio": "Harrison",
     "tipo_zona": "residential",
@@ -942,7 +942,7 @@ export const estacionesNewark = [
   {
     "slug": "jersey-city-jersey-avenue-station",
     "nombre": "Jersey Avenue Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Jersey City",
     "tipo_zona": "commercial",
@@ -1014,7 +1014,7 @@ export const estacionesNewark = [
   {
     "slug": "hoboken-hoboken-terminal-station",
     "nombre": "Hoboken Terminal Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Hoboken",
     "tipo_zona": "transport",
@@ -1088,7 +1088,7 @@ export const estacionesNewark = [
   {
     "slug": "hoboken-observer-highway-station",
     "nombre": "Observer Highway Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Hoboken",
     "tipo_zona": "residential",
@@ -1160,7 +1160,7 @@ export const estacionesNewark = [
   {
     "slug": "union-city-33rd-street-station",
     "nombre": "33rd Street Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Union City",
     "tipo_zona": "residential",
@@ -1232,7 +1232,7 @@ export const estacionesNewark = [
   {
     "slug": "union-city-bergenline-avenue-station",
     "nombre": "Bergenline Avenue Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Union City",
     "tipo_zona": "commercial",
@@ -1304,7 +1304,7 @@ export const estacionesNewark = [
   {
     "slug": "north-bergen-tonnele-avenue-station",
     "nombre": "Tonnele Avenue Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "North Bergen",
     "tipo_zona": "industrial",
@@ -1376,7 +1376,7 @@ export const estacionesNewark = [
   {
     "slug": "palisades-park-palisades-park-station",
     "nombre": "Palisades Park Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Palisades Park",
     "tipo_zona": "residential",
@@ -1448,7 +1448,7 @@ export const estacionesNewark = [
   {
     "slug": "secaucus-secaucus-junction-station",
     "nombre": "Secaucus Junction Station",
-    "linea": "Hudson-Bergen Light Rail",
+    "linea": ["Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Secaucus",
     "tipo_zona": "transport",

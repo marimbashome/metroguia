@@ -2,7 +2,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-library",
     "nombre": "Library",
-    "linea": "red",
+    "linea": ["red"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "cultural",
@@ -36,7 +36,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-fifth-ave",
     "nombre": "Fifth Avenue",
-    "linea": "red",
+    "linea": ["red"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -70,7 +70,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-wood-street",
     "nombre": "Wood Street",
-    "linea": "red",
+    "linea": ["red"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -104,7 +104,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-smithfield-street",
     "nombre": "Smithfield Street",
-    "linea": "red",
+    "linea": ["red"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -138,7 +138,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-steel-plaza",
     "nombre": "Steel Plaza",
-    "linea": "red-blue-silver",
+    "linea": ["red-blue-silver"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -172,7 +172,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-station-square",
     "nombre": "Station Square",
-    "linea": "red",
+    "linea": ["red"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -206,7 +206,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-south-hills-village",
     "nombre": "South Hills Village",
-    "linea": "blue",
+    "linea": ["blue"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "commercial",
@@ -240,7 +240,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-castle-shannon",
     "nombre": "Castle Shannon",
-    "linea": "blue",
+    "linea": ["blue"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "residential",
@@ -273,7 +273,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-overbrook",
     "nombre": "Overbrook Junction",
-    "linea": "blue-silver",
+    "linea": ["blue-silver"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "residential",
@@ -306,7 +306,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-bank-street",
     "nombre": "Bank Street",
-    "linea": "blue",
+    "linea": ["blue"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "residential",
@@ -339,7 +339,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-gateway-center",
     "nombre": "Gateway Center",
-    "linea": "blue",
+    "linea": ["blue"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "transport",
@@ -372,7 +372,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-gateway",
     "nombre": "Gateway",
-    "linea": "red-blue",
+    "linea": ["red-blue"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "transport",
@@ -405,7 +405,7 @@ export const estacionesPittsburgh = [
   {
     "slug": "pittsburgh-dormont",
     "nombre": "Dormont",
-    "linea": "silver",
+    "linea": ["silver"],
     "sistema": "pittsburgh-light-rail",
     "municipio": "Pittsburgh",
     "tipo_zona": "residential",

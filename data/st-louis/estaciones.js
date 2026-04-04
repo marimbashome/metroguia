@@ -2,7 +2,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-lambert-airport",
     "nombre": "Lambert Airport",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -44,7 +44,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-normandy",
     "nombre": "Normandy",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "Normandy",
     "tipo_zona": "residential",
@@ -86,7 +86,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-north-hanley",
     "nombre": "North Hanley",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -128,7 +128,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-rockford",
     "nombre": "Rockford",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -170,7 +170,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-brentwood",
     "nombre": "Brentwood",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "Brentwood",
     "tipo_zona": "commercial",
@@ -212,7 +212,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-lake-forest",
     "nombre": "Lake Forest",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -254,7 +254,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-wellston",
     "nombre": "Wellston",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "Wellston",
     "tipo_zona": "residential",
@@ -296,7 +296,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-delmar",
     "nombre": "Delmar",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -338,7 +338,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-skinker",
     "nombre": "Skinker",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "university",
@@ -380,7 +380,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-forest-park-southeast",
     "nombre": "Forest Park Southeast",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "cultural",
@@ -425,7 +425,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-central-west-end",
     "nombre": "Central West End",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -468,7 +468,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-civic-center",
     "nombre": "Civic Center",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -510,7 +510,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-convention-center",
     "nombre": "Convention Center",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -552,7 +552,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-8th-pine",
     "nombre": "8th & Pine",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -594,7 +594,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-5th-5th",
     "nombre": "5th & 5th",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -636,7 +636,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-gateway-arch",
     "nombre": "Gateway Arch",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "cultural",
@@ -679,7 +679,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-emerson-park",
     "nombre": "Emerson Park",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -721,7 +721,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-laclede-station",
     "nombre": "Laclede Station",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -764,7 +764,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-shiloh-scott",
     "nombre": "Shiloh-Scott",
-    "linea": "red-line",
+    "linea": ["red-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -806,7 +806,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-shrewsbury",
     "nombre": "Shrewsbury",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "Shrewsbury",
     "tipo_zona": "residential",
@@ -848,7 +848,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-sunnybrook-hanley",
     "nombre": "Sunnybrook-Hanley",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "Overland",
     "tipo_zona": "residential",
@@ -890,7 +890,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-forbes-hanley",
     "nombre": "Forbes-Hanley",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -932,7 +932,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-bluebird",
     "nombre": "Bluebird",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "residential",
@@ -974,7 +974,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-parking-garage",
     "nombre": "Parking Garage",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "commercial",
@@ -1016,7 +1016,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-washington-park",
     "nombre": "Washington Park",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "parks",
@@ -1058,7 +1058,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-barret-station",
     "nombre": "Barret Station",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "St. Louis",
     "tipo_zona": "cultural",
@@ -1101,7 +1101,7 @@ export const estacionesStLouis = [
   {
     "slug": "st-louis-fairview-heights",
     "nombre": "Fairview Heights",
-    "linea": "blue-line",
+    "linea": ["blue-line"],
     "sistema": "metrolink-stl",
     "municipio": "Fairview Heights",
     "tipo_zona": "residential",

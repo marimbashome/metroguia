@@ -2,7 +2,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-barrie-south-go",
     "nombre": "Barrie South",
-    "linea": "GO-Barrie",
+    "linea": ["GO-Barrie"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -36,7 +36,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bathurst-l2",
     "nombre": "Bathurst",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -70,7 +70,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bay",
     "nombre": "Bay",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -104,7 +104,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bayview",
     "nombre": "Bayview",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -138,7 +138,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bessarion",
     "nombre": "Bessarion",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -172,7 +172,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bloor-up",
     "nombre": "Bloor",
-    "linea": "UP",
+    "linea": ["UP"],
     "sistema": "up-express",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -206,7 +206,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-bloor-yonge",
     "nombre": "Bloor-Yonge",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -242,7 +242,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-brampton-go",
     "nombre": "Brampton",
-    "linea": "GO-Kitchener",
+    "linea": ["GO-Kitchener"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -276,7 +276,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-broadview",
     "nombre": "Broadview",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -310,7 +310,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-burlington-go",
     "nombre": "Burlington",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -344,7 +344,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-castle-frank",
     "nombre": "Castle Frank",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -378,7 +378,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-chester",
     "nombre": "Chester",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -412,7 +412,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-christie",
     "nombre": "Christie",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -446,7 +446,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-college",
     "nombre": "College",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -480,7 +480,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-coxwell",
     "nombre": "Coxwell",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -514,7 +514,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-davisville",
     "nombre": "Davisville",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -548,7 +548,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-don-mills",
     "nombre": "Don Mills",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -582,7 +582,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-donlands",
     "nombre": "Donlands",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -616,7 +616,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-downsview-park",
     "nombre": "Downsview Park",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -650,7 +650,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-dufferin",
     "nombre": "Dufferin",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -684,7 +684,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-dundas",
     "nombre": "Dundas",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -718,7 +718,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-dundas-west",
     "nombre": "Dundas West",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -752,7 +752,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-dupont",
     "nombre": "Dupont",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -786,7 +786,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-eglinton",
     "nombre": "Eglinton",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -820,7 +820,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-eglinton-west",
     "nombre": "Eglinton West",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -854,7 +854,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-exhibition-go",
     "nombre": "Exhibition",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -888,7 +888,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-finch",
     "nombre": "Finch",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -922,7 +922,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-finch-west",
     "nombre": "Finch West",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -956,7 +956,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-glencairn",
     "nombre": "Glencairn",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -990,7 +990,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-greenwood",
     "nombre": "Greenwood",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1024,7 +1024,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-high-park",
     "nombre": "High Park",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -1058,7 +1058,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-highway-407",
     "nombre": "Highway 407",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1092,7 +1092,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-islington",
     "nombre": "Islington",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1126,7 +1126,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-jane",
     "nombre": "Jane",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1160,7 +1160,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-keele",
     "nombre": "Keele",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1194,7 +1194,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-kennedy",
     "nombre": "Kennedy",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "transporte",
@@ -1228,7 +1228,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-king",
     "nombre": "King",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -1262,7 +1262,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-kipling",
     "nombre": "Kipling",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1296,7 +1296,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-lansdowne",
     "nombre": "Lansdowne",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1330,7 +1330,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-lawrence",
     "nombre": "Lawrence",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1364,7 +1364,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-lawrence-west",
     "nombre": "Lawrence West",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1398,7 +1398,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-leslie",
     "nombre": "Leslie",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1432,7 +1432,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-main-street",
     "nombre": "Main Street",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1466,7 +1466,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-mimico-go",
     "nombre": "Mimico",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1500,7 +1500,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-mississauga-go",
     "nombre": "Mississauga",
-    "linea": "GO-Milton",
+    "linea": ["GO-Milton"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1534,7 +1534,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-museum",
     "nombre": "Museum",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -1568,7 +1568,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-north-york-centre",
     "nombre": "North York Centre",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1602,7 +1602,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-oakville-go",
     "nombre": "Oakville",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1636,7 +1636,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-old-mill",
     "nombre": "Old Mill",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1670,7 +1670,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-osgoode",
     "nombre": "Osgoode",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1704,7 +1704,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-oshawa-go",
     "nombre": "Oshawa",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1738,7 +1738,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-ossington",
     "nombre": "Ossington",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1772,7 +1772,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-pape",
     "nombre": "Pape",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1806,7 +1806,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-pearson-airport",
     "nombre": "Pearson Airport",
-    "linea": "UP",
+    "linea": ["UP"],
     "sistema": "up-express",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -1840,7 +1840,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-pickering-go",
     "nombre": "Pickering",
-    "linea": "GO-Lakeshore",
+    "linea": ["GO-Lakeshore"],
     "sistema": "go-transit",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1874,7 +1874,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-pioneer-village",
     "nombre": "Pioneer Village",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1908,7 +1908,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-queen",
     "nombre": "Queen",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -1942,7 +1942,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-queens-park",
     "nombre": "Queens Park",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -1976,7 +1976,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-rosedale",
     "nombre": "Rosedale",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2010,7 +2010,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-royal-york",
     "nombre": "Royal York",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2044,7 +2044,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-runnymede",
     "nombre": "Runnymede",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2078,7 +2078,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-sheppard-west",
     "nombre": "Sheppard West",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2112,7 +2112,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-sheppard-yonge",
     "nombre": "Sheppard-Yonge",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "transporte",
@@ -2148,7 +2148,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-sherbourne",
     "nombre": "Sherbourne",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2182,7 +2182,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-spadina",
     "nombre": "Spadina",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2216,7 +2216,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-spadina-l2",
     "nombre": "Spadina (Line 2)",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2250,7 +2250,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-st-andrew",
     "nombre": "St Andrew",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2284,7 +2284,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-st-clair",
     "nombre": "St Clair",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2318,7 +2318,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-st-clair-west",
     "nombre": "St Clair West",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2352,7 +2352,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-st-george",
     "nombre": "St George",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -2388,7 +2388,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-st-patrick",
     "nombre": "St Patrick",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2422,7 +2422,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-summerhill",
     "nombre": "Summerhill",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2456,7 +2456,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-union-station",
     "nombre": "Union Station",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "turistica",
@@ -2496,7 +2496,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-vaughan-mc",
     "nombre": "Vaughan Metropolitan Centre",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2530,7 +2530,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-victoria-park",
     "nombre": "Victoria Park",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2564,7 +2564,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-warden",
     "nombre": "Warden",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2598,7 +2598,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-wellesley",
     "nombre": "Wellesley",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2632,7 +2632,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-weston-up",
     "nombre": "Weston",
-    "linea": "UP",
+    "linea": ["UP"],
     "sistema": "up-express",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2666,7 +2666,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-wilson",
     "nombre": "Wilson",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2700,7 +2700,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-woodbine",
     "nombre": "Woodbine",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2734,7 +2734,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-york-mills",
     "nombre": "York Mills",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2768,7 +2768,7 @@ export const estacionesTORONTO = [
   {
     "slug": "toronto-yorkdale",
     "nombre": "Yorkdale",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "ttc-subway",
     "ciudad": "toronto",
     "tipo_zona": "residencial",
@@ -2802,7 +2802,7 @@ export const estacionesTORONTO = [
   {
     "slug": "agincourt",
     "nombre": "Agincourt",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -2836,7 +2836,7 @@ export const estacionesTORONTO = [
   {
     "slug": "milliken",
     "nombre": "Milliken",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -2870,7 +2870,7 @@ export const estacionesTORONTO = [
   {
     "slug": "unionville",
     "nombre": "Unionville",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -2904,7 +2904,7 @@ export const estacionesTORONTO = [
   {
     "slug": "markham",
     "nombre": "Markham",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -2938,7 +2938,7 @@ export const estacionesTORONTO = [
   {
     "slug": "stouffville",
     "nombre": "Stouffville",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -2972,7 +2972,7 @@ export const estacionesTORONTO = [
   {
     "slug": "old-elm",
     "nombre": "Old Elm",
-    "linea": "GO-Stouffville",
+    "linea": ["GO-Stouffville"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -3006,7 +3006,7 @@ export const estacionesTORONTO = [
   {
     "slug": "richmond-hill",
     "nombre": "Richmond Hill",
-    "linea": "GO-Richmond Hill",
+    "linea": ["GO-Richmond Hill"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -3040,7 +3040,7 @@ export const estacionesTORONTO = [
   {
     "slug": "gormley",
     "nombre": "Gormley",
-    "linea": "GO-Richmond Hill",
+    "linea": ["GO-Richmond Hill"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",
@@ -3074,7 +3074,7 @@ export const estacionesTORONTO = [
   {
     "slug": "bloomington",
     "nombre": "Bloomington",
-    "linea": "GO-Richmond Hill",
+    "linea": ["GO-Richmond Hill"],
     "sistema": "GO Transit",
     "ciudad": "Toronto",
     "tipo_zona": "suburban_station",

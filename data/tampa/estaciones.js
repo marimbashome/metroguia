@@ -2,7 +2,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-ybor-city",
     "nombre": "Ybor City",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "cultural",
@@ -39,7 +39,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-centro-ybor",
     "nombre": "Centro Ybor",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "commercial",
@@ -76,7 +76,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-8th-ave",
     "nombre": "8th Ave / Nuccio Pkwy",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "mixed",
@@ -113,7 +113,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-dick-greco-plaza",
     "nombre": "Dick Greco Plaza",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "transport",
@@ -150,7 +150,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-whiting",
     "nombre": "Whiting Street",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "commercial",
@@ -187,7 +187,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-cumberland",
     "nombre": "Cumberland Avenue",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "residential",
@@ -224,7 +224,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-streetcar-society",
     "nombre": "Streetcar Society",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "cultural",
@@ -261,7 +261,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-harbour-island",
     "nombre": "Harbour Island",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "tourist",
@@ -298,7 +298,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-convention-center",
     "nombre": "Convention Center",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "commercial",
@@ -335,7 +335,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-fort-brooke",
     "nombre": "Fort Brooke",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "tourist",
@@ -372,7 +372,7 @@ export const estacionesTampa = [
   {
     "slug": "tampa-channelside",
     "nombre": "Channelside",
-    "linea": "teco-blue",
+    "linea": ["teco-blue"],
     "sistema": "teco-line-streetcar",
     "municipio": "Tampa",
     "tipo_zona": "tourist",

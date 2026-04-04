@@ -2,7 +2,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-12th-imperial",
     "nombre": "12th & Imperial",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "transporte",
@@ -48,7 +48,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-convention-center",
     "nombre": "Convention Center",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "eventos",
@@ -96,7 +96,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-gaslamp-quarter",
     "nombre": "Gaslamp Quarter",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "cultural",
@@ -144,7 +144,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-5th-ave",
     "nombre": "5th Ave",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "comercial",
@@ -192,7 +192,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-middle-town",
     "nombre": "Middletown",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "residencial",
@@ -235,7 +235,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-washington",
     "nombre": "Washington",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "comercial",
@@ -278,7 +278,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-ucsd",
     "nombre": "UC San Diego",
-    "linea": "Blue",
+    "linea": ["Blue"],
     "sistema": "mts",
     "municipio": "La Jolla",
     "tipo_zona": "educacion",
@@ -328,7 +328,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-courthouse",
     "nombre": "Courthouse",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "administrativo",
@@ -373,7 +373,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-king-merritt",
     "nombre": "King Merritt",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "comercial",
@@ -411,7 +411,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-kettner-blvd",
     "nombre": "Kettner Blvd",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "cultural",
@@ -454,7 +454,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-oak-park",
     "nombre": "Oak Park",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "residencial",
@@ -497,7 +497,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-nemo",
     "nombre": "Nemo",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "comercial",
@@ -540,7 +540,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-normal",
     "nombre": "Normal",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "residencial",
@@ -583,7 +583,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-el-cajon-transit",
     "nombre": "El Cajon Transit Center",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "mts",
     "municipio": "El Cajon",
     "tipo_zona": "transporte",
@@ -629,7 +629,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-12th-imperial-green",
     "nombre": "12th & Imperial",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "transporte",
@@ -674,7 +674,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-park-de-la-cruz",
     "nombre": "Park de la Cruz",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "residencial",
@@ -717,7 +717,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-south-bay",
     "nombre": "South Bay",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "turismo",
@@ -760,7 +760,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-palm-ave",
     "nombre": "Palm Ave",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "comercial",
@@ -803,7 +803,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-iris-ave",
     "nombre": "Iris Ave",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "San Diego",
     "tipo_zona": "residencial",
@@ -846,7 +846,7 @@ export const estacionesSanDiego = [
   {
     "slug": "sd-santee-town-center",
     "nombre": "Santee Town Center",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "mts",
     "municipio": "Santee",
     "tipo_zona": "transporte",

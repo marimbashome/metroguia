@@ -2,7 +2,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-fern-rock",
     "nombre": "Fern Rock",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -54,7 +54,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-olney",
     "nombre": "Olney",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -103,7 +103,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-logan",
     "nombre": "Logan",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -152,7 +152,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-wyoming",
     "nombre": "Wyoming",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -196,7 +196,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-hunting-park",
     "nombre": "Hunting Park",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -245,7 +245,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-erie",
     "nombre": "Erie",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -289,7 +289,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-north-philadelphia",
     "nombre": "North Philadelphia",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -335,7 +335,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-susquehanna-dauphin",
     "nombre": "Susquehanna-Dauphin",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -379,7 +379,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-cecil-b-moore",
     "nombre": "Cecil B. Moore",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -428,7 +428,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-girard",
     "nombre": "Girard",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -477,7 +477,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-fairmount",
     "nombre": "Fairmount",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -531,7 +531,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-spring-garden",
     "nombre": "Spring Garden",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -580,7 +580,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-race-vine",
     "nombre": "Race-Vine",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -634,7 +634,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-city-hall",
     "nombre": "City Hall",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -696,7 +696,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-walnut-locust",
     "nombre": "Walnut-Locust",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -755,7 +755,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-lombard-south",
     "nombre": "Lombard-South",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -804,7 +804,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-ellsworth-federal",
     "nombre": "Ellsworth-Federal",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -848,7 +848,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-tasker-morris",
     "nombre": "Tasker-Morris",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -892,7 +892,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-snyder",
     "nombre": "Snyder",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -936,7 +936,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-oregon",
     "nombre": "Oregon",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -980,7 +980,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-att-station",
     "nombre": "AT&T Station",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1024,7 +1024,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-nrg-station",
     "nombre": "NRG Station",
-    "linea": "bsl",
+    "linea": ["bsl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1079,7 +1079,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-69th-street",
     "nombre": "69th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1137,7 +1137,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-millbourne",
     "nombre": "Millbourne",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1181,7 +1181,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-63rd-street",
     "nombre": "63rd Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1225,7 +1225,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-60th-street",
     "nombre": "60th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1269,7 +1269,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-56th-street",
     "nombre": "56th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1313,7 +1313,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-52nd-street",
     "nombre": "52nd Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1357,7 +1357,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-46th-street",
     "nombre": "46th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1401,7 +1401,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-40th-street",
     "nombre": "40th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1455,7 +1455,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-34th-street",
     "nombre": "34th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1504,7 +1504,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-30th-street",
     "nombre": "30th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1563,7 +1563,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-22nd-street",
     "nombre": "22nd Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1607,7 +1607,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-19th-street",
     "nombre": "19th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1651,7 +1651,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-15th-street",
     "nombre": "15th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1704,7 +1704,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-13th-street",
     "nombre": "13th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1756,7 +1756,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-11th-street",
     "nombre": "11th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1805,7 +1805,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-8th-street",
     "nombre": "8th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -1857,7 +1857,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-5th-street",
     "nombre": "5th Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1911,7 +1911,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-2nd-street",
     "nombre": "2nd Street",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -1965,7 +1965,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-spring-garden-mfl",
     "nombre": "Spring Garden",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2009,7 +2009,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-girard-mfl",
     "nombre": "Girard",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2053,7 +2053,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-berks",
     "nombre": "Berks",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2097,7 +2097,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-york-dauphin",
     "nombre": "York-Dauphin",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2141,7 +2141,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-huntingdon",
     "nombre": "Huntingdon",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2185,7 +2185,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-somerset",
     "nombre": "Somerset",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2229,7 +2229,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-allegheny",
     "nombre": "Allegheny",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2273,7 +2273,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-tioga",
     "nombre": "Tioga",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2317,7 +2317,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-church",
     "nombre": "Church",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2361,7 +2361,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-frankford",
     "nombre": "Frankford",
-    "linea": "mfl",
+    "linea": ["mfl"],
     "sistema": "Rapid Transit",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -2411,7 +2411,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-patco-15th-16th",
     "nombre": "15th-16th Street",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2460,7 +2460,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-patco-12th-13th",
     "nombre": "12th-13th Street",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2504,7 +2504,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-patco-9th-10th",
     "nombre": "9th-10th Street",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2553,7 +2553,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-patco-8th-market",
     "nombre": "8th-Market Street",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -2605,7 +2605,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-franklin-square",
     "nombre": "Franklin Square",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -2654,7 +2654,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-city-hall-camden",
     "nombre": "City Hall Camden",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Camden",
     "tipo_zona": "suburban",
@@ -2703,7 +2703,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-broadway-camden",
     "nombre": "Broadway",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Camden",
     "tipo_zona": "suburban",
@@ -2752,7 +2752,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-ferry-avenue",
     "nombre": "Ferry Avenue",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Camden",
     "tipo_zona": "suburban",
@@ -2796,7 +2796,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-collingswood",
     "nombre": "Collingswood",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Collingswood",
     "tipo_zona": "suburban",
@@ -2845,7 +2845,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-westmont",
     "nombre": "Westmont",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Westmont",
     "tipo_zona": "suburban",
@@ -2894,7 +2894,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-haddonfield",
     "nombre": "Haddonfield",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Haddonfield",
     "tipo_zona": "suburban",
@@ -2943,7 +2943,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-woodcrest",
     "nombre": "Woodcrest",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Cherry Hill",
     "tipo_zona": "suburban",
@@ -2992,7 +2992,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-lindenwold",
     "nombre": "Lindenwold",
-    "linea": "patco",
+    "linea": ["patco"],
     "sistema": "Light Rail",
     "municipio": "Lindenwold",
     "tipo_zona": "central",
@@ -3044,7 +3044,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-garrett-hill",
     "nombre": "Garrett Hill",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Radnor",
     "tipo_zona": "central",
@@ -3088,7 +3088,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-roberts-road",
     "nombre": "Roberts Road",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Radnor",
     "tipo_zona": "suburban",
@@ -3132,7 +3132,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-bryn-mawr-nhsl",
     "nombre": "Bryn Mawr",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Bryn Mawr",
     "tipo_zona": "suburban",
@@ -3176,7 +3176,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-haverford-nhsl",
     "nombre": "Haverford",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Haverford",
     "tipo_zona": "suburban",
@@ -3220,7 +3220,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-ardmore-junction",
     "nombre": "Ardmore Junction",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Ardmore",
     "tipo_zona": "suburban",
@@ -3264,7 +3264,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-wynnewood-road",
     "nombre": "Wynnewood Road",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Wynnewood",
     "tipo_zona": "suburban",
@@ -3308,7 +3308,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-beechwood-brookline",
     "nombre": "Beechwood-Brookline",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Penn Valley",
     "tipo_zona": "suburban",
@@ -3352,7 +3352,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-penfield",
     "nombre": "Penfield",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Gladwyne",
     "tipo_zona": "suburban",
@@ -3396,7 +3396,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-township-line",
     "nombre": "Township Line",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Lower Merion",
     "tipo_zona": "suburban",
@@ -3440,7 +3440,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-parkview",
     "nombre": "Parkview",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Merion",
     "tipo_zona": "suburban",
@@ -3484,7 +3484,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-stadium-villanova",
     "nombre": "Stadium-Villanova",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Villanova",
     "tipo_zona": "suburban",
@@ -3528,7 +3528,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-villanova",
     "nombre": "Villanova",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Villanova",
     "tipo_zona": "suburban",
@@ -3572,7 +3572,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-radnor",
     "nombre": "Radnor",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Radnor",
     "tipo_zona": "suburban",
@@ -3616,7 +3616,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-county-line",
     "nombre": "County Line",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Radnor",
     "tipo_zona": "suburban",
@@ -3660,7 +3660,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-eagle-road",
     "nombre": "Eagle Road",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Tredyffrin",
     "tipo_zona": "suburban",
@@ -3704,7 +3704,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-gulph-mills",
     "nombre": "Gulph Mills",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Tredyffrin",
     "tipo_zona": "suburban",
@@ -3748,7 +3748,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-matsonford",
     "nombre": "Matsonford",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Chester Springs",
     "tipo_zona": "suburban",
@@ -3792,7 +3792,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-hughes-park",
     "nombre": "Hughes Park",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Chester Springs",
     "tipo_zona": "suburban",
@@ -3836,7 +3836,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-dekalb-street",
     "nombre": "Dekalb Street",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Chester Springs",
     "tipo_zona": "suburban",
@@ -3880,7 +3880,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-bridgeport",
     "nombre": "Bridgeport",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Chester Springs",
     "tipo_zona": "suburban",
@@ -3924,7 +3924,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-norristown",
     "nombre": "Norristown",
-    "linea": "route100",
+    "linea": ["route100"],
     "sistema": "Light Rail",
     "municipio": "Norristown",
     "tipo_zona": "central",
@@ -3968,7 +3968,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-13th",
     "nombre": "13th Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4012,7 +4012,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-15th",
     "nombre": "15th Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4056,7 +4056,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-19th",
     "nombre": "19th Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4100,7 +4100,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-22nd",
     "nombre": "22nd Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4144,7 +4144,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-30th",
     "nombre": "30th Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -4195,7 +4195,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trolley-33rd",
     "nombre": "33rd Street",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4239,7 +4239,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-36th-portal",
     "nombre": "36th Street Portal",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4283,7 +4283,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-40th-baltimore",
     "nombre": "40th-Baltimore",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4327,7 +4327,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-63rd-malvern",
     "nombre": "63rd-Malvern",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4371,7 +4371,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-darby-tc",
     "nombre": "Darby TC",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Darby",
     "tipo_zona": "suburban",
@@ -4420,7 +4420,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-yeadon-loop",
     "nombre": "Yeadon Loop",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Yeadon",
     "tipo_zona": "suburban",
@@ -4464,7 +4464,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-angora-loop",
     "nombre": "Angora Loop",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4508,7 +4508,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-eastwick-loop",
     "nombre": "Eastwick Loop",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4552,7 +4552,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-springfield-mall",
     "nombre": "Springfield Mall",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Springfield",
     "tipo_zona": "suburban",
@@ -4596,7 +4596,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-media-101",
     "nombre": "Media",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Media",
     "tipo_zona": "suburban",
@@ -4645,7 +4645,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-sharon-hill",
     "nombre": "Sharon Hill",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Sharon Hill",
     "tipo_zona": "suburban",
@@ -4689,7 +4689,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-drexel-hill-junction",
     "nombre": "Drexel Hill Junction",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4733,7 +4733,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-40th-woodland",
     "nombre": "40th-Woodland",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4777,7 +4777,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-49th-baltimore",
     "nombre": "49th-Baltimore",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4821,7 +4821,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-girard-lancaster",
     "nombre": "Girard-Lancaster",
-    "linea": "trolley",
+    "linea": ["trolley"],
     "sistema": "Trolley",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -4865,7 +4865,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-suburban-station",
     "nombre": "Suburban Station",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -4916,7 +4916,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-market-east",
     "nombre": "Market East Station",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "central",
@@ -4965,7 +4965,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-temple-university",
     "nombre": "Temple University",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5009,7 +5009,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-north-broad-rr",
     "nombre": "North Broad",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5053,7 +5053,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-airport-terminal-a",
     "nombre": "Airport Terminal A",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5097,7 +5097,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-airport-terminal-b",
     "nombre": "Airport Terminal B",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5141,7 +5141,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-airport-terminal-cd",
     "nombre": "Airport Terminal C-D",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5185,7 +5185,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-airport-terminal-ef",
     "nombre": "Airport Terminal E-F",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5229,7 +5229,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-eastwick-rr",
     "nombre": "Eastwick",
-    "linea": "regional_airport",
+    "linea": ["regional_airport"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5273,7 +5273,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-ardmore-rr",
     "nombre": "Ardmore",
-    "linea": "regional_paoli_thorndale",
+    "linea": ["regional_paoli_thorndale"],
     "sistema": "Regional Rail",
     "municipio": "Ardmore",
     "tipo_zona": "suburban",
@@ -5317,7 +5317,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-bryn-mawr-rr",
     "nombre": "Bryn Mawr",
-    "linea": "regional_paoli_thorndale",
+    "linea": ["regional_paoli_thorndale"],
     "sistema": "Regional Rail",
     "municipio": "Bryn Mawr",
     "tipo_zona": "suburban",
@@ -5361,7 +5361,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-paoli",
     "nombre": "Paoli",
-    "linea": "regional_paoli_thorndale",
+    "linea": ["regional_paoli_thorndale"],
     "sistema": "Regional Rail",
     "municipio": "Paoli",
     "tipo_zona": "suburban",
@@ -5405,7 +5405,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-wayne",
     "nombre": "Wayne",
-    "linea": "regional_paoli_thorndale",
+    "linea": ["regional_paoli_thorndale"],
     "sistema": "Regional Rail",
     "municipio": "Wayne",
     "tipo_zona": "suburban",
@@ -5449,7 +5449,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-chestnut-hill-west",
     "nombre": "Chestnut Hill West",
-    "linea": "regional_chestnut_hill_west",
+    "linea": ["regional_chestnut_hill_west"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5498,7 +5498,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-chestnut-hill-east",
     "nombre": "Chestnut Hill East",
-    "linea": "regional_chestnut_hill_east",
+    "linea": ["regional_chestnut_hill_east"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5542,7 +5542,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-lansdale",
     "nombre": "Lansdale",
-    "linea": "regional_lansdale_doylestown",
+    "linea": ["regional_lansdale_doylestown"],
     "sistema": "Regional Rail",
     "municipio": "Lansdale",
     "tipo_zona": "suburban",
@@ -5586,7 +5586,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-doylestown",
     "nombre": "Doylestown",
-    "linea": "regional_lansdale_doylestown",
+    "linea": ["regional_lansdale_doylestown"],
     "sistema": "Regional Rail",
     "municipio": "Doylestown",
     "tipo_zona": "suburban",
@@ -5630,7 +5630,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-warminster",
     "nombre": "Warminster",
-    "linea": "regional_warminster",
+    "linea": ["regional_warminster"],
     "sistema": "Regional Rail",
     "municipio": "Warminster",
     "tipo_zona": "suburban",
@@ -5674,7 +5674,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-west-trenton",
     "nombre": "West Trenton",
-    "linea": "regional_west_trenton",
+    "linea": ["regional_west_trenton"],
     "sistema": "Regional Rail",
     "municipio": "West Trenton",
     "tipo_zona": "suburban",
@@ -5718,7 +5718,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trenton",
     "nombre": "Trenton",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Trenton",
     "tipo_zona": "suburban",
@@ -5767,7 +5767,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-manayunk",
     "nombre": "Manayunk",
-    "linea": "regional_manayunk_norristown",
+    "linea": ["regional_manayunk_norristown"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5816,7 +5816,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-wissahickon",
     "nombre": "Wissahickon",
-    "linea": "regional_manayunk_norristown",
+    "linea": ["regional_manayunk_norristown"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5860,7 +5860,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-fox-chase",
     "nombre": "Fox Chase",
-    "linea": "regional_fox_chase",
+    "linea": ["regional_fox_chase"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5904,7 +5904,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-cynwyd",
     "nombre": "Cynwyd",
-    "linea": "regional_cynwyd",
+    "linea": ["regional_cynwyd"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "suburban",
@@ -5948,7 +5948,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-media-elwyn",
     "nombre": "Media-Elwyn",
-    "linea": "regional_media_elwyn",
+    "linea": ["regional_media_elwyn"],
     "sistema": "Regional Rail",
     "municipio": "Media",
     "tipo_zona": "suburban",
@@ -5992,7 +5992,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-swarthmore",
     "nombre": "Swarthmore",
-    "linea": "regional_media_elwyn",
+    "linea": ["regional_media_elwyn"],
     "sistema": "Regional Rail",
     "municipio": "Swarthmore",
     "tipo_zona": "suburban",
@@ -6036,7 +6036,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-jenkintown-wyncote",
     "nombre": "Jenkintown-Wyncote",
-    "linea": "regional_lansdale_doylestown",
+    "linea": ["regional_lansdale_doylestown"],
     "sistema": "Regional Rail",
     "municipio": "Jenkintown",
     "tipo_zona": "suburban",
@@ -6080,7 +6080,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-glenside",
     "nombre": "Glenside",
-    "linea": "regional_lansdale_doylestown",
+    "linea": ["regional_lansdale_doylestown"],
     "sistema": "Regional Rail",
     "municipio": "Glenside",
     "tipo_zona": "suburban",
@@ -6124,7 +6124,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-norristown-rr",
     "nombre": "Norristown",
-    "linea": "regional_manayunk_norristown",
+    "linea": ["regional_manayunk_norristown"],
     "sistema": "Regional Rail",
     "municipio": "Norristown",
     "tipo_zona": "suburban",
@@ -6175,7 +6175,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-thorndale",
     "nombre": "Thorndale",
-    "linea": "regional_paoli_thorndale",
+    "linea": ["regional_paoli_thorndale"],
     "sistema": "Regional Rail",
     "municipio": "Thorndale",
     "tipo_zona": "suburban",
@@ -6219,7 +6219,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-49th-street-media",
     "nombre": "49th Street Media",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "urban",
@@ -6253,7 +6253,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-angora",
     "nombre": "Angora",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "urban",
@@ -6287,7 +6287,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-morton",
     "nombre": "Morton",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Morton",
     "tipo_zona": "suburban",
@@ -6321,7 +6321,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-primos",
     "nombre": "Primos",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Primos",
     "tipo_zona": "suburban",
@@ -6355,7 +6355,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-clifton-aldan",
     "nombre": "Clifton-Aldan",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Clifton Heights",
     "tipo_zona": "suburban",
@@ -6389,7 +6389,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-fernwood-yeadon",
     "nombre": "Fernwood-Yeadon",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Yeadon",
     "tipo_zona": "suburban",
@@ -6423,7 +6423,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-lansdowne",
     "nombre": "Lansdowne",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Lansdowne",
     "tipo_zona": "suburban",
@@ -6457,7 +6457,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-swarthmore",
     "nombre": "Swarthmore",
-    "linea": "regional_media_wawa",
+    "linea": ["regional_media_wawa"],
     "sistema": "Regional Rail",
     "municipio": "Swarthmore",
     "tipo_zona": "suburban",
@@ -6492,7 +6492,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-curtis-park",
     "nombre": "Curtis Park",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Chester",
     "tipo_zona": "suburban",
@@ -6526,7 +6526,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-darby",
     "nombre": "Darby",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Darby",
     "tipo_zona": "suburban",
@@ -6560,7 +6560,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-folcroft",
     "nombre": "Folcroft",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Folcroft",
     "tipo_zona": "suburban",
@@ -6594,7 +6594,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-norwood",
     "nombre": "Norwood",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Norwood",
     "tipo_zona": "suburban",
@@ -6628,7 +6628,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-glenolden",
     "nombre": "Glenolden",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Glenolden",
     "tipo_zona": "suburban",
@@ -6662,7 +6662,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-sharon-hill",
     "nombre": "Sharon Hill",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Sharon Hill",
     "tipo_zona": "suburban",
@@ -6696,7 +6696,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-prospect-park",
     "nombre": "Prospect Park",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Prospect Park",
     "tipo_zona": "suburban",
@@ -6730,7 +6730,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-ridley-park",
     "nombre": "Ridley Park",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Ridley Park",
     "tipo_zona": "suburban",
@@ -6764,7 +6764,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-chester-transit-center",
     "nombre": "Chester Transit Center",
-    "linea": "regional_wilmington_newark",
+    "linea": ["regional_wilmington_newark"],
     "sistema": "Regional Rail",
     "municipio": "Chester",
     "tipo_zona": "urban",
@@ -6799,7 +6799,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-north-philadelphia-regional",
     "nombre": "North Philadelphia Regional",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "urban",
@@ -6833,7 +6833,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-bridesburg",
     "nombre": "Bridesburg",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "urban",
@@ -6867,7 +6867,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-tacony",
     "nombre": "Tacony",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Philadelphia",
     "tipo_zona": "urban",
@@ -6901,7 +6901,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-bristol",
     "nombre": "Bristol",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Bristol",
     "tipo_zona": "suburban",
@@ -6935,7 +6935,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-levittown",
     "nombre": "Levittown",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Levittown",
     "tipo_zona": "suburban",
@@ -6969,7 +6969,7 @@ export const estacionesPhiladelphia = [
   {
     "slug": "philly-trenton-transit-center",
     "nombre": "Trenton Transit Center",
-    "linea": "regional_trenton",
+    "linea": ["regional_trenton"],
     "sistema": "Regional Rail",
     "municipio": "Trenton",
     "tipo_zona": "urban",

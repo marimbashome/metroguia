@@ -2,7 +2,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-riverfront",
     "nombre": "Riverfront Station",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "tourist",
@@ -38,7 +38,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-donelson",
     "nombre": "Donelson",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "transport",
@@ -74,7 +74,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-hermitage",
     "nombre": "Hermitage",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "residential",
@@ -110,7 +110,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-mt-juliet",
     "nombre": "Mt. Juliet",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "residential",
@@ -146,7 +146,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-martha",
     "nombre": "Martha",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "residential",
@@ -182,7 +182,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-lebanon",
     "nombre": "Lebanon",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "transport",
@@ -218,7 +218,7 @@ export const estacionesNashville = [
   {
     "slug": "nashville-hamilton-springs",
     "nombre": "Hamilton Springs",
-    "linea": "star",
+    "linea": ["star"],
     "sistema": "wego-star-commuter-rail",
     "municipio": "Nashville",
     "tipo_zona": "residential",

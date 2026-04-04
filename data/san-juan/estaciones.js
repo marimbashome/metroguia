@@ -2,7 +2,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-sagrado-corazon",
     "nombre": "Sagrado Corazón",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "mixed",
@@ -39,7 +39,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-hato-rey-centro",
     "nombre": "Hato Rey Centro",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "commercial",
@@ -76,7 +76,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-roosevelt",
     "nombre": "Roosevelt",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "commercial",
@@ -113,7 +113,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-domenech",
     "nombre": "Domenech",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -150,7 +150,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-rio-piedras",
     "nombre": "Río Piedras",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "cultural",
@@ -187,7 +187,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-universidad",
     "nombre": "Universidad",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "university",
@@ -224,7 +224,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-pinero",
     "nombre": "Piñero",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -261,7 +261,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-martinez-nadal",
     "nombre": "Martínez Nadal",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "transport",
@@ -298,7 +298,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-las-lomas",
     "nombre": "Las Lomas",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -335,7 +335,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-san-francisco",
     "nombre": "San Francisco",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -372,7 +372,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-centro-medico",
     "nombre": "Centro Médico",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "medical",
@@ -409,7 +409,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-cupey",
     "nombre": "Cupey",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -446,7 +446,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-villa-nevarez",
     "nombre": "Villa Nevárez",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "San Juan",
     "tipo_zona": "residential",
@@ -483,7 +483,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-torrimar",
     "nombre": "Torrimar",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "Guaynabo",
     "tipo_zona": "residential",
@@ -520,7 +520,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-jardines",
     "nombre": "Jardines",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "Bayamón",
     "tipo_zona": "residential",
@@ -557,7 +557,7 @@ export const estacionesSanJuan = [
   {
     "slug": "san-juan-bayamon",
     "nombre": "Bayamón",
-    "linea": "tren-urbano",
+    "linea": ["tren-urbano"],
     "sistema": "tren-urbano-tren-urbano",
     "municipio": "Bayamón",
     "tipo_zona": "transport",

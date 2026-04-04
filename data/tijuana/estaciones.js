@@ -2,7 +2,7 @@ export const estacionesTijuana = [
   {
     "slug": "san-ysidro-frontera",
     "nombre": "San Ysidro (Cruce Fronterizo)",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "frontera",
     "pois": [
@@ -74,7 +74,7 @@ export const estacionesTijuana = [
   {
     "slug": "chaparral",
     "nombre": "Chaparral (Terminal Migratoria)",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "frontera",
     "pois": [
@@ -146,7 +146,7 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-rio",
     "nombre": "Zona Río (Plaza Río)",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistica",
     "pois": [
@@ -223,7 +223,7 @@ export const estacionesTijuana = [
   {
     "slug": "zona-centro",
     "nombre": "Zona Centro (Avenida Revolución)",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistico",
     "pois": [
@@ -300,7 +300,7 @@ export const estacionesTijuana = [
   {
     "slug": "catedral-tijuana",
     "nombre": "Catedral Metropolitana",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "religioso-turistico",
     "pois": [
@@ -372,7 +372,7 @@ export const estacionesTijuana = [
   {
     "slug": "mercado-hidalgo",
     "nombre": "Mercado Hidalgo",
-    "linea": "1",
+    "linea": ["1"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-gastronómico",
     "pois": [
@@ -449,7 +449,7 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-santa-cecilia",
     "nombre": "Plaza Santa Cecilia (Mariachis)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "cultural-musica",
     "pois": [
@@ -526,7 +526,7 @@ export const estacionesTijuana = [
   {
     "slug": "hospital-general-tj",
     "nombre": "Hospital General de Tijuana",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "servicios",
     "pois": [
@@ -598,7 +598,7 @@ export const estacionesTijuana = [
   {
     "slug": "aeropuerto-tj",
     "nombre": "Aeropuerto Internacional (ABX)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [
@@ -670,7 +670,7 @@ export const estacionesTijuana = [
   {
     "slug": "puente-cross-border",
     "nombre": "Cross Border Xpress (CBX)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [
@@ -742,7 +742,7 @@ export const estacionesTijuana = [
   {
     "slug": "playas-tj",
     "nombre": "Playas de Tijuana",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "playa-turistico",
     "pois": [
@@ -819,7 +819,7 @@ export const estacionesTijuana = [
   {
     "slug": "otay-comercial",
     "nombre": "Garita Otay (Cruce Comercial)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "frontera-comercial",
     "pois": [
@@ -891,7 +891,7 @@ export const estacionesTijuana = [
   {
     "slug": "buena-vista",
     "nombre": "Buena Vista (Cañada)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "residencial-gastronómico",
     "pois": [
@@ -968,7 +968,7 @@ export const estacionesTijuana = [
   {
     "slug": "la-mesa-tj",
     "nombre": "La Mesa",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "residencial",
     "pois": [
@@ -1040,7 +1040,7 @@ export const estacionesTijuana = [
   {
     "slug": "valle-guadalupe-acceso",
     "nombre": "Valle de Guadalupe (Acceso/Ruta del Vino)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Ensenada",
     "tipo_zona": "vinico-turistico",
     "pois": [
@@ -1194,7 +1194,7 @@ export const estacionesTijuana = [
   {
     "slug": "puerta-mexico-sitt",
     "nombre": "Puerta México",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1266,7 +1266,7 @@ export const estacionesTijuana = [
   {
     "slug": "revolucion-brt",
     "nombre": "Avenida Revolución (BRT)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistico",
     "pois": [
@@ -1338,7 +1338,7 @@ export const estacionesTijuana = [
   {
     "slug": "cinco-y-diez-sitt",
     "nombre": "Cinco y Diez",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1492,7 +1492,7 @@ export const estacionesTijuana = [
   {
     "slug": "otay-brt",
     "nombre": "Otay",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-residencial",
     "pois": [
@@ -1564,7 +1564,7 @@ export const estacionesTijuana = [
   {
     "slug": "presa-rodriguez-sitt",
     "nombre": "Presa Rodríguez",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "residencial",
     "pois": [
@@ -1636,7 +1636,7 @@ export const estacionesTijuana = [
   {
     "slug": "via-rapida-oriente-sitt",
     "nombre": "Vía Rápida Oriente",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "transporte-comercial",
     "pois": [
@@ -1708,7 +1708,7 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-monarca-sitt",
     "nombre": "Plaza Monarca",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1857,7 +1857,7 @@ export const estacionesTijuana = [
   {
     "slug": "mariano-matamoros-sitt",
     "nombre": "Mariano Matamoros",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -1929,7 +1929,7 @@ export const estacionesTijuana = [
   {
     "slug": "terminal-sur-sitt",
     "nombre": "Terminal Sur (SITT)",
-    "linea": "2",
+    "linea": ["2"],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [

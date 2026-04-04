@@ -2,7 +2,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-government-center",
     "nombre": "Government Center",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "centro-institucional",
@@ -49,7 +49,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-brickell",
     "nombre": "Brickell",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "financiero-comercial",
@@ -96,7 +96,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-miami-airport",
     "nombre": "Miami International Airport",
-    "linea": "Orange",
+    "linea": ["Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "transporte-aeropuerto",
@@ -138,7 +138,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-civic-center",
     "nombre": "Civic Center",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-institucional",
@@ -184,7 +184,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-dadeland-north",
     "nombre": "Dadeland North",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Kendall",
     "tipo_zona": "comercial",
@@ -226,7 +226,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-dadeland-south",
     "nombre": "Dadeland South",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Kendall",
     "tipo_zona": "transporte-terminal",
@@ -267,7 +267,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-omni",
     "nombre": "Omni Loop Station",
-    "linea": "Omni-Loop",
+    "linea": ["Omni-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "comercial-entretenimiento",
@@ -309,7 +309,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-brickell",
     "nombre": "Brickell Loop Station",
-    "linea": "Brickell-Loop",
+    "linea": ["Brickell-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "financiero-comercial",
@@ -350,7 +350,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-museum-park",
     "nombre": "Museum Park",
-    "linea": "Inner-Loop",
+    "linea": ["Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "cultural-parques",
@@ -392,7 +392,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-coconut-grove",
     "nombre": "Coconut Grove",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-bohemia",
@@ -434,7 +434,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-university",
     "nombre": "University",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Coral Gables",
     "tipo_zona": "educacion",
@@ -475,7 +475,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-palmetto",
     "nombre": "Palmetto",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "residencial",
@@ -517,7 +517,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-okeechobee",
     "nombre": "Okeechobee",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "industrial-comercial",
@@ -558,7 +558,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-hialeah",
     "nombre": "Hialeah",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "centro-urbano",
@@ -605,7 +605,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-transfer",
     "nombre": "Tri-Rail Transfer",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "transporte-multimodal",
@@ -647,7 +647,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-northside",
     "nombre": "Northside",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "North Miami",
     "tipo_zona": "residencial",
@@ -688,7 +688,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-mlk-plaza",
     "nombre": "MLK Plaza",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-institucional",
@@ -730,7 +730,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-brownsville",
     "nombre": "Brownsville",
-    "linea": "Green",
+    "linea": ["Green"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-comunitaria",
@@ -772,7 +772,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-earlington-heights",
     "nombre": "Earlington Heights",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-comercial",
@@ -813,7 +813,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-allapattah",
     "nombre": "Allapattah",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -855,7 +855,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-santa-clara",
     "nombre": "Santa Clara",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -897,7 +897,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-culmer",
     "nombre": "Culmer",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-histórico",
@@ -939,7 +939,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-historic-overtown",
     "nombre": "Historic Overtown",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-histórico",
@@ -986,7 +986,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-vizcaya",
     "nombre": "Vizcaya",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "turístico-cultural",
@@ -1028,7 +1028,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-douglas-road",
     "nombre": "Douglas Road",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "Coral Gables",
     "tipo_zona": "residencial",
@@ -1070,7 +1070,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-south-miami",
     "nombre": "South Miami",
-    "linea": "Green+Orange",
+    "linea": ["Green+Orange"],
     "sistema": "metrorail",
     "municipio": "South Miami",
     "tipo_zona": "comercial-residencial",
@@ -1112,7 +1112,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-adrienne-arsht",
     "nombre": "Adrienne Arsht Center",
-    "linea": "Omni-Loop+Inner-Loop",
+    "linea": ["Omni-Loop+Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "cultural-entretenimiento",
@@ -1154,7 +1154,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-school-board",
     "nombre": "School Board",
-    "linea": "Omni-Loop",
+    "linea": ["Omni-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "institucional",
@@ -1196,7 +1196,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-financial-district",
     "nombre": "Financial District",
-    "linea": "Inner-Loop+Brickell-Loop",
+    "linea": ["Inner-Loop+Brickell-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "financiero",
@@ -1238,7 +1238,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-bayfront-park",
     "nombre": "Bayfront Park",
-    "linea": "Inner-Loop",
+    "linea": ["Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "parques-turismo",
@@ -1285,7 +1285,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-college-bayside",
     "nombre": "College/Bayside",
-    "linea": "Inner-Loop",
+    "linea": ["Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "educativo",
@@ -1327,7 +1327,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-knight-center",
     "nombre": "Knight Center",
-    "linea": "Inner-Loop",
+    "linea": ["Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "entretenimiento-convenciones",
@@ -1369,7 +1369,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-freedom-tower",
     "nombre": "Freedom Tower",
-    "linea": "Inner-Loop",
+    "linea": ["Inner-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "histórico-cultural",
@@ -1411,7 +1411,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-brickell-city-centre",
     "nombre": "Brickell City Centre",
-    "linea": "Brickell-Loop",
+    "linea": ["Brickell-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "comercial-lujo",
@@ -1453,7 +1453,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-fifth-street",
     "nombre": "Fifth Street",
-    "linea": "Brickell-Loop",
+    "linea": ["Brickell-Loop"],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -1495,7 +1495,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-mia",
     "nombre": "Tri-Rail Miami Airport",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "Miami",
     "tipo_zona": "transporte-aeropuerto",
@@ -1537,7 +1537,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-fort-lauderdale",
     "nombre": "Tri-Rail Fort Lauderdale",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "Fort Lauderdale",
     "tipo_zona": "transporte-centro",
@@ -1579,7 +1579,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-hollywood",
     "nombre": "Tri-Rail Hollywood",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "Hollywood",
     "tipo_zona": "transporte-centro",
@@ -1621,7 +1621,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-boca-raton",
     "nombre": "Tri-Rail Boca Raton",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "Boca Raton",
     "tipo_zona": "transporte-residencial",
@@ -1663,7 +1663,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-delray-beach",
     "nombre": "Tri-Rail Delray Beach",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "Delray Beach",
     "tipo_zona": "transporte-playa",
@@ -1705,7 +1705,7 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-west-palm-beach",
     "nombre": "Tri-Rail West Palm Beach",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "tri-rail",
     "municipio": "West Palm Beach",
     "tipo_zona": "transporte-terminal",
@@ -1747,7 +1747,7 @@ export const estacionesMiami = [
   {
     "slug": "brightline-miami",
     "nombre": "Brightline Miami",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "brightline",
     "municipio": "Miami",
     "tipo_zona": "transporte-estacion",
@@ -1789,7 +1789,7 @@ export const estacionesMiami = [
   {
     "slug": "brightline-fort-lauderdale",
     "nombre": "Brightline Fort Lauderdale",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "brightline",
     "municipio": "Fort Lauderdale",
     "tipo_zona": "transporte-centro",
@@ -1831,7 +1831,7 @@ export const estacionesMiami = [
   {
     "slug": "brightline-west-palm-beach",
     "nombre": "Brightline West Palm Beach",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "brightline",
     "municipio": "West Palm Beach",
     "tipo_zona": "transporte-terminal",
@@ -1873,7 +1873,7 @@ export const estacionesMiami = [
   {
     "slug": "brightline-orlando",
     "nombre": "Brightline Orlando",
-    "linea": "Main Line",
+    "linea": ["Main Line"],
     "sistema": "brightline",
     "municipio": "Orlando",
     "tipo_zona": "transporte-turismo",

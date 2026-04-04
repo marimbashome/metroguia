@@ -2,7 +2,7 @@ export const estacionesGDL = [
   {
     "slug": "gdl-auditorio",
     "nombre": "Auditorio",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "cultural-turistico",
@@ -60,7 +60,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-norte",
     "nombre": "Periférico Norte",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "comercial",
@@ -118,7 +118,7 @@ export const estacionesGDL = [
   {
     "slug": "dermatologico",
     "nombre": "Dermatológico",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "salud",
@@ -176,7 +176,7 @@ export const estacionesGDL = [
   {
     "slug": "atemajac",
     "nombre": "Atemajac",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "residencial",
@@ -234,7 +234,7 @@ export const estacionesGDL = [
   {
     "slug": "gdl-division-del-norte",
     "nombre": "División del Norte",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -281,7 +281,7 @@ export const estacionesGDL = [
   {
     "slug": "avila-camacho",
     "nombre": "Ávila Camacho",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico",
@@ -341,7 +341,7 @@ export const estacionesGDL = [
   {
     "slug": "mezquitan",
     "nombre": "Mezquitán",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -399,7 +399,7 @@ export const estacionesGDL = [
   {
     "slug": "refugio",
     "nombre": "Refugio",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -457,7 +457,7 @@ export const estacionesGDL = [
   {
     "slug": "gdl-juarez",
     "nombre": "Juárez",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico-cultural",
@@ -528,7 +528,7 @@ export const estacionesGDL = [
   {
     "slug": "gdl-mexicaltzingo",
     "nombre": "Mexicaltzingo",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "comercial",
@@ -586,7 +586,7 @@ export const estacionesGDL = [
   {
     "slug": "washington",
     "nombre": "Washington",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico",
@@ -644,7 +644,7 @@ export const estacionesGDL = [
   {
     "slug": "santa-filomena",
     "nombre": "Santa Filomena",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -691,7 +691,7 @@ export const estacionesGDL = [
   {
     "slug": "unidad-deportiva",
     "nombre": "Unidad Deportiva",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "deportivo",
@@ -749,7 +749,7 @@ export const estacionesGDL = [
   {
     "slug": "urdaneta",
     "nombre": "Urdaneta",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -796,7 +796,7 @@ export const estacionesGDL = [
   {
     "slug": "18-de-marzo",
     "nombre": "18 de Marzo",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -843,7 +843,7 @@ export const estacionesGDL = [
   {
     "slug": "isla-raza",
     "nombre": "Isla Raza",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -890,7 +890,7 @@ export const estacionesGDL = [
   {
     "slug": "patria",
     "nombre": "Patria",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "comercial",
@@ -948,7 +948,7 @@ export const estacionesGDL = [
   {
     "slug": "espana",
     "nombre": "España",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "residencial",
@@ -995,7 +995,7 @@ export const estacionesGDL = [
   {
     "slug": "santuario-martires",
     "nombre": "Santuario Mártires de Cristo Rey",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "residencial",
@@ -1042,7 +1042,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-sur",
     "nombre": "Periférico Sur",
-    "linea": "1",
+    "linea": ["1"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "comercial",
@@ -1100,7 +1100,7 @@ export const estacionesGDL = [
   {
     "slug": "juarez-l2",
     "nombre": "Juárez",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico-cultural",
@@ -1160,7 +1160,7 @@ export const estacionesGDL = [
   {
     "slug": "plaza-universidad",
     "nombre": "Plaza Universidad",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "educativo",
@@ -1220,7 +1220,7 @@ export const estacionesGDL = [
   {
     "slug": "san-juan-de-dios",
     "nombre": "San Juan de Dios",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "comercial-turistico",
@@ -1289,7 +1289,7 @@ export const estacionesGDL = [
   {
     "slug": "belisario-dominguez",
     "nombre": "Belisario Domínguez",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1336,7 +1336,7 @@ export const estacionesGDL = [
   {
     "slug": "oblatos",
     "nombre": "Oblatos",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1394,7 +1394,7 @@ export const estacionesGDL = [
   {
     "slug": "cristobal-de-onate",
     "nombre": "Cristóbal de Oñate",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1441,7 +1441,7 @@ export const estacionesGDL = [
   {
     "slug": "san-andres",
     "nombre": "San Andrés",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1488,7 +1488,7 @@ export const estacionesGDL = [
   {
     "slug": "san-jacinto",
     "nombre": "San Jacinto",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1535,7 +1535,7 @@ export const estacionesGDL = [
   {
     "slug": "la-aurora",
     "nombre": "La Aurora",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -1582,7 +1582,7 @@ export const estacionesGDL = [
   {
     "slug": "tetlan",
     "nombre": "Tetlán",
-    "linea": "2",
+    "linea": ["2"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "comercial",
@@ -1640,7 +1640,7 @@ export const estacionesGDL = [
   {
     "slug": "arcos-de-zapopan",
     "nombre": "Arcos de Zapopan",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "turistico-religioso",
@@ -1709,7 +1709,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-belenes",
     "nombre": "Periférico Belenes",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "residencial",
@@ -1767,7 +1767,7 @@ export const estacionesGDL = [
   {
     "slug": "mercado-del-mar",
     "nombre": "Mercado del Mar",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "comercial",
@@ -1814,7 +1814,7 @@ export const estacionesGDL = [
   {
     "slug": "zapopan-centro",
     "nombre": "Zapopan Centro",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "historico-turistico",
@@ -1883,7 +1883,7 @@ export const estacionesGDL = [
   {
     "slug": "plaza-patria",
     "nombre": "Plaza Patria",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "comercial",
@@ -1941,7 +1941,7 @@ export const estacionesGDL = [
   {
     "slug": "circunvalacion-country",
     "nombre": "Circunvalación Country",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Zapopan",
     "tipo_zona": "residencial",
@@ -1988,7 +1988,7 @@ export const estacionesGDL = [
   {
     "slug": "avila-camacho-l3",
     "nombre": "Ávila Camacho",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico",
@@ -2048,7 +2048,7 @@ export const estacionesGDL = [
   {
     "slug": "la-normal",
     "nombre": "La Normal",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "educativo",
@@ -2106,7 +2106,7 @@ export const estacionesGDL = [
   {
     "slug": "santuario",
     "nombre": "Santuario",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico-religioso",
@@ -2164,7 +2164,7 @@ export const estacionesGDL = [
   {
     "slug": "guadalajara-centro",
     "nombre": "Guadalajara Centro",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico-turistico",
@@ -2233,7 +2233,7 @@ export const estacionesGDL = [
   {
     "slug": "independencia-l3",
     "nombre": "Independencia",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "historico",
@@ -2291,7 +2291,7 @@ export const estacionesGDL = [
   {
     "slug": "plaza-de-la-bandera",
     "nombre": "Plaza de la Bandera",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "civico",
@@ -2349,7 +2349,7 @@ export const estacionesGDL = [
   {
     "slug": "cucei",
     "nombre": "CUCEI",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "educativo",
@@ -2396,7 +2396,7 @@ export const estacionesGDL = [
   {
     "slug": "gdl-revolucion",
     "nombre": "Revolución",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -2443,7 +2443,7 @@ export const estacionesGDL = [
   {
     "slug": "rio-nilo-l3",
     "nombre": "Río Nilo",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "residencial",
@@ -2490,7 +2490,7 @@ export const estacionesGDL = [
   {
     "slug": "tlaquepaque-centro",
     "nombre": "Tlaquepaque Centro",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "turistico-artesanal",
@@ -2559,7 +2559,7 @@ export const estacionesGDL = [
   {
     "slug": "lazaro-cardenas-l3",
     "nombre": "Lázaro Cárdenas",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "comercial",
@@ -2606,7 +2606,7 @@ export const estacionesGDL = [
   {
     "slug": "central-de-autobuses",
     "nombre": "Central de Autobuses",
-    "linea": "3",
+    "linea": ["3"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "transporte",
@@ -2664,7 +2664,7 @@ export const estacionesGDL = [
   {
     "slug": "las-juntas",
     "nombre": "Las Juntas",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "transporte",
@@ -2722,7 +2722,7 @@ export const estacionesGDL = [
   {
     "slug": "jalisco-200",
     "nombre": "Jalisco 200 Años",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlaquepaque",
     "tipo_zona": "residencial",
@@ -2769,7 +2769,7 @@ export const estacionesGDL = [
   {
     "slug": "real-del-valle",
     "nombre": "Real del Valle",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "residencial",
@@ -2827,7 +2827,7 @@ export const estacionesGDL = [
   {
     "slug": "concepcion-del-valle",
     "nombre": "Concepción del Valle",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "residencial",
@@ -2874,7 +2874,7 @@ export const estacionesGDL = [
   {
     "slug": "el-cuervo",
     "nombre": "El Cuervo",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "residencial",
@@ -2921,7 +2921,7 @@ export const estacionesGDL = [
   {
     "slug": "lomas-del-sur",
     "nombre": "Lomas del Sur",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "residencial",
@@ -2979,7 +2979,7 @@ export const estacionesGDL = [
   {
     "slug": "cutlajo",
     "nombre": "CUTLAJO",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "educativo",
@@ -3026,7 +3026,7 @@ export const estacionesGDL = [
   {
     "slug": "tlajomulco-centro",
     "nombre": "Tlajomulco Centro",
-    "linea": "4",
+    "linea": ["4"],
     "sistema": "tren-ligero",
     "municipio": "Tlajomulco",
     "tipo_zona": "historico",
@@ -3095,7 +3095,7 @@ export const estacionesGDL = [
   {
     "slug": "mirador-mc",
     "nombre": "Mirador",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3142,7 +3142,7 @@ export const estacionesGDL = [
   {
     "slug": "huentitan-mc",
     "nombre": "Huentitán",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3189,7 +3189,7 @@ export const estacionesGDL = [
   {
     "slug": "zoologico-mc",
     "nombre": "Zoológico",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "turistico",
@@ -3247,7 +3247,7 @@ export const estacionesGDL = [
   {
     "slug": "independencia-norte-mc",
     "nombre": "Independencia Norte",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "transporte",
@@ -3296,7 +3296,7 @@ export const estacionesGDL = [
   {
     "slug": "san-patricio-mc",
     "nombre": "San Patricio",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3343,7 +3343,7 @@ export const estacionesGDL = [
   {
     "slug": "igualdad-mc",
     "nombre": "Igualdad",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3390,7 +3390,7 @@ export const estacionesGDL = [
   {
     "slug": "monumental-mc",
     "nombre": "Monumental",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3437,7 +3437,7 @@ export const estacionesGDL = [
   {
     "slug": "monte-olivete-mc",
     "nombre": "Monte Olivete",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3484,7 +3484,7 @@ export const estacionesGDL = [
   {
     "slug": "circunvalacion-mc",
     "nombre": "Circunvalación",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3531,7 +3531,7 @@ export const estacionesGDL = [
   {
     "slug": "ciencias-salud-mc",
     "nombre": "Ciencias de la Salud",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3578,7 +3578,7 @@ export const estacionesGDL = [
   {
     "slug": "juan-alvarez-mc",
     "nombre": "Juan Álvarez",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3625,7 +3625,7 @@ export const estacionesGDL = [
   {
     "slug": "alameda-mc",
     "nombre": "Alameda",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3672,7 +3672,7 @@ export const estacionesGDL = [
   {
     "slug": "san-juan-de-dios-mc",
     "nombre": "San Juan de Dios",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "comercial-turistico",
@@ -3732,7 +3732,7 @@ export const estacionesGDL = [
   {
     "slug": "bicentenario-mc",
     "nombre": "Bicentenario",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "historico",
@@ -3792,7 +3792,7 @@ export const estacionesGDL = [
   {
     "slug": "la-paz-mc",
     "nombre": "La Paz",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3839,7 +3839,7 @@ export const estacionesGDL = [
   {
     "slug": "ninos-heroes-mc",
     "nombre": "Niños Héroes",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3886,7 +3886,7 @@ export const estacionesGDL = [
   {
     "slug": "agua-azul-mc",
     "nombre": "Agua Azul",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "turistico",
@@ -3944,7 +3944,7 @@ export const estacionesGDL = [
   {
     "slug": "cipres-mc",
     "nombre": "Ciprés",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -3991,7 +3991,7 @@ export const estacionesGDL = [
   {
     "slug": "heroes-nacozari-mc",
     "nombre": "Héroes de Nacozari",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4038,7 +4038,7 @@ export const estacionesGDL = [
   {
     "slug": "lazaro-cardenas-mc",
     "nombre": "Lázaro Cárdenas",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4085,7 +4085,7 @@ export const estacionesGDL = [
   {
     "slug": "el-dean-mc",
     "nombre": "El Deán",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4132,7 +4132,7 @@ export const estacionesGDL = [
   {
     "slug": "zona-industrial-mc",
     "nombre": "Zona Industrial",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4179,7 +4179,7 @@ export const estacionesGDL = [
   {
     "slug": "lopez-de-legazpi-mc",
     "nombre": "López de Legazpi",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4226,7 +4226,7 @@ export const estacionesGDL = [
   {
     "slug": "clemente-orozco-mc",
     "nombre": "Clemente Orozco",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4273,7 +4273,7 @@ export const estacionesGDL = [
   {
     "slug": "artes-plasticas-mc",
     "nombre": "Artes Plásticas",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4320,7 +4320,7 @@ export const estacionesGDL = [
   {
     "slug": "esculturas-mc",
     "nombre": "Esculturas",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4367,7 +4367,7 @@ export const estacionesGDL = [
   {
     "slug": "fray-angelico-mc",
     "nombre": "Fray Angélico",
-    "linea": "MC",
+    "linea": ["MC"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4414,7 +4414,7 @@ export const estacionesGDL = [
   {
     "slug": "barranca-huentitan-mp",
     "nombre": "Barranca de Huentitán",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4461,7 +4461,7 @@ export const estacionesGDL = [
   {
     "slug": "zoologico-gdl-mp",
     "nombre": "Zoológico Guadalajara",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "turistico",
@@ -4519,7 +4519,7 @@ export const estacionesGDL = [
   {
     "slug": "independencia-norte-mp",
     "nombre": "Independencia Norte",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "transporte",
@@ -4568,7 +4568,7 @@ export const estacionesGDL = [
   {
     "slug": "lomas-paraiso-mp",
     "nombre": "Lomas del Paraíso",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4615,7 +4615,7 @@ export const estacionesGDL = [
   {
     "slug": "rancho-nuevo-mp",
     "nombre": "Rancho Nuevo",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4662,7 +4662,7 @@ export const estacionesGDL = [
   {
     "slug": "la-experiencia-mp",
     "nombre": "La Experiencia",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4709,7 +4709,7 @@ export const estacionesGDL = [
   {
     "slug": "el-batan-mp",
     "nombre": "El Batán",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4756,7 +4756,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-norte-mp",
     "nombre": "Periférico Norte",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "transporte",
@@ -4805,7 +4805,7 @@ export const estacionesGDL = [
   {
     "slug": "la-cantera-mp",
     "nombre": "La Cantera",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4852,7 +4852,7 @@ export const estacionesGDL = [
   {
     "slug": "tabachines-mp",
     "nombre": "Tabachines",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4899,7 +4899,7 @@ export const estacionesGDL = [
   {
     "slug": "constitucion-mp",
     "nombre": "Constitución",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -4946,7 +4946,7 @@ export const estacionesGDL = [
   {
     "slug": "centro-cultural-universitario-mp",
     "nombre": "Centro Cultural Universitario",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "educativo",
@@ -4993,7 +4993,7 @@ export const estacionesGDL = [
   {
     "slug": "san-isidro-mp",
     "nombre": "San Isidro",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5040,7 +5040,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-belenes-mp",
     "nombre": "Periférico Belenes",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "transporte",
@@ -5089,7 +5089,7 @@ export const estacionesGDL = [
   {
     "slug": "tuzania-mp",
     "nombre": "Tuzanía",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5136,7 +5136,7 @@ export const estacionesGDL = [
   {
     "slug": "santa-margarita-mp",
     "nombre": "Santa Margarita",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5183,7 +5183,7 @@ export const estacionesGDL = [
   {
     "slug": "acueducto-mp",
     "nombre": "Acueducto",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5230,7 +5230,7 @@ export const estacionesGDL = [
   {
     "slug": "cinco-de-mayo-mp",
     "nombre": "5 de Mayo",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5277,7 +5277,7 @@ export const estacionesGDL = [
   {
     "slug": "san-juan-ocotan-mp",
     "nombre": "San Juan de Ocotán",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5324,7 +5324,7 @@ export const estacionesGDL = [
   {
     "slug": "vallarta-mp",
     "nombre": "Vallarta",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5371,7 +5371,7 @@ export const estacionesGDL = [
   {
     "slug": "estadio-chivas-mp",
     "nombre": "Estadio Chivas/Akron",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "deportivo-turistico",
@@ -5429,7 +5429,7 @@ export const estacionesGDL = [
   {
     "slug": "ciudad-judicial-mp",
     "nombre": "Ciudad Judicial",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5476,7 +5476,7 @@ export const estacionesGDL = [
   {
     "slug": "ciudad-granja-mp",
     "nombre": "Ciudad Granja",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5523,7 +5523,7 @@ export const estacionesGDL = [
   {
     "slug": "parque-metropolitano-mp",
     "nombre": "Parque Metropolitano",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "parque",
@@ -5581,7 +5581,7 @@ export const estacionesGDL = [
   {
     "slug": "chapalita-inn-mp",
     "nombre": "Chapalita Inn",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5628,7 +5628,7 @@ export const estacionesGDL = [
   {
     "slug": "el-colli-mp",
     "nombre": "El Colli",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5675,7 +5675,7 @@ export const estacionesGDL = [
   {
     "slug": "felipe-ruvalcaba-mp",
     "nombre": "Felipe Ruvalcaba",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5722,7 +5722,7 @@ export const estacionesGDL = [
   {
     "slug": "miramar-mp",
     "nombre": "Miramar",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5769,7 +5769,7 @@ export const estacionesGDL = [
   {
     "slug": "mariano-otero-mp",
     "nombre": "Mariano Otero",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5816,7 +5816,7 @@ export const estacionesGDL = [
   {
     "slug": "el-briseno-mp",
     "nombre": "El Briseño",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5863,7 +5863,7 @@ export const estacionesGDL = [
   {
     "slug": "agricola-mp",
     "nombre": "Agrícola",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5910,7 +5910,7 @@ export const estacionesGDL = [
   {
     "slug": "lopez-mateos-mp",
     "nombre": "López Mateos",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -5957,7 +5957,7 @@ export const estacionesGDL = [
   {
     "slug": "iteso-mp",
     "nombre": "ITESO",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "educativo",
@@ -6015,7 +6015,7 @@ export const estacionesGDL = [
   {
     "slug": "terminal-sur-mp",
     "nombre": "Terminal Sur de Autobuses",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6062,7 +6062,7 @@ export const estacionesGDL = [
   {
     "slug": "periferico-sur-mp",
     "nombre": "Periférico Sur",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "transporte",
@@ -6111,7 +6111,7 @@ export const estacionesGDL = [
   {
     "slug": "san-sebastianito-mp",
     "nombre": "San Sebastianito",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6158,7 +6158,7 @@ export const estacionesGDL = [
   {
     "slug": "ocho-de-julio-mp",
     "nombre": "8 de Julio",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6205,7 +6205,7 @@ export const estacionesGDL = [
   {
     "slug": "toluquilla-mp",
     "nombre": "Toluquilla",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6252,7 +6252,7 @@ export const estacionesGDL = [
   {
     "slug": "adolf-horn-mp",
     "nombre": "Adolf Horn",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6299,7 +6299,7 @@ export const estacionesGDL = [
   {
     "slug": "artesanos-mp",
     "nombre": "Artesanos",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6346,7 +6346,7 @@ export const estacionesGDL = [
   {
     "slug": "las-pintas-mp",
     "nombre": "Las Pintas",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",
@@ -6393,7 +6393,7 @@ export const estacionesGDL = [
   {
     "slug": "carretera-chapala-mp",
     "nombre": "Carretera a Chapala",
-    "linea": "MP",
+    "linea": ["MP"],
     "sistema": "macrobus",
     "municipio": "Guadalajara",
     "tipo_zona": "residencial",

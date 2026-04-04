@@ -3,7 +3,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-waterfront",
     "nombre": "Waterfront",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "transporte-turistico",
@@ -28,7 +28,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-burrard",
     "nombre": "Burrard",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "negocios-cultural",
@@ -52,7 +52,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-granville",
     "nombre": "Granville",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "entretenimiento",
@@ -76,7 +76,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-stadium-chinatown",
     "nombre": "Stadium-Chinatown",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "deportes-cultural",
@@ -101,7 +101,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-main-street-science-world",
     "nombre": "Main Street-Science World",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "cultural-educativo",
@@ -125,7 +125,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-commercial-broadway",
     "nombre": "Commercial-Broadway",
-    "linea": "Expo/Millennium",
+    "linea": ["Expo/Millennium"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "transferencia-comercial",
@@ -149,7 +149,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-nanaimo",
     "nombre": "Nanaimo",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial",
@@ -172,7 +172,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-29th-avenue",
     "nombre": "29th Avenue",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial",
@@ -195,7 +195,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-joyce-collingwood",
     "nombre": "Joyce-Collingwood",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "comercial-multicultural",
@@ -219,7 +219,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-patterson",
     "nombre": "Patterson",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial-parques",
@@ -242,7 +242,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-metrotown",
     "nombre": "Metrotown",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "comercial-shopping",
@@ -266,7 +266,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-royal-oak",
     "nombre": "Royal Oak",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial",
@@ -289,7 +289,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-edmonds",
     "nombre": "Edmonds",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial-naturaleza",
@@ -313,7 +313,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-22nd-street",
     "nombre": "22nd Street",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "New Westminster",
     "tipo_zona": "residencial-riverfront",
@@ -337,7 +337,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-new-westminster",
     "nombre": "New Westminster",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "New Westminster",
     "tipo_zona": "centro-historico",
@@ -362,7 +362,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-columbia",
     "nombre": "Columbia",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "New Westminster",
     "tipo_zona": "transferencia-commercial",
@@ -386,7 +386,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-scott-road",
     "nombre": "Scott Road",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Surrey",
     "tipo_zona": "transporte-hub",
@@ -409,7 +409,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-gateway",
     "nombre": "Gateway",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Surrey",
     "tipo_zona": "entretenimiento",
@@ -432,7 +432,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-surrey-central",
     "nombre": "Surrey Central",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Surrey",
     "tipo_zona": "centro-comercial",
@@ -456,7 +456,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-king-george",
     "nombre": "King George",
-    "linea": "Expo",
+    "linea": ["Expo"],
     "sistema": "skytrain",
     "ciudad": "Surrey",
     "tipo_zona": "terminal-transporte",
@@ -482,7 +482,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-vcc-clark",
     "nombre": "VCC-Clark",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "educativo",
@@ -505,7 +505,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-renfrew",
     "nombre": "Renfrew",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial",
@@ -528,7 +528,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-rupert",
     "nombre": "Rupert",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial-parques",
@@ -551,7 +551,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-gilmore",
     "nombre": "Gilmore",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial",
@@ -575,7 +575,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-brentwood-town-centre",
     "nombre": "Brentwood Town Centre",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "shopping-comercial",
@@ -598,7 +598,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-holdom",
     "nombre": "Holdom",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial",
@@ -621,7 +621,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-sperling-burnaby-lake",
     "nombre": "Sperling-Burnaby Lake",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "naturaleza-parques",
@@ -644,7 +644,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lake-city-way",
     "nombre": "Lake City Way",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "residencial",
@@ -667,7 +667,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-production-way-university",
     "nombre": "Production Way-University",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "educativo",
@@ -690,7 +690,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lougheed-town-centre",
     "nombre": "Lougheed Town Centre",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Burnaby",
     "tipo_zona": "shopping-transporte",
@@ -714,7 +714,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-burquitlam",
     "nombre": "Burquitlam",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Coquitlam",
     "tipo_zona": "residencial",
@@ -737,7 +737,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-moody-centre",
     "nombre": "Moody Centre",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Port Moody",
     "tipo_zona": "naturaleza-cultural",
@@ -761,7 +761,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-inlet-centre",
     "nombre": "Inlet Centre",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Port Moody",
     "tipo_zona": "waterfront",
@@ -784,7 +784,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-coquitlam-central",
     "nombre": "Coquitlam Central",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Coquitlam",
     "tipo_zona": "centro-transporte",
@@ -808,7 +808,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lincoln",
     "nombre": "Lincoln",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Coquitlam",
     "tipo_zona": "residencial",
@@ -831,7 +831,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lafarge-lake-douglas",
     "nombre": "Lafarge Lake-Douglas",
-    "linea": "Millennium",
+    "linea": ["Millennium"],
     "sistema": "skytrain",
     "ciudad": "Coquitlam",
     "tipo_zona": "centro-civico",
@@ -858,7 +858,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-vancouver-city-centre",
     "nombre": "Vancouver City Centre",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "centro-comercial",
@@ -883,7 +883,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-yaletown-roundhouse",
     "nombre": "Yaletown-Roundhouse",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "gastronomia-cultural",
@@ -908,7 +908,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-olympic-village",
     "nombre": "Olympic Village",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "cultural-gastronomia",
@@ -933,7 +933,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-broadway-city-hall",
     "nombre": "Broadway-City Hall",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "civico-comercial",
@@ -957,7 +957,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-king-edward",
     "nombre": "King Edward",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial-parques",
@@ -981,7 +981,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-oakridge-41st-avenue",
     "nombre": "Oakridge-41st Avenue",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "shopping-residencial",
@@ -1005,7 +1005,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-langara-49th-avenue",
     "nombre": "Langara-49th Avenue",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "educativo-deportes",
@@ -1029,7 +1029,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-marine-drive",
     "nombre": "Marine Drive",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Vancouver",
     "tipo_zona": "residencial",
@@ -1052,7 +1052,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-bridgeport",
     "nombre": "Bridgeport",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "comercial-branch",
@@ -1076,7 +1076,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-templeton",
     "nombre": "Templeton",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "aeropuerto",
@@ -1100,7 +1100,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-sea-island-centre",
     "nombre": "Sea Island Centre",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "aeropuerto",
@@ -1123,7 +1123,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-yvr-airport",
     "nombre": "YVR-Airport",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "aeropuerto-terminal",
@@ -1146,7 +1146,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-aberdeen",
     "nombre": "Aberdeen",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "shopping-cultural",
@@ -1171,7 +1171,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lansdowne",
     "nombre": "Lansdowne",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "shopping-cultural",
@@ -1195,7 +1195,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-richmond-brighouse",
     "nombre": "Richmond-Brighouse",
-    "linea": "Canada",
+    "linea": ["Canada"],
     "sistema": "skytrain",
     "ciudad": "Richmond",
     "tipo_zona": "terminal-shopping",
@@ -1221,7 +1221,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-lonsdale-quay",
     "nombre": "Lonsdale Quay",
-    "linea": "SeaBus",
+    "linea": ["SeaBus"],
     "sistema": "seabus",
     "ciudad": "North Vancouver",
     "tipo_zona": "waterfront-mercado",
@@ -1249,7 +1249,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-port-moody-wce",
     "nombre": "Port Moody WCE",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Port Moody",
     "tipo_zona": "ferrocarril-estacion",
@@ -1272,7 +1272,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-port-coquitlam",
     "nombre": "Port Coquitlam",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Port Coquitlam",
     "tipo_zona": "residencial",
@@ -1295,7 +1295,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-pitt-meadows",
     "nombre": "Pitt Meadows",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Pitt Meadows",
     "tipo_zona": "rural-naturaleza",
@@ -1319,7 +1319,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-maple-meadows",
     "nombre": "Maple Meadows",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Maple Ridge",
     "tipo_zona": "residencial",
@@ -1342,7 +1342,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-port-haney",
     "nombre": "Port Haney",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Maple Ridge",
     "tipo_zona": "historico",
@@ -1366,7 +1366,7 @@ export const estacionesVANCOUVER = [
   {
     "slug": "vancouver-mission-city",
     "nombre": "Mission City",
-    "linea": "WCE",
+    "linea": ["WCE"],
     "sistema": "commuter-rail",
     "ciudad": "Mission",
     "tipo_zona": "terminal-heritage",
