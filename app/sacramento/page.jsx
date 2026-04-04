@@ -235,7 +235,7 @@ export default function SacramentoPage() {
                     {estacion.nombre}
                   </h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0 0 8px 0' }}>
-                    Lines {estacion.linea.join(', ').toUpperCase()}
+                    Lines {(Array.isArray(estacion.linea) ? estacion.linea.join(', ') : estacion.linea).toUpperCase()}
                   </p>
                   <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0', lineHeight: '1.6' }}>
                     {estacion.intro}

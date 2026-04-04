@@ -75,7 +75,7 @@ export default function StationSacramentoPage({ params }) {
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the SacRT ${estacion.linea.map(l => lineasSacramento.find(ln => ln.id === l)?.colorNombre).join(', ')} Line. Use the MetroGuia trip planner for directions.` } });
+  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre} station?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the SacRT ${(Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea]).map(l => lineasSacramento.find(ln => ln.id === l)?.colorNombre || l).join(', ')} Line. Use the MetroGuia trip planner for directions.` } });
   if (estacion.pois && estacion.pois.length > 0) {
     const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
     faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });
@@ -210,7 +210,7 @@ export default function StationSacramentoPage({ params }) {
                 <div>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-dim)', margin: '0 0 4px 0' }}>Lines</p>
                   <p style={{ fontSize: '1rem', fontWeight: '700', margin: '0', color: colorLinea }}>
-                    {estacion.linea.map(l => lineasSacramento.find(ln => ln.id === l)?.colorNombre).join(', ')} Line(s)
+                    {(Array.isArray(estacion.linea) ? estacion.linea : [estacion.linea]).map(l => lineasSacramento.find(ln => ln.id === l)?.colorNombre || l).join(', ')} Line(s)
                   </p>
                 </div>
                 <div>
