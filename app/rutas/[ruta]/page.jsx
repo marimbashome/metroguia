@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
 
   // Calcula ruta para tiempo/transbordos
   const graph = buildGraph(lineasDetalle);
-  const path = findRoute(graph, parsed.origen, parsed.destino);
+  const path = await findRoute(graph, parsed.origen, parsed.destino);
   const segments = formatSegments(path, estacionesMap, lineasDetalle);
   const { minutos, transbordos } = estimateTime(segments);
 
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function RutaPage({ params }) {
+export default async function RutaPage({ params }) {
   const { ruta } = params;
   const parsed = parseRutaSlug(ruta);
 
@@ -85,7 +85,7 @@ export default function RutaPage({ params }) {
   // Construye el grafo y busca la ruta
   const estacionesMap = buildEstacionesMap(estaciones);
   const graph = buildGraph(lineasDetalle);
-  const path = findRoute(graph, parsed.origen, parsed.destino);
+  const path = await findRoute(graph, parsed.origen, parsed.destino);
 
   if (!path) {
     return (

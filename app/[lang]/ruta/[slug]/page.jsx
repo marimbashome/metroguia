@@ -78,7 +78,7 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function RutaPageLang({ params }) {
+export default async function RutaPageLang({ params }) {
   const lang = params.lang
   const translations = {} // fallback: t() uses defaults
   const parsed = parseSlug(params.slug)

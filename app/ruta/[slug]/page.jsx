@@ -36,25 +36,26 @@ function parseRouteSlug(slug) {
   return null
 }
 
-function isValidRouteSlug(slug) {
+async function isValidRouteSlug(slug) {
   const parsed = parseRouteSlug(slug)
   if (!parsed) return false
   const { origen, destino } = parsed
   if (origen === destino) return false
   const stationSet = new Set(cdmxStations)
   if (stationSet.has(origen) && stationSet.has(destino)) return true
-  const grafo_all = getGrafo()
-  return !!(grafo_all[origen] && grafo_all[destino])
+  const ciudad = await detectCiudad(origen)
+  const grafo_all = await getGrafo(ciudad)
+  return !!(grafo_all && grafo_all[origen] && grafo_all[destino])
 }
 
 function getStationName(slug) {
   return STATION_DISPLAY_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const { slug } = params
   const parsed = parseRouteSlug(slug)
-  if (!parsed || !isValidRouteSlug(slug)) {
+  if (!parsed || !(await isValidRouteSlug(slug))) {
     return {
       title: 'Plan Your Transit Route — Transfers & Schedules | MetroGuia',
       description: 'Transit route planner for cities across Mexico, the US, and Canada. Find the best route, transfers, travel time, and fare.',
@@ -63,7 +64,7 @@ export function generateMetadata({ params }) {
   const { origen, destino } = parsed
   const origenName = getStationName(origen)
   const destinoName = getStationName(destino)
-  const ciudad = detectCiudad(origen)
+  const ciudad = await detectCiudad(origen)
   const cityConfig = ciudad ? getCityConfig(ciudad) : null
   const cityName = cityConfig?.name || 'Metro'
   const isEnglish = cityConfig?.country === 'US' || cityConfig?.country === 'CA'
@@ -90,17 +91,17 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function RutaPage({ params }) {
+export default async function RutaPage({ params }) {
   const { slug } = params
   const parsed = parseRouteSlug(slug)
   const origen = parsed?.origen || ''
   const destino = parsed?.destino || ''
   let rutaSchema = null
-  if (isValidRouteSlug(slug)) {
-    const ciudad = detectCiudad(origen)
-    const resultado = findRoute(origen, destino, ciudad)
+  if (await isValidRouteSlug(slug)) {
+    const ciudad = await detectCiudad(origen)
+    const resultado = await findRoute(origen, destino, ciudad)
     if (resultado && resultado.encontrada) {
-      const grafoActivo = getGrafo(ciudad)
+      const grafoActivo = await getGrafo(ciudad)
       const origenNombre = grafoActivo[origen]?.nombre || getStationName(origen)
       const destinoNombre = grafoActivo[destino]?.nombre || getStationName(destino)
       const tiempoEstimado = resultado.tiempo_total || Math.round(resultado.pasos.length * 2 + 3)

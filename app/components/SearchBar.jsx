@@ -474,11 +474,11 @@ export default function SearchBar({
   const quickActions = quickActionsByCity[ciudad] || quickActionsByCity.cdmx
 
   // Handle origen input with autocomplete
-  const handleOrigenChange = (e) => {
+  const handleOrigenChange = async (e) => {
     const value = e.target.value
     setOrigen(value)
     if (value.length > 0) {
-      const results = searchEstaciones(value, { ciudad })
+      const results = await searchEstaciones(value, { ciudad })
       setOrigenSuggestions(results)
       setShowOrigenDropdown(true)
     } else {
@@ -488,11 +488,11 @@ export default function SearchBar({
   }
 
   // Handle destino input with autocomplete
-  const handleDestinoChange = (e) => {
+  const handleDestinoChange = async (e) => {
     const value = e.target.value
     setDestino(value)
     if (value.length > 0) {
-      const results = searchEstaciones(value, { ciudad })
+      const results = await searchEstaciones(value, { ciudad })
       setDestinoSuggestions(results)
       setShowDestinoDropdown(true)
     } else {
@@ -533,7 +533,7 @@ export default function SearchBar({
   }
 
   // Submit form
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!origen.trim() || !destino.trim()) {
       return
@@ -543,7 +543,7 @@ export default function SearchBar({
     const origenKey = origenSlug || origen.toLowerCase().replace(/\s+/g, '-')
     const destinoKey = destinoSlug || destino.toLowerCase().replace(/\s+/g, '-')
 
-    const route = findRoute(origenKey, destinoKey)
+    const route = await findRoute(origenKey, destinoKey)
     if (onResult) {
       onResult(route)
     } else {

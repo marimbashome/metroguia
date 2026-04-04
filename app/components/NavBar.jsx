@@ -302,6 +302,8 @@ export default function NavBar() {
             alt="MetroGuia"
             width={32}
             height={32}
+            loading="lazy"
+            decoding="async"
             style={{ height: '32px', width: '32px', borderRadius: '6px' }}
           />
           <span style={{

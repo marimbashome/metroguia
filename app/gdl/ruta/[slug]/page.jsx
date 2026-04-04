@@ -36,7 +36,7 @@ function getStationName(slug) {
   return STATION_DISPLAY_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const { slug } = params
 
   if (!isValidRouteSlug(slug)) {
@@ -66,7 +66,7 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function RutaGDLPage({ params }) {
+export default async function RutaGDLPage({ params }) {
   const { slug } = params
   let rutaSchema = null
 
@@ -74,7 +74,7 @@ export default function RutaGDLPage({ params }) {
     const parts = slug.split('-a-')
     const origen = parts[0]
     const destino = parts.slice(1).join('-a-')
-    const resultado = findRoute(origen, destino)
+    const resultado = await findRoute(origen, destino)
     if (resultado && resultado.encontrada) {
       rutaSchema = {
         origen: grafo[origen]?.nombre || getStationName(origen),

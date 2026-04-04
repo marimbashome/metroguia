@@ -1,5 +1,6 @@
 import { estacionesNYC } from '@/data/nyc/estaciones';
 import { lineasNYC } from '@/data/nyc/lineas-detalle';
+import { normalizeLinea } from '@/app/utils/linea-helpers';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 import Link from 'next/link';
@@ -71,7 +72,7 @@ export default function StationNYCPage({ params }) {
     );
   }
 
-  const lineas = estacion.linea.split(',').map(l => l.trim());
+  const lineas = normalizeLinea(estacion.linea);
   const colorLinea = LINE_COLORS[lineas[0]] || 'var(--text)';
 
   const breadcrumbSchema = {

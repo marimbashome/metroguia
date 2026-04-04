@@ -168,7 +168,7 @@ export default function MTYPageLang({ params }) {
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', margin: '0 0 12px 0' }}>{estacion.municipio} · {estacion.tipo_zona}</p>
                   {estacion.pois && estacion.pois.length > 0 && (
                     <div>
-                      {estacion.pois.slice(0, 2).map((poi, idx) => (
+                      {(estacion.pois || []).slice(0, 2).map((poi, idx) => (
                         <p key={idx} style={{ fontSize: '0.875rem', color: 'var(--text)', margin: '0 0 4px 0', lineHeight: '1.3' }}>• {poi.nombre}</p>
                       ))}
                     </div>

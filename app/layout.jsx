@@ -1,4 +1,6 @@
 import './globals-v2.css'
+import Script from 'next/script'
+import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import PWAInstall from '@/app/components/PWAInstall'
 import NavBar from '@/app/components/NavBar'
@@ -6,6 +8,8 @@ import FooterBar from '@/app/components/FooterBar'
 import HrefLangTags from '@/app/components/HrefLangTags'
 import AutoLangRedirect from '@/app/components/AutoLangRedirect'
 import NetworkStatus from '@/app/components/NetworkStatus'
+
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata = {
   title: 'MetroGuia.mx — Rutas en Metro, Tren Ligero y BRT en CDMX, GDL y MTY',
@@ -80,15 +84,11 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="es" dir="ltr">
+    <html lang="es" dir="ltr" className={inter.className}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
@@ -116,18 +116,27 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <meta name="google-adsense-account" content="ca-pub-5779958677522085" />
-        {/* GA4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YQMP6V81D" />
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-7YQMP6V81D');
-        `}} />
-        <script
-          async
-          defer
+        {/* GA4 via next/script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7YQMP6V81D"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7YQMP6V81D');
+            `,
+          }}
+        />
+        {/* AdSense via next/script */}
+        <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
+          strategy="afterInteractive"
           crossOrigin="anonymous"
         />
       </head>
