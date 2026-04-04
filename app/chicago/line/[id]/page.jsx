@@ -2,7 +2,7 @@ import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
 import { estacionesChicago } from '@/data/chicago/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetalleChicago.map((linea) => ({
@@ -156,28 +156,8 @@ export default function LineChicagoPage({ params }) {
             Payment Options
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Ventra Card"
-              descripcion="Reloadable transit card for CTA and Pace buses."
-              precio="$5 + value"
-              enlace="https://www.ventrachicago.com/"
-            />
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="CTA Day Pass"
-              descripcion="Unlimited rides on all CTA lines for 24 hours."
-              precio="$5"
-              enlace="https://www.ventrachicago.com/"
-            />
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Purchase single rides via Ventra app."
-              precio="$2.50"
-              enlace="https://www.ventrachicago.com/"
-            />
-          </div>
+            <TransitCardsSection citySlug="chicago" />
+</div>
         </div>
       </section>
     </main>

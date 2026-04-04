@@ -2,7 +2,7 @@ import { lineasSF } from '@/data/san-francisco/lineas-detalle';
 import { estacionesSF } from '@/data/san-francisco/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasSF.map((linea) => ({
@@ -184,30 +184,8 @@ export default function LineSanFranciscoPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Clipper Card"
-              descripcion="Universal transit card for BART, Caltrain, VTA, ferries, and buses across Bay Area."
-              precio="$3–$2 (digital)"
-              enlace="https://www.clippercard.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via official transit apps."
-              precio="Varies"
-              enlace="https://www.bart.gov/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited travel across BART, Caltrain, VTA for 24 hours."
-              precio="$13–$15"
-              enlace="https://www.clippercard.com/"
-            />
-          </div>
+            <TransitCardsSection citySlug="san-francisco" />
+</div>
         </div>
       </section>
     </main>

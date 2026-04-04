@@ -4,7 +4,7 @@ import { estacionesMinneapolis } from '@/data/minneapolis/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export const metadata = {
   title: 'Metro Transit Light Rail — Minneapolis Transit | MetroGuia',
@@ -176,30 +176,8 @@ export default function MinneapolisPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Go-To Card"
-              descripcion="Reloadable card for all Metro Transit services. Works on light rail and bus."
-              precio="$2 (card) + value"
-              enlace="https://www.metrotransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via Metro Transit app."
-              precio="$2.00"
-              enlace="https://www.metrotransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Day Pass"
-              descripcion="Unlimited light rail travel for 24 hours."
-              precio="$8.00"
-              enlace="https://www.metrotransit.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="minneapolis" />
+</div>
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import { estacionesSacramento } from '@/data/sacramento/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
@@ -176,30 +176,8 @@ export default function SacramentoPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Single Ride"
-              descripcion="Pay-per-ride using cash, card, or mobile ticket."
-              precio="$2.50–$3.00"
-              enlace="https://www.sacrt.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via SacRT app or online."
-              precio="Variable"
-              enlace="https://www.sacrt.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Day Pass"
-              descripcion="Unlimited rides for 24 hours."
-              precio="$6.50"
-              enlace="https://www.sacrt.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="sacramento" />
+</div>
         </div>
       </section>
 

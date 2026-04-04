@@ -3,7 +3,7 @@ import { estacionesCharlotte } from '@/data/charlotte/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -219,30 +219,8 @@ export default function CharlottePage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="One Ride"
-              descripcion="Single trip on Blue or Gold Line."
-              precio="$2.20"
-              enlace="https://www.catslynx.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="GoTriangle App"
-              descripcion="Mobile tickets and day passes via mobile app."
-              precio="$2.20"
-              enlace="https://www.catslynx.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Day Pass"
-              descripcion="Unlimited rides on LYNX all day."
-              precio="$5.00"
-              enlace="https://www.catslynx.com/"
-            />
-          </div>
+            <TransitCardsSection citySlug="charlotte" />
+</div>
         </div>
       </section>
 

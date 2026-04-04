@@ -3,7 +3,7 @@ import { estacionesAustin } from '@/data/austin/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -125,9 +125,8 @@ export default function AustinPage() {
             Payment & Passes
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard icon="🎫" titulo="Single Ride" descripcion="One-way trip on Capital MetroRail." precio="$1.25 USD" enlace="#" />
-            <AffiliateTransportCard icon="📱" titulo="Mobile Pass" descripcion="Digital ticket via mobile app." precio="$1.25 USD" enlace="#" />
-          </div>
+            <TransitCardsSection citySlug="austin" />
+</div>
         </div>
       </section>
 

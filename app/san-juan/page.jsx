@@ -3,7 +3,7 @@ import { estacionesSanJuan } from '@/data/san-juan/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -125,9 +125,8 @@ export default function SanJuanPage() {
             Payment & Passes
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard icon="🎫" titulo="Single Ride" descripcion="One-way trip on Tren Urbano." precio="$2.75 USD" enlace="#" />
-            <AffiliateTransportCard icon="📱" titulo="Tarjeta Inteligente" descripcion="Digital card via smart card system." precio="$2.75 USD" enlace="#" />
-          </div>
+            <TransitCardsSection citySlug="san-juan" />
+</div>
         </div>
       </section>
 

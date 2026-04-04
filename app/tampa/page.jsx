@@ -3,7 +3,7 @@ import { estacionesTampa } from '@/data/tampa/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -125,9 +125,8 @@ export default function TampaPage() {
             Payment & Passes
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard icon="🎫" titulo="Single Ride" descripcion="One-way trip on TECO Line Streetcar." precio="Free" enlace="#" />
-            <AffiliateTransportCard icon="📱" titulo="Day Pass" descripcion="Unlimited rides all day long." precio="$5.00 USD" enlace="#" />
-          </div>
+            <TransitCardsSection citySlug="tampa" />
+</div>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import { lineasPhoenix } from '@/data/phoenix/lineas-detalle';
 import { estacionesPhoenix } from '@/data/phoenix/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasPhoenix.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LinePhoenixPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="One Ride"
-              descripcion="Single trip on Valley Metro Light Rail."
-              precio="$2.00"
-              enlace="https://www.valleymetro.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via Valley Metro app or online."
-              precio="$2.00"
-              enlace="https://www.valleymetro.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited rides on Valley Metro all day."
-              precio="$4.00"
-              enlace="https://www.valleymetro.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="phoenix" />
+</div>
         </div>
       </section>
     </main>

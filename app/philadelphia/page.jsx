@@ -4,7 +4,7 @@ import { CITIES_CONFIG } from '@/data/cities-config';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {
@@ -272,30 +272,8 @@ export default function PhiladelphiaPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="SEPTA Key Card"
-              descripcion="Reloadable contactless card for all SEPTA services. Faster entry and automatic fare calculation."
-              precio="$2.50 (card) + value"
-              enlace="https://www.septa.org/key/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="SEPTA Mobile App"
-              descripcion="Real-time tracking, trip planning, and mobile payment for SEPTA services."
-              precio="Free"
-              enlace="https://www.septa.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚌"
-              titulo="Broad Street Line"
-              descripcion="North-south rapid transit. 18 stations from Fern Rock to NRG/AT&T. Direct sports access."
-              precio="$2.50–$5.50"
-              enlace="https://www.septa.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="philadelphia" />
+</div>
         </div>
       </section>
 

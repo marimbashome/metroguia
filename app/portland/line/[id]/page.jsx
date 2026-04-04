@@ -2,7 +2,7 @@ import { lineasPortland } from '@/data/portland/lineas-detalle';
 import { estacionesPortland } from '@/data/portland/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasPortland.map((linea) => ({
@@ -208,30 +208,8 @@ export default function LinePortlandPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Hop Fastpass"
-              descripcion="Reloadable contactless card. Works on MAX, Streetcar, and buses. Tap to ride."
-              precio="$2.50 per ride"
-              enlace="https://myhopcard.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via the Hop app or TriMet Tickets app."
-              precio="$2.50"
-              enlace="https://trimet.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited rides for 24 hours on all TriMet services."
-              precio="$5.00"
-              enlace="https://trimet.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="portland" />
+</div>
         </div>
       </section>
     </main>

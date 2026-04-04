@@ -2,7 +2,7 @@ import { lineasDetalleDC } from '@/data/washington-dc/lineas-detalle';
 import { estacionesDC } from '@/data/washington-dc/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetalleDC.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LineDCPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable contactless card. Works on all Metro services."
-              precio="$2 + value"
-              enlace="https://www.wmata.com/smartrip"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via WMATA app or online."
-              precio="$2.00–$6.00"
-              enlace="https://www.wmata.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$13"
-              enlace="https://www.wmata.com/fares"
-            />
-          </div>
+            <TransitCardsSection citySlug="washington-dc" />
+</div>
         </div>
       </section>
     </main>

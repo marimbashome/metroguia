@@ -4,7 +4,7 @@ import { estacionesPittsburgh } from '@/data/pittsburgh/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export const metadata = {
   title: 'PRT T Light Rail — Pittsburgh Transit | MetroGuia',
@@ -176,30 +176,8 @@ export default function PittsburghPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="T Card"
-              descripcion="Reloadable card for Pittsburgh T light rail and bus transit."
-              precio="$5 (card) + value"
-              enlace="https://www.portauthority.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via Port Authority app."
-              precio="$2.75"
-              enlace="https://www.portauthority.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited T light rail travel for 24 hours."
-              precio="$9.50"
-              enlace="https://www.portauthority.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="pittsburgh" />
+</div>
         </div>
       </section>
 

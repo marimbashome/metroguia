@@ -4,7 +4,7 @@ import { estacionesSF } from '@/data/san-francisco/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {
@@ -231,30 +231,8 @@ export default function SanFranciscoPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Clipper Card"
-              descripcion="Universal transit card for BART, Caltrain, VTA, ferries, and buses."
-              precio="$3–$2 (digital)"
-              enlace="https://www.clippercard.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚀"
-              titulo="Visitor Clipper"
-              descripcion="7-day or 3-day passes for tourists. Unlimited rides."
-              precio="$32/$20"
-              enlace="https://www.clippercard.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Caltrain Weekend Pass"
-              descripcion="All-day travel on Caltrain network. Perfect for Levi's games."
-              precio="$10"
-              enlace="https://www.caltrain.com/"
-            />
-          </div>
+            <TransitCardsSection citySlug="san-francisco" />
+</div>
         </div>
       </section>
 

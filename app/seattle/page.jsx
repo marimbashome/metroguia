@@ -4,7 +4,7 @@ import { estacionesSeattle } from '@/data/seattle/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {
@@ -231,30 +231,8 @@ export default function SeattlePage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="ORCA Card"
-              descripcion="Reloadable card for all Puget Sound transit. Works on Link, bus, ferry."
-              precio="$5 (card) + value"
-              enlace="https://www.orca.cards/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or day passes via Sound Transit app."
-              precio="$2.75–$3.25"
-              enlace="https://www.soundtransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Link Red Line"
-              descripcion="Airport Link + Stadium Station + downtown connections."
-              precio="$2.75–$3.25"
-              enlace="https://www.soundtransit.org/ride-link"
-            />
-          </div>
+            <TransitCardsSection citySlug="seattle" />
+</div>
         </div>
       </section>
 

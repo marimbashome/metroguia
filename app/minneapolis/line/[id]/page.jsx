@@ -2,7 +2,7 @@ import { lineasDetalleMinneapolis } from '@/data/minneapolis/lineas-detalle';
 import { estacionesMinneapolis } from '@/data/minneapolis/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetalleMinneapolis.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LineMinneapolisPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Go-To Card"
-              descripcion="Reloadable contactless card. Works on all Metro Transit services."
-              precio="$2 + value"
-              enlace="https://www.metrotransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via Metro Transit app or online."
-              precio="$2.00"
-              enlace="https://www.metrotransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited light rail and bus travel for 24 hours."
-              precio="$8.00"
-              enlace="https://www.metrotransit.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="minneapolis" />
+</div>
         </div>
       </section>
     </main>

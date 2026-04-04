@@ -4,7 +4,7 @@ import { estacionesBaltimore } from '@/data/baltimore/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export const metadata = {
   title: 'MTA Maryland Metro — Baltimore Transit | MetroGuia',
@@ -176,30 +176,8 @@ export default function BaltimorePagePage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="CharmCard"
-              descripcion="Reloadable card for Baltimore MTA Metro, buses, and local transit."
-              precio="$5 (card) + value"
-              enlace="https://www.mta.maryland.gov/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via MTA app or online."
-              precio="$2.00"
-              enlace="https://www.mta.maryland.gov/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$8.50"
-              enlace="https://www.mta.maryland.gov/"
-            />
-          </div>
+            <TransitCardsSection citySlug="baltimore" />
+</div>
         </div>
       </section>
 

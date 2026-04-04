@@ -2,7 +2,7 @@ import { lineasDetallePittsburgh } from '@/data/pittsburgh/lineas-detalle';
 import { estacionesPittsburgh } from '@/data/pittsburgh/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetallePittsburgh.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LinePittsburghPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="T Card"
-              descripcion="Reloadable contactless card. Works on light rail and buses."
-              precio="$5 + value"
-              enlace="https://www.portauthority.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via Port Authority app or online."
-              precio="$2.75"
-              enlace="https://www.portauthority.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited light rail and bus travel for 24 hours."
-              precio="$9.50"
-              enlace="https://www.portauthority.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="pittsburgh" />
+</div>
         </div>
       </section>
     </main>

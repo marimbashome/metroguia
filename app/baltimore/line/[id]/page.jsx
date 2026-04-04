@@ -2,7 +2,7 @@ import { lineasDetalleBaltimore } from '@/data/baltimore/lineas-detalle';
 import { estacionesBaltimore } from '@/data/baltimore/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetalleBaltimore.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LineBaltimorePage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="CharmCard"
-              descripcion="Reloadable contactless card. Works on Metro, buses, and local transit."
-              precio="$5 + value"
-              enlace="https://www.mta.maryland.gov/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via MTA app or online."
-              precio="$2.00"
-              enlace="https://www.mta.maryland.gov/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$8.50"
-              enlace="https://www.mta.maryland.gov/"
-            />
-          </div>
+            <TransitCardsSection citySlug="baltimore" />
+</div>
         </div>
       </section>
     </main>

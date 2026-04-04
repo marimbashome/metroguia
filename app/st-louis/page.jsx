@@ -3,7 +3,7 @@ import { estacionesStLouis } from '@/data/st-louis/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -219,30 +219,8 @@ export default function StLouisPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="One Ride"
-              descripcion="Single trip on MetroLink Red or Blue Line."
-              precio="$2.50"
-              enlace="https://www.metrostlouis.org/rider-info/fares-passes"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via Metro app or online."
-              precio="$2.50"
-              enlace="https://www.metrostlouis.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited rides on MetroLink all day."
-              precio="$5.00"
-              enlace="https://www.metrostlouis.org/rider-info/fares-passes"
-            />
-          </div>
+            <TransitCardsSection citySlug="st-louis" />
+</div>
         </div>
       </section>
 

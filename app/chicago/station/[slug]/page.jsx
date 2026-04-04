@@ -1,7 +1,7 @@
 import { estacionesChicago } from '@/data/chicago/estaciones';
 import { lineasDetalleChicago } from '@/data/chicago/lineas-detalle';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import Link from 'next/link';
 
 const LINE_COLORS = {
@@ -229,13 +229,7 @@ export default function StationChicagoPage({ params }) {
             </div>
 
             {/* Ventra card */}
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Ventra Card"
-              descripcion="Pay-as-you-go or pass options."
-              precio="$2.50/ride"
-              enlace="https://www.ventrachicago.com/"
-            />
+            <TransitCardsSection citySlug="chicago" />
           </div>
         </div>
       </section>

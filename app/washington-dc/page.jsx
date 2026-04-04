@@ -4,7 +4,7 @@ import { estacionesDC } from '@/data/washington-dc/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export const metadata = {
   title: 'WMATA Metro Guide — Washington D.C. Transit | MetroGuia',
@@ -176,30 +176,8 @@ export default function WashingtonDCPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="SmarTrip Card"
-              descripcion="Reloadable card for all Washington transit. Works on Metro, buses, and regional services."
-              precio="$2 (card) + value"
-              enlace="https://www.wmata.com/smartrip"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via WMATA app."
-              precio="$2.00–$6.00"
-              enlace="https://www.wmata.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚇"
-              titulo="Day Pass"
-              descripcion="Unlimited Metro travel for 24 hours."
-              precio="$13"
-              enlace="https://www.wmata.com/fares"
-            />
-          </div>
+            <TransitCardsSection citySlug="washington-dc" />
+</div>
         </div>
       </section>
 

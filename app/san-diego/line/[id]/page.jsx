@@ -2,7 +2,7 @@ import { lineasDetalleSanDiego } from '@/data/san-diego/lineas-detalle';
 import { estacionesSanDiego } from '@/data/san-diego/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasDetalleSanDiego.map((linea) => ({
@@ -187,30 +187,8 @@ export default function LineSanDiegoPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Pronto Card"
-              descripcion="Reloadable contactless card for all San Diego transit."
-              precio="$2 + value"
-              enlace="https://www.sdmts.com/fares-passes/pronto-card"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via MTS app or online."
-              precio="$2.50"
-              enlace="https://www.sdmts.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited Trolley travel for 24 hours."
-              precio="$6"
-              enlace="https://www.sdmts.com/fares-passes"
-            />
-          </div>
+            <TransitCardsSection citySlug="san-diego" />
+</div>
         </div>
       </section>
     </main>

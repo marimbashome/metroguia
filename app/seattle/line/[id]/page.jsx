@@ -2,7 +2,7 @@ import { lineasSeattle } from '@/data/seattle/lineas-detalle';
 import { estacionesSeattle } from '@/data/seattle/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasSeattle.map((linea) => ({
@@ -184,30 +184,8 @@ export default function LineSeattlePage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="ORCA Card"
-              descripcion="Reloadable contactless card. Works on Link, buses, and ferries."
-              precio="$5 + value"
-              enlace="https://www.orca.cards/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via Sound Transit app or online."
-              precio="$2.75–$3.25"
-              enlace="https://www.soundtransit.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited Link travel for 24 hours."
-              precio="$10.50"
-              enlace="https://www.soundtransit.org/"
-            />
-          </div>
+            <TransitCardsSection citySlug="seattle" />
+</div>
         </div>
       </section>
     </main>

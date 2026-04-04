@@ -4,7 +4,7 @@ import { estacionesSanDiego } from '@/data/san-diego/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export const metadata = {
   title: 'MTS Trolley Guide — San Diego Transit | MetroGuia',
@@ -176,30 +176,8 @@ export default function SanDiegoPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="Pronto Card"
-              descripcion="Reloadable card for all San Diego transit. Works on Trolley, buses, and regional services."
-              precio="$2 (card) + value"
-              enlace="https://www.sdmts.com/fares-passes/pronto-card"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy single rides or passes via MTS app."
-              precio="$2.50"
-              enlace="https://www.sdmts.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚊"
-              titulo="Day Pass"
-              descripcion="Unlimited Trolley travel for 24 hours."
-              precio="$6"
-              enlace="https://www.sdmts.com/fares-passes"
-            />
-          </div>
+            <TransitCardsSection citySlug="san-diego" />
+</div>
         </div>
       </section>
 

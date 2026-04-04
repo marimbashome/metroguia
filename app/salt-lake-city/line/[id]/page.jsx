@@ -2,7 +2,7 @@ import { lineasSaltLakeCity } from '@/data/salt-lake-city/lineas-detalle';
 import { estacionesSaltLakeCity } from '@/data/salt-lake-city/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasSaltLakeCity.map((linea) => ({
@@ -189,30 +189,8 @@ export default function LineSaltLakeCityPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="FAREPAY Card"
-              descripcion="Reloadable contactless card. Works on all UTA services including TRAX, buses, and S-Line."
-              precio="$5 + value"
-              enlace="https://www.rideuta.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Ticket"
-              descripcion="Buy tickets via UTA app or Transit app."
-              precio="$2.50"
-              enlace="https://www.rideuta.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🎟️"
-              titulo="Day Pass"
-              descripcion="Unlimited TRAX travel for 24 hours."
-              precio="$9.00"
-              enlace="https://www.rideuta.com/"
-            />
-          </div>
+            <TransitCardsSection citySlug="salt-lake-city" />
+</div>
         </div>
       </section>
     </main>

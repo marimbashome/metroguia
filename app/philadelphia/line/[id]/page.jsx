@@ -2,7 +2,7 @@ import { lineasPhiladelphia } from '@/data/philadelphia/lineas-detalle';
 import { estacionesPhiladelphia } from '@/data/philadelphia/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 
 export async function generateStaticParams() {
   return lineasPhiladelphia.map((linea) => ({
@@ -195,30 +195,8 @@ export default function LinePhiladelphiaPage({ params }) {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="SEPTA Key Card"
-              descripcion="Reloadable contactless card. Fastest way to enter all SEPTA services."
-              precio="$2.50 (card) + value"
-              enlace="https://www.septa.org/key/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Payment"
-              descripcion="Pay directly via SEPTA mobile app. No card needed."
-              precio="$2.50 per ride"
-              enlace="https://www.septa.org/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚌"
-              titulo="Pass Options"
-              descripcion="Weekly and monthly passes available for frequent riders."
-              precio="$25.50 – $98"
-              enlace="https://www.septa.org/passes/"
-            />
-          </div>
+            <TransitCardsSection citySlug="philadelphia" />
+</div>
         </div>
       </section>
     </main>

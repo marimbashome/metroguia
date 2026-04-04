@@ -4,7 +4,7 @@ import { estacionesBoston } from '@/data/boston/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import AffiliateMundial from '@/app/components/AffiliateMundial';
 
 export const metadata = {
@@ -231,30 +231,8 @@ export default function BostonPage() {
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard
-              icon="🎫"
-              titulo="CharlieCard"
-              descripcion="Reloadable card for subway, bus, commuter rail, and ferry throughout Boston area."
-              precio="$6 (card) + value"
-              enlace="https://www.mbta.com/fares/"
-            />
-
-            <AffiliateTransportCard
-              icon="📱"
-              titulo="Mobile Pass"
-              descripcion="Digital pass and single tickets via MBTA app and website."
-              precio="$2.40–$10.50"
-              enlace="https://www.mbta.com/"
-            />
-
-            <AffiliateTransportCard
-              icon="🚌"
-              titulo="Day Pass"
-              descripcion="Unlimited subway and local bus for 24 hours. Perfect for visiting."
-              precio="$13.50"
-              enlace="https://www.mbta.com/fares/"
-            />
-          </div>
+            <TransitCardsSection citySlug="boston" />
+</div>
         </div>
       </section>
 

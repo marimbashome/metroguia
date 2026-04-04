@@ -3,7 +3,7 @@ import { estacionesOklahomaCity } from '@/data/oklahoma-city/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import SearchBar from '@/app/components/SearchBar';
-import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
+import TransitCardsSection from '@/app/components/TransitCardsSection';
 import { sliceLinea } from '@/app/utils/linea-helpers';
 
 export const metadata = {
@@ -125,9 +125,8 @@ export default function OklahomaCityPage() {
             Payment & Passes
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            <AffiliateTransportCard icon="🎫" titulo="Single Ride" descripcion="One-way trip on EMBARK Streetcar." precio="$2.50 USD" enlace="#" />
-            <AffiliateTransportCard icon="📱" titulo="Day Pass" descripcion="Unlimited rides for 24 hours." precio="$7.00 USD" enlace="#" />
-          </div>
+            <TransitCardsSection citySlug="oklahoma-city" />
+</div>
         </div>
       </section>
 
