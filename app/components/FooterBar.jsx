@@ -76,6 +76,8 @@ export default function FooterBar() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <a href={`${prefix}/lineas/`} style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>{t.layout?.lines || 'Líneas'}</a>
                 <a href={`${prefix}/mundial-2026/`} style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>{t.nav?.worldCup || 'Mundial 2026'}</a>
+                <a href={`${prefix}/about/`} style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>{t.layout?.about || t.footer?.about || 'Acerca de'}</a>
+                <a href={`${prefix}/contact/`} style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>{t.layout?.contact || t.footer?.contact || 'Contacto'}</a>
                 <a href={`${prefix}/privacy-policy/`} style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>{t.layout?.privacy || t.footer?.privacy || 'Privacidad'}</a>
               </div>
             </div>
