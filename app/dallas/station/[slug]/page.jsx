@@ -77,7 +77,7 @@ export default function EstacionDallasPage({ params }) {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ width: '48px', height: '48px', backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', fontWeight: '700' }}>
-              {estacion.linea.charAt(0)}
+              {(Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea || '').charAt(0)}
             </span>
             <span style={{ fontSize: '1rem', fontWeight: '500' }}>Dallas, Texas</span>
           </div>

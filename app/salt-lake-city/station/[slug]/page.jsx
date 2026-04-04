@@ -64,7 +64,7 @@ export default function StationSaltLakeCityPage({ params }) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
       { '@type': 'ListItem', position: 2, name: 'Salt Lake City', item: 'https://metroguia.mx/salt-lake-city/' },
-      { '@type': 'ListItem', position: 3, name: estacion.linea.toUpperCase(), item: `https://metroguia.mx/salt-lake-city/line/${estacion.linea}/` },
+      { '@type': 'ListItem', position: 3, name: (Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea || '').toUpperCase(), item: `https://metroguia.mx/salt-lake-city/line/${Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea}/` },
       { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/salt-lake-city/station/${estacion.slug}` },
     ],
   };
@@ -82,7 +82,7 @@ export default function StationSaltLakeCityPage({ params }) {
   };
 
   const faqItems = [];
-  faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${estacion.linea.charAt(0).toUpperCase() + estacion.linea.slice(1)} Line. Use the MetroGuia trip planner for directions.` } });
+  { const lineaStr = Array.isArray(estacion.linea) ? estacion.linea[0] : estacion.linea || ''; faqItems.push({ '@type': 'Question', name: `How do I get to ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `${estacion.nombre} is served by the ${lineaStr.charAt(0).toUpperCase() + lineaStr.slice(1)} Line. Use the MetroGuia trip planner for directions.` } }); }
   if (estacion.pois && estacion.pois.length > 0) {
     const poiList = estacion.pois.slice(0, 5).map(p => typeof p === 'string' ? p : p.nombre).join(', ');
     faqItems.push({ '@type': 'Question', name: `What's near ${estacion.nombre}?`, acceptedAnswer: { '@type': 'Answer', text: `Nearby attractions: ${poiList}.` } });

@@ -47,7 +47,7 @@ export default function StationLAPage({ params }) {
     );
   }
 
-  const lineas = estacion.linea.split(',').map(l => l.trim());
+  const lineas = Array.isArray(estacion.linea) ? estacion.linea : (estacion.linea || '').split(',').map(l => l.trim());
   const colorLinea = LINE_COLORS[lineas[0]] || '#C60C30';
   const lineaId = lineas[0] === 'Gold' ? 'Gold' : lineas[0] === 'Purple' ? 'Purple' : lineas[0] === 'Blue' ? 'Blue' : lineas[0] === 'Green' ? 'Green' : lineas[0] === 'Red' ? 'Red' : 'K';
 
