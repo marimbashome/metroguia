@@ -5,10 +5,11 @@ import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLa
 import { LANGUAGES, buildMetadata, t } from '@/lib/i18n';
 
 export function generateStaticParams() {
-  return [];
+  const ids = ['MC', 'MP'];
+  return LANGUAGES.flatMap(lang => ids.map(id => ({ lang, id })));
 }
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
   const linea = lineasGDL.find(l => (l.id === 'MC' || l.id === 'MP') && l.id === params.id);

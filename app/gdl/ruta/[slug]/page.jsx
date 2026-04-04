@@ -5,7 +5,7 @@ import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from '@/app/ruta/[slug]/RutaClient'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
-export const dynamicParams = true
+export const dynamicParams = false
 export const revalidate = false
 
 // Pre-build top 100 GDL routes at build time (rest via ISR)

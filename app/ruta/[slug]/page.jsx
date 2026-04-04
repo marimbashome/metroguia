@@ -6,7 +6,7 @@ import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from './RutaClient'
 
 // ISR: allow any station-to-station slug, not just pre-built ones
-export const dynamicParams = true
+export const dynamicParams = false
 
 // Cache pages forever (they don't change — metro map is static)
 export const revalidate = false

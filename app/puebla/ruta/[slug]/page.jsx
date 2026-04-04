@@ -1,7 +1,7 @@
 import { pueblaStations, STATION_DISPLAY_NAMES } from '@/data/rutas-engine'
 import RutaClient from '@/app/ruta/[slug]/RutaClient'
 
-export const dynamicParams = true
+export const dynamicParams = false
 export const revalidate = false
 
 export function generateStaticParams() {

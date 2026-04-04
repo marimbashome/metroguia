@@ -4,7 +4,7 @@ import { rutasPopulares, getRelatedRoutes } from '@/data/rutas-populares'
 import { STATION_DISPLAY_NAMES, cdmxStationSet } from '@/data/rutas-engine'
 
 // ISR: allow any route slug in any language
-export const dynamicParams = true
+export const dynamicParams = false
 export const revalidate = false
 
 function getStationName(slug) {

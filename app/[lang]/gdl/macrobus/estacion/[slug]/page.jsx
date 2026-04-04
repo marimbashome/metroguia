@@ -6,10 +6,12 @@ import { LANGUAGES, buildMetadata, t } from '@/lib/i18n';
 const macrobusEstaciones = estacionesGDL.filter(e => e.sistema === 'macrobus');
 
 export function generateStaticParams() {
-  return [];
+  return LANGUAGES.flatMap(lang =>
+    macrobusEstaciones.map(e => ({ lang, slug: e.slug }))
+  );
 }
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
   const estacion = estacionesGDL.find(e => e.slug === params.slug && e.sistema === 'macrobus');

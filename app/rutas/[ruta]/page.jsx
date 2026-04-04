@@ -4,7 +4,7 @@ import { rutasPopulares, parseRutaSlug, buildRutaSlug, findRuta, getRelatedRoute
 import { buildGraph, buildEstacionesMap, findRoute, formatSegments, estimateTime, COSTO_METRO } from '@/lib/rutas';
 
 // ISR: allow any curated route slug, not just pre-built ones
-export const dynamicParams = true
+export const dynamicParams = false
 
 // Cache pages forever (metro map is static)
 export const revalidate = false
