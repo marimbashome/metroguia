@@ -151,10 +151,12 @@ export default function DestinoDetailPage({ params }) {
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
                   {seccion.titulo}
                 </h2>
-                <div
-                  style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
-                  dangerouslySetInnerHTML={{ __html: seccion.texto }}
-                />
+                {seccion.texto && (
+                  <div
+                    style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                    dangerouslySetInnerHTML={{ __html: seccion.texto }}
+                  />
+                )}
               </article>
             ))}
           </section>
