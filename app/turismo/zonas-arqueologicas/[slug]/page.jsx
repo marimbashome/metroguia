@@ -249,7 +249,7 @@ export default function ZonaArqueologicaDetail({ params }) {
         {marimbasBlogSlug && (
           <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem', borderBottom: '1px solid var(--border)' }}>
             <a
-              href={`https://marimbashome.com/blog/es/${marimbasBlogSlug}`}
+              href={`https://book.marimbashome.com/es/guides/${marimbasBlogSlug}`}
               target="_blank"
               rel="noopener"
               style={{

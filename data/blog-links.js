@@ -164,7 +164,7 @@ export const blogLinks = {
 
 // Helper: construir URL del blog
 export function getBlogUrl(slug) {
-  return `https://marimbashome.com/blog/${slug}`
+  return `https://book.marimbashome.com/es/guides/${slug}`
 }
 
 // Helper: obtener guías para una estación
