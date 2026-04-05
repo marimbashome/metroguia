@@ -1,6 +1,53 @@
 import { notFound } from 'next/navigation';
 import { destinosPrioritarios } from '@/data/turismo/destinos-prioritarios';
 
+const MARIMBAS_BLOG_GUIDES = {
+  'cancun': 'cancun',
+  'riviera-maya': 'riviera-maya',
+  'playa-del-carmen': 'playa-del-carmen',
+  'tulum': 'tulum',
+  'cozumel': 'cozumel',
+  'isla-mujeres': 'isla-mujeres',
+  'holbox': 'holbox',
+  'bacalar': 'bacalar-mahahual',
+  'los-cabos': 'los-cabos-baja',
+  'la-paz': 'la-paz',
+  'loreto': 'loreto',
+  'todos-santos': 'todos-santos',
+  'isla-espiritu-santo': 'isla-espiritu-santo',
+  'puerto-vallarta': 'puerto-vallarta',
+  'sayulita': 'sayulita-nayarit',
+  'acapulco': 'acapulco',
+  'huatulco': 'huatulco',
+  'ixtapa-zihuatanejo': 'ixtapa-zihuatanejo',
+  'mazatlan': 'mazatlan',
+  'ciudad-de-mexico': 'cdmx',
+  'teotihuacan': 'teotihuacan',
+  'guadalajara': 'guadalajara-jalisco',
+  'monterrey': 'monterrey',
+  'oaxaca': 'oaxaca',
+  'san-miguel-de-allende': 'guanajuato-san-miguel',
+  'guanajuato': 'guanajuato-san-miguel',
+  'merida': 'merida-yucatan',
+  'campeche': 'campeche',
+  'chichen-itza': 'chichen-itza',
+  'puebla': 'puebla',
+  'queretaro': 'queretaro',
+  'morelia': 'morelia',
+  'patzcuaro': 'patzcuaro',
+  'zacatecas': 'zacatecas',
+  'san-cristobal-de-las-casas': 'san-cristobal',
+  'palenque': 'palenque',
+  'taxco': 'taxco',
+  'tepoztlan': 'tepoztlan',
+  'valle-de-bravo': 'valle-de-bravo',
+  'mineral-de-pozos': 'mineral-de-pozos',
+  'bernal': 'bernal',
+  'real-de-catorce': 'real-de-catorce',
+  'hierve-el-agua': 'hierve-el-agua',
+  'barrancas-del-cobre': 'barrancas-del-cobre',
+};
+
 export async function generateStaticParams() {
   return destinosPrioritarios.map((destino) => ({
     slug: destino.slug
@@ -15,8 +62,8 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: `${destino.nombre} | MetroGuía`,
-    description: destino.descripcion
+    title: destino.seo_title || `${destino.nombre} — Guía turística | MetroGuía`,
+    description: destino.meta_description || destino.descripcion
   };
 }
 
@@ -96,6 +143,23 @@ export default function DestinoDetailPage({ params }) {
           </p>
         </section>
 
+        {/* Contenido editorial */}
+        {destino.contenido && destino.contenido.length > 0 && (
+          <section style={{ marginBottom: '60px' }}>
+            {destino.contenido.map((seccion, i) => (
+              <article key={i} style={{ marginBottom: '2.5rem' }}>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
+                  {seccion.titulo}
+                </h2>
+                <div
+                  style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                  dangerouslySetInnerHTML={{ __html: seccion.texto }}
+                />
+              </article>
+            ))}
+          </section>
+        )}
+
         <section>
           <h2 style={{
             fontSize: '1.5rem',
@@ -121,6 +185,36 @@ export default function DestinoDetailPage({ params }) {
             </p>
           </div>
         </section>
+
+        {/* Cross-link a Marimbas Blog */}
+        {MARIMBAS_BLOG_GUIDES[destino.slug] && (
+          <section style={{ maxWidth: '1000px', margin: '2rem auto 0', padding: '0 1rem' }}>
+            <a
+              href={`https://book.marimbashome.com/es/guides/${MARIMBAS_BLOG_GUIDES[destino.slug]}`}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: 'block',
+                padding: '1.5rem',
+                background: 'linear-gradient(135deg, rgba(0,210,150,0.08), rgba(92,133,255,0.08))',
+                border: '1px solid var(--primary)',
+                borderRadius: 'var(--radius)',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+              }}
+            >
+              <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: 600 }}>
+                📖 Guía de viaje completa
+              </p>
+              <p style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text)', marginBottom: '0.5rem' }}>
+                {destino.nombre}: Historia, itinerarios y consejos para tu visita
+              </p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                Lee nuestra guía detallada con itinerarios paso a paso, contexto histórico y recomendaciones de hospedaje →
+              </p>
+            </a>
+          </section>
+        )}
       </div>
 
       <script
@@ -128,7 +222,7 @@ export default function DestinoDetailPage({ params }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'TouristAttractionPage',
+            '@type': 'TouristDestination',
             name: destino.nombre,
             description: destino.descripcion,
             url: `https://metroguia.mx/turismo/destinos-prioritarios/${destino.slug}`,

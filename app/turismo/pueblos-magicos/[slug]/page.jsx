@@ -1,6 +1,33 @@
 import { notFound } from 'next/navigation';
 import { pueblosMagicos } from '@/data/turismo/pueblos-magicos';
 
+const MARIMBAS_BLOG_GUIDES = {
+  'tepoztlan': 'tepoztlan',
+  'valle-de-bravo': 'valle-de-bravo',
+  'taxco-de-alarcon': 'taxco',
+  'malinalco': 'malinalco',
+  'huasca-de-ocampo': 'huasca-de-ocampo',
+  'bernal': 'bernal',
+  'metepec': 'metepec',
+  'ixtapan-de-la-sal': 'ixtapan-de-la-sal',
+  'aculco': 'aculco',
+  'el-oro': 'el-oro',
+  'tlayacapan': 'tlayacapan',
+  'patzcuaro': 'patzcuaro',
+  'cuetzalan-del-progreso': 'cuetzalan',
+  'real-de-catorce': 'real-de-catorce',
+  'creel': 'creel',
+  'tequila': 'tequila',
+  'izamal': 'izamal',
+  'valladolid': 'valladolid-yucatan',
+  'todos-santos': 'todos-santos',
+  'copainala': 'copainala',
+  'san-cristobal-de-las-casas': 'san-cristobal',
+  'chiapa-de-corzo': 'chiapa-de-corzo',
+  'comitan-de-dominguez': 'comitan',
+  'palenque': 'palenque',
+};
+
 export async function generateStaticParams() {
   return pueblosMagicos.map((pueblo) => ({
     slug: pueblo.slug,
@@ -18,12 +45,12 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${pueblo.nombre}, ${pueblo.estado} — Pueblo Mágico | MetroGuia`,
-    description: pueblo.descripcion,
+    title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} — Pueblo Mágico | MetroGuia`,
+    description: pueblo.meta_description || pueblo.descripcion,
     keywords: `${pueblo.nombre}, ${pueblo.estado}, pueblos mágicos, turismo`,
     openGraph: {
-      title: `${pueblo.nombre}, ${pueblo.estado} | MetroGuia`,
-      description: pueblo.descripcion,
+      title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} | MetroGuia`,
+      description: pueblo.meta_description || pueblo.descripcion,
       type: 'website',
       url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}/`,
     },
@@ -105,6 +132,51 @@ export default function PuebloDetailPage({ params }) {
             {pueblo.descripcion}
           </p>
         </section>
+
+        {pueblo.contenido && pueblo.contenido.length > 0 && (
+          <section style={{ marginBottom: '60px' }}>
+            {pueblo.contenido.map((seccion, i) => (
+              <article key={i} style={{ marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
+                  {seccion.titulo}
+                </h2>
+                <div
+                  style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                  dangerouslySetInnerHTML={{ __html: seccion.texto }}
+                />
+              </article>
+            ))}
+          </section>
+        )}
+
+        {MARIMBAS_BLOG_GUIDES[pueblo.slug] && (
+          <section style={{ marginBottom: '60px' }}>
+            <a
+              href={`https://book.marimbashome.com/es/guides/${MARIMBAS_BLOG_GUIDES[pueblo.slug]}`}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: 'block',
+                padding: '1.5rem',
+                background: 'linear-gradient(135deg, rgba(0,210,150,0.08), rgba(92,133,255,0.08))',
+                border: '1px solid var(--primary)',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+              }}
+            >
+              <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: 600 }}>
+                📖 Guía de viaje completa
+              </p>
+              <p style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text)', marginBottom: '0.5rem' }}>
+                {pueblo.nombre}: Historia, itinerarios y consejos para tu visita
+              </p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                Lee nuestra guía detallada con itinerarios paso a paso, contexto histórico y recomendaciones de hospedaje →
+              </p>
+            </a>
+          </section>
+        )}
 
         <section>
           <h2 style={{

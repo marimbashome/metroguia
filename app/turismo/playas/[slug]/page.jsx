@@ -1,6 +1,24 @@
 import { notFound } from 'next/navigation';
 import { playas } from '@/data/turismo/playas';
 
+const MARIMBAS_BLOG_GUIDES = {
+  'cancun': 'cancun',
+  'playa-del-carmen': 'playa-del-carmen',
+  'tulum': 'tulum',
+  'isla-mujeres': 'isla-mujeres',
+  'holbox': 'holbox',
+  'cozumel': 'cozumel',
+  'bacalar': 'bacalar-mahahual',
+  'puerto-vallarta': 'puerto-vallarta',
+  'sayulita': 'sayulita-nayarit',
+  'mazatlan': 'mazatlan',
+  'los-cabos': 'los-cabos-baja',
+  'puerto-escondido': 'puerto-escondido',
+  'huatulco': 'huatulco',
+  'ixtapa-zihuatanejo': 'zihuatanejo-ixtapa',
+  'barra-de-navidad': 'costa-alegre',
+};
+
 export async function generateStaticParams() {
   return playas.map((playa) => ({
     slug: playa.slug,
@@ -15,8 +33,8 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: `${playa.nombre} | MetroGuía`,
-    description: playa.descripcion
+    title: playa.seo_title || `${playa.nombre} | MetroGuía`,
+    description: playa.meta_description || playa.descripcion
   };
 }
 
@@ -121,6 +139,53 @@ export default function PlayaDetail({ params }) {
             </p>
           </div>
         </section>
+
+        {/* Contenido editorial */}
+        {playa.contenido && playa.contenido.length > 0 && (
+          <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem' }}>
+            {playa.contenido.map((seccion, i) => (
+              <article key={i} style={{ marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
+                  {seccion.titulo}
+                </h2>
+                <div
+                  style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                  dangerouslySetInnerHTML={{ __html: seccion.texto }}
+                />
+              </article>
+            ))}
+          </section>
+        )}
+
+        {/* Cross-link a Marimbas Blog */}
+        {MARIMBAS_BLOG_GUIDES[playa.slug] && (
+          <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem', borderBottom: '1px solid var(--border)' }}>
+            <a
+              href={`https://book.marimbashome.com/es/guides/${MARIMBAS_BLOG_GUIDES[playa.slug]}`}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: 'block',
+                padding: '1.5rem',
+                background: 'linear-gradient(135deg, rgba(0,210,150,0.08), rgba(92,133,255,0.08))',
+                border: '1px solid var(--primary)',
+                borderRadius: 'var(--radius)',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+              }}
+            >
+              <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: 600 }}>
+                📖 Guía de viaje completa
+              </p>
+              <p style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text)', marginBottom: '0.5rem' }}>
+                {playa.nombre}: Historia, itinerarios y consejos para tu visita
+              </p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                Lee nuestra guía detallada con itinerarios paso a paso, contexto histórico y recomendaciones de hospedaje →
+              </p>
+            </a>
+          </section>
+        )}
       </div>
 
       <script
