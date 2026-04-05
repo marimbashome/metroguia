@@ -1,6 +1,24 @@
 import { notFound } from 'next/navigation';
 import { ciudadesPatrimonio } from '@/data/turismo/ciudades-patrimonio';
 
+const MARIMBAS_BLOG_GUIDES = {
+  'ciudad-de-mexico': 'cdmx',
+  'oaxaca-de-juarez': 'oaxaca',
+  'puebla-de-zaragoza': 'puebla',
+  'guanajuato': 'guanajuato-san-miguel',
+  'morelia': 'morelia',
+  'zacatecas': 'zacatecas',
+  'san-miguel-de-allende': 'guanajuato-san-miguel',
+  'queretaro': 'queretaro',
+  'tlacotalpan': 'tlacotalpan',
+  'campeche': 'campeche',
+  'xochimilco': 'xochimilco',
+  'san-cristobal-de-las-casas': 'san-cristobal',
+  'taxco': 'taxco',
+  'merida': 'merida-yucatan',
+  'guadalajara': 'guadalajara-jalisco',
+};
+
 export async function generateStaticParams() {
   return ciudadesPatrimonio.map((ciudad) => ({
     slug: ciudad.slug,
@@ -15,8 +33,8 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: `${ciudad.nombre} | MetroGuía`,
-    description: ciudad.descripcion
+    title: ciudad.seo_title || `${ciudad.nombre} | MetroGuía`,
+    description: ciudad.meta_description || ciudad.descripcion
   };
 }
 
@@ -96,6 +114,23 @@ export default function CiudadDetail({ params }) {
           </p>
         </section>
 
+        {/* Contenido editorial */}
+        {ciudad.contenido && ciudad.contenido.length > 0 && (
+          <section style={{ marginBottom: '60px' }}>
+            {ciudad.contenido.map((seccion, i) => (
+              <article key={i} style={{ marginBottom: '2.5rem' }}>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
+                  {seccion.titulo}
+                </h2>
+                <div
+                  style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                  dangerouslySetInnerHTML={{ __html: seccion.texto }}
+                />
+              </article>
+            ))}
+          </section>
+        )}
+
         <section>
           <h2 style={{
             fontSize: '1.5rem',
@@ -121,6 +156,36 @@ export default function CiudadDetail({ params }) {
             </p>
           </div>
         </section>
+
+        {/* Cross-link a Marimbas Blog */}
+        {MARIMBAS_BLOG_GUIDES[ciudad.slug] && (
+          <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem', borderBottom: '1px solid var(--border)' }}>
+            <a
+              href={`https://book.marimbashome.com/es/guides/${MARIMBAS_BLOG_GUIDES[ciudad.slug]}`}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: 'block',
+                padding: '1.5rem',
+                background: 'linear-gradient(135deg, rgba(0,210,150,0.08), rgba(92,133,255,0.08))',
+                border: '1px solid var(--primary)',
+                borderRadius: 'var(--radius)',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+              }}
+            >
+              <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: 600 }}>
+                Guía de viaje completa
+              </p>
+              <p style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text)', marginBottom: '0.5rem' }}>
+                {ciudad.nombre}: Historia, itinerarios y consejos para tu visita
+              </p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                Lee nuestra guía detallada con itinerarios paso a paso, contexto histórico y recomendaciones de hospedaje →
+              </p>
+            </a>
+          </section>
+        )}
       </div>
 
       <script
