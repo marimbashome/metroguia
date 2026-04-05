@@ -1,6 +1,34 @@
 import { notFound } from 'next/navigation';
 import { barriosMagicos } from '@/data/turismo/barrios-magicos';
 
+const MARIMBAS_BLOG_GUIDES = {
+  'coyoacan': 'coyoacan',
+  'roma': 'roma-norte',
+  'condesa': 'condesa',
+  'san-angel': 'san-angel',
+  'xochimilco': 'xochimilco',
+  'centro-historico-cdmx': 'centro-historico-cdmx',
+  'polanco': 'polanco',
+  'santa-maria-la-ribera': 'santa-maria-la-ribera',
+  'tepito': 'tepito',
+  'san-rafael': 'san-rafael',
+  'tlaquepaque': 'tlaquepaque',
+  'zona-romantica-puerto-vallarta': 'zona-romantica-puerto-vallarta',
+  'barrio-antiguo-monterrey': 'barrio-antiguo-monterrey',
+  'analco-puebla': 'analco-puebla',
+  'los-sapos-puebla': 'los-sapos-puebla',
+  'barrio-del-artista-puebla': 'barrio-del-artista-puebla',
+  'centro-historico-oaxaca': 'centro-historico-oaxaca',
+  'jalatlaco-oaxaca': 'jalatlaco-oaxaca',
+  'centro-historico-guanajuato': 'centro-historico-guanajuato',
+  'barrio-valenciana-guanajuato': 'barrio-valenciana-guanajuato',
+  'barrio-santiago-merida': 'barrio-santiago-merida',
+  'santa-lucia-merida': 'santa-lucia-merida',
+  'zona-centro-queretaro': 'zona-centro-queretaro',
+  'barrio-san-marcos-aguascalientes': 'barrio-san-marcos-aguascalientes',
+  'san-cristobal-centro': 'san-cristobal',
+};
+
 export async function generateStaticParams() {
   return barriosMagicos.map((barrio) => ({
     slug: barrio.slug,
@@ -122,6 +150,51 @@ export default function BarrioDetail({ params }) {
           </div>
         </section>
       </div>
+
+      {barrio.contenido && barrio.contenido.length > 0 && (
+        <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem' }}>
+          {barrio.contenido.map((seccion, i) => (
+            <article key={i} style={{ marginBottom: '2rem' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text)', marginBottom: '1rem' }}>
+                {seccion.titulo}
+              </h2>
+              <div
+                style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+                dangerouslySetInnerHTML={{ __html: seccion.texto }}
+              />
+            </article>
+          ))}
+        </section>
+      )}
+
+      {MARIMBAS_BLOG_GUIDES[barrio.slug] && (
+        <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 1rem', borderBottom: '1px solid var(--border)' }}>
+          <a
+            href={`https://book.marimbashome.com/es/guides/${MARIMBAS_BLOG_GUIDES[barrio.slug]}`}
+            target="_blank"
+            rel="noopener"
+            style={{
+              display: 'block',
+              padding: '1.5rem',
+              background: 'linear-gradient(135deg, rgba(0,210,150,0.08), rgba(92,133,255,0.08))',
+              border: '1px solid var(--primary)',
+              borderRadius: 'var(--radius)',
+              textDecoration: 'none',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: 600 }}>
+              📖 Guía de viaje completa
+            </p>
+            <p style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--text)', marginBottom: '0.5rem' }}>
+              {barrio.nombre}: Historia, itinerarios y consejos para tu visita
+            </p>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+              Lee nuestra guía detallada con itinerarios paso a paso, contexto histórico y recomendaciones de hospedaje →
+            </p>
+          </a>
+        </section>
+      )}
 
       <script
         type="application/ld+json"
