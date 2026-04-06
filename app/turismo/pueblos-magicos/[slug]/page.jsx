@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
 
   if (!pueblo) {
     return {
-      title: 'Pueblo no encontrado | MetroGuia',
+title: 'Pueblo no encontrado | MetroGuia',
       description: 'El pueblo mágico que buscas no existe.',
     };
   }
@@ -48,11 +48,19 @@ export async function generateMetadata({ params }) {
     title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} — Pueblo Mágico | MetroGuia`,
     description: pueblo.meta_description || pueblo.descripcion,
     keywords: `${pueblo.nombre}, ${pueblo.estado}, pueblos mágicos, turismo`,
-    openGraph: {
+openGraph: {
       title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} | MetroGuia`,
       description: pueblo.meta_description || pueblo.descripcion,
       type: 'website',
       url: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} | MetroGuia`,
+      description: pueblo.meta_description || pueblo.descripcion,
+    },
+    alternates: {
+      canonical: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}/`,
     },
   };
 }

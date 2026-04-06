@@ -3,7 +3,19 @@ import { rutasGastronomicas } from '@/data/turismo/rutas-gastronomicas';
 export const metadata = {
   title: 'Rutas Gastronómicas de México | MetroGuía',
   description: 'Explora las mejores rutas gastronómicas de México. Descubre rutas del tequila, mezcal, vino, café, cacao y más. Viajes culinarios únicos.',
-  keywords: 'rutas gastronómicas, gastronomía mexicana, turismo culinario, tequila, mezcal, vino',
+  openGraph: {
+    title: 'Rutas Gastronómicas de México',
+    description: 'Explora las mejores rutas gastronómicas de México. Descubre rutas del tequila, mezcal, vino, café, cacao y más. Viajes culinarios únicos.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rutas Gastronómicas de México',
+    description: 'Explora las mejores rutas gastronómicas de México. Descubre rutas del tequila, mezcal, vino, café, cacao y más. Viajes culinarios únicos.',
+  },
+  alternates: {
+    canonical: 'https://metroguia.mx/turismo/rutas-gastronomicas/',
+  },
 };
 
 export default function RutasGastronomicasPage() {

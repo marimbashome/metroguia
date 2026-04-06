@@ -2,7 +2,20 @@ import { naturaleza } from '@/data/turismo/naturaleza';
 
 export const metadata = {
   title: 'Naturaleza y Aventura en México | MetroGuía',
-  description: 'Descubre 40 destinos naturales para aventura: montañismo, senderismo, buceo, cascadas y reservas de biosfera en México.'
+  description: 'Descubre 40 destinos naturales para aventura: montañismo, senderismo, buceo, cascadas y reservas de biosfera en México.',
+  openGraph: {
+    title: 'Naturaleza y Aventura en México',
+    description: 'Descubre 40 destinos naturales para aventura: montañismo, senderismo, buceo, cascadas y reservas de biosfera en México.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Naturaleza y Aventura en México',
+    description: 'Descubre 40 destinos naturales para aventura: montañismo, senderismo, buceo, cascadas y reservas de biosfera en México.',
+  },
+  alternates: {
+    canonical: 'https://metroguia.mx/turismo/naturaleza/',
+  },
 };
 
 export default function NaturalezaPage() {

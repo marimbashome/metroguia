@@ -8,6 +8,14 @@ export const metadata = {
     description: 'Los barrios más mágicos y auténticos de México',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Barrios Mágicos de México',
+    description: 'Los barrios más mágicos y auténticos de México',
+  },
+  alternates: {
+    canonical: 'https://metroguia.mx/turismo/barrios-magicos/',
+  },
 };
 
 const ciudadesConfig = {

@@ -34,7 +34,21 @@ export async function generateMetadata({ params }) {
   }
   return {
     title: ciudad.seo_title || `${ciudad.nombre} | MetroGuía`,
-    description: ciudad.meta_description || ciudad.descripcion
+    description: ciudad.meta_description || ciudad.descripcion,
+    openGraph: {
+      title: ciudad.seo_title || `${ciudad.nombre} | MetroGuía`,
+      description: ciudad.meta_description || ciudad.descripcion,
+      type: 'website',
+      url: `https://metroguia.mx/turismo/ciudades-patrimonio/${ciudad.slug}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: ciudad.seo_title || `${ciudad.nombre} | MetroGuía`,
+      description: ciudad.meta_description || ciudad.descripcion,
+    },
+    alternates: {
+      canonical: `https://metroguia.mx/turismo/ciudades-patrimonio/${ciudad.slug}/`,
+    },
   };
 }
 

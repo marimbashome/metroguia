@@ -18,7 +18,12 @@ export const metadata = {
     siteName: 'MetroGuia',
     locale: 'es_MX',
     type: 'website',
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Turismo en México — Guía completa | MetroGuia',
+    description: 'Descubre 8 programas turísticos de México con rutas de transporte público',
+  },
 }
 
 export default function TurismoHubPage() {

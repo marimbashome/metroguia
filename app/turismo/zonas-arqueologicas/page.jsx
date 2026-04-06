@@ -17,6 +17,11 @@ export const metadata = {
       alt: 'Zonas Arqueológicas de México'
     }]
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: '188 Zonas Arqueológicas de México',
+    description: 'Guía completa de 188 zonas arqueológicas de México: horarios, costos, cómo llegar y patrimonio UNESCO.',
+  },
   alternates: {
     canonical: 'https://metroguia.mx/turismo/zonas-arqueologicas'
   }

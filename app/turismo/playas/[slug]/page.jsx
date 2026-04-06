@@ -34,7 +34,21 @@ export async function generateMetadata({ params }) {
   }
   return {
     title: playa.seo_title || `${playa.nombre} | MetroGuía`,
-    description: playa.meta_description || playa.descripcion
+    description: playa.meta_description || playa.descripcion,
+    openGraph: {
+      title: playa.seo_title || `${playa.nombre} | MetroGuía`,
+      description: playa.meta_description || playa.descripcion,
+      type: 'website',
+      url: `https://metroguia.mx/turismo/playas/${playa.slug}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: playa.seo_title || `${playa.nombre} | MetroGuía`,
+      description: playa.meta_description || playa.descripcion,
+    },
+    alternates: {
+      canonical: `https://metroguia.mx/turismo/playas/${playa.slug}/`,
+    },
   };
 }
 

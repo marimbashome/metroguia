@@ -555,9 +555,9 @@ function getTurismoUrls() {
 
   const urls = [entry('/turismo/', 'weekly', 0.9, 'turismo')];
   for (const section of sections) {
-    urls.push(entry(`/turismo/${section.slug}/`, 'weekly', 0.85, 'turismo'));
+    urls.push(entry(`/turismo/${section.slug}/`, 'monthly', 0.8, 'turismo'));
     for (const item of (section.data || [])) {
-      urls.push(entry(`/turismo/${section.slug}/${item.slug}/`, 'monthly', 0.7, 'turismo'));
+      urls.push(entry(`/turismo/${section.slug}/${item.slug}/`, 'monthly', 0.6, 'turismo'));
     }
   }
   return urls;

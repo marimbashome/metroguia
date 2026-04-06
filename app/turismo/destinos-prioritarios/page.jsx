@@ -2,7 +2,20 @@ import { destinosPrioritarios } from '@/data/turismo/destinos-prioritarios';
 
 export const metadata = {
   title: 'Destinos Prioritarios de México | MetroGuía',
-  description: 'Descubre los 44 destinos turísticos más importantes de México, desde playas caribeñas hasta ciudades coloniales y parques naturales.'
+  description: 'Descubre los 44 destinos turísticos más importantes de México, desde playas caribeñas hasta ciudades coloniales y parques naturales.',
+  openGraph: {
+    title: 'Destinos Prioritarios de México',
+    description: 'Descubre los 44 destinos turísticos más importantes de México, desde playas caribeñas hasta ciudades coloniales y parques naturales.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Destinos Prioritarios de México',
+    description: 'Descubre los 44 destinos turísticos más importantes de México, desde playas caribeñas hasta ciudades coloniales y parques naturales.',
+  },
+  alternates: {
+    canonical: 'https://metroguia.mx/turismo/destinos-prioritarios/',
+  },
 };
 
 export default function DestinosPrioritariosPage() {

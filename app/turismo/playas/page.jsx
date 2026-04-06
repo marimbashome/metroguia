@@ -8,6 +8,14 @@ export const metadata = {
     description: 'Las mejores playas mexicanas clasificadas por costa',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Playas de México',
+    description: 'Las mejores playas mexicanas clasificadas por costa',
+  },
+  alternates: {
+    canonical: 'https://metroguia.mx/turismo/playas/',
+  },
 };
 
 const costaConfig = {
