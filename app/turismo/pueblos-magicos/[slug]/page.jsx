@@ -44,6 +44,17 @@ title: 'Pueblo no encontrado | MetroGuia',
     };
   }
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Pueblos Mágicos', item: 'https://metroguia.mx/turismo/pueblos-magicos' },
+      { '@type': 'ListItem', position: 4, name: pueblo.nombre, item: `https://metroguia.mx/turismo/pueblos-magicos/${pueblo.slug}` },
+    ],
+  };
+
   return {
     title: pueblo.seo_title || `${pueblo.nombre}, ${pueblo.estado} — Pueblo Mágico | MetroGuia`,
     description: pueblo.meta_description || pueblo.descripcion,
@@ -73,7 +84,9 @@ export default function PuebloDetailPage({ params }) {
   }
 
   return (
-    <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
       <div style={{
         backgroundColor: 'var(--surface)',
         padding: '20px',

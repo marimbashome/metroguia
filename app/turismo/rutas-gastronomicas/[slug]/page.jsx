@@ -35,6 +35,17 @@ export async function generateMetadata({ params }) {
       title: 'Ruta gastronómica no encontrada | MetroGuía'
     };
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Rutas Gastronómicas', item: 'https://metroguia.mx/turismo/rutas-gastronomicas' },
+      { '@type': 'ListItem', position: 4, name: ruta.nombre, item: `https://metroguia.mx/turismo/rutas-gastronomicas/${ruta.slug}` },
+    ],
+  };
   return {
     title: `${ruta.nombre} | MetroGuía`,
     description: ruta.descripcion
@@ -49,7 +60,9 @@ export default function RutaDetail({ params }) {
   }
 
   return (
-    <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
       <div style={{
         backgroundColor: 'var(--surface)',
         padding: '20px',

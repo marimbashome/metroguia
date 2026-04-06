@@ -19,7 +19,19 @@ export const metadata = {
 };
 
 export default function DestinosPrioritariosPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Destinos Prioritarios', item: 'https://metroguia.mx/turismo/destinos-prioritarios' },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div style={{ padding: 'var(--spacing-lg)', maxWidth: '1200px', margin: '0 auto' }}>
       <h1 style={{ fontSize: 'var(--font-size-h1)', marginBottom: 'var(--spacing-md)', color: 'var(--color-text-primary)' }}>
         Destinos Prioritarios de México
@@ -62,5 +74,6 @@ export default function DestinosPrioritariosPage() {
         ))}
       </div>
     </div>
+    </>
   );
 }

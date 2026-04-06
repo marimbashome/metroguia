@@ -33,6 +33,17 @@ export async function generateMetadata({ params }) {
       title: 'Destino no encontrado | MetroGuía'
     };
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Naturaleza', item: 'https://metroguia.mx/turismo/naturaleza' },
+      { '@type': 'ListItem', position: 4, name: destino.nombre, item: `https://metroguia.mx/turismo/naturaleza/${destino.slug}` },
+    ],
+  };
   return {
     title: destino.seo_title || `${destino.nombre} | MetroGuía`,
     description: destino.meta_description || destino.descripcion
@@ -47,7 +58,9 @@ export default function NaturalezaDetailPage({ params }) {
   }
 
   return (
-    <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
       <div style={{
         backgroundColor: 'var(--surface)',
         padding: '20px',

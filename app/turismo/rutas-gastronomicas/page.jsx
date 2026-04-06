@@ -19,7 +19,19 @@ export const metadata = {
 };
 
 export default function RutasGastronomicasPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Rutas Gastronómicas', item: 'https://metroguia.mx/turismo/rutas-gastronomicas' },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ minHeight: '100vh', backgroundColor: 'var(--color-bg-primary)' }}>
       <section style={{ padding: 'var(--spacing-lg)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -65,5 +77,6 @@ export default function RutasGastronomicasPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

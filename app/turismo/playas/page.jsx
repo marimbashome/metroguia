@@ -36,7 +36,19 @@ export default function PlayasPage() {
 
   const costasOrdenadas = ['caribe', 'pacifico', 'golfo', 'mar-de-cortes'];
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Playas', item: 'https://metroguia.mx/turismo/playas' },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <main style={{ padding: '2rem', maxWidth: '1400px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>
         Playas de México
@@ -178,5 +190,6 @@ export default function PlayasPage() {
           )
       )}
     </main>
+    </>
   );
 }
