@@ -33,16 +33,6 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
-      { '@type': 'ListItem', position: 3, name: 'Playas', item: 'https://metroguia.mx/turismo/playas' },
-      { '@type': 'ListItem', position: 4, name: playa.nombre, item: `https://metroguia.mx/turismo/playas/${playa.slug}` },
-    ],
-  };
   return {
     title: playa.seo_title || `${playa.nombre} | MetroGuía`,
     description: playa.meta_description || playa.descripcion,
@@ -69,6 +59,17 @@ export default function PlayaDetail({ params }) {
   if (!playa) {
     notFound();
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Playas', item: 'https://metroguia.mx/turismo/playas' },
+      { '@type': 'ListItem', position: 4, name: playa.nombre, item: `https://metroguia.mx/turismo/playas/${playa.slug}` },
+    ],
+  };
 
   return (
     <>
@@ -233,5 +234,6 @@ export default function PlayaDetail({ params }) {
         }}
       />
     </main>
+    </>
   );
 }

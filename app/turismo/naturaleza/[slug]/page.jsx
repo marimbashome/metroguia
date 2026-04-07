@@ -219,5 +219,6 @@ export default function NaturalezaDetailPage({ params }) {
         }}
       />
     </main>
+    </>
   );
 }

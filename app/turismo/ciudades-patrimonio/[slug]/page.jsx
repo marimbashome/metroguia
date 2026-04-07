@@ -234,5 +234,6 @@ export default function CiudadDetail({ params }) {
         }}
       />
     </main>
+    </>
   );
 }

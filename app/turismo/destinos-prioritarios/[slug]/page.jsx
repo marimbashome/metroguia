@@ -251,5 +251,6 @@ export default function DestinoDetailPage({ params }) {
         }}
       />
     </main>
+    </>
   );
 }
