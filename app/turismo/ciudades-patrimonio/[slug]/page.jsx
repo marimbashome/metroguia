@@ -33,16 +33,6 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
-      { '@type': 'ListItem', position: 3, name: 'Ciudades Patrimonio', item: 'https://metroguia.mx/turismo/ciudades-patrimonio' },
-      { '@type': 'ListItem', position: 4, name: ciudad.nombre, item: `https://metroguia.mx/turismo/ciudades-patrimonio/${ciudad.slug}` },
-    ],
-  };
   return {
     title: ciudad.seo_title || `${ciudad.nombre} | MetroGuía`,
     description: ciudad.meta_description || ciudad.descripcion,
@@ -69,6 +59,17 @@ export default function CiudadDetail({ params }) {
   if (!ciudad) {
     notFound();
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Ciudades Patrimonio', item: 'https://metroguia.mx/turismo/ciudades-patrimonio' },
+      { '@type': 'ListItem', position: 4, name: ciudad.nombre, item: `https://metroguia.mx/turismo/ciudades-patrimonio/${ciudad.slug}` },
+    ],
+  };
 
   return (
     <>

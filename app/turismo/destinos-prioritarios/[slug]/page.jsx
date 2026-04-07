@@ -62,16 +62,6 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
-      { '@type': 'ListItem', position: 3, name: 'Destinos Prioritarios', item: 'https://metroguia.mx/turismo/destinos-prioritarios' },
-      { '@type': 'ListItem', position: 4, name: destino.nombre, item: `https://metroguia.mx/turismo/destinos-prioritarios/${destino.slug}` },
-    ],
-  };
   return {
     title: destino.seo_title || `${destino.nombre} — Guía turística | MetroGuía`,
     description: destino.meta_description || destino.descripcion
@@ -84,6 +74,17 @@ export default function DestinoDetailPage({ params }) {
   if (!destino) {
     notFound();
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Destinos Prioritarios', item: 'https://metroguia.mx/turismo/destinos-prioritarios' },
+      { '@type': 'ListItem', position: 4, name: destino.nombre, item: `https://metroguia.mx/turismo/destinos-prioritarios/${destino.slug}` },
+    ],
+  };
 
   return (
     <>

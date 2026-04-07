@@ -43,16 +43,6 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
-      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
-      { '@type': 'ListItem', position: 3, name: 'Barrios Mágicos', item: 'https://metroguia.mx/turismo/barrios-magicos' },
-      { '@type': 'ListItem', position: 4, name: barrio.nombre, item: `https://metroguia.mx/turismo/barrios-magicos/${barrio.slug}` },
-    ],
-  };
   return {
     title: `${barrio.nombre} | MetroGuía`,
     description: barrio.descripcion
@@ -65,6 +55,17 @@ export default function BarrioDetail({ params }) {
   if (!barrio) {
     notFound();
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Turismo', item: 'https://metroguia.mx/turismo' },
+      { '@type': 'ListItem', position: 3, name: 'Barrios Mágicos', item: 'https://metroguia.mx/turismo/barrios-magicos' },
+      { '@type': 'ListItem', position: 4, name: barrio.nombre, item: `https://metroguia.mx/turismo/barrios-magicos/${barrio.slug}` },
+    ],
+  };
 
   return (
     <>
