@@ -194,7 +194,7 @@ const BASE_URL = 'https://metroguia.mx';
 
 const LASTMOD = {
   core: new Date('2026-04-02'),
-  cities: new Date('2026-04-02'),
+  cities: new Date('2026-04-10'),
   turismo: new Date('2026-03-30'),
   transport: new Date('2026-04-01'),
   mundial: new Date('2026-04-01'),

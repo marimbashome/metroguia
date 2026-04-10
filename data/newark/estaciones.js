@@ -2,7 +2,7 @@ export const estacionesNewark = [
   {
     "slug": "newark-penn-station",
     "nombre": "Newark Penn Station",
-    "linea": ["Newark Light Rail, Hudson-Bergen Light Rail"],
+    "linea": ["Newark Light Rail", "Hudson-Bergen Light Rail"],
     "sistema": "nj-transit-light-rail",
     "municipio": "Newark",
     "tipo_zona": "transport",
@@ -796,7 +796,7 @@ export const estacionesNewark = [
   {
     "slug": "jersey-city-grove-street-station",
     "nombre": "Grove Street Station",
-    "linea": ["Newark Light Rail, Hudson-Bergen Light Rail"],
+    "linea": ["Newark Light Rail", "Hudson-Bergen Light Rail"],
     "sistema": "hudson-bergen-light-rail",
     "municipio": "Jersey City",
     "tipo_zona": "transport",

@@ -1010,4 +1010,292 @@ export const grafoLA = {
       { slug: 'la-wilshire-normandie', tiempo: 2, linea: 'D', tipo: 'metro-rail' },
     ]
   },
+
+  // === G Line (Orange BRT) ===
+  'la-g-north-hollywood': {
+    ciudad: 'la',
+    nombre: 'North Hollywood',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-laurel-canyon', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-laurel-canyon': {
+    ciudad: 'la',
+    nombre: 'Laurel Canyon',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-north-hollywood', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-valley-college', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-valley-college': {
+    ciudad: 'la',
+    nombre: 'Valley College',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-laurel-canyon', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-woodman', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-woodman': {
+    ciudad: 'la',
+    nombre: 'Woodman',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-valley-college', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-van-nuys', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-van-nuys': {
+    ciudad: 'la',
+    nombre: 'Van Nuys',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-woodman', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-sepulveda', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-sepulveda': {
+    ciudad: 'la',
+    nombre: 'Sepulveda',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-van-nuys', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-woodley', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-woodley': {
+    ciudad: 'la',
+    nombre: 'Woodley',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-sepulveda', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-balboa', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-balboa': {
+    ciudad: 'la',
+    nombre: 'Balboa',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-woodley', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-louise', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-louise': {
+    ciudad: 'la',
+    nombre: 'Louise',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-balboa', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-reseda', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-reseda': {
+    ciudad: 'la',
+    nombre: 'Reseda',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-louise', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-tarzana', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-tarzana': {
+    ciudad: 'la',
+    nombre: 'Tarzana',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-reseda', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-pierce-college', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-pierce-college': {
+    ciudad: 'la',
+    nombre: 'Pierce College',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-tarzana', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-tampa', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-tampa': {
+    ciudad: 'la',
+    nombre: 'Tampa',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-pierce-college', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-canoga', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-canoga': {
+    ciudad: 'la',
+    nombre: 'Canoga',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-tampa', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-de-soto', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-de-soto': {
+    ciudad: 'la',
+    nombre: 'De Soto',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-canoga', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-topanga-canyon', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-topanga-canyon': {
+    ciudad: 'la',
+    nombre: 'Topanga Canyon',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-de-soto', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-warner-center', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-warner-center': {
+    ciudad: 'la',
+    nombre: 'Warner Center',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-topanga-canyon', tiempo: 3, linea: 'G', tipo: 'brt' },
+      { slug: 'la-g-chatsworth', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+  'la-g-chatsworth': {
+    ciudad: 'la',
+    nombre: 'Chatsworth',
+    lineas: ['G'],
+    adyacentes: [
+      { slug: 'la-g-warner-center', tiempo: 3, linea: 'G', tipo: 'brt' }
+    ]
+  },
+
+  // === J Line (Silver BRT) ===
+  'la-j-el-monte': {
+    ciudad: 'la',
+    nombre: 'El Monte Transit Center',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-cal-state-la', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-cal-state-la': {
+    ciudad: 'la',
+    nombre: 'Cal State LA',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-el-monte', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-soto-street', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-soto-street': {
+    ciudad: 'la',
+    nombre: 'Soto Street',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-cal-state-la', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-patsaouras-transit-plaza', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-patsaouras-transit-plaza': {
+    ciudad: 'la',
+    nombre: 'Patsaouras Transit Plaza',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-soto-street', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-union-station', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-union-station': {
+    ciudad: 'la',
+    nombre: 'Union Station',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-patsaouras-transit-plaza', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-civic-center', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-civic-center': {
+    ciudad: 'la',
+    nombre: 'Civic Center',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-union-station', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-7th-street', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-7th-street': {
+    ciudad: 'la',
+    nombre: '7th Street / Metro Center',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-civic-center', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-harbor-freeway', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-harbor-freeway': {
+    ciudad: 'la',
+    nombre: 'Harbor Freeway',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-7th-street', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-manchester', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-manchester': {
+    ciudad: 'la',
+    nombre: 'Manchester',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-harbor-freeway', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-rosecrans', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-rosecrans': {
+    ciudad: 'la',
+    nombre: 'Rosecrans',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-manchester', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-harbor-gateway-transit-center', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-harbor-gateway-transit-center': {
+    ciudad: 'la',
+    nombre: 'Harbor Gateway Transit Center',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-rosecrans', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-pacific-coast-highway', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-pacific-coast-highway': {
+    ciudad: 'la',
+    nombre: 'Pacific Coast Highway',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-harbor-gateway-transit-center', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-1st-street-san-pedro', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-1st-street-san-pedro': {
+    ciudad: 'la',
+    nombre: '1st Street San Pedro',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-pacific-coast-highway', tiempo: 3, linea: 'J', tipo: 'brt' },
+      { slug: 'la-j-pacific-avenue-san-pedro', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
+  'la-j-pacific-avenue-san-pedro': {
+    ciudad: 'la',
+    nombre: 'Pacific Avenue San Pedro',
+    lineas: ['J'],
+    adyacentes: [
+      { slug: 'la-j-1st-street-san-pedro', tiempo: 3, linea: 'J', tipo: 'brt' }
+    ]
+  },
 }

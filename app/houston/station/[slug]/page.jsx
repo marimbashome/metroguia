@@ -56,8 +56,20 @@ export default function StationHouston({ params }) {
   const lineasEstacion = lineaArr.map((lineId) => lineasHOU.find((l) => l.id === lineId)).filter(Boolean);
   const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[(lineasEstacion[0].id || '').toLowerCase()] || '#FF6600' : '#FF6600';
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Houston', item: 'https://metroguia.mx/houston/' },
+      { '@type': 'ListItem', position: 3, name: `${lineaArr[0]} Line`, item: `https://metroguia.mx/houston/line/${lineaArr[0]}/` },
+      { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/houston/station/${estacion.slug}` },
+    ],
+  };
+
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <StationSchema station={estacion.nombre} city="Houston" sistema="Metro Rail" slug={estacion.slug} />
 
       {/* HERO */}

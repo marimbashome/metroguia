@@ -2,7 +2,7 @@ export const estacionesMinneapolis = [
   {
     slug: "mpls-target-field",
     nombre: "Target Field",
-    linea: "Blue, Green, Northstar",
+    linea: ["Blue", "Green", "Northstar"],
     sistema: "metro-transit",
     municipio: "Minneapolis",
     tipo_zona: "transporte",
@@ -34,7 +34,7 @@ export const estacionesMinneapolis = [
   {
     slug: "mpls-warehouse-district",
     nombre: "Warehouse District/Hennepin Ave",
-    linea: "Blue, Green",
+    linea: ["Blue", "Green"],
     sistema: "metro-transit",
     municipio: "Minneapolis",
     tipo_zona: "commercial",
@@ -65,7 +65,7 @@ export const estacionesMinneapolis = [
   {
     slug: "mpls-nicollet-mall",
     nombre: "Nicollet Mall",
-    linea: "Blue, Green",
+    linea: ["Blue", "Green"],
     sistema: "metro-transit",
     municipio: "Minneapolis",
     tipo_zona: "commercial",
@@ -96,7 +96,7 @@ export const estacionesMinneapolis = [
   {
     slug: "mpls-government-plaza",
     nombre: "Government Plaza",
-    linea: "Blue, Green",
+    linea: ["Blue", "Green"],
     sistema: "metro-transit",
     municipio: "Minneapolis",
     tipo_zona: "commercial",
@@ -126,7 +126,7 @@ export const estacionesMinneapolis = [
   {
     slug: "mpls-downtown-east",
     nombre: "Downtown East/Metrodome",
-    linea: "Blue, Green",
+    linea: ["Blue", "Green"],
     sistema: "metro-transit",
     municipio: "Minneapolis",
     tipo_zona: "transporte",

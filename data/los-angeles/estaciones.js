@@ -4109,6 +4109,1094 @@ export const estacionesLA = [
     notas: "Horarios pueden variar según línea y día de la semana."
   },
   lugares_cercanos: []
+},
+{
+  slug: "la-g-north-hollywood",
+  nombre: "North Hollywood",
+  linea: "G",
+  sistema: "brt",
+  municipio: "North Hollywood",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "North Hollywood BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación North Hollywood - Línea G BRT Los Angeles. Transfer con B Line metro. NoHo Arts District.",
+  h1: "North Hollywood — Línea G | Los Angeles BRT",
+  intro: "Terminal este de la Línea G (Orange BRT) con transfer directo al B Line metro. Puerta al NoHo Arts District.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación North Hollywood del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-laurel-canyon",
+  nombre: "Laurel Canyon",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Valley Village",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Laurel Canyon BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Laurel Canyon - Línea G BRT Los Angeles. Bus rápido por el Valle de San Fernando.",
+  h1: "Laurel Canyon — Línea G | Los Angeles BRT",
+  intro: "Estación Laurel Canyon en el corredor BRT del Valle de San Fernando.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Laurel Canyon del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-valley-college",
+  nombre: "Valley College",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Valley Glen",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Valley College BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Valley College - Línea G BRT Los Angeles. Junto a LA Valley College.",
+  h1: "Valley College — Línea G | Los Angeles BRT",
+  intro: "Estación junto a Los Angeles Valley College, zona estudiantil del Valle.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Valley College del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-woodman",
+  nombre: "Woodman",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Arleta",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Woodman BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Woodman - Línea G BRT Los Angeles. Zona residencial del Valle.",
+  h1: "Woodman — Línea G | Los Angeles BRT",
+  intro: "Estación Woodman, zona residencial de Arleta y Panorama City.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Woodman del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-van-nuys",
+  nombre: "Van Nuys",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Van Nuys",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Van Nuys BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Van Nuys - Línea G BRT Los Angeles. Centro administrativo del Valle.",
+  h1: "Van Nuys — Línea G | Los Angeles BRT",
+  intro: "Centro de Van Nuys, corazón administrativo y comercial del Valle de San Fernando.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Van Nuys del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-sepulveda",
+  nombre: "Sepulveda",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Van Nuys",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Sepulveda BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Sepulveda - Línea G BRT Los Angeles. Corredor norte-sur principal.",
+  h1: "Sepulveda — Línea G | Los Angeles BRT",
+  intro: "Intersección con Sepulveda Blvd, uno de los principales corredores norte-sur de LA.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Sepulveda del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-woodley",
+  nombre: "Woodley",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Lake Balboa",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Woodley BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Woodley - Línea G BRT Los Angeles. Cerca de Sepulveda Basin Recreation Area.",
+  h1: "Woodley — Línea G | Los Angeles BRT",
+  intro: "Acceso a Sepulveda Basin Recreation Area y el Japanese Garden.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Woodley del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-balboa",
+  nombre: "Balboa",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Lake Balboa",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Balboa BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Balboa - Línea G BRT Los Angeles. Balboa Park y jardín japonés.",
+  h1: "Balboa — Línea G | Los Angeles BRT",
+  intro: "Acceso a Balboa Park y Anthony C. Beilenson Park, oasis verde del Valle.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Balboa del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-louise",
+  nombre: "Louise",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Lake Balboa",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Louise BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Louise - Línea G BRT Los Angeles. Zona residencial.",
+  h1: "Louise — Línea G | Los Angeles BRT",
+  intro: "Zona residencial tranquila de Lake Balboa.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Louise del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-reseda",
+  nombre: "Reseda",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Reseda",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Reseda BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Reseda - Línea G BRT Los Angeles. Centro de Reseda.",
+  h1: "Reseda — Línea G | Los Angeles BRT",
+  intro: "Centro de Reseda con comercios, restaurantes y vida local del Valle.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Reseda del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-tarzana",
+  nombre: "Tarzana",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Tarzana",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Tarzana BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Tarzana - Línea G BRT Los Angeles. Zona nombrada por Edgar Rice Burroughs.",
+  h1: "Tarzana — Línea G | Los Angeles BRT",
+  intro: "Tarzana, comunidad residencial nombrada por el creador de Tarzán.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Tarzana del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-pierce-college",
+  nombre: "Pierce College",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Woodland Hills",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Pierce College BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Pierce College - Línea G BRT Los Angeles. Junto a Pierce College.",
+  h1: "Pierce College — Línea G | Los Angeles BRT",
+  intro: "Junto a Pierce College y su granja educativa abierta al público.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Pierce College del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-tampa",
+  nombre: "Tampa",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Tarzana",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Tampa BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Tampa - Línea G BRT Los Angeles. Zona comercial.",
+  h1: "Tampa — Línea G | Los Angeles BRT",
+  intro: "Zona comercial de la frontera Woodland Hills/Tarzana.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Tampa del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-canoga",
+  nombre: "Canoga",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Canoga Park",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Canoga BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Canoga - Línea G BRT Los Angeles. Canoga Park.",
+  h1: "Canoga — Línea G | Los Angeles BRT",
+  intro: "Estación Canoga Park con comercio y conexiones de autobús locales.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Canoga del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-de-soto",
+  nombre: "De Soto",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Canoga Park",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "De Soto BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación De Soto - Línea G BRT Los Angeles. Conexión hacia Chatsworth.",
+  h1: "De Soto — Línea G | Los Angeles BRT",
+  intro: "Estación De Soto, corredor hacia el oeste del Valle.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación De Soto del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-topanga-canyon",
+  nombre: "Topanga Canyon",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Chatsworth",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Topanga Canyon BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Topanga Canyon - Línea G BRT Los Angeles. Acceso a Topanga Canyon.",
+  h1: "Topanga Canyon — Línea G | Los Angeles BRT",
+  intro: "Acceso a Topanga Canyon, naturaleza y hiking a minutos de la ciudad.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Topanga Canyon del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-warner-center",
+  nombre: "Warner Center",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Woodland Hills",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Warner Center BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Warner Center - Línea G BRT Los Angeles. Centro comercial y de oficinas.",
+  h1: "Warner Center — Línea G | Los Angeles BRT",
+  intro: "Warner Center, principal hub de oficinas y comercio del oeste del Valle.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Warner Center del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-g-chatsworth",
+  nombre: "Chatsworth",
+  linea: "G",
+  sistema: "brt",
+  municipio: "Chatsworth",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Chatsworth BRT Los Angeles — Estación Línea G | MetroGuia",
+  meta_description: "Estación Chatsworth - Línea G BRT Los Angeles. Terminal oeste, conexión Metrolink.",
+  h1: "Chatsworth — Línea G | Los Angeles BRT",
+  intro: "Terminal oeste de la Línea G. Conexión con Metrolink y acceso a Stoney Point.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Chatsworth del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-el-monte",
+  nombre: "El Monte Transit Center",
+  linea: "J",
+  sistema: "brt",
+  municipio: "El Monte",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "El Monte Transit Center BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación El Monte Transit Center - Línea J BRT Los Angeles. Principal hub de tránsito del este.",
+  h1: "El Monte Transit Center — Línea J | Los Angeles BRT",
+  intro: "Terminal este y principal hub de tránsito del este del condado de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación El Monte Transit Center del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-cal-state-la",
+  nombre: "Cal State LA",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Cal State LA BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Cal State LA - Línea J BRT Los Angeles. Universidad estatal.",
+  h1: "Cal State LA — Línea J | Los Angeles BRT",
+  intro: "Acceso a California State University Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Cal State LA del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-soto-street",
+  nombre: "Soto Street",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Soto Street BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Soto Street - Línea J BRT Los Angeles. Boyle Heights.",
+  h1: "Soto Street — Línea J | Los Angeles BRT",
+  intro: "Boyle Heights, comunidad histórica mexicano-americana con murales y gastronomía.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Soto Street del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-patsaouras-transit-plaza",
+  nombre: "Patsaouras Transit Plaza",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Patsaouras Transit Plaza BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Patsaouras Transit Plaza - Línea J BRT Los Angeles. Hub de autobuses junto a Union Station.",
+  h1: "Patsaouras Transit Plaza — Línea J | Los Angeles BRT",
+  intro: "Principal hub de autobuses de Downtown LA, junto a Union Station.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Patsaouras Transit Plaza del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-union-station",
+  nombre: "Union Station",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Union Station BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Union Station - Línea J BRT Los Angeles. Estación central de LA.",
+  h1: "Union Station — Línea J | Los Angeles BRT",
+  intro: "Conexión con la estación central. Transfer a metro, Metrolink y Amtrak.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Union Station del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-civic-center",
+  nombre: "Civic Center",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Civic Center BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Civic Center - Línea J BRT Los Angeles. Centro cívico, City Hall.",
+  h1: "Civic Center — Línea J | Los Angeles BRT",
+  intro: "Centro cívico de LA con City Hall, tribunales y Grand Park.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Civic Center del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-7th-street",
+  nombre: "7th Street / Metro Center",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "7th Street / Metro Center BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación 7th Street / Metro Center - Línea J BRT Los Angeles. Hub central Downtown.",
+  h1: "7th Street / Metro Center — Línea J | Los Angeles BRT",
+  intro: "Hub central de Downtown LA. Transfer a A Line y E Line metro.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación 7th Street / Metro Center del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-harbor-freeway",
+  nombre: "Harbor Freeway",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Harbor Freeway BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Harbor Freeway - Línea J BRT Los Angeles. Autopista 110 sur.",
+  h1: "Harbor Freeway — Línea J | Los Angeles BRT",
+  intro: "Estación express en la autopista 110 hacia el sur de LA.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Harbor Freeway del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-manchester",
+  nombre: "Manchester",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Manchester BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Manchester - Línea J BRT Los Angeles. Zona sur de LA.",
+  h1: "Manchester — Línea J | Los Angeles BRT",
+  intro: "Manchester, zona residencial del sur de Los Angeles.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Manchester del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-rosecrans",
+  nombre: "Rosecrans",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Los Angeles",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Rosecrans BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Rosecrans - Línea J BRT Los Angeles. Acceso a Compton.",
+  h1: "Rosecrans — Línea J | Los Angeles BRT",
+  intro: "Rosecrans con acceso a Compton y ciudades del sur del condado.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Rosecrans del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-harbor-gateway-transit-center",
+  nombre: "Harbor Gateway Transit Center",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Torrance",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Harbor Gateway Transit Center BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Harbor Gateway Transit Center - Línea J BRT Los Angeles. Hub South Bay.",
+  h1: "Harbor Gateway Transit Center — Línea J | Los Angeles BRT",
+  intro: "Hub de tránsito Harbor Gateway con conexiones a South Bay.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Harbor Gateway Transit Center del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-pacific-coast-highway",
+  nombre: "Pacific Coast Highway",
+  linea: "J",
+  sistema: "brt",
+  municipio: "Lomita",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Pacific Coast Highway BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Pacific Coast Highway - Línea J BRT Los Angeles. Zona costera del sur.",
+  h1: "Pacific Coast Highway — Línea J | Los Angeles BRT",
+  intro: "Acceso a Pacific Coast Highway y la zona costera sur.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Pacific Coast Highway del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-1st-street-san-pedro",
+  nombre: "1st Street San Pedro",
+  linea: "J",
+  sistema: "brt",
+  municipio: "San Pedro",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "1st Street San Pedro BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación 1st Street San Pedro - Línea J BRT Los Angeles. Puerto de LA.",
+  h1: "1st Street San Pedro — Línea J | Los Angeles BRT",
+  intro: "San Pedro con acceso al Puerto de LA, restaurantes y cultura marítima.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación 1st Street San Pedro del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
+},
+{
+  slug: "la-j-pacific-avenue-san-pedro",
+  nombre: "Pacific Avenue San Pedro",
+  linea: "J",
+  sistema: "brt",
+  municipio: "San Pedro",
+  tipo_zona: "transporte",
+  pois: [],
+  transferencias: [],
+  seo_title: "Pacific Avenue San Pedro BRT Los Angeles — Estación Línea J | MetroGuia",
+  meta_description: "Estación Pacific Avenue San Pedro - Línea J BRT Los Angeles. Terminal sur, USS Iowa.",
+  h1: "Pacific Avenue San Pedro — Línea J | Los Angeles BRT",
+  intro: "Terminal sur. USS Iowa Museum, Cabrillo Marine Aquarium y el puerto.",
+  tips: [
+    "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
+    "Horarios: aproximadamente 4:00 AM a 1:00 AM",
+    "Estación con acceso ADA completo"
+  ],
+  mejor_horario: "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+  mundial_relevancia: "Parte del sistema de transporte de Los Angeles.",
+  descripcion_turistica: "Estación Pacific Avenue San Pedro del sistema BRT de Los Angeles.",
+  accesibilidad: {
+    elevador: false,
+    rampa: true,
+    piso_tactil: true,
+    notas: "Estación BRT a nivel de calle con acceso ADA."
+  },
+  horarios: {
+    apertura: "04:00",
+    cierre: "01:00",
+    notas: "Horarios pueden variar."
+  },
+  lugares_cercanos: []
 }
 ]
 

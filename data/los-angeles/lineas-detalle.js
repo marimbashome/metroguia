@@ -379,6 +379,126 @@ export const lineasLA = [
     meta_description: "Línea K (Crenshaw/LAX Line) Metro de Los Angeles. 13 estaciones, 21 km, conecta LAX, SoFi Stadium, playas de South Bay.",
     h1: "Línea K — Rosa/Crenshaw | Metro Los Angeles"
   },
+  {
+    id: "G",
+    color: "#F58025",
+    colorNombre: "Naranja",
+    inicio: "North Hollywood",
+    fin: "Chatsworth",
+    total: 18,
+    km: 29,
+    tipo: "BRT",
+    municipios: ["North Hollywood", "Van Nuys", "Reseda", "Northridge", "Chatsworth"],
+    descripcion: "La Línea G (Orange Line) es un corredor de Bus Rapid Transit (BRT) que cruza todo el Valle de San Fernando de este a oeste. Con 18 estaciones y 29 km, ofrece servicio rápido de autobús en carril exclusivo, conectando la estación de metro North Hollywood (Red/B Line) con Chatsworth y Warner Center. Ideal para explorar el Valle sin auto.",
+    estaciones_turisticas: ["la-g-north-hollywood", "la-g-van-nuys", "la-g-warner-center", "la-g-chatsworth"],
+    estaciones: [
+      "la-g-north-hollywood",
+      "la-g-laurel-canyon",
+      "la-g-valley-college",
+      "la-g-woodman",
+      "la-g-van-nuys",
+      "la-g-sepulveda",
+      "la-g-woodley",
+      "la-g-balboa",
+      "la-g-louise",
+      "la-g-reseda",
+      "la-g-tarzana",
+      "la-g-pierce-college",
+      "la-g-tampa",
+      "la-g-canoga",
+      "la-g-de-soto",
+      "la-g-topanga-canyon",
+      "la-g-warner-center",
+      "la-g-chatsworth"
+    ],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día por Línea G: El Valle de San Fernando",
+      paradas: [
+        {
+          estacion: "la-g-north-hollywood",
+          actividad: "Inicio con transfer del B Line. Explora NoHo Arts District, galerías y cafés (9:00 AM)"
+        },
+        {
+          estacion: "la-g-van-nuys",
+          actividad: "Van Nuys. Centro administrativo del Valle, arquitectura Art Deco en Van Nuys Blvd (11:00 AM)"
+        },
+        {
+          estacion: "la-g-balboa",
+          actividad: "Balboa. Camina al Balboa Park y el Japanese Garden, oasis verde del Valle (1:00 PM)"
+        },
+        {
+          estacion: "la-g-chatsworth",
+          actividad: "Chatsworth. Stoney Point hiking, paisajes rocosos únicos, conexión Metrolink (3:00 PM)"
+        }
+      ]
+    },
+    tarifa: "$1.75 USD",
+    frecuencia: "4-10 min peak, 15-20 min off-peak",
+    sistema: "Metro Los Angeles",
+    ciudad: "los-angeles",
+    horario: "4:00 AM - 1:00 AM",
+    seo_title: "Línea G (Orange/BRT) Metro Los Angeles — North Hollywood a Chatsworth, 18 estaciones | MetroGuia",
+    meta_description: "Línea G (Orange Line) BRT de Los Angeles. 18 estaciones, 29 km de bus rápido en carril exclusivo por el Valle de San Fernando.",
+    h1: "Línea G — Naranja/Orange BRT | Metro Los Angeles"
+  },
+  {
+    id: "J",
+    color: "#A0A0A0",
+    colorNombre: "Plata",
+    inicio: "El Monte",
+    fin: "San Pedro",
+    total: 14,
+    km: 43,
+    tipo: "BRT",
+    municipios: ["El Monte", "South El Monte", "Montebello", "Commerce", "Los Angeles", "Artesia", "Harbor Gateway", "San Pedro"],
+    descripcion: "La Línea J (Silver Line) es un corredor BRT expreso que conecta El Monte con San Pedro vía el centro de Los Angeles. Con 14 estaciones y 43 km, utiliza carriles HOV de las autopistas 10 y 110, ofreciendo servicio rápido entre los suburbios del este, Downtown LA y la costa sur. Conecta con múltiples líneas de metro en Downtown.",
+    estaciones_turisticas: ["la-j-el-monte", "la-j-union-station", "la-j-7th-street", "la-j-harbor-gateway"],
+    estaciones: [
+      "la-j-el-monte",
+      "la-j-cal-state-la",
+      "la-j-soto-street",
+      "la-j-patsaouras-transit-plaza",
+      "la-j-union-station",
+      "la-j-civic-center",
+      "la-j-7th-street",
+      "la-j-harbor-freeway",
+      "la-j-manchester",
+      "la-j-rosecrans",
+      "la-j-harbor-gateway-transit-center",
+      "la-j-pacific-coast-highway",
+      "la-j-1st-street-san-pedro",
+      "la-j-pacific-avenue-san-pedro"
+    ],
+    ruta_1_dia: {
+      titulo: "Ruta de 1 día por Línea J: Del Este al Puerto",
+      paradas: [
+        {
+          estacion: "la-j-el-monte",
+          actividad: "Inicio en El Monte Transit Center. Conexión desde San Gabriel Valley (8:00 AM)"
+        },
+        {
+          estacion: "la-j-union-station",
+          actividad: "Union Station. Arquitectura icónica, Olvera Street, Chinatown cercano (10:00 AM)"
+        },
+        {
+          estacion: "la-j-7th-street",
+          actividad: "Downtown LA. Fashion District, Grand Central Market, museos (12:00 PM)"
+        },
+        {
+          estacion: "la-j-pacific-avenue-san-pedro",
+          actividad: "San Pedro. Puerto de LA, USS Iowa, Cabrillo Marine Aquarium (3:00 PM)"
+        }
+      ]
+    },
+    tarifa: "$2.50 USD",
+    frecuencia: "10-15 min peak, 20-30 min off-peak",
+    sistema: "Metro Los Angeles",
+    ciudad: "los-angeles",
+    horario: "4:30 AM - 12:00 AM",
+    seo_title: "Línea J (Silver/BRT) Metro Los Angeles — El Monte a San Pedro, 14 estaciones | MetroGuia",
+    meta_description: "Línea J (Silver Line) BRT expreso de Los Angeles. 14 estaciones, 43 km de El Monte al Puerto de San Pedro vía Downtown LA.",
+    h1: "Línea J — Plata/Silver BRT | Metro Los Angeles"
+  },
 ];
 
 export { lineasLA as lineasLosAngeles };

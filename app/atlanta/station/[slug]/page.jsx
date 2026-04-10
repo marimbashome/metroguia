@@ -57,8 +57,20 @@ export default function StationAtlanta({ params }) {
   const lineasEstacion = lineaArr.map((lineId) => lineasAtlanta.find((l) => l.id === lineId)).filter(Boolean);
   const colorPrincipal = lineasEstacion.length > 0 ? LINE_COLORS[(lineasEstacion[0].id || '').toLowerCase()] || '#FDBF00' : '#FDBF00';
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'MetroGuia', item: 'https://metroguia.mx' },
+      { '@type': 'ListItem', position: 2, name: 'Atlanta', item: 'https://metroguia.mx/atlanta/' },
+      { '@type': 'ListItem', position: 3, name: `${lineaArr[0]} Line`, item: `https://metroguia.mx/atlanta/line/${lineaArr[0]}/` },
+      { '@type': 'ListItem', position: 4, name: estacion.nombre, item: `https://metroguia.mx/atlanta/station/${estacion.slug}` },
+    ],
+  };
+
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <StationSchema station={estacion.nombre} city="Atlanta" sistema="MARTA" slug={estacion.slug} />
 
       {/* HERO */}

@@ -216,6 +216,7 @@ export const estaciones = [
     ],
     "lineas": [
       "1",
+      "7",
       "9"
     ]
   },
@@ -1483,6 +1484,7 @@ export const estaciones = [
     ],
     "lineas": [
       "1",
+      "5",
       "9",
       "A"
     ]
@@ -2264,7 +2266,8 @@ export const estaciones = [
       }
     ],
     "lineas": [
-      "2"
+      "2",
+      "8"
     ]
   },
   {
@@ -2590,7 +2593,8 @@ export const estaciones = [
     ],
     "lineas": [
       "2",
-      "8"
+      "8",
+      "9"
     ]
   },
   {
@@ -3253,7 +3257,8 @@ export const estaciones = [
       "notas": "Estación sin elevador ni rampa. Escaleras fijas. Señalización táctil en plataforma."
     },
     "lineas": [
-      "3"
+      "3",
+      "6"
     ]
   },
   {
@@ -3391,7 +3396,8 @@ export const estaciones = [
       "notas": "Estación con rampas para acceso. Sin elevador. Señalización táctil completa."
     },
     "lineas": [
-      "3"
+      "3",
+      "5"
     ]
   },
   {
@@ -4555,7 +4561,8 @@ export const estaciones = [
       }
     ],
     "lineas": [
-      "4"
+      "4",
+      "6"
     ]
   },
   {
@@ -4740,7 +4747,8 @@ export const estaciones = [
     ],
     "descripcion_turistica": "Estación en zona norte cerca de la Basílica de Guadalupe. Puerta de entrada a sitios religiosos más importantes de México.",
     "lineas": [
-      "4"
+      "4",
+      "5"
     ]
   },
   {
@@ -4803,7 +4811,7 @@ export const estaciones = [
       "notas": "Estación antigua sin ascensor. Acceso por escaleras. Señalización táctil completa."
     },
     "lineas": [
-      "4"
+      "5"
     ]
   },
   {
@@ -5008,7 +5016,8 @@ export const estaciones = [
       }
     ],
     "lineas": [
-      "4"
+      "4",
+      "9"
     ]
   },
   {
@@ -9745,6 +9754,7 @@ export const estaciones = [
       }
     ],
     "lineas": [
+      "7",
       "12"
     ]
   },
@@ -10777,8 +10787,7 @@ export const estaciones = [
     "lineas": [
       "12"
     ]
-  }
-,
+  },
   {
     "slug": "acatitla",
     "nombre": "Acatitla",
@@ -11091,5 +11100,4 @@ export const estaciones = [
       "B"
     ]
   }
-]
-;
+];
