@@ -4633,7 +4633,18 @@ export const estaciones = [
     "nombre": "Bondojito",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Plaza de la Soledad",
+        "tipo": "plaza",
+        "distancia": "6 min caminando"
+      },
+      {
+        "nombre": "Mercado Martínez de la Torre",
+        "tipo": "mercado",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Bondojito CDMX — Zona Industrial Local | MetroGuia",
     "meta_description": "Bondojito. Zona industrial residencial. Mercados populares. Vida obrera. Oriente CDMX auténtico.",
@@ -4891,7 +4902,23 @@ export const estaciones = [
     "nombre": "Fray Servando",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Palacio Legislativo San Lázaro",
+        "tipo": "institución",
+        "distancia": "8 min caminando"
+      },
+      {
+        "nombre": "Archivo General de la Nación",
+        "tipo": "cultural",
+        "distancia": "10 min caminando"
+      },
+      {
+        "nombre": "Mercado de Sonora",
+        "tipo": "mercado",
+        "distancia": "12 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Fray Servando CDMX — Historia Intelectual | MetroGuia",
     "meta_description": "Fray Servando. Historia intelectual. Iglesias coloniales. Mercado Jamaica. Patrimonio CDMX.",
@@ -5232,7 +5259,18 @@ export const estaciones = [
     "nombre": "Misterios",
     "alcaldia": "Gustavo A. Madero",
     "tipo_zona": "residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Basílica de Guadalupe",
+        "tipo": "religioso",
+        "distancia": "15 min caminando"
+      },
+      {
+        "nombre": "Calzada de los Misterios",
+        "tipo": "histórico",
+        "distancia": "2 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Misterios CDMX — zona residencial norte",
     "meta_description": "Estación residencial norte. Punto de tránsito Línea 5. Barrio tradicional de CDMX. Guía MetroGuia.",
@@ -5350,7 +5388,18 @@ export const estaciones = [
     "nombre": "Eduardo Molina",
     "alcaldia": "Venustiano Carranza",
     "tipo_zona": "industrial-residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Av. Eduardo Molina (corredor)",
+        "tipo": "avenida",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Unidad Habitacional Aragón",
+        "tipo": "residencial",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Eduardo Molina CDMX — zona industrial",
     "meta_description": "Zona industrial oriente. Punto de tránsito Línea 5. Lado manufacturero de CDMX. Guía MetroGuia.",
@@ -5884,7 +5933,18 @@ export const estaciones = [
     "nombre": "Norte 45",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial-comercial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Av. Instituto Politécnico Nacional",
+        "tipo": "avenida",
+        "distancia": "2 min caminando"
+      },
+      {
+        "nombre": "Colonia Vallejo",
+        "tipo": "colonia",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Norte 45 CDMX — zona residencial norte",
     "meta_description": "Zona residencial norte. Punto de tránsito Línea 6. Barrio tranquilo. Guía MetroGuia.",
@@ -6152,7 +6212,18 @@ export const estaciones = [
     "nombre": "Aquiles Serdán",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Av. Aquiles Serdán",
+        "tipo": "avenida",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Colonia Ángel Zimbrón",
+        "tipo": "colonia",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Aquiles Serdán CDMX — Barrio obrero Azcapotzalco | MetroGuia",
     "meta_description": "Metro Aquiles Serdán, zona residencial auténtica de Azcapotzalco. Historia revolucionaria, mercados locales y ambiente tranquilo. Línea 7 CDMX.",
@@ -6209,7 +6280,18 @@ export const estaciones = [
     "nombre": "Camarones",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "industrial-residencial",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Parque Tezozómoc",
+        "tipo": "parque",
+        "distancia": "12 min caminando"
+      },
+      {
+        "nombre": "Av. Cuitláhuac",
+        "tipo": "avenida",
+        "distancia": "2 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Camarones CDMX — Historia lacustre de Azcapotzalco | MetroGuia",
     "meta_description": "Metro Camarones en Azcapotzalco, recuerda los canales prehispánicos de la ciudad lacustre. Zona industrial auténtica. Línea 7 del Metro CDMX.",
@@ -10793,14 +10875,29 @@ export const estaciones = [
     "nombre": "Acatitla",
     "alcaldia": "Iztacalco",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Cerro de la Estrella",
+        "tipo": "naturaleza",
+        "distancia": "20 min caminando"
+      },
+      {
+        "nombre": "Mercado Acatitla",
+        "tipo": "mercado",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Acatitla CDMX — Línea A | MetroGuia",
     "meta_description": "Estación Acatitla de la Línea A del Metro CDMX. Acceso a Iztacalco hacia Estado de México.",
     "h1": "Metro Acatitla: guía turística",
     "intro": "Acatitla es una estación de la Línea A del Metro de Ciudad de México, conectando la capital con el Estado de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "tips": [
+      "Línea A no acepta tarjeta Metro — requiere tarjeta Metro Integrada.",
+      "Menor afluencia turística, más bien estación residencial local.",
+      "Conecta hacia Estado de México en dirección La Paz."
+    ],
+    "descripcion_turistica": "Acatitla es una estación de paso en zona residencial del oriente de CDMX. Útil principalmente para visitantes que se dirigen al Estado de México vía Línea A. No hay atractivos turísticos mayores en la inmediata cercanía.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10814,21 +10911,43 @@ export const estaciones = [
     },
     "lineas": [
       "A"
-    ]
+    ],
+    "historia_icono": "El nombre Acatitla proviene del náhuatl y significa \"lugar entre cañas\". La estación, inaugurada en 1991 con la Línea A, sirve a una zona residencial de Iztacalco que conserva rastros de los canales y chinampas prehispánicas que dominaban esta parte del valle.",
+    "lugares_cercanos": [
+      "Cerro de la Estrella",
+      "Iztapalapa centro",
+      "Mercado Acatitla"
+    ],
+    "mundial_relevancia": "Relevancia media — ruta de apoyo para visitantes alojados en oriente de CDMX que se muevan hacia el Estadio Azteca vía transbordo a Línea 2."
   },
   {
     "slug": "santa-marta",
     "nombre": "Santa Marta",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Central de Abasto (vía transbordo)",
+        "tipo": "mercado",
+        "distancia": "15 min en transporte"
+      },
+      {
+        "nombre": "Sierra de Santa Catarina",
+        "tipo": "naturaleza",
+        "distancia": "20 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Santa Marta CDMX — Línea A | MetroGuia",
     "meta_description": "Estación Santa Marta de la Línea A del Metro CDMX. Acceso a Iztapalapa hacia Estado de México.",
     "h1": "Metro Santa Marta: guía turística",
     "intro": "Santa Marta es una estación de la Línea A del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "tips": [
+      "Terminal de Línea A — última parada antes de conectar a La Paz.",
+      "Zona con alta afluencia de commuters; evita horas pico (7-9 AM y 6-8 PM).",
+      "Conexión a mexibús hacia Chimalhuacán y Nezahualcóyotl."
+    ],
+    "descripcion_turistica": "Terminal de Línea A en Iztapalapa. Punto de transferencia entre CDMX y el oriente mexiquense. Sin atractivos turísticos principales, pero estratégica para movilidad regional.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10842,21 +10961,42 @@ export const estaciones = [
     },
     "lineas": [
       "A"
-    ]
+    ],
+    "historia_icono": "Santa Marta es terminal oriente de la Línea A, inaugurada en 1991. Sirve a una de las zonas más densamente pobladas de Iztapalapa y es puerta de entrada desde el Estado de México (La Paz).",
+    "lugares_cercanos": [
+      "Central de Abasto",
+      "La Paz Estado de México",
+      "Chimalhuacán"
+    ],
+    "mundial_relevancia": "Baja — estación de periferia oriente, no forma parte de rutas turísticas al Azteca."
   },
   {
     "slug": "los-reyes",
     "nombre": "Los Reyes",
     "alcaldia": "Iztapalapa",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Av. Ignacio Zaragoza",
+        "tipo": "avenida",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Colonia Los Reyes",
+        "tipo": "colonia",
+        "distancia": "2 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Los Reyes CDMX — Línea A | MetroGuia",
     "meta_description": "Estación Los Reyes de la Línea A del Metro CDMX. Acceso a Iztapalapa hacia Estado de México.",
     "h1": "Metro Los Reyes: guía turística",
     "intro": "Los Reyes es una estación de la Línea A del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea A del Metro CDMX.",
+    "tips": [
+      "Línea A no acepta tarjeta Metro estándar — necesitas Metro Integrada.",
+      "Estación residencial con uso predominante de commuters locales."
+    ],
+    "descripcion_turistica": "Estación de paso en Iztapalapa oriente. Zona residencial sin atractivos turísticos mayores.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10870,21 +11010,41 @@ export const estaciones = [
     },
     "lineas": [
       "A"
-    ]
+    ],
+    "historia_icono": "Los Reyes es una estación de la Línea A inaugurada en 1991. El nombre refiere al pueblo de Los Reyes, uno de los asentamientos originales del oriente de CDMX previo a la urbanización masiva del siglo XX.",
+    "lugares_cercanos": [
+      "Pueblo Los Reyes",
+      "Colonia Peñón Viejo"
+    ],
+    "mundial_relevancia": "Baja — no forma parte de rutas turísticas al Mundial 2026."
   },
   {
     "slug": "coyuya",
     "nombre": "Coyuya",
     "alcaldia": "Iztacalco",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Av. Río Churubusco",
+        "tipo": "avenida",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Colonia Agrícola Oriental",
+        "tipo": "colonia",
+        "distancia": "5 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Coyuya CDMX — Línea 8 | MetroGuia",
     "meta_description": "Estación Coyuya de la Línea 8 del Metro CDMX. Acceso a Iztacalco.",
     "h1": "Metro Coyuya: guía turística",
     "intro": "Coyuya es una estación de la Línea 8 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "tips": [
+      "Conexión directa a Constitución de 1917 (terminal sur).",
+      "Zona residencial e industrial; poco turístico."
+    ],
+    "descripcion_turistica": "Estación residencial de Línea 8 en Iztacalco. Útil para conectar hacia Garibaldi, Salto del Agua y Bellas Artes desde oriente.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10898,21 +11058,47 @@ export const estaciones = [
     },
     "lineas": [
       "8"
-    ]
+    ],
+    "historia_icono": "Coyuya forma parte de la Línea 8 del Metro CDMX, inaugurada en 1994. Su nombre proviene del náhuatl coyotl-yaliztli, relacionado con la presencia de coyotes en la zona antes de la urbanización.",
+    "lugares_cercanos": [
+      "Colonia Agrícola Oriental",
+      "Unidad Infonavit Iztacalco"
+    ],
+    "mundial_relevancia": "Baja — no está en corredor principal al Azteca."
   },
   {
     "slug": "doctores",
     "nombre": "Doctores",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Mercado de La Merced (vía transbordo)",
+        "tipo": "mercado",
+        "distancia": "10 min en metro"
+      },
+      {
+        "nombre": "Hospital General de México",
+        "tipo": "hospital",
+        "distancia": "8 min caminando"
+      },
+      {
+        "nombre": "Colonia Doctores",
+        "tipo": "colonia",
+        "distancia": "1 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Doctores CDMX — Línea 8 | MetroGuia",
     "meta_description": "Estación Doctores de la Línea 8 del Metro CDMX. Acceso a Cuauhtémoc.",
     "h1": "Metro Doctores: guía turística",
     "intro": "Doctores es una estación de la Línea 8 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "tips": [
+      "Zona con fama de comercio automotriz — menor actividad turística.",
+      "Acceso al Hospital General y a la Arena México (lucha libre) a pocas cuadras.",
+      "Extrema precaución con carteras en horas de alta afluencia."
+    ],
+    "descripcion_turistica": "Estación de Línea 8 en una colonia tradicional del centro-sur. Cerca de la Arena México, hogar de la lucha libre capitalina, y del Hospital General. Menos turística pero con carácter local auténtico.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10926,21 +11112,48 @@ export const estaciones = [
     },
     "lineas": [
       "8"
-    ]
+    ],
+    "historia_icono": "La estación Doctores pertenece a la Línea 8, inaugurada en 1994. Debe su nombre a la Colonia Doctores, nombrada así porque sus calles honran a médicos célebres (Dr. Lucio, Dr. Balmis, Dr. Erazo). Zona tradicional y conocida también por el deshuesadero automotriz.",
+    "lugares_cercanos": [
+      "Arena México (Lucha Libre)",
+      "Hospital General",
+      "Colonia Obrera"
+    ],
+    "mundial_relevancia": "Media — acceso a Arena México para visitantes que busquen experiencias culturales alternas durante el Mundial."
   },
   {
     "slug": "obrera",
     "nombre": "Obrera",
     "alcaldia": "Cuauhtémoc",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Colonia Obrera",
+        "tipo": "colonia",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Mercado San Cosme",
+        "tipo": "mercado",
+        "distancia": "10 min caminando"
+      },
+      {
+        "nombre": "Arena México",
+        "tipo": "entretenimiento",
+        "distancia": "12 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Obrera CDMX — Línea 8 | MetroGuia",
     "meta_description": "Estación Obrera de la Línea 8 del Metro CDMX. Acceso a Cuauhtémoc.",
     "h1": "Metro Obrera: guía turística",
     "intro": "Obrera es una estación de la Línea 8 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "tips": [
+      "Zona tradicional popular — auténtica pero con precaución normal.",
+      "Cerca de Arena México — si eres fan de lucha libre, noches de función son una experiencia única.",
+      "Conexión directa a Chabacano (transbordo L2 y L9)."
+    ],
+    "descripcion_turistica": "Estación en colonia tradicional con historia obrera. Ideal para quienes quieren conocer el CDMX fuera del circuito turístico, incluyendo la experiencia de lucha libre en la Arena México.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10954,21 +11167,43 @@ export const estaciones = [
     },
     "lineas": [
       "8"
-    ]
+    ],
+    "historia_icono": "Obrera pertenece a la Línea 8 del Metro, inaugurada en 1994. La Colonia Obrera es una de las más antiguas de CDMX, fundada a principios del siglo XX para trabajadores de fábricas textiles y tranvías.",
+    "lugares_cercanos": [
+      "Arena México",
+      "Colonia Obrera",
+      "Mercado San Cosme"
+    ],
+    "mundial_relevancia": "Media — puerta a la Arena México, icónico entretenimiento mexicano durante el Mundial."
   },
   {
     "slug": "iztacalco",
     "nombre": "Iztacalco",
     "alcaldia": "Iztacalco",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Centro de Iztacalco",
+        "tipo": "histórico",
+        "distancia": "8 min caminando"
+      },
+      {
+        "nombre": "Parque de los Cocodrilos",
+        "tipo": "parque",
+        "distancia": "12 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Iztacalco CDMX — Línea 8 | MetroGuia",
     "meta_description": "Estación Iztacalco de la Línea 8 del Metro CDMX. Acceso a Iztacalco.",
     "h1": "Metro Iztacalco: guía turística",
     "intro": "Iztacalco es una estación de la Línea 8 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea 8 del Metro CDMX.",
+    "tips": [
+      "Visita la parroquia de San Matías Apóstol en el centro de Iztacalco — 6 cuadras al sur.",
+      "Zona con raíces prehispánicas; hay rutas de barrios originarios.",
+      "Menos turística que Coyoacán pero similar en autenticidad."
+    ],
+    "descripcion_turistica": "Estación cerca del centro histórico de Iztacalco, uno de los pueblos originarios de la Cuenca de México. Iglesia del siglo XVI, calles empedradas y ambiente de barrio tradicional.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10982,14 +11217,37 @@ export const estaciones = [
     },
     "lineas": [
       "8"
-    ]
+    ],
+    "historia_icono": "Iztacalco fue una de las 14 calpullis originales del valle de México en tiempos prehispánicos. El nombre náhuatl iztacalli significa \"casa de sal\" por las salinas que existieron ahí. La estación Línea 8 (1994) sirve al centro histórico de la alcaldía.",
+    "lugares_cercanos": [
+      "Centro de Iztacalco",
+      "Parroquia San Matías",
+      "Foro Sol (vía transporte)"
+    ],
+    "mundial_relevancia": "Media-alta — el Foro Sol (a ~15 min) es alterno relevante para eventos paralelos al Mundial."
   },
   {
     "slug": "el-rosario",
     "nombre": "El Rosario",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Tianguis Cultural El Rosario",
+        "tipo": "mercado",
+        "distancia": "3 min caminando"
+      },
+      {
+        "nombre": "Unidad Habitacional El Rosario",
+        "tipo": "residencial",
+        "distancia": "1 min caminando"
+      },
+      {
+        "nombre": "Acueducto de Los Remedios",
+        "tipo": "histórico",
+        "distancia": "20 min caminando"
+      }
+    ],
     "transferencias": [
       "6",
       "7"
@@ -10998,8 +11256,12 @@ export const estaciones = [
     "meta_description": "Estación El Rosario de las Líneas 6 y 7 del Metro CDMX. Acceso a Azcapotzalco.",
     "h1": "Metro El Rosario: hub de transferencia",
     "intro": "El Rosario es una estación de transferencia de las Líneas 6 y 7 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de transferencia de las Líneas 6 y 7 del Metro CDMX.",
+    "tips": [
+      "Terminal importante — cambio entre Línea 7 y Línea 6.",
+      "Afluencia alta en horas pico por la densidad de la unidad habitacional.",
+      "Conexión a Azcapotzalco y Naucalpan vía autobús."
+    ],
+    "descripcion_turistica": "Terminal de dos líneas del metro en el norponiente. Punto de transferencia clave pero con pocos atractivos turísticos. Cerca de Azcapotzalco centro, que sí tiene interés histórico.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -11014,21 +11276,48 @@ export const estaciones = [
     "lineas": [
       "6",
       "7"
-    ]
+    ],
+    "historia_icono": "El Rosario es una de las dos terminales de la Línea 7 y Línea 6, inaugurada en la década de 1980. Sirve a una de las unidades habitacionales más grandes del país, construida en los años 70.",
+    "lugares_cercanos": [
+      "Azcapotzalco",
+      "Parque Tezozómoc",
+      "Naucalpan"
+    ],
+    "mundial_relevancia": "Media — ruta alterna norte para visitantes en Azcapotzalco y Naucalpan."
   },
   {
     "slug": "instituto-del-petroleo",
     "nombre": "Instituto del Petróleo",
     "alcaldia": "Azcapotzalco",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Instituto Mexicano del Petróleo",
+        "tipo": "institución",
+        "distancia": "5 min caminando"
+      },
+      {
+        "nombre": "Parque Revolución",
+        "tipo": "parque",
+        "distancia": "10 min caminando"
+      },
+      {
+        "nombre": "Lindavista (comercio)",
+        "tipo": "comercial",
+        "distancia": "15 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Instituto del Petróleo CDMX — Línea 6 | MetroGuia",
     "meta_description": "Estación Instituto del Petróleo de la Línea 6 del Metro CDMX. Acceso a Azcapotzalco.",
     "h1": "Metro Instituto del Petróleo: guía turística",
     "intro": "Instituto del Petróleo es una estación de la Línea 6 del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea 6 del Metro CDMX.",
+    "tips": [
+      "Transbordo L5-L6; consulta mapa para elegir andén correcto.",
+      "Cerca de Lindavista, zona comercial importante del norte.",
+      "Afluencia moderada todo el día."
+    ],
+    "descripcion_turistica": "Estación norteña de transbordo útil. Cerca de Lindavista (plaza y comercio) y del Instituto Mexicano del Petróleo. Zona residencial con servicios.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -11042,21 +11331,48 @@ export const estaciones = [
     },
     "lineas": [
       "6"
-    ]
+    ],
+    "historia_icono": "Estación de transbordo Línea 5 y Línea 6, inaugurada en 1981-1983. Debe su nombre al Instituto Mexicano del Petróleo, centro de investigación energética fundado en 1965 y ubicado a pocas cuadras.",
+    "lugares_cercanos": [
+      "Lindavista",
+      "Parque Revolución",
+      "IPN (Zacatenco)"
+    ],
+    "mundial_relevancia": "Media — corredor norte-centro, útil para visitantes alojados en Lindavista o GAM."
   },
   {
     "slug": "ecatepec",
     "nombre": "Ecatepec",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Centro Histórico Ecatepec",
+        "tipo": "histórico",
+        "distancia": "5 min en Mexibús"
+      },
+      {
+        "nombre": "Cerro del Chiquihuite",
+        "tipo": "naturaleza",
+        "distancia": "15 min en transporte"
+      },
+      {
+        "nombre": "Plaza Las Américas Ecatepec",
+        "tipo": "comercial",
+        "distancia": "10 min en transporte"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Ecatepec CDMX — Línea B | MetroGuia",
     "meta_description": "Estación Ecatepec de la Línea B del Metro CDMX. Acceso a Ecatepec, Estado de México.",
     "h1": "Metro Ecatepec: guía turística",
     "intro": "Ecatepec es una estación de la Línea B del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea B del Metro CDMX.",
+    "tips": [
+      "Tren Suburbano es servicio separado; tarjeta aparte del Metro.",
+      "Combina con Mexibús para moverte dentro de Ecatepec.",
+      "Ecatepec es grande; especifica destino exacto antes de transbordar."
+    ],
+    "descripcion_turistica": "Punto de acceso al municipio más poblado del país. La zona tiene mercados, el histórico Convento de San Cristóbal Ecatepec y acceso al Cerro del Chiquihuite.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -11070,21 +11386,43 @@ export const estaciones = [
     },
     "lineas": [
       "B"
-    ]
+    ],
+    "historia_icono": "Estación del Tren Suburbano ubicada en el municipio de Ecatepec de Morelos, Estado de México. Ecatl-tepec significa \"cerro del viento\" en náhuatl, aludiendo al Cerro del Chiquihuite adyacente.",
+    "lugares_cercanos": [
+      "San Cristóbal Ecatepec",
+      "Cerro del Chiquihuite",
+      "Plaza Las Américas"
+    ],
+    "mundial_relevancia": "Media — ruta suburbana útil para hospedajes económicos en el norte metropolitano."
   },
   {
     "slug": "plaza-aragon",
     "nombre": "Plaza Aragón",
     "alcaldia": "Ecatepec, Estado de México",
     "tipo_zona": "urbana",
-    "pois": [],
+    "pois": [
+      {
+        "nombre": "Plaza Aragón (centro comercial)",
+        "tipo": "comercial",
+        "distancia": "3 min caminando"
+      },
+      {
+        "nombre": "Colonia Villa de Aragón",
+        "tipo": "colonia",
+        "distancia": "2 min caminando"
+      }
+    ],
     "transferencias": [],
     "seo_title": "Metro Plaza Aragón CDMX — Línea B | MetroGuia",
     "meta_description": "Estación Plaza Aragón de la Línea B del Metro CDMX. Acceso a Ecatepec, Estado de México.",
     "h1": "Metro Plaza Aragón: guía turística",
     "intro": "Plaza Aragón es una estación de la Línea B del Metro de Ciudad de México.",
-    "tips": [],
-    "descripcion_turistica": "Estación de la Línea B del Metro CDMX.",
+    "tips": [
+      "Cerca de Plaza Aragón, uno de los centros comerciales clásicos del norte.",
+      "Acceso rápido a la Basílica de Guadalupe cambiando a L6.",
+      "Zona residencial con buena infraestructura comercial."
+    ],
+    "descripcion_turistica": "Estación del norte de CDMX cerca de Plaza Aragón. Útil para visitantes en hoteles del norte que requieran comercio y servicios. Acceso razonable a la Basílica de Guadalupe.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -11098,6 +11436,13 @@ export const estaciones = [
     },
     "lineas": [
       "B"
-    ]
+    ],
+    "historia_icono": "Estación de Línea 5 del Metro CDMX, ubicada en la Gustavo A. Madero. Debe su nombre a la Plaza Aragón, centro comercial de los años 80 que transformó la zona en un hub comercial del norte.",
+    "lugares_cercanos": [
+      "Plaza Aragón",
+      "Basílica de Guadalupe",
+      "Indios Verdes"
+    ],
+    "mundial_relevancia": "Media — zona norte con acceso a Basílica, sitio clave en itinerarios turísticos."
   }
 ];

@@ -3,7 +3,9 @@ import { lineasDetalle } from '@/data/lineas-detalle';
 import { zonas } from '@/data/zonas';
 import { rutasPopulares } from '@/data/rutas-populares';
 import { generateCityRoutes } from '@/data/rutas-engine';
+import { getBuiltRouteSlugs } from '@/data/built-routes';
 import { mundial2026 } from '@/data/mundial';
+import guidesContent from '@/data/guides-content.json';
 
 // Import station data for all cities
 import { estacionesGDL } from '@/data/gdl/estaciones';
@@ -304,6 +306,10 @@ function getCoreUrls() {
     entry('/guides/', 'monthly', 0.9, 'core'),
     entry('/guides/airport-to-metro/', 'monthly', 0.9, 'core'),
     entry('/guides/visitor-guide/', 'monthly', 0.9, 'core'),
+    entry('/guias-mexico/', 'weekly', 0.9, 'core'),
+    ...guidesContent.map(g =>
+      entry(`/guias-mexico/${g.slug}/`, 'monthly', 0.7, 'core')
+    ),
     entry('/hospedaje/', 'monthly', 0.8, 'core'),
     entry('/explorar/', 'weekly', 0.8, 'core'),
     entry('/zona/', 'monthly', 0.8, 'core'),
@@ -731,7 +737,9 @@ function getI18nUrls() {
 }
 
 function getRoutesCdmxUrls() {
-  return generateCityRoutes('cdmx').map(slug =>
+  // Only emit routes that are actually pre-built (generateStaticParams).
+  // Anything else would be a 404 under output:'export' + dynamicParams:false.
+  return getBuiltRouteSlugs('cdmx').map(slug =>
     entry(
       `/ruta/${slug}/`,
       'monthly',
@@ -742,7 +750,7 @@ function getRoutesCdmxUrls() {
 }
 
 function getRoutesGdlUrls() {
-  return generateCityRoutes('gdl').map(slug =>
+  return getBuiltRouteSlugs('gdl').map(slug =>
     entry(
       `/gdl/ruta/${slug}/`,
       'monthly',
@@ -772,7 +780,8 @@ function getRoutesMxUrls() {
 
   const urls = [];
   for (const cfg of cityConfigs) {
-    const routes = generateCityRoutes(cfg.city);
+    // Use only built routes to avoid 404s in the sitemap
+    const routes = getBuiltRouteSlugs(cfg.city);
     for (const slug of routes) {
       const p = (cfg.boostSuffix && slug.endsWith(cfg.boostSuffix)) ? cfg.boostPriority : cfg.priority;
       urls.push(entry(`${cfg.prefix}${slug}/`, 'monthly', p, 'routes-mx'));
@@ -782,6 +791,11 @@ function getRoutesMxUrls() {
 }
 
 function getRoutesUSCAUrls() {
+  // DISABLED 2026-04-13: US/CA /<city>/route/[slug]/ pages do not exist in the
+  // app tree. Every URL this function used to emit was a 404 in GSC.
+  // Re-enable once those route pages are implemented.
+  return [];
+  // eslint-disable-next-line no-unreachable
   const cityConfigs = [
     { city: 'nyc', prefix: '/nyc/route/', priority: 0.65 },
     { city: 'los-angeles', prefix: '/los-angeles/route/', priority: 0.6 },

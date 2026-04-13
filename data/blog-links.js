@@ -112,6 +112,101 @@ export const blogLinks = {
     'pantitlan': [
       { slug: 'aeropuertos-cdmx', titulo: 'Aeropuertos CDMX', categoria: 'Práctico' },
     ],
+    // --- Expansión Abr 2026: cross-links a nuevas guías internas /guias-mexico/ ---
+    'allende': [
+      { slug: 'ruta-gastronomica-centro-historico', titulo: 'Ruta Gastronómica Centro Histórico', categoria: 'Gastronomía' },
+      { slug: 'plaza-garibaldi', titulo: 'Plaza Garibaldi y Mariachi', categoria: 'Entretenimiento' },
+      { slug: '100-cosas-hacer-cdmx', titulo: '100 Cosas que Hacer', categoria: 'Actividades' },
+    ],
+    'salto-del-agua': [
+      { slug: 'ruta-gastronomica-centro-historico', titulo: 'Ruta Gastronómica Centro Histórico', categoria: 'Gastronomía' },
+    ],
+    'isabel-la-catolica': [
+      { slug: 'ruta-gastronomica-centro-historico', titulo: 'Ruta Gastronómica Centro Histórico', categoria: 'Gastronomía' },
+    ],
+    'san-juan-de-letran': [
+      { slug: 'ruta-gastronomica-centro-historico', titulo: 'Ruta Gastronómica Centro Histórico', categoria: 'Gastronomía' },
+      { slug: 'plaza-garibaldi', titulo: 'Plaza Garibaldi', categoria: 'Entretenimiento' },
+    ],
+    'juarez': [
+      { slug: 'angel-independencia', titulo: 'Ángel de la Independencia', categoria: 'Atracción' },
+      { slug: 'ruta-gastronomica-centro-historico', titulo: 'Ruta Gastronómica Centro', categoria: 'Gastronomía' },
+    ],
+    'cuauhtemoc': [
+      { slug: 'lucha-libre', titulo: 'Lucha Libre CDMX', categoria: 'Entretenimiento' },
+      { slug: '100-cosas-hacer-cdmx', titulo: '100 Cosas que Hacer', categoria: 'Actividades' },
+    ],
+    'revolucion': [
+      { slug: 'lucha-libre', titulo: 'Lucha Libre CDMX', categoria: 'Entretenimiento' },
+      { slug: 'historia-mexico', titulo: 'Historia de México', categoria: 'Cultura' },
+      { slug: 'museos-cdmx', titulo: 'Museos CDMX', categoria: 'Cultura' },
+    ],
+    'lagunilla': [
+      { slug: 'plaza-garibaldi', titulo: 'Plaza Garibaldi y Mariachi', categoria: 'Entretenimiento' },
+      { slug: '100-cosas-hacer-cdmx', titulo: '100 Cosas que Hacer', categoria: 'Actividades' },
+    ],
+    'chilpancingo': [
+      { slug: 'ruta-gastronomica-roma-condesa', titulo: 'Ruta Roma-Condesa', categoria: 'Gastronomía' },
+      { slug: 'bares-cdmx', titulo: 'Mejores Bares CDMX', categoria: 'Entretenimiento' },
+      { slug: 'antros-vida-nocturna-cdmx', titulo: 'Vida Nocturna CDMX', categoria: 'Entretenimiento' },
+    ],
+    'patriotismo': [
+      { slug: 'ruta-gastronomica-roma-condesa', titulo: 'Ruta Roma-Condesa', categoria: 'Gastronomía' },
+    ],
+    'miguel-angel-de-quevedo': [
+      { slug: 'casa-azul-frida', titulo: 'Casa Azul de Frida', categoria: 'Museo' },
+      { slug: 'ruta-gastronomica-coyoacan', titulo: 'Ruta Gastronómica Coyoacán', categoria: 'Gastronomía' },
+    ],
+    'general-anaya': [
+      { slug: 'casa-azul-frida', titulo: 'Casa Azul de Frida', categoria: 'Museo' },
+      { slug: 'ruta-gastronomica-coyoacan', titulo: 'Ruta Coyoacán', categoria: 'Gastronomía' },
+    ],
+    'tasquena-coyoacan': [
+      { slug: 'casa-azul-frida', titulo: 'Casa Azul de Frida', categoria: 'Museo' },
+    ],
+    'la-villa': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+      { slug: 'historia-mexico', titulo: 'Historia de México', categoria: 'Cultura' },
+    ],
+    'deportivo-18-marzo': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+    ],
+    'basilica': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+    ],
+    'indios-verdes': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+    ],
+    'misterios': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+    ],
+    'martin-carrera': [
+      { slug: 'basilica-guadalupe', titulo: 'Basílica de Guadalupe', categoria: 'Atracción' },
+    ],
+    'ciudad-deportiva': [
+      { slug: 'liga-mx-deportes-cdmx', titulo: 'Liga MX y Deportes', categoria: 'Deportes' },
+      { slug: 'f1-gran-premio-mexico', titulo: 'F1 Gran Premio de México', categoria: 'Deportes' },
+      { slug: 'mundial-2026', titulo: 'Mundial FIFA 2026', categoria: 'Evento' },
+    ],
+    'velodromo': [
+      { slug: 'liga-mx-deportes-cdmx', titulo: 'Liga MX y Deportes', categoria: 'Deportes' },
+      { slug: 'foro-gnp', titulo: 'Foro Sol / GNP', categoria: 'Entretenimiento' },
+    ],
+    'mixiuhca': [
+      { slug: 'liga-mx-deportes-cdmx', titulo: 'Liga MX y Deportes', categoria: 'Deportes' },
+      { slug: 'f1-gran-premio-mexico', titulo: 'F1 Gran Premio de México', categoria: 'Deportes' },
+      { slug: 'foro-gnp', titulo: 'Foro Sol / GNP', categoria: 'Entretenimiento' },
+    ],
+    'copilco': [
+      { slug: 'tlalpan', titulo: 'Guía de Tlalpan', categoria: 'Barrio' },
+    ],
+    'tacubaya': [
+      { slug: 'museo-antropologia', titulo: 'Museo de Antropología', categoria: 'Museo' },
+      { slug: 'angel-independencia', titulo: 'Ángel de la Independencia', categoria: 'Atracción' },
+    ],
+    'tacubaya-cdmx': [
+      { slug: 'museo-antropologia', titulo: 'Museo de Antropología', categoria: 'Museo' },
+    ],
   },
 
   // Mapeo zona slug → guías
@@ -162,9 +257,34 @@ export const blogLinks = {
   ],
 }
 
-// Helper: construir URL del blog
+// Slugs que tienen página interna en /guias-mexico/[slug]/ (generadas desde guides-content.json)
+// Si el slug está en esta lista, getBlogUrl devuelve URL interna de MetroGuia.
+const INTERNAL_GUIDE_SLUGS = new Set([
+  '100-cosas-hacer-cdmx','aeropuertos-cdmx','angel-independencia','antros-vida-nocturna-cdmx',
+  'artesanias-chiapas-cdmx','bares-cdmx','basilica-guadalupe','bebidas-alcoholicas-chiapas',
+  'bebidas-alcoholicas-mexico','bebidas-no-alcoholicas-mexico','berriozabal-coita','botaneros-tuxtla',
+  'cafe-chiapas','carnaval-chiapas','casa-azul-frida','cervezas-mexicanas','chamula','chiapas',
+  'cine-mexicano','civilizaciones-prehispanicas','comunidades-indigenas-chiapas','dia-de-muertos-mexico',
+  'digital-nomads-mexico','dulces-tipicos-mexico','economia-negocios-mexico','f1-gran-premio-mexico',
+  'festivales-musica-mexico','foro-gnp','grupos-etnicos-chiapas','historia-chiapas','historia-mexico',
+  'idiomas-lenguas-mexico','liga-mx-deportes-cdmx','lucha-libre','mariachi-trios','mejores-playas-mexico',
+  'metro-cdmx','mundial-2026','museo-antropologia','museo-del-ambar','museos-cdmx','museos-tuxtla',
+  'musica-mexicana','parque-marimba','playas-chiapas','plaza-garibaldi','pueblos-magicos-chiapas',
+  'pueblos-magicos-mexico','que-empacar-mexico','restaurantes-cdmx','restaurantes-tuxtla','rio-la-venta',
+  'ruta-gastronomica-centro-historico','ruta-gastronomica-coyoacan','ruta-gastronomica-roma-condesa',
+  'ruta-gastronomica-san-cristobal','ruta-gastronomica-tuxtla','salud-emergencias-mexico',
+  'seguridad-en-mexico','sima-de-las-cotorras','tacos-cdmx','teatro-auditorio-cdmx','tlalpan',
+  'tren-maya','tuxtla-gutierrez','valle-de-guadalupe','zonas-arqueologicas-mexico','zoomat',
+])
+
+// Helper: construir URL (interna si existe, externa si no)
 export function getBlogUrl(slug) {
+  if (INTERNAL_GUIDE_SLUGS.has(slug)) return `/guias-mexico/${slug}/`
   return `https://book.marimbashome.com/es/guides/${slug}`
+}
+
+export function isInternalGuide(slug) {
+  return INTERNAL_GUIDE_SLUGS.has(slug)
 }
 
 // Helper: obtener guías para una estación

@@ -4,23 +4,21 @@ import { findRoute, getGrafo, detectCiudad, getCurrency } from '@/lib/pathfinder
 import { getCityConfig } from '@/data/cities-config'
 import RouteSchema from '@/app/components/RouteSchema'
 import RutaClient from './RutaClient'
+import { CDMX_MAX, getCdmxRouteSlugs } from '@/data/built-routes'
 
-// ISR: allow any station-to-station slug, not just pre-built ones
+// output:'export' disables ISR — only slugs returned by generateStaticParams
+// ship as HTML. dynamicParams:false makes all other slugs a hard 404 (intended:
+// Google was indexing tens of thousands of 404s from the combinatorial sitemap).
 export const dynamicParams = false
-
-// Cache pages forever (they don't change — metro map is static)
 export const revalidate = false
 
-// Pre-build only the top ~200 high-value routes at build time (FIFA + airport + hubs).
-// The remaining ~4,680 curated routes + all other combos are generated on first request (ISR).
-// This keeps the Vercel Hobby build under the 45-minute limit.
-const MAX_STATIC_ROUTES = 200
+// Pre-build only the top high-value routes at build time (FIFA + airport + hubs).
+// Shared with sitemap.js via data/built-routes.js so sitemap never lists 404s.
+// Keeps the Vercel Hobby build under the 45-minute limit.
+const MAX_STATIC_ROUTES = CDMX_MAX
 
 export function generateStaticParams() {
-  return rutasPopulares.slice(0, MAX_STATIC_ROUTES).map(r => {
-    const connector = r.connector || 'a'
-    return { slug: `${r.origen}-${connector}-${r.destino}` }
-  })
+  return getCdmxRouteSlugs().map(slug => ({ slug }))
 }
 
 function parseRouteSlug(slug) {

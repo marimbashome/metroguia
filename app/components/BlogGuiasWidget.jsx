@@ -1,6 +1,6 @@
 'use client'
 
-import { getBlogUrl } from '@/data/blog-links'
+import { getBlogUrl, isInternalGuide } from '@/data/blog-links'
 
 const categoriaIconos = {
   'Barrio': '🏘️',
@@ -47,12 +47,13 @@ export default function BlogGuiasWidget({ guides = [], context = '' }) {
         gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '0.75rem',
       }}>
-        {displayGuides.map((guide) => (
+        {displayGuides.map((guide) => {
+          const internal = isInternalGuide(guide.slug)
+          return (
           <a
             key={guide.slug}
             href={getBlogUrl(guide.slug)}
-            target="_blank"
-            rel="noopener"
+            {...(internal ? {} : { target: '_blank', rel: 'noopener' })}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -108,7 +109,7 @@ export default function BlogGuiasWidget({ guides = [], context = '' }) {
               </div>
             </div>
           </a>
-        ))}
+        )})}
       </div>
     </div>
   )
