@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://metroguia.mx/</loc>
+    <image:image>
+      <image:loc>https://metroguia.mx/og-image.png</image:loc>
+      <image:title>MetroGuia.mx — Trip planner de transporte urbano en México</image:title>
+      <image:caption>Planificador de rutas en metro, tren ligero y BRT en CDMX, GDL y MTY</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://metroguia.mx/logo.png</image:loc>
+      <image:title>MetroGuia.mx logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://metroguia.mx/mundial-2026/</loc>
+    <image:image>
+      <image:loc>https://metroguia.mx/og-image.png</image:loc>
+      <image:title>FIFA World Cup 2026 — Cómo llegar a los estadios en transporte público</image:title>
+      <image:caption>Guía oficial de transporte público para los 16 venues del Mundial 2026</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://metroguia.mx/mundial-2026/como-llegar-estadio-azteca/</loc>
+    <image:image>
+      <image:loc>https://metroguia.mx/og-image.png</image:loc>
+      <image:title>Cómo llegar al Estadio Azteca en metro CDMX — FIFA 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://metroguia.mx/gdl/mundial-2026/como-llegar-estadio-akron/</loc>
+    <image:image>
+      <image:loc>https://metroguia.mx/og-image.png</image:loc>
+      <image:title>Cómo llegar al Estadio Akron en Tren Ligero Guadalajara — FIFA 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://metroguia.mx/mty/mundial-2026/como-llegar-estadio-bbva/</loc>
+    <image:image>
+      <image:loc>https://metroguia.mx/og-image.png</image:loc>
+      <image:title>Cómo llegar al Estadio BBVA en Metro Monterrey — FIFA 2026</image:title>
+    </image:image>
+  </url>
+</urlset>
