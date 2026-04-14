@@ -21,6 +21,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/kansas-city/',
+  },
 };
 
 const estacionesDestacadas = estacionesKansasCity.filter(e =>

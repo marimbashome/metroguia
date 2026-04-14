@@ -12,6 +12,9 @@ export const metadata = {
     url: 'https://metroguia.mx/morelia/',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/morelia/',
+  },
 };
 
 export default function MoreliaPage() {

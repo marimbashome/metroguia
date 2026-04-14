@@ -17,6 +17,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/veracruz/',
+  },
 };
 
 export default function VeracruzPage() {

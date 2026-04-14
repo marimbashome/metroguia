@@ -22,6 +22,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/leon/line/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/leon/linea/${params.id}`,
+        'en': `https://metroguia.mx/leon/line/${params.id}`,
+      },
+    },
   };
 }
 

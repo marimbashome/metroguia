@@ -1,4 +1,4 @@
-export default function StationSchema({ station, city, sistema, slug, lines, accessibility, address }) {
+export default function StationSchema({ station, city, sistema, slug, lines, accessibility, address, country }) {
   const stationName = station || 'Station';
   // Determine station type based on sistema
   const stationType = sistema && (sistema.includes('metro') || sistema.includes('Metro'))
@@ -21,7 +21,7 @@ export default function StationSchema({ station, city, sistema, slug, lines, acc
       '@type': 'PostalAddress',
       addressLocality: city,
       addressRegion: city === 'CDMX' ? 'Ciudad de México' : city,
-      addressCountry: 'MX'
+      addressCountry: country || 'MX'
     }
 
     if (typeof address === 'string' && address.length > 0) {
@@ -29,15 +29,8 @@ export default function StationSchema({ station, city, sistema, slug, lines, acc
     }
   }
 
-  // Add geo coordinates if available (to be added dynamically)
-  if (typeof window === 'undefined') {
-    // Server-side only - add geo data if provided
-    schema.geo = {
-      '@type': 'GeoCoordinates',
-      latitude: 0, // Will be populated with actual data
-      longitude: 0
-    }
-  }
+  // Add geo coordinates only if actual data is provided
+  // (placeholder 0,0 tells Google every station is at Null Island)
 
   // Add transit lines information
   if (lines && Array.isArray(lines) && lines.length > 0) {
@@ -130,7 +123,7 @@ export default function StationSchema({ station, city, sistema, slug, lines, acc
       '@type': 'PostalAddress',
       streetAddress: address,
       addressLocality: city,
-      addressCountry: 'MX'
+      addressCountry: country || 'MX'
     }
   }
 

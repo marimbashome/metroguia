@@ -27,6 +27,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/chihuahua/estacion/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/chihuahua/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/chihuahua/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

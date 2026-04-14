@@ -15,6 +15,9 @@ export const metadata = {
     description: 'Complete guide to Houston Metro Rail stations, lines, and routes',
     url: 'https://metroguia.mx/houston',
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/houston/',
+  },
 };
 
 export default function HoustonPage() {

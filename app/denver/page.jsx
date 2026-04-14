@@ -7,6 +7,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Denver RTD Rail Transit System — A, B, D, E, G, W Lines | MetroGuia',
   description: 'Navigate Denver RTD light rail and commuter rail. 46 stations, 6 major lines. Real-time routes, fares, accessibility info, and transit planner for A Line airport express.',
+  alternates: {
+    canonical: 'https://metroguia.mx/denver/',
+  },
 };
 
 const FEATURED_STATIONS = ['denver-union-station', 'denver-airport', 'denver-theatre-district', 'denver-university-of-denver'];

@@ -23,6 +23,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/oaxaca/station/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/oaxaca/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/oaxaca/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

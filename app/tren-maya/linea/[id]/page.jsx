@@ -25,6 +25,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/tren-maya/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/tren-maya/linea/${params.id}`,
+        'en': `https://metroguia.mx/tren-maya/line/${params.id}`,
+      },
+    },
   };
 }
 

@@ -21,6 +21,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/los-angeles/',
+  },
 };
 
 const estacionesDestacadas = estacionesLosAngeles.filter(e =>

@@ -25,6 +25,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/merida/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/merida/linea/${params.id}`,
+        'en': `https://metroguia.mx/merida/line/${params.id}`,
+      },
+    },
   };
 }
 

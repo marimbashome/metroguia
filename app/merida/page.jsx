@@ -18,6 +18,9 @@ export function generateMetadata() {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: 'https://metroguia.mx/merida/',
+    },
   };
 }
 

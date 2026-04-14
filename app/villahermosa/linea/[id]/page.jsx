@@ -20,6 +20,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/villahermosa/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/villahermosa/linea/${params.id}`,
+        'en': `https://metroguia.mx/villahermosa/line/${params.id}`,
+      },
+    },
   };
 }
 

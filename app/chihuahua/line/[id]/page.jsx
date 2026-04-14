@@ -22,6 +22,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/chihuahua/line/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/chihuahua/linea/${params.id}`,
+        'en': `https://metroguia.mx/chihuahua/line/${params.id}`,
+      },
+    },
   };
 }
 

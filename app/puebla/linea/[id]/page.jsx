@@ -25,6 +25,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/puebla/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/puebla/linea/${params.id}`,
+        'en': `https://metroguia.mx/puebla/line/${params.id}`,
+      },
+    },
   };
 }
 

@@ -33,6 +33,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/leon/estacion/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/leon/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/leon/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

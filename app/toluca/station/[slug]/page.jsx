@@ -23,6 +23,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/toluca/station/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/toluca/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/toluca/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

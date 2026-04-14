@@ -19,6 +19,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/phoenix/',
+  },
 };
 
 const estacionesDestacadas = estacionesPhoenix.filter(e =>

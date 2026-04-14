@@ -15,6 +15,9 @@ export const metadata = {
     description: 'Complete guide to Atlanta MARTA stations, lines, and routes',
     url: 'https://metroguia.mx/atlanta',
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/atlanta/',
+  },
 };
 
 export default function AtlantaPage() {

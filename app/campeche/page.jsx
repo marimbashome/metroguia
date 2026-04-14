@@ -15,6 +15,9 @@ export function generateMetadata() {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: 'https://metroguia.mx/campeche/',
+    },
   };
 }
 

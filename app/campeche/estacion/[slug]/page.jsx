@@ -23,6 +23,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/campeche/estacion/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/campeche/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/campeche/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

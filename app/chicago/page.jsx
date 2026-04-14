@@ -20,6 +20,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/chicago/',
+  },
 };
 
 const estacionesDestacadas = estacionesChicago.filter(e =>

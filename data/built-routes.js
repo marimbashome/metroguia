@@ -20,6 +20,11 @@ import {
   queretaroStations,
   tolucaStations,
   trenmayaStations,
+  oaxacaStations,
+  moreliaStations,
+  veracruzStations,
+  campecheStations,
+  villahermosaStations,
 } from '@/data/rutas-engine'
 
 // CDMX: top N from curated rutasPopulares list (connector-aware)
@@ -84,6 +89,11 @@ export function getTijuanaRouteSlugs()  { return hubRoutes(['san-ysidro-frontera
 export function getQueretaroRouteSlugs(){ return hubRoutes(['centro-historico-qro', 'terminal-5-febrero', 'estadio-corregidora-qro', 'tec-monterrey-qro'], queretaroStations, 100) }
 export function getTolucaRouteSlugs()   { return hubRoutes(['zinacantepec-terminal', 'toluca-centro-bus', 'observatorio-cdmx', 'metepec'], tolucaStations, 100) }
 export function getTrenMayaRouteSlugs() { return hubRoutes(['cancun', 'tulum', 'chichen-itza', 'merida-oriente', 'palenque'], trenmayaStations, 100) }
+export function getOaxacaRouteSlugs()      { return hubRoutes(['oaxaca-centro-historico', 'oaxaca-monte-alban', 'oaxaca-terminal-ado'], oaxacaStations, 100) }
+export function getMoreliaRouteSlugs()     { return hubRoutes(['morelia-plaza-morelos', 'morelia-acueducto', 'morelia-cerro-garnica'], moreliaStations, 100) }
+export function getVeracruzRouteSlugs()    { return hubRoutes(['veracruz-centro-historico', 'veracruz-acuario', 'veracruz-terminal-autobuses'], veracruzStations, 100) }
+export function getCampecheRouteSlugs()    { return hubRoutes(['campeche-centro-historico', 'campeche-tren-maya', 'campeche-edzna'], campecheStations, 100) }
+export function getVillahermosaRouteSlugs(){ return hubRoutes(['villahermosa-centro-historico', 'villahermosa-tren-maya-palenque', 'villahermosa-yumka'], villahermosaStations, 100) }
 
 // Aggregate helper by city key (matches sitemap prefix mapping)
 export function getBuiltRouteSlugs(city) {
@@ -98,7 +108,12 @@ export function getBuiltRouteSlugs(city) {
     case 'tijuana':   return getTijuanaRouteSlugs()
     case 'queretaro': return getQueretaroRouteSlugs()
     case 'toluca':    return getTolucaRouteSlugs()
-    case 'tren-maya': return getTrenMayaRouteSlugs()
-    default:          return []
+    case 'tren-maya':     return getTrenMayaRouteSlugs()
+    case 'oaxaca':        return getOaxacaRouteSlugs()
+    case 'morelia':       return getMoreliaRouteSlugs()
+    case 'veracruz':      return getVeracruzRouteSlugs()
+    case 'campeche':      return getCampecheRouteSlugs()
+    case 'villahermosa':  return getVillahermosaRouteSlugs()
+    default:              return []
   }
 }

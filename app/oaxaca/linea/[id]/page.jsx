@@ -25,6 +25,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/oaxaca/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/oaxaca/linea/${params.id}`,
+        'en': `https://metroguia.mx/oaxaca/line/${params.id}`,
+      },
+    },
   };
 }
 

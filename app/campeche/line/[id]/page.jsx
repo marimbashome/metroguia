@@ -22,6 +22,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://metroguia.mx/campeche/line/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/campeche/linea/${params.id}`,
+        'en': `https://metroguia.mx/campeche/line/${params.id}`,
+      },
+    },
   };
 }
 export default function LineCampechePage({ params }) {

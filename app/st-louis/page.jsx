@@ -20,6 +20,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/st-louis/',
+  },
 };
 
 const estacionesDestacadas = estacionesStLouis.filter(e =>

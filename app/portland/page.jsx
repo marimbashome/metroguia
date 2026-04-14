@@ -20,6 +20,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/portland/',
+  },
 };
 
 const estacionesDestacadas = estacionesPortland.filter(e =>

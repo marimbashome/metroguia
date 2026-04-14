@@ -27,6 +27,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/morelia/estacion/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/morelia/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/morelia/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

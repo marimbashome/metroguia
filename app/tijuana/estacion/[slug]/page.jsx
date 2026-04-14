@@ -27,6 +27,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/tijuana/estacion/${estacion.slug}`,
+      languages: {
+        'es': `https://metroguia.mx/tijuana/estacion/${estacion.slug}`,
+        'en': `https://metroguia.mx/tijuana/station/${estacion.slug}`,
+      },
+    },
   };
 }
 

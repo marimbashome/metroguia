@@ -18466,124 +18466,490 @@ export const grafo = {
       }
     ]
   },
-  "centro-historico-oax": {
+  "oaxaca-centro-historico": {
     "ciudad": "oaxaca",
-    "nombre": "Centro Histórico Oaxaca",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Centro Histórico",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "monte-alban-oax",
-        "tiempo": 30,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "oaxaca-santo-domingo", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-mercado-benito-juarez", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-andador-macedonio", "tiempo": 4, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-terminal-ado", "tiempo": 10, "linea": "transfer", "tipo": "transfer" }
     ]
   },
-  "monte-alban-oax": {
+  "oaxaca-santo-domingo": {
     "ciudad": "oaxaca",
-    "nombre": "Monte Albán Oaxaca",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Santo Domingo",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "centro-historico-oax",
-        "tiempo": 30,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "oaxaca-centro-historico", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-monte-alban", "tiempo": 25, "linea": "2", "tipo": "linea" }
     ]
   },
-  "centro-historico-morelia": {
+  "oaxaca-monte-alban": {
+    "ciudad": "oaxaca",
+    "nombre": "Monte Albán",
+    "lineas": ["2"],
+    "adyacentes": [
+      { "slug": "oaxaca-santo-domingo", "tiempo": 25, "linea": "2", "tipo": "linea" },
+      { "slug": "oaxaca-centro-historico", "tiempo": 30, "linea": "2", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-mercado-benito-juarez": {
+    "ciudad": "oaxaca",
+    "nombre": "Mercado Benito Juárez",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "oaxaca-centro-historico", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-mercado-20-noviembre", "tiempo": 3, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-mercado-20-noviembre": {
+    "ciudad": "oaxaca",
+    "nombre": "Mercado 20 de Noviembre",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "oaxaca-mercado-benito-juarez", "tiempo": 3, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-andador-macedonio", "tiempo": 5, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-andador-macedonio": {
+    "ciudad": "oaxaca",
+    "nombre": "Andador Macedonio Alcalá",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "oaxaca-mercado-20-noviembre", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-centro-historico", "tiempo": 4, "linea": "1", "tipo": "linea" },
+      { "slug": "oaxaca-santo-domingo", "tiempo": 3, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-terminal-ado": {
+    "ciudad": "oaxaca",
+    "nombre": "Terminal ADO",
+    "lineas": ["transfer"],
+    "adyacentes": [
+      { "slug": "oaxaca-centro-historico", "tiempo": 10, "linea": "transfer", "tipo": "transfer" },
+      { "slug": "oaxaca-aeropuerto", "tiempo": 20, "linea": "transfer", "tipo": "transfer" }
+    ]
+  },
+  "oaxaca-aeropuerto": {
+    "ciudad": "oaxaca",
+    "nombre": "Aeropuerto de Oaxaca",
+    "lineas": ["transfer"],
+    "adyacentes": [
+      { "slug": "oaxaca-terminal-ado", "tiempo": 20, "linea": "transfer", "tipo": "transfer" },
+      { "slug": "oaxaca-centro-historico", "tiempo": 25, "linea": "transfer", "tipo": "transfer" }
+    ]
+  },
+  "oaxaca-mitla": {
+    "ciudad": "oaxaca",
+    "nombre": "Mitla",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "oaxaca-hierve-el-agua", "tiempo": 30, "linea": "3", "tipo": "linea" },
+      { "slug": "oaxaca-terminal-ado", "tiempo": 45, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-hierve-el-agua": {
+    "ciudad": "oaxaca",
+    "nombre": "Hierve el Agua",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "oaxaca-mitla", "tiempo": 30, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-ruta-del-mezcal": {
+    "ciudad": "oaxaca",
+    "nombre": "Ruta del Mezcal",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "oaxaca-mitla", "tiempo": 15, "linea": "3", "tipo": "linea" },
+      { "slug": "oaxaca-terminal-ado", "tiempo": 35, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "oaxaca-el-tule": {
+    "ciudad": "oaxaca",
+    "nombre": "El Tule",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "oaxaca-terminal-ado", "tiempo": 15, "linea": "3", "tipo": "linea" },
+      { "slug": "oaxaca-mitla", "tiempo": 30, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "morelia-plaza-morelos": {
     "ciudad": "morelia",
-    "nombre": "Centro Histórico Morelia",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Plaza Morelos",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "patzcuaro-morelia",
-        "tiempo": 30,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "morelia-acueducto", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-cerro-garnica", "tiempo": 12, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-parque-enrique-ramirez", "tiempo": 10, "linea": "1", "tipo": "linea" }
     ]
   },
-  "patzcuaro-morelia": {
+  "morelia-acueducto": {
     "ciudad": "morelia",
-    "nombre": "Pátzcuaro Morelia",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Acueducto",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "centro-historico-morelia",
-        "tiempo": 30,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "morelia-plaza-morelos", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-zona-residencial", "tiempo": 10, "linea": "1", "tipo": "linea" }
     ]
   },
-  "puerto-veracruz": {
+  "morelia-cerro-garnica": {
+    "ciudad": "morelia",
+    "nombre": "Cerro Garnica",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "morelia-plaza-morelos", "tiempo": 12, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-santuario-cibernetico", "tiempo": 15, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "morelia-zona-residencial": {
+    "ciudad": "morelia",
+    "nombre": "Zona Residencial",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "morelia-acueducto", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-santuario-cibernetico", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "morelia-santuario-cibernetico": {
+    "ciudad": "morelia",
+    "nombre": "Santuario Cibernético",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "morelia-zona-residencial", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-cerro-garnica", "tiempo": 15, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "morelia-parque-enrique-ramirez": {
+    "ciudad": "morelia",
+    "nombre": "Parque Enrique Ramírez",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "morelia-plaza-morelos", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "morelia-acueducto", "tiempo": 12, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-centro-historico": {
     "ciudad": "veracruz",
-    "nombre": "Puerto de Veracruz",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Centro Histórico",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "castillo-san-juan-veracruz",
-        "tiempo": 25,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "veracruz-baluarte-san-carlos", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-playa-hornos", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-puerto-bello", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-terminal-autobuses", "tiempo": 12, "linea": "transfer", "tipo": "transfer" }
     ]
   },
-  "castillo-san-juan-veracruz": {
+  "veracruz-puerto-bello": {
     "ciudad": "veracruz",
-    "nombre": "Castillo de San Juan de Ulúa",
-    "lineas": [
-      "1"
-    ],
+    "nombre": "Puerto Bello",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "puerto-veracruz",
-        "tiempo": 25,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "veracruz-centro-historico", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-la-caleta", "tiempo": 8, "linea": "1", "tipo": "linea" }
     ]
   },
-  "centro-historico-villa": {
-    "ciudad": "villahermosa",
-    "nombre": "Centro Histórico Villahermosa",
-    "lineas": [
-      "1"
-    ],
+  "veracruz-baluarte-san-carlos": {
+    "ciudad": "veracruz",
+    "nombre": "Baluarte de San Carlos",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "cimadevilla",
-        "tiempo": 20,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "veracruz-centro-historico", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-museo-antropologia", "tiempo": 10, "linea": "1", "tipo": "linea" }
     ]
   },
-  "cimadevilla": {
-    "ciudad": "villahermosa",
-    "nombre": "Cima de Villahermosa",
-    "lineas": [
-      "1"
-    ],
+  "veracruz-playa-hornos": {
+    "ciudad": "veracruz",
+    "nombre": "Playa de Hornos",
+    "lineas": ["1"],
     "adyacentes": [
-      {
-        "slug": "centro-historico-villa",
-        "tiempo": 20,
-        "linea": "1",
-        "tipo": "linea"
-      }
+      { "slug": "veracruz-centro-historico", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-acuario", "tiempo": 5, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-acuario": {
+    "ciudad": "veracruz",
+    "nombre": "Acuario de Veracruz",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-playa-hornos", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-playa-mocambo", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-playa-mocambo": {
+    "ciudad": "veracruz",
+    "nombre": "Playa Mocambo",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-acuario", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-boca-del-rio", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-boca-del-rio": {
+    "ciudad": "veracruz",
+    "nombre": "Boca del Río",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-playa-mocambo", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-mandinga", "tiempo": 15, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-mandinga": {
+    "ciudad": "veracruz",
+    "nombre": "Mandinga",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-boca-del-rio", "tiempo": 15, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-loma-de-lara": {
+    "ciudad": "veracruz",
+    "nombre": "Loma de Lara",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-centro-historico", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-terminal-autobuses", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-museo-antropologia": {
+    "ciudad": "veracruz",
+    "nombre": "Museo de Antropología",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-baluarte-san-carlos", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-la-caleta", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-la-caleta": {
+    "ciudad": "veracruz",
+    "nombre": "La Caleta",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "veracruz-museo-antropologia", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "veracruz-puerto-bello", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "veracruz-terminal-autobuses": {
+    "ciudad": "veracruz",
+    "nombre": "Terminal de Autobuses",
+    "lineas": ["transfer"],
+    "adyacentes": [
+      { "slug": "veracruz-centro-historico", "tiempo": 12, "linea": "transfer", "tipo": "transfer" },
+      { "slug": "veracruz-loma-de-lara", "tiempo": 8, "linea": "transfer", "tipo": "transfer" }
+    ]
+  },
+  "campeche-estacion-central": {
+    "ciudad": "campeche",
+    "nombre": "Estación Central",
+    "lineas": ["tren-maya"],
+    "adyacentes": [
+      { "slug": "campeche-centro-historico", "tiempo": 10, "linea": "tren-maya", "tipo": "linea" },
+      { "slug": "campeche-tren-maya", "tiempo": 5, "linea": "tren-maya", "tipo": "linea" }
+    ]
+  },
+  "campeche-tren-maya": {
+    "ciudad": "campeche",
+    "nombre": "Tren Maya Campeche",
+    "lineas": ["tren-maya"],
+    "adyacentes": [
+      { "slug": "campeche-estacion-central", "tiempo": 5, "linea": "tren-maya", "tipo": "linea" },
+      { "slug": "campeche-lerma", "tiempo": 12, "linea": "tren-maya", "tipo": "linea" }
+    ]
+  },
+  "campeche-centro-historico": {
+    "ciudad": "campeche",
+    "nombre": "Centro Histórico",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-estacion-central", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-fuerte-san-miguel", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-puerta-de-tierra", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-barrio-antiguo", "tiempo": 6, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-fuerte-san-miguel": {
+    "ciudad": "campeche",
+    "nombre": "Fuerte de San Miguel",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-centro-historico", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-cerro-de-arcos", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-puerta-de-tierra": {
+    "ciudad": "campeche",
+    "nombre": "Puerta de Tierra",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-centro-historico", "tiempo": 5, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-barrio-san-francisco", "tiempo": 6, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-barrio-antiguo": {
+    "ciudad": "campeche",
+    "nombre": "Barrio Antiguo",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-centro-historico", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-playita-bonita", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-barrio-san-francisco": {
+    "ciudad": "campeche",
+    "nombre": "Barrio de San Francisco",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-puerta-de-tierra", "tiempo": 6, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-playita-bonita", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-playita-bonita": {
+    "ciudad": "campeche",
+    "nombre": "Playita Bonita",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-barrio-antiguo", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "campeche-barrio-san-francisco", "tiempo": 8, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-edzna": {
+    "ciudad": "campeche",
+    "nombre": "Edzná",
+    "lineas": ["2"],
+    "adyacentes": [
+      { "slug": "campeche-centro-historico", "tiempo": 50, "linea": "2", "tipo": "linea" }
+    ]
+  },
+  "campeche-cerro-de-arcos": {
+    "ciudad": "campeche",
+    "nombre": "Cerro de Arcos",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "campeche-fuerte-san-miguel", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "campeche-lerma": {
+    "ciudad": "campeche",
+    "nombre": "Lerma",
+    "lineas": ["tren-maya"],
+    "adyacentes": [
+      { "slug": "campeche-tren-maya", "tiempo": 12, "linea": "tren-maya", "tipo": "linea" }
+    ]
+  },
+  "campeche-calakmul": {
+    "ciudad": "campeche",
+    "nombre": "Calakmul",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "campeche-chicchana", "tiempo": 20, "linea": "3", "tipo": "linea" },
+      { "slug": "campeche-centro-historico", "tiempo": 120, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "campeche-chicchana": {
+    "ciudad": "campeche",
+    "nombre": "Chicanná",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "campeche-calakmul", "tiempo": 20, "linea": "3", "tipo": "linea" },
+      { "slug": "campeche-becan", "tiempo": 10, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "campeche-becan": {
+    "ciudad": "campeche",
+    "nombre": "Becán",
+    "lineas": ["3"],
+    "adyacentes": [
+      { "slug": "campeche-chicchana", "tiempo": 10, "linea": "3", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-centro-historico": {
+    "ciudad": "villahermosa",
+    "nombre": "Centro Histórico",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-paseo-tabasco", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-museo-de-antropologia", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-terminal-primera-clase", "tiempo": 12, "linea": "transfer", "tipo": "transfer" }
+    ]
+  },
+  "villahermosa-terminal-primera-clase": {
+    "ciudad": "villahermosa",
+    "nombre": "Terminal Primera Clase",
+    "lineas": ["transfer"],
+    "adyacentes": [
+      { "slug": "villahermosa-centro-historico", "tiempo": 12, "linea": "transfer", "tipo": "transfer" },
+      { "slug": "villahermosa-villahermosa-2000", "tiempo": 15, "linea": "transfer", "tipo": "transfer" }
+    ]
+  },
+  "villahermosa-paseo-tabasco": {
+    "ciudad": "villahermosa",
+    "nombre": "Paseo Tabasco",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-centro-historico", "tiempo": 8, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-agua-blanca", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-museo-de-antropologia": {
+    "ciudad": "villahermosa",
+    "nombre": "Museo de Antropología",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-centro-historico", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-yumka", "tiempo": 20, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-agua-blanca": {
+    "ciudad": "villahermosa",
+    "nombre": "Agua Blanca",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-paseo-tabasco", "tiempo": 10, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-puxcatan", "tiempo": 12, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-villahermosa-2000": {
+    "ciudad": "villahermosa",
+    "nombre": "Villahermosa 2000",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-terminal-primera-clase", "tiempo": 15, "linea": "1", "tipo": "linea" },
+      { "slug": "villahermosa-agua-blanca", "tiempo": 10, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-yumka": {
+    "ciudad": "villahermosa",
+    "nombre": "Yumká",
+    "lineas": ["2"],
+    "adyacentes": [
+      { "slug": "villahermosa-museo-de-antropologia", "tiempo": 20, "linea": "2", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-puxcatan": {
+    "ciudad": "villahermosa",
+    "nombre": "Puxcatán",
+    "lineas": ["1"],
+    "adyacentes": [
+      { "slug": "villahermosa-agua-blanca", "tiempo": 12, "linea": "1", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-tren-maya-palenque": {
+    "ciudad": "villahermosa",
+    "nombre": "Tren Maya — Palenque",
+    "lineas": ["tren-maya"],
+    "adyacentes": [
+      { "slug": "villahermosa-centro-historico", "tiempo": 90, "linea": "tren-maya", "tipo": "linea" },
+      { "slug": "villahermosa-tren-maya-conexion-riviera", "tiempo": 120, "linea": "tren-maya", "tipo": "linea" }
+    ]
+  },
+  "villahermosa-tren-maya-conexion-riviera": {
+    "ciudad": "villahermosa",
+    "nombre": "Tren Maya — Conexión Riviera",
+    "lineas": ["tren-maya"],
+    "adyacentes": [
+      { "slug": "villahermosa-tren-maya-palenque", "tiempo": 120, "linea": "tren-maya", "tipo": "linea" }
     ]
   }
 };

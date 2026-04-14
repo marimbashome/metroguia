@@ -21,6 +21,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/boston/',
+  },
 };
 
 const estacionesDestacadas = estacionesBoston.filter(e =>

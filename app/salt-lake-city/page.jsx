@@ -19,6 +19,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://metroguia.mx/salt-lake-city/',
+  },
 };
 
 const estacionesDestacadas = estacionesSaltLakeCity.filter(e =>

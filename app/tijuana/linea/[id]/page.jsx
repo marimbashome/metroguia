@@ -25,6 +25,13 @@ export async function generateMetadata({ params }) {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `https://metroguia.mx/tijuana/linea/${params.id}`,
+      languages: {
+        'es': `https://metroguia.mx/tijuana/linea/${params.id}`,
+        'en': `https://metroguia.mx/tijuana/line/${params.id}`,
+      },
+    },
   };
 }
 
