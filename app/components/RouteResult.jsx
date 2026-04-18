@@ -1,5 +1,7 @@
 'use client'
 
+import { formatLineLabel, getLineColor } from '@/lib/lineLabels'
+
 // ============================================================================
 // STATIC STYLE CONSTANTS (module-level)
 // ============================================================================
@@ -199,27 +201,6 @@ const alertIconStyle = {
 // HELPER FUNCTIONS (module-level)
 // ============================================================================
 
-const getLineColor = (linea) => {
-  const lineColorMap = {
-    '1': '#E41C38',
-    '2': '#00A64E',
-    '3': '#FFB91B',
-    '4': '#003DA5',
-    '5': '#FFD700',
-    '6': '#E74C3C',
-    '7': '#F39C12',
-    '8': '#27AE60',
-    '9': '#8E44AD',
-    '10': '#2980B9',
-    '11': '#D35400',
-    '12': '#C0392B',
-    'A': '#00A64E',
-    'B': '#003DA5',
-    'TL': '#E74C3C',
-  }
-  return lineColorMap[linea] || '#5A5A6A'
-}
-
 const getActionIcon = (action) => {
   const iconMap = {
     subir: '↑',
@@ -258,8 +239,11 @@ export default function RouteResult({ ruta, isAlternative = false }) {
   // Badge style: depends on isAlternative prop
   const badgeStyle = isAlternative ? alternativeBadgeStyle : recommendedBadgeStyle
 
-  // Build line badges for route strip
-  const uniqueLineas = ruta.lineas ? [...new Set(ruta.lineas)] : []
+  // Build line badges for route strip — skip internal/noise entries
+  // that normalize to an empty label (e.g. "transfer", "walk").
+  const uniqueLineas = ruta.lineas
+    ? [...new Set(ruta.lineas)].filter(l => formatLineLabel(l) !== '')
+    : []
 
   return (
     <div style={containerStyle}>
@@ -304,7 +288,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
                     backgroundColor: getLineColor(linea),
                   }}
                 >
-                  Línea {linea}
+                  {formatLineLabel(linea)}
                 </div>
               </div>
             ))}
@@ -324,8 +308,8 @@ export default function RouteResult({ ruta, isAlternative = false }) {
                   {getActionIcon(paso.accion)}
                 </div>
                 <div style={stepContentStyle}>
-                  <div style={stationNameStyle}>{paso.estacion}</div>
-                  {paso.linea && (
+                  <div style={stationNameStyle}>{paso.nombre || paso.estacion}</div>
+                  {paso.linea && formatLineLabel(paso.linea) && (
                     <div style={actionTextStyle}>
                       <span
                         style={{
@@ -333,7 +317,7 @@ export default function RouteResult({ ruta, isAlternative = false }) {
                           backgroundColor: getLineColor(paso.linea),
                         }}
                       >
-                        {paso.linea}
+                        {formatLineLabel(paso.linea)}
                       </span>
                       {paso.detalles && (
                         <span>{paso.detalles}</span>

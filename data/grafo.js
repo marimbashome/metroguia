@@ -9430,7 +9430,7 @@ export const grafo = {
       {
         "slug": "indios-verdes",
         "tiempo": 5,
-        "linea": "metro-1",
+        "linea": "3",
         "tipo": "transbordo"
       },
       {

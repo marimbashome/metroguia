@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react'
 import { findRoute, findAlternativeRoute } from '@/lib/pathfinder'
 import { grafo } from '@/data/grafo'
 import { rutasPopulares, getRelatedRoutes } from '@/data/rutas-populares'
+import { formatLineLabel, formatLineasUsadas, getLineColor } from '@/lib/lineLabels'
 import SearchBar from '@/app/components/SearchBar'
 import RouteResult from '@/app/components/RouteResult'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
 import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 
-// Line color map
+// Local palette retained for the compact header badges — uses a different hue
+// scheme than the brand colours in lib/lineLabels.js on purpose.
 const lineColors = {
   '1': '#E91E8C', '2': '#0057A8', '3': '#6B7A2A', '4': '#00B5C8',
   '5': '#FFCD00', '6': '#DA291C', '7': '#F97316', '8': '#00A650',
@@ -163,15 +165,21 @@ export default function RutaClient({ slug }) {
         ]
       }
 
-      // HowTo schema for rich results
+      // HowTo schema for rich results. `paso.linea` is a raw graph ID that
+      // may include noise values like "transfer" — normalise via
+      // formatLineLabel so the JSON-LD never emits "Línea metro-1".
       const estimatedMinutes = Math.round(resultado.pasos.length * 2 + 3)
-      const howtoSteps = resultado.pasos.map((paso, idx) => ({
-        '@type': 'HowToStep',
-        'position': idx + 1,
-        'name': `${idx === 0 ? 'Aborda' : 'Dirígete'} en estación ${paso.nombre}`,
-        'text': `${idx === 0 ? 'Dirígete a la estación' : 'Continúa a la estación'} ${paso.nombre} de Línea ${paso.linea}`,
-        'url': `https://metroguia.mx/ruta/${slug}#paso-${idx + 1}`
-      }))
+      const howtoSteps = resultado.pasos.map((paso, idx) => {
+        const lineaLabel = formatLineLabel(paso.linea)
+        const suffix = lineaLabel ? ` (${lineaLabel})` : ''
+        return {
+          '@type': 'HowToStep',
+          'position': idx + 1,
+          'name': `${idx === 0 ? 'Aborda' : 'Dirígete'} en estación ${paso.nombre}`,
+          'text': `${idx === 0 ? 'Dirígete a la estación' : 'Continúa a la estación'} ${paso.nombre}${suffix}`,
+          'url': `https://metroguia.mx/ruta/${slug}#paso-${idx + 1}`
+        }
+      })
 
       const howtoSchema = {
         '@context': 'https://schema.org',
@@ -267,7 +275,8 @@ export default function RutaClient({ slug }) {
         </h1>
       )}
 
-      {/* Line badges */}
+      {/* Line badges — hide noise entries that normalize to empty labels
+          (e.g. the raw "transfer" edge type from the multi-modal graph) */}
       {ruta && ruta.encontrada && ruta.lineas_usadas && (
         <div style={{
           display: 'flex',
@@ -275,21 +284,23 @@ export default function RutaClient({ slug }) {
           flexWrap: 'wrap',
           marginBottom: '2rem',
         }}>
-          {ruta.lineas_usadas.map((linea, idx) => (
-            <span
-              key={idx}
-              style={{
-                padding: '0.25rem 0.75rem',
-                borderRadius: 'var(--radius-sm)',
-                backgroundColor: lineColors[linea] || '#5A5A6A',
-                color: linea === '5' ? '#000' : '#fff',
-                fontSize: '0.75rem',
-                fontWeight: 700,
-              }}
-            >
-              Línea {linea}
-            </span>
-          ))}
+          {ruta.lineas_usadas
+            .filter(linea => formatLineLabel(linea) !== '')
+            .map((linea, idx) => (
+              <span
+                key={idx}
+                style={{
+                  padding: '0.25rem 0.75rem',
+                  borderRadius: 'var(--radius-sm)',
+                  backgroundColor: lineColors[linea] || getLineColor(linea),
+                  color: linea === '5' ? '#000' : '#fff',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                }}
+              >
+                {formatLineLabel(linea)}
+              </span>
+            ))}
         </div>
       )}
 
@@ -491,7 +502,7 @@ export default function RutaClient({ slug }) {
             color: 'var(--text)',
             margin: '0 0 1rem 0',
           }}>
-            Esta ruta en el Metro de la Ciudad de México te lleva de {origenNombre} a {destinoNombre} en aproximadamente {Math.round(ruta.pasos.length * 2 + 3)} minutos. Utiliza las líneas {ruta.lineas_usadas.join(', ')} para completar tu viaje de forma rápida y económica.
+            Esta ruta en el Metro de la Ciudad de México te lleva de {origenNombre} a {destinoNombre} en aproximadamente {Math.round(ruta.pasos.length * 2 + 3)} minutos. Utiliza {formatLineasUsadas(ruta.lineas_usadas)} para completar tu viaje de forma rápida y económica.
           </p>
 
           <h4 style={{
