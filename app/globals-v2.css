@@ -1,5 +1,7 @@
-/* ── MetroGuia.mx — Design System v2.1 ────────────────────── */
-/* Light mode · Inter · Transit-app UI (Citymapper/Google Maps) */
+/* ── MetroGuia.mx — Design System v2.2 ────────────────────── */
+/* Light mode · Inter + Playfair Display · Marimbas brand aligned */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
 
 :root {
   /* ── Core ─────────────────────────────── */
@@ -20,6 +22,15 @@
   --primary-hover: #D48A0C;
   --primary-glow: rgba(232,150,14,0.08);
   --primary-border: rgba(232,150,14,0.25);
+
+  /* ── Marimbas Extended Palette ────────── */
+  --forest: #1F3A2E;           /* Deep forest - hero / headings / tabs */
+  --forest-soft: #2A4B3C;      /* Lighter forest for gradients */
+  --chiapas: #2F7D3A;          /* Chiapas green - accents, success */
+  --amber: #E89B2C;            /* Warm amber - CTA, highlights */
+  --terracotta: #C75A3B;       /* Terracotta - warnings, contrast */
+  --linen: #F8F4EC;            /* Linen - soft backgrounds, cards */
+  --linen-soft: #FAF7F1;       /* Extra-soft linen */
   
   /* ── Cities ───────────────────────────── */
   --cdmx: #E91E8C;
@@ -155,6 +166,71 @@ a {
 
 a:hover {
   color: var(--primary-hover);
+}
+
+/* ── Serif utility (Playfair Display) ─────────────────────── */
+.serif,
+.serif h1, .serif h2, .serif h3, .serif h4 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.editorial-h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.editorial-h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--chiapas);
+  margin-bottom: 0.75rem;
+}
+
+/* ── Marimbas hero surface (forest gradient) ───────────────── */
+.forest-hero {
+  background: linear-gradient(135deg, var(--forest) 0%, var(--forest-soft) 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.forest-hero h1,
+.forest-hero h2,
+.forest-hero h3 { color: #FFFFFF; }
+
+.forest-hero .eyebrow { color: var(--amber); }
+
+.forest-hero .muted,
+.forest-hero p { color: rgba(255,255,255,0.8); }
+
+/* ── Linen soft surface ────────────────────────────────────── */
+.linen-surface {
+  background-color: var(--linen);
+  border: 1px solid rgba(31, 58, 46, 0.08);
+  border-radius: var(--radius-lg);
 }
 
 /* ──────────────────────────────────────────────────────────── */

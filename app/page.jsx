@@ -3,252 +3,111 @@ import FAQSchema from '@/app/components/FAQSchema'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
 import LocalBusinessSchema from '@/app/components/LocalBusinessSchema'
 import { homeFAQs, transitAgencies } from '@/data/faqs'
-import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
+import AdBannerLazy from '@/app/components/AdBannerLazy'
+import MarimbasCondesa from '@/app/components/MarimbasCondesa'
+import EmailCapture from '@/app/components/EmailCapture'
 
-import AffiliateMundial from '@/app/components/AffiliateMundial'
 export const metadata = {
-  title: 'MetroGuia — Transit Guide for FIFA World Cup 2026 | 16 Host Cities',
-  description: 'Public transit guide for FIFA 2026 in 16 host cities across Mexico, USA, and Canada. 2,500+ stations. Plan your routes by metro, light rail, and bus. Español · English · 7 languages.',
+  title: 'MetroGuia — Planificador de Metro CDMX, GDL, MTY | FIFA 2026',
+  description: 'Planifica rutas en transporte público de México rumbo al Mundial FIFA 2026. Metro CDMX, Mi Tren GDL, Metrorrey MTY. Transbordos, tiempos, costos. Sin apps.',
   alternates: {
     canonical: 'https://metroguia.mx/',
     languages: {
-      'es': 'https://metroguia.mx/',
-      'en': 'https://metroguia.mx/en/',
-      'pt': 'https://metroguia.mx/pt/',
-      'fr': 'https://metroguia.mx/fr/',
-      'de': 'https://metroguia.mx/de/',
-      'ja': 'https://metroguia.mx/ja/',
-      'ko': 'https://metroguia.mx/ko/',
+      es: 'https://metroguia.mx/',
+      en: 'https://metroguia.mx/en/',
+      pt: 'https://metroguia.mx/pt/',
+      fr: 'https://metroguia.mx/fr/',
+      de: 'https://metroguia.mx/de/',
+      ja: 'https://metroguia.mx/ja/',
+      ko: 'https://metroguia.mx/ko/',
       'x-default': 'https://metroguia.mx/',
     },
   },
   openGraph: {
-    title: 'MetroGuia — Navigate 16 Host Cities for FIFA 2026',
-    description: 'Transit guide for Mexico, USA, Canada. 16 stadiums. 2,500+ stations. Public transit routes to every FIFA 2026 venue.',
+    title: 'MetroGuia — Planificador de Metro para FIFA 2026',
+    description: 'Rutas en transporte público para CDMX, Guadalajara y Monterrey. Planea tu viaje al Estadio Azteca, Akron y BBVA.',
     url: 'https://metroguia.mx/',
     type: 'website',
     siteName: 'MetroGuia',
-    locale: 'en_US',
-    alternateLocale: ['es_MX', 'pt_BR', 'fr_FR', 'de_DE', 'ja_JP', 'ko_KR'],
+    locale: 'es_MX',
+    alternateLocale: ['en_US', 'pt_BR', 'fr_FR', 'de_DE'],
     images: [{
       url: 'https://metroguia.mx/og-image.png',
       width: 1200,
       height: 630,
-      alt: 'MetroGuia — FIFA 2026 Transit Guide | 16 Host Cities Across Mexico, USA, Canada',
+      alt: 'MetroGuia — Planificador de metro para FIFA 2026 en México',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MetroGuia — FIFA 2026 Transit Guide',
-    description: '16 host cities across Mexico, USA & Canada. 2,500+ stations. Get to the stadium by public transit.',
+    title: 'MetroGuia — Metro para FIFA 2026',
+    description: 'Planifica rutas al Estadio Azteca, Akron y BBVA en transporte público.',
     images: ['https://metroguia.mx/og-image.png'],
   },
 }
 
-// FIFA 2026 Host Cities - Grouped by country
-const ciudadesMexico = [
+// Ciudades con trip planner activo (Mundial 2026 México)
+const ciudadesActivas = [
   {
     id: 'cdmx',
-    pais: 'Mexico',
     nombre: 'Ciudad de México',
-    sistema: 'Metro · Tren Ligero · Cablebús · Mexicable · Trolebús · Tren Suburbano · Metrobús',
-    stats: { estaciones: 436, lineas: 40, km: 391 },
-    color: '#F5A623',
+    ciudad: 'CDMX',
+    estadio: 'Estadio Azteca',
+    partidos: 5,
+    fechas: '11, 17, 24 jun · 30 jun · 5 jul',
+    stats: '195 estaciones · 12 líneas',
     href: '/cdmx/',
-    fifa: { estadio: 'Estadio Azteca', fechas: '11, 17, 24 jun · 30 jun · 5 jul' },
-    activa: true,
+    color: 'var(--linea-9)',
+    flag: '🇲🇽',
   },
   {
     id: 'gdl',
-    pais: 'Mexico',
     nombre: 'Guadalajara',
-    sistema: 'Mi Tren L1-L4 · Mi Macro Calzada · Mi Macro Periférico',
-    stats: { estaciones: 125, lineas: 6, km: 126 },
-    color: '#06B6D4',
+    ciudad: 'GDL',
+    estadio: 'Estadio Akron',
+    partidos: 4,
+    fechas: '11, 18, 23, 26 jun',
+    stats: 'Mi Tren L1–L4 · BRT',
     href: '/gdl/',
-    fifa: { estadio: 'Estadio Akron', fechas: '11, 18, 23, 26 jun' },
-    activa: true,
+    color: 'var(--linea-4)',
+    flag: '🇲🇽',
   },
   {
     id: 'mty',
-    pais: 'Mexico',
     nombre: 'Monterrey',
-    sistema: 'Metrorrey L1-L3 · Ecovía',
-    stats: { estaciones: 83, lineas: 4, km: 56 },
-    color: '#EC4899',
+    ciudad: 'MTY',
+    estadio: 'Estadio BBVA',
+    partidos: 4,
+    fechas: '14, 20, 24, 29 jun',
+    stats: 'Metrorrey L1–L3 · Ecovía',
     href: '/mty/',
-    fifa: { estadio: 'Estadio BBVA', fechas: '14, 20, 24, 29 jun' },
-    activa: true,
+    color: 'var(--linea-1)',
+    flag: '🇲🇽',
   },
 ]
 
-const ciudadesUSA = [
-  {
-    id: 'nyc',
-    pais: 'USA',
-    nombre: 'New York City',
-    sistema: 'MTA Subway · LIRR · NJ Transit',
-    stats: { estaciones: 472, lineas: 36, km: 380 },
-    color: '#EF4444',
-    href: '/nyc/',
-    fifa: { estadio: 'MetLife Stadium, NY/NJ', fechas: '19 jul' },
-    activa: false,
-  },
-  {
-    id: 'los-angeles',
-    pais: 'USA',
-    nombre: 'Los Angeles',
-    sistema: 'Metro Rail · K Line (to SoFi Stadium)',
-    stats: { estaciones: 101, lineas: 6, km: 105 },
-    color: '#F97316',
-    href: '/los-angeles/',
-    fifa: { estadio: 'SoFi Stadium', fechas: '16 jul' },
-    activa: false,
-  },
-  {
-    id: 'houston',
-    pais: 'USA',
-    nombre: 'Houston',
-    sistema: 'METRO · 3 lines',
-    stats: { estaciones: 39, lineas: 3, km: 58 },
-    color: '#A855F7',
-    href: '/houston/',
-    fifa: { estadio: 'NRG Stadium', fechas: '3 jul' },
-    activa: false,
-  },
-  {
-    id: 'atlanta',
-    pais: 'USA',
-    nombre: 'Atlanta',
-    sistema: 'MARTA · 4 lines',
-    stats: { estaciones: 38, lineas: 4, km: 66 },
-    color: '#0891B2',
-    href: '/atlanta/',
-    fifa: { estadio: 'Mercedes-Benz Stadium', fechas: '4 jul' },
-    activa: false,
-  },
-  {
-    id: 'philadelphia',
-    pais: 'USA',
-    nombre: 'Philadelphia',
-    sistema: 'SEPTA · Subway + Trolley',
-    stats: { estaciones: 156, lineas: 8, km: 91 },
-    color: '#DC2626',
-    href: '/philadelphia/',
-    fifa: { estadio: 'Lincoln Financial Field', fechas: '14 jun' },
-    activa: false,
-  },
-  {
-    id: 'seattle',
-    pais: 'USA',
-    nombre: 'Seattle',
-    sistema: 'Sound Transit · Light Rail',
-    stats: { estaciones: 25, lineas: 2, km: 43 },
-    color: '#059669',
-    href: '/seattle/',
-    fifa: { estadio: 'Lumen Field', fechas: '12 jun' },
-    activa: false,
-  },
-  {
-    id: 'san-francisco',
-    pais: 'USA',
-    nombre: 'San Francisco Bay Area',
-    sistema: 'BART · Muni · Caltrain',
-    stats: { estaciones: 147, lineas: 8, km: 154 },
-    color: '#7C3AED',
-    href: '/san-francisco/',
-    fifa: { estadio: 'Levi Stadium, Santa Clara', fechas: '20, 27 jun' },
-    activa: false,
-  },
-  {
-    id: 'boston',
-    pais: 'USA',
-    nombre: 'Boston',
-    sistema: 'MBTA · Subway + Bus',
-    stats: { estaciones: 155, lineas: 6, km: 91 },
-    color: '#1E40AF',
-    href: '/boston/',
-    fifa: { estadio: 'Gillette Stadium, Foxborough', fechas: '6 jul' },
-    activa: false,
-  },
-  {
-    id: 'miami',
-    pais: 'USA',
-    nombre: 'Miami',
-    sistema: 'Metrorail · Metromover',
-    stats: { estaciones: 44, lineas: 5, km: 52 },
-    color: '#E11D48',
-    href: '/miami/',
-    fifa: { estadio: 'Hard Rock Stadium', fechas: '8 jul' },
-    activa: false,
-  },
-  {
-    id: 'dallas',
-    pais: 'USA',
-    nombre: 'Dallas',
-    sistema: 'DART · Light Rail',
-    stats: { estaciones: 64, lineas: 4, km: 85 },
-    color: '#1F2937',
-    href: '/dallas/',
-    fifa: { estadio: 'AT&T Stadium', fechas: '24 jun, 1 jul' },
-    activa: false,
-  },
-  {
-    id: 'kansas-city',
-    pais: 'USA',
-    nombre: 'Kansas City',
-    sistema: 'KC Streetcar',
-    stats: { estaciones: 16, lineas: 1, km: 3.5 },
-    color: '#92400E',
-    href: '/kansas-city/',
-    fifa: { estadio: 'Arrowhead Stadium', fechas: '13, 30 jun' },
-    activa: false,
-  },
+// Sedes fuera de México — comunidad de interés, capturamos email
+const ciudadesProximamente = [
+  { nombre: 'New York / NJ', estadio: 'MetLife Stadium', destacado: 'Final 19 jul', flag: '🇺🇸' },
+  { nombre: 'Los Angeles', estadio: 'SoFi Stadium', destacado: '8 partidos', flag: '🇺🇸' },
+  { nombre: 'Dallas', estadio: 'AT&T Stadium', destacado: '9 partidos', flag: '🇺🇸' },
+  { nombre: 'Miami', estadio: 'Hard Rock Stadium', destacado: '7 partidos', flag: '🇺🇸' },
+  { nombre: 'Atlanta', estadio: 'Mercedes-Benz', destacado: '8 partidos', flag: '🇺🇸' },
+  { nombre: 'Seattle', estadio: 'Lumen Field', destacado: '6 partidos', flag: '🇺🇸' },
+  { nombre: 'Boston', estadio: 'Gillette Stadium', destacado: '7 partidos', flag: '🇺🇸' },
+  { nombre: 'Philadelphia', estadio: 'Lincoln Financial', destacado: '6 partidos', flag: '🇺🇸' },
+  { nombre: 'Houston', estadio: 'NRG Stadium', destacado: '7 partidos', flag: '🇺🇸' },
+  { nombre: 'San Francisco', estadio: 'Levi\'s Stadium', destacado: '6 partidos', flag: '🇺🇸' },
+  { nombre: 'Kansas City', estadio: 'Arrowhead', destacado: '6 partidos', flag: '🇺🇸' },
+  { nombre: 'Toronto', estadio: 'BMO Field', destacado: '6 partidos', flag: '🇨🇦' },
+  { nombre: 'Vancouver', estadio: 'BC Place', destacado: '7 partidos', flag: '🇨🇦' },
 ]
 
-const ciudadesCanada = [
-  {
-    id: 'toronto',
-    pais: 'Canada',
-    nombre: 'Toronto',
-    sistema: 'TTC Subway · Streetcar · Bus',
-    stats: { estaciones: 75, lineas: 4, km: 78 },
-    color: '#DC2626',
-    href: '/toronto/',
-    fifa: { estadio: 'BMO Field', fechas: '12, 26 jun' },
-    activa: false,
-  },
-  {
-    id: 'vancouver',
-    pais: 'Canada',
-    nombre: 'Vancouver',
-    sistema: 'SkyTrain · Canada Line · Bus',
-    stats: { estaciones: 53, lineas: 3, km: 80 },
-    color: '#2563EB',
-    href: '/vancouver/',
-    fifa: { estadio: 'BC Place Stadium', fechas: '25 jun' },
-    activa: false,
-  },
-]
-
-const ciudades = [...ciudadesMexico, ...ciudadesUSA, ...ciudadesCanada]
-
-const ciudadesSecundarias = [
-  { id: 'puebla', nombre: 'Puebla', sistema: 'RUTA BRT · 3 líneas', stats: { estaciones: 16, lineas: 3 }, color: '#8B5CF6', href: '/puebla/', activa: true },
-  { id: 'merida', nombre: 'Mérida', sistema: 'Va y Ven · 4 rutas', stats: { estaciones: 16, lineas: 4 }, color: '#F59E0B', href: '/merida/', activa: true },
-  { id: 'leon', nombre: 'León', sistema: 'SIT León · 4 líneas', stats: { estaciones: 20, lineas: 4 }, color: '#10B981', href: '/leon/', activa: true },
-  { id: 'tren-maya', nombre: 'Tren Maya', sistema: '7 tramos · Yucatán a Chiapas', stats: { estaciones: 15, lineas: 6 }, color: '#0EA5E9', href: '/tren-maya/', activa: true },
-  { id: 'queretaro', nombre: 'Querétaro', sistema: 'QroBús · 3 líneas', stats: { estaciones: 30, lineas: 3 }, color: '#EF4444', href: '/queretaro/', activa: true },
-  { id: 'chihuahua', nombre: 'Chihuahua', sistema: 'Chepe Express', stats: { estaciones: 15, lineas: 2 }, color: '#D97706', href: '/chihuahua/', activa: true },
-  { id: 'tijuana', nombre: 'Tijuana', sistema: 'SITT · 2 líneas', stats: { estaciones: 15, lineas: 2 }, color: '#6B7280', href: '/tijuana/', activa: true },
-  { id: 'toluca', nombre: 'Toluca', sistema: 'Tren Interurbano · Mexibús', stats: { estaciones: 15, lineas: 3 }, color: '#7C3AED', href: '/toluca/', activa: true },
-]
-
-const rutasPopularesHome = [
-  { origen: 'Zócalo', destino: 'Tasqueña', slug: 'zocalo-a-tasquena', etiqueta: 'FIFA 2026', color: '#F5A623' },
-  { origen: 'Aeropuerto', destino: 'Bellas Artes', slug: 'aeropuerto-a-bellas-artes', etiqueta: 'Turismo', color: '#3B82F6' },
-  { origen: 'Pantitlán', destino: 'Chapultepec', slug: 'pantitlan-a-chapultepec', etiqueta: 'Conexión', color: '#22C55E' },
-  { origen: 'Insurgentes', destino: 'Coyoacán', slug: 'insurgentes-a-coyoacan', etiqueta: 'Cultura', color: '#8B5CF6' },
+const rutasPopulares = [
+  { origen: 'Zócalo', destino: 'Estadio Azteca', slug: 'zocalo-a-tasquena', etiqueta: 'FIFA 2026', tiempo: '45 min' },
+  { origen: 'Aeropuerto', destino: 'Bellas Artes', slug: 'aeropuerto-a-bellas-artes', etiqueta: 'Turismo', tiempo: '35 min' },
+  { origen: 'Chilpancingo', destino: 'Coyoacán', slug: 'chilpancingo-a-coyoacan', etiqueta: 'Condesa → Sur', tiempo: '30 min' },
+  { origen: 'Insurgentes', destino: 'Chapultepec', slug: 'insurgentes-a-chapultepec', etiqueta: 'Clásico', tiempo: '10 min' },
 ]
 
 export default function LandingPage() {
@@ -257,7 +116,7 @@ export default function LandingPage() {
     '@type': 'WebSite',
     name: 'MetroGuia',
     url: 'https://metroguia.mx',
-    description: 'Transit guide for FIFA World Cup 2026. 16 host cities across Mexico, USA, and Canada. 2,500+ stations.',
+    description: 'Planificador de metro para México. Rutas, transbordos, tiempos y costos en CDMX, GDL y MTY.',
     inLanguage: ['es', 'en', 'pt', 'fr', 'de', 'ja', 'ko'],
     potentialAction: {
       '@type': 'SearchAction',
@@ -266,18 +125,16 @@ export default function LandingPage() {
     },
   }
 
-  const allCiudades = ciudades
-  const transitSystemSchema = {
+  const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'FIFA 2026 Host Cities — Public Transit Guide',
-    description: 'MetroGuia: 16 host cities across Mexico, USA, Canada. 2,500+ stations. 78 transit systems.',
-    numberOfItems: allCiudades.length,
-    itemListElement: allCiudades.map((c, i) => ({
+    name: 'Sedes FIFA 2026 — México',
+    numberOfItems: ciudadesActivas.length,
+    itemListElement: ciudadesActivas.map((c, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name: c.nombre,
-      description: c.sistema,
+      description: `${c.estadio} — ${c.partidos} partidos`,
       url: `https://metroguia.mx${c.href}`,
     })),
   }
@@ -291,1011 +148,507 @@ export default function LandingPage() {
         <LocalBusinessSchema key={agency.name} agency={agency} />
       ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(transitSystemSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
-      {/* ── Hero + Search ── */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 1. HERO — Trip planner prominente                            */}
+      {/* ════════════════════════════════════════════════════════════ */}
       <section style={{
-        background: 'linear-gradient(180deg, #FFFFFF 0%, var(--surface) 100%)',
-        padding: '4rem 1rem 3rem',
-        borderBottom: '1px solid var(--border)',
+        background: 'linear-gradient(135deg, var(--forest) 0%, var(--forest-soft) 100%)',
+        padding: 'clamp(3rem, 8vw, 5.5rem) 1rem 4rem',
+        position: 'relative',
+        overflow: 'hidden',
       }}>
-        <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
+        {/* Sutil textura de fondo */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'radial-gradient(circle at 80% 20%, rgba(232,155,44,0.15) 0%, transparent 45%)',
+          pointerEvents: 'none',
+        }} />
+
+        <div style={{
+          maxWidth: '820px',
+          margin: '0 auto',
+          position: 'relative',
+          textAlign: 'center',
+        }}>
+          {/* Language pills — sutil, sin dominar */}
+          <div style={{
+            display: 'inline-flex',
+            gap: '0.4rem',
+            marginBottom: '1.25rem',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}>
+            {[
+              { l: 'ES', href: '/', active: true },
+              { l: 'EN', href: '/en/' },
+              { l: 'PT', href: '/pt/' },
+              { l: 'FR', href: '/fr/' },
+            ].map((lang) => (
+              <a
+                key={lang.l}
+                href={lang.href}
+                style={{
+                  padding: '0.3rem 0.75rem',
+                  borderRadius: 'var(--radius-full)',
+                  background: lang.active ? 'var(--amber)' : 'rgba(255,255,255,0.08)',
+                  border: `1px solid ${lang.active ? 'var(--amber)' : 'rgba(255,255,255,0.15)'}`,
+                  color: lang.active ? 'var(--forest)' : 'rgba(255,255,255,0.85)',
+                  fontSize: '0.7rem',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  letterSpacing: '0.05em',
+                }}
+              >
+                {lang.l}
+              </a>
+            ))}
+          </div>
+
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '0.5rem',
-            padding: '0.375rem 1rem',
+            padding: '0.4rem 1rem',
             borderRadius: 'var(--radius-full)',
-            backgroundColor: 'var(--primary-glow)',
-            border: '1px solid var(--primary-border)',
-            fontSize: '0.8rem',
-            fontWeight: 600,
-            color: 'var(--primary)',
+            background: 'rgba(232,155,44,0.12)',
+            border: '1px solid rgba(232,155,44,0.35)',
+            color: 'var(--amber)',
+            fontSize: '0.75rem',
+            fontWeight: 700,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
             marginBottom: '1.5rem',
           }}>
-            ⚽ FIFA World Cup 2026 — 16 Host Cities
+            ⚽ FIFA World Cup 2026 · Del 11 jun al 19 jul
           </div>
 
-          <h1 style={{
-            fontSize: 'clamp(2rem, 5vw, 3rem)',
-            fontWeight: 800,
-            lineHeight: 1.15,
-            letterSpacing: '-0.03em',
-            marginBottom: '1rem',
+          <h1 className="editorial-h1" style={{
+            color: '#FFFFFF',
+            fontSize: 'clamp(2.25rem, 6vw, 3.75rem)',
+            marginBottom: '1.25rem',
+            lineHeight: 1.05,
           }}>
-            MetroGuia — Transit Guide for {' '}<br />
-            <span style={{ color: 'var(--primary)' }}>FIFA 2026</span>
+            Planifica tu ruta en metro<br/>
+            <span style={{ color: 'var(--amber)' }}>sin apps, sin datos</span>
           </h1>
 
           <p style={{
-            fontSize: '1.1rem',
-            color: 'var(--text-muted)',
-            maxWidth: '600px',
-            margin: '0 auto 2rem',
-            lineHeight: 1.6,
+            color: 'rgba(255,255,255,0.85)',
+            fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+            maxWidth: '620px',
+            margin: '0 auto 2.25rem',
+            lineHeight: 1.55,
           }}>
-            Navigate 16 host cities across Mexico, USA, and Canada by public transit. Metro, light rail, and bus guides. Offline access available.
+            Transbordos, tiempos y costos reales en <strong style={{ color: '#FFFFFF' }}>CDMX, Guadalajara y Monterrey</strong>. Instalable como app offline en 2 segundos.
           </p>
 
           {/* Trip Planner */}
-          <SearchBar ciudad="cdmx" />
-        </div>
-      </section>
-
-      {/* ── Rutas Populares ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderBottom: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <h6 style={{
-            color: 'var(--text-dim)',
-            fontSize: '0.7rem',
-            fontWeight: 600,
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            marginBottom: '1rem',
-          }}>
-            Rutas populares
-          </h6>
           <div style={{
+            background: '#FFFFFF',
+            borderRadius: 'var(--radius-lg)',
+            padding: '1.5rem',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.1)',
+            textAlign: 'left',
+          }}>
+            <SearchBar ciudad="cdmx" />
+          </div>
+
+          {/* Trust row */}
+          <div style={{
+            marginTop: '2rem',
             display: 'flex',
-            gap: '0.75rem',
+            gap: '2rem',
+            justifyContent: 'center',
             flexWrap: 'wrap',
+            color: 'rgba(255,255,255,0.72)',
+            fontSize: '0.85rem',
           }}>
-            {rutasPopularesHome.map((ruta) => (
-                <a
-                  key={ruta.slug}
-                  href={`/ruta/${ruta.slug}/`}
-                  className="card"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.75rem',
-                    padding: '0.75rem 1rem',
-                    textDecoration: 'none',
-                    flex: '1 1 220px',
-                    minWidth: '220px',
-                  }}
-                >
-                  <div style={{
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '50%',
-                    backgroundColor: ruta.color,
-                    flexShrink: 0,
-                  }} />
-                  <div style={{ flex: 1 }}>
-                    <div style={{
-                      fontSize: '0.875rem',
-                      fontWeight: 600,
-                      color: 'var(--text)',
-                    }}>
-                      {ruta.origen} → {ruta.destino}
-                    </div>
-                    <div style={{
-                      fontSize: '0.7rem',
-                      color: 'var(--text-dim)',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.05em',
-                    }}>
-                      {ruta.etiqueta}
-                    </div>
-                  </div>
-                </a>
-            ))}
+            <span>✓ 100% gratis · sin registro</span>
+            <span>✓ Funciona sin internet</span>
+            <span>✓ 195 estaciones CDMX</span>
           </div>
         </div>
       </section>
 
-      {/* ── Ad — After Popular Routes ── */}
-      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
-        <AdBannerLazy slot="4434764790" format="auto" />
-      </div>
-
-      {/* ── Ciudades Activas ── */}
-      <section id="ciudades" style={{ padding: '3rem 1rem' }}>
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 2. HOSPEDAJE MARIMBAS — above-fold, contextual              */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '2rem 1rem 0' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline',
-            marginBottom: '1.5rem',
-          }}>
-            <div>
-              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>16 Host Cities — FIFA 2026</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Navigate public transit in Mexico, USA & Canada. 16 stadiums. 2,500+ stations.
-              </p>
-            </div>
-          </div>
-
-          {/* Mexico Section */}
-          <div style={{ marginBottom: '3rem' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🇲🇽 México</h3>
-            <div className="grid-3">
-              {ciudadesMexico.map((ciudad) => (
-              <a
-                key={ciudad.id}
-                href={ciudad.href}
-                className="card"
-                style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column' }}
-              >
-                {/* City header */}
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  marginBottom: '1rem',
-                }}>
-                  <div style={{
-                    width: '3rem',
-                    height: '3rem',
-                    borderRadius: 'var(--radius)',
-                    backgroundColor: `${ciudad.color}15`,
-                    border: `1px solid ${ciudad.color}30`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '1.25rem',
-                    fontWeight: 800,
-                    color: ciudad.color,
-                    flexShrink: 0,
-                  }}>
-                    {ciudad.id.toUpperCase().slice(0, 2)}
-                  </div>
-                  <div>
-                    <div style={{
-                      fontSize: '1.1rem',
-                      fontWeight: 700,
-                      color: 'var(--text)',
-                    }}>{ciudad.nombre}</div>
-                    <div style={{
-                      fontSize: '0.75rem',
-                      color: ciudad.color,
-                      fontWeight: 600,
-                    }}>{ciudad.sistema}</div>
-                  </div>
-                </div>
-
-                {/* Stats row */}
-                <div style={{
-                  display: 'flex',
-                  gap: '1.25rem',
-                  marginBottom: '1rem',
-                }}>
-                  {[
-                    { val: ciudad.stats.estaciones, label: 'estaciones' },
-                    { val: ciudad.stats.lineas, label: 'líneas' },
-                    { val: `${ciudad.stats.km} km`, label: 'red' },
-                  ].map((s) => (
-                    <div key={s.label}>
-                      <div style={{
-                        fontSize: '1.125rem',
-                        fontWeight: 700,
-                        color: 'var(--text)',
-                      }}>{s.val}</div>
-                      <div style={{
-                        fontSize: '0.65rem',
-                        color: 'var(--text-dim)',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                      }}>{s.label}</div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* FIFA badge */}
-                <div style={{
-                  padding: '0.5rem 0.75rem',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: `${ciudad.color}10`,
-                  border: `1px solid ${ciudad.color}25`,
-                  marginBottom: '1rem',
-                  flex: 1,
-                }}>
-                  <div style={{
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: ciudad.color,
-                    marginBottom: '0.125rem',
-                  }}>{ciudad.fifa.estadio}</div>
-                  <div style={{
-                    fontSize: '0.7rem',
-                    color: 'var(--text-dim)',
-                  }}>{ciudad.fifa.fechas} 2026</div>
-                </div>
-
-                {/* CTA */}
-                <span style={{
-                  color: ciudad.color,
-                  fontWeight: 600,
-                  fontSize: '0.85rem',
-                }}>
-                  Explorar →
-                </span>
-              </a>
-            ))}
-            </div>
-          </div>
-
-          {/* USA Section */}
-          <div style={{ marginBottom: '3rem' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🇺🇸 United States</h3>
-            <div className="grid-3">
-              {ciudadesUSA.map((ciudad) => (
-              <a
-                key={ciudad.id}
-                href={ciudad.href}
-                className="card"
-                style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column' }}
-              >
-                {/* City header */}
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  marginBottom: '1rem',
-                }}>
-                  <div style={{
-                    width: '3rem',
-                    height: '3rem',
-                    borderRadius: 'var(--radius)',
-                    backgroundColor: `${ciudad.color}15`,
-                    border: `1px solid ${ciudad.color}30`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '1.25rem',
-                    fontWeight: 800,
-                    color: ciudad.color,
-                    flexShrink: 0,
-                  }}>
-                    {ciudad.id.toUpperCase().slice(0, 2)}
-                  </div>
-                  <div>
-                    <div style={{
-                      fontSize: '1.1rem',
-                      fontWeight: 700,
-                      color: 'var(--text)',
-                    }}>{ciudad.nombre}</div>
-                    <div style={{
-                      fontSize: '0.75rem',
-                      color: ciudad.color,
-                      fontWeight: 600,
-                    }}>{ciudad.sistema}</div>
-                  </div>
-                </div>
-
-                {/* Stats row */}
-                <div style={{
-                  display: 'flex',
-                  gap: '1.25rem',
-                  marginBottom: '1rem',
-                }}>
-                  {[
-                    { val: ciudad.stats.estaciones, label: 'stations' },
-                    { val: ciudad.stats.lineas, label: 'lines' },
-                    { val: `${ciudad.stats.km} km`, label: 'network' },
-                  ].map((s) => (
-                    <div key={s.label}>
-                      <div style={{
-                        fontSize: '1.125rem',
-                        fontWeight: 700,
-                        color: 'var(--text)',
-                      }}>{s.val}</div>
-                      <div style={{
-                        fontSize: '0.65rem',
-                        color: 'var(--text-dim)',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                      }}>{s.label}</div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* FIFA badge */}
-                <div style={{
-                  padding: '0.5rem 0.75rem',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: `${ciudad.color}10`,
-                  border: `1px solid ${ciudad.color}25`,
-                  marginBottom: '1rem',
-                  flex: 1,
-                }}>
-                  <div style={{
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: ciudad.color,
-                    marginBottom: '0.125rem',
-                  }}>{ciudad.fifa.estadio}</div>
-                  <div style={{
-                    fontSize: '0.7rem',
-                    color: 'var(--text-dim)',
-                  }}>{ciudad.fifa.fechas}</div>
-                </div>
-
-                {/* CTA */}
-                <span style={{
-                  color: ciudad.color,
-                  fontWeight: 600,
-                  fontSize: '0.85rem',
-                }}>
-                  Coming Soon →
-                </span>
-              </a>
-            ))}
-            </div>
-          </div>
-
-          {/* Canada Section */}
-          <div style={{ marginBottom: '3rem' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🇨🇦 Canada</h3>
-            <div className="grid-3">
-              {ciudadesCanada.map((ciudad) => (
-              <a
-                key={ciudad.id}
-                href={ciudad.href}
-                className="card"
-                style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column' }}
-              >
-                {/* City header */}
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  marginBottom: '1rem',
-                }}>
-                  <div style={{
-                    width: '3rem',
-                    height: '3rem',
-                    borderRadius: 'var(--radius)',
-                    backgroundColor: `${ciudad.color}15`,
-                    border: `1px solid ${ciudad.color}30`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '1.25rem',
-                    fontWeight: 800,
-                    color: ciudad.color,
-                    flexShrink: 0,
-                  }}>
-                    {ciudad.id.toUpperCase().slice(0, 2)}
-                  </div>
-                  <div>
-                    <div style={{
-                      fontSize: '1.1rem',
-                      fontWeight: 700,
-                      color: 'var(--text)',
-                    }}>{ciudad.nombre}</div>
-                    <div style={{
-                      fontSize: '0.75rem',
-                      color: ciudad.color,
-                      fontWeight: 600,
-                    }}>{ciudad.sistema}</div>
-                  </div>
-                </div>
-
-                {/* Stats row */}
-                <div style={{
-                  display: 'flex',
-                  gap: '1.25rem',
-                  marginBottom: '1rem',
-                }}>
-                  {[
-                    { val: ciudad.stats.estaciones, label: 'stations' },
-                    { val: ciudad.stats.lineas, label: 'lines' },
-                    { val: `${ciudad.stats.km} km`, label: 'network' },
-                  ].map((s) => (
-                    <div key={s.label}>
-                      <div style={{
-                        fontSize: '1.125rem',
-                        fontWeight: 700,
-                        color: 'var(--text)',
-                      }}>{s.val}</div>
-                      <div style={{
-                        fontSize: '0.65rem',
-                        color: 'var(--text-dim)',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                      }}>{s.label}</div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* FIFA badge */}
-                <div style={{
-                  padding: '0.5rem 0.75rem',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: `${ciudad.color}10`,
-                  border: `1px solid ${ciudad.color}25`,
-                  marginBottom: '1rem',
-                  flex: 1,
-                }}>
-                  <div style={{
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: ciudad.color,
-                    marginBottom: '0.125rem',
-                  }}>{ciudad.fifa.estadio}</div>
-                  <div style={{
-                    fontSize: '0.7rem',
-                    color: 'var(--text-dim)',
-                  }}>{ciudad.fifa.fechas}</div>
-                </div>
-
-                {/* CTA */}
-                <span style={{
-                  color: ciudad.color,
-                  fontWeight: 600,
-                  fontSize: '0.85rem',
-                }}>
-                  Coming Soon →
-                </span>
-              </a>
-            ))}
-            </div>
-          </div>
+          <MarimbasCondesa />
         </div>
       </section>
 
-      {/* ── Próximamente ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-      }}>
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 3. ESTADIOS STRIP + RUTAS POPULARES                         */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '3rem 1rem' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <h6 style={{
-            color: 'var(--text-dim)',
-            fontSize: '0.7rem',
-            fontWeight: 600,
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            marginBottom: '1rem',
-          }}>
-            Más ciudades — 8 sistemas de transporte
-          </h6>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <div className="eyebrow">Sedes Mundial FIFA 2026</div>
+            <h2 className="editorial-h2" style={{ marginBottom: '0.5rem' }}>
+              3 ciudades · 13 partidos en México
+            </h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1rem', maxWidth: '580px', margin: '0 auto' }}>
+              Elige tu sede y abre el trip planner con rutas a cada estadio, el aeropuerto y las zonas turísticas.
+            </p>
+          </div>
+
+          {/* Grid de 3 ciudades */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            gap: '0.5rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1.25rem',
+            marginBottom: '3rem',
           }}>
-            {ciudadesSecundarias.map((c) => (
+            {ciudadesActivas.map((c) => (
               <a
                 key={c.id}
                 href={c.href}
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  padding: '0.625rem 0.875rem',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'var(--surface)',
-                  border: '1px solid var(--border)',
+                  display: 'block',
+                  padding: '1.75rem',
+                  borderRadius: 'var(--radius-lg)',
+                  background: 'var(--linen)',
+                  border: '1px solid rgba(31,58,46,0.1)',
                   textDecoration: 'none',
-                  fontSize: '0.8rem',
-                  fontWeight: 500,
-                  color: 'var(--text)',
-                  transition: 'all 0.2s',
+                  color: 'inherit',
+                  transition: 'all 0.2s ease',
+                  borderTop: `4px solid ${c.color}`,
                 }}
               >
-                <span style={{
-                  width: '8px',
-                  height: '8px',
-                  borderRadius: '50%',
-                  backgroundColor: c.color,
-                  flexShrink: 0,
-                }} />
-                <span>
-                  <strong>{c.nombre}</strong>
-                  <span style={{ color: 'var(--text-dim)', fontSize: '0.7rem', display: 'block' }}>{c.stats.estaciones} est. · {c.stats.lineas} líneas</span>
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Aeropuertos ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline',
-            marginBottom: '1.5rem',
-          }}>
-            <div>
-              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Aeropuertos de México</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Cómo llegar del aeropuerto al centro en transporte público
-              </p>
-            </div>
-            <a href="/aeropuertos/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
-              Ver todos →
-            </a>
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-            {[
-              { iata: 'MEX', ciudad: 'CDMX', slug: 'benito-juarez-cdmx', color: '#F5A623' },
-              { iata: 'GDL', ciudad: 'Guadalajara', slug: 'miguel-hidalgo-guadalajara', color: '#06B6D4' },
-              { iata: 'MTY', ciudad: 'Monterrey', slug: 'mariano-escobedo-monterrey', color: '#EC4899' },
-              { iata: 'CUN', ciudad: 'Cancún', slug: 'cancun-cun', color: '#8B5CF6' },
-              { iata: 'TIJ', ciudad: 'Tijuana', slug: 'tijuana-tij', color: '#6B7280' },
-              { iata: 'PVR', ciudad: 'Puerto Vallarta', slug: 'puerto-vallarta-pvr', color: '#0EA5E9' },
-            ].map((a) => (
-              <a
-                key={a.iata}
-                href={`/aeropuertos/${a.slug}/`}
-                style={{
-                  display: 'inline-flex',
+                <div style={{
+                  display: 'flex',
                   alignItems: 'center',
-                  gap: '0.5rem',
-                  padding: '0.5rem 0.875rem',
-                  borderRadius: 'var(--radius-full)',
-                  backgroundColor: 'var(--surface)',
-                  border: '1px solid var(--border)',
-                  textDecoration: 'none',
-                  fontSize: '0.8rem',
-                  fontWeight: 500,
+                  gap: '0.75rem',
+                  marginBottom: '1rem',
+                }}>
+                  <span style={{ fontSize: '1.5rem' }}>{c.flag}</span>
+                  <div>
+                    <div style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 700,
+                      color: c.color,
+                      letterSpacing: '0.08em',
+                      textTransform: 'uppercase',
+                    }}>{c.ciudad}</div>
+                    <div style={{
+                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontSize: '1.4rem',
+                      fontWeight: 700,
+                      color: 'var(--text)',
+                      lineHeight: 1.2,
+                    }}>{c.nombre}</div>
+                  </div>
+                </div>
+
+                <div style={{
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: 'var(--forest)',
+                  marginBottom: '0.35rem',
+                }}>
+                  {c.estadio} · {c.partidos} partidos
+                </div>
+                <div style={{
+                  fontSize: '0.82rem',
                   color: 'var(--text-muted)',
-                  transition: 'all 0.2s',
-                }}
-              >
-                <span style={{ fontWeight: 700, color: a.color }}>{a.iata}</span>
-                {a.ciudad}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Terminales de Autobuses ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline',
-            marginBottom: '1.5rem',
-          }}>
-            <div>
-              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Terminales de Autobuses</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Cómo llegar a las principales terminales en metro y transporte público
-              </p>
-            </div>
-            <a href="/terminales/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
-              Ver todas →
-            </a>
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-            {[
-              { nombre: 'TAPO', slug: 'tapo', metro: 'San Lázaro' },
-              { nombre: 'Central del Norte', slug: 'central-del-norte', metro: 'Autobuses del Norte' },
-              { nombre: 'Observatorio', slug: 'terminal-poniente', metro: 'Observatorio' },
-              { nombre: 'Taxqueña', slug: 'terminal-del-sur', metro: 'Taxqueña' },
-            ].map((t) => (
-              <a
-                key={t.slug}
-                href={`/terminales/${t.slug}/`}
-                className="card"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '0.75rem 1rem',
-                  textDecoration: 'none',
-                  flex: '1 1 220px',
-                  minWidth: '220px',
-                }}
-              >
+                  marginBottom: '0.75rem',
+                }}>
+                  {c.fechas}
+                </div>
                 <div style={{
-                  width: '2rem',
-                  height: '2rem',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'var(--primary-glow)',
-                  border: '1px solid var(--primary-border)',
+                  fontSize: '0.78rem',
+                  color: 'var(--text-dim)',
+                  paddingTop: '0.75rem',
+                  borderTop: '1px solid rgba(31,58,46,0.08)',
                   display: 'flex',
+                  justifyContent: 'space-between',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '0.9rem',
-                  flexShrink: 0,
-                }}>🚌</div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{t.nombre}</div>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Metro {t.metro}</div>
+                }}>
+                  <span>{c.stats}</span>
+                  <span style={{ color: c.color, fontWeight: 700 }}>Abrir →</span>
                 </div>
               </a>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* ── Ferries ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline',
+          {/* Rutas populares */}
+          <div className="eyebrow" style={{ textAlign: 'center' }}>Rutas más buscadas</div>
+          <h3 className="editorial-h2" style={{
+            textAlign: 'center',
+            fontSize: '1.5rem',
             marginBottom: '1.5rem',
           }}>
-            <div>
-              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Ferries</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Conecta entre islas y costas principales
-              </p>
-            </div>
-            <a href="/ferries/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
-              Ver todos →
-            </a>
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-            {[
-              { nombre: 'Playa del Carmen ↔ Cozumel', slug: 'playa-cozumel', ruta: '30 min' },
-              { nombre: 'Cancún ↔ Isla Mujeres', slug: 'cancun-isla-mujeres', ruta: '20 min' },
-              { nombre: 'La Paz ↔ Mazatlán', slug: 'lapaz-mazatlan', ruta: '8h 30min' },
-              { nombre: 'Chiquilá ↔ Isla Holbox', slug: 'chiquila-holbox', ruta: '45 min' },
-            ].map((f) => (
-              <a
-                key={f.slug}
-                href={`/ferries/${f.slug}/`}
-                className="card"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '0.75rem 1rem',
-                  textDecoration: 'none',
-                  flex: '1 1 220px',
-                  minWidth: '220px',
-                }}
-              >
-                <div style={{
-                  width: '2rem',
-                  height: '2rem',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'var(--primary-glow)',
-                  border: '1px solid var(--primary-border)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '0.9rem',
-                  flexShrink: 0,
-                }}>⛴️</div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{f.nombre}</div>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>{f.ruta}</div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+            Empieza con una ruta lista
+          </h3>
 
-      {/* ── Cruces Fronterizos ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline',
-            marginBottom: '1.5rem',
-          }}>
-            <div>
-              <h2 style={{ marginBottom: '0.25rem', fontSize: '1.5rem' }}>Cruces Fronterizos</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Información de paso a USA, Guatemala y Belice
-              </p>
-            </div>
-            <a href="/frontera/" style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
-              Ver todos →
-            </a>
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-            {[
-              { nombre: 'Tijuana', slug: 'tijuana', pais: 'USA' },
-              { nombre: 'Ciudad Juárez', slug: 'ciudad-juarez', pais: 'USA' },
-              { nombre: 'Nogales', slug: 'nogales', pais: 'USA' },
-              { nombre: 'Chetumal', slug: 'chetumal', pais: 'Belice' },
-            ].map((c) => (
-              <a
-                key={c.slug}
-                href={`/frontera/${c.slug}/`}
-                className="card"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '0.75rem 1rem',
-                  textDecoration: 'none',
-                  flex: '1 1 220px',
-                  minWidth: '220px',
-                }}
-              >
-                <div style={{
-                  width: '2rem',
-                  height: '2rem',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'var(--primary-glow)',
-                  border: '1px solid var(--primary-border)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '0.9rem',
-                  flexShrink: 0,
-                }}>🛂</div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text)' }}>{c.nombre}</div>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Paso a {c.pais}</div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Ad — Mid-page ── */}
-      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
-        <AdBannerLazyInArticle slot="1082410395" />
-      </div>
-
-      {/* ── Stats Banner ── */}
-      <section style={{
-        padding: '3rem 1rem',
-        borderTop: '1px solid var(--border)',
-        backgroundColor: 'var(--surface)',
-      }}>
-        <div style={{
-          maxWidth: '1000px',
-          margin: '0 auto',
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '2rem',
-          textAlign: 'center',
-        }}>
-          {[
-            { val: '2,500+', label: 'Stations covered' },
-            { val: '78', label: 'Transit systems' },
-            { val: '16', label: 'Host cities' },
-            { val: '78', label: 'FIFA 2026 Matches' },
-          ].map((s) => (
-            <div key={s.label}>
-              <div style={{
-                fontSize: '1.75rem',
-                fontWeight: 800,
-                color: 'var(--primary)',
-                letterSpacing: '-0.02em',
-              }}>{s.val}</div>
-              <div style={{
-                fontSize: '0.75rem',
-                color: 'var(--text-dim)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                marginTop: '0.25rem',
-              }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-
-      {/* ── Affiliate Mundial ── */}
-      <div style={{ maxWidth: '1000px', margin: 'auto', padding: '0 1rem' }}>
-        <AffiliateMundial />
-      </div>
-      {/* ── Turismo — 8 Programas SECTUR ── */}
-      <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-        backgroundColor: 'var(--surface)',
-      }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-            <div>
-              <h2 style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>Turismo en México</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                8 programas SECTUR — 177 Pueblos Mágicos, zonas arqueológicas, playas y más
-              </p>
-            </div>
-            <a href="/turismo/" style={{
-              color: 'var(--primary)',
-              fontWeight: 600,
-              fontSize: '0.875rem',
-              textDecoration: 'none',
-            }}>Ver todo →</a>
-          </div>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
             gap: '0.75rem',
           }}>
-            {[
-              { emoji: '🏘️', title: '177 Pueblos Mágicos', desc: 'Pueblos con encanto colonial y tradiciones vivas en 31 estados.', href: '/turismo/pueblos-magicos/', color: '#E91E8C' },
-              { emoji: '🏛️', title: 'Zonas Arqueológicas', desc: 'De Teotihuacán a Chichén Itzá — ciudades prehispánicas.', href: '/turismo/zonas-arqueologicas/', color: '#D97706' },
-              { emoji: '🌊', title: 'Playas', desc: 'Cancún, Riviera Maya, Huatulco y los mejores destinos de playa.', href: '/turismo/playas/', color: '#0EA5E9' },
-              { emoji: '🏙️', title: 'Barrios Mágicos', desc: 'Coyoacán, Roma, Tlalpan — barrios con identidad y cultura.', href: '/turismo/barrios-magicos/', color: '#8B5CF6' },
-              { emoji: '🍽️', title: 'Rutas Gastronómicas', desc: 'Mole, tequila, mezcal y la gastronomía patrimonio de la humanidad.', href: '/turismo/rutas-gastronomicas/', color: '#10B981' },
-              { emoji: '🌿', title: 'Naturaleza', desc: 'Sian Ka\'an, Cañón del Sumidero, biósfera y ecoturismo.', href: '/turismo/naturaleza/', color: '#22C55E' },
-              { emoji: '🏛️', title: 'Ciudades Patrimonio', desc: 'Oaxaca, San Cristóbal, Guanajuato — patrimonio de la humanidad.', href: '/turismo/ciudades-patrimonio/', color: '#6366F1' },
-              { emoji: '⭐', title: 'Destinos Prioritarios', desc: 'Los 20 destinos prioritarios de SECTUR para el turismo internacional.', href: '/turismo/destinos-prioritarios/', color: '#F59E0B' },
-            ].map((item) => (
-              <a key={item.href} href={item.href} style={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'inherit',
-                backgroundColor: 'var(--bg)',
-                border: '1px solid var(--border)',
-                borderTop: `3px solid ${item.color}`,
-                borderRadius: '8px',
-                padding: '1rem',
-                transition: 'border-color 0.2s',
-              }}>
-                <div style={{ fontSize: '1.5rem', marginBottom: '0.375rem' }}>{item.emoji}</div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '0.25rem', color: 'var(--text)' }}>{item.title}</h3>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>{item.desc}</p>
+            {rutasPopulares.map((r) => (
+              <a
+                key={r.slug}
+                href={`/ruta/${r.slug}/`}
+                style={{
+                  padding: '1rem 1.1rem',
+                  background: '#FFFFFF',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--radius)',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  transition: 'all 0.2s ease',
+                  display: 'block',
+                }}
+              >
+                <div style={{
+                  fontSize: '0.68rem',
+                  fontWeight: 700,
+                  color: 'var(--chiapas)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.35rem',
+                }}>
+                  {r.etiqueta} · {r.tiempo}
+                </div>
+                <div style={{
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: 'var(--text)',
+                  lineHeight: 1.3,
+                }}>
+                  {r.origen} <span style={{ color: 'var(--text-dim)' }}>→</span> {r.destino}
+                </div>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── FIFA 2026 CTA ── */}
+      {/* ── Ad break ── */}
+      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem 2rem' }}>
+        <AdBannerLazy slot="4434764790" format="auto" />
+      </div>
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 4. COMING SOON — 13 sedes USA/CA + Email capture            */}
+      {/* ════════════════════════════════════════════════════════════ */}
       <section style={{
-        padding: '2.5rem 1rem',
-        borderTop: '1px solid var(--border)',
-        background: 'linear-gradient(135deg, rgba(245,166,35,0.08) 0%, rgba(245,166,35,0.02) 100%)',
+        padding: '4rem 1rem',
+        background: 'linear-gradient(180deg, var(--linen-soft) 0%, #FFFFFF 100%)',
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div>
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              padding: '0.25rem 0.75rem',
-              borderRadius: 'var(--radius-full)',
-              backgroundColor: 'var(--primary-glow)',
-              border: '1px solid var(--primary-border)',
-              fontSize: '0.7rem',
-              fontWeight: 700,
-              color: 'var(--primary)',
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              marginBottom: '0.75rem',
-            }}>⚽ FIFA World Cup 2026</div>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-              Get to the Stadium by Public Transit
-            </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', maxWidth: '600px', marginBottom: '1.5rem' }}>
-              Complete transit guides for all 16 FIFA 2026 host cities. 78 matches across Mexico, USA, and Canada. July 19, 2026: Final at MetLife Stadium, New York/New Jersey.
-            </p>
-
-            {/* Mexico venues */}
-            <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>México (13 matches)</h4>
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-              {[
-                { ciudad: 'CDMX', estadio: 'Estadio Azteca', href: '/cdmx/', color: '#F5A623' },
-                { ciudad: 'GDL', estadio: 'Estadio Akron', href: '/gdl/', color: '#06B6D4' },
-                { ciudad: 'MTY', estadio: 'Estadio BBVA', href: '/mty/', color: '#EC4899' },
-              ].map((s) => (
-                <a key={s.ciudad} href={s.href} style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  padding: '0.75rem 1rem',
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'var(--surface)',
-                  border: `1px solid ${s.color}30`,
-                  textDecoration: 'none',
-                  minWidth: '100px',
-                }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 700, color: s.color, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{s.ciudad}</span>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text)', fontWeight: 600, marginTop: '0.125rem' }}>{s.estadio}</span>
-                </a>
-              ))}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '3rem',
+            alignItems: 'start',
+          }}>
+            {/* Col 1: Mensaje + email capture */}
+            <div>
+              <div className="eyebrow">Próximamente</div>
+              <h2 className="editorial-h2" style={{ marginBottom: '0.75rem' }}>
+                13 sedes más en USA y Canadá
+              </h2>
+              <p style={{
+                color: 'var(--text-muted)',
+                fontSize: '1rem',
+                marginBottom: '1.5rem',
+                lineHeight: 1.6,
+              }}>
+                Estamos armando los trip planners para MetLife, SoFi, AT&T y el resto del Mundial. Déjanos tu email y te escribimos una sola vez cuando abra tu ciudad.
+              </p>
+              <EmailCapture
+                source="coming-soon-cities"
+                title="Avísame cuando abra mi sede"
+                subtitle="Sin spam, sin newsletters. Solo el aviso de apertura."
+                cta="Avisarme"
+              />
             </div>
 
-            {/* USA venues */}
-            <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>United States (48 matches)</h4>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
-              11 cities including NYC (Final), Los Angeles, Houston, Dallas, Atlanta, Philadelphia, Seattle, San Francisco, Boston, Miami, and Kansas City.
-            </p>
-
-            {/* Canada venues */}
-            <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>Canada (13 matches)</h4>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
-              Toronto and Vancouver — detailed public transit guides and stadium access routes.
-            </p>
+            {/* Col 2: Lista visual de sedes */}
+            <div>
+              <div className="eyebrow">Sedes en construcción</div>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: '0.5rem',
+                marginTop: '0.5rem',
+              }}>
+                {ciudadesProximamente.map((c) => (
+                  <div
+                    key={c.nombre}
+                    style={{
+                      padding: '0.7rem 0.85rem',
+                      background: '#FFFFFF',
+                      border: '1px solid rgba(31,58,46,0.08)',
+                      borderRadius: 'var(--radius)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                    }}
+                  >
+                    <span style={{ fontSize: '1rem' }}>{c.flag}</span>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{
+                        fontSize: '0.8rem',
+                        fontWeight: 700,
+                        color: 'var(--text)',
+                        lineHeight: 1.2,
+                      }}>{c.nombre}</div>
+                      <div style={{
+                        fontSize: '0.68rem',
+                        color: 'var(--text-dim)',
+                        marginTop: '0.1rem',
+                      }}>{c.destacado}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── How it works ── */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 5. CÓMO FUNCIONA — 3 pasos editoriales                       */}
+      {/* ════════════════════════════════════════════════════════════ */}
       <section style={{
-        padding: '3rem 1rem',
+        padding: '4rem 1rem',
         borderTop: '1px solid var(--border)',
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Cómo funciona</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2rem' }}>
-            Planifica tu viaje en 3 pasos, sin apps ni datos móviles
-          </p>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div className="eyebrow">Cómo funciona</div>
+            <h2 className="editorial-h2">Tres pasos. Cero fricciones.</h2>
+          </div>
 
-          <div className="grid-3">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            gap: '1.5rem',
+          }}>
             {[
               {
                 num: '01',
                 title: 'Busca tu ruta',
-                desc: 'Escribe tu origen y destino. El buscador encuentra la estación más cercana con autocompletado.',
+                desc: 'Escribe origen y destino. Autocompletado con 195 estaciones CDMX y sinónimos comunes.',
               },
               {
                 num: '02',
                 title: 'Revisa los pasos',
-                desc: 'Ve las líneas, transbordos, tiempo estimado y costo. Incluye alertas de seguridad y tips.',
+                desc: 'Líneas, transbordos, tiempo y costo real. Alertas importantes marcadas (Tren Ligero, hora pico).',
               },
               {
                 num: '03',
-                title: 'Viaja como local',
-                desc: 'Instala la app (PWA) para acceso offline. Consulta tu ruta sin internet dentro del metro.',
+                title: 'Viaja offline',
+                desc: 'Instala como app (PWA). Tu ruta queda accesible sin datos en el metro.',
               },
             ].map((step) => (
-              <div key={step.num} className="card" style={{ padding: '1.5rem' }}>
+              <div
+                key={step.num}
+                style={{
+                  padding: '2rem 1.75rem',
+                  background: 'var(--linen)',
+                  borderRadius: 'var(--radius-lg)',
+                  border: '1px solid rgba(31,58,46,0.08)',
+                }}
+              >
                 <div style={{
-                  fontSize: '2rem',
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontSize: '2.75rem',
                   fontWeight: 800,
-                  color: 'var(--primary)',
-                  opacity: 0.3,
-                  marginBottom: '0.75rem',
-                  letterSpacing: '-0.02em',
-                }}>{step.num}</div>
-                <h4 style={{
-                  fontSize: '1rem',
-                  fontWeight: 700,
+                  color: 'var(--amber)',
+                  lineHeight: 1,
+                  marginBottom: '1rem',
+                }}>
+                  {step.num}
+                </div>
+                <h3 className="editorial-h2" style={{
+                  fontSize: '1.2rem',
                   marginBottom: '0.5rem',
-                }}>{step.title}</h4>
+                }}>
+                  {step.title}
+                </h3>
                 <p style={{
-                  fontSize: '0.85rem',
+                  fontSize: '0.9rem',
                   color: 'var(--text-muted)',
                   lineHeight: 1.6,
                   margin: 0,
-                }}>{step.desc}</p>
+                }}>
+                  {step.desc}
+                </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* 6. CTA FOOTER — Mundial + hospedaje                          */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <section style={{
+        background: 'linear-gradient(135deg, var(--forest) 0%, var(--forest-soft) 100%)',
+        padding: '4rem 1rem',
+        textAlign: 'center',
+      }}>
+        <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+          <div className="eyebrow" style={{ color: 'var(--amber)' }}>
+            Vas al Mundial
+          </div>
+          <h2 className="editorial-h1" style={{
+            color: '#FFFFFF',
+            fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
+            marginBottom: '1rem',
+          }}>
+            Hospédate a 5 min del metro,<br/>
+            a 50 min del Estadio Azteca
+          </h2>
+          <p style={{
+            color: 'rgba(255,255,255,0.8)',
+            fontSize: '1.05rem',
+            marginBottom: '2rem',
+            lineHeight: 1.55,
+          }}>
+            Marimbas Home opera departamentos verificados en La Condesa, a pasos de Chilpancingo (L9). WiFi 800 Mbps, cocina completa, reserva directa sin comisiones.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a
+              href="/hospedaje/"
+              style={{
+                padding: '0.95rem 1.75rem',
+                borderRadius: 'var(--radius)',
+                background: 'var(--amber)',
+                color: 'var(--forest)',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+                textDecoration: 'none',
+              }}
+            >
+              Ver departamentos →
+            </a>
+            <a
+              href="https://book.marimbashome.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '0.95rem 1.75rem',
+                borderRadius: 'var(--radius)',
+                background: 'transparent',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255,255,255,0.3)',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+                textDecoration: 'none',
+              }}
+            >
+              Reservar directo
+            </a>
           </div>
         </div>
       </section>
