@@ -28,7 +28,8 @@ export const metadata = {
     url: 'https://metroguia.mx/',
     type: 'website',
     siteName: 'MetroGuia',
-    locale: 'es_MX',
+    locale: 'en_US',
+    alternateLocale: ['es_MX', 'pt_BR', 'fr_FR', 'de_DE', 'ja_JP', 'ko_KR'],
     images: [{
       url: 'https://metroguia.mx/og-image.png',
       width: 1200,
@@ -322,7 +323,7 @@ export default function LandingPage() {
             letterSpacing: '-0.03em',
             marginBottom: '1rem',
           }}>
-            MetroGuia — Transit Guide for<br />
+            MetroGuia — Transit Guide for {' '}<br />
             <span style={{ color: 'var(--primary)' }}>FIFA 2026</span>
           </h1>
 
