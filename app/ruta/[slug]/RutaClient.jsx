@@ -17,9 +17,18 @@ const lineColors = {
   'TL': '#06B6D4',
 }
 
-// Parse slug like "zocalo-a-estadio-azteca" into {origen, destino}
+// Parse slug like "zocalo-a-estadio-azteca" or "zocalo-to-estadio-azteca" into {origen, destino}
 function parseSlug(slug) {
   if (!slug) return { origen: '', destino: '' }
+  // Try English "-to-" connector first (US/Canada cities)
+  const toIdx = slug.indexOf('-to-')
+  if (toIdx > 0) {
+    return {
+      origen: slug.substring(0, toIdx),
+      destino: slug.substring(toIdx + 4),
+    }
+  }
+  // Fallback to Spanish "-a-" connector
   const parts = slug.split('-a-')
   if (parts.length < 2) return { origen: slug, destino: '' }
   return {
@@ -68,35 +77,42 @@ export default function RutaClient({ slug }) {
   }
 
   useEffect(() => {
-    const { origen, destino } = parseSlug(slug)
-    const origenSlugMatch = matchStation(origen)
-    const destinoSlugMatch = matchStation(destino)
+    let cancelled = false
 
-    setOrigenSlug(origenSlugMatch)
-    setDestinoSlug(destinoSlugMatch)
+    async function computeRoute() {
+      const { origen, destino } = parseSlug(slug)
+      const origenSlugMatch = matchStation(origen)
+      const destinoSlugMatch = matchStation(destino)
 
-    if (origenSlugMatch && grafo[origenSlugMatch]) {
-      setOrigenNombre(grafo[origenSlugMatch].nombre)
-    }
-    if (destinoSlugMatch && grafo[destinoSlugMatch]) {
-      setDestinoNombre(grafo[destinoSlugMatch].nombre)
-    }
+      if (cancelled) return
+      setOrigenSlug(origenSlugMatch)
+      setDestinoSlug(destinoSlugMatch)
 
-    if (!origenSlugMatch || !destinoSlugMatch) {
-      setError('No se encontraron las estaciones. Intenta buscar de nuevo.')
-      return
-    }
+      if (origenSlugMatch && grafo[origenSlugMatch]) {
+        setOrigenNombre(grafo[origenSlugMatch].nombre)
+      }
+      if (destinoSlugMatch && grafo[destinoSlugMatch]) {
+        setDestinoNombre(grafo[destinoSlugMatch].nombre)
+      }
 
-    const resultado = findRoute(origenSlugMatch, destinoSlugMatch)
-    setRuta(resultado)
+      if (!origenSlugMatch || !destinoSlugMatch) {
+        setError('No se encontraron las estaciones. Intenta buscar de nuevo.')
+        return
+      }
 
-    const alt = findAlternativeRoute(origenSlugMatch, destinoSlugMatch)
-    if (alt && alt.encontrada) {
-      setRutaAlt(alt)
-    }
+      // findRoute is async — await the Promise
+      const resultado = await findRoute(origenSlugMatch, destinoSlugMatch, 'cdmx')
+      if (cancelled) return
+      setRuta(resultado)
 
-    // Generate Schema.org JSON-LD
-    if (origenSlugMatch && destinoSlugMatch && resultado && resultado.encontrada) {
+      const alt = await findAlternativeRoute(origenSlugMatch, destinoSlugMatch, 'cdmx')
+      if (cancelled) return
+      if (alt && alt.encontrada) {
+        setRutaAlt(alt)
+      }
+
+      // Generate Schema.org JSON-LD
+      if (origenSlugMatch && destinoSlugMatch && resultado && resultado.encontrada) {
       const itineraryItems = resultado.pasos.map((paso, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -182,6 +198,13 @@ export default function RutaClient({ slug }) {
         breadcrumb: JSON.stringify(breadcrumbSchema),
         howto: JSON.stringify(howtoSchema)
       })
+      }
+    }
+
+    computeRoute()
+
+    return () => {
+      cancelled = true
     }
   }, [slug])
 
