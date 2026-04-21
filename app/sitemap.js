@@ -215,10 +215,9 @@ export async function generateSitemaps() {
     { id: 3 },  // transport
     { id: 4 },  // mundial
     { id: 5 },  // i18n
-    { id: 6 },  // routes-cdmx
-    { id: 7 },  // routes-gdl
-    { id: 8 },  // routes-mx
-    { id: 9 },  // routes-usca
+    // routes-* sitemaps (id 6-9) eliminados temporalmente para AdSense recovery (Apr 2026)
+    // — las páginas /ruta/* siguen funcionando pero están en noindex.
+    // Reactivar cuando Google re-indexe el sitemap slim y AdSense apruebe.
   ];
 }
 

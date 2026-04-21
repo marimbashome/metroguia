@@ -82,6 +82,7 @@ export async function generateMetadata({ params }) {
     return {
       title: 'Ruta en Metrorrey Monterrey — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en el Metrorrey de Monterrey. Encuentra tu ruta, transbordos, tiempo estimado y costo del transporte público.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -95,6 +96,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Metrorrey MTY`,
       description: `Cómo llegar en transporte público de Monterrey.`,

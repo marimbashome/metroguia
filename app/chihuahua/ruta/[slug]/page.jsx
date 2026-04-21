@@ -38,6 +38,7 @@ export function generateMetadata({ params }) {
     return {
       title: 'Ruta en Chihuahua — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en Chepe Express. Encuentra tu ruta, transbordos, tiempo estimado y costo.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -48,6 +49,7 @@ export function generateMetadata({ params }) {
   return {
     title: `Cómo llegar de ${origen} a ${destino} en Chihuahua | MetroGuia.mx`,
     description: `Ruta de ${origen} a ${destino} en Chihuahua. Transbordos, tiempo estimado, líneas y costo.`,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Chihuahua`,
       description: 'Cómo llegar en transporte público.',

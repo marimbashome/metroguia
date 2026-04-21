@@ -43,6 +43,7 @@ export async function generateMetadata({ params }) {
     return {
       title: 'Ruta en SITEUR Guadalajara — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en el Tren Ligero y Mi Macro de Guadalajara. Encuentra tu ruta, transbordos, tiempo estimado y costo.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -56,6 +57,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Tren Ligero GDL`,
       description: `Cómo llegar en transporte público de Guadalajara.`,

@@ -38,6 +38,7 @@ export function generateMetadata({ params }) {
     return {
       title: 'Ruta en Mérida — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en transporte público de Mérida. Encuentra tu ruta, transbordos, tiempo estimado y costo.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -48,6 +49,7 @@ export function generateMetadata({ params }) {
   return {
     title: `Cómo llegar de ${origen} a ${destino} en Mérida | MetroGuia.mx`,
     description: `Ruta de ${origen} a ${destino} en Mérida. Transbordos, tiempo estimado, líneas y costo.`,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Mérida`,
       description: 'Cómo llegar en transporte público.',

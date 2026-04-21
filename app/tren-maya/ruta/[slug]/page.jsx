@@ -38,6 +38,7 @@ export function generateMetadata({ params }) {
     return {
       title: 'Ruta en Tren Maya — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en Tren Maya. Encuentra tu ruta, transbordos, tiempo estimado y costo.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -48,6 +49,7 @@ export function generateMetadata({ params }) {
   return {
     title: `Cómo llegar de ${origen} a ${destino} en Tren Maya | MetroGuia.mx`,
     description: `Ruta de ${origen} a ${destino} en Tren Maya. Transbordos, tiempo estimado, líneas y costo.`,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Tren Maya`,
       description: 'Cómo llegar en transporte público.',

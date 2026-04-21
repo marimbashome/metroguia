@@ -57,6 +57,7 @@ export async function generateMetadata({ params }) {
     return {
       title: 'Plan Your Transit Route — Transfers & Schedules | MetroGuia',
       description: 'Transit route planner for cities across Mexico, the US, and Canada. Find the best route, transfers, travel time, and fare.',
+      robots: { index: false, follow: true },
     }
   }
   const { origen, destino } = parsed
@@ -75,6 +76,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origenName} → ${destinoName} — ${cityName}`,
       description: isEnglish

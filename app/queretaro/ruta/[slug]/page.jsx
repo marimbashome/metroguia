@@ -38,6 +38,7 @@ export function generateMetadata({ params }) {
     return {
       title: 'Ruta en Querétaro — Cómo llegar | MetroGuia.mx',
       description: 'Planificador de rutas en QroBús de Querétaro. Encuentra tu ruta, transbordos, tiempo estimado y costo.',
+      robots: { index: false, follow: true },
     }
   }
 
@@ -48,6 +49,7 @@ export function generateMetadata({ params }) {
   return {
     title: `Cómo llegar de ${origen} a ${destino} en Querétaro | MetroGuia.mx`,
     description: `Ruta de ${origen} a ${destino} en Querétaro. Transbordos, tiempo estimado, líneas y costo.`,
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${origen} → ${destino} en Querétaro`,
       description: 'Cómo llegar en transporte público.',

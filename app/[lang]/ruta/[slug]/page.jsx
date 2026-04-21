@@ -36,7 +36,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const parsed = parseSlug(params.slug)
   if (!parsed) {
-    return { title: 'Route not found — MetroGuia' }
+    return { title: 'Route not found — MetroGuia', robots: { index: false, follow: true } }
   }
 
   const origen = getStationName(parsed.origen)
@@ -64,6 +64,7 @@ export async function generateMetadata({ params }) {
   return {
     title: titles[lang] || titles.en,
     description: descriptions[lang] || descriptions.en,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: `https://metroguia.mx/${lang}/ruta/${params.slug}/`,
       languages: {
