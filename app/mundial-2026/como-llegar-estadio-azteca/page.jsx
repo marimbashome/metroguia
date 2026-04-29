@@ -1,5 +1,7 @@
 import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
 import { blogLinks } from '@/data/blog-links'
+import fixturesData from '@/data/mundial-fixtures.json'
+import MundialCalendarCTA from '@/app/components/MundialCalendarCTA'
 
 export const metadata = {
   title: 'Cómo llegar al Estadio Azteca en Metro para FIFA 2026 — Guía completa | MetroGuia',
@@ -145,6 +147,40 @@ export default function ComoLlegarAztecaPage() {
               <p style={{ color: 'var(--text)', fontWeight: 600, fontSize: '1rem' }}>60-90 minutos desde el Centro</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 5 Partidos del Azteca + ICS */}
+      <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid var(--border)', background: 'rgba(233,30,140,0.04)' }}>
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <p style={{ fontSize: '0.75rem', color: '#E91E8C', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 700, margin: 0 }}>
+            🏛️ Los 5 partidos en Azteca
+          </p>
+          <h2 style={{ marginTop: '0.5rem', marginBottom: '1.5rem', fontSize: '1.75rem' }}>
+            Mundial 2026 — Calendario en el Estadio Azteca
+          </h2>
+          <div style={{ display: 'grid', gap: '0.75rem', marginBottom: '2rem' }}>
+            {fixturesData.matches.filter((m) => m.is_azteca).map((m) => (
+              <a key={m.id} href={`/mundial-2026/partido/${m.slug}/`}
+                style={{
+                  display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  padding: '1rem 1.25rem', background: 'var(--surface)',
+                  border: '1px solid rgba(233,30,140,0.3)', borderLeft: '4px solid #E91E8C',
+                  borderRadius: '0.5rem', textDecoration: 'none', color: 'inherit', gap: '1rem',
+                }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <p style={{ color: '#E91E8C', fontSize: '0.75rem', fontWeight: 700, margin: 0, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                    {m.date_cdmx} CDMX · {m.phase_label}{m.group ? ` · Grupo ${m.group}` : ''}
+                  </p>
+                  <p style={{ color: 'var(--text)', fontWeight: 600, margin: '0.25rem 0 0', fontSize: '1rem' }}>
+                    {m.home_flag} {m.home_team} <span style={{ color: 'var(--text-muted)' }}>vs</span> {m.away_team} {m.away_flag}
+                  </p>
+                </div>
+                <span style={{ color: '#E91E8C', fontSize: '0.85rem', fontWeight: 600, whiteSpace: 'nowrap' }}>Ver →</span>
+              </a>
+            ))}
+          </div>
+          <MundialCalendarCTA variant="azteca" />
         </div>
       </section>
 

@@ -1,0 +1,837 @@
+{
+  "generated_at": "2026-04-29T02:45:32.335220+00:00",
+  "results": [
+    {
+      "id": 537327,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Mexico",
+      "away_team": "South Africa"
+    },
+    {
+      "id": 537328,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "South Korea",
+      "away_team": "Czechia"
+    },
+    {
+      "id": 537333,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Canada",
+      "away_team": "Bosnia-Herzegovina"
+    },
+    {
+      "id": 537345,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "United States",
+      "away_team": "Paraguay"
+    },
+    {
+      "id": 537334,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Qatar",
+      "away_team": "Switzerland"
+    },
+    {
+      "id": 537339,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Brazil",
+      "away_team": "Morocco"
+    },
+    {
+      "id": 537340,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Haiti",
+      "away_team": "Scotland"
+    },
+    {
+      "id": 537346,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Australia",
+      "away_team": "Turkey"
+    },
+    {
+      "id": 537351,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Germany",
+      "away_team": "Curaçao"
+    },
+    {
+      "id": 537357,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Netherlands",
+      "away_team": "Japan"
+    },
+    {
+      "id": 537352,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador"
+    },
+    {
+      "id": 537358,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Sweden",
+      "away_team": "Tunisia"
+    },
+    {
+      "id": 537369,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Spain",
+      "away_team": "Cape Verde Islands"
+    },
+    {
+      "id": 537363,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Belgium",
+      "away_team": "Egypt"
+    },
+    {
+      "id": 537370,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Saudi Arabia",
+      "away_team": "Uruguay"
+    },
+    {
+      "id": 537364,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Iran",
+      "away_team": "New Zealand"
+    },
+    {
+      "id": 537391,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "France",
+      "away_team": "Senegal"
+    },
+    {
+      "id": 537392,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Iraq",
+      "away_team": "Norway"
+    },
+    {
+      "id": 537397,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Argentina",
+      "away_team": "Algeria"
+    },
+    {
+      "id": 537398,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Austria",
+      "away_team": "Jordan"
+    },
+    {
+      "id": 537403,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Portugal",
+      "away_team": "Congo DR"
+    },
+    {
+      "id": 537409,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "England",
+      "away_team": "Croatia"
+    },
+    {
+      "id": 537410,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Ghana",
+      "away_team": "Panama"
+    },
+    {
+      "id": 537404,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia"
+    },
+    {
+      "id": 537329,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Czechia",
+      "away_team": "South Africa"
+    },
+    {
+      "id": 537335,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Switzerland",
+      "away_team": "Bosnia-Herzegovina"
+    },
+    {
+      "id": 537336,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Canada",
+      "away_team": "Qatar"
+    },
+    {
+      "id": 537330,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Mexico",
+      "away_team": "South Korea"
+    },
+    {
+      "id": 537348,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "United States",
+      "away_team": "Australia"
+    },
+    {
+      "id": 537342,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Scotland",
+      "away_team": "Morocco"
+    },
+    {
+      "id": 537341,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Brazil",
+      "away_team": "Haiti"
+    },
+    {
+      "id": 537347,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Turkey",
+      "away_team": "Paraguay"
+    },
+    {
+      "id": 537359,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Netherlands",
+      "away_team": "Sweden"
+    },
+    {
+      "id": 537353,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Germany",
+      "away_team": "Ivory Coast"
+    },
+    {
+      "id": 537354,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Ecuador",
+      "away_team": "Curaçao"
+    },
+    {
+      "id": 537360,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Tunisia",
+      "away_team": "Japan"
+    },
+    {
+      "id": 537371,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia"
+    },
+    {
+      "id": 537365,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Belgium",
+      "away_team": "Iran"
+    },
+    {
+      "id": 537372,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde Islands"
+    },
+    {
+      "id": 537366,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "New Zealand",
+      "away_team": "Egypt"
+    },
+    {
+      "id": 537399,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Argentina",
+      "away_team": "Austria"
+    },
+    {
+      "id": 537393,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "France",
+      "away_team": "Iraq"
+    },
+    {
+      "id": 537394,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Norway",
+      "away_team": "Senegal"
+    },
+    {
+      "id": 537400,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Jordan",
+      "away_team": "Algeria"
+    },
+    {
+      "id": 537405,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan"
+    },
+    {
+      "id": 537411,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "England",
+      "away_team": "Ghana"
+    },
+    {
+      "id": 537412,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Panama",
+      "away_team": "Croatia"
+    },
+    {
+      "id": 537406,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Colombia",
+      "away_team": "Congo DR"
+    },
+    {
+      "id": 537337,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Switzerland",
+      "away_team": "Canada"
+    },
+    {
+      "id": 537338,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Bosnia-Herzegovina",
+      "away_team": "Qatar"
+    },
+    {
+      "id": 537344,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Morocco",
+      "away_team": "Haiti"
+    },
+    {
+      "id": 537343,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Scotland",
+      "away_team": "Brazil"
+    },
+    {
+      "id": 537331,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Czechia",
+      "away_team": "Mexico"
+    },
+    {
+      "id": 537332,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "South Africa",
+      "away_team": "South Korea"
+    },
+    {
+      "id": 537355,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Ecuador",
+      "away_team": "Germany"
+    },
+    {
+      "id": 537356,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast"
+    },
+    {
+      "id": 537361,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Tunisia",
+      "away_team": "Netherlands"
+    },
+    {
+      "id": 537362,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Japan",
+      "away_team": "Sweden"
+    },
+    {
+      "id": 537349,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Turkey",
+      "away_team": "United States"
+    },
+    {
+      "id": 537350,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Paraguay",
+      "away_team": "Australia"
+    },
+    {
+      "id": 537395,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Norway",
+      "away_team": "France"
+    },
+    {
+      "id": 537396,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Senegal",
+      "away_team": "Iraq"
+    },
+    {
+      "id": 537373,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Uruguay",
+      "away_team": "Spain"
+    },
+    {
+      "id": 537374,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Cape Verde Islands",
+      "away_team": "Saudi Arabia"
+    },
+    {
+      "id": 537367,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "New Zealand",
+      "away_team": "Belgium"
+    },
+    {
+      "id": 537368,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Egypt",
+      "away_team": "Iran"
+    },
+    {
+      "id": 537413,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Panama",
+      "away_team": "England"
+    },
+    {
+      "id": 537414,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Croatia",
+      "away_team": "Ghana"
+    },
+    {
+      "id": 537407,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Colombia",
+      "away_team": "Portugal"
+    },
+    {
+      "id": 537408,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Congo DR",
+      "away_team": "Uzbekistan"
+    },
+    {
+      "id": 537401,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Jordan",
+      "away_team": "Argentina"
+    },
+    {
+      "id": 537402,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "Algeria",
+      "away_team": "Austria"
+    },
+    {
+      "id": 537417,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537423,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537415,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537418,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537424,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537416,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537425,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537426,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537422,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537421,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537420,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537419,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537429,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537428,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537427,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537430,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537376,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537375,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537377,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537378,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537379,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537380,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537381,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537382,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537383,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537384,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537385,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537386,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537387,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537388,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537389,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    },
+    {
+      "id": 537390,
+      "status": "TIMED",
+      "home_score": null,
+      "away_score": null,
+      "home_team": "TBD",
+      "away_team": "TBD"
+    }
+  ]
+}

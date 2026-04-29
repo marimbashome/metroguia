@@ -1,0 +1,1413 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MetroGuia//Mundial 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mundial 2026 · MetroGuia
+X-WR-CALDESC:Calendario completo del Mundial FIFA 2026. 104 partidos del 11 Jun al 19 Jul. Horarios en CDT (UTC-6). Detalles y guías: metroguia.mx/mundial-2026
+X-WR-TIMEZONE:America/Mexico_City
+BEGIN:VEVENT
+UID:wc2026-537327@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260611T190000Z
+DTEND:20260611T210000Z
+SUMMARY:🇲🇽 Mexico vs South Africa 🇿🇦
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/mexico-vs-
+ south-africa-537327/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/mexico-vs-south-africa-537327/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537328@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260612T020000Z
+DTEND:20260612T040000Z
+SUMMARY:🇰🇷 South Korea vs Czechia 🇨🇿
+DESCRIPTION:Fase de Grupos | Grupo A | Estadio: Estadio Akron\, Guadalajara
+  | https://metroguia.mx/mundial-2026/partido/south-korea-vs-czechia-537328
+ /
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/south-korea-vs-czechia-537328/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537333@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260612T190000Z
+DTEND:20260612T210000Z
+SUMMARY:🇨🇦 Canada vs Bosnia-Herzegovina 🇧🇦
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/canada-vs-bosnia-herzegovina-5
+ 37333/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/canada-vs-bosnia-herzegovina-537333/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537345@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260613T010000Z
+DTEND:20260613T030000Z
+SUMMARY:🇺🇸 United States vs Paraguay 🇵🇾
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Lincoln Financial Field\, P
+ hiladelphia\, PA | https://metroguia.mx/mundial-2026/partido/united-states
+ -vs-paraguay-537345/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/united-states-vs-paraguay-537345/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537334@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260613T190000Z
+DTEND:20260613T210000Z
+SUMMARY:🇶🇦 Qatar vs Switzerland 🇨🇭
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/qatar-vs-switzerland-53
+ 7334/
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/qatar-vs-switzerland-537334/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537339@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260613T220000Z
+DTEND:20260614T000000Z
+SUMMARY:🇧🇷 Brazil vs Morocco 🇲🇦
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: BC Place\, Vancouver | http
+ s://metroguia.mx/mundial-2026/partido/brazil-vs-morocco-537339/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/brazil-vs-morocco-537339/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537340@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260614T010000Z
+DTEND:20260614T030000Z
+SUMMARY:🇭🇹 Haiti vs Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: MetLife Stadium\, East Ruth
+ erford\, NJ | https://metroguia.mx/mundial-2026/partido/haiti-vs-scotland-
+ 537340/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/haiti-vs-scotland-537340/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537346@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260614T040000Z
+DTEND:20260614T060000Z
+SUMMARY:🇦🇺 Australia vs Turkey 🇹🇷
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/australia-vs-turkey-537346/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/australia-vs-turkey-537346/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537351@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260614T170000Z
+DTEND:20260614T190000Z
+SUMMARY:🇩🇪 Germany vs Curaçao 🇨🇼
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: BMO Field\, Toronto | https
+ ://metroguia.mx/mundial-2026/partido/germany-vs-curacao-537351/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/germany-vs-curacao-537351/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537357@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260614T200000Z
+DTEND:20260614T220000Z
+SUMMARY:🇳🇱 Netherlands vs Japan 🇯🇵
+DESCRIPTION:Fase de Grupos | Grupo F | Estadio: Mercedes-Benz Stadium\, Atl
+ anta\, GA | https://metroguia.mx/mundial-2026/partido/netherlands-vs-japan
+ -537357/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/netherlands-vs-japan-537357/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537352@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260614T230000Z
+DTEND:20260615T010000Z
+SUMMARY:🇨🇮 Ivory Coast vs Ecuador 🇪🇨
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: BC Place\, Vancouver | http
+ s://metroguia.mx/mundial-2026/partido/ivory-coast-vs-ecuador-537352/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/ivory-coast-vs-ecuador-537352/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537358@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260615T020000Z
+DTEND:20260615T040000Z
+SUMMARY:🇸🇪 Sweden vs Tunisia 🇹🇳
+DESCRIPTION:Fase de Grupos | Grupo F | Estadio: Lincoln Financial Field\, P
+ hiladelphia\, PA | https://metroguia.mx/mundial-2026/partido/sweden-vs-tun
+ isia-537358/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/sweden-vs-tunisia-537358/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537369@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260615T160000Z
+DTEND:20260615T180000Z
+SUMMARY:🇪🇸 Spain vs Cape Verde Islands 🏳️
+DESCRIPTION:Fase de Grupos | Grupo H | Estadio: NRG Stadium\, Houston\, TX 
+ | https://metroguia.mx/mundial-2026/partido/spain-vs-cape-verde-islands-53
+ 7369/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/spain-vs-cape-verde-islands-537369/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537363@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260615T190000Z
+DTEND:20260615T210000Z
+SUMMARY:🇧🇪 Belgium vs Egypt 🇪🇬
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: Arrowhead Stadium\, Kansas 
+ City\, MO | https://metroguia.mx/mundial-2026/partido/belgium-vs-egypt-537
+ 363/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/belgium-vs-egypt-537363/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537370@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260615T220000Z
+DTEND:20260616T000000Z
+SUMMARY:🇸🇦 Saudi Arabia vs Uruguay 🇺🇾
+DESCRIPTION:Fase de Grupos | Grupo H | Estadio: Mercedes-Benz Stadium\, Atl
+ anta\, GA | https://metroguia.mx/mundial-2026/partido/saudi-arabia-vs-urug
+ uay-537370/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/saudi-arabia-vs-uruguay-537370/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537364@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260616T010000Z
+DTEND:20260616T030000Z
+SUMMARY:🇮🇷 Iran vs New Zealand 🇳🇿
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: BMO Field\, Toronto | https
+ ://metroguia.mx/mundial-2026/partido/iran-vs-new-zealand-537364/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/iran-vs-new-zealand-537364/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537391@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260616T190000Z
+DTEND:20260616T210000Z
+SUMMARY:🇫🇷 France vs Senegal 🇸🇳
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: BC Place\, Vancouver | http
+ s://metroguia.mx/mundial-2026/partido/france-vs-senegal-537391/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/france-vs-senegal-537391/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537392@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260616T220000Z
+DTEND:20260617T000000Z
+SUMMARY:🇮🇶 Iraq vs Norway 🇳🇴
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: MetLife Stadium\, East Ruth
+ erford\, NJ | https://metroguia.mx/mundial-2026/partido/iraq-vs-norway-537
+ 392/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/iraq-vs-norway-537392/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537397@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260617T010000Z
+DTEND:20260617T030000Z
+SUMMARY:🇦🇷 Argentina vs Algeria 🇩🇿
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Lincoln Financial Field\, P
+ hiladelphia\, PA | https://metroguia.mx/mundial-2026/partido/argentina-vs-
+ algeria-537397/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/argentina-vs-algeria-537397/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537398@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260617T040000Z
+DTEND:20260617T060000Z
+SUMMARY:🇦🇹 Austria vs Jordan 🇯🇴
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/austria-vs-jordan-537398/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/austria-vs-jordan-537398/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537403@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260617T170000Z
+DTEND:20260617T190000Z
+SUMMARY:🇵🇹 Portugal vs Congo DR 🏳️
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: BMO Field\, Toronto | https
+ ://metroguia.mx/mundial-2026/partido/portugal-vs-congo-dr-537403/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/portugal-vs-congo-dr-537403/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537409@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260617T200000Z
+DTEND:20260617T220000Z
+SUMMARY:🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia 🇭🇷
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Mercedes-Benz Stadium\, Atl
+ anta\, GA | https://metroguia.mx/mundial-2026/partido/england-vs-croatia-5
+ 37409/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/england-vs-croatia-537409/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537410@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260617T230000Z
+DTEND:20260618T010000Z
+SUMMARY:🇬🇭 Ghana vs Panama 🇵🇦
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Lincoln Financial Field\, P
+ hiladelphia\, PA | https://metroguia.mx/mundial-2026/partido/ghana-vs-pana
+ ma-537410/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/ghana-vs-panama-537410/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537404@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260618T020000Z
+DTEND:20260618T040000Z
+SUMMARY:🇺🇿 Uzbekistan vs Colombia 🇨🇴
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: BC Place\, Vancouver | http
+ s://metroguia.mx/mundial-2026/partido/uzbekistan-vs-colombia-537404/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/uzbekistan-vs-colombia-537404/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537329@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260618T160000Z
+DTEND:20260618T180000Z
+SUMMARY:🇨🇿 Czechia vs South Africa 🇿🇦
+DESCRIPTION:Fase de Grupos | Grupo A | Estadio: Estadio Akron\, Guadalajara
+  | https://metroguia.mx/mundial-2026/partido/czechia-vs-south-africa-53732
+ 9/
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/czechia-vs-south-africa-537329/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537335@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260618T190000Z
+DTEND:20260618T210000Z
+SUMMARY:🇨🇭 Switzerland vs Bosnia-Herzegovina 🇧🇦
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: Gillette Stadium\, Foxborou
+ gh\, MA | https://metroguia.mx/mundial-2026/partido/switzerland-vs-bosnia-
+ herzegovina-537335/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/switzerland-vs-bosnia-herzegovina-537335/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537336@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260618T220000Z
+DTEND:20260619T000000Z
+SUMMARY:🇨🇦 Canada vs Qatar 🇶🇦
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: Hard Rock Stadium\, Miami G
+ ardens\, FL | https://metroguia.mx/mundial-2026/partido/canada-vs-qatar-53
+ 7336/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/canada-vs-qatar-537336/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537330@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260619T010000Z
+DTEND:20260619T030000Z
+SUMMARY:🇲🇽 Mexico vs South Korea 🇰🇷
+DESCRIPTION:Fase de Grupos | Grupo A | Estadio: Estadio Akron\, Guadalajara
+  | https://metroguia.mx/mundial-2026/partido/mexico-vs-south-korea-537330/
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/mexico-vs-south-korea-537330/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537348@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260619T190000Z
+DTEND:20260619T210000Z
+SUMMARY:🇺🇸 United States vs Australia 🇦🇺
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Gillette Stadium\, Foxborou
+ gh\, MA | https://metroguia.mx/mundial-2026/partido/united-states-vs-austr
+ alia-537348/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/united-states-vs-australia-537348/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537342@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260619T220000Z
+DTEND:20260620T000000Z
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs Morocco 🇲🇦
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: AT&T Stadium\, Arlington\, 
+ TX | https://metroguia.mx/mundial-2026/partido/scotland-vs-morocco-537342/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/scotland-vs-morocco-537342/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537341@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260620T003000Z
+DTEND:20260620T023000Z
+SUMMARY:🇧🇷 Brazil vs Haiti 🇭🇹
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: SoFi Stadium\, Inglewood\, 
+ CA | https://metroguia.mx/mundial-2026/partido/brazil-vs-haiti-537341/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/brazil-vs-haiti-537341/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537347@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260620T030000Z
+DTEND:20260620T050000Z
+SUMMARY:🇹🇷 Turkey vs Paraguay 🇵🇾
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/turkey-vs-paraguay-5373
+ 47/
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/turkey-vs-paraguay-537347/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537359@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260620T170000Z
+DTEND:20260620T190000Z
+SUMMARY:🇳🇱 Netherlands vs Sweden 🇸🇪
+DESCRIPTION:Fase de Grupos | Grupo F | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/netherlands-vs-sweden-537359/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/netherlands-vs-sweden-537359/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537353@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260620T200000Z
+DTEND:20260620T220000Z
+SUMMARY:🇩🇪 Germany vs Ivory Coast 🇨🇮
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: MetLife Stadium\, East Ruth
+ erford\, NJ | https://metroguia.mx/mundial-2026/partido/germany-vs-ivory-c
+ oast-537353/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/germany-vs-ivory-coast-537353/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537354@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T000000Z
+DTEND:20260621T020000Z
+SUMMARY:🇪🇨 Ecuador vs Curaçao 🇨🇼
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: SoFi Stadium\, Inglewood\, 
+ CA | https://metroguia.mx/mundial-2026/partido/ecuador-vs-curacao-537354/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/ecuador-vs-curacao-537354/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537360@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T040000Z
+DTEND:20260621T060000Z
+SUMMARY:🇹🇳 Tunisia vs Japan 🇯🇵
+DESCRIPTION:Fase de Grupos | Grupo F | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/tunisia-vs-japan-537360
+ /
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tunisia-vs-japan-537360/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537371@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T160000Z
+DTEND:20260621T180000Z
+SUMMARY:🇪🇸 Spain vs Saudi Arabia 🇸🇦
+DESCRIPTION:Fase de Grupos | Grupo H | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/spain-vs-s
+ audi-arabia-537371/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/spain-vs-saudi-arabia-537371/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537365@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T190000Z
+DTEND:20260621T210000Z
+SUMMARY:🇧🇪 Belgium vs Iran 🇮🇷
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: BC Place\, Vancouver | http
+ s://metroguia.mx/mundial-2026/partido/belgium-vs-iran-537365/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/belgium-vs-iran-537365/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537372@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T220000Z
+DTEND:20260622T000000Z
+SUMMARY:🇺🇾 Uruguay vs Cape Verde Islands 🏳️
+DESCRIPTION:Fase de Grupos | Grupo H | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/uruguay-vs-cape-verde-islands-
+ 537372/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/uruguay-vs-cape-verde-islands-537372/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537366@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260622T010000Z
+DTEND:20260622T030000Z
+SUMMARY:🇳🇿 New Zealand vs Egypt 🇪🇬
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: MetLife Stadium\, East Ruth
+ erford\, NJ | https://metroguia.mx/mundial-2026/partido/new-zealand-vs-egy
+ pt-537366/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/new-zealand-vs-egypt-537366/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537399@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260622T170000Z
+DTEND:20260622T190000Z
+SUMMARY:🇦🇷 Argentina vs Austria 🇦🇹
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/argentina-vs-austria-53
+ 7399/
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/argentina-vs-austria-537399/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537393@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260622T210000Z
+DTEND:20260622T230000Z
+SUMMARY:🇫🇷 France vs Iraq 🇮🇶
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: SoFi Stadium\, Inglewood\, 
+ CA | https://metroguia.mx/mundial-2026/partido/france-vs-iraq-537393/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/france-vs-iraq-537393/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537394@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260623T000000Z
+DTEND:20260623T020000Z
+SUMMARY:🇳🇴 Norway vs Senegal 🇸🇳
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: AT&T Stadium\, Arlington\, 
+ TX | https://metroguia.mx/mundial-2026/partido/norway-vs-senegal-537394/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/norway-vs-senegal-537394/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537400@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260623T030000Z
+DTEND:20260623T050000Z
+SUMMARY:🇯🇴 Jordan vs Algeria 🇩🇿
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Gillette Stadium\, Foxborou
+ gh\, MA | https://metroguia.mx/mundial-2026/partido/jordan-vs-algeria-5374
+ 00/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/jordan-vs-algeria-537400/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537405@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260623T170000Z
+DTEND:20260623T190000Z
+SUMMARY:🇵🇹 Portugal vs Uzbekistan 🇺🇿
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: MetLife Stadium\, East Ruth
+ erford\, NJ | https://metroguia.mx/mundial-2026/partido/portugal-vs-uzbeki
+ stan-537405/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/portugal-vs-uzbekistan-537405/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537411@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260623T200000Z
+DTEND:20260623T220000Z
+SUMMARY:🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana 🇬🇭
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Lumen Field\, Seattle\, WA 
+ | https://metroguia.mx/mundial-2026/partido/england-vs-ghana-537411/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/england-vs-ghana-537411/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537412@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260623T230000Z
+DTEND:20260624T010000Z
+SUMMARY:🇵🇦 Panama vs Croatia 🇭🇷
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/panama-vs-croatia-53741
+ 2/
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/panama-vs-croatia-537412/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537406@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260624T020000Z
+DTEND:20260624T040000Z
+SUMMARY:🇨🇴 Colombia vs Congo DR 🏳️
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: SoFi Stadium\, Inglewood\, 
+ CA | https://metroguia.mx/mundial-2026/partido/colombia-vs-congo-dr-537406
+ /
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/colombia-vs-congo-dr-537406/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537337@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260624T190000Z
+DTEND:20260624T210000Z
+SUMMARY:🇨🇭 Switzerland vs Canada 🇨🇦
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: Arrowhead Stadium\, Kansas 
+ City\, MO | https://metroguia.mx/mundial-2026/partido/switzerland-vs-canad
+ a-537337/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/switzerland-vs-canada-537337/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537338@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260624T190000Z
+DTEND:20260624T210000Z
+SUMMARY:🇧🇦 Bosnia-Herzegovina vs Qatar 🇶🇦
+DESCRIPTION:Fase de Grupos | Grupo B | Estadio: BMO Field\, Toronto | https
+ ://metroguia.mx/mundial-2026/partido/bosnia-herzegovina-vs-qatar-537338/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/bosnia-herzegovina-vs-qatar-537338/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537344@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260624T220000Z
+DTEND:20260625T000000Z
+SUMMARY:🇲🇦 Morocco vs Haiti 🇭🇹
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: Mercedes-Benz Stadium\, Atl
+ anta\, GA | https://metroguia.mx/mundial-2026/partido/morocco-vs-haiti-537
+ 344/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/morocco-vs-haiti-537344/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537343@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260624T220000Z
+DTEND:20260625T000000Z
+SUMMARY:🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs Brazil 🇧🇷
+DESCRIPTION:Fase de Grupos | Grupo C | Estadio: NRG Stadium\, Houston\, TX 
+ | https://metroguia.mx/mundial-2026/partido/scotland-vs-brazil-537343/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/scotland-vs-brazil-537343/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537331@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:🇨🇿 Czechia vs Mexico 🇲🇽
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/czechia-vs
+ -mexico-537331/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/czechia-vs-mexico-537331/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537332@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:🇿🇦 South Africa vs South Korea 🇰🇷
+DESCRIPTION:Fase de Grupos | Grupo A | Estadio: Estadio BBVA\, Monterrey | 
+ https://metroguia.mx/mundial-2026/partido/south-africa-vs-south-korea-5373
+ 32/
+LOCATION:Estadio BBVA\, Monterrey\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/south-africa-vs-south-korea-537332/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537355@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T200000Z
+DTEND:20260625T220000Z
+SUMMARY:🇪🇨 Ecuador vs Germany 🇩🇪
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: AT&T Stadium\, Arlington\, 
+ TX | https://metroguia.mx/mundial-2026/partido/ecuador-vs-germany-537355/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/ecuador-vs-germany-537355/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537356@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T200000Z
+DTEND:20260625T220000Z
+SUMMARY:🇨🇼 Curaçao vs Ivory Coast 🇨🇮
+DESCRIPTION:Fase de Grupos | Grupo E | Estadio: NRG Stadium\, Houston\, TX 
+ | https://metroguia.mx/mundial-2026/partido/curacao-vs-ivory-coast-537356/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/curacao-vs-ivory-coast-537356/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537361@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T230000Z
+DTEND:20260626T010000Z
+SUMMARY:🇹🇳 Tunisia vs Netherlands 🇳🇱
+DESCRIPTION:Fase de Grupos | Grupo F | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/tunisia-vs
+ -netherlands-537361/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/tunisia-vs-netherlands-537361/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537362@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T230000Z
+DTEND:20260626T010000Z
+SUMMARY:🇯🇵 Japan vs Sweden 🇸🇪
+DESCRIPTION:Fase de Grupos | Grupo F | Estadio: Hard Rock Stadium\, Miami G
+ ardens\, FL | https://metroguia.mx/mundial-2026/partido/japan-vs-sweden-53
+ 7362/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/japan-vs-sweden-537362/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537349@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260626T020000Z
+DTEND:20260626T040000Z
+SUMMARY:🇹🇷 Turkey vs United States 🇺🇸
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Hard Rock Stadium\, Miami G
+ ardens\, FL | https://metroguia.mx/mundial-2026/partido/turkey-vs-united-s
+ tates-537349/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/turkey-vs-united-states-537349/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537350@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260626T020000Z
+DTEND:20260626T040000Z
+SUMMARY:🇵🇾 Paraguay vs Australia 🇦🇺
+DESCRIPTION:Fase de Grupos | Grupo D | Estadio: Arrowhead Stadium\, Kansas 
+ City\, MO | https://metroguia.mx/mundial-2026/partido/paraguay-vs-australi
+ a-537350/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/paraguay-vs-australia-537350/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537395@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260626T190000Z
+DTEND:20260626T210000Z
+SUMMARY:🇳🇴 Norway vs France 🇫🇷
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: NRG Stadium\, Houston\, TX 
+ | https://metroguia.mx/mundial-2026/partido/norway-vs-france-537395/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/norway-vs-france-537395/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537396@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260626T190000Z
+DTEND:20260626T210000Z
+SUMMARY:🇸🇳 Senegal vs Iraq 🇮🇶
+DESCRIPTION:Fase de Grupos | Grupo I | Estadio: Mercedes-Benz Stadium\, Atl
+ anta\, GA | https://metroguia.mx/mundial-2026/partido/senegal-vs-iraq-5373
+ 96/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/senegal-vs-iraq-537396/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537373@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T000000Z
+DTEND:20260627T020000Z
+SUMMARY:🇺🇾 Uruguay vs Spain 🇪🇸
+DESCRIPTION:Fase de Grupos | Grupo H | Estadio: Levi's Stadium\, Santa Clar
+ a\, CA | https://metroguia.mx/mundial-2026/partido/uruguay-vs-spain-537373
+ /
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/uruguay-vs-spain-537373/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537374@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T000000Z
+DTEND:20260627T020000Z
+SUMMARY:🏳️ Cape Verde Islands vs Saudi Arabia 🇸🇦
+DESCRIPTION:Fase de Grupos | Grupo H | Estadio: Gillette Stadium\, Foxborou
+ gh\, MA | https://metroguia.mx/mundial-2026/partido/cape-verde-islands-vs-
+ saudi-arabia-537374/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/cape-verde-islands-vs-saudi-arabia-537374/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537367@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T030000Z
+DTEND:20260627T050000Z
+SUMMARY:🇳🇿 New Zealand vs Belgium 🇧🇪
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: SoFi Stadium\, Inglewood\, 
+ CA | https://metroguia.mx/mundial-2026/partido/new-zealand-vs-belgium-5373
+ 67/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/new-zealand-vs-belgium-537367/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537368@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T030000Z
+DTEND:20260627T050000Z
+SUMMARY:🇪🇬 Egypt vs Iran 🇮🇷
+DESCRIPTION:Fase de Grupos | Grupo G | Estadio: AT&T Stadium\, Arlington\, 
+ TX | https://metroguia.mx/mundial-2026/partido/egypt-vs-iran-537368/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/egypt-vs-iran-537368/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537413@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T210000Z
+DTEND:20260627T230000Z
+SUMMARY:🇵🇦 Panama vs England 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Gillette Stadium\, Foxborou
+ gh\, MA | https://metroguia.mx/mundial-2026/partido/panama-vs-england-5374
+ 13/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/panama-vs-england-537413/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537414@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T210000Z
+DTEND:20260627T230000Z
+SUMMARY:🇭🇷 Croatia vs Ghana 🇬🇭
+DESCRIPTION:Fase de Grupos | Grupo L | Estadio: Hard Rock Stadium\, Miami G
+ ardens\, FL | https://metroguia.mx/mundial-2026/partido/croatia-vs-ghana-5
+ 37414/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/croatia-vs-ghana-537414/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537407@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T233000Z
+DTEND:20260628T013000Z
+SUMMARY:🇨🇴 Colombia vs Portugal 🇵🇹
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: AT&T Stadium\, Arlington\, 
+ TX | https://metroguia.mx/mundial-2026/partido/colombia-vs-portugal-537407
+ /
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/colombia-vs-portugal-537407/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537408@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260627T233000Z
+DTEND:20260628T013000Z
+SUMMARY:🏳️ Congo DR vs Uzbekistan 🇺🇿
+DESCRIPTION:Fase de Grupos | Grupo K | Estadio: NRG Stadium\, Houston\, TX 
+ | https://metroguia.mx/mundial-2026/partido/congo-dr-vs-uzbekistan-537408/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/congo-dr-vs-uzbekistan-537408/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537401@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260628T020000Z
+DTEND:20260628T040000Z
+SUMMARY:🇯🇴 Jordan vs Argentina 🇦🇷
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Hard Rock Stadium\, Miami G
+ ardens\, FL | https://metroguia.mx/mundial-2026/partido/jordan-vs-argentin
+ a-537401/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/jordan-vs-argentina-537401/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537402@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260628T020000Z
+DTEND:20260628T040000Z
+SUMMARY:🇩🇿 Algeria vs Austria 🇦🇹
+DESCRIPTION:Fase de Grupos | Grupo J | Estadio: Arrowhead Stadium\, Kansas 
+ City\, MO | https://metroguia.mx/mundial-2026/partido/algeria-vs-austria-5
+ 37402/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/algeria-vs-austria-537402/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537417@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260628T190000Z
+DTEND:20260628T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: BC Place\, Vancouver | https://metroguia
+ .mx/mundial-2026/partido/tbd-vs-tbd-537417/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537417/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537423@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260629T170000Z
+DTEND:20260629T190000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Lincoln Financial Field\, Philadelphia\,
+  PA | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537423/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537423/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537415@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260629T203000Z
+DTEND:20260629T223000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Arrowhead Stadium\, Kansas City\, MO | h
+ ttps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537415/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537415/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537418@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260630T010000Z
+DTEND:20260630T030000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: MetLife Stadium\, East Rutherford\, NJ |
+  https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537418/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537418/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537424@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260630T170000Z
+DTEND:20260630T190000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Lumen Field\, Seattle\, WA | https://met
+ roguia.mx/mundial-2026/partido/tbd-vs-tbd-537424/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537424/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537416@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260630T210000Z
+DTEND:20260630T230000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: BMO Field\, Toronto | https://metroguia.
+ mx/mundial-2026/partido/tbd-vs-tbd-537416/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537416/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537425@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260701T010000Z
+DTEND:20260701T030000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Levi's Stadium\, Santa Clara\, CA | http
+ s://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537425/
+LOCATION:Levi's Stadium\, Santa Clara\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537425/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537426@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260701T160000Z
+DTEND:20260701T180000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Gillette Stadium\, Foxborough\, MA | htt
+ ps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537426/
+LOCATION:Gillette Stadium\, Foxborough\, MA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537426/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537422@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260701T200000Z
+DTEND:20260701T220000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Mercedes-Benz Stadium\, Atlanta\, GA | h
+ ttps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537422/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537422/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537421@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260702T000000Z
+DTEND:20260702T020000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: NRG Stadium\, Houston\, TX | https://met
+ roguia.mx/mundial-2026/partido/tbd-vs-tbd-537421/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537421/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537420@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260702T190000Z
+DTEND:20260702T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: AT&T Stadium\, Arlington\, TX | https://
+ metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537420/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537420/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537419@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260702T230000Z
+DTEND:20260703T010000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: SoFi Stadium\, Inglewood\, CA | https://
+ metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537419/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537419/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537429@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260703T030000Z
+DTEND:20260703T050000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: BMO Field\, Toronto | https://metroguia.
+ mx/mundial-2026/partido/tbd-vs-tbd-537429/
+LOCATION:BMO Field\, Toronto\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537429/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537428@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260703T180000Z
+DTEND:20260703T200000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Arrowhead Stadium\, Kansas City\, MO | h
+ ttps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537428/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537428/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537427@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260703T220000Z
+DTEND:20260704T000000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: Hard Rock Stadium\, Miami Gardens\, FL |
+  https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537427/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537427/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537430@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260704T013000Z
+DTEND:20260704T033000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Round of 32 | Estadio: BC Place\, Vancouver | https://metroguia
+ .mx/mundial-2026/partido/tbd-vs-tbd-537430/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537430/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537376@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260704T170000Z
+DTEND:20260704T190000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: Arrowhead Stadium\, Kansas City\, M
+ O | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537376/
+LOCATION:Arrowhead Stadium\, Kansas City\, MO\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537376/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537375@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260704T210000Z
+DTEND:20260704T230000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: Hard Rock Stadium\, Miami Gardens\,
+  FL | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537375/
+LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537375/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537377@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260705T200000Z
+DTEND:20260705T220000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | 🚇 Metro: L2 → Tasqueña → Tren Ligero
+  → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\, Ciudad
+  de México | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537377/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537377/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537378@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260706T000000Z
+DTEND:20260706T020000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: BC Place\, Vancouver | https://metr
+ oguia.mx/mundial-2026/partido/tbd-vs-tbd-537378/
+LOCATION:BC Place\, Vancouver\, Canada
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537378/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537379@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260706T190000Z
+DTEND:20260706T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: MetLife Stadium\, East Rutherford\,
+  NJ | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537379/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537379/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537380@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260707T000000Z
+DTEND:20260707T020000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: SoFi Stadium\, Inglewood\, CA | htt
+ ps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537380/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537380/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537381@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260707T160000Z
+DTEND:20260707T180000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: AT&T Stadium\, Arlington\, TX | htt
+ ps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537381/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537381/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537382@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260707T200000Z
+DTEND:20260707T220000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | Estadio: NRG Stadium\, Houston\, TX | https:
+ //metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537382/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537382/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537383@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260709T200000Z
+DTEND:20260709T220000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Cuartos de Final | Estadio: Lincoln Financial Field\, Philadelp
+ hia\, PA | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537383/
+LOCATION:Lincoln Financial Field\, Philadelphia\, PA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537383/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537384@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260710T190000Z
+DTEND:20260710T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Cuartos de Final | Estadio: Lumen Field\, Seattle\, WA | https:
+ //metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537384/
+LOCATION:Lumen Field\, Seattle\, WA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537384/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537385@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260711T210000Z
+DTEND:20260711T230000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Cuartos de Final | Estadio: SoFi Stadium\, Inglewood\, CA | htt
+ ps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537385/
+LOCATION:SoFi Stadium\, Inglewood\, CA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537385/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537386@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260712T010000Z
+DTEND:20260712T030000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Cuartos de Final | Estadio: NRG Stadium\, Houston\, TX | https:
+ //metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537386/
+LOCATION:NRG Stadium\, Houston\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537386/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537387@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260714T190000Z
+DTEND:20260714T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Semifinal | Estadio: AT&T Stadium\, Arlington\, TX | https://me
+ troguia.mx/mundial-2026/partido/tbd-vs-tbd-537387/
+LOCATION:AT&T Stadium\, Arlington\, TX\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537387/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537388@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260715T190000Z
+DTEND:20260715T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Semifinal | Estadio: Mercedes-Benz Stadium\, Atlanta\, GA | htt
+ ps://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537388/
+LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537388/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537389@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260718T210000Z
+DTEND:20260718T230000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Tercer Lugar | Estadio: Hard Rock Stadium\, Miami\, FL | https:
+ //metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537389/
+LOCATION:Hard Rock Stadium\, Miami\, FL\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537389/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537390@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260719T190000Z
+DTEND:20260719T210000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Final | Estadio: MetLife Stadium\, East Rutherford\, NJ | https
+ ://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537390/
+LOCATION:MetLife Stadium\, East Rutherford\, NJ\, United States
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537390/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

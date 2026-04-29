@@ -171,6 +171,27 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" }
       ]
+    },
+    {
+      "source": "/calendar/(.*\\.ics)",
+      "headers": [
+        { "key": "Content-Type", "value": "text/calendar; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300, stale-while-revalidate=600" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/calendar/results.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
     }
-  ]
+  ],
+  "functions": {
+    "api/mundial/*.js": {
+      "memory": 256,
+      "maxDuration": 10
+    }
+  }
 }

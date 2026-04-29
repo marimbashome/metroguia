@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MetroGuia//Mundial 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Selección Mexicana · Mundial 2026
+X-WR-CALDESC:Partidos de México en el Mundial FIFA 2026. metroguia.mx/mundial-2026/mexico
+X-WR-TIMEZONE:America/Mexico_City
+BEGIN:VEVENT
+UID:wc2026-537327@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260611T190000Z
+DTEND:20260611T210000Z
+SUMMARY:🇲🇽 Mexico vs South Africa 🇿🇦
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/mexico-vs-
+ south-africa-537327/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/mexico-vs-south-africa-537327/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537330@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260619T010000Z
+DTEND:20260619T030000Z
+SUMMARY:🇲🇽 Mexico vs South Korea 🇰🇷
+DESCRIPTION:Fase de Grupos | Grupo A | Estadio: Estadio Akron\, Guadalajara
+  | https://metroguia.mx/mundial-2026/partido/mexico-vs-south-korea-537330/
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/mexico-vs-south-korea-537330/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537331@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:🇨🇿 Czechia vs Mexico 🇲🇽
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/czechia-vs
+ -mexico-537331/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/czechia-vs-mexico-537331/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MetroGuia//Mundial 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Azteca · Mundial 2026
+X-WR-CALDESC:5 partidos del Mundial 2026 en el Estadio Azteca\, Ciudad de México. metroguia.mx/mundial-2026/azteca
+X-WR-TIMEZONE:America/Mexico_City
+BEGIN:VEVENT
+UID:wc2026-537327@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260611T190000Z
+DTEND:20260611T210000Z
+SUMMARY:🇲🇽 Mexico vs South Africa 🇿🇦
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/mexico-vs-
+ south-africa-537327/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/mexico-vs-south-africa-537327/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537371@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260621T160000Z
+DTEND:20260621T180000Z
+SUMMARY:🇪🇸 Spain vs Saudi Arabia 🇸🇦
+DESCRIPTION:Fase de Grupos | Grupo H | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/spain-vs-s
+ audi-arabia-537371/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/spain-vs-saudi-arabia-537371/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537331@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:🇨🇿 Czechia vs Mexico 🇲🇽
+DESCRIPTION:Fase de Grupos | Grupo A | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/czechia-vs
+ -mexico-537331/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/czechia-vs-mexico-537331/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537361@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260625T230000Z
+DTEND:20260626T010000Z
+SUMMARY:🇹🇳 Tunisia vs Netherlands 🇳🇱
+DESCRIPTION:Fase de Grupos | Grupo F | 🚇 Metro: L2 → Tasqueña → Tre
+ n Ligero → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\
+ , Ciudad de México | https://metroguia.mx/mundial-2026/partido/tunisia-vs
+ -netherlands-537361/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/tunisia-vs-netherlands-537361/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-537377@metroguia.mx
+DTSTAMP:20260429T024532Z
+DTSTART:20260705T200000Z
+DTEND:20260705T220000Z
+SUMMARY:🏳️ TBD vs TBD 🏳️
+DESCRIPTION:Octavos de Final | 🚇 Metro: L2 → Tasqueña → Tren Ligero
+  → Estadio Azteca (~45 min\, $10 MXN) | Estadio: Estadio Azteca\, Ciudad
+  de México | https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537377/
+LOCATION:Estadio Azteca\, Ciudad de México\, Mexico
+URL:https://metroguia.mx/mundial-2026/partido/tbd-vs-tbd-537377/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

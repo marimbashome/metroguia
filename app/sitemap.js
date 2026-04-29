@@ -5,6 +5,7 @@ import { rutasPopulares } from '@/data/rutas-populares';
 import { generateCityRoutes } from '@/data/rutas-engine';
 import { getBuiltRouteSlugs } from '@/data/built-routes';
 import { mundial2026 } from '@/data/mundial';
+import mundialFixtures from '@/data/mundial-fixtures.json';
 import guidesContent from '@/data/guides-content.json';
 
 // Import station data for all cities
@@ -199,7 +200,7 @@ const LASTMOD = {
   cities: new Date('2026-04-10'),
   turismo: new Date('2026-03-30'),
   transport: new Date('2026-04-01'),
-  mundial: new Date('2026-04-01'),
+  mundial: new Date('2026-04-28'),
   i18n: new Date('2026-04-02'),
   'routes-cdmx': new Date('2026-03-30'),
   'routes-gdl': new Date('2026-03-30'),
@@ -648,22 +649,30 @@ function getTransportUrls() {
 function getMundialUrls() {
   const urls = [
     entry('/mundial-2026/', 'weekly', 1.0, 'mundial'),
+    entry('/mundial-2026/calendario-completo/', 'daily', 0.95, 'mundial'),
+    entry('/mundial-2026/mexico/', 'weekly', 0.95, 'mundial'),
     entry('/mundial-2026/estadio-azteca/', 'monthly', 0.9, 'mundial'),
     entry('/mundial-2026/como-llegar-estadio-azteca/', 'monthly', 0.9, 'mundial'),
     entry('/mundial-2026/transporte-publico-cdmx/', 'monthly', 0.9, 'mundial'),
     entry('/gdl/mundial-2026/', 'monthly', 0.9, 'mundial'),
     entry('/mty/mundial-2026/', 'monthly', 0.9, 'mundial'),
+    entry('/mundial-2026/calendario/', 'weekly', 0.9, 'mundial'),
     entry('/mundial-2026/partidos/', 'weekly', 0.9, 'mundial'),
     // USA/Canada city mundial-2026 pages
     ...['nyc','los-angeles','houston','atlanta','philadelphia','seattle',
         'san-francisco','boston','miami','dallas','kansas-city','toronto','vancouver'].map(c =>
         entry(`/${c}/mundial-2026/`, 'monthly', 0.9, 'mundial')),
   ];
-  // Individual match pages
+  // Legacy MX-only individual match pages (kept for backwards compat)
   Object.entries(mundial2026.sedes).forEach(([cityKey, sede]) => {
     sede.partidos.forEach((partido) => {
-      urls.push(entry(`/mundial-2026/partidos/${cityKey}-${partido.fecha}/`, 'weekly', 0.9, 'mundial'));
+      urls.push(entry(`/mundial-2026/partidos/${cityKey}-${partido.fecha}/`, 'weekly', 0.85, 'mundial'));
     });
+  });
+  // 104 individual match pages from football-data fixtures
+  (mundialFixtures.matches || []).forEach((m) => {
+    const isHighPriority = m.is_azteca || m.is_mexico_team || m.phase === 'FINAL' || m.phase === 'SEMI_FINALS';
+    urls.push(entry(`/mundial-2026/partido/${m.slug}/`, 'daily', isHighPriority ? 0.9 : 0.7, 'mundial'));
   });
   return urls;
 }

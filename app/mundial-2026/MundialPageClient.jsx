@@ -6,6 +6,7 @@ import BookingWidget from '@/app/components/BookingWidget'
 import ViatorToursWidget from '@/app/components/ViatorToursWidget'
 import MarimbasCondesa from '@/app/components/MarimbasCondesa'
 import BlogGuiasWidget from '@/app/components/BlogGuiasWidget'
+import MundialCalendarCTA from '@/app/components/MundialCalendarCTA'
 import { blogLinks } from '@/data/blog-links'
 
 function Countdown() {
@@ -33,6 +34,26 @@ export default function MundialPageContent() {
     <>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
         <Countdown />
+
+        <MundialCalendarCTA variant="full" />
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+          <a href="/mundial-2026/mexico/" style={{ display: 'block', padding: '1.5rem', background: 'linear-gradient(135deg, #006847 0%, #ce1126 100%)', color: 'white', borderRadius: 'var(--radius-lg)', textDecoration: 'none', fontWeight: 700 }}>
+            <p style={{ fontSize: '2rem', margin: 0 }}>🇲🇽</p>
+            <p style={{ fontSize: '1.1rem', margin: '0.25rem 0 0' }}>Selección Mexicana</p>
+            <p style={{ fontSize: '0.85rem', margin: '0.5rem 0 0', opacity: 0.85, fontWeight: 400 }}>3 partidos de grupos · email opt-in</p>
+          </a>
+          <a href="/mundial-2026/como-llegar-estadio-azteca/" style={{ display: 'block', padding: '1.5rem', background: 'linear-gradient(135deg, #E91E8C 0%, #c71585 100%)', color: 'white', borderRadius: 'var(--radius-lg)', textDecoration: 'none', fontWeight: 700 }}>
+            <p style={{ fontSize: '2rem', margin: 0 }}>🏛️</p>
+            <p style={{ fontSize: '1.1rem', margin: '0.25rem 0 0' }}>Estadio Azteca</p>
+            <p style={{ fontSize: '0.85rem', margin: '0.5rem 0 0', opacity: 0.85, fontWeight: 400 }}>5 partidos · cómo llegar en metro</p>
+          </a>
+          <a href="/mundial-2026/calendario-completo/" style={{ display: 'block', padding: '1.5rem', background: 'linear-gradient(135deg, #1e3a5f 0%, #0f2440 100%)', color: 'white', borderRadius: 'var(--radius-lg)', textDecoration: 'none', fontWeight: 700 }}>
+            <p style={{ fontSize: '2rem', margin: 0 }}>🌍</p>
+            <p style={{ fontSize: '1.1rem', margin: '0.25rem 0 0' }}>Los 104 partidos</p>
+            <p style={{ fontSize: '0.85rem', margin: '0.5rem 0 0', opacity: 0.85, fontWeight: 400 }}>Calendario completo con filtros</p>
+          </a>
+        </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '4rem' }}>
           <div>
