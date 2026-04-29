@@ -16,21 +16,28 @@ module.exports = async (req, res) => {
     const r = await fetch('https://api.football-data.org/v4/competitions/WC/standings?season=2026', {
       headers: { 'X-Auth-Token': apiKey },
     });
-    if (!r.ok) {
-      res.status(502).json({ error: 'upstream error', status: r.status });
-      return;
+
+    let d = {};
+    let standings = [];
+    let upstream_status = r.status;
+    if (r.ok) {
+      d = await r.json();
+      standings = d.standings || [];
+      if (group) {
+        standings = standings.filter((s) => (s.group || '').toUpperCase().includes(group));
+      }
     }
-    const d = await r.json();
-    let standings = d.standings || [];
-    if (group) {
-      standings = standings.filter((s) => (s.group || '').toUpperCase().includes(group));
-    }
+    // Pre-tournament (no matches played yet) the API returns 404 / "resource does not exist".
+    // We respond 200 with an empty standings array + a hint, so frontend can render gracefully.
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     res.setHeader('Cache-Control', 's-maxage=600, stale-while-revalidate=1200');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).json({
       generated_at: new Date().toISOString(),
       group: group || 'all',
+      tournament_started: standings.length > 0,
+      upstream_status,
+      hint: standings.length === 0 ? 'Standings will populate once the tournament begins (Jun 11 2026).' : undefined,
       standings,
     });
   } catch (e) {
