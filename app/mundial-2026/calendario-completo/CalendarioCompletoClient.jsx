@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import MundialCalendarCTA from '@/app/components/MundialCalendarCTA';
+import MundialAffiliateCards from '@/app/components/MundialAffiliateCards';
 
 const PHASES = [
   { value: 'all', label: 'Todas las fases' },
@@ -163,6 +164,7 @@ export default function CalendarioCompletoClient({ matches }) {
               <span style={{ display: 'block', color: 'rgba(255,255,255,0.6)', fontSize: '0.75rem', marginBottom: '0.35rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Fase</span>
               <select
                 value={phase} onChange={(e) => setPhase(e.target.value)}
+                aria-label="Filtrar por fase del torneo"
                 style={{ width: '100%', padding: '0.6rem 0.75rem', borderRadius: '0.35rem', background: 'var(--bg)', color: 'white', border: '1px solid var(--border)', fontSize: '0.95rem' }}
               >
                 {PHASES.map((p) => <option key={p.value} value={p.value}>{p.label}</option>)}
@@ -172,6 +174,7 @@ export default function CalendarioCompletoClient({ matches }) {
               <span style={{ display: 'block', color: 'rgba(255,255,255,0.6)', fontSize: '0.75rem', marginBottom: '0.35rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Sede</span>
               <select
                 value={city} onChange={(e) => setCity(e.target.value)}
+                aria-label="Filtrar por sede o ciudad"
                 style={{ width: '100%', padding: '0.6rem 0.75rem', borderRadius: '0.35rem', background: 'var(--bg)', color: 'white', border: '1px solid var(--border)', fontSize: '0.95rem' }}
               >
                 {cities.map((c) => <option key={c} value={c}>{c === 'all' ? 'Todas las sedes' : c}</option>)}
@@ -180,7 +183,9 @@ export default function CalendarioCompletoClient({ matches }) {
             <label style={{ display: 'block' }}>
               <span style={{ display: 'block', color: 'rgba(255,255,255,0.6)', fontSize: '0.75rem', marginBottom: '0.35rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Buscar equipo</span>
               <input
+                type="search"
                 value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Mexico, Brazil, Spain..."
+                aria-label="Buscar partidos por nombre de equipo, estadio o ciudad"
                 style={{ width: '100%', padding: '0.6rem 0.75rem', borderRadius: '0.35rem', background: 'var(--bg)', color: 'white', border: '1px solid var(--border)', fontSize: '0.95rem' }}
               />
             </label>
@@ -195,7 +200,8 @@ export default function CalendarioCompletoClient({ matches }) {
             Sin partidos para esos filtros.
           </p>
         ) : (
-          grouped.map(([date, dayMatches]) => {
+          <>
+          {grouped.map(([date, dayMatches]) => {
             const [y, m, d] = date.split('-').map(Number);
             const dt = new Date(y, m - 1, d);
             const dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -210,7 +216,9 @@ export default function CalendarioCompletoClient({ matches }) {
                 </div>
               </div>
             );
-          })
+          })}
+          <MundialAffiliateCards variant="mundial" />
+          </>
         )}
       </main>
     </>

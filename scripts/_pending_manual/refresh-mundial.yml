@@ -1,0 +1,75 @@
+name: Refresh Mundial 2026 fixtures
+
+# Pulls latest data from football-data.org daily and commits if changed.
+# Triggers a Vercel auto-deploy via push.
+
+on:
+  schedule:
+    # Daily at 06:00 UTC = 00:00 CDMX (UTC-6).
+    # During the tournament (Jun 11 - Jul 19 2026) consider switching to every 6h.
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch fixtures from football-data.org
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: |
+          if [ -z "$FOOTBALL_DATA_API_KEY" ]; then
+            echo "::error::FOOTBALL_DATA_API_KEY secret not configured. Add it at:"
+            echo "  https://github.com/marimbashome/metroguia/settings/secrets/actions"
+            exit 1
+          fi
+          curl -sf "https://api.football-data.org/v4/competitions/WC/matches?season=2026" \
+            -H "X-Auth-Token: $FOOTBALL_DATA_API_KEY" \
+            -o /tmp/wc2026-matches.json
+          echo "Fetched $(python3 -c 'import json; print(json.load(open("/tmp/wc2026-matches.json"))["resultSet"]["count"])') matches"
+
+      - name: Regenerate fixtures.json + ICS feeds
+        run: python3 scripts/build_mundial_fixtures.py
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- data/mundial-fixtures.json public/calendar/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes — skipping commit."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat data/mundial-fixtures.json public/calendar/ | tail -20
+          fi
+
+      - name: Commit + push if changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "metroguia-bot"
+          git config user.email "metroguia-bot@users.noreply.github.com"
+          git add data/mundial-fixtures.json public/calendar/
+          git commit -m "data(mundial): daily refresh from football-data.org [skip ci]"
+          git push origin main
+
+      - name: Summary
+        run: |
+          echo "## Mundial 2026 daily refresh" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+            echo "✅ Committed updated fixtures + ICS feeds." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "ℹ️  No changes detected." >> "$GITHUB_STEP_SUMMARY"
+          fi
