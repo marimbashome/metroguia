@@ -2,7 +2,9 @@ export const estacionesDC = [
   {
     "slug": "metro-shady-grove",
     "nombre": "Shady Grove",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Northern terminus in Montgomery County with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -42,7 +44,9 @@ export const estacionesDC = [
   {
     "slug": "metro-rockville",
     "nombre": "Rockville",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Downtown Rockville commercial center with shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -82,7 +86,9 @@ export const estacionesDC = [
   {
     "slug": "metro-twinbrook",
     "nombre": "Twinbrook",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Residential community in Montgomery County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -122,7 +128,9 @@ export const estacionesDC = [
   {
     "slug": "metro-north-bethesda",
     "nombre": "North Bethesda",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Mixed commercial and residential area in Bethesda",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -138,16 +146,15 @@ export const estacionesDC = [
     "seo_title": "Estación North Bethesda WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "North Bethesda station on WMATA Metro Red Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación North Bethesda | Washington DC WMATA Metro",
-    "intro": "North Bethesda is a WMATA Metro station in Washington DC. Mixed commercial and residential area in Bethesda",
+    "intro": "A sleek, underground hub steps from Bethesda Row’s boutiques, cafés, and art, perfect for a stylish DC‑Metro adventure.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to skip the ticket kiosk line.",
+      "Take the escalator to the surface and follow signs for Bethesda Row; the exits open directly onto the pedestrian plaza.",
+      "Use the station’s free Wi‑Fi to download the WMATA app for real‑time train updates and nearby bike‑share locations."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "North Bethesda station serves the comercial district of Washington DC. Mixed commercial and residential area in Bethesda Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Exit North Bethesda station and you’ll find yourself on the vibrant Bethesda Row promenade, where upscale shops like Anthropologie and local favorites such as Bethesda Bagel & Brew await. Just a short stroll north is the historic Bethesda Theatre, showcasing indie films and live performances, while the nearby Capital Crescent Trail offers a scenic bike or jog along the Potomac. Don’t miss the Bethesda Arts & Entertainment District’s murals and pop‑up galleries, and be sure to sample the renowned crab cakes at the waterfront‑inspired restaurant, The Capital Grille, all within a five‑minute walk.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -162,7 +169,9 @@ export const estacionesDC = [
   {
     "slug": "metro-grosvenor-strathmore",
     "nombre": "Grosvenor-Strathmore",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Upscale residential area with parks and green space",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -202,7 +211,9 @@ export const estacionesDC = [
   {
     "slug": "metro-medical-center",
     "nombre": "Medical Center",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Gateway to NIH research campus and medical facilities",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -242,7 +253,9 @@ export const estacionesDC = [
   {
     "slug": "metro-bethesda",
     "nombre": "Bethesda",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Major upscale shopping district with restaurants and galleries",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -287,7 +300,9 @@ export const estacionesDC = [
   {
     "slug": "metro-friendship-heights",
     "nombre": "Friendship Heights",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Luxury shopping destination on Wisconsin Avenue",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -332,7 +347,9 @@ export const estacionesDC = [
   {
     "slug": "metro-tenleytown-au",
     "nombre": "Tenleytown-AU",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Gateway to American University campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -353,16 +370,15 @@ export const estacionesDC = [
     "seo_title": "Estación Tenleytown-AU WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Tenleytown-AU station on WMATA Metro Red Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Tenleytown-AU | Washington DC WMATA Metro",
-    "intro": "Tenleytown-AU is a WMATA Metro station in Washington DC. Gateway to American University campus",
+    "intro": "A leafy gateway where historic Tenley Circle meets the vibrant campus vibe of American University.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "University campus area with student-friendly amenities"
+      "Buy a SmarTrip card online before arrival to skip the ticket kiosk line.",
+      "Take the elevator to the platform – it’s the only accessible entrance at this station.",
+      "Use the bike‑share stations at Tenley Circle for a quick ride to Rock Creek Park’s trailheads."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Tenleytown-AU station serves the universitario district of Washington DC. Gateway to American University campus Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step off the Red Line at Tenleytown‑AU and wander to the iconic Tenley Circle, a bustling roundabout framed by charming cafés and boutique shops. Just a short walk north, the picturesque American University campus invites you to explore its modern art installations, the historic Kerwin Hall, and the tranquil Muirfield Farm Park, perfect for a picnic or a relaxed stroll along the Rock Creek Trail. Don’t miss the nearby Tenley-Friendship Library for local history or the lively Tenley Market on weekends, where artisanal vendors showcase D.C.’s creative spirit.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -377,7 +393,9 @@ export const estacionesDC = [
   {
     "slug": "metro-van-ness-udc",
     "nombre": "Van Ness-UDC",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "University area with UDC campus access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -417,7 +435,9 @@ export const estacionesDC = [
   {
     "slug": "metro-cleveland-park",
     "nombre": "Cleveland Park",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Historic upscale neighborhood with Victorian architecture",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -462,7 +482,9 @@ export const estacionesDC = [
   {
     "slug": "metro-woodley-park-zoo-adams-morgan",
     "nombre": "Woodley Park-Zoo/Adams Morgan",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Gateway to National Zoo and Adams Morgan nightlife district",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -507,7 +529,9 @@ export const estacionesDC = [
   {
     "slug": "metro-dupont-circle",
     "nombre": "Dupont Circle",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Iconic circle with art museums, galleries, restaurants and nightlife",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -552,7 +576,9 @@ export const estacionesDC = [
   {
     "slug": "metro-farragut-north",
     "nombre": "Farragut North",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Downtown business district near White House",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -597,7 +623,9 @@ export const estacionesDC = [
   {
     "slug": "metro-metro-center",
     "nombre": "Metro Center",
-    "linea": ["red,blue,orange,silver"],
+    "linea": [
+      "red,blue,orange,silver"
+    ],
     "descripcion": "Major downtown hub connecting 4 Metro lines, center of DC transit",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -647,7 +675,9 @@ export const estacionesDC = [
   {
     "slug": "metro-gallery-pl-chinatown",
     "nombre": "Gallery Pl-Chinatown",
-    "linea": ["red,yellow,green"],
+    "linea": [
+      "red,yellow,green"
+    ],
     "descripcion": "Cultural hub with sports, shopping and Chinatown dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -696,7 +726,9 @@ export const estacionesDC = [
   {
     "slug": "metro-judiciary-square",
     "nombre": "Judiciary Square",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Government and judicial center with museums",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -741,7 +773,9 @@ export const estacionesDC = [
   {
     "slug": "metro-union-station",
     "nombre": "Union Station",
-    "linea": ["red,blue"],
+    "linea": [
+      "red,blue"
+    ],
     "descripcion": "Iconic Beaux-Arts 1908 landmark serving Amtrak, intercity buses, shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -794,7 +828,9 @@ export const estacionesDC = [
   {
     "slug": "metro-noma-gallaudet-u",
     "nombre": "NoMa-Gallaudet U",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Emerging neighborhood development near Gallaudet University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -839,7 +875,9 @@ export const estacionesDC = [
   {
     "slug": "metro-rhode-island-ave-brentwood",
     "nombre": "Rhode Island Ave-Brentwood",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Residential Brentwood neighborhood with local shops",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -879,7 +917,9 @@ export const estacionesDC = [
   {
     "slug": "metro-brookland-cua",
     "nombre": "Brookland-CUA",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Gateway to Catholic University campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -895,16 +935,16 @@ export const estacionesDC = [
     "seo_title": "Estación Brookland-CUA WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Brookland-CUA station on WMATA Metro Red Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Brookland-CUA | Washington DC WMATA Metro",
-    "intro": "Brookland-CUA is a WMATA Metro station in Washington DC. Gateway to Catholic University campus",
+    "intro": "A serene, leafy gateway to Catholic University, where historic campus charm meets easy Metro access in Northeast D.C.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "University campus area with student-friendly amenities"
+      "Buy a SmarTrip card online before arriving to skip ticket‑machine lines and enjoy discounted fares",
+      "Enter on the south side of the station for the shorter walk to the university’s main quad and the Healy Hall entrance",
+      "Check the WMATA service alerts app for any weekend track work that might affect the Red Line",
+      ""
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Brookland-CUA station serves the universitario district of Washington DC. Gateway to Catholic University campus Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out of Brookland‑CUA station onto the quiet, tree‑lined streets of the Brookland neighborhood and you’ll immediately feel the collegiate atmosphere of Catholic University of America. Wander the elegant Neo‑Gothic campus, explore the historic Healy Hall, and visit the vibrant Cardinal’s Garden for a quiet stroll. Just a few blocks away, the historic Brookland Arts Center and the lively Monroe Street Market offer galleries, indie coffee shops, and farm‑to‑table bites. Don’t miss the nearby Basilica of the National Shrine of the Immaculate Conception, one of the largest Catholic churches in the U.S., with its breathtaking mosaics and dome views.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -919,7 +959,9 @@ export const estacionesDC = [
   {
     "slug": "metro-fort-totten",
     "nombre": "Fort Totten",
-    "linea": ["red,yellow,green"],
+    "linea": [
+      "red,yellow,green"
+    ],
     "descripcion": "3-line transfer hub with access to historic fort and parks",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -963,7 +1005,9 @@ export const estacionesDC = [
   {
     "slug": "metro-takoma",
     "nombre": "Takoma",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Residential neighborhood with local shops and restaurants",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1003,7 +1047,9 @@ export const estacionesDC = [
   {
     "slug": "metro-silver-spring",
     "nombre": "Silver Spring",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Major Montgomery County commercial center with shops and entertainment",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1048,7 +1094,9 @@ export const estacionesDC = [
   {
     "slug": "metro-forest-glen",
     "nombre": "Forest Glen",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Wooded residential area with suburban feel",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1064,16 +1112,15 @@ export const estacionesDC = [
     "seo_title": "Estación Forest Glen WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Forest Glen station on WMATA Metro Red Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Forest Glen | Washington DC WMATA Metro",
-    "intro": "Forest Glen is a WMATA Metro station in Washington DC. Wooded residential area with suburban feel",
+    "intro": "A tranquil underground portal beneath Forest Glen, where commuter rails meet leafy suburb charm and easy access to Rock Creek Park.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Residential neighborhood with local character"
+      "Buy a SmarTrip card online before arrival to skip ticket‑machine lines and enjoy discounted fare",
+      "Take the escalator up to the mezzanine level for a quick view of the station’s unique blue‑gray tile mosaic, a favorite photo spot",
+      "Leave a few minutes extra for the slight incline on the east exit; the path to Brookside Gardens is wheelchair‑accessible but a bit steep"
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 7 AM to enjoy a peaceful ride and avoid peak commuter crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Forest Glen station serves the residencial district of Washington DC. Wooded residential area with suburban feel Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out of the sleek, vaulted station and find yourself minutes from the historic Brookside Gardens, a 50‑acre horticultural oasis perfect for strolling among roses, bonsai, and seasonal art installations. A short walk leads to the historic Glen Echo Park, where you can ride the vintage carousel or explore the arts‑focused community center housed in a former 1930s amusement venue. Outdoor enthusiasts will love the nearby Rock Creek Trail, offering shaded bike paths and scenic walking loops that showcase the Potomac River’s tributary landscapes.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1088,7 +1135,9 @@ export const estacionesDC = [
   {
     "slug": "metro-wheaton",
     "nombre": "Wheaton",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Commercial shopping area in Montgomery County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1128,7 +1177,9 @@ export const estacionesDC = [
   {
     "slug": "metro-glenmont",
     "nombre": "Glenmont",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Southern Red Line terminus with park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1168,7 +1219,9 @@ export const estacionesDC = [
   {
     "slug": "metro-vienna-fairfax-gmu",
     "nombre": "Vienna/Fairfax-GMU",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Western terminus near George Mason University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1213,7 +1266,9 @@ export const estacionesDC = [
   {
     "slug": "metro-dunn-loring-merrifield",
     "nombre": "Dunn Loring-Merrifield",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Commercial hub in Fairfax County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1253,7 +1308,9 @@ export const estacionesDC = [
   {
     "slug": "metro-west-falls-church",
     "nombre": "West Falls Church",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Residential area in Falls Church",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1269,16 +1326,15 @@ export const estacionesDC = [
     "seo_title": "Estación West Falls Church WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "West Falls Church station on WMATA Metro Orange Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación West Falls Church | Washington DC WMATA Metro",
-    "intro": "West Falls Church is a WMATA Metro station in Washington DC. Residential area in Falls Church",
+    "intro": "A bustling gateway where modern transit meets historic Falls Church charm, perfect for a quick cultural dip.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to skip the ticket kiosk line and enjoy discounted fare.",
+      "Check the WMATA app for real‑time train arrivals; the Orange Line runs every 6‑8 minutes during peak hours.",
+      "Leave a few minutes extra for the short but busy pedestrian crossing at West Broad Street, especially during lunch rushes."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:30 am–9:30 am) to enjoy a quieter station and easy access to downtown attractions",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "West Falls Church station serves the comercial district of Washington DC. Residential area in Falls Church Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out of West Falls Church station onto West Broad Street and find yourself within walking distance of the historic downtown square, where 19th‑century brick storefronts house cozy cafés, art galleries, and the iconic Falls Church City Hall. A short stroll leads to Cherry Hill Farmhouse, a living history museum showcasing colonial life, while the nearby Cherry Hill Park offers scenic trails and a chance to spot local wildlife. Don't miss the vibrant murals along Maple Avenue, reflecting the community’s artistic spirit, and the weekly farmers market at the City Hall plaza for fresh produce and handmade crafts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1293,7 +1349,9 @@ export const estacionesDC = [
   {
     "slug": "metro-east-falls-church",
     "nombre": "East Falls Church",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Residential community near Falls Church",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1333,7 +1391,9 @@ export const estacionesDC = [
   {
     "slug": "metro-ballston-mu",
     "nombre": "Ballston-MU",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Major mixed-use development hub in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1378,7 +1438,9 @@ export const estacionesDC = [
   {
     "slug": "metro-virginia-square-gmu",
     "nombre": "Virginia Square-GMU",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Gateway to George Mason University Arlington campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1423,7 +1485,9 @@ export const estacionesDC = [
   {
     "slug": "metro-clarendon",
     "nombre": "Clarendon",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Vibrant dining and shopping district in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1468,7 +1532,9 @@ export const estacionesDC = [
   {
     "slug": "metro-court-house",
     "nombre": "Court House",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Government center and commercial hub in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1513,7 +1579,9 @@ export const estacionesDC = [
   {
     "slug": "metro-rosslyn",
     "nombre": "Rosslyn",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "High-rise commercial center with river views and Key Bridge crossing",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1558,7 +1626,9 @@ export const estacionesDC = [
   {
     "slug": "metro-foggy-bottom-gwu",
     "nombre": "Foggy Bottom-GWU",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Gateway to George Washington University and State Department",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1603,7 +1673,9 @@ export const estacionesDC = [
   {
     "slug": "metro-farragut-west",
     "nombre": "Farragut West",
-    "linea": ["orange,blue,silver"],
+    "linea": [
+      "orange,blue,silver"
+    ],
     "descripcion": "Downtown area near State Department with multiple line connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1657,7 +1729,9 @@ export const estacionesDC = [
   {
     "slug": "metro-mcpherson-square",
     "nombre": "McPherson Square",
-    "linea": ["orange,blue,silver"],
+    "linea": [
+      "orange,blue,silver"
+    ],
     "descripcion": "Downtown business district with park access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1711,7 +1785,9 @@ export const estacionesDC = [
   {
     "slug": "metro-federal-triangle",
     "nombre": "Federal Triangle",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Federal government office complex near National Mall",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1756,7 +1832,9 @@ export const estacionesDC = [
   {
     "slug": "metro-smithsonian",
     "nombre": "Smithsonian",
-    "linea": ["orange,blue,silver"],
+    "linea": [
+      "orange,blue,silver"
+    ],
     "descripcion": "Direct access to world-class Smithsonian museums and National Mall",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1810,7 +1888,9 @@ export const estacionesDC = [
   {
     "slug": "metro-l-enfant-plaza",
     "nombre": "L'Enfant Plaza",
-    "linea": ["orange,blue,silver,yellow,green"],
+    "linea": [
+      "orange,blue,silver,yellow,green"
+    ],
     "descripcion": "Major 5-line hub connecting to National Mall museums and waterfront areas",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1871,7 +1951,9 @@ export const estacionesDC = [
   {
     "slug": "metro-federal-center-sw",
     "nombre": "Federal Center SW",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Government offices and public space near Capitol",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1916,7 +1998,9 @@ export const estacionesDC = [
   {
     "slug": "metro-capitol-south",
     "nombre": "Capitol South",
-    "linea": ["orange,blue,silver"],
+    "linea": [
+      "orange,blue,silver"
+    ],
     "descripcion": "Direct access to Capitol building and Congress with multiple connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -1970,7 +2054,9 @@ export const estacionesDC = [
   {
     "slug": "metro-eastern-market",
     "nombre": "Eastern Market",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Historic market and weekend farmer venue in Capitol Hill",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2015,7 +2101,9 @@ export const estacionesDC = [
   {
     "slug": "metro-potomac-ave",
     "nombre": "Potomac Ave",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Residential area in Southeast DC near historic neighborhoods",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2055,7 +2143,9 @@ export const estacionesDC = [
   {
     "slug": "metro-stadium-armory",
     "nombre": "Stadium-Armory",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Sports and entertainment venue with Armory history",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2100,7 +2190,9 @@ export const estacionesDC = [
   {
     "slug": "metro-minnesota-ave",
     "nombre": "Minnesota Ave",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Residential area in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2116,16 +2208,16 @@ export const estacionesDC = [
     "seo_title": "Estación Minnesota Ave WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Minnesota Ave station on WMATA Metro Orange Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Minnesota Ave | Washington DC WMATA Metro",
-    "intro": "Minnesota Ave is a WMATA Metro station in Washington DC. Residential area in Northeast DC",
+    "intro": "A bustling gateway on the Orange Line, Minnesota Ave station pulses with local flavor and easy access to historic East DC.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online and load it before you travel to skip the ticket kiosk line.",
+      "Use the station’s bike racks for a free, secure spot before exploring the Anacostia Riverwalk Trail.",
+      "Check the WMATA service alerts app for occasional weekend closures affecting the Orange Line.",
+      ""
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 8 AM or evenings after 7 PM to avoid peak commuter crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Minnesota Ave station serves the comercial district of Washington DC. Residential area in Northeast DC Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto Minnesota Avenue and discover a vibrant corridor of Afro‑Caribbean bakeries, soul‑food joints like O’s Deli, and the historic Fort Lincoln Museum just a short bus ride away. Art lovers can wander to the nearby Anacostia Community Museum for exhibits on African‑American culture, while cyclists enjoy the nearby Anacostia Riverwalk Trail. The station also connects to the DC Streetcar, perfect for a scenic ride to Union Market’s gourmet stalls and the lively H Street nightlife.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2140,7 +2232,9 @@ export const estacionesDC = [
   {
     "slug": "metro-deanwood",
     "nombre": "Deanwood",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Residential community in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2180,7 +2274,9 @@ export const estacionesDC = [
   {
     "slug": "metro-cheverly",
     "nombre": "Cheverly",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Suburban residential area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2196,16 +2292,15 @@ export const estacionesDC = [
     "seo_title": "Estación Cheverly WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Cheverly station on WMATA Metro Orange Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Cheverly | Washington DC WMATA Metro",
-    "intro": "Cheverly is a WMATA Metro station in Washington DC. Suburban residential area in Maryland",
+    "intro": "Cheverly Metro blends historic charm with modern convenience, offering a friendly gateway to Prince George’s County’s vibrant downtown.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to skip the ticket booth line and enjoy discounted fares.",
+      "Check the WMATA service alerts app for real‑time train updates, especially on weekends when maintenance can cause delays.",
+      "Leave a few minutes early to explore the free parking lot on 63rd Avenue; it’s well‑lit and within a five‑minute walk to the station."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7‑9 am) to avoid rush‑hour crowds and enjoy a quieter station experience",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Cheverly station serves the comercial district of Washington DC. Suburban residential area in Maryland Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step off the orange line and stroll to the historic Cheverly Town Center, where the 1920s‑era Cheverly Community Center sits beside cozy cafés like Sweet Treats Bakery. A short walk brings you to the scenic Tuckahoe Creek Trail, perfect for a riverside walk or bike ride. Don’t miss the annual Cheverly Arts & Music Festival in the town square, showcasing local musicians, artisans, and food trucks serving everything from soul‑food BBQ to Caribbean delicacies. The nearby Prince George’s County Historical Society Museum offers interactive exhibits on the area’s railroad heritage and civil‑rights legacy.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2220,7 +2315,9 @@ export const estacionesDC = [
   {
     "slug": "metro-landover",
     "nombre": "Landover",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Commercial hub in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2260,7 +2357,9 @@ export const estacionesDC = [
   {
     "slug": "metro-new-carrollton",
     "nombre": "New Carrollton",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Eastern terminus in Maryland with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2300,7 +2399,9 @@ export const estacionesDC = [
   {
     "slug": "metro-franconia-springfield",
     "nombre": "Franconia-Springfield",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Southern terminus in Springfield with large park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2345,7 +2446,9 @@ export const estacionesDC = [
   {
     "slug": "metro-van-dorn-street",
     "nombre": "Van Dorn Street",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area in southern Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2366,16 +2469,15 @@ export const estacionesDC = [
     "seo_title": "Estación Van Dorn Street WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Van Dorn Street station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Van Dorn Street | Washington DC WMATA Metro",
-    "intro": "Van Dorn Street is a WMATA Metro station in Washington DC. Residential area in southern Alexandria",
+    "intro": "A quiet suburban gateway, Van Dorn Street blends historic Del Ray charm with easy access to Washington’s Metro network.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to skip the ticket kiosk line.",
+      "Check the Metro’s weekend service schedule; occasional maintenance can affect the Blue Line frequency.",
+      "Carry a reusable water bottle; the station has a water refill station near the bus bays."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid peak crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Van Dorn Street station serves the comercial district of Washington DC. Residential area in southern Alexandria Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step off the train and wander the tree‑lined streets of Del Ray, where you’ll find eclectic boutiques, cozy cafés like the beloved Baker’s Dozen, and the historic Old Town Hall. Just a short walk north, the Van Dorn Shopping Center offers a mix of local vendors, a farmers’ market on Saturdays, and the popular Trappist Brewing Company for craft beer lovers. For art enthusiasts, the nearby George Mason University Art Gallery hosts rotating exhibits, while the scenic Accotink Creek Trail provides a peaceful escape for walking or biking.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2390,7 +2492,9 @@ export const estacionesDC = [
   {
     "slug": "metro-king-street-old-town",
     "nombre": "King Street-Old Town",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Historic Old Town Alexandria with waterfront, shops and fine dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2440,7 +2544,9 @@ export const estacionesDC = [
   {
     "slug": "metro-braddock-road",
     "nombre": "Braddock Road",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area near Old Town Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2461,16 +2567,15 @@ export const estacionesDC = [
     "seo_title": "Estación Braddock Road WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Braddock Road station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Braddock Road | Washington DC WMATA Metro",
-    "intro": "Braddock Road is a WMATA Metro station in Washington DC. Residential area near Old Town Alexandria",
+    "intro": "A vibrant gateway to Old Town Alexandria’s waterfront charm, just steps from eclectic eateries and historic Braddock vibes.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Residential neighborhood with local character"
+      "Buy a SmarTrip card online to skip the ticket vending line and load fare before you arrive.",
+      "Use the station’s bike‑share racks (Capital Bikeshare) to explore Del Ray’s cobblestone lanes at your own pace.",
+      "Check the WMATA service alerts app for any weekend maintenance that might affect the Blue/Yellow lines."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 8 AM to enjoy a quieter station and pleasant sunrise over the river",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Braddock Road station serves the residencial district of Washington DC. Residential area near Old Town Alexandria Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Exit Braddock Road station and wander to Del Ray’s bustling 14th Street corridor, where you’ll find beloved spots like The Majestic for classic American fare and The Brick for craft beers and live music. A short stroll brings you to the Braddock neighborhood’s tree‑lined streets, perfect for boutique shopping and the historic Alexandria Library. Don’t miss the nearby waterfront park along the Potomac River, ideal for a scenic walk or paddle‑boarding adventure, and the iconic George Washington Masonic National Memorial for panoramic views of the city.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2485,7 +2590,9 @@ export const estacionesDC = [
   {
     "slug": "metro-ronald-reagan-national-airport",
     "nombre": "Ronald Reagan National Airport",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Direct airport access with terminals for regional travelers",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2530,7 +2637,9 @@ export const estacionesDC = [
   {
     "slug": "metro-crystal-city",
     "nombre": "Crystal City",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Major office and retail hub near National Airport",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2580,7 +2689,9 @@ export const estacionesDC = [
   {
     "slug": "metro-pentagon-city",
     "nombre": "Pentagon City",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Major shopping mall and commercial center in Arlington",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2630,7 +2741,9 @@ export const estacionesDC = [
   {
     "slug": "metro-pentagon",
     "nombre": "Pentagon",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Transfer hub serving Pentagon offices and government complex",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2675,7 +2788,9 @@ export const estacionesDC = [
   {
     "slug": "metro-arlington-cemetery",
     "nombre": "Arlington Cemetery",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Gateway to Arlington National Cemetery and Memorial Bridge",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2725,7 +2840,9 @@ export const estacionesDC = [
   {
     "slug": "metro-benning-road",
     "nombre": "Benning Road",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area in Northeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2746,16 +2863,16 @@ export const estacionesDC = [
     "seo_title": "Estación Benning Road WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Benning Road station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Benning Road | Washington DC WMATA Metro",
-    "intro": "Benning Road is a WMATA Metro station in Washington DC. Residential area in Northeast DC",
+    "intro": "Bustling Benning Road station pulses with local flavor, offering quick access to historic neighborhoods and vibrant street markets.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before arrival to skip ticket‑machine lines and get a $2 fare credit.",
+      "Check the WMATA service alerts app for occasional track work on the Blue Line that can affect Benning Road’s southbound service.",
+      "Carry cash for some small, family‑owned shops that don’t accept cards, especially the popular Benning Bakery.",
+      "Use the station’s bike‑share docks for a seamless ride to the Anacostia Riverwalk Trail."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 8 PM to avoid peak commuter crowds.",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Benning Road station serves the comercial district of Washington DC. Residential area in Northeast DC Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto Benning Avenue to explore the eclectic mix of family‑run diners, vintage clothing shops, and the iconic Benning Library, a community hub housed in a 1920s brick building. Just a short walk north, the historic Benning Race Track remnants give a glimpse into early 20th‑century leisure, while the nearby Anacostia Riverwalk Trail invites cyclists and walkers to enjoy waterfront views and public art installations. Don’t miss the weekend farmers’ market at the Benning Community Center, where fresh produce, handmade crafts, and live Afro‑beat performances showcase the area’s cultural vibrancy.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2770,7 +2887,9 @@ export const estacionesDC = [
   {
     "slug": "metro-capitol-heights",
     "nombre": "Capitol Heights",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area in Maryland with local shopping",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2791,16 +2910,16 @@ export const estacionesDC = [
     "seo_title": "Estación Capitol Heights WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Capitol Heights station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Capitol Heights | Washington DC WMATA Metro",
-    "intro": "Capitol Heights is a WMATA Metro station in Washington DC. Residential area in Maryland with local shopping",
+    "intro": "A vibrant gateway where Metro’s orange line meets historic Maryland charm and bustling local markets.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to enjoy lower fares and quicker entry.",
+      "Check the Metro’s real‑time service alerts on the WMATA app; weekend maintenance often affects the Orange Line.",
+      "Carry cash or a small bill for the Saturday farmers’ market stalls, which don’t accept cards.",
+      ""
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:30 – 9:30 am) to avoid rush‑hour crowds and enjoy a quieter station experience",
     "mundial_relevancia": "Major tourist attraction access in Washington DC",
-    "descripcion_turistica": "Capitol Heights station serves the comercial district of Washington DC. Residential area in Maryland with local shopping Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out of Capitol Heights station onto Southern Avenue and discover the Capitol Heights Shopping Center, a hub of family-owned eateries, vintage boutiques, and a lively farmers’ market on Saturdays. A short walk north leads to the historic Bladensburg Waterfront Park, where you can paddle the Anacostia River or explore the 19th‑century Bladensburg War Museum. Nearby, the leafy streets of Capitol Heights and the adjoining Brentwood neighborhood showcase classic row homes, community murals, and the popular Colesville Road Café, perfect for a coffee break before catching the train back to D.C.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2815,7 +2934,9 @@ export const estacionesDC = [
   {
     "slug": "metro-addison-road",
     "nombre": "Addison Road",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential community in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2855,7 +2976,9 @@ export const estacionesDC = [
   {
     "slug": "metro-morgan-boulevard",
     "nombre": "Morgan Boulevard",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Suburban residential area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2871,16 +2994,15 @@ export const estacionesDC = [
     "seo_title": "Estación Morgan Boulevard WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Morgan Boulevard station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Morgan Boulevard | Washington DC WMATA Metro",
-    "intro": "Morgan Boulevard is a WMATA Metro station in Washington DC. Suburban residential area in Maryland",
+    "intro": "A vibrant gateway to Prince George’s County, Morgan Boulevard station blends modern transit with bustling local commerce.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before arrival to skip the ticket vending line.",
+      "Use the station’s bike‑share docks for a scenic ride to the nearby Anacostia River Trail.",
+      "Check the WMATA app for real‑time elevator status; the station’s only elevator can experience occasional maintenance."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:00 – 9:00 AM) to avoid rush‑hour crowds and enjoy a quieter platform.",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Morgan Boulevard station serves the comercial district of Washington DC. Suburban residential area in Maryland Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto the lively Morgan Boulevard corridor, where the Metro station opens onto a cluster of shopping plazas, including the popular Prince George’s Plaza Mall and the new Mosaic District. Stroll to the nearby Prince George’s County Sports & Learning Complex for a glimpse of community athletics, then head to the historic Riverdale Park—just a short bus ride away—for charming 19th‑century architecture and a farmers market on Saturdays. Food lovers will relish the diverse eateries ranging from Korean BBQ to Caribbean street fare, all within walking distance of the station’s exits.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2895,7 +3017,9 @@ export const estacionesDC = [
   {
     "slug": "metro-largo-town-center",
     "nombre": "Largo Town Center",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Eastern terminus in Largo with park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2945,7 +3069,9 @@ export const estacionesDC = [
   {
     "slug": "metro-naylor-road",
     "nombre": "Naylor Road",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area in Southeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -2966,16 +3092,15 @@ export const estacionesDC = [
     "seo_title": "Estación Naylor Road WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Naylor Road station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Naylor Road | Washington DC WMATA Metro",
-    "intro": "Naylor Road is a WMATA Metro station in Washington DC. Residential area in Southeast DC",
+    "intro": "Step off at Naylor Road and discover the vibrant, tree‑lined streets of Southeast DC’s hidden residential gems.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Residential neighborhood with local character"
+      "Buy a SmarTrip card online and load it before arrival to skip ticket‑machine lines.",
+      "Use the station’s bike‑share dock (Capital Bikeshare) for a swift ride to Anacostia Park’s trailhead.",
+      "Check the WMATA service alerts app for any weekend track work that may affect Red Line service."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:00 am–9:00 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Naylor Road station serves the residencial district of Washington DC. Residential area in Southeast DC Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Just a short walk from the station, Naylor Heights greets visitors with quiet sidewalks, community gardens, and the historic St. Joseph’s Catholic Church. Head east on 16th St. SE to explore the bustling Southern Avenue Farmers Market, where local vendors offer fresh produce, artisanal foods, and live music on weekends. A few blocks north, the Anacostia Park Trail provides scenic river views, paddle‑boat rentals, and picnic spots, making it perfect for a relaxed afternoon away from the city rush.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2990,7 +3115,9 @@ export const estacionesDC = [
   {
     "slug": "metro-suitland",
     "nombre": "Suitland",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Gateway to Suitland area in Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3011,16 +3138,15 @@ export const estacionesDC = [
     "seo_title": "Estación Suitland WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Suitland station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Suitland | Washington DC WMATA Metro",
-    "intro": "Suitland is a WMATA Metro station in Washington DC. Gateway to Suitland area in Maryland",
+    "intro": "A quiet suburban gateway, Suitland Station blends commuter convenience with nearby historic charm and riverside recreation.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Residential neighborhood with local character"
+      "Buy a SmarTrip card online before arrival to skip ticket‑machine lines and enjoy the lowest fare.",
+      "Check the Metro’s “Weekend Service Change” alerts; Saturday mornings often have reduced train frequency on the Green Line.",
+      "Bring a reusable water bottle; the station’s new water‑fountain kiosks are free and near the north entrance."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:00‑9:00 am) to avoid the heavier evening rush and enjoy quieter platforms",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Suitland station serves the residencial district of Washington DC. Gateway to Suitland area in Maryland Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto the tranquil streets of Suitland, Maryland, just minutes from the Anacostia River waterfront where you can paddle‑board or stroll the scenic Anacostia Tributary Trail. History buffs will love the nearby Suitland Federal Center, home to the U.S. Census Bureau, and the historic Suitland Manor, a restored 19th‑century estate offering guided tours. For a taste of local flavor, visit the bustling Capitol View Terrace market on weekend afternoons, where vendors serve fresh Maryland crab cakes, seasonal produce, and live folk music. The station also provides easy access to the sprawling Suitland Parkway, perfect for a short drive to the National Archives at College Park.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3035,7 +3161,9 @@ export const estacionesDC = [
   {
     "slug": "metro-southern-avenue",
     "nombre": "Southern Avenue",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Residential area in Southern Maryland",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3051,16 +3179,15 @@ export const estacionesDC = [
     "seo_title": "Estación Southern Avenue WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Southern Avenue station on WMATA Metro Blue Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Southern Avenue | Washington DC WMATA Metro",
-    "intro": "Southern Avenue is a WMATA Metro station in Washington DC. Residential area in Southern Maryland",
+    "intro": "A quiet gateway to Southeast D.C., Southern Avenue station blends suburban charm with easy Metro access to historic sites.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before arrival to skip the ticket vending line.",
+      "Use the station’s bike rack and rent a Capital Bikeshare for the Riverwalk Trail adventure.",
+      "Check the WMATA service alerts for weekend maintenance that may affect Green Line trains."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:30 am–9:30 am) to avoid rush‑hour crowds and enjoy a calmer station experience",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Southern Avenue station serves the comercial district of Washington DC. Residential area in Southern Maryland Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto the bustling Southern Avenue shopping corridor, where local boutiques, a popular sushi bar, and the historic St. Elizabeth's Catholic Church sit side by side. A short walk brings you to the Anacostia Riverwalk Trail, perfect for a riverside stroll or bike ride, while the nearby Fort Dupont Park offers picnic areas and seasonal concerts. History buffs can catch the Metro to the National Museum of African American History & Culture, and food lovers will love the eclectic eateries in the nearby Hillcrest neighborhood, all just a few stops away on the Green Line.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3075,7 +3202,9 @@ export const estacionesDC = [
   {
     "slug": "metro-huntington",
     "nombre": "Huntington",
-    "linea": ["yellow"],
+    "linea": [
+      "yellow"
+    ],
     "descripcion": "Southern terminus in Alexandria with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3120,7 +3249,9 @@ export const estacionesDC = [
   {
     "slug": "metro-eisenhower-ave",
     "nombre": "Eisenhower Ave",
-    "linea": ["yellow"],
+    "linea": [
+      "yellow"
+    ],
     "descripcion": "Commercial area in Alexandria",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3165,7 +3296,9 @@ export const estacionesDC = [
   {
     "slug": "metro-archives-navy-memorial-penn-quarter",
     "nombre": "Archives-Navy Memorial-Penn Quarter",
-    "linea": ["yellow,orange,blue,silver"],
+    "linea": [
+      "yellow,orange,blue,silver"
+    ],
     "descripcion": "Access to National Archives and Navy Memorial with 4-line connections",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3220,7 +3353,9 @@ export const estacionesDC = [
   {
     "slug": "metro-branch-ave",
     "nombre": "Branch Ave",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Northern terminus in Prince George's County with park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3265,7 +3400,9 @@ export const estacionesDC = [
   {
     "slug": "metro-congress-heights",
     "nombre": "Congress Heights",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Residential area in Southeast DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3281,16 +3418,15 @@ export const estacionesDC = [
     "seo_title": "Estación Congress Heights WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Congress Heights station on WMATA Metro Green Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Congress Heights | Washington DC WMATA Metro",
-    "intro": "Congress Heights is a WMATA Metro station in Washington DC. Residential area in Southeast DC",
+    "intro": "A vibrant gateway to historic Riverfront neighborhoods, buzzing markets, and the scenic Anacostia River trail.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Residential neighborhood with local character"
+      "Buy a SmarTrip card online before arrival to skip the ticket kiosk line.",
+      "Check the WMATA service alerts for weekend track work that may affect Green Line trains.",
+      "Carry a reusable water bottle; there are free drinking fountains at the station and nearby parks."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mid‑morning (9 am–11 am) and early afternoon (1 pm–3 pm) to avoid rush‑hour crowds",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Congress Heights station serves the gubernamental district of Washington DC. Residential area in Southeast DC Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out at Congress Heights and stroll to the nearby St. Elizabeths Campus, a former psychiatric hospital turned cultural park with striking modern art installations. Just a short walk north, the Anacostia Riverwalk Trail offers river views, kayak rentals, and wildlife spotting. Don’t miss the bustling Congress Heights Shopping Center for local eateries—try the famous fried chicken at Half Smoke or a fresh bite at Sweet Home Café. The historic St. Mary's Catholic Church and the lively Anacostia Community Museum are also within easy walking distance, showcasing African‑American heritage and community stories.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3305,7 +3441,9 @@ export const estacionesDC = [
   {
     "slug": "metro-anacostia",
     "nombre": "Anacostia",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Historic Anacostia neighborhood with museums and river access",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3355,7 +3493,9 @@ export const estacionesDC = [
   {
     "slug": "metro-navy-yard-ballpark",
     "nombre": "Navy Yard-Ballpark",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Gateway to Nationals ballpark and Navy Yard neighborhood",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3400,7 +3540,9 @@ export const estacionesDC = [
   {
     "slug": "metro-waterfront",
     "nombre": "Waterfront",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Southeast waterfront development with shopping and dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3450,7 +3592,9 @@ export const estacionesDC = [
   {
     "slug": "metro-mt-vernon-sq-7th-st-convention-center",
     "nombre": "Mt Vernon Sq/7th St-Convention Center",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Convention center and cultural district in downtown",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3500,7 +3644,9 @@ export const estacionesDC = [
   {
     "slug": "metro-shaw-howard-u",
     "nombre": "Shaw-Howard U",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Historic Shaw neighborhood near Howard University",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3550,7 +3696,9 @@ export const estacionesDC = [
   {
     "slug": "metro-u-street-african-amer-civil-war-memorial-cardozo",
     "nombre": "U Street/African-Amer Civil War Memorial/Cardozo",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Historic U Street Corridor with cultural heritage and entertainment",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3600,7 +3748,9 @@ export const estacionesDC = [
   {
     "slug": "metro-columbia-heights",
     "nombre": "Columbia Heights",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Diverse neighborhood with shopping, dining and culture",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3650,7 +3800,9 @@ export const estacionesDC = [
   {
     "slug": "metro-georgia-ave-petworth",
     "nombre": "Georgia Ave-Petworth",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Commercial and residential area in North DC",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3671,16 +3823,15 @@ export const estacionesDC = [
     "seo_title": "Estación Georgia Ave-Petworth WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "Georgia Ave-Petworth station on WMATA Metro Green Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Georgia Ave-Petworth | Washington DC WMATA Metro",
-    "intro": "Georgia Ave-Petworth is a WMATA Metro station in Washington DC. Commercial and residential area in North DC",
+    "intro": "A vibrant, arts‑filled stop where metro rides blend seamlessly with Petworth’s eclectic shops and historic charm.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online before you travel to skip the ticket vending line at the station.",
+      "Check the WMATA service alerts for planned track work; the Green Line often has weekend closures affecting Georgia Ave‑Petworth.",
+      "Carry a reusable water bottle—there are refill stations at the station’s entrance and nearby cafés."
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings before 8 am or evenings after 6 pm to avoid rush‑hour crowds.",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "Georgia Ave-Petworth station serves the comercial district of Washington DC. Commercial and residential area in North DC Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step out onto Georgia Avenue and you’ll find the bustling Petworth Farmers Market (Saturdays 9 am‑1 pm) offering local produce, vintage vinyl at The Record Store, and coffee at the beloved Busboys and Poets. A short walk north leads to the historic St. John’s Episcopal Church and the colorful murals of the Petworth Arts District, while the nearby Rock Creek Park Trail provides a leafy escape for hikers and cyclists. Don’t miss the eclectic eateries on 14th Street, such as the Korean‑American fusion at B. J. Huang’s and the classic New York‑style pizza at Pizza Paradiso.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3695,7 +3846,9 @@ export const estacionesDC = [
   {
     "slug": "metro-west-hyattsville",
     "nombre": "West Hyattsville",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Residential area in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3711,16 +3864,15 @@ export const estacionesDC = [
     "seo_title": "Estación West Hyattsville WMATA Metro Washington DC — Guía turística | MetroGuia",
     "meta_description": "West Hyattsville station on WMATA Metro Green Line in Washington DC. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación West Hyattsville | Washington DC WMATA Metro",
-    "intro": "West Hyattsville is a WMATA Metro station in Washington DC. Residential area in Prince George's County",
+    "intro": "A vibrant gateway where historic Hyattsville charm meets modern transit, perfect for strolling art lovers and foodies alike.",
     "tips": [
-      "Fare: $2.25–$6.00 depending on distance and time. Use SmarTrip card.",
-      "Hours: approximately 05:00 to 00:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a SmarTrip card online to save time and get a fare discount",
+      "Check Metro’s live tracker for service alerts; weekend track work often affects Green Line trains",
+      "Carry a reusable water bottle—water stations are available at the station’s entrance"
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mid‑morning (9:30 am–11:30 am) when commuter traffic eases and the downtown cafés are lively",
     "mundial_relevancia": "General transit access for visitors",
-    "descripcion_turistica": "West Hyattsville station serves the comercial district of Washington DC. Residential area in Prince George's County Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Step off at West Hyattsville and wander the brick-lined streets of Hyattsville downtown, where the iconic Hyattsville Arts District showcases murals, galleries, and the historic Hyattsville Theatre. Just a short walk north, the bustling 7th Street Market offers farm‑fresh eats, craft breweries, and a lively weekend farmers market. Don’t miss the nearby Riverdale Park–College Park Greenway for a scenic bike ride along the Anacostia River, or pop into the historic Hyattsville Armory for rotating art exhibits and community events.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3735,7 +3887,9 @@ export const estacionesDC = [
   {
     "slug": "metro-prince-george-plaza",
     "nombre": "Prince George's Plaza",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Commercial center in Prince George's County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3780,7 +3934,9 @@ export const estacionesDC = [
   {
     "slug": "metro-college-park-u-of-md",
     "nombre": "College Park-U of MD",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Gateway to University of Maryland campus",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3825,7 +3981,9 @@ export const estacionesDC = [
   {
     "slug": "metro-greenbelt",
     "nombre": "Greenbelt",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Northern Green Line terminus with extensive park-and-ride facility",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3875,7 +4033,9 @@ export const estacionesDC = [
   {
     "slug": "metro-ashburn",
     "nombre": "Ashburn",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Western terminus in Loudoun County with large park-and-ride",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3920,7 +4080,9 @@ export const estacionesDC = [
   {
     "slug": "metro-loudoun-gateway",
     "nombre": "Loudoun Gateway",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Commercial hub in Loudoun County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -3960,7 +4122,9 @@ export const estacionesDC = [
   {
     "slug": "metro-dulles-airport",
     "nombre": "Dulles Airport",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "International airport access serving Washington region",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4005,7 +4169,9 @@ export const estacionesDC = [
   {
     "slug": "metro-innovation-center",
     "nombre": "Innovation Center",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Technology and business park near Dulles",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4050,7 +4216,9 @@ export const estacionesDC = [
   {
     "slug": "metro-herndon",
     "nombre": "Herndon",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Downtown Herndon commercial area",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4095,7 +4263,9 @@ export const estacionesDC = [
   {
     "slug": "metro-reston-town-center",
     "nombre": "Reston Town Center",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Mixed-use urban center with offices, shopping and dining",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4145,7 +4315,9 @@ export const estacionesDC = [
   {
     "slug": "metro-wiehle-reston-east",
     "nombre": "Wiehle-Reston East",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Eastern Reston area with mixed-use development",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4190,7 +4362,9 @@ export const estacionesDC = [
   {
     "slug": "metro-spring-hill",
     "nombre": "Spring Hill",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Residential and commercial area in Sterling",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4230,7 +4404,9 @@ export const estacionesDC = [
   {
     "slug": "metro-greensboro",
     "nombre": "Greensboro",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Residential and commercial area in Loudoun County",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4270,7 +4446,9 @@ export const estacionesDC = [
   {
     "slug": "metro-tysons",
     "nombre": "Tysons",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Major commercial hub with office towers and shopping",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",
@@ -4320,7 +4498,9 @@ export const estacionesDC = [
   {
     "slug": "metro-mclean",
     "nombre": "McLean",
-    "linea": ["silver"],
+    "linea": [
+      "silver"
+    ],
     "descripcion": "Upscale residential and commercial area in Northern Virginia",
     "sistema": "wmata-metro",
     "municipio": "Washington DC",

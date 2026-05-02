@@ -2,7 +2,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-howard",
     "nombre": "Howard",
-    "linea": ["red,yellow"],
+    "linea": [
+      "red,yellow"
+    ],
     "descripcion": "Terminal station on Red and Yellow lines at Rogers Park neighborhood. Transfer point with Yellow Line to Skokie.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -56,7 +58,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-jarvis",
     "nombre": "Jarvis",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in Rogers Park community area with residential neighborhood character.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -101,7 +105,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-morse",
     "nombre": "Morse",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station serving Rogers Park with neighborhood shopping and dining nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -146,7 +152,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-loyola",
     "nombre": "Loyola",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station near Loyola University campus in Rogers Park area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -196,7 +204,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-argyle",
     "nombre": "Argyle",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in Uptown neighborhood known for diverse community and dining scene.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -241,7 +251,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lawrence",
     "nombre": "Lawrence",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station serving Uptown and Edgewater areas with shopping district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -291,7 +303,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-fullerton",
     "nombre": "Fullerton",
-    "linea": ["red,brown,purple"],
+    "linea": [
+      "red,brown,purple"
+    ],
     "descripcion": "Major transfer station with Brown and Purple lines. Access to Fullerton neighborhood and Lincoln Park Zoo.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -345,7 +359,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-division",
     "nombre": "Clark/Division",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in near North Side with Old Town neighborhood access and entertainment district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -395,7 +411,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand",
     "nombre": "Grand",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station serving Near North Side with Navy Pier access nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -445,7 +463,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake",
     "nombre": "Lake",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in downtown Chicago serving Near North Side and Loop area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -490,7 +510,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe",
     "nombre": "Monroe",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Downtown station serving Loop area with access to cultural institutions and government buildings.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -540,7 +562,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-jackson",
     "nombre": "Jackson",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Loop station with access to historic Jackson building and financial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -590,7 +614,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harrison",
     "nombre": "Harrison",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Downtown Loop station serving financial and cultural district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -635,7 +661,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt",
     "nombre": "Roosevelt",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station serving Museum Campus with Museum of Science and Industry nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -685,7 +713,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-cermak",
     "nombre": "Cermak",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station in Bridgeport neighborhood with community commercial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -735,7 +765,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-35th-bronzeville",
     "nombre": "35th/Bronzeville-IIT",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station serving Illinois Institute of Technology campus and Bronzeville historic district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -785,7 +817,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-47th",
     "nombre": "47th",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in Bronzeville neighborhood with historic cultural significance.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -835,7 +869,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-51st",
     "nombre": "51st",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station in Bronzeville with nearby recreational areas.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -885,7 +921,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-garfield",
     "nombre": "Garfield",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station serving South Side community with Garfield Park nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -930,7 +968,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-63rd",
     "nombre": "63rd",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station serving 63rd Street shopping district on South Side.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -975,7 +1015,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-69th",
     "nombre": "69th",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station in Englewood neighborhood with residential character.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1020,7 +1062,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-79th",
     "nombre": "79th",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Red Line station serving Chatham neighborhood on South Side.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1065,7 +1109,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-87th",
     "nombre": "87th",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Station serving South Shore and Chatham communities.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1115,7 +1161,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-95th-dan-ryan",
     "nombre": "95th/Dan Ryan",
-    "linea": ["red"],
+    "linea": [
+      "red"
+    ],
     "descripcion": "Terminal southern station on Red Line with Park & Ride facility.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1163,7 +1211,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-ohare",
     "nombre": "O'Hare",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Terminal station at Chicago's major airport with continuous 24-hour service.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1217,7 +1267,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-rosemont",
     "nombre": "Rosemont",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Blue Line station near O'Hare with hotel and commercial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1262,7 +1314,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-park-place",
     "nombre": "Park Place",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Station in Park Place commercial development area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1307,7 +1361,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-river-oaks",
     "nombre": "River Oaks",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Blue Line station serving residential and commercial area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1347,7 +1403,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-lake",
     "nombre": "Clark/Lake",
-    "linea": ["blue,orange,pink"],
+    "linea": [
+      "blue,orange,pink"
+    ],
     "descripcion": "Major downtown transfer station connecting Blue, Orange, and Pink lines to Loop.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1401,7 +1459,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-division-blue",
     "nombre": "Clark/Division",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Blue Line station near North Side with Old Town and River North access.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1446,7 +1506,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-sedgwick",
     "nombre": "Sedgwick",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Station serving Old Town and River North areas on North Side.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1491,7 +1553,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-chicago",
     "nombre": "Chicago",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Blue Line station near downtown with River North neighborhood access.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1536,7 +1600,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand-blue",
     "nombre": "Grand",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Station on Near North Side with access to River North galleries and restaurants.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1581,7 +1647,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe-blue",
     "nombre": "Monroe",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Downtown station near Loop with cultural and retail attractions nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1631,7 +1699,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-jackson-blue",
     "nombre": "Jackson",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Loop station with access to financial district and cultural institutions.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1676,7 +1746,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harrison-blue",
     "nombre": "Harrison",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Downtown Loop station with access to financial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1692,16 +1764,15 @@ export const estacionesChicago = [
     "seo_title": "Estación Harrison CTA L Chicago — Guía turística | MetroGuia",
     "meta_description": "Harrison station on CTA L Blue Line in Chicago. Tourist guide with schedules, accessibility, and nearby attractions.",
     "h1": "Estación Harrison | Chicago CTA L",
-    "intro": "Harrison is a CTA L station in Chicago. Downtown Loop station with access to financial district.",
+    "intro": "Step into Harrison, where historic brick arches meet modern skyscrapers, offering a quick gateway to Chicago’s financial heartbeat.",
     "tips": [
-      "Fare: $2.50 per ride with Ventra card, $5 for a one-day pass",
-      "Hours: approximately 04:00 to 01:00",
-      "Station is ADA accessible",
-      "Shopping and dining options nearby"
+      "Buy a Ventra card online before you arrive to skip the ticket kiosk line",
+      "Use the station’s elevators for easy access to the platform, especially if you have luggage or a stroller",
+      "Check the CTA app for real‑time train arrivals; trains run every 5‑7 minutes during peak hours"
     ],
-    "mejor_horario": "Any time — check real-time schedules",
+    "mejor_horario": "Weekday mornings (7:00–9:00 AM) to enjoy lighter crowds and smooth connections",
     "mundial_relevancia": "Central transit point for Chicago visitors",
-    "descripcion_turistica": "Harrison station serves the comercial district of Chicago. Downtown Loop station with access to financial district. Visitors will find this station convenient for exploring the surrounding area.",
+    "descripcion_turistica": "Just a block from the station, the LaSalle Street Financial Center towers over the iconic Chicago Board of Trade, where you can admire the bronze lions and explore the historic trading floor tours. A short stroll leads you to the magnificent Chicago Cultural Center, famed for its stained‑glass dome and free art exhibitions. For a bite, the nearby River North eateries serve everything from deep‑dish pizza to upscale cocktails, while the Chicago Riverwalk provides scenic views and photo‑ops of the city’s skyline.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1716,7 +1787,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt-blue",
     "nombre": "Roosevelt",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Station near Museum Campus with science and natural history museums nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1766,7 +1839,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-library",
     "nombre": "Library",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Loop station near Chicago Public Library and downtown attractions.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1816,7 +1891,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-quincy",
     "nombre": "Quincy",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Downtown Loop station with high-rise office and retail district nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1861,7 +1938,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-wells",
     "nombre": "Wells",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Loop station on Wells Street with banking and government offices nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1901,7 +1980,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-loop-blue",
     "nombre": "Loop",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Downtown station serving the heart of the Loop business district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1946,7 +2027,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-washington",
     "nombre": "Washington",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Loop station near government offices and legal district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -1996,7 +2079,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-state-lake",
     "nombre": "State/Lake",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Downtown station on State Street shopping corridor with iconic retailers nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2041,7 +2126,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-54th-cermak",
     "nombre": "54th/Cermak",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Blue Line station in Midway area serving residential community.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2086,7 +2173,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-midway",
     "nombre": "Midway",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Terminal station at Chicago Midway International Airport with 24-hour service.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2135,7 +2224,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-forest-park",
     "nombre": "Forest Park",
-    "linea": ["blue"],
+    "linea": [
+      "blue"
+    ],
     "descripcion": "Terminal station on Blue Line with Park & Ride facility serving western suburbs.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2183,7 +2274,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-kimball",
     "nombre": "Kimball",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Terminal northern station on Brown Line in Kimball neighborhood.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2228,7 +2321,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-kedzie-lawrence",
     "nombre": "Kedzie/Lawrence",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station serving Lawrence Avenue commercial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2273,7 +2368,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-francisco",
     "nombre": "Francisco",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Station on Brown Line in North Shore neighborhood.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2313,7 +2410,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-rockwell",
     "nombre": "Rockwell",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station with nearby residential and commercial areas.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2358,7 +2457,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-western-brown-north",
     "nombre": "Western (Brown)",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station on Western Avenue in north Chicago.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2398,7 +2499,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-fullerton-brown",
     "nombre": "Fullerton",
-    "linea": ["brown,red,purple"],
+    "linea": [
+      "brown,red,purple"
+    ],
     "descripcion": "Major transfer station connecting Brown, Red, and Purple lines. Access to Lincoln Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2452,7 +2555,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-armitage",
     "nombre": "Armitage",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station in Old Town neighborhood near trendy retail and restaurants.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2497,7 +2602,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-sedgwick-brown",
     "nombre": "Sedgwick",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station serving Old Town and River North.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2542,7 +2649,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-chicago-brown",
     "nombre": "Chicago",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station near downtown with River North access.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2587,7 +2696,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand-brown",
     "nombre": "Grand",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Downtown station with access to galleries and restaurants in River North.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2627,7 +2738,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-clark-brown",
     "nombre": "Clark",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line downtown station on Clark Street.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2667,7 +2780,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake-brown",
     "nombre": "Lake",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Loop station near Chicago River with downtown attractions.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2712,7 +2827,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe-brown",
     "nombre": "Monroe",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Loop station serving cultural and commercial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2757,7 +2874,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-jackson-brown",
     "nombre": "Jackson",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Loop station with financial district access.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2802,7 +2921,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harrison-brown",
     "nombre": "Harrison",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station in downtown Loop area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2842,7 +2963,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt-brown",
     "nombre": "Roosevelt",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Station serving Museum Campus with nearby museums.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2887,7 +3010,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-cermak-brown",
     "nombre": "Cermak",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station in Bridgeport area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2927,7 +3052,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-35th-brown",
     "nombre": "35th/Bronzeville-IIT",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station at Illinois Institute of Technology.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -2972,7 +3099,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-47th-brown",
     "nombre": "47th",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station in Bronzeville historic district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3012,7 +3141,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-51st-brown",
     "nombre": "51st",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Station serving South Shore and Bronzeville neighborhoods.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3052,7 +3183,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-garfield-brown",
     "nombre": "Garfield",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station with nearby Garfield Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3092,7 +3225,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-63rd-brown",
     "nombre": "63rd",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station serving South Side commercial district.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3132,7 +3267,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-69th-brown",
     "nombre": "69th",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Station in Englewood neighborhood.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3172,7 +3309,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-79th-brown",
     "nombre": "79th",
-    "linea": ["brown"],
+    "linea": [
+      "brown"
+    ],
     "descripcion": "Brown Line station serving Chatham area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3212,7 +3351,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harlem",
     "nombre": "Harlem",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Terminal western station on Green Line in Forest Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3257,7 +3398,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake-green-west",
     "nombre": "Lake",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in western suburbs.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3297,7 +3440,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-oak-park",
     "nombre": "Oak Park",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station serving Oak Park residential area with architectural significance.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3342,7 +3487,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-midway-green",
     "nombre": "Midway",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Midway area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3382,7 +3529,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-pulaski-green-west",
     "nombre": "Pulaski",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Marquette neighborhood.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3422,7 +3571,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-conservatory",
     "nombre": "Conservatory",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station near Garfield Park area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3467,7 +3618,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-ashland-green-south",
     "nombre": "Ashland",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in South Shore area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3507,7 +3660,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-state-green",
     "nombre": "State",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station downtown with State Street shopping nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3547,7 +3702,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harrison-green",
     "nombre": "Harrison",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line Loop station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3587,7 +3744,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt-green",
     "nombre": "Roosevelt",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station near Museum Campus.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3627,7 +3786,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-cermak-green",
     "nombre": "Cermak",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Bridgeport.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3672,7 +3833,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-35th-green",
     "nombre": "35th/Bronzeville-IIT",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station at IIT campus.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3712,7 +3875,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-47th-green",
     "nombre": "47th",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Bronzeville historic area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3752,7 +3917,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-51st-green",
     "nombre": "51st",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in South Shore.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3792,7 +3959,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-garfield-green",
     "nombre": "Garfield",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station near Garfield Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3832,7 +4001,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-63rd-green",
     "nombre": "63rd",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station on South Side.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3872,7 +4043,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-69th-green",
     "nombre": "69th",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Englewood.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3912,7 +4085,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-79th-green",
     "nombre": "79th",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station in Chatham.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3952,7 +4127,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-87th",
     "nombre": "87th",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Green Line station serving South Shore.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -3992,7 +4169,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-95th-ashland",
     "nombre": "95th/Ashland",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Terminal southern station on Green Line.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4033,7 +4212,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-cottage-grove",
     "nombre": "Cottage Grove",
-    "linea": ["green"],
+    "linea": [
+      "green"
+    ],
     "descripcion": "Terminal station on Green Line in South Shore.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4078,7 +4259,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-midway-orange",
     "nombre": "Midway",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Terminal station at Midway Airport serving southern suburbs.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4122,7 +4305,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-pulaski-orange",
     "nombre": "Pulaski",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station in southern suburban area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4162,7 +4347,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-54th-orange",
     "nombre": "54th/Cermak",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station in Midway area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4207,7 +4394,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-35th-orange",
     "nombre": "35th/Bronzeville-IIT",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station at IIT campus.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4247,7 +4436,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt-orange",
     "nombre": "Roosevelt",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station serving Museum Campus.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4287,7 +4478,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-library-orange",
     "nombre": "Library",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line Loop station near Chicago Public Library.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4327,7 +4520,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-quincy-orange",
     "nombre": "Quincy",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4367,7 +4562,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-wells-orange",
     "nombre": "Wells",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line Loop station on Wells Street.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4407,7 +4604,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake-orange",
     "nombre": "Lake",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station near Chicago River.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4447,7 +4646,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe-orange",
     "nombre": "Monroe",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4487,7 +4688,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-lake-orange",
     "nombre": "Clark/Lake",
-    "linea": ["orange,blue,pink"],
+    "linea": [
+      "orange,blue,pink"
+    ],
     "descripcion": "Major transfer station connecting Orange, Blue, and Pink lines.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4536,7 +4739,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-division-orange",
     "nombre": "Clark/Division",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line near North Side with Old Town access.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4576,7 +4781,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-sedgwick-orange",
     "nombre": "Sedgwick",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line station in Old Town.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4616,7 +4823,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-chicago-orange",
     "nombre": "Chicago",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line near downtown.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4656,7 +4865,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand-orange",
     "nombre": "Grand",
-    "linea": ["orange"],
+    "linea": [
+      "orange"
+    ],
     "descripcion": "Orange Line River North station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4696,7 +4907,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-54th-cermak-pink",
     "nombre": "54th/Cermak",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Terminal western station on Pink Line in Chinatown.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4741,7 +4954,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-35th-pink",
     "nombre": "35th/Bronzeville-IIT",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line station at Illinois Institute of Technology.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4781,7 +4996,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-roosevelt-pink",
     "nombre": "Roosevelt",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line station near Museum Campus.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4821,7 +5038,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-library-pink",
     "nombre": "Library",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line Loop station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4861,7 +5080,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-quincy-pink",
     "nombre": "Quincy",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4901,7 +5122,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-wells-pink",
     "nombre": "Wells",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line Loop station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4941,7 +5164,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake-pink",
     "nombre": "Lake",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line station near Chicago River.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -4981,7 +5206,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe-pink",
     "nombre": "Monroe",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5021,7 +5248,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-lake-pink",
     "nombre": "Clark/Lake",
-    "linea": ["pink,blue,orange"],
+    "linea": [
+      "pink,blue,orange"
+    ],
     "descripcion": "Major transfer station connecting Pink, Blue, and Orange lines.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5070,7 +5299,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-division-pink",
     "nombre": "Clark/Division",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line station near North Side.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5110,7 +5341,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-sedgwick-pink",
     "nombre": "Sedgwick",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line station in Old Town.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5150,7 +5383,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-chicago-pink",
     "nombre": "Chicago",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line near downtown.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5190,7 +5425,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand-pink",
     "nombre": "Grand",
-    "linea": ["pink"],
+    "linea": [
+      "pink"
+    ],
     "descripcion": "Pink Line River North station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5230,7 +5467,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-linden",
     "nombre": "Linden",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Terminal northern station on Purple Line in Wilmette.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5275,7 +5514,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-davis",
     "nombre": "Davis",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Evanston area.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5315,7 +5556,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-dempster-skokie",
     "nombre": "Dempster-Skokie",
-    "linea": ["purple,yellow"],
+    "linea": [
+      "purple,yellow"
+    ],
     "descripcion": "Transfer station connecting Purple and Yellow lines.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5363,7 +5606,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-noyes",
     "nombre": "Noyes",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Evanston.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5403,7 +5648,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-central",
     "nombre": "Central",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Evanston.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5443,7 +5690,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-main",
     "nombre": "Main",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Evanston.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5483,7 +5732,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-south-blvd",
     "nombre": "South Boulevard",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in northern suburbs.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5523,7 +5774,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-fullerton-purple",
     "nombre": "Fullerton",
-    "linea": ["purple,red,brown"],
+    "linea": [
+      "purple,red,brown"
+    ],
     "descripcion": "Major transfer station connecting Purple, Red, and Brown lines to Lincoln Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5572,7 +5825,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-armitage-purple",
     "nombre": "Armitage",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Old Town.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5617,7 +5872,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-sedgwick-purple",
     "nombre": "Sedgwick",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station in Old Town.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5657,7 +5914,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-chicago-purple",
     "nombre": "Chicago",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line near downtown.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5697,7 +5956,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-grand-purple",
     "nombre": "Grand",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line River North station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5737,7 +5998,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-clark-clark-purple",
     "nombre": "Clark",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5777,7 +6040,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-lake-purple",
     "nombre": "Lake",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line station near Chicago River.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5817,7 +6082,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-monroe-purple",
     "nombre": "Monroe",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5857,7 +6124,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-jackson-purple",
     "nombre": "Jackson",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line Loop station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5897,7 +6166,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-harrison-purple",
     "nombre": "Harrison",
-    "linea": ["purple"],
+    "linea": [
+      "purple"
+    ],
     "descripcion": "Purple Line downtown station.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5937,7 +6208,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-dempster-yellow",
     "nombre": "Dempster-Skokie",
-    "linea": ["yellow,purple"],
+    "linea": [
+      "yellow,purple"
+    ],
     "descripcion": "Transfer station connecting Yellow and Purple lines.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -5980,7 +6253,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-skokie",
     "nombre": "Skokie",
-    "linea": ["yellow"],
+    "linea": [
+      "yellow"
+    ],
     "descripcion": "Yellow Line station in Skokie suburb with shopping district nearby.",
     "sistema": "cta-l",
     "municipio": "Chicago",
@@ -6025,7 +6300,9 @@ export const estacionesChicago = [
   {
     "slug": "chicago-howard-yellow",
     "nombre": "Howard",
-    "linea": ["yellow,red"],
+    "linea": [
+      "yellow,red"
+    ],
     "descripcion": "Terminal station connecting Yellow and Red lines in Rogers Park.",
     "sistema": "cta-l",
     "municipio": "Chicago",

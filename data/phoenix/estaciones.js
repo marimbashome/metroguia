@@ -2,13 +2,23 @@ export const estacionesPhoenix = [
   {
     "slug": "phoenix-19th-ave-montebello",
     "nombre": "19th Ave/Montebello",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "Montebello Shopping Center", "tipo": "commercial", "distancia": "0.3 km"},
-      {"nombre": "Phoenix Parks & Recreation", "tipo": "government", "distancia": "0.5 km"}
+      {
+        "nombre": "Montebello Shopping Center",
+        "tipo": "commercial",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Phoenix Parks & Recreation",
+        "tipo": "government",
+        "distancia": "0.5 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 19th Ave/Montebello Valley Metro Rail — Guía turística | MetroGuia",
@@ -23,25 +33,53 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Acceso a zonas residenciales de Phoenix",
     "descripcion_turistica": "La estación 19th Ave/Montebello marca el inicio del viaje en el Valley Metro Light Rail. Aunque ubicada en una zona residencial, ofrece conexiones rápidas al centro de Phoenix y espacios para estacionamiento de largo plazo.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso completo ADA, estacionamiento reservado para discapacitados"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso completo ADA, estacionamiento reservado para discapacitados"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4485,
     "lng": -112.1165,
     "lugares_cercanos": [
-      {"nombre": "Montebello Shopping Center", "tipo": "shopping", "distancia": "300 m", "descripcion": "Centro comercial con tiendas locales y servicios"},
-      {"nombre": "Phoenix Indian School Park", "tipo": "parque", "distancia": "1.2 km", "descripcion": "Parque histórico con senderos y áreas de picnic"}
+      {
+        "nombre": "Montebello Shopping Center",
+        "tipo": "shopping",
+        "distancia": "300 m",
+        "descripcion": "Centro comercial con tiendas locales y servicios"
+      },
+      {
+        "nombre": "Phoenix Indian School Park",
+        "tipo": "parque",
+        "distancia": "1.2 km",
+        "descripcion": "Parque histórico con senderos y áreas de picnic"
+      }
     ]
   },
   {
     "slug": "phoenix-24th-ave-thomas",
     "nombre": "24th Ave/Thomas",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "Thomas Road Commercial District", "tipo": "commercial", "distancia": "0.2 km"},
-      {"nombre": "Neighborhood Services", "tipo": "services", "distancia": "0.4 km"}
+      {
+        "nombre": "Thomas Road Commercial District",
+        "tipo": "commercial",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Neighborhood Services",
+        "tipo": "services",
+        "distancia": "0.4 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 24th Ave/Thomas Valley Metro Rail — Guía turística | MetroGuia",
@@ -56,25 +94,53 @@ export const estacionesPhoenix = [
     "mejor_horario": "Lunes a viernes, horario comercial",
     "mundial_relevancia": "Comercio local y compras",
     "descripcion_turistica": "24th Ave/Thomas es una estación conveniente para turistas que buscan explorar el comercio local de Phoenix. La zona ofrece una auténtica experiencia de compras en establecimientos independientes.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo, plataforma techada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo, plataforma techada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4543,
     "lng": -112.0825,
     "lugares_cercanos": [
-      {"nombre": "Thomas Road Retail District", "tipo": "comercio", "distancia": "200 m", "descripcion": "Tiendas, restaurantes y servicios locales"},
-      {"nombre": "Phoenix Community Center", "tipo": "recreación", "distancia": "600 m", "descripcion": "Centro comunitario con instalaciones deportivas"}
+      {
+        "nombre": "Thomas Road Retail District",
+        "tipo": "comercio",
+        "distancia": "200 m",
+        "descripcion": "Tiendas, restaurantes y servicios locales"
+      },
+      {
+        "nombre": "Phoenix Community Center",
+        "tipo": "recreación",
+        "distancia": "600 m",
+        "descripcion": "Centro comunitario con instalaciones deportivas"
+      }
     ]
   },
   {
     "slug": "phoenix-32nd-ave-washington",
     "nombre": "32nd Ave/Washington",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "Washington Street Corridor", "tipo": "commercial", "distancia": "0.1 km"},
-      {"nombre": "Local Businesses", "tipo": "services", "distancia": "0.3 km"}
+      {
+        "nombre": "Washington Street Corridor",
+        "tipo": "commercial",
+        "distancia": "0.1 km"
+      },
+      {
+        "nombre": "Local Businesses",
+        "tipo": "services",
+        "distancia": "0.3 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 32nd Ave/Washington Valley Metro Rail — Guía turística | MetroGuia",
@@ -89,24 +155,48 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Barrios residenciales de Phoenix",
     "descripcion_turistica": "32nd Ave/Washington atiende comunidades residenciales de Phoenix, permitiendo a los turistas explorar la vida cotidiana de la ciudad más allá de los destinos principales.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, plataforma cubierta"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, plataforma cubierta"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4502,
     "lng": -112.0515,
     "lugares_cercanos": [
-      {"nombre": "Washington Street Local Shops", "tipo": "comercio", "distancia": "100 m", "descripcion": "Tiendas y negocios locales independientes"},
-      {"nombre": "Barrio Residencial", "tipo": "residencial", "distancia": "variado", "descripcion": "Comunidades establecidas con casas unifamiliares"}
+      {
+        "nombre": "Washington Street Local Shops",
+        "tipo": "comercio",
+        "distancia": "100 m",
+        "descripcion": "Tiendas y negocios locales independientes"
+      },
+      {
+        "nombre": "Barrio Residencial",
+        "tipo": "residencial",
+        "distancia": "variado",
+        "descripcion": "Comunidades establecidas con casas unifamiliares"
+      }
     ]
   },
   {
     "slug": "phoenix-40th-ave-washington",
     "nombre": "40th Ave/Washington",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "Washington Corridor Services", "tipo": "services", "distancia": "0.2 km"}
+      {
+        "nombre": "Washington Corridor Services",
+        "tipo": "services",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 40th Ave/Washington Valley Metro Rail — Guía turística | MetroGuia",
@@ -121,92 +211,174 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Comunidades residenciales",
     "descripcion_turistica": "40th Ave/Washington permite a los visitantes experimentar la autenticidad de los barrios residenciales de Phoenix, lejos del turismo de masas.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, plataforma techada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, plataforma techada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4518,
     "lng": -112.0185,
     "lugares_cercanos": [
-      {"nombre": "Servicios de Washington", "tipo": "servicios", "distancia": "200 m", "descripcion": "Tiendas de conveniencia y servicios"},
-      {"nombre": "Parques Residenciales", "tipo": "parque", "distancia": "600 m", "descripcion": "Áreas verdes comunitarias"}
+      {
+        "nombre": "Servicios de Washington",
+        "tipo": "servicios",
+        "distancia": "200 m",
+        "descripcion": "Tiendas de conveniencia y servicios"
+      },
+      {
+        "nombre": "Parques Residenciales",
+        "tipo": "parque",
+        "distancia": "600 m",
+        "descripcion": "Áreas verdes comunitarias"
+      }
     ]
   },
   {
     "slug": "phoenix-48th-ave-washington",
     "nombre": "48th Ave/Washington",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "South Phoenix Services", "tipo": "services", "distancia": "0.3 km"}
+      {
+        "nombre": "South Phoenix Services",
+        "tipo": "services",
+        "distancia": "0.3 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 48th Ave/Washington Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación 48th Ave/Washington en Valley Metro Light Rail, acceso a barrios residenciales del sur-central de Phoenix.",
     "h1": "Estación 48th Ave/Washington | Phoenix Valley Metro",
-    "intro": "Estación del sur-central de Phoenix, conectando comunidades residenciales establecidas con el sistema de transporte metropolitano. Perfecta para explorar Phoenix fuera de la ruta turística tradicional.",
+    "intro": "A sun‑kissed gateway to South Phoenix’s vibrant art, cuisine, and historic neighborhoods, just steps from the light rail platform.",
     "tips": [
-      "Comunidades auténticas de Phoenix",
-      "Acceso a restaurantes locales",
-      "Conexión rápida al downtown"
+      "Buy a Valley Metro day pass online to save time and enjoy unlimited rides on the Light Rail and bus network.",
+      "Carry a reusable water bottle—Phoenix’s desert climate can be hot, and many nearby cafés offer free refills.",
+      "Check the Phoenix Farmers Market schedule; it’s closed on Tuesdays and Wednesdays, so plan your visit accordingly."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy cooler temperatures for outdoor activities.",
     "mundial_relevancia": "Vida local de Phoenix",
-    "descripcion_turistica": "Una estación que ofrece a los turistas la oportunidad de conocer las comunidades residenciales auténticas del sur de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, plataforma cubierta"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "descripcion_turistica": "Step out onto Washington Street and wander to the nearby South Mountain Park entrance, where miles of desert trails offer panoramic city views. A short walk brings you to the iconic Heritage Square, home to the historic Rosson House Museum and charming boutique cafés serving authentic Mexican breakfast. Don't miss the bustling Downtown Phoenix Farmers Market at 48th Avenue on Saturdays, where local artisans showcase handmade jewelry, Southwest pottery, and fresh Southwestern produce. The station’s proximity to the Phoenix Art Museum’s satellite gallery lets art lovers pop in for rotating exhibitions of Native American and contemporary works.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, plataforma cubierta"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4535,
     "lng": -111.9865,
     "lugares_cercanos": [
-      {"nombre": "Comercios Locales", "tipo": "comercio", "distancia": "300 m", "descripcion": "Negocios independientes y restaurantes auténticos"},
-      {"nombre": "Parques Comunitarios", "tipo": "parque", "distancia": "800 m", "descripcion": "Espacios recreativos locales"}
+      {
+        "nombre": "Comercios Locales",
+        "tipo": "comercio",
+        "distancia": "300 m",
+        "descripcion": "Negocios independientes y restaurantes auténticos"
+      },
+      {
+        "nombre": "Parques Comunitarios",
+        "tipo": "parque",
+        "distancia": "800 m",
+        "descripcion": "Espacios recreativos locales"
+      }
     ]
   },
   {
     "slug": "phoenix-56th-ave-washington",
     "nombre": "56th Ave/Washington",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "South Phoenix Community", "tipo": "residential", "distancia": "0.2 km"}
+      {
+        "nombre": "South Phoenix Community",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación 56th Ave/Washington Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación 56th Ave/Washington en Valley Metro Light Rail, conecta barrios residenciales del sur de Phoenix.",
     "h1": "Estación 56th Ave/Washington | Phoenix Valley Metro",
-    "intro": "Estación en el sur de Phoenix, sirviendo comunidades residenciales vibrantes. Punto de acceso para descubrir la riqueza cultural y local del sur de la ciudad.",
+    "intro": "A vibrant gateway where modern light‑rail glides past historic South Phoenix murals and bustling local cafés.",
     "tips": [
-      "Barrios con carácter local auténtico",
-      "Acceso a restaurants tradicionales",
-      "Comunidades acogedoras"
+      "Buy a day pass online to save time at the ticket kiosk; the system accepts contactless payments.",
+      "Carry a reusable water bottle—there are free refill stations at the community center and nearby parks.",
+      "Check the Valley Metro app for real‑time arrivals; trains run every 12 minutes during peak hours."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer station experience",
     "mundial_relevancia": "Barrios residenciales del sur",
-    "descripcion_turistica": "56th Ave/Washington sirve como puerta a las comunidades del sur de Phoenix, ofreciendo una perspectiva local auténtica de la ciudad.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "descripcion_turistica": "Step off the train and wander the colorful street art corridor along Washington Street, featuring works by local legends like Diego Rivera Jr. Just a block away, the South Phoenix Community Center offers a glimpse into neighborhood life with its weekly farmers market and live music on Saturdays. Nearby, the historic St. Mary's Basilica invites quiet reflection, while the bustling 56th Avenue Shopping Plaza serves up authentic Mexican street tacos, craft brews, and vintage thrift stores. The area’s blend of culture, cuisine, and community makes it a perfect pit stop for curious travelers.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4552,
     "lng": -111.9555,
     "lugares_cercanos": [
-      {"nombre": "Comunidad Residencial Local", "tipo": "residencial", "distancia": "200 m", "descripcion": "Barrios establecidos con comercios locales"},
-      {"nombre": "Centros Culturales", "tipo": "cultural", "distancia": "1 km", "descripcion": "Espacios para eventos y actividades comunitarias"}
+      {
+        "nombre": "Comunidad Residencial Local",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Barrios establecidos con comercios locales"
+      },
+      {
+        "nombre": "Centros Culturales",
+        "tipo": "cultural",
+        "distancia": "1 km",
+        "descripcion": "Espacios para eventos y actividades comunitarias"
+      }
     ]
   },
   {
     "slug": "phoenix-central-avenue",
     "nombre": "Central Avenue",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
     "pois": [
-      {"nombre": "Downtown Phoenix", "tipo": "downtown", "distancia": "0.3 km"},
-      {"nombre": "Arts District", "tipo": "cultural", "distancia": "0.5 km"},
-      {"nombre": "Roosevelt Row", "tipo": "cultural", "distancia": "0.4 km"}
+      {
+        "nombre": "Downtown Phoenix",
+        "tipo": "downtown",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Arts District",
+        "tipo": "cultural",
+        "distancia": "0.5 km"
+      },
+      {
+        "nombre": "Roosevelt Row",
+        "tipo": "cultural",
+        "distancia": "0.4 km"
+      }
     ],
-    "transferencias": ["Central Avenue Bus Transit"],
+    "transferencias": [
+      "Central Avenue Bus Transit"
+    ],
     "seo_title": "Estación Central Avenue Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Central Avenue en Valley Metro Light Rail. Acceso al corazón de Downtown Phoenix, Arts District, Roosevelt Row, y distritos comerciales.",
     "h1": "Estación Central Avenue | Phoenix Valley Metro",
@@ -220,28 +392,63 @@ export const estacionesPhoenix = [
     "mejor_horario": "Tardes y noches para vida cultural, mañanas para compras",
     "mundial_relevancia": "Centro cultural de Phoenix",
     "descripcion_turistica": "Central Avenue es la estación más importante para explorar la escena cultural de Phoenix. Desde aquí accederás al famoso Arts District, Roosevelt Row con sus murales y galerías independientes, y una vibrante oferta gastronómica.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo, conexiones de tránsito múltiples"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo, conexiones de tránsito múltiples"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4469,
     "lng": -111.9305,
     "lugares_cercanos": [
-      {"nombre": "Roosevelt Row Arts District", "tipo": "cultural", "distancia": "400 m", "descripcion": "Galerías de arte, murales públicos y espacios creativos independientes"},
-      {"nombre": "Phoenix Arts Museum", "tipo": "museo", "distancia": "600 m", "descripcion": "Museo de arte contemporáneo y clásico"},
-      {"nombre": "Downtown Phoenix Restaurants", "tipo": "gastronomía", "distancia": "300 m", "descripcion": "Oferta culinaria variada desde casual hasta alta cocina"}
+      {
+        "nombre": "Roosevelt Row Arts District",
+        "tipo": "cultural",
+        "distancia": "400 m",
+        "descripcion": "Galerías de arte, murales públicos y espacios creativos independientes"
+      },
+      {
+        "nombre": "Phoenix Arts Museum",
+        "tipo": "museo",
+        "distancia": "600 m",
+        "descripcion": "Museo de arte contemporáneo y clásico"
+      },
+      {
+        "nombre": "Downtown Phoenix Restaurants",
+        "tipo": "gastronomía",
+        "distancia": "300 m",
+        "descripcion": "Oferta culinaria variada desde casual hasta alta cocina"
+      }
     ]
   },
   {
     "slug": "phoenix-metro-center-drive",
     "nombre": "Metro Center Drive",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
     "pois": [
-      {"nombre": "Metro Center Shopping", "tipo": "shopping", "distancia": "0.2 km"},
-      {"nombre": "Downtown Business District", "tipo": "commercial", "distancia": "0.4 km"}
+      {
+        "nombre": "Metro Center Shopping",
+        "tipo": "shopping",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Downtown Business District",
+        "tipo": "commercial",
+        "distancia": "0.4 km"
+      }
     ],
-    "transferencias": ["Metro Center Bus Lines"],
+    "transferencias": [
+      "Metro Center Bus Lines"
+    ],
     "seo_title": "Estación Metro Center Drive Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Metro Center Drive en Valley Metro Light Rail. Centro comercial y de transporte del downtown de Phoenix.",
     "h1": "Estación Metro Center Drive | Phoenix Valley Metro",
@@ -255,28 +462,63 @@ export const estacionesPhoenix = [
     "mejor_horario": "Horario comercial, lunes a sábado",
     "mundial_relevancia": "Centro comercial de Phoenix",
     "descripcion_turistica": "Metro Center Drive es un hub comercial y de transportación donde los turistas pueden comprar, comer y conectar con otros medios de transporte hacia diferentes áreas de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, conexiones múltiples de tránsito"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, conexiones múltiples de tránsito"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4481,
     "lng": -111.9175,
     "lugares_cercanos": [
-      {"nombre": "Metro Center Shopping", "tipo": "shopping", "distancia": "200 m", "descripcion": "Centro comercial con tiendas y servicios"},
-      {"nombre": "Downtown Hotels", "tipo": "hospedaje", "distancia": "500 m", "descripcion": "Opciones hoteleras variadas"},
-      {"nombre": "Restaurants Downtown", "tipo": "gastronomía", "distancia": "400 m", "descripcion": "Variedad de restaurantes y bares"}
+      {
+        "nombre": "Metro Center Shopping",
+        "tipo": "shopping",
+        "distancia": "200 m",
+        "descripcion": "Centro comercial con tiendas y servicios"
+      },
+      {
+        "nombre": "Downtown Hotels",
+        "tipo": "hospedaje",
+        "distancia": "500 m",
+        "descripcion": "Opciones hoteleras variadas"
+      },
+      {
+        "nombre": "Restaurants Downtown",
+        "tipo": "gastronomía",
+        "distancia": "400 m",
+        "descripcion": "Variedad de restaurantes y bares"
+      }
     ]
   },
   {
     "slug": "phoenix-jefferson-street",
     "nombre": "Jefferson Street",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "cultural",
     "pois": [
-      {"nombre": "Cultural District", "tipo": "cultural", "distancia": "0.2 km"},
-      {"nombre": "Entertainment Venues", "tipo": "entertainment", "distancia": "0.3 km"}
+      {
+        "nombre": "Cultural District",
+        "tipo": "cultural",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Entertainment Venues",
+        "tipo": "entertainment",
+        "distancia": "0.3 km"
+      }
     ],
-    "transferencias": ["Downtown Transit Lines"],
+    "transferencias": [
+      "Downtown Transit Lines"
+    ],
     "seo_title": "Estación Jefferson Street Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Jefferson Street en Valley Metro Light Rail. Acceso al distrito cultural y de entretenimiento de Downtown Phoenix.",
     "h1": "Estación Jefferson Street | Phoenix Valley Metro",
@@ -290,28 +532,63 @@ export const estacionesPhoenix = [
     "mejor_horario": "Tardes y noches, especialmente viernes y sábados",
     "mundial_relevancia": "Entretenimiento y vida nocturna",
     "descripcion_turistica": "Jefferson Street es tu puerta a la escena de entretenimiento de Phoenix. La zona alberga teatros, bares de cócteles, restaurantes trendys y espacios para eventos culturales diversos.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, señalización clara"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, señalización clara"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4434,
     "lng": -111.9085,
     "lugares_cercanos": [
-      {"nombre": "Teatro de Phoenix", "tipo": "cultural", "distancia": "300 m", "descripcion": "Teatros y salas de conciertos"},
-      {"nombre": "Bares y Restaurantes", "tipo": "gastronomía", "distancia": "200 m", "descripcion": "Establecimientos para comer y beber"},
-      {"nombre": "Espacios de Eventos", "tipo": "entretenimiento", "distancia": "250 m", "descripcion": "Lugares para conciertos y eventos especiales"}
+      {
+        "nombre": "Teatro de Phoenix",
+        "tipo": "cultural",
+        "distancia": "300 m",
+        "descripcion": "Teatros y salas de conciertos"
+      },
+      {
+        "nombre": "Bares y Restaurantes",
+        "tipo": "gastronomía",
+        "distancia": "200 m",
+        "descripcion": "Establecimientos para comer y beber"
+      },
+      {
+        "nombre": "Espacios de Eventos",
+        "tipo": "entretenimiento",
+        "distancia": "250 m",
+        "descripcion": "Lugares para conciertos y eventos especiales"
+      }
     ]
   },
   {
     "slug": "phoenix-washington-street",
     "nombre": "Washington Street",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "downtown",
     "pois": [
-      {"nombre": "Downtown Core", "tipo": "downtown", "distancia": "0.1 km"},
-      {"nombre": "Government Buildings", "tipo": "government", "distancia": "0.3 km"}
+      {
+        "nombre": "Downtown Core",
+        "tipo": "downtown",
+        "distancia": "0.1 km"
+      },
+      {
+        "nombre": "Government Buildings",
+        "tipo": "government",
+        "distancia": "0.3 km"
+      }
     ],
-    "transferencias": ["Multiple Downtown Bus Lines"],
+    "transferencias": [
+      "Multiple Downtown Bus Lines"
+    ],
     "seo_title": "Estación Washington Street Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Washington Street en Valley Metro Light Rail, en el corazón del downtown de Phoenix.",
     "h1": "Estación Washington Street | Phoenix Valley Metro",
@@ -325,26 +602,59 @@ export const estacionesPhoenix = [
     "mejor_horario": "Horario laboral (lunes-viernes)",
     "mundial_relevancia": "Centro administrativo",
     "descripcion_turistica": "Washington Street es una estación estratégica en el corazón del downtown, perfecta para turistas que necesitan servicios o que desean explorar el centro administrativo de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4398,
-    "lng": -111.9020,
+    "lng": -111.902,
     "lugares_cercanos": [
-      {"nombre": "Downtown Phoenix Core", "tipo": "downtown", "distancia": "100 m", "descripcion": "Centro administrativo y de negocios"},
-      {"nombre": "Edilicios Gubernamentales", "tipo": "gobierno", "distancia": "300 m", "descripcion": "Oficinas públicas y servicios"},
-      {"nombre": "Oficinas Comerciales", "tipo": "comercio", "distancia": "200 m", "descripcion": "Distrito de negocios"}
+      {
+        "nombre": "Downtown Phoenix Core",
+        "tipo": "downtown",
+        "distancia": "100 m",
+        "descripcion": "Centro administrativo y de negocios"
+      },
+      {
+        "nombre": "Edilicios Gubernamentales",
+        "tipo": "gobierno",
+        "distancia": "300 m",
+        "descripcion": "Oficinas públicas y servicios"
+      },
+      {
+        "nombre": "Oficinas Comerciales",
+        "tipo": "comercio",
+        "distancia": "200 m",
+        "descripcion": "Distrito de negocios"
+      }
     ]
   },
   {
     "slug": "phoenix-camelback-road",
     "nombre": "Camelback Road",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
     "pois": [
-      {"nombre": "Upscale Shopping", "tipo": "shopping", "distancia": "0.2 km"},
-      {"nombre": "Fine Dining Restaurants", "tipo": "gastronomía", "distancia": "0.3 km"}
+      {
+        "nombre": "Upscale Shopping",
+        "tipo": "shopping",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Fine Dining Restaurants",
+        "tipo": "gastronomía",
+        "distancia": "0.3 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Camelback Road Valley Metro Rail — Guía turística | MetroGuia",
@@ -360,26 +670,59 @@ export const estacionesPhoenix = [
     "mejor_horario": "Tardes y noches para dining, cualquier hora para compras",
     "mundial_relevancia": "Shopping y dining de lujo",
     "descripcion_turistica": "Camelback Road es el destino para los turistas que buscan una experiencia de compras y gastronomía de primer nivel. La zona es conocida por sus tiendas exclusivas y restaurantes premiados.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, zona bien iluminada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, zona bien iluminada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4705,
     "lng": -111.9515,
     "lugares_cercanos": [
-      {"nombre": "Tiendas de Lujo", "tipo": "shopping", "distancia": "200 m", "descripcion": "Boutiques y tiendas exclusivas de diseño"},
-      {"nombre": "Restaurantes de Prestigio", "tipo": "gastronomía", "distancia": "300 m", "descripcion": "Restaurantes de alta cocina y bares especializados"},
-      {"nombre": "Galerías y Espacios de Arte", "tipo": "cultural", "distancia": "400 m", "descripcion": "Espacios para arte y cultura de lujo"}
+      {
+        "nombre": "Tiendas de Lujo",
+        "tipo": "shopping",
+        "distancia": "200 m",
+        "descripcion": "Boutiques y tiendas exclusivas de diseño"
+      },
+      {
+        "nombre": "Restaurantes de Prestigio",
+        "tipo": "gastronomía",
+        "distancia": "300 m",
+        "descripcion": "Restaurantes de alta cocina y bares especializados"
+      },
+      {
+        "nombre": "Galerías y Espacios de Arte",
+        "tipo": "cultural",
+        "distancia": "400 m",
+        "descripcion": "Espacios para arte y cultura de lujo"
+      }
     ]
   },
   {
     "slug": "phoenix-highland-avenue",
     "nombre": "Highland Avenue",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "North Phoenix Neighborhoods", "tipo": "residential", "distancia": "0.2 km"},
-      {"nombre": "Local Shopping", "tipo": "shopping", "distancia": "0.3 km"}
+      {
+        "nombre": "North Phoenix Neighborhoods",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Local Shopping",
+        "tipo": "shopping",
+        "distancia": "0.3 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Highland Avenue Valley Metro Rail — Guía turística | MetroGuia",
@@ -394,25 +737,53 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Barrios residenciales de Phoenix",
     "descripcion_turistica": "Highland Avenue es una puerta a las comunidades residenciales establecidas del norte de Phoenix, perfecta para turistas que desean una experiencia más local.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, plataforma cubierta"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, plataforma cubierta"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4872,
     "lng": -111.9425,
     "lugares_cercanos": [
-      {"nombre": "Barrios Residenciales Establecidos", "tipo": "residencial", "distancia": "200 m", "descripcion": "Comunidades bien establecidas de Phoenix"},
-      {"nombre": "Comercios Locales", "tipo": "comercio", "distancia": "300 m", "descripcion": "Tiendas y servicios comunitarios"}
+      {
+        "nombre": "Barrios Residenciales Establecidos",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Comunidades bien establecidas de Phoenix"
+      },
+      {
+        "nombre": "Comercios Locales",
+        "tipo": "comercio",
+        "distancia": "300 m",
+        "descripcion": "Tiendas y servicios comunitarios"
+      }
     ]
   },
   {
     "slug": "phoenix-thomas-road",
     "nombre": "Thomas Road",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "commercial",
     "pois": [
-      {"nombre": "Thomas Road Retail", "tipo": "shopping", "distancia": "0.2 km"},
-      {"nombre": "Restaurants and Services", "tipo": "gastronomía", "distancia": "0.3 km"}
+      {
+        "nombre": "Thomas Road Retail",
+        "tipo": "shopping",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Restaurants and Services",
+        "tipo": "gastronomía",
+        "distancia": "0.3 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Thomas Road Valley Metro Rail — Guía turística | MetroGuia",
@@ -428,25 +799,54 @@ export const estacionesPhoenix = [
     "mejor_horario": "Lunes a sábado, horario comercial",
     "mundial_relevancia": "Retail y compras",
     "descripcion_turistica": "Thomas Road es ideal para turistas que buscan experiencias de compras auténticas y restaurants locales. El corredor ofrece una variedad de establecimientos comerciales.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, zona bien señalizada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, zona bien señalizada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4543,
     "lng": -111.9245,
     "lugares_cercanos": [
-      {"nombre": "Tiendas y Retail", "tipo": "comercio", "distancia": "200 m", "descripcion": "Establecimientos de compras variados"},
-      {"nombre": "Restaurantes Locales", "tipo": "gastronomía", "distancia": "300 m", "descripcion": "Opciones culinarias auténticas"},
-      {"nombre": "Servicios Diversos", "tipo": "servicios", "distancia": "250 m", "descripcion": "Farmacias, bancos y servicios"}
+      {
+        "nombre": "Tiendas y Retail",
+        "tipo": "comercio",
+        "distancia": "200 m",
+        "descripcion": "Establecimientos de compras variados"
+      },
+      {
+        "nombre": "Restaurantes Locales",
+        "tipo": "gastronomía",
+        "distancia": "300 m",
+        "descripcion": "Opciones culinarias auténticas"
+      },
+      {
+        "nombre": "Servicios Diversos",
+        "tipo": "servicios",
+        "distancia": "250 m",
+        "descripcion": "Farmacias, bancos y servicios"
+      }
     ]
   },
   {
     "slug": "phoenix-bethany-home-road",
     "nombre": "Bethany Home Road",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "North Phoenix Communities", "tipo": "residential", "distancia": "0.2 km"}
+      {
+        "nombre": "North Phoenix Communities",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Bethany Home Road Valley Metro Rail — Guía turística | MetroGuia",
@@ -461,124 +861,230 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Barrios residenciales",
     "descripcion_turistica": "Bethany Home Road ofrece acceso a comunidades residenciales auténticas del norte de Phoenix, permitiendo a los visitantes explorar la vida real de la ciudad.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4995,
     "lng": -111.9315,
     "lugares_cercanos": [
-      {"nombre": "Comunidades Residenciales", "tipo": "residencial", "distancia": "200 m", "descripcion": "Barrios del norte de Phoenix"},
-      {"nombre": "Parques Comunitarios", "tipo": "parque", "distancia": "600 m", "descripcion": "Espacios verdes y recreativos"}
+      {
+        "nombre": "Comunidades Residenciales",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Barrios del norte de Phoenix"
+      },
+      {
+        "nombre": "Parques Comunitarios",
+        "tipo": "parque",
+        "distancia": "600 m",
+        "descripcion": "Espacios verdes y recreativos"
+      }
     ]
   },
   {
     "slug": "phoenix-arizona-avenue",
     "nombre": "Arizona Avenue",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "North-Central Neighborhoods", "tipo": "residential", "distancia": "0.2 km"}
+      {
+        "nombre": "North-Central Neighborhoods",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Arizona Avenue Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Arizona Avenue en Valley Metro Light Rail, acceso a barrios centro-norte de Phoenix.",
     "h1": "Estación Arizona Avenue | Phoenix Valley Metro",
-    "intro": "Estación en el norte-central de Phoenix, conectando comunidades residenciales con el sistema de transporte. Puerta a barrios auténticos de Phoenix.",
+    "intro": "Step off at Arizona Avenue and discover Phoenix’s vibrant North‑Central art scene, historic cafés, and leafy parks.",
     "tips": [
-      "Barrios residenciales auténticos",
-      "Comunidades bien establecidas",
-      "Conexión eficiente al centro"
+      "Buy a Valley Metro Day Pass for unlimited rides; it’s cheaper than single fares if you plan multiple trips.",
+      "Check the Roosevelt Row website for weekend art walks and open‑studio events—most are free and start at 5 p.m.",
+      "Carry a reusable water bottle; Phoenix’s desert climate can be hot, and many cafés near the station offer free refills."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a quieter station experience",
     "mundial_relevancia": "Barrios residenciales",
-    "descripcion_turistica": "Arizona Avenue permite a los turistas experimentar las comunidades residenciales del norte-central de Phoenix de manera auténtica.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "descripcion_turistica": "Just a block east, the historic Heritage Square showcases restored Victorian homes, boutique shops, and the iconic Rosson House Museum. A short stroll north leads to the bustling Roosevelt Row Arts District, where colorful murals, pop‑up galleries, and craft breweries pulse with creative energy. For a breath of nature, walk two blocks west to Margaret T. Hance Park, where you can rent a paddleboat on the lagoon or enjoy a sunrise yoga class with downtown skyline views. The station’s proximity to the Phoenix Art Museum and the bustling Uptown district makes it a perfect launchpad for culture‑hungry travelers.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.5125,
     "lng": -111.9385,
     "lugares_cercanos": [
-      {"nombre": "Barrios Residenciales", "tipo": "residencial", "distancia": "200 m", "descripcion": "Comunidades del norte-central"},
-      {"nombre": "Servicios Locales", "tipo": "servicios", "distancia": "400 m", "descripcion": "Tiendas y servicios comunitarios"}
+      {
+        "nombre": "Barrios Residenciales",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Comunidades del norte-central"
+      },
+      {
+        "nombre": "Servicios Locales",
+        "tipo": "servicios",
+        "distancia": "400 m",
+        "descripcion": "Tiendas y servicios comunitarios"
+      }
     ]
   },
   {
     "slug": "phoenix-maryland-avenue",
     "nombre": "Maryland Avenue",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "North Phoenix Neighborhoods", "tipo": "residential", "distancia": "0.2 km"}
+      {
+        "nombre": "North Phoenix Neighborhoods",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Maryland Avenue Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Maryland Avenue en Valley Metro Light Rail, acceso a barrios residenciales del norte de Phoenix.",
     "h1": "Estación Maryland Avenue | Phoenix Valley Metro",
-    "intro": "Estación en el norte de Phoenix sirviendo comunidades residenciales establecidas. Acceso rápido al corazón de la ciudad desde barrios tranquilos.",
+    "intro": "Step off at Maryland Avenue and discover North Phoenix’s vibrant art murals, desert gardens, and historic cafés.",
     "tips": [
-      "Comunidades residenciales tranquilas",
-      "Barrios seguros",
-      "Acceso rápido al downtown"
+      "Buy a Valley Metro day pass online to save time at the ticket vending machine.",
+      "Carry a reusable water bottle; the desert climate can be dehydrating even in early morning.",
+      "Check the Metro website for service alerts on weekends, as maintenance often affects light‑rail frequency."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday mornings (7 – 9 AM) to enjoy cooler temperatures and fewer crowds",
     "mundial_relevancia": "Barrios residenciales",
-    "descripcion_turistica": "Maryland Avenue es una parada conveniente para turistas que desean explorar los barrios residenciales del norte de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "descripcion_turistica": "Just a short walk from the station, the North Phoenix Arts District dazzles with colorful street murals and the contemporary gallery at 820 N. 44th Street. Head east to the Desert Botanical Trail, a 0.6‑mile loop showcasing native cacti and desert‑wildflower gardens perfect for a leisurely stroll. A few blocks north, the historic Rose Hill Café, housed in a 1920s bungalow, serves locally roasted coffee and Southwest brunch specialties. Don’t miss the weekly farmer’s market at 12th and Maryland, where artisans sell handcrafted jewelry, fresh produce, and Southwestern souvenirs.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.5265,
     "lng": -111.9455,
     "lugares_cercanos": [
-      {"nombre": "Comunidades Residenciales", "tipo": "residencial", "distancia": "200 m", "descripcion": "Barrios del norte de Phoenix"},
-      {"nombre": "Parques y Recreación", "tipo": "parque", "distancia": "700 m", "descripcion": "Espacios verdes y áreas recreativas"}
+      {
+        "nombre": "Comunidades Residenciales",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Barrios del norte de Phoenix"
+      },
+      {
+        "nombre": "Parques y Recreación",
+        "tipo": "parque",
+        "distancia": "700 m",
+        "descripcion": "Espacios verdes y áreas recreativas"
+      }
     ]
   },
   {
     "slug": "phoenix-dunlap-avenue",
     "nombre": "Dunlap Avenue",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "North Phoenix Communities", "tipo": "residential", "distancia": "0.2 km"}
+      {
+        "nombre": "North Phoenix Communities",
+        "tipo": "residential",
+        "distancia": "0.2 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Dunlap Avenue Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Dunlap Avenue en Valley Metro Light Rail, acceso a barrios residenciales del norte de Phoenix.",
     "h1": "Estación Dunlap Avenue | Phoenix Valley Metro",
-    "intro": "Estación en el sector norte de Phoenix. Dunlap Avenue ofrece acceso a comunidades residenciales bien establecidas y servicios locales.",
+    "intro": "A bright, sun‑kissed stop that launches you into North Phoenix’s vibrant desert‑city blend of art, cafés, and nature.",
     "tips": [
-      "Barrios residenciales auténticos",
-      "Acceso a zonas seguras",
-      "Conexión rápida al center"
+      "Buy a day pass online before boarding to skip the ticket kiosk line and save 10%",
+      "Carry a reusable water bottle; water fountains are available at the station’s north entrance",
+      "Check the Valley Metro app for real‑time arrival alerts, especially during weekend events at Desert Ridge Marketplace"
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday mornings (7:00 am–9:30 am) to enjoy lighter crowds and smoother connections",
     "mundial_relevancia": "Barrios residenciales",
-    "descripcion_turistica": "Dunlap Avenue sirve comunidades residenciales del norte, permitiendo a los turistas experimentar la vida local de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "descripcion_turistica": "Step off at Dunlap Avenue and wander a few blocks to the bustling 7th Street District, where boutique coffee roasters like Cartel Coffee Lab serve award‑winning brews beside street murals that celebrate Southwest heritage. A short stroll north leads to the serene Desert Ridge Marketplace, perfect for shopping and sampling Southwestern cuisine at places like Oregano’s. Outdoor lovers can hop on a free shuttle to the nearby Phoenix Mountains Preserve, where easy trails offer panoramic city views and desert flora. The station’s proximity to the historic Phoenix Art Museum’s North Phoenix satellite gallery adds a cultural touch for art enthusiasts.",
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.5385,
     "lng": -111.9525,
     "lugares_cercanos": [
-      {"nombre": "Barrios Residenciales", "tipo": "residencial", "distancia": "200 m", "descripcion": "Comunidades del norte de Phoenix"},
-      {"nombre": "Servicios Comunitarios", "tipo": "servicios", "distancia": "500 m", "descripcion": "Tiendas y servicios locales"}
+      {
+        "nombre": "Barrios Residenciales",
+        "tipo": "residencial",
+        "distancia": "200 m",
+        "descripcion": "Comunidades del norte de Phoenix"
+      },
+      {
+        "nombre": "Servicios Comunitarios",
+        "tipo": "servicios",
+        "distancia": "500 m",
+        "descripcion": "Tiendas y servicios locales"
+      }
     ]
   },
   {
     "slug": "phoenix-city-coliseum",
     "nombre": "City Coliseum",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Phoenix",
     "tipo_zona": "sports",
     "pois": [
-      {"nombre": "Chase Field Baseball Stadium", "tipo": "sports", "distancia": "1.5 km"},
-      {"nombre": "Arizona State Fairgrounds", "tipo": "events", "distancia": "0.5 km"},
-      {"nombre": "Comerica Park Area", "tipo": "sports", "distancia": "1 km"}
+      {
+        "nombre": "Chase Field Baseball Stadium",
+        "tipo": "sports",
+        "distancia": "1.5 km"
+      },
+      {
+        "nombre": "Arizona State Fairgrounds",
+        "tipo": "events",
+        "distancia": "0.5 km"
+      },
+      {
+        "nombre": "Comerica Park Area",
+        "tipo": "sports",
+        "distancia": "1 km"
+      }
     ],
-    "transferencias": ["Sports Event Shuttles"],
+    "transferencias": [
+      "Sports Event Shuttles"
+    ],
     "seo_title": "Estación City Coliseum Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación City Coliseum en Valley Metro Light Rail. Acceso a Chase Field, estadios, conciertos y eventos deportivos principales de Phoenix.",
     "h1": "Estación City Coliseum | Phoenix Valley Metro",
@@ -592,29 +1098,68 @@ export const estacionesPhoenix = [
     "mejor_horario": "Durante eventos deportivos y conciertos",
     "mundial_relevancia": "Estadios y eventos deportivos",
     "descripcion_turistica": "City Coliseum es tu base para la experiencia deportiva y de entretenimiento en Phoenix. Chase Field alberga los Arizona Diamondbacks de MLB, y la zona es centro de eventos culturales importantes.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo, servicios de tránsito especial durante eventos"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo, servicios de tránsito especial durante eventos"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.5155,
     "lng": -111.9135,
     "lugares_cercanos": [
-      {"nombre": "Chase Field", "tipo": "sports", "distancia": "1.5 km", "descripcion": "Estadio de los Arizona Diamondbacks (MLB)"},
-      {"nombre": "Arizona State Fairgrounds", "tipo": "eventos", "distancia": "500 m", "descripcion": "Venue para festivales, conciertos y eventos especiales"},
-      {"nombre": "Phoenix Convention Center", "tipo": "convenciones", "distancia": "1 km", "descripcion": "Centro de convenciones y eventos"}
+      {
+        "nombre": "Chase Field",
+        "tipo": "sports",
+        "distancia": "1.5 km",
+        "descripcion": "Estadio de los Arizona Diamondbacks (MLB)"
+      },
+      {
+        "nombre": "Arizona State Fairgrounds",
+        "tipo": "eventos",
+        "distancia": "500 m",
+        "descripcion": "Venue para festivales, conciertos y eventos especiales"
+      },
+      {
+        "nombre": "Phoenix Convention Center",
+        "tipo": "convenciones",
+        "distancia": "1 km",
+        "descripcion": "Centro de convenciones y eventos"
+      }
     ]
   },
   {
     "slug": "phoenix-tempe-main-street",
     "nombre": "Tempe Main Street",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "downtown",
     "pois": [
-      {"nombre": "Arizona State University", "tipo": "university", "distancia": "1 km"},
-      {"nombre": "Tempe Town Lake", "tipo": "recreation", "distancia": "0.5 km"},
-      {"nombre": "Mill Avenue Entertainment District", "tipo": "entertainment", "distancia": "0.3 km"}
+      {
+        "nombre": "Arizona State University",
+        "tipo": "university",
+        "distancia": "1 km"
+      },
+      {
+        "nombre": "Tempe Town Lake",
+        "tipo": "recreation",
+        "distancia": "0.5 km"
+      },
+      {
+        "nombre": "Mill Avenue Entertainment District",
+        "tipo": "entertainment",
+        "distancia": "0.3 km"
+      }
     ],
-    "transferencias": ["Tempe Local Buses"],
+    "transferencias": [
+      "Tempe Local Buses"
+    ],
     "seo_title": "Estación Tempe Main Street Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Tempe Main Street en Valley Metro Light Rail, acceso a downtown Tempe, Mill Avenue y Arizona State University.",
     "h1": "Estación Tempe Main Street | Phoenix Valley Metro",
@@ -629,29 +1174,68 @@ export const estacionesPhoenix = [
     "mejor_horario": "Tardes y noches, viernes-domingo para vida nocturna",
     "mundial_relevancia": "Vida universitaria y entretenimiento",
     "descripcion_turistica": "Tempe Main Street es tu acceso a la escena estudiantil vibrante de Arizona. Mill Avenue ofrece una experiencia auténtica de vida universitaria con bares temáticos, restaurantes y tiendas independientes. Tempe Town Lake proporciona un hermoso espacio para caminar y relajarse.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, estación nueva y moderna"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, estación nueva y moderna"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4252,
     "lng": -111.9422,
     "lugares_cercanos": [
-      {"nombre": "Mill Avenue District", "tipo": "entretenimiento", "distancia": "300 m", "descripcion": "Bares, restaurantes y tiendas de vida nocturna"},
-      {"nombre": "Tempe Town Lake", "tipo": "recreación", "distancia": "500 m", "descripcion": "Lago recreativo con senderos para caminar y actividades acuáticas"},
-      {"nombre": "Arizona State University", "tipo": "educación", "distancia": "1 km", "descripcion": "Campus principal con museos, galerías y eventos"}
+      {
+        "nombre": "Mill Avenue District",
+        "tipo": "entretenimiento",
+        "distancia": "300 m",
+        "descripcion": "Bares, restaurantes y tiendas de vida nocturna"
+      },
+      {
+        "nombre": "Tempe Town Lake",
+        "tipo": "recreación",
+        "distancia": "500 m",
+        "descripcion": "Lago recreativo con senderos para caminar y actividades acuáticas"
+      },
+      {
+        "nombre": "Arizona State University",
+        "tipo": "educación",
+        "distancia": "1 km",
+        "descripcion": "Campus principal con museos, galerías y eventos"
+      }
     ]
   },
   {
     "slug": "phoenix-tempe-university",
     "nombre": "Tempe University",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "university",
     "pois": [
-      {"nombre": "Arizona State University Campus", "tipo": "university", "distancia": "0.2 km"},
-      {"nombre": "ASU Sun Devil Stadium", "tipo": "sports", "distancia": "0.8 km"},
-      {"nombre": "ASU Museums", "tipo": "cultural", "distancia": "0.3 km"}
+      {
+        "nombre": "Arizona State University Campus",
+        "tipo": "university",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "ASU Sun Devil Stadium",
+        "tipo": "sports",
+        "distancia": "0.8 km"
+      },
+      {
+        "nombre": "ASU Museums",
+        "tipo": "cultural",
+        "distancia": "0.3 km"
+      }
     ],
-    "transferencias": ["Campus Shuttle Routes"],
+    "transferencias": [
+      "Campus Shuttle Routes"
+    ],
     "seo_title": "Estación Tempe University Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Tempe University en Valley Metro Light Rail, acceso directo al campus de Arizona State University.",
     "h1": "Estación Tempe University | Phoenix Valley Metro",
@@ -666,29 +1250,68 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora, especialmente durante eventos deportivos",
     "mundial_relevancia": "Campus universitario importante",
     "descripcion_turistica": "La estación Tempe University te lleva al corazón de Arizona State, una institución educativa de clase mundial. El campus alberga museos de arte, galerías, el Sun Devil Stadium para eventos deportivos y una comunidad académica dinámica.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo, campus accesible a todos"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo, campus accesible a todos"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4174,
     "lng": -111.9308,
     "lugares_cercanos": [
-      {"nombre": "ASU Campus Principal", "tipo": "educación", "distancia": "200 m", "descripcion": "Edificios académicos, bibliotecas y espacios de estudio"},
-      {"nombre": "Museos de ASU", "tipo": "cultural", "distancia": "300 m", "descripcion": "Museos de arte y galerías con arte contemporáneo y clásico"},
-      {"nombre": "Sun Devil Stadium", "tipo": "sports", "distancia": "800 m", "descripcion": "Estadio de football americano de ASU"}
+      {
+        "nombre": "ASU Campus Principal",
+        "tipo": "educación",
+        "distancia": "200 m",
+        "descripcion": "Edificios académicos, bibliotecas y espacios de estudio"
+      },
+      {
+        "nombre": "Museos de ASU",
+        "tipo": "cultural",
+        "distancia": "300 m",
+        "descripcion": "Museos de arte y galerías con arte contemporáneo y clásico"
+      },
+      {
+        "nombre": "Sun Devil Stadium",
+        "tipo": "sports",
+        "distancia": "800 m",
+        "descripcion": "Estadio de football americano de ASU"
+      }
     ]
   },
   {
     "slug": "phoenix-tempe-tech",
     "nombre": "Tempe Tech",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Tempe",
     "tipo_zona": "commercial",
     "pois": [
-      {"nombre": "Tech Companies", "tipo": "commercial", "distancia": "0.2 km"},
-      {"nombre": "Business Parks", "tipo": "commercial", "distancia": "0.3 km"},
-      {"nombre": "Restaurants and Services", "tipo": "gastronomía", "distancia": "0.4 km"}
+      {
+        "nombre": "Tech Companies",
+        "tipo": "commercial",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Business Parks",
+        "tipo": "commercial",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Restaurants and Services",
+        "tipo": "gastronomía",
+        "distancia": "0.4 km"
+      }
     ],
-    "transferencias": ["Corporate Shuttle Routes"],
+    "transferencias": [
+      "Corporate Shuttle Routes"
+    ],
     "seo_title": "Estación Tempe Tech Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Tempe Tech en Valley Metro Light Rail, acceso al corredor tecnológico y comercial de Tempe.",
     "h1": "Estación Tempe Tech | Phoenix Valley Metro",
@@ -703,26 +1326,59 @@ export const estacionesPhoenix = [
     "mejor_horario": "Horario laboral (lunes-viernes)",
     "mundial_relevancia": "Hub tecnológico",
     "descripcion_turistica": "Tempe Tech representa el corazón innovador de la región de Phoenix. La zona alberga oficinas de tecnología, startups, y es centro de innovación en el valle de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, zona moderna y bien diseñada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, zona moderna y bien diseñada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4102,
     "lng": -111.9195,
     "lugares_cercanos": [
-      {"nombre": "Empresas Tecnológicas", "tipo": "comercio", "distancia": "200 m", "descripcion": "Compañías de tech y corporaciones"},
-      {"nombre": "Parques Empresariales", "tipo": "comercio", "distancia": "300 m", "descripcion": "Oficinas modernas y espacios de trabajo"},
-      {"nombre": "Servicios y Restaurantes", "tipo": "gastronomía", "distancia": "400 m", "descripcion": "Cafeterías, restaurantes y servicios corporativos"}
+      {
+        "nombre": "Empresas Tecnológicas",
+        "tipo": "comercio",
+        "distancia": "200 m",
+        "descripcion": "Compañías de tech y corporaciones"
+      },
+      {
+        "nombre": "Parques Empresariales",
+        "tipo": "comercio",
+        "distancia": "300 m",
+        "descripcion": "Oficinas modernas y espacios de trabajo"
+      },
+      {
+        "nombre": "Servicios y Restaurantes",
+        "tipo": "gastronomía",
+        "distancia": "400 m",
+        "descripcion": "Cafeterías, restaurantes y servicios corporativos"
+      }
     ]
   },
   {
     "slug": "phoenix-gilbert-signal-butte",
     "nombre": "Signal Butte",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Gilbert",
     "tipo_zona": "residential",
     "pois": [
-      {"nombre": "Gilbert Neighborhoods", "tipo": "residential", "distancia": "0.3 km"},
-      {"nombre": "Local Services", "tipo": "services", "distancia": "0.5 km"}
+      {
+        "nombre": "Gilbert Neighborhoods",
+        "tipo": "residential",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Local Services",
+        "tipo": "services",
+        "distancia": "0.5 km"
+      }
     ],
     "transferencias": [],
     "seo_title": "Estación Signal Butte Valley Metro Rail — Guía turística | MetroGuia",
@@ -738,29 +1394,68 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Barrios residenciales del este",
     "descripcion_turistica": "Signal Butte ofrece acceso a Gilbert, una de las ciudades de más rápido crecimiento en Arizona. Los turistas pueden explorar barrios modernos y servicios comunitarios.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, estación moderna"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, estación moderna"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.4025,
     "lng": -111.8965,
     "lugares_cercanos": [
-      {"nombre": "Barrios Residenciales de Gilbert", "tipo": "residencial", "distancia": "300 m", "descripcion": "Comunidades modernas y seguras"},
-      {"nombre": "Servicios Locales", "tipo": "servicios", "distancia": "500 m", "descripcion": "Tiendas, restaurantes y servicios comunitarios"},
-      {"nombre": "Parques Comunitarios", "tipo": "parque", "distancia": "800 m", "descripcion": "Espacios verdes y recreativos"}
+      {
+        "nombre": "Barrios Residenciales de Gilbert",
+        "tipo": "residencial",
+        "distancia": "300 m",
+        "descripcion": "Comunidades modernas y seguras"
+      },
+      {
+        "nombre": "Servicios Locales",
+        "tipo": "servicios",
+        "distancia": "500 m",
+        "descripcion": "Tiendas, restaurantes y servicios comunitarios"
+      },
+      {
+        "nombre": "Parques Comunitarios",
+        "tipo": "parque",
+        "distancia": "800 m",
+        "descripcion": "Espacios verdes y recreativos"
+      }
     ]
   },
   {
     "slug": "phoenix-gilbert-main-street",
     "nombre": "Gilbert Downtown",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Gilbert",
     "tipo_zona": "downtown",
     "pois": [
-      {"nombre": "Gilbert Historical District", "tipo": "cultural", "distancia": "0.2 km"},
-      {"nombre": "Town Center", "tipo": "downtown", "distancia": "0.3 km"},
-      {"nombre": "Shopping and Dining", "tipo": "shopping", "distancia": "0.4 km"}
+      {
+        "nombre": "Gilbert Historical District",
+        "tipo": "cultural",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Town Center",
+        "tipo": "downtown",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Shopping and Dining",
+        "tipo": "shopping",
+        "distancia": "0.4 km"
+      }
     ],
-    "transferencias": ["Gilbert Local Buses"],
+    "transferencias": [
+      "Gilbert Local Buses"
+    ],
     "seo_title": "Estación Gilbert Downtown Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Gilbert Downtown en Valley Metro Light Rail, acceso al centro de Gilbert con tiendas, restaurantes y espacios históricos.",
     "h1": "Estación Gilbert Downtown | Phoenix Valley Metro",
@@ -775,29 +1470,68 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora, especialmente fines de semana",
     "mundial_relevancia": "Centro comunitario local",
     "descripcion_turistica": "Gilbert Downtown refleja el carácter local de una comunidad en desarrollo. El histórico downtown ofrece tiendas independientes, restaurantes familiares y un ambiente auténtico.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.3945,
     "lng": -111.8805,
     "lugares_cercanos": [
-      {"nombre": "Gilbert Historic Downtown", "tipo": "cultural", "distancia": "200 m", "descripcion": "Distrito histórico con arquitectura y comercios locales"},
-      {"nombre": "Town Square", "tipo": "espacios", "distancia": "300 m", "descripcion": "Plaza central para eventos comunitarios"},
-      {"nombre": "Shopping y Dining", "tipo": "comercio", "distancia": "400 m", "descripcion": "Tiendas, restaurantes y servicios"}
+      {
+        "nombre": "Gilbert Historic Downtown",
+        "tipo": "cultural",
+        "distancia": "200 m",
+        "descripcion": "Distrito histórico con arquitectura y comercios locales"
+      },
+      {
+        "nombre": "Town Square",
+        "tipo": "espacios",
+        "distancia": "300 m",
+        "descripcion": "Plaza central para eventos comunitarios"
+      },
+      {
+        "nombre": "Shopping y Dining",
+        "tipo": "comercio",
+        "distancia": "400 m",
+        "descripcion": "Tiendas, restaurantes y servicios"
+      }
     ]
   },
   {
     "slug": "phoenix-mesa-main-street",
     "nombre": "Mesa Main Street",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Mesa",
     "tipo_zona": "downtown",
     "pois": [
-      {"nombre": "Mesa Historic Downtown", "tipo": "cultural", "distancia": "0.2 km"},
-      {"nombre": "Mesa Arts Center", "tipo": "cultural", "distancia": "0.3 km"},
-      {"nombre": "Main Street Shops and Restaurants", "tipo": "shopping", "distancia": "0.1 km"}
+      {
+        "nombre": "Mesa Historic Downtown",
+        "tipo": "cultural",
+        "distancia": "0.2 km"
+      },
+      {
+        "nombre": "Mesa Arts Center",
+        "tipo": "cultural",
+        "distancia": "0.3 km"
+      },
+      {
+        "nombre": "Main Street Shops and Restaurants",
+        "tipo": "shopping",
+        "distancia": "0.1 km"
+      }
     ],
-    "transferencias": ["Mesa Local Buses"],
+    "transferencias": [
+      "Mesa Local Buses"
+    ],
     "seo_title": "Estación Mesa Main Street Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Mesa Main Street en Valley Metro Light Rail, acceso al downtown de Mesa con arte, cultura y comercio local.",
     "h1": "Estación Mesa Main Street | Phoenix Valley Metro",
@@ -812,28 +1546,63 @@ export const estacionesPhoenix = [
     "mejor_horario": "Tardes y noches, especialmente fines de semana",
     "mundial_relevancia": "Centro cultural local",
     "descripcion_turistica": "Mesa Main Street es el corazón cultural del este del valle. El downtown alberga el famoso Mesa Arts Center, galerías de arte, museos y una escena gastronómica vibrante.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA, estación bien diseñada"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
-    "lat": 33.3870,
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA, estación bien diseñada"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
+    "lat": 33.387,
     "lng": -111.8315,
     "lugares_cercanos": [
-      {"nombre": "Mesa Arts Center", "tipo": "cultural", "distancia": "300 m", "descripcion": "Centro de artes con galerías, teatro y exposiciones"},
-      {"nombre": "Historic Downtown Mesa", "tipo": "cultural", "distancia": "200 m", "descripcion": "Distrito histórico con arquitectura y comercios"},
-      {"nombre": "Main Street Restaurants", "tipo": "gastronomía", "distancia": "100 m", "descripcion": "Restaurantes locales y cafés independientes"}
+      {
+        "nombre": "Mesa Arts Center",
+        "tipo": "cultural",
+        "distancia": "300 m",
+        "descripcion": "Centro de artes con galerías, teatro y exposiciones"
+      },
+      {
+        "nombre": "Historic Downtown Mesa",
+        "tipo": "cultural",
+        "distancia": "200 m",
+        "descripcion": "Distrito histórico con arquitectura y comercios"
+      },
+      {
+        "nombre": "Main Street Restaurants",
+        "tipo": "gastronomía",
+        "distancia": "100 m",
+        "descripcion": "Restaurantes locales y cafés independientes"
+      }
     ]
   },
   {
     "slug": "phoenix-mesa-dr-main-st",
     "nombre": "Mesa Dr/Main St",
-    "linea": ["light-rail"],
+    "linea": [
+      "light-rail"
+    ],
     "sistema": "valley-metro-rail",
     "municipio": "Mesa",
     "tipo_zona": "downtown",
     "pois": [
-      {"nombre": "Mesa Terminal Facilities", "tipo": "transport", "distancia": "0.1 km"},
-      {"nombre": "Park and Ride", "tipo": "parking", "distancia": "0.2 km"}
+      {
+        "nombre": "Mesa Terminal Facilities",
+        "tipo": "transport",
+        "distancia": "0.1 km"
+      },
+      {
+        "nombre": "Park and Ride",
+        "tipo": "parking",
+        "distancia": "0.2 km"
+      }
     ],
-    "transferencias": ["Terminal Bus Lines"],
+    "transferencias": [
+      "Terminal Bus Lines"
+    ],
     "seo_title": "Estación Mesa Dr/Main St Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación Mesa Dr/Main St, terminal este del Valley Metro Light Rail en Mesa con Park & Ride y servicios de transporte.",
     "h1": "Estación Mesa Dr/Main St | Phoenix Valley Metro",
@@ -848,14 +1617,37 @@ export const estacionesPhoenix = [
     "mejor_horario": "Cualquier hora",
     "mundial_relevancia": "Terminal de transporte regional",
     "descripcion_turistica": "Mesa Dr/Main St es el terminal del viaje en Valley Metro Light Rail hacia el este. Ofrece conveniencia para turistas que llegan con auto desde Gilbert, Chandler o áreas al este de Phoenix.",
-    "accesibilidad": {"elevador": true, "rampa": true, "piso_tactil": true, "notas": "Acceso ADA completo, servicios para todos"},
-    "horarios": {"inicio": "04:00", "fin": "23:00"},
+    "accesibilidad": {
+      "elevador": true,
+      "rampa": true,
+      "piso_tactil": true,
+      "notas": "Acceso ADA completo, servicios para todos"
+    },
+    "horarios": {
+      "inicio": "04:00",
+      "fin": "23:00"
+    },
     "lat": 33.3795,
     "lng": -111.8215,
     "lugares_cercanos": [
-      {"nombre": "Park & Ride Facilities", "tipo": "transporte", "distancia": "200 m", "descripcion": "Estacionamiento seguro y servicios de tránsito"},
-      {"nombre": "Terminal Services", "tipo": "servicios", "distancia": "100 m", "descripcion": "Información y servicios al viajero"},
-      {"nombre": "Mesa Downtown Access", "tipo": "downtown", "distancia": "500 m", "descripcion": "Acceso al downtown de Mesa"}
+      {
+        "nombre": "Park & Ride Facilities",
+        "tipo": "transporte",
+        "distancia": "200 m",
+        "descripcion": "Estacionamiento seguro y servicios de tránsito"
+      },
+      {
+        "nombre": "Terminal Services",
+        "tipo": "servicios",
+        "distancia": "100 m",
+        "descripcion": "Información y servicios al viajero"
+      },
+      {
+        "nombre": "Mesa Downtown Access",
+        "tipo": "downtown",
+        "distancia": "500 m",
+        "descripcion": "Acceso al downtown de Mesa"
+      }
     ]
   }
 ];

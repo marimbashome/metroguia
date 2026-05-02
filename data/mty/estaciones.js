@@ -2,7 +2,9 @@ export const estacionesMTY = [
   {
     "slug": "talleres",
     "nombre": "Talleres",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -64,7 +66,9 @@ export const estacionesMTY = [
   {
     "slug": "san-bernabe",
     "nombre": "San Bernabé",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -121,7 +125,9 @@ export const estacionesMTY = [
   {
     "slug": "unidad-modelo",
     "nombre": "Unidad Modelo",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -178,7 +184,9 @@ export const estacionesMTY = [
   {
     "slug": "aztlan",
     "nombre": "Aztlán",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -235,7 +243,9 @@ export const estacionesMTY = [
   {
     "slug": "penitenciaria",
     "nombre": "Penitenciaría",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -249,14 +259,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Penitenciaría Metro L1 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Penitenciaría de la Línea 1 del Metrorrey.",
     "h1": "Estación Penitenciaría — Línea 1 Metrorrey",
-    "intro": "Estación intermedia de la Línea 1 que conecta zonas comerciales y residenciales del oeste de Monterrey.",
+    "intro": "Descubre la energía urbana de Monterrey a un paso de la histórica Zona Comercial del centro, ¡vive su ritmo vibrante!",
     "tips": [
-      "Acceso a zona comercial",
-      "Parada estratégica en la línea"
+      "Lleva efectivo pequeño para comprar antojitos en los puestos callejeros; muchos no aceptan tarjetas.",
+      "Descarga la app de Metrorrey para consultar horarios en tiempo real y evitar esperas inesperadas.",
+      "Visita el Mercado Juárez temprano (antes de las 11 am) para encontrar productos frescos y menos aglomeración."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana, de 8 am a 10 am, para evitar multitudes y disfrutar de los comercios con calma",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación en zona comercial del oeste de Monterrey. Acceso a tiendas y servicios locales con buena conexión hacia el centro. Punto estratégico para turistas que buscan autenticidad.",
+    "descripcion_turistica": "Al salir de Penitenciaría, sumérgete en el corazón comercial de Monterrey: la Plaza de la República y la calle de los Antojitos, donde saborear tacos de cabrito y tortas ahogadas. A pocos metros, visita el Museo de Historia Mexicana para conocer la evolución de la región, y recorre el Parque Fundidora, un oasis industrial convertido en espacio cultural con el Museo del Acero y actividades al aire libre. No te pierdas el Mercado Juárez, ideal para adquirir artesanías regias y probar el famoso cabrito al pastor mientras observas la vida cotidiana de los montereños.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -292,7 +303,9 @@ export const estacionesMTY = [
   {
     "slug": "alfonso-reyes",
     "nombre": "Alfonso Reyes",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -349,7 +362,9 @@ export const estacionesMTY = [
   {
     "slug": "mitras",
     "nombre": "Mitras",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -363,14 +378,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Mitras Metro L1 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Mitras (Línea 1) del Metrorrey: barrio residencial tradicional de Monterrey. Acceso a parques locales, tiendas y la vida cotidiana auténtica de la ciudad.",
     "h1": "Estación Mitras — Línea 1 Metrorrey",
-    "intro": "Estación que sirve a la zona residencial de Mitras, una comunidad tradicional de Monterrey.",
+    "intro": "Descubre la energía urbana y la tradición local en Mitras, donde el metro vibra con sabores y colores auténticos.",
     "tips": [
-      "Acceso a barrio residencial",
-      "Parada hacia el centro"
+      "Lleva efectivo pequeño para comprar en los puestos callejeros, ya que muchos no aceptan tarjetas.",
+      "Usa la app Metrorrey para consultar horarios en tiempo real y evitar esperas largas.",
+      "Visita la zona entre 10:00 y 12:00 h; el calor del mediodía es más agradable y la zona está menos congestionada."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación que accede al barrio de Mitras, zona residencial tradicional de Monterrey. Punto para explorar la vida comunitaria regiomontana con tiendas, restaurantes y parques locales.",
+    "descripcion_turistica": "A pocos pasos de la estación, el Barrio de Mitras te invita a recorrer la Plaza Mitras, un punto de encuentro rodeado de cafés artesanales y puestos de tacos al pastor. No te pierdas el Museo de Arte Popular de Monterrey, que exhibe piezas de artesanos regionales, y el Parque Fundidora, ideal para caminar entre esculturas contemporáneas y lagos artificiales. Para los amantes de la gastronomía, la calle Zaragoza ofrece una ruta de gastronomía norteña con cabrito, carne asada y birria, mientras que el Mercado de Mitras brinda productos frescos y artesanías locales.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -406,7 +422,9 @@ export const estacionesMTY = [
   {
     "slug": "simon-bolivar",
     "nombre": "Simón Bolívar",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -420,14 +438,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Simón Bolívar Metro L1 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Simón Bolívar de la Línea 1 del Metrorrey.",
     "h1": "Estación Simón Bolívar — Línea 1 Metrorrey",
-    "intro": "Estación residencial en la Línea 1 que conecta comunidades locales.",
+    "intro": "Descubre la tranquilidad de la zona residencial al bajar en Simón Bolívar, donde la vida local y la arquitectura moderna se entrelazan.",
     "tips": [
-      "Acceso a zona residencial",
-      "Parada en ruta centro"
+      "Lleva efectivo pequeño para el mercado, ya que muchos vendedores no aceptan tarjetas.",
+      "Usa la línea 1 del Metrobús desde la estación para llegar rápidamente al Parque La Villa (a 5 minutos caminando).",
+      "Viste ropa cómoda y calzado cerrado para disfrutar de los recorridos a pie y en bicicleta sin inconvenientes."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana, de 8:00 a 10:30, para evitar las horas pico y disfrutar de las atracciones con mayor tranquilidad.",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación en zona residencial de Monterrey que conecta comunidades locales. Acceso a barrio con vida comunitaria auténtica, comercios locales y gastronomía tradicional regiomontana.",
+    "descripcion_turistica": "A pocos pasos de la estación, visita el Parque La Villa, un oasis verde ideal para picnic y paseos en bicicleta. No te pierdas la Casa de la Cultura Simón Bolívar, donde se exhiben artesanías regiomontanas y se imparten talleres de danza folklórica. Cerca también está el Mercado de la Sucursal, perfecto para probar tacos de carne asada y comprar productos frescos de la región. Finaliza tu recorrido con un café en la terraza del Hotel Boutique Villa del Parque, que ofrece vistas panorámicas de la ciudad.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -463,7 +482,9 @@ export const estacionesMTY = [
   {
     "slug": "hospital",
     "nombre": "Hospital",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "servicios",
     "pois": [
@@ -520,7 +541,9 @@ export const estacionesMTY = [
   {
     "slug": "edison",
     "nombre": "Edison",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -577,7 +600,9 @@ export const estacionesMTY = [
   {
     "slug": "central",
     "nombre": "Central",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -639,7 +664,9 @@ export const estacionesMTY = [
   {
     "slug": "mty-cuauhtemoc",
     "nombre": "Cuauhtémoc",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "historico",
     "pois": [
@@ -704,7 +731,9 @@ export const estacionesMTY = [
   {
     "slug": "del-golfo",
     "nombre": "Del Golfo",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -761,7 +790,9 @@ export const estacionesMTY = [
   {
     "slug": "felix-u-gomez",
     "nombre": "Félix U. Gómez",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -823,7 +854,9 @@ export const estacionesMTY = [
   {
     "slug": "parque-fundidora",
     "nombre": "Parque Fundidora",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -892,7 +925,9 @@ export const estacionesMTY = [
   {
     "slug": "y-griega",
     "nombre": "Y Griega",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -949,7 +984,9 @@ export const estacionesMTY = [
   {
     "slug": "eloy-cavazos",
     "nombre": "Eloy Cavazos",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -1006,7 +1043,9 @@ export const estacionesMTY = [
   {
     "slug": "lerdo-de-tejada",
     "nombre": "Lerdo de Tejada",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Guadalupe",
     "tipo_zona": "residencial",
     "pois": [
@@ -1020,14 +1059,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Lerdo de Tejada Metro L1 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Lerdo de Tejada de la Línea 1 del Metrorrey.",
     "h1": "Estación Lerdo de Tejada — Línea 1 Metrorrey",
-    "intro": "Estación ubicada en el municipio de Guadalupe, cerca del Parque Fundidora.",
+    "intro": "Descubre la tranquila elegancia de la zona residencial de Lerdo de Tejada, un refugio local lleno de encanto auténtico.",
     "tips": [
-      "Acceso a Guadalupe",
-      "Parada cercana a Parque Fundidora"
+      "Lleva efectivo pequeño para pagar en los puestos de comida callejera que no aceptan tarjetas.",
+      "Usa la aplicación oficial de Metrorrey para consultar en tiempo real la llegada de los trenes y evitar esperas.",
+      "Visita el parque temprano en la mañana para disfrutar de la luz dorada y evitar el calor del mediodía."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación en municipio de Guadalupe, cercana al Parque Fundidora. Acceso a zona residencial con buena conectividad. Punto útil para turistas que deseen explorar áreas menos turísticas.",
+    "descripcion_turistica": "A pocos pasos de la estación, explora el Parque Lerdo de Tejada, ideal para caminar entre áreas verdes y esculturas modernas. No te pierdas la Casa de la Cultura Monterrey, donde podrás disfrutar de exposiciones de arte regional y presentaciones de música norteña. En la cercana Calle del Sol encontrarás cafés artesanales, como Café La Estación, y boutiques de diseño independiente que ofrecen productos hechos a mano, perfectos para llevar un recuerdo auténtico de la ciudad.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1063,7 +1103,9 @@ export const estacionesMTY = [
   {
     "slug": "exposicion",
     "nombre": "Exposición",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Guadalupe",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1132,7 +1174,9 @@ export const estacionesMTY = [
   {
     "slug": "sendero",
     "nombre": "Sendero",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
     "pois": [
@@ -1146,15 +1190,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Sendero Metro L2 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Sendero (Línea 2) del Metrorrey: terminal norte elevada. Zona residencial con vida local auténtica, ideal para turistas que buscan explorar más allá de las zonas turísticas.",
     "h1": "Estación Sendero — Línea 2 Metrorrey",
-    "intro": "Sendero es la estación terminal nororiental de la Línea 2 del Metrorrey, acceso a la zona residencial del norte.",
+    "intro": "Descubre la tranquilidad de Sendero, donde la modernidad urbana se entrelaza con la frescura de la zona residencial de Monterrey.",
     "tips": [
-      "Terminal de la Línea 2",
-      "Conexión con rutas de autobús hacia el norte",
-      "Estación elevada"
+      "Lleva una botella reutilizable; hay varias fuentes de agua potable en el parque y el centro comercial.",
+      "Aprovecha los horarios de apertura temprana (7:00‑9:00 am) para disfrutar del parque sin aglomeraciones.",
+      "Utiliza la app Metrorrey para consultar en tiempo real la llegada del próximo tren y evitar esperas."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana, antes de las 9:00 am, para disfrutar de la zona sin multitudes.",
     "mundial_relevancia": "Sin relevancia directa al Estadio BBVA.",
-    "descripcion_turistica": "Terminal nororiental de Línea 2, elevada. Acceso a zona residencial del norte de Monterrey. Punto para explorar barrios menos turísticos con vida local auténtica.",
+    "descripcion_turistica": "A pocos pasos de la estación, el Parque Sendero ofrece amplios senderos verdes, áreas de picnic y canchas deportivas, ideal para un paseo matutino o una tarde en familia. Cerca se encuentra el Centro Comercial Sendero, con tiendas locales, cafeterías artesanales y el famoso helado de la Heladería La Parroquia. No te pierdas la Iglesia San José de Sendero, una joya arquitectónica del siglo XX que brinda una vista panorámica del valle y permite apreciar la fusión de arte contemporáneo y tradición montereña. Además, la zona residencial cuenta con murales de arte urbano que relatan la historia del desarrollo de Monterrey.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1190,7 +1234,9 @@ export const estacionesMTY = [
   {
     "slug": "tapia",
     "nombre": "Tapia",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1204,15 +1250,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Tapia Metro L2 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Tapia (Línea 2) del Metrorrey: acceso a zona residencial de San Nicolás. Descubre tiendas, restaurantes locales y la auténtica vida comunitaria del norte de Monterrey.",
     "h1": "Estación Tapia — Línea 2 Metrorrey",
-    "intro": "Estación elevada en San Nicolás que sirve a la comunidad residencial de esta importante zona.",
+    "intro": "Descubre la tranquilidad de San Nicolás, donde la modernidad del metro se funde con la vida local auténtica.",
     "tips": [
-      "Estación elevada",
-      "Acceso a San Nicolás de los Garza",
-      "Parada en ruta centro"
+      "Lleva efectivo pequeño para comprar antojitos en los puestos del mercado, ya que muchos no aceptan tarjetas.",
+      "Usa la salida sur de la estación para acceder directamente al parque y evitar cruzar calles transitadas.",
+      "Aprovecha la app de Metrorrey para consultar en tiempo real la llegada de trenes y planear tu visita sin esperas."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana, antes de las 9 a.m., para disfrutar de la zona sin aglomeraciones",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación elevada en San Nicolás de los Garza. Acceso a zona residencial importante de la metrópolis. Punto conectado para turistas que deseen explorar el norte de la región.",
+    "descripcion_turistica": "A pocos pasos de la estación Tapia, la zona residencial San Nicolás te invita a pasear por sus arboladas avenidas y a explorar el Parque Vicente Guerrero, ideal para un picnic bajo la sombra de sus robles centenarios. No te pierdas la Casa de la Cultura San Nicolás, que ofrece exposiciones de arte regional y talleres de cocina tradicional montera. Además, el Mercado de San Nicolás, a dos cuadras, es perfecto para degustar tacos de carne asada, quesadillas de flor de calabaza y comprar artesanías de alfarería local.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1248,7 +1294,9 @@ export const estacionesMTY = [
   {
     "slug": "san-nicolas",
     "nombre": "San Nicolás",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "comercial",
     "pois": [
@@ -1306,7 +1354,9 @@ export const estacionesMTY = [
   {
     "slug": "anahuac",
     "nombre": "Anáhuac",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1320,15 +1370,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Anáhuac Metro L2 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Anáhuac (Línea 2) del Metrorrey: zona residencial consolidada en San Nicolás. Tiendas locales, vida comunitaria auténtica y servicios para viajeros.",
     "h1": "Estación Anáhuac — Línea 2 Metrorrey",
-    "intro": "Estación residencial que accede a la zona de Anáhuac en San Nicolás.",
+    "intro": "Descubre la elegancia residencial de Anáhuac, donde la modernidad se funde con la tradición regiomontense en cada paso.",
     "tips": [
-      "Zona residencial",
-      "Parada intermedia en la línea",
-      "Estación elevada"
+      "Lleva efectivo o una tarjeta recargable para el metro; el sistema no acepta tarjetas internacionales.",
+      "Usa la app Metrorrey para consultar en tiempo real la llegada de trenes y evitar esperas largas.",
+      "Visita los parques al atardecer para evitar el calor del mediodía y capturar mejores fotos."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana, de 7:00 a 9:00, para viajar con menor afluencia y mayor comodidad.",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Estación elevada en zona residencial Anáhuac de San Nicolás. Acceso a barrio residencial consolidado con tiendas locales y vida comunitaria auténtica.",
+    "descripcion_turistica": "A pocos minutos de la estación, recorre la zona residencial Anáhuac y admira sus amplios parques, como el Parque Lineal de la Universidad Autónoma de Nuevo León, ideal para caminatas y ciclismo. Visita el Centro Comercial Plaza Anáhuac para saborear la gastronomía local en sus restaurantes de tacos al pastor y cabrito, y aprovecha la cercanía al Museo del Noreste, que exhibe arte prehispánico y colonial. No te pierdas el Bosque de la Primavera, un pulmón verde donde podrás observar fauna urbana y disfrutar de áreas de juego para niños, perfecto para un día familiar.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1364,7 +1414,9 @@ export const estacionesMTY = [
   {
     "slug": "mty-universidad",
     "nombre": "Universidad",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1428,7 +1480,9 @@ export const estacionesMTY = [
   {
     "slug": "ninos-heroes",
     "nombre": "Niños Héroes",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "San Nicolás de los Garza",
     "tipo_zona": "residencial",
     "pois": [
@@ -1442,15 +1496,15 @@ export const estacionesMTY = [
     "seo_title": "Estación Niños Héroes Metro L2 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Niños Héroes de la Línea 2 del Metrorrey.",
     "h1": "Estación Niños Héroes — Línea 2 Metrorrey",
-    "intro": "Estación elevada que marca el límite entre la zona elevada y subterránea de la Línea 2.",
+    "intro": "Descubre el encanto residencial de Monterrey a un paso del histórico monumento de los Niños Héroes.",
     "tips": [
-      "Última estación elevada de la Línea 2",
-      "Parada en ruta hacia el centro",
-      "Acceso a zona residencial"
+      "Lleva efectivo pequeño para pagar el estacionamiento del Parque Fundidora, ya que no todos los comercios aceptan tarjetas.",
+      "Usa la app de Metrorrey para comprar tu tarjeta de recarga y evitar filas en las máquinas expendedoras.",
+      "Visita la zona entre semana, especialmente de martes a jueves, cuando los locales están menos concurridos y podrás disfrutar de los murales callejeros sin aglomeraciones."
     ],
-    "mejor_horario": "Lunes a viernes 6:00 AM a 11:30 PM",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa.",
-    "descripcion_turistica": "Última estación elevada de Línea 2 antes de ir bajo tierra. Punto de transición entre zona elevada y subterránea. Acceso a zona residencial con comercios locales.",
+    "descripcion_turistica": "Al salir de la estación, recorre la tranquila avenida San Jerónimo y admira las casas coloniales con jardines de bougainvillea. A pocos minutos, visita el Parque Fundidora, donde podrás explorar el Museo del Acero, dar un paseo en bicicleta por sus senderos y disfrutar del Lago Alberto. No te pierdas la Casa de la Cultura de Monterrey, que ofrece exposiciones de arte local y música en vivo, y saborea tacos al pastor en la famosa taquería ‘El Gran Pastor’, a solo dos cuadras del metro.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1486,7 +1540,9 @@ export const estacionesMTY = [
   {
     "slug": "regina",
     "nombre": "Regina",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "historico",
     "pois": [
@@ -1550,7 +1606,9 @@ export const estacionesMTY = [
   {
     "slug": "general-anaya",
     "nombre": "General Anaya",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1613,7 +1671,9 @@ export const estacionesMTY = [
   {
     "slug": "cuauhtemoc-l2",
     "nombre": "Cuauhtémoc",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1674,7 +1734,9 @@ export const estacionesMTY = [
   {
     "slug": "alameda",
     "nombre": "Alameda",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1737,7 +1799,9 @@ export const estacionesMTY = [
   {
     "slug": "fundadores",
     "nombre": "Fundadores",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "cultural-turistico",
     "pois": [
@@ -1807,7 +1871,9 @@ export const estacionesMTY = [
   {
     "slug": "padre-mier",
     "nombre": "Padre Mier",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1870,7 +1936,9 @@ export const estacionesMTY = [
   {
     "slug": "general-i-zaragoza",
     "nombre": "General I. Zaragoza",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
     "pois": [
@@ -1925,20 +1993,31 @@ export const estacionesMTY = [
         "descripcion": "Restaurantes con comida regional y especialidades norteñas."
       }
     ]
-  }
-  , {
+  },
+  {
     "slug": "hospital-metropolitano",
     "nombre": "Hospital Metropolitano",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "salud",
-    "pois": ["Hospital Metropolitano", "Zona médica", "Clínicas privadas"],
+    "pois": [
+      "Hospital Metropolitano",
+      "Zona médica",
+      "Clínicas privadas"
+    ],
     "transferencias": [],
     "seo_title": "Estación Hospital Metropolitano Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Terminal norte de Línea 3. Zona hospitalaria con acceso directo a Hospital Metropolitano y servicios de salud. Guía turística MetroGuia.",
     "h1": "Estación Hospital Metropolitano - Línea 3",
     "intro": "Terminal norte de Línea 3, punto de acceso principal a la zona médica más importante del área metropolitana. Estación moderna con elevadores y rampas de acceso, ubicada estratégicamente para visitantes que requieran servicios de salud.",
-    "tips": ["Accesibilidad completa para personas con movilidad reducida","Elevadores de gran capacidad y rampas señalizadas","Estacionamiento para usuarios de transporte privado","Servicios de información turística disponibles"],
+    "tips": [
+      "Accesibilidad completa para personas con movilidad reducida",
+      "Elevadores de gran capacidad y rampas señalizadas",
+      "Estacionamiento para usuarios de transporte privado",
+      "Servicios de información turística disponibles"
+    ],
     "mejor_horario": "Mañana (6:00-9:00) para menor congestión. Evitar horarios de cambios de turno hospitalario.",
     "mundial_relevancia": "Centro médico de referencia regional con equipamiento de clase internacional.",
     "descripcion_turistica": "Acceso directo a uno de los principales centros hospitalarios privados de la región. La zona cuenta con servicios complementarios, farmacias, laboratorios y restaurantes especializados para acompañantes.",
@@ -1977,16 +2056,26 @@ export const estacionesMTY = [
   {
     "slug": "los-angeles",
     "nombre": "Los Ángeles",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
-    "pois": ["Zona residencial Los Ángeles", "Parques vecinales", "Comercio local"],
+    "pois": [
+      "Zona residencial Los Ángeles",
+      "Parques vecinales",
+      "Comercio local"
+    ],
     "transferencias": [],
     "seo_title": "Estación Los Ángeles Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Los Ángeles L3. Acceso a zona residencial consolidada con parques y comercio local. Guía turística MetroGuia.",
     "h1": "Estación Los Ángeles - Línea 3",
     "intro": "Estación que sirve a la consolidada zona residencial de Los Ángeles, barrio tradicional de Monterrey con carácter vecinal y comercio local establecido. Punto de conexión ideal para residentes y visitantes que exploren la autenticidad de la ciudad.",
-    "tips": ["Explora las tiendas tradicionales alrededor de la estación","Los fines de semana hay mayor afluencia de comercio local","Acerca transporte seguro a residencias de clase media consolidada"],
+    "tips": [
+      "Explora las tiendas tradicionales alrededor de la estación",
+      "Los fines de semana hay mayor afluencia de comercio local",
+      "Acerca transporte seguro a residencias de clase media consolidada"
+    ],
     "mejor_horario": "Tarde (14:00-18:00) para interactuar con comercio local. Mañana para menos congestión.",
     "mundial_relevancia": "Barrio residencial tradicional que representa la estructura urbana de Monterrey.",
     "descripcion_turistica": "Acceso a una zona residencial auténtica donde conviven viviendas consolidadas, pequeños comercios y espacios verdes. Ideal para quienes deseen conocer cómo viven los regiomontanos fuera de zonas turísticas.",
@@ -2025,16 +2114,29 @@ export const estacionesMTY = [
   {
     "slug": "ruiz-cortines",
     "nombre": "Ruiz Cortines",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial-comercial",
-    "pois": ["Av. Ruiz Cortines", "Zona comercial", "Servicios varios"],
-    "transferencias": ["Ecovía"],
+    "pois": [
+      "Av. Ruiz Cortines",
+      "Zona comercial",
+      "Servicios varios"
+    ],
+    "transferencias": [
+      "Ecovía"
+    ],
     "seo_title": "Estación Ruiz Cortines Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Ruiz Cortines L3 con transferencia a Ecovía. Zona comercial y residencial. Guía turística MetroGuia.",
     "h1": "Estación Ruiz Cortines - Línea 3",
     "intro": "Estación de transferencia entre Metro Línea 3 y BRT Ecovía, ubicada en la importante avenida Ruiz Cortines. Zona con mezcla de comercio local y residencias, punto estratégico para viajeros que necesiten conectar diferentes modos de transporte.",
-    "tips": ["Transferencia a Ecovía disponible con conexión directa","Excelente punto para acceder a comercios locales de la avenida","Zona segura con presencia de transportistas","Ideal como punto de conexión multimodal"],
+    "tips": [
+      "Transferencia a Ecovía disponible con conexión directa",
+      "Excelente punto para acceder a comercios locales de la avenida",
+      "Zona segura con presencia de transportistas",
+      "Ideal como punto de conexión multimodal"
+    ],
     "mejor_horario": "Mañana (7:00-10:00) para transferencias rápidas. Tarde para compras comerciales.",
     "mundial_relevancia": "Nodo de intermodalidad que conecta transporte masivo con BRT regional.",
     "descripcion_turistica": "Estación estratégica que permite conectar el metro con el sistema Ecovía de autobuses de tránsito rápido. La zona de Ruiz Cortines es comercial y transitada, con opciones de compras y servicios diversos.",
@@ -2073,16 +2175,27 @@ export const estacionesMTY = [
   {
     "slug": "moderna",
     "nombre": "Colonia Moderna",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
-    "pois": ["Colonia Moderna", "Zona residencial", "Parques locales"],
+    "pois": [
+      "Colonia Moderna",
+      "Zona residencial",
+      "Parques locales"
+    ],
     "transferencias": [],
     "seo_title": "Estación Colonia Moderna Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Colonia Moderna L3. Acceso a zona residencial establecida de Monterrey. Guía turística MetroGuia.",
     "h1": "Estación Colonia Moderna - Línea 3",
     "intro": "Estación que da acceso a Colonia Moderna, una de las zonas residenciales más establecidas y seguras de Monterrey. Barrio con arquitectura característica y vida comunitaria vibrante, punto de conexión para residentes y visitantes interesados en la Monterrey auténtica.",
-    "tips": ["Zona segura y bien iluminada","Parques vecinales con horarios regulares","Buen acceso a servicios de salud y educación","Espacios verdes disponibles para descanso"],
+    "tips": [
+      "Zona segura y bien iluminada",
+      "Parques vecinales con horarios regulares",
+      "Buen acceso a servicios de salud y educación",
+      "Espacios verdes disponibles para descanso"
+    ],
     "mejor_horario": "Tarde y fin de semana para disfrutar parques. Mañana para acceso rápido.",
     "mundial_relevancia": "Barrio residencial consolidado que ejemplifica desarrollo urbano ordenado.",
     "descripcion_turistica": "Acceso a una colonia residencial con carácter propio, donde conviven residencias, pequeños comercios y áreas verdes. Ideal para experimentar la vida cotidiana regiomontana fuera de circuitos turísticos tradicionales.",
@@ -2121,16 +2234,27 @@ export const estacionesMTY = [
   {
     "slug": "metalurgicos",
     "nombre": "Metalúrgicos",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "industrial",
-    "pois": ["Zona industrial", "Plantas manufactureras", "Talleres"],
+    "pois": [
+      "Zona industrial",
+      "Plantas manufactureras",
+      "Talleres"
+    ],
     "transferencias": [],
     "seo_title": "Estación Metalúrgicos Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Metalúrgicos L3. Acceso a zona industrial de Monterrey. Guía turística MetroGuia.",
     "h1": "Estación Metalúrgicos - Línea 3",
     "intro": "Estación que da acceso a la histórica zona industrial de Monterrey, cuna de la industria manufacturera norteña. Área que representa el desarrollo económico e industrial de la región, con plantas de producción y talleres especializados.",
-    "tips": ["Zona con horarios de entrada y salida de trabajadores","Restaurantes económicos en la zona","Acceso para trabajadores y visitantes interesados en industria metalúrgica","Seguridad garantizada durante horarios laborales"],
+    "tips": [
+      "Zona con horarios de entrada y salida de trabajadores",
+      "Restaurantes económicos en la zona",
+      "Acceso para trabajadores y visitantes interesados en industria metalúrgica",
+      "Seguridad garantizada durante horarios laborales"
+    ],
     "mejor_horario": "Horarios de entrada/salida laboral (6:00-9:00 y 17:00-19:00). Evitar madrugadas.",
     "mundial_relevancia": "Núcleo histórico de industria manufacturera mexicana de clase mundial.",
     "descripcion_turistica": "Acceso a la zona industrial que ha definido la identidad económica de Monterrey. Para visitantes interesados en comprender la base industrial y manufacturera de la región y su importancia histórica.",
@@ -2169,16 +2293,29 @@ export const estacionesMTY = [
   {
     "slug": "felix-u-gomez-l3",
     "nombre": "Félix U. Gómez",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "comercial",
-    "pois": ["Mercado", "Zona comercial", "Centro de abastos"],
-    "transferencias": ["1"],
+    "pois": [
+      "Mercado",
+      "Zona comercial",
+      "Centro de abastos"
+    ],
+    "transferencias": [
+      "1"
+    ],
     "seo_title": "Estación Félix U. Gómez Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Félix U. Gómez L3 con transferencia a L1. Zona comercial y mercado. Guía turística MetroGuia.",
     "h1": "Estación Félix U. Gómez - Línea 3",
     "intro": "Estación de transferencia entre Metro Línea 3 y Línea 1, ubicada en zona comercial vibrante. Acceso directo a mercados tradicionales y zona de abastos, punto focal para compras cotidianas y comercio local. Centro multimodal importante del sistema.",
-    "tips": ["Transferencia directa a Línea 1 muy eficiente","Mercado activo especialmente mañanas","Zona comercial diversa con tiendas para todos los presupuestos","Seguridad reforzada en horas de mayor concurrencia comercial"],
+    "tips": [
+      "Transferencia directa a Línea 1 muy eficiente",
+      "Mercado activo especialmente mañanas",
+      "Zona comercial diversa con tiendas para todos los presupuestos",
+      "Seguridad reforzada en horas de mayor concurrencia comercial"
+    ],
     "mejor_horario": "Mañana (7:00-12:00) para compras en mercado. Tarde para comercio local. Evitar madrugadas.",
     "mundial_relevancia": "Nodo de interconexión de líneas de metro con zona comercial tradicional.",
     "descripcion_turistica": "Centro comercial y de mercado que es corazón de intercambios económicos locales. Punto de acceso a mercados tradicionales mexicanos, tiendas de abastos y comercio diverso que refleja la vida cotidiana regiomontana.",
@@ -2217,16 +2354,27 @@ export const estacionesMTY = [
   {
     "slug": "colonia-obrera",
     "nombre": "Colonia Obrera",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial",
-    "pois": ["Colonia Obrera", "Zona residencial", "Servicios locales"],
+    "pois": [
+      "Colonia Obrera",
+      "Zona residencial",
+      "Servicios locales"
+    ],
     "transferencias": [],
     "seo_title": "Estación Colonia Obrera Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Colonia Obrera L3. Acceso a zona residencial de Monterrey. Guía turística MetroGuia.",
     "h1": "Estación Colonia Obrera - Línea 3",
     "intro": "Estación que sirve a la histórica Colonia Obrera, tradicional zona residencial de trabajadores y clase media de Monterrey. Barrio con identidad propia, vida comunitaria arraigada y comercio local establecido, ideal para conocer la Monterrey más auténtica.",
-    "tips": ["Zona tranquila y segura","Parques vecinales bien mantenidos","Comercio local tradicional con precios accesibles","Excelente para descanso y compras de necesidades diarias"],
+    "tips": [
+      "Zona tranquila y segura",
+      "Parques vecinales bien mantenidos",
+      "Comercio local tradicional con precios accesibles",
+      "Excelente para descanso y compras de necesidades diarias"
+    ],
     "mejor_horario": "Mañana para comercio local. Tarde para parques y vida comunitaria.",
     "mundial_relevancia": "Barrio obrero histórico que conserva carácter y tradición urbana.",
     "descripcion_turistica": "Acceso a un barrio de trabajadores que mantiene su tradición y carácter comunitario. Ideal para visitantes que deseen conocer cómo vive la clase media regiomontana en colonias establecidas con identidad propia.",
@@ -2265,16 +2413,27 @@ export const estacionesMTY = [
   {
     "slug": "santa-lucia",
     "nombre": "Santa Lucía",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "residencial-comercial",
-    "pois": ["Santa Lucía", "Zona mixta", "Comercio y vivienda"],
+    "pois": [
+      "Santa Lucía",
+      "Zona mixta",
+      "Comercio y vivienda"
+    ],
     "transferencias": [],
     "seo_title": "Estación Santa Lucía Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación Santa Lucía L3. Zona residencial-comercial de Monterrey. Guía turística MetroGuia.",
     "h1": "Estación Santa Lucía - Línea 3",
     "intro": "Estación en zona de mezcla residencial-comercial que combina viviendas, pequeños comercios y servicios. Área de transición con buena accesibilidad y conectividad, que sirve tanto a residentes locales como a visitantes que requieran servicios diversos.",
-    "tips": ["Zona con oferta comercial variada","Buena combinación de residencias y servicios","Seguridad garantizada","Acceso fácil a servicios de salud y educación locales"],
+    "tips": [
+      "Zona con oferta comercial variada",
+      "Buena combinación de residencias y servicios",
+      "Seguridad garantizada",
+      "Acceso fácil a servicios de salud y educación locales"
+    ],
     "mejor_horario": "Mañana para comercio. Tarde para acceso residencial. Fin de semana para actividades locales.",
     "mundial_relevancia": "Zona de uso mixto que representa desarrollo urbano balanceado.",
     "descripcion_turistica": "Acceso a zona de uso mixto donde convergen viviendas y comercio local. Ideal para quienes busquen experiencias más integradas de vida cotidiana regiomontana con servicios y compras accesibles.",
@@ -2313,16 +2472,30 @@ export const estacionesMTY = [
   {
     "slug": "general-i-zaragoza-l3",
     "nombre": "General I. Zaragoza",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Monterrey",
     "tipo_zona": "transporte",
-    "pois": ["Terminal de autobuses", "Zona comercial", "Centro de transportes"],
-    "transferencias": ["2"],
+    "pois": [
+      "Terminal de autobuses",
+      "Zona comercial",
+      "Centro de transportes"
+    ],
+    "transferencias": [
+      "2"
+    ],
     "seo_title": "Estación General I. Zaragoza Metro L3 Monterrey — Guía turística | MetroGuia",
     "meta_description": "Estación General I. Zaragoza L3 con transferencia a L2. Terminal de autobuses. Guía turística MetroGuia.",
     "h1": "Estación General I. Zaragoza - Línea 3",
     "intro": "Terminal sur de Línea 3 con transferencia a Línea 2. Estación conectada directamente con la terminal de autobuses interurbana, punto neurálgico para viajeros que requieren transportación regional y de largo alcance. Centro de movilidad multimodo fundamental.",
-    "tips": ["Transferencia rápida a Línea 2 disponible","Acceso directo a autobuses interurbanos hacia todo el estado","Zona comercial amplia para compras antes de viajar","Información de transporte y asesoría disponible","Luggage storage y servicios de viajero"],
+    "tips": [
+      "Transferencia rápida a Línea 2 disponible",
+      "Acceso directo a autobuses interurbanos hacia todo el estado",
+      "Zona comercial amplia para compras antes de viajar",
+      "Información de transporte y asesoría disponible",
+      "Luggage storage y servicios de viajero"
+    ],
     "mejor_horario": "Mañana (6:00-9:00) para salidas de autobuses. Tarde (14:00-18:00) para llegadas. Evitar horas pico. Planificar con anticipación.",
     "mundial_relevancia": "Terminal que conecta transporte urbano con red regional de largo alcance.",
     "descripcion_turistica": "Punto de conexión principal entre transporte metropolitano y servicios de autobuses interurbanos. Terminal comercial con tiendas, restaurantes y servicios para viajeros. Ideal para quienes exploren municipios cercanos o salgan hacia otras regiones de Nuevo León.",

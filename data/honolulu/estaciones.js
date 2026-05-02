@@ -2,15 +2,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-east-kapolei",
     "nombre": "East Kapolei",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
     "pois": [
-      { "nombre": "Kapolei Kaena Point", "tipo": "park", "distancia": 800 },
-      { "nombre": "Kapolei Public Library", "tipo": "library", "distancia": 1200 },
-      { "nombre": "Kapolei Regional Park", "tipo": "recreation", "distancia": 600 },
-      { "nombre": "Renton Shopping Center", "tipo": "shopping", "distancia": 400 }
+      {
+        "nombre": "Kapolei Kaena Point",
+        "tipo": "park",
+        "distancia": 800
+      },
+      {
+        "nombre": "Kapolei Public Library",
+        "tipo": "library",
+        "distancia": 1200
+      },
+      {
+        "nombre": "Kapolei Regional Park",
+        "tipo": "recreation",
+        "distancia": 600
+      },
+      {
+        "nombre": "Renton Shopping Center",
+        "tipo": "shopping",
+        "distancia": 400
+      }
     ],
     "transferencias": [],
     "seo_title": "East Kapolei Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -40,15 +58,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-uh-west-oahu",
     "nombre": "UH West Oahu",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "university",
     "pois": [
-      { "nombre": "University of Hawaii West Oahu", "tipo": "university", "distancia": 300 },
-      { "nombre": "Makakilo Community Park", "tipo": "recreation", "distancia": 500 },
-      { "nombre": "Kaena Point State Park", "tipo": "park", "distancia": 2000 },
-      { "nombre": "Nanakuli Beach Park", "tipo": "beach", "distancia": 3000 }
+      {
+        "nombre": "University of Hawaii West Oahu",
+        "tipo": "university",
+        "distancia": 300
+      },
+      {
+        "nombre": "Makakilo Community Park",
+        "tipo": "recreation",
+        "distancia": 500
+      },
+      {
+        "nombre": "Kaena Point State Park",
+        "tipo": "park",
+        "distancia": 2000
+      },
+      {
+        "nombre": "Nanakuli Beach Park",
+        "tipo": "beach",
+        "distancia": 3000
+      }
     ],
     "transferencias": [],
     "seo_title": "UH West Oahu Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -78,15 +114,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-ho-opili",
     "nombre": "Ho Opili",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
     "pois": [
-      { "nombre": "Ho Opili Mixed-Use Development", "tipo": "shopping", "distancia": 200 },
-      { "nombre": "Makakilo District Park", "tipo": "recreation", "distancia": 800 },
-      { "nombre": "Kaena Point Natural Area Reserve", "tipo": "nature", "distancia": 2500 },
-      { "nombre": "Nanakuli Petroglyph Sites", "tipo": "cultural", "distancia": 4000 }
+      {
+        "nombre": "Ho Opili Mixed-Use Development",
+        "tipo": "shopping",
+        "distancia": 200
+      },
+      {
+        "nombre": "Makakilo District Park",
+        "tipo": "recreation",
+        "distancia": 800
+      },
+      {
+        "nombre": "Kaena Point Natural Area Reserve",
+        "tipo": "nature",
+        "distancia": 2500
+      },
+      {
+        "nombre": "Nanakuli Petroglyph Sites",
+        "tipo": "cultural",
+        "distancia": 4000
+      }
     ],
     "transferencias": [],
     "seo_title": "Ho Opili Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -116,15 +170,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-west-loch",
     "nombre": "West Loch",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
     "pois": [
-      { "nombre": "West Loch Golf Course", "tipo": "sports", "distancia": 600 },
-      { "nombre": "Nanakuli Beach Park", "tipo": "beach", "distancia": 2000 },
-      { "nombre": "Makaha Beach Park", "tipo": "beach", "distancia": 3500 },
-      { "nombre": "Waianae Mountain Trails", "tipo": "hiking", "distancia": 3000 }
+      {
+        "nombre": "West Loch Golf Course",
+        "tipo": "sports",
+        "distancia": 600
+      },
+      {
+        "nombre": "Nanakuli Beach Park",
+        "tipo": "beach",
+        "distancia": 2000
+      },
+      {
+        "nombre": "Makaha Beach Park",
+        "tipo": "beach",
+        "distancia": 3500
+      },
+      {
+        "nombre": "Waianae Mountain Trails",
+        "tipo": "hiking",
+        "distancia": 3000
+      }
     ],
     "transferencias": [],
     "seo_title": "West Loch Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -154,15 +226,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-waipahu",
     "nombre": "Waipahu",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "residential",
     "pois": [
-      { "nombre": "Waipahu Public Library", "tipo": "library", "distancia": 400 },
-      { "nombre": "Waipahu District Park", "tipo": "recreation", "distancia": 600 },
-      { "nombre": "Del Monte Plantation Historic Site", "tipo": "historical", "distancia": 1500 },
-      { "nombre": "Kurtistown Cultural Center", "tipo": "cultural", "distancia": 2000 }
+      {
+        "nombre": "Waipahu Public Library",
+        "tipo": "library",
+        "distancia": 400
+      },
+      {
+        "nombre": "Waipahu District Park",
+        "tipo": "recreation",
+        "distancia": 600
+      },
+      {
+        "nombre": "Del Monte Plantation Historic Site",
+        "tipo": "historical",
+        "distancia": 1500
+      },
+      {
+        "nombre": "Kurtistown Cultural Center",
+        "tipo": "cultural",
+        "distancia": 2000
+      }
     ],
     "transferencias": [],
     "seo_title": "Waipahu Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -192,15 +282,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-leeward-cc",
     "nombre": "Leeward Community College",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "university",
     "pois": [
-      { "nombre": "Leeward Community College", "tipo": "university", "distancia": 300 },
-      { "nombre": "Waipahu District Park", "tipo": "recreation", "distancia": 800 },
-      { "nombre": "Koa Ridge Nature Trail", "tipo": "hiking", "distancia": 1200 },
-      { "nombre": "Waipahu Cultural Gardens", "tipo": "cultural", "distancia": 1500 }
+      {
+        "nombre": "Leeward Community College",
+        "tipo": "university",
+        "distancia": 300
+      },
+      {
+        "nombre": "Waipahu District Park",
+        "tipo": "recreation",
+        "distancia": 800
+      },
+      {
+        "nombre": "Koa Ridge Nature Trail",
+        "tipo": "hiking",
+        "distancia": 1200
+      },
+      {
+        "nombre": "Waipahu Cultural Gardens",
+        "tipo": "cultural",
+        "distancia": 1500
+      }
     ],
     "transferencias": [],
     "seo_title": "Leeward Community College Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -230,15 +338,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearl-highlands",
     "nombre": "Pearl Highlands",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Pearl Highlands Shopping Center", "tipo": "shopping", "distancia": 200 },
-      { "nombre": "Aiea District Park", "tipo": "recreation", "distancia": 800 },
-      { "nombre": "Aiea Loop Trail", "tipo": "hiking", "distancia": 1000 },
-      { "nombre": "Pearl Harbor Naval Monument", "tipo": "historical", "distancia": 1500 }
+      {
+        "nombre": "Pearl Highlands Shopping Center",
+        "tipo": "shopping",
+        "distancia": 200
+      },
+      {
+        "nombre": "Aiea District Park",
+        "tipo": "recreation",
+        "distancia": 800
+      },
+      {
+        "nombre": "Aiea Loop Trail",
+        "tipo": "hiking",
+        "distancia": 1000
+      },
+      {
+        "nombre": "Pearl Harbor Naval Monument",
+        "tipo": "historical",
+        "distancia": 1500
+      }
     ],
     "transferencias": [],
     "seo_title": "Pearl Highlands Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -268,30 +394,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearlridge",
     "nombre": "Pearlridge",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Pearlridge Shopping Center", "tipo": "shopping", "distancia": 300 },
-      { "nombre": "Aiea District Park", "tipo": "recreation", "distancia": 600 },
-      { "nombre": "Aiea All Souls Cemetery", "tipo": "cultural", "distancia": 800 },
-      { "nombre": "Salt Lake Crater Trail", "tipo": "hiking", "distancia": 1200 }
+      {
+        "nombre": "Pearlridge Shopping Center",
+        "tipo": "shopping",
+        "distancia": 300
+      },
+      {
+        "nombre": "Aiea District Park",
+        "tipo": "recreation",
+        "distancia": 600
+      },
+      {
+        "nombre": "Aiea All Souls Cemetery",
+        "tipo": "cultural",
+        "distancia": 800
+      },
+      {
+        "nombre": "Salt Lake Crater Trail",
+        "tipo": "hiking",
+        "distancia": 1200
+      }
     ],
     "transferencias": [],
     "seo_title": "Pearlridge Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Pearlridge shopping center station on Honolulu Skyline. Major mall with restaurants and retail. Light rail $3 HOLO card, opened 2023.",
     "h1": "Pearlridge Station — Honolulu Skyline Line",
-    "intro": "Pearlridge serves one of Honolulu's largest shopping centers, providing transit-oriented retail access and connections to historic Aiea district attractions.",
+    "intro": "Step off at Pearlridge station and dive into Aiea’s vibrant shopping, serene parks, and volcanic hiking trails.",
     "tips": [
-      "HOLO card ($3 per ride) pairs perfectly with Pearlridge's 200+ stores and restaurants; all-day shopping made easy",
-      "Pearlridge Shopping Center (300m walk) is Hawaii's premier mall with local and international brands, food courts, and cinemas",
-      "Aiea All Souls Cemetery (800m) offers peaceful grounds and historical significance; culturally important for many island visitors",
-      "Station includes large waiting areas with weather protection, accessible restrooms, and vending machines with water options"
+      "Buy a one‑day rail pass online to save time and avoid ticket queues at the station",
+      "Carry a reusable water bottle; the trail can be hot and there are refill stations at the park",
+      "Parking at Pearlridge Mall is free after 5 PM, perfect for late‑night shopping or movie outings"
     ],
-    "mejor_horario": "09:00–21:00 (retail peak; mall typically open until 21:00)",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "Shopping destination popular with Japanese and Korean tourists seeking familiar mall experiences in Hawaii",
-    "descripcion_turistica": "Explore Hawaii's biggest shopping center while discovering local culture and historic Aiea neighborhoods. Modern retail meets island tradition.",
+    "descripcion_turistica": "Just a short walk from the station, Pearlridge Shopping Center offers open‑air Hawaiian boutiques, a massive food court, and a cinema for a relaxed afternoon. Nearby Aiea District Park provides a shaded waterfront picnic spot with views of Pearl Harbor and a historic war memorial. A short drive takes you to the peaceful All Souls Cemetery, where you can explore the unique cultural heritage of local families. For adventurous souls, the Salt Lake Crater Trail begins at the base of the extinct tuff cone, offering moderate hikes with panoramic vistas of the Koʻolau Range and the Pacific Ocean.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -306,30 +449,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-aloha-stadium",
     "nombre": "Aloha Stadium",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "tourist",
     "pois": [
-      { "nombre": "Aloha Stadium Swap Meet", "tipo": "market", "distancia": 300 },
-      { "nombre": "Aloha Stadium Sports Complex", "tipo": "sports", "distancia": 200 },
-      { "nombre": "Aiea District Park", "tipo": "recreation", "distancia": 1000 },
-      { "nombre": "Arizona Memorial Visitor Center", "tipo": "historical", "distancia": 2500 }
+      {
+        "nombre": "Aloha Stadium Swap Meet",
+        "tipo": "market",
+        "distancia": 300
+      },
+      {
+        "nombre": "Aloha Stadium Sports Complex",
+        "tipo": "sports",
+        "distancia": 200
+      },
+      {
+        "nombre": "Aiea District Park",
+        "tipo": "recreation",
+        "distancia": 1000
+      },
+      {
+        "nombre": "Arizona Memorial Visitor Center",
+        "tipo": "historical",
+        "distancia": 2500
+      }
     ],
     "transferencias": [],
     "seo_title": "Aloha Stadium Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Aloha Stadium on Honolulu Skyline. Gateway to famous swap meet, sports events, and Pearl Harbor tours. $3 HOLO card light rail fare.",
     "h1": "Aloha Stadium Station — Honolulu Skyline Line",
-    "intro": "Aloha Stadium is iconic in Hawaiian sports and culture, now served by modern light rail. It's the perfect entry point for Pearl Harbor visits, sporting events, and local shopping.",
+    "intro": "Step off the rail into a vibrant Hawaiian crossroads where sports, history, and island bargains collide under palm‑shaded skies.",
     "tips": [
-      "HOLO card ($3) is perfect for stadium day trips; buy tickets at station before events or swap meets",
-      "Aloha Stadium Swap Meet operates Wednesday–Sunday, 7am–3pm; world's largest swap meet with local crafts and souvenirs",
-      "Stadium hosts University of Hawaii football, concerts, and major sporting events; check schedule in advance",
-      "Station is fully accessible with accessible parking near stadium entrances, elevators to all seating sections, and accessible concessions"
+      "Buy a Hawaiian dollar‑bill for cash transactions at the swap meet—vendors often give better change than credit cards.",
+      "Arrive early (8‑9 am) on weekends to snag the freshest food stalls and avoid the midday crowd surge.",
+      "Parking is limited; use the station’s free bike‑share racks or the nearby public bus hub for hassle‑free access."
     ],
-    "mejor_horario": "06:00–17:00 (swap meet and event hours Wednesday–Sunday)",
+    "mejor_horario": "Weekday mornings (7‑9 am) to avoid rush‑hour crowds and enjoy a quieter swap meet experience",
     "mundial_relevancia": "Sports tourism and cultural shopping destination attracting international visitors and military travelers",
-    "descripcion_turistica": "Aloha Stadium is the beating heart of Hawaiian sports and local culture. Swap meet treasures, college football heritage, and easy access to Pearl Harbor await.",
+    "descripcion_turistica": "Just outside Aloha Stadium station, the legendary Aloha Stadium Swap Meet beckons with over 600 vendors selling everything from authentic luau shirts to handcrafted koa wood souvenirs. A short walk brings you to the Aloha Stadium Sports Complex, home to the University of Hawaii football games and the annual Hawaii Bowl—catch a game or tour the state‑of‑the‑art facilities. Across the street, Aiea District Park offers a tranquil spot for a picnic with views of the Koʻolau Range, while the Arizona Memorial Visitor Center at Pearl Harbor is a 15‑minute drive, perfect for a reflective afternoon of WWII history.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -344,15 +504,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-pearl-harbor",
     "nombre": "Pearl Harbor",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "cultural",
     "pois": [
-      { "nombre": "USS Arizona Memorial", "tipo": "historical", "distancia": 300 },
-      { "nombre": "USS Bowfin Submarine Museum", "tipo": "museum", "distancia": 500 },
-      { "nombre": "Battleship Missouri Memorial", "tipo": "historical", "distancia": 1000 },
-      { "nombre": "Aviation Museum of Hawaii", "tipo": "museum", "distancia": 1200 }
+      {
+        "nombre": "USS Arizona Memorial",
+        "tipo": "historical",
+        "distancia": 300
+      },
+      {
+        "nombre": "USS Bowfin Submarine Museum",
+        "tipo": "museum",
+        "distancia": 500
+      },
+      {
+        "nombre": "Battleship Missouri Memorial",
+        "tipo": "historical",
+        "distancia": 1000
+      },
+      {
+        "nombre": "Aviation Museum of Hawaii",
+        "tipo": "museum",
+        "distancia": 1200
+      }
     ],
     "transferencias": [],
     "seo_title": "Pearl Harbor Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -382,30 +560,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-daniel-inouye-airport",
     "nombre": "Daniel Inouye Airport",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "transport",
     "pois": [
-      { "nombre": "Honolulu International Airport", "tipo": "transport", "distancia": 100 },
-      { "nombre": "Airport Rental Car Center", "tipo": "transport", "distancia": 200 },
-      { "nombre": "Daniel Inouye Terminal (new)", "tipo": "transport", "distancia": 50 },
-      { "nombre": "Lagoon Drive Recreation Area", "tipo": "recreation", "distancia": 1000 }
+      {
+        "nombre": "Honolulu International Airport",
+        "tipo": "transport",
+        "distancia": 100
+      },
+      {
+        "nombre": "Airport Rental Car Center",
+        "tipo": "transport",
+        "distancia": 200
+      },
+      {
+        "nombre": "Daniel Inouye Terminal (new)",
+        "tipo": "transport",
+        "distancia": 50
+      },
+      {
+        "nombre": "Lagoon Drive Recreation Area",
+        "tipo": "recreation",
+        "distancia": 1000
+      }
     ],
     "transferencias": [],
     "seo_title": "Daniel Inouye Airport Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Daniel Inouye Airport station on Honolulu Skyline. Direct airport access. $3 HOLO card fare. Gateway to all island destinations. Opened 2023.",
     "h1": "Daniel Inouye Airport Station — Honolulu Skyline Line",
-    "intro": "Daniel Inouye Airport station is your gateway to Honolulu and all islands. Direct light rail access from the airport to downtown, reducing car rental needs and traffic.",
+    "intro": "Step off the rail and into the vibrant pulse of Honolulu, where tropical breezes meet world‑class travel amenities.",
     "tips": [
-      "HOLO card ($3 USD single ride) is the most economical option from airport to any Skyline destination; cheaper than taxis or ride-shares",
-      "Station is integrated into new Daniel Inouye Terminal with clear signage from baggage claim; approximately 5-minute walk with luggage",
-      "Luggage-friendly cars with ample space; express service to downtown reaches Ala Moana in approximately 30 minutes",
-      "Station includes accessible restrooms, luggage assistance, accessible seating, and 24-hour multilingual information desk"
+      "Buy your rail pass online ahead of time to skip the ticket kiosk line at the station entrance.",
+      "Leave at least 30 minutes before a flight for security checks; the rail drops you within a two‑minute walk of the terminal entrances.",
+      "Use the free Wi‑Fi in the station and terminal to download offline maps of Oahu’s hiking trails and surf spots."
     ],
-    "mejor_horario": "24/7 (airport operations), heaviest traffic 07:00–11:00 and 15:00–19:00",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer boarding experience.",
     "mundial_relevancia": "International gateway ranked among world's fastest airport-to-city connections at $3 per ride",
-    "descripcion_turistica": "Welcome to Hawaii! Begin your island adventure with quick, easy light rail access to downtown Honolulu, Pearl Harbor, and all Oahu attractions. No car rental needed.",
+    "descripcion_turistica": "The Daniel Inouye Airport station sits directly beside the newly expanded Daniel Inouye Terminal, giving you instant access to Hawaiian Airlines' gates, duty‑free boutiques, and the iconic Aloha Tower viewpoint across the runway. A short walk leads to the Airport Rental Car Center, where you can pick up a convertible to cruise the coastal Kamehameha Highway. Just across Lagoon Drive, the Lagoon Drive Recreation Area offers shaded picnic spots, a beachfront promenade, and kayak rentals for a quick splash in the Pacific. Don’t miss the cultural art displays in the terminal lobby, showcasing native Hawaiian weaving and contemporary sculpture.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -420,15 +615,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-lagoon-drive",
     "nombre": "Lagoon Drive",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "transport",
     "pois": [
-      { "nombre": "Lagoon Drive Recreation Area", "tipo": "recreation", "distancia": 200 },
-      { "nombre": "Sand Island Beach Park", "tipo": "beach", "distancia": 800 },
-      { "nombre": "Honolulu Harbor", "tipo": "transport", "distancia": 600 },
-      { "nombre": "Fishpond Historic Site", "tipo": "historical", "distancia": 1000 }
+      {
+        "nombre": "Lagoon Drive Recreation Area",
+        "tipo": "recreation",
+        "distancia": 200
+      },
+      {
+        "nombre": "Sand Island Beach Park",
+        "tipo": "beach",
+        "distancia": 800
+      },
+      {
+        "nombre": "Honolulu Harbor",
+        "tipo": "transport",
+        "distancia": 600
+      },
+      {
+        "nombre": "Fishpond Historic Site",
+        "tipo": "historical",
+        "distancia": 1000
+      }
     ],
     "transferencias": [],
     "seo_title": "Lagoon Drive Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -458,15 +671,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-middle-street",
     "nombre": "Middle Street",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Middle Street Commercial District", "tipo": "shopping", "distancia": 200 },
-      { "nombre": "Sand Island Beach Park", "tipo": "beach", "distancia": 1000 },
-      { "nombre": "Iwilei Community Center", "tipo": "recreation", "distancia": 400 },
-      { "nombre": "Historic Waterfront Warehouses", "tipo": "historical", "distancia": 600 }
+      {
+        "nombre": "Middle Street Commercial District",
+        "tipo": "shopping",
+        "distancia": 200
+      },
+      {
+        "nombre": "Sand Island Beach Park",
+        "tipo": "beach",
+        "distancia": 1000
+      },
+      {
+        "nombre": "Iwilei Community Center",
+        "tipo": "recreation",
+        "distancia": 400
+      },
+      {
+        "nombre": "Historic Waterfront Warehouses",
+        "tipo": "historical",
+        "distancia": 600
+      }
     ],
     "transferencias": [],
     "seo_title": "Middle Street Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -496,15 +727,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kalihi",
     "nombre": "Kalihi",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
     "pois": [
-      { "nombre": "Kalihi Valley District", "tipo": "residential", "distancia": 300 },
-      { "nombre": "Kalihi Community Center", "tipo": "recreation", "distancia": 400 },
-      { "nombre": "Kalihi Valley Park", "tipo": "park", "distancia": 600 },
-      { "nombre": "Polynesian Cultural Center Express (nearby)", "tipo": "cultural", "distancia": 2000 }
+      {
+        "nombre": "Kalihi Valley District",
+        "tipo": "residential",
+        "distancia": 300
+      },
+      {
+        "nombre": "Kalihi Community Center",
+        "tipo": "recreation",
+        "distancia": 400
+      },
+      {
+        "nombre": "Kalihi Valley Park",
+        "tipo": "park",
+        "distancia": 600
+      },
+      {
+        "nombre": "Polynesian Cultural Center Express (nearby)",
+        "tipo": "cultural",
+        "distancia": 2000
+      }
     ],
     "transferencias": [],
     "seo_title": "Kalihi Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -534,30 +783,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kapalama",
     "nombre": "Kapalama",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
     "pois": [
-      { "nombre": "Kapalama Industrial Park", "tipo": "industrial", "distancia": 300 },
-      { "nombre": "Kalihi Valley Park", "tipo": "park", "distancia": 800 },
-      { "nombre": "Kapalama Community Center", "tipo": "recreation", "distancia": 600 },
-      { "nombre": "Downtown Honolulu (nearby)", "tipo": "commercial", "distancia": 2000 }
+      {
+        "nombre": "Kapalama Industrial Park",
+        "tipo": "industrial",
+        "distancia": 300
+      },
+      {
+        "nombre": "Kalihi Valley Park",
+        "tipo": "park",
+        "distancia": 800
+      },
+      {
+        "nombre": "Kapalama Community Center",
+        "tipo": "recreation",
+        "distancia": 600
+      },
+      {
+        "nombre": "Downtown Honolulu (nearby)",
+        "tipo": "commercial",
+        "distancia": 2000
+      }
     ],
     "transferencias": [],
     "seo_title": "Kapalama Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Kapalama station on Honolulu Skyline. Industrial and residential mixed-use area. $3 HOLO card. Quick access to downtown and waterfront.",
     "h1": "Kapalama Station — Honolulu Skyline Line",
-    "intro": "Kapalama connects industrial workers and residents to downtown Honolulu via efficient light rail, serving Hawaii's manufacturing and light industry sectors.",
+    "intro": "Step off at Kapalama Station and instantly feel the pulse of Honolulu’s industrial heritage blended with vibrant community spaces.",
     "tips": [
-      "HOLO card ($3 per ride) is standard for industrial workers commuting to Kapalama Business Park and downtown employment",
-      "Station serves as transfer point for multiple employer shuttles serving local manufacturing and logistics companies",
-      "Kapalama Community Center (600m) offers recreational programs and meets community needs for families and youth",
-      "Accessible industrial parking, accessible restrooms, and clear wayfinding for workers with diverse needs"
+      "Buy a HOLO card before boarding to enjoy seamless transfers between rail and bus services.",
+      "Carry a reusable water bottle; water fountains are available at the station and in Kalihi Valley Park.",
+      "Visit the community center’s schedule online for free cultural events, especially on Saturday afternoons."
     ],
-    "mejor_horario": "06:00–18:00 (industrial work shift hours)",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer station experience",
     "mundial_relevancia": "Hawaii's light manufacturing and industrial hub supporting island economy",
-    "descripcion_turistica": "See behind the scenes of Hawaii's working economy. Industrial innovation, logistics centers, and community pride drive Kapalama's development.",
+    "descripcion_turistica": "Just a short walk from the station, explore Kapalama Industrial Park’s historic warehouses, now home to quirky art studios and local craft markets. Across the street, Kalihi Valley Park offers a lush oasis with walking trails, a koi pond, and panoramic views of the harbor—perfect for a quick picnic or sunset stroll. The nearby Kapalama Community Center showcases Hawaiian cultural performances and hosts weekend hula workshops, giving visitors an authentic taste of island traditions. A brief 10‑minute bus ride or bike ride brings you to downtown Honolulu’s iconic waterfront, shopping districts, and historic sites like Iolani Palace.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -572,15 +838,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-iwilei",
     "nombre": "Iwilei",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Iwilei Commercial District", "tipo": "commercial", "distancia": 200 },
-      { "nombre": "Iwilei Community Center", "tipo": "recreation", "distancia": 400 },
-      { "nombre": "Honolulu Harbor Waterfront", "tipo": "waterfront", "distancia": 600 },
-      { "nombre": "Chinatown Historic District (nearby)", "tipo": "cultural", "distancia": 1500 }
+      {
+        "nombre": "Iwilei Commercial District",
+        "tipo": "commercial",
+        "distancia": 200
+      },
+      {
+        "nombre": "Iwilei Community Center",
+        "tipo": "recreation",
+        "distancia": 400
+      },
+      {
+        "nombre": "Honolulu Harbor Waterfront",
+        "tipo": "waterfront",
+        "distancia": 600
+      },
+      {
+        "nombre": "Chinatown Historic District (nearby)",
+        "tipo": "cultural",
+        "distancia": 1500
+      }
     ],
     "transferencias": [],
     "seo_title": "Iwilei Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -610,15 +894,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-chinatown",
     "nombre": "Chinatown",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "cultural",
     "pois": [
-      { "nombre": "Oahu Market", "tipo": "market", "distancia": 200 },
-      { "nombre": "Hawaii Theatre Centre", "tipo": "cultural", "distancia": 300 },
-      { "nombre": "Izumiya Supermarket", "tipo": "shopping", "distancia": 400 },
-      { "nombre": "Maunakea Street (cultural heart)", "tipo": "cultural", "distancia": 250 }
+      {
+        "nombre": "Oahu Market",
+        "tipo": "market",
+        "distancia": 200
+      },
+      {
+        "nombre": "Hawaii Theatre Centre",
+        "tipo": "cultural",
+        "distancia": 300
+      },
+      {
+        "nombre": "Izumiya Supermarket",
+        "tipo": "shopping",
+        "distancia": 400
+      },
+      {
+        "nombre": "Maunakea Street (cultural heart)",
+        "tipo": "cultural",
+        "distancia": 250
+      }
     ],
     "transferencias": [],
     "seo_title": "Chinatown Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -648,30 +950,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-downtown",
     "nombre": "Downtown",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Iolani Palace", "tipo": "historical", "distancia": 400 },
-      { "nombre": "Hawaii State Capitol", "tipo": "government", "distancia": 300 },
-      { "nombre": "Honolulu Hale (City Hall)", "tipo": "government", "distancia": 250 },
-      { "nombre": "Financial District Banks", "tipo": "commercial", "distancia": 200 }
+      {
+        "nombre": "Iolani Palace",
+        "tipo": "historical",
+        "distancia": 400
+      },
+      {
+        "nombre": "Hawaii State Capitol",
+        "tipo": "government",
+        "distancia": 300
+      },
+      {
+        "nombre": "Honolulu Hale (City Hall)",
+        "tipo": "government",
+        "distancia": 250
+      },
+      {
+        "nombre": "Financial District Banks",
+        "tipo": "commercial",
+        "distancia": 200
+      }
     ],
     "transferencias": [],
     "seo_title": "Downtown Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Downtown Honolulu station on Skyline. Government, business, and cultural center. $3 HOLO card. Heart of Hawaii's capital city.",
     "h1": "Downtown Station — Honolulu Skyline Line",
-    "intro": "Downtown Honolulu station is the heart of Hawaii's government, business, and cultural center, serving as the primary transit hub for the state capital.",
+    "intro": "Step off the rail and into Honolulu’s historic heart, where regal palaces and bustling financial streets converge.",
     "tips": [
-      "HOLO card ($3 per ride) efficient for commuters and tourists visiting government buildings, historic sites, and business district",
-      "Hawaii State Capitol (300m) showcases modern design inspired by Hawaiian architecture; free tours available weekdays",
-      "Iolani Palace (400m) is Hawaii's only royal palace; guided tours reveal 200+ years of Hawaiian monarchy and history",
-      "Station includes ADA-standard accessibility, accessible government building entrances, and accessible dining throughout downtown"
+      "Buy a combined Iolani Palace and State Capitol tour ticket online to skip the lines during peak tourist hours.",
+      "Carry a reusable water bottle; many downtown cafés provide free refills and the climate is humid.",
+      "Use the free public Wi‑Fi hotspots at Honolulu Hale lobby for quick map checks and translation apps."
     ],
-    "mejor_horario": "08:00–17:00 (government and business hours Monday–Friday)",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to enjoy cooler temps and lighter crowds before the office rush",
     "mundial_relevancia": "Hawaii's seat of power and cultural significance attracting government, business, and history tourists",
-    "descripcion_turistica": "Experience the power and history of Hawaii's government. Royal palaces, modern capitol, and island governance come alive in the heart of downtown.",
+    "descripcion_turistica": "Just a short walk from Downtown Station, Iolani Palace invites you to explore the only royal residence in the United States, with guided tours showcasing Victorian-era furnishings and Hawaiian artifacts. Across the street, the Hawaii State Capitol’s striking open-air design frames the island’s legislative history, while Honolulu Hale offers a glimpse of local governance inside its Art Deco façade. The surrounding Financial District buzzes with sleek banks, art galleries, and street‑side coffee stalls—perfect for a quick espresso before heading to the waterfront or catching a sunset view from nearby Ala Moana Beach Park.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -686,30 +1005,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-civic-center",
     "nombre": "Civic Center",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "government",
     "pois": [
-      { "nombre": "Hawaii State Library", "tipo": "library", "distancia": 200 },
-      { "nombre": "Honolulu Museum of Art", "tipo": "museum", "distancia": 300 },
-      { "nombre": "War Memorial Natatorium", "tipo": "recreation", "distancia": 400 },
-      { "nombre": "Thomas Square Park", "tipo": "park", "distancia": 250 }
+      {
+        "nombre": "Hawaii State Library",
+        "tipo": "library",
+        "distancia": 200
+      },
+      {
+        "nombre": "Honolulu Museum of Art",
+        "tipo": "museum",
+        "distancia": 300
+      },
+      {
+        "nombre": "War Memorial Natatorium",
+        "tipo": "recreation",
+        "distancia": 400
+      },
+      {
+        "nombre": "Thomas Square Park",
+        "tipo": "park",
+        "distancia": 250
+      }
     ],
     "transferencias": [],
     "seo_title": "Civic Center Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Civic Center station on Honolulu Skyline. Cultural institutions, library, museum, parks. $3 HOLO card. Hawaii's cultural heart.",
     "h1": "Civic Center Station — Honolulu Skyline Line",
-    "intro": "Civic Center serves Honolulu's cultural and governmental quarter, home to world-class museums, libraries, historic monuments, and public spaces celebrating Hawaiian heritage.",
+    "intro": "Step onto Civic Center station and instantly feel the pulse of Honolulu’s cultural heart, where art, history, and ocean breezes converge.",
     "tips": [
-      "HOLO card ($3 per ride) connects cultural tourists and students to museums, library, and historic sites within walking distance",
-      "Hawaii State Library (200m) is one of America's finest; free programming includes cultural events and local history archives",
-      "Honolulu Museum of Art (300m) showcases Hawaiian and Asian art; admission $10 general; stunning architecture and collections",
-      "Station includes accessible museum entrances, accessible library services, accessible parks, and cultural program accommodations"
+      "Buy a HOLO card before boarding; it offers discounted fares and can be reloaded at kiosks inside the station.",
+      "Carry a reusable water bottle; free refill stations are available at the library and museum lobbies.",
+      "Wear comfortable shoes—most attractions are within a 5‑minute walk, but the tropical heat makes sandals a smart choice."
     ],
-    "mejor_horario": "10:00–18:00 (museum and library hours; some venues close Mondays)",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy cooler temperatures for walking tours",
     "mundial_relevancia": "Major art museum and cultural institution ranked among America's finest, with extensive Hawaiian collections",
-    "descripcion_turistica": "Discover Hawaii's artistic soul. World-class museums, historic libraries, and public art celebrate Hawaiian, Asian, and Pacific traditions.",
+    "descripcion_turistica": "Just a two‑minute walk from the station, the Hawaii State Library dazzles with its historic marble façade and a rooftop garden perfect for quiet reading. Across the street, the Honolulu Museum of Art showcases Pacific and Asian masterpieces, plus a vibrant sculpture garden where you can snap photos of the iconic 'By the Sea' installation. A short stroll leads to the War Memorial Natatorium, an elegant Art Deco pool honoring World War II veterans—still crystal‑clear for a refreshing dip in summer. Finally, unwind at Thomas Square Park, a leafy oasis with a historic stone fountain and regular ukulele jam sessions that capture the island’s spirit.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -724,15 +1060,33 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-kakaako",
     "nombre": "Kakaako",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "mixed",
     "pois": [
-      { "nombre": "Kakaako Park", "tipo": "park", "distancia": 200 },
-      { "nombre": "Honolulu Museum of Modern Art", "tipo": "museum", "distancia": 300 },
-      { "nombre": "Waterfront Promenade", "tipo": "recreation", "distancia": 400 },
-      { "nombre": "Local Art Galleries and Street Murals", "tipo": "cultural", "distancia": 250 }
+      {
+        "nombre": "Kakaako Park",
+        "tipo": "park",
+        "distancia": 200
+      },
+      {
+        "nombre": "Honolulu Museum of Modern Art",
+        "tipo": "museum",
+        "distancia": 300
+      },
+      {
+        "nombre": "Waterfront Promenade",
+        "tipo": "recreation",
+        "distancia": 400
+      },
+      {
+        "nombre": "Local Art Galleries and Street Murals",
+        "tipo": "cultural",
+        "distancia": 250
+      }
     ],
     "transferencias": [],
     "seo_title": "Kakaako Station — Honolulu Skyline Light Rail | MetroGuia",
@@ -762,30 +1116,47 @@ export const estacionesHonolulu = [
   {
     "slug": "honolulu-ala-moana",
     "nombre": "Ala Moana",
-    "linea": ["skyline"],
+    "linea": [
+      "skyline"
+    ],
     "sistema": "skyline-skyline",
     "municipio": "Honolulu",
     "tipo_zona": "commercial",
     "pois": [
-      { "nombre": "Ala Moana Center Shopping Mall", "tipo": "shopping", "distancia": 200 },
-      { "nombre": "Magic Island Beach Park", "tipo": "beach", "distancia": 400 },
-      { "nombre": "Ala Moana Regional Park", "tipo": "park", "distancia": 500 },
-      { "nombre": "Honolulu International Marketplace (nearby)", "tipo": "shopping", "distancia": 800 }
+      {
+        "nombre": "Ala Moana Center Shopping Mall",
+        "tipo": "shopping",
+        "distancia": 200
+      },
+      {
+        "nombre": "Magic Island Beach Park",
+        "tipo": "beach",
+        "distancia": 400
+      },
+      {
+        "nombre": "Ala Moana Regional Park",
+        "tipo": "park",
+        "distancia": 500
+      },
+      {
+        "nombre": "Honolulu International Marketplace (nearby)",
+        "tipo": "shopping",
+        "distancia": 800
+      }
     ],
     "transferencias": [],
     "seo_title": "Ala Moana Station — Honolulu Skyline Light Rail | MetroGuia",
     "meta_description": "Ala Moana station on Honolulu Skyline. Largest shopping mall in Hawaii, beaches, parks. $3 HOLO card. Gateway to Waikiki. 2023 opening.",
     "h1": "Ala Moana Station — Honolulu Skyline Line",
-    "intro": "Ala Moana is Honolulu's eastern terminus, serving the massive Ala Moana Center and offering seamless connections to Waikiki, beaches, and ocean recreation.",
+    "intro": "Step off the rail into a vibrant tropical hub where world‑class shopping, sun‑kissed parks, and island breezes converge.",
     "tips": [
-      "HOLO card ($3 per ride) connects to Ala Moana Center directly; one of world's largest open-air malls with 350+ shops and restaurants",
-      "Shopping destination includes international brands, local boutiques, Japanese restaurants, and Hawaiian craft galleries all in one location",
-      "Magic Island Beach Park (400m) offers pristine swimming and snorkeling; far less crowded than Waikiki with equally beautiful water",
-      "Station includes accessible shopping mall entrances, accessible parking, accessible beach facilities, and beach wheelchair loan program"
+      "Buy a ONE‑Rider ticket for the rail and a separate “Ala Moana Center” parking pass to save on combined parking fees.",
+      "Carry a reusable water bottle; free refill stations are available at the park’s picnic areas and the mall’s food court.",
+      "Check the mall’s event calendar; weekend hula performances and cultural showcases often take place near the main atrium."
     ],
-    "mejor_horario": "10:00–21:00 (retail peak hours; beach recreation sunrise–sunset)",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer park experience",
     "mundial_relevancia": "Largest shopping mall in Hawaii attracting Japanese and international tourists; regional retail anchor",
-    "descripcion_turistica": "Ala Moana represents the best of modern Honolulu: world-class shopping, pristine beaches, public parks, and the gateway to iconic Waikiki Beach.",
+    "descripcion_turistica": "Ala Moana Station places you at the gateway to Hawaii’s premier shopping destination, Ala Moana Center, where designer boutiques sit beside local Hawaiian craft stalls. Just a short walk north, Magic Island Beach Park offers sweeping Waikiki views, perfect for a sunrise paddle or a sunset picnic. Adjacent to the park, Ala Moana Regional Park invites kayaking, paddle‑boarding, and beachfront barbecues amid lush greenery. A few blocks away, the Honolulu International Marketplace buzzes with eateries serving sushi, poke, and shave‑ice, giving you a true taste of island flavors between your rail adventures.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

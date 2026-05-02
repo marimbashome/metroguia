@@ -2,7 +2,9 @@ export const estacionesChihuahua = [
   {
     "slug": "chihuahua-central",
     "nombre": "Estación Chihuahua Central",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [
@@ -74,7 +76,9 @@ export const estacionesChihuahua = [
   {
     "slug": "cuauhtemoc",
     "nombre": "Cuauhtémoc",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Cuauhtémoc",
     "tipo_zona": "rural-agricola",
     "pois": [
@@ -146,7 +150,9 @@ export const estacionesChihuahua = [
   {
     "slug": "creel",
     "nombre": "Creel",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Creel",
     "tipo_zona": "pueblo-magico-turistico",
     "pois": [
@@ -229,7 +235,9 @@ export const estacionesChihuahua = [
   {
     "slug": "divisadero",
     "nombre": "Divisadero",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Divisadero",
     "tipo_zona": "mirador-turistico",
     "pois": [
@@ -313,7 +321,9 @@ export const estacionesChihuahua = [
   {
     "slug": "posada-barrancas",
     "nombre": "Posada Barrancas",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Posada Barrancas",
     "tipo_zona": "hospedaje-mirador",
     "pois": [
@@ -390,7 +400,9 @@ export const estacionesChihuahua = [
   {
     "slug": "bahuichivo",
     "nombre": "Bahuichivo",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Bahuichivo",
     "tipo_zona": "pueblo-rural",
     "pois": [
@@ -461,7 +473,9 @@ export const estacionesChihuahua = [
   {
     "slug": "el-fuerte",
     "nombre": "El Fuerte",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "El Fuerte",
     "tipo_zona": "pueblo-colonial",
     "pois": [
@@ -544,7 +558,9 @@ export const estacionesChihuahua = [
   {
     "slug": "los-mochis",
     "nombre": "Los Mochis",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Los Mochis",
     "tipo_zona": "terminal",
     "pois": [
@@ -622,7 +638,9 @@ export const estacionesChihuahua = [
   {
     "slug": "centro-chihuahua",
     "nombre": "Centro Histórico",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-turistico",
     "pois": [
@@ -700,7 +718,9 @@ export const estacionesChihuahua = [
   {
     "slug": "palacio-gobierno",
     "nombre": "Palacio de Gobierno",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-administrativo",
     "pois": [
@@ -772,7 +792,9 @@ export const estacionesChihuahua = [
   {
     "slug": "catedral-chihuahua",
     "nombre": "Catedral Metropolitana",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "religioso-turistico",
     "pois": [
@@ -844,7 +866,9 @@ export const estacionesChihuahua = [
   {
     "slug": "zona-dorada-chi",
     "nombre": "Zona Dorada",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial-turistica",
     "pois": [
@@ -921,7 +945,9 @@ export const estacionesChihuahua = [
   {
     "slug": "uach",
     "nombre": "UACH (Universidad Autónoma de Chihuahua)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -993,7 +1019,9 @@ export const estacionesChihuahua = [
   {
     "slug": "museo-quinta-gameros",
     "nombre": "Museo Quinta Gameros",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "museo-historico",
     "pois": [
@@ -1066,7 +1094,9 @@ export const estacionesChihuahua = [
   {
     "slug": "pancho-villa-museo",
     "nombre": "Museo de la Revolución (Hacienda de Villa)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-museo",
     "pois": [
@@ -1139,7 +1169,9 @@ export const estacionesChihuahua = [
   {
     "slug": "terminal-norte-bowi",
     "nombre": "Terminal Norte Bowí",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [
@@ -1211,7 +1243,9 @@ export const estacionesChihuahua = [
   {
     "slug": "periferico-norte",
     "nombre": "Periférico Norte",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial",
     "pois": [
@@ -1283,7 +1317,9 @@ export const estacionesChihuahua = [
   {
     "slug": "universidad-chihuahua",
     "nombre": "Universidad de Chihuahua",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -1355,7 +1391,9 @@ export const estacionesChihuahua = [
   {
     "slug": "tecnologico-chihuahua",
     "nombre": "Tecnológico de Chihuahua",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "educativo",
     "pois": [
@@ -1427,7 +1465,9 @@ export const estacionesChihuahua = [
   {
     "slug": "sacramento",
     "nombre": "Sacramento",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -1499,7 +1539,9 @@ export const estacionesChihuahua = [
   {
     "slug": "ninos-heroes-chi",
     "nombre": "Niños Héroes",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "historico-residencial",
     "pois": [
@@ -1648,7 +1690,9 @@ export const estacionesChihuahua = [
   {
     "slug": "independencia-chi",
     "nombre": "Independencia",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -1720,7 +1764,9 @@ export const estacionesChihuahua = [
   {
     "slug": "americas-chi",
     "nombre": "Américas",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "comercial",
     "pois": [
@@ -1792,7 +1838,9 @@ export const estacionesChihuahua = [
   {
     "slug": "altavista-chi",
     "nombre": "Altavista",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -1816,17 +1864,15 @@ export const estacionesChihuahua = [
     "seo_title": "Altavista Bowí — Zona Residencial | MetroGuia",
     "meta_description": "Estación Altavista del BRT Bowí. Acceso a zona residencial.",
     "h1": "Altavista — Fraccionamiento Residencial",
-    "intro": "Estación del BRT Bowí en el fraccionamiento Altavista, conectando comunidades residenciales de Chihuahua.",
+    "intro": "Descubre Altavista, la puerta verde y vibrante que conecta la modernidad de Chihuahua con naturaleza y comunidad local.",
     "tips": [
-      "Zona residencial tranquila",
-      "Espacios verdes",
-      "Servicios comunitarios",
-      "Transporte de residentes",
-      "Ambiente familiar"
+      "Lleva una botella reutilizable; hay varias bebederas en el parque y ayuda al cuidado del medio ambiente.",
+      "Usa la app ViveBus para validar tu boleto y consultar la frecuencia real‑time de los trenes, evitando esperas largas.",
+      "Visita el mercado los sábados por la mañana, cuando los vendedores frescos llegan y los precios son más bajos."
     ],
-    "mejor_horario": "Mañana y tarde",
+    "mejor_horario": "Mañanas entre semana, antes de las 9:00 am, para disfrutar de la tranquilidad del parque y evitar la afluencia de viajeros.",
     "mundial_relevancia": "Transporte residencial",
-    "descripcion_turistica": "Estación en zona de Altavista. Acceso a zonas residenciales y comerciales. Área en desarrollo con servicios diversos.",
+    "descripcion_turistica": "A pocos pasos de la estación, el Fraccionamiento Altavista ofrece arquitectura contemporánea y cafés artesanales como Café Altavista. El Parque Ecológico Bosque de la Sierra, a dos cuadras, invita a caminar entre senderos sombreados y observar la flora del desierto. No te pierdas el Mercado de Artesanías del Centro, donde artesanos locales venden textiles bordados y cerámica tradicional, ideal para llevar un recuerdo auténtico. Además, el Centro Cultural Casa de la Cultura Altavista organiza exposiciones temporales de arte regional y talleres de danza folklórica, brindando una inmersión cultural única.",
     "lugares_cercanos": [
       {
         "nombre": "Zona residencial",
@@ -1864,7 +1910,9 @@ export const estacionesChihuahua = [
   {
     "slug": "cantera-chi",
     "nombre": "Cantera",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "industrial-comercial",
     "pois": [
@@ -1888,17 +1936,15 @@ export const estacionesChihuahua = [
     "seo_title": "Cantera Bowí — Zona Industrial | MetroGuia",
     "meta_description": "Estación Cantera del BRT Bowí. Acceso a zona industrial.",
     "h1": "Cantera — Zona Industrial",
-    "intro": "Estación del BRT Bowí en la zona industrial de Cantera, conectando área industrial y comercial de Chihuahua.",
+    "intro": "Descubre la energía industrial y el encanto local de Cantera, donde la modernidad se mezcla con auténticos sabores chihuahuenses.",
     "tips": [
-      "Zona industrial",
-      "Servicios técnicos",
-      "Comercios locales",
-      "Horarios de trabajo",
-      "Transporte de trabajadores"
+      "Lleva efectivo pequeño; muchos puestos del mercado no aceptan tarjetas.",
+      "Visita los talleres entre 10:00 y 12:00 h para ver la producción sin interrupciones.",
+      "Aprovecha el app ViveBus para comprar tu boleto y validar el acceso al parque sin filas."
     ],
-    "mejor_horario": "Mañana y atardecer laborales",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Transporte laboral",
-    "descripcion_turistica": "Estación en zona de Cantera. Acceso a zonas residenciales y comerciales. Área urbana consolidada con servicios.",
+    "descripcion_turistica": "A pocos pasos de la estación, la Zona Industrial de Cantera alberga fábricas de maquinaria y talleres de metalurgia que ofrecen visitas guiadas a los amantes de la ingeniería. No te pierdas el Mercado de Cantera, famoso por sus tacos de machaca y sus artesanías de cuero, perfectas para llevar un recuerdo auténtico. Cerca también está el Parque Ecológico Los Pinos, ideal para una caminata al atardecer entre pinos y lagunas artificiales, y el Centro Cultural Cantera, donde se presentan exposiciones de arte local y presentaciones de música norteña.",
     "lugares_cercanos": [
       {
         "nombre": "Zona residencial",
@@ -1936,7 +1982,9 @@ export const estacionesChihuahua = [
   {
     "slug": "campestre-chi",
     "nombre": "Campestre",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -1960,17 +2008,15 @@ export const estacionesChihuahua = [
     "seo_title": "Campestre Bowí — Zona Residencial | MetroGuia",
     "meta_description": "Estación Campestre del BRT Bowí. Acceso a zona residencial.",
     "h1": "Campestre — Zona Residencial",
-    "intro": "Estación del BRT Bowí en la tranquila zona residencial de Campestre, con acceso a áreas verdes y servicios comunitarios.",
+    "intro": "Descubre la tranquilidad del barrio Campestre, un oasis verde donde la vida local vibra entre parques y cultura.",
     "tips": [
-      "Zona residencial segura",
-      "Áreas verdes abundantes",
-      "Servicios comunitarios",
-      "Transporte de residentes",
-      "Ambiente tranquilo"
+      "Lleva calzado cómodo para recorrer los parques y senderos sin inconvenientes",
+      "Compra tus alimentos en la Tienda de Productos Locales antes del mediodía para evitar filas",
+      "Revisa el calendario de la Casa de la Cultura; los talleres de cerámica son gratuitos los miércoles"
     ],
-    "mejor_horario": "Mañana y tarde",
+    "mejor_horario": "Mañanas entre semana, de 8 a 10 am, para disfrutar de la zona sin aglomeraciones",
     "mundial_relevancia": "Transporte residencial",
-    "descripcion_turistica": "Estación en zona campestre de Chihuahua. Acceso a áreas residenciales en zona de desarrollo. Conexión a viviendas y servicios.",
+    "descripcion_turistica": "A tan solo unos pasos de la estación Campestre, visita el Parque Villa Guadalupe, ideal para caminar entre sus senderos arbolados y disfrutar de áreas de juego para niños. No te pierdas la Casa de la Cultura Campestre, donde se realizan exposiciones de arte regional y talleres de artesanía. En la avenida principal encontrarás la Tienda de Productos Locales “Sabores del Norte”, perfecta para probar quesos artesanales y chile de árbol fresco, y el Café Verde, un rincón con café de origen chiapaneco y conexión Wi‑Fi. Todo ello combina naturaleza, cultura y gastronomía en un entorno seguro y familiar.",
     "lugares_cercanos": [
       {
         "nombre": "Zona residencial",
@@ -2008,7 +2054,9 @@ export const estacionesChihuahua = [
   {
     "slug": "vialidad-sacramento",
     "nombre": "Vialidad Sacramento",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "residencial",
     "pois": [
@@ -2080,7 +2128,9 @@ export const estacionesChihuahua = [
   {
     "slug": "terminal-sur-bowi",
     "nombre": "Terminal Sur Bowí",
-    "linea": ["3"],
+    "linea": [
+      "3"
+    ],
     "municipio": "Chihuahua",
     "tipo_zona": "transporte",
     "pois": [

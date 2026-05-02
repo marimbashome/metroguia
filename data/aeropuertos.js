@@ -76,6 +76,14 @@ export const aeropuertos = [
     comoLlegar: {
       transporte: [
         {
+          tipo: 'Tren Suburbano',
+          detalle: 'Ramal AIFA (TS-AIFA): desde Lechería directo al AIFA en 25 min. Tomar Tren Suburbano en Buenavista (Metro LB) → Lechería → transbordo al Ramal AIFA → AIFA Terminal.',
+          tiempo: '~55 min desde Buenavista al AIFA',
+          precio: '$28-35 MXN total',
+          link: '/cdmx/tren-suburbano/estacion/aifa-ts/',
+          destacado: true,
+        },
+        {
           tipo: 'Autobús',
           detalle: 'Servicio Benito Juárez Express. Conecta con Central de Autos del Norte y Centro CDMX.',
           tiempo: '60-90 min al centro',
@@ -94,21 +102,25 @@ export const aeropuertos = [
       },
       uber: {
         estimado: '$300-450 MXN al centro CDMX',
-        nota: 'Disponible pero precios muy altos por distancia. Usar para cortas distancias.',
+        nota: 'Disponible pero precios altos por distancia. Recomendado solo si destino es norte CDMX.',
       },
       tips: [
-        'Felipe Ángeles es más alejado del centro; considera si vale la pena ahorrar dinero en ticket',
-        'Sin Metro directo; dependencia de autobús es alta',
-        'Abierto 24/7 pero servicios de transporte limitados a madrugada',
-        'Mejor opción si alojamiento está en norte CDMX (Polanco, Santa Fe)',
+        '🚆 Tren Suburbano es la opción más barata y confiable: Buenavista → Lechería → Ramal AIFA → Terminal',
+        'El Ramal AIFA sale desde Lechería, no desde Buenavista directamente',
+        'Compra tarjeta Movilidad Integrada en la estación Buenavista ($18 MXN recargable)',
+        'Felipe Ángeles opera 24/7; el Tren Suburbano opera de 5:00 a 23:00',
+        'Para madrugadas: Uber desde norte CDMX es más barato que desde el centro',
+        'Mejor opción si alojamiento está en Polanco, Condesa, Roma, Buenavista o norte CDMX',
       ],
     },
-    conexiones: [],
+    conexiones: [
+      { tipo: 'tren-suburbano', slug: 'aifa-ts', nombre: 'Ramal AIFA', linea: 'TS-AIFA' },
+    ],
     descripcion:
-      'Aeropuerto militar reconvertido inaugurado en 2022 como alternativa a Benito Juárez. Ubicado en Zumpango, Edomex. Bajo movimiento de pasajeros (3-5% del total nacional).',
-    seo_title: 'Aeropuerto Felipe Ángeles (NLU) — Transporte a CDMX y norte',
+      'Aeropuerto Felipe Ángeles (AIFA), inaugurado 2022. Conectado al Metro CDMX mediante el Ramal AIFA del Tren Suburbano: Buenavista → Lechería → AIFA en ~55 min y $35 MXN. Alternativa económica al Benito Juárez para viajeros del norte CDMX.',
+    seo_title: 'Aeropuerto Felipe Ángeles AIFA (NLU) — Tren Suburbano, Autobús y Uber | MetroGuia',
     meta_description:
-      'Felipe Ángeles Zumpango: autobús, Uber, taxi. Cómo llegar a CDMX. Alternativa a Benito Juárez.',
+      'Cómo llegar al AIFA desde CDMX: Tren Suburbano Buenavista→Lechería→AIFA en 55 min y $35 MXN. Autobús, Uber, horarios y tips 2026 para el Aeropuerto Felipe Ángeles.',
   },
   {
     slug: 'miguel-hidalgo-guadalajara',

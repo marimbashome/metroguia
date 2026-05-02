@@ -2,7 +2,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "palenque",
     "nombre": "Palenque",
-    "linea": ["T1"],
+    "linea": [
+      "T1"
+    ],
     "municipio": "Palenque, Chiapas",
     "tipo_zona": "arqueologico-selva",
     "pois": [
@@ -86,7 +88,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "boca-del-cerro",
     "nombre": "Boca del Cerro",
-    "linea": ["T1"],
+    "linea": [
+      "T1"
+    ],
     "municipio": "Tenosique, Tabasco",
     "tipo_zona": "puerto-transporte",
     "pois": [
@@ -110,16 +114,15 @@ export const estacionesTrenMaya = [
     "seo_title": "Estación Boca del Cerro Tren Maya — Gateway a Tabasco | MetroGuia",
     "meta_description": "Estación Boca del Cerro del Tren Maya. Puerto fluvial en Tabasco, acceso a Río Usumacinta y zonas arqueológicas.",
     "h1": "Estación Boca del Cerro — Tren Maya Tramo 1",
-    "intro": "Puerta de entrada al tramo norte del Tren Maya desde Tabasco. Punto estratégico en el Río Usumacinta.",
+    "intro": "Descubre la magia del Río Usumacinta y su selva, donde historia y naturaleza convergen en un viaje inolvidable.",
     "tips": [
-      "Punto de conexión importante",
-      "Naturaleza fluvial",
-      "Menos turístico",
-      "Parada técnica"
+      "Lleva protector solar biodegradable y repelente de insectos; el clima es húmedo y la fauna está cerca.",
+      "Reserva con antelación los paseos en lancha a Yaxchilán, ya que los cupos son limitados y se agotan rápido.",
+      "Lleva ropa ligera de secado rápido y calzado impermeable para caminar por senderos de la reserva y los bordes del río."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Mañanas entre semana, antes de las 10 am, para evitar multitudes y disfrutar de la fauna más activa.",
     "mundial_relevancia": "Hub de conexión para aventureros en Tabasco",
-    "descripcion_turistica": "Puerto fluvial en la Chontalpa tabasqueña sobre el Río Grijalva. Puerta de acceso a la región selvática de Tabasco con tradición ganadera y agrícola.",
+    "descripcion_turistica": "Desde la estación Boca del Cerro, explora el impresionante sitio arqueológico de Yaxchilán, accesible en lancha y famoso por sus estelas talladas y templos mayas. Navega por el caudaloso Usumacinta para observar delfines rosados, caimanes y aves exóticas, o aventúrate en excursiones guiadas a la Reserva de la Biosfera Calakmul, hogar de jaguares y tucanes. No te pierdas el mirador de la Cascada de Agua Clara, donde la selva se funde con el sonido del agua, ideal para fotografías al atardecer.",
     "lugares_cercanos": [
       {
         "nombre": "Grijalva (Río)",
@@ -163,7 +166,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "tenosique",
     "nombre": "Tenosique",
-    "linea": ["T1"],
+    "linea": [
+      "T1"
+    ],
     "municipio": "Tenosique, Tabasco",
     "tipo_zona": "ciudad-fronteriza",
     "pois": [
@@ -240,7 +245,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "escarcega",
     "nombre": "Escárcega",
-    "linea": ["T2"],
+    "linea": [
+      "T2"
+    ],
     "municipio": "Escárcega, Campeche",
     "tipo_zona": "ciudad-transporte",
     "pois": [
@@ -318,7 +325,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "candelaria",
     "nombre": "Candelaria",
-    "linea": ["T2"],
+    "linea": [
+      "T2"
+    ],
     "municipio": "Candelaria, Campeche",
     "tipo_zona": "rural-transporte",
     "pois": [
@@ -390,7 +399,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "calkini",
     "nombre": "Calkiní",
-    "linea": ["T2"],
+    "linea": [
+      "T2"
+    ],
     "municipio": "Calkiní, Campeche",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -467,7 +478,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "campeche-central",
     "nombre": "San Francisco de Campeche",
-    "linea": ["T3"],
+    "linea": [
+      "T3"
+    ],
     "municipio": "San Francisco de Campeche, Campeche",
     "tipo_zona": "ciudad-patrimonio",
     "pois": [
@@ -550,7 +563,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "edzna",
     "nombre": "Edzná",
-    "linea": ["T3"],
+    "linea": [
+      "T3"
+    ],
     "municipio": "Edzná, Campeche",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -628,7 +643,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "maxcanu",
     "nombre": "Maxcanú",
-    "linea": ["T3"],
+    "linea": [
+      "T3"
+    ],
     "municipio": "Maxcanú, Yucatán",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -647,16 +664,15 @@ export const estacionesTrenMaya = [
     "seo_title": "Estación Maxcanú Tren Maya — Parada Yucateca | MetroGuia",
     "meta_description": "Estación Maxcanú del Tren Maya. Parada rural en Yucatán camino a Mérida.",
     "h1": "Estación Maxcanú — Tren Maya Tramo 3",
-    "intro": "Parada rural en Yucatán. Conexión auténtica con pueblos mágicos de la región.",
+    "intro": "Descubre Maxcanú, el corazón maya donde tradición colonial y naturaleza vibran en cada paso del Tren Maya.",
     "tips": [
-      "Parada rural yucateca",
-      "Iglesia colonial",
-      "Vida local",
-      "Menos turístico"
+      "Llega con 15 minutos de anticipación para asegurar tu asiento y aprovecha la información turística disponible en la caseta de la estación.",
+      "Viste ropa ligera y lleva protector solar; el clima es caluroso y la sombra es escasa fuera del centro histórico.",
+      "Prueba el agua de coco fresca en los puestos del zócalo y lleva efectivo en pesos para comprar artesanías directamente de los artesanos locales."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Experiencia rural yucateca",
-    "descripcion_turistica": "Pueblo tradicional de Yucatán con herencia maya. Centro de producción agrícola de la región. Transición entre Campeche y la zona central de Yucatán.",
+    "descripcion_turistica": "A tan solo unos minutos de la estación, el Centro de Maxcanú te invita a recorrer su pintoresco zócalo, donde podrás admirar la arquitectura de colores pastel y comprar artesanías yucatecas. No te pierdas la majestuosa Iglesia de San Antonio de Padua, una joya del siglo XVI con su imponente torre y retablos barrocos; dentro encontrarás obras de arte sacro y una atmósfera de serenidad. A pocos bloques, el Parque Municipal ofrece sombra de higuera centenaria y espacios para degustar antojitos locales como tacos de cochinita pibil y marquesitas, mientras escuchas relatos de la historia maya y colonial que aún resuenan en la gente del lugar.",
     "lugares_cercanos": [
       {
         "nombre": "Cenote Azul",
@@ -700,7 +716,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "merida-teya",
     "nombre": "Mérida (Teya)",
-    "linea": ["T3"],
+    "linea": [
+      "T3"
+    ],
     "municipio": "Mérida, Yucatán",
     "tipo_zona": "ciudad-transporte",
     "pois": [
@@ -788,7 +806,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "tixkokob",
     "nombre": "Tixkokob",
-    "linea": ["T4"],
+    "linea": [
+      "T4"
+    ],
     "municipio": "Tixkokob, Yucatán",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -860,7 +880,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "izamal",
     "nombre": "Izamal",
-    "linea": ["T4"],
+    "linea": [
+      "T4"
+    ],
     "municipio": "Izamal, Yucatán",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -948,7 +970,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "chichen-itza",
     "nombre": "Chichén Itzá",
-    "linea": ["T4"],
+    "linea": [
+      "T4"
+    ],
     "municipio": "Chichén Itzá, Yucatán",
     "tipo_zona": "arqueologico-maravilla",
     "pois": [
@@ -1036,7 +1060,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "valladolid",
     "nombre": "Valladolid",
-    "linea": ["T4"],
+    "linea": [
+      "T4"
+    ],
     "municipio": "Valladolid, Yucatán",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -1124,7 +1150,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "nuevo-xcan",
     "nombre": "Nuevo Xcán",
-    "linea": ["T5N"],
+    "linea": [
+      "T5N"
+    ],
     "municipio": "Nuevo Xcán, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1196,7 +1224,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "cancun-aeropuerto",
     "nombre": "Cancún (Aeropuerto)",
-    "linea": ["T5N"],
+    "linea": [
+      "T5N"
+    ],
     "municipio": "Benito Juárez, Quintana Roo",
     "tipo_zona": "transporte-aereo",
     "pois": [
@@ -1273,7 +1303,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "cancun",
     "nombre": "Cancún",
-    "linea": ["T5N"],
+    "linea": [
+      "T5N"
+    ],
     "municipio": "Benito Juárez, Quintana Roo",
     "tipo_zona": "transporte-turistico",
     "pois": [
@@ -1361,7 +1393,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "puerto-morelos",
     "nombre": "Puerto Morelos",
-    "linea": ["T5N"],
+    "linea": [
+      "T5N"
+    ],
     "municipio": "Puerto Morelos, Quintana Roo",
     "tipo_zona": "playa-transporte",
     "pois": [
@@ -1390,16 +1424,15 @@ export const estacionesTrenMaya = [
     "seo_title": "Estación Puerto Morelos Tren Maya — Puerto Cruceros | MetroGuia",
     "meta_description": "Estación Puerto Morelos del Tren Maya. Puerto de cruceros, playas y arrecifes de coral.",
     "h1": "Estación Puerto Morelos — Tren Maya Tramo 5 Norte",
-    "intro": "Puerto de cruceros con conexión a playas y arrecifes. Punto de conexión con transporte marítimo.",
+    "intro": "Descubre la vibra caribeña del Tren Maya en Puerto Morelos, donde el mar, el coral y la cultura se entrelazan vibrante.",
     "tips": [
-      "Puerto de cruceros importante",
-      "Playas cercanas",
-      "Arrecife de coral",
-      "Menos turístico que Cancún"
+      "Lleva protector solar biodegradable y traje de baño para el snorkel en el arrecife; el parque tiene áreas protegidas donde está prohibido tocar el coral.",
+      "Compra tus boletos de crucero o tours de buceo con anticipación en el Centro Marítimo para asegurar disponibilidad y mejores precios.",
+      "Usa calzado cómodo y lleva una botella de agua reutilizable; la zona peatonal tiene sombra limitada y el calor puede ser intenso en la tarde."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Mañanas entre semana, antes de las 10 am, para evitar multitudes y disfrutar del mar con tranquilidad.",
     "mundial_relevancia": "Hub de transporte marítimo",
-    "descripcion_turistica": "Pueblo pesquero convertido en puerto de cruceros. Ambiente más relajado que Cancún. Playa con arrecife coral cercano y parque temático.",
+    "descripcion_turistica": "Al bajarte en la estación Puerto Morelos, estarás a pocos minutos del Puerto de Cruceros, punto de partida de excursiones a Isla Mujeres y Cozumel. Recorre el animado Centro Marítimo, donde bares, restaurantes y tiendas de artesanía local ofrecen sabores de la cocina yucateca. No te pierdas el Parque Arrecife de Coral, una reserva natural donde podrás bucear o hacer snorkel entre tortugas, rayas y coloridos corales. Por la tarde, relájate en la Playa de Puerto Morelos, ideal para tomar el sol o practicar paddle‑board mientras disfrutas del atardecer caribeño.",
     "lugares_cercanos": [
       {
         "nombre": "Arrecife de Coral",
@@ -1443,7 +1476,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "playa-del-carmen",
     "nombre": "Playa del Carmen",
-    "linea": ["T5S"],
+    "linea": [
+      "T5S"
+    ],
     "municipio": "Solidaridad, Quintana Roo",
     "tipo_zona": "playa-turistico",
     "pois": [
@@ -1531,7 +1566,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "xcaret",
     "nombre": "Xcaret",
-    "linea": ["T5S"],
+    "linea": [
+      "T5S"
+    ],
     "municipio": "Solidaridad, Quintana Roo",
     "tipo_zona": "parque-tematico",
     "pois": [
@@ -1619,7 +1656,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "tulum-aeropuerto",
     "nombre": "Tulum (Aeropuerto)",
-    "linea": ["T5S"],
+    "linea": [
+      "T5S"
+    ],
     "municipio": "Tulum, Quintana Roo",
     "tipo_zona": "transporte-aereo",
     "pois": [
@@ -1696,7 +1735,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "tulum",
     "nombre": "Tulum",
-    "linea": ["T5S"],
+    "linea": [
+      "T5S"
+    ],
     "municipio": "Tulum, Quintana Roo",
     "tipo_zona": "arqueologico-playa",
     "pois": [
@@ -1784,7 +1825,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "felipe-carrillo-puerto",
     "nombre": "Felipe Carrillo Puerto",
-    "linea": ["T6"],
+    "linea": [
+      "T6"
+    ],
     "municipio": "Felipe Carrillo Puerto, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1861,7 +1904,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "limones",
     "nombre": "Limones",
-    "linea": ["T6"],
+    "linea": [
+      "T6"
+    ],
     "municipio": "Limones, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1933,7 +1978,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "nicolas-bravo",
     "nombre": "Nicolás Bravo",
-    "linea": ["T6"],
+    "linea": [
+      "T6"
+    ],
     "municipio": "Nicolás Bravo, Quintana Roo",
     "tipo_zona": "ciudad-regional",
     "pois": [
@@ -1952,16 +1999,15 @@ export const estacionesTrenMaya = [
     "seo_title": "Estación Nicolás Bravo Tren Maya — Parada Tropical | MetroGuia",
     "meta_description": "Estación Nicolás Bravo del Tren Maya. Parada rural en ruta hacia Bacalar y Chetumal.",
     "h1": "Estación Nicolás Bravo — Tren Maya Tramo 6",
-    "intro": "Parada rural en la ruta hacia el sur. Conexión con naturaleza tropical y pueblos autóctonos.",
+    "intro": "Descubre el encanto tropical de Nicolás Bravo, donde la historia vibra entre selvas y tradiciones vivas.",
     "tips": [
-      "Parada rural tropical",
-      "Vida local",
-      "Menos turístico",
-      "Naturaleza preservada"
+      "Lleva repelente y calzado cerrado para las caminatas en la reserva; los senderos pueden ser resbaladizos tras la lluvia.",
+      "Compra artesanías directamente a los productores en el mercado para apoyar la economía local y obtener auténticos recuerdos.",
+      "Usa protector solar biodegradable y lleva una botella reutilizable; la zona es protegida y se fomenta el turismo responsable."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Mañanas entre semana, antes de las 10 a.m., para disfrutar de la naturaleza sin aglomeraciones y con clima más fresco.",
     "mundial_relevancia": "Experiencia de naturaleza tropical",
-    "descripcion_turistica": "Poblado pequeño en ruta hacia Chetumal. Centro agrícola de la región. Punto de conexión entre Riviera Maya y zona sur de Quintana Roo.",
+    "descripcion_turistica": "A pocos pasos de la estación, el Centro de Nicolás Bravo te recibe con su plaza principal, la iglesia de San Miguel Arcángel y el mercado artesanal donde encontrarás textiles de algodón y cerámica maya. Explora la Reserva Natural El Pino, un enclave de selva húmeda con rutas de senderismo que revelan cascadas ocultas y la fauna de tucanes y jaguares. No te pierdas el Museo del Folclore Yucatán, que exhibe bailes tradicionales y la gastronomía local, como los tacos de cochinita pibil y el sopa de lima.",
     "lugares_cercanos": [
       {
         "nombre": "Laguna de Bacalar",
@@ -2005,7 +2051,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "bacalar",
     "nombre": "Bacalar",
-    "linea": ["T6"],
+    "linea": [
+      "T6"
+    ],
     "municipio": "Bacalar, Quintana Roo",
     "tipo_zona": "pueblo-magico",
     "pois": [
@@ -2093,7 +2141,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "chetumal",
     "nombre": "Chetumal",
-    "linea": ["T7"],
+    "linea": [
+      "T7"
+    ],
     "municipio": "Chetumal, Quintana Roo",
     "tipo_zona": "ciudad-puerto",
     "pois": [
@@ -2181,7 +2231,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "agua-azul",
     "nombre": "Agua Azul",
-    "linea": ["T7"],
+    "linea": [
+      "T7"
+    ],
     "municipio": "Ocosingo, Chiapas",
     "tipo_zona": "cascadas-naturales",
     "pois": [
@@ -2264,7 +2316,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "calakmul-balamku",
     "nombre": "Calakmul - Balamkú",
-    "linea": ["T7"],
+    "linea": [
+      "T7"
+    ],
     "municipio": "Calakmul, Campeche",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -2347,7 +2401,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "uxmal",
     "nombre": "Uxmal",
-    "linea": ["T7"],
+    "linea": [
+      "T7"
+    ],
     "municipio": "Uxmal, Yucatán",
     "tipo_zona": "arqueologico",
     "pois": [
@@ -2430,7 +2486,9 @@ export const estacionesTrenMaya = [
   {
     "slug": "merida-oriente",
     "nombre": "Mérida Oriente",
-    "linea": ["T7"],
+    "linea": [
+      "T7"
+    ],
     "municipio": "Mérida, Yucatán",
     "tipo_zona": "ciudad-transporte",
     "pois": [

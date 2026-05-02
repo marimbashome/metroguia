@@ -2,7 +2,9 @@ export const estacionesTijuana = [
   {
     "slug": "san-ysidro-frontera",
     "nombre": "San Ysidro (Cruce Fronterizo)",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "frontera",
     "pois": [
@@ -74,7 +76,9 @@ export const estacionesTijuana = [
   {
     "slug": "chaparral",
     "nombre": "Chaparral (Terminal Migratoria)",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "frontera",
     "pois": [
@@ -146,7 +150,9 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-rio",
     "nombre": "Zona Río (Plaza Río)",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistica",
     "pois": [
@@ -223,7 +229,9 @@ export const estacionesTijuana = [
   {
     "slug": "zona-centro",
     "nombre": "Zona Centro (Avenida Revolución)",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistico",
     "pois": [
@@ -300,7 +308,9 @@ export const estacionesTijuana = [
   {
     "slug": "catedral-tijuana",
     "nombre": "Catedral Metropolitana",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "religioso-turistico",
     "pois": [
@@ -372,7 +382,9 @@ export const estacionesTijuana = [
   {
     "slug": "mercado-hidalgo",
     "nombre": "Mercado Hidalgo",
-    "linea": ["1"],
+    "linea": [
+      "1"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-gastronómico",
     "pois": [
@@ -449,7 +461,9 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-santa-cecilia",
     "nombre": "Plaza Santa Cecilia (Mariachis)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "cultural-musica",
     "pois": [
@@ -526,7 +540,9 @@ export const estacionesTijuana = [
   {
     "slug": "hospital-general-tj",
     "nombre": "Hospital General de Tijuana",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "servicios",
     "pois": [
@@ -598,7 +614,9 @@ export const estacionesTijuana = [
   {
     "slug": "aeropuerto-tj",
     "nombre": "Aeropuerto Internacional (ABX)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [
@@ -670,7 +688,9 @@ export const estacionesTijuana = [
   {
     "slug": "puente-cross-border",
     "nombre": "Cross Border Xpress (CBX)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [
@@ -742,7 +762,9 @@ export const estacionesTijuana = [
   {
     "slug": "playas-tj",
     "nombre": "Playas de Tijuana",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "playa-turistico",
     "pois": [
@@ -819,7 +841,9 @@ export const estacionesTijuana = [
   {
     "slug": "otay-comercial",
     "nombre": "Garita Otay (Cruce Comercial)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "frontera-comercial",
     "pois": [
@@ -891,7 +915,9 @@ export const estacionesTijuana = [
   {
     "slug": "buena-vista",
     "nombre": "Buena Vista (Cañada)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "residencial-gastronómico",
     "pois": [
@@ -920,17 +946,15 @@ export const estacionesTijuana = [
     "seo_title": "Buena Vista Tijuana — Zona Gastronómica Residencial | MetroGuia",
     "meta_description": "Buena Vista en Tijuana. Zona residencial con restaurantes auténticos y galerías de arte.",
     "h1": "Buena Vista — Zona Gastronómica Local",
-    "intro": "Buena Vista en Zona Cañada es área residencial con excelentes restaurantes locales, cafés y galerías de arte. Auténtica Tijuana lejos del turismo masivo.",
+    "intro": "Descubre la vibrante mezcla de sabores caseros y arte urbano en Buena Vista, la joya cultural de la Cañada tijuanaísta.",
     "tips": [
-      "Restaurantes caseros sabrosos",
-      "Ambiente local",
-      "Precios accesibles",
-      "Galerías de artistas locales",
-      "Menos turistas"
+      "Llega temprano y pide la especialidad del día en Casa de la Abuela para evitar filas y saborear platos frescos.",
+      "Compra tu café en Café Cañada antes de la hora pico (8‑10 am) para conseguir una mesa con vista al mural.",
+      "Visita la Galería Arte en la Cañada los viernes por la tarde, cuando realizan visitas guiadas gratuitas y performances en vivo."
     ],
-    "mejor_horario": "Almuerzo o comida",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Experiencia local auténtica",
-    "descripcion_turistica": "Buena Vista es zona residencial en desarrollo de Tijuana con servicios emergentes. Área familiar con potencial de crecimiento y acceso a comercios y servicios básicos.",
+    "descripcion_turistica": "En la zona Cañada, a pocos pasos de la estación Buena Vista, encontrarás el restaurante familiar ‘Casa de la Abuela’, famoso por sus tacos de pescado al estilo Baja y sus salsas artesanales. Para los amantes del café, el acogedor ‘Café Cañada’ ofrece granos locales de tostado lento y un ambiente bohemio con murales de artistas tijuanaíes. No te pierdas la Galería ‘Arte en la Cañada’, donde se exhiben obras contemporáneas de pintores y fotógrafos de la región, y el mural callejero de ‘Los Colores del Mar’ que captura la esencia del Pacífico. Completa tu visita con un paseo por el Parque Cañada, ideal para relajarte y observar la vida cotidiana de los tijuanaíes.",
     "lugares_cercanos": [
       {
         "nombre": "Buena Vista Residencial",
@@ -968,7 +992,9 @@ export const estacionesTijuana = [
   {
     "slug": "la-mesa-tj",
     "nombre": "La Mesa",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "residencial",
     "pois": [
@@ -992,17 +1018,15 @@ export const estacionesTijuana = [
     "seo_title": "La Mesa Tijuana — Zona Residencial Tranquila | MetroGuia",
     "meta_description": "La Mesa en Tijuana. Área residencial tranquila y segura.",
     "h1": "La Mesa — Zona Residencial",
-    "intro": "La Mesa es zona residencial tranquila de Tijuana. Ambiente seguro, comercios locales y parques. Escape del turismo del centro.",
+    "intro": "Descubre La Mesa, un rincón vibrante donde la vida residencial, comercios locales y verdes parques se entrelazan en Tijuana.",
     "tips": [
-      "Zona tranquila",
-      "Menos turismo",
-      "Comercios de barrio",
-      "Ambiente familiar",
-      "Seguridad"
+      "Lleva efectivo pequeño para los puestos del mercado, ya que muchos no aceptan tarjetas.",
+      "Visita el parque al atardecer para disfrutar de la brisa del golfo y fotos con luz dorada.",
+      "Aprovecha la cercanía de la estación para caminar; el área es segura y perfecta para explorar a pie."
     ],
-    "mejor_horario": "Día para explorar",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Hospedaje local accesible",
-    "descripcion_turistica": "La Mesa de Otay es área elevada con vistas de Tijuana y San Diego. Zona residencial en crecimiento con comercios y servicios para la comunidad local con panorámicas únicas.",
+    "descripcion_turistica": "A pocos pasos de la estación, el Parque La Mesa ofrece senderos arbolados, áreas de juego y una vista panorámica del golfo. En la calle principal encontrarás la Tienda Artesanal “Manos Tijuana”, ideal para adquirir artesanías de cuero y cerámica regional, y el Café “Sabor del Mar”, famoso por sus mariscos frescos y cafés de origen. No te pierdas el Mercado de la Mesa, donde los vendedores locales ofrecen frutas tropicales, tacos de pescado y música en vivo los fines de semana, creando una experiencia auténtica y colorida para los visitantes.",
     "lugares_cercanos": [
       {
         "nombre": "Mirador de La Mesa",
@@ -1040,7 +1064,9 @@ export const estacionesTijuana = [
   {
     "slug": "valle-guadalupe-acceso",
     "nombre": "Valle de Guadalupe (Acceso/Ruta del Vino)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Ensenada",
     "tipo_zona": "vinico-turistico",
     "pois": [
@@ -1194,7 +1220,9 @@ export const estacionesTijuana = [
   {
     "slug": "puerta-mexico-sitt",
     "nombre": "Puerta México",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1266,7 +1294,9 @@ export const estacionesTijuana = [
   {
     "slug": "revolucion-brt",
     "nombre": "Avenida Revolución (BRT)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-turistico",
     "pois": [
@@ -1338,7 +1368,9 @@ export const estacionesTijuana = [
   {
     "slug": "cinco-y-diez-sitt",
     "nombre": "Cinco y Diez",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1492,7 +1524,9 @@ export const estacionesTijuana = [
   {
     "slug": "otay-brt",
     "nombre": "Otay",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial-residencial",
     "pois": [
@@ -1564,7 +1598,9 @@ export const estacionesTijuana = [
   {
     "slug": "presa-rodriguez-sitt",
     "nombre": "Presa Rodríguez",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "residencial",
     "pois": [
@@ -1636,7 +1672,9 @@ export const estacionesTijuana = [
   {
     "slug": "via-rapida-oriente-sitt",
     "nombre": "Vía Rápida Oriente",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "transporte-comercial",
     "pois": [
@@ -1660,17 +1698,15 @@ export const estacionesTijuana = [
     "seo_title": "Vía Rápida Oriente SITT — Hub de Transporte | MetroGuia",
     "meta_description": "Vía Rápida Oriente en Tijuana. Centro de transporte y comercio con BRT moderno.",
     "h1": "Vía Rápida Oriente — Centro de Conexión",
-    "intro": "Vía Rápida Oriente es hub de transporte en la zona oriente de Tijuana. Centro de transferencia con acceso a comercios y servicios. BRT moderno conecta este sector estratégico.",
+    "intro": "Descubre el latir vibrante de Tijuana en cada parada, donde la historia, la moda y la gastronomía se entrelazan.",
     "tips": [
-      "Centro de transporte",
-      "Conexión estratégica",
-      "Comercio cercano",
-      "BRT frecuente",
-      "Servicios completos"
+      "Lleva efectivo en pesos para pequeños comercios y puestos de comida callejera, ya que no todos aceptan tarjetas.",
+      "Compra tu tarjeta recargable \"Tij-Ticket\" en la taquilla de la estación para evitar filas en los torniquetes.",
+      "Aprovecha la conexión directa con el corredor de bicicletas de la ciudad; hay racks seguros cerca de la salida sur de la estación."
     ],
-    "mejor_horario": "Mañana para conexiones",
+    "mejor_horario": "Mañanas entre semana, de 8:00 a 10:30, para disfrutar de menos aglomeraciones y servicios plenamente operativos.",
     "mundial_relevancia": "Centro de conexión de transporte",
-    "descripcion_turistica": "Vía Rápida Oriente SITT es estación en importante corredor de transporte del oriente de Tijuana. Acceso a zona residencial y comercial con servicios variados.",
+    "descripcion_turistica": "Al salir de la estación Vía Rápida Oriente, sumérgete en el Centro de Transferencia, el corazón logístico de la ciudad, y luego recorre la animada Zona Comercial Oriente, famosa por sus boutiques de diseño local, galerías de arte contemporáneo y el icónico Mercado de la Frontera, donde podrás degustar tacos de pescado al estilo Baja y comprar artesanías de cobre. No te pierdas el Parque Cultural del Pacífico, a pocos minutos a pie, donde se presentan exposiciones itinerantes y conciertos al aire libre, y visita la Biblioteca Pública del Sur, un espacio arquitectónico vanguardista que ofrece recorridos gratuitos sobre la historia de Tijuana.",
     "lugares_cercanos": [
       {
         "nombre": "Vía Rápida Oriente",
@@ -1708,7 +1744,9 @@ export const estacionesTijuana = [
   {
     "slug": "plaza-monarca-sitt",
     "nombre": "Plaza Monarca",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "comercial",
     "pois": [
@@ -1857,7 +1895,9 @@ export const estacionesTijuana = [
   {
     "slug": "mariano-matamoros-sitt",
     "nombre": "Mariano Matamoros",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "residencial-comercial",
     "pois": [
@@ -1881,17 +1921,15 @@ export const estacionesTijuana = [
     "seo_title": "Mariano Matamoros Tijuana — Zona Residencial Local | MetroGuia",
     "meta_description": "Mariano Matamoros en Tijuana. Zona residencial servida por BRT SITT moderno.",
     "h1": "Mariano Matamoros — Residencia Local",
-    "intro": "Mariano Matamoros es zona residencial-comercial de Tijuana servida por BRT SITT. Mercados locales, restaurantes de barrio y ambiente auténtico. Acceso rápido por transporte moderno.",
+    "intro": "Descubre el corazón auténtico de Tijuana en Mariano Matamoros, donde tradición, sabor y comunidad se entrelazan vibrante.",
     "tips": [
-      "Zona residencial auténtica",
-      "Mercados de barrio",
-      "Restaurantes típicos",
-      "BRT frecuente",
-      "Precios locales"
+      "Lleva efectivo en pesos para los puestos del mercado, ya que muchos no aceptan tarjetas.",
+      "Llega temprano, entre 8:00 y 10:00 am, para evitar filas y disfrutar de los productos frescos del mercado.",
+      "Usa calzado cómodo; las calles empedradas y los muros con grafitis son perfectos para una caminata fotográfica."
     ],
-    "mejor_horario": "Mañana o tarde",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Zona residencial auténtica",
-    "descripcion_turistica": "Mariano Matamoros SITT es estación de transporte en zona histórica de Tijuana. Acceso a barrio tradicional con comercios y servicios locales autóctonos.",
+    "descripcion_turistica": "A pocos pasos de la estación, la zona residencial Matamoros ofrece callejones llenos de color y arquitectura art déco. Visita el Mercado Municipal Matamoros, un laberinto de puestos que venden desde tacos de pescado al estilo Baja hasta artesanías de cuero y cerámica. No te pierdas el Café La Raza, famoso por su café de olla y pastel de elote, y el restaurante El Pescadito, donde podrás probar el clásico fish taco con salsa de mango. Además, el Parque del Sol, a dos cuadras, es ideal para descansar bajo palmeras mientras observas la vida local.",
     "lugares_cercanos": [
       {
         "nombre": "Zona Mariano Matamoros",
@@ -1929,7 +1967,9 @@ export const estacionesTijuana = [
   {
     "slug": "terminal-sur-sitt",
     "nombre": "Terminal Sur (SITT)",
-    "linea": ["2"],
+    "linea": [
+      "2"
+    ],
     "municipio": "Tijuana",
     "tipo_zona": "transporte",
     "pois": [

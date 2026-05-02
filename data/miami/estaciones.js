@@ -2,7 +2,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-government-center",
     "nombre": "Government Center",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "centro-institucional",
@@ -18,7 +20,9 @@ export const estacionesMiami = [
         "distancia": "0 min en estación"
       }
     ],
-    "transferencias": ["miami-metromover"],
+    "transferencias": [
+      "miami-metromover"
+    ],
     "seo_title": "Estación Government Center Miami Metrorail — Centro Cívico | MetroGuia",
     "meta_description": "Estación Government Center Miami Metrorail. Centro cívico e institucional de Miami.",
     "h1": "Estación Government Center — Línea Green | Miami",
@@ -49,7 +53,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-brickell",
     "nombre": "Brickell",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "financiero-comercial",
@@ -65,7 +71,9 @@ export const estacionesMiami = [
         "distancia": "2 min caminando"
       }
     ],
-    "transferencias": ["miami-metromover"],
+    "transferencias": [
+      "miami-metromover"
+    ],
     "seo_title": "Estación Brickell Miami Metrorail — Centro Financiero | MetroGuia",
     "meta_description": "Estación Brickell Miami Metrorail. Centro financiero y comercial de Miami con Brickell Avenue.",
     "h1": "Estación Brickell — Línea Green | Miami",
@@ -96,7 +104,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-miami-airport",
     "nombre": "Miami International Airport",
-    "linea": ["Orange"],
+    "linea": [
+      "Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "transporte-aeropuerto",
@@ -138,7 +148,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-civic-center",
     "nombre": "Civic Center",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-institucional",
@@ -184,7 +196,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-dadeland-north",
     "nombre": "Dadeland North",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Kendall",
     "tipo_zona": "comercial",
@@ -226,7 +240,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-dadeland-south",
     "nombre": "Dadeland South",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Kendall",
     "tipo_zona": "transporte-terminal",
@@ -241,16 +257,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Dadeland South Miami Metrorail — Terminal Sur | MetroGuia",
     "meta_description": "Estación Dadeland South Miami Metrorail. Terminal sur de la línea Green.",
     "h1": "Estación Dadeland South — Línea Green | Miami",
-    "intro": "Estación Dadeland South del Metrorail. Terminal sur de la Línea Green.",
+    "intro": "A bright, palm‑lined gateway to shopping, dining, and Miami’s vibrant multicultural scene, just steps from the Metrorail line.",
     "tips": [
-      "Terminal sur de Metrorail",
-      "Zona residencial de Kendall",
-      "Estacionamiento disponible",
-      "Punto final de Línea Green"
+      "Buy a 1‑day Easy Card for unlimited Metrorail and Metrobus rides to save on multiple trips.",
+      "Arrive early on weekdays (7–9 am) to avoid the commuter rush and find parking spots near the mall’s peripheral lots.",
+      "Use the station’s free Wi‑Fi and charging stations while you plan your next stop—apps like Google Maps and Miami-Dade Transit are essential."
     ],
-    "mejor_horario": "Cualquier hora según necesidad",
+    "mejor_horario": "Weekday mornings (7–9 am) to avoid rush hour crowds",
     "mundial_relevancia": "Terminal sur de Metrorail",
-    "descripcion_turistica": "Dadeland South es el terminal sur de la Línea Green del Metrorail. Zona residencial de Kendall con estacionamiento. Punto final para residentes de South Miami.",
+    "descripcion_turistica": "Dadeland South station sits at the heart of the Dadeland Mall complex, where you can wander through over 180 stores, from luxury boutiques to local souvenir shops. Exit onto South Miami Avenue and discover the nearby Pinecrest Gardens, a tropical oasis featuring flamingos, koi ponds, and a historic 1915 Merrick House. A short ride east brings you to the bustling streets of Kendall, famous for its Caribbean eateries, art galleries, and the lively Dadeland Village outdoor market on weekends. The station’s convenient connection to Metrobus routes also opens up easy trips to the Everglades Edge and the vibrant Little Havana district.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -267,7 +282,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-omni",
     "nombre": "Omni Loop Station",
-    "linea": ["Omni-Loop"],
+    "linea": [
+      "Omni-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "comercial-entretenimiento",
@@ -309,7 +326,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-brickell",
     "nombre": "Brickell Loop Station",
-    "linea": ["Brickell-Loop"],
+    "linea": [
+      "Brickell-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "financiero-comercial",
@@ -320,7 +339,9 @@ export const estacionesMiami = [
         "distancia": "0 min en estación"
       }
     ],
-    "transferencias": ["miami-brickell"],
+    "transferencias": [
+      "miami-brickell"
+    ],
     "seo_title": "Estación Brickell Loop Miami Metromover — GRATIS | MetroGuia",
     "meta_description": "Estación Brickell Loop Miami Metromover (GRATIS). Conexión al Financial District.",
     "h1": "Estación Brickell Loop — Metromover Brickell Loop | Miami",
@@ -350,7 +371,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-museum-park",
     "nombre": "Museum Park",
-    "linea": ["Inner-Loop"],
+    "linea": [
+      "Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "cultural-parques",
@@ -392,7 +415,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-coconut-grove",
     "nombre": "Coconut Grove",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-bohemia",
@@ -434,7 +459,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-university",
     "nombre": "University",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Coral Gables",
     "tipo_zona": "educacion",
@@ -475,7 +502,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-palmetto",
     "nombre": "Palmetto",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "residencial",
@@ -490,17 +519,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Palmetto Miami Metrorail — Terminal Norte | MetroGuia",
     "meta_description": "Estación Palmetto Miami Metrorail. Terminal norte de la línea Green en Hialeah.",
     "h1": "Estación Palmetto — Línea Green | Miami",
-    "intro": "Estación Palmetto del Metrorail. Terminal norte de la Línea Green en Hialeah.",
+    "intro": "A vibrant gateway to Miami’s multicultural heart, Palmetto station buzzes with art, cuisine, and tropical energy.",
     "tips": [
-      "Terminal norte Línea Green",
-      "Acceso a Palmetto Expressway",
-      "Zona residencial",
-      "Estacionamiento disponible",
-      "Conexión a Hialeah"
+      "Buy a EASY Card for unlimited rides and faster entry through the fare gates.",
+      "Carry small change for vending machines and bike‑share docks near the station entrance.",
+      "Check the Metrorail app for real‑time train arrivals to minimize wait times during peak hours."
     ],
-    "mejor_horario": "Mañana y tarde para desplazamientos",
+    "mejor_horario": "Weekday mornings before 7 am to avoid rush‑hour crowds",
     "mundial_relevancia": "Terminal norte Green Metrorail",
-    "descripcion_turistica": "Palmetto es el terminal norte de la Línea Green del Metrorail. Localizado en Hialeah con acceso a Palmetto Expressway. Zona residencial importante de North Miami.",
+    "descripcion_turistica": "Just steps from the station, explore the historic Little Havana streets of Calle Ocho, where cigar factories, colorful murals, and the famed Domino Park invite you to soak up Cuban culture. A short walk north leads to the lush Miami Riverwalk, perfect for kayaking or a sunset stroll with skyline views. Food lovers can dive into authentic empanadas at Versailles Restaurant or sip a cafecito at a nearby sidewalk café, while the nearby Wynwood Walls art district offers an outdoor gallery of graffiti masterpieces just a 10‑minute bus ride away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -517,7 +544,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-okeechobee",
     "nombre": "Okeechobee",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "industrial-comercial",
@@ -532,16 +561,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Okeechobee Miami Metrorail — Zona Industrial | MetroGuia",
     "meta_description": "Estación Okeechobee Miami Metrorail. Acceso a zona industrial de Hialeah.",
     "h1": "Estación Okeechobee — Línea Green | Miami",
-    "intro": "Estación Okeechobee del Metrorail. Zona industrial de Hialeah.",
+    "intro": "A bustling gateway where vibrant industrial Hialeah meets Miami’s multicultural rhythm, perfect for curious travelers.",
     "tips": [
-      "Acceso a zona industrial Hialeah",
-      "Comercio mayorista",
-      "Empresas logísticas",
-      "Punto de distribución regional"
+      "Buy a EasyCard at the station kiosk for seamless transfers between Metrorail, Metrobus, and Tri‑Rail services.",
+      "Carry small change for vending machines and street vendors; many accept cash only.",
+      "Arrive 5‑10 minutes early during rush hour (7‑9 am, 4‑6 pm) as platform doors close quickly."
     ],
-    "mejor_horario": "Mañana para actividad comercial",
+    "mejor_horario": "Weekday mornings before 7 am to enjoy a quieter station and smoother connections",
     "mundial_relevancia": "Centro industrial Miami",
-    "descripcion_turistica": "Okeechobee es acceso a la zona industrial de Hialeah, importante hub logístico de Miami. Comercio mayorista, empresas de distribución y transporte.",
+    "descripcion_turistica": "Step out of Okeechobee station and stroll to the historic Hialeah Mall, a shopper’s paradise featuring Miami‑style boutiques and Latin eateries. Just a short walk north, the iconic Hialeah Park Racing & Casino offers vintage grandstand architecture and live horse‑racing action on weekends. For a taste of local art, head east to the Little Havana Cultural District, where colorful murals, cigar shops, and the famed Domino Park bring Cuban culture to life. Don’t miss the nearby Miami Springs Golf & Country Club, a serene spot for a quick round amidst palm‑lined fairways.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -558,7 +586,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-hialeah",
     "nombre": "Hialeah",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Hialeah",
     "tipo_zona": "centro-urbano",
@@ -605,7 +635,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-transfer",
     "nombre": "Tri-Rail Transfer",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "transporte-multimodal",
@@ -616,7 +648,9 @@ export const estacionesMiami = [
         "distancia": "0 min en estación"
       }
     ],
-    "transferencias": ["miami-tri-rail-mia"],
+    "transferencias": [
+      "miami-tri-rail-mia"
+    ],
     "seo_title": "Estación Tri-Rail Transfer Miami — Conexión Ferroviaria | MetroGuia",
     "meta_description": "Estación Tri-Rail Transfer Miami. Conexión entre Metrorail y Tri-Rail ferroviario.",
     "h1": "Estación Tri-Rail Transfer — Línea Green | Miami",
@@ -647,7 +681,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-northside",
     "nombre": "Northside",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "North Miami",
     "tipo_zona": "residencial",
@@ -662,16 +698,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Northside Miami Metrorail — Residencial | MetroGuia",
     "meta_description": "Estación Northside Miami Metrorail. Zona residencial North Miami.",
     "h1": "Estación Northside — Línea Green | Miami",
-    "intro": "Estación Northside del Metrorail. Zona residencial de North Miami.",
+    "intro": "A sun‑kissed gateway where sleek Metrorail meets North Miami’s vibrant art, cafés, and waterfront charm.",
     "tips": [
-      "Zona residencial tranquila",
-      "Acceso a viviendas familiares",
-      "Comercio local",
-      "Escuelas y servicios"
+      "Buy an EASY Card online before arrival to skip the ticket booth line and enjoy discounted transfers",
+      "Carry a reusable water bottle; the station provides filtered water fountains and the park’s trails are best explored hydrated",
+      "Check the Metrorail app for real‑time arrivals—weekends see extra service to the beach corridors"
     ],
-    "mejor_horario": "Mañana y tarde para desplazamientos",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "Zona residencial North Miami",
-    "descripcion_turistica": "Northside es estación residencial en North Miami. Zona tranquila con viviendas familiares, comercio local y servicios comunitarios.",
+    "descripcion_turistica": "Step off at Northside and wander to the nearby Historic Oleta River State Park, where kayaking through mangroves meets jungle‑trail biking. Just a five‑minute walk, the bustling Calle Ocho Market bursts with Latin‑flavored food stalls, live salsa bands, and colorful murals by local artists. For a splash of culture, the Miami Design District’s high‑end galleries and the Pérez Art Museum’s waterfront sculpture garden are a short Metrorail ride away, offering tourists a perfect blend of nature, cuisine, and contemporary art.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -688,7 +723,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-mlk-plaza",
     "nombre": "MLK Plaza",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-institucional",
@@ -730,7 +767,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-brownsville",
     "nombre": "Brownsville",
-    "linea": ["Green"],
+    "linea": [
+      "Green"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-comunitaria",
@@ -745,17 +784,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Brownsville Miami Metrorail — Barrio Histórico | MetroGuia",
     "meta_description": "Estación Brownsville Miami Metrorail. Barrio histórico de Brownsville.",
     "h1": "Estación Brownsville — Línea Green | Miami",
-    "intro": "Estación Brownsville del Metrorail. Barrio histórico y comunitario de Miami.",
+    "intro": "Vibrant murals and tropical breezes greet travelers at Brownsville Station, the gateway to Miami’s historic heart.",
     "tips": [
-      "Barrio histórico Brownsville",
-      "Comunidad residencial",
-      "Comercio local auténtico",
-      "Zona cultural importante",
-      "Servicios comunitarios"
+      "Buy a reusable EASY Card for discounted fares and faster entry through the turnstiles.",
+      "Carry a small, insulated water bottle; the Miami heat can be intense even in the shade.",
+      "Check the Metrorail app for real‑time arrivals; trains run every 5‑7 minutes during peak hours."
     ],
-    "mejor_horario": "Mañana y tarde para explorar comunidad",
+    "mejor_horario": "Weekday mornings before 8 AM to enjoy a quieter platform and cooler temperatures",
     "mundial_relevancia": "Barrio histórico Miami",
-    "descripcion_turistica": "Brownsville es barrio histórico y comunitario de Miami. Zona residencial con comercio local auténtico, restaurantes y servicios. Importancia cultural en la historia de Miami.",
+    "descripcion_turistica": "Step off the train and wander the colorful streets of the Brownsville Community, where Afro‑Caribbean culture thrives. Visit the historic Brownsville Library and the nearby Ransom Everglades Park for a quick splash of greenery, then stroll to the iconic Little River Drive for authentic Cuban cafés, art galleries, and fresh seafood at the famed La Mosca Fish Market. Don’t miss the weekly street art walk on Saturdays, where local artists transform alleyways into living galleries, offering perfect photo ops and a taste of Miami’s grassroots creativity.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -772,7 +809,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-earlington-heights",
     "nombre": "Earlington Heights",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-comercial",
@@ -813,7 +852,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-allapattah",
     "nombre": "Allapattah",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -828,17 +869,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Allapattah Miami Metrorail — Barrio Residencial | MetroGuia",
     "meta_description": "Estación Allapattah Miami Metrorail. Barrio residencial de Allapattah.",
     "h1": "Estación Allapattah — Línea Green+Orange | Miami",
-    "intro": "Estación Allapattah del Metrorail. Barrio residencial importante.",
+    "intro": "Vibrant Allapattah station pulses with multicultural flavors, artful murals, and easy access to Miami’s hidden culinary gems.",
     "tips": [
-      "Barrio residencial Allapattah",
-      "Viviendas familiares",
-      "Comercio local",
-      "Comunidad establecida",
-      "Acceso a Wynwood (cercano)"
+      "Buy a weekly EASY Card for unlimited rides and discounts at participating local eateries.",
+      "Carry cash for small vendors, as many don’t accept cards.",
+      "Check the Metrorail schedule online; weekend service may run on a reduced frequency."
     ],
-    "mejor_horario": "Mañana y tarde para desplazamientos",
+    "mejor_horario": "Weekday mornings before 8 AM to enjoy a quieter station and catch the sunrise over downtown Miami",
     "mundial_relevancia": "Barrio residencial Miami",
-    "descripcion_turistica": "Allapattah es barrio residencial establecido de Miami. Viviendas familiares, comercio local y comunidad tranquila. Proximidad a Wynwood artístico.",
+    "descripcion_turistica": "Step out of Allapattah Metrorail and wander into the colorful streets of Barrio Allapattah, where street art blooms on storefronts and the scent of Caribbean spices fills the air. Visit the nearby Allapattah Farmers Market for fresh tropical fruits, or sample authentic Cuban sandwiches at La Carreta’s sister café just two blocks away. Art lovers shouldn’t miss the Wynwood Walls extension, a short bus ride north, while history buffs can explore the historic Miami Waterworks Museum housed in a renovated 1920s pumping station just a five‑minute walk from the platform.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -855,7 +894,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-santa-clara",
     "nombre": "Santa Clara",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -897,7 +938,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-culmer",
     "nombre": "Culmer",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "residencial-histórico",
@@ -939,7 +982,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-historic-overtown",
     "nombre": "Historic Overtown",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "cultural-histórico",
@@ -986,7 +1031,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-vizcaya",
     "nombre": "Vizcaya",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Miami",
     "tipo_zona": "turístico-cultural",
@@ -1028,7 +1075,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-douglas-road",
     "nombre": "Douglas Road",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "Coral Gables",
     "tipo_zona": "residencial",
@@ -1043,17 +1092,16 @@ export const estacionesMiami = [
     "seo_title": "Estación Douglas Road Miami Metrorail — Coral Gables | MetroGuia",
     "meta_description": "Estación Douglas Road Miami Metrorail. Zona residencial Coral Gables.",
     "h1": "Estación Douglas Road — Línea Green+Orange | Miami",
-    "intro": "Estación Douglas Road del Metrorail. Zona residencial de Coral Gables.",
+    "intro": "A breezy, palm‑shaded stop that whisks you into Coral Gables' historic charm and vibrant café culture.",
     "tips": [
-      "Zona residencial Coral Gables",
-      "Viviendas de lujo",
-      "Arquitectura colonial española",
-      "Comercio local",
-      "Zona tranquila y arbolada"
+      "Buy a EASY Card at the station kiosk for seamless transfers between Metrorail, Metrobus, and the free Coral Gables Trolley.",
+      "Carry sunscreen and a reusable water bottle; Miami’s sun is strong even in winter.",
+      "Visit on a weekday afternoon to enjoy quieter streets and shorter lines at popular cafés.",
+      "Take advantage of free Wi‑Fi at the nearby Coral Gables Library for quick map checks or travel planning."
     ],
-    "mejor_horario": "Cualquier hora para desplazamientos",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy cooler temperatures",
     "mundial_relevancia": "Zona residencial Coral Gables",
-    "descripcion_turistica": "Douglas Road es zona residencial importante de Coral Gables. Viviendas de lujo con arquitectura colonial española, comercio local y zona tranquila y arbolada.",
+    "descripcion_turistica": "Step out of Douglas Road station onto the tree‑lined avenues of Coral Gables and you’ll find the iconic Biltmore Hotel, a Mediterranean‑style mansion with a legendary pool and upscale dining. A short walk leads to Miracle Mile, where boutique shops, art galleries, and the historic Coral Gables City Hall invite exploration. Don’t miss the lush Fairchild Tropical Botanic Garden across the road, offering tropical flora, butterfly exhibits, and scenic walking trails perfect for a relaxing afternoon.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1070,7 +1118,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-south-miami",
     "nombre": "South Miami",
-    "linea": ["Green+Orange"],
+    "linea": [
+      "Green+Orange"
+    ],
     "sistema": "metrorail",
     "municipio": "South Miami",
     "tipo_zona": "comercial-residencial",
@@ -1085,17 +1135,15 @@ export const estacionesMiami = [
     "seo_title": "Estación South Miami Metrorail — Downtown | MetroGuia",
     "meta_description": "Estación South Miami Metrorail. Centro comercial South Miami.",
     "h1": "Estación South Miami — Línea Green+Orange | Miami",
-    "intro": "Estación South Miami del Metrorail. Centro comercial y residencial.",
+    "intro": "Vibrant South Miami station pulses with tropical flair, linking travelers to art, cuisine, and sun‑kissed streets.",
     "tips": [
-      "South Miami Downtown (1 min)",
-      "Tiendas y restaurantes",
-      "Zona residencial cercana",
-      "Comercio variado",
-      "Punto terminal importante"
+      "Buy a EASY Card online before arrival to skip the ticket booth line and enjoy a discounted fare.",
+      "Check the Metrorail schedule apps for real‑time arrivals; trains run every 10‑12 minutes during peak hours but only every 20 minutes on weekends.",
+      "Carry a small, reusable water bottle—Miami’s heat can be intense, and many cafés near the station offer free refills. "
     ],
-    "mejor_horario": "Mañana y tarde para compras",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer station atmosphere",
     "mundial_relevancia": "Centro comercial South Miami",
-    "descripcion_turistica": "South Miami es estación terminal con acceso a Downtown South Miami (1 min). Centro comercial, restaurantes y zona residencial. Punto importante al sur de Miami.",
+    "descripcion_turistica": "Step out onto South Miami Avenue and discover the historic downtown plaza, where colorful murals celebrate Cuban heritage and the nearby Coral Gables Museum offers a glimpse into regional history. A short stroll brings you to the lush Fairchild Tropical Botanic Garden, perfect for a leisurely walk among exotic orchids and towering palms. For food lovers, the bustling Española Way beckons with al fresco dining, live music, and specialty coffee shops, while the nearby Shops at Sunset Place provides boutique shopping and a splash pad for families. All attractions are within a 10‑minute walk, making the station an ideal gateway to South Miami’s cultural heartbeat.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1112,7 +1160,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-adrienne-arsht",
     "nombre": "Adrienne Arsht Center",
-    "linea": ["Omni-Loop+Inner-Loop"],
+    "linea": [
+      "Omni-Loop+Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "cultural-entretenimiento",
@@ -1154,7 +1204,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-school-board",
     "nombre": "School Board",
-    "linea": ["Omni-Loop"],
+    "linea": [
+      "Omni-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "institucional",
@@ -1196,7 +1248,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-financial-district",
     "nombre": "Financial District",
-    "linea": ["Inner-Loop+Brickell-Loop"],
+    "linea": [
+      "Inner-Loop+Brickell-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "financiero",
@@ -1238,7 +1292,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-bayfront-park",
     "nombre": "Bayfront Park",
-    "linea": ["Inner-Loop"],
+    "linea": [
+      "Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "parques-turismo",
@@ -1285,7 +1341,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-college-bayside",
     "nombre": "College/Bayside",
-    "linea": ["Inner-Loop"],
+    "linea": [
+      "Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "educativo",
@@ -1327,7 +1385,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-knight-center",
     "nombre": "Knight Center",
-    "linea": ["Inner-Loop"],
+    "linea": [
+      "Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "entretenimiento-convenciones",
@@ -1369,7 +1429,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-freedom-tower",
     "nombre": "Freedom Tower",
-    "linea": ["Inner-Loop"],
+    "linea": [
+      "Inner-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "histórico-cultural",
@@ -1411,7 +1473,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-brickell-city-centre",
     "nombre": "Brickell City Centre",
-    "linea": ["Brickell-Loop"],
+    "linea": [
+      "Brickell-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "comercial-lujo",
@@ -1453,7 +1517,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-metromover-fifth-street",
     "nombre": "Fifth Street",
-    "linea": ["Brickell-Loop"],
+    "linea": [
+      "Brickell-Loop"
+    ],
     "sistema": "metromover",
     "municipio": "Miami",
     "tipo_zona": "residencial",
@@ -1468,17 +1534,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Fifth Street Miami Metromover — GRATIS | MetroGuia",
     "meta_description": "Estación Fifth Street Miami Metromover (GRATIS). Zona residencial Brickell.",
     "h1": "Estación Fifth Street — Metromover Brickell Loop | Miami",
-    "intro": "Estación Fifth Street del Metromover (servicio GRATIS). Zona residencial Brickell.",
+    "intro": "A breezy gateway to Brickell’s upscale skyline, perfect for strolling, shopping, and savoring waterfront vibes.",
     "tips": [
-      "Servicio GRATIS",
-      "Zona residencial Brickell",
-      "Viviendas modernas",
-      "Comercio local",
-      "Brickell Loop acceso"
+      "Buy a 1‑day Unlimited Ride Pass for $5.75 to hop freely between Metromover loops and Metrorail stations.",
+      "Use the station’s free bike‑share docks to explore Brickell on two wheels; helmets are provided on‑site.",
+      "Check the Metromover schedule on the Miami-Dade app; service runs every 10‑12 minutes, but frequency drops after 10 PM."
     ],
-    "mejor_horario": "Cualquier hora para residentes",
+    "mejor_horario": "Weekday mornings (7:00 AM–9:30 AM) to enjoy lighter crowds and cooler temperatures",
     "mundial_relevancia": "Zona residencial Brickell",
-    "descripcion_turistica": "Fifth Street es estación Metromover (GRATIS) en zona residencial de Brickell. Viviendas modernas, comercio local y acceso a Brickell Loop. Zona residencial importante de Brickell.",
+    "descripcion_turistica": "Step off at Fifth Street and you’re minutes from Brickell City Centre, where luxury boutiques, gourmet eateries, and a rooftop cinema await. Wander south to the historic Brickell Avenue Bridge for stunning Biscayne Bay views, then cross to Mary Brickell Village for art galleries, live music, and the iconic Brickell Key park—ideal for a sunset jog or paddle‑boarding session. Don’t miss the nearby Miami Design District’s vibrant murals and designer showrooms, all within a short Metromover ride.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1495,7 +1559,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-mia",
     "nombre": "Tri-Rail Miami Airport",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "Miami",
     "tipo_zona": "transporte-aeropuerto",
@@ -1506,7 +1572,9 @@ export const estacionesMiami = [
         "distancia": "0 min en estación"
       }
     ],
-    "transferencias": ["miami-miami-airport"],
+    "transferencias": [
+      "miami-miami-airport"
+    ],
     "seo_title": "Estación Tri-Rail Miami Airport — Ferroviario | MetroGuia",
     "meta_description": "Estación Tri-Rail Miami Airport. Conexión ferroviaria a aeropuerto.",
     "h1": "Estación Tri-Rail Miami Airport — Sistema Tri-Rail | Miami",
@@ -1537,7 +1605,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-fort-lauderdale",
     "nombre": "Tri-Rail Fort Lauderdale",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "Fort Lauderdale",
     "tipo_zona": "transporte-centro",
@@ -1579,7 +1649,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-hollywood",
     "nombre": "Tri-Rail Hollywood",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "Hollywood",
     "tipo_zona": "transporte-centro",
@@ -1594,17 +1666,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Tri-Rail Hollywood — Ferroviario | MetroGuia",
     "meta_description": "Estación Tri-Rail Hollywood. Conexión a Hollywood y región.",
     "h1": "Estación Tri-Rail Hollywood — Sistema Tri-Rail | Miami",
-    "intro": "Estación Tri-Rail Hollywood. Conexión regional.",
+    "intro": "A breezy gateway where the sunshine‑kissed streets of Hollywood meet vibrant art, shopping, and waterfront charm.",
     "tips": [
-      "Conexión a Miami, Fort Lauderdale, West Palm Beach",
-      "Downtown Hollywood (2 min)",
-      "Tarifa: $2.50-8.75 USD",
-      "Viajes regionales",
-      "Zona de Florida"
+      "Buy a weekly EASY Card for unlimited rides on Tri‑Rail and Metrorail; it saves money and time.",
+      "Carry a small, reusable water bottle—water fountains are available at the station and in the nearby park.",
+      "Arrive 5‑10 minutes early during peak hours (7‑9 am, 4‑6 pm) to secure a seat on the train."
     ],
-    "mejor_horario": "Mañana y tarde para viajes",
+    "mejor_horario": "Weekday mornings before 7 am to enjoy a calm ride and avoid rush‑hour crowds",
     "mundial_relevancia": "Estación regional Tri-Rail",
-    "descripcion_turistica": "Tri-Rail Hollywood es estación regional que conecta ciudades del sur de Florida. Downtown Hollywood (2 min) accesible con tiendas y restaurantes.",
+    "descripcion_turistica": "Step off at Tri‑Rail Hollywood and wander just blocks to the historic Downtown Hollywood, home to the iconic Art Deco Hollywood Beach Boardwalk and the bustling Hollywood Beach Theatre. Grab a fresh Cuban coffee at Café Versailles, then stroll to the Hollywood North Beach Park for paddle‑boarding or a sunset view of the Intracoastal Waterway. Don't miss the nearby ArtsPark at the Hollywood Arts District, where rotating murals and open‑air concerts showcase local talent, and the Hollywood Mall for boutique shopping and seaside cuisine.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1621,7 +1691,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-boca-raton",
     "nombre": "Tri-Rail Boca Raton",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "Boca Raton",
     "tipo_zona": "transporte-residencial",
@@ -1636,17 +1708,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Tri-Rail Boca Raton — Ferroviario | MetroGuia",
     "meta_description": "Estación Tri-Rail Boca Raton. Conexión a Boca Raton.",
     "h1": "Estación Tri-Rail Boca Raton — Sistema Tri-Rail | Miami",
-    "intro": "Estación Tri-Rail Boca Raton. Conexión a Boca Raton.",
+    "intro": "A sleek, sun‑kissed hub where commuters glide into Boca Raton’s vibrant downtown, perfect for a quick cultural splash.",
     "tips": [
-      "Conexión a Miami y West Palm Beach",
-      "Boca Raton Downtown (3 min)",
-      "Tarifa: $2.50-8.75 USD",
-      "Viajes cómodos regionalmente",
-      "Zona residencial prospera"
+      "Buy a weekly Easy Card for unlimited rides and a 10% discount at participating downtown retailers.",
+      "Check the SunPass app for real‑time train schedules; weekend service runs every 30 minutes, weekdays every 20 minutes.",
+      "Carry a reusable water bottle; water fountains are available at both platform ends and in the station’s eco‑friendly waiting area."
     ],
-    "mejor_horario": "Mañana y tarde para viajes",
+    "mejor_horario": "Weekday mornings (7:30 am–9:30 am) to avoid rush‑hour crowds and enjoy a calmer boarding experience.",
     "mundial_relevancia": "Estación regional Tri-Rail",
-    "descripcion_turistica": "Tri-Rail Boca Raton es estación en zona residencial prospera. Downtown Boca Raton (3 min) accesible. Conexión a Miami y West Palm Beach.",
+    "descripcion_turistica": "Step off the Tri‑Rail at Boca Raton and you’re a stone’s throw from Mizner Park’s boutique shops, art galleries, and al fresco cafés. A short stroll leads you to the historic Boca Raton Museum of Art, showcasing contemporary exhibitions beside a tranquil sculpture garden. Nearby, the scenic Spanish River Park offers boardwalks, kayaking, and sunset views over the Intracoastal Waterway—ideal for a relaxed afternoon before catching your next train.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1663,7 +1733,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-delray-beach",
     "nombre": "Tri-Rail Delray Beach",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "Delray Beach",
     "tipo_zona": "transporte-playa",
@@ -1678,17 +1750,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Tri-Rail Delray Beach — Ferroviario | MetroGuia",
     "meta_description": "Estación Tri-Rail Delray Beach. Conexión a Delray Beach.",
     "h1": "Estación Tri-Rail Delray Beach — Sistema Tri-Rail | Miami",
-    "intro": "Estación Tri-Rail Delray Beach. Conexión a Delray Beach.",
+    "intro": "Sun‑kissed palms sway as you step off Tri‑Rail Delray Beach, the gateway to art, surf, and historic charm.",
     "tips": [
-      "Conexión a Miami, West Palm Beach",
-      "Delray Beach Downtown (3 min)",
-      "Tarifa: $2.50-8.75 USD",
-      "Playas cercanas",
-      "Zona turística y residencial"
+      "Buy a EASY Card online before arrival to skip the ticket booth line.",
+      "Carry a small umbrella; afternoon showers are common but the station’s covered walkways keep you dry.",
+      "Park at the free lot on West Atlantic Avenue; it fills quickly on weekends, so arrive early."
     ],
-    "mejor_horario": "Mañana y tarde para viajes",
+    "mejor_horario": "Weekday mornings (7 am–9 am) when commuter traffic is light and the downtown cafés are just opening.",
     "mundial_relevancia": "Estación regional Tri-Rail",
-    "descripcion_turistica": "Tri-Rail Delray Beach es estación en zona turística y residencial. Delray Beach Downtown (3 min) con playas, restaurantes y entretenimiento.",
+    "descripcion_turistica": "Just a five‑minute walk north, Atlantic Avenue’s vibrant downtown beckons with boutique galleries, the iconic Morikami Museum, and sidewalk cafés serving fresh Cuban coffee. Head east to the pristine Delray Municipal Beach for sunbathing or paddle‑boarding, then stroll south to the historic Pineapple Grove Arts District, where murals and live music spill onto the streets. Don’t miss the historic Old School Square, home to the Cornell Art Museum and a seasonal outdoor theater showcasing local talent.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1705,7 +1775,9 @@ export const estacionesMiami = [
   {
     "slug": "miami-tri-rail-west-palm-beach",
     "nombre": "Tri-Rail West Palm Beach",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "tri-rail",
     "municipio": "West Palm Beach",
     "tipo_zona": "transporte-terminal",
@@ -1747,7 +1819,9 @@ export const estacionesMiami = [
   {
     "slug": "brightline-miami",
     "nombre": "Brightline Miami",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "brightline",
     "municipio": "Miami",
     "tipo_zona": "transporte-estacion",
@@ -1789,7 +1863,9 @@ export const estacionesMiami = [
   {
     "slug": "brightline-fort-lauderdale",
     "nombre": "Brightline Fort Lauderdale",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "brightline",
     "municipio": "Fort Lauderdale",
     "tipo_zona": "transporte-centro",
@@ -1831,7 +1907,9 @@ export const estacionesMiami = [
   {
     "slug": "brightline-west-palm-beach",
     "nombre": "Brightline West Palm Beach",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "brightline",
     "municipio": "West Palm Beach",
     "tipo_zona": "transporte-terminal",
@@ -1873,7 +1951,9 @@ export const estacionesMiami = [
   {
     "slug": "brightline-orlando",
     "nombre": "Brightline Orlando",
-    "linea": ["Main Line"],
+    "linea": [
+      "Main Line"
+    ],
     "sistema": "brightline",
     "municipio": "Orlando",
     "tipo_zona": "transporte-turismo",
