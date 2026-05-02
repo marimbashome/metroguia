@@ -3358,3 +3358,5 @@ export const estacionesDallas = [
     "mejor_horario": "Weekday mornings (7‑9 am) to avoid rush‑hour crowds and enjoy a quieter stroll through the district"
   }
 ];
+
+export { estacionesDallas as estacionesDAL };
