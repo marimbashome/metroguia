@@ -5209,3 +5209,5 @@ export const estacionesLA = [
     "lugares_cercanos": []
   }
 ];
+
+export { estacionesLA as estacionesLosAngeles };
