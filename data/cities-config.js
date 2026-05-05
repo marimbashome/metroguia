@@ -608,6 +608,93 @@ export const CITIES_CONFIG = {
     currency: 'CAD', defaultLang: 'en', systems: ['hazel-mccallion'], fifa2026: false,
     coordinates: { lat: 43.5890, lng: -79.6441 }, timezone: 'America/Toronto',
   },
+
+  // ============================================================================
+  // EUROPE
+  // ============================================================================
+  london: {
+    slug: 'london', name: 'London', nameES: 'Londres', country: 'GB', state: 'England',
+    currency: 'GBP', defaultLang: 'en', systems: ['tube', 'elizabeth-line', 'dlr', 'overground'], fifa2026: false,
+    coordinates: { lat: 51.5074, lng: -0.1278 }, timezone: 'Europe/London',
+  },
+  paris: {
+    slug: 'paris', name: 'Paris', nameES: 'París', country: 'FR', state: 'Île-de-France',
+    currency: 'EUR', defaultLang: 'fr', systems: ['metro', 'rer', 'tramway'], fifa2026: false,
+    coordinates: { lat: 48.8566, lng: 2.3522 }, timezone: 'Europe/Paris',
+  },
+  madrid: {
+    slug: 'madrid', name: 'Madrid', nameES: 'Madrid', country: 'ES', state: 'Community of Madrid',
+    currency: 'EUR', defaultLang: 'es', systems: ['metro', 'cercanias'], fifa2026: false,
+    coordinates: { lat: 40.4168, lng: -3.7038 }, timezone: 'Europe/Madrid',
+  },
+  berlin: {
+    slug: 'berlin', name: 'Berlin', nameES: 'Berlín', country: 'DE', state: 'Berlin',
+    currency: 'EUR', defaultLang: 'de', systems: ['u-bahn', 's-bahn'], fifa2026: false,
+    coordinates: { lat: 52.5200, lng: 13.4050 }, timezone: 'Europe/Berlin',
+  },
+  barcelona: {
+    slug: 'barcelona', name: 'Barcelona', nameES: 'Barcelona', country: 'ES', state: 'Catalonia',
+    currency: 'EUR', defaultLang: 'es', systems: ['metro', 'fgc', 'tram'], fifa2026: false,
+    coordinates: { lat: 41.3851, lng: 2.1734 }, timezone: 'Europe/Madrid',
+  },
+
+  // ============================================================================
+  // LATIN AMERICA
+  // ============================================================================
+  'buenos-aires': {
+    slug: 'buenos-aires', name: 'Buenos Aires', nameES: 'Buenos Aires', country: 'AR', state: 'Buenos Aires',
+    currency: 'ARS', defaultLang: 'es', systems: ['subte', 'premetro'], fifa2026: false,
+    coordinates: { lat: -34.6037, lng: -58.3816 }, timezone: 'America/Argentina/Buenos_Aires',
+  },
+  'sao-paulo': {
+    slug: 'sao-paulo', name: 'São Paulo', nameES: 'São Paulo', country: 'BR', state: 'São Paulo',
+    currency: 'BRL', defaultLang: 'pt', systems: ['metro', 'cptm'], fifa2026: false,
+    coordinates: { lat: -23.5505, lng: -46.6333 }, timezone: 'America/Sao_Paulo',
+  },
+  santiago: {
+    slug: 'santiago', name: 'Santiago', nameES: 'Santiago', country: 'CL', state: 'Santiago Metropolitan',
+    currency: 'CLP', defaultLang: 'es', systems: ['metro'], fifa2026: false,
+    coordinates: { lat: -33.4489, lng: -70.6693 }, timezone: 'America/Santiago',
+  },
+  bogota: {
+    slug: 'bogota', name: 'Bogotá', nameES: 'Bogotá', country: 'CO', state: 'Cundinamarca',
+    currency: 'COP', defaultLang: 'es', systems: ['transmilenio'], fifa2026: false,
+    coordinates: { lat: 4.7110, lng: -74.0721 }, timezone: 'America/Bogota',
+  },
+  lima: {
+    slug: 'lima', name: 'Lima', nameES: 'Lima', country: 'PE', state: 'Lima',
+    currency: 'PEN', defaultLang: 'es', systems: ['metro', 'metropolitano'], fifa2026: false,
+    coordinates: { lat: -12.0464, lng: -77.0428 }, timezone: 'America/Lima',
+  },
+
+  // ============================================================================
+  // ASIA & OCEANIA
+  // ============================================================================
+  tokyo: {
+    slug: 'tokyo', name: 'Tokyo', nameES: 'Tokio', country: 'JP', state: 'Tokyo Metropolis',
+    currency: 'JPY', defaultLang: 'ja', systems: ['metro', 'jr-east', 'toei'], fifa2026: false,
+    coordinates: { lat: 35.6762, lng: 139.6503 }, timezone: 'Asia/Tokyo',
+  },
+  seoul: {
+    slug: 'seoul', name: 'Seoul', nameES: 'Seúl', country: 'KR', state: 'Seoul',
+    currency: 'KRW', defaultLang: 'ko', systems: ['metro', 'arex'], fifa2026: false,
+    coordinates: { lat: 37.5665, lng: 126.9780 }, timezone: 'Asia/Seoul',
+  },
+  singapore: {
+    slug: 'singapore', name: 'Singapore', nameES: 'Singapur', country: 'SG', state: 'Singapore',
+    currency: 'SGD', defaultLang: 'en', systems: ['mrt', 'lrt'], fifa2026: false,
+    coordinates: { lat: 1.3521, lng: 103.8198 }, timezone: 'Asia/Singapore',
+  },
+  dubai: {
+    slug: 'dubai', name: 'Dubai', nameES: 'Dubái', country: 'AE', state: 'Dubai',
+    currency: 'AED', defaultLang: 'en', systems: ['metro', 'tram'], fifa2026: false,
+    coordinates: { lat: 25.2048, lng: 55.2708 }, timezone: 'Asia/Dubai',
+  },
+  sydney: {
+    slug: 'sydney', name: 'Sydney', nameES: 'Sídney', country: 'AU', state: 'New South Wales',
+    currency: 'AUD', defaultLang: 'en', systems: ['metro', 'light-rail'], fifa2026: false,
+    coordinates: { lat: -33.8688, lng: 151.2093 }, timezone: 'Australia/Sydney',
+  },
 };
 
 /**

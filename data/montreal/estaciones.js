@@ -1472,13 +1472,15 @@ export const estacionesMontreal = [
     "seo_title": "Sherbrooke Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Sherbrooke station on STM Metro Orange Line in Montreal.",
     "h1": "Sherbrooke Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling underground hub beneath Montreal’s vibrant Plateau, where art, cafés, and street life converge.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card or a one‑day pass for unlimited metro and bus travel; it’s cheaper than single tickets.",
+      "Use the station’s free Wi‑Fi to download the “Montreal Metro Map” app for real‑time service alerts.",
+      "Exit via the Rue Sherbrooke side for the closest access to the Plateau’s bike‑share stations and the vibrant nightlife corridor."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (8:00 – 10:00 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Sherbrooke is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out at Sherbrooke and wander to the nearby Saint-Louis Square, a historic park lined with charming bistros and the iconic Saint-Louis Church. Just a short stroll north brings you to the colorful murals of Rue Saint-Denis, perfect for Instagram snaps, while the famous Café Olimpico offers a perfect espresso break. Art lovers can pop into the nearby Musée des beaux-arts de Montréal’s satellite gallery on Rue Sherbrooke, and foodies will adore the eclectic dining options ranging from gourmet poutine to vegan brunch spots, all within a five‑minute walk.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1504,13 +1506,15 @@ export const estacionesMontreal = [
     "seo_title": "Berri Uqam Orange Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Berri Uqam Orange station on STM Metro Orange Line in Montreal.",
     "h1": "Berri Uqam Orange Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "Vibrante cruce subterráneo donde la historia, la cultura y la gastronomía de Montreal convergen bajo el bullicioso corazón de la ciudad.",
     "tips": [
-      "Orange Line"
+      "Compra la tarjeta OPUS para viajes ilimitados y recárgala en cualquiera de las máquinas expendedoras de la estación.",
+      "Usa los ascensores y rampas señalizados para acceso sin escalones, ideales si llevas equipaje o cochecitos.",
+      "Consulta el mapa interactivo en la pared de la zona de venta para planificar rutas y evitar las áreas más concurridas durante la hora pico."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Mañanas de lunes a viernes (7:00‑9:00) para evitar la masiva afluencia del mediodía",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Berri Uqam Orange is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Berri‑UQAM, la mayor estación del metro, conecta las líneas verde, naranja y amarilla y te sitúa a pasos del histórico Barrio Latino. Sal del andén y descubre la Universidad de Quebec en Montreal (UQAM) con su arquitectura contemporánea y exposiciones artísticas gratuitas. A pocos metros, el Paseo de la Universidad (Promenade du Plateau) ofrece cafés con croissants, boutiques de moda y murales coloridos. No te pierdas la famosa escultura “Le Phare” en la plaza del centro comercial del complejo, y aprovecha la proximidad al Musée d'art contemporain para sumergirte en la escena artística local. Además, el acceso directo a la calle Saint‑Laurent te lleva a bares de jazz y mercados de alimentos frescos, perfectos para una pausa gastronómica.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1536,13 +1540,15 @@ export const estacionesMontreal = [
     "seo_title": "Champ De Mars Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Champ De Mars station on STM Metro Orange Line in Montreal.",
     "h1": "Champ De Mars Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway beneath Old Montreal, Champ de Mars station blends historic charm with modern commuter energy.",
     "tips": [
-      "Orange Line"
+      "Buy a day pass at the station kiosk to hop on any STM bus or metro for unlimited rides.",
+      "Validate your ticket before exiting the turnstiles; ticket inspectors are common during peak hours.",
+      "Use the station’s free Wi‑Fi to download offline maps of Old Montreal for easy navigation."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 am or evenings after 7 pm to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Champ De Mars is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto Rue Saint-Paul and you're instantly surrounded by cobblestone streets, the iconic Notre-Dame Basilica, and the vibrant Place Jacques-Cartier market. A short walk leads to the Old Port's waterfront promenade, where you can rent a paddleboat, visit the Montreal Science Centre, or admire the historic Clock Tower. Inside the station, notice the Art Deco mosaics that echo the city's early 20th‑century architecture, and don't miss the nearby Château Ramezay museum for a deeper dive into Montreal's colonial past.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1568,13 +1574,15 @@ export const estacionesMontreal = [
     "seo_title": "Place D Armes Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Place D Armes station on STM Metro Orange Line in Montreal.",
     "h1": "Place D Armes Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling historic hub where Montreal’s vibrant street life, art, and cuisine converge beneath the iconic Place d’Armes.",
     "tips": [
-      "Orange Line"
+      "Compra la tarjeta OPUS para viajar sin complicaciones y obtener tarifas reducidas en el tranvía que continúa desde la estación.",
+      "Lleva monedas pequeñas para los máquinas expendedoras de boletos y para propinas en los cafés de la zona.",
+      "Visita la zona en primavera o otoño para evitar el frío intenso y aprovechar la luz dorada para fotos en la plaza histórica."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Mañanas de lunes a viernes (7:00‑9:00) para evitar las multitudes del almuerzo y la hora pico del viernes",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Place D Armes is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Descubre el corazón del Viejo Montreal a pocos pasos de la estación: admira la imponente Catedral de Saint-Jacques, visita el Museo Pointe-à-Callière para explorar los cimientos de la ciudad y pasea por la pintoresca Rue Saint-Paul, llena de boutiques de diseño y cafés con terrazas. No te pierdas el Monument a los Patriotes y la animada Plaza Jacques-Cartier, donde artistas callejeros y mercados temporales crean un ambiente festivo. La estación también conecta con el paseo marítimo del Puerto Viejo, ideal para fotos con el skyline del Río San Lorenzo.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1600,13 +1608,15 @@ export const estacionesMontreal = [
     "seo_title": "Square Victoria Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Square Victoria station on STM Metro Orange Line in Montreal.",
     "h1": "Square Victoria Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling underground hub beneath historic Old Montreal, where modern transit meets cobblestone charm and vibrant street life.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card or use a contactless credit card for seamless fare payment across the STM network.",
+      "Take the escalator up to the street level and follow the blue signage to the Old Port; it’s a 3‑minute walk to the ferry dock for a cruise on the St. Lawrence River.",
+      "If you need a restroom, use the public facilities at the nearby Centre d’histoire de Montréal, located just two blocks north."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Square Victoria is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Square Victoria station sits at the crossroads of Rue Saint‑Laurent and Rue Saint‑Paul, just steps from the iconic Notre‑Dame Basilica and the lively Place Jacques‑Cartier. Exit onto the lively pedestrian plaza to explore the Old Port’s waterfront, the bustling marché Bonsecours, and the art‑filled galleries of Rue Saint‑Paul. Don’t miss the nearby Musée Pointe‑à‑Callière for archaeological wonders, or sip a café au lait at a terrace café while watching horse‑drawn carriage tours glide by.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1632,13 +1642,15 @@ export const estacionesMontreal = [
     "seo_title": "Bonaventure Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Bonaventure station on STM Metro Orange Line in Montreal.",
     "h1": "Bonaventure Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling underground hub beneath the sleek Bonaventure skyscraper, linking downtown sights with swift metro rides.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card at the staffed kiosk for unlimited transfers across STM buses and metros.",
+      "Use the station’s elevators and escalators; they are clearly marked and essential for navigating the multi‑level complex with luggage.",
+      "Check the digital boards for real‑time service updates—during peak construction periods, alternate routes may be recommended."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid peak rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Bonaventure is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Bonaventure station sits at the heart of Montreal's business district, directly connected to the iconic 1000 de La Gauchetière office tower and the vibrant Complexe Desjardins shopping mall. Exit onto Rue de la Montagne to explore the historic McGill College Avenue, or walk north to the ultra‑modern Place Ville Marie and its panoramic sky‑walk. The station’s glass‑covered atrium offers views of the surrounding skyline, and a short stroll leads to the lively Crescent Street nightlife and the cultural gems of the Museum of Contemporary Art and the Montreal Museum of Fine Arts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1664,13 +1676,15 @@ export const estacionesMontreal = [
     "seo_title": "Lucien L Allier Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Lucien L Allier station on STM Metro Orange Line in Montreal.",
     "h1": "Lucien L Allier Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway beneath downtown Montreal, Lucien‑L‑Allier links historic streets with vibrant modern attractions.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card before boarding to enjoy unlimited transfers across the STM network.",
+      "Use the station’s elevators for easy access to the underground mall and nearby museums, especially if you have luggage or mobility needs.",
+      "Check the STM app for real‑time train arrivals; during peak hours (7‑9 am & 4:30‑6 pm) trains run every 2‑3 minutes."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 am or afternoons after 7 pm to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Lucien L Allier is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto Rue Saint‑Laurent and you’re minutes from the iconic Notre‑Dame Basilica and the lively Plateau’s cafés. The station’s underground passage connects directly to the Centre d'affaires Lucien‑L‑Allier, where you can explore the Montreal Science Centre’s interactive exhibits and the historic Bonaventure Metro tunnel art displays. A short walk brings you to the historic Old Port, perfect for a riverside stroll, street performances, and the Montreal Clock Tower’s panoramic views.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1696,13 +1710,15 @@ export const estacionesMontreal = [
     "seo_title": "Georges Vanier Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Georges Vanier station on STM Metro Orange Line in Montreal.",
     "h1": "Georges Vanier Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway beneath the leafy Plateau Mont-Royal, where commuters mingle with art, cafés, and vibrant street life.",
     "tips": [
-      "Orange Line"
+      "Buy a OPUS card or use contactless payment for seamless entry; the station has elevators for wheelchair access.",
+      "Check the STM app for real‑time train arrivals; during peak hours, trains run every 2‑3 minutes.",
+      "Leave a small tip for the buskers near the station entrance—they add a lively soundtrack to your visit."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Georges Vanier is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Georges-Vanier station sits on the Orange Line, just steps from the historic Saint-Louis Square and the lively Rue Saint-Denis. Exit onto Rue Saint-Denis to explore boutique shops, the iconic Café Olimpico, and the colourful murals of the Mile End neighbourhood. Inside, admire the striking orange‑tinted ceramic tiles and the modern sculpture by artist Pierre Granche, then pop into the nearby Parc du Plateau‑Mont‑Royal for a relaxing walk among French‑style bungalows and blossoming trees. Don't miss the weekend farmers' market at Place Jacques‑Cartier, a short 10‑minute walk away, for local cheeses and fresh pastries.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1728,13 +1744,15 @@ export const estacionesMontreal = [
     "seo_title": "Lionel Groulx Orange Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Lionel Groulx Orange station on STM Metro Orange Line in Montreal.",
     "h1": "Lionel Groulx Orange Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway to Montreal’s vibrant West Island, where modern transit meets historic charm and green oases.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card before boarding to enjoy discounted fares and seamless transfers across the STM network.",
+      "Validate your ticket at the turnstiles; the station’s elevators are located near the north entrance for easy wheelchair access.",
+      "Check the STM app for real‑time arrivals; trains on the Orange line run every 4‑6 minutes during peak hours but less frequently on weekends."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Lionel Groulx Orange is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out at Lionel‑Groulx and wander the nearby Parc de la Maison‑du‑Canton, a leafy retreat perfect for picnics and weekend concerts. A short walk leads to the historic Saint‑Henri‑de‑L'Île‑Boucherville church, showcasing stunning Gothic Revival architecture. Don’t miss the bustling Marché de Saint‑Laurent, where you can sample fresh Quebec cheeses, maple treats, and artisan crafts. The station also connects to the popular “Le Canal” bike path, offering scenic rides along the L'Assomption River, ideal for a leisurely afternoon or sunrise jog.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1760,13 +1778,15 @@ export const estacionesMontreal = [
     "seo_title": "Place Saint Henri Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Place Saint Henri station on STM Metro Orange Line in Montreal.",
     "h1": "Place Saint Henri Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A vibrant blend of historic brick facades and bustling cafés, Place Saint‑Henri invites travelers to savor Montreal’s authentic neighborhood charm.",
     "tips": [
-      "Orange Line"
+      "Buy a weekly OPUS card for unlimited STM rides and save on multiple trips across the island.",
+      "Validate your ticket before exiting the fare gates; the station’s turnstiles are sensitive and may reject partially inserted cards.",
+      "Use the station’s free Wi‑Fi (network: STM‑WiFi) to download offline maps of the Plateau‑Mont‑Royal area for easy navigation."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Place Saint Henri is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step off the green‑tile platform and wander onto Rue Saint‑Henri, where 19th‑century storefronts house artisanal bakeries, vintage record shops, and the famed Café St-Henri, perfect for a latte and people‑watching. A short stroll leads to the lively Marché Saint‑Henri, offering fresh local produce, cheese, and seasonal treats. Don’t miss the nearby Parc Lafontaine’s leafy paths and the historic Saint‑Henri Church, whose stained‑glass windows glow at sunset, providing a serene contrast to the station’s urban buzz.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1792,13 +1812,15 @@ export const estacionesMontreal = [
     "seo_title": "Vendome Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Vendome station on STM Metro Orange Line in Montreal.",
     "h1": "Vendome Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway beneath Montreal’s historic downtown, Vendôme station blends modern transit with vibrant street art and nearby culinary delights.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card at the vending machines for seamless transfers across STM services",
+      "Check the station’s electronic boards for real‑time train arrivals, especially during weekend festivals",
+      "Use the south entrance on Saint‑Laurent for quicker access to the bike‑share dock and nearby eateries"
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 am or evenings after 7 pm to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Vendome is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Located on the Green Line in the heart of the Ville-Marie borough, Vendôme offers direct access to the iconic Saint‑Laurent Boulevard, famed for its eclectic cafés, boutique shops, and the historic Notre‑Dame Basilica a short walk away. Descend into the station to admire its striking murals by local artist Robert Bellemare, then emerge onto Place Vendôme, where you can sample poutine at La Banquise or enjoy a craft beer at Le Saint Bock. The station also connects to the free BIXI bike network, perfect for pedaling to the nearby Museum of Contemporary Art (MAC) or the lively Quartier des Spectacles.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1824,13 +1846,15 @@ export const estacionesMontreal = [
     "seo_title": "Villa Maria Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Villa Maria station on STM Metro Orange Line in Montreal.",
     "h1": "Villa Maria Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "Villa Maria: a vibrant, green‑lined oasis where Montreal’s historic charm meets bustling daily life.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card or use contactless payment for seamless transfers between metro, bus, and BIXI bikes.",
+      "Check the station’s elevators schedule online if you need wheelchair access; maintenance works are posted on the STM website.",
+      "Visit the Marché Jean‑Talon early (7 am–9 am) for the freshest produce and fewer crowds."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 am or evenings after 7 pm to avoid rush‑hour crowds.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Villa Maria is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Located on the Orange Line in the borough of Côte‑Saint‑Luc, Villa Maria station sits steps from the lively Parc de la Visitation and the historic Saint‑Laurent Boulevard, known for its artisanal cafés and vintage boutiques. Exit onto Rue Jean‑Talon to explore the nearby Marché Jean‑Talon, one of North America’s largest public markets, where you can sample fresh berries, Quebec cheeses, and local maple treats. A short walk brings you to the historic Maison Saint‑Louis, a 19th‑century house turned museum showcasing Montreal’s industrial past, and the scenic Lachine Canal waterfront for a leisurely bike ride or paddle‑board adventure.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1888,13 +1912,15 @@ export const estacionesMontreal = [
     "seo_title": "Cote Vertu Orange Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Cote Vertu Orange station on STM Metro Orange Line in Montreal.",
     "h1": "Cote Vertu Orange Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway in Saint‑Laurent, Côté‑Vertu blends modern design with easy access to vibrant local life.",
     "tips": [
-      "Orange Line"
+      "Buy an OPUS card before boarding to enjoy discounted fares and skip the ticket kiosks.",
+      "Check the STM app for real‑time train arrivals; trains run every 4‑5 minutes during peak hours.",
+      "Carry a small umbrella in spring and fall—rain can surprise commuters near the open‑air entrances."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Cote Vertu Orange is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto Rue de la Cité and discover the charming Saint‑Laurent‑du‑Mont‑Carmel market, where fresh Quebec cheese, maple treats, and artisan crafts await. A short walk leads to Parc des Laurentides, perfect for a leisurely stroll among mature trees, a pond, and seasonal art installations. Food lovers can dive into the nearby Rue Saint‑Lazare corridor, home to cozy cafés, sushi bars, and the historic Théâtre Populaire, which hosts live music and comedy in both French and English. The station’s orange line connection also shuttles you to downtown Montreal’s museums and the lively Plateau district.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1920,13 +1946,16 @@ export const estacionesMontreal = [
     "seo_title": "Snowdon Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Snowdon Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Snowdon Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "Descubre Snowdon, la joya azul del metro que te sumerge en la elegancia natural del barrio Côte‑Saint‑Lucie.",
     "tips": [
-      "Blue Line"
+      "Compra la tarjeta OPUS con antelación para evitar filas en las máquinas expendedoras dentro de la estación.",
+      "Lleva un paraguas o impermeable; las lluvias de primavera son frecuentes y la zona tiene pasillos parcialmente al aire libre.",
+      "Aprovecha el ascensor gratuito al nivel del parque para disfrutar de vistas panorámicas sin subir al Mont‑Royal.",
+      ""
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Entre semana, de 10:00 a.m. a 12:00 p.m., cuando el flujo de viajeros es más ligero y la luz natural ilumina el mural.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Snowdon Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Ubicada en el corazón del distrito de Côte‑Saint‑Lucie, la estación Snowdon Blue te conecta con el vibrante Parc du Mont‑Royal, a solo 10 minutos a pie, y con el famoso Centre commercial Snowdon, ideal para compras de moda canadiense. No te pierdas la escultura de luz azul que adorna el vestíbulo, obra del artista local Marie‑Claude Bouchard, y el mural que celebra la historia del tranvía de Montreal. Desde aquí, puedes tomar la línea 4 hacia el Plateau‑Mont‑Royal, explorando cafés artesanales y galerías de arte contemporáneo. Además, la estación ofrece acceso directo a la pista de patinaje de invierno del Parc Lafontaine, perfecta para los amantes del deporte al aire libre.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1952,13 +1981,15 @@ export const estacionesMontreal = [
     "seo_title": "Cote Des Neiges Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Cote Des Neiges Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Cote Des Neiges Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A vibrant gateway to Montreal’s West Island, where modern art meets bustling cafés and hidden green oases.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card before boarding to enjoy unlimited transfers across the STM network.",
+      "Check the STM app for real‑time train arrivals; the Blue Line runs every 4‑6 minutes during peak hours.",
+      "Carry a reusable water bottle—many cafés offer free refills and the parks have water fountains."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or after 9 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Cote Des Neiges Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out at Côte‑des‑Neiges Blue and wander to the nearby Parc du Mont‑Royal West, a tranquil spot perfect for picnics and lakeside strolls. Just a short walk away, the historic Île Bizard Golf Club offers panoramic views of the river and the skyline, while the lively Rue de la Côte‑des‑Neiges buzzes with artisanal bakeries, craft breweries, and boutique shops. Don’t miss the contemporary murals at the station’s entrance, and catch a ferry from nearby Île Bizard for a scenic ride across the Rivière des Prairies to explore the island’s nature trails and beaches.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1984,13 +2015,15 @@ export const estacionesMontreal = [
     "seo_title": "Universite De Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Universite De Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Universite De Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A vibrant gateway beneath the campus, Université de Montréal Blue station blends modern art, bustling cafés, and leafy pathways for curious travelers.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card online to skip the ticket booth line and enjoy discounted transfers between metro and bus lines.",
+      "Validate your fare before descending; the station’s turnstiles are on the upper level and often have a short queue during class change times.",
+      "Use the free Wi‑Fi hotspot in the station lobby to download the STM real‑time app for live train updates and nearby bike‑share dock locations."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mid‑mornings (10 am–12 pm) and early afternoons (2 pm–4 pm) to avoid peak student rush hour",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Universite De Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto Rue Saint-Urbain and you’ll find the iconic Monument à l’Université, a bronze sculpture framing the historic main building. A short walk leads to the vibrant Café Campus, perfect for a latte before exploring the Musée des beaux-arts de Montréal, just two blocks away. The station’s colorful mosaics echo the university’s research spirit, while nearby Parc du Mont-Royal’s western trailhead invites hikers to enjoy panoramic city views. Don’t miss the underground passage to the bustling Place des Arts, where you can catch a live performance or pop into the annual Montréal International Jazz Festival venues.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2016,13 +2049,15 @@ export const estacionesMontreal = [
     "seo_title": "Edouard Montpetit Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Edouard Montpetit Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Edouard Montpetit Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A vibrant underground hub where modern art, student energy, and Montreal’s lively Plateau vibe converge.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card before you board to save time and get discounted fares",
+      "Use the station’s elevators for easy access to the university’s main building and the Oratory’s hillside tram",
+      "Check the STM app for real‑time service alerts, especially during weekend construction on Blue Line extensions"
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer station atmosphere",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Edouard Montpetit Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out at Édouard-Montpetit and find yourself minutes from the bustling Université de Montréal campus, the historic Saint‑Joseph's Oratory, and the green oasis of Parc du Mont‑Royal. Inside, admire the striking mosaic murals by local artists and the sleek blue‑toned tiles that give the station its name. Grab a coffee at the nearby Café Campus, then wander to the eclectic boutiques and cafés of the Mile End district, or take the short walk to the iconic Saint‑Viateur Bagel shop for a fresh Montreal bagel experience.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2048,13 +2083,15 @@ export const estacionesMontreal = [
     "seo_title": "Outremont Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Outremont Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Outremont Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A charming, art‑filled enclave where vintage boutiques and leafy cafés greet you under the station's blue mosaic canopy.",
     "tips": [
-      "Blue Line"
+      "Buy a day pass on the STM app to hop between metro and bus lines without queuing for tickets.",
+      "Use the bike‑share stations on Rue Bernard‑Olivier for a quick ride to Parc Outremont; helmets are optional but recommended on busy streets.",
+      "Check the Maison de la Culture’s schedule online; many events are free and start in the early evening, perfect after a day of exploring."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (7:00‑9:00 AM) to avoid rush‑hour crowds and enjoy a calmer station atmosphere.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Outremont Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out at Outremont Blue and wander to Parc Outremont, a serene green space perfect for a leisurely stroll or a picnic. Just a block away, the historic Maison de la Culture Outremont hosts rotating art exhibitions and local music gigs, while Rue Bernard‑Olivier dazzles with independent bookstores, vintage shops, and cafés serving Montreal‑style bagels and espresso. Don't miss the nearby Église Saint‑Jean‑Baptiste, an elegant 19th‑century church with stunning stained‑glass windows that offer a quiet retreat from the bustling Rue. The station’s own blue tile murals celebrate the neighborhood’s artistic spirit, making every exit a visual treat.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2080,13 +2117,15 @@ export const estacionesMontreal = [
     "seo_title": "Acadie Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Acadie station on STM Metro Blue Line in Montreal.",
     "h1": "Acadie Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A vibrant gateway to Little Italy’s charm, Acadie station pulses with cafés, murals, and the aroma of fresh espresso.",
     "tips": [
-      "Blue Line"
+      "Buy a one‑day unlimited STM pass for seamless transfers between metro and bus routes.",
+      "Validate your ticket at the turnstiles; the station’s entry gates are equipped with bilingual signage (French/English).",
+      "Use the station’s free Wi‑Fi to download the STM real‑time app for departure updates and nearby bike‑share stations."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM or evenings after 7 PM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Acadie is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out of Acadie onto Rue Saint-Denis and wander into Montreal’s historic Little Italy, where you’ll find the iconic Church of the Madonna della Salute and the bustling Jean-Talon Market, just a short walk away. Explore the colorful street art that adorns the station’s walls, then cross to the nearby Parc du Portugal for a quiet garden pause. Don’t miss a stop at Casa d'Italia for authentic pasta, and if time allows, hop on the 36‑Bus to the historic Saint-Laurent Boulevard for boutique shops and live music venues.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2112,13 +2151,15 @@ export const estacionesMontreal = [
     "seo_title": "Parc Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Parc station on STM Metro Blue Line in Montreal.",
     "h1": "Parc Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "Descubre el corazón vibrante de Montreal bajo el icónico Parque Mont-Royal, donde historia y modernidad se entrelazan.",
     "tips": [
-      "Blue Line"
+      "Compra la tarjeta OPUS para viajes ilimitados y ahorra en cada transbordo",
+      "Llega 5 minutos antes del tren en hora punta; los trenes llegan cada 2‑3 minutos",
+      "Usa la app STM para consultar en tiempo real la frecuencia de los trenes y las interrupciones"
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Mañanas de lunes a viernes, entre 9:00 y 11:00, cuando la afluencia de turistas y locales disminuye",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Parc is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "En la estación Parc, conecta con la famosa Avenida Sherbrooke y la calle Peel, a pocos pasos del elegante Museo de Bellas Artes de Montreal y del histórico Hotel Place d’Armes. Disfruta de una caminata por el cercano Parque Mont‑Royal, donde los senderos ofrecen vistas panorámicas de la ciudad. No te pierdas el Mercado Atwater, a dos cuadras, para probar productos locales y delicias gourmet mientras absorbes el ambiente cosmopolita del Plateau Mont‑Royal.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2144,13 +2185,15 @@ export const estacionesMontreal = [
     "seo_title": "De Castelnau Station — Montreal STM Metro | MetroGuia",
     "meta_description": "De Castelnau station on STM Metro Blue Line in Montreal.",
     "h1": "De Castelnau Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A vibrant gateway in Verdun, De Castelnau blends modern art, riverside strolls, and historic cafés in just minutes.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card before boarding to enjoy unlimited transfers across the STM network.",
+      "Leave at least 5 minutes before the next train; De Castelnau’s platform doors close quickly.",
+      "Check the STM app for real‑time service alerts, especially during winter snowstorms."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "De Castelnau is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto Rue de Castelnau and discover the bustling Verdun Market, where local vendors offer fresh produce and Quebecois delicacies. A short walk brings you to the scenic Parc René‑Lévesque, perfect for picnics beside the St‑Lawrence River, while the nearby Verdun Centre Mall provides shopping and a cinema. Art lovers will appreciate the colorful murals inside the station and the adjacent Galerie d’art Verdun, showcasing works from emerging Canadian artists. Finish your visit with a coffee at Café Les Deux Moulins, a historic spot that has served the neighborhood since 1928.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2176,13 +2219,15 @@ export const estacionesMontreal = [
     "seo_title": "Jean Talon Blue Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Jean Talon Blue station on STM Metro Blue Line in Montreal.",
     "h1": "Jean Talon Blue Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "Vibrant, underground hub where Montreal’s culinary delights, street art, and bustling markets converge beneath bustling Jean‑Talon Avenue.",
     "tips": [
-      "Blue Line"
+      "Buy a reloadable OPUS card before boarding to save on fares and avoid ticket‑machine lines.",
+      "Visit the market early (7‑9 am) for the freshest produce and fewer crowds.",
+      "Use the station’s free Wi‑Fi to download the STM’s real‑time app for next‑train updates."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 am or evenings after 7 pm to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Jean Talon Blue is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out onto the famed Jean‑Talon market, one of North America’s largest public markets, where fresh berries, local cheeses, and fragrant spices tempt every palate. A short walk leads to Little Italy’s Via Masson, home to authentic espresso bars, gelaterias, and the historic St. Leonard’s Church. Art lovers can admire the station’s colorful ceramic mosaics depicting Montreal’s agricultural heritage, then continue to the nearby Parc Jarry for a relaxing stroll among cherry‑blossom trees and seasonal festivals. The area’s multicultural vibe makes it perfect for food‑tasting tours, souvenir hunting, and people‑watching from lively cafés.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2208,13 +2253,15 @@ export const estacionesMontreal = [
     "seo_title": "Fabre Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Fabre station on STM Metro Blue Line in Montreal.",
     "h1": "Fabre Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "Step into Montreal’s vibrant West Island at Fabry station, where modern transit meets bustling local culture.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card or use a contactless credit card for seamless fare payment across the STM network.",
+      "Check the STM app for real‑time train arrivals; Fabre often has short wait times during off‑peak hours.",
+      "If you plan to bike, use the secure bike racks outside the station entrance—available 24/7."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (8 am–10 am) to avoid the heavy evening rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Fabre is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Fabre station sits on the orange line in the heart of Saint-Laurent, just steps from the lively Rue Saint-Charles. Visitors can wander to the nearby Parc de la Maison Blanche for a quick picnick, then explore the eclectic boutiques and cafés along Boulevard Saint-Laurent, such as Café Parvis and the vintage shop Le Panache. A short walk north brings you to the historic Saint-Laurent Church and the bustling Marché Saint-Laurent, perfect for sampling fresh local produce and Quebecois specialties. The station’s sleek, fully accessible design also showcases public art installations that celebrate the multicultural spirit of the borough.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2240,13 +2287,15 @@ export const estacionesMontreal = [
     "seo_title": "D Iberville Station — Montreal STM Metro | MetroGuia",
     "meta_description": "D Iberville station on STM Metro Blue Line in Montreal.",
     "h1": "D Iberville Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway in the heart of Le Plateau, D’Iberville blends historic charm with vibrant street art and cafés.",
     "tips": [
-      "Blue Line"
+      "Buy an OPUS card before boarding to save on fares and avoid ticket lines",
+      "Check the STM app for real‑time train arrivals; trains run every 4‑6 minutes during peak hours",
+      "Use the station’s elevators for easy access to the platform if you have luggage or mobility concerns"
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings before 7 AM to enjoy a quieter station and quicker connections",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "D Iberville is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out of D’Iberville and wander onto Rue Saint‑Laurent, where you’ll find the iconic Café Olimpico for a perfect espresso, then stroll to the colorful murals of the nearby Rue Saint‑Denis. A short walk leads to Parc Lafontaine, a lush oasis ideal for a picnic or paddle‑boat ride on its lake. Don’t miss the historic Saint‑Louis Square, a European‑style garden surrounded by 19th‑century architecture, perfect for photo‑ops and a taste of Montreal’s heritage.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2272,13 +2321,15 @@ export const estacionesMontreal = [
     "seo_title": "Saint Michel Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Saint Michel station on STM Metro Blue Line in Montreal.",
     "h1": "Saint Michel Station — STM Metro Blue Line | Montreal",
-    "intro": "Station on the Blue Line of Montreal's STM Metro.",
+    "intro": "Descubre el corazón bohemio de Plateau Mont-Royal bajo luces de neón y aromas de cafés artesanales.",
     "tips": [
-      "Blue Line"
+      "Compra una tarjeta OPUS para viajar ilimitadamente en la STM y ahorra tiempo en la fila de boletos.",
+      "Lleva cambio pequeño; muchos puestos de comida callejera solo aceptan efectivo.",
+      "Usa la salida sur para acceder directamente a la Rue Saint‑Denis y evitar el tráfico vehicular."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Mañanas de lunes a viernes (7:00‑9:00) para evitar la congestión del rush y disfrutar de calles más tranquilas.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Saint Michel is a station on the Blue Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Al salir de la estación Saint‑Michel, sumérgete en la vibrante Rue Saint‑Denis, donde murales de arte callejero conviven con tiendas vintage y bistrós de moda. A pocos pasos, el parque Jeanne‑Mance ofrece senderos arbolados y vistas al Canal de Lachine, ideal para un picnic o un paseo en bici. No te pierdas el Mercado Jean‑Talon, a 12 minutos a pie, para degustar productos locales, quesos artesanales y poutine auténtica.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2304,13 +2355,15 @@ export const estacionesMontreal = [
     "seo_title": "Berri Uqam Yellow Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Berri Uqam Yellow station on STM Metro Yellow Line in Montreal.",
     "h1": "Berri Uqam Yellow Station — STM Metro Yellow Line | Montreal",
-    "intro": "Station on the Yellow Line of Montreal's STM Metro.",
+    "intro": "Una vibrante fusión de arte urbano y academia, Berri‑UQAM Yellow vibra con energía joven bajo el corazón de Montreal.",
     "tips": [
-      "Yellow Line"
+      "Compra la tarjeta OPUS antes de subir; permite transferencias gratuitas entre metro y autobús en la zona.",
+      "Lleva efectivo pequeño para los puestos de comida callejera que a veces no aceptan tarjetas.",
+      "Utiliza la salida hacia Rue Saint‑Catherine para acceder rápidamente a los cafés y boutiques del Plateau."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Mañanas de lunes a viernes (7:00‑9:00) para evitar la congestión del almuerzo y la hora pico de la tarde.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Berri Uqam Yellow is a station on the Yellow Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Sal del metro y sumérgete en el animado barrio latino: visita el icónico Café Campus, explora las galerías de arte callejero en Rue Saint‑Catherine y descubre la Biblioteca del Campus de la UQAM con sus exposiciones temporales. A pocos pasos, el Parque du Plateau ofrece terrazas con vistas al río Saint‑Lawrence y el histórico Mercado Jean‑Talon, perfecto para probar productos locales. No te pierdas la escultura cinética “Le Chemin des Lumières” frente a la entrada, un punto fotográfico imprescindible para capturar la modernidad de la ciudad.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2336,13 +2389,15 @@ export const estacionesMontreal = [
     "seo_title": "Jean Drapeau Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Jean Drapeau station on STM Metro Yellow Line in Montreal.",
     "h1": "Jean Drapeau Station — STM Metro Yellow Line | Montreal",
-    "intro": "Station on the Yellow Line of Montreal's STM Metro.",
+    "intro": "A sleek, modern gateway on Île Sainte‑Henriette, where the metro meets Montreal’s vibrant waterfront attractions.",
     "tips": [
-      "Yellow Line"
+      "Buy a day pass for unlimited STM and BIXI bike access; it’s cheaper than separate tickets.",
+      "Check the Biosphère’s opening hours in advance—summer hours extend until 6 pm, winter closes at 4 pm.",
+      "During major events (e.g., Grand Prix), expect extra trains; arrive 10 minutes early to secure a spot."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (7 am–9 am) to avoid rush‑hour crowds and enjoy a calmer island experience",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Jean Drapeau is a station on the Yellow Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out of Jean‑Drapeau station onto the verdant promenades of Parc Jean‑Drapeau, home to the iconic Biosphère, the historic La Ronde amusement park, and the expansive Circuit Gilles Villeneuve race track. Stroll along the St‑Lawrence River to the Montreal Casino for a night of gaming, or rent a bike to explore the island’s lush gardens, art installations, and the vibrant Île Notre‑Dame cultural hub. With easy access to the Montreal International Fireworks Competition in summer, the station is your launchpad for both relaxation and high‑energy fun.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2368,13 +2423,15 @@ export const estacionesMontreal = [
     "seo_title": "Longueuil Universite De Sherbrooke Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Longueuil Universite De Sherbrooke station on STM Metro Yellow Line in Montreal.",
     "h1": "Longueuil Universite De Sherbrooke Station — STM Metro Yellow Line | Montreal",
-    "intro": "Station on the Yellow Line of Montreal's STM Metro.",
+    "intro": "A bustling gateway where modern campus vibes meet the river’s scenic backdrop, perfect for curious travelers.",
     "tips": [
-      "Yellow Line"
+      "Buy an OPUS card before boarding to enjoy seamless transfers between the metro, bus, and ferry services.",
+      "Check the university’s event calendar; many public lectures, art shows, and farmers’ markets are free and open to visitors.",
+      "The station’s elevators are under renovation on weekends; plan extra time or use the adjacent bus stop for accessible routes."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings (7:30 – 9:00 am) to avoid rush‑hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Longueuil Universite De Sherbrooke is a station on the Yellow Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Step out of the Longueuil‑Université de Sherbrooke station and you’ll find the vibrant campus of Université de Sherbrooke’s Longueuil campus, home to cutting‑edge research labs, lively cafés, and the striking Art‑Science Pavilion. Just a short walk north lies the historic Old Longueuil district, where cobblestone streets host boutique shops, the Musée de la civilisation’s satellite exhibit, and the charming Place Jacques‑Cartier with its outdoor terraces. Cross the Jacques‑Cartier Bridge on foot or by the nearby river‑side bike path for breathtaking views of Montreal’s skyline, then unwind at Parc Michel‑Chartrand’s green spaces and lake.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

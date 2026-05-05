@@ -1,929 +1,188 @@
 {
-  "meta": {
-    "siteName": "MetroGuia.mx",
-    "siteDescription": "멕시코 대중교통 가이드 — 지하철, 메트로버스, 경전철. 경로를 계획하세요.",
-    "homeTitle": "MetroGuia.mx — 멕시코 지하철 및 대중교통 가이드"
-  },
   "nav": {
     "home": "홈",
+    "search": "경로 검색",
     "cities": "도시",
-    "routes": "경로",
-    "worldCup": "월드컵 2026",
-    "accommodation": "숙박",
-    "explore": "탐색",
-    "search": "역 검색...",
-    "planRoute": "경로 계획",
-    "language": "언어",
-    "airports": "공항",
-    "terminals": "터미널"
+    "mundial": "FIFA 2026"
   },
-  "home": {
-    "heroTitle": "멕시코 대중교통 가이드",
-    "heroSubtitle": "지하철, 메트로버스, 경전철에서 경로를 계획합니다. 무료, 오프라인, 실시간.",
-    "searchPlaceholder": "어디로 가고 싶습니까?",
-    "stationsCount": "개 역",
-    "linesCount": "개 노선",
-    "citiesCount": "개 도시",
-    "matchesCount": "2026 월드컵 경기",
-    "featuredCities": "대중교통이 있는 도시",
-    "fifa2026": "FIFA 월드컵 2026",
-    "fifa2026Desc": "멕시코는 2026년 월드컵을 개최합니다. 대중교통을 이용하여 경기장으로 이동하세요.",
-    "hostCities": "개최 도시",
-    "viewSchedule": "일정 보기",
-    "popularRoutes": "인기 경로",
-    "viewAllRoutes": "모든 경로 보기",
-    "installApp": "앱으로 설치",
-    "offlineReady": "오프라인에서 작동"
-  },
-  "station": {
-    "title": "{name}역",
-    "line": "노선",
-    "lines": "노선",
-    "nearbyPlaces": "근처 장소",
-    "accessibility": "접근성",
-    "schedule": "일정",
-    "tips": "관광객 팁",
-    "connections": "연결",
-    "adjacentStations": "인접한 역",
-    "calculateRoute": "여기서 경로 계산",
-    "touristDescription": "관광 정보",
-    "metroSystem": "대중교통 시스템"
-  },
-  "line": {
-    "title": "{id}호선",
-    "stations": "역",
-    "stationCount": "{count}개 역",
-    "terminals": "터미널",
-    "length": "길이",
-    "travelTime": "소요 시간",
-    "schedule": "일정",
-    "frequency": "빈도",
-    "viewStation": "역 보기",
-    "allLines": "모든 노선"
-  },
-  "route": {
-    "title": "지하철로 {origin}에서 {destination}로 가는 방법",
-    "from": "출발지",
-    "to": "목적지",
-    "calculate": "경로 계산",
-    "swap": "교환",
-    "result": "결과",
-    "stations": "개 역",
-    "transfers": "개 환승",
-    "estimatedTime": "예상 시간",
-    "cost": "비용",
-    "alternative": "대체 경로",
-    "noRoute": "이 역들 사이에서 경로를 찾을 수 없습니다",
-    "selectOrigin": "출발지 선택",
-    "selectDestination": "목적지 선택",
-    "minutesAbbr": "분",
-    "pesos": "MXN"
-  },
-  "city": {
-    "stations": "역",
-    "lines": "노선",
-    "system": "대중교통 시스템",
-    "coverage": "범위",
-    "dailyRiders": "일일 이용객",
-    "viewAllStations": "모든 역 보기",
-    "viewAllLines": "모든 노선 보기",
-    "nearbyAccommodation": "근처 숙박",
-    "touristGuide": "관광 가이드",
-    "worldCupVenue": "2026 월드컵 개최지",
-    "cdmxSystem": "지하철 + 경전철",
-    "cdmxTitle": "멕시코시티 지하철",
-    "touristicStationsSubtitle": "가장 중요한 6개의 관광 역",
-    "allLinesSubtitle": "멕시코시티 지하철의 모든 노선"
-  },
-  "worldCup": {
-    "title": "멕시코 FIFA 월드컵 2026",
-    "subtitle": "월드컵 경기에 대한 대중교통 가이드",
-    "matches": "경기",
-    "matchDay": "경기일",
-    "stadium": "경기장",
-    "capacity": "수용력",
-    "howToGet": "가는 방법",
-    "byMetro": "지하철로",
-    "byBus": "버스로",
-    "byCar": "자동차로",
-    "tips": "경기일 팁",
-    "fanZone": "팬존",
-    "schedule": "경기 일정",
-    "ticketCost": "지하철 요금",
-    "estAzteca": "아스테카 경기장",
-    "estAkron": "아크론 경기장",
-    "estBBVA": "BBVA 경기장",
-    "matchDates": "경기 날짜",
-    "viewRoute": "경기장 경로 보기",
-    "stadiumsHeading": "3개의 경기장",
-    "matchDateLabel": "경기",
-    "tipsSubtitle": "월드컵 기간 중 대중교통 이용 팁",
-    "tipArriveEarly": "일찍 도착하기",
-    "tipArrivyEarlyDesc": "경기 시간 90분 전에 도착하도록 계획하세요. 경기일에는 지하철이 만석입니다.",
-    "tipBaggage": "큰 짐을 가져오지 마세요",
-    "tipBaggageDesc": "큰 배낭은 허용되지 않을 수 있습니다. 경기장의 정책을 확인하세요.",
-    "tipCard": "교통카드를 가져오세요",
-    "tipCardDesc": "Movilidad 카드(CDMX)는 현금 결제보다 빠릅니다. 미리 충전하세요.",
-    "tipAvoidPeak": "피크 시간대 피하기",
-    "tipAvoidPeakDesc": "가능하면 이전 경기가 끝나기 전에 이동하세요. 덜 혼잡할 것입니다.",
-    "tipOfflineMap": "오프라인 지도 다운로드",
-    "tipOfflineMapDesc": "MetroGuia를 PWA 앱으로 설치하면 인터넷 없이 경로를 이용할 수 있습니다.",
-    "tipBattery": "휴대폰을 충전 상태로 유지하세요",
-    "tipBatteryDesc": "배터리는 필수입니다. 긴급 상황에 대비해 모바일 배터리를 휴대하세요.",
-    "calendar": "일정표",
-    "calendarTitle": "FIFA 2026 멕시코 일정표",
-    "calendarSubtitle": "3개 도시에서 13경기 — 2026년 6월~7월",
-    "howToGetAzteca": "에스타디오 아스테카 가는 방법",
-    "howToGetAkron": "에스타디오 아크론 가는 방법",
-    "howToGetBBVA": "에스타디오 BBVA 가는 방법",
-    "routeStepByStep": "단계별 경로",
-    "totalTime": "총 소요시간",
-    "totalCost": "총 비용",
-    "transfers": "환승",
-    "alternativeRoutes": "대체 경로",
-    "nearbyPOIs": "주변 관광지",
-    "restaurants": "레스토랑",
-    "services": "서비스",
-    "lodging": "숙박",
-    "transport": "교통",
-    "importantAlerts": "중요 알림",
-    "matchSchedule": "경기 일정",
-    "groupStage": "조별 리그",
-    "roundOf16": "16강",
-    "quarterFinals": "8강",
-    "stadiumComparison": "경기장 비교",
-    "downloadPWA": "MetroGuia 앱 다운로드",
-    "downloadPWADesc": "경기장 경로를 오프라인으로 이용",
-    "viewCalendar": "전체 일정 보기",
-    "backToHub": "월드컵 2026 허브로 돌아가기",
-    "metroCardWarning": "메트로 카드는 트렌 리헤로에서 사용할 수 없습니다",
-    "walkWarning": "경기장까지 도보 {minutes}분",
-    "heatWarning": "극심한 더위 — 수분 보충 필수",
-    "phaseBreakdown": "단계별 내역",
-    "matchesInPhase": "{count}경기",
-    "cityQuickLinks": "각 경기장 빠른 경로"
-  },
-  "accommodation": {
-    "title": "지하철 근처 숙박",
-    "subtitle": "멕시코시티 지하철역 근처의 숙박을 찾아보세요",
-    "viewListing": "숙박 보기",
-    "perNight": "1박",
-    "bedrooms": "개 침실",
-    "nearStation": "근처",
-    "bookNow": "지금 예약",
-    "marimbasHome": "Marimbas Home에서 운영"
-  },
-  "common": {
-    "back": "뒤로",
-    "next": "다음",
-    "previous": "이전",
-    "close": "닫기",
-    "loading": "로딩 중...",
-    "error": "오류",
-    "notFound": "찾을 수 없음",
-    "seeMore": "더보기",
-    "seeLess": "접기",
-    "share": "공유",
-    "copy": "복사",
-    "copied": "복사됨",
-    "offline": "오프라인",
-    "offlineMessage": "오프라인에서 탐색 중입니다. 일부 기능을 사용할 수 없을 수 있습니다.",
-    "free": "무료",
-    "km": "km",
-    "minutes": "분",
-    "hours": "시간"
-  },
-  "footer": {
-    "madeWith": "멕시코의 여행자를 위해 ❤️로 만들어졌습니다",
-    "privacy": "개인정보 보호",
-    "about": "정보",
-    "contact": "연락처",
-    "sitemap": "사이트맵"
-  },
-  "pwa": {
-    "installTitle": "MetroGuia 설치",
-    "installDesc": "오프라인에서 액세스하고 경로를 즉시 계산",
-    "install": "설치",
-    "dismiss": "나중에"
-  },
-  "searchBar": {
+  "search": {
+    "placeholder": "역 검색...",
     "origin": "출발지",
     "destination": "목적지",
-    "originPlaceholder": "출발 역...",
-    "destinationPlaceholder": "목적지 역...",
-    "swapTitle": "출발지와 목적지 교환",
-    "searchRoute": "경로 검색",
-    "quickAzteca": "아즈텍 경기장",
-    "quickAirport": "공항",
-    "quickDowntown": "역사 지구",
-    "quickCoyoacan": "코요아칸"
+    "button": "경로 검색",
+    "noResults": "결과 없음"
   },
-  "howItWorks": {
-    "title": "작동 방식",
-    "subtitle": "3단계로 여행 계획, 앱이나 모바일 데이터 불필요",
-    "step1Title": "경로 검색",
-    "step1Desc": "출발지와 목적지를 입력합니다. 검색 엔진이 자동 완성으로 가장 가까운 역을 찾습니다.",
-    "step2Title": "단계 검토",
-    "step2Desc": "노선, 환승, 예상 시간 및 요금을 확인합니다. 안전 경고 및 팁 포함.",
-    "step3Title": "현지인처럼 여행",
-    "step3Desc": "앱(PWA)을 설치하여 오프라인 접근. 지하철 내에서 인터넷 없이 경로 확인."
+  "route": {
+    "transfers": "환승",
+    "minutes": "분",
+    "stops": "정류장",
+    "cost": "요금",
+    "alternative": "대체 경로",
+    "noRoute": "이용 가능한 경로 없음"
   },
-  "comingSoon": {
-    "title": "곧 출시 — 8개 도시 추가",
-    "explore": "살펴보기"
+  "station": {
+    "nearbyPlaces": "근처 명소",
+    "schedule": "시간표",
+    "accessibility": "접근성",
+    "tips": "팁",
+    "lines": "노선"
   },
-  "layout": {
-    "lines": "노선",
-    "worldCup": "2026년 월드컵",
-    "accommodation": "숙박",
-    "cities": "도시",
-    "resources": "리소스",
-    "privacy": "개인정보",
-    "footerDesc": "멕시코 도시 교통 플래너. 경로를 계산하고, 역을 탐색하며, 현지인처럼 여행하세요.",
-    "footerTagline": "CDMX · 과달라하라 · 몬테레이 — 2026년 FIFA 월드컵 관광객 정보",
-    "hostCitiesFifa": "2026년 FIFA 개최 도시",
-    "hostCitiesDesc": "3개 멕시코 월드컵 개최 도시를 위한 안내 도시 교통",
-    "guidedStations": "안내 역",
-    "transitLines": "교통 노선",
-    "activeCities": "활성 도시",
-    "fifaMatches": "멕시코의 FIFA 경기",
-    "network": "네트워크"
+  "mundial": {
+    "title": "FIFA 월드컵 2026",
+    "howToGet": "경기장 가는 방법",
+    "matchDays": "경기 일정",
+    "transitTip": "교통 팁"
+  },
+  "common": {
+    "seeMore": "더 보기",
+    "learnMore": "자세히 알아보기",
+    "backToCity": "도시로 돌아가기",
+    "allLines": "전체 노선",
+    "allStations": "전체 역",
+    "minutesWalk": "분 도보"
+  },
+  "footer": {
+    "description": "여행자를 위한 가장 완벽한 대중교통 가이드. BFS 경로 플래너로 여행을 계획하세요.",
+    "rights": "All rights reserved."
+  },
+  "cdmx": {
+    "title": "멕시코시티 지하철 — 여행 가이드",
+    "heroDesc": "195개 역, 12개 노선, 226km. FIFA 월드컵 2026 방문객을 위한 멕시코시티 지하철 완벽 가이드."
   },
   "gdl": {
-    "title": "SITEUR 과달라하라",
-    "subtitle": "경전철 · 4개 노선 + 미 마크로 · 125개 역",
-    "heroDesc": "과달라하라의 빠르고 효율적인 시스템. 2026 월드컵 아크론 경기장 직통 연결.",
-    "planRoute": "과달라하라 경로 계획",
-    "planRouteDesc": "SITEUR 역 간 최적 경로 계산",
-    "worldCupTitle": "FIFA 월드컵 2026 과달라하라",
-    "worldCupDesc": "아크론 경기장에서 4경기. SITEUR 3호선으로 직접 접근.",
-    "confirmedMatches": "확정 경기",
-    "lightRailLines": "경전철 4개 노선",
-    "miMacroTitle": "미 마크로 — 과달라하라 급행 교통",
-    "miMacroDesc": "경전철 네트워크를 보완하는 2개의 BRT 노선",
-    "exploreMiMacro": "미 마크로 탐색",
-    "featuredStations": "주요 역",
-    "accommodationTitle": "과달라하라 숙박",
-    "accommodationDesc": "역사 지구에서 사포판까지: 모든 예산에 맞는 옵션",
-    "worldCupAccommodation": "FIFA 월드컵 2026 숙박",
-    "stations": "역",
-    "operativeLines": "운행 노선",
-    "kilometers": "킬로미터"
+    "title": "과달라하라 경전철 — 여행 가이드",
+    "heroDesc": "과달라하라 교통 시스템. 48개 역, FIFA 2026 아크론 스타디움 노선."
   },
   "mty": {
-    "title": "메트로레이 몬테레이",
-    "subtitle": "메트로 3개 노선 + 에코비아 BRT · 83개 역",
-    "heroDesc": "몬테레이의 현대적 교통 시스템. 2026 월드컵 BBVA 경기장 직통 연결.",
-    "planRoute": "몬테레이 경로 계획",
-    "planRouteDesc": "메트로레이 역 간 최적 경로 계산",
-    "worldCupTitle": "FIFA 월드컵 2026 몬테레이",
-    "worldCupDesc": "BBVA 경기장에서 4경기. 메트로레이 1호선으로 직접 접근.",
-    "confirmedMatches": "확정 경기",
-    "metroLines": "메트로레이 3개 노선",
-    "ecoviaTitle": "에코비아 트란스메트로 — BRT",
-    "featuredStations": "주요 역",
-    "accommodationTitle": "몬테레이 숙박",
-    "accommodationDesc": "바리오 안티구오에서 주거 지역까지 — 모든 예산에 맞는 옵션.",
-    "worldCupAccommodation": "FIFA 월드컵 2026 숙박",
-    "stations": "역",
-    "linesPlusBRT": "노선 + BRT",
-    "kilometers": "킬로미터",
-    "transportTip": "교통 팁",
-    "importantWarning": "중요 경고",
-    "ecoviaHeroDesc": "몬테레이를 동서로 연결하는 대용량 BRT 시스템.",
-    "ecoviaPlanRoute": "에코비아 경로 계획",
-    "ecoviaPlanRouteDesc": "BRT 역 간 최적 경로 계산",
-    "ecoviaAllStations": "에코비아 42개 전체 역",
-    "westZone": "서부 구역",
-    "eastZone": "동부 구역",
-    "ecoviaFifaTitle": "에스타디오 BBVA · FIFA 2026",
-    "ecoviaFifaDesc": "에코비아 환승역에서 에스타디오 BBVA까지 접근:",
-    "transfer": "환승",
-    "connectsWith": "연결:",
-    "scheduleAndFare": "시간표 및 요금",
-    "nearbyPlaces": "주변 장소",
-    "aboutStation": "이 역 정보",
-    "usefulTips": "유용한 팁",
-    "quickInfo": "기본 정보",
-    "backToEcovia": "에코비아로 돌아가기",
-    "backToMonterrey": "몬테레이로 돌아가기",
-    "viewLine": "노선 {id} 보기",
-    "worldCup2026Guide": "월드컵 2026 가이드",
-    "allStations": "전체 역",
-    "connectedMunicipios": "연결 지자체",
-    "oneDayRoute": "당일 코스",
-    "stationNotFound": "역을 찾을 수 없습니다",
-    "lineNotFound": "노선을 찾을 수 없습니다",
-    "fareInfo": "FERIA 카드로 6.40페소",
-    "ecoviaFareInfo": "FERIA 카드로 12페소",
-    "metroSchedule": "월-토 5:00-0:00, 일 6:30-0:00",
-    "frequency": "배차간격: 피크시 3-5분",
-    "operativeLine": "운행 노선",
-    "ecoviaSubtitle": "간선급행버스 · 42개 역 · 30킬로미터",
-    "bbvaAccess": "에스타디오 BBVA 접근",
-    "bbvaAccessDesc": "이 노선은 2026 월드컵 경기가 열리는 에스타디오 BBVA까지의 모든 접근 방법과 연결됩니다."
-  },
-  "tourism": {
-    "title": "멕시코 관광",
-    "subtitle": "대중교통으로 멕시코의 가장 상징적인 목적지를 발견하세요",
-    "magicTowns": "마법의 마을",
-    "archaeologicalZones": "고고학 지역",
-    "heritageCities": "세계유산 도시",
-    "beaches": "해변",
-    "magicNeighborhoods": "마법의 동네",
-    "gastronomicRoutes": "미식 루트",
-    "priorityDestinations": "우선 목적지",
-    "nature": "자연",
-    "howToGet": "가는 방법",
-    "nearestStation": "가장 가까운 역",
-    "viewMore": "더 보기"
-  },
-  "airports": {
-    "title": "멕시코 공항",
-    "subtitle": "멕시코 전역의 공항-지하철 연결",
-    "metroConnection": "지하철 연결",
-    "busConnection": "버스 연결",
-    "taxiTime": "중심부까지 택시 시간",
-    "viewTransitOptions": "교통 옵션 보기"
+    "title": "메트로레이 — 여행 가이드",
+    "heroDesc": "몬테레이 지하철. 32개 역, 월드컵 2026 BBVA 스타디움 직통."
   },
   "nyc": {
-    "title": "뉴욕 지하철 가이드",
-    "subtitle": "MTA 24개 노선 · 472개 역 · 5개 자치구",
-    "heroDesc": "MTA 지하철 가이드로 뉴욕을 네비게이션하세요. 타임스 스퀘어, 그랜드 센트럴, 월 스트리트. 2026년 FIFA 월드컵 결승전 개최지.",
-    "planRoute": "뉴욕에서 경로 계획",
-    "planRouteDesc": "MTA 역 간의 최적 경로 계산",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크 길이",
-    "featuredStations": "추천 역",
-    "worldCupTitle": "2026년 FIFA 월드컵 결승전",
-    "worldCupDesc": "메트라이프 스타디움에서의 결승전. 특급 경로 및 터미널 간 정보."
+    "title": "뉴욕 지하철 — 여행 가이드",
+    "heroDesc": "뉴욕 지하철. 472개 역, 24개 노선. 빅애플을 누비기 위한 모든 정보."
   },
   "los-angeles": {
-    "title": "로스앤젤레스 지하철 가이드",
-    "subtitle": "메트로레일 · 21개 노선 · 106개 역",
-    "heroDesc": "메트로 시스템으로 로스앤젤레스를 탐험하세요. 다운타운 LA, 할리우드, 산타모니카, 롱비치를 연결. 엔터테인먼트 허브 가이드.",
-    "planRoute": "로스앤젤레스에서 경로 계획",
-    "planRouteDesc": "LA 메트로 역 간의 최적 경로 계산",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크 길이",
-    "featuredStations": "추천 역",
-    "worldCupTitle": "2026년 월드컵 개최지",
-    "worldCupDesc": "SoFi 스타디움에서의 경기. 로스앤젤레스 월드컵 개최지 교통 가이드."
-  },
-  "toronto": {
-    "title": "TTC 토론토 교통 시스템",
-    "subtitle": "지하철 + 가도전차 + 버스 · 4개 노선 · 78개 역",
-    "heroDesc": "TTC 지하철 시스템으로 토론토를 탐험하세요. 다운타운, 엔터테인먼트 지구, 디스틸러리 지구. GO 트랜짓 광역 서비스.",
-    "planRoute": "토론토에서 경로 계획",
-    "planRouteDesc": "TTC 역 간의 최적 경로 계산",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크 길이",
-    "featuredStations": "추천 역",
-    "worldCupTitle": "캐나다 2026년 월드컵",
-    "worldCupDesc": "토론토에서의 경기. 캐나다 월드컵 개최 도시 교통 가이드."
-  },
-  "vancouver": {
-    "title": "트랜스링크 밴쿠버 가이드",
-    "subtitle": "스카이트레인 · 캐나다 라인 · 79개 역",
-    "heroDesc": "스카이트레인과 캐나다 라인으로 밴쿠버를 네비게이션하세요. 다운타운, 버나비, 리치몬드. 태평양 관문 교통.",
-    "planRoute": "밴쿠버에서 경로 계획",
-    "planRouteDesc": "스카이트레인 역 간의 최적 경로 계산",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크 길이",
-    "featuredStations": "추천 역",
-    "worldCupTitle": "캐나다 2026년 월드컵",
-    "worldCupDesc": "밴쿠버에서의 경기. 캐나다 월드컵 개최 도시 교통 가이드."
+    "title": "LA 메트로 — 여행 가이드",
+    "heroDesc": "로스앤젤레스 메트로. 106개 역, 21개 노선. 할리우드, 다운타운, LAX 공항 연결."
   },
   "houston": {
-    "title": "Houston 교통 가이드",
-    "subtitle": "Texas · 3개 노선 · 39개 역",
-    "heroDesc": "Houston(Texas) 완전한 대중교통 가이드. 3개 노선, 39개 역.",
-    "planRoute": "Houston에서 경로 계획",
-    "planRouteDesc": "Houston의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "휴스턴 메트로 — 여행 가이드",
+    "heroDesc": "휴스턴 METRORail. 39개 역, FIFA 2026 NRG 스타디움 직통."
   },
   "atlanta": {
-    "title": "Atlanta 교통 가이드",
-    "subtitle": "Georgia · 4개 노선 · 38개 역",
-    "heroDesc": "Atlanta(Georgia) 완전한 대중교통 가이드. 4개 노선, 38개 역.",
-    "planRoute": "Atlanta에서 경로 계획",
-    "planRouteDesc": "Atlanta의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "MARTA 애틀랜타 — 여행 가이드",
+    "heroDesc": "애틀랜타 MARTA 시스템. 38개 역. 월드컵 2026 메르세데스-벤츠 스타디움 연결."
   },
   "philadelphia": {
-    "title": "Philadelphia 교통 가이드",
-    "subtitle": "Pennsylvania · 8개 노선 · 156개 역",
-    "heroDesc": "Philadelphia(Pennsylvania) 완전한 대중교통 가이드. 8개 노선, 156개 역.",
-    "planRoute": "Philadelphia에서 경로 계획",
-    "planRouteDesc": "Philadelphia의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "SEPTA 필라델피아 — 교통 가이드",
+    "heroDesc": "필라델피아 지하철 및 기차. 156개 역, 8개 노선. 링컨 파이낸셜 필드 접근 포함."
   },
   "seattle": {
-    "title": "Seattle 교통 가이드",
-    "subtitle": "Washington · 3개 노선 · 25개 역",
-    "heroDesc": "Seattle(Washington) 완전한 대중교통 가이드. 3개 노선, 25개 역.",
-    "planRoute": "Seattle에서 경로 계획",
-    "planRouteDesc": "Seattle의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "시애틀 경전철 — 여행 가이드",
+    "heroDesc": "시애틀 링크 경전철. 25개 역, FIFA 2026 루멘 필드 직통."
   },
   "san-francisco": {
-    "title": "San Francisco 교통 가이드",
-    "subtitle": "California · 15개 노선 · 147개 역",
-    "heroDesc": "San Francisco(California) 완전한 대중교통 가이드. 15개 노선, 147개 역.",
-    "planRoute": "San Francisco에서 경로 계획",
-    "planRouteDesc": "San Francisco의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "BART 샌프란시스코 — 여행 가이드",
+    "heroDesc": "BART + 무니 샌프란시스코. 147개 역. SFO, 오클랜드, 실리콘밸리 연결."
   },
   "boston": {
-    "title": "Boston 교통 가이드",
-    "subtitle": "Massachusetts · 7개 노선 · 155개 역",
-    "heroDesc": "Boston(Massachusetts) 완전한 대중교통 가이드. 7개 노선, 155개 역.",
-    "planRoute": "Boston에서 경로 계획",
-    "planRouteDesc": "Boston의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "MBTA 보스턴 — T 가이드",
+    "heroDesc": "보스턴 T(MBTA). 155개 역, 7개 지하철 노선. 미국에서 가장 오래된 교통망."
   },
   "miami": {
-    "title": "Miami 교통 가이드",
-    "subtitle": "Florida · 5개 노선 · 45개 역",
-    "heroDesc": "Miami(Florida) 완전한 대중교통 가이드. 5개 노선, 45개 역.",
-    "planRoute": "Miami에서 경로 계획",
-    "planRouteDesc": "Miami의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "마이애미 메트로무버 — 여행 가이드",
+    "heroDesc": "메트로무버 + 메트로레일 마이애미. 45개 역. FIFA 2026 하드락 스타디움 연결."
   },
   "dallas": {
-    "title": "Dallas 교통 가이드",
-    "subtitle": "Texas · 6개 노선 · 64개 역",
-    "heroDesc": "Dallas(Texas) 완전한 대중교통 가이드. 6개 노선, 64개 역.",
-    "planRoute": "Dallas에서 경로 계획",
-    "planRouteDesc": "Dallas의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "DART 달라스 — 교통 가이드",
+    "heroDesc": "달라스 DART 레일. 64개 역, 6개 노선. 다운타운과 DFW 공항 연결."
   },
   "kansas-city": {
-    "title": "Kansas City 교통 가이드",
-    "subtitle": "Missouri · 2개 노선 · 16개 역",
-    "heroDesc": "Kansas City(Missouri) 완전한 대중교통 가이드. 2개 노선, 16개 역.",
-    "planRoute": "Kansas City에서 경로 계획",
-    "planRouteDesc": "Kansas City의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "캔자스시티 교통 — FIFA 2026 가이드",
+    "heroDesc": "캔자스시티 교통. FIFA 월드컵 2026 애로우헤드 스타디움 개최 도시."
+  },
+  "toronto": {
+    "title": "TTC 토론토 — 여행 가이드",
+    "heroDesc": "토론토 TTC 지하철. 75개 역, 6개 노선. FIFA 2026 개최 도시, BMO 필드에서 경기."
+  },
+  "vancouver": {
+    "title": "밴쿠버 스카이트레인 — 여행 가이드",
+    "heroDesc": "밴쿠버 스카이트레인. 53개 역, 5개 노선. 북미 최대 자동화 교통망."
   },
   "chicago": {
-    "title": "Chicago 교통 가이드",
-    "subtitle": "Illinois · 8개 노선 · 145개 역",
-    "heroDesc": "Chicago(Illinois) 완전한 대중교통 가이드. 8개 노선, 145개 역.",
-    "planRoute": "Chicago에서 경로 계획",
-    "planRouteDesc": "Chicago의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "시카고 CTA L — 여행 가이드",
+    "heroDesc": "시카고 L(CTA). 145개 역, 루프 내 8개 노선. 바람의 도시의 상징적인 교통 시스템."
   },
   "washington-dc": {
-    "title": "Washington D.C. 교통 가이드",
-    "subtitle": "District of Columbia · 6개 노선 · 97개 역",
-    "heroDesc": "Washington D.C.(District of Columbia) 완전한 대중교통 가이드. 6개 노선, 97개 역.",
-    "planRoute": "Washington D.C.에서 경로 계획",
-    "planRouteDesc": "Washington D.C.의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "WMATA 메트로 DC — 여행 가이드",
+    "heroDesc": "워싱턴 D.C. 메트로. 97개 역, 6개 노선. 모든 국립 기념물 접근 가능."
   },
   "portland": {
-    "title": "Portland 교통 가이드",
-    "subtitle": "Oregon · 6개 노선 · 97개 역",
-    "heroDesc": "Portland(Oregon) 완전한 대중교통 가이드. 6개 노선, 97개 역.",
-    "planRoute": "Portland에서 경로 계획",
-    "planRouteDesc": "Portland의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "포틀랜드 MAX — 여행 가이드",
+    "heroDesc": "포틀랜드 MAX 경전철. 97개 역, 6개 노선. 태평양 북서부 최고의 대중교통 도시."
   },
   "denver": {
-    "title": "Denver 교통 가이드",
-    "subtitle": "Colorado · 7개 노선 · 53개 역",
-    "heroDesc": "Denver(Colorado) 완전한 대중교통 가이드. 7개 노선, 53개 역.",
-    "planRoute": "Denver에서 경로 계획",
-    "planRouteDesc": "Denver의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+    "title": "덴버 RTD — 여행 가이드",
+    "heroDesc": "덴버 RTD 경전철. 53개 역, 7개 노선. 덴버 국제공항(DEN) 직통."
   },
-  "salt-lake-city": {
-    "title": "Salt Lake City 교통 가이드",
-    "subtitle": "Utah · 5개 노선 · 50개 역",
-    "heroDesc": "Salt Lake City(Utah) 완전한 대중교통 가이드. 5개 노선, 50개 역.",
-    "planRoute": "Salt Lake City에서 경로 계획",
-    "planRouteDesc": "Salt Lake City의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "london": {
+    "title": "런던 지하철 — 여행 가이드",
+    "heroDesc": "런던 튜브. 272개 역, 11개 노선. 세계에서 가장 오래된 지하철 시스템으로 런던 모든 명소 연결."
   },
-  "sacramento": {
-    "title": "Sacramento 교통 가이드",
-    "subtitle": "California · 3개 노선 · 52개 역",
-    "heroDesc": "Sacramento(California) 완전한 대중교통 가이드. 3개 노선, 52개 역.",
-    "planRoute": "Sacramento에서 경로 계획",
-    "planRouteDesc": "Sacramento의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "paris": {
+    "title": "파리 지하철 — 여행 가이드",
+    "heroDesc": "파리 메트로. 303개 역, 16개 노선. 빛의 도시를 탐험하는 가장 빠른 방법."
   },
-  "san-diego": {
-    "title": "San Diego 교통 가이드",
-    "subtitle": "California · 4개 노선 · 54개 역",
-    "heroDesc": "San Diego(California) 완전한 대중교통 가이드. 4개 노선, 54개 역.",
-    "planRoute": "San Diego에서 경로 계획",
-    "planRouteDesc": "San Diego의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "madrid": {
+    "title": "마드리드 지하철 — 여행 가이드",
+    "heroDesc": "마드리드 메트로. 302개 역, 13개 노선. 스페인 및 서유럽 최대의 지하철 시스템."
   },
-  "minneapolis": {
-    "title": "Minneapolis 교통 가이드",
-    "subtitle": "Minnesota · 3개 노선 · 38개 역",
-    "heroDesc": "Minneapolis(Minnesota) 완전한 대중교통 가이드. 3개 노선, 38개 역.",
-    "planRoute": "Minneapolis에서 경로 계획",
-    "planRouteDesc": "Minneapolis의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "berlin": {
+    "title": "베를린 U-Bahn & S-Bahn — 여행 가이드",
+    "heroDesc": "베를린 도시철도. U-Bahn + S-Bahn 300개 이상 역으로 수도 전역 연결."
   },
-  "charlotte": {
-    "title": "Charlotte 교통 가이드",
-    "subtitle": "North Carolina · 2개 노선 · 26개 역",
-    "heroDesc": "Charlotte(North Carolina) 완전한 대중교통 가이드. 2개 노선, 26개 역.",
-    "planRoute": "Charlotte에서 경로 계획",
-    "planRouteDesc": "Charlotte의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "barcelona": {
+    "title": "바르셀로나 지하철 — 여행 가이드",
+    "heroDesc": "바르셀로나 메트로. 160개 역, 12개 노선. 라스 람블라스, 사그라다 파밀리아, 캄프 누 연결."
   },
-  "phoenix": {
-    "title": "Phoenix 교통 가이드",
-    "subtitle": "Arizona · 2개 노선 · 35개 역",
-    "heroDesc": "Phoenix(Arizona) 완전한 대중교통 가이드. 2개 노선, 35개 역.",
-    "planRoute": "Phoenix에서 경로 계획",
-    "planRouteDesc": "Phoenix의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "tokyo": {
+    "title": "도쿄 메트로 & 도에이 — 여행 가이드",
+    "heroDesc": "도쿄 지하철 시스템. 280개 이상 역, 13개 노선. 세계에서 가장 정시 운행하는 교통망."
   },
-  "baltimore": {
-    "title": "Baltimore 교통 가이드",
-    "subtitle": "Maryland · 3개 노선 · 44개 역",
-    "heroDesc": "Baltimore(Maryland) 완전한 대중교통 가이드. 3개 노선, 44개 역.",
-    "planRoute": "Baltimore에서 경로 계획",
-    "planRouteDesc": "Baltimore의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "seoul": {
+    "title": "서울 지하철 — 여행 가이드",
+    "heroDesc": "서울 지하철. 300개 이상 역, 9개 노선. 강남, 홍대 및 모든 K-컬처 명소 연결."
   },
-  "cleveland": {
-    "title": "Cleveland 교통 가이드",
-    "subtitle": "Ohio · 4개 노선 · 52개 역",
-    "heroDesc": "Cleveland(Ohio) 완전한 대중교통 가이드. 4개 노선, 52개 역.",
-    "planRoute": "Cleveland에서 경로 계획",
-    "planRouteDesc": "Cleveland의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "singapore": {
+    "title": "싱가포르 MRT — 여행 가이드",
+    "heroDesc": "싱가포르 MRT. 130개 역, 6개 노선. 라이언 시티를 탐험하는 가장 효율적인 방법."
   },
-  "buffalo": {
-    "title": "Buffalo 교통 가이드",
-    "subtitle": "New York · 1개 노선 · 14개 역",
-    "heroDesc": "Buffalo(New York) 완전한 대중교통 가이드. 1개 노선, 14개 역.",
-    "planRoute": "Buffalo에서 경로 계획",
-    "planRouteDesc": "Buffalo의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "dubai": {
+    "title": "두바이 메트로 — 여행 가이드",
+    "heroDesc": "두바이 메트로. 53개 역, 2개 노선. 두바이 몰, 부르즈 칼리파, 두바이 마리나 연결."
   },
-  "new-orleans": {
-    "title": "New Orleans 교통 가이드",
-    "subtitle": "Louisiana · 5개 노선 · 50개 역",
-    "heroDesc": "New Orleans(Louisiana) 완전한 대중교통 가이드. 5개 노선, 50개 역.",
-    "planRoute": "New Orleans에서 경로 계획",
-    "planRouteDesc": "New Orleans의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "sydney": {
+    "title": "시드니 메트로 & 기차 — 여행 가이드",
+    "heroDesc": "시드니 철도망. 175개 이상 역. 오페라 하우스, 본다이 비치 등 연결."
   },
-  "st-louis": {
-    "title": "St. Louis 교통 가이드",
-    "subtitle": "Missouri · 2개 노선 · 38개 역",
-    "heroDesc": "St. Louis(Missouri) 완전한 대중교통 가이드. 2개 노선, 38개 역.",
-    "planRoute": "St. Louis에서 경로 계획",
-    "planRouteDesc": "St. Louis의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "buenos-aires": {
+    "title": "부에노스아이레스 지하철 — 여행 가이드",
+    "heroDesc": "부에노스아이레스 수브테. 89개 역, 6개 노선. 라틴아메리카 및 남반구 최초의 지하철."
   },
-  "pittsburgh": {
-    "title": "Pittsburgh 교통 가이드",
-    "subtitle": "Pennsylvania · 4개 노선 · 53개 역",
-    "heroDesc": "Pittsburgh(Pennsylvania) 완전한 대중교통 가이드. 4개 노선, 53개 역.",
-    "planRoute": "Pittsburgh에서 경로 계획",
-    "planRouteDesc": "Pittsburgh의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "sao-paulo": {
+    "title": "상파울루 지하철 — 여행 가이드",
+    "heroDesc": "상파울루 메트로. 101개 역, 6개 노선. 파울리스타 대로, 피녜이루스 등 상징적인 지역 연결."
   },
-  "detroit": {
-    "title": "Detroit 교통 가이드",
-    "subtitle": "Michigan · 2개 노선 · 20개 역",
-    "heroDesc": "Detroit(Michigan) 완전한 대중교통 가이드. 2개 노선, 20개 역.",
-    "planRoute": "Detroit에서 경로 계획",
-    "planRouteDesc": "Detroit의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "santiago": {
+    "title": "산티아고 지하철 — 여행 가이드",
+    "heroDesc": "칠레 산티아고 메트로. 136개 역, 7개 노선. 라틴아메리카에서 가장 현대적이고 효율적인 교통망."
   },
-  "san-jose": {
-    "title": "San Jose 교통 가이드",
-    "subtitle": "California · 4개 노선 · 62개 역",
-    "heroDesc": "San Jose(California) 완전한 대중교통 가이드. 4개 노선, 62개 역.",
-    "planRoute": "San Jose에서 경로 계획",
-    "planRouteDesc": "San Jose의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "bogota": {
+    "title": "보고타 트랜스밀레니오 — 여행 가이드",
+    "heroDesc": "보고타 트랜스밀레니오. 138개 역. 라틴아메리카 최대 BRT 시스템."
   },
-  "newark": {
-    "title": "Newark 교통 가이드",
-    "subtitle": "New Jersey · 3개 노선 · 21개 역",
-    "heroDesc": "Newark(New Jersey) 완전한 대중교통 가이드. 3개 노선, 21개 역.",
-    "planRoute": "Newark에서 경로 계획",
-    "planRouteDesc": "Newark의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "honolulu": {
-    "title": "Honolulu 교통 가이드",
-    "subtitle": "Hawaii · 1개 노선 · 21개 역",
-    "heroDesc": "Honolulu(Hawaii) 완전한 대중교통 가이드. 1개 노선, 21개 역.",
-    "planRoute": "Honolulu에서 경로 계획",
-    "planRouteDesc": "Honolulu의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "las-vegas": {
-    "title": "Las Vegas 교통 가이드",
-    "subtitle": "Nevada · 1개 노선 · 7개 역",
-    "heroDesc": "Las Vegas(Nevada) 완전한 대중교통 가이드. 1개 노선, 7개 역.",
-    "planRoute": "Las Vegas에서 경로 계획",
-    "planRouteDesc": "Las Vegas의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "norfolk": {
-    "title": "Norfolk 교통 가이드",
-    "subtitle": "Virginia · 1개 노선 · 11개 역",
-    "heroDesc": "Norfolk(Virginia) 완전한 대중교통 가이드. 1개 노선, 11개 역.",
-    "planRoute": "Norfolk에서 경로 계획",
-    "planRouteDesc": "Norfolk의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "tampa": {
-    "title": "Tampa 교통 가이드",
-    "subtitle": "Florida · 1개 노선 · 11개 역",
-    "heroDesc": "Tampa(Florida) 완전한 대중교통 가이드. 1개 노선, 11개 역.",
-    "planRoute": "Tampa에서 경로 계획",
-    "planRouteDesc": "Tampa의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "austin": {
-    "title": "Austin 교통 가이드",
-    "subtitle": "Texas · 1개 노선 · 9개 역",
-    "heroDesc": "Austin(Texas) 완전한 대중교통 가이드. 1개 노선, 9개 역.",
-    "planRoute": "Austin에서 경로 계획",
-    "planRouteDesc": "Austin의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "cincinnati": {
-    "title": "Cincinnati 교통 가이드",
-    "subtitle": "Ohio · 1개 노선 · 8개 역",
-    "heroDesc": "Cincinnati(Ohio) 완전한 대중교통 가이드. 1개 노선, 8개 역.",
-    "planRoute": "Cincinnati에서 경로 계획",
-    "planRouteDesc": "Cincinnati의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "el-paso": {
-    "title": "El Paso 교통 가이드",
-    "subtitle": "Texas · 2개 노선 · 10개 역",
-    "heroDesc": "El Paso(Texas) 완전한 대중교통 가이드. 2개 노선, 10개 역.",
-    "planRoute": "El Paso에서 경로 계획",
-    "planRouteDesc": "El Paso의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "jacksonville": {
-    "title": "Jacksonville 교통 가이드",
-    "subtitle": "Florida · 1개 노선 · 8개 역",
-    "heroDesc": "Jacksonville(Florida) 완전한 대중교통 가이드. 1개 노선, 8개 역.",
-    "planRoute": "Jacksonville에서 경로 계획",
-    "planRouteDesc": "Jacksonville의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "milwaukee": {
-    "title": "Milwaukee 교통 가이드",
-    "subtitle": "Wisconsin · 1개 노선 · 8개 역",
-    "heroDesc": "Milwaukee(Wisconsin) 완전한 대중교통 가이드. 1개 노선, 8개 역.",
-    "planRoute": "Milwaukee에서 경로 계획",
-    "planRouteDesc": "Milwaukee의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "nashville": {
-    "title": "Nashville 교통 가이드",
-    "subtitle": "Tennessee · 1개 노선 · 7개 역",
-    "heroDesc": "Nashville(Tennessee) 완전한 대중교통 가이드. 1개 노선, 7개 역.",
-    "planRoute": "Nashville에서 경로 계획",
-    "planRouteDesc": "Nashville의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "oklahoma-city": {
-    "title": "Oklahoma City 교통 가이드",
-    "subtitle": "Oklahoma · 1개 노선 · 8개 역",
-    "heroDesc": "Oklahoma City(Oklahoma) 완전한 대중교통 가이드. 1개 노선, 8개 역.",
-    "planRoute": "Oklahoma City에서 경로 계획",
-    "planRouteDesc": "Oklahoma City의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "orlando": {
-    "title": "Orlando 교통 가이드",
-    "subtitle": "Florida · 1개 노선 · 16개 역",
-    "heroDesc": "Orlando(Florida) 완전한 대중교통 가이드. 1개 노선, 16개 역.",
-    "planRoute": "Orlando에서 경로 계획",
-    "planRouteDesc": "Orlando의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "san-juan": {
-    "title": "San Juan 교통 가이드",
-    "subtitle": "Puerto Rico · 1개 노선 · 16개 역",
-    "heroDesc": "San Juan(Puerto Rico) 완전한 대중교통 가이드. 1개 노선, 16개 역.",
-    "planRoute": "San Juan에서 경로 계획",
-    "planRouteDesc": "San Juan의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "tucson": {
-    "title": "Tucson 교통 가이드",
-    "subtitle": "Arizona · 1개 노선 · 14개 역",
-    "heroDesc": "Tucson(Arizona) 완전한 대중교통 가이드. 1개 노선, 14개 역.",
-    "planRoute": "Tucson에서 경로 계획",
-    "planRouteDesc": "Tucson의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "montreal": {
-    "title": "Montreal 교통 가이드",
-    "subtitle": "Quebec · 5개 노선 · 68개 역",
-    "heroDesc": "Montreal(Quebec) 완전한 대중교통 가이드. 5개 노선, 68개 역.",
-    "planRoute": "Montreal에서 경로 계획",
-    "planRouteDesc": "Montreal의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "calgary": {
-    "title": "Calgary 교통 가이드",
-    "subtitle": "Alberta · 3개 노선 · 45개 역",
-    "heroDesc": "Calgary(Alberta) 완전한 대중교통 가이드. 3개 노선, 45개 역.",
-    "planRoute": "Calgary에서 경로 계획",
-    "planRouteDesc": "Calgary의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "edmonton": {
-    "title": "Edmonton 교통 가이드",
-    "subtitle": "Alberta · 2개 노선 · 18개 역",
-    "heroDesc": "Edmonton(Alberta) 완전한 대중교통 가이드. 2개 노선, 18개 역.",
-    "planRoute": "Edmonton에서 경로 계획",
-    "planRouteDesc": "Edmonton의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "ottawa": {
-    "title": "Ottawa 교통 가이드",
-    "subtitle": "Ontario · 2개 노선 · 25개 역",
-    "heroDesc": "Ottawa(Ontario) 완전한 대중교통 가이드. 2개 노선, 25개 역.",
-    "planRoute": "Ottawa에서 경로 계획",
-    "planRouteDesc": "Ottawa의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "kitchener-waterloo": {
-    "title": "Kitchener-Waterloo 교통 가이드",
-    "subtitle": "Ontario · 1개 노선 · 19개 역",
-    "heroDesc": "Kitchener-Waterloo(Ontario) 완전한 대중교통 가이드. 1개 노선, 19개 역.",
-    "planRoute": "Kitchener-Waterloo에서 경로 계획",
-    "planRouteDesc": "Kitchener-Waterloo의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
-  },
-  "mississauga": {
-    "title": "Mississauga 교통 가이드",
-    "subtitle": "Ontario · 1개 노선 · 17개 역",
-    "heroDesc": "Mississauga(Ontario) 완전한 대중교통 가이드. 1개 노선, 17개 역.",
-    "planRoute": "Mississauga에서 경로 계획",
-    "planRouteDesc": "Mississauga의 역 간 최적 경로 찾기",
-    "stations": "역",
-    "operativeLines": "노선",
-    "kilometers": "네트워크",
-    "featuredStations": "주요 역"
+  "lima": {
+    "title": "리마 지하철 — 여행 가이드",
+    "heroDesc": "리마 메트로(1호선). 26개 역. 페루 최초 지하철로 시내 중심과 비야 엘 살바도르 연결."
   }
 }

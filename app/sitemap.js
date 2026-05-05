@@ -165,6 +165,40 @@ import { lineasNewark } from '@/data/newark/lineas-detalle';
 import { lineasKitchenerWaterloo } from '@/data/kitchener-waterloo/lineas-detalle';
 import { lineasMississauga } from '@/data/mississauga/lineas-detalle';
 
+// Import station data for World cities
+import { estacionesLondon } from '@/data/london/estaciones';
+import { estacionesParis } from '@/data/paris/estaciones';
+import { estacionesMadrid } from '@/data/madrid/estaciones';
+import { estacionesBerlin } from '@/data/berlin/estaciones';
+import { estacionesBarcelona } from '@/data/barcelona/estaciones';
+import { estacionesBuenosAires } from '@/data/buenos-aires/estaciones';
+import { estacionesSaoPaulo } from '@/data/sao-paulo/estaciones';
+import { estacionesSantiago } from '@/data/santiago/estaciones';
+import { estacionesBogota } from '@/data/bogota/estaciones';
+import { estacionesLima } from '@/data/lima/estaciones';
+import { estacionesTokyo } from '@/data/tokyo/estaciones';
+import { estacionesSeoul } from '@/data/seoul/estaciones';
+import { estacionesSingapore } from '@/data/singapore/estaciones';
+import { estacionesDubai } from '@/data/dubai/estaciones';
+import { estacionesSydney } from '@/data/sydney/estaciones';
+
+// Import line data for World cities
+import { lineasLondon } from '@/data/london/lineas-detalle';
+import { lineasParis } from '@/data/paris/lineas-detalle';
+import { lineasMadrid } from '@/data/madrid/lineas-detalle';
+import { lineasBerlin } from '@/data/berlin/lineas-detalle';
+import { lineasBarcelona } from '@/data/barcelona/lineas-detalle';
+import { lineasBuenosAires } from '@/data/buenos-aires/lineas-detalle';
+import { lineasSaoPaulo } from '@/data/sao-paulo/lineas-detalle';
+import { lineasSantiago } from '@/data/santiago/lineas-detalle';
+import { lineasBogota } from '@/data/bogota/lineas-detalle';
+import { lineasLima } from '@/data/lima/lineas-detalle';
+import { lineasTokyo } from '@/data/tokyo/lineas-detalle';
+import { lineasSeoul } from '@/data/seoul/lineas-detalle';
+import { lineasSingapore } from '@/data/singapore/lineas-detalle';
+import { lineasDubai } from '@/data/dubai/lineas-detalle';
+import { lineasSydney } from '@/data/sydney/lineas-detalle';
+
 // US/CA zone (neighborhood) data
 import { zonasUSCA } from '@/data/zonas-us-ca';
 
@@ -329,6 +363,11 @@ function getCoreUrls() {
         'jacksonville','austin','cincinnati','el-paso','orlando','san-juan','tampa','tucson',
         'oklahoma-city','nashville','milwaukee','newark','kitchener-waterloo','mississauga'].map(c =>
         entry(`/${c}/`, 'weekly', 0.85, 'core')),
+    // World city hub pages
+    ...['london','paris','madrid','berlin','barcelona',
+        'buenos-aires','sao-paulo','santiago','bogota','lima',
+        'tokyo','seoul','singapore','dubai','sydney'].map(c =>
+        entry(`/${c}/`, 'weekly', 0.87, 'core')),
     // Zonas (MX neighborhoods)
     ...(zonas || []).map((z) => entry(`/zona/${z.slug}/`, 'monthly', 0.8, 'core')),
     // Zone (US/CA neighborhoods)
@@ -570,6 +609,52 @@ function getCitiesUrls() {
     // Mississauga
     ...mapEstacionesUSCA(estacionesMississauga, 'mississauga', 'cities'),
     ...mapLineasUSCA(lineasMississauga, 'mississauga', 'cities'),
+    // World cities — station/line pages
+    // London
+    ...mapEstacionesUSCA(estacionesLondon, 'london', 'cities'),
+    ...mapLineasUSCA(lineasLondon, 'london', 'cities'),
+    // Paris
+    ...mapEstacionesUSCA(estacionesParis, 'paris', 'cities'),
+    ...mapLineasUSCA(lineasParis, 'paris', 'cities'),
+    // Madrid
+    ...mapEstacionesUSCA(estacionesMadrid, 'madrid', 'cities'),
+    ...mapLineasUSCA(lineasMadrid, 'madrid', 'cities'),
+    // Berlin
+    ...mapEstacionesUSCA(estacionesBerlin, 'berlin', 'cities'),
+    ...mapLineasUSCA(lineasBerlin, 'berlin', 'cities'),
+    // Barcelona
+    ...mapEstacionesUSCA(estacionesBarcelona, 'barcelona', 'cities'),
+    ...mapLineasUSCA(lineasBarcelona, 'barcelona', 'cities'),
+    // Buenos Aires
+    ...mapEstacionesUSCA(estacionesBuenosAires, 'buenos-aires', 'cities'),
+    ...mapLineasUSCA(lineasBuenosAires, 'buenos-aires', 'cities'),
+    // São Paulo
+    ...mapEstacionesUSCA(estacionesSaoPaulo, 'sao-paulo', 'cities'),
+    ...mapLineasUSCA(lineasSaoPaulo, 'sao-paulo', 'cities'),
+    // Santiago
+    ...mapEstacionesUSCA(estacionesSantiago, 'santiago', 'cities'),
+    ...mapLineasUSCA(lineasSantiago, 'santiago', 'cities'),
+    // Bogotá
+    ...mapEstacionesUSCA(estacionesBogota, 'bogota', 'cities'),
+    ...mapLineasUSCA(lineasBogota, 'bogota', 'cities'),
+    // Lima
+    ...mapEstacionesUSCA(estacionesLima, 'lima', 'cities'),
+    ...mapLineasUSCA(lineasLima, 'lima', 'cities'),
+    // Tokyo
+    ...mapEstacionesUSCA(estacionesTokyo, 'tokyo', 'cities'),
+    ...mapLineasUSCA(lineasTokyo, 'tokyo', 'cities'),
+    // Seoul
+    ...mapEstacionesUSCA(estacionesSeoul, 'seoul', 'cities'),
+    ...mapLineasUSCA(lineasSeoul, 'seoul', 'cities'),
+    // Singapore
+    ...mapEstacionesUSCA(estacionesSingapore, 'singapore', 'cities'),
+    ...mapLineasUSCA(lineasSingapore, 'singapore', 'cities'),
+    // Dubai
+    ...mapEstacionesUSCA(estacionesDubai, 'dubai', 'cities'),
+    ...mapLineasUSCA(lineasDubai, 'dubai', 'cities'),
+    // Sydney
+    ...mapEstacionesUSCA(estacionesSydney, 'sydney', 'cities'),
+    ...mapLineasUSCA(lineasSydney, 'sydney', 'cities'),
   ];
   return urls;
 }

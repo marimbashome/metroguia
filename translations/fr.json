@@ -1,929 +1,188 @@
 {
-  "meta": {
-    "siteName": "MetroGuia.mx",
-    "siteDescription": "Guide des transports publics au Mexique — Metro, Metrobús, Tram. Planifiez votre trajet.",
-    "homeTitle": "MetroGuia.mx — Votre guide du métro et des transports publics au Mexique"
-  },
   "nav": {
     "home": "Accueil",
+    "search": "Chercher un itinéraire",
     "cities": "Villes",
-    "routes": "Trajets",
-    "worldCup": "Coupe du Monde 2026",
-    "accommodation": "Hébergement",
-    "explore": "Explorer",
-    "search": "Chercher une station...",
-    "planRoute": "Planifier un trajet",
-    "language": "Langue",
-    "airports": "Aéroports",
-    "terminals": "Terminaux"
+    "mundial": "FIFA 2026"
   },
-  "home": {
-    "heroTitle": "Votre guide des transports publics au Mexique",
-    "heroSubtitle": "Planifiez votre trajet en métro, metrobús et tram. Gratuit, hors ligne, en temps réel.",
-    "searchPlaceholder": "Où voulez-vous aller?",
-    "stationsCount": "stations",
-    "linesCount": "lignes de transport",
-    "citiesCount": "villes",
-    "matchesCount": "matchs de la Coupe 2026",
-    "featuredCities": "Villes avec transports publics",
-    "fifa2026": "Coupe du Monde FIFA 2026",
-    "fifa2026Desc": "Le Mexique accueille la Coupe du Monde 2026. Utilisez les transports publics pour vous rendre aux stades.",
-    "hostCities": "Villes hôtes",
-    "viewSchedule": "Voir le calendrier",
-    "popularRoutes": "Trajets populaires",
-    "viewAllRoutes": "Voir tous les trajets",
-    "installApp": "Installer en tant qu'app",
-    "offlineReady": "Fonctionne hors ligne"
-  },
-  "station": {
-    "title": "Station {name}",
-    "line": "Ligne",
-    "lines": "Lignes",
-    "nearbyPlaces": "Lieux à proximité",
-    "accessibility": "Accessibilité",
-    "schedule": "Horaires",
-    "tips": "Conseils pour les touristes",
-    "connections": "Connexions",
-    "adjacentStations": "Stations proches",
-    "calculateRoute": "Calculer un trajet d'ici",
-    "touristDescription": "Informations touristiques",
-    "metroSystem": "Système de transport"
-  },
-  "line": {
-    "title": "Ligne {id}",
-    "stations": "Stations",
-    "stationCount": "{count} stations",
-    "terminals": "Terminus",
-    "length": "Longueur",
-    "travelTime": "Durée du trajet",
-    "schedule": "Horaires",
-    "frequency": "Fréquence",
-    "viewStation": "Voir la station",
-    "allLines": "Toutes les lignes"
+  "search": {
+    "placeholder": "Rechercher une station...",
+    "origin": "Départ",
+    "destination": "Arrivée",
+    "button": "Chercher un itinéraire",
+    "noResults": "Aucun résultat"
   },
   "route": {
-    "title": "Comment aller de {origin} à {destination} en métro",
-    "from": "De",
-    "to": "À",
-    "calculate": "Calculer le trajet",
-    "swap": "Inverser",
-    "result": "Résultat",
-    "stations": "stations",
     "transfers": "correspondances",
-    "estimatedTime": "Durée estimée",
-    "cost": "Coût",
-    "alternative": "Trajet alternatif",
-    "noRoute": "Aucun trajet trouvé entre ces stations",
-    "selectOrigin": "Sélectionnez l'origine",
-    "selectDestination": "Sélectionnez la destination",
-    "minutesAbbr": "min",
-    "pesos": "MXN"
+    "minutes": "minutes",
+    "stops": "arrêts",
+    "cost": "tarif",
+    "alternative": "Itinéraire alternatif",
+    "noRoute": "Aucun itinéraire disponible"
   },
-  "city": {
-    "stations": "Stations",
-    "lines": "Lignes",
-    "system": "Système de transport",
-    "coverage": "Couverture",
-    "dailyRiders": "Usagers quotidiens",
-    "viewAllStations": "Voir toutes les stations",
-    "viewAllLines": "Voir toutes les lignes",
-    "nearbyAccommodation": "Hébergement à proximité",
-    "touristGuide": "Guide touristique",
-    "worldCupVenue": "Siège de la Coupe 2026",
-    "cdmxSystem": "Métro + Tramway Léger",
-    "cdmxTitle": "Métro de Mexico City",
-    "touristicStationsSubtitle": "Les 6 stations touristiques les plus importantes",
-    "allLinesSubtitle": "Toutes les lignes du Métro de Mexico City"
+  "station": {
+    "nearbyPlaces": "Lieux à proximité",
+    "schedule": "Horaires",
+    "accessibility": "Accessibilité",
+    "tips": "Conseils",
+    "lines": "Lignes"
   },
-  "worldCup": {
-    "title": "Coupe du Monde FIFA 2026 au Mexique",
-    "subtitle": "Guide des transports publics pour les matchs de la Coupe",
-    "matches": "Matchs",
-    "matchDay": "Jour de match",
-    "stadium": "Stade",
-    "capacity": "Capacité",
-    "howToGet": "Comment s'y rendre",
-    "byMetro": "En métro",
-    "byBus": "En bus",
-    "byCar": "En voiture",
-    "tips": "Conseils pour le jour du match",
-    "fanZone": "Zone des fans",
-    "schedule": "Calendrier des matchs",
-    "ticketCost": "Coût du titre de transport",
-    "estAzteca": "Stade Azteca",
-    "estAkron": "Stade Akron",
-    "estBBVA": "Stade BBVA",
-    "matchDates": "Dates des matchs",
-    "viewRoute": "Voir l'itinéraire vers le stade",
-    "stadiumsHeading": "3 Stades Accueil",
-    "matchDateLabel": "Matches",
-    "tipsSubtitle": "Conseils pour utiliser les transports en commun pendant la Coupe du Monde",
-    "tipArriveEarly": "Arrivez à l'avance",
-    "tipArrivyEarlyDesc": "Prévoyez d'arriver 90 minutes à l'avance. Le métro est plein les jours de match.",
-    "tipBaggage": "Ne transportez pas de gros bagages",
-    "tipBaggageDesc": "Les gros sacs à dos peuvent ne pas être autorisés. Vérifiez la politique du stade.",
-    "tipCard": "Apportez une carte de transport",
-    "tipCardDesc": "La carte Movilidad (CDMX) est plus rapide que de payer en espèces. Rechargez-la à l'avance.",
-    "tipAvoidPeak": "Évitez les heures de pointe",
-    "tipAvoidPeakDesc": "Si possible, voyagez avant la fin du match précédent. Ce sera moins encombré.",
-    "tipOfflineMap": "Téléchargez la carte hors ligne",
-    "tipOfflineMapDesc": "Installez MetroGuia en tant qu'application PWA pour avoir les itinéraires disponibles sans internet.",
-    "tipBattery": "Gardez votre téléphone chargé",
-    "tipBatteryDesc": "La batterie est vitale. Emportez une batterie externe de secours en cas d'urgence.",
-    "calendar": "Calendrier",
-    "calendarTitle": "Calendrier FIFA 2026 au Mexique",
-    "calendarSubtitle": "13 matchs dans 3 villes — juin à juillet 2026",
-    "howToGetAzteca": "Comment se rendre au Stade Azteca",
-    "howToGetAkron": "Comment se rendre au Stade Akron",
-    "howToGetBBVA": "Comment se rendre au Stade BBVA",
-    "routeStepByStep": "Itinéraire étape par étape",
-    "totalTime": "Temps total",
-    "totalCost": "Coût total",
-    "transfers": "Correspondances",
-    "alternativeRoutes": "Itinéraires alternatifs",
-    "nearbyPOIs": "Points d'intérêt à proximité",
-    "restaurants": "Restaurants",
-    "services": "Services",
-    "lodging": "Hébergement",
-    "transport": "Transport",
-    "importantAlerts": "Alertes importantes",
-    "matchSchedule": "Calendrier des matchs",
-    "groupStage": "Phase de Groupes",
-    "roundOf16": "Huitièmes de Finale",
-    "quarterFinals": "Quarts de Finale",
-    "stadiumComparison": "Comparaison des stades",
-    "downloadPWA": "Téléchargez MetroGuia comme app",
-    "downloadPWADesc": "Accédez aux itinéraires vers les stades hors ligne",
-    "viewCalendar": "Voir le calendrier complet",
-    "backToHub": "Retour au hub Coupe du Monde 2026",
-    "metroCardWarning": "La carte Metro ne fonctionne PAS dans le Tren Ligero",
-    "walkWarning": "Marche de {minutes} minutes jusqu'au stade",
-    "heatWarning": "Températures extrêmes — restez hydraté",
-    "phaseBreakdown": "Répartition par phase",
-    "matchesInPhase": "{count} matchs",
-    "cityQuickLinks": "Itinéraires rapides vers chaque stade"
-  },
-  "accommodation": {
-    "title": "Logez près du métro",
-    "subtitle": "Trouvez un hébergement près des stations de métro à Mexico",
-    "viewListing": "Voir l'hébergement",
-    "perNight": "par nuit",
-    "bedrooms": "chambres",
-    "nearStation": "Près de",
-    "bookNow": "Réserver maintenant",
-    "marimbasHome": "Géré par Marimbas Home"
+  "mundial": {
+    "title": "Coupe du Monde FIFA 2026",
+    "howToGet": "Comment rejoindre le stade",
+    "matchDays": "Jours de match",
+    "transitTip": "Conseil transport"
   },
   "common": {
-    "back": "Retour",
-    "next": "Suivant",
-    "previous": "Précédent",
-    "close": "Fermer",
-    "loading": "Chargement...",
-    "error": "Erreur",
-    "notFound": "Non trouvé",
     "seeMore": "Voir plus",
-    "seeLess": "Voir moins",
-    "share": "Partager",
-    "copy": "Copier",
-    "copied": "Copié",
-    "offline": "Hors ligne",
-    "offlineMessage": "Vous naviguez hors ligne. Certaines fonctions peuvent ne pas être disponibles.",
-    "free": "Gratuit",
-    "km": "km",
-    "minutes": "minutes",
-    "hours": "heures"
+    "learnMore": "En savoir plus",
+    "backToCity": "Retour à la ville",
+    "allLines": "Toutes les lignes",
+    "allStations": "Toutes les stations",
+    "minutesWalk": "min à pied"
   },
   "footer": {
-    "madeWith": "Fait avec ❤️ pour les voyageurs au Mexique",
-    "privacy": "Confidentialité",
-    "about": "À propos",
-    "contact": "Contact",
-    "sitemap": "Plan du site"
+    "description": "Le guide de transport en commun le plus complet pour les touristes. Planifiez votre voyage avec le planificateur d'itinéraires BFS.",
+    "rights": "Tous droits réservés."
   },
-  "pwa": {
-    "installTitle": "Installer MetroGuia",
-    "installDesc": "Accédez hors ligne et calculez les trajets instantanément",
-    "install": "Installer",
-    "dismiss": "Plus tard"
-  },
-  "searchBar": {
-    "origin": "Origine",
-    "destination": "Destination",
-    "originPlaceholder": "Station de départ...",
-    "destinationPlaceholder": "Station de destination...",
-    "swapTitle": "Inverser l'origine et la destination",
-    "searchRoute": "Rechercher un Itinéraire",
-    "quickAzteca": "Stade Aztèque",
-    "quickAirport": "Aéroport",
-    "quickDowntown": "Centre Historique",
-    "quickCoyoacan": "Coyoacán"
-  },
-  "howItWorks": {
-    "title": "Comment ça marche",
-    "subtitle": "Planifiez votre voyage en 3 étapes, sans applications ni données mobiles",
-    "step1Title": "Recherchez votre itinéraire",
-    "step1Desc": "Entrez votre origine et destination. Le moteur de recherche trouve la station la plus proche avec saisie automatique.",
-    "step2Title": "Vérifiez les étapes",
-    "step2Desc": "Voyez les lignes, les correspondances, l'heure estimée et le coût. Inclut les alertes de sécurité et les conseils.",
-    "step3Title": "Voyagez comme un local",
-    "step3Desc": "Installez l'application (PWA) pour un accès hors ligne. Consultez votre itinéraire sans Internet dans le métro."
-  },
-  "comingSoon": {
-    "title": "Bientôt — 8 villes supplémentaires",
-    "explore": "Explorer"
-  },
-  "layout": {
-    "lines": "Lignes",
-    "worldCup": "Coupe du Monde 2026",
-    "accommodation": "Hébergement",
-    "cities": "Villes",
-    "resources": "Ressources",
-    "privacy": "Confidentialité",
-    "footerDesc": "Planificateur de transit urbain au Mexique. Calculez les itinéraires, explorez les stations et voyagez comme un local.",
-    "footerTagline": "CDMX · Guadalajara · Monterrey — Informations pour les touristes de la Coupe du Monde FIFA 2026",
-    "hostCitiesFifa": "Villes hôtes de la FIFA 2026",
-    "hostCitiesDesc": "Transport urbain guidé pour 3 villes hôtes mexicaines de la Coupe du Monde",
-    "guidedStations": "Stations guidées",
-    "transitLines": "Lignes de transit",
-    "activeCities": "Villes actives",
-    "fifaMatches": "Matchs de la FIFA au Mexique",
-    "network": "réseau"
+  "cdmx": {
+    "title": "Métro de Mexico — Guide Touristique",
+    "heroDesc": "195 stations, 12 lignes, 226 km. Le guide le plus complet du Métro de Mexico pour les visiteurs de la Coupe du Monde FIFA 2026."
   },
   "gdl": {
-    "title": "SITEUR Guadalajara",
-    "subtitle": "Tramway Léger · 4 Lignes + Mi Macro · 125 Stations",
-    "heroDesc": "Système rapide et efficace de Guadalajara. Connexion directe au Stade Akron pour la Coupe du Monde 2026.",
-    "planRoute": "Planifiez votre Trajet à Guadalajara",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du SITEUR",
-    "worldCupTitle": "FIFA Coupe du Monde 2026 à Guadalajara",
-    "worldCupDesc": "4 matchs au Stade Akron. Accès direct via SITEUR Ligne 3.",
-    "confirmedMatches": "Matchs Confirmés",
-    "lightRailLines": "Les 4 Lignes du Tramway Léger",
-    "miMacroTitle": "Mi Macro — Transit Rapide de Guadalajara",
-    "miMacroDesc": "2 lignes de bus à haut niveau de service (BRT) qui complètent le réseau du Tramway",
-    "exploreMiMacro": "Explorer Mi Macro",
-    "featuredStations": "Stations en Vedette",
-    "accommodationTitle": "Où se Loger à Guadalajara",
-    "accommodationDesc": "Du Centre Historique à Zapopan : options pour chaque budget",
-    "worldCupAccommodation": "Hébergement pour la Coupe du Monde FIFA 2026",
-    "stations": "Stations",
-    "operativeLines": "Lignes Opérationnelles",
-    "kilometers": "Kilomètres"
+    "title": "Tramway de Guadalajara — Guide Touristique",
+    "heroDesc": "Réseau de transport de Guadalajara. 48 stations, accès au Stadio Akron pour la FIFA 2026."
   },
   "mty": {
-    "title": "Metrorrey Monterrey",
-    "subtitle": "Métro 3 Lignes + Ecovía BRT · 83 Stations",
-    "heroDesc": "Système de transport moderne de Monterrey. Connexion directe au Stade BBVA pour la Coupe du Monde 2026.",
-    "planRoute": "Planifiez votre Trajet à Monterrey",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du Metrorrey",
-    "worldCupTitle": "FIFA Coupe du Monde 2026 à Monterrey",
-    "worldCupDesc": "4 matchs au Stade BBVA. Accès direct via Metrorrey Ligne 1.",
-    "confirmedMatches": "Matchs Confirmés",
-    "metroLines": "Les 3 Lignes du Metrorrey",
-    "ecoviaTitle": "Ecovía TransMetro — BRT",
-    "featuredStations": "Stations en Vedette",
-    "accommodationTitle": "Où se Loger à Monterrey",
-    "accommodationDesc": "Du Barrio Antiguo aux zones résidentielles — options pour tous les budgets.",
-    "worldCupAccommodation": "Hébergement pour la Coupe du Monde FIFA 2026",
-    "stations": "Stations",
-    "linesPlusBRT": "Lignes + BRT",
-    "kilometers": "Kilomètres",
-    "transportTip": "Conseil Transport",
-    "importantWarning": "Avertissement Important",
-    "ecoviaHeroDesc": "Système BRT haute capacité reliant Monterrey d'ouest en est.",
-    "ecoviaPlanRoute": "Planifiez votre itinéraire Ecovía",
-    "ecoviaPlanRouteDesc": "Calculez le meilleur itinéraire entre les stations BRT",
-    "ecoviaAllStations": "Les 42 stations Ecovía",
-    "westZone": "Zone Ouest",
-    "eastZone": "Zone Est",
-    "ecoviaFifaTitle": "Estadio BBVA · FIFA 2026",
-    "ecoviaFifaDesc": "Accédez au Estadio BBVA depuis Ecovía en correspondance aux stations de transfert :",
-    "transfer": "Correspondance",
-    "connectsWith": "Connecte avec :",
-    "scheduleAndFare": "Horaires et tarifs",
-    "nearbyPlaces": "Lieux à proximité",
-    "aboutStation": "À propos de cette station",
-    "usefulTips": "Conseils utiles",
-    "quickInfo": "Infos rapides",
-    "backToEcovia": "Retour à Ecovía",
-    "backToMonterrey": "Retour à Monterrey",
-    "viewLine": "Voir Ligne {id}",
-    "worldCup2026Guide": "Guide Coupe du Monde 2026",
-    "allStations": "Toutes les stations",
-    "connectedMunicipios": "Municipalités desservies",
-    "oneDayRoute": "Itinéraire d'une journée",
-    "stationNotFound": "Station introuvable",
-    "lineNotFound": "Ligne introuvable",
-    "fareInfo": "6,40 $ MXN avec carte FERIA",
-    "ecoviaFareInfo": "12 $ MXN avec carte FERIA",
-    "metroSchedule": "Lun-Sam 5h00-0h00, Dim 6h30-0h00",
-    "frequency": "Fréquence : 3-5 min aux heures de pointe",
-    "operativeLine": "Ligne en service",
-    "ecoviaSubtitle": "Bus à haut niveau de service · 42 stations · 30 kilomètres",
-    "bbvaAccess": "Accès au Estadio BBVA",
-    "bbvaAccessDesc": "Cette ligne vous connecte à toutes les options pour rejoindre le Estadio BBVA pour les matchs de la Coupe du Monde 2026."
-  },
-  "tourism": {
-    "title": "Tourisme au Mexique",
-    "subtitle": "Découvrez les destinations les plus emblématiques du Mexique en transport public",
-    "magicTowns": "Villages Magiques",
-    "archaeologicalZones": "Zones Archéologiques",
-    "heritageCities": "Villes Patrimoine",
-    "beaches": "Plages",
-    "magicNeighborhoods": "Quartiers Magiques",
-    "gastronomicRoutes": "Routes Gastronomiques",
-    "priorityDestinations": "Destinations Prioritaires",
-    "nature": "Nature",
-    "howToGet": "Comment s'y rendre",
-    "nearestStation": "Station la plus proche",
-    "viewMore": "Voir plus"
-  },
-  "airports": {
-    "title": "Aéroports au Mexique",
-    "subtitle": "Connexions aéroport-métro à travers le Mexique",
-    "metroConnection": "Connexion au métro",
-    "busConnection": "Connexion en bus",
-    "taxiTime": "Temps en taxi jusqu'au centre",
-    "viewTransitOptions": "Voir les options de transport"
+    "title": "Metrorrey — Guide de Transport Touristique",
+    "heroDesc": "Métro de Monterrey. 32 stations, connexion directe au Estadio BBVA pour la Coupe du Monde 2026."
   },
   "nyc": {
-    "title": "Guide du Métro de New York",
-    "subtitle": "MTA 24 Lignes · 472 Stations · Les 5 Arrondissements",
-    "heroDesc": "Naviguez à New York avec le guide complet du Métro MTA. Times Square, Grand Central, Wall Street. Hôte de la finale de la Coupe du Monde FIFA 2026.",
-    "planRoute": "Planifiez votre Trajet à New York",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du MTA",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Longueur du Réseau",
-    "featuredStations": "Stations Vedettes",
-    "worldCupTitle": "Finale de la Coupe du Monde FIFA 2026 à New York",
-    "worldCupDesc": "Match final au MetLife Stadium. Trajets express et informations porte à porte."
+    "title": "Métro de New York — Guide pour Touristes",
+    "heroDesc": "Le subway de New York. 472 stations, 24 lignes. Tout ce qu'il faut savoir pour se déplacer dans la Grosse Pomme."
   },
   "los-angeles": {
-    "title": "Guide du Métro de Los Angeles",
-    "subtitle": "Metro Rail · 21 Lignes · 106 Stations",
-    "heroDesc": "Explorez Los Angeles avec le système Metro. Connecte Downtown LA, Hollywood, Santa Monica, Long Beach. Guide du centre de divertissement.",
-    "planRoute": "Planifiez votre Trajet à Los Angeles",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du Metro LA",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Longueur du Réseau",
-    "featuredStations": "Stations Vedettes",
-    "worldCupTitle": "Sièges de la Coupe du Monde 2026",
-    "worldCupDesc": "Matches au SoFi Stadium. Guide de transport pour les sièges de la Coupe du Monde à Los Angeles."
-  },
-  "toronto": {
-    "title": "Système de Transport TTC Toronto",
-    "subtitle": "Métro + Tramway + Autobus · 4 Lignes · 78 Stations",
-    "heroDesc": "Explorez Toronto avec le système TTC Métro. Centre-ville, Entertainment District, Distillery District. Plus GO Transit régional.",
-    "planRoute": "Planifiez votre Trajet à Toronto",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du TTC",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Longueur du Réseau",
-    "featuredStations": "Stations Vedettes",
-    "worldCupTitle": "Coupe du Monde 2026 au Canada",
-    "worldCupDesc": "Matches à Toronto. Guide de transport pour ville-hôte canadienne de la Coupe du Monde."
-  },
-  "vancouver": {
-    "title": "Guide de TransLink Vancouver",
-    "subtitle": "SkyTrain · Canada Line · 79 Stations",
-    "heroDesc": "Naviguez à Vancouver avec SkyTrain et Canada Line vers l'aéroport. Centre-ville, Burnaby, Richmond. Transport de la porte du Pacifique.",
-    "planRoute": "Planifiez votre Trajet à Vancouver",
-    "planRouteDesc": "Calculez le meilleur trajet entre les stations du SkyTrain",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Longueur du Réseau",
-    "featuredStations": "Stations Vedettes",
-    "worldCupTitle": "Coupe du Monde 2026 au Canada",
-    "worldCupDesc": "Matches à Vancouver. Guide de transport pour ville-hôte canadienne de la Coupe du Monde."
+    "title": "Métro de Los Angeles — Guide Touristique",
+    "heroDesc": "Le Métro de Los Angeles. 106 stations, 21 lignes. Relie Hollywood, le centre-ville et l'aéroport LAX."
   },
   "houston": {
-    "title": "Guide Transport Houston",
-    "subtitle": "Texas · 3 Lignes · 39 Stations",
-    "heroDesc": "Guide complet du transport en commun à Houston, Texas. 3 lignes, 39 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Houston",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Houston",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "Métro de Houston — Guide pour Touristes",
+    "heroDesc": "Houston METRORail. 39 stations, accès direct au NRG Stadium pour la FIFA 2026."
   },
   "atlanta": {
-    "title": "Guide Transport Atlanta",
-    "subtitle": "Georgia · 4 Lignes · 38 Stations",
-    "heroDesc": "Guide complet du transport en commun à Atlanta, Georgia. 4 lignes, 38 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Atlanta",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Atlanta",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "MARTA Atlanta — Guide Touristique",
+    "heroDesc": "Système MARTA d'Atlanta. 38 stations. Connexion au Mercedes-Benz Stadium pour la Coupe du Monde 2026."
   },
   "philadelphia": {
-    "title": "Guide Transport Philadelphia",
-    "subtitle": "Pennsylvania · 8 Lignes · 156 Stations",
-    "heroDesc": "Guide complet du transport en commun à Philadelphia, Pennsylvania. 8 lignes, 156 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Philadelphia",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Philadelphia",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "SEPTA Philadelphie — Guide de Transport",
+    "heroDesc": "Métro et train de Philadelphie. 156 stations, 8 lignes. Inclut l'accès au Lincoln Financial Field."
   },
   "seattle": {
-    "title": "Guide Transport Seattle",
-    "subtitle": "Washington · 3 Lignes · 25 Stations",
-    "heroDesc": "Guide complet du transport en commun à Seattle, Washington. 3 lignes, 25 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Seattle",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Seattle",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "Light Rail de Seattle — Guide Touristique",
+    "heroDesc": "Link Light Rail de Seattle. 25 stations, connexion directe au Lumen Field (FIFA 2026)."
   },
   "san-francisco": {
-    "title": "Guide Transport San Francisco",
-    "subtitle": "California · 15 Lignes · 147 Stations",
-    "heroDesc": "Guide complet du transport en commun à San Francisco, California. 15 lignes, 147 stations.",
-    "planRoute": "Planifiez votre Itinéraire à San Francisco",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de San Francisco",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "BART San Francisco — Guide Touristique",
+    "heroDesc": "BART + Muni de San Francisco. 147 stations. Relie SFO, Oakland et la Silicon Valley."
   },
   "boston": {
-    "title": "Guide Transport Boston",
-    "subtitle": "Massachusetts · 7 Lignes · 155 Stations",
-    "heroDesc": "Guide complet du transport en commun à Boston, Massachusetts. 7 lignes, 155 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Boston",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Boston",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "MBTA Boston — Guide du T",
+    "heroDesc": "Le T de Boston (MBTA). 155 stations, 7 lignes de métro. Le réseau de transport le plus ancien des États-Unis."
   },
   "miami": {
-    "title": "Guide Transport Miami",
-    "subtitle": "Florida · 5 Lignes · 45 Stations",
-    "heroDesc": "Guide complet du transport en commun à Miami, Florida. 5 lignes, 45 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Miami",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Miami",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "Metromover Miami — Guide Touristique",
+    "heroDesc": "Metromover + Metrorail de Miami. 45 stations. Connexion au Hard Rock Stadium pour la FIFA 2026."
   },
   "dallas": {
-    "title": "Guide Transport Dallas",
-    "subtitle": "Texas · 6 Lignes · 64 Stations",
-    "heroDesc": "Guide complet du transport en commun à Dallas, Texas. 6 lignes, 64 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Dallas",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Dallas",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "DART Dallas — Guide de Transport",
+    "heroDesc": "DART Rail de Dallas. 64 stations, 6 lignes. Relie le centre-ville à l'aéroport DFW."
   },
   "kansas-city": {
-    "title": "Guide Transport Kansas City",
-    "subtitle": "Missouri · 2 Lignes · 16 Stations",
-    "heroDesc": "Guide complet du transport en commun à Kansas City, Missouri. 2 lignes, 16 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Kansas City",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Kansas City",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "Transport Kansas City — Guide FIFA 2026",
+    "heroDesc": "Transport de Kansas City. Ville hôte de l'Arrowhead Stadium pour la Coupe du Monde FIFA 2026."
+  },
+  "toronto": {
+    "title": "TTC Toronto — Guide Touristique",
+    "heroDesc": "Subway TTC de Toronto. 75 stations, 6 lignes. Ville hôte FIFA 2026 avec matches au BMO Field."
+  },
+  "vancouver": {
+    "title": "SkyTrain Vancouver — Guide Touristique",
+    "heroDesc": "SkyTrain de Vancouver. 53 stations, 5 lignes. Le plus grand réseau automatisé d'Amérique du Nord."
   },
   "chicago": {
-    "title": "Guide Transport Chicago",
-    "subtitle": "Illinois · 8 Lignes · 145 Stations",
-    "heroDesc": "Guide complet du transport en commun à Chicago, Illinois. 8 lignes, 145 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Chicago",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Chicago",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "CTA L Chicago — Guide Touristique",
+    "heroDesc": "Le L de Chicago (CTA). 145 stations, 8 lignes autour du Loop. Système emblématique de la Ville des Vents."
   },
   "washington-dc": {
-    "title": "Guide Transport Washington D.C.",
-    "subtitle": "District of Columbia · 6 Lignes · 97 Stations",
-    "heroDesc": "Guide complet du transport en commun à Washington D.C., District of Columbia. 6 lignes, 97 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Washington D.C.",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Washington D.C.",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "WMATA Metro DC — Guide Touristique",
+    "heroDesc": "Métro de Washington D.C. 97 stations, 6 lignes. Accès à tous les monuments nationaux."
   },
   "portland": {
-    "title": "Guide Transport Portland",
-    "subtitle": "Oregon · 6 Lignes · 97 Stations",
-    "heroDesc": "Guide complet du transport en commun à Portland, Oregon. 6 lignes, 97 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Portland",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Portland",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "MAX Portland — Guide Touristique",
+    "heroDesc": "MAX Light Rail de Portland. 97 stations, 6 lignes. La ville avec le meilleur transport en commun du Pacifique Nord-Ouest."
   },
   "denver": {
-    "title": "Guide Transport Denver",
-    "subtitle": "Colorado · 7 Lignes · 53 Stations",
-    "heroDesc": "Guide complet du transport en commun à Denver, Colorado. 7 lignes, 53 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Denver",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Denver",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+    "title": "RTD Denver — Guide Touristique",
+    "heroDesc": "RTD Light Rail de Denver. 53 stations, 7 lignes. Connexion à l'aéroport international de Denver (DEN)."
   },
-  "salt-lake-city": {
-    "title": "Guide Transport Salt Lake City",
-    "subtitle": "Utah · 5 Lignes · 50 Stations",
-    "heroDesc": "Guide complet du transport en commun à Salt Lake City, Utah. 5 lignes, 50 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Salt Lake City",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Salt Lake City",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "london": {
+    "title": "Métro de Londres — Guide Touristique",
+    "heroDesc": "Le Tube de Londres. 272 stations, 11 lignes. Le système de métro le plus ancien du monde, reliant toutes les attractions de Londres."
   },
-  "sacramento": {
-    "title": "Guide Transport Sacramento",
-    "subtitle": "California · 3 Lignes · 52 Stations",
-    "heroDesc": "Guide complet du transport en commun à Sacramento, California. 3 lignes, 52 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Sacramento",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Sacramento",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "paris": {
+    "title": "Métro de Paris — Guide Touristique",
+    "heroDesc": "Le Métro de Paris. 303 stations, 16 lignes. Le moyen le plus rapide d'explorer la Ville Lumière."
   },
-  "san-diego": {
-    "title": "Guide Transport San Diego",
-    "subtitle": "California · 4 Lignes · 54 Stations",
-    "heroDesc": "Guide complet du transport en commun à San Diego, California. 4 lignes, 54 stations.",
-    "planRoute": "Planifiez votre Itinéraire à San Diego",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de San Diego",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "madrid": {
+    "title": "Métro de Madrid — Guide Touristique",
+    "heroDesc": "Métro de Madrid. 302 stations, 13 lignes. Le plus grand réseau de métro d'Espagne et d'Europe occidentale."
   },
-  "minneapolis": {
-    "title": "Guide Transport Minneapolis",
-    "subtitle": "Minnesota · 3 Lignes · 38 Stations",
-    "heroDesc": "Guide complet du transport en commun à Minneapolis, Minnesota. 3 lignes, 38 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Minneapolis",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Minneapolis",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "berlin": {
+    "title": "U-Bahn et S-Bahn de Berlin — Guide Touristique",
+    "heroDesc": "Le train urbain de Berlin. U-Bahn + S-Bahn avec plus de 300 stations reliant chaque quartier de la capitale."
   },
-  "charlotte": {
-    "title": "Guide Transport Charlotte",
-    "subtitle": "North Carolina · 2 Lignes · 26 Stations",
-    "heroDesc": "Guide complet du transport en commun à Charlotte, North Carolina. 2 lignes, 26 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Charlotte",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Charlotte",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "barcelona": {
+    "title": "Métro de Barcelone — Guide Touristique",
+    "heroDesc": "Métro de Barcelone. 160 stations, 12 lignes. Relie les Ramblas, la Sagrada Família et le Camp Nou."
   },
-  "phoenix": {
-    "title": "Guide Transport Phoenix",
-    "subtitle": "Arizona · 2 Lignes · 35 Stations",
-    "heroDesc": "Guide complet du transport en commun à Phoenix, Arizona. 2 lignes, 35 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Phoenix",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Phoenix",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "tokyo": {
+    "title": "Métro de Tokyo — Guide Touristique",
+    "heroDesc": "Le métro de Tokyo. Plus de 280 stations, 13 lignes. Le réseau de transport le plus ponctuel au monde."
   },
-  "baltimore": {
-    "title": "Guide Transport Baltimore",
-    "subtitle": "Maryland · 3 Lignes · 44 Stations",
-    "heroDesc": "Guide complet du transport en commun à Baltimore, Maryland. 3 lignes, 44 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Baltimore",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Baltimore",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "seoul": {
+    "title": "Métro de Séoul — Guide Touristique",
+    "heroDesc": "Subway de Séoul. Plus de 300 stations, 9 lignes. Relie Gangnam, Hongdae et tous les hauts lieux de la culture K."
   },
-  "cleveland": {
-    "title": "Guide Transport Cleveland",
-    "subtitle": "Ohio · 4 Lignes · 52 Stations",
-    "heroDesc": "Guide complet du transport en commun à Cleveland, Ohio. 4 lignes, 52 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Cleveland",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Cleveland",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "singapore": {
+    "title": "MRT de Singapour — Guide Touristique",
+    "heroDesc": "MRT de Singapour. 130 stations, 6 lignes. La façon la plus efficace d'explorer la Cité du Lion."
   },
-  "buffalo": {
-    "title": "Guide Transport Buffalo",
-    "subtitle": "New York · 1 Lignes · 14 Stations",
-    "heroDesc": "Guide complet du transport en commun à Buffalo, New York. 1 lignes, 14 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Buffalo",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Buffalo",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "dubai": {
+    "title": "Métro de Dubaï — Guide Touristique",
+    "heroDesc": "Métro de Dubaï. 53 stations, 2 lignes. Relie le Dubai Mall, le Burj Khalifa et la Marina de Dubaï."
   },
-  "new-orleans": {
-    "title": "Guide Transport New Orleans",
-    "subtitle": "Louisiana · 5 Lignes · 50 Stations",
-    "heroDesc": "Guide complet du transport en commun à New Orleans, Louisiana. 5 lignes, 50 stations.",
-    "planRoute": "Planifiez votre Itinéraire à New Orleans",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de New Orleans",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "sydney": {
+    "title": "Métro et Train de Sydney — Guide Touristique",
+    "heroDesc": "Le réseau ferroviaire de Sydney. Plus de 175 stations. Relie l'Opéra, Bondi Beach et bien plus encore."
   },
-  "st-louis": {
-    "title": "Guide Transport St. Louis",
-    "subtitle": "Missouri · 2 Lignes · 38 Stations",
-    "heroDesc": "Guide complet du transport en commun à St. Louis, Missouri. 2 lignes, 38 stations.",
-    "planRoute": "Planifiez votre Itinéraire à St. Louis",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de St. Louis",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "buenos-aires": {
+    "title": "Subte de Buenos Aires — Guide Touristique",
+    "heroDesc": "Métro de Buenos Aires. 89 stations, 6 lignes. Le métro le plus ancien d'Amérique latine et de l'hémisphère Sud."
   },
-  "pittsburgh": {
-    "title": "Guide Transport Pittsburgh",
-    "subtitle": "Pennsylvania · 4 Lignes · 53 Stations",
-    "heroDesc": "Guide complet du transport en commun à Pittsburgh, Pennsylvania. 4 lignes, 53 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Pittsburgh",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Pittsburgh",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "sao-paulo": {
+    "title": "Métro de São Paulo — Guide Touristique",
+    "heroDesc": "Métro de São Paulo. 101 stations, 6 lignes. Relie l'Avenida Paulista, Pinheiros et tous les quartiers iconiques."
   },
-  "detroit": {
-    "title": "Guide Transport Detroit",
-    "subtitle": "Michigan · 2 Lignes · 20 Stations",
-    "heroDesc": "Guide complet du transport en commun à Detroit, Michigan. 2 lignes, 20 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Detroit",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Detroit",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "santiago": {
+    "title": "Métro de Santiago — Guide Touristique",
+    "heroDesc": "Métro de Santiago du Chili. 136 stations, 7 lignes. Le réseau le plus moderne et efficace d'Amérique latine."
   },
-  "san-jose": {
-    "title": "Guide Transport San Jose",
-    "subtitle": "California · 4 Lignes · 62 Stations",
-    "heroDesc": "Guide complet du transport en commun à San Jose, California. 4 lignes, 62 stations.",
-    "planRoute": "Planifiez votre Itinéraire à San Jose",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de San Jose",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "bogota": {
+    "title": "TransMilenio Bogotá — Guide Touristique",
+    "heroDesc": "TransMilenio de Bogotá. 138 stations. Le plus grand système BRT d'Amérique latine."
   },
-  "newark": {
-    "title": "Guide Transport Newark",
-    "subtitle": "New Jersey · 3 Lignes · 21 Stations",
-    "heroDesc": "Guide complet du transport en commun à Newark, New Jersey. 3 lignes, 21 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Newark",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Newark",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "honolulu": {
-    "title": "Guide Transport Honolulu",
-    "subtitle": "Hawaii · 1 Lignes · 21 Stations",
-    "heroDesc": "Guide complet du transport en commun à Honolulu, Hawaii. 1 lignes, 21 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Honolulu",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Honolulu",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "las-vegas": {
-    "title": "Guide Transport Las Vegas",
-    "subtitle": "Nevada · 1 Lignes · 7 Stations",
-    "heroDesc": "Guide complet du transport en commun à Las Vegas, Nevada. 1 lignes, 7 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Las Vegas",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Las Vegas",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "norfolk": {
-    "title": "Guide Transport Norfolk",
-    "subtitle": "Virginia · 1 Lignes · 11 Stations",
-    "heroDesc": "Guide complet du transport en commun à Norfolk, Virginia. 1 lignes, 11 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Norfolk",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Norfolk",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "tampa": {
-    "title": "Guide Transport Tampa",
-    "subtitle": "Florida · 1 Lignes · 11 Stations",
-    "heroDesc": "Guide complet du transport en commun à Tampa, Florida. 1 lignes, 11 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Tampa",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Tampa",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "austin": {
-    "title": "Guide Transport Austin",
-    "subtitle": "Texas · 1 Lignes · 9 Stations",
-    "heroDesc": "Guide complet du transport en commun à Austin, Texas. 1 lignes, 9 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Austin",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Austin",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "cincinnati": {
-    "title": "Guide Transport Cincinnati",
-    "subtitle": "Ohio · 1 Lignes · 8 Stations",
-    "heroDesc": "Guide complet du transport en commun à Cincinnati, Ohio. 1 lignes, 8 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Cincinnati",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Cincinnati",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "el-paso": {
-    "title": "Guide Transport El Paso",
-    "subtitle": "Texas · 2 Lignes · 10 Stations",
-    "heroDesc": "Guide complet du transport en commun à El Paso, Texas. 2 lignes, 10 stations.",
-    "planRoute": "Planifiez votre Itinéraire à El Paso",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de El Paso",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "jacksonville": {
-    "title": "Guide Transport Jacksonville",
-    "subtitle": "Florida · 1 Lignes · 8 Stations",
-    "heroDesc": "Guide complet du transport en commun à Jacksonville, Florida. 1 lignes, 8 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Jacksonville",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Jacksonville",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "milwaukee": {
-    "title": "Guide Transport Milwaukee",
-    "subtitle": "Wisconsin · 1 Lignes · 8 Stations",
-    "heroDesc": "Guide complet du transport en commun à Milwaukee, Wisconsin. 1 lignes, 8 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Milwaukee",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Milwaukee",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "nashville": {
-    "title": "Guide Transport Nashville",
-    "subtitle": "Tennessee · 1 Lignes · 7 Stations",
-    "heroDesc": "Guide complet du transport en commun à Nashville, Tennessee. 1 lignes, 7 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Nashville",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Nashville",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "oklahoma-city": {
-    "title": "Guide Transport Oklahoma City",
-    "subtitle": "Oklahoma · 1 Lignes · 8 Stations",
-    "heroDesc": "Guide complet du transport en commun à Oklahoma City, Oklahoma. 1 lignes, 8 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Oklahoma City",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Oklahoma City",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "orlando": {
-    "title": "Guide Transport Orlando",
-    "subtitle": "Florida · 1 Lignes · 16 Stations",
-    "heroDesc": "Guide complet du transport en commun à Orlando, Florida. 1 lignes, 16 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Orlando",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Orlando",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "san-juan": {
-    "title": "Guide Transport San Juan",
-    "subtitle": "Puerto Rico · 1 Lignes · 16 Stations",
-    "heroDesc": "Guide complet du transport en commun à San Juan, Puerto Rico. 1 lignes, 16 stations.",
-    "planRoute": "Planifiez votre Itinéraire à San Juan",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de San Juan",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "tucson": {
-    "title": "Guide Transport Tucson",
-    "subtitle": "Arizona · 1 Lignes · 14 Stations",
-    "heroDesc": "Guide complet du transport en commun à Tucson, Arizona. 1 lignes, 14 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Tucson",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Tucson",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "montreal": {
-    "title": "Guide Transport Montreal",
-    "subtitle": "Quebec · 5 Lignes · 68 Stations",
-    "heroDesc": "Guide complet du transport en commun à Montreal, Quebec. 5 lignes, 68 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Montreal",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Montreal",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "calgary": {
-    "title": "Guide Transport Calgary",
-    "subtitle": "Alberta · 3 Lignes · 45 Stations",
-    "heroDesc": "Guide complet du transport en commun à Calgary, Alberta. 3 lignes, 45 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Calgary",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Calgary",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "edmonton": {
-    "title": "Guide Transport Edmonton",
-    "subtitle": "Alberta · 2 Lignes · 18 Stations",
-    "heroDesc": "Guide complet du transport en commun à Edmonton, Alberta. 2 lignes, 18 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Edmonton",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Edmonton",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "ottawa": {
-    "title": "Guide Transport Ottawa",
-    "subtitle": "Ontario · 2 Lignes · 25 Stations",
-    "heroDesc": "Guide complet du transport en commun à Ottawa, Ontario. 2 lignes, 25 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Ottawa",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Ottawa",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "kitchener-waterloo": {
-    "title": "Guide Transport Kitchener-Waterloo",
-    "subtitle": "Ontario · 1 Lignes · 19 Stations",
-    "heroDesc": "Guide complet du transport en commun à Kitchener-Waterloo, Ontario. 1 lignes, 19 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Kitchener-Waterloo",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Kitchener-Waterloo",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
-  },
-  "mississauga": {
-    "title": "Guide Transport Mississauga",
-    "subtitle": "Ontario · 1 Lignes · 17 Stations",
-    "heroDesc": "Guide complet du transport en commun à Mississauga, Ontario. 1 lignes, 17 stations.",
-    "planRoute": "Planifiez votre Itinéraire à Mississauga",
-    "planRouteDesc": "Trouvez le meilleur itinéraire entre les stations de Mississauga",
-    "stations": "Stations",
-    "operativeLines": "Lignes",
-    "kilometers": "Réseau",
-    "featuredStations": "Stations en Vedette"
+  "lima": {
+    "title": "Métro de Lima — Guide Touristique",
+    "heroDesc": "Métro de Lima (Ligne 1). 26 stations. Le premier métro du Pérou reliant le centre-ville à Villa El Salvador."
   }
 }

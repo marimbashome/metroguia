@@ -1,929 +1,188 @@
 {
-  "meta": {
-    "siteName": "MetroGuia.mx",
-    "siteDescription": "Leitfaden für öffentliche Verkehrsmittel in Mexiko — Metro, Metrobús, Straßenbahn. Planen Sie Ihre Route.",
-    "homeTitle": "MetroGuia.mx — Ihr Leitfaden zur U-Bahn und zum öffentlichen Nahverkehr in Mexiko"
-  },
   "nav": {
     "home": "Startseite",
+    "search": "Route suchen",
     "cities": "Städte",
-    "routes": "Routen",
-    "worldCup": "Weltmeisterschaft 2026",
-    "accommodation": "Unterkunft",
-    "explore": "Erkunden",
-    "search": "Station suchen...",
-    "planRoute": "Route planen",
-    "language": "Sprache",
-    "airports": "Flughäfen",
-    "terminals": "Busbahnhöfe"
+    "mundial": "FIFA 2026"
   },
-  "home": {
-    "heroTitle": "Ihr Leitfaden zum öffentlichen Nahverkehr in Mexiko",
-    "heroSubtitle": "Planen Sie Ihre Route in der U-Bahn, dem Metrobús und der Straßenbahn. Kostenlos, offline, in Echtzeit.",
-    "searchPlaceholder": "Wohin möchten Sie fahren?",
-    "stationsCount": "Stationen",
-    "linesCount": "Verkehrslinien",
-    "citiesCount": "Städte",
-    "matchesCount": "Spiele der WM 2026",
-    "featuredCities": "Städte mit öffentlichen Verkehrsmitteln",
-    "fifa2026": "FIFA-Weltmeisterschaft 2026",
-    "fifa2026Desc": "Mexiko ist Gastgeber der Weltmeisterschaft 2026. Nutzen Sie öffentliche Verkehrsmittel, um zu den Stadien zu gelangen.",
-    "hostCities": "Gastgeberstädte",
-    "viewSchedule": "Zeitplan anzeigen",
-    "popularRoutes": "Beliebte Routen",
-    "viewAllRoutes": "Alle Routen anzeigen",
-    "installApp": "Als App installieren",
-    "offlineReady": "Funktioniert offline"
-  },
-  "station": {
-    "title": "Station {name}",
-    "line": "Linie",
-    "lines": "Linien",
-    "nearbyPlaces": "Orte in der Nähe",
-    "accessibility": "Barrierefreiheit",
-    "schedule": "Fahrplan",
-    "tips": "Tipps für Touristen",
-    "connections": "Verbindungen",
-    "adjacentStations": "Benachbarte Stationen",
-    "calculateRoute": "Route von hier aus berechnen",
-    "touristDescription": "Touristeninformationen",
-    "metroSystem": "Verkehrssystem"
-  },
-  "line": {
-    "title": "Linie {id}",
-    "stations": "Stationen",
-    "stationCount": "{count} Stationen",
-    "terminals": "Endhaltestellen",
-    "length": "Länge",
-    "travelTime": "Fahrtdauer",
-    "schedule": "Fahrplan",
-    "frequency": "Häufigkeit",
-    "viewStation": "Station anzeigen",
-    "allLines": "Alle Linien"
+  "search": {
+    "placeholder": "Station suchen...",
+    "origin": "Abfahrt",
+    "destination": "Ziel",
+    "button": "Route suchen",
+    "noResults": "Keine Ergebnisse"
   },
   "route": {
-    "title": "Wie man von {origin} nach {destination} mit der U-Bahn kommt",
-    "from": "Von",
-    "to": "Nach",
-    "calculate": "Route berechnen",
-    "swap": "Tauschen",
-    "result": "Ergebnis",
-    "stations": "Stationen",
-    "transfers": "Umsteigungen",
-    "estimatedTime": "Geschätzte Zeit",
-    "cost": "Kosten",
-    "alternative": "Alternative Route",
-    "noRoute": "Keine Route zwischen diesen Stationen gefunden",
-    "selectOrigin": "Startpunkt auswählen",
-    "selectDestination": "Ziel auswählen",
-    "minutesAbbr": "Min",
-    "pesos": "MXN"
-  },
-  "city": {
-    "stations": "Stationen",
-    "lines": "Linien",
-    "system": "Verkehrssystem",
-    "coverage": "Abdeckung",
-    "dailyRiders": "Tägliche Fahrgäste",
-    "viewAllStations": "Alle Stationen anzeigen",
-    "viewAllLines": "Alle Linien anzeigen",
-    "nearbyAccommodation": "Unterkunft in der Nähe",
-    "touristGuide": "Touristenführer",
-    "worldCupVenue": "Schauplatz der WM 2026",
-    "cdmxSystem": "U-Bahn + Stadtbahn",
-    "cdmxTitle": "Mexiko-Stadt U-Bahn",
-    "touristicStationsSubtitle": "Die 6 wichtigsten Touristenstationen",
-    "allLinesSubtitle": "Alle Mexiko-Stadt U-Bahn-Linien"
-  },
-  "worldCup": {
-    "title": "FIFA-Weltmeisterschaft 2026 in Mexiko",
-    "subtitle": "Leitfaden für öffentliche Verkehrsmittel zu den WM-Spielen",
-    "matches": "Spiele",
-    "matchDay": "Spieltag",
-    "stadium": "Stadion",
-    "capacity": "Kapazität",
-    "howToGet": "Anfahrtsweg",
-    "byMetro": "Mit der U-Bahn",
-    "byBus": "Mit dem Bus",
-    "byCar": "Mit dem Auto",
-    "tips": "Tipps für den Spieltag",
-    "fanZone": "Fanzone",
-    "schedule": "Spielplan",
-    "ticketCost": "Kosten für Fahrkarte",
-    "estAzteca": "Stadion Azteca",
-    "estAkron": "Stadion Akron",
-    "estBBVA": "Stadion BBVA",
-    "matchDates": "Spieltage",
-    "viewRoute": "Route zum Stadion ansehen",
-    "stadiumsHeading": "3 Austragungsstadien",
-    "matchDateLabel": "Spiele",
-    "tipsSubtitle": "Tipps für die Nutzung öffentlicher Verkehrsmittel während der Weltmeisterschaft",
-    "tipArriveEarly": "Komm früh an",
-    "tipArrivyEarlyDesc": "Planen Sie, 90 Minuten vorher anzukommen. Die U-Bahn ist an Spieltagen voll.",
-    "tipBaggage": "Tragen Sie kein großes Gepäck",
-    "tipBaggageDesc": "Große Rucksäcke sind möglicherweise nicht erlaubt. Überprüfen Sie die Stadionrichtlinie.",
-    "tipCard": "Bring eine Fahrkarte mit",
-    "tipCardDesc": "Die Movilidad-Karte (CDMX) ist schneller als bar zu bezahlen. Laden Sie es im Voraus auf.",
-    "tipAvoidPeak": "Vermeiden Sie Stoßzeiten",
-    "tipAvoidPeakDesc": "Falls möglich, fahren Sie vor Ende des vorherigen Spiels. Es wird weniger überlaufen sein.",
-    "tipOfflineMap": "Laden Sie die Offline-Karte herunter",
-    "tipOfflineMapDesc": "Installieren Sie MetroGuia als PWA-App, um Routen ohne Internet verfügbar zu haben.",
-    "tipBattery": "Halten Sie Ihr Telefon geladen",
-    "tipBatteryDesc": "Der Akku ist lebenswichtig. Führen Sie eine externe Batterie für Notfälle mit sich.",
-    "calendar": "Kalender",
-    "calendarTitle": "FIFA 2026 Kalender in Mexiko",
-    "calendarSubtitle": "13 Spiele in 3 Städten — Juni bis Juli 2026",
-    "howToGetAzteca": "So kommen Sie zum Estadio Azteca",
-    "howToGetAkron": "So kommen Sie zum Estadio Akron",
-    "howToGetBBVA": "So kommen Sie zum Estadio BBVA",
-    "routeStepByStep": "Schritt-für-Schritt-Route",
-    "totalTime": "Gesamtzeit",
-    "totalCost": "Gesamtkosten",
     "transfers": "Umstiege",
-    "alternativeRoutes": "Alternative Routen",
-    "nearbyPOIs": "Sehenswürdigkeiten in der Nähe",
-    "restaurants": "Restaurants",
-    "services": "Dienstleistungen",
-    "lodging": "Unterkunft",
-    "transport": "Transport",
-    "importantAlerts": "Wichtige Hinweise",
-    "matchSchedule": "Spielplan",
-    "groupStage": "Gruppenphase",
-    "roundOf16": "Achtelfinale",
-    "quarterFinals": "Viertelfinale",
-    "stadiumComparison": "Stadionvergleich",
-    "downloadPWA": "MetroGuia als App herunterladen",
-    "downloadPWADesc": "Routen zu den Stadien auch offline verfügbar",
-    "viewCalendar": "Vollständigen Kalender ansehen",
-    "backToHub": "Zurück zum WM 2026 Hub",
-    "metroCardWarning": "Die Metro-Karte funktioniert NICHT im Tren Ligero",
-    "walkWarning": "{minutes} Minuten Fußweg zum Stadion",
-    "heatWarning": "Extreme Temperaturen — bleiben Sie hydriert",
-    "phaseBreakdown": "Aufschlüsselung nach Phase",
-    "matchesInPhase": "{count} Spiele",
-    "cityQuickLinks": "Schnellrouten zu jedem Stadion"
+    "minutes": "Minuten",
+    "stops": "Haltestellen",
+    "cost": "Fahrpreis",
+    "alternative": "Alternative Route",
+    "noRoute": "Keine Route verfügbar"
   },
-  "accommodation": {
-    "title": "Unterkunft in der Nähe der U-Bahn",
-    "subtitle": "Finden Sie eine Unterkunft in der Nähe von U-Bahn-Stationen in Mexiko-Stadt",
-    "viewListing": "Unterkunft anzeigen",
-    "perNight": "pro Nacht",
-    "bedrooms": "Schlafzimmer",
-    "nearStation": "In der Nähe von",
-    "bookNow": "Jetzt buchen",
-    "marimbasHome": "Betrieben von Marimbas Home"
+  "station": {
+    "nearbyPlaces": "Nahegelegene Orte",
+    "schedule": "Fahrplan",
+    "accessibility": "Barrierefreiheit",
+    "tips": "Tipps",
+    "lines": "Linien"
+  },
+  "mundial": {
+    "title": "FIFA Weltmeisterschaft 2026",
+    "howToGet": "So kommen Sie ins Stadion",
+    "matchDays": "Spieltage",
+    "transitTip": "ÖPNV-Tipp"
   },
   "common": {
-    "back": "Zurück",
-    "next": "Weiter",
-    "previous": "Zurück",
-    "close": "Schließen",
-    "loading": "Wird geladen...",
-    "error": "Fehler",
-    "notFound": "Nicht gefunden",
-    "seeMore": "Mehr anzeigen",
-    "seeLess": "Weniger anzeigen",
-    "share": "Teilen",
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "offline": "Offline",
-    "offlineMessage": "Sie sind offline. Einige Funktionen sind möglicherweise nicht verfügbar.",
-    "free": "Kostenlos",
-    "km": "km",
-    "minutes": "Minuten",
-    "hours": "Stunden"
+    "seeMore": "Mehr sehen",
+    "learnMore": "Mehr erfahren",
+    "backToCity": "Zurück zur Stadt",
+    "allLines": "Alle Linien",
+    "allStations": "Alle Stationen",
+    "minutesWalk": "Min. zu Fuß"
   },
   "footer": {
-    "madeWith": "Mit ❤️ für Reisende in Mexiko gemacht",
-    "privacy": "Datenschutz",
-    "about": "Über uns",
-    "contact": "Kontakt",
-    "sitemap": "Sitemap"
+    "description": "Der vollständigste ÖPNV-Reiseführer für Touristen. Planen Sie Ihre Reise mit dem BFS-Routenplaner.",
+    "rights": "Alle Rechte vorbehalten."
   },
-  "pwa": {
-    "installTitle": "MetroGuia installieren",
-    "installDesc": "Greifen Sie offline zu und berechnen Sie Routen sofort",
-    "install": "Installieren",
-    "dismiss": "Später"
-  },
-  "searchBar": {
-    "origin": "Ausgangsort",
-    "destination": "Ziel",
-    "originPlaceholder": "Bahnhof starten...",
-    "destinationPlaceholder": "Zielbahnhof...",
-    "swapTitle": "Ausgangsort und Ziel vertauschen",
-    "searchRoute": "Route Suchen",
-    "quickAzteca": "Azteken-Stadion",
-    "quickAirport": "Flughafen",
-    "quickDowntown": "Historisches Zentrum",
-    "quickCoyoacan": "Coyoacán"
-  },
-  "howItWorks": {
-    "title": "Wie es funktioniert",
-    "subtitle": "Planen Sie Ihre Reise in 3 Schritten ohne Apps oder Mobilfunkdaten",
-    "step1Title": "Suchen Sie Ihre Route",
-    "step1Desc": "Geben Sie Ihren Ausgangsort und Ihr Ziel ein. Die Suche findet den nächstgelegenen Bahnhof mit Autovervollständigung.",
-    "step2Title": "Überprüfen Sie die Schritte",
-    "step2Desc": "Sehen Sie Linien, Umstiege, geschätzte Zeit und Kosten. Enthält Sicherheitswarnungen und Tipps.",
-    "step3Title": "Reisen Sie wie ein Einheimischer",
-    "step3Desc": "Installieren Sie die App (PWA) für Offline-Zugriff. Prüfen Sie Ihre Route ohne Internet in der U-Bahn."
-  },
-  "comingSoon": {
-    "title": "Kommt bald — 8 weitere Städte",
-    "explore": "Erkunden"
-  },
-  "layout": {
-    "lines": "Linien",
-    "worldCup": "Weltmeisterschaft 2026",
-    "accommodation": "Unterkunft",
-    "cities": "Städte",
-    "resources": "Ressourcen",
-    "privacy": "Datenschutz",
-    "footerDesc": "Planer für städtischen Nahverkehr in Mexiko. Berechnen Sie Routen, erkunden Sie Bahnhöfe und reisen Sie wie ein Einheimischer.",
-    "footerTagline": "CDMX · Guadalajara · Monterrey — Informationen für FIFA-Weltmeisterschaftstouristen 2026",
-    "hostCitiesFifa": "Gastgeberstädte der FIFA 2026",
-    "hostCitiesDesc": "Geführter Nahverkehr für 3 mexikanische Weltmeisterschaftsstädte",
-    "guidedStations": "Geführte Bahnhöfe",
-    "transitLines": "Transitlinien",
-    "activeCities": "Aktive Städte",
-    "fifaMatches": "FIFA-Spiele in Mexiko",
-    "network": "Netzwerk"
+  "cdmx": {
+    "title": "Mexico City Metro — Touristenführer",
+    "heroDesc": "195 Stationen, 12 Linien, 226 km. Der umfassendste Führer zur Metro von Mexiko-Stadt für Besucher der FIFA Weltmeisterschaft 2026."
   },
   "gdl": {
-    "title": "SITEUR Guadalajara",
-    "subtitle": "Straßenbahn · 4 Linien + Mi Macro · 125 Stationen",
-    "heroDesc": "Schnelles und effizientes System in Guadalajara. Direkte Verbindung zum Estadio Akron für die Weltmeisterschaft 2026.",
-    "planRoute": "Planen Sie Ihre Route in Guadalajara",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen SITEUR-Stationen",
-    "worldCupTitle": "FIFA-Weltmeisterschaft 2026 in Guadalajara",
-    "worldCupDesc": "4 Spiele im Estadio Akron. Direkter Zugang über SITEUR Linie 3.",
-    "confirmedMatches": "Bestätigte Spiele",
-    "lightRailLines": "Die 4 Straßenbahnlinien",
-    "miMacroTitle": "Mi Macro — Schnelltransit in Guadalajara",
-    "miMacroDesc": "2 Schnellbus-Transit (BRT)-Linien, die das Straßenbahnnetz ergänzen",
-    "exploreMiMacro": "Mi Macro erkunden",
-    "featuredStations": "Ausgewählte Stationen",
-    "accommodationTitle": "Wo Sie in Guadalajara übernachten",
-    "accommodationDesc": "Von der Altstadt bis Zapopan: Optionen für jeden Haushalt",
-    "worldCupAccommodation": "Unterkunft zur FIFA-Weltmeisterschaft 2026",
-    "stations": "Stationen",
-    "operativeLines": "Operative Linien",
-    "kilometers": "Kilometer"
+    "title": "Guadalajara Stadtbahn — Touristenführer",
+    "heroDesc": "Nahverkehrsnetz von Guadalajara. 48 Stationen, Route zum Estadio Akron für die FIFA 2026."
   },
   "mty": {
-    "title": "Metrorrey Monterrey",
-    "subtitle": "U-Bahn 3 Linien + Ecovía BRT · 83 Stationen",
-    "heroDesc": "Modernes Verkehrssystem in Monterrey. Direkte Verbindung zum Estadio BBVA für die Weltmeisterschaft 2026.",
-    "planRoute": "Planen Sie Ihre Route in Monterrey",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen Metrorrey-Stationen",
-    "worldCupTitle": "FIFA-Weltmeisterschaft 2026 in Monterrey",
-    "worldCupDesc": "4 Spiele im Estadio BBVA. Direkter Zugang über Metrorrey Linie 1.",
-    "confirmedMatches": "Bestätigte Spiele",
-    "metroLines": "Die 3 Metrorrey-Linien",
-    "ecoviaTitle": "Ecovía TransMetro — BRT",
-    "featuredStations": "Ausgewählte Stationen",
-    "accommodationTitle": "Wo Sie in Monterrey übernachten",
-    "accommodationDesc": "Von Barrio Antiguo bis zu Wohngebieten — Optionen für alle Budgets.",
-    "worldCupAccommodation": "Unterkunft zur FIFA-Weltmeisterschaft 2026",
-    "stations": "Stationen",
-    "linesPlusBRT": "Linien + BRT",
-    "kilometers": "Kilometer",
-    "transportTip": "Verkehrstipp",
-    "importantWarning": "Wichtige Warnung",
-    "ecoviaHeroDesc": "Hochleistungs-BRT-System, das Monterrey von West nach Ost verbindet.",
-    "ecoviaPlanRoute": "Planen Sie Ihre Ecovía-Route",
-    "ecoviaPlanRouteDesc": "Berechnen Sie die beste Route zwischen BRT-Stationen",
-    "ecoviaAllStations": "Alle 42 Ecovía-Stationen",
-    "westZone": "Westzone",
-    "eastZone": "Ostzone",
-    "ecoviaFifaTitle": "Estadio BBVA · FIFA 2026",
-    "ecoviaFifaDesc": "Erreichen Sie das Estadio BBVA über Ecovía mit Umstieg an Transferstationen:",
-    "transfer": "Umstieg",
-    "connectsWith": "Verbindet mit:",
-    "scheduleAndFare": "Fahrplan und Tarif",
-    "nearbyPlaces": "Orte in der Nähe",
-    "aboutStation": "Über diese Station",
-    "usefulTips": "Nützliche Tipps",
-    "quickInfo": "Kurzinfo",
-    "backToEcovia": "Zurück zur Ecovía",
-    "backToMonterrey": "Zurück nach Monterrey",
-    "viewLine": "Linie {id} anzeigen",
-    "worldCup2026Guide": "WM 2026 Guide",
-    "allStations": "Alle Stationen",
-    "connectedMunicipios": "Verbundene Gemeinden",
-    "oneDayRoute": "Tagesroute",
-    "stationNotFound": "Station nicht gefunden",
-    "lineNotFound": "Linie nicht gefunden",
-    "fareInfo": "6,40 $ MXN mit FERIA-Karte",
-    "ecoviaFareInfo": "12 $ MXN mit FERIA-Karte",
-    "metroSchedule": "Mo-Sa 5:00-0:00, So 6:30-0:00",
-    "frequency": "Taktung: Alle 3-5 Min. zur Hauptverkehrszeit",
-    "operativeLine": "Betriebslinie",
-    "ecoviaSubtitle": "Schnellbus · 42 Stationen · 30 Kilometer",
-    "bbvaAccess": "Zugang zum Estadio BBVA",
-    "bbvaAccessDesc": "Diese Linie verbindet Sie mit allen Optionen, um das Estadio BBVA für die WM 2026-Spiele zu erreichen."
-  },
-  "tourism": {
-    "title": "Tourismus in Mexiko",
-    "subtitle": "Entdecken Sie Mexikos ikonischste Ziele mit öffentlichen Verkehrsmitteln",
-    "magicTowns": "Magische Dörfer",
-    "archaeologicalZones": "Archäologische Zonen",
-    "heritageCities": "Welterbestädte",
-    "beaches": "Strände",
-    "magicNeighborhoods": "Magische Viertel",
-    "gastronomicRoutes": "Gastronomische Routen",
-    "priorityDestinations": "Prioritätsziele",
-    "nature": "Natur",
-    "howToGet": "Wie man dorthin kommt",
-    "nearestStation": "Nächste Station",
-    "viewMore": "Mehr anzeigen"
-  },
-  "airports": {
-    "title": "Flughäfen in Mexiko",
-    "subtitle": "Flughafen-U-Bahn-Verbindungen in ganz Mexiko",
-    "metroConnection": "U-Bahn-Verbindung",
-    "busConnection": "Busverbindung",
-    "taxiTime": "Taxizeit zur Innenstadt",
-    "viewTransitOptions": "Verkehrsoptionen anzeigen"
+    "title": "Metrorrey — Touristischer Reiseführer",
+    "heroDesc": "Metro Monterrey. 32 Stationen, Direktverbindung zum Estadio BBVA für die WM 2026."
   },
   "nyc": {
-    "title": "New York U-Bahn-Führer",
-    "subtitle": "MTA 24 Linien · 472 Stationen · Alle 5 Stadtteile",
-    "heroDesc": "Navigieren Sie durch New York mit dem umfassenden MTA-U-Bahn-Führer. Times Square, Grand Central, Wall Street. Gastgeber des FIFA-Weltmeisterschaftsfinales 2026.",
-    "planRoute": "Planen Sie Ihre Route in New York",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen MTA-Stationen",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netzlänge",
-    "featuredStations": "Ausgewählte Stationen",
-    "worldCupTitle": "Finale der FIFA-Weltmeisterschaft 2026 in New York",
-    "worldCupDesc": "Finalspiel im MetLife Stadium. Express-Routen und Tür-zu-Tür-Informationen."
+    "title": "New Yorker Subway — Touristenführer",
+    "heroDesc": "Die New Yorker U-Bahn. 472 Stationen, 24 Linien. Alles, was Sie wissen müssen, um sich in der Großen Apfel zu bewegen."
   },
   "los-angeles": {
-    "title": "Los Angeles U-Bahn-Führer",
-    "subtitle": "Metro Rail · 21 Linien · 106 Stationen",
-    "heroDesc": "Erkunden Sie Los Angeles mit dem Metro-System. Verbindet Downtown LA, Hollywood, Santa Monica, Long Beach. Unterhaltungs-Hub-Führer.",
-    "planRoute": "Planen Sie Ihre Route in Los Angeles",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen LA-Metro-Stationen",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netzlänge",
-    "featuredStations": "Ausgewählte Stationen",
-    "worldCupTitle": "Austragungsorte der Weltmeisterschaft 2026",
-    "worldCupDesc": "Matches im SoFi Stadium. Verkehrsleitfaden für die Austragungsorte der Weltmeisterschaft in Los Angeles."
-  },
-  "toronto": {
-    "title": "TTC Toronto Verkehrssystem",
-    "subtitle": "U-Bahn + Straßenbahn + Bus · 4 Linien · 78 Stationen",
-    "heroDesc": "Erkunden Sie Toronto mit dem TTC-U-Bahn-System. Innenstadt, Entertainment District, Distillery District. Plus GO Transit Regional.",
-    "planRoute": "Planen Sie Ihre Route in Toronto",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen TTC-Stationen",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netzlänge",
-    "featuredStations": "Ausgewählte Stationen",
-    "worldCupTitle": "Weltmeisterschaft 2026 in Kanada",
-    "worldCupDesc": "Matches in Toronto. Verkehrsleitfaden für kanadische Gastgeberstadt der Weltmeisterschaft."
-  },
-  "vancouver": {
-    "title": "TransLink Vancouver Führer",
-    "subtitle": "SkyTrain · Canada Line · 79 Stationen",
-    "heroDesc": "Navigieren Sie durch Vancouver mit SkyTrain und Canada Line zum Flughafen. Innenstadt, Burnaby, Richmond. Verkehr des Pazifiktors.",
-    "planRoute": "Planen Sie Ihre Route in Vancouver",
-    "planRouteDesc": "Berechnen Sie die beste Route zwischen SkyTrain-Stationen",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netzlänge",
-    "featuredStations": "Ausgewählte Stationen",
-    "worldCupTitle": "Weltmeisterschaft 2026 in Kanada",
-    "worldCupDesc": "Matches in Vancouver. Verkehrsleitfaden für kanadische Gastgeberstadt der Weltmeisterschaft."
+    "title": "LA Metro — Touristischer Reiseführer",
+    "heroDesc": "Die Metro von Los Angeles. 106 Stationen, 21 Linien. Verbindet Hollywood, Downtown und den Flughafen LAX."
   },
   "houston": {
-    "title": "Houston Nahverkehrsführer",
-    "subtitle": "Texas · 3 Linien · 39 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Houston, Texas. 3 Linien, 39 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Houston",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Houston",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Houston Metro — Touristenführer",
+    "heroDesc": "Houston METRORail. 39 Stationen, direkter Zugang zum NRG Stadium für die FIFA 2026."
   },
   "atlanta": {
-    "title": "Atlanta Nahverkehrsführer",
-    "subtitle": "Georgia · 4 Linien · 38 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Atlanta, Georgia. 4 Linien, 38 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Atlanta",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Atlanta",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "MARTA Atlanta — Touristenführer",
+    "heroDesc": "Atlantas MARTA-System. 38 Stationen. Verbindung zum Mercedes-Benz Stadium für die WM 2026."
   },
   "philadelphia": {
-    "title": "Philadelphia Nahverkehrsführer",
-    "subtitle": "Pennsylvania · 8 Linien · 156 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Philadelphia, Pennsylvania. 8 Linien, 156 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Philadelphia",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Philadelphia",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "SEPTA Philadelphia — Verkehrsführer",
+    "heroDesc": "U-Bahn und Zug in Philadelphia. 156 Stationen, 8 Linien. Einschließlich Zugang zum Lincoln Financial Field."
   },
   "seattle": {
-    "title": "Seattle Nahverkehrsführer",
-    "subtitle": "Washington · 3 Linien · 25 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Seattle, Washington. 3 Linien, 25 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Seattle",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Seattle",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Seattle Light Rail — Touristenführer",
+    "heroDesc": "Link Light Rail in Seattle. 25 Stationen, Direktverbindung zum Lumen Field (FIFA 2026)."
   },
   "san-francisco": {
-    "title": "San Francisco Nahverkehrsführer",
-    "subtitle": "California · 15 Linien · 147 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für San Francisco, California. 15 Linien, 147 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in San Francisco",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in San Francisco",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "BART San Francisco — Touristenführer",
+    "heroDesc": "BART + Muni in San Francisco. 147 Stationen. Verbindet SFO, Oakland und das Silicon Valley."
   },
   "boston": {
-    "title": "Boston Nahverkehrsführer",
-    "subtitle": "Massachusetts · 7 Linien · 155 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Boston, Massachusetts. 7 Linien, 155 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Boston",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Boston",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "MBTA Boston — T-Reiseführer",
+    "heroDesc": "Bostons T (MBTA). 155 Stationen, 7 U-Bahn-Linien. Das älteste Nahverkehrsnetz der USA."
   },
   "miami": {
-    "title": "Miami Nahverkehrsführer",
-    "subtitle": "Florida · 5 Linien · 45 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Miami, Florida. 5 Linien, 45 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Miami",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Miami",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Miami Metromover — Touristenführer",
+    "heroDesc": "Metromover + Metrorail Miami. 45 Stationen. Verbindung zum Hard Rock Stadium für die FIFA 2026."
   },
   "dallas": {
-    "title": "Dallas Nahverkehrsführer",
-    "subtitle": "Texas · 6 Linien · 64 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Dallas, Texas. 6 Linien, 64 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Dallas",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Dallas",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "DART Dallas — Verkehrsführer",
+    "heroDesc": "DART Rail in Dallas. 64 Stationen, 6 Linien. Verbindet die Innenstadt mit dem Flughafen DFW."
   },
   "kansas-city": {
-    "title": "Kansas City Nahverkehrsführer",
-    "subtitle": "Missouri · 2 Linien · 16 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Kansas City, Missouri. 2 Linien, 16 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Kansas City",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Kansas City",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Kansas City Nahverkehr — FIFA 2026 Führer",
+    "heroDesc": "Nahverkehr in Kansas City. Gastgeberstadt des Arrowhead Stadium für die FIFA Weltmeisterschaft 2026."
+  },
+  "toronto": {
+    "title": "TTC Toronto — Touristenführer",
+    "heroDesc": "Toronto TTC Subway. 75 Stationen, 6 Linien. Gastgeberstadt der FIFA 2026 mit Spielen im BMO Field."
+  },
+  "vancouver": {
+    "title": "Vancouver SkyTrain — Touristenführer",
+    "heroDesc": "SkyTrain Vancouver. 53 Stationen, 5 Linien. Das größte automatisierte Nahverkehrsnetz Nordamerikas."
   },
   "chicago": {
-    "title": "Chicago Nahverkehrsführer",
-    "subtitle": "Illinois · 8 Linien · 145 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Chicago, Illinois. 8 Linien, 145 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Chicago",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Chicago",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Chicago CTA L — Touristenführer",
+    "heroDesc": "Chicagos L (CTA). 145 Stationen, 8 Linien im Loop. Das ikonische System der Windy City."
   },
   "washington-dc": {
-    "title": "Washington D.C. Nahverkehrsführer",
-    "subtitle": "District of Columbia · 6 Linien · 97 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Washington D.C., District of Columbia. 6 Linien, 97 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Washington D.C.",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Washington D.C.",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "WMATA Metro DC — Touristenführer",
+    "heroDesc": "Washington D.C. Metro. 97 Stationen, 6 Linien. Zugang zu allen nationalen Denkmälern und Museen."
   },
   "portland": {
-    "title": "Portland Nahverkehrsführer",
-    "subtitle": "Oregon · 6 Linien · 97 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Portland, Oregon. 6 Linien, 97 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Portland",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Portland",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Portland MAX — Touristenführer",
+    "heroDesc": "Portland MAX Light Rail. 97 Stationen, 6 Linien. Die Stadt mit dem besten Nahverkehr im Pazifischen Nordwesten."
   },
   "denver": {
-    "title": "Denver Nahverkehrsführer",
-    "subtitle": "Colorado · 7 Linien · 53 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Denver, Colorado. 7 Linien, 53 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Denver",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Denver",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+    "title": "Denver RTD — Touristenführer",
+    "heroDesc": "Denver RTD Light Rail. 53 Stationen, 7 Linien. Direktverbindung zum Denver International Airport (DEN)."
   },
-  "salt-lake-city": {
-    "title": "Salt Lake City Nahverkehrsführer",
-    "subtitle": "Utah · 5 Linien · 50 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Salt Lake City, Utah. 5 Linien, 50 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Salt Lake City",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Salt Lake City",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "london": {
+    "title": "Londoner U-Bahn — Touristenführer",
+    "heroDesc": "Die Tube in London. 272 Stationen, 11 Linien. Das älteste U-Bahn-System der Welt, das alle Londoner Sehenswürdigkeiten verbindet."
   },
-  "sacramento": {
-    "title": "Sacramento Nahverkehrsführer",
-    "subtitle": "California · 3 Linien · 52 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Sacramento, California. 3 Linien, 52 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Sacramento",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Sacramento",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "paris": {
+    "title": "Pariser Métro — Touristenführer",
+    "heroDesc": "Die Pariser Métro. 303 Stationen, 16 Linien. Der schnellste Weg, die Stadt des Lichts zu erkunden."
   },
-  "san-diego": {
-    "title": "San Diego Nahverkehrsführer",
-    "subtitle": "California · 4 Linien · 54 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für San Diego, California. 4 Linien, 54 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in San Diego",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in San Diego",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "madrid": {
+    "title": "Madrider Metro — Touristenführer",
+    "heroDesc": "Metro Madrid. 302 Stationen, 13 Linien. Das größte U-Bahn-System Spaniens und Westeuropas."
   },
-  "minneapolis": {
-    "title": "Minneapolis Nahverkehrsführer",
-    "subtitle": "Minnesota · 3 Linien · 38 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Minneapolis, Minnesota. 3 Linien, 38 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Minneapolis",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Minneapolis",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "berlin": {
+    "title": "Berliner U-Bahn & S-Bahn — Touristenführer",
+    "heroDesc": "Berlins Stadtbahn. U-Bahn + S-Bahn mit über 300 Stationen, die jeden Winkel der Hauptstadt verbinden."
   },
-  "charlotte": {
-    "title": "Charlotte Nahverkehrsführer",
-    "subtitle": "North Carolina · 2 Linien · 26 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Charlotte, North Carolina. 2 Linien, 26 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Charlotte",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Charlotte",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "barcelona": {
+    "title": "Barcelona Metro — Touristenführer",
+    "heroDesc": "Metro Barcelona. 160 Stationen, 12 Linien. Verbindet Las Ramblas, Sagrada Família und Camp Nou."
   },
-  "phoenix": {
-    "title": "Phoenix Nahverkehrsführer",
-    "subtitle": "Arizona · 2 Linien · 35 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Phoenix, Arizona. 2 Linien, 35 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Phoenix",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Phoenix",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "tokyo": {
+    "title": "Tokioter Metro — Touristenführer",
+    "heroDesc": "Tokios Metro-System. Über 280 Stationen, 13 Linien. Das pünktlichste Nahverkehrsnetz der Welt."
   },
-  "baltimore": {
-    "title": "Baltimore Nahverkehrsführer",
-    "subtitle": "Maryland · 3 Linien · 44 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Baltimore, Maryland. 3 Linien, 44 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Baltimore",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Baltimore",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "seoul": {
+    "title": "Seouler Metro — Touristenführer",
+    "heroDesc": "Seouls Subway. Über 300 Stationen, 9 Linien. Verbindet Gangnam, Hongdae und alle K-Kultur-Hotspots."
   },
-  "cleveland": {
-    "title": "Cleveland Nahverkehrsführer",
-    "subtitle": "Ohio · 4 Linien · 52 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Cleveland, Ohio. 4 Linien, 52 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Cleveland",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Cleveland",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "singapore": {
+    "title": "Singapurer MRT — Touristenführer",
+    "heroDesc": "Singapurs MRT. 130 Stationen, 6 Linien. Der effizienteste Weg, die Löwenstadt zu erkunden."
   },
-  "buffalo": {
-    "title": "Buffalo Nahverkehrsführer",
-    "subtitle": "New York · 1 Linien · 14 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Buffalo, New York. 1 Linien, 14 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Buffalo",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Buffalo",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "dubai": {
+    "title": "Dubais Metro — Touristenführer",
+    "heroDesc": "Dubais Metro. 53 Stationen, 2 Linien. Verbindet das Dubai Mall, den Burj Khalifa und die Dubai Marina."
   },
-  "new-orleans": {
-    "title": "New Orleans Nahverkehrsführer",
-    "subtitle": "Louisiana · 5 Linien · 50 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für New Orleans, Louisiana. 5 Linien, 50 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in New Orleans",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in New Orleans",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "sydney": {
+    "title": "Sydneys Metro & Bahn — Touristenführer",
+    "heroDesc": "Sydneys Bahnnetz. Über 175 Stationen. Verbindet das Opernhaus, Bondi Beach und vieles mehr."
   },
-  "st-louis": {
-    "title": "St. Louis Nahverkehrsführer",
-    "subtitle": "Missouri · 2 Linien · 38 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für St. Louis, Missouri. 2 Linien, 38 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in St. Louis",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in St. Louis",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "buenos-aires": {
+    "title": "Buenos Aires Subte — Touristenführer",
+    "heroDesc": "U-Bahn Buenos Aires. 89 Stationen, 6 Linien. Die älteste Metro Lateinamerikas und der südlichen Hemisphäre."
   },
-  "pittsburgh": {
-    "title": "Pittsburgh Nahverkehrsführer",
-    "subtitle": "Pennsylvania · 4 Linien · 53 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Pittsburgh, Pennsylvania. 4 Linien, 53 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Pittsburgh",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Pittsburgh",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "sao-paulo": {
+    "title": "São Paulo Metrô — Touristenführer",
+    "heroDesc": "São Paulos Metro. 101 Stationen, 6 Linien. Verbindet die Avenida Paulista, Pinheiros und alle ikonischen Stadtteile."
   },
-  "detroit": {
-    "title": "Detroit Nahverkehrsführer",
-    "subtitle": "Michigan · 2 Linien · 20 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Detroit, Michigan. 2 Linien, 20 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Detroit",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Detroit",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "santiago": {
+    "title": "Santiagos Metro — Touristenführer",
+    "heroDesc": "Metro Santiago de Chile. 136 Stationen, 7 Linien. Das modernste und effizienteste Netz Lateinamerikas."
   },
-  "san-jose": {
-    "title": "San Jose Nahverkehrsführer",
-    "subtitle": "California · 4 Linien · 62 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für San Jose, California. 4 Linien, 62 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in San Jose",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in San Jose",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "bogota": {
+    "title": "TransMilenio Bogotá — Touristenführer",
+    "heroDesc": "TransMilenio Bogotá. 138 Stationen. Das größte BRT-System Lateinamerikas."
   },
-  "newark": {
-    "title": "Newark Nahverkehrsführer",
-    "subtitle": "New Jersey · 3 Linien · 21 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Newark, New Jersey. 3 Linien, 21 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Newark",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Newark",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "honolulu": {
-    "title": "Honolulu Nahverkehrsführer",
-    "subtitle": "Hawaii · 1 Linien · 21 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Honolulu, Hawaii. 1 Linien, 21 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Honolulu",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Honolulu",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "las-vegas": {
-    "title": "Las Vegas Nahverkehrsführer",
-    "subtitle": "Nevada · 1 Linien · 7 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Las Vegas, Nevada. 1 Linien, 7 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Las Vegas",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Las Vegas",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "norfolk": {
-    "title": "Norfolk Nahverkehrsführer",
-    "subtitle": "Virginia · 1 Linien · 11 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Norfolk, Virginia. 1 Linien, 11 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Norfolk",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Norfolk",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "tampa": {
-    "title": "Tampa Nahverkehrsführer",
-    "subtitle": "Florida · 1 Linien · 11 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Tampa, Florida. 1 Linien, 11 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Tampa",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Tampa",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "austin": {
-    "title": "Austin Nahverkehrsführer",
-    "subtitle": "Texas · 1 Linien · 9 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Austin, Texas. 1 Linien, 9 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Austin",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Austin",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "cincinnati": {
-    "title": "Cincinnati Nahverkehrsführer",
-    "subtitle": "Ohio · 1 Linien · 8 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Cincinnati, Ohio. 1 Linien, 8 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Cincinnati",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Cincinnati",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "el-paso": {
-    "title": "El Paso Nahverkehrsführer",
-    "subtitle": "Texas · 2 Linien · 10 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für El Paso, Texas. 2 Linien, 10 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in El Paso",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in El Paso",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "jacksonville": {
-    "title": "Jacksonville Nahverkehrsführer",
-    "subtitle": "Florida · 1 Linien · 8 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Jacksonville, Florida. 1 Linien, 8 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Jacksonville",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Jacksonville",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "milwaukee": {
-    "title": "Milwaukee Nahverkehrsführer",
-    "subtitle": "Wisconsin · 1 Linien · 8 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Milwaukee, Wisconsin. 1 Linien, 8 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Milwaukee",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Milwaukee",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "nashville": {
-    "title": "Nashville Nahverkehrsführer",
-    "subtitle": "Tennessee · 1 Linien · 7 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Nashville, Tennessee. 1 Linien, 7 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Nashville",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Nashville",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "oklahoma-city": {
-    "title": "Oklahoma City Nahverkehrsführer",
-    "subtitle": "Oklahoma · 1 Linien · 8 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Oklahoma City, Oklahoma. 1 Linien, 8 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Oklahoma City",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Oklahoma City",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "orlando": {
-    "title": "Orlando Nahverkehrsführer",
-    "subtitle": "Florida · 1 Linien · 16 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Orlando, Florida. 1 Linien, 16 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Orlando",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Orlando",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "san-juan": {
-    "title": "San Juan Nahverkehrsführer",
-    "subtitle": "Puerto Rico · 1 Linien · 16 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für San Juan, Puerto Rico. 1 Linien, 16 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in San Juan",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in San Juan",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "tucson": {
-    "title": "Tucson Nahverkehrsführer",
-    "subtitle": "Arizona · 1 Linien · 14 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Tucson, Arizona. 1 Linien, 14 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Tucson",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Tucson",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "montreal": {
-    "title": "Montreal Nahverkehrsführer",
-    "subtitle": "Quebec · 5 Linien · 68 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Montreal, Quebec. 5 Linien, 68 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Montreal",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Montreal",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "calgary": {
-    "title": "Calgary Nahverkehrsführer",
-    "subtitle": "Alberta · 3 Linien · 45 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Calgary, Alberta. 3 Linien, 45 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Calgary",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Calgary",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "edmonton": {
-    "title": "Edmonton Nahverkehrsführer",
-    "subtitle": "Alberta · 2 Linien · 18 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Edmonton, Alberta. 2 Linien, 18 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Edmonton",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Edmonton",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "ottawa": {
-    "title": "Ottawa Nahverkehrsführer",
-    "subtitle": "Ontario · 2 Linien · 25 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Ottawa, Ontario. 2 Linien, 25 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Ottawa",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Ottawa",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "kitchener-waterloo": {
-    "title": "Kitchener-Waterloo Nahverkehrsführer",
-    "subtitle": "Ontario · 1 Linien · 19 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Kitchener-Waterloo, Ontario. 1 Linien, 19 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Kitchener-Waterloo",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Kitchener-Waterloo",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
-  },
-  "mississauga": {
-    "title": "Mississauga Nahverkehrsführer",
-    "subtitle": "Ontario · 1 Linien · 17 Stationen",
-    "heroDesc": "Vollständiger Nahverkehrsführer für Mississauga, Ontario. 1 Linien, 17 Stationen.",
-    "planRoute": "Planen Sie Ihre Route in Mississauga",
-    "planRouteDesc": "Finden Sie die beste Route zwischen Stationen in Mississauga",
-    "stations": "Stationen",
-    "operativeLines": "Linien",
-    "kilometers": "Netz",
-    "featuredStations": "Ausgewählte Stationen"
+  "lima": {
+    "title": "Lima Metro — Touristenführer",
+    "heroDesc": "Metro Lima (Linie 1). 26 Stationen. Perus erste U-Bahn verbindet das Stadtzentrum mit Villa El Salvador."
   }
 }
