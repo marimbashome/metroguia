@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react'
 import { findRoute, findAlternativeRoute } from '@/lib/pathfinder'
 import { grafo } from '@/data/grafo'
 import { getRelatedRoutes } from '@/data/rutas-populares'
+import { STATION_DISPLAY_NAMES } from '@/data/rutas-engine'
 import { formatLineLabel, formatLineasUsadas, getLineColor } from '@/lib/lineLabels'
 import SearchBar from '@/app/components/SearchBar'
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy'
@@ -34,8 +35,36 @@ function parseSlug(slug) {
   return { origen: parts[0], destino: parts.slice(1).join('-a-') }
 }
 
-function matchStation(text) {
+// Per-city config for labels, costs, and official links
+const CIUDAD_CONFIG = {
+  cdmx: {
+    label: 'Metro CDMX · Ruta paso a paso',
+    tarjeta: 'Tarjeta de Movilidad Integrada — $6 MXN por viaje en Metro CDMX.',
+    sitio: 'https://www.metro.cdmx.gob.mx',
+    sitioLabel: 'metro.cdmx.gob.mx',
+    hub: '/cdmx/',
+  },
+  gdl: {
+    label: 'SITEUR GDL · Ruta paso a paso',
+    tarjeta: 'Tarjeta GDL — $9.50 MXN por viaje en Tren Ligero SITEUR.',
+    sitio: 'https://www.siteur.gob.mx',
+    sitioLabel: 'siteur.gob.mx',
+    hub: '/gdl/',
+  },
+  mty: {
+    label: 'Metrorrey MTY · Ruta paso a paso',
+    tarjeta: 'Tarjeta Feria — $4.50 MXN por viaje en Metrorrey.',
+    sitio: 'https://www.nl.gob.mx/servicios/metrorrey',
+    sitioLabel: 'nl.gob.mx',
+    hub: '/mty/',
+  },
+}
+
+function matchStation(text, ciudad = 'cdmx') {
   if (!text) return null
+  // For GDL/MTY, slugs from generateStaticParams are already canonical
+  if (ciudad !== 'cdmx') return text
+  // CDMX: fuzzy match against grafo
   const normalized = text.toLowerCase().replace(/-/g, ' ').trim()
   if (grafo[text]) return text
   const dashSlug = text.toLowerCase().replace(/\s+/g, '-')
@@ -64,7 +93,7 @@ function isMarimbasRoute(origenSlug, destinoSlug) {
   return MARIMBAS_TARGETS.has(origenSlug) || MARIMBAS_TARGETS.has(destinoSlug)
 }
 
-export default function RutaClient({ slug }) {
+export default function RutaClient({ slug, ciudad = 'cdmx' }) {
   const [ruta, setRuta] = useState(null)
   const [rutaAlt, setRutaAlt] = useState(null)
   const [activeTab, setActiveTab] = useState('A')
@@ -75,25 +104,31 @@ export default function RutaClient({ slug }) {
   const [error, setError] = useState(null)
   const [schemaJson, setSchemaJson] = useState(null)
 
-  const getStationName = (s) => (s && grafo[s]?.nombre) || s
+  // Resolve display name for any city's station slug
+  const getStationName = (s) => {
+    if (!s) return s
+    if (ciudad === 'cdmx') return grafo[s]?.nombre || STATION_DISPLAY_NAMES[s] || s
+    return STATION_DISPLAY_NAMES[s] || s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+  }
+  const ciudadCfg = CIUDAD_CONFIG[ciudad] || CIUDAD_CONFIG.cdmx
 
   useEffect(() => {
     let cancelled = false
 
     async function computeRoute() {
       const { origen, destino } = parseSlug(slug)
-      const origenSlugMatch = matchStation(origen)
-      const destinoSlugMatch = matchStation(destino)
+      const origenSlugMatch = matchStation(origen, ciudad)
+      const destinoSlugMatch = matchStation(destino, ciudad)
 
       if (cancelled) return
       setOrigenSlug(origenSlugMatch)
       setDestinoSlug(destinoSlugMatch)
 
-      if (origenSlugMatch && grafo[origenSlugMatch]) {
-        setOrigenNombre(grafo[origenSlugMatch].nombre)
+      if (origenSlugMatch) {
+        setOrigenNombre(getStationName(origenSlugMatch))
       }
-      if (destinoSlugMatch && grafo[destinoSlugMatch]) {
-        setDestinoNombre(grafo[destinoSlugMatch].nombre)
+      if (destinoSlugMatch) {
+        setDestinoNombre(getStationName(destinoSlugMatch))
       }
 
       if (!origenSlugMatch || !destinoSlugMatch) {
@@ -101,11 +136,11 @@ export default function RutaClient({ slug }) {
         return
       }
 
-      const resultado = await findRoute(origenSlugMatch, destinoSlugMatch, 'cdmx')
+      const resultado = await findRoute(origenSlugMatch, destinoSlugMatch, ciudad)
       if (cancelled) return
       setRuta(resultado)
 
-      const alt = await findAlternativeRoute(origenSlugMatch, destinoSlugMatch, 'cdmx')
+      const alt = await findAlternativeRoute(origenSlugMatch, destinoSlugMatch, ciudad)
       if (cancelled) return
       if (alt && alt.encontrada) setRutaAlt(alt)
 
@@ -116,8 +151,8 @@ export default function RutaClient({ slug }) {
         const tripSchema = {
           '@context': 'https://schema.org',
           '@type': 'Trip',
-          name: `Ruta de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre}`,
-          description: `Cómo llegar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} en Metro CDMX`,
+          name: `Ruta de ${getStationName(origenSlugMatch)} a ${getStationName(destinoSlugMatch)}`,
+          description: `Cómo llegar de ${getStationName(origenSlugMatch)} a ${getStationName(destinoSlugMatch)} en transporte público`,
           itinerary: {
             '@type': 'ItemList',
             itemListElement: resultado.pasos.map((paso, idx) => ({
@@ -142,8 +177,8 @@ export default function RutaClient({ slug }) {
             {
               '@type': 'ListItem',
               position: 3,
-              name: `${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre}`,
-              item: `https://metroguia.mx/ruta/${slug}`,
+              name: `${getStationName(origenSlugMatch)} a ${getStationName(destinoSlugMatch)}`,
+              item: `https://metroguia.mx/${ciudad !== 'cdmx' ? ciudad + '/' : ''}ruta/${slug}`,
             },
           ],
         }
@@ -151,8 +186,8 @@ export default function RutaClient({ slug }) {
         const howtoSchema = {
           '@context': 'https://schema.org',
           '@type': 'HowTo',
-          name: `Cómo llegar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} en Metro CDMX`,
-          description: `Guía paso a paso para viajar de ${grafo[origenSlugMatch].nombre} a ${grafo[destinoSlugMatch].nombre} en Metro de Ciudad de México.`,
+          name: `Cómo llegar de ${getStationName(origenSlugMatch)} a ${getStationName(destinoSlugMatch)} en transporte público`,
+          description: `Guía paso a paso para viajar de ${getStationName(origenSlugMatch)} a ${getStationName(destinoSlugMatch)} en transporte público.`,
           totalTime: `PT${estimatedMinutes}M`,
           estimatedCost: {
             '@type': 'MonetaryAmount',
@@ -218,7 +253,7 @@ export default function RutaClient({ slug }) {
       }}>
         <a href="/" style={{ color: 'var(--chiapas)', textDecoration: 'none', fontWeight: 600 }}>Inicio</a>
         <span style={{ margin: '0 0.5rem', opacity: 0.5 }}>/</span>
-        <a href="/cdmx/" style={{ color: 'var(--chiapas)', textDecoration: 'none', fontWeight: 600 }}>CDMX</a>
+        <a href={ciudadCfg.hub} style={{ color: 'var(--chiapas)', textDecoration: 'none', fontWeight: 600 }}>{ciudad.toUpperCase()}</a>
         {origenNombre && destinoNombre && (
           <>
             <span style={{ margin: '0 0.5rem', opacity: 0.5 }}>/</span>
@@ -249,7 +284,7 @@ export default function RutaClient({ slug }) {
             color: 'var(--amber)',
             marginBottom: '0.75rem',
           }}>
-            Metro CDMX · Ruta paso a paso
+            {ciudadCfg.label}
           </div>
 
           <h1
@@ -577,11 +612,12 @@ export default function RutaClient({ slug }) {
         <div className="eyebrow" style={{ marginBottom: '0.75rem' }}>
           Planificar otra ruta
         </div>
-        <SearchBar ciudad="cdmx" />
+        <SearchBar ciudad={ciudad} />
       </section>
 
       {/* RELATED ROUTES */}
-      {origenNombre && (
+      {/* Related routes — only available for CDMX where rutas-populares data exists */}
+      {origenNombre && ciudad === 'cdmx' && (
         <section style={{ marginBottom: '2rem' }}>
           <div className="eyebrow" style={{ marginBottom: '0.9rem' }}>
             Rutas populares desde {origenNombre}
@@ -638,7 +674,7 @@ export default function RutaClient({ slug }) {
           </h2>
 
           <p style={{ fontSize: '1rem', color: 'var(--text)', margin: '0 0 1.25rem' }}>
-            Esta ruta en el Metro de la Ciudad de México te lleva de{' '}
+            Esta ruta en transporte público te lleva de{' '}
             <strong>{origenNombre}</strong> a <strong>{destinoNombre}</strong> en aproximadamente{' '}
             {activeRuta.tiempo_total || Math.round(activeRuta.pasos.length * 2 + 3)} minutos.
             Utiliza {formatLineasUsadas(activeRuta.lineas_usadas)} para completar tu viaje por{' '}
@@ -657,7 +693,7 @@ export default function RutaClient({ slug }) {
 
           <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.95rem', color: 'var(--text)' }}>
             <li style={{ marginBottom: '0.5rem' }}>
-              Usa la <strong>Tarjeta de Movilidad Integrada</strong> — $6 MXN por viaje en Metro CDMX.
+              {ciudadCfg.tarjeta}
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
               Evita horas pico (8–10 AM y 5–7 PM) para viajes más cómodos.
@@ -667,7 +703,7 @@ export default function RutaClient({ slug }) {
             </li>
             <li>
               Verifica alertas oficiales antes de salir en{' '}
-              <a href="https://www.metro.cdmx.gob.mx" style={{ color: 'var(--chiapas)' }}>metro.cdmx.gob.mx</a>.
+              <a href={ciudadCfg.sitio} style={{ color: 'var(--chiapas)' }}>{ciudadCfg.sitioLabel}</a>.
             </li>
           </ul>
 
