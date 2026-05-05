@@ -184,5 +184,17 @@
   "lima": {
     "title": "Lima Metro — Tourist Guide",
     "heroDesc": "Lima Metro (Line 1). 26 stations. Peru's first metro connecting the city center with Villa El Salvador."
+  },
+  "searchBar": {
+    "origin": "Origin",
+    "originPlaceholder": "Origin station...",
+    "destination": "Destination",
+    "destinationPlaceholder": "Destination station...",
+    "swapTitle": "Swap origin and destination",
+    "searchRoute": "Find route",
+    "quickAzteca": "To Estadio Azteca",
+    "quickAirport": "To the Airport",
+    "quickDowntown": "To Downtown",
+    "quickCoyoacan": "To Coyoacán"
   }
 }

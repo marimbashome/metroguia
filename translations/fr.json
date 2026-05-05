@@ -184,5 +184,17 @@
   "lima": {
     "title": "Métro de Lima — Guide Touristique",
     "heroDesc": "Métro de Lima (Ligne 1). 26 stations. Le premier métro du Pérou reliant le centre-ville à Villa El Salvador."
+  },
+  "searchBar": {
+    "origin": "Origine",
+    "originPlaceholder": "Station d'origine...",
+    "destination": "Destination",
+    "destinationPlaceholder": "Station de destination...",
+    "swapTitle": "Échanger origine et destination",
+    "searchRoute": "Chercher un itinéraire",
+    "quickAzteca": "Au Stade Azteca",
+    "quickAirport": "À l'Aéroport",
+    "quickDowntown": "Au Centre Historique",
+    "quickCoyoacan": "À Coyoacán"
   }
 }

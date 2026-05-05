@@ -152,7 +152,7 @@ export default function SearchBar({
   onResult = null,
   lang = 'es',
 }) {
-  const t = allT[lang]?.searchBar || allT.es.searchBar
+  const t = allT[lang]?.searchBar || allT.es.searchBar || {}
   const [origen, setOrigen] = useState('')
   const [destino, setDestino] = useState(defaultDestino)
   const [origenSlug, setOrigenSlug] = useState('')

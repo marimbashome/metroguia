@@ -184,5 +184,17 @@
   "lima": {
     "title": "Lima Metro — Touristenführer",
     "heroDesc": "Metro Lima (Linie 1). 26 Stationen. Perus erste U-Bahn verbindet das Stadtzentrum mit Villa El Salvador."
+  },
+  "searchBar": {
+    "origin": "Startbahnhof",
+    "originPlaceholder": "Startbahnhof...",
+    "destination": "Zielbahnhof",
+    "destinationPlaceholder": "Zielbahnhof...",
+    "swapTitle": "Start und Ziel tauschen",
+    "searchRoute": "Route suchen",
+    "quickAzteca": "Zum Estadio Azteca",
+    "quickAirport": "Zum Flughafen",
+    "quickDowntown": "Zur Innenstadt",
+    "quickCoyoacan": "Nach Coyoacán"
   }
 }

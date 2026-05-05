@@ -184,5 +184,17 @@
   "lima": {
     "title": "리마 지하철 — 여행 가이드",
     "heroDesc": "리마 메트로(1호선). 26개 역. 페루 최초 지하철로 시내 중심과 비야 엘 살바도르 연결."
+  },
+  "searchBar": {
+    "origin": "출발역",
+    "originPlaceholder": "출발역 입력...",
+    "destination": "도착역",
+    "destinationPlaceholder": "도착역 입력...",
+    "swapTitle": "출발/도착 바꾸기",
+    "searchRoute": "경로 검색",
+    "quickAzteca": "아스텍 경기장으로",
+    "quickAirport": "공항으로",
+    "quickDowntown": "역사 지구로",
+    "quickCoyoacan": "코요아칸으로"
   }
 }

@@ -184,5 +184,17 @@
   "lima": {
     "title": "Metro de Lima — Guía Turística",
     "heroDesc": "Metro de Lima (Línea 1). 26 estaciones. El primer metro del Perú conectando el centro con Villa El Salvador."
+  },
+  "searchBar": {
+    "origin": "Origen",
+    "originPlaceholder": "Estación de origen...",
+    "destination": "Destino",
+    "destinationPlaceholder": "Estación de destino...",
+    "swapTitle": "Intercambiar origen y destino",
+    "searchRoute": "Buscar ruta",
+    "quickAzteca": "Al Estadio Azteca",
+    "quickAirport": "Al Aeropuerto",
+    "quickDowntown": "Al Centro Histórico",
+    "quickCoyoacan": "A Coyoacán"
   }
 }

@@ -184,5 +184,17 @@
   "lima": {
     "title": "リマ地下鉄 — 旅行ガイド",
     "heroDesc": "リマの地下鉄（1号線）。26駅。ペルー初の地下鉄で市中心部とビジャ・エル・サルバドールを結ぶ。"
+  },
+  "searchBar": {
+    "origin": "出発駅",
+    "originPlaceholder": "出発駅を入力...",
+    "destination": "到着駅",
+    "destinationPlaceholder": "到着駅を入力...",
+    "swapTitle": "出発・到着を入れ替え",
+    "searchRoute": "ルート検索",
+    "quickAzteca": "アステカスタジアムへ",
+    "quickAirport": "空港へ",
+    "quickDowntown": "歴史地区へ",
+    "quickCoyoacan": "コヨアカンへ"
   }
 }
