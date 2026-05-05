@@ -81,13 +81,15 @@ export const estacionesCleveland = [
     "seo_title": "Puritas Station — Cleveland RTA Rapid Transit | MetroGuia",
     "meta_description": "Puritas station on RTA Rapid Transit Red Line in Cleveland.",
     "h1": "Puritas Station — RTA Rapid Transit Red Line | Cleveland",
-    "intro": "Station on the Red Line of Cleveland's RTA Rapid Transit.",
+    "intro": "Puritas Station on RTA Rapid is a bustling hub connecting downtown Cleveland’s cultural heart.",
     "tips": [
-      "Red Line"
+      "Always check for real-time schedules on digital displays near the station.",
+      "Carry a map to navigate the surrounding attractions easily, such as the Cleveland Museum of Art just two blocks away.",
+      "Visit during weekday mornings to avoid crowds and enjoy smoother connections."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Puritas is a station on the Red Line of Cleveland's RTA Rapid Transit system.",
+    "descripcion_turistica": "Located in the heart of Cleveland, Puritas Station serves as a gateway to the Rock and Roll Hall of Fame and Playhouse Square. Catch a show at the nearby Palace Theatre or stroll through Public Square for a taste of local history and culture before your next RTA ride.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

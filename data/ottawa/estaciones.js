@@ -179,16 +179,15 @@ export const estacionesOttawa = [
     "seo_title": "Tremblay Station — Ottawa O-Train | MetroGuia",
     "meta_description": "Tremblay station serves Orleans residential area with parks and community facilities on Confederation Line.",
     "h1": "Tremblay Station — O-Train Confederation Line | Ottawa",
-    "intro": "Tremblay Station provides transit access to the Orleans residential neighborhood with convenient access to parks and schools.",
+    "intro": "Tremblay O-Train station is a vibrant hub near Orleans, perfect for exploring nearby parks and community centers.",
     "tips": [
-      "Presto card payment ($3.60 CAD) for direct entry; monthly passes available",
-      "Well-connected bus hub for Orleans neighborhood exploration",
-      "Family-oriented station near schools and playgrounds; safe for children",
-      "Fully accessible with elevators and accessible washrooms throughout"
+      "Use the adjacent bike lanes to explore the park and nearby attractions without leaving your bike behind.",
+      "Check the recreation center’s schedule for free community events during weekdays and weekends.",
+      "Visit Meadowvale Park in spring for vibrant tulip displays, a perfect spot for photography or a relaxing walk."
     ],
-    "mejor_horario": "08:00-09:00, 15:00-18:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Neighborhood transit",
-    "descripcion_turistica": "Tremblay Station connects to Ottawa's family-friendly Orleans neighborhood, offering access to parks, schools, and residential areas.",
+    "descripcion_turistica": "Nestled between Meadowvale Park and Tremblay Public School, Tremblay Station offers easy access to the Orleans Community Recreation Centre. Enjoy picnics at Meadowvale Park or take a leisurely stroll through lush green spaces. The station's proximity makes it ideal for families seeking educational activities or fitness classes.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -337,16 +336,15 @@ export const estacionesOttawa = [
     "seo_title": "Uottawa Station — Ottawa O-Train | MetroGuia",
     "meta_description": "Uottawa station serves University of Ottawa campus with direct access to classrooms, libraries, and student facilities.",
     "h1": "Uottawa Station — O-Train Confederation Line | Ottawa",
-    "intro": "Uottawa Station is the primary transit hub for the University of Ottawa campus, serving students, faculty, and campus visitors.",
+    "intro": "Experience the vibrant heart of Ottawa at UOttawa Station, where culture and learning converge.",
     "tips": [
-      "Students receive Presto discounts through U-Pass program; faculty pay $3.60 CAD",
-      "Very busy during semester hours (8 AM-6 PM weekdays); expect crowded trains",
-      "Direct campus access; library services and student study areas nearby",
-      "Fully accessible with university shuttle bus connections to all campus buildings"
+      "Use the station’s concourse to access Morisset Library for a relaxing study break or research.",
+      "Explore the UOttawa Student Centre for its bustling café scene and student life exhibits.",
+      "Visit the Faculty of Medicine for guided tours on weekdays, providing insights into medical education."
     ],
-    "mejor_horario": "08:00-10:00, 12:00-14:00, 16:00-18:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "University transit hub",
-    "descripcion_turistica": "Uottawa Station provides direct campus access for students and visitors exploring one of Canada's major research universities.",
+    "descripcion_turistica": "Step off at UOttawa Station for a cultural immersion into the University of Ottawa campus. Visit Morisset Library’s historic dome or explore the student-centric spaces like the University Centre. Nearby, the Faculty of Medicine offers glimpses into academic excellence, making this stop perfect for those interested in education and healthcare.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

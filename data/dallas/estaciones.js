@@ -3213,12 +3213,14 @@ export const estacionesDallas = [
     "seo_title": "Oakenwald — Streetcar DART | Dallas Transit Guide",
     "meta_description": "Oakenwald es una estación del sistema de transporte de Dallas.",
     "h1": "Oakenwald — Streetcar | Dallas",
-    "intro": "Oakenwald es una estación del sistema de transporte de Dallas.",
+    "intro": "Experience the heart of Oak Cliff's vibrant culture at Oakenwald station.",
     "tips": [
-      "Estación Streetcar"
+      "Check out local art murals along the DART tracks heading towards Oak Cliff.",
+      "Visit the Blue Room Cafe for authentic Texas BBQ and live music evenings.",
+      "Pack a picnic lunch and enjoy it at White Rock Lake during off-peak hours."
     ],
     "mundial_relevancia": "Sin relevancia directa FIFA.",
-    "descripcion_turistica": "Estación del sistema DART.",
+    "descripcion_turistica": "Step off at Oakenwald for a stroll through historic neighborhoods like Jefferson Boulevard, home to the iconic Blue Room Cafe. Explore nearby White Rock Lake Park and its scenic trails perfect for picnics or leisurely walks.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3229,7 +3231,8 @@ export const estacionesDallas = [
       "apertura": "05:00 AM",
       "cierre": "00:30 AM",
       "frecuencia": "15 min pico, 30 min fuera de pico"
-    }
+    },
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds"
   },
   {
     "slug": "dallas-beckley",
@@ -3358,5 +3361,3 @@ export const estacionesDallas = [
     "mejor_horario": "Weekday mornings (7‑9 am) to avoid rush‑hour crowds and enjoy a quieter stroll through the district"
   }
 ];
-
-export { estacionesDallas as estacionesDAL };

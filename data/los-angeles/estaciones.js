@@ -215,15 +215,15 @@ export const estacionesLA = [
     "seo_title": "Irwindale Metro Los Angeles — Estación Línea A | MetroGuia",
     "meta_description": "Estación Irwindale - Línea A Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
     "h1": "Irwindale — Línea A | Los Angeles Metro",
-    "intro": "La estación Irwindale es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Irwindale.",
+    "intro": "Irwindale Station offers a quiet respite before venturing into East Los Angeles.",
     "tips": [
-      "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
-      "Horarios: aproximadamente 4:30 AM a 1:00 AM",
-      "Estación con acceso ADA completo"
+      "Check trail conditions before visiting Mount Baldy for hiking.",
+      "Bring water and snacks as food options are limited in the area.",
+      "Explore the historic downtown of Monrovia for unique shops and eateries."
     ],
-    "mejor_horario": "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
-    "descripcion_turistica": "Estación Irwindale del Metro de Los Angeles.",
+    "descripcion_turistica": "Located near the San Gabriel Mountains, Irwindale Station is perfect for exploring nearby hiking trails at Mount Baldy. Catch a glimpse of local wildlife and enjoy scenic views from the nearby nature reserves. For a city feel, head to Monrovia's downtown area just 10 minutes away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2392,15 +2392,15 @@ export const estacionesLA = [
     "seo_title": "Lakewood Boulevard Metro Los Angeles — Estación Línea C | MetroGuia",
     "meta_description": "Estación Lakewood Boulevard - Línea C Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
     "h1": "Lakewood Boulevard — Línea C | Los Angeles Metro",
-    "intro": "La estación Lakewood Boulevard es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Lakewood.",
+    "intro": "Lakewood Boulevard station offers a vibrant gateway to Westchester’s shops and dining.",
     "tips": [
-      "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
-      "Horarios: aproximadamente 4:30 AM a 1:00 AM",
-      "Estación con acceso ADA completo"
+      "Explore nearby Westwood Village for more shopping and dining options.",
+      "Visit the Academy Museum of Motion Pictures, just a short bus ride away.",
+      "Check the Grove Plaza calendar for events like outdoor concerts and festivals."
     ],
-    "mejor_horario": "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
-    "descripcion_turistica": "Estación Lakewood Boulevard del Metro de Los Angeles.",
+    "descripcion_turistica": "Experience the bustling energy of Lakewood Boulevard, where The Grove Shopping Center and the Grove Plaza offer an array of gourmet eateries like The Cheese Board Collective. Don’t miss the lively farmers' market on Saturdays for fresh produce and artisanal goods.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2426,15 +2426,15 @@ export const estacionesLA = [
     "seo_title": "Norwalk Metro Los Angeles — Estación Línea C | MetroGuia",
     "meta_description": "Estación Norwalk - Línea C Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
     "h1": "Norwalk — Línea C | Los Angeles Metro",
-    "intro": "La estación Norwalk es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Norwalk.",
+    "intro": "Norwalk Station on the LA Metro is your gateway to Southern California's charming coastal towns and suburban allure.",
     "tips": [
-      "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
-      "Horarios: aproximadamente 4:30 AM a 1:00 AM",
-      "Estación con acceso ADA completo"
+      "Check the LA Metro app for real-time service updates before your trip.",
+      "Visit Norwalk's historic Main Street, lined with century-old buildings housing unique boutiques and eateries.",
+      "For evening entertainment, catch a show at the Avalon Theatre, known for its live music performances."
     ],
-    "mejor_horario": "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
-    "descripcion_turistica": "Estación Norwalk del Metro de Los Angeles.",
+    "descripcion_turistica": "Explore Norwalk’s vibrant downtown, featuring local shops at Avalon Square Mall. Nearby, visit PCH Beach for sunbathing or surfboarding. For a culinary adventure, head over to the Norwalk Farmers Market on Sundays for fresh produce and artisan crafts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2973,15 +2973,15 @@ export const estacionesLA = [
     "seo_title": "Expo/Crenshaw Metro Los Angeles — Estación Línea E | MetroGuia",
     "meta_description": "Estación Expo/Crenshaw - Línea E Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
     "h1": "Expo/Crenshaw — Línea E | Los Angeles Metro",
-    "intro": "La estación Expo/Crenshaw es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Los Angeles.",
+    "intro": "Experience vibrant street art and lively nightlife at LA’s Expo/Crenshaw station.",
     "tips": [
-      "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
-      "Horarios: aproximadamente 4:30 AM a 1:00 AM",
-      "Estación con acceso ADA completo"
+      "Use the real-time information screens for accurate transit updates.",
+      "Grab a meal from one of the diverse food carts before exploring the area.",
+      "Consider visiting in the early evening to enjoy the sunset over the city."
     ],
-    "mejor_horario": "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
-    "descripcion_turistica": "Estación Expo/Crenshaw del Metro de Los Angeles.",
+    "descripcion_turistica": "Explore the vibrant Grand Central Market nearby, visit the beautiful Exposition Park with its museums, or catch a game at Dodger Stadium. Don’t miss the Crenshaw Plaza for shopping and dining.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -4064,15 +4064,15 @@ export const estacionesLA = [
     "seo_title": "Cerritos Metro Los Angeles — Estación Línea K | MetroGuia",
     "meta_description": "Estación Cerritos - Línea K Metro Los Angeles. Información, horarios, accesibilidad y lugares cercanos.",
     "h1": "Cerritos — Línea K | Los Angeles Metro",
-    "intro": "La estación Cerritos es un punto estratégico del sistema Metro de Los Angeles, en el municipio de Cerritos.",
+    "intro": "Cerritos LA Metro Station is your gateway to diverse shopping and dining options in Cypress Village.",
     "tips": [
-      "Utiliza la tarjeta TAP para acceso rápido (costo: $1.75 USD)",
-      "Horarios: aproximadamente 4:30 AM a 1:00 AM",
-      "Estación con acceso ADA completo"
+      "Use the free parking available in Cypress Village to explore longer without worrying about transportation.",
+      "Grab a coffee from one of the nearby cafes for a quick bite or to relax.",
+      "Check the Cerritos Center’s schedule for upcoming events and performances."
     ],
-    "mejor_horario": "Entre semana, evitar horas pico (7-9 AM, 4-7 PM)",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Parte del sistema metro de Los Angeles, la segunda ciudad más grande de EE.UU.",
-    "descripcion_turistica": "Estación Cerritos del Metro de Los Angeles.",
+    "descripcion_turistica": "Step out of Cerritos station into the heart of Cypress Village, where you can explore a mix of local shops at The Village at Walnut Square. Don't miss the Cerritos Center for Performing Arts, just a short walk away, offering cultural events and performances. Enjoy lunch at one of the many eateries before catching your next train.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -5209,5 +5209,3 @@ export const estacionesLA = [
     "lugares_cercanos": []
   }
 ];
-
-export { estacionesLA as estacionesLosAngeles };

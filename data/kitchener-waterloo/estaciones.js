@@ -462,15 +462,15 @@ export const estacionesKitchenerWaterloo = [
     "seo_title": "Borden Station — ION Light Rail | MetroGuia",
     "meta_description": "Borden station on ION Light Rail Transit in Kitchener-Waterloo, ON.",
     "h1": "Borden Station — ION Light Rail | Kitchener-Waterloo",
-    "intro": "Borden station serves the Borden Avenue residential corridor in Kitchener.",
+    "intro": "Experience the heart of K-W's vibrant neighborhoods at Borden Station.",
     "tips": [
-      "ION Red Line",
-      "Residential area",
-      "Commute stop"
+      "Always check real-time schedules to avoid delays.",
+      "Use the nearby bike racks for a sustainable commute.",
+      "Try the local eateries like The Grind for a taste of Kitchener's culinary scene."
     ],
-    "mejor_horario": "Commute hours",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Neighborhood station",
-    "descripcion_turistica": "Station connects to Kitchener residential neighborhoods along Borden Avenue with local shops and services.",
+    "descripcion_turistica": "Located near Residential Community Drive and Neighborhood Shops, Borden is a hub for local life. Explore the nearby University of Waterloo or grab a coffee at The Grind before catching your next ION Light Rail Transit.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

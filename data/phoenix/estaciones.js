@@ -202,15 +202,15 @@ export const estacionesPhoenix = [
     "seo_title": "Estación 40th Ave/Washington Valley Metro Rail — Guía turística | MetroGuia",
     "meta_description": "Estación 40th Ave/Washington en Valley Metro Light Rail. Acceso a barrios residenciales del sector sur-central de Phoenix.",
     "h1": "Estación 40th Ave/Washington | Phoenix Valley Metro",
-    "intro": "Parada intermedia en el eje Washington, sirviendo comunidades residenciales del sur-central de Phoenix. Acceso conveniente a servicios locales y barrios establecidos.",
+    "intro": "Experience the heart of Phoenix's cultural corridor at 40th Ave/Washington Light Rail Station.",
     "tips": [
-      "Barrio seguro y residencial",
-      "Acceso a comercios locales",
-      "Línea directa hacia el centro de Phoenix"
+      "Use the real-time arrival board for seamless transfers between light rail and Valley Metro buses.",
+      "Pick up a free map from the station’s information center to navigate the area's cultural attractions.",
+      "Visit during weekday afternoons to avoid crowds and enjoy guided tours of local galleries."
     ],
-    "mejor_horario": "Cualquier hora",
+    "mejor_horario": "Weekday afternoons for a balanced mix of activities without rush hour crowds.",
     "mundial_relevancia": "Comunidades residenciales",
-    "descripcion_turistica": "40th Ave/Washington permite a los visitantes experimentar la autenticidad de los barrios residenciales de Phoenix, lejos del turismo de masas.",
+    "descripcion_turistica": "Nestled between Tempe and Mesa, this station connects you to the vibrant arts district. Explore the Phoenix Art Museum or stroll through the nearby Heard Museum for Native American art. Enjoy a picnic in the beautifully landscaped Rio Salado Park just steps away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

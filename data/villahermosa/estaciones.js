@@ -445,7 +445,7 @@ export const estacionesVillahermosa = [
     "municipio": "Avenida principal",
     "linea": "BRT Villahermosa",
     "tipo_zona": "urbano",
-    "descripcion_turistica": "Acceso al Paseo Tabasco, avenida principal de Villahermosa con tiendas, restaurantes y vida comercial de la ciudad. Eje comercial y turístico de Villahermosa con servicios diversos.",
+    "descripcion_turistica": "Cerca del Paseo Tabasco, encontrarás una amalgama de experiencias: las animadas tiendas comerciales de Plaza América, los encantadores restaurantes y bares de La Candelaria, la sofisticada Galería Centro Comercial y el fascinante Museo Regional Tabasqueño. Ideal para explorar durante la tarde o noche.",
     "lugares_cercanos": [
       {
         "nombre": "Tiendas Comerciales",
@@ -500,13 +500,13 @@ export const estacionesVillahermosa = [
     "seo_title": "Estación Paseo Tabasco — BRT Villahermosa | MetroGuia",
     "meta_description": "Estación Paseo Tabasco de BRT Villahermosa. Acceso al Paseo Tabasco, avenida principal.",
     "h1": "Estación Paseo Tabasco — BRT Villahermosa",
-    "intro": "Acceso al Paseo Tabasco, avenida principal de Villahermosa con tiendas, restaurantes y vida comercial de la ciudad. Eje comercial y turístico de Villahermosa con servicios diversos.",
+    "intro": "Conéctate con la vibrante vida nocturna de Villahermosa al descender en Paseo Tabasco.",
     "tips": [
-      "Compre en tiendas con variedad y promociones especiales",
-      "Cene en restaurantes y bares a lo largo de la avenida",
-      "Visite galerías para apreciar arte y cultura local"
+      "Disfruta del fresco ambiente nocturno en Paseo Tabasco antes de visitar los museos.",
+      "Comienza tu día con un café en La Candelaria, luego camina hacia el centro comercial para compras y almorzar.",
+      "Reserva entradas al Museo Regional Tabasqueño por la tarde."
     ],
-    "mejor_horario": "Temprano para evitar horas pico",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa al Mundial 2026"
   },
   {

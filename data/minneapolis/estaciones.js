@@ -701,15 +701,15 @@ export const estacionesMinneapolis = [
     "seo_title": "American Boulevard Station Bloomington — Blue Line | MetroGuia",
     "meta_description": "American Boulevard station in Bloomington. Hotels and shopping near Mall of America area.",
     "h1": "Estación American Boulevard | Minneapolis Metro Transit",
-    "intro": "Bloomington station near hotels and the American Boulevard commercial corridor.",
+    "intro": "American Boulevard Metro Transit Light Rail station is the heart of local commerce and hotel life.",
     "tips": [
-      "Esta estación cuenta con acceso para sillas de ruedas mediante ascensores y rampas.",
-      "Conexiones frecuentes cada 5-7 minutos en horas pico.",
-      "Estaciones completamente accesibles con wifi disponible en estaciones principales."
+      "Connect with the free shuttle service to the Mall of America for an added convenience.",
+      "Visit the nearby American Legion Memorial Park for a peaceful break from the bustling station.",
+      "Combine your trip with a visit to the McLaughlin Planetarium, only a short walk away."
     ],
-    "mejor_horario": "Lunes a viernes, 7:00-19:00 para mejor conectividad",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No hay relevancia directa FIFA 2026; sin embargo, es un punto de acceso importante para turistas.",
-    "descripcion_turistica": "Bloomington station near hotels and the American Boulevard commercial corridor.",
+    "descripcion_turistica": "Experience vibrant shops like Bloomington Commons and explore nearby hotels such as the Radisson Blu Hotel, Bloomington. Perfect for last-minute shopping or early morning starts to downtown Minnesota.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1397,15 +1397,15 @@ export const estacionesMinneapolis = [
     "seo_title": "Capitol/Rice Street Station St. Paul — Green Line | MetroGuia",
     "meta_description": "Capitol/Rice Street Green Line station. Walk to Minnesota State Capitol and History Center.",
     "h1": "Estación Capitol/Rice Street | Minneapolis Metro Transit",
-    "intro": "Station near the Minnesota State Capitol and Rice Street corridor.",
+    "intro": "Experience the heart of Minneapolis at Capitol/Rice Station, where history and culture converge.",
     "tips": [
-      "Esta estación cuenta con acceso para sillas de ruedas mediante ascensores y rampas.",
-      "Conexiones frecuentes cada 5-7 minutos en horas pico.",
-      "Estaciones completamente accesibles con wifi disponible en estaciones principales."
+      "Visit during weekdays for fewer crowds at both the Capitol and History Center.",
+      "Purchase tickets online to skip lines at the History Center's main exhibition hall.",
+      "Bring comfortable shoes as you’ll likely walk between the State Capitol’s gardens and the History Center."
     ],
-    "mejor_horario": "Lunes a viernes, 7:00-19:00 para mejor conectividad",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No hay relevancia directa FIFA 2026; sin embargo, es un punto de acceso importante para turistas.",
-    "descripcion_turistica": "Station near the Minnesota State Capitol and Rice Street corridor.",
+    "descripcion_turistica": "Step off at Capitol/Rice Station to explore the Minnesota State Capitol, a striking 1904 structure with its iconic dome. Nearby, the Minnesota History Center offers exhibits on state heritage and interactive displays. Enjoy panoramic views from the observation deck or delve into local history through engaging multimedia presentations.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

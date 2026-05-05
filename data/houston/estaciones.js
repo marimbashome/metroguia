@@ -1388,15 +1388,15 @@ export const estacionesHOU = [
     "seo_title": "Harrisburg/Navigation — Línea Verde | MetroGuia",
     "meta_description": "Estación Harrisburg/Navigation en Línea Verde del METRORail.",
     "h1": "Harrisburg/Navigation — Línea Verde | Houston",
-    "intro": "Estación Harrisburg/Navigation en zona comercial del este de Houston.",
+    "intro": "Harrisburg/Navigation Station is a vibrant hub, linking Houston’s diverse neighborhoods with easy access to the heart of downtown.",
     "tips": [
-      "Zona comercial",
-      "Transporte local",
-      "Acceso a comercios"
+      "Visit Navigation Park early morning to catch the lively community events and murals.",
+      "Take a leisurely walk along Navigation Boulevard to experience the eclectic shops and dining options.",
+      "Catch a show or exhibition at the Museum District during weekday afternoons for fewer crowds."
     ],
-    "mejor_horario": "Mañana para compras",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Zona comercial Houston",
-    "descripcion_turistica": "Harrisburg/Navigation proporciona acceso a zona comercial del este de Houston.",
+    "descripcion_turistica": "At Harrisburg/Navigation, explore the colorful murals at Navigation Park or stroll through the trendy neighborhoods of Rice Village. Nearby, visit the Museum District for art and history, then enjoy a meal at one of the many local eateries in the area.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

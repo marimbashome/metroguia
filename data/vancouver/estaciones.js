@@ -80,15 +80,14 @@ export const estacionesVANCOUVER = [
     "seo_title": "Estación Burrard SkyTrain Vancouver | MetroGuia",
     "meta_description": "Acceso al distrito financiero y Vancouver Art Gallery.",
     "h1": "Estación Burrard — Expo | Vancouver",
-    "intro": "Puerta al distrito financiero y cultural de Vancouver.",
+    "intro": "Experience the vibrant heart of downtown Vancouver at Burrard Station.",
     "tips": [
-      "Vancouver Art Gallery a 5 min",
-      "Centro financiero cercano",
-      "Restaurants y cafés en Burrard Street"
+      "Check gallery hours before visiting.",
+      "Consider purchasing a Pacific Coast Cruise Card for discounted transit and attractions."
     ],
-    "mejor_horario": "09:00 - 17:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds.",
     "mundial_relevancia": "Centro financiero y cultural",
-    "descripcion_turistica": "Acceso al corazón cultural de Vancouver. Cercano a galerías, museos y vida gastronómica.",
+    "descripcion_turistica": "Located steps from the iconic Vancouver Art Gallery and Granville Island, Burrard Station connects you to the city's cultural treasures. Explore the gallery's modern collections or catch a ferry to Granville Island for artisan markets and fresh seafood.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -276,15 +275,15 @@ export const estacionesVANCOUVER = [
     "seo_title": "Estación Commercial-Broadway SkyTrain Vancouver | MetroGuia",
     "meta_description": "Hub de transferencia entre Expo y Millennium Lines. Commercial Drive multicultural.",
     "h1": "Estación Commercial-Broadway — Expo/Millennium | Vancouver",
-    "intro": "Principal hub de transferencia entre Expo y Millennium Lines.",
+    "intro": "Experience Vancouver's vibrant heart at Commercial-Broadway, where bustling streets meet modern transit.",
     "tips": [
-      "Transferencia Expo-Millennium",
-      "Commercial Drive multicultural",
-      "Tiendas y vida local"
+      "Explore Granville Island before or after your SkyTrain ride for local artisan products.",
+      "Visit Toddy's for a classic Vancouver coffee experience on Broad Street.",
+      "Check the schedule to avoid peak times when the station can get busy."
     ],
-    "mejor_horario": "08:00 - 22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Hub de transferencia",
-    "descripcion_turistica": "Punto central de transferencia y acceso a barrio multicultural Commercial Drive.",
+    "descripcion_turistica": "Step out onto the crowded yet welcoming Broad Street, lined with iconic cafes like Toddy's and restaurants such as Niki Nisi. Visit Granville Island for fresh produce markets and art galleries, just a short walk away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2277,14 +2276,15 @@ export const estacionesVANCOUVER = [
     "seo_title": "Estación Lansdowne SkyTrain Richmond | MetroGuia",
     "meta_description": "Lansdowne Centre y Richmond Night Market.",
     "h1": "Estación Lansdowne — Canada | Richmond",
-    "intro": "Lansdowne Centre y Richmond Night Market.",
+    "intro": "Lansdowne Station is a vibrant gateway to Richmond's cultural heart, offering easy access to the Lansdowne Centre and bustling Night Market.",
     "tips": [
-      "Lansdowne Centre",
-      "Richmond Night Market (verano) a 5 min"
+      "Check the market schedule in advance as it operates only on specific days of the week.",
+      "Pack light and wear comfortable shoes for exploring the outdoor stalls and pavilions.",
+      "Try some local specialties from the food trucks before deciding what to buy."
     ],
-    "mejor_horario": "10:00 - 20:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Shopping y cultural",
-    "descripcion_turistica": "Centro comercial con mercado nocturno.",
+    "descripcion_turistica": "Step off at Lansdowne Station to explore the Lansdowne Centre, featuring local artisans and crafts. The nearby Richmond Night Market, open Fridays and Saturdays, buzzes with over 300 vendors selling everything from street food to handcrafted goods. Don't miss the live performances and interactive activities that add to the festive atmosphere.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2675,5 +2675,3 @@ export const estacionesVANCOUVER = [
     "moneda": "CAD"
   }
 ];
-
-export { estacionesVANCOUVER as estacionesVancouver };

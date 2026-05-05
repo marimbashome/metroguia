@@ -382,7 +382,7 @@ export const estacionesVeracruz = [
     "municipio": "Veracruz",
     "linea": "BRT Veracruz",
     "tipo_zona": "playa",
-    "descripcion_turistica": "Acceso a playa de Mocambo, balneario histórico veracruzano con extensas arenas. Zona residencial y de playa con hoteles, restaurantes y servicios completos de playa.",
+    "descripcion_turistica": "Ubicada a pocos pasos de la estación Playa Mocambo, visite el elegante Hotel Mocambo y disfrute de vistas panorámicas. Pruebe los sabores locales en uno de los restaurantes costeros cercanos antes de relajarse en la hermosa playa.",
     "lugares_cercanos": [
       {
         "nombre": "Playa Mocambo",
@@ -437,14 +437,13 @@ export const estacionesVeracruz = [
     "seo_title": "Playa Mocambo — Balneario Histórico | BRT Veracruz | MetroGuia",
     "meta_description": "Balneario histórico de Veracruz. Extensas arenas, hotel vintage y restaurantes de mariscos.",
     "h1": "Playa Mocambo — Balneario Histórico | BRT Veracruz",
-    "intro": "Balneario histórico con extensas arenas, hotel vintage y restaurantes frente al mar.",
+    "intro": "Explora la belleza de Playa Mocambo desde la comodidad del BRT Veracruz.",
     "tips": [
-      "Disfruta playas extensas",
-      "Aloja en el Hotel Mocambo histórico",
-      "Prueba restaurantes de mariscos",
-      "Servicios completos de playa"
+      "No olvide llevar protector solar y una toalla para su día en la playa.",
+      "Reserve con antelación el Hotel Mocambo durante las temporada alta.",
+      "El horario de atardecer es ideal para disfrutar del paseo costero junto a la playa."
     ],
-    "mejor_horario": "Mañana para playas tranquilas",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Playas resort para turismo de sol"
   },
   {

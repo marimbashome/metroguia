@@ -1203,13 +1203,15 @@ export const estacionesCalgary = [
     "seo_title": "Franklin Station — Calgary CTrain | MetroGuia",
     "meta_description": "Franklin station on CTrain Blue Line in Calgary.",
     "h1": "Franklin Station — CTrain Blue Line | Calgary",
-    "intro": "Station on the Blue Line of Calgary's CTrain.",
+    "intro": "Experience the heart of Calgary's west at Franklin Station.",
     "tips": [
-      "Blue Line"
+      "Check the CTrain schedule to avoid delays.",
+      "Use the station's free Wi-Fi to plan your next attraction.",
+      "Pick up local fare like poutine from nearby vendors before heading out."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Franklin is a station on the Blue Line of Calgary's CTrain system.",
+    "descripcion_turistica": "Located between the charming neighborhoods of Inglewood and Heritage Park, Franklin Station offers access to the Calgary Zoo and downtown. Explore the nearby Glenmore Reservoir for scenic hikes or catch a game at McMahon Stadium just a short walk away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

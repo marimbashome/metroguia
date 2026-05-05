@@ -35,6 +35,111 @@
     "nyc-182-183-sts",
     "nyc-183-st",
     "nyc-190-st",
-    "nyc-191-st"
+    "nyc-191-st",
+    "nyc-7-av",
+    "nyc-atlantic-av",
+    "nyc-bowery",
+    "nyc-east-105-st",
+    "nyc-grand-army-plaza",
+    "nyc-grant-av",
+    "nyc-kingston-throop-avs",
+    "nyc-nostrand-av",
+    "nyc-pelham-bay-park"
+  ],
+  "los-angeles": [
+    "la-irwindale",
+    "la-lakewood-boulevard",
+    "la-norwalk",
+    "la-expo-crenshaw",
+    "la-cerritos"
+  ],
+  "dallas": [
+    "dallas-oakenwald"
+  ],
+  "san-francisco": [
+    "bart-19th-st-oakland",
+    "bart-rockridge",
+    "sf-muni-forest-hill"
+  ],
+  "houston": [
+    "houston-harrisburg"
+  ],
+  "philadelphia": [
+    "philly-oregon",
+    "philly-beechwood-brookline",
+    "philly-radnor",
+    "philly-prospect-park",
+    "philly-ridley-park"
+  ],
+  "atlanta": [
+    "atlanta-brookhaven-oglethorpe",
+    "atlanta-lenox"
+  ],
+  "boston": [
+    "boston-haymarket",
+    "boston-fenway",
+    "boston-longwood",
+    "boston-lowell",
+    "boston-newburyport"
+  ],
+  "miami": [
+    "miami-tri-rail-fort-lauderdale"
+  ],
+  "phoenix": [
+    "phoenix-40th-ave-washington"
+  ],
+  "charlotte": [
+    "charlotte-stonewall"
+  ],
+  "portland": [
+    "portland-n-lombard",
+    "portland-streetcar-pioneer-courthouse-loop"
+  ],
+  "minneapolis": [
+    "mpls-american-blvd",
+    "mpls-capitol-rice"
+  ],
+  "cleveland": [
+    "cleveland-puritas"
+  ],
+  "cincinnati": [
+    "cincinnati-duke-energy-convention-center"
+  ],
+  "san-jose": [
+    "san-jose-convention-center",
+    "san-jose-crossman",
+    "san-jose-cropley",
+    "san-jose-hostetter"
+  ],
+  "vancouver": [
+    "vancouver-burrard",
+    "vancouver-commercial-broadway",
+    "vancouver-lansdowne"
+  ],
+  "montreal": [
+    "snowdon",
+    "mont-royal",
+    "snowdon-orange"
+  ],
+  "calgary": [
+    "franklin"
+  ],
+  "ottawa": [
+    "tremblay",
+    "uottawa"
+  ],
+  "kitchener-waterloo": [
+    "kitchener-waterloo-borden"
+  ],
+  "gdl": [
+    "gdl-juarez",
+    "monumental-mc",
+    "agua-azul-mc"
+  ],
+  "villahermosa": [
+    "villahermosa-paseo-tabasco"
+  ],
+  "veracruz": [
+    "veracruz-playa-mocambo"
   ]
 }

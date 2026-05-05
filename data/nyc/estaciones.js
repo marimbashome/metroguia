@@ -3542,16 +3542,15 @@ export const estacionesNYC = [
     "seo_title": "Estación 7 Av NYC Subway — Manhattan | MetroGuia",
     "meta_description": "Estación 7 Av del MTA Subway NYC. Líneas B,D,F,G,Q. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación 7 Av | NYC Subway",
-    "intro": "Estación 7 Av del sistema MTA Subway de Nueva York, ubicada en Manhattan. Líneas B,D,F,G,Q.",
+    "intro": "Experience the heart of Brooklyn's bustling Crown Heights at 7 Av.",
     "tips": [
-      "Hub de transporte con 5 líneas: B,D,F,G,Q",
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+      "Bring cash for street food and small businesses.",
+      "Check event schedules at the Barclays Center for live performances.",
+      "Visit early in the day to avoid crowds."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Manhattan",
-    "descripcion_turistica": "7 Av es una estación del MTA Subway en Manhattan, servida por las líneas B,D,F,G,Q. Acceso a la zona de Manhattan circundante.",
+    "descripcion_turistica": "Step into vibrant Crown Heights via 7th Avenue, where you'll find Prospect Park West and the Barclays Center. Explore the local shops, enjoy a meal at the iconic Bedford Avenue eateries, or catch a game at the arena. Don't miss the historic Saintuy Foundation and the charming Brooklyn Botanic Garden nearby.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -4571,15 +4570,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Atlantic Av NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación Atlantic Av del MTA Subway NYC. Línea L. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Atlantic Av | NYC Subway",
-    "intro": "Estación Atlantic Av del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea L.",
+    "intro": "Atlantic Av station pulses with the heartbeat of Brooklyn, linking you to vibrant neighborhoods and cultural treasures.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Brooklyn — cultura local y vecindarios diversos"
+      "Look for street art on the walls of the station; it changes regularly, adding a touch of creativity to your commute.",
+      "Explore Coney Island’s boardwalk after your train ride, where you can find classic amusement park rides and delicious hot dogs at Nathan’s Famous.",
+      "Visit the nearby Coney Island Museum to learn about the area's rich history and culture."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "Atlantic Av es una estación del MTA Subway en Brooklyn, servida por la línea L. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Nestled between Coney Island and Sunset Park, Atlantic Av connects you to the historic Brighton Beach boardwalk or the bustling Coney Island amusement parks. Don’t miss a visit to the nearby Coney Island–Stillwell Avenue station’s retro 1920s architecture.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -5763,15 +5762,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Bowery NYC Subway — Manhattan | MetroGuia",
     "meta_description": "Estación Bowery del MTA Subway NYC. Líneas J,M. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Bowery | NYC Subway",
-    "intro": "Estación Bowery del sistema MTA Subway de Nueva York, ubicada en Manhattan. Líneas J,M.",
+    "intro": "Discover the grit and charm of New York's Lower East Side at Bowery station.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Manhattan — múltiples opciones de comida y comercio cercanas"
+      "Carry a map or use apps to navigate the dense neighborhood efficiently.",
+      "Check local events; Bowery often hosts art exhibitions and music festivals.",
+      "Enjoy the station’s proximity to diverse dining options, perfect for post-exploration meals."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds.",
     "mundial_relevancia": "Estación del sistema MTA en Manhattan",
-    "descripcion_turistica": "Bowery es una estación del MTA Subway en Manhattan, servida por las líneas J,M. Acceso a la zona de Manhattan circundante.",
+    "descripcion_turistica": "Bowery MTA station is a gateway to the historic Lower East Side. Explore iconic spots like Tompkins Square Park, visit the Bohemian National Committee building, or grab a bite at Russ & Daughters on Delancey Street. Ideal for those seeking cultural insights and lively street scenes.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -7663,15 +7662,15 @@ export const estacionesNYC = [
     "seo_title": "Estación East 105 St NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación East 105 St del MTA Subway NYC. Línea L. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación East 105 St | NYC Subway",
-    "intro": "Estación East 105 St del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Línea L.",
+    "intro": "East 105 St is a bustling hub at the heart of Harlem, connecting you to cultural treasures and vibrant neighborhoods.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Brooklyn — cultura local y vecindarios diversos"
+      "Visit the Apollo Theater on Tuesdays when it hosts free live performances.",
+      "Enjoy a meal at Sylvia's Restaurant for classic Harlem comfort food.",
+      "Check the schedule for special events like Jazz in July or winter holiday celebrations."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "East 105 St es una estación del MTA Subway en Brooklyn, servida por la línea L. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Step off at East 105 St for easy access to the Apollo Theater, renowned for its legendary performances. Explore nearby Marcus Garvey Park or catch a show at Frederick Douglass Boulevard. The area is brimming with local art, shops, and authentic cuisine.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -8626,15 +8625,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Grand Army Plaza NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación Grand Army Plaza del MTA Subway NYC. Líneas 2,3. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Grand Army Plaza | NYC Subway",
-    "intro": "Estación Grand Army Plaza del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Líneas 2,3.",
+    "intro": "Grand Army Plaza is a majestic gateway, where the grandeur of the Flatiron Building greets you.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Brooklyn — cultura local y vecindarios diversos"
+      "Use the plaza to explore Prospect Park and the Brooklyn Botanic Garden just steps away.",
+      "Visit the New York Public Library’s majestic interior on your way through or out of the station.",
+      "Head north towards Fifth Avenue to catch a glimpse of the iconic Flatiron Building."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "Grand Army Plaza es una estación del MTA Subway en Brooklyn, servida por las líneas 2,3. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Step into the heart of Brooklyn at Grand Army Plaza, flanked by the imposing New York Public Library and the Flatiron Building. Explore Prospect Park nearby or visit the historic Soldiers' and Sailors' Monument for a poignant reminder of history. Perfect for early morning strolls before subway adventures.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -8795,15 +8794,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Grant Av NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación Grant Av del MTA Subway NYC. Línea A. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Grant Av | NYC Subway",
-    "intro": "Bustling underground hub on the 4, B, and D lines, Grant Avenue drops you into the vibrant heart of Brooklyn’s historic Crown Heights.",
+    "intro": "Grant Av Station is a bustling hub connecting you to the heart of Manhattan's vibrant neighborhoods.",
     "tips": [
-      "Buy a MetroCard at the staffed booth for unlimited rides if you plan to explore multiple boroughs in a day.",
-      "Escalators can be busy during rush hour; use the stairs on the far left for a faster exit to Eastern Parkway.",
-      "Keep a spare $2.75 for a single ride; the station’s fare gates accept contactless payment, but cash can be handy for nearby vendors."
+      "Use the station’s digital signs for real-time updates on train schedules.",
+      "Pick up a free map from one of the nearby visitor centers to explore more of the area.",
+      "Take advantage of the outdoor seating areas during pleasant weather."
     ],
-    "mejor_horario": "Weekday mornings before 9 AM to avoid rush‑hour crowds",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "Grant Av es una estación del MTA Subway en Brooklyn, servida por la línea A. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Located near Columbia University, Grant Av offers easy access to historic Morningside Heights. Explore the charming Lowline or grab a coffee at Café Grumpy before catching your next train. Weekdays are quieter, perfect for leisurely strolls and sightseeing.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -10029,15 +10028,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Kingston-Throop Avs NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación Kingston-Throop Avs del MTA Subway NYC. Líneas A,C. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Kingston-Throop Avs | NYC Subway",
-    "intro": "Estación Kingston-Throop Avs del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Líneas A,C.",
+    "intro": "Experience the heart of Brooklyn at Kingston-Throop Avs, a vibrant neighborhood station.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Brooklyn — cultura local y vecindarios diversos"
+      "Use the station's handy maps to navigate the surrounding arts scene and eateries.",
+      "Visit during spring or early summer to enjoy the beautiful flowers at Flushing Meadows-Corona Park.",
+      "Check the schedule for local music events on Wythe Avenue, as some happen in the evenings."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "Kingston-Throop Avs es una estación del MTA Subway en Brooklyn, servida por las líneas A,C. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Located in the Bushwick section of Brooklyn, this bustling MTA station connects you to trendy art galleries and boutiques. Explore nearby Wythe Avenue for its hip bars and restaurants or take a walk through the expansive Flushing Meadows-Corona Park just steps away from the station entrance.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -11495,16 +11494,14 @@ export const estacionesNYC = [
     "seo_title": "Estación Nostrand Av NYC Subway — Brooklyn | MetroGuia",
     "meta_description": "Estación Nostrand Av del MTA Subway NYC. Líneas 3,A,C. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Nostrand Av | NYC Subway",
-    "intro": "Estación Nostrand Av del sistema MTA Subway de Nueva York, ubicada en Brooklyn. Líneas 3,A,C.",
+    "intro": "Nostrand Av station, a vibrant heartbeat of Brooklyn's cultural mosaic.",
     "tips": [
-      "Hub de transporte con 3 líneas: 3,A,C",
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona de Brooklyn — cultura local y vecindarios diversos"
+      "Check for service updates on weekends due to events.",
+      "Use the exit near Barclays Center for quick access to entertainment venues."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Brooklyn",
-    "descripcion_turistica": "Nostrand Av es una estación del MTA Subway en Brooklyn, servida por las líneas 3,A,C. Acceso a la zona de Brooklyn circundante.",
+    "descripcion_turistica": "Step into the bustling Nostrand Av station and explore nearby Crown Heights' diverse neighborhoods. Visit the historic Flatbush Avenue Extension, enjoy art at the Prospect Park Alliance galleries, or grab a bite at one of the many local eateries like Patsy’s Pizzeria.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -11785,15 +11782,15 @@ export const estacionesNYC = [
     "seo_title": "Estación Pelham Bay Park NYC Subway — Bronx | MetroGuia",
     "meta_description": "Estación Pelham Bay Park del MTA Subway NYC. Línea 6. Guía turística, horarios, accesibilidad y lugares cercanos.",
     "h1": "Estación Pelham Bay Park | NYC Subway",
-    "intro": "Estación Pelham Bay Park del sistema MTA Subway de Nueva York, ubicada en Bronx. Línea 6.",
+    "intro": "Pelham Bay Park offers lush green spaces perfect for a leisurely stroll.",
     "tips": [
-      "Pago con OMNY ($2.90 USD) o MetroCard",
-      "Sistema operativo 24 horas, 7 días",
-      "Zona del Bronx — cultura urbana y parques"
+      "Bring a picnic lunch to enjoy by the reservoir or in the garden.",
+      "Check the New York Botanical Garden's schedule for special exhibits and events.",
+      "Use the park’s visitor center for maps and guided tours."
     ],
-    "mejor_horario": "Evitar horas pico (7-9 AM, 5-7 PM) para viajes más cómodos",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Estación del sistema MTA en Bronx",
-    "descripcion_turistica": "Pelham Bay Park es una estación del MTA Subway en Bronx, servida por la línea 6. Acceso a la zona de Bronx circundante.",
+    "descripcion_turistica": "Explore the 2,100-acre Pelham Bay Park, featuring the New York Botanical Garden and the Bronx River. Enjoy hiking trails, boat rentals at the reservoir, or relax in verdant meadows. Don’t miss the historic Croton Reservoir towers nearby.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,

@@ -1680,13 +1680,15 @@ export const estacionesPortland = [
     "seo_title": "N Lombard Station — MAX Yellow Line | MetroGuia",
     "meta_description": "N Lombard residential station on MAX Yellow Line.",
     "h1": "N Lombard Station — MAX Yellow Line",
-    "intro": "North Portland residential area.",
+    "intro": "Experience the heart of Portland's vibrant culture at N Lombard, a bustling hub for locals and visitors alike.",
     "tips": [
-      "Residential"
+      "Visit during weekday afternoons to explore local boutiques without the morning rush.",
+      "Combine your trip with a stop at the nearby Pearl District for more shopping and dining options.",
+      "Check out the weekly farmers market on Saturdays, just a short walk from the station."
     ],
-    "mejor_horario": "Commute hours",
+    "mejor_horario": "Weekday afternoons to explore local shops and enjoy a leisurely stroll through the Pearl District without the morning rush.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "North Portland residential zone.",
+    "descripcion_turistica": "Nestled between downtown Portland and the Pearl District, this MAX station is surrounded by trendy shops like Urban Outfitters and Patagonia. Explore nearby Burnside Street for unique cafes or catch a show at the historic Pittock Mansion. Don't miss the colorful street art along the walls of the buildings here.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2268,16 +2270,15 @@ export const estacionesPortland = [
     "seo_title": "Pioneer Courthouse Streetcar Stop — A-Loop | MetroGuia",
     "meta_description": "Pioneer Courthouse Square on Portland Streetcar A-Loop.",
     "h1": "Pioneer Courthouse Streetcar Stop — A-Loop",
-    "intro": "Downtown's iconic Pioneer Courthouse Square via Streetcar.",
+    "intro": "Experience the heart of Portland's history and literary scene at Pioneer Courthouse.",
     "tips": [
-      "Pioneer Square",
-      "Shopping",
-      "Events",
-      "Central hub"
+      "Take a guided tour of the historic Pioneer Courthouse during your visit for deeper insights into Portland's past.",
+      "Grab lunch at one of the many cafes in the area, such as The Pie Hole or the Porch Cafe, known for their delicious and creative offerings.",
+      "Check if there are any literary events happening at Powell’s Books while you're browsing through its vast collection."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Downtown landmark",
-    "descripcion_turistica": "Portland's iconic downtown gathering place.",
+    "descripcion_turistica": "Step off at Pioneer Courthouse (Streetcar) to explore Oregon’s founding monument and its adjacent Powell's City of Books, one of the world’s largest independent bookstores. Stroll through the lush Pioneer Courtyard or grab a coffee at nearby Vivace before heading to the Portland Art Museum just two blocks away.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,

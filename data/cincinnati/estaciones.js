@@ -379,15 +379,15 @@ export const estacionesCincinnati = [
     "seo_title": "Estación Duke Energy Convention Center — Cincinnati Bell Connector | MetroGuia",
     "meta_description": "Estación Duke Energy Convention Center en Bell Connector. Centro de convenciones. Tarifa FREE. | MetroGuia",
     "h1": "Estación Duke Energy Convention Center | Cincinnati Bell Connector",
-    "intro": "Acceso directo al Duke Energy Convention Center para eventos y conferencias. Transporte completamente gratuito.",
+    "intro": "Experience the heart of Cincinnati’s convention scene at Duke Energy Convention Center.",
     "tips": [
-      "Tarifa FREE: sin costo de viaje",
-      "Eventos: acceso directo a centro de convenciones",
-      "Hospedaje: hoteles cercanos para visitantes"
+      "Check event schedules to maximize your visit during downtime between sessions.",
+      "Use the Cincinnati Bell Connector for a seamless transfer from downtown hotels and dining spots.",
+      "Take advantage of free Wi-Fi in the station area to stay connected while you explore."
     ],
-    "mejor_horario": "Durante eventos y conferencias",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Duke Energy Convention Center es el hub de eventos de Cincinnati, perfectamente conectado por Bell Connector sin costo de viaje.",
+    "descripcion_turistica": "Located conveniently near hotels and dining, the Duke Energy Convention Center hosts exciting events like the NAB Show and Art Basel Miami Beach. Explore nearby attractions such as The Banks and Riverfront Plaza for additional entertainment and activities.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

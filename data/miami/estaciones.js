@@ -1622,17 +1622,15 @@ export const estacionesMiami = [
     "seo_title": "Estación Tri-Rail Fort Lauderdale — Ferroviario | MetroGuia",
     "meta_description": "Estación Tri-Rail Fort Lauderdale. Conexión regional a Fort Lauderdale.",
     "h1": "Estación Tri-Rail Fort Lauderdale — Sistema Tri-Rail | Miami",
-    "intro": "Estación Tri-Rail Fort Lauderdale. Hub regional importante.",
+    "intro": "Experience the pulse of Downtown Fort Lauderdale from Tri-Rail Station.",
     "tips": [
-      "Conexión a Miami, West Palm Beach y Boca Raton",
-      "Downtown Fort Lauderdale (2 min)",
-      "Tarifa: $2.50-8.75 USD",
-      "Viajes regionales cómodos",
-      "Hub importante regional"
+      "Use the Tri-Rail station to access Fort Lauderdale’s famous beach scene during non-peak times.",
+      "Combine your transit ride with a visit to the nearby Museum of Discovery and Science for an enriching cultural experience.",
+      "Take advantage of the nearby parking facilities if traveling by car, ensuring a smooth start to your day."
     ],
-    "mejor_horario": "Mañana y tarde para viajes",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds.",
     "mundial_relevancia": "Hub ferroviario regional",
-    "descripcion_turistica": "Tri-Rail Fort Lauderdale es hub regional importante. Conecta a Miami, West Palm Beach y otras ciudades. Downtown Fort Lauderdale (2 min) accesible.",
+    "descripcion_turistica": "Located in the heart of Downtown Fort Lauderdale, just steps away from Las Olas Boulevard and the Riverwalk. Explore the vibrant waterfront district with its charming boutiques, restaurants like Joe’s Stone Crab, and ArtDeco Historic District. Perfect for a leisurely stroll or a quick lunch break.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

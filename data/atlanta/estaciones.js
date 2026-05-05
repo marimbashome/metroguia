@@ -779,15 +779,15 @@ export const estacionesAtlanta = [
     "seo_title": "Estación Brookhaven MARTA — Oglethorpe University | MetroGuia",
     "meta_description": "Brookhaven, estación Gold MARTA cerca de Oglethorpe University.",
     "h1": "Estación Brookhaven/Oglethorpe — Línea Gold | Atlanta",
-    "intro": "Estación cerca de Oglethorpe University.",
+    "intro": "Experience the vibrant heart of Atlanta's university district at Brookhaven/Oglethorpe Station.",
     "tips": [
-      "Oglethorpe University",
-      "Zona residencial",
-      "Zona educativa"
+      "Consider purchasing a day pass for unlimited rides on MARTA to fully explore the area.",
+      "Check out the outdoor exhibits in Piedmont Park while waiting for your next train.",
+      "Visit The Varsity before or after your ride for a classic American dining experience."
     ],
-    "mejor_horario": "Mañana/tarde",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds.",
     "mundial_relevancia": "Centro educativo",
-    "descripcion_turistica": "Brookhaven sirve zona educativa y residencial.",
+    "descripcion_turistica": "Located near Oglethorpe University, this station connects you to the lively Midtown area. Explore Piedmont Park, visit the historic Fox Theatre, or grab a coffee at The Varsity, known for its famous burgers. Enjoy the blend of history and modernity in Atlanta's bustling heart.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -869,15 +869,15 @@ export const estacionesAtlanta = [
     "seo_title": "Estación Lenox MARTA — Lenox Square y Phipps Plaza | MetroGuia",
     "meta_description": "Lenox, estación Gold MARTA en principal zona de compras de Atlanta.",
     "h1": "Estación Lenox — Línea Gold | Atlanta",
-    "intro": "Estación con acceso directo a Lenox Square y Phipps Plaza.",
+    "intro": "Experience the heart of Atlanta's shopping and culture at Lenox Station.",
     "tips": [
-      "Lenox Square Mall",
-      "Phipps Plaza",
-      "Shopping de lujo"
+      "Bring cash or a card for the fare.",
+      "Check the latest schedules for frequent service.",
+      "Consider combining your trip with a visit to the nearby Georgia Aquarium or Zoo Atlanta."
     ],
-    "mejor_horario": "Mañana/tarde",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Centro comercial principal",
-    "descripcion_turistica": "Lenox es entrada a dos centros comerciales de lujo.",
+    "descripcion_turistica": "Located near Lenox Square Mall and Phipps Plaza, Lenox Station offers easy access to luxury retail, dining, and entertainment. Explore iconic stores like Nordstrom and Neiman Marcus, then stroll through the vibrant outdoor spaces of Phipps Plaza for a relaxing break.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

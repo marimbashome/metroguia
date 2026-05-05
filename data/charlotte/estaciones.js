@@ -342,15 +342,15 @@ export const estacionesCharlotte = [
     "seo_title": "Stonewall Station | Charlotte LYNX",
     "meta_description": "Stonewall LYNX station with transfer to Gold Line",
     "h1": "Stonewall Station",
-    "intro": "Downtown transfer hub",
+    "intro": "Stonewall Station is a vibrant hub connecting Charlotte's heart, bustling with energy and diversity.",
     "tips": [
-      "Connect to Gold Line here",
-      "Major junction point",
-      "Frequent service"
+      "Check real-time schedules to avoid delays when transferring between LYNX routes.",
+      "Visit during weekdays to enjoy quieter surroundings, perfect for a leisurely stroll through the area’s green spaces.",
+      "Use the station's amenities like restrooms and vending machines while waiting for your next connection."
     ],
-    "mejor_horario": "9 AM - 6 PM",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Transit hub",
-    "descripcion_turistica": "Downtown station with transfer options",
+    "descripcion_turistica": "Located near the CBD, Stonewall Station serves as a gateway to Uptown Charlotte. Explore the neighborhood's rich history at the Stonewall Jackson House or grab lunch at the bustling Tryon Plaza. Don't miss the Saturday farmers market for local produce and crafts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

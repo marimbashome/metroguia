@@ -1034,13 +1034,15 @@ export const estacionesPhiladelphia = [
     "seo_title": "Estación Oregon - SEPTA Philadelphia",
     "meta_description": "Oregon en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
     "h1": "Estación Oregon",
-    "intro": "Estación en vecindario residencial sur de Filadelfia.",
+    "intro": "Experience the vibrant Oregon Avenue neighborhood from SEPTA's Oregon Station.",
     "tips": [
-      "Acceso rápido al centro de Philadelphia"
+      "Bring cash for street vendors and local eateries.",
+      "Check schedules in advance during peak tourist months.",
+      "Pack comfortable shoes as you’ll be walking through historic streets."
     ],
-    "mejor_horario": "07:00-22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": 0.3,
-    "descripcion_turistica": "Estación en vecindario residencial sur de Filadelfia.",
+    "descripcion_turistica": "Step off at SEPTA’s Oregon Station to explore the historic Columbia Passenger Terminal and visit nearby South Street for its eclectic mix of shops, restaurants, and live music venues. Don’t miss the iconic Philadelphia Band Shell on the Benjamin Franklin Parkway.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3596,13 +3598,15 @@ export const estacionesPhiladelphia = [
     "seo_title": "Estación Beechwood-Brookline - SEPTA Philadelphia",
     "meta_description": "Beechwood-Brookline en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
     "h1": "Estación Beechwood-Brookline",
-    "intro": "Estación de Route 100 en Penn Valley.",
+    "intro": "Beechwood-Brookline station is a tranquil gateway into Lower Merion’s residential heart, offering a serene start to your exploration.",
     "tips": [
-      "Estación de parada regular con servicio SEPTA"
+      "Bring a camera to capture the picturesque surroundings and historic architecture.",
+      "Check out local eateries like Café Allegro for a delicious brunch or lunch after your train ride.",
+      "Plan visits during off-peak hours to enjoy a more relaxed atmosphere."
     ],
-    "mejor_horario": "07:00-22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": 0.4,
-    "descripcion_turistica": "Estación de Route 100 en Penn Valley.",
+    "descripcion_turistica": "Surrounded by lush greenery and historic homes, Beechwood-Brookline station serves as an ideal base for visiting the nearby Bryn Mawr College campus or exploring the natural beauty of Merion Golf Club. Enjoy a leisurely stroll along Lancaster Avenue to find charming cafes and boutique shops.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -3882,13 +3886,15 @@ export const estacionesPhiladelphia = [
     "seo_title": "Estación Radnor - SEPTA Philadelphia",
     "meta_description": "Radnor en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
     "h1": "Estación Radnor",
-    "intro": "Estación de Route 100 en Radnor.",
+    "intro": "Radnor Station is a charming gateway to historic Radnor Township, just outside Philadelphia.",
     "tips": [
-      "Estación de parada regular con servicio SEPTA"
+      "Pack walking shoes as there are many local attractions within walking distance.",
+      "Consider visiting during off-peak hours to enjoy quieter streets and shops.",
+      "Bring cash or a credit card for dining at local cafes and restaurants."
     ],
-    "mejor_horario": "07:00-22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": 0.45,
-    "descripcion_turistica": "Estación de Route 100 en Radnor.",
+    "descripcion_turistica": "Step off at Radnor Station and immerse yourself in the quaint streets of Radnor downtown. Explore the historic Radnor Community Church built in 1820 or visit the Radnor Heritage Museum. Nearby, Radnor Hall offers stunning gardens for a peaceful stroll. Don't miss the artisan shops on Main Street.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -7442,13 +7448,15 @@ export const estacionesPhiladelphia = [
     "seo_title": "Estación Prospect Park - SEPTA Philadelphia",
     "meta_description": "Prospect Park en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
     "h1": "Estación Prospect Park",
-    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "intro": "Prospect Park Station offers a tranquil entry into Philadelphia's cultural heart, with easy access to green spaces and historical sites.",
     "tips": [
-      "Estación de parada regular con servicio SEPTA"
+      "Carry a reusable water bottle for hydration during your park explorations.",
+      "Bring binoculars to spot wildlife along the riverbanks and in the zoo.",
+      "Check event schedules at the Philadelphia Zoo or Fairmount Park for interactive activities."
     ],
-    "mejor_horario": "07:00-22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": 0.35,
-    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "descripcion_turistica": "Step off at Prospect Park Station and explore the 500-acre Fairmount Park, perfect for picnics by the Schuylkill River or walking through the Philadelphia Zoo. Nearby, visit the historic Fairmount Waterworks to learn about the city’s water history.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -7488,13 +7496,15 @@ export const estacionesPhiladelphia = [
     "seo_title": "Estación Ridley Park - SEPTA Philadelphia",
     "meta_description": "Ridley Park en el sistema SEPTA de Philadelphia. Horarios, accesibilidad y conexiones.",
     "h1": "Estación Ridley Park",
-    "intro": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "intro": "Ridley Park Station offers a gateway into the tranquil beauty of Delaware County, PA.",
     "tips": [
-      "Estación de parada regular con servicio SEPTA"
+      "Pack comfortable shoes for exploring local parks.",
+      "Check park hours before visiting on weekends.",
+      "Use the SEPTA app for real-time train updates."
     ],
-    "mejor_horario": "07:00-22:00",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": 0.34,
-    "descripcion_turistica": "Estación Regional Rail en la línea Wilmington-Newark.",
+    "descripcion_turistica": "Step off at Ridley Park Station to explore historic Whitemarsh Township and nearby Valley Forge National Historical Park. Visit the picturesque Brandywine Creek State Park for walking trails and outdoor activities.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

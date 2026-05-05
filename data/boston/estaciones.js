@@ -1334,17 +1334,15 @@ export const estacionesBoston = [
     "seo_title": "Haymarket Station MBTA Boston — Orange & Green Line | MetroGuia",
     "meta_description": "Haymarket MBTA station. Orange and Green Line. Historic produce market and North End Italian restaurants.",
     "h1": "Haymarket Station — Orange & Green Line | Boston",
-    "intro": "Haymarket serves the historic produce markets and gateway to North End Italian neighborhood.",
+    "intro": "Experience the vibrant pulse of Haymarket Station, where history and modernity meet.",
     "tips": [
-      "Historic Haymarket stands",
-      "Fresh produce markets",
-      "North End Italian restaurants",
-      "Transfer to Green Line here",
-      "Historic neighborhood walking"
+      "Purchase pre-paid MBTA passes in advance online for easier access.",
+      "Explore the market stalls before your train, offering local foods and crafts.",
+      "Dine al fresco on Hanover Street during pleasant weather."
     ],
-    "mejor_horario": "Morning for market shopping, evening for dining",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Historic market and Italian cultural district",
-    "descripcion_turistica": "Haymarket Station provides access to Boston's historic farmers market and the charming North End with authentic Italian restaurants and bakeries.",
+    "descripcion_turistica": "Haymarket Station is a lively hub near Faneuil Hall and North End. Visit nearby produce stands for fresh market goods or stroll through the historic North End to savor authentic Italian cuisine at restaurants like Russo's Marketplace and Joe's Pizza.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -4143,14 +4141,15 @@ export const estacionesBoston = [
     "seo_title": "Fenway Station MBTA Boston — Green-D Line | MetroGuia",
     "meta_description": "Fenway MBTA station on the Green-D Line.",
     "h1": "Fenway Station — Green-D Line | Boston",
-    "intro": "Fenway is a Green-D Line station. Fenway station on the Green Line D branch. Closest station to Fenway Park (home of the Boston Red Sox) and near the Isabella Stewart Gardner Museum.",
+    "intro": "Fenway Station, a vibrant gateway to Boston’s historic and cultural heart.",
     "tips": [
-      "Green-D Line station",
-      "Pay with CharlieCard ($2.40)"
+      "Check game schedules before heading to Fenway Park to ensure you’re there during an inning break.",
+      "Visit the Isabella Stewart Gardner Museum’s courtyard to enjoy outdoor seating and views of the Boston skyline, weather permitting.",
+      "Use the nearby Kenmore Square for additional dining options after your visit."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Green-D Line station in Boston",
-    "descripcion_turistica": "Fenway station on the MBTA Green-D Line.",
+    "descripcion_turistica": "Board at Fenway for easy access to baseball lore at Fenway Park or art treasures at the Isabella Stewart Gardner Museum. Catch a Red Sox game or explore the museum's Venetian canal replica. Don’t miss the iconic Green Monster for a unique baseball experience, just steps away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -4189,14 +4188,14 @@ export const estacionesBoston = [
     "seo_title": "Longwood Station MBTA Boston — Green-D Line | MetroGuia",
     "meta_description": "Longwood MBTA station on the Green-D Line.",
     "h1": "Longwood Station — Green-D Line | Boston",
-    "intro": "Longwood is a Green-D Line station. Longwood station serving the Longwood Medical and Academic Area, home to Harvard Medical School and several major hospitals.",
+    "intro": "Experience the heart of medical innovation at Longwood, where cutting-edge research meets bustling transit.",
     "tips": [
-      "Green-D Line station",
-      "Pay with CharlieCard ($2.40)"
+      "Use this station to access hospitals and academic institutions without a car.",
+      "Visit during off-peak hours to avoid crowds at popular attractions like the MEEI."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Green-D Line station in Boston",
-    "descripcion_turistica": "Longwood station on the MBTA Green-D Line.",
+    "descripcion_turistica": "Located near Harvard Medical School and Brigham and Women's Hospital, explore the vibrant Longwood Medical Area. Visit the Massachusetts Eye and Ear Infirmary for its historic architecture or enjoy a stroll through the Arnold Arboretum, just a short walk away. Don’t miss the annual St. Patrick’s Day parade.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -6031,14 +6030,15 @@ export const estacionesBoston = [
     "seo_title": "Lowell Station MBTA Boston — Commuter-Rail Line | MetroGuia",
     "meta_description": "Lowell MBTA station on the Commuter-Rail Line.",
     "h1": "Lowell Station — Commuter-Rail Line | Boston",
-    "intro": "Lowell is a Commuter-Rail Line station. Lowell station on the Lowell Commuter Rail line. Gateway to Lowell National Historical Park preserving America's Industrial Revolution history.",
+    "intro": "Experience Lowell's industrial history at the MBTA's Lowell station.",
     "tips": [
-      "Commuter-Rail Line station",
-      "Pay with CharlieCard ($2.40)"
+      "Use the park shuttle service to easily access museum sites.",
+      "Check the park's website for any special exhibits or events.",
+      "Bring comfortable walking shoes as there is plenty of ground to cover."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Commuter-Rail Line station in Lowell",
-    "descripcion_turistica": "Lowell station on the MBTA Commuter-Rail Line.",
+    "descripcion_turistica": "Explore Lowell National Historical Park and visit the Boott Cotton Mills Museum, where you can step back in time. Nearby, Lowell Memorial Union offers coffee and snacks for a brief respite before your next adventure.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -6119,14 +6119,15 @@ export const estacionesBoston = [
     "seo_title": "Newburyport Station MBTA Boston — Commuter-Rail Line | MetroGuia",
     "meta_description": "Newburyport MBTA station on the Commuter-Rail Line.",
     "h1": "Newburyport Station — Commuter-Rail Line | Boston",
-    "intro": "Newburyport is a Commuter-Rail Line station. Newburyport station, terminal of the Newburyport branch. Beautiful historic downtown with waterfront dining and access to Plum Island beaches.",
+    "intro": "Discover the charming Newburyport waterfront on your MBTA journey.",
     "tips": [
-      "Commuter-Rail Line station",
-      "Pay with CharlieCard ($2.40)"
+      "Pack waterproof shoes for beach walks",
+      "Check tides before visiting Plum Island Beach",
+      "Bring cash for street food at the waterfront"
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "Commuter-Rail Line station in Newburyport",
-    "descripcion_turistica": "Newburyport station on the MBTA Commuter-Rail Line.",
+    "descripcion_turistica": "Step off at Newburyport Station and explore the historic district, visit the Old Market Square with its 18th-century buildings, or take a stroll along Plum Island Beach. Don't miss the Newburyport Wharf for fresh seafood and local crafts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

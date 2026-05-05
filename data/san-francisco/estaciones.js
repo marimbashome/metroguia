@@ -933,15 +933,14 @@ export const estacionesSF = [
     "seo_title": "19th Street Oakland BART Station — Oakland | MetroGuia",
     "meta_description": "19th Street Oakland station on BART in Oakland. Uptown Oakland arts and dining district. Fox Theater and gallery scene.",
     "h1": "19th Street Oakland — Red, Orange, Yellow | BART",
-    "intro": "Uptown Oakland arts and dining district. Fox Theater and gallery scene.",
+    "intro": "Experience the vibrant heart of Uptown Oakland at 19th Street BART and Muni station.",
     "tips": [
-      "Uptown Oakland nightlife and restaurants",
-      "Fox Theater concerts 3 min",
-      "Cross-platform transfer hub",
-      "Growing arts district"
+      "Check show schedules at the Fox Theater for entertainment options after transit.",
+      "Use BART’s website to plan routes and arrive early to avoid waiting in long lines.",
+      "Take advantage of nearby eateries like Tadich Grill or The Rusty Rake for a pre-show meal."
     ],
-    "mejor_horario": "Weekday morning for commute, weekend for tourism",
-    "descripcion_turistica": "Uptown Oakland arts and dining district. Fox Theater and gallery scene.",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
+    "descripcion_turistica": "Located just steps from the historic Fox Theater, 19th Street is a bustling hub for cultural events. Explore nearby Jack London Square or catch live music at the Fox to enhance your visit.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1564,15 +1563,14 @@ export const estacionesSF = [
     "seo_title": "Rockridge BART Station — Oakland | MetroGuia",
     "meta_description": "Rockridge station on BART in Oakland. Charming Rockridge neighborhood. College Avenue dining and boutiques.",
     "h1": "Rockridge — Yellow | BART",
-    "intro": "Charming Rockridge neighborhood. College Avenue dining and boutiques.",
+    "intro": "Experience the heart of Berkeley at Rockridge Station, where BART and Muni converge.",
     "tips": [
-      "College Avenue restaurants and shops 2 min",
-      "Rockridge Market Hall gourmet food",
-      "Charming residential neighborhood",
-      "Great brunch spots"
+      "Bring cash for street vendors and market stalls.",
+      "Use the BART parking garage for car-free access to the area.",
+      "Check event calendars for performances at the Orpheum Theatre."
     ],
-    "mejor_horario": "Weekday morning for commute, weekend for tourism",
-    "descripcion_turistica": "Charming Rockridge neighborhood. College Avenue dining and boutiques.",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
+    "descripcion_turistica": "Step off at Rockridge BART and explore College Avenue's vibrant shops like Rockridge Market Hall. Enjoy local cuisine, visit nearby Tassajara Springs State Beach for a hike, or catch a show at the Orpheum Theatre.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -2412,15 +2410,14 @@ export const estacionesSF = [
     "seo_title": "Forest Hill Muni Metro Station — San Francisco | MetroGuia",
     "meta_description": "Forest Hill station on Muni Metro in San Francisco. Deepest Muni Metro station. Elegant 1918 station building.",
     "h1": "Forest Hill — K, L, M | Muni Metro",
-    "intro": "Deepest Muni Metro station. Elegant 1918 station building.",
+    "intro": "Experience the serene Forest Hill neighborhood's gateway through MUNI BART.",
     "tips": [
-      "Deepest Muni station — requires elevator",
-      "Historic 1918 station entrance",
-      "Quiet residential neighborhood",
-      "K/L/M lines only"
+      "Bring water; the station has limited amenities.",
+      "Check schedules online before you go to avoid delays.",
+      "Pack snacks as food options are scarce in this area."
     ],
-    "mejor_horario": "Weekday morning for commute, weekend for tourism",
-    "descripcion_turistica": "Deepest Muni Metro station. Elegant 1918 station building.",
+    "mejor_horario": "Weekday mornings offer a quieter ride, ideal for enjoying your surroundings without the rush.",
+    "descripcion_turistica": "Step off at Forest Hill and explore vibrant shops in Glen Park, or enjoy scenic trails near Lake Merced. Don't miss the historic Glen Park Library and the nearby tennis courts. Perfect for a leisurely stroll or jog around the lake.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

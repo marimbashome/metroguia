@@ -1135,13 +1135,15 @@ export const estacionesMontreal = [
     "seo_title": "Snowdon Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Snowdon station on STM Metro Orange Line in Montreal.",
     "h1": "Snowdon Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "Experience the heart of downtown Montreal at Snowdon Station, a vibrant hub of culture and commerce.",
     "tips": [
-      "Orange Line"
+      "Check the Bell Centre's schedule for ice hockey games or concerts to enhance your visit.",
+      "Walk through McGill University’s historic campuses for a glimpse into Montreal’s academic heritage.",
+      "Dine at one of the many bistro-style restaurants just outside the station for authentic local cuisine."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds and enjoy the area's attractions without the pressure of travel times.",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Snowdon is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Snowdon Station is your gateway to the Quartier des Spectacles, home to the Bell Centre where you can catch a NHL game or concert. Explore nearby McGill University for its historic architecture, or visit Place-des-Arts for performances by renowned artists. Don't miss the trendy bars and eateries in the surrounding area.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1440,13 +1442,15 @@ export const estacionesMontreal = [
     "seo_title": "Mont Royal Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Mont Royal station on STM Metro Orange Line in Montreal.",
     "h1": "Mont Royal Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "Mont Royal Métro station is a bustling hub offering direct access to the heart of Montreal's vibrant city life.",
     "tips": [
-      "Orange Line"
+      "Use the station’s top-level entrance near Place d'Youville to enjoy panoramic views of Mount Royal before heading out.",
+      "Visit the nearby Atwater Market, a foodie paradise with over 40 vendors offering local delicacies and crafts.",
+      "Check the weather forecast and plan your visit in spring or fall for pleasant temperatures and fewer crowds."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Mont Royal is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Located in the Plateau Mont-Royal neighborhood, this station connects you to diverse cultural attractions like the iconic Notre-Dame Basilica and the trendy rue Saint-Viateur West. Explore nearby parks such as Parc Jean-Drapeau for relaxation or head to the Quartier des Spectacles for entertainment.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1880,13 +1884,15 @@ export const estacionesMontreal = [
     "seo_title": "Snowdon Orange Station — Montreal STM Metro | MetroGuia",
     "meta_description": "Snowdon Orange station on STM Metro Orange Line in Montreal.",
     "h1": "Snowdon Orange Station — STM Metro Orange Line | Montreal",
-    "intro": "Station on the Orange Line of Montreal's STM Metro.",
+    "intro": "Experience the vibrant heart of Mont Royal at Snowdon Orange.",
     "tips": [
-      "Orange Line"
+      "Visit early morning for serene park views.",
+      "Use the免费的Montreal Public Transit app for real-time updates.",
+      "Check out the nearby Mount Royal Tramway for a scenic ride."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Snowdon Orange is a station on the Orange Line of Montreal's STM Metro system.",
+    "descripcion_turistica": "Exit Snowdon Orange and explore Mount Royal's iconic lookout, Île-des-Soeurs. Enjoy panoramic views from the Tower and picnic by Jacques-Cartier Park. Nearby attractions include the Botanical Garden and Montreal Museum of Fine Arts.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

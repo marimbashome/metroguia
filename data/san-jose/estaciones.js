@@ -518,13 +518,15 @@ export const estacionesSanJose = [
     "seo_title": "Convention Center Station — San Jose VTA Light Rail | MetroGuia",
     "meta_description": "Convention Center station on VTA Light Rail Blue Line in San Jose.",
     "h1": "Convention Center Station — VTA Light Rail Blue Line | San Jose",
-    "intro": "Station on the Blue Line of San Jose's VTA Light Rail.",
+    "intro": "Experience the pulse of San Jose at Convention Center Station, where modern conveniences meet vibrant culture.",
     "tips": [
-      "Blue Line"
+      "Check event schedules ahead of time to avoid crowds at the Convention Center.",
+      "Visit San Pedro Square Market for a taste of local cuisine and crafts.",
+      "Walk along First Street to discover the eclectic mix of boutiques in the SoFA District."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Convention Center is a station on the Blue Line of San Jose's VTA Light Rail system.",
+    "descripcion_turistica": "Conveniently located near the San Jose McEnery Convention Center and SoFA District, this station offers easy access to major events. Explore the historic San Pedro Square Market for artisanal goods and gourmet foods before or after your ride. Enjoy the urban vibe of the SoFA District with its trendy shops and lively atmosphere.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1142,13 +1144,15 @@ export const estacionesSanJose = [
     "seo_title": "Crossman Station — San Jose VTA Light Rail | MetroGuia",
     "meta_description": "Crossman station on VTA Light Rail Green Line in San Jose.",
     "h1": "Crossman Station — VTA Light Rail Green Line | San Jose",
-    "intro": "Station on the Green Line of San Jose's VTA Light Rail.",
+    "intro": "Crossman Station in San Jose is a vibrant transfer hub, connecting you to the heart of downtown.",
     "tips": [
-      "Green Line"
+      "Use the real-time VTA app to plan your route and stay updated on schedules.",
+      "Carry a reusable water bottle; there are free water stations nearby to refill.",
+      "Enjoy free Wi-Fi in the station for browsing or catching up."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Crossman is a station on the Green Line of San Jose's VTA Light Rail system.",
+    "descripcion_turistica": "Located near Santana Row and Westfield Valley Fair malls, Crossman offers easy access to shopping, dining, and entertainment. Explore nearby Winchester Mall for more retail therapy or catch a movie at Regal Cinemas. Perfect for those needing a break from travel with plenty of amenities within walking distance.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1557,13 +1561,15 @@ export const estacionesSanJose = [
     "seo_title": "Cropley Station — San Jose VTA Light Rail | MetroGuia",
     "meta_description": "Cropley station on VTA Light Rail Orange Line in San Jose.",
     "h1": "Cropley Station — VTA Light Rail Orange Line | San Jose",
-    "intro": "Station on the Orange Line of San Jose's VTA Light Rail.",
+    "intro": "Cropley Station is a vibrant stop on VTA Light Rail, offering quick access to downtown San Jose.",
     "tips": [
-      "Orange Line"
+      "Always check real-time schedules before boarding to avoid delays.",
+      "Grab a bite at the local burger joint, Fat's Burgers & Fries, for a delicious break.",
+      "Use the station’s free Wi-Fi to plan your next destination or share photos with friends."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Cropley is a station on the Orange Line of San Jose's VTA Light Rail system.",
+    "descripcion_turistica": "Explore the bustling Cropley Plaza with its lively shops and restaurants. Nearby, visit The Tech Museum of Innovation for hands-on science fun or catch a show at the San Jose Repertory Theatre just blocks away.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
@@ -1589,13 +1595,15 @@ export const estacionesSanJose = [
     "seo_title": "Hostetter Station — San Jose VTA Light Rail | MetroGuia",
     "meta_description": "Hostetter station on VTA Light Rail Orange Line in San Jose.",
     "h1": "Hostetter Station — VTA Light Rail Orange Line | San Jose",
-    "intro": "Station on the Orange Line of San Jose's VTA Light Rail.",
+    "intro": "Step into the heart of San Jose at Hostetter, where light rail meets vibrant community life.",
     "tips": [
-      "Orange Line"
+      "Check for VTA parking options if bringing a car; street parking can be scarce.",
+      "Use the station’s Wi-Fi to plan your next destination or catch up on emails.",
+      "Visit early morning to enjoy quiet moments before the day’s hustle and bustle begins."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "Hostetter is a station on the Orange Line of San Jose's VTA Light Rail system.",
+    "descripcion_turistica": "Nestled in the southeast corner of downtown San Jose, Hostetter Station is a bustling hub. Explore nearby Almaden Mall for shopping or visit the historic San Jose City Hall just a short walk away. Perfect for leisurely strolls and discovering local eateries like Cafe Grumpy.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,

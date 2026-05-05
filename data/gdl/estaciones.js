@@ -502,15 +502,15 @@ export const estacionesGDL = [
     "seo_title": "Estación Juárez Metro Guadalajara — Guía turística | MetroGuia",
     "meta_description": "Estación Juárez de Línea 1 en Guadalajara. Cerca de Catedral de Guadalajara. Horarios, conexiones y guía turística.",
     "h1": "Estación Juárez — Línea 1 | Guadalajara",
-    "intro": "Estación Juárez del sistema SITEUR Tren Ligero de Guadalajara, ubicada en Guadalajara. Línea 1.",
+    "intro": "Explora la vibrante historia de Guadalajara desde Juárez, cerca de Catedral y Teatro Degollado.",
     "tips": [
-      "Ubicada en zona historico cultural",
-      "Transbordo disponible a Línea 2",
-      "Pago con tarjeta Mi Movilidad ($9.50 MXN)"
+      "Comprende que el horario vespertino es ideal para visitar la Catedral sin colas",
+      "Reserva entradas al Teatro Degollado con anticipación para evitar decepciones",
+      "No te pierdas los viernes por la noche en la Plaza de Armas, donde se celebra un popular mercadillo"
     ],
-    "mejor_horario": "Mañana para evitar horas pico",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
-    "descripcion_turistica": "Juárez es una estación de Línea 1 en Guadalajara. Ofrece acceso a Catedral de Guadalajara (5 min). Permite transbordo a Línea 2.",
+    "descripcion_turistica": "Ubicada estratégicamente cerca de la histórica Catedral de Guadalajara, la Plaza de Armas y el renombrado Teatro Degollado, esta estación es ideal para iniciarte en la rica cultura local. Disfruta de las impresionantes catedrales góticas, asiste a un espectáculo teatral o simplemente relajate en la Plaza de Armas, un reflejo perfecto del espíritu jalisciense.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -3531,15 +3531,15 @@ export const estacionesGDL = [
     "seo_title": "Estación Monumental Mi Macro Guadalajara — Guía turística | MetroGuia",
     "meta_description": "Estación Monumental de Mi Macro Calzada en Guadalajara. Cerca de Monumental. Horarios, conexiones y guía turística.",
     "h1": "Estación Monumental — Mi Macro Calzada | Guadalajara",
-    "intro": "Estación Monumental del sistema Mi Macro de Guadalajara, ubicada en Guadalajara. Mi Macro Calzada.",
+    "intro": "Descubre el corazón de la cultura guadalupana en esta estación vibrante.",
     "tips": [
-      "Ubicada en zona residencial",
-      "Sin transbordos directos",
-      "Pago con tarjeta Mi Movilidad ($9.50 MXN)"
+      "Reserva entradas al Templo de Guadalupe con antelación para evitar largas colas durante los fines de semana.",
+      "No olvides caminar hacia la Plaza Guadalupana, donde encontrarás una variedad de restaurantes y tiendas artesanales.",
+      "Para una experiencia más tranquila, visita el monumento en las mañanas temprano o en días laborables."
     ],
-    "mejor_horario": "Mañana para evitar horas pico",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
-    "descripcion_turistica": "Monumental es una estación de Mi Macro Calzada en Guadalajara. Ofrece acceso a Monumental (1 min). ",
+    "descripcion_turistica": "Ubicada cerca del Templo de Guadalupe, Monumental te acerca a la rica historia religiosa y artística de la ciudad. Visita el santuario para una experiencia espiritual inolvidable y explorar las tiendas locales ofrece un recuerdo auténtico.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
@@ -4052,15 +4052,15 @@ export const estacionesGDL = [
     "seo_title": "Estación Agua Azul Mi Macro Guadalajara — Guía turística | MetroGuia",
     "meta_description": "Estación Agua Azul de Mi Macro Calzada en Guadalajara. Cerca de Agua Azul. Horarios, conexiones y guía turística.",
     "h1": "Estación Agua Azul — Mi Macro Calzada | Guadalajara",
-    "intro": "Estación Agua Azul del sistema Mi Macro de Guadalajara, ubicada en Guadalajara. Mi Macro Calzada.",
+    "intro": "Descubre la magia de Agua Azul desde la comodidad del Tren Ligero GDL!",
     "tips": [
-      "Ubicada en zona turistico",
-      "Sin transbordos directos",
-      "Pago con tarjeta Mi Movilidad ($9.50 MXN)"
+      "Inicia tu visita temprano para evitar las multitudes.",
+      "No olvides un buen par de zapatillas ya que hay muchos recorridos a pie.",
+      "Visita durante la temporada lluviosa para disfrutar de las cascadas en su máximo esplendor."
     ],
-    "mejor_horario": "Mañana para evitar horas pico",
+    "mejor_horario": "Mañanas entre semana para evitar multitudes",
     "mundial_relevancia": "Sin relevancia directa al Estadio Akron",
-    "descripcion_turistica": "Agua Azul es una estación de Mi Macro Calzada en Guadalajara. Ofrece acceso a Agua Azul (1 min). ",
+    "descripcion_turistica": "Cercano a la estación Agua Azul, el Parque ofrece espléndidos cascadas y senderos tranquilos. No te pierdas el Paseo del Senderismo y el Mirador Principal para una experiencia inolvidable.",
     "accesibilidad": {
       "elevador": false,
       "rampa": true,
