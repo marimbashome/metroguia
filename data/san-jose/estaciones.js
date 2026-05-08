@@ -482,13 +482,15 @@ export const estacionesSanJose = [
     "seo_title": "San Fernando Station — San Jose VTA Light Rail | MetroGuia",
     "meta_description": "San Fernando station on VTA Light Rail Blue Line in San Jose.",
     "h1": "San Fernando Station — VTA Light Rail Blue Line | San Jose",
-    "intro": "Station on the Blue Line of San Jose's VTA Light Rail.",
+    "intro": "San Fernando Station is the vibrant heart of VTA Light Rail, offering easy access to San Jose's bustling downtown.",
     "tips": [
-      "Blue Line"
+      "Check real-time schedules to avoid delays during peak hours.",
+      "Carry cash or a card for fare payment; no exact change is required at the machines.",
+      "Visit Japantown’s Heritage Plaza for a taste of Japanese culture, including a traditional garden."
     ],
-    "mejor_horario": "Any time",
+    "mejor_horario": "Weekday mornings to avoid rush hour crowds",
     "mundial_relevancia": "No direct FIFA relevance",
-    "descripcion_turistica": "San Fernando is a station on the Blue Line of San Jose's VTA Light Rail system.",
+    "descripcion_turistica": "Step off at San Fernando for a quick transfer to the heart of San Jose. Explore the vibrant Japantown with its unique shops and Serra Square Park, perfect for a leisurely stroll. Don’t miss the iconic El Camino Real, lined with historic buildings and charming cafes.",
     "accesibilidad": {
       "elevador": true,
       "rampa": true,
