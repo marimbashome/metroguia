@@ -36,7 +36,7 @@ const DATA_DIR   = path.join(REPO_ROOT, 'data')
 const PROGRESS_FILE = process.env.ENRICH_PROGRESS_FILE || path.join(__dirname, '.enrich-progress.json')
 
 // ─── Config ──────────────────────────────────────────────────────────────────
-const OLLAMA_HOST    = process.env.OLLAMA_HOST || 'http://192.168.50.241:11434'
+const OLLAMA_HOST    = process.env.OLLAMA_HOST || 'http://localhost:11434'
 const OLLAMA_URL     = `${OLLAMA_HOST}/api/generate`
 const OLLAMA_MODEL   = 'qwen2.5:7b'
 const BATCH_SIZE     = 1            // stations per concurrent slot (keep 1 for reliability)
@@ -155,6 +155,24 @@ const CITIES = [
   { folder: 'morelia',        exportName: 'estacionesMorelia',       lang: 'es', country: 'México', system: 'BRT Morelia' },
   { folder: 'campeche',       exportName: 'estacionesCampeche',      lang: 'es', country: 'México', system: 'BRT Campeche' },
   { folder: 'veracruz',       exportName: 'estacionesVeracruz',      lang: 'es', country: 'México', system: 'BRT Veracruz' },
+  // World — Europe
+  { folder: 'london',         exportName: 'estacionesLondon',        lang: 'en', country: 'UK',     system: 'London Underground (Tube)' },
+  { folder: 'paris',          exportName: 'estacionesParis',         lang: 'fr', country: 'France', system: 'Paris Métro' },
+  { folder: 'madrid',         exportName: 'estacionesMadrid',        lang: 'es', country: 'España', system: 'Metro de Madrid' },
+  { folder: 'berlin',         exportName: 'estacionesBerlin',        lang: 'de', country: 'Germany', system: 'U-Bahn Berlin' },
+  { folder: 'barcelona',      exportName: 'estacionesBarcelona',     lang: 'es', country: 'España', system: 'Metro de Barcelona' },
+  // World — Latin America
+  { folder: 'buenos-aires',   exportName: 'estacionesBuenosAires',   lang: 'es', country: 'Argentina', system: 'Subte Buenos Aires' },
+  { folder: 'sao-paulo',      exportName: 'estacionesSaoPaulo',      lang: 'pt', country: 'Brasil',    system: 'Metrô São Paulo' },
+  { folder: 'santiago',       exportName: 'estacionesSantiago',      lang: 'es', country: 'Chile',     system: 'Metro de Santiago' },
+  { folder: 'bogota',         exportName: 'estacionesBogota',        lang: 'es', country: 'Colombia',  system: 'TransMilenio BRT' },
+  { folder: 'lima',           exportName: 'estacionesLima',          lang: 'es', country: 'Perú',      system: 'Metro de Lima' },
+  // World — Asia/Oceania
+  { folder: 'tokyo',          exportName: 'estacionesTokyo',         lang: 'ja', country: 'Japan',    system: 'Tokyo Metro' },
+  { folder: 'seoul',          exportName: 'estacionesSeoul',         lang: 'ko', country: 'Korea',    system: 'Seoul Metro' },
+  { folder: 'singapore',      exportName: 'estacionesSingapore',     lang: 'en', country: 'Singapore', system: 'MRT Singapore' },
+  { folder: 'dubai',          exportName: 'estacionesDubai',         lang: 'en', country: 'UAE',      system: 'Dubai Metro' },
+  { folder: 'sydney',         exportName: 'estacionesSydney',        lang: 'en', country: 'Australia', system: 'Sydney Metro' },
 ]
 
 // ─── Few-shot examples (Seattle — high quality reference) ────────────────────

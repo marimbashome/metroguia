@@ -79,4 +79,221 @@
    Batch 52/79 (5 stations)… ✗ FAILED: The operation was aborted due to timeout
    Batch 53/79 (5 stations)… ✗ FAILED: The operation was aborted due to timeout
    Batch 54/79 (5 stations)… ✗ FAILED: The operation was aborted due to timeout
-   Batch 55/79 (5 stations)… 
+   Batch 55/79 (5 stations)… ═══════════════════════════════════════════════════
+  MetroGuia Station Enrichment Pipeline v3 — CONCURRENT
+  Providers: OpenRouter → Groq → Cerebras → Ollama
+  Keys loaded: OR×0 | Groq×0 | Cerebras×0
+  Concurrency: 3 slots/worker (3 simultaneous calls)
+═══════════════════════════════════════════════════
+
+  ⚪ OpenRouter (no key — set OPENROUTER_API_KEY)
+  ⚪ Groq (no key — set GROQ_API_KEY)
+  ⚪ Cerebras (no key — set CEREBRAS_API_KEY)
+  ⚪ Ollama (not reachable at http://192.168.50.241:11434)
+
+❌ No LLM provider available. Set OPENROUTER_API_KEY or GROQ_API_KEY, or start Ollama.
+═══════════════════════════════════════════════════
+  MetroGuia Station Enrichment Pipeline v3 — CONCURRENT
+  Providers: OpenRouter → Groq → Cerebras → Ollama
+  Keys loaded: OR×0 | Groq×0 | Cerebras×0
+  Concurrency: 3 slots/worker (3 simultaneous calls)
+═══════════════════════════════════════════════════
+
+  ⚪ OpenRouter (no key — set OPENROUTER_API_KEY)
+  ⚪ Groq (no key — set GROQ_API_KEY)
+  ⚪ Cerebras (no key — set CEREBRAS_API_KEY)
+  ✅ Ollama local (qwen2.5:7b @ http://localhost:11434)
+
+✅ nyc                    407 stations — all rich
+✅ los-angeles            152 stations — all rich
+⏭  seattle                [SKIP — reference city]
+✅ kansas-city            18 stations — all rich
+✅ dallas                 79 stations — all rich
+✅ san-francisco          122 stations — all rich
+✅ houston                37 stations — all rich
+✅ philadelphia           157 stations — all rich
+✅ atlanta                38 stations — all rich
+✅ chicago                139 stations — all rich
+✅ boston                 157 stations — all rich
+✅ miami                  45 stations — all rich
+✅ washington-dc          97 stations — all rich
+✅ denver                 46 stations — all rich
+✅ phoenix                25 stations — all rich
+✅ charlotte              32 stations — all rich
+✅ portland               61 stations — all rich
+✅ san-diego              20 stations — all rich
+✅ salt-lake-city         59 stations — all rich
+✅ minneapolis            42 stations — all rich
+✅ baltimore              79 stations — all rich
+✅ cleveland              38 stations — all rich
+✅ pittsburgh             13 stations — all rich
+✅ st-louis               27 stations — all rich
+✅ las-vegas              7 stations — all rich
+✅ sacramento             34 stations — all rich
+✅ orlando                16 stations — all rich
+✅ tampa                  11 stations — all rich
+✅ buffalo                14 stations — all rich
+✅ norfolk                11 stations — all rich
+✅ new-orleans            36 stations — all rich
+✅ honolulu               21 stations — all rich
+✅ nashville              7 stations — all rich
+✅ austin                 9 stations — all rich
+✅ oklahoma-city          8 stations — all rich
+✅ milwaukee              8 stations — all rich
+✅ jacksonville           8 stations — all rich
+✅ el-paso                10 stations — all rich
+✅ cincinnati             8 stations — all rich
+✅ newark                 21 stations — all rich
+
+🏙  SAN-JOSE — 47 total, 1 sparse
+   [0s ?/min] Chunk 1/1 (×1)… ✓ 1/1 [ollama/qwen2.5:7b@http://localhost:11434]
+   ✅ Done: 1/1 enriched in 51s (1.2/min)
+✅ detroit                25 stations — all rich
+✅ tucson                 14 stations — all rich
+✅ toronto                91 stations — all rich
+✅ vancouver              58 stations — all rich
+✅ montreal               72 stations — all rich
+✅ calgary                44 stations — all rich
+✅ edmonton               30 stations — all rich
+✅ ottawa                 24 stations — all rich
+✅ mississauga            17 stations — all rich
+✅ kitchener-waterloo     19 stations — all rich
+✅ san-juan               16 stations — all rich
+✅ gdl                    125 stations — all rich
+✅ mty                    41 stations — all rich
+✅ chihuahua              29 stations — all rich
+✅ leon                   20 stations — all rich
+✅ puebla                 27 stations — all rich
+✅ merida                 21 stations — all rich
+✅ queretaro              61 stations — all rich
+✅ tren-maya              31 stations — all rich
+✅ tijuana                27 stations — all rich
+✅ toluca                 15 stations — all rich
+✅ villahermosa           10 stations — all rich
+✅ oaxaca                 12 stations — all rich
+✅ morelia                6 stations — all rich
+✅ campeche               14 stations — all rich
+✅ veracruz               12 stations — all rich
+✅ london                 25 stations — all rich
+✅ paris                  25 stations — all rich
+✅ madrid                 25 stations — all rich
+✅ berlin                 20 stations — all rich
+✅ barcelona              20 stations — all rich
+✅ buenos-aires           14 stations — all rich
+✅ sao-paulo              7 stations — all rich
+✅ santiago               7 stations — all rich
+✅ bogota                 6 stations — all rich
+✅ lima                   6 stations — all rich
+✅ tokyo                  21 stations — all rich
+✅ seoul                  11 stations — all rich
+✅ singapore              11 stations — all rich
+✅ dubai                  8 stations — all rich
+✅ sydney                 10 stations — all rich
+
+═══════════════════════════════════════════════════
+  ✅ Pipeline complete!
+  Stations enriched: 1
+  Time: 0m 52s
+  Progress saved: /Users/enriquemiceli/Documents/MarimbasHome/Codigo/metroguia/scripts/.enrich-progress.json
+═══════════════════════════════════════════════════
+═══════════════════════════════════════════════════
+  MetroGuia Station Enrichment Pipeline v3 — CONCURRENT
+  Providers: OpenRouter → Groq → Cerebras → Ollama
+  Keys loaded: OR×0 | Groq×0 | Cerebras×0
+  Concurrency: 3 slots/worker (3 simultaneous calls)
+═══════════════════════════════════════════════════
+
+  ⚪ OpenRouter (no key — set OPENROUTER_API_KEY)
+  ⚪ Groq (no key — set GROQ_API_KEY)
+  ⚪ Cerebras (no key — set CEREBRAS_API_KEY)
+  ✅ Ollama local (qwen2.5:7b @ http://localhost:11434)
+
+✅ nyc                    407 stations — all rich
+✅ los-angeles            152 stations — all rich
+⏭  seattle                [SKIP — reference city]
+✅ kansas-city            18 stations — all rich
+✅ dallas                 79 stations — all rich
+✅ san-francisco          122 stations — all rich
+✅ houston                37 stations — all rich
+✅ philadelphia           157 stations — all rich
+✅ atlanta                38 stations — all rich
+✅ chicago                139 stations — all rich
+✅ boston                 157 stations — all rich
+✅ miami                  45 stations — all rich
+✅ washington-dc          97 stations — all rich
+✅ denver                 46 stations — all rich
+✅ phoenix                25 stations — all rich
+✅ charlotte              32 stations — all rich
+✅ portland               61 stations — all rich
+✅ san-diego              20 stations — all rich
+✅ salt-lake-city         59 stations — all rich
+✅ minneapolis            42 stations — all rich
+✅ baltimore              79 stations — all rich
+✅ cleveland              38 stations — all rich
+✅ pittsburgh             13 stations — all rich
+✅ st-louis               27 stations — all rich
+✅ las-vegas              7 stations — all rich
+✅ sacramento             34 stations — all rich
+✅ orlando                16 stations — all rich
+✅ tampa                  11 stations — all rich
+✅ buffalo                14 stations — all rich
+✅ norfolk                11 stations — all rich
+✅ new-orleans            36 stations — all rich
+✅ honolulu               21 stations — all rich
+✅ nashville              7 stations — all rich
+✅ austin                 9 stations — all rich
+✅ oklahoma-city          8 stations — all rich
+✅ milwaukee              8 stations — all rich
+✅ jacksonville           8 stations — all rich
+✅ el-paso                10 stations — all rich
+✅ cincinnati             8 stations — all rich
+✅ newark                 21 stations — all rich
+✅ san-jose               47 stations — all rich
+✅ detroit                25 stations — all rich
+✅ tucson                 14 stations — all rich
+✅ toronto                91 stations — all rich
+✅ vancouver              58 stations — all rich
+✅ montreal               72 stations — all rich
+✅ calgary                44 stations — all rich
+✅ edmonton               30 stations — all rich
+✅ ottawa                 24 stations — all rich
+✅ mississauga            17 stations — all rich
+✅ kitchener-waterloo     19 stations — all rich
+✅ san-juan               16 stations — all rich
+✅ gdl                    125 stations — all rich
+✅ mty                    41 stations — all rich
+✅ chihuahua              29 stations — all rich
+✅ leon                   20 stations — all rich
+✅ puebla                 27 stations — all rich
+✅ merida                 21 stations — all rich
+✅ queretaro              61 stations — all rich
+✅ tren-maya              31 stations — all rich
+✅ tijuana                27 stations — all rich
+✅ toluca                 15 stations — all rich
+✅ villahermosa           10 stations — all rich
+✅ oaxaca                 12 stations — all rich
+✅ morelia                6 stations — all rich
+✅ campeche               14 stations — all rich
+✅ veracruz               12 stations — all rich
+✅ london                 25 stations — all rich
+✅ paris                  25 stations — all rich
+✅ madrid                 25 stations — all rich
+✅ berlin                 20 stations — all rich
+✅ barcelona              20 stations — all rich
+✅ buenos-aires           14 stations — all rich
+✅ sao-paulo              7 stations — all rich
+✅ santiago               7 stations — all rich
+✅ bogota                 6 stations — all rich
+✅ lima                   6 stations — all rich
+✅ tokyo                  21 stations — all rich
+✅ seoul                  11 stations — all rich
+✅ singapore              11 stations — all rich
+✅ dubai                  8 stations — all rich
+✅ sydney                 10 stations — all rich
+
+═══════════════════════════════════════════════════
+  ✅ Pipeline complete!
+  Stations enriched: 0
+  Time: 0m 0s
+  Progress saved: /Users/enriquemiceli/Documents/MarimbasHome/Codigo/metroguia/scripts/.enrich-progress.json
+═══════════════════════════════════════════════════

@@ -230,7 +230,7 @@ import { naturaleza } from '@/data/turismo/naturaleza';
 const BASE_URL = 'https://metroguia.mx';
 
 const LASTMOD = {
-  core: new Date('2026-04-02'),
+  core: new Date('2026-05-09'),
   cities: new Date('2026-04-10'),
   turismo: new Date('2026-03-30'),
   transport: new Date('2026-04-01'),
@@ -340,6 +340,11 @@ function getCoreUrls() {
     entry('/guides/', 'monthly', 0.9, 'core'),
     entry('/guides/airport-to-metro/', 'monthly', 0.9, 'core'),
     entry('/guides/visitor-guide/', 'monthly', 0.9, 'core'),
+    entry('/guides/aeropuerto-cdmx-a-centro/', 'monthly', 0.9, 'core'),
+    entry('/guides/cdmx-7-sistemas-transporte-explicados/', 'monthly', 0.9, 'core'),
+    entry('/guides/cdmx-metro-primera-vez/', 'monthly', 0.9, 'core'),
+    entry('/guides/fifa-mundial-2026-mexico-transporte/', 'weekly', 1.0, 'core'),
+    entry('/guides/guadalajara-monterrey-transporte-mundial/', 'weekly', 0.9, 'core'),
     entry('/guias-mexico/', 'weekly', 0.9, 'core'),
     ...guidesContent.map(g =>
       entry(`/guias-mexico/${g.slug}/`, 'monthly', 0.7, 'core')
