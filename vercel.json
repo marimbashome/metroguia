@@ -1,5 +1,4 @@
 {
-  "_comment": "Cross-cutting rollout 2026-05 — security headers extended. CSP in Report-Only mode (does not block, only reports).",
   "redirects": [
     {
       "source": "/lineas/:id/",
