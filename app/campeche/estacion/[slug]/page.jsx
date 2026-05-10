@@ -4,6 +4,8 @@ import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import { normalizeLinea, getPrimaryLineColor, joinLinea } from '@/app/utils/linea-helpers';
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema';
+
 export async function generateStaticParams() {
   return estacionesCampeche.map((estacion) => ({ slug: estacion.slug }));
 }
@@ -61,6 +63,14 @@ export default function EstacionCampechePage({ params }) {
   const sidebarStyles = { backgroundColor: '#f0fdf4', borderLeft: `4px solid ${colorLinea}`, padding: '20px', borderRadius: '4px', marginBottom: '20px' };
   const buttonStyles = { display: 'inline-block', backgroundColor: colorLinea, color: '#ffffff', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 'bold', marginTop: '20px' };
   const gridStyles = { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '20px' };
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'campeche/',
+    cityName: 'Campeche',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  });
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -76,6 +86,7 @@ export default function EstacionCampechePage({ params }) {
   return (
     <main style={{ backgroundColor: '#ffffff' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       <section style={heroStyles}>
         <div style={containerStyles}>
           <p style={{ fontSize: '14px', marginBottom: '10px', opacity: '0.9' }}>

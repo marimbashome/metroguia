@@ -1,5 +1,6 @@
 import { trenLigeroData } from '@/data/cdmx/tren-ligero'
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema'
 export function generateStaticParams() {
   return trenLigeroData.estaciones.map((est) => ({
     slug: est.slug,
@@ -45,6 +46,14 @@ export default function TrenLigeroEstacionPage({ params }) {
   const idx = allStations.findIndex(e => e.slug === estacion.slug)
   const prevStation = idx > 0 ? allStations[idx - 1] : null
   const nextStation = idx < allStations.length - 1 ? allStations[idx + 1] : null
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'cdmx/tren-ligero/',
+    cityName: 'Ciudad de México',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  })
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -68,6 +77,7 @@ export default function TrenLigeroEstacionPage({ params }) {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, stationSchema]) }} />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       
       <section style={{
         background: 'linear-gradient(135deg, var(--surface) 0%, rgba(255, 215, 0, 0.08) 100%)',

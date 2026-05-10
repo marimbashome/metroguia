@@ -5,6 +5,8 @@ import AffiliateMundial from '@/app/components/AffiliateMundial';
 import { estacionesMTY } from '@/data/mty/estaciones';
 import { lineasMTY } from '@/data/mty/lineas-detalle';
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema';
+
 export async function generateStaticParams() {
   return estacionesMTY.map(estacion => ({
     slug: estacion.slug
@@ -47,6 +49,14 @@ export default function EstacionMTY({ params }) {
   const linea = lineasMTY.find(l => l.id === estacion.linea);
   const colorLinea = linea?.color || '#999';
   const colorNombreLinea = linea?.colorNombre || 'Desconocido';
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'mty/',
+    cityName: 'Monterrey',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  });
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -106,6 +116,7 @@ export default function EstacionMTY({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(transitStationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}

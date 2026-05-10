@@ -1,5 +1,6 @@
 import { trolebusData } from '@/data/cdmx/trolebus'
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema'
 export function generateStaticParams() {
   return trolebusData.estaciones.map((est) => ({
     slug: est.slug,
@@ -43,6 +44,14 @@ export default function TrolebusEstacionPage({ params }) {
   const idx = lineaEstaciones.findIndex(e => e.slug === estacion.slug)
   const prevStation = idx > 0 ? lineaEstaciones[idx - 1] : null
   const nextStation = idx < lineaEstaciones.length - 1 ? lineaEstaciones[idx + 1] : null
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'cdmx/trolebus/',
+    cityName: 'Ciudad de México',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  })
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -67,6 +76,7 @@ export default function TrolebusEstacionPage({ params }) {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, stationSchema]) }} />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
 
       <section style={{
         background: `linear-gradient(135deg, var(--surface) 0%, ${linea?.color || '#0072CE'}11 100%)`,

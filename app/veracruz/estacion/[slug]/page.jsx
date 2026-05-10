@@ -3,6 +3,8 @@ import { lineasVeracruz } from '@/data/veracruz/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema';
+
 export async function generateStaticParams() {
   return estacionesVeracruz.map((estacion) => ({ slug: estacion.slug }));
 }
@@ -143,6 +145,14 @@ export default function EstacionVeracruzPage({ params }) {
     gap: '20px',
     marginBottom: '20px',
   };
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'veracruz/',
+    cityName: 'Veracruz',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  });
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -181,6 +191,7 @@ export default function EstacionVeracruzPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       {/* HERO */}
       <section style={heroStyles}>
         <div style={containerStyles}>

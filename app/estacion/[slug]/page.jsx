@@ -62,7 +62,7 @@ export function generateMetadata({ params }) {
       languages: {
         'es-MX': `https://metroguia.mx/estacion/${estacion.slug}/`,
         'es': `https://metroguia.mx/estacion/${estacion.slug}/`,
-        'en-US': `https://metroguia.mx/en/estacion/${estacion.slug}/`,
+        'en-US': `https://metroguia.mx/en/cdmx/estacion/${estacion.slug}/`,
         'x-default': `https://metroguia.mx/estacion/${estacion.slug}/`,
       },
     },

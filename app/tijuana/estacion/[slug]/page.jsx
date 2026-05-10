@@ -3,6 +3,8 @@ import { lineasTijuana } from '@/data/tijuana/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema';
+
 export async function generateStaticParams() {
   return estacionesTijuana.map((estacion) => ({ slug: estacion.slug }));
 }
@@ -143,6 +145,14 @@ export default function EstacionTijuanaPage({ params }) {
     gap: '20px',
     marginBottom: '20px',
   };
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'tijuana/',
+    cityName: 'Tijuana',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  });
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -181,6 +191,7 @@ export default function EstacionTijuanaPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       <section style={heroStyles}>
         <div style={containerStyles}>
           <p style={{ fontSize: '14px', marginBottom: '10px', opacity: '0.9' }}>

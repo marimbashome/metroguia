@@ -2,6 +2,8 @@ import { estacionesGDL } from '@/data/gdl/estaciones';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 import Link from 'next/link';
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema';
+
 export async function generateStaticParams() {
   const estacionesMacro = estacionesGDL.filter(e => e.sistema === 'macrobus');
   return estacionesMacro.map((estacion) => ({
@@ -63,6 +65,14 @@ export default function EstacionMacrobusPage({ params }) {
 
   const colorLinea = estacion.linea === 'MC' ? '#8B5CF6' : '#7C3AED';
   const nombreLinea = estacion.linea === 'MC' ? 'Mi Macro Calzada' : 'Mi Macro Periférico';
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'gdl/macrobus/',
+    cityName: 'Guadalajara',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  });
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -107,6 +117,7 @@ export default function EstacionMacrobusPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       {/* HERO */}
       <section
         style={{

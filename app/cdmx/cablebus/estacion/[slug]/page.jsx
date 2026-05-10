@@ -1,6 +1,7 @@
 import { cablebusEstaciones, cablebusLineas } from '@/data/cdmx/cablebus'
 import AdBannerLazy from '@/app/components/AdBannerLazy'
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema'
 export function generateStaticParams() {
   return cablebusEstaciones.map((e) => ({ slug: e.slug }))
 }
@@ -21,6 +22,14 @@ export default function CablebusEstacionPage({ params }) {
 
   const linea = cablebusLineas[estacion.lineaId]
   const lineaColor = linea?.color || '#7B1FA2'
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'cdmx/cablebus/',
+    cityName: 'Ciudad de México',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  })
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -37,6 +46,7 @@ export default function CablebusEstacionPage({ params }) {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       
       {/* Hero */}
       <section style={{

@@ -1,5 +1,6 @@
 import { trenSuburbanoData } from '@/data/cdmx/tren-suburbano'
 
+import { buildAllStationLdPayloads } from '@/lib/station-schema'
 export function generateStaticParams() {
   return trenSuburbanoData.estaciones.map((est) => ({
     slug: est.slug,
@@ -49,6 +50,14 @@ export default function TrenSuburbanoEstacionPage({ params }) {
   const idx = lineaEstaciones.findIndex(e => e.slug === estacion.slug)
   const prevStation = idx > 0 ? lineaEstaciones[idx - 1] : null
   const nextStation = idx < lineaEstaciones.length - 1 ? lineaEstaciones[idx + 1] : null
+  const stationLdPayloads = buildAllStationLdPayloads(estacion, {
+    cityPath: 'cdmx/tren-suburbano/',
+    cityName: 'Ciudad de México',
+    linea: estacion.linea ?? estacion.lineas?.[0],
+    lineLabel: (estacion.linea ?? estacion.lineas?.[0]) != null
+      ? `Línea ${estacion.linea ?? estacion.lineas?.[0]}` : undefined,
+  })
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -73,6 +82,7 @@ export default function TrenSuburbanoEstacionPage({ params }) {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, stationSchema]) }} />
+      {stationLdPayloads.map(function (p, i) { return (<script key={"st-" + i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: p }} />); })}
       
       {/* Hero */}
       <section style={{
