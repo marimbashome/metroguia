@@ -53,7 +53,19 @@ export function generateMetadata({ params }) {
       locale: 'es_MX',
       type: 'website',
     },
-    alternates: { canonical: `https://metroguia.mx/estacion/${estacion.slug}/` },
+    alternates: {
+      canonical: `https://metroguia.mx/estacion/${estacion.slug}/`,
+      // hreflang signals to Google that the same content has language variants.
+      // The "es" / "es-MX" duo is required when a single page also serves the
+      // Spanish-speaking diaspora outside Mexico (FIFA 2026 search audience).
+      // x-default points search bots from unsupported locales at the canonical.
+      languages: {
+        'es-MX': `https://metroguia.mx/estacion/${estacion.slug}/`,
+        'es': `https://metroguia.mx/estacion/${estacion.slug}/`,
+        'en-US': `https://metroguia.mx/en/estacion/${estacion.slug}/`,
+        'x-default': `https://metroguia.mx/estacion/${estacion.slug}/`,
+      },
+    },
   }
 }
 
@@ -87,10 +99,13 @@ export default function EstacionPage({ params }) {
   const lineaVar = LINEA_VAR[linea] || '--chiapas'
   const safeTips = Array.isArray(estacion.tips) ? estacion.tips : []
 
-  // Schema.org
+  // Schema.org — multi-typed for broader search-engine coverage:
+  //  • SubwayStation is the most specific schema for a metro stop (Google Knowledge Graph).
+  //  • TrainStation is the broader peer that some international parsers still expect.
+  //  • TransitStation kept as a fallback so we don't lose existing rankings.
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TransitStation',
+    '@type': ['SubwayStation', 'TrainStation', 'TransitStation'],
     name: `Estación ${estacion.nombre}`,
     description: estacion.meta_description,
     url: `https://metroguia.mx/estacion/${estacion.slug}/`,
@@ -119,6 +134,45 @@ export default function EstacionPage({ params }) {
     ],
     hasMap: `https://metroguia.mx/linea/${linea}/`,
   }
+
+  // Surface nearby points of interest as TouristAttraction nodes — Google uses these
+  // to enrich rich results for "qué hacer cerca de [estación]" queries (a high-volume
+  // FIFA 2026 search pattern for foreign visitors using public transit).
+  const touristAttractions = (estacion.pois && estacion.pois.length > 0)
+    ? estacion.pois.slice(0, 6).map(function (poi) {
+        const att = {
+          '@context': 'https://schema.org',
+          '@type': 'TouristAttraction',
+          name: poi.nombre,
+          touristType: ['Public Transit Riders', 'International Visitors'],
+          isAccessibleForFree: true,
+          publicAccess: true,
+          additionalType: poi.tipo ? `https://schema.org/${
+            poi.tipo === 'museo' ? 'Museum' :
+            poi.tipo === 'parque' ? 'Park' :
+            poi.tipo === 'religioso' ? 'PlaceOfWorship' :
+            poi.tipo === 'cultural' ? 'PerformingArtsTheater' :
+            poi.tipo === 'restaurante' ? 'Restaurant' :
+            poi.tipo === 'hospedaje' ? 'LodgingBusiness' :
+            poi.tipo === 'comercio' ? 'ShoppingCenter' :
+            'Place'
+          }` : undefined,
+          containedInPlace: {
+            '@type': 'Place',
+            name: `Estación ${estacion.nombre}`,
+            url: `https://metroguia.mx/estacion/${estacion.slug}/`,
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: estacion.lat || 19.4326,
+            longitude: estacion.lng || -99.1332,
+          },
+        }
+        // Strip undefined keys so the JSON-LD stays compact and validator-clean.
+        Object.keys(att).forEach(function (k) { if (att[k] === undefined) delete att[k] })
+        return att
+      })
+    : []
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -195,6 +249,15 @@ export default function EstacionPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {touristAttractions.map(function (attraction, i) {
+        return (
+          <script
+            key={`ta-${i}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(attraction) }}
+          />
+        )
+      })}
 
       {/* HERO — forest gradient with line-coloured top bar */}
       <section style={{
