@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasMississauga.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineMississaugaPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasMississauga.find(l => l.id === params.id)) || null} stations={((lineasMississauga.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesMississauga.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Mississauga" citySlug="mississauga" linePathPrefix="/mississauga/line" stationPathPrefix="/mississauga/station" country="CA" systemName="Hurontario LRT" locale="en" />
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '8px' }}>

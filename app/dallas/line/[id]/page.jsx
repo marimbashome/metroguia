@@ -3,6 +3,7 @@ import { estacionesDallas } from '@/data/dallas/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasDallas.map((linea) => ({ id: linea.id }));
 }
@@ -43,6 +44,7 @@ export default function LineaDallasPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasDallas.find(l => l.id === params.id)) || null} stations={((lineasDallas.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesDallas.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Dallas" citySlug="dallas" linePathPrefix="/dallas/line" stationPathPrefix="/dallas/station" country="US" systemName="DART" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

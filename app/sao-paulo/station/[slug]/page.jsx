@@ -3,6 +3,7 @@ import { lineasSaoPaulo } from '@/data/sao-paulo/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 const LINEA_COLORS = { L1:'#0052A5', L2:'#007E5E', L3:'#EE372F', L4:'#F6C30B', L5:'#9B2990' };
 
 export async function generateStaticParams() {
@@ -36,6 +37,7 @@ export default function StationSaoPaulo({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlStationSchema station={(estacionesSaoPaulo.find(s => s.slug === params.slug)) || null} city="São Paulo" citySlug="sao-paulo" stationPathPrefix="/sao-paulo/station" linePathPrefix="/sao-paulo/line" country="BR" systemName="Metrô de São Paulo" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p style={{ fontSize: '0.8rem', opacity: 0.85, textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, margin: '0 0 16px 0' }}>🇧🇷 Metrô São Paulo</p>

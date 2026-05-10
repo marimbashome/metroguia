@@ -3,6 +3,7 @@ import { lineasSydney } from '@/data/sydney/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() { return estacionesSydney.map((e) => ({ slug: e.slug })); }
 export async function generateMetadata({ params }) {
   const e = estacionesSydney.find((e) => e.slug === params.slug);
@@ -18,6 +19,7 @@ export default function SydneyStation({ params }) {
   const colorPrincipal = lineasEstacion.length > 0 ? lineasEstacion[0].color : '#009B77';
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlStationSchema station={(estacionesSydney.find(s => s.slug === params.slug)) || null} city="Sídney" citySlug="sydney" stationPathPrefix="/sydney/station" linePathPrefix="/sydney/line" country="AU" systemName="Sydney Metro" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <nav style={{ fontSize: '0.8rem', opacity: 0.85, marginBottom: 16 }}><Link href="/sydney/" style={{ color: '#fff', textDecoration: 'none' }}>Sydney Metro</Link> → {estacion.nombre}</nav>

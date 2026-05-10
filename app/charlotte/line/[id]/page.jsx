@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import TransitCardsSection from '@/app/components/TransitCardsSection';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasDetalleCharlotte.map((linea) => ({
     id: linea.id,
@@ -52,6 +53,7 @@ export default function LineCharlottePage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasDetalleCharlotte.find(l => l.id === params.id)) || null} stations={((lineasDetalleCharlotte.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesCharlotte.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Charlotte" citySlug="charlotte" linePathPrefix="/charlotte/line" stationPathPrefix="/charlotte/station" country="US" systemName="CATS Lynx" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

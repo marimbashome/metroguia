@@ -3,6 +3,7 @@ import { estacionesBogota } from '@/data/bogota/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasBogota.map(l => ({ id: l.id }));
 }
@@ -37,6 +38,7 @@ export default function LineBogota({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasBogota.find(l => l.id === params.id)) || null} stations={((lineasBogota.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesBogota.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Bogotá" citySlug="bogota" linePathPrefix="/bogota/line" stationPathPrefix="/bogota/station" country="CO" systemName="TransMilenio" locale="es" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

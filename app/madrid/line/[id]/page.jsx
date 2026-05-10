@@ -3,6 +3,7 @@ import { estacionesMadrid } from '@/data/madrid/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasMadrid.map(l => ({ id: l.id }));
 }
@@ -32,6 +33,7 @@ export default function MadridLine({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', padding: '5rem 1.5rem 3rem', maxWidth: 800, margin: '0 auto' }}>
+      <IntlLineSchema line={(lineasMadrid.find(l => l.id === params.id)) || null} stations={((lineasMadrid.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesMadrid.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Madrid" citySlug="madrid" linePathPrefix="/madrid/line" stationPathPrefix="/madrid/station" country="ES" systemName="Metro de Madrid" locale="es" />
       {/* BREADCRUMB */}
       <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
         <Link href="/madrid/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Madrid</Link>

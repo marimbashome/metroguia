@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasMontreal.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineMontrealPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasMontreal.find(l => l.id === params.id)) || null} stations={((lineasMontreal.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesMontreal.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Montreal" citySlug="montreal" linePathPrefix="/montreal/line" stationPathPrefix="/montreal/station" country="CA" systemName="STM Métro" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

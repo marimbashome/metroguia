@@ -3,6 +3,7 @@ import { estacionesVANCOUVER } from '@/data/vancouver/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasVANCOUVER.map((linea) => ({ id: linea.id }));
 }
@@ -43,6 +44,7 @@ export default function LineaVancouverPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasVancouver.find(l => l.id === params.id)) || null} stations={((lineasVancouver.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesVancouver.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Vancouver" citySlug="vancouver" linePathPrefix="/vancouver/line" stationPathPrefix="/vancouver/station" country="CA" systemName="TransLink SkyTrain" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

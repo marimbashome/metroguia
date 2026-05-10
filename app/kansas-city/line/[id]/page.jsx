@@ -3,6 +3,7 @@ import { estacionesKansasCity } from '@/data/kansas-city/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasKansasCity.map((linea) => ({ id: linea.id }));
 }
@@ -43,6 +44,7 @@ export default function LineaKCPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasKansasCity.find(l => l.id === params.id)) || null} stations={((lineasKansasCity.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesKansasCity.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Kansas City" citySlug="kansas-city" linePathPrefix="/kansas-city/line" stationPathPrefix="/kansas-city/station" country="US" systemName="KC Streetcar" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

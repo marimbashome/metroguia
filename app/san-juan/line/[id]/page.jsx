@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasSanJuan.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineSanJuanPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasSanJuan.find(l => l.id === params.id)) || null} stations={((lineasSanJuan.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesSanJuan.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="San Juan" citySlug="san-juan" linePathPrefix="/san-juan/line" stationPathPrefix="/san-juan/station" country="PR" systemName="Tren Urbano" locale="es" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

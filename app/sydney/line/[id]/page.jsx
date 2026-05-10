@@ -3,6 +3,7 @@ import { estacionesSydney } from '@/data/sydney/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() { return lineasSydney.map((l) => ({ id: l.id })); }
 export async function generateMetadata({ params }) {
   const l = lineasSydney.find((l) => l.id === params.id);
@@ -18,6 +19,7 @@ export default function SydneyLine({ params }) {
     : estacionesSydney.filter(e => { const arr = Array.isArray(e.linea) ? e.linea : [e.linea]; return arr.includes(linea.id); });
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasSydney.find(l => l.id === params.id)) || null} stations={((lineasSydney.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesSydney.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Sídney" citySlug="sydney" linePathPrefix="/sydney/line" stationPathPrefix="/sydney/station" country="AU" systemName="Sydney Metro" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <nav style={{ fontSize: '0.8rem', opacity: 0.85, marginBottom: 16 }}><Link href="/sydney/" style={{ color: '#fff', textDecoration: 'none' }}>Sydney Metro</Link> → {linea.colorNombre}</nav>

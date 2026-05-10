@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasKitchenerWaterloo.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineKitchenerWaterlooPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasKitchenerWaterloo.find(l => l.id === params.id)) || null} stations={((lineasKitchenerWaterloo.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesKitchenerWaterloo.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Kitchener-Waterloo" citySlug="kitchener-waterloo" linePathPrefix="/kitchener-waterloo/line" stationPathPrefix="/kitchener-waterloo/station" country="CA" systemName="ION Light Rail" locale="en" />
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '8px' }}>

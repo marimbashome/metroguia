@@ -3,6 +3,7 @@ import { lineasSantiago } from '@/data/santiago/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 const LINEA_COLORS = { L1:'#EF3D33',L2:'#F0A115',L3:'#856937',L4:'#1F5BA6',L4a:'#1F5BA6',L5:'#2AA84A',L6:'#8C1A6A',L7:'#DB7920' };
 
 export async function generateStaticParams() {
@@ -34,6 +35,7 @@ export default function StationSantiago({ params }) {
 
   return (
     <main style={{ backgroundColor:'var(--bg)', color:'var(--text)' }}>
+      <IntlStationSchema station={(estacionesSantiago.find(s => s.slug === params.slug)) || null} city="Santiago" citySlug="santiago" stationPathPrefix="/santiago/station" linePathPrefix="/santiago/line" country="CL" systemName="Metro de Santiago" locale="es" />
       <section style={{ background:`linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color:'#fff', padding:'60px 24px' }}>
         <div style={{ maxWidth:'1200px', margin:'0 auto' }}>
           <p style={{ fontSize:'0.8rem', opacity:0.85, textTransform:'uppercase', letterSpacing:'0.12em', fontWeight:600, margin:'0 0 16px 0' }}>🇨🇱 Metro Santiago</p>

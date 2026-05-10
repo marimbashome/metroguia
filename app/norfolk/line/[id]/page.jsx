@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasNorfolk.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineNorfolkPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasNorfolk.find(l => l.id === params.id)) || null} stations={((lineasNorfolk.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesNorfolk.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Norfolk" citySlug="norfolk" linePathPrefix="/norfolk/line" stationPathPrefix="/norfolk/station" country="US" systemName="The Tide" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

@@ -3,6 +3,7 @@ import { estacionesSantiago } from '@/data/santiago/estaciones';
 import Link from 'next/link';
 import AdBannerLazy, { AdBannerLazyInArticle } from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 const LINEA_COLORS = { L1:'#EF3D33',L2:'#F0A115',L3:'#856937',L4:'#1F5BA6',L4a:'#1F5BA6',L5:'#2AA84A',L6:'#8C1A6A',L7:'#DB7920' };
 
 export async function generateStaticParams() {
@@ -27,6 +28,7 @@ export default function LineSantiago({ params }) {
 
   return (
     <main style={{ backgroundColor:'var(--bg)', color:'var(--text)' }}>
+      <IntlLineSchema line={(lineasSantiago.find(l => l.id === params.id)) || null} stations={((lineasSantiago.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesSantiago.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Santiago" citySlug="santiago" linePathPrefix="/santiago/line" stationPathPrefix="/santiago/station" country="CL" systemName="Metro de Santiago" locale="es" />
       <section style={{ background:`linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color:'#fff', padding:'60px 24px' }}>
         <div style={{ maxWidth:'1200px', margin:'0 auto' }}>
           <div style={{ width:60, height:60, borderRadius:'50%', background:'rgba(255,255,255,0.25)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'1.5rem', fontWeight:900, marginBottom:20 }}>{linea.id}</div>

@@ -3,6 +3,7 @@ import { lineasBerlin } from '@/data/berlin/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return estacionesBerlin.map(e => ({ slug: e.slug }));
 }
@@ -36,6 +37,7 @@ export default function BerlinStation({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', padding: '5rem 1.5rem 3rem', maxWidth: 800, margin: '0 auto' }}>
+      <IntlStationSchema station={(estacionesBerlin.find(s => s.slug === params.slug)) || null} city="Berlín" citySlug="berlin" stationPathPrefix="/berlin/station" linePathPrefix="/berlin/line" country="DE" systemName="BVG U-Bahn" locale="es" />
       {/* BREADCRUMB */}
       <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
         <Link href="/berlin/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Berlin</Link>

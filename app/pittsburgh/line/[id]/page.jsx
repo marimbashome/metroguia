@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import TransitCardsSection from '@/app/components/TransitCardsSection';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasDetallePittsburgh.map((linea) => ({
     id: linea.id,
@@ -52,6 +53,7 @@ export default function LinePittsburghPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasDetallePittsburgh.find(l => l.id === params.id)) || null} stations={((lineasDetallePittsburgh.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesPittsburgh.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Pittsburgh" citySlug="pittsburgh" linePathPrefix="/pittsburgh/line" stationPathPrefix="/pittsburgh/station" country="US" systemName="Pittsburgh Light Rail" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

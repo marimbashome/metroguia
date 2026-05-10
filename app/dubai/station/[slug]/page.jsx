@@ -3,6 +3,7 @@ import { lineasDubai } from '@/data/dubai/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() { return estacionesDubai.map((e) => ({ slug: e.slug })); }
 export async function generateMetadata({ params }) {
   const e = estacionesDubai.find((e) => e.slug === params.slug);
@@ -18,6 +19,7 @@ export default function DubaiStation({ params }) {
   const colorPrincipal = lineasEstacion.length > 0 ? lineasEstacion[0].color : '#EF3D33';
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlStationSchema station={(estacionesDubai.find(s => s.slug === params.slug)) || null} city="Dubái" citySlug="dubai" stationPathPrefix="/dubai/station" linePathPrefix="/dubai/line" country="AE" systemName="Dubai Metro" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <nav style={{ fontSize: '0.8rem', opacity: 0.85, marginBottom: 16 }}><Link href="/dubai/" style={{ color: '#fff', textDecoration: 'none' }}>Dubai Metro</Link> → {estacion.nombre}</nav>

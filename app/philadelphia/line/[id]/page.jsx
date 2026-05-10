@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import TransitCardsSection from '@/app/components/TransitCardsSection';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasPhiladelphia.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LinePhiladelphiaPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasPhiladelphia.find(l => l.id === params.id)) || null} stations={((lineasPhiladelphia.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesPhiladelphia.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Philadelphia" citySlug="philadelphia" linePathPrefix="/philadelphia/line" stationPathPrefix="/philadelphia/station" country="US" systemName="SEPTA" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

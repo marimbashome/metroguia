@@ -3,6 +3,7 @@ import { estacionesBarcelona } from '@/data/barcelona/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasBarcelona.map(l => ({ id: l.id }));
 }
@@ -32,6 +33,7 @@ export default function BarcelonaLine({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', padding: '5rem 1.5rem 3rem', maxWidth: 800, margin: '0 auto' }}>
+      <IntlLineSchema line={(lineasBarcelona.find(l => l.id === params.id)) || null} stations={((lineasBarcelona.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesBarcelona.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Barcelona" citySlug="barcelona" linePathPrefix="/barcelona/line" stationPathPrefix="/barcelona/station" country="ES" systemName="TMB Metro" locale="es" />
       {/* BREADCRUMB */}
       <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
         <Link href="/barcelona/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Barcelona</Link>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasNewark.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineNewarkPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasNewark.find(l => l.id === params.id)) || null} stations={((lineasNewark.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesNewark.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Newark" citySlug="newark" linePathPrefix="/newark/line" stationPathPrefix="/newark/station" country="US" systemName="Newark Light Rail" locale="en" />
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '8px' }}>

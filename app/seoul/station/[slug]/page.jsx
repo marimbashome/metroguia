@@ -3,6 +3,7 @@ import { lineasSeoul } from '@/data/seoul/lineas-detalle';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlStationSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return estacionesSeoul.map((e) => ({ slug: e.slug }));
 }
@@ -34,6 +35,7 @@ export default function SeoulStation({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlStationSchema station={(estacionesSeoul.find(s => s.slug === params.slug)) || null} city="Seúl" citySlug="seoul" stationPathPrefix="/seoul/station" linePathPrefix="/seoul/line" country="KR" systemName="Seoul Metro" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${colorPrincipal} 0%, ${colorPrincipal}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <nav style={{ fontSize: '0.8rem', opacity: 0.85, marginBottom: 16 }}>

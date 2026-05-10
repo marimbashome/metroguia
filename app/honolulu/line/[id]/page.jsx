@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import AffiliateTransportCard from '@/app/components/AffiliateTransportCard';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasHonolulu.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineHonoluluPage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasHonolulu.find(l => l.id === params.id)) || null} stations={((lineasHonolulu.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesHonolulu.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Honolulu" citySlug="honolulu" linePathPrefix="/honolulu/line" stationPathPrefix="/honolulu/station" country="US" systemName="Skyline" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>

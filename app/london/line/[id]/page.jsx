@@ -3,6 +3,7 @@ import { estacionesLondon } from '@/data/london/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasLondon.map(l => ({ id: l.id }));
 }
@@ -32,6 +33,7 @@ export default function LondonLine({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', padding: '5rem 1.5rem 3rem', maxWidth: 800, margin: '0 auto' }}>
+      <IntlLineSchema line={(lineasLondon.find(l => l.id === params.id)) || null} stations={((lineasLondon.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesLondon.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Londres" citySlug="london" linePathPrefix="/london/line" stationPathPrefix="/london/station" country="GB" systemName="London Underground" locale="es" />
       {/* BREADCRUMB */}
       <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
         <Link href="/london/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>London</Link>

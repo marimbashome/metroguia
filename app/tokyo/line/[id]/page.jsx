@@ -3,6 +3,7 @@ import { estacionesTokyo } from '@/data/tokyo/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasTokyo.map((l) => ({ id: l.id }));
 }
@@ -43,6 +44,7 @@ export default function TokyoLine({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasTokyo.find(l => l.id === params.id)) || null} stations={((lineasTokyo.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesTokyo.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Tokio" citySlug="tokyo" linePathPrefix="/tokyo/line" stationPathPrefix="/tokyo/station" country="JP" systemName="Tokyo Metro" locale="es" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>

@@ -3,6 +3,7 @@ import { estacionesSingapore } from '@/data/singapore/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasSingapore.map((l) => ({ id: l.id }));
 }
@@ -27,6 +28,7 @@ export default function SingaporeLine({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasSingapore.find(l => l.id === params.id)) || null} stations={((lineasSingapore.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesSingapore.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Singapur" citySlug="singapore" linePathPrefix="/singapore/line" stationPathPrefix="/singapore/station" country="SG" systemName="SMRT" locale="es" />
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <nav style={{ fontSize: '0.8rem', opacity: 0.85, marginBottom: 16 }}><Link href="/singapore/" style={{ color: '#fff', textDecoration: 'none' }}>Singapore MRT</Link> → {linea.colorNombre}</nav>

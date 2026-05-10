@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 import TransitCardsSection from '@/app/components/TransitCardsSection';
 
+import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
   return lineasSeattle.map((linea) => ({
     id: linea.id,
@@ -49,6 +50,7 @@ export default function LineSeattlePage({ params }) {
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
+      <IntlLineSchema line={(lineasSeattle.find(l => l.id === params.id)) || null} stations={((lineasSeattle.find(l => l.id === params.id) || {}).estaciones || []).map(s => (typeof s === 'string' ? (estacionesSeattle.find(x => x.slug === s) || { slug: s, nombre: s }) : s))} city="Seattle" citySlug="seattle" linePathPrefix="/seattle/line" stationPathPrefix="/seattle/station" country="US" systemName="Sound Transit Link" locale="en" />
       {/* HERO */}
       <section style={{ background: `linear-gradient(135deg, ${linea.color} 0%, ${linea.color}cc 100%)`, color: '#fff', padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
