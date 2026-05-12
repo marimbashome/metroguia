@@ -1,15 +1,15 @@
-import { lineasTORONTO } from '@/data/toronto/lineas-detalle';
-import { estacionesTORONTO } from '@/data/toronto/estaciones';
+import { lineasToronto } from '@/data/toronto/lineas-detalle';
+import { estacionesToronto } from '@/data/toronto/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
-  return lineasTORONTO.map((linea) => ({ id: linea.id }));
+  return lineasToronto.map((linea) => ({ id: linea.id }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasTORONTO.find((l) => l.id === params.id);
+  const linea = lineasToronto.find((l) => l.id === params.id);
   if (!linea) {
     return { title: 'Line not found', description: 'The requested line does not exist.' };
   }
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function LineaTorontoPage({ params }) {
-  const linea = lineasTORONTO.find((l) => l.id === params.id);
+  const linea = lineasToronto.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
@@ -40,7 +40,7 @@ export default function LineaTorontoPage({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesTORONTO.filter(e => linea.estaciones.includes(e.slug));
+  const estacionesLinea = estacionesToronto.filter(e => linea.estaciones.includes(e.slug));
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>

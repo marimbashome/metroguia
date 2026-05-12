@@ -1,15 +1,15 @@
-import { lineasVANCOUVER } from '@/data/vancouver/lineas-detalle';
-import { estacionesVANCOUVER } from '@/data/vancouver/estaciones';
+import { lineasVancouver } from '@/data/vancouver/lineas-detalle';
+import { estacionesVancouver } from '@/data/vancouver/estaciones';
 import Link from 'next/link';
 import AdBannerLazy from '@/app/components/AdBannerLazy';
 
 import { IntlLineSchema } from '@/app/components/IntlSchema';
 export async function generateStaticParams() {
-  return lineasVANCOUVER.map((linea) => ({ id: linea.id }));
+  return lineasVancouver.map((linea) => ({ id: linea.id }));
 }
 
 export async function generateMetadata({ params }) {
-  const linea = lineasVANCOUVER.find((l) => l.id === params.id);
+  const linea = lineasVancouver.find((l) => l.id === params.id);
   if (!linea) {
     return { title: 'Line not found', description: 'The requested line does not exist.' };
   }
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function LineaVancouverPage({ params }) {
-  const linea = lineasVANCOUVER.find((l) => l.id === params.id);
+  const linea = lineasVancouver.find((l) => l.id === params.id);
 
   if (!linea) {
     return (
@@ -40,7 +40,7 @@ export default function LineaVancouverPage({ params }) {
     );
   }
 
-  const estacionesLinea = estacionesVANCOUVER.filter(e => linea.estaciones.includes(e.slug));
+  const estacionesLinea = estacionesVancouver.filter(e => linea.estaciones.includes(e.slug));
 
   return (
     <main style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
