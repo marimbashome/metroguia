@@ -58,5 +58,5 @@ export function generateMetadata({ params }) {
 }
 
 export default function RutaOaxacaPage({ params }) {
-  return <RutaClient params={params} />
+  return <RutaClient slug={params.slug} ciudad="oaxaca" />
 }

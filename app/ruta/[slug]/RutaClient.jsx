@@ -60,6 +60,21 @@ const CIUDAD_CONFIG = {
   },
 }
 
+function formatCityLabel(ciudad) {
+  return ciudad
+    .split('-')
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ')
+}
+
+function getCiudadConfig(ciudad) {
+  if (CIUDAD_CONFIG[ciudad]) return CIUDAD_CONFIG[ciudad]
+  return {
+    label: `${formatCityLabel(ciudad)} · Ruta paso a paso`,
+    hub: `/${ciudad}/`,
+  }
+}
+
 function matchStation(text, ciudad = 'cdmx') {
   if (!text) return null
   // For GDL/MTY, slugs from generateStaticParams are already canonical
@@ -110,7 +125,7 @@ export default function RutaClient({ slug, ciudad = 'cdmx' }) {
     if (ciudad === 'cdmx') return grafo[s]?.nombre || STATION_DISPLAY_NAMES[s] || s
     return STATION_DISPLAY_NAMES[s] || s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   }
-  const ciudadCfg = CIUDAD_CONFIG[ciudad] || CIUDAD_CONFIG.cdmx
+  const ciudadCfg = getCiudadConfig(ciudad)
 
   useEffect(() => {
     let cancelled = false
@@ -693,7 +708,7 @@ export default function RutaClient({ slug, ciudad = 'cdmx' }) {
 
           <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.95rem', color: 'var(--text)' }}>
             <li style={{ marginBottom: '0.5rem' }}>
-              {ciudadCfg.tarjeta}
+              {ciudadCfg.tarjeta || 'Revisa el costo y el método de pago vigentes antes de viajar.'}
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
               Evita horas pico (8–10 AM y 5–7 PM) para viajes más cómodos.
@@ -701,10 +716,12 @@ export default function RutaClient({ slug, ciudad = 'cdmx' }) {
             <li style={{ marginBottom: '0.5rem' }}>
               Descarga el mapa offline — señal limitada dentro de varias estaciones.
             </li>
-            <li>
-              Verifica alertas oficiales antes de salir en{' '}
-              <a href={ciudadCfg.sitio} style={{ color: 'var(--chiapas)' }}>{ciudadCfg.sitioLabel}</a>.
-            </li>
+            {ciudadCfg.sitio && ciudadCfg.sitioLabel && (
+              <li>
+                Verifica alertas oficiales antes de salir en{' '}
+                <a href={ciudadCfg.sitio} style={{ color: 'var(--chiapas)' }}>{ciudadCfg.sitioLabel}</a>.
+              </li>
+            )}
           </ul>
 
           <div style={{ marginTop: '1.5rem' }}>

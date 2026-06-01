@@ -279,17 +279,15 @@ export default function ZonaArqueologicaDetail({ params }) {
         {zona.coordenadas && typeof zona.coordenadas.lat === 'number' && (
           <section style={sectionStyle}>
             <h2 style={h2Style}>Ubicación</h2>
-            <div style={{ borderRadius: 'var(--radius)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-              <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${zona.coordenadas.lat},${zona.coordenadas.lng}&zoom=14&maptype=satellite`}
-                width="100%"
-                height="350"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={`Mapa de ${zona.nombre}`}
-              />
+            <div style={{ borderRadius: 'var(--radius)', overflow: 'hidden', border: '1px solid var(--border)', padding: '1.25rem', backgroundColor: 'var(--surface)' }}>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${zona.coordenadas.lat},${zona.coordenadas.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'none' }}
+              >
+                Ver ubicación en Google Maps
+              </a>
             </div>
           </section>
         )}
