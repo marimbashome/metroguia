@@ -14440,83 +14440,85 @@ export const grafo = {
     ]
   },
   "constituyentes": {
-    "ciudad": "queretaro",
-    "nombre": "Avenida Constituyentes",
-    "lineas": [],
+    "ciudad": "cdmx",
+    "nombre": "Constituyentes",
+    "lineas": [
+      "7"
+    ],
     "adyacentes": [
       {
-        "slug": "constituyentes-qro",
+        "slug": "auditorio",
+        "tiempo": 2,
+        "linea": "7",
+        "tipo": "linea"
+      },
+      {
+        "slug": "cb-los-pinos",
         "tiempo": 5,
-        "linea": "Q1",
+        "linea": "metro-1",
         "tipo": "transbordo"
       }
     ]
   },
   "cuauhtemoc": {
-    "ciudad": "chihuahua",
-    "nombre": "Comunidades Menonitas",
+    "ciudad": "cdmx",
+    "nombre": "Cuauhtémoc",
     "lineas": [
       "1"
     ],
     "adyacentes": [
       {
-        "slug": "creel",
-        "tiempo": 3,
+        "slug": "insurgentes",
+        "tiempo": 2,
         "linea": "1",
         "tipo": "linea"
       },
       {
-        "slug": "chihuahua-central",
-        "tiempo": 3,
+        "slug": "balderas",
+        "tiempo": 2,
         "linea": "1",
         "tipo": "linea"
       }
     ]
   },
   "hospital-general": {
-    "ciudad": "merida",
-    "nombre": "Hospital General de Mérida",
+    "ciudad": "cdmx",
+    "nombre": "Hospital General",
     "lineas": [
-      "R2"
+      "3"
     ],
     "adyacentes": [
       {
-        "slug": "itzimna",
-        "tiempo": 3,
-        "linea": "R2",
+        "slug": "centro-medico",
+        "tiempo": 2,
+        "linea": "3",
         "tipo": "linea"
       },
       {
-        "slug": "altabrisa",
-        "tiempo": 3,
-        "linea": "R2",
+        "slug": "niños-heroes",
+        "tiempo": 2,
+        "linea": "3",
         "tipo": "linea"
       },
       {
-        "slug": "centro-historico",
-        "tiempo": 15,
-        "linea": "D1",
+        "slug": "roma",
+        "tiempo": 3,
+        "linea": "3",
         "tipo": "linea"
       }
     ]
   },
   "la-paz": {
-    "ciudad": "puebla",
-    "nombre": "Zona residencial La Paz",
+    "ciudad": "cdmx",
+    "nombre": "La Paz",
     "lineas": [
-      "2"
+      "A"
     ],
     "adyacentes": [
       {
-        "slug": "buap",
-        "tiempo": 3,
-        "linea": "2",
-        "tipo": "linea"
-      },
-      {
-        "slug": "san-manuel",
-        "tiempo": 3,
-        "linea": "2",
+        "slug": "los-reyes",
+        "tiempo": 2,
+        "linea": "A",
         "tipo": "linea"
       }
     ]
