@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, useCallback } from 'react';
 import {
   parseWC, computeStandings, rankThirds, topScorers, knockoutRounds,
   resolveSlot, flagFor, hasFinalScore, isSlot, buildLiveMap, anyLive, pairKey,
+  playerKey, goalsByPlayer,
 } from '@/lib/mundial-hub';
 
 const C = {
@@ -242,10 +243,13 @@ function ScorersTab({ scorers }) {
   );
 }
 
-function SquadsTab() {
+function SquadsTab({ goalMap }) {
   const [squads, setSquads] = useState(null);
   const [sel, setSel] = useState(null);
   const [err, setErr] = useState(false);
+  const [pstats, setPstats] = useState(null); // playerKey → {assists, yellow, red, minutes, apps}
+  const [statsAt, setStatsAt] = useState(null);
+
   useEffect(() => {
     let ok = true;
     fetch('/data/mundial-squads.json').then((r) => r.json()).then((d) => {
@@ -254,33 +258,62 @@ function SquadsTab() {
       teams.sort((a, b) => (a.group || '').localeCompare(b.group || '') || a.name.localeCompare(b.name));
       setSquads(teams); setSel(teams[0]);
     }).catch(() => ok && setErr(true));
+    // Stats avanzadas (asistencias/tarjetas/minutos) — las produce el cron de API-Football.
+    // Si el archivo aún no existe, el squad muestra solo goles (openfootball). Graceful.
+    fetch('/data/mundial-player-stats.json').then((r) => (r.ok ? r.json() : null)).then((d) => {
+      if (!ok || !d) return;
+      setPstats(d.players || d); setStatsAt(d.updated || null);
+    }).catch(() => {});
     return () => { ok = false; };
   }, []);
+
   if (err) return <p style={emptyStyle}>No se pudieron cargar las plantillas.</p>;
   if (!squads) return <p style={emptyStyle}>Cargando plantillas…</p>;
+  const hasAdv = pstats && Object.keys(pstats).length > 0;
   const players = (sel?.players || []).slice().sort((a, b) => (a.number || 99) - (b.number || 99));
+  const stat = (icon, n, color, title) => (
+    <span title={title} style={{ display: 'inline-flex', alignItems: 'center', gap: 2, color: n ? (color || C.text) : C.dim, fontWeight: n ? 700 : 400, fontVariantNumeric: 'tabular-nums' }}>{icon}{n || 0}</span>
+  );
   return (
     <div>
-      <select
-        aria-label="Selecciona una selección" value={sel?.name || ''}
-        onChange={(e) => setSel(squads.find((t) => t.name === e.target.value))}
-        style={{ width: '100%', maxWidth: 360, padding: '0.6rem 0.75rem', borderRadius: 8, background: C.bg, color: C.text, border: `1px solid ${C.border}`, fontSize: '0.95rem', marginBottom: '1.25rem' }}
-      >
-        {squads.map((t) => <option key={t.name} value={t.name}>{flagFor(t.name)} {t.name} (Grupo {t.group})</option>)}
-      </select>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center', marginBottom: '1.1rem' }}>
+        <select
+          aria-label="Selecciona una selección" value={sel?.name || ''}
+          onChange={(e) => setSel(squads.find((t) => t.name === e.target.value))}
+          style={{ flex: '1 1 260px', maxWidth: 360, padding: '0.6rem 0.75rem', borderRadius: 8, background: C.bg, color: C.text, border: `1px solid ${C.border}`, fontSize: '0.95rem' }}
+        >
+          {squads.map((t) => <option key={t.name} value={t.name}>{flagFor(t.name)} {t.name} (Grupo {t.group})</option>)}
+        </select>
+        <span style={{ color: C.dim, fontSize: '0.72rem' }}>
+          ⚽ goles en vivo{hasAdv ? ` · 🅰️ asist · 🟨🟥 tarjetas${statsAt ? ` (act. ${String(statsAt).slice(0, 10)})` : ''}` : ' · asistencias/tarjetas próximamente'}
+        </span>
+      </div>
       {sel && (
         <div style={{ background: C.bg, border: `1px solid ${C.border}`, borderRadius: 10, overflow: 'hidden' }}>
           <div style={{ background: C.forest, color: '#fff', padding: '0.6rem 0.9rem', fontFamily: serif, fontSize: '1.1rem', fontWeight: 700 }}>{flagFor(sel.name)} {sel.name} <span style={{ opacity: 0.7, fontSize: '0.8rem' }}>· {players.length} jugadores</span></div>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
             <tbody>
-              {players.map((p) => (
-                <tr key={(p.number || '') + p.name} style={{ borderTop: `1px solid ${C.border}` }}>
-                  <td style={{ ...td, width: 34, color: C.amber, fontWeight: 700 }}>{p.number || '–'}</td>
-                  <td style={{ ...td, width: 44, color: C.muted }}>{p.pos || ''}</td>
-                  <td style={{ ...td, color: C.text, fontWeight: 600 }}>{p.name}</td>
-                  <td style={{ ...td, color: C.muted, textAlign: 'right' }}>{p.club?.name || ''}</td>
-                </tr>
-              ))}
+              {players.map((p) => {
+                const k = playerKey(sel.name, p.name);
+                const goals = goalMap[k] || 0;
+                const st = hasAdv ? pstats[k] : null;
+                return (
+                  <tr key={(p.number || '') + p.name} style={{ borderTop: `1px solid ${C.border}` }}>
+                    <td style={{ ...td, width: 30, color: C.amber, fontWeight: 700 }}>{p.number || '–'}</td>
+                    <td style={{ ...td, width: 40, color: C.muted }}>{p.pos || ''}</td>
+                    <td style={{ ...td, color: C.text, fontWeight: 600, minWidth: 90 }}>{p.name}</td>
+                    <td style={{ ...td, whiteSpace: 'nowrap' }}>
+                      <span style={{ display: 'inline-flex', gap: 9, fontSize: '0.82rem' }}>
+                        {stat('⚽', goals, C.amber, 'goles')}
+                        {st && stat('🅰️', st.assists, C.forest, 'asistencias')}
+                        {st && stat('🟨', st.yellow, '#b58900', 'amarillas')}
+                        {st && stat('🟥', st.red, C.live, 'rojas')}
+                      </span>
+                    </td>
+                    <td style={{ ...td, color: C.muted, textAlign: 'right', fontSize: '0.78rem' }}>{p.club?.name || ''}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -344,6 +377,7 @@ export default function EnVivoClient({ initialWc }) {
   const thirds = useMemo(() => rankThirds(standings), [standings]);
   const scorers = useMemo(() => topScorers(parsed.matches), [parsed]);
   const rounds = useMemo(() => knockoutRounds(parsed.knockout), [parsed]);
+  const goalMap = useMemo(() => goalsByPlayer(scorers), [scorers]);
 
   return (
     <main style={{ maxWidth: 1180, margin: '0 auto', padding: '0 1.1rem 4rem' }}>
@@ -369,7 +403,7 @@ export default function EnVivoClient({ initialWc }) {
         {tab === 'groups' && <GroupsTab standings={standings} thirds={thirds} />}
         {tab === 'bracket' && <BracketTab rounds={rounds} standings={standings} />}
         {tab === 'scorers' && <ScorersTab scorers={scorers} />}
-        {tab === 'squads' && <SquadsTab />}
+        {tab === 'squads' && <SquadsTab goalMap={goalMap} />}
       </div>
 
       <p style={{ marginTop: '2.5rem', color: C.dim, fontSize: '0.72rem', textAlign: 'center', borderTop: `1px solid ${C.border}`, paddingTop: '1rem' }}>
