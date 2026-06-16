@@ -29,7 +29,7 @@ const SUPABASE_URL = 'https://xqjjdopwinljrnxexpwd.supabase.co';
 const SUPABASE_ANON =
   // Public anon key — safe to ship in client bundle (RLS protects the table).
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhxampkb3B3aW5sanJueGV4cHdkIiwicm9sZSI6ImFub24ifQ.PLACEHOLDER';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhxampkb3B3aW5sanJueGV4cHdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2NTEzOTksImV4cCI6MjA4ODIyNzM5OX0.XCoONnv7BlcLYiG6bQGkg5y4qQ5ofl-myr26XI9MQHc';
 
 export default function EmailCapture({
   source = 'general',
@@ -55,7 +55,7 @@ export default function EmailCapture({
     }
     setStatus('sending');
     try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/metroguia_leads`, {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,9 +63,10 @@ export default function EmailCapture({
           Authorization: `Bearer ${SUPABASE_ANON}`,
           Prefer: 'return=minimal',
         },
-        body: JSON.stringify({ email, source, context }),
+        body: JSON.stringify({ email, source, landing_page: context }),
       });
-      if (!res.ok && res.status !== 201 && res.status !== 204) {
+      // 409 = email ya suscrito → para el usuario es éxito ("ya te avisamos")
+      if (!res.ok && ![201, 204, 409].includes(res.status)) {
         throw new Error(`HTTP ${res.status}`);
       }
       setStatus('success');

@@ -277,6 +277,15 @@ function buildGraph(stopTimes, stationMap, transfers, city) {
     });
   });
 
+  // GTFS stop_times vienen en "HH:MM:SS" (pueden exceder 24h en servicio post-medianoche).
+  const gtfsTimeToSec = (t) => {
+    if (!t || typeof t !== 'string') return null;
+    const p = t.split(':');
+    if (p.length < 3) return null;
+    const s = Number(p[0]) * 3600 + Number(p[1]) * 60 + Number(p[2]);
+    return Number.isFinite(s) ? s : null;
+  };
+
   // Calculate travel times between consecutive stops
   Object.entries(timesByTrip).forEach(([tripId, times]) => {
     times.sort((a, b) => a.stop_sequence - b.stop_sequence);
@@ -293,8 +302,14 @@ function buildGraph(stopTimes, stationMap, transfers, city) {
       const edgeKey = `${fromSlug}---${toSlug}`;
       const reverseKey = `${toSlug}---${fromSlug}`;
 
-      // Estimate travel time (1 min per km is rough estimate, use actual if available)
-      const travelTime = Math.max(1, Math.ceil(Math.random() * 5 + 2)); // 2-7 min placeholder
+      // Tiempo REAL del feed: salida de la estación actual → llegada a la siguiente.
+      // Fallback documentado de 2 min SOLO si el feed no trae horas — NUNCA random
+      // (un dato inventado que parece real es peor que un estimado honesto; bug del Mundial).
+      const dep = gtfsTimeToSec(current.departure_time);
+      const arr = gtfsTimeToSec(next.arrival_time);
+      const travelTime = (dep != null && arr != null && arr > dep)
+        ? Math.max(1, Math.round((arr - dep) / 60))
+        : 2;
 
       if (!edgeMap[edgeKey]) {
         edgeMap[edgeKey] = { count: 0, totalTime: 0 };
