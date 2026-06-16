@@ -1,5 +1,9 @@
 import EnVivoClient from './EnVivoClient';
 import wcData from '@/data/mundial-wc.json';
+import fixtures from '@/data/mundial-fixtures.json';
+
+const ORIGIN = 'https://metroguia.mx';
+const ISO_COUNTRY = { Mexico: 'MX', Canada: 'CA', 'United States': 'US' };
 
 export const metadata = {
   title: 'Mundial 2026 EN VIVO — Resultados, Tablas, Bracket y Goleadores | MetroGuia',
@@ -16,22 +20,63 @@ export const metadata = {
 };
 
 export default function EnVivoPage() {
+  // Un SportsEvent por partido de fase de grupos (equipos reales, sede real, fecha ISO,
+  // link a su página). Horneado en build desde el calendario verificado.
+  const matchEvents = (fixtures.matches || [])
+    .filter((m) => m.phase === 'GROUP_STAGE')
+    .map((m) => ({
+      '@type': 'SportsEvent',
+      name: `${m.home_team} vs ${m.away_team} · Mundial 2026`,
+      startDate: m.date_utc,
+      eventStatus: 'https://schema.org/EventScheduled',
+      sport: 'Association football',
+      location: {
+        '@type': 'Place',
+        name: m.stadium,
+        address: { '@type': 'PostalAddress', addressLocality: m.city, addressCountry: ISO_COUNTRY[m.country] || m.country },
+      },
+      competitor: [
+        { '@type': 'SportsTeam', name: m.home_team },
+        { '@type': 'SportsTeam', name: m.away_team },
+      ],
+      url: `${ORIGIN}/mundial-2026/partido/${m.slug}/`,
+    }));
+
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'SportsEvent',
-    name: 'Copa Mundial de la FIFA 2026',
-    sport: 'Soccer',
-    startDate: '2026-06-11',
-    endDate: '2026-07-19',
-    eventStatus: 'https://schema.org/EventScheduled',
-    location: [
-      { '@type': 'Country', name: 'México' },
-      { '@type': 'Country', name: 'Estados Unidos' },
-      { '@type': 'Country', name: 'Canadá' },
+    '@graph': [
+      {
+        '@type': 'SportsEvent',
+        '@id': `${ORIGIN}/mundial-2026/en-vivo/#mundial2026`,
+        name: 'Copa Mundial de la FIFA 2026',
+        alternateName: 'FIFA World Cup 2026',
+        sport: 'Association football',
+        startDate: '2026-06-11',
+        endDate: '2026-07-19',
+        eventStatus: 'https://schema.org/EventScheduled',
+        location: [
+          { '@type': 'Country', name: 'México' },
+          { '@type': 'Country', name: 'Estados Unidos' },
+          { '@type': 'Country', name: 'Canadá' },
+        ],
+        description: 'Resultados en vivo, tablas de grupos, bracket, goleadores y plantillas del Mundial FIFA 2026.',
+        url: `${ORIGIN}/mundial-2026/en-vivo/`,
+      },
+      {
+        '@type': 'ItemList',
+        name: 'Calendario de partidos — Mundial FIFA 2026',
+        numberOfItems: matchEvents.length,
+        itemListElement: matchEvents.map((ev, i) => ({ '@type': 'ListItem', position: i + 1, item: ev })),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${ORIGIN}/` },
+          { '@type': 'ListItem', position: 2, name: 'Mundial 2026', item: `${ORIGIN}/mundial-2026/` },
+          { '@type': 'ListItem', position: 3, name: 'En Vivo', item: `${ORIGIN}/mundial-2026/en-vivo/` },
+        ],
+      },
     ],
-    description:
-      'Resultados en vivo, tablas de grupos, bracket, goleadores y plantillas del Mundial FIFA 2026.',
-    url: 'https://metroguia.mx/mundial-2026/en-vivo/',
   };
 
   return (
