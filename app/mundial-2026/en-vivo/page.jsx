@@ -4,6 +4,8 @@ import fixtures from '@/data/mundial-fixtures.json';
 
 const ORIGIN = 'https://metroguia.mx';
 const ISO_COUNTRY = { Mexico: 'MX', Canada: 'CA', 'United States': 'US' };
+const FIFA = { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com' };
+const OG_IMAGE = `${ORIGIN}/og-image.png`;
 
 export const metadata = {
   title: 'Mundial 2026 EN VIVO — Resultados, Tablas, Bracket y Goleadores | MetroGuia',
@@ -24,23 +26,32 @@ export default function EnVivoPage() {
   // link a su página). Horneado en build desde el calendario verificado.
   const matchEvents = (fixtures.matches || [])
     .filter((m) => m.phase === 'GROUP_STAGE')
-    .map((m) => ({
-      '@type': 'SportsEvent',
-      name: `${m.home_team} vs ${m.away_team} · Mundial 2026`,
-      startDate: m.date_utc,
-      eventStatus: 'https://schema.org/EventScheduled',
-      sport: 'Association football',
-      location: {
-        '@type': 'Place',
-        name: m.stadium,
-        address: { '@type': 'PostalAddress', addressLocality: m.city, addressCountry: ISO_COUNTRY[m.country] || m.country },
-      },
-      competitor: [
+    .map((m) => {
+      const teams = [
         { '@type': 'SportsTeam', name: m.home_team },
         { '@type': 'SportsTeam', name: m.away_team },
-      ],
-      url: `${ORIGIN}/mundial-2026/partido/${m.slug}/`,
-    }));
+      ];
+      return {
+        '@type': 'SportsEvent',
+        name: `${m.home_team} vs ${m.away_team} · Mundial 2026`,
+        description: `${m.home_team} vs ${m.away_team} — Fase de Grupos del Mundial FIFA 2026 en ${m.stadium}, ${m.city}. Horario, alineaciones y cómo llegar.`,
+        startDate: m.date_utc,
+        endDate: new Date(new Date(m.date_utc).getTime() + 2 * 3600 * 1000).toISOString(),
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        sport: 'Association football',
+        image: [OG_IMAGE],
+        organizer: FIFA,
+        location: {
+          '@type': 'Place',
+          name: m.stadium,
+          address: { '@type': 'PostalAddress', addressLocality: m.city, addressCountry: ISO_COUNTRY[m.country] || m.country },
+        },
+        competitor: teams,
+        performer: teams,
+        url: `${ORIGIN}/mundial-2026/partido/${m.slug}/`,
+      };
+    });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -54,6 +65,9 @@ export default function EnVivoPage() {
         startDate: '2026-06-11',
         endDate: '2026-07-19',
         eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        image: [OG_IMAGE],
+        organizer: FIFA,
         location: [
           { '@type': 'Country', name: 'México' },
           { '@type': 'Country', name: 'Estados Unidos' },
