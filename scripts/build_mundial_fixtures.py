@@ -66,60 +66,115 @@ TEAM_FLAGS = {
 # Source: FIFA 2026 official schedule (verified Mar 2026).
 # -----------------------------------------------------------------
 VENUE_BY_MATCH_ID = {
-    # GROUP A (Mexico) — partidos 537327 a 537332
-    537327: ("Estadio Azteca", "Ciudad de México", "Mexico", True),         # Jun 11 - Mexico vs South Africa (inaugural)
-    537328: ("Estadio Akron", "Guadalajara", "Mexico", False),              # Jun 12 - South Korea vs Czechia
-    537329: ("Estadio Akron", "Guadalajara", "Mexico", False),              # Jun 18 - Czechia vs South Africa
-    537330: ("Estadio Akron", "Guadalajara", "Mexico", False),              # Jun 18 CDMX - Mexico vs South Korea
-    537331: ("Estadio Azteca", "Ciudad de México", "Mexico", True),         # Jun 24 CDMX - Czechia vs Mexico
-    537332: ("Estadio BBVA", "Monterrey", "Mexico", False),                 # Jun 24 CDMX - South Africa vs South Korea
-
-    # FINAL (último partido)
-    537390: ("MetLife Stadium", "East Rutherford, NJ", "United States", False),  # Jul 19 - Final
-    537389: ("Hard Rock Stadium", "Miami, FL", "United States", False),          # Jul 18 - 3rd place
-    537387: ("AT&T Stadium", "Arlington, TX", "United States", False),           # Jul 14 - SF1
-    537388: ("Mercedes-Benz Stadium", "Atlanta, GA", "United States", False),    # Jul 15 - SF2
+    # Mapa COMPLETO de los 104 partidos (id football-data.org -> sede REAL).
+    # Source: calendario oficial FIFA 2026, verificado 2026-06-15 (cross-check multi-fuente).
+    # Reemplaza el round-robin que fabricaba sedes (bug abr-2026).
+    # (stadium, city, country, is_azteca)
+    537327: ('Estadio Azteca', 'Ciudad de México', 'Mexico', True),           # 2026-06-11 Fase de Grupos · Mexico vs South Africa
+    537328: ('Estadio Akron', 'Guadalajara', 'Mexico', False),                # 2026-06-11 Fase de Grupos · South Korea vs Czechia
+    537329: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-06-18 Fase de Grupos · Czechia vs South Africa
+    537330: ('Estadio Akron', 'Guadalajara', 'Mexico', False),                # 2026-06-18 Fase de Grupos · Mexico vs South Korea
+    537331: ('Estadio Azteca', 'Ciudad de México', 'Mexico', True),           # 2026-06-24 Fase de Grupos · Czechia vs Mexico
+    537332: ('Estadio BBVA', 'Monterrey', 'Mexico', False),                   # 2026-06-24 Fase de Grupos · South Africa vs South Korea
+    537333: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-06-12 Fase de Grupos · Canada vs Bosnia-Herzegovina
+    537334: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-06-13 Fase de Grupos · Qatar vs Switzerland
+    537335: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-18 Fase de Grupos · Switzerland vs Bosnia-Herzegovina
+    537336: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-06-18 Fase de Grupos · Canada vs Qatar
+    537337: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-06-24 Fase de Grupos · Switzerland vs Canada
+    537338: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-06-24 Fase de Grupos · Bosnia-Herzegovina vs Qatar
+    537339: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-13 Fase de Grupos · Brazil vs Morocco
+    537340: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-13 Fase de Grupos · Haiti vs Scotland
+    537341: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-06-19 Fase de Grupos · Brazil vs Haiti
+    537342: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-19 Fase de Grupos · Scotland vs Morocco
+    537343: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-06-24 Fase de Grupos · Scotland vs Brazil
+    537344: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-06-24 Fase de Grupos · Morocco vs Haiti
+    537345: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-12 Fase de Grupos · United States vs Paraguay
+    537346: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-06-13 Fase de Grupos · Australia vs Turkey
+    537347: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-06-19 Fase de Grupos · Turkey vs Paraguay
+    537348: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-06-19 Fase de Grupos · United States vs Australia
+    537349: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-25 Fase de Grupos · Turkey vs United States
+    537350: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-06-25 Fase de Grupos · Paraguay vs Australia
+    537351: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-14 Fase de Grupos · Germany vs Curaçao
+    537352: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-06-14 Fase de Grupos · Ivory Coast vs Ecuador
+    537353: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-06-20 Fase de Grupos · Germany vs Ivory Coast
+    537354: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-06-20 Fase de Grupos · Ecuador vs Curaçao
+    537355: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-25 Fase de Grupos · Ecuador vs Germany
+    537356: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-06-25 Fase de Grupos · Curaçao vs Ivory Coast
+    537357: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-14 Fase de Grupos · Netherlands vs Japan
+    537358: ('Estadio BBVA', 'Monterrey', 'Mexico', False),                   # 2026-06-14 Fase de Grupos · Sweden vs Tunisia
+    537359: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-20 Fase de Grupos · Netherlands vs Sweden
+    537360: ('Estadio BBVA', 'Monterrey', 'Mexico', False),                   # 2026-06-20 Fase de Grupos · Tunisia vs Japan
+    537361: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-06-25 Fase de Grupos · Tunisia vs Netherlands
+    537362: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-25 Fase de Grupos · Japan vs Sweden
+    537363: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-06-15 Fase de Grupos · Belgium vs Egypt
+    537364: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-15 Fase de Grupos · Iran vs New Zealand
+    537365: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-21 Fase de Grupos · Belgium vs Iran
+    537366: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-06-21 Fase de Grupos · New Zealand vs Egypt
+    537367: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-06-26 Fase de Grupos · New Zealand vs Belgium
+    537368: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-06-26 Fase de Grupos · Egypt vs Iran
+    537369: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-06-15 Fase de Grupos · Spain vs Cape Verde Islands
+    537370: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-06-15 Fase de Grupos · Saudi Arabia vs Uruguay
+    537371: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-06-21 Fase de Grupos · Spain vs Saudi Arabia
+    537372: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-06-21 Fase de Grupos · Uruguay vs Cape Verde Islands
+    537373: ('Estadio Akron', 'Guadalajara', 'Mexico', False),                # 2026-06-26 Fase de Grupos · Uruguay vs Spain
+    537374: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-26 Fase de Grupos · Cape Verde Islands vs Saudi Arabia
+    537375: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-07-04 Octavos de Final · TBD vs TBD
+    537376: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-07-04 Octavos de Final · TBD vs TBD
+    537377: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-07-05 Octavos de Final · TBD vs TBD
+    537378: ('Estadio Azteca', 'Ciudad de México', 'Mexico', True),           # 2026-07-05 Octavos de Final · TBD vs TBD
+    537379: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-07-06 Octavos de Final · TBD vs TBD
+    537380: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-07-06 Octavos de Final · TBD vs TBD
+    537381: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-07-07 Octavos de Final · TBD vs TBD
+    537382: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-07-07 Octavos de Final · TBD vs TBD
+    537383: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-07-09 Cuartos de Final · TBD vs TBD
+    537384: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-07-10 Cuartos de Final · TBD vs TBD
+    537385: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-07-11 Cuartos de Final · TBD vs TBD
+    537386: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-07-11 Cuartos de Final · TBD vs TBD
+    537387: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-07-14 Semifinal · TBD vs TBD
+    537388: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-07-15 Semifinal · TBD vs TBD
+    537389: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-07-18 Tercer Lugar · TBD vs TBD
+    537390: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-07-19 Final · TBD vs TBD
+    537391: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-16 Fase de Grupos · France vs Senegal
+    537392: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-16 Fase de Grupos · Iraq vs Norway
+    537393: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-06-22 Fase de Grupos · France vs Iraq
+    537394: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-22 Fase de Grupos · Norway vs Senegal
+    537395: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-26 Fase de Grupos · Norway vs France
+    537396: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-06-26 Fase de Grupos · Senegal vs Iraq
+    537397: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-06-16 Fase de Grupos · Argentina vs Algeria
+    537398: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-06-16 Fase de Grupos · Austria vs Jordan
+    537399: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-22 Fase de Grupos · Argentina vs Austria
+    537400: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-06-22 Fase de Grupos · Jordan vs Algeria
+    537401: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-27 Fase de Grupos · Jordan vs Argentina
+    537402: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-06-27 Fase de Grupos · Algeria vs Austria
+    537403: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-17 Fase de Grupos · Portugal vs Congo DR
+    537404: ('Estadio Azteca', 'Ciudad de México', 'Mexico', True),           # 2026-06-17 Fase de Grupos · Uzbekistan vs Colombia
+    537405: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-23 Fase de Grupos · Portugal vs Uzbekistan
+    537406: ('Estadio Akron', 'Guadalajara', 'Mexico', False),                # 2026-06-23 Fase de Grupos · Colombia vs Congo DR
+    537407: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-06-27 Fase de Grupos · Colombia vs Portugal
+    537408: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-06-27 Fase de Grupos · Congo DR vs Uzbekistan
+    537409: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-17 Fase de Grupos · England vs Croatia
+    537410: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-06-17 Fase de Grupos · Ghana vs Panama
+    537411: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-23 Fase de Grupos · England vs Ghana
+    537412: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-06-23 Fase de Grupos · Panama vs Croatia
+    537413: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-27 Fase de Grupos · Panama vs England
+    537414: ('Lincoln Financial Field', 'Philadelphia, PA', 'United States', False),# 2026-06-27 Fase de Grupos · Croatia vs Ghana
+    537415: ('Estadio BBVA', 'Monterrey', 'Mexico', False),                   # 2026-06-29 Round of 32 · TBD vs TBD
+    537416: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-06-30 Round of 32 · TBD vs TBD
+    537417: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-06-28 Round of 32 · TBD vs TBD
+    537418: ('NRG Stadium', 'Houston, TX', 'United States', False),           # 2026-06-29 Round of 32 · TBD vs TBD
+    537419: ('SoFi Stadium', 'Inglewood, CA', 'United States', False),        # 2026-07-02 Round of 32 · TBD vs TBD
+    537420: ('BMO Field', 'Toronto', 'Canada', False),                        # 2026-07-02 Round of 32 · TBD vs TBD
+    537421: ('Lumen Field', 'Seattle, WA', 'United States', False),           # 2026-07-01 Round of 32 · TBD vs TBD
+    537422: ("Levi's Stadium", 'Santa Clara, CA', 'United States', False),    # 2026-07-01 Round of 32 · TBD vs TBD
+    537423: ('Gillette Stadium', 'Foxborough, MA', 'United States', False),   # 2026-06-29 Round of 32 · TBD vs TBD
+    537424: ('MetLife Stadium', 'East Rutherford, NJ', 'United States', False),# 2026-06-30 Round of 32 · TBD vs TBD
+    537425: ('Estadio Azteca', 'Ciudad de México', 'Mexico', True),           # 2026-06-30 Round of 32 · TBD vs TBD
+    537426: ('Mercedes-Benz Stadium', 'Atlanta, GA', 'United States', False), # 2026-07-01 Round of 32 · TBD vs TBD
+    537427: ('Arrowhead Stadium', 'Kansas City, MO', 'United States', False), # 2026-07-03 Round of 32 · TBD vs TBD
+    537428: ('Hard Rock Stadium', 'Miami Gardens, FL', 'United States', False),# 2026-07-03 Round of 32 · TBD vs TBD
+    537429: ('BC Place', 'Vancouver', 'Canada', False),                       # 2026-07-02 Round of 32 · TBD vs TBD
+    537430: ('AT&T Stadium', 'Arlington, TX', 'United States', False),        # 2026-07-03 Round of 32 · TBD vs TBD
 }
-
-# -----------------------------------------------------------------
-# Asignación adicional por grupo/jornada para Mexico (los 13 partidos
-# en Mexico tras los 6 de Group A: faltan 7 más en Mexico City/GDL/MTY).
-# IDs específicos según matchday y stage observado en la API.
-# Estadio Azteca debe llegar a 5 partidos (inaugural + Czechia/Mex + un
-# group F + un R32 + un R16).
-# -----------------------------------------------------------------
-EXTRA_MEXICO_MATCHES = {
-    # GROUP F (Netherlands/Japan/Sweden/Tunisia) — 1 partido en Azteca el Jun 17
-    # ID 537357 (Netherlands vs Japan, Jun 14) ya está en USA/EU según schedule
-    # El partido en Azteca de Group F suele ser el 2o partido de la jornada 2.
-    # Por confirmacion FIFA: Group F partido en Azteca = Jun 17 = ID 537361 o 537362
-    537361: ("Estadio Azteca", "Ciudad de México", "Mexico", True),     # Jun 17 GROUP_F (estimado)
-
-    # ROUND OF 32 (LAST_32) en Azteca: Jun 30
-    # IDs LAST_32 son 537367 a 537382. El partido en Azteca es uno de los primeros R32.
-    537371: ("Estadio Azteca", "Ciudad de México", "Mexico", True),     # Jun 30 LAST_32 (estimado)
-
-    # ROUND OF 16 en Azteca: Jul 5
-    # IDs LAST_16 son 537375 a 537382. El partido en Azteca es uno de los primeros R16.
-    537377: ("Estadio Azteca", "Ciudad de México", "Mexico", True),     # Jul 5 LAST_16 (estimado)
-
-    # Resto de partidos Group A/B en Mexico (Akron + BBVA)
-    # GUADALAJARA - Akron: 4 partidos total (3 Group A + 1 más)
-    # MONTERREY - BBVA: 4 partidos total (3 Group A + 1 más)
-}
-
-VENUE_BY_MATCH_ID.update(EXTRA_MEXICO_MATCHES)
-
-# -----------------------------------------------------------------
-# Asignación FINAL/SEMIS/QF a estadios USA conocidos
-# -----------------------------------------------------------------
-KNOCKOUT_USA_VENUES = {
-    537385: ("SoFi Stadium", "Inglewood, CA", "United States", False),     # QF
-    537386: ("NRG Stadium", "Houston, TX", "United States", False),        # QF
-    537383: ("Lincoln Financial Field", "Philadelphia, PA", "United States", False),  # QF
-    537384: ("Lumen Field", "Seattle, WA", "United States", False),        # QF
-}
-VENUE_BY_MATCH_ID.update(KNOCKOUT_USA_VENUES)
 
 # -----------------------------------------------------------------
 # Estadios genéricos por country basado en las 16 sedes del Mundial 2026
@@ -219,13 +274,9 @@ def assign_venue(match: dict) -> tuple:
     if mid in VENUE_BY_MATCH_ID:
         return VENUE_BY_MATCH_ID[mid]
 
-    # Fallback: distribución determinista por match id en las 13 sedes
-    # para evitar "TBD" en todas las cards no-México.
-    # Excluye los venues mexicanos (índices 0-2) — esos son apartados.
-    venue_pool = HOST_VENUES[3:]  # 13 USA + Canada
-    idx = (mid - 537327) % len(venue_pool)
-    stadium, city, country = venue_pool[idx]
-    return stadium, city, country, False
+    # Sin round-robin: si un id no está en el mapa, marcar honestamente "Por confirmarse".
+    # NUNCA fabricar una sede (ese fue el bug abr-2026). El mapa de arriba cubre los 104.
+    return ("Por confirmarse", "", "TBD", False)
 
 
 def build_fixture(raw: dict) -> dict:
