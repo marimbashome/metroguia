@@ -739,6 +739,7 @@ function getTransportUrls() {
 function getMundialUrls() {
   const urls = [
     entry('/mundial-2026/', 'weekly', 1.0, 'mundial'),
+    entry('/mundial-2026/en-vivo/', 'daily', 0.98, 'mundial'),
     entry('/mundial-2026/calendario-completo/', 'daily', 0.95, 'mundial'),
     entry('/mundial-2026/mexico/', 'weekly', 0.95, 'mundial'),
     entry('/mundial-2026/estadio-azteca/', 'monthly', 0.9, 'mundial'),

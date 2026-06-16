@@ -38,6 +38,11 @@ export default function MundialPageContent() {
         <MundialCalendarCTA variant="full" />
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+          <a href="/mundial-2026/en-vivo/" style={{ display: 'block', padding: '1.5rem', background: 'linear-gradient(135deg, #1F3A2E 0%, #365A3A 100%)', color: 'white', borderRadius: 'var(--radius-lg)', textDecoration: 'none', fontWeight: 700, border: '2px solid #E89B2C' }}>
+            <p style={{ fontSize: '2rem', margin: 0 }}>🔴</p>
+            <p style={{ fontSize: '1.1rem', margin: '0.25rem 0 0' }}>Mundial EN VIVO</p>
+            <p style={{ fontSize: '0.85rem', margin: '0.5rem 0 0', opacity: 0.85, fontWeight: 400 }}>Resultados, tablas, bracket y goleadores al momento</p>
+          </a>
           <a href="/mundial-2026/mexico/" style={{ display: 'block', padding: '1.5rem', background: 'linear-gradient(135deg, #006847 0%, #ce1126 100%)', color: 'white', borderRadius: 'var(--radius-lg)', textDecoration: 'none', fontWeight: 700 }}>
             <p style={{ fontSize: '2rem', margin: 0 }}>🇲🇽</p>
             <p style={{ fontSize: '1.1rem', margin: '0.25rem 0 0' }}>Selección Mexicana</p>
