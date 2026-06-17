@@ -12,13 +12,13 @@
  * - Message handlers for cache control and version management
  */
 
-const SW_VERSION = 'v8-20260403';
+const SW_VERSION = 'v9-20260617';
 
 // Cache bucket names
-const CACHE_STATIC = 'mg-static-v8';
-const CACHE_PAGES = 'mg-pages-v8';
-const CACHE_FONTS = 'mg-fonts-v8';
-const CACHE_IMAGES = 'mg-images-v8';
+const CACHE_STATIC = 'mg-static-v9';
+const CACHE_PAGES = 'mg-pages-v9';
+const CACHE_FONTS = 'mg-fonts-v9';
+const CACHE_IMAGES = 'mg-images-v9';
 
 const ALL_CACHES = [CACHE_STATIC, CACHE_PAGES, CACHE_FONTS, CACHE_IMAGES];
 
@@ -316,7 +316,17 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') {
     return;
   }
-  
+
+  // Never intercept dynamic API endpoints — let them hit the network directly
+  // with their own no-store cache policy. Critical: /api/mundial/wc.js (groups +
+  // bracket + scorers source) ends in ".js", which the isStaticAsset() rule below
+  // would otherwise route through cache-first-with-no-expiry, freezing the live
+  // World Cup data forever. The live-scores endpoint (/api/mundial/results.json)
+  // dodged this only because it ends in ".json".
+  if (new URL(url).pathname.startsWith('/api/')) {
+    return;
+  }
+
   // Route based on request type
   if (isNavigate) {
     // HTML/Document - Network-first with cache fallback
