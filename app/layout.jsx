@@ -101,7 +101,6 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
@@ -142,12 +141,6 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-7YQMP6V81D');
             `,
           }}
-        />
-        {/* AdSense via next/script */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779958677522085"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
         />
       </head>
       <body>

@@ -320,21 +320,6 @@ export default function HospedajePage() {
             </div>
           </div>
 
-          {/* Urgency — Mundial countdown */}
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
-            padding: '0.75rem 1.25rem',
-            background: 'linear-gradient(135deg, rgba(239,68,68,0.08) 0%, rgba(245,166,35,0.08) 100%)',
-            border: '1px solid rgba(239,68,68,0.2)',
-            borderRadius: 'var(--radius)',
-            fontSize: '0.8rem',
-          }}>
-            <span style={{ fontSize: '1.25rem' }}>⚽</span>
-            <span style={{ color: 'var(--text)' }}>
-              <strong style={{ color: '#EF4444' }}>Mundial FIFA 2026 en CDMX:</strong>{' '}
-              11 jun — 5 jul. Los mejores departamentos se reservan primero.
-            </span>
-          </div>
         </div>
       </section>
 

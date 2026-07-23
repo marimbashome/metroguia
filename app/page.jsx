@@ -207,24 +207,6 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            padding: '0.4rem 1rem',
-            borderRadius: 'var(--radius-full)',
-            background: 'rgba(232,155,44,0.12)',
-            border: '1px solid rgba(232,155,44,0.35)',
-            color: 'var(--amber)',
-            fontSize: '0.75rem',
-            fontWeight: 700,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            marginBottom: '1.5rem',
-          }}>
-            ⚽ FIFA World Cup 2026 · Del 11 jun al 19 jul
-          </div>
-
           <h1 className="editorial-h1" style={{
             color: '#FFFFFF',
             fontSize: 'clamp(2.25rem, 6vw, 3.75rem)',
