@@ -1,6 +1,6 @@
 export const grafoPuebla = {
   'capu': {
-    ciudad: 'capu',
+    ciudad: 'puebla',
     nombre: 'CAPU',
     lineas: ['1'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoPuebla = {
     ],
   },
   '20-de-noviembre': {
-    ciudad: '20',
+    ciudad: 'puebla',
     nombre: '20 de Noviembre',
     lineas: ['1'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoPuebla = {
     ],
   },
   'zocalo-centro': {
-    ciudad: 'zocalo',
+    ciudad: 'puebla',
     nombre: 'Zócalo/Centro',
     lineas: ['1'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoPuebla = {
     ],
   },
   'barrio-artista': {
-    ciudad: 'barrio',
+    ciudad: 'puebla',
     nombre: 'Barrio Artista (Xanenetla)',
     lineas: ['1'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoPuebla = {
     ],
   },
   'analco': {
-    ciudad: 'analco',
+    ciudad: 'puebla',
     nombre: 'Analco',
     lineas: ['1'],
     adyacentes: [
@@ -44,7 +44,7 @@ export const grafoPuebla = {
     ],
   },
   'cholula': {
-    ciudad: 'cholula',
+    ciudad: 'puebla',
     nombre: 'Cholula',
     lineas: ['1'],
     adyacentes: [
@@ -53,7 +53,7 @@ export const grafoPuebla = {
     ],
   },
   'udla': {
-    ciudad: 'udla',
+    ciudad: 'puebla',
     nombre: 'UDLA',
     lineas: ['2'],
     adyacentes: [
@@ -61,7 +61,7 @@ export const grafoPuebla = {
     ],
   },
   'hospital-general': {
-    ciudad: 'hospital',
+    ciudad: 'puebla',
     nombre: 'Hospital General',
     lineas: ['2'],
     adyacentes: [
@@ -70,7 +70,7 @@ export const grafoPuebla = {
     ],
   },
   'san-manuel': {
-    ciudad: 'san',
+    ciudad: 'puebla',
     nombre: 'San Manuel',
     lineas: ['2'],
     adyacentes: [
@@ -79,7 +79,7 @@ export const grafoPuebla = {
     ],
   },
   'la-paz': {
-    ciudad: 'la',
+    ciudad: 'puebla',
     nombre: 'La Paz',
     lineas: ['2'],
     adyacentes: [
@@ -88,7 +88,7 @@ export const grafoPuebla = {
     ],
   },
   'buap': {
-    ciudad: 'buap',
+    ciudad: 'puebla',
     nombre: 'BUAP',
     lineas: ['2'],
     adyacentes: [
@@ -96,7 +96,7 @@ export const grafoPuebla = {
     ],
   },
   'valsequillo': {
-    ciudad: 'valsequillo',
+    ciudad: 'puebla',
     nombre: 'Valsequillo',
     lineas: ['3'],
     adyacentes: [
@@ -104,7 +104,7 @@ export const grafoPuebla = {
     ],
   },
   'los-fuertes': {
-    ciudad: 'los',
+    ciudad: 'puebla',
     nombre: 'Los Fuertes',
     lineas: ['3'],
     adyacentes: [
@@ -113,7 +113,7 @@ export const grafoPuebla = {
     ],
   },
   'loreto': {
-    ciudad: 'loreto',
+    ciudad: 'puebla',
     nombre: 'Loreto',
     lineas: ['3'],
     adyacentes: [
@@ -122,7 +122,7 @@ export const grafoPuebla = {
     ],
   },
   'periferico-ecologico': {
-    ciudad: 'periferico',
+    ciudad: 'puebla',
     nombre: 'Periférico Ecológico',
     lineas: ['3'],
     adyacentes: [
@@ -130,7 +130,7 @@ export const grafoPuebla = {
     ],
   },
   'mercado-artesanias': {
-    ciudad: 'mercado',
+    ciudad: 'puebla',
     nombre: 'Mercado de Artesanías',
     lineas: ['1'],
     adyacentes: [
@@ -138,7 +138,7 @@ export const grafoPuebla = {
     ],
   },
   'finsa-puebla': {
-    ciudad: 'finsa',
+    ciudad: 'puebla',
     nombre: 'FINSA',
     lineas: ['4'],
     adyacentes: [
@@ -146,7 +146,7 @@ export const grafoPuebla = {
     ],
   },
   'periferico-norte-pue': {
-    ciudad: 'periferico',
+    ciudad: 'puebla',
     nombre: 'Periférico Norte',
     lineas: ['4'],
     adyacentes: [
@@ -155,7 +155,7 @@ export const grafoPuebla = {
     ],
   },
   'san-jose-xilotzingo': {
-    ciudad: 'san',
+    ciudad: 'puebla',
     nombre: 'San José Xilotzingo',
     lineas: ['4'],
     adyacentes: [
@@ -164,7 +164,7 @@ export const grafoPuebla = {
     ],
   },
   'bosques-puebla': {
-    ciudad: 'bosques',
+    ciudad: 'puebla',
     nombre: 'Bosques de Santa Anita',
     lineas: ['4'],
     adyacentes: [
@@ -173,7 +173,7 @@ export const grafoPuebla = {
     ],
   },
   'plaza-crystal': {
-    ciudad: 'plaza',
+    ciudad: 'puebla',
     nombre: 'Plaza Crystal',
     lineas: ['4'],
     adyacentes: [
@@ -182,7 +182,7 @@ export const grafoPuebla = {
     ],
   },
   'periferico-ecologico-line4': {
-    ciudad: 'periferico',
+    ciudad: 'puebla',
     nombre: 'Periférico Ecológico',
     lineas: ['4'],
     adyacentes: [
@@ -191,7 +191,7 @@ export const grafoPuebla = {
     ],
   },
   'lomas-angelopolis': {
-    ciudad: 'lomas',
+    ciudad: 'puebla',
     nombre: 'Lomas de Angelópolis',
     lineas: ['1', '4'],
     adyacentes: [
@@ -202,7 +202,7 @@ export const grafoPuebla = {
     ],
   },
   'via-atlixcayotl': {
-    ciudad: 'via',
+    ciudad: 'puebla',
     nombre: 'Vía Atlixcáyotl',
     lineas: ['4'],
     adyacentes: [
@@ -212,7 +212,7 @@ export const grafoPuebla = {
     ],
   },
   'valsequillo-pue': {
-    ciudad: 'valsequillo',
+    ciudad: 'puebla',
     nombre: 'Valsequillo',
     lineas: ['4'],
     adyacentes: [

@@ -8,7 +8,7 @@ export const grafoChihuahua = {
     ],
   },
   'cuauhtemoc': {
-    ciudad: 'cuauhtemoc',
+    ciudad: 'chihuahua',
     nombre: 'Cuauhtémoc',
     lineas: ['1'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoChihuahua = {
     ],
   },
   'creel': {
-    ciudad: 'creel',
+    ciudad: 'chihuahua',
     nombre: 'Creel',
     lineas: ['1'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoChihuahua = {
     ],
   },
   'divisadero': {
-    ciudad: 'divisadero',
+    ciudad: 'chihuahua',
     nombre: 'Divisadero',
     lineas: ['1'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoChihuahua = {
     ],
   },
   'posada-barrancas': {
-    ciudad: 'posada',
+    ciudad: 'chihuahua',
     nombre: 'Posada Barrancas',
     lineas: ['1'],
     adyacentes: [
@@ -44,7 +44,7 @@ export const grafoChihuahua = {
     ],
   },
   'bahuichivo': {
-    ciudad: 'bahuichivo',
+    ciudad: 'chihuahua',
     nombre: 'Bahuichivo',
     lineas: ['1'],
     adyacentes: [
@@ -53,7 +53,7 @@ export const grafoChihuahua = {
     ],
   },
   'el-fuerte': {
-    ciudad: 'el',
+    ciudad: 'chihuahua',
     nombre: 'El Fuerte',
     lineas: ['1'],
     adyacentes: [
@@ -62,7 +62,7 @@ export const grafoChihuahua = {
     ],
   },
   'los-mochis': {
-    ciudad: 'los',
+    ciudad: 'chihuahua',
     nombre: 'Los Mochis',
     lineas: ['1'],
     adyacentes: [
@@ -70,7 +70,7 @@ export const grafoChihuahua = {
     ],
   },
   'centro-chihuahua': {
-    ciudad: 'centro',
+    ciudad: 'chihuahua',
     nombre: 'Centro Histórico',
     lineas: ['2'],
     adyacentes: [
@@ -78,7 +78,7 @@ export const grafoChihuahua = {
     ],
   },
   'palacio-gobierno': {
-    ciudad: 'palacio',
+    ciudad: 'chihuahua',
     nombre: 'Palacio de Gobierno',
     lineas: ['2'],
     adyacentes: [
@@ -87,7 +87,7 @@ export const grafoChihuahua = {
     ],
   },
   'catedral-chihuahua': {
-    ciudad: 'catedral',
+    ciudad: 'chihuahua',
     nombre: 'Catedral Metropolitana',
     lineas: ['2'],
     adyacentes: [
@@ -96,7 +96,7 @@ export const grafoChihuahua = {
     ],
   },
   'zona-dorada-chi': {
-    ciudad: 'zona',
+    ciudad: 'chihuahua',
     nombre: 'Zona Dorada',
     lineas: ['2'],
     adyacentes: [
@@ -105,7 +105,7 @@ export const grafoChihuahua = {
     ],
   },
   'uach': {
-    ciudad: 'uach',
+    ciudad: 'chihuahua',
     nombre: 'UACH (Universidad Autónoma de Chihuahua)',
     lineas: ['2'],
     adyacentes: [
@@ -114,7 +114,7 @@ export const grafoChihuahua = {
     ],
   },
   'museo-quinta-gameros': {
-    ciudad: 'museo',
+    ciudad: 'chihuahua',
     nombre: 'Museo Quinta Gameros',
     lineas: ['2'],
     adyacentes: [
@@ -123,7 +123,7 @@ export const grafoChihuahua = {
     ],
   },
   'pancho-villa-museo': {
-    ciudad: 'pancho',
+    ciudad: 'chihuahua',
     nombre: 'Museo de la Revolución (Hacienda de Villa)',
     lineas: ['2'],
     adyacentes: [
@@ -131,7 +131,7 @@ export const grafoChihuahua = {
     ],
   },
   'terminal-norte-bowi': {
-    ciudad: 'terminal',
+    ciudad: 'chihuahua',
     nombre: 'Terminal Norte Bowí',
     lineas: ['3'],
     adyacentes: [
@@ -139,7 +139,7 @@ export const grafoChihuahua = {
     ],
   },
   'periferico-norte': {
-    ciudad: 'periferico',
+    ciudad: 'chihuahua',
     nombre: 'Periférico Norte',
     lineas: ['3'],
     adyacentes: [
@@ -148,7 +148,7 @@ export const grafoChihuahua = {
     ],
   },
   'universidad-chihuahua': {
-    ciudad: 'universidad',
+    ciudad: 'chihuahua',
     nombre: 'Universidad de Chihuahua',
     lineas: ['3'],
     adyacentes: [
@@ -157,7 +157,7 @@ export const grafoChihuahua = {
     ],
   },
   'tecnologico-chihuahua': {
-    ciudad: 'tecnologico',
+    ciudad: 'chihuahua',
     nombre: 'Tecnológico de Chihuahua',
     lineas: ['3'],
     adyacentes: [
@@ -166,7 +166,7 @@ export const grafoChihuahua = {
     ],
   },
   'ninos-heroes-chi': {
-    ciudad: 'ninos',
+    ciudad: 'chihuahua',
     nombre: 'Niños Héroes',
     lineas: ['3'],
     adyacentes: [
@@ -175,7 +175,7 @@ export const grafoChihuahua = {
     ],
   },
   'centro-bowi': {
-    ciudad: 'centro',
+    ciudad: 'chihuahua',
     nombre: 'Centro Bowí',
     lineas: ['3'],
     adyacentes: [
@@ -184,7 +184,7 @@ export const grafoChihuahua = {
     ],
   },
   'independencia-chi': {
-    ciudad: 'independencia',
+    ciudad: 'chihuahua',
     nombre: 'Independencia',
     lineas: ['3'],
     adyacentes: [
@@ -193,7 +193,7 @@ export const grafoChihuahua = {
     ],
   },
   'americas-chi': {
-    ciudad: 'americas',
+    ciudad: 'chihuahua',
     nombre: 'Américas',
     lineas: ['3'],
     adyacentes: [
@@ -202,7 +202,7 @@ export const grafoChihuahua = {
     ],
   },
   'altavista-chi': {
-    ciudad: 'altavista',
+    ciudad: 'chihuahua',
     nombre: 'Altavista',
     lineas: ['3'],
     adyacentes: [
@@ -211,7 +211,7 @@ export const grafoChihuahua = {
     ],
   },
   'cantera-chi': {
-    ciudad: 'cantera',
+    ciudad: 'chihuahua',
     nombre: 'Cantera',
     lineas: ['3'],
     adyacentes: [
@@ -220,7 +220,7 @@ export const grafoChihuahua = {
     ],
   },
   'campestre-chi': {
-    ciudad: 'campestre',
+    ciudad: 'chihuahua',
     nombre: 'Campestre',
     lineas: ['3'],
     adyacentes: [
@@ -229,7 +229,7 @@ export const grafoChihuahua = {
     ],
   },
   'vialidad-sacramento': {
-    ciudad: 'vialidad',
+    ciudad: 'chihuahua',
     nombre: 'Vialidad Sacramento',
     lineas: ['3'],
     adyacentes: [
@@ -240,7 +240,7 @@ export const grafoChihuahua = {
     ],
   },
   'terminal-sur-bowi': {
-    ciudad: 'terminal',
+    ciudad: 'chihuahua',
     nombre: 'Terminal Sur Bowí',
     lineas: ['3'],
     adyacentes: [

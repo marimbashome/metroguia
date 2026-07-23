@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:pathfinder": "node scripts/verify-pathfinder.mjs"
+    "test:pathfinder": "node scripts/verify-pathfinder.mjs",
+    "check:keep-urls": "node scripts/checks/keep-urls.mjs",
+    "check:no-placeholder-pages": "node scripts/checks/no-placeholder-pages.mjs",
+    "check:sitemap-mx-only": "node scripts/checks/sitemap-mx-only.mjs",
+    "postbuild": "npm run check:keep-urls && npm run check:no-placeholder-pages && npm run check:sitemap-mx-only"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,79 +1,74 @@
+import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
+
 export const metadata = {
-  title: 'Contacto — MetroGuia.mx',
-  description: 'Contacta al equipo de MetroGuia.mx para preguntas, sugerencias, colaboraciones o reportar información incorrecta sobre transporte público en México.',
+  title: 'Contacto',
+  description:
+    'Contacta a MetroGuia.mx para reportar un dato incorrecto, sugerir una ciudad o hacer una pregunta sobre transporte público en México.',
   alternates: { canonical: '/contact/' },
 }
 
 export default function ContactPage() {
   return (
-    <div style={{ backgroundColor: '#fff' }}>
-      <section className="hero" style={{ backgroundColor: 'var(--metro-dark)', padding: '3rem 1.5rem' }}>
-        <div className="container">
-          <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Contacto</h1>
-          <p style={{ opacity: 0.7, fontSize: '0.875rem' }}>Estamos aquí para ayudarte</p>
+    <div>
+      <BreadcrumbSchema items={[{ name: 'Inicio', url: '/' }, { name: 'Contacto', url: '/contact/' }]} />
+
+      <section className="section page-hero">
+        <div className="container-narrow">
+          <h1>Contacto</h1>
+          <p className="page-hero-lede">Preguntas, correcciones y sugerencias.</p>
         </div>
       </section>
 
-      <section style={{ padding: '4rem 1.5rem' }}>
-        <div className="container" style={{ maxWidth: '800px', lineHeight: 1.8 }}>
-
-          <h2 style={{ marginBottom: '1rem', marginTop: '2rem' }}>Escríbenos</h2>
+      <section className="section section-alt">
+        <div className="container-narrow legal-body">
+          <h2>Escríbenos</h2>
           <p>
-            Si tienes preguntas sobre el sitio, sugerencias para mejorar la información, o
-            necesitas ayuda planificando tu viaje en transporte público, puedes contactarnos por
-            correo electrónico:
+            Para preguntas sobre el sitio, reportar información desactualizada o sugerir contenido nuevo:
           </p>
-          <p style={{ marginTop: '1rem', fontSize: '1.125rem' }}>
-            <a href="mailto:enrique@marimbashome.com" style={{ color: 'var(--metro-orange)', fontWeight: 600 }}>
-              enrique@marimbashome.com
-            </a>
+          <p className="contact-email">
+            <a href="mailto:enrique@marimbashome.com">enrique@marimbashome.com</a>
           </p>
 
-          <h2 style={{ marginBottom: '1rem', marginTop: '2rem' }}>Motivos de contacto</h2>
-          <ul style={{ marginLeft: '1.5rem', marginTop: '1rem' }}>
-            <li style={{ marginBottom: '0.75rem' }}>
-              <strong>Información incorrecta:</strong> Si encuentras datos desactualizados sobre
-              estaciones, rutas, horarios o tarifas, avísanos para corregirlo lo antes posible.
+          <h2>Motivos de contacto</h2>
+          <ul>
+            <li>
+              <strong>Información incorrecta:</strong> datos desactualizados sobre estaciones, líneas,
+              transbordos o tarifas.
             </li>
-            <li style={{ marginBottom: '0.75rem' }}>
-              <strong>Sugerencias:</strong> ¿Te gustaría ver una ciudad o sistema de transporte
-              adicional en MetroGuia.mx? Nos encanta recibir ideas.
+            <li>
+              <strong>Ciudad o sistema faltante:</strong> transporte público que no está cubierto todavía.
             </li>
-            <li style={{ marginBottom: '0.75rem' }}>
-              <strong>Colaboraciones:</strong> Si representas un medio de comunicación, blog de
-              viajes, u organización relacionada con turismo o transporte, estamos abiertos a
-              colaborar.
-            </li>
-            <li style={{ marginBottom: '0.75rem' }}>
-              <strong>Mundial FIFA 2026:</strong> ¿Organizas viajes grupales o necesitas información
-              de transporte para tu delegación? Podemos ayudarte.
-            </li>
-            <li style={{ marginBottom: '0.75rem' }}>
-              <strong>Publicidad:</strong> Para consultas sobre publicidad y patrocinios en
-              MetroGuia.mx, escríbenos al correo indicado arriba.
+            <li>
+              <strong>Colaboraciones:</strong> medios, blogs de viaje u organizaciones de transporte.
             </li>
           </ul>
 
-          <h2 style={{ marginBottom: '1rem', marginTop: '2rem' }}>Tiempo de respuesta</h2>
-          <p>
-            Hacemos nuestro mejor esfuerzo por responder todos los correos en un plazo de
-            24 a 48 horas. Durante temporadas de alto tráfico (como eventos deportivos
-            internacionales) la respuesta puede tomar un poco más.
-          </p>
+          <h2>Tiempo de respuesta</h2>
+          <p>Respondemos la mayoría de los correos en 24 a 48 horas hábiles.</p>
 
-          <h2 style={{ marginBottom: '1rem', marginTop: '2rem' }}>Sobre MetroGuia.mx</h2>
+          <h2>Sobre MetroGuia.mx</h2>
           <p>
             MetroGuia.mx es un proyecto de{' '}
-            <a href="https://marimbashome.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--metro-orange)' }}>
-              Marimbas Home
-            </a>, una empresa mexicana de hospitalidad. Conoce más sobre nosotros en nuestra{' '}
-            <a href="/about/" style={{ color: 'var(--metro-orange)' }}>
-              página de información
-            </a>.
+            <a href="https://marimbashome.com" target="_blank" rel="noopener noreferrer">Marimbas Home</a>.
+            Más contexto en <a href="/about/">Acerca de</a>.
           </p>
-
         </div>
       </section>
+
+      <style>{pageStyles}</style>
     </div>
   )
 }
+
+const pageStyles = `
+  .page-hero { text-align: center; }
+  .page-hero-lede { color: var(--text-muted); font-size: 1.02rem; }
+  .legal-body h2 { margin-top: var(--space-6); }
+  .legal-body h2:first-child { margin-top: 0; }
+  .legal-body p, .legal-body li { color: var(--text-muted); }
+  .legal-body ul { margin: 0 0 var(--space-4); padding-left: 1.25rem; list-style: disc; }
+  .legal-body li { margin-bottom: var(--space-2); }
+  .legal-body a { color: var(--forest); font-weight: 600; }
+  .contact-email { font-size: 1.15rem; }
+  .contact-email a { color: var(--amber-hover); }
+`
