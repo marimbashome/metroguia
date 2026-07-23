@@ -1,6 +1,6 @@
 export const grafoToluca = {
   'observatorio-cdmx': {
-    ciudad: 'observatorio',
+    ciudad: 'toluca',
     nombre: 'Observatorio CDMX',
     lineas: ['TI'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoToluca = {
     ],
   },
   'san-mateo-atenco': {
-    ciudad: 'san',
+    ciudad: 'toluca',
     nombre: 'San Mateo Atenco',
     lineas: ['TI'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoToluca = {
     ],
   },
   'zinacantepec-terminal': {
-    ciudad: 'zinacantepec',
+    ciudad: 'toluca',
     nombre: 'Zinacantepec Terminal',
     lineas: ['TI', 'M1'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoToluca = {
     ],
   },
   'portales-toluca': {
-    ciudad: 'portales',
+    ciudad: 'toluca',
     nombre: 'Portales',
     lineas: ['M1'],
     adyacentes: [
@@ -44,7 +44,7 @@ export const grafoToluca = {
     ],
   },
   'cosmovitral': {
-    ciudad: 'cosmovitral',
+    ciudad: 'toluca',
     nombre: 'Cosmovitral',
     lineas: ['M1'],
     adyacentes: [
@@ -53,7 +53,7 @@ export const grafoToluca = {
     ],
   },
   'metepec-artesanal': {
-    ciudad: 'metepec',
+    ciudad: 'toluca',
     nombre: 'Metepec Artesanal',
     lineas: ['M1'],
     adyacentes: [
@@ -62,7 +62,7 @@ export const grafoToluca = {
     ],
   },
   'san-salvador-metepec': {
-    ciudad: 'san',
+    ciudad: 'toluca',
     nombre: 'San Salvador Metepec',
     lineas: ['TI', 'M1'],
     adyacentes: [
@@ -72,7 +72,7 @@ export const grafoToluca = {
     ],
   },
   'lerma-centro': {
-    ciudad: 'lerma',
+    ciudad: 'toluca',
     nombre: 'Lerma Centro',
     lineas: ['M2'],
     adyacentes: [
@@ -80,7 +80,7 @@ export const grafoToluca = {
     ],
   },
   'parque-lerma': {
-    ciudad: 'parque',
+    ciudad: 'toluca',
     nombre: 'Parque Lerma',
     lineas: ['TI', 'M2'],
     adyacentes: [
@@ -91,7 +91,7 @@ export const grafoToluca = {
     ],
   },
   'universidad-toluca': {
-    ciudad: 'universidad',
+    ciudad: 'toluca',
     nombre: 'Universidad Toluca',
     lineas: ['M2'],
     adyacentes: [
@@ -100,7 +100,7 @@ export const grafoToluca = {
     ],
   },
   'aeropuerto-toluca': {
-    ciudad: 'aeropuerto',
+    ciudad: 'toluca',
     nombre: 'Acceso Aeropuerto',
     lineas: ['M2'],
     adyacentes: [

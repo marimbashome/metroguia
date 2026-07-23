@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://metroguia.mx/sitemap.xml
-Sitemap: https://metroguia.mx/sitemap-images.xml

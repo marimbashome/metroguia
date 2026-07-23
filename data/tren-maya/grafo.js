@@ -1,6 +1,6 @@
 export const grafoTrenMaya = {
   'palenque': {
-    ciudad: 'palenque',
+    ciudad: 'tren-maya',
     nombre: 'Palenque',
     lineas: ['T1'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoTrenMaya = {
     ],
   },
   'boca-del-cerro': {
-    ciudad: 'boca',
+    ciudad: 'tren-maya',
     nombre: 'Boca del Cerro',
     lineas: ['T1'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoTrenMaya = {
     ],
   },
   'tenosique': {
-    ciudad: 'tenosique',
+    ciudad: 'tren-maya',
     nombre: 'Tenosique',
     lineas: ['T1'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoTrenMaya = {
     ],
   },
   'escarcega': {
-    ciudad: 'escarcega',
+    ciudad: 'tren-maya',
     nombre: 'Escárcega',
     lineas: ['T1', 'T2', 'T7'],
     adyacentes: [
@@ -36,7 +36,7 @@ export const grafoTrenMaya = {
     ],
   },
   'calkini': {
-    ciudad: 'calkini',
+    ciudad: 'tren-maya',
     nombre: 'Calkiní',
     lineas: ['T2', 'T3'],
     adyacentes: [
@@ -45,7 +45,7 @@ export const grafoTrenMaya = {
     ],
   },
   'campeche-central': {
-    ciudad: 'campeche',
+    ciudad: 'tren-maya',
     nombre: 'San Francisco de Campeche',
     lineas: ['T2'],
     adyacentes: [
@@ -54,7 +54,7 @@ export const grafoTrenMaya = {
     ],
   },
   'edzna': {
-    ciudad: 'edzna',
+    ciudad: 'tren-maya',
     nombre: 'Edzná',
     lineas: ['T2'],
     adyacentes: [
@@ -63,7 +63,7 @@ export const grafoTrenMaya = {
     ],
   },
   'maxcanu': {
-    ciudad: 'maxcanu',
+    ciudad: 'tren-maya',
     nombre: 'Maxcanú',
     lineas: ['T3'],
     adyacentes: [
@@ -72,7 +72,7 @@ export const grafoTrenMaya = {
     ],
   },
   'merida-teya': {
-    ciudad: 'merida',
+    ciudad: 'tren-maya',
     nombre: 'Mérida (Teya)',
     lineas: ['T3'],
     adyacentes: [
@@ -81,7 +81,7 @@ export const grafoTrenMaya = {
     ],
   },
   'tixkokob': {
-    ciudad: 'tixkokob',
+    ciudad: 'tren-maya',
     nombre: 'Tixkokob',
     lineas: ['T3'],
     adyacentes: [
@@ -90,7 +90,7 @@ export const grafoTrenMaya = {
     ],
   },
   'izamal': {
-    ciudad: 'izamal',
+    ciudad: 'tren-maya',
     nombre: 'Izamal',
     lineas: ['T3', 'T4'],
     adyacentes: [
@@ -99,7 +99,7 @@ export const grafoTrenMaya = {
     ],
   },
   'chichen-itza': {
-    ciudad: 'chichen',
+    ciudad: 'tren-maya',
     nombre: 'Chichén Itzá',
     lineas: ['T4'],
     adyacentes: [
@@ -108,7 +108,7 @@ export const grafoTrenMaya = {
     ],
   },
   'valladolid': {
-    ciudad: 'valladolid',
+    ciudad: 'tren-maya',
     nombre: 'Valladolid',
     lineas: ['T4'],
     adyacentes: [
@@ -117,7 +117,7 @@ export const grafoTrenMaya = {
     ],
   },
   'nuevo-xcan': {
-    ciudad: 'nuevo',
+    ciudad: 'tren-maya',
     nombre: 'Nuevo Xcán',
     lineas: ['T4'],
     adyacentes: [
@@ -126,7 +126,7 @@ export const grafoTrenMaya = {
     ],
   },
   'cancun-aeropuerto': {
-    ciudad: 'cancun',
+    ciudad: 'tren-maya',
     nombre: 'Cancún (Aeropuerto)',
     lineas: ['T5N'],
     adyacentes: [
@@ -135,7 +135,7 @@ export const grafoTrenMaya = {
     ],
   },
   'cancun': {
-    ciudad: 'cancun',
+    ciudad: 'tren-maya',
     nombre: 'Cancún',
     lineas: ['T4', 'T5N'],
     adyacentes: [
@@ -144,7 +144,7 @@ export const grafoTrenMaya = {
     ],
   },
   'puerto-morelos': {
-    ciudad: 'puerto',
+    ciudad: 'tren-maya',
     nombre: 'Puerto Morelos',
     lineas: ['T5N'],
     adyacentes: [
@@ -153,7 +153,7 @@ export const grafoTrenMaya = {
     ],
   },
   'playa-del-carmen': {
-    ciudad: 'playa',
+    ciudad: 'tren-maya',
     nombre: 'Playa del Carmen',
     lineas: ['T5N', 'T5S'],
     adyacentes: [
@@ -162,7 +162,7 @@ export const grafoTrenMaya = {
     ],
   },
   'xcaret': {
-    ciudad: 'xcaret',
+    ciudad: 'tren-maya',
     nombre: 'Xcaret',
     lineas: ['T5S'],
     adyacentes: [
@@ -171,7 +171,7 @@ export const grafoTrenMaya = {
     ],
   },
   'tulum-aeropuerto': {
-    ciudad: 'tulum',
+    ciudad: 'tren-maya',
     nombre: 'Tulum (Aeropuerto)',
     lineas: ['T6'],
     adyacentes: [
@@ -180,7 +180,7 @@ export const grafoTrenMaya = {
     ],
   },
   'tulum': {
-    ciudad: 'tulum',
+    ciudad: 'tren-maya',
     nombre: 'Tulum',
     lineas: ['T5S', 'T6'],
     adyacentes: [
@@ -189,7 +189,7 @@ export const grafoTrenMaya = {
     ],
   },
   'felipe-carrillo-puerto': {
-    ciudad: 'felipe',
+    ciudad: 'tren-maya',
     nombre: 'Felipe Carrillo Puerto',
     lineas: ['T6'],
     adyacentes: [
@@ -198,7 +198,7 @@ export const grafoTrenMaya = {
     ],
   },
   'limones': {
-    ciudad: 'limones',
+    ciudad: 'tren-maya',
     nombre: 'Limones',
     lineas: ['T6'],
     adyacentes: [
@@ -207,7 +207,7 @@ export const grafoTrenMaya = {
     ],
   },
   'nicolas-bravo': {
-    ciudad: 'nicolas',
+    ciudad: 'tren-maya',
     nombre: 'Nicolás Bravo',
     lineas: ['T7'],
     adyacentes: [
@@ -216,7 +216,7 @@ export const grafoTrenMaya = {
     ],
   },
   'bacalar': {
-    ciudad: 'bacalar',
+    ciudad: 'tren-maya',
     nombre: 'Bacalar',
     lineas: ['T6'],
     adyacentes: [
@@ -225,7 +225,7 @@ export const grafoTrenMaya = {
     ],
   },
   'chetumal': {
-    ciudad: 'chetumal',
+    ciudad: 'tren-maya',
     nombre: 'Chetumal',
     lineas: ['T6', 'T7'],
     adyacentes: [
@@ -234,7 +234,7 @@ export const grafoTrenMaya = {
     ],
   },
   'agua-azul': {
-    ciudad: 'agua',
+    ciudad: 'tren-maya',
     nombre: 'Agua Azul',
     lineas: ['T1'],
     adyacentes: [
@@ -243,7 +243,7 @@ export const grafoTrenMaya = {
     ],
   },
   'calakmul-balamku': {
-    ciudad: 'calakmul',
+    ciudad: 'tren-maya',
     nombre: 'Calakmul - Balamkú',
     lineas: ['T2'],
     adyacentes: [

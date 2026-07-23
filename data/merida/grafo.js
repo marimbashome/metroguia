@@ -1,6 +1,6 @@
 export const grafoMerida = {
   'terminal-came': {
-    ciudad: 'terminal',
+    ciudad: 'merida',
     nombre: 'Terminal CAME',
     lineas: ['D1'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoMerida = {
     ],
   },
   'la-plancha': {
-    ciudad: 'la',
+    ciudad: 'merida',
     nombre: 'La Plancha',
     lineas: ['D1'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoMerida = {
     ],
   },
   'gran-museo-mundo-maya': {
-    ciudad: 'gran',
+    ciudad: 'merida',
     nombre: 'Gran Museo del Mundo Maya',
     lineas: ['D1'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoMerida = {
     ],
   },
   'paseo-montejo': {
-    ciudad: 'paseo',
+    ciudad: 'merida',
     nombre: 'Paseo de Montejo',
     lineas: ['D1'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoMerida = {
     ],
   },
   'centro-historico': {
-    ciudad: 'centro',
+    ciudad: 'merida',
     nombre: 'Centro Histórico',
     lineas: ['D1', 'A4'],
     adyacentes: [
@@ -45,7 +45,7 @@ export const grafoMerida = {
     ],
   },
   'mercado-lucas-galez': {
-    ciudad: 'mercado',
+    ciudad: 'merida',
     nombre: 'Mercado Lucas de Gálvez',
     lineas: ['D1'],
     adyacentes: [
@@ -54,7 +54,7 @@ export const grafoMerida = {
     ],
   },
   'uady': {
-    ciudad: 'uady',
+    ciudad: 'merida',
     nombre: 'UADY Campus Central',
     lineas: ['D1'],
     adyacentes: [
@@ -62,7 +62,7 @@ export const grafoMerida = {
     ],
   },
   'terminal-noreste': {
-    ciudad: 'terminal',
+    ciudad: 'merida',
     nombre: 'Terminal Noreste',
     lineas: ['R2'],
     adyacentes: [
@@ -70,7 +70,7 @@ export const grafoMerida = {
     ],
   },
   'plaza-las-americas': {
-    ciudad: 'plaza',
+    ciudad: 'merida',
     nombre: 'Plaza Las Américas',
     lineas: ['R2'],
     adyacentes: [
@@ -79,7 +79,7 @@ export const grafoMerida = {
     ],
   },
   'altabrisa': {
-    ciudad: 'altabrisa',
+    ciudad: 'merida',
     nombre: 'Altabrisa',
     lineas: ['R2'],
     adyacentes: [
@@ -88,7 +88,7 @@ export const grafoMerida = {
     ],
   },
   'hospital-general': {
-    ciudad: 'hospital',
+    ciudad: 'merida',
     nombre: 'Hospital General',
     lineas: ['R2'],
     adyacentes: [
@@ -97,7 +97,7 @@ export const grafoMerida = {
     ],
   },
   'itzimna': {
-    ciudad: 'itzimna',
+    ciudad: 'merida',
     nombre: 'Itzimná',
     lineas: ['R2'],
     adyacentes: [
@@ -106,7 +106,7 @@ export const grafoMerida = {
     ],
   },
   'parque-centenario': {
-    ciudad: 'parque',
+    ciudad: 'merida',
     nombre: 'Parque del Centenario',
     lineas: ['R2'],
     adyacentes: [
@@ -114,7 +114,7 @@ export const grafoMerida = {
     ],
   },
   'aeropuerto-manuel-crescencio-rejon': {
-    ciudad: 'aeropuerto',
+    ciudad: 'merida',
     nombre: 'Aeropuerto Internacional Manuel Crescencio Rejón',
     lineas: ['A4'],
     adyacentes: [
@@ -122,7 +122,7 @@ export const grafoMerida = {
     ],
   },
   'ciudad-caucel': {
-    ciudad: 'ciudad',
+    ciudad: 'merida',
     nombre: 'Ciudad Caucel',
     lineas: ['V3', 'A4'],
     adyacentes: [
@@ -131,7 +131,7 @@ export const grafoMerida = {
     ],
   },
   'plaza-grande-ie-tram': {
-    ciudad: 'plaza',
+    ciudad: 'merida',
     nombre: 'Plaza Grande (Ie-Tram)',
     lineas: ['Ie-Tram'],
     adyacentes: [
@@ -139,7 +139,7 @@ export const grafoMerida = {
     ],
   },
   'paseo-montejo-ie-tram': {
-    ciudad: 'paseo',
+    ciudad: 'merida',
     nombre: 'Paseo de Montejo (Ie-Tram)',
     lineas: ['Ie-Tram'],
     adyacentes: [
@@ -148,7 +148,7 @@ export const grafoMerida = {
     ],
   },
   'gran-museo-mundo-maya-ie-tram': {
-    ciudad: 'gran',
+    ciudad: 'merida',
     nombre: 'Gran Museo del Mundo Maya (Ie-Tram)',
     lineas: ['Ie-Tram'],
     adyacentes: [
@@ -157,7 +157,7 @@ export const grafoMerida = {
     ],
   },
   'xcanatun': {
-    ciudad: 'xcanatun',
+    ciudad: 'merida',
     nombre: 'Xcanatún',
     lineas: ['Ie-Tram'],
     adyacentes: [
@@ -166,7 +166,7 @@ export const grafoMerida = {
     ],
   },
   'teya-tren-maya': {
-    ciudad: 'teya',
+    ciudad: 'merida',
     nombre: 'Teya - Estación Tren Maya',
     lineas: ['Ie-Tram'],
     adyacentes: [

@@ -1,6 +1,6 @@
 export const grafoLeon = {
   'capu-leon': {
-    ciudad: 'capu',
+    ciudad: 'leon',
     nombre: 'CAPÚ León',
     lineas: ['Verde'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoLeon = {
     ],
   },
   'plaza-mayor': {
-    ciudad: 'plaza',
+    ciudad: 'leon',
     nombre: 'Plaza Mayor',
     lineas: ['Verde'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoLeon = {
     ],
   },
   'zona-centro-leon': {
-    ciudad: 'zona',
+    ciudad: 'leon',
     nombre: 'Centro Histórico',
     lineas: ['Verde'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoLeon = {
     ],
   },
   'plaza-de-los-martires': {
-    ciudad: 'plaza',
+    ciudad: 'leon',
     nombre: 'Plaza de los Mártires',
     lineas: ['Verde'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoLeon = {
     ],
   },
   'catedral-basilica': {
-    ciudad: 'catedral',
+    ciudad: 'leon',
     nombre: 'Catedral Basílica',
     lineas: ['Verde'],
     adyacentes: [
@@ -44,7 +44,7 @@ export const grafoLeon = {
     ],
   },
   'la-calzada': {
-    ciudad: 'la',
+    ciudad: 'leon',
     nombre: 'La Calzada',
     lineas: ['Verde'],
     adyacentes: [
@@ -53,7 +53,7 @@ export const grafoLeon = {
     ],
   },
   'estadio-leon': {
-    ciudad: 'estadio',
+    ciudad: 'leon',
     nombre: 'Estadio León',
     lineas: ['Verde'],
     adyacentes: [
@@ -62,7 +62,7 @@ export const grafoLeon = {
     ],
   },
   'blvd-adolfo-lopez-mateos': {
-    ciudad: 'blvd',
+    ciudad: 'leon',
     nombre: 'Blvd. A.L.M.',
     lineas: ['Verde'],
     adyacentes: [
@@ -70,7 +70,7 @@ export const grafoLeon = {
     ],
   },
   'terminal-central-leon': {
-    ciudad: 'terminal',
+    ciudad: 'leon',
     nombre: 'Terminal Central',
     lineas: ['Azul'],
     adyacentes: [
@@ -78,7 +78,7 @@ export const grafoLeon = {
     ],
   },
   'delta-leon': {
-    ciudad: 'delta',
+    ciudad: 'leon',
     nombre: 'Delta León',
     lineas: ['Azul'],
     adyacentes: [
@@ -87,7 +87,7 @@ export const grafoLeon = {
     ],
   },
   'gran-plaza-leon': {
-    ciudad: 'gran',
+    ciudad: 'leon',
     nombre: 'Gran Plaza León',
     lineas: ['Azul'],
     adyacentes: [
@@ -96,7 +96,7 @@ export const grafoLeon = {
     ],
   },
   'plaza-toros-leon': {
-    ciudad: 'plaza',
+    ciudad: 'leon',
     nombre: 'Plaza de Toros',
     lineas: ['Azul'],
     adyacentes: [
@@ -105,7 +105,7 @@ export const grafoLeon = {
     ],
   },
   'hospital-imss-bajio': {
-    ciudad: 'hospital',
+    ciudad: 'leon',
     nombre: 'Hospital IMSS Bajío',
     lineas: ['Azul'],
     adyacentes: [
@@ -114,7 +114,7 @@ export const grafoLeon = {
     ],
   },
   'universidad-campus-leon': {
-    ciudad: 'universidad',
+    ciudad: 'leon',
     nombre: 'Universidad Campus',
     lineas: ['Azul'],
     adyacentes: [
@@ -122,7 +122,7 @@ export const grafoLeon = {
     ],
   },
   'expo-leon': {
-    ciudad: 'expo',
+    ciudad: 'leon',
     nombre: 'Expo León',
     lineas: ['Naranja'],
     adyacentes: [
@@ -130,7 +130,7 @@ export const grafoLeon = {
     ],
   },
   'poliforum-leon': {
-    ciudad: 'poliforum',
+    ciudad: 'leon',
     nombre: 'Polifórum',
     lineas: ['Naranja'],
     adyacentes: [
@@ -139,7 +139,7 @@ export const grafoLeon = {
     ],
   },
   'industrial-norte-leon': {
-    ciudad: 'industrial',
+    ciudad: 'leon',
     nombre: 'Industrial Norte',
     lineas: ['Naranja'],
     adyacentes: [
@@ -148,7 +148,7 @@ export const grafoLeon = {
     ],
   },
   'zona-piel-leon': {
-    ciudad: 'zona',
+    ciudad: 'leon',
     nombre: 'Zona Piel',
     lineas: ['Morado'],
     adyacentes: [
@@ -156,7 +156,7 @@ export const grafoLeon = {
     ],
   },
   'forum-metropolitano-leon': {
-    ciudad: 'forum',
+    ciudad: 'leon',
     nombre: 'Forum Metropolitano',
     lineas: ['Morado'],
     adyacentes: [
@@ -164,7 +164,7 @@ export const grafoLeon = {
     ],
   },
   'aeropuerto-bajio-acceso': {
-    ciudad: 'aeropuerto',
+    ciudad: 'leon',
     nombre: 'Acceso Aeropuerto',
     lineas: ['Naranja'],
     adyacentes: [

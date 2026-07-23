@@ -1,6 +1,6 @@
 export const grafoTijuana = {
   'san-ysidro-frontera': {
-    ciudad: 'san',
+    ciudad: 'tijuana',
     nombre: 'San Ysidro (Cruce Fronterizo)',
     lineas: ['1'],
     adyacentes: [
@@ -8,7 +8,7 @@ export const grafoTijuana = {
     ],
   },
   'chaparral': {
-    ciudad: 'chaparral',
+    ciudad: 'tijuana',
     nombre: 'Chaparral (Terminal Migratoria)',
     lineas: ['1'],
     adyacentes: [
@@ -17,7 +17,7 @@ export const grafoTijuana = {
     ],
   },
   'plaza-rio': {
-    ciudad: 'plaza',
+    ciudad: 'tijuana',
     nombre: 'Zona Río (Plaza Río)',
     lineas: ['1'],
     adyacentes: [
@@ -26,7 +26,7 @@ export const grafoTijuana = {
     ],
   },
   'zona-centro': {
-    ciudad: 'zona',
+    ciudad: 'tijuana',
     nombre: 'Zona Centro (Avenida Revolución)',
     lineas: ['1'],
     adyacentes: [
@@ -35,7 +35,7 @@ export const grafoTijuana = {
     ],
   },
   'catedral-tijuana': {
-    ciudad: 'catedral',
+    ciudad: 'tijuana',
     nombre: 'Catedral Metropolitana',
     lineas: ['1'],
     adyacentes: [
@@ -44,7 +44,7 @@ export const grafoTijuana = {
     ],
   },
   'mercado-hidalgo': {
-    ciudad: 'mercado',
+    ciudad: 'tijuana',
     nombre: 'Mercado Hidalgo',
     lineas: ['1'],
     adyacentes: [
@@ -53,7 +53,7 @@ export const grafoTijuana = {
     ],
   },
   'plaza-santa-cecilia': {
-    ciudad: 'plaza',
+    ciudad: 'tijuana',
     nombre: 'Plaza Santa Cecilia (Mariachis)',
     lineas: ['3'],
     adyacentes: [
@@ -61,7 +61,7 @@ export const grafoTijuana = {
     ],
   },
   'hospital-general-tj': {
-    ciudad: 'hospital',
+    ciudad: 'tijuana',
     nombre: 'Hospital General de Tijuana',
     lineas: ['3'],
     adyacentes: [
@@ -70,7 +70,7 @@ export const grafoTijuana = {
     ],
   },
   'aeropuerto-tj': {
-    ciudad: 'aeropuerto',
+    ciudad: 'tijuana',
     nombre: 'Aeropuerto Internacional (ABX)',
     lineas: ['3'],
     adyacentes: [
@@ -79,7 +79,7 @@ export const grafoTijuana = {
     ],
   },
   'puente-cross-border': {
-    ciudad: 'puente',
+    ciudad: 'tijuana',
     nombre: 'Cross Border Xpress (CBX)',
     lineas: ['3'],
     adyacentes: [
@@ -88,7 +88,7 @@ export const grafoTijuana = {
     ],
   },
   'playas-tj': {
-    ciudad: 'playas',
+    ciudad: 'tijuana',
     nombre: 'Playas de Tijuana',
     lineas: ['1'],
     adyacentes: [
@@ -96,7 +96,7 @@ export const grafoTijuana = {
     ],
   },
   'buena-vista': {
-    ciudad: 'buena',
+    ciudad: 'tijuana',
     nombre: 'Buena Vista (Cañada)',
     lineas: ['3'],
     adyacentes: [
@@ -105,7 +105,7 @@ export const grafoTijuana = {
     ],
   },
   'la-mesa-tj': {
-    ciudad: 'la',
+    ciudad: 'tijuana',
     nombre: 'La Mesa',
     lineas: ['3'],
     adyacentes: [
@@ -114,7 +114,7 @@ export const grafoTijuana = {
     ],
   },
   'valle-guadalupe-acceso': {
-    ciudad: 'valle',
+    ciudad: 'tijuana',
     nombre: 'Valle de Guadalupe (Acceso/Ruta del Vino)',
     lineas: ['3'],
     adyacentes: [
@@ -122,7 +122,7 @@ export const grafoTijuana = {
     ],
   },
   'garita-san-ysidro-sitt': {
-    ciudad: 'garita',
+    ciudad: 'tijuana',
     nombre: 'Garita San Ysidro (SITT)',
     lineas: ['2'],
     adyacentes: [
@@ -130,7 +130,7 @@ export const grafoTijuana = {
     ],
   },
   'puerta-mexico-sitt': {
-    ciudad: 'puerta',
+    ciudad: 'tijuana',
     nombre: 'Puerta México',
     lineas: ['2'],
     adyacentes: [
@@ -139,7 +139,7 @@ export const grafoTijuana = {
     ],
   },
   'revolucion-brt': {
-    ciudad: 'revolucion',
+    ciudad: 'tijuana',
     nombre: 'Avenida Revolución (BRT)',
     lineas: ['2'],
     adyacentes: [
@@ -148,7 +148,7 @@ export const grafoTijuana = {
     ],
   },
   'cinco-y-diez-sitt': {
-    ciudad: 'cinco',
+    ciudad: 'tijuana',
     nombre: 'Cinco y Diez',
     lineas: ['2'],
     adyacentes: [
@@ -157,7 +157,7 @@ export const grafoTijuana = {
     ],
   },
   'rio-tijuana-brt': {
-    ciudad: 'rio',
+    ciudad: 'tijuana',
     nombre: 'Zona Río (BRT)',
     lineas: ['2'],
     adyacentes: [
@@ -166,7 +166,7 @@ export const grafoTijuana = {
     ],
   },
   'otay-brt': {
-    ciudad: 'otay',
+    ciudad: 'tijuana',
     nombre: 'Otay',
     lineas: ['2'],
     adyacentes: [
@@ -175,7 +175,7 @@ export const grafoTijuana = {
     ],
   },
   'presa-rodriguez-sitt': {
-    ciudad: 'presa',
+    ciudad: 'tijuana',
     nombre: 'Presa Rodríguez',
     lineas: ['2'],
     adyacentes: [
@@ -184,7 +184,7 @@ export const grafoTijuana = {
     ],
   },
   'via-rapida-oriente-sitt': {
-    ciudad: 'via',
+    ciudad: 'tijuana',
     nombre: 'Vía Rápida Oriente',
     lineas: ['2'],
     adyacentes: [
@@ -193,7 +193,7 @@ export const grafoTijuana = {
     ],
   },
   'plaza-monarca-sitt': {
-    ciudad: 'plaza',
+    ciudad: 'tijuana',
     nombre: 'Plaza Monarca',
     lineas: ['2'],
     adyacentes: [
@@ -202,7 +202,7 @@ export const grafoTijuana = {
     ],
   },
   'la-mesa-tj-sitt': {
-    ciudad: 'la',
+    ciudad: 'tijuana',
     nombre: 'La Mesa (SITT)',
     lineas: ['2'],
     adyacentes: [
@@ -211,7 +211,7 @@ export const grafoTijuana = {
     ],
   },
   'mariano-matamoros-sitt': {
-    ciudad: 'mariano',
+    ciudad: 'tijuana',
     nombre: 'Mariano Matamoros',
     lineas: ['2'],
     adyacentes: [
@@ -220,7 +220,7 @@ export const grafoTijuana = {
     ],
   },
   'terminal-sur-sitt': {
-    ciudad: 'terminal',
+    ciudad: 'tijuana',
     nombre: 'Terminal Sur (SITT)',
     lineas: ['2'],
     adyacentes: [

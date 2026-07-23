@@ -1,6 +1,6 @@
 export const grafoQueretaro = {
   'terminal-5-febrero': {
-    ciudad: 'terminal',
+    ciudad: 'queretaro',
     nombre: 'Terminal 5 de Febrero',
     lineas: ['Rojo', 'L119'],
     adyacentes: [
@@ -9,7 +9,7 @@ export const grafoQueretaro = {
     ],
   },
   'centro-historico-qro': {
-    ciudad: 'centro',
+    ciudad: 'queretaro',
     nombre: 'Centro Histórico',
     lineas: ['Rojo', 'L154'],
     adyacentes: [
@@ -19,7 +19,7 @@ export const grafoQueretaro = {
     ],
   },
   'jardin-zenea-qro': {
-    ciudad: 'jardin',
+    ciudad: 'queretaro',
     nombre: 'Jardín Zenea',
     lineas: ['Rojo', 'Eléctrico'],
     adyacentes: [
@@ -30,7 +30,7 @@ export const grafoQueretaro = {
     ],
   },
   'santa-rosa-viterbo-qro': {
-    ciudad: 'santa',
+    ciudad: 'queretaro',
     nombre: 'Santa Rosa de Viterbo',
     lineas: ['Rojo'],
     adyacentes: [
@@ -39,7 +39,7 @@ export const grafoQueretaro = {
     ],
   },
   'uaq-campus-qro': {
-    ciudad: 'uaq',
+    ciudad: 'queretaro',
     nombre: 'Universidad Autónoma',
     lineas: ['Rojo'],
     adyacentes: [
@@ -48,7 +48,7 @@ export const grafoQueretaro = {
     ],
   },
   'estadio-corregidora-qro': {
-    ciudad: 'estadio',
+    ciudad: 'queretaro',
     nombre: 'Estadio La Corregidora',
     lineas: ['Rojo'],
     adyacentes: [
@@ -57,7 +57,7 @@ export const grafoQueretaro = {
     ],
   },
   'constituyentes-qro': {
-    ciudad: 'constituyentes',
+    ciudad: 'queretaro',
     nombre: 'Constituyentes',
     lineas: ['Azul', 'Verde'],
     adyacentes: [
@@ -68,7 +68,7 @@ export const grafoQueretaro = {
     ],
   },
   'alameda-qro': {
-    ciudad: 'alameda',
+    ciudad: 'queretaro',
     nombre: 'Alameda',
     lineas: ['Azul'],
     adyacentes: [
@@ -76,7 +76,7 @@ export const grafoQueretaro = {
     ],
   },
   'cimatario-qro': {
-    ciudad: 'cimatario',
+    ciudad: 'queretaro',
     nombre: 'Cerro de Cimatario',
     lineas: ['Azul'],
     adyacentes: [
@@ -85,7 +85,7 @@ export const grafoQueretaro = {
     ],
   },
   'plaza-dorada-qro': {
-    ciudad: 'plaza',
+    ciudad: 'queretaro',
     nombre: 'Plaza Dorada',
     lineas: ['Azul'],
     adyacentes: [
@@ -94,7 +94,7 @@ export const grafoQueretaro = {
     ],
   },
   'hospital-general-qro': {
-    ciudad: 'hospital',
+    ciudad: 'queretaro',
     nombre: 'Hospital General',
     lineas: ['Azul'],
     adyacentes: [
@@ -103,7 +103,7 @@ export const grafoQueretaro = {
     ],
   },
   'campus-aeroespacial-qro': {
-    ciudad: 'campus',
+    ciudad: 'queretaro',
     nombre: 'Campus Aeroespacial',
     lineas: ['Azul'],
     adyacentes: [
@@ -111,7 +111,7 @@ export const grafoQueretaro = {
     ],
   },
   'tec-monterrey-qro': {
-    ciudad: 'tec',
+    ciudad: 'queretaro',
     nombre: 'Tecnológico de Monterrey',
     lineas: ['Verde'],
     adyacentes: [
@@ -119,7 +119,7 @@ export const grafoQueretaro = {
     ],
   },
   'juriquilla-qro': {
-    ciudad: 'juriquilla',
+    ciudad: 'queretaro',
     nombre: 'Juriquilla',
     lineas: ['Verde', 'L154'],
     adyacentes: [
@@ -130,7 +130,7 @@ export const grafoQueretaro = {
     ],
   },
   'parque-industrial-qro': {
-    ciudad: 'parque',
+    ciudad: 'queretaro',
     nombre: 'Parque Industrial',
     lineas: ['Verde', 'L119'],
     adyacentes: [
@@ -140,7 +140,7 @@ export const grafoQueretaro = {
     ],
   },
   'acueducto-qro': {
-    ciudad: 'acueducto',
+    ciudad: 'queretaro',
     nombre: 'Acueducto',
     lineas: ['Verde'],
     adyacentes: [
@@ -148,7 +148,7 @@ export const grafoQueretaro = {
     ],
   },
   'barrio-la-cruz-qro': {
-    ciudad: 'barrio',
+    ciudad: 'queretaro',
     nombre: 'Barrio La Cruz',
     lineas: ['Rojo'],
     adyacentes: [
@@ -156,7 +156,7 @@ export const grafoQueretaro = {
     ],
   },
   'constituyentes-l154': {
-    ciudad: 'constituyentes',
+    ciudad: 'queretaro',
     nombre: 'Constituyentes L154',
     lineas: ['L154'],
     adyacentes: [
@@ -165,7 +165,7 @@ export const grafoQueretaro = {
     ],
   },
   'cimatario-l154': {
-    ciudad: 'cimatario',
+    ciudad: 'queretaro',
     nombre: 'Cimatario L154',
     lineas: ['L154'],
     adyacentes: [
@@ -174,7 +174,7 @@ export const grafoQueretaro = {
     ],
   },
   'santa-barbara-qro': {
-    ciudad: 'santa',
+    ciudad: 'queretaro',
     nombre: 'Santa Bárbara',
     lineas: ['L154'],
     adyacentes: [
@@ -183,7 +183,7 @@ export const grafoQueretaro = {
     ],
   },
   'juriquilla-premium-qro': {
-    ciudad: 'juriquilla',
+    ciudad: 'queretaro',
     nombre: 'Juriquilla Premium',
     lineas: ['L154'],
     adyacentes: [
@@ -192,7 +192,7 @@ export const grafoQueretaro = {
     ],
   },
   'campus-bicentenario-qro': {
-    ciudad: 'campus',
+    ciudad: 'queretaro',
     nombre: 'Campus Bicentenario',
     lineas: ['L154'],
     adyacentes: [
@@ -201,7 +201,7 @@ export const grafoQueretaro = {
     ],
   },
   'carretera-tequisquiapan': {
-    ciudad: 'carretera',
+    ciudad: 'queretaro',
     nombre: 'Carretera Tequisquiapan',
     lineas: ['L154'],
     adyacentes: [
@@ -210,7 +210,7 @@ export const grafoQueretaro = {
     ],
   },
   'juriquilla-ampliacion-qro': {
-    ciudad: 'juriquilla',
+    ciudad: 'queretaro',
     nombre: 'Juriquilla Ampliación',
     lineas: ['L154'],
     adyacentes: [
@@ -218,7 +218,7 @@ export const grafoQueretaro = {
     ],
   },
   'periferico-norte-qro': {
-    ciudad: 'periferico',
+    ciudad: 'queretaro',
     nombre: 'Periférico Norte',
     lineas: ['L119'],
     adyacentes: [
@@ -227,7 +227,7 @@ export const grafoQueretaro = {
     ],
   },
   'santa-rosa-industria-qro': {
-    ciudad: 'santa',
+    ciudad: 'queretaro',
     nombre: 'Santa Rosa Industria',
     lineas: ['L119'],
     adyacentes: [
@@ -236,7 +236,7 @@ export const grafoQueretaro = {
     ],
   },
   'el-marques-acceso-qro': {
-    ciudad: 'el',
+    ciudad: 'queretaro',
     nombre: 'El Marqués Acceso',
     lineas: ['L119'],
     adyacentes: [
@@ -245,7 +245,7 @@ export const grafoQueretaro = {
     ],
   },
   'parque-logistico-qro': {
-    ciudad: 'parque',
+    ciudad: 'queretaro',
     nombre: 'Parque Logístico',
     lineas: ['L119'],
     adyacentes: [
@@ -254,7 +254,7 @@ export const grafoQueretaro = {
     ],
   },
   'distribucion-qro': {
-    ciudad: 'distribucion',
+    ciudad: 'queretaro',
     nombre: 'Distribución',
     lineas: ['L119'],
     adyacentes: [
@@ -263,7 +263,7 @@ export const grafoQueretaro = {
     ],
   },
   'fabrica-autos-qro': {
-    ciudad: 'fabrica',
+    ciudad: 'queretaro',
     nombre: 'Fábrica Autos',
     lineas: ['L119'],
     adyacentes: [
@@ -272,7 +272,7 @@ export const grafoQueretaro = {
     ],
   },
   'plaza-independencia-qro': {
-    ciudad: 'plaza',
+    ciudad: 'queretaro',
     nombre: 'Plaza Independencia',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -280,7 +280,7 @@ export const grafoQueretaro = {
     ],
   },
   'palacio-gobierno-qro': {
-    ciudad: 'palacio',
+    ciudad: 'queretaro',
     nombre: 'Palacio de Gobierno',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -289,7 +289,7 @@ export const grafoQueretaro = {
     ],
   },
   'museo-arte-qro': {
-    ciudad: 'museo',
+    ciudad: 'queretaro',
     nombre: 'Museo de Arte',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -298,7 +298,7 @@ export const grafoQueretaro = {
     ],
   },
   'casa-corregidora-qro': {
-    ciudad: 'casa',
+    ciudad: 'queretaro',
     nombre: 'Casa de la Corregidora',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -307,7 +307,7 @@ export const grafoQueretaro = {
     ],
   },
   'plazuela-corregidora-qro': {
-    ciudad: 'plazuela',
+    ciudad: 'queretaro',
     nombre: 'Plazuela Corregidora',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -316,7 +316,7 @@ export const grafoQueretaro = {
     ],
   },
   'templo-santa-rosa': {
-    ciudad: 'templo',
+    ciudad: 'queretaro',
     nombre: 'Templo Santa Rosa',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -325,7 +325,7 @@ export const grafoQueretaro = {
     ],
   },
   'convento-san-francisco-qro': {
-    ciudad: 'convento',
+    ciudad: 'queretaro',
     nombre: 'Convento San Francisco',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -334,7 +334,7 @@ export const grafoQueretaro = {
     ],
   },
   'mercado-escobedo-qro': {
-    ciudad: 'mercado',
+    ciudad: 'queretaro',
     nombre: 'Mercado Escobedo',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -343,7 +343,7 @@ export const grafoQueretaro = {
     ],
   },
   'iglesia-santiago-qro': {
-    ciudad: 'iglesia',
+    ciudad: 'queretaro',
     nombre: 'Iglesia Santiago',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -352,7 +352,7 @@ export const grafoQueretaro = {
     ],
   },
   'acueducto-centro-qro': {
-    ciudad: 'acueducto',
+    ciudad: 'queretaro',
     nombre: 'Acueducto Centro',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -361,7 +361,7 @@ export const grafoQueretaro = {
     ],
   },
   'fuerte-qro': {
-    ciudad: 'fuerte',
+    ciudad: 'queretaro',
     nombre: 'Fuerte',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -370,7 +370,7 @@ export const grafoQueretaro = {
     ],
   },
   'barrio-artista-qro': {
-    ciudad: 'barrio',
+    ciudad: 'queretaro',
     nombre: 'Barrio Artista',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -379,7 +379,7 @@ export const grafoQueretaro = {
     ],
   },
   'centro-convenciones-qro': {
-    ciudad: 'centro',
+    ciudad: 'queretaro',
     nombre: 'Centro de Convenciones',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -388,7 +388,7 @@ export const grafoQueretaro = {
     ],
   },
   'plaza-grande-centro-qro': {
-    ciudad: 'plaza',
+    ciudad: 'queretaro',
     nombre: 'Plaza Grande Centro',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -397,7 +397,7 @@ export const grafoQueretaro = {
     ],
   },
   'biblioteca-publica-qro': {
-    ciudad: 'biblioteca',
+    ciudad: 'queretaro',
     nombre: 'Biblioteca Pública',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -406,7 +406,7 @@ export const grafoQueretaro = {
     ],
   },
   'museo-historia-natural-qro': {
-    ciudad: 'museo',
+    ciudad: 'queretaro',
     nombre: 'Museo Historia Natural',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -415,7 +415,7 @@ export const grafoQueretaro = {
     ],
   },
   'teatro-republica-qro': {
-    ciudad: 'teatro',
+    ciudad: 'queretaro',
     nombre: 'Teatro República',
     lineas: ['Eléctrico'],
     adyacentes: [
@@ -424,7 +424,7 @@ export const grafoQueretaro = {
     ],
   },
   'templo-santa-clara-qro': {
-    ciudad: 'templo',
+    ciudad: 'queretaro',
     nombre: 'Templo Santa Clara',
     lineas: ['Eléctrico'],
     adyacentes: [
