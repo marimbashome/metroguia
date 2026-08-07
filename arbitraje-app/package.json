@@ -1,0 +1,17 @@
+{
+  "name": "arbitraje-metroguia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Índice de arbitraje nómada — sección privada bajo arbitraje.metroguia.mx (proyecto Vercel propio; el sitio público de MetroGuia sigue siendo export estático)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.35",
+    "next-auth": "^4.24.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
