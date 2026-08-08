@@ -195,6 +195,18 @@
         { "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
+    },
+    {
+      "source": "/papeles-miceli-89e14b",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive, nosnippet" }
+      ]
+    },
+    {
+      "source": "/papeles-miceli-89e14b/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive, nosnippet" }
+      ]
     }
   ],
   "functions": {

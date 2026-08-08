@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<title>Papeles de la familia Miceli</title>
+
+<style>
+  :root {
+    --papel: #FBF7F5;
+    --papel-hondo: #F3EDE9;
+    --tarjeta: #FFFFFF;
+    --tinta: #232B3E;
+    --tinta-suave: #6F6560;
+    --linea: #E4DAD5;
+    --linea-fuerte: #CFC2BB;
+
+    --si: #4A7346;
+    --si-fondo: #E9F1E8;
+    --si-borde: #A9C6A5;
+
+    --proceso: #A76F22;
+    --proceso-fondo: #FBF0DC;
+    --proceso-borde: #DFC08A;
+
+    --no: #A04B47;
+    --no-fondo: #F8E9E8;
+    --no-borde: #DFAEAB;
+
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --radio: 14px;
+    --sombra: 0 1px 2px rgba(35, 43, 62, .06), 0 6px 18px rgba(35, 43, 62, .05);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --papel: #161A22;
+      --papel-hondo: #11141B;
+      --tarjeta: #1E242F;
+      --tinta: #ECE6E3;
+      --tinta-suave: #A79E99;
+      --linea: #2E3641;
+      --linea-fuerte: #414B58;
+
+      --si: #8FC188;
+      --si-fondo: #1D2A1E;
+      --si-borde: #3E5C3B;
+
+      --proceso: #E0B268;
+      --proceso-fondo: #2C2416;
+      --proceso-borde: #5C4926;
+
+      --no: #E2938E;
+      --no-fondo: #2E1D1C;
+      --no-borde: #5E3A38;
+
+      --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --papel: #161A22;
+    --papel-hondo: #11141B;
+    --tarjeta: #1E242F;
+    --tinta: #ECE6E3;
+    --tinta-suave: #A79E99;
+    --linea: #2E3641;
+    --linea-fuerte: #414B58;
+    --si: #8FC188;
+    --si-fondo: #1D2A1E;
+    --si-borde: #3E5C3B;
+    --proceso: #E0B268;
+    --proceso-fondo: #2C2416;
+    --proceso-borde: #5C4926;
+    --no: #E2938E;
+    --no-fondo: #2E1D1C;
+    --no-borde: #5E3A38;
+    --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+  }
+
+  :root[data-theme="light"] {
+    --papel: #FBF7F5;
+    --papel-hondo: #F3EDE9;
+    --tarjeta: #FFFFFF;
+    --tinta: #232B3E;
+    --tinta-suave: #6F6560;
+    --linea: #E4DAD5;
+    --linea-fuerte: #CFC2BB;
+    --si: #4A7346;
+    --si-fondo: #E9F1E8;
+    --si-borde: #A9C6A5;
+    --proceso: #A76F22;
+    --proceso-fondo: #FBF0DC;
+    --proceso-borde: #DFC08A;
+    --no: #A04B47;
+    --no-fondo: #F8E9E8;
+    --no-borde: #DFAEAB;
+    --sombra: 0 1px 2px rgba(35, 43, 62, .06), 0 6px 18px rgba(35, 43, 62, .05);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--papel-hondo);
+    color: var(--tinta);
+    font-family: var(--sans);
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .envoltura {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 16px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* ---------- Portada ---------- */
+
+  .portada {
+    background: var(--papel);
+    border-bottom: 1px solid var(--linea);
+    margin: 0 0 28px;
+    padding: 40px 24px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .portada .saludo {
+    font-family: var(--sans);
+    font-size: .8rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--tinta-suave);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .portada h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 8vw, 2.7rem);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .portada p {
+    margin: 0;
+    max-width: 34em;
+    color: var(--tinta-suave);
+    font-size: 1.0625rem;
+  }
+
+  /* ---------- Cadena familiar ---------- */
+
+  .cadena {
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    padding: 22px 20px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cadena h2 {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--tinta-suave);
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+
+  .eslabon {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 7px 0;
+    position: relative;
+  }
+
+  .eslabon:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 22px;
+    bottom: -9px;
+    width: 2px;
+    background: var(--linea-fuerte);
+  }
+
+  .punto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--linea-fuerte);
+    background: var(--tarjeta);
+    flex: 0 0 auto;
+    transform: translateY(2px);
+  }
+
+  .eslabon.yo .punto { background: var(--tinta); border-color: var(--tinta); }
+
+  .eslabon .nombre {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+  }
+
+  .eslabon.yo .nombre { font-weight: 700; }
+
+  .eslabon .rol {
+    font-size: .88rem;
+    color: var(--tinta-suave);
+  }
+
+  /* ---------- Avance ---------- */
+
+  .avance {
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    padding: 22px 20px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .avance .cuenta {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .avance .cuenta strong { font-size: 2.1rem; }
+
+  .barra {
+    height: 14px;
+    border-radius: 99px;
+    background: var(--papel-hondo);
+    border: 1px solid var(--linea);
+    overflow: hidden;
+    display: flex;
+  }
+
+  .barra span {
+    display: block;
+    height: 100%;
+    transition: width .35s ease;
+  }
+
+  .barra .b-si { background: var(--si); }
+  .barra .b-proceso { background: var(--proceso); }
+
+  .leyenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    font-size: .92rem;
+    color: var(--tinta-suave);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .leyenda li { display: flex; align-items: center; gap: 7px; }
+
+  .mota { width: 11px; height: 11px; border-radius: 3px; flex: 0 0 auto; }
+  .mota.si { background: var(--si); }
+  .mota.proceso { background: var(--proceso); }
+  .mota.falta { background: var(--linea-fuerte); }
+
+  /* ---------- Secciones ---------- */
+
+  .seccion { display: flex; flex-direction: column; gap: 16px; }
+
+  .encabezado-seccion { display: flex; flex-direction: column; gap: 4px; }
+
+  .encabezado-seccion .parentesco {
+    font-size: .78rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--tinta-suave);
+    font-weight: 700;
+  }
+
+  .encabezado-seccion h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .encabezado-seccion .apunte {
+    font-size: .98rem;
+    color: var(--tinta-suave);
+    margin: 2px 0 0;
+  }
+
+  /* ---------- Tarjeta de documento ---------- */
+
+  .doc {
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-left: 5px solid var(--linea-fuerte);
+    border-radius: var(--radio);
+    padding: 20px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: border-left-color .2s ease;
+  }
+
+  .doc[data-estado="si"] { border-left-color: var(--si); }
+  .doc[data-estado="proceso"] { border-left-color: var(--proceso); }
+  .doc[data-estado="no"] { border-left-color: var(--no); }
+
+  .doc h3 {
+    font-family: var(--sans);
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.35;
+    text-wrap: balance;
+  }
+
+  .doc .porque {
+    margin: -6px 0 0;
+    font-size: 1rem;
+    color: var(--tinta-suave);
+  }
+
+  .doc .aviso {
+    margin: 0;
+    font-size: .95rem;
+    background: var(--papel-hondo);
+    border: 1px solid var(--linea);
+    border-radius: 10px;
+    padding: 11px 13px;
+    color: var(--tinta);
+  }
+
+  .opciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  @media (min-width: 560px) {
+    .opciones { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .opcion {
+    appearance: none;
+    -webkit-appearance: none;
+    font: inherit;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--tinta);
+    background: var(--papel);
+    border: 2px solid var(--linea);
+    border-radius: 11px;
+    min-height: 54px;
+    padding: 10px 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    text-align: center;
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+  }
+
+  .opcion:hover { border-color: var(--linea-fuerte); }
+
+  .opcion:focus-visible {
+    outline: 3px solid var(--tinta);
+    outline-offset: 2px;
+  }
+
+  .opcion .marca {
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  .opcion[aria-pressed="true"][data-valor="si"] {
+    background: var(--si-fondo);
+    border-color: var(--si-borde);
+    color: var(--si);
+  }
+
+  .opcion[aria-pressed="true"][data-valor="proceso"] {
+    background: var(--proceso-fondo);
+    border-color: var(--proceso-borde);
+    color: var(--proceso);
+  }
+
+  .opcion[aria-pressed="true"][data-valor="no"] {
+    background: var(--no-fondo);
+    border-color: var(--no-borde);
+    color: var(--no);
+  }
+
+  .nota { display: none; flex-direction: column; gap: 7px; }
+  .doc[data-estado] .nota { display: flex; }
+
+  label.etiqueta {
+    font-size: .92rem;
+    font-weight: 600;
+    color: var(--tinta-suave);
+  }
+
+  input[type="text"], textarea {
+    font: inherit;
+    font-size: 1.02rem;
+    width: 100%;
+    color: var(--tinta);
+    background: var(--papel);
+    border: 2px solid var(--linea);
+    border-radius: 11px;
+    padding: 13px 14px;
+    min-height: 52px;
+    resize: vertical;
+  }
+
+  input[type="text"]::placeholder, textarea::placeholder { color: var(--tinta-suave); opacity: .75; }
+
+  input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: var(--tinta);
+  }
+
+  /* ---------- Preguntas ---------- */
+
+  .preguntas {
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    padding: 22px 20px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pregunta { display: flex; flex-direction: column; gap: 8px; }
+
+  .pregunta .texto {
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+
+  .pregunta .pista {
+    font-size: .93rem;
+    color: var(--tinta-suave);
+    margin: -4px 0 2px;
+  }
+
+  /* ---------- No es tuyo ---------- */
+
+  .ajeno {
+    background: transparent;
+    border: 1px dashed var(--linea-fuerte);
+    border-radius: var(--radio);
+    padding: 20px;
+    color: var(--tinta-suave);
+    font-size: .98rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ajeno h2 {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    color: var(--tinta-suave);
+  }
+
+  .ajeno ul { margin: 0; padding-left: 1.15em; display: flex; flex-direction: column; gap: 5px; }
+
+  /* ---------- Barra de envío ---------- */
+
+  .enviar-fijo {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--papel);
+    border-top: 1px solid var(--linea);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    z-index: 20;
+  }
+
+  .enviar-fijo .interior {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .aviso-flotante {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tinta);
+    color: var(--papel);
+    padding: 9px 18px;
+    border-radius: 99px;
+    font-size: .92rem;
+    font-weight: 600;
+    max-width: calc(100vw - 40px);
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+  }
+
+  .aviso-flotante.visible { opacity: 1; }
+
+  .cierre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding-top: 4px;
+  }
+
+  .cierre p {
+    margin: 0;
+    color: var(--tinta-suave);
+    font-size: .98rem;
+    max-width: 30em;
+  }
+
+  .boton-grande {
+    appearance: none;
+    -webkit-appearance: none;
+    font: inherit;
+    font-size: 1.12rem;
+    font-weight: 700;
+    background: var(--tinta);
+    color: var(--papel);
+    border: 2px solid var(--tinta);
+    border-radius: 12px;
+    min-height: 58px;
+    padding: 12px 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .boton-grande:focus-visible { outline: 3px solid var(--tinta); outline-offset: 3px; }
+  .boton-grande.secundario {
+    background: transparent;
+    color: var(--tinta-suave);
+    border-color: transparent;
+    min-height: 40px;
+    font-size: .98rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .boton-grande.secundario:hover { color: var(--tinta); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+</head>
+<body>
+<div class="portada">
+  <p class="saludo">Para Gladys</p>
+  <h1>Los papeles de la familia Miceli</h1>
+  <p>
+    Estamos juntando las actas que hacen falta para el trámite de la nacionalidad italiana.
+    Aquí está la lista completa de lo que se necesita de tu lado de la familia.
+    Ve marcando lo que ya tengas y al final me lo mandas por WhatsApp.
+  </p>
+</div>
+
+<div class="envoltura">
+
+  <section class="cadena" aria-label="La línea de la familia">
+    <h2>De dónde viene el trámite</h2>
+    <div class="eslabon">
+      <span class="punto" aria-hidden="true"></span>
+      <span><span class="nombre">Pasquale Miceli</span> <span class="rol">— tu bisabuelo, el italiano (Lauria, 1842)</span></span>
+    </div>
+    <div class="eslabon">
+      <span class="punto" aria-hidden="true"></span>
+      <span><span class="nombre">Eduardo Miceli Pimentel</span> <span class="rol">— tu abuelo (1882)</span></span>
+    </div>
+    <div class="eslabon">
+      <span class="punto" aria-hidden="true"></span>
+      <span><span class="nombre">Tiberio Miceli Sánchez</span> <span class="rol">— tu papá</span></span>
+    </div>
+    <div class="eslabon yo">
+      <span class="punto" aria-hidden="true"></span>
+      <span><span class="nombre">Gladys Miceli Maza</span> <span class="rol">— tú</span></span>
+    </div>
+    <div class="eslabon">
+      <span class="punto" aria-hidden="true"></span>
+      <span><span class="nombre">Luis Enrique Rodríguez Miceli</span> <span class="rol">— Enrique</span></span>
+    </div>
+  </section>
+
+  <section class="avance" aria-label="Cómo vamos">
+    <p class="cuenta"><strong id="cuenta-si">0</strong> de 11 papeles ya los tienes</p>
+    <div class="barra" role="img" aria-label="Avance" id="barra">
+      <span class="b-si" id="barra-si" style="width:0%"></span>
+      <span class="b-proceso" id="barra-proceso" style="width:0%"></span>
+    </div>
+    <ul class="leyenda">
+      <li><span class="mota si" aria-hidden="true"></span> Ya lo tengo</li>
+      <li><span class="mota proceso" aria-hidden="true"></span> Lo estoy consiguiendo</li>
+      <li><span class="mota falta" aria-hidden="true"></span> Sin marcar</li>
+    </ul>
+  </section>
+
+  <!-- ============ TU PAPÁ ============ -->
+  <section class="seccion">
+    <div class="encabezado-seccion">
+      <span class="parentesco">Tu papá</span>
+      <h2>Tiberio Miceli Sánchez</h2>
+      <p class="apunte">De él no tenemos ningún papel todavía. Es por donde más rápido avanzamos.</p>
+    </div>
+
+    <article class="doc" data-doc="tiberio-nacimiento">
+      <h3>Acta de nacimiento de tu papá</h3>
+      <p class="porque">Es la que prueba que él era hijo de tu abuelo Eduardo.</p>
+    </article>
+
+    <article class="doc" data-doc="tiberio-matrimonio">
+      <h3>Acta de matrimonio de tus papás</h3>
+      <p class="porque">Tiberio con Melida Irene Maza Morales. El matrimonio es lo que une una generación con la siguiente.</p>
+    </article>
+
+    <article class="doc" data-doc="tiberio-defuncion">
+      <h3>Acta de defunción de tu papá</h3>
+      <p class="porque">Solo si ya falleció. Si vive, márcalo abajo y escríbelo en la nota.</p>
+    </article>
+  </section>
+
+  <!-- ============ TU ABUELO ============ -->
+  <section class="seccion">
+    <div class="encabezado-seccion">
+      <span class="parentesco">Tu abuelo</span>
+      <h2>Eduardo Miceli Pimentel</h2>
+      <p class="apunte">Nació el 13 de octubre de 1882, por el rumbo de Chinameca o Jáltipan, Veracruz. Es la parte más difícil del trámite.</p>
+    </div>
+
+    <article class="doc" data-doc="eduardo-nacimiento">
+      <h3>Acta de nacimiento de tu abuelo</h3>
+      <p class="porque">Es la que prueba que él era hijo de Pasquale, el italiano.</p>
+      <p class="aviso">⚠️ Ya la buscamos en el registro civil y no aparece. Si tú sabes de alguien que la tenga, o de otro pueblo donde buscar, eso vale oro.</p>
+    </article>
+
+    <article class="doc" data-doc="eduardo-bautizo">
+      <h3>Fe de bautizo de tu abuelo</h3>
+      <p class="porque">Como el acta de nacimiento no aparece, el papel de la iglesia la sustituye. Lo bautizaron el 27 de octubre de 1882.</p>
+      <p class="aviso">Ya se la pedimos a la Diócesis de San Andrés Tuxtla y a la Arquidiócesis de Xalapa desde marzo y no han contestado. Si conoces a alguien en alguna de las dos parroquias, ayudaría muchísimo.</p>
+    </article>
+
+    <article class="doc" data-doc="eduardo-matrimonio">
+      <h3>Acta de matrimonio de tus abuelos</h3>
+      <p class="porque">Eduardo con Constancia Sánchez Castellanos.</p>
+    </article>
+
+    <article class="doc" data-doc="eduardo-defuncion">
+      <h3>Acta de defunción de tu abuelo</h3>
+      <p class="porque">Cierra su parte del expediente.</p>
+    </article>
+  </section>
+
+  <!-- ============ TU BISABUELO ============ -->
+  <section class="seccion">
+    <div class="encabezado-seccion">
+      <span class="parentesco">Tu bisabuelo</span>
+      <h2>Pasquale Miceli</h2>
+      <p class="apunte">El italiano. De él ya tenemos su acta de nacimiento de Italia y la constancia de que nunca se hizo mexicano — las dos piezas más importantes de todo el trámite. Solo faltan dos cosas.</p>
+    </div>
+
+    <article class="doc" data-doc="pasquale-defuncion">
+      <h3>Acta de defunción de Pasquale, del año 1910</h3>
+      <p class="porque">Tenemos una fotocopia, pero necesitamos una copia certificada del registro civil.</p>
+    </article>
+
+    <article class="doc" data-doc="pasquale-matrimonio-civil">
+      <h3>Acta de matrimonio por lo civil de Pasquale y Angela Pimentel</h3>
+      <p class="porque">Tenemos la de la iglesia, de 1909 en Ocozocoautla. Nos falta saber si además se casaron por lo civil.</p>
+      <p class="aviso">⚠️ Este es el papel más delicado de todo el trámite: es el que prueba que Eduardo era hijo reconocido de Pasquale. Si sabes algo de esta boda, cuéntanoslo aunque parezca poco.</p>
+    </article>
+  </section>
+
+  <!-- ============ TÚ ============ -->
+  <section class="seccion">
+    <div class="encabezado-seccion">
+      <span class="parentesco">Tuyos</span>
+      <h2>Gladys Miceli Maza</h2>
+      <p class="apunte">Estos son los más fáciles: son actas recientes y se consiguen rápido.</p>
+    </div>
+
+    <article class="doc" data-doc="gladys-nacimiento">
+      <h3>Tu acta de nacimiento</h3>
+      <p class="porque">Del 7 de febrero de 1962. Esta se puede bajar por internet en un rato.</p>
+    </article>
+
+    <article class="doc" data-doc="gladys-matrimonio">
+      <h3>Tu acta de matrimonio</h3>
+      <p class="porque">Con Luis Enrique Rodríguez Espinosa.</p>
+    </article>
+  </section>
+
+  <!-- ============ PREGUNTAS ============ -->
+  <section class="seccion">
+    <div class="encabezado-seccion">
+      <span class="parentesco">Lo más importante</span>
+      <h2>Lo que solo tú sabes</h2>
+      <p class="apunte">Sin estos datos no podemos ni pedir las actas, porque el registro civil los pide para buscarlas. Contesta lo que te acuerdes, aunque sea aproximado.</p>
+    </div>
+
+    <div class="preguntas">
+      <div class="pregunta">
+        <span class="texto" id="p1">¿Dónde y cuándo nació tu papá Tiberio?</span>
+        <span class="pista">Pueblo o ciudad, y el año aunque sea aproximado.</span>
+        <input type="text" data-pregunta="tiberio-nacio" aria-labelledby="p1" placeholder="Por ejemplo: Ocozocoautla, como en 1935" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p2">¿Ya falleció tu papá? ¿Dónde y cuándo?</span>
+        <input type="text" data-pregunta="tiberio-fallecio" aria-labelledby="p2" placeholder="O escribe: vive" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p3">¿Dónde y cuándo se casaron tus papás?</span>
+        <span class="pista">Tiberio y Melida Irene.</span>
+        <input type="text" data-pregunta="tiberio-caso" aria-labelledby="p3" placeholder="Pueblo y año" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p4">¿Dónde y cuándo falleció tu abuelo Eduardo?</span>
+        <input type="text" data-pregunta="eduardo-fallecio" aria-labelledby="p4" placeholder="Pueblo y año" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p5">¿Dónde se casó tu abuelo Eduardo con Constancia?</span>
+        <input type="text" data-pregunta="eduardo-caso" aria-labelledby="p5" placeholder="Pueblo y año" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p6">¿Dónde y cuándo te casaste con Luis Enrique?</span>
+        <input type="text" data-pregunta="gladys-caso" aria-labelledby="p6" placeholder="Municipio y año" />
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p7">El apellido aparece escrito de tres formas: Miceli, Micheli y Michel. ¿Habías oído algo de eso en la familia?</span>
+        <span class="pista">En el libro de la iglesia de 1882 pusieron «Pascual Michel». Cualquier historia ayuda a explicarlo ante el juez.</span>
+        <textarea rows="3" data-pregunta="apellido" aria-labelledby="p7" placeholder="Lo que te acuerdes"></textarea>
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p8">¿Quién más de la familia guarda papeles viejos, fotos o actas?</span>
+        <span class="pista">Hermanos, primos, tíos — quien sea que tenga cajas guardadas.</span>
+        <textarea rows="3" data-pregunta="quien-guarda" aria-labelledby="p8" placeholder="Nombres y cómo contactarlos"></textarea>
+      </div>
+
+      <div class="pregunta">
+        <span class="texto" id="p9">¿Algo más que nos quieras contar?</span>
+        <textarea rows="3" data-pregunta="libre" aria-labelledby="p9" placeholder="Lo que sea"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <section class="ajeno">
+    <h2>De esto no te preocupes</h2>
+    <p style="margin:0">Enrique se encarga de la otra mitad del trámite:</p>
+    <ul>
+      <li>El acta de nacimiento de Pasquale que vino de Italia — ya está lista.</li>
+      <li>La constancia de que Pasquale nunca se hizo mexicano — ya está lista.</li>
+      <li>Sus propios papeles: acta, pasaporte y CURP.</li>
+      <li>Los sellos internacionales y las traducciones al italiano de todas las actas.</li>
+      <li>El poder para el abogado en Italia.</li>
+    </ul>
+  </section>
+
+  <section class="cierre">
+    <p>
+      Todo lo que marcaste se guarda solo en este teléfono, así que puedes cerrar
+      y seguir después. Cuando quieras, mándamelo con el botón de hasta abajo.
+    </p>
+    <button type="button" class="boton-grande secundario" id="btn-copiar">
+      O copiar el resumen para pegarlo en otro lado
+    </button>
+  </section>
+
+</div>
+
+<div class="enviar-fijo">
+  <div class="interior">
+    <p class="aviso-flotante" id="aviso" role="status" aria-live="polite"></p>
+    <button type="button" class="boton-grande" id="btn-whatsapp">
+      <span aria-hidden="true">💬</span> Mandarle esto a Enrique
+    </button>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var LLAVE = "papeles-miceli-gladys-v1";
+  var ETIQUETAS = {
+    si: "Ya lo tengo",
+    proceso: "Lo estoy consiguiendo",
+    no: "No lo tengo"
+  };
+  var MARCAS = { si: "✓", proceso: "◷", no: "?" };
+
+  var estado = { docs: {}, notas: {}, preguntas: {} };
+
+  try {
+    var crudo = window.localStorage.getItem(LLAVE);
+    if (crudo) {
+      var previo = JSON.parse(crudo);
+      estado.docs = previo.docs || {};
+      estado.notas = previo.notas || {};
+      estado.preguntas = previo.preguntas || {};
+    }
+  } catch (e) { /* si no hay memoria disponible, seguimos sin guardar */ }
+
+  var docs = Array.prototype.slice.call(document.querySelectorAll(".doc"));
+  var aviso = document.getElementById("aviso");
+  var temporizador = null;
+
+  function mostrarAviso(texto, duracion) {
+    aviso.textContent = texto;
+    aviso.classList.add("visible");
+    window.clearTimeout(temporizador);
+    temporizador = window.setTimeout(function () {
+      aviso.classList.remove("visible");
+    }, duracion || 2000);
+  }
+
+  function guardar() {
+    try {
+      window.localStorage.setItem(LLAVE, JSON.stringify(estado));
+      mostrarAviso("Guardado ✓");
+    } catch (e) {
+      mostrarAviso("No se pudo guardar aquí — copia el resumen antes de cerrar", 6000);
+    }
+  }
+
+  function actualizarAvance() {
+    var total = docs.length;
+    var nSi = 0, nProceso = 0;
+    docs.forEach(function (doc) {
+      var v = estado.docs[doc.dataset.doc];
+      if (v === "si") nSi++;
+      else if (v === "proceso") nProceso++;
+    });
+    document.getElementById("cuenta-si").textContent = String(nSi);
+    document.getElementById("barra-si").style.width = (nSi / total * 100) + "%";
+    document.getElementById("barra-proceso").style.width = (nProceso / total * 100) + "%";
+    document.getElementById("barra").setAttribute(
+      "aria-label",
+      nSi + " de " + total + " ya los tienes, " + nProceso + " en camino"
+    );
+  }
+
+  docs.forEach(function (doc) {
+    var id = doc.dataset.doc;
+
+    var opciones = document.createElement("div");
+    opciones.className = "opciones";
+    opciones.setAttribute("role", "group");
+    opciones.setAttribute("aria-label", "¿Tienes este papel?");
+
+    ["si", "proceso", "no"].forEach(function (valor) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "opcion";
+      b.dataset.valor = valor;
+      b.setAttribute("aria-pressed", "false");
+      b.innerHTML = '<span class="marca" aria-hidden="true">' + MARCAS[valor] + "</span>" + ETIQUETAS[valor];
+      b.addEventListener("click", function () {
+        estado.docs[id] = (estado.docs[id] === valor) ? null : valor;
+        if (!estado.docs[id]) delete estado.docs[id];
+        pintarDoc(doc);
+        actualizarAvance();
+        guardar();
+      });
+      opciones.appendChild(b);
+    });
+    doc.appendChild(opciones);
+
+    var nota = document.createElement("div");
+    nota.className = "nota";
+    var lbl = document.createElement("label");
+    lbl.className = "etiqueta";
+    lbl.textContent = "Nota (opcional)";
+    lbl.htmlFor = "nota-" + id;
+    var campo = document.createElement("input");
+    campo.type = "text";
+    campo.id = "nota-" + id;
+    campo.placeholder = "¿Dónde está? ¿Quién lo tiene?";
+    campo.value = estado.notas[id] || "";
+    campo.addEventListener("input", function () {
+      estado.notas[id] = campo.value;
+      guardar();
+    });
+    nota.appendChild(lbl);
+    nota.appendChild(campo);
+    doc.appendChild(nota);
+
+    pintarDoc(doc);
+  });
+
+  function pintarDoc(doc) {
+    var id = doc.dataset.doc;
+    var valor = estado.docs[id];
+    if (valor) doc.dataset.estado = valor;
+    else doc.removeAttribute("data-estado");
+    doc.querySelectorAll(".opcion").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.valor === valor ? "true" : "false");
+    });
+  }
+
+  document.querySelectorAll("[data-pregunta]").forEach(function (campo) {
+    var clave = campo.dataset.pregunta;
+    campo.value = estado.preguntas[clave] || "";
+    campo.addEventListener("input", function () {
+      estado.preguntas[clave] = campo.value;
+      guardar();
+    });
+  });
+
+  actualizarAvance();
+
+  // El espacio libre al final se ajusta a la altura real de la barra de envío,
+  // para que nunca tape la última tarjeta.
+  var barraEnvio = document.querySelector(".enviar-fijo");
+  var envoltura = document.querySelector(".envoltura");
+
+  function ajustarEspacioFinal() {
+    envoltura.style.paddingBottom = (barraEnvio.offsetHeight + 32) + "px";
+  }
+
+  ajustarEspacioFinal();
+  window.addEventListener("resize", ajustarEspacioFinal);
+  if (window.ResizeObserver) {
+    new window.ResizeObserver(ajustarEspacioFinal).observe(barraEnvio);
+  }
+
+  function tituloDe(doc) {
+    return doc.querySelector("h3").textContent.trim();
+  }
+
+  function armarResumen() {
+    var lineas = [];
+    lineas.push("PAPELES DE LA FAMILIA MICELI — reporte de Gladys");
+    lineas.push("");
+
+    var grupos = { si: [], proceso: [], no: [], sinmarcar: [] };
+    docs.forEach(function (doc) {
+      var v = estado.docs[doc.dataset.doc] || "sinmarcar";
+      var texto = "• " + tituloDe(doc);
+      var n = (estado.notas[doc.dataset.doc] || "").trim();
+      if (n) texto += " — " + n;
+      grupos[v].push(texto);
+    });
+
+    if (grupos.si.length) {
+      lineas.push("YA LOS TENGO (" + grupos.si.length + ")");
+      lineas.push(grupos.si.join("\n"));
+      lineas.push("");
+    }
+    if (grupos.proceso.length) {
+      lineas.push("LOS ESTOY CONSIGUIENDO (" + grupos.proceso.length + ")");
+      lineas.push(grupos.proceso.join("\n"));
+      lineas.push("");
+    }
+    if (grupos.no.length) {
+      lineas.push("NO LOS TENGO (" + grupos.no.length + ")");
+      lineas.push(grupos.no.join("\n"));
+      lineas.push("");
+    }
+    if (grupos.sinmarcar.length) {
+      lineas.push("TODAVIA NO REVISO (" + grupos.sinmarcar.length + ")");
+      lineas.push(grupos.sinmarcar.join("\n"));
+      lineas.push("");
+    }
+
+    var textosPreguntas = [];
+    document.querySelectorAll("[data-pregunta]").forEach(function (campo) {
+      var valor = (campo.value || "").trim();
+      if (!valor) return;
+      var etiqueta = document.getElementById(campo.getAttribute("aria-labelledby")).textContent.trim();
+      textosPreguntas.push("• " + etiqueta + "\n  " + valor);
+    });
+
+    if (textosPreguntas.length) {
+      lineas.push("DATOS QUE APORTO");
+      lineas.push(textosPreguntas.join("\n"));
+    }
+
+    return lineas.join("\n").trim();
+  }
+
+  document.getElementById("btn-whatsapp").addEventListener("click", function () {
+    var url = "https://wa.me/?text=" + encodeURIComponent(armarResumen());
+    window.open(url, "_blank", "noopener");
+  });
+
+  document.getElementById("btn-copiar").addEventListener("click", function () {
+    var texto = armarResumen();
+    var listo = function () { mostrarAviso("Copiado ✓ — ya lo puedes pegar", 3000); };
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(texto).then(listo, respaldoCopiar);
+    } else {
+      respaldoCopiar();
+    }
+
+    function respaldoCopiar() {
+      var ta = document.createElement("textarea");
+      ta.value = texto;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        listo();
+      } catch (e) {
+        mostrarAviso("No se pudo copiar en este navegador", 3000);
+      }
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
+</body>
+</html>
