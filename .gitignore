@@ -12,3 +12,4 @@ out/
 *.backup
 *.backup.del
 .fuse_hidden*
+graphify-out/
