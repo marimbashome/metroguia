@@ -5,7 +5,7 @@
  * Detects sparse station descriptions across all ~64 cities and regenerates
  * them using a multi-provider LLM chain:
  *   1. OpenRouter (openai/gpt-oss-120b:free) — primary, best quality
- *   2. Groq (llama-3.3-70b-versatile) — fast fallback
+ *   2. Groq (openai/gpt-oss-120b) — fast fallback (llama-3.3 la apaga Groq el 2026-08-16)
  *   3. Ollama local (qwen2.5:7b) — last resort
  *
  * Usage:
@@ -399,16 +399,16 @@ async function callLLM(prompt) {
     }
   }
 
-  // 2. Groq — round-robin across all keys (llama-3.3-70b-versatile)
+  // 2. Groq — round-robin across all keys (openai/gpt-oss-120b: reemplazo oficial de llama-3.3, apagada por Groq el 2026-08-16)
   if (GROQ_KEYS.length) {
     const key = nextKey(GROQ_KEYS, 'groq')
     const keyLabel = `key${((_rrIdx.groq) % GROQ_KEYS.length) + 1}`
     try {
       const text = await callOpenAICompat(
         'https://api.groq.com/openai/v1', key,
-        'llama-3.3-70b-versatile', prompt, 30_000
+        'openai/gpt-oss-120b', prompt, 30_000
       )
-      return { text, provider: `groq/llama-3.3-70b-versatile[${keyLabel}]` }
+      return { text, provider: `groq/openai/gpt-oss-120b[${keyLabel}]` }
     } catch (e) {
       console.warn(`  ↩ Groq ${keyLabel} failed (${e.message.slice(0, 80)}), trying Cerebras…`)
     }
