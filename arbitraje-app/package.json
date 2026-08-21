@@ -16,5 +16,10 @@
   },
   "devDependencies": {
     "postcss": "^8.5.26"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.26"
+    }
   }
 }
