@@ -29,5 +29,14 @@
     "eslint-config-next": "^14.2.35",
     "postcss": "^8.5.26",
     "sharp": "^0.34.5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.26"
+    },
+    "@next/eslint-plugin-next": {
+      "glob": "^10.5.0"
+    },
+    "@opentelemetry/core": "^2.8.0"
   }
 }
