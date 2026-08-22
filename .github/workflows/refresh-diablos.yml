@@ -54,5 +54,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/diablos-fixtures.json public/calendar/diablos-rojos-2026*.ics
-          git commit -m "chore(diablos): refresh fixtures from diablos.com.mx [skip ci]"
+          git commit -m "chore(diablos): refresh fixtures from diablos.com.mx [skip ci]" \
+            -m "X-Actor: sistema:refresh-diablos"
           git push
