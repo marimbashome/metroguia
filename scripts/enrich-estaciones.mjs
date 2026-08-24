@@ -4,9 +4,14 @@
  * -----------------------------------------------------------------------
  * Detects sparse station descriptions across all ~64 cities and regenerates
  * them using a multi-provider LLM chain:
- *   1. OpenRouter (openai/gpt-oss-120b:free) — primary, best quality
- *   2. Groq (openai/gpt-oss-120b) — fast fallback (llama-3.3 la apaga Groq el 2026-08-16)
- *   3. Ollama local (qwen2.5:7b) — last resort
+ *   1. OpenRouter (nvidia/nemotron-3.5-lightning:free) — primary, gratuito
+ *   2. Groq (openai/gpt-oss-120b) — fast fallback
+ *   3. Cerebras (gpt-oss-120b) — fast fallback
+ *   4. Ollama local (qwen2.5:7b) — last resort
+ *
+ * 2026-08-24: los tres peldanos de nube pedian modelos ya retirados por sus proveedores
+ * (gpt-oss:free de OpenRouter, llama-3.3 de Groq, llama3.3-70b de Cerebras). Comprobado
+ * contra los catalogos vivos con las llaves reales.
  *
  * Usage:
  *   node scripts/enrich-estaciones.mjs              # Process all cities
@@ -384,16 +389,17 @@ async function callOllamaLocal(prompt) {
 }
 
 async function callLLM(prompt) {
-  // 1. OpenRouter — round-robin across all keys (gpt-oss-120b:free)
+  // 1. OpenRouter — round-robin across all keys (2026-08-24: OpenRouter retiro TODAS las
+  //    variantes :free de gpt-oss; sin esto este peldano daba 404 y la cascada arrancaba en Groq)
   if (OPENROUTER_KEYS.length) {
     const key = nextKey(OPENROUTER_KEYS, 'openrouter')
     const keyLabel = `key${((_rrIdx.openrouter) % OPENROUTER_KEYS.length) + 1}`
     try {
       const text = await callOpenAICompat(
         'https://openrouter.ai/api/v1', key,
-        'openai/gpt-oss-120b:free', prompt, 45_000
+        'nvidia/nemotron-3.5-lightning:free', prompt, 45_000
       )
-      return { text, provider: `openrouter/gpt-oss-120b:free[${keyLabel}]` }
+      return { text, provider: `openrouter/nemotron-3.5-lightning:free[${keyLabel}]` }
     } catch (e) {
       console.warn(`  ↩ OpenRouter ${keyLabel} failed (${e.message.slice(0, 80)}), trying Groq…`)
     }
@@ -414,16 +420,17 @@ async function callLLM(prompt) {
     }
   }
 
-  // 3. Cerebras — round-robin across all keys (llama3.3-70b, extremely fast)
+  // 3. Cerebras — round-robin across all keys (2026-08-24: Cerebras ya solo sirve
+  //    gpt-oss-120b y gemma-4-31b; llama3.3-70b devolvia 404 y este peldano estaba muerto)
   if (CEREBRAS_KEYS.length) {
     const key = nextKey(CEREBRAS_KEYS, 'cerebras')
     const keyLabel = `key${((_rrIdx.cerebras) % CEREBRAS_KEYS.length) + 1}`
     try {
       const text = await callOpenAICompat(
         'https://api.cerebras.ai/v1', key,
-        'llama3.3-70b', prompt, 20_000
+        'gpt-oss-120b', prompt, 20_000
       )
-      return { text, provider: `cerebras/llama3.3-70b[${keyLabel}]` }
+      return { text, provider: `cerebras/gpt-oss-120b[${keyLabel}]` }
     } catch (e) {
       console.warn(`  ↩ Cerebras ${keyLabel} failed (${e.message.slice(0, 80)}), falling back to Ollama…`)
     }
@@ -589,7 +596,7 @@ async function processCity(cityInfo, progress) {
         enrichedCount += enriched.filter(e => e.slug).length
         doneSlug.add(chunk[j].slug)
         chunkOk++
-        const pShort = provider.replace('openrouter/gpt-oss-120b:free', 'OR').replace('groq/llama-3.3-70b-versatile', 'Groq').replace('cerebras/llama3.3-70b', 'CB')
+        const pShort = provider.replace('openrouter/nemotron-3.5-lightning:free', 'OR').replace('groq/openai/gpt-oss-120b', 'Groq').replace('cerebras/gpt-oss-120b', 'CB')
         providers.push(pShort)
       } else {
         console.log(`\n   ✗ slot ${j+1} failed: ${results[j].reason?.message?.slice(0,60)}`)
@@ -646,7 +653,7 @@ async function main() {
           headers: { 'Authorization': `Bearer ${GROQ_KEYS[0]}` },
           signal: AbortSignal.timeout(5000)
         })
-        providerStatus.push(r.ok ? `✅ Groq ×${GROQ_KEYS.length} keys (llama-3.3-70b-versatile)` : '❌ Groq (HTTP '+r.status+')')
+        providerStatus.push(r.ok ? `✅ Groq ×${GROQ_KEYS.length} keys (openai/gpt-oss-120b)` : '❌ Groq (HTTP '+r.status+')')
       } catch (e) { providerStatus.push('❌ Groq ('+e.message.slice(0,40)+')') }
     } else {
       providerStatus.push('⚪ Groq (no key — set GROQ_API_KEY)')
