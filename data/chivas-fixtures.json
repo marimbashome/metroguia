@@ -4,7 +4,7 @@
   "season": "Apertura 2026",
   "total_matches": 17,
   "future_matches": 12,
-  "generated_at": "2026-08-29T01:09:11.675358+00:00",
+  "generated_at": "2026-08-29T01:19:42.190098+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard?dates=20260716-20270105&limit=500",
   "broadcast_rights_note": "Mapa BROADCASTERS revisado jul-2026; revalidar cada torneo.",
   "matches": [
