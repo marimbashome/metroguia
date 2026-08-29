@@ -1,0 +1,312 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MetroGuia//Chivas Liga MX 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Chivas · Liga MX
+X-WR-CALDESC:Partidos de Chivas con canal de transmisión. Local = Prime Vi
+ deo\; visitante segun el rival. Liguilla incluida. Auto-sync · metroguia.
+ mx
+X-WR-TIMEZONE:America/Mexico_City
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:chivas-20260718-toluca-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260719T010700Z
+DTEND:20260719T030700Z
+SUMMARY:⚽ Chivas vs Toluca — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 1 | Chivas de local | Dónde v
+ er: Prime Video | Horario sujeto a cambios · el calendario se actualiza s
+ olo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260725-fc-juarez-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260725T230700Z
+DTEND:20260726T010700Z
+SUMMARY:⚽ Chivas vs FC Juarez — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 2 | Chivas de local | Dónde v
+ er: Prime Video | Horario sujeto a cambios · el calendario se actualiza s
+ olo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260731-puebla-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260801T010000Z
+DTEND:20260801T030000Z
+SUMMARY:⚽ Puebla vs Chivas — Azteca 7
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 3 | Chivas de visitante | Dón
+ de ver: Azteca 7 | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Cuauhtémoc\, Puebla\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260816-santos-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260817T011000Z
+DTEND:20260817T031000Z
+SUMMARY:⚽ Santos vs Chivas — TUDN / ViX
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 4 | Chivas de visitante | Dón
+ de ver: TUDN / ViX | Horario sujeto a cambios · el calendario se actualiz
+ a solo
+LOCATION:Estadio Corona\, Torreón\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260822-tijuana-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260822T230700Z
+DTEND:20260823T010700Z
+SUMMARY:⚽ Chivas vs Tijuana — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 5 | Chivas de local | Dónde v
+ er: Prime Video | Horario sujeto a cambios · el calendario se actualiza s
+ olo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260829-pachuca-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260829T230000Z
+DTEND:20260830T010000Z
+SUMMARY:⚽ Pachuca vs Chivas — FOX / FOX One
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 6 | Chivas de visitante | Dón
+ de ver: FOX / FOX One | Horario sujeto a cambios · el calendario se actua
+ liza solo
+LOCATION:Estadio Hidalgo\, Pachuca\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260905-atletico-de-san-luis-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260905T230000Z
+DTEND:20260906T010000Z
+SUMMARY:⚽ Atlético de San Luis vs Chivas — ESPN / Disney+
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 7 | Chivas de visitante | Dón
+ de ver: ESPN / Disney+ | Horario sujeto a cambios · el calendario se actu
+ aliza solo
+LOCATION:Estadio Libertad Financiera\, San Luis Potosi\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260913-pumas-unam-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260914T000700Z
+DTEND:20260914T020700Z
+SUMMARY:⚽ Chivas vs Pumas UNAM — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 8 | Chivas de local | Dónde v
+ er: Prime Video | Horario sujeto a cambios · el calendario se actualiza s
+ olo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260919-america-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260920T030000Z
+DTEND:20260920T050000Z
+SUMMARY:⚽ América vs Chivas — Canal 5 / TUDN / ViX
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 9 | Chivas de visitante | Dón
+ de ver: Canal 5 / TUDN / ViX | Horario sujeto a cambios · el calendario s
+ e actualiza solo
+LOCATION:Estadio Banorte\, Mexico City\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20260926-queretaro-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20260926T230700Z
+DTEND:20260927T010700Z
+SUMMARY:⚽ Chivas vs Querétaro — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 10 | Chivas de local | Dónde 
+ ver: Prime Video | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261010-atlas-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261011T010000Z
+DTEND:20261011T030000Z
+SUMMARY:⚽ Atlas vs Chivas — TUDN / ViX
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 11 | Chivas de visitante | Dó
+ nde ver: TUDN / ViX | Horario sujeto a cambios · el calendario se actuali
+ za solo
+LOCATION:Estadio Jalisco\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261017-tigres-uanl-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261017T230000Z
+DTEND:20261018T010000Z
+SUMMARY:⚽ Chivas vs Tigres UANL — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 12 | Chivas de local | Dónde 
+ ver: Prime Video | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261020-necaxa-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261021T030000Z
+DTEND:20261021T050000Z
+SUMMARY:⚽ Chivas vs Necaxa — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 13 | Chivas de local | Dónde 
+ ver: Prime Video | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261024-monterrey-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261025T000000Z
+DTEND:20261025T020000Z
+SUMMARY:⚽ Monterrey vs Chivas — Canal 5 / TUDN / ViX
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 14 | Chivas de visitante | Dó
+ nde ver: Canal 5 / TUDN / ViX | Horario sujeto a cambios · el calendario 
+ se actualiza solo
+LOCATION:Estadio BBVA\, Guadalupe\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261031-atlante-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261101T010000Z
+DTEND:20261101T030000Z
+SUMMARY:⚽ Chivas vs Atlante — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 15 | Chivas de local | Dónde 
+ ver: Prime Video | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261108-leon-a@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261109T010000Z
+DTEND:20261109T030000Z
+SUMMARY:⚽ León vs Chivas — FOX / FOX One
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 16 | Chivas de visitante | Dó
+ nde ver: FOX / FOX One | Horario sujeto a cambios · el calendario se actu
+ aliza solo
+LOCATION:Estadio León\, León de los Aldamas\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-20261122-cruz-azul-h@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART:20261122T230000Z
+DTEND:20261123T010000Z
+SUMMARY:⚽ Chivas vs Cruz Azul — Prime Video
+DESCRIPTION:Liga MX Apertura 2026 · Jornada 17 | Chivas de local | Dónde 
+ ver: Prime Video | Horario sujeto a cambios · el calendario se actualiza 
+ solo
+LOCATION:Estadio Akron\, Guadalajara\, Mexico
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-cuartos-ida@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:⚽ Chivas · Cuartos de final · IDA (25-26 nov) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-cuartos-vta@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261130
+SUMMARY:⚽ Chivas · Cuartos de final · VUELTA (28-29 nov) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-semis-ida@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261204
+SUMMARY:⚽ Chivas · Semifinales · IDA (2-3 dic) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-semis-vta@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:⚽ Chivas · Semifinales · VUELTA (5-6 dic) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-final-ida@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:⚽ Chivas · FINAL · IDA (10 dic) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:chivas-liguilla-final-vta@metroguia.mx
+DTSTAMP:20260829T010911Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:⚽ Chivas · FINAL · VUELTA (13 dic) (por definir)
+DESCRIPTION:Fecha tentativa: depende de que Chivas califique y del sorteo d
+ e la Liguilla. Este evento se reemplaza solo por el partido real en cuanto
+  la Liga MX lo programe. Si Toluca llega a la Final\, la Final se recorre 
+ al 24 y 27 de diciembre.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
