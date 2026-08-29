@@ -14,6 +14,8 @@ Uso:
 
 Patrón canónico tomado de build_mundial_fixtures.py.
 """
+from __future__ import annotations
+
 import json
 import os
 import re
@@ -100,72 +102,66 @@ def fetch_month(month_name: str, casa: bool, offline_dir: Path | None = None) ->
         return resp.read().decode("utf-8", errors="replace")
 
 
-# Regex para extraer cada día: número de día seguido de logo + "vs Rival" + hora "X:YY PM/AM"
-# Ejemplo HTML estructura:
-#   <div class="day">15</div>
-#   <img alt="Tigres" ...>
-#   <span>vs Tigres</span>
-#   <span>7:00 PM</span>
-DAY_BLOCK_RE = re.compile(
-    r'>(\d{1,2})<.*?'                              # día
-    r'(?:<img[^>]+alt="([^"]+)"[^>]*>.*?)?'        # logo (opcional, da el rival)
-    r'vs\s*([A-ZÁÉÍÓÚÑa-záéíóúñ\s\'.]+?)\s*'       # nombre del rival
-    r'(\d{1,2}:\d{2}\s*[AP]M)',                    # hora
-    re.DOTALL,
+# El calendario renderiza una celda por día del mes. El número del día viene
+# rodeado de whitespace, no pegado a los tags — por eso el regex anterior
+# (`>(\d{1,2})<`) nunca hizo match y el script publicó 0 juegos desde may-2026.
+DAY_CELL_RE = re.compile(
+    r'<div class="text-base font-semibold mb-2 text-gray-700">\s*(\d{1,2})\s*</div>'
 )
+# Dentro de la celda, cada juego trae el logo del rival (alt=) y la hora.
+EVENT_RE = re.compile(r'alt="([^"]+)".*?(\d{1,2}:\d{2}\s*[AP]M)', re.DOTALL)
 
 
-def parse_month(html: str, year: int, month_num: int, is_home: bool) -> list[dict]:
-    """Extrae partidos del HTML mensual."""
+def parse_month(html: str, year: int, month_num: int, is_home: bool) -> list:
+    """Extrae los juegos del HTML mensual (una celda por día)."""
     games = []
-    seen = set()
-    for m in DAY_BLOCK_RE.finditer(html):
-        day_str, alt_team, vs_team, time_str = m.groups()
-        day = int(day_str)
-        # Validación: día entre 1-31
+    cells = list(DAY_CELL_RE.finditer(html))
+    for idx, cell in enumerate(cells):
+        day = int(cell.group(1))
         if not 1 <= day <= 31:
             continue
-        if day in seen:
-            continue  # ya procesado
-        # Validar que el día sea válido para el mes
         try:
-            game_date = datetime(year, month_num, day)
+            datetime(year, month_num, day)
         except ValueError:
             continue
-        rival = (alt_team or vs_team).strip()
-        # Normalizar nombre del rival
-        rival = re.sub(r"\s+", " ", rival)
-        # Parsear hora (formato "7:00 PM")
-        time_match = re.match(r"(\d{1,2}):(\d{2})\s*([AP])M", time_str.strip(), re.I)
-        if not time_match:
-            continue
-        h, mi, ampm = int(time_match.group(1)), int(time_match.group(2)), time_match.group(3).upper()
-        if ampm == "P" and h != 12:
-            h += 12
-        elif ampm == "A" and h == 12:
-            h = 0
-        # Construir datetime CDMX y convertir a UTC
-        dt_cdmx = datetime(year, month_num, day, h, mi, tzinfo=timezone(CDMX_OFFSET))
-        dt_utc = dt_cdmx.astimezone(timezone.utc)
 
-        # UID estable: hash de fecha + rival + home/away (no del día, para que
-        # cambios de horario actualicen el evento existente en Google Cal)
-        uid_seed = f"diablos-{year}{month_num:02d}{day:02d}-{slugify(rival)}-{'h' if is_home else 'a'}"
+        chunk_end = cells[idx + 1].start() if idx + 1 < len(cells) else len(html)
+        chunk = html[cell.end():chunk_end]
 
-        seen.add(day)
-        games.append({
-            "uid": uid_seed,
-            "date_cdmx": dt_cdmx.strftime("%Y-%m-%d %H:%M"),
-            "datetime_utc": dt_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "rival_short": rival,
-            "rival_full": FULL_NAMES.get(rival, rival),
-            "is_home": is_home,
-            "stadium": STADIUM_HOME if is_home else AWAY_STADIUMS.get(rival, (f"Estadio {rival}", "MX"))[0],
-            "city": "Ciudad de México" if is_home else AWAY_STADIUMS.get(rival, ("", "MX"))[1],
-            "year": year,
-            "month": month_num,
-            "day": day,
-        })
+        events = EVENT_RE.findall(chunk)
+        for slot, (rival_raw, time_str) in enumerate(events):
+            rival = re.sub(r"\s+", " ", rival_raw).strip()
+            tm = re.match(r"(\d{1,2}):(\d{2})\s*([AP])M", time_str.strip(), re.I)
+            if not tm:
+                continue
+            h, mi, ampm = int(tm.group(1)), int(tm.group(2)), tm.group(3).upper()
+            if ampm == "P" and h != 12:
+                h += 12
+            elif ampm == "A" and h == 12:
+                h = 0
+
+            dt_cdmx = datetime(year, month_num, day, h, mi, tzinfo=timezone(CDMX_OFFSET))
+            dt_utc = dt_cdmx.astimezone(timezone.utc)
+
+            # UID estable por fecha+rival+casa/visita. El sufijo solo aparece en
+            # doble cartelera, para no romper los UIDs ya suscritos.
+            uid = f"diablos-{year}{month_num:02d}{day:02d}-{slugify(rival)}-{'h' if is_home else 'a'}"
+            if slot:
+                uid += f"-{slot + 1}"
+
+            games.append({
+                "uid": uid,
+                "date_cdmx": dt_cdmx.strftime("%Y-%m-%d %H:%M"),
+                "datetime_utc": dt_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "rival_short": rival,
+                "rival_full": FULL_NAMES.get(rival, rival),
+                "is_home": is_home,
+                "stadium": STADIUM_HOME if is_home else AWAY_STADIUMS.get(rival, (f"Estadio {rival}", "MX"))[0],
+                "city": "Ciudad de México" if is_home else AWAY_STADIUMS.get(rival, ("", "MX"))[1],
+                "year": year,
+                "month": month_num,
+                "day": day,
+            })
     return games
 
 
@@ -286,6 +282,26 @@ def main():
     all_games.sort(key=lambda g: g["datetime_utc"])
     home_games = [g for g in all_games if g["is_home"]]
 
+    # GUARDA: sin esto el script publicó un ICS vacío del 2026-05-25 al 2026-08-17
+    # sin que nadie se enterara. Mejor fallar ruidoso que vaciar el calendario.
+    if not all_games:
+        print("ERROR: 0 partidos parseados. Probablemente cambió el HTML de "
+              "diablos.com.mx. Abortando SIN escribir; el feed publicado conserva "
+              "su último estado bueno.", file=sys.stderr)
+        return 1
+
+    if DATA_OUT.exists():
+        try:
+            prev_total = json.loads(DATA_OUT.read_text(encoding="utf-8")).get("total_games", 0)
+        except (json.JSONDecodeError, OSError):
+            prev_total = 0
+        if prev_total and len(all_games) < prev_total * 0.5:
+            if os.environ.get("DIABLOS_ALLOW_SHRINK") != "1":
+                print(f"ERROR: los partidos cayeron de {prev_total} a {len(all_games)}. "
+                      "Abortando SIN escribir. Corre con DIABLOS_ALLOW_SHRINK=1 si el "
+                      "encogimiento es real (fin de temporada).", file=sys.stderr)
+                return 1
+
     print(f"\nTotal: {len(all_games)} partidos · {len(home_games)} home · {len(all_games) - len(home_games)} visita")
 
     # JSON
@@ -323,7 +339,8 @@ def main():
         print(f"✓ {path} ({path.stat().st_size:,} bytes, {content.count('BEGIN:VEVENT')} eventos)")
 
     print("\n=== DONE ===")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
