@@ -6,49 +6,4 @@ METHOD:PUBLISH
 X-WR-CALNAME:Diablos Rojos casa · LMB 2026
 X-WR-CALDESC:Partidos en casa de Diablos Rojos · Estadio Alfredo Harp Helú\, CDMX. Auto-sync semanal · metroguia.mx
 X-WR-TIMEZONE:America/Mexico_City
-BEGIN:VEVENT
-UID:diablos-20260819-pericos-h@metroguia.mx
-DTSTAMP:20260829T011613Z
-DTSTART:20260820T010000Z
-DTEND:20260820T040000Z
-SUMMARY:🔴 Diablos vs Pericos
-DESCRIPTION:LMB 2026 · Temporada regular | vs Pericos de Puebla | Home gam
- e | Calendario: https://www.diablos.com.mx/calendario | Boletos: https://w
- ww.diablos.com.mx/boletos
-LOCATION:Estadio Alfredo Harp Helú\, Av. Río Churubusco s/n\, Granjas Mé
- xico\, Iztacalco\, 08400 CDMX
-URL:https://www.diablos.com.mx/calendario
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:diablos-20260820-pericos-h@metroguia.mx
-DTSTAMP:20260829T011613Z
-DTSTART:20260821T010000Z
-DTEND:20260821T040000Z
-SUMMARY:🔴 Diablos vs Pericos
-DESCRIPTION:LMB 2026 · Temporada regular | vs Pericos de Puebla | Home gam
- e | Calendario: https://www.diablos.com.mx/calendario | Boletos: https://w
- ww.diablos.com.mx/boletos
-LOCATION:Estadio Alfredo Harp Helú\, Av. Río Churubusco s/n\, Granjas Mé
- xico\, Iztacalco\, 08400 CDMX
-URL:https://www.diablos.com.mx/calendario
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:diablos-20260826-pericos-h@metroguia.mx
-DTSTAMP:20260829T011613Z
-DTSTART:20260827T010000Z
-DTEND:20260827T040000Z
-SUMMARY:🔴 Diablos vs Pericos
-DESCRIPTION:LMB 2026 · Temporada regular | vs Pericos de Puebla | Home gam
- e | Calendario: https://www.diablos.com.mx/calendario | Boletos: https://w
- ww.diablos.com.mx/boletos
-LOCATION:Estadio Alfredo Harp Helú\, Av. Río Churubusco s/n\, Granjas Mé
- xico\, Iztacalco\, 08400 CDMX
-URL:https://www.diablos.com.mx/calendario
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
 END:VCALENDAR
