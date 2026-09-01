@@ -1,0 +1,68 @@
+name: Refresh Chivas fixtures
+
+# Regenera el feed ICS de Chivas desde la ESPN API y commitea si cambió.
+# El push dispara auto-deploy en Vercel → Google Calendar rejala el .ics suscrito.
+#
+# A diferencia de refresh-diablos.yml, este job FALLA (exit 1) si la fuente
+# no responde o devuelve datos sospechosos, en vez de publicar un feed vacío.
+# Un job en rojo manda mail de GitHub Actions; un feed vacío no avisa nada.
+
+on:
+  schedule:
+    # Lunes 15:00 UTC = 09:00 CDMX — cadencia normal de la fase regular.
+    - cron: '0 15 * * 1'
+    # Diario en noviembre y diciembre: el bracket de Liguilla se define con
+    # pocos días de anticipación y los horarios se mueven seguido.
+    - cron: '0 15 * 11,12 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Si esto falla, el workflow se pone en rojo y NO se commitea nada:
+      # el .ics publicado conserva su último estado bueno.
+      - name: Regenerate fixtures.json + ICS
+        run: python3 scripts/build_chivas_fixtures.py
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- data/chivas-fixtures.json public/calendar/chivas-2026.ics; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "Sin cambios."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git diff --stat -- data/chivas-fixtures.json public/calendar/chivas-2026.ics
+          fi
+
+      - name: Sanity check — el ICS nunca debe quedar vacío
+        run: |
+          EVENTS=$(grep -c 'BEGIN:VEVENT' public/calendar/chivas-2026.ics || echo 0)
+          echo "Eventos en el feed: $EVENTS"
+          if [ "$EVENTS" -lt 1 ]; then
+            echo "::error::El ICS quedó sin eventos. Abortando antes de commitear."
+            exit 1
+          fi
+
+      - name: Commit + push if changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/chivas-fixtures.json public/calendar/chivas-2026.ics
+          git commit -m "chore(chivas): refresh fixtures desde ESPN API [skip ci]"
+          git push

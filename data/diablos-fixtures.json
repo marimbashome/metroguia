@@ -2,9 +2,88 @@
   "team": "Diablos Rojos del México",
   "league": "Liga Mexicana de Béisbol",
   "season": "2026",
-  "total_games": 0,
-  "home_games": 0,
-  "generated_at": "2026-08-31T20:43:30.821527+00:00",
+"total_games": 6,
+  "home_games": 3,
+  "generated_at": "2026-08-29T01:16:13.312420+00:00",
   "source": "https://www.diablos.com.mx/calendario",
-  "games": []
+  "games": [
+    {
+      "uid": "diablos-20260819-pericos-h",
+      "date_cdmx": "2026-08-19 19:00",
+      "datetime_utc": "2026-08-20T01:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": true,
+      "stadium": "Estadio Alfredo Harp Helú",
+      "city": "Ciudad de México",
+      "year": 2026,
+      "month": 8,
+      "day": 19
+    },
+    {
+      "uid": "diablos-20260820-pericos-h",
+      "date_cdmx": "2026-08-20 19:00",
+      "datetime_utc": "2026-08-21T01:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": true,
+      "stadium": "Estadio Alfredo Harp Helú",
+      "city": "Ciudad de México",
+      "year": 2026,
+      "month": 8,
+      "day": 20
+    },
+    {
+      "uid": "diablos-20260822-pericos-a",
+      "date_cdmx": "2026-08-22 16:00",
+      "datetime_utc": "2026-08-22T22:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": false,
+      "stadium": "Estadio Hermanos Serdán",
+      "city": "Puebla",
+      "year": 2026,
+      "month": 8,
+      "day": 22
+    },
+    {
+      "uid": "diablos-20260823-pericos-a",
+      "date_cdmx": "2026-08-23 14:00",
+      "datetime_utc": "2026-08-23T20:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": false,
+      "stadium": "Estadio Hermanos Serdán",
+      "city": "Puebla",
+      "year": 2026,
+      "month": 8,
+      "day": 23
+    },
+    {
+      "uid": "diablos-20260824-pericos-a",
+      "date_cdmx": "2026-08-24 19:00",
+      "datetime_utc": "2026-08-25T01:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": false,
+      "stadium": "Estadio Hermanos Serdán",
+      "city": "Puebla",
+      "year": 2026,
+      "month": 8,
+      "day": 24
+    },
+    {
+      "uid": "diablos-20260826-pericos-h",
+      "date_cdmx": "2026-08-26 19:00",
+      "datetime_utc": "2026-08-27T01:00:00Z",
+      "rival_short": "Pericos",
+      "rival_full": "Pericos de Puebla",
+      "is_home": true,
+      "stadium": "Estadio Alfredo Harp Helú",
+      "city": "Ciudad de México",
+      "year": 2026,
+      "month": 8,
+      "day": 26
+    }
+  ]
 }
