@@ -3,8 +3,8 @@
   "league": "Liga BBVA MX",
   "season": "Apertura 2026",
   "total_matches": 17,
-  "future_matches": 10,
-  "generated_at": "2026-09-07T18:53:25.681198+00:00",
+  "future_matches": 9,
+  "generated_at": "2026-09-14T19:37:55.565545+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard?dates=20260716-20270105&limit=500",
   "broadcast_rights_note": "Mapa BROADCASTERS revisado jul-2026; revalidar cada torneo.",
   "matches": [
@@ -116,7 +116,7 @@
       "round": "Jornada 8",
       "venue": "Estadio Akron",
       "city": "Guadalajara, Mexico",
-      "state": "pre",
+      "state": "post",
       "broadcaster": "Prime Video",
       "tentative": false
     },
