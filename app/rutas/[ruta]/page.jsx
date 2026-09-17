@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { grafo } from '@/data/grafo'
 import { getRutasLegacySlugs } from '@/data/built-routes'
 import { findRoute } from '@/lib/pathfinder'
@@ -57,7 +56,7 @@ export default async function RutasLegacyPage(props) {
       <div className="container-narrow route-detail-notfound">
         <h1>Ruta no encontrada</h1>
         <p>No pudimos calcular esta ruta. Usa el planificador para buscar otra.</p>
-        <Link href="/rutas/" className="btn btn-primary">Ir al planificador</Link>
+        <a href="/rutas/" className="btn btn-primary">Ir al planificador</a>
         <style>{`.route-detail-notfound { padding: var(--space-8) 0; text-align: center; }`}</style>
       </div>
     )

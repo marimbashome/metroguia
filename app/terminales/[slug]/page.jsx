@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { terminales } from '@/data/terminales'
 import { getKeepUrlSlugs } from '@/lib/keep-urls'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
@@ -41,7 +40,7 @@ export default async function TerminalPage(props) {
     return (
       <div className="section container-narrow" style={{ textAlign: 'center' }}>
         <h1>Terminal no encontrada</h1>
-        <p><Link href="/terminales/">Volver a Terminales</Link></p>
+        <p><a href="/terminales/">Volver a Terminales</a></p>
       </div>
     )
   }
@@ -81,7 +80,7 @@ export default async function TerminalPage(props) {
       />
 
       <div className="container breadcrumb-nav">
-        <Link href="/">Inicio</Link> → <Link href="/terminales/">Terminales</Link> → <span>{terminal.nombreCorto || terminal.nombre}</span>
+        <a href="/">Inicio</a> → <a href="/terminales/">Terminales</a> → <span>{terminal.nombreCorto || terminal.nombre}</span>
       </div>
 
       <section className="section entity-hero">

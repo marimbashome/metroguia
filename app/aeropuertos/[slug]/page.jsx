@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { aeropuertos } from '@/data/aeropuertos'
 import { getKeepUrlSlugs } from '@/lib/keep-urls'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
@@ -40,7 +39,7 @@ export default async function AeropuertoPage(props) {
     return (
       <div className="section container-narrow" style={{ textAlign: 'center' }}>
         <h1>Aeropuerto no encontrado</h1>
-        <p><Link href="/aeropuertos/">Volver a Aeropuertos</Link></p>
+        <p><a href="/aeropuertos/">Volver a Aeropuertos</a></p>
       </div>
     )
   }
@@ -77,7 +76,7 @@ export default async function AeropuertoPage(props) {
       />
 
       <div className="container breadcrumb-nav">
-        <Link href="/">Inicio</Link> → <Link href="/aeropuertos/">Aeropuertos</Link> → <span>{airport.iata}</span>
+        <a href="/">Inicio</a> → <a href="/aeropuertos/">Aeropuertos</a> → <span>{airport.iata}</span>
       </div>
 
       <section className="section entity-hero">
