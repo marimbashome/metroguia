@@ -7,7 +7,8 @@ export function generateStaticParams() {
   return sistema.estacionesRicas.map((e) => ({ slug: e.slug }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const estacion = sistema.estacionesPorSlug.get(params.slug)
   if (!estacion) return { title: 'Estación no encontrada' }
   const linea = sistema.lineas[estacion.lineaId]
@@ -19,7 +20,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function TrenSuburbanoEstacionPage({ params }) {
+export default async function TrenSuburbanoEstacionPage(props) {
+  const params = await props.params;
   const estacion = sistema.estacionesPorSlug.get(params.slug)
   if (!estacion) {
     return (

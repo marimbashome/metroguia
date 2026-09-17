@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { terminales } from '@/data/terminales'
 import { getKeepUrlSlugs } from '@/lib/keep-urls'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
@@ -14,7 +15,8 @@ function findTerminal(slug) {
   return terminales.find((t) => t.slug === slug) || null
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const terminal = findTerminal(params.slug)
   if (!terminal) return { title: 'Terminal no encontrada' }
   return {
@@ -32,13 +34,14 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function TerminalPage({ params }) {
+export default async function TerminalPage(props) {
+  const params = await props.params;
   const terminal = findTerminal(params.slug)
   if (!terminal) {
     return (
       <div className="section container-narrow" style={{ textAlign: 'center' }}>
         <h1>Terminal no encontrada</h1>
-        <p><a href="/terminales/">Volver a Terminales</a></p>
+        <p><Link href="/terminales/">Volver a Terminales</Link></p>
       </div>
     )
   }
@@ -78,7 +81,7 @@ export default function TerminalPage({ params }) {
       />
 
       <div className="container breadcrumb-nav">
-        <a href="/">Inicio</a> → <a href="/terminales/">Terminales</a> → <span>{terminal.nombreCorto || terminal.nombre}</span>
+        <Link href="/">Inicio</Link> → <Link href="/terminales/">Terminales</Link> → <span>{terminal.nombreCorto || terminal.nombre}</span>
       </div>
 
       <section className="section entity-hero">

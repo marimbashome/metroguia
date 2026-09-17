@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { grafo } from '@/data/grafo'
 import { getRutasLegacySlugs } from '@/data/built-routes'
 import { findRoute } from '@/lib/pathfinder'
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 }
 
 function getStationName(slug) {
-  return grafo[slug]?.nombre || slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+  return grafo[slug]?.nombre || slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 async function resolveRuta(slug) {
@@ -34,7 +35,8 @@ async function resolveRuta(slug) {
   }
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const ruta = await resolveRuta(params.ruta)
   if (!ruta) return RUTA_NOT_FOUND_METADATA
 
@@ -46,7 +48,8 @@ export async function generateMetadata({ params }) {
   })
 }
 
-export default async function RutasLegacyPage({ params }) {
+export default async function RutasLegacyPage(props) {
+  const params = await props.params;
   const ruta = await resolveRuta(params.ruta)
 
   if (!ruta) {
@@ -54,7 +57,7 @@ export default async function RutasLegacyPage({ params }) {
       <div className="container-narrow route-detail-notfound">
         <h1>Ruta no encontrada</h1>
         <p>No pudimos calcular esta ruta. Usa el planificador para buscar otra.</p>
-        <a href="/rutas/" className="btn btn-primary">Ir al planificador</a>
+        <Link href="/rutas/" className="btn btn-primary">Ir al planificador</Link>
         <style>{`.route-detail-notfound { padding: var(--space-8) 0; text-align: center; }`}</style>
       </div>
     )

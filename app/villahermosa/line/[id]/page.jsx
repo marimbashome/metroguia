@@ -16,14 +16,16 @@ export async function generateStaticParams() {
   return [{ id: REQUIRED_ID }]
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const linea = bundle.lineas.find((l) => String(l.id) === params.id)
   if (!linea) return { title: 'Línea no encontrada', robots: { index: false, follow: false } }
   const total = estacionesDeLinea(bundle.estaciones, bundle.grafo, linea.id, linea.estaciones).length
   return lineMetadata({ linea, cityConfig: bundle.config, path: `/villahermosa/line/${linea.id}/`, totalEstaciones: total })
 }
 
-export default function VillahermosaLineLegacyPage({ params }) {
+export default async function VillahermosaLineLegacyPage(props) {
+  const params = await props.params;
   const linea = bundle.lineas.find((l) => String(l.id) === params.id)
   if (!linea) return null
   return (

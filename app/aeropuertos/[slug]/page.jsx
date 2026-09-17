@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { aeropuertos } from '@/data/aeropuertos'
 import { getKeepUrlSlugs } from '@/lib/keep-urls'
 import BreadcrumbSchema from '@/app/components/BreadcrumbSchema'
@@ -13,7 +14,8 @@ function findAirport(slug) {
   return aeropuertos.find((a) => a.slug === slug) || null
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const airport = findAirport(params.slug)
   if (!airport) return { title: 'Aeropuerto no encontrado' }
   return {
@@ -31,13 +33,14 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function AeropuertoPage({ params }) {
+export default async function AeropuertoPage(props) {
+  const params = await props.params;
   const airport = findAirport(params.slug)
   if (!airport) {
     return (
       <div className="section container-narrow" style={{ textAlign: 'center' }}>
         <h1>Aeropuerto no encontrado</h1>
-        <p><a href="/aeropuertos/">Volver a Aeropuertos</a></p>
+        <p><Link href="/aeropuertos/">Volver a Aeropuertos</Link></p>
       </div>
     )
   }
@@ -74,7 +77,7 @@ export default function AeropuertoPage({ params }) {
       />
 
       <div className="container breadcrumb-nav">
-        <a href="/">Inicio</a> → <a href="/aeropuertos/">Aeropuertos</a> → <span>{airport.iata}</span>
+        <Link href="/">Inicio</Link> → <Link href="/aeropuertos/">Aeropuertos</Link> → <span>{airport.iata}</span>
       </div>
 
       <section className="section entity-hero">
