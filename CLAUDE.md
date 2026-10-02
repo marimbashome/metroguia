@@ -5,7 +5,7 @@
 
 ---
 
-<!-- BEGIN REGLA-ATRIBUCION sha=e3b0958f3589 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
+<!-- BEGIN REGLA-ATRIBUCION sha=3599b24c89e2 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
 ## 🧾 Bitácora con autor — regla dura de todos los repos
 
 Todo cambio deja rastro, y **el rastro dice quién lo hizo**, distinguiendo una IA de una persona.
@@ -18,10 +18,19 @@ El autor de git es **siempre** `enrique.miceli@gmail.com` (si no, Vercel rechaza
 así que el autor no identifica a nadie. La atribución real viaja en los trailers del mensaje:
 
 ```
-Co-Authored-By: <actor que escribió el cambio> <noreply@marimbashome.com>
+Co-Authored-By: <actor que escribió el cambio> <noreply+<slug del actor>@marimbashome.com>
 X-Revisado-Por: <actor que lo revisó>      # obligatorio en identidad de huéspedes y en dinero
 X-Sesion: ses-AAAA-MM-DD-<tema>            # el mismo id en TODO lo que escriba esa sesión
 ```
+
+**Un correo por actor, nunca uno compartido (2026-09-29).** GitHub distingue a los co-autores por el
+correo: al hacer squash deja uno por correo, y con un correo común el segundo actor de un PR desaparece
+de `main` (medido: `nireto#702` perdió a Gemini). El slug es el actor sin `ia:`, en minúsculas y con
+`/`, `.`, `:` y espacios cambiados por `-`: `ia:gemini-3.7-flash` → `noreply+gemini-3-7-flash@marimbashome.com`,
+`sistema:autofix-clases` → `noreply+sistema-autofix-clases@marimbashome.com`; una persona firma con su
+propio correo. En código lo arma `research_common.trailer_de_coautor(actor)`. **El trailer que Claude
+Code propone por omisión (`Claude … <noreply@anthropic.com>`) se sustituye por este**: todos los
+modelos de Claude comparten ese correo.
 
 **El id de sesión se fija al ARRANCAR, no al cerrar.** Cada sesión de cualquier agente elige UN id `ses-AAAA-MM-DD-<tema>` en su
 primer minuto y lo estampa en todo lo que escribe: el trailer `X-Sesion` de cada commit; `p_actor => 'ia:<modelo real>'` (nunca
@@ -78,46 +87,64 @@ alguien agrega una columna.
 
 ### 5. Un cambio sin rastro es un defecto
 
-Lo vigilan el candado `commit-atribucion-guard` (bloquea el commit sin trailer) y el detector
-`commit-sin-atribucion`. Especificación completa: `Vault/Sistemas/Bitacora_De_Cambios.md`.
+Lo vigilan el candado `commit-atribucion-guard` (bloquea el commit sin trailer o con un correo
+compartido) y los detectores `commit-sin-atribucion` y `coautor-perdido-en-squash` (un squash en `main`
+con menos co-autores que su rama). Especificación completa: `Vault/Sistemas/Bitacora_De_Cambios.md`.
 <!-- END REGLA-ATRIBUCION -->
 
 ---
 
-<!-- BEGIN REGLA-VETO-MODELOS-CHINOS sha=eb15746523f3 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
-## 🚫 Modelos chinos fuera del caso Huawei — regla dura
+<!-- BEGIN REGLA-VETO-MODELOS-CHINOS sha=730397e37818 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
+## 🚫 Modelos chinos fuera del litigio vetado — regla dura
 
-Palabras de Enrique (2026-09-02): **«los modelos chinos bajo ninguna circunstancia deben de trabajar
-en lo que vaya a ser relacionado con la demanda de huawei, para que sea regla dura»**.
+Regla de Enrique (2026-09-02): los modelos chinos **bajo ninguna circunstancia** trabajan en nada
+relacionado con el litigio vetado, y es regla dura. La cita textual vive en el verificador
+(`reglas/veto_*.py`); aquí no se copia porque nombra a la contraparte.
 
 **Por qué.** La contraparte del litigio es una empresa china. Mandar el expediente —o cualquier
 material derivado que lo describa— a un modelo alojado por un proveedor de esa misma jurisdicción es
 exponerlo a la contraparte. No es un juicio de calidad: es exposición.
 
+**Por qué este texto no nombra el caso.** Estas instrucciones las leen también modelos de la
+jurisdicción vetada —dsh, Hermes con su titular y sus respaldos, el carril de código de la puerta de
+encargos—, y el nombre de la contraparte ya es material del caso. Por eso aquí se dice «el litigio
+vetado» y todo archivo cuyo nombre lo lleva se cita con comodín (`reglas/veto_*.py`). Una prueba de
+los candados falla si un bloque vuelve a traerlo, y el vigilante del veto revisa cada caja de agente.
+
 **Qué es un modelo de origen chino.** DeepSeek (y su harness `dsh`), Kimi/Moonshot, GLM/Zhipu
 (`z-ai`), Qwen/Alibaba, Yi (01.AI), MiniMax, Baichuan, InternLM, Hunyuan/Tencent, Ernie/Baidu,
-Doubao/ByteDance, StepFun, y **cualquier alias que resuelva a uno de ellos**.
+Doubao/ByteDance, StepFun, y **cualquier alias que resuelva a uno de ellos** — incluido Composer, el
+modelo propio de Cursor (Composer 2 se construyó sobre Kimi K2.5), y el modo Auto de Cursor, que
+puede elegirlo. La lista viva de patrones está en `reglas/veto_*.json` (`modelos_de_origen_chino`).
 
-**Carriles que SÍ pueden ver material del caso — son solo cuatro.** La licencia de Claude, `agy`
-(Gemini, de Google), Codex (OpenAI) y los alias `gemini-red-*` del repartidor. La lista es corta por
-una medición, no por prudencia: de los 131 alias del repartidor, solo los `gemini-red-*` fijan el
-proveedor de verdad (con `only:`). Pedirlo con `order:` no obliga a nada —ya está medido que un
-alias que pedía DeepSeek lo terminó sirviendo Alibaba—, así que **un alias de modelo no chino puede
-acabar corriendo en infraestructura china sin que nada avise**. Para este material eso no alcanza.
+**Carriles que SÍ pueden ver material del caso.** Son pocos y su lista exacta vive en
+`reglas/veto_*.json` (`carriles_permitidos_para_el_caso`), su hogar único: se consulta ahí, no de
+memoria, porque cambia (el 2026-09-27 entró Cursor Pro con Grok Bot). Los fijos son la licencia de
+Claude, `agy` (Gemini, de Google) y Codex (OpenAI); dentro de Cursor, siempre con el modelo nombrado y
+de casa no china —Grok, Claude, GPT o Gemini—, nunca Auto ni Composer. La lista es corta por una
+medición, no por prudencia: de los alias del repartidor solo entran los que fijan el proveedor de
+verdad (con `only:`). Pedirlo con `order:` no obliga a nada —ya está medido que un alias que pedía
+DeepSeek lo terminó sirviendo Alibaba—, así que **un alias de modelo no chino puede acabar corriendo
+en infraestructura china sin que nada avise**. Para este material eso no alcanza.
 
 **Qué es material del caso.** El expediente y todo lo derivado de él: el nombre de la contraparte, el
 número del juicio, la carpeta de investigación, los modelos financieros del caso, los entregables
-para el abogado, y los resúmenes, borradores o instrucciones que hablen de cualquiera de esos.
+para el abogado, y los resúmenes, borradores o instrucciones que hablen de cualquiera de esos. Los
+términos exactos viven SOLO en `reglas/veto_*.json` (`material_del_caso`) y no se copian a ningún
+otro lado: para saber si un texto o un archivo lo es no se adivina, se le pregunta al verificador,
+que contesta la categoría y el renglón, nunca el término.
 
 **No hay bandera para saltarlo.** No existe variable de entorno ni opción que lo apague, y no se
 inventa una. Si un trabajo legítimo queda bloqueado, la salida es correrlo en un carril no chino
 —siempre hay uno disponible—, nunca desactivar el candado.
 
-**Cómo se comprueba antes de mandar nada.** `python3 ~/.local/share/marimbas/scripts-prod/reglas/veto_huawei.py --modelo
-<alias> --texto "<contenido>"` (sale `0` si pasa, `3` si bloquea). Las listas de modelos y de
-material del caso viven en `reglas/veto_huawei.json`, su hogar único: se corrigen ahí y nadie las
-vuelve a escribir en otro lado. El veto ya está instalado en `consenso-ask.sh` y en el hook
-`veto-huawei-guard.sh`, y **falla cerrada**: si el verificador no se puede correr, no se manda nada.
+**Cómo se comprueba antes de mandar nada.** `python3 ~/.local/share/marimbas/scripts-prod/reglas/veto_*.py
+--modelo <alias> --texto-de <archivo>` (o `--texto "<contenido>"`); sale `0` si pasa y `3` si
+bloquea, y con `--donde` dice en qué renglones está el material sin repetirlo. Las listas de modelos,
+de carriles y de material del caso viven en `reglas/veto_*.json`, su hogar único: se corrigen ahí y
+nadie las vuelve a escribir en otro lado. El veto ya está instalado en los carriles de la casa (el
+mismo catálogo declara cuáles, en `consumidores_del_veto`) y en el enganche `veto-*-guard.sh` de las
+sesiones de Claude, y **falla cerrada**: si el verificador no se puede correr, no se manda nada.
 <!-- END REGLA-VETO-MODELOS-CHINOS -->
 
 ---
@@ -212,7 +239,7 @@ cosas para optimizar tiempo, nuestro recurso más escaso».
 
 ---
 
-<!-- BEGIN REGLA-REPARTO-MODELOS sha=99f44090f0b3 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
+<!-- BEGIN REGLA-REPARTO-MODELOS sha=959d432467ca · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
 ## 🧠 El orquestador reparte sus modelos — el caro solo juzga y sintetiza
 
 **Al lanzar sub-agentes, workflows, lotes o encargos**, quien orquesta decide el modelo de CADA pieza
@@ -225,7 +252,7 @@ decidir también cómo delegar tus recursos, con calidad; tienes muchos recursos
 - **Caro** (el titular de la ventana, hoy Fable 5.1): juzgar entre alternativas, sintetizar la versión
   final, decidir alcance, la verificación adversarial de dinero e identidad de huéspedes y la
   consistencia cruzada final. **Nunca** leer en volumen, redactar borradores, construir ni investigar.
-- **Medio** (Sonnet 5 en la licencia; por API `or-gpt-5.6-terra`, `or-gemini-3.7-flash`,
+- **Medio** (Sonnet 5.5 en la licencia; por API `or-gpt-5.6-terra`, `or-gemini-3.7-flash`,
   `or-glm-5.3-flash`): investigar en la web, redactar borradores, construir archivos, revisar con
   lentes definidos, mirar imágenes o PDF, trabajo de navegador.
 - **Barato** (Haiku 4.5 en la licencia; por API `gpt-oss-120b` y `opencode`): extraer, clasificar,
@@ -236,14 +263,30 @@ omitirlo es elegir el caro—; por API, el alias del nivel. Meta: no más del 20
 caro. Y **una línea de transparencia al lanzar**: cuántas piezas van a cada nivel. Si el trabajo ya
 arrancó en el caro, se reparte desde el siguiente corte; lo hecho no se tira.
 
+**Por tipo de trabajo, el carril** (orden, carriles y desempate viven en el mismo JSON,
+`carriles_por_tipo_de_trabajo`; «delega a Cursor» funciona igual que «delega a Codex»):
+
+| Tipo | Orden |
+|---|---|
+| Necesita manos (muchos archivos, comandos, el repo) | Codex → `dsh` con el MaaS gratis → Cursor → por uso |
+| Escribir pruebas | igual; Cursor sube antes de lo gratis solo si su examen le gana por más de 0.5 |
+| Solo texto (resumir, redactar, clasificar, analizar) | gratis (MaaS, `opencode`) → suscripción → por uso |
+| Internet o visión | `agy` → Grok Bot a mano, si es X |
+| Juicio, decisión, versión final | la licencia de Claude; no se delega |
+
+Desempate: (1) si Enrique nombra el carril, ese; (2) úsalo o piérdelo: una suscripción cuyo cupo
+por perderse se lee EN VIVO cuenta como gratis, y entre suscripciones va primero la que más pierde;
+(3) sin lectura viva de cupo (hoy Cursor), no se elige por cupo: va después de lo gratis; (4) en
+empate (±0.5 en el examen) gana lo gratis; (5) el material del caso vetado solo va por sus carriles.
+
 **Lo que manda sobre esta tabla:** la revisión adversarial bloqueante de identidad de huéspedes y
-dinero (segundo modelo de otra familia), el veto Huawei (solo carriles con ruta garantizada) y el
+dinero (segundo modelo de otra familia), el veto de jurisdicción (solo carriles con ruta garantizada) y el
 enganche `delegation-gate` (lo delegable por palabras o cifras sale a LiteLLM, no a un sub-agente).
 <!-- END REGLA-REPARTO-MODELOS -->
 
 ---
 
-<!-- BEGIN REGLA-LECTURAS sha=eabef9f2fa12 · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
+<!-- BEGIN REGLA-LECTURAS sha=07b864db28ab · generado por Codigo/scripts/sync-regla-atribucion.py · NO editar a mano -->
 ## 📖 Lee un modelo barato — los archivos grandes no entran a la ventana
 
 **Antes de leer archivos grandes** (más de 400 líneas o 16,000 caracteres — el umbral
@@ -269,9 +312,10 @@ necesita son las RESPUESTAS, no el contenido crudo de los archivos.
   o el umbral = editar ese JSON; se propaga a todos los carriles.
 - **Secretos JAMÁS salen**: `.env`, `*.pem`, `*.key`, `config*` los excluye el ejecutor
   y avisa. La exclusión es obligatoria, no opcional.
-- **Veto Huawei primero**: el carril se comprueba con `veto_huawei.py` antes de cada
-  envío — falla cerrada. Si el material toca el caso Huawei, el carril es `agy`, Codex
-  o `gemini-red-*` (o la ventana de la licencia) y ya.
+- **Veto de jurisdicción primero**: el carril se comprueba con `reglas/veto_*.py` antes de cada
+  envío — falla cerrada. Si el material toca el litigio vetado, el carril es uno de la lista
+  permitida de `reglas/veto_*.json` (la licencia, `agy`, Codex y los alias que clavan su
+  proveedor) y ya.
 - **Lecturas CHICAS van directas**: debajo del umbral, delegar cuesta más que leer.
 - **Editar/exigir línea exacta va directo a la ventana**: el resumen no conserva líneas
   confiables; para editar, se lee el tramo puntual (offset/limit), no el archivo entero.
