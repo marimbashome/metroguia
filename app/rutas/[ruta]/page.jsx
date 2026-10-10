@@ -18,7 +18,7 @@ export function generateStaticParams() {
 }
 
 function getStationName(slug) {
-  return grafo[slug]?.nombre || slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+  return grafo[slug]?.nombre || slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 async function resolveRuta(slug) {
@@ -34,7 +34,8 @@ async function resolveRuta(slug) {
   }
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const ruta = await resolveRuta(params.ruta)
   if (!ruta) return RUTA_NOT_FOUND_METADATA
 
@@ -46,7 +47,8 @@ export async function generateMetadata({ params }) {
   })
 }
 
-export default async function RutasLegacyPage({ params }) {
+export default async function RutasLegacyPage(props) {
+  const params = await props.params;
   const ruta = await resolveRuta(params.ruta)
 
   if (!ruta) {

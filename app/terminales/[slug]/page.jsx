@@ -14,7 +14,8 @@ function findTerminal(slug) {
   return terminales.find((t) => t.slug === slug) || null
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const terminal = findTerminal(params.slug)
   if (!terminal) return { title: 'Terminal no encontrada' }
   return {
@@ -32,7 +33,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function TerminalPage({ params }) {
+export default async function TerminalPage(props) {
+  const params = await props.params;
   const terminal = findTerminal(params.slug)
   if (!terminal) {
     return (

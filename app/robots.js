@@ -1,3 +1,6 @@
+// Next 15 con output:'export' exige declarar que este archivo de metadatos es estatico.
+export const dynamic = 'force-static'
+
 export default function robots() {
   return {
     rules: {

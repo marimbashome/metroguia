@@ -79,7 +79,8 @@ export function makeStationPage(citySlug, opts = {}) {
 
   return {
     generateStaticParams: async () => estaciones.map((e) => ({ slug: e.slug })),
-    generateMetadata: async ({ params }) => {
+    generateMetadata: async (props) => {
+      const params = await props.params
       const estacion = estaciones.find((e) => e.slug === params.slug)
       if (!estacion) return { title: 'Estación no encontrada', robots: { index: false, follow: false } }
       const grafoNode = bundle.grafo?.[estacion.slug]
@@ -93,7 +94,8 @@ export function makeStationPage(citySlug, opts = {}) {
         lineasLabel,
       })
     },
-    default: function StationPage({ params }) {
+    default: async function StationPage(props) {
+      const params = await props.params
       const estacion = estaciones.find((e) => e.slug === params.slug)
       if (!estacion) return null
       return (
@@ -122,13 +124,15 @@ export function makeLinePage(citySlug, opts = {}) {
 
   return {
     generateStaticParams: async () => lineas.map((l) => ({ id: String(l.id) })),
-    generateMetadata: async ({ params }) => {
+    generateMetadata: async (props) => {
+      const params = await props.params
       const linea = lineas.find((l) => String(l.id) === params.id)
       if (!linea) return { title: 'Línea no encontrada', robots: { index: false, follow: false } }
       const total = estacionesDeLinea(estaciones, bundle.grafo, linea.id, linea.estaciones).length
       return lineMetadata({ linea, cityConfig: bundle.config, path: `${metaPathPrefix}linea/${encodeURIComponent(linea.id)}/`, totalEstaciones: total })
     },
-    default: function LinePage({ params }) {
+    default: async function LinePage(props) {
+      const params = await props.params
       const linea = lineas.find((l) => String(l.id) === params.id)
       if (!linea) return null
       return (
@@ -184,7 +188,8 @@ export function makeRoutePage(citySlug, opts = {}) {
 
   return {
     generateStaticParams: async () => routeSlugs.map((slug) => ({ slug })),
-    generateMetadata: async ({ params }) => {
+    generateMetadata: async (props) => {
+      const params = await props.params
       const names = slugToNames(params.slug, estaciones, bundle.grafo)
       if (!names) return { title: 'Ruta no encontrada', robots: { index: false, follow: false } }
       const resultado = await findRoute(names.origen, names.destino, citySlug)
@@ -196,7 +201,8 @@ export function makeRoutePage(citySlug, opts = {}) {
         resultado,
       })
     },
-    default: async function RoutePage({ params }) {
+    default: async function RoutePage(props) {
+      const params = await props.params
       const names = slugToNames(params.slug, estaciones, bundle.grafo)
       if (!names) return null
       const resultado = await findRoute(names.origen, names.destino, citySlug)

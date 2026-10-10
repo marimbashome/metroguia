@@ -13,7 +13,8 @@ function findAirport(slug) {
   return aeropuertos.find((a) => a.slug === slug) || null
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const airport = findAirport(params.slug)
   if (!airport) return { title: 'Aeropuerto no encontrado' }
   return {
@@ -31,7 +32,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function AeropuertoPage({ params }) {
+export default async function AeropuertoPage(props) {
+  const params = await props.params;
   const airport = findAirport(params.slug)
   if (!airport) {
     return (

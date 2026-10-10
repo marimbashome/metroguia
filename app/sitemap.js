@@ -2,6 +2,9 @@ import { getAllCities } from '@/data/cities-config'
 import { getBuiltRouteSlugs } from '@/data/built-routes'
 import { getKeepUrls } from '@/lib/keep-urls'
 
+// Next 15 con output:'export' exige declarar que este archivo de metadatos es estatico.
+export const dynamic = 'force-static'
+
 // app/sitemap.js — TODAS las URLs MX del build, nada más (REBUILD_SPEC.md).
 // Se deriva de 3 fuentes reales, nunca de una lista escrita a mano:
 //
