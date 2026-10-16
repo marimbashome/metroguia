@@ -12,7 +12,8 @@ export function generateStaticParams() {
   return Object.keys(lineasDetalle).map((id) => ({ id }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const linea = lineasDetalle[params.id]
   if (!linea) return { title: 'Línea no encontrada' }
   const title = `Línea ${linea.id}${linea.colorNombre ? ` (${linea.colorNombre})` : ''} del Metro CDMX — Estaciones y correspondencias`
@@ -25,7 +26,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function LineaPage({ params }) {
+export default async function LineaPage(props) {
+  const params = await props.params;
   const linea = lineasDetalle[params.id]
   if (!linea) {
     return (

@@ -16,7 +16,8 @@ export async function generateStaticParams() {
   return [{ slug: REQUIRED_SLUG }]
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const estacion = bundle.estaciones.find((e) => e.slug === params.slug)
   if (!estacion) return { title: 'Estación no encontrada', robots: { index: false, follow: false } }
   const grafoNode = bundle.grafo?.[estacion.slug]
@@ -29,7 +30,8 @@ export async function generateMetadata({ params }) {
   })
 }
 
-export default function PueblaStationLegacyPage({ params }) {
+export default async function PueblaStationLegacyPage(props) {
+  const params = await props.params;
   const estacion = bundle.estaciones.find((e) => e.slug === params.slug)
   if (!estacion) return null
   return (
