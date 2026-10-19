@@ -32,7 +32,8 @@ function buildDescription(estacion, linea) {
   return `Estación ${estacion.nombre} de la Línea ${linea} del Metro CDMX, Alcaldía ${estacion.alcaldia}. ${transbordos}Horarios, accesos y estaciones cercanas.`
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const estacion = ESTACIONES_BY_SLUG.get(params.slug)
   if (!estacion) return { title: 'Estación no encontrada' }
 
@@ -48,7 +49,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function EstacionPage({ params }) {
+export default async function EstacionPage(props) {
+  const params = await props.params;
   const estacion = ESTACIONES_BY_SLUG.get(params.slug)
   if (!estacion) {
     return (
@@ -193,7 +195,7 @@ export default function EstacionPage({ params }) {
         </div>
       </section>
     </>
-  )
+  );
 }
 
 /**
@@ -255,7 +257,7 @@ function buildPopularRoutes(slug, limit = 6) {
 }
 
 function escapeRe(s) {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function humanize(slug) {
