@@ -7,7 +7,8 @@ export function generateStaticParams() {
   return Object.keys(sistema.lineas).map((id) => ({ id }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const linea = sistema.lineas[params.id]
   if (!linea) return { title: 'Línea no encontrada' }
   const nombre = linea.nombre || `Línea ${linea.id}`
@@ -18,7 +19,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function TrenSuburbanoLineaPage({ params }) {
+export default async function TrenSuburbanoLineaPage(props) {
+  const params = await props.params;
   const linea = sistema.lineas[params.id]
   if (!linea) {
     return (
