@@ -3,7 +3,8 @@
 Genera el feed ICS de Chivas (Guadalajara) para suscribir en Google Calendar.
 
 Fuente: ESPN site API (JSON público, sin API key).
-  https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard?dates=YYYYMMDD-YYYYMMDD
+  https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard?dates=YYYYMM
+(un mes por consulta; ver la nota en fetch_scoreboard sobre por qué ya no son rangos de días)
 
 A diferencia de build_diablos_fixtures.py (regex sobre HTML, se rompió en silencio
 y publicó un ICS vacío durante 3 meses), este script:
@@ -49,7 +50,7 @@ ESPN_TEAM_ID = "219"  # Guadalajara
 ESPN_LEAGUE = "mex.1"
 ESPN_URL = (
     "https://site.api.espn.com/apis/site/v2/sports/soccer/"
-    f"{ESPN_LEAGUE}/scoreboard?dates={{start}}-{{end}}&limit=500"
+    f"{ESPN_LEAGUE}/scoreboard?dates={{dates}}&limit=500"
 )
 
 # Ventana a consultar: todo el Apertura 2026 + Liguilla (la final puede recorrerse
@@ -122,8 +123,20 @@ LIGUILLA_NOTE = (
 # Fetch
 # ---------------------------------------------------------------------------
 
-def fetch_scoreboard() -> dict:
-    url = ESPN_URL.format(start=WINDOW_START, end=WINDOW_END)
+def _months_in_window() -> list[str]:
+    """Los meses AAAAMM que cubre la ventana, de WINDOW_START a WINDOW_END."""
+    y, m = int(WINDOW_START[:4]), int(WINDOW_START[4:6])
+    y_end, m_end = int(WINDOW_END[:4]), int(WINDOW_END[4:6])
+    months = []
+    while (y, m) <= (y_end, m_end):
+        months.append(f"{y:04d}{m:02d}")
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return months
+
+
+def _fetch_one(dates: str) -> dict:
+    """Una consulta a ESPN probando los User-Agent en orden. Lanza el último error."""
+    url = ESPN_URL.format(dates=dates)
     last_error: Exception | None = None
     for ua in USER_AGENTS:
         headers = {"User-Agent": ua} if ua else {}
@@ -133,8 +146,31 @@ def fetch_scoreboard() -> dict:
                 return json.loads(resp.read().decode("utf-8"))
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             last_error = exc
-            print(f"  intento con UA={ua!r} falló: {exc}", file=sys.stderr)
+            print(f"  {dates}: intento con UA={ua!r} falló: {exc}", file=sys.stderr)
     raise last_error  # type: ignore[misc]
+
+
+def fetch_scoreboard() -> dict:
+    """Trae los eventos de la ventana pidiéndolos MES por MES.
+
+    POR QUÉ NO UN RANGO DE DÍAS (medido el 2026-10-25): hasta mediados de septiembre
+    la consulta `dates=AAAAMMDD-AAAAMMDD` respondía; desde el 21-sep ESPN contesta
+    HTTP 400 `Failed to get events endpoint` a TODO rango de días (hasta uno de 1 día)
+    mientras que un día suelto (`dates=AAAAMMDD`) y un mes (`dates=AAAAMM`) siguen
+    respondiendo 200 con la misma forma de JSON. El job «Refresh Chivas fixtures»
+    llevaba 5 corridas seguidas en rojo por eso. Si un mes falla, se aborta entero
+    (no se publica un calendario a medias).
+    """
+    events: dict[str, dict] = {}
+    for month in _months_in_window():
+        payload = _fetch_one(month)
+        for event in payload.get("events", []):
+            # La consulta por mes trae el mes completo; la ventana se recorta aquí
+            # (la fecha de ESPN viene en UTC: "2026-08-29T23:00Z").
+            day = (event.get("date") or "")[:10].replace("-", "")
+            if day and WINDOW_START <= day <= WINDOW_END:
+                events[str(event.get("id") or f"{month}-{len(events)}")] = event
+    return {"events": list(events.values())}
 
 
 def extract_chivas_matches(payload: dict) -> list[dict]:
@@ -406,7 +442,7 @@ def main() -> int:
         "total_matches": len(matches),
         "future_matches": len(future),
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source": ESPN_URL.format(start=WINDOW_START, end=WINDOW_END),
+        "source": ESPN_URL.format(dates="AAAAMM") + f"  (meses {WINDOW_START[:6]}..{WINDOW_END[:6]})",
         "broadcast_rights_note": "Mapa BROADCASTERS revisado jul-2026; revalidar cada torneo.",
         "matches": all_entries,
     }
