@@ -20,6 +20,22 @@ name: Vercel deploy ERROR → Slack
 # It looks up the latest deploy for HEAD and reports its state; it only sends a
 # Slack alert if that deploy actually ERRORed — a safe way to confirm the Vercel
 # token + API path still work.
+#
+# 2026-07-22: the deployment_status path no longer calls the Vercel API at all —
+# the event payload already carries state + URLs, and the VERCEL_TOKEN secret had
+# expired silently, so every ERROR deploy made THIS workflow fail too
+# ("jq: Cannot iterate over null") without ever sending the Slack alert.
+# The Vercel API (and its token) is now only needed for the manual smoke test.
+#
+# 2026-10-25 (REPOS-03, auditoria integral ses-2026-10-24-revision-integral-sistema):
+# este repo seguia con la version vieja, que en cada `deployment_status` llamaba a la
+# API de Vercel con VERCEL_TOKEN. El token estaba vencido y la respuesta no traia
+# `.deployments`: el `jq` moria con "Cannot iterate over null" (exit 5) ANTES de
+# mandar el aviso, asi que ningun despliegue en ERROR llego nunca a Slack. Se porta la
+# version de admin-dashboard (que lleva 22 corridas verdes): la ruta real lee el
+# payload del evento y no necesita Vercel; la API solo se usa en la prueba manual y
+# ahi, si la respuesta no trae `.deployments`, el paso dice "no pude consultar
+# Vercel" y se pone rojo en vez de reventar con un error de jq.
 
 on:
   deployment_status: {}
@@ -42,48 +58,103 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           MARIMBAS_ADMIN_TOKEN: ${{ secrets.MARIMBAS_ADMIN_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TEAM_ID: team_Fg1MXTOak1GcwELAM4lCDpsS
           PROJECT_ID: prj_jrX3Rqw0qEJ9uk2bjuTw0GnOSSgt
           SHA: ${{ github.sha }}
           REPO: ${{ github.event.repository.name }}
+          DS_TARGET_URL: ${{ github.event.deployment_status.target_url }}
+          DS_LOG_URL: ${{ github.event.deployment_status.log_url }}
+          DS_ENVIRONMENT: ${{ github.event.deployment.environment }}
+          DS_DEPLOY_ID: ${{ github.event.deployment.id }}
         run: |
           set -e
 
-          # One call — the deploy is already in a terminal state when this runs.
-          RESP=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v6/deployments?teamId=$TEAM_ID&projectId=$PROJECT_ID&limit=20")
+          if [ "$GITHUB_EVENT_NAME" = "deployment_status" ]; then
+            # The event payload already carries the final state and URLs — no
+            # Vercel API call (and no dependency on a rotatable VERCEL_TOKEN).
+            # The job-level `if` guarantees state is error/failure here.
+            # Environment (e.g. "Production – strops-demo") tells WHICH linked
+            # Vercel project failed; appended to the message for the alert.
+            COMMIT_JSON=$(gh api "repos/$GITHUB_REPOSITORY/commits/$SHA" 2>/dev/null || echo '{}')
+            PAYLOAD=$(echo "$COMMIT_JSON" | jq \
+              --arg repo "$REPO" \
+              --arg sha "$SHA" \
+              --arg env "$DS_ENVIRONMENT" \
+              --arg url "$DS_TARGET_URL" \
+              --arg log "$DS_LOG_URL" \
+              --arg id "$DS_DEPLOY_ID" \
+              '{repo: $repo,
+                commit_sha: $sha,
+                commit_message: (((.commit.message // "") | split("\n")[0]) + " [" + $env + "]"),
+                commit_author: (.commit.author.name // ""),
+                deploy_id: $id,
+                deploy_state: "ERROR",
+                deploy_url: $url,
+                inspector_url: $log}')
+          else
+            # Manual smoke test (workflow_dispatch): look up the deploy for HEAD
+            # via the Vercel API. Fails LOUDLY if the token is dead instead of
+            # dying on a jq null (that failure mode hid a broken canary).
+            RESP=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+              "https://api.vercel.com/v6/deployments?teamId=$TEAM_ID&projectId=$PROJECT_ID&limit=20")
 
-          # Find the deployment matching this commit SHA.
-          DEPLOY=$(echo "$RESP" | jq -c --arg sha "$SHA" \
-            'first(.deployments[] | select(.meta.githubCommitSha == $sha)) // empty')
+            # Primero: ¿esto es JSON siquiera? Sin token, o detras de una pagina
+            # de error/login del proveedor, la respuesta es HTML y el `jq` de
+            # abajo moria con "parse error: Invalid numeric literal" — un mensaje
+            # que no dice nada de lo que hay que arreglar. El canario que se
+            # rompe tiene que decir POR QUE.
+            if ! echo "$RESP" | jq -e . >/dev/null 2>&1; then
+              echo "::error::La API de Vercel no devolvio JSON (¿VERCEL_TOKEN vacio o expirado, o pagina de error del proveedor?). Primeros 300 caracteres de la respuesta:"
+              echo "$RESP" | head -c 300
+              exit 1
+            fi
 
-          if [ -z "$DEPLOY" ]; then
-            echo "::warning::No Vercel deployment matched SHA $SHA — no alert sent."
-            exit 0
+            API_ERR=$(echo "$RESP" | jq -r '.error.message // empty')
+            if [ -n "$API_ERR" ]; then
+              echo "::error::Vercel API error: $API_ERR — ¿VERCEL_TOKEN expirado? Rotar el secret."
+              exit 1
+            fi
+
+            # Respuesta JSON valida pero SIN `.deployments` (token de otro equipo,
+            # id de proyecto equivocado, cuota): antes se tomaba por "ningun deploy
+            # coincide" y salia en verde. Un canario que no pudo consultar no puede
+            # salir en verde: se dice por que.
+            if ! echo "$RESP" | jq -e '(.deployments | type) == "array"' >/dev/null 2>&1; then
+              echo "::error::No pude consultar Vercel: la respuesta no trae .deployments (¿VERCEL_TOKEN de otro equipo, TEAM_ID/PROJECT_ID equivocado?). Primeros 300 caracteres:"
+              echo "$RESP" | head -c 300
+              exit 1
+            fi
+
+            DEPLOY=$(echo "$RESP" | jq -c --arg sha "$SHA" \
+              'first(.deployments[] | select(.meta.githubCommitSha == $sha)) // empty')
+
+            if [ -z "$DEPLOY" ]; then
+              echo "::warning::No Vercel deployment matched SHA $SHA — no alert sent."
+              exit 0
+            fi
+
+            STATE=$(echo "$DEPLOY" | jq -r '.state // .readyState // "UNKNOWN"')
+            echo "Vercel deploy state for $SHA: $STATE"
+
+            if [ "$STATE" != "ERROR" ]; then
+              echo "::notice::state=$STATE (not ERROR) — no Slack alert."
+              exit 0
+            fi
+
+            PAYLOAD=$(echo "$DEPLOY" | jq \
+              --arg repo "$REPO" \
+              --arg sha "$SHA" \
+              --arg state "$STATE" \
+              '{repo: $repo,
+                commit_sha: $sha,
+                commit_message: (.meta.githubCommitMessage // ""),
+                commit_author: (.meta.githubCommitAuthorName // ""),
+                deploy_id: (.uid // .id),
+                deploy_state: $state,
+                deploy_url: .url,
+                inspector_url: (.inspectorUrl // "")}')
           fi
-
-          STATE=$(echo "$DEPLOY" | jq -r '.state // .readyState // "UNKNOWN"')
-          echo "Vercel deploy state for $SHA: $STATE"
-
-          if [ "$STATE" != "ERROR" ]; then
-            echo "::notice::state=$STATE (not ERROR) — no Slack alert."
-            exit 0
-          fi
-
-          # Build the payload exactly like the previous workflow (same edge-function
-          # contract). Commit message/author come from Vercel meta because the
-          # deployment_status event has no head_commit. jq handles escaping safely.
-          PAYLOAD=$(echo "$DEPLOY" | jq \
-            --arg repo "$REPO" \
-            --arg sha "$SHA" \
-            '{repo: $repo,
-              commit_sha: $sha,
-              commit_message: (.meta.githubCommitMessage // ""),
-              commit_author: (.meta.githubCommitAuthorName // ""),
-              deploy_id: (.uid // .id),
-              deploy_state: .state,
-              deploy_url: .url,
-              inspector_url: (.inspectorUrl // "")}')
 
           curl -fsS -X POST \
             -H "Authorization: Bearer $MARIMBAS_ADMIN_TOKEN" \
