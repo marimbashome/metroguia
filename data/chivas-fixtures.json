@@ -3,8 +3,8 @@
   "league": "Liga BBVA MX",
   "season": "Apertura 2026",
   "total_matches": 17,
-  "future_matches": 3,
-  "generated_at": "2026-10-25T06:47:24.019929+00:00",
+  "future_matches": 2,
+  "generated_at": "2026-11-01T19:25:32.186575+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard?dates=AAAAMM&limit=500  (meses 202607..202701)",
   "broadcast_rights_note": "Mapa BROADCASTERS revisado jul-2026; revalidar cada torneo.",
   "matches": [
@@ -214,7 +214,7 @@
       "round": "Jornada 15",
       "venue": "Estadio Akron",
       "city": "Guadalajara, Mexico",
-      "state": "pre",
+      "state": "post",
       "broadcaster": "Prime Video",
       "tentative": false
     },
