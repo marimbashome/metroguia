@@ -61,16 +61,15 @@ jobs:
           git add data/diablos-fixtures.json public/calendar/diablos-rojos-2026*.ics
           git commit -m "chore(diablos): refresh fixtures from diablos.com.mx [skip ci]" \
             -m "X-Actor: sistema:refresh-diablos"
-          # Rama dedicada, nunca push a main (protegida).
-          git push origin "HEAD:refs/heads/$BRANCH"
+          # Rama dedicada del bot, regenerada desde main en cada corrida (--force: si quedó una rama vieja sin PR, un push normal se rechaza). Nunca push a main (protegida).
+          git push --force origin "HEAD:refs/heads/$BRANCH"
           # Crea el PR si no existe; si ya existe, el push de arriba lo actualiza.
           if ! gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
             gh pr create \
               --base main \
               --head "$BRANCH" \
               --title "chore(diablos): refresh fixtures from diablos.com.mx" \
-              --body "Actualización automática del feed de Diablos Rojos (fixtures.json + ICS) desde diablos.com.mx. Generado por el workflow *Refresh Diablos Rojos fixtures*." \
-              --no-merge
+              --body "Actualización automática del feed de Diablos Rojos (fixtures.json + ICS) desde diablos.com.mx. Generado por el workflow *Refresh Diablos Rojos fixtures*."
           else
             echo "PR existente para $BRANCH; quedó actualizado con el nuevo push."
           fi
