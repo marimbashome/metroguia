@@ -41,7 +41,9 @@ for WF in "$CHIVAS" "$DIABLOS"; do
     ok "sin 'git push' desnudo (push directo a main)"
   fi
   check_not_contains "$WF" 'git push[^#]*origin +main|git push[^#]*HEAD:main|push[^#]*refs/heads/main' "ningún push apunta a refs/heads/main"
-  check_contains "$WF" 'git push origin "HEAD:refs/heads/\$BRANCH"' "push a rama dedicada \$BRANCH"
+  # La rama dedicada es propiedad exclusiva del bot: puede reescribirse si una
+  # corrida anterior dejó una rama sin PR, pero nunca apunta a main.
+  check_contains "$WF" 'git push( --force)? origin "HEAD:refs/heads/\$BRANCH"' "push a rama dedicada \$BRANCH"
   check_contains "$WF" 'gh pr create' "crea PR con gh pr create"
   check_contains "$WF" 'gh pr view "\$BRANCH"' "reutiliza PR existente (idempotente)"
   check_contains "$WF" '--base main' "el PR apunta a main"
